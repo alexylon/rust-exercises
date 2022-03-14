@@ -12,9 +12,11 @@ mod ownership;
 mod io;
 mod borrow_lifetimes;
 mod closures;
+mod strings;
+mod vector_update;
 
 use crate::ownership::ownership_example1;
 
 fn main() {
-    closures::closures2();
+    vector_update::update_av().unwrap();
 }

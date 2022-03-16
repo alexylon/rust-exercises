@@ -20,3 +20,8 @@ use crate::ownership::ownership_example1;
 fn main() {
     vector_update::update_av().unwrap();
 }
+
+// fn main() {
+//     vector_update::uniques();
+// }
+

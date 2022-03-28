@@ -1,0 +1,74 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 7fbd5eb3 0 0 0 2
+
+--description
+Global Group Period Calculationsçä çäRELEASE LOG:çäRELEASE pA 1601
+P13 7fbd5eb3 de0804 315abb74 0 0 0 2
+--Global Group Period--
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Group Period model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGGPeriod.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P4 315abb74 7fbd5eb3 0 0 0 0 2
+OUTPUT Calc Period in Years
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Calc Period in Years
+'GEN Group Get Member Age Calc'('Input Group Period Calculation Method';'Input Group Period EndDate';"Period")
+F0 de0860 0 0 0 0 0 0
+
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 a16885a 0 318c5e5c 0 0 0 0
+
+I0 318c5e5c a16885a 0 0 0 0 0
+PAGGStandard.pms
+-
+O0
+E0
+L0
+B0
+P1
+7fbd5eb3
+F0
+A0
+T0
+;Offset=00000000

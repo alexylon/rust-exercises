@@ -1,0 +1,2233 @@
+;1	08.12.2016 13:29:33	jlawrie2	
+X0 1e0019c 0 1e1f0c0 0 0 0 0
+
+X0 1e1f0c0 1e0019c 1e1f158 0 0 0 0
+--Unit Test Cases--
+X0 1e1f158 1e1f0c0 1e1f1f0 1e13f20 0 0 0
+-- UL1PA --
+X0 1e1f1f0 1e1f158 1e1f290 1e114b0 0 0 0
+--Rules--
+X24 1e1f290 1e1f1f0 1e336b0 0 0 0 2
+AC Admin Charge Rule Per Unit
+'AC Admin Charge Rule Per Unit'("C"; 8; 5; 12; "")
+50
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Message Language
+9
+X23 1e336b0 1e1f290 0 0 0 0 2
+f_AC_Total_Coverage_Expense_Charge
+'AC Total Coverage Expense Charge'("C"; 8; 5; "")
+50
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+01/01/2007
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X0 1e114b0 1e1f158 1e11b00 1e12a48 0 0 0
+--Rate Access--
+X9 1e11b00 1e114b0 0 1e11e88 0 0 2
+AC Admin Charge Rule
+'AC Admin Charge Rule'(1)
+1000500026
+INPUT TransEffDate
+1/1/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X17 1e11e88 1e114b0 0 1e124b0 0 0 2
+f_AC_Admin_Charge_FeeAmt
+'AC Admin Charge FeeAmt'("C"; 5;8;"")
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode
+0
+X17 1e124b0 1e114b0 0 0 0 0 2
+AC Admin Charge FeePct
+'AC Admin Charge FeePct'("C";8; 5;"")
+0.05
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e12a48 1e1f158 1e12ae0 1e13830 0 0 0
+--Admin Charges--
+X26 1e12ae0 1e12a48 0 1e12dd8 0 0 2
+AC Admin Expense Charge
+'AC Admin Expense Charge'("C"; "")
+50
+INPUT TransEffDate
+01/01/2007
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+UL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X24 1e12dd8 1e12a48 0 0 0 0 2
+AC Proj Mthly Total AdminFee Charge
+'AC Proj Mthly Total AdminFee Charge'("C"; 8; 0; 5; 12; "")
+50
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Message Language
+9
+X25 1e13830 1e1f158 0 0 0 0 2
+OUTPUT AC Proj Admin Charge - UL1PA
+'OUTPUT AC Admin Expense Charge'("C")
+50
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2007
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X0 1e13f20 1e1f0c0 1e13c60 1e16898 0 0 0
+-- UL2PA --
+X0 1e13c60 1e13f20 1e14598 1e14818 0 0 0
+--Rules--
+X18 1e14598 1e13c60 0 0 0 0 2
+AC Admin Charge Rule Flat Amt
+'AC Admin Charge Rule Flat Amt'("C";1;8; 0; 4; 9; "01/01/2007";"")
+5
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Life CashValueAmount
+8000
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e14818 1e13f20 1e14a68 1e158b8 0 0 0
+--Rate Access--
+X9 1e14a68 1e14818 0 1e14e20 0 0 2
+AC Admin Charge Rule
+'AC Admin Charge Rule'(1)
+1000500030
+INPUT TransEffDate
+1/1/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X14 1e14e20 1e14818 0 1e152e0 0 0 2
+AC Admin Charge FeeAmt
+'AC Admin Charge FeeAmt'("C";5;8;"")
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X17 1e152e0 1e14818 0 0 0 0 2
+AC Admin Charge FeePct
+'AC Admin Charge FeePct'("C";8; 5;"")
+0.06
+INPUT Policy ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e158b8 1e13f20 1e15950 1e162c8 0 0 0
+--Admin Charges--
+X20 1e15950 1e158b8 0 1e15be0 0 0 2
+AC Admin Expense Charge
+'AC Admin Expense Charge'("C"; "")
+10
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+UL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+1
+X18 1e15be0 1e158b8 0 0 0 0 2
+f_AC_Proj_Mthly_Total_AdminFee_Charge
+'AC Proj Mthly Total AdminFee Charge'("C";8; 0; 5; 12; "")
+6
+INPUT Policy ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X19 1e162c8 1e13f20 0 0 0 0 2
+OUTPUT AC Proj Admin Charge - UL2PA
+'OUTPUT AC Admin Expense Charge'("C")
+6
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2007
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X0 1e16898 1e1f0c0 1e16cf8 1e1af98 0 0 0
+-- JSUL1PA --
+X0 1e16cf8 1e16898 1e16e68 1e182b8 0 0 0
+--Rules--
+X23 1e16e68 1e16cf8 1e17128 0 0 0 2
+AC Admin Charge Rule Per Unit
+'AC Admin Charge Rule Per Unit'("C";8; 5; 12; "")
+50
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X23 1e17128 1e16e68 1e17a68 0 0 0 2
+AC Total Coverage Expense Charge
+'AC Total Coverage Expense Charge'("C";8; 5; "")
+50
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X22 1e17a68 1e17128 0 0 0 0 2
+AC Expense Charge Per Coverage
+'AC Expense Charge Per Coverage'("C";0; 8; 5; "")
+50
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage BandCode
+3
+X0 1e182b8 1e16898 1e18778 1e19450 0 0 0
+--Rate Access--
+X9 1e18778 1e182b8 0 1e18af0 0 0 2
+AC Admin Charge Rule
+'AC Admin Charge Rule'(1)
+1000500030
+INPUT TransEffDate
+1/1/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X14 1e18af0 1e182b8 0 1e18f60 0 0 2
+AC Admin Charge FeeAmt
+'AC Admin Charge FeeAmt'("C";5;8;"")
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X17 1e18f60 1e182b8 0 0 0 0 2
+AC Admin Charge FeePct
+'AC Admin Charge FeePct'("C";8; 5;"")
+0.05
+INPUT Policy ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e19450 1e16898 1e19608 1e1a8d0 0 0 0
+--Admin Charges--
+X26 1e19608 1e19450 0 1e19898 0 0 2
+AC Admin Expense Charge
+'AC Admin Expense Charge'("C"; "")
+5
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X25 1e19898 1e19450 0 0 0 0 2
+AC Proj Mthly Total AdminFee Charge
+'AC Proj Mthly Total AdminFee Charge'("C";8; 0; 5; 12; "")
+5
+INPUT Policy ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Message Language
+9
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X26 1e1a8d0 1e16898 0 0 0 0 2
+OUTPUT AC Proj Admin Charge - JSUL1PA
+'OUTPUT AC Admin Expense Charge'("C")
+5
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2007
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+10000
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X0 1e1af98 1e1f0c0 1e1b940 1e34848 0 0 0
+-- VUL1PA --
+X0 1e1b940 1e1af98 1e1b9d0 1e1cee0 0 0 0
+--Rules--
+X23 1e1b9d0 1e1b940 1e1bde0 0 0 0 2
+AC Admin Charge Rule Per Unit
+'AC Admin Charge Rule Per Unit'("C";8; 5; 12; "")
+50
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X23 1e1bde0 1e1b9d0 1e1c3d8 0 0 0 2
+AC Total Coverage Expense Charge
+'AC Total Coverage Expense Charge'("C";8; 5; "")
+50
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X22 1e1c3d8 1e1bde0 0 0 0 0 2
+AC Expense Charge Per Coverage
+'AC Expense Charge Per Coverage'("C"; 0; 8; 5; "")
+50
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage BandCode
+3
+X0 1e1cee0 1e1af98 1e1d410 1e1e4c8 0 0 0
+--Rate Access--
+X9 1e1d410 1e1cee0 0 1e1d900 0 0 2
+AC Admin Charge Rule
+'AC Admin Charge Rule'(1)
+1000500024
+INPUT TransEffDate
+1/1/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X14 1e1d900 1e1cee0 0 1e1dd70 0 0 2
+AC Admin Charge FeeAmt
+'AC Admin Charge FeeAmt'("C";5;8;"")
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X17 1e1dd70 1e1cee0 0 0 0 0 2
+AC Admin Charge FeePct
+'AC Admin Charge FeePct'("C"; 8; 5;"")
+0.05
+INPUT Policy ProductCode
+VUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e1e4c8 1e1af98 1e1e560 1e341a8 0 0 0
+--Admin Charges--
+X20 1e1e560 1e1e4c8 0 1e1e980 0 0 2
+AC Admin Expense Charge
+'AC Admin Expense Charge'("C"; "")
+5
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X18 1e1e980 1e1e4c8 0 0 0 0 2
+AC Proj Mthly Total AdminFee Charge
+'AC Proj Mthly Total AdminFee Charge'("C";8; 0; 5; 12; "")
+5
+INPUT Policy ProductCode
+VUL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X20 1e341a8 1e1af98 0 0 0 0 2
+P_AC_Proj_Admin_Charge - VUL1LPA
+'OUTPUT AC Admin Expense Charge'("C")
+5
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2007
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+10000
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X0 1e34848 1e1f0c0 1e34ec0 1e37b60 0 0 0
+-- VUL2PA --
+X0 1e34ec0 1e34848 1e35100 1e35380 0 0 0
+--Rules--
+X18 1e35100 1e34ec0 0 0 0 0 2
+AC Admin Charge Rule Flat Amt
+'AC Admin Charge Rule Flat Amt'("C";1;8; 0; 4; 9; "01/01/2007";"")
+10
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Life CashValueAmount
+8000
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e35380 1e34848 1e35790 1e36728 0 0 0
+--Rate Access--
+X9 1e35790 1e35380 0 1e35b10 0 0 2
+AC Admin Charge Rule
+'AC Admin Charge Rule'(1)
+1000500030
+INPUT TransEffDate
+1/1/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X14 1e35b10 1e35380 0 1e36150 0 0 2
+AC Admin Charge FeeAmt
+'AC Admin Charge FeeAmt'("C";5;8;"")
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X17 1e36150 1e35380 0 0 0 0 2
+AC Admin Charge FeePct
+'AC Admin Charge FeePct'("C";8; 5;"")
+0.05
+INPUT Policy ProductCode
+VUL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e36728 1e34848 1e369a0 1e37668 0 0 0
+--Admin Charges--
+X20 1e369a0 1e36728 0 1e36c30 0 0 2
+AC Admin Expense Charge
+'AC Admin Expense Charge'("C"; "")
+5
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X18 1e36c30 1e36728 0 0 0 0 2
+AC Proj Mthly Total AdminFee Charge
+'AC Proj Mthly Total AdminFee Charge'("C";8; 0; 5; 12; "")
+5
+INPUT Policy ProductCode
+VUL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X19 1e37668 1e34848 0 0 0 0 2
+OUTPUT AC Admin Charge - VUL2PA
+'OUTPUT AC Admin Expense Charge'("C")
+5
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2007
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+3
+X0 1e37b60 1e1f0c0 1e381c0 0 0 0 0
+-- JSVUL1PA --
+X0 1e381c0 1e37b60 1e38250 1e386d0 0 0 0
+--Rules--
+X18 1e38250 1e381c0 0 0 0 0 2
+AC Admin Charge Rule Flat Amt
+'AC Admin Charge Rule Flat Amt'("C";1;8; 0; 4; 9; "01/01/2007";"")
+5
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Life CashValueAmount
+8000
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e386d0 1e37b60 1e389d0 1e39b30 0 0 0
+--Rate Access--
+X9 1e389d0 1e386d0 0 1e38ea8 0 0 2
+AC Admin Charge Rule
+'AC Admin Charge Rule'(1)
+1000500030
+INPUT TransEffDate
+1/1/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X14 1e38ea8 1e386d0 0 1e393f0 0 0 2
+AC Admin Charge FeeAmt
+'AC Admin Charge FeeAmt'("C";5;8;"")
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X17 1e393f0 1e386d0 0 0 0 0 2
+AC Admin Charge FeePct
+'AC Admin Charge FeePct'("C";8; 5;"")
+0.05
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+X0 1e39b30 1e37b60 1e39e00 1e3b0b0 0 0 0
+--Admin Charges--
+X26 1e39e00 1e39b30 0 1e3a2d8 0 0 2
+AC Admin Expense Charge
+'AC Admin Expense Charge'("C"; "")
+12
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Life CashValueAmt
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X25 1e3a2d8 1e39b30 0 0 0 0 2
+AC Proj Mthly Total AdminFee Charge
+'AC Proj Mthly Total AdminFee Charge'("C";8; 0; 5; 12; "")
+5
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+0
+INPUT Message Language
+9
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+X26 1e3b0b0 1e37b60 0 0 0 0 2
+OUTPUT AC Admin Charge - JSVUL1PA
+'OUTPUT AC Admin Expense Charge'("C")
+5
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2007
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+7000
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Life CashValueAmt
+7000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage BandCode
+3
+O0 1e0004c 0 0 0 0 0 0
+
+E0 1e000bc 0 0 0 0 0 0
+
+L0 1e0012c 0 0 0 0 0 0
+
+B0 1e002ec 0 0 0 0 0 0
+
+P3 1e0020c 0 1e3b9d8 0 0 0 2
+
+--description
+Calculations support administrative expense charges deducted from the contract account value, including support for per contract, per unit of coverage, and asset based administrative expense charges.çä çäThe ability to waive the administrative charge based on account value thresholds is supported.çä çäUp to 3 admin fee rules per contract are supported.çä çäRELEASE LOG:çäRELEASE 1301 - SCARAB/JIRA issues pA2118, PAD1213çäRELEASE WMA 1001 - ENH922çäRELEASE 1101 - PAC019 Rate Access via InputsçäRELEASE 1101 - PAC013 calcTypeçä
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 1e3b9d8 1e0020c 1e3ca48 0 0 0 2
+Universal/Variable Life
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Universal/Variable Life admin expense charges calculation model.çä Author:   Samuel Saundersçä Date:     01/08/2007çä Modification Log:çä Date              Modeler               Change Descriptionçä 01/08/2007     Sam Saunders     Created model.çä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"ULADMINEXPENSES.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P11 1e3ca48 1e3b9d8 0 0 0 0 2
+Admin Expense Charges
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT AC Admin Expense Charge(calcType)
+'AC Admin Expense Charge'(calcType;'GEN Vector Blank') // Pass empty vectorçä
+OUTPUT AC Admin Expense Charge by Duration(calcType;yearIndex;monthIndex)
+'AC Admin Expense Charge by Duration'(calcType;0;0;yearIndex;monthIndex;'GEN Vector Blank') // Pass empty vectorä
+OUTPUT AC Admin Expense Charge Admin FeeAmt(rateAssumption; yearIndex)
+CASE('PI CovOptionProduct Fee ChargeBasedOn'('CalcType Initial Vector'(rateAssumption);'Policy ProductCode';'Std MNLP coverageIndex'('CalcType Initial Vector'(rateAssumption));'Std MNLP coverageOptionIndex'('CalcType Initial Vector'(rateAssumption));2;'Policy EffDate');çä  "1000500024";"1000500030" : 'AC Admin Charge FeeAmt'('CalcType Initial Vector'(rateAssumption);2;yearIndex;'GEN Vector Blank');çä   : 0)çä
+OUTPUT AC Admin Expense Charge Expense FeeAmt(rateAssumption; yearIndex)
+CASE('PI CovOptionProduct Fee ChargeBasedOn'('CalcType Initial Vector'(rateAssumption);'Policy ProductCode';'Std MNLP coverageIndex'('CalcType Initial Vector'(rateAssumption));'Std MNLP coverageOptionIndex'('CalcType Initial Vector'(rateAssumption));8;'Policy EffDate');çä  "1000500024";"1000500030" : 'AC Admin Charge FeeAmt'('CalcType Initial Vector'(rateAssumption);8;yearIndex;'GEN Vector Blank');çä   : 0)çä
+OUTPUT AC Admin Expense Charge Admin FeePct(rateAssumption; yearIndex)
+IF ('PI CovOptionProduct Fee ChargeBasedOn'('CalcType Initial Vector'(rateAssumption);'Policy ProductCode';'Std MNLP coverageIndex'('CalcType Initial Vector'(rateAssumption));'Std MNLP coverageOptionIndex'('CalcType Initial Vector'(rateAssumption));2;'Policy EffDate') = 2 ; çä  'AC Admin Charge FeePct'('CalcType Initial Vector'(rateAssumption);2;yearIndex;'GEN Vector Blank') ; çä  0çä)
+OUTPUT AC Admin Expense Charge Expense FeePct(rateAssumption; yearIndex)
+IF ('PI CovOptionProduct Fee ChargeBasedOn'('CalcType Initial Vector'(rateAssumption);'Policy ProductCode';'Std MNLP coverageIndex'('CalcType Initial Vector'(rateAssumption));'Std MNLP coverageOptionIndex'('CalcType Initial Vector'(rateAssumption));8;'Policy EffDate') = 2 ; çä  'AC Admin Charge FeePct'('CalcType Initial Vector'(rateAssumption);8;yearIndex;'GEN Vector Blank') ; çä  0çä)
+OUTPUT AC Admin Expense Charge Admin FeePerUnit(rateAssumption; yearIndex)
+CASE('PI CovOptionProduct Fee ChargeBasedOn'('CalcType Initial Vector'(rateAssumption);'Policy ProductCode';'Std MNLP coverageIndex'('CalcType Initial Vector'(rateAssumption));'Std MNLP coverageOptionIndex'('CalcType Initial Vector'(rateAssumption));2;'Policy EffDate');çä  "1000500025";"1000500026" : 'AC Admin Charge FeePct'('CalcType Initial Vector'(rateAssumption);2;yearIndex;'GEN Vector Blank');çä   : 0)çä
+OUTPUT AC Admin Expense Charge Expense FeePerUnit(rateAssumption; yearIndex)
+CASE('PI CovOptionProduct Fee ChargeBasedOn'('CalcType Initial Vector'(rateAssumption);'Policy ProductCode';'Std MNLP coverageIndex'('CalcType Initial Vector'(rateAssumption));'Std MNLP coverageOptionIndex'('CalcType Initial Vector'(rateAssumption));8;'Policy EffDate');çä  "1000500025";"1000500026" : 'AC Admin Charge FeePct'('CalcType Initial Vector'(rateAssumption);8;yearIndex;'GEN Vector Blank');çä   : 0)çä
+F0 1e0027c 0 1e3d240 0 0 0 0
+
+F1 1e3d240 1e0027c 1e3d588 0 0 0 2
+:AC
+Funktion
+
+F1 1e3d588 1e3d240 1e3d900 1e40480 0 0 2
+--Total Admin Fees--
+Funktion
+
+F1 1e3d900 1e3d588 0 1e3dc60 0 0 2
+AC Admin Expense Charge(calcType; vectorSolveParms)
+Funktion
+'AC Proj Mthly Total AdminFee Charge'(calcType;'FeeType AdminFee';'Policy Life CashValueAmt';'Duration Year'(TransEffDate;'Policy EffDate');'Yearly Duration Month'(TransEffDate;'Policy EffDate');vectorSolveParms) + 'AC Proj Mthly Total AdminFee Charge'(calcType;'FeeType Expense';'Policy Life CashValueAmt';'Duration Year'(TransEffDate;'Policy EffDate');'Yearly Duration Month'(TransEffDate;'Policy EffDate');vectorSolveParms)
+F1 1e3dc60 1e3d588 1e3e440 49134093 0 0 2
+AC Proj Mthly Total AdminFee Charge(calcType; fee_type; cash_value; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*Calculating shadow account?*/ 'CalcType Shadow Is Active'(calcType) || 'CalcType SHGT Is Active'(calcType) ; çä   /*return shadow account admin fee*/ 'AC Projected ShadowAcct Monthly Total AdminFee Charge'(calcType;fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms) ; çä   // Sum of standard Primary, Secondary, and Tertiary administrative fee rulesçä'AC Projected Monthly AdminFee Charge'(calcType;1;'PI PolicyProduct Fee ChargeBasedOn'('Policy ProductCode';fee_type;'Policy EffDate');fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms) + 'AC Projected Monthly AdminFee Charge'(calcType;2;'PI PolicyProduct Fee SecondaryChargeBasedOn'('Policy ProductCode';fee_type;'Policy EffDate');fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms) + 'AC Projected Monthly AdminFee Charge'(calcType;3;'PI PolicyProduct Fee TertiaryChargeBasedOn'('Policy ProductCode';fee_type;'Policy EffDate');fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms)çä)
+F1 1e3e440 1e3dc60 1e3e7b0 1e3fc90 0 0 2
+AC Projected Monthly AdminFee Charge Sum Of Rules(calcType; admin_fee_rule; fee_type; cash_value; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'AC Projected Monthly AdminFee Charge Primary'(calcType;admin_fee_rule;fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms) + 'AC Projected Monthly AdminFee Charge Secondary'(calcType;admin_fee_rule;fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms) + 'AC Projected Monthly AdminFee Charge Tertiary'(calcType;admin_fee_rule;fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms)
+F1 1e3e7b0 1e3e440 0 1e3ebb8 0 0 2
+AC Projected Monthly AdminFee Charge Primary(calcType; admin_fee_rule; fee_type; cash_value; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'AC Projected Monthly AdminFee Charge'(calcType;1;admin_fee_rule;fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms)
+F1 1e3ebb8 1e3e440 0 1e3f058 0 0 2
+AC Projected Monthly AdminFee Charge Secondary(calcType; admin_fee_rule; fee_type; cash_value; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'AC Projected Monthly AdminFee Charge'(calcType;2;admin_fee_rule;fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms)
+F1 1e3f058 1e3e440 0 1e3f500 0 0 2
+AC Projected Monthly AdminFee Charge Tertiary(calcType;  admin_fee_rule; fee_type; cash_value; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'AC Projected Monthly AdminFee Charge'(calcType;3;admin_fee_rule;fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms)
+F1 1e3f500 1e3e440 0 0 0 0 2
+AC Projected Monthly AdminFee Charge(calcType; exp_charge_num; admin_fee_rule; fee_type; cash_value; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'ACCS CV Intermediate Round For CalcType'(CASE( /*Admin fee rule*/ admin_fee_rule;çä   /*Percent of Account value*/ "2" : 'AC Admin Charge Rule Acct Value Pct'(calcType;exp_charge_num;fee_type;cash_value;yearIndex;monthIndex;'Policy EffDate';vectorSolveParms);çä   /*Charge per unit*/ "9";"1000500025";"1000500026" : 'AC Admin Charge Rule Per Unit'(calcType;fee_type;yearIndex;monthIndex;vectorSolveParms);çä   /*Flat amount*/ "1000500024";"1000500030" : 'AC Admin Charge Rule Flat Amt'(calcType;exp_charge_num;fee_type;cash_value;yearIndex;monthIndex;'Policy EffDate';vectorSolveParms);çä   /*No Charge*/ "";"1000500022" : 0;çä   /*Else return error message*/  : 'Messages SystemMessage'("CA1014";'Message Language';v_('AC Model Name';"'AC Projected Monthly AdminFee Charge'";admin_fee_rule)))çä;calcType)
+F1 1e3fc90 1e3dc60 0 0 0 0 2
+AC Projected ShadowAcct Monthly Total AdminFee Charge(calcType; fee_type; cash_value; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+ // Sum of the Primary, Secondary, and Tertiary administrative fee rulesçä'AC Projected Monthly AdminFee Charge'(calcType;1;'PI CovOptionProduct Fee ChargeBasedOn'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate');fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms) + 'AC Projected Monthly AdminFee Charge'(calcType;2;'PI CovOptionProduct Fee SecondaryChargeBasedOn'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate');fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms) + 'AC Projected Monthly AdminFee Charge'(calcType;3;'PI CovOptionProduct Fee TertiaryChargeBasedOn'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate');fee_type;cash_value;yearIndex;monthIndex;vectorSolveParms)
+F1 49134093 1e3d588 0 0 0 0 2
+AC Admin Expense Charge by Duration(calcType;coverageIndex; coverageOptionIndex;yearIndex;monthIndex; vectorSolveParms)
+Funktion
+'AC Proj Mthly Total AdminFee Charge'(calcType;'FeeType AdminFee';'Policy Life CashValueAmt';yearIndex;monthIndex;vectorSolveParms) + 'AC Proj Mthly Total AdminFee Charge'(calcType;'FeeType Expense';'Policy Life CashValueAmt';yearIndex;monthIndex;vectorSolveParms)
+F1 1e40480 1e3d240 1e40820 1e41b58 0 0 2
+-- Admin Expense Charge Rules --
+Funktion
+
+F1 1e40820 1e40480 0 1e40fb0 0 0 2
+AC Admin Charge Rule Acct Value Pct(calcType; exp_charge_num;fee_type; cash_value; yearIndex; monthIndex; effectiveDate; vectorSolveParms)
+Funktion
+IF ( /*Charge applicable?*/ 'AC Admin Charge Applicable'(fee_type;yearIndex;monthIndex) ; çä  CASE( /*Waiver rule*/ 'AC Admin Charge Waiver Rule'(exp_charge_num);çä     //Waiver amount based on account valueçä"2" : IF ( /*Account value below waiver threshold*/ cash_value < 'PI PolicyProduct Fee FeeWaiverAmt'('Policy ProductCode';fee_type;effectiveDate) ; çä       /*Charge fee*/ MIN('AC Admin Charge FeePct'(calcType;fee_type;yearIndex;vectorSolveParms) //determines the policy fee as a percentage of the cash valueçä * cash_value;'AC Admin Charge FeeCapAmt'(fee_type;calcType;yearIndex;vectorSolveParms)) ; çä       /*Waive fee*/ 0çä    );çä   /*No waiver - charge fee*/  : MIN('AC Admin Charge FeePct'(calcType;fee_type;yearIndex;vectorSolveParms) //determines the policy fee as a percentage of the cash valueçä * cash_value;'AC Admin Charge FeeCapAmt'(fee_type;calcType;yearIndex;vectorSolveParms)))çä ; çä0çä)
+F1 1e40fb0 1e40480 0 1e41360 0 0 2
+AC Admin Charge Rule Per Unit(calcType; fee_type;  yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*Fee applicable*/ 'AC Admin Charge Applicable'(fee_type;yearIndex;monthIndex) ; çä   /*Return fee amount*/ 'AC Total Coverage Expense Charge'(calcType;fee_type;yearIndex;vectorSolveParms) ; çä   /*Zero if fee not applicable*/ 0çä)
+F1 1e41360 1e40480 0 1e41798 0 0 2
+AC Admin Charge Rule Flat Amt(calcType; exp_charge_num; fee_type; cash_value; yearIndex; monthIndex; effectiveDate; vectorSolveParms)
+Funktion
+IF ( /*Charge applicable?*/ 'AC Admin Charge Applicable'(fee_type;yearIndex;monthIndex) ; çä   /*Return fee amount*/ CASE( /*Waiver rule*/ 'AC Admin Charge Waiver Rule'(exp_charge_num);çä     //Waiver amount based on account valueçä"2" : IF ( /*Account value below waiver threshold*/ cash_value < 'PI PolicyProduct Fee FeeWaiverAmt'('Policy ProductCode';fee_type;effectiveDate) ; çä       /*Charge fee*/ 'AC Admin Charge FeeAmt'(calcType;fee_type;yearIndex;vectorSolveParms) ; çä       /*Waive fee*/ 0çä    );çä   /*No waiver - charge fee*/  : 'AC Admin Charge FeeAmt'(calcType;fee_type;yearIndex;vectorSolveParms))çä ; çä /*Zero fee if not applicable*/ 0çä)
+F1 1e41798 1e40480 0 0 0 0 2
+AC Admin Charge Applicable(fee_type; yearIndex; monthIndex)
+Funktion
+CASE( /*Fee mode*/ 'PI PolicyProduct Fee FeeMode'('Policy ProductCode';fee_type;'Policy EffDate');çä   // Annualçä1 : (monthIndex = 1);çä   // Semiannualçä2 : (monthIndex = 1) || (monthIndex = 7);çä   // Quarterlyçä3 : (monthIndex = 1) || (monthIndex = 4) || (monthIndex = 7) || (monthIndex = 10);çä   // Monthlyçä4 : 1;çä   // Else return error messageçä : 'Messages SystemMessage'("CA1011";'Message Language';v_('AC Model Name';"'AC Admin Charge Applicable'")))çä
+F1 1e41b58 1e3d240 1e41f50 1e45528 0 0 2
+--Plan and Rate Access Functions--
+Funktion
+
+F1 1e41f50 1e41b58 1e426e8 1e42f88 0 0 2
+AC Admin Charge FeeAmt(calcType; fee_type; yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Shadow account calculation*/ 'CalcType Shadow Is Active'(calcType) || 'CalcType SHGT Is Active'(calcType) ; çä   /*Return shadow account fee*/ 'AC ShadowAcct Admin Charge FeeAmt'(calcType;fee_type;yearIndex;vectorSolveParms) ; çä   // ElseçäIF ( /*Rate table not specified*/ 'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä     /*Get amount from product definition*/ 'PI PolicyProduct Fee FeeAmt'('Policy ProductCode';fee_type;'Policy EffDate') ; çä     /*Get amount from rate table*/ Rate('Policy ProductCode';'Calc Expense Rate Type'(calcType); //this function currently determines whether the charge is based on current or guaranteed ratesçäTransEffDate;'Vector AdminCharge Rate Parms'(calcType;yearIndex;'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate');vectorSolveParms))çä  )çä)
+F1 1e426e8 1e41f50 0 0 0 0 2
+AC ShadowAcct Admin Charge FeeAmt(calcType;  fee_type; yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Rate table not specified*/ 'PI CovOptionProduct Fee TableRef TableRefKey'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä   // TableRef not defined.  Get fee amount from FeeAmt in plan info.  çä'PI CovOptionProduct Fee FeeAmt'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate') ; çä   // TableRef defined.  Get fee expense from rate access.çäRate('Policy ProductCode' & "_" & 'Policy CovOption ProductCode'(calcType;'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType));'AC Calc Fee Rate Type'(fee_type;calcType);TransEffDate;'Vector AdminCharge Rate Parms'(calcType;yearIndex;'PI CovOptionProduct Fee TableRef TableRefKey'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate');vectorSolveParms))çä)
+F1 1e42f88 1e41b58 0 1e433b0 0 0 2
+AC Admin Charge FeeCapAmt(fee_type;calcType;yearIndex; vectorSolveParms)
+Funktion
+ //IF('PI Use Attributes'("PolicyProduct Fee FeeCapAmt");çä//'STD PolicyProduct Fee FeeCapAmt'(yearIndex);çäIF ( /*Rate table not specified*/ 'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä   /*Get amount from product definition*/ 'PI PolicyProduct Fee FeeCapAmt'('Policy ProductCode';fee_type;'Policy EffDate') ; çä   /*Get amount from rate table*/ Rate('Policy ProductCode';IF (LEFT('Calc Expense Rate Type'(calcType);1) EQUAL 'CalcType Current'(calcType) ; çä    "CEXPMAX" ; çä    "GEXPMAX"çä  );TransEffDate;'Vector AdminCharge Rate Parms'(calcType;yearIndex;'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate');vectorSolveParms))çä) //)ä
+F1 1e433b0 1e41b58 1e43b68 1e44428 0 0 2
+AC Admin Charge FeePct(calcType; fee_type;yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Shadow account calculation*/ 'CalcType Shadow Is Active'(calcType) || 'CalcType SHGT Is Active'(calcType) ; çä   /*Return shadow account fee*/ 'AC ShadowAcct Admin Charge FeePct'(calcType;yearIndex;fee_type;vectorSolveParms) ; çä   // ElseçäIF ( /*Rate table not specified*/ 'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä     /*Get percent from product definition*/ 'PI PolicyProduct Fee FeePct'('Policy ProductCode';fee_type;'Policy EffDate') ; çä     /*Get percent from rate table*/ Rate('Policy ProductCode';'Calc Expense Rate Type'(calcType); //this function currently determines whether the charge is based on current or guaranteed ratesçäTransEffDate;'Vector AdminCharge Rate Parms'(calcType;yearIndex;'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate');vectorSolveParms))çä  ) * 0.01çä)
+F1 1e43b68 1e433b0 0 0 0 0 2
+AC ShadowAcct Admin Charge FeePct(calcType; fee_type; yearIndex; vectorSolveParms)
+Funktion
+0.01 * IF ( /*Rate table not specified*/ 'PI CovOptionProduct Fee TableRef TableRefKey'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä   // Table not defined.  Get expense rate from FeePct in plan info.  çä'PI CovOptionProduct Fee FeePct'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate') ; çä   // Table defined.  Get fee expense from rate access.çäRate('Policy ProductCode' & "_" & 'Policy CovOption ProductCode'(calcType;'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType));'AC Calc Fee Rate Type'(fee_type;calcType);TransEffDate;'Vector AdminCharge Rate Parms'(calcType;yearIndex;'PI CovOptionProduct Fee TableRef TableRefKey'(calcType;'Policy ProductCode';'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType);fee_type;'Policy EffDate');vectorSolveParms))çä) //)ä
+F1 1e44428 1e41b58 0 1e44868 0 0 2
+AC Admin Charge FeeWaiverAmt(fee_type;calcType;yearIndex; vectorSolveParms)
+Funktion
+ //IF('PI Use Attributes'("PolicyProduct Fee FeeWaiverAmt");çä//'STD PolicyProduct Fee FeeWaiverAmt'(yearIndex);çäIF ( /*Rate table not specified*/ 'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä   /*Get amount from product definition*/ 'PI PolicyProduct Fee FeeWaiverAmt'('Policy ProductCode';fee_type;'Policy EffDate') ; çä   /*Get amount from rate table*/ Rate('Policy ProductCode';IF (LEFT('Calc Expense Rate Type'(calcType);1) EQUAL 'CalcType Current'(calcType) ; çä    "CEXPMAX" ; çä    "GEXPMAX"çä  );TransEffDate;'Vector AdminCharge Rate Parms'(calcType;yearIndex;'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate');vectorSolveParms))çä) //)ä
+F1 1e44868 1e41b58 0 1e44c98 0 0 2
+AC Admin Charge Rule(exp_charge_num)
+Funktion
+CASE( /*Expense charge rule number*/ exp_charge_num;çä   // Primaryçä1 : 'PI PolicyProduct Fee ChargeBasedOn'('Policy ProductCode';'FeeType Expense';'Policy EffDate');çä   // Secondaryçä2 : 'PI PolicyProduct Fee SecondaryChargeBasedOn'('Policy ProductCode';'FeeType Expense';'Policy EffDate');çä   // Tertiaryçä3 : 'PI PolicyProduct Fee TertiaryChargeBasedOn'('Policy ProductCode';'FeeType Expense';'Policy EffDate');çä   // All others not supportedçä : 0)çä
+F1 1e44c98 1e41b58 0 2102be3d 0 0 2
+AC Admin Charge Waiver Rule(exp_charge_num)
+Funktion
+CASE( /*Expense charge rule number*/ exp_charge_num;çä   /*Same waiver rule for all three fee rules*/ 1..3 : 'PI PolicyProduct Fee FeeWaiverBasedOn'('Policy ProductCode';'FeeType Expense';'Policy EffDate');çä   /*No waiver for other rules*/  : 0)çä
+F1 2102be3d 1e41b58 0 0 0 0 2
+Vector AdminCharge Rate Parms(calcType; yearIndex;table_identity; vectorSolveParms)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;0;0);yearIndex;'Policy LifeParticipant IssueGender'(calcType;0;0);'Policy LifeParticipant UnderwritingClass'(calcType;0;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;0;0;yearIndex);IF ( /*Solve face amount or policy record face amount?*///'Std Calling System Is Illustration Based' && çä 'SharedVector SolveParms FaceAmount Passed'('Std BaseCov Index'(calcType);vectorSolveParms) ; çä  'Policy Coverage BandCode given FA'(calcType;0;yearIndex;'SharedVector SolveParms FaceAmount'('Std BaseCov Index'(calcType);vectorSolveParms;yearIndex)) ; çä  'Policy Coverage BandCode'(calcType;0;yearIndex)çä);'Policy Jurisdiction';table_identity;1 // Rule codeçä)
+F1 1e45528 1e3d240 1e45970 1e467b8 0 0 2
+--Expense Charge per unit coverage--
+Funktion
+
+F1 1e45970 1e45528 1e45d90 0 0 0 2
+AC Total Coverage Expense Charge(calcType; fee_type;  yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Charge applicable?*/ yearIndex <= 'AC Policy Year Max' ; çä   /*return sum of charges across active base coverages*/ SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;IF ('CalcType Target Is Active'(calcType) || 'CalcType 7702 Is Active'(calcType) ; çä    TransEffDur ; çä    yearIndexçä  )) - 1;IF ( /*Coverage is active base*/ ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;#coverageIndex))) &&  //'Coverage Is InForce'(calcType; #coverageIndex; 'Increase Date By Years'('Policy EffDate'; yearIndex - 1); yearIndex); âçä'Std Coverage Is InForce'(calcType;#coverageIndex;'Increase Date By Years'('Policy EffDate';yearIndex - 1);yearIndex) ; çä   /*Return expense charge*/ 'AC Expense Charge Per Coverage'(calcType;#coverageIndex;fee_type;yearIndex;vectorSolveParms) ; çä   // Only apply expense charges to base coverages.  Riders will have different expense rates.çä0çä)) ; çä // Elseçä0çä)
+F1 1e45d90 1e45970 0 1e46368 0 0 2
+AC Expense Charge Per Coverage(calcType; coverageIndex; fee_type; yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Solve face amount or policy record face amount?*/ 'SharedVector SolveParms FaceAmount Passed'(coverageIndex;vectorSolveParms) ; çä  IF (coverageIndex = 0 ; çä    'SharedVector SolveParms FaceAmount'(coverageIndex;vectorSolveParms;yearIndex) ; çä    0çä  ) ; çä'Policy Coverage CurrentAmt'(calcType;coverageIndex;yearIndex)çä) / 'PI CoverageProduct ValuePerUnit'(calcType;'Policy ProductCode';coverageIndex;'Policy EffDate') * 'AC Admin Charge FeePct'(calcType;fee_type;yearIndex;vectorSolveParms)
+F1 1e46368 1e45970 0 0 0 0 2
+AC Policy Year Max
+Funktion
+120
+F1 1e467b8 1e3d240 1e46c00 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 1e46c00 1e467b8 0 1e47080 0 0 2
+AC Calc Fee Rate Type( fee_type;calcType)
+Funktion
+CASE( /*Fee type*/ fee_type;çä   // Administrative Feeçä2 : "POLFEE";çä   // Expense Chargeçä8 : 'RateType Qualifier For CalcType'(calcType) & "EXP";çä   // Else not supported by this modelçä : 'GEN Vector Blank')çä
+F1 1e47080 1e467b8 0 0 0 0 2
+AC Model Name
+Funktion
+"ULAdminExpenses"
+A0 1e0035c 0 0 0 0 0 0
+
+T0 1e003cc 0 0 0 0 0 0
+
+I0 1e0043c 0 1e47518 0 0 0 0
+
+I0 1e47518 1e0043c 0 0 0 0 0
+ACCESS.pms
+-
+O0
+E0
+L0
+B0
+P2
+1e3b9d8
+1e3ca48
+F33
+1e3d240
+1e3d588
+1e3d900
+1e3dc60
+1e3e440
+1e3e7b0
+1e3ebb8
+1e3f058
+1e3f500
+1e3fc90
+49134093
+1e40480
+1e40820
+1e40fb0
+1e41360
+1e41798
+1e41b58
+1e41f50
+1e426e8
+1e42f88
+1e433b0
+1e43b68
+1e44428
+1e44868
+1e44c98
+2102be3d
+1e45528
+1e45970
+1e45d90
+1e46368
+1e467b8
+1e46c00
+1e47080
+A0
+T0
+!34
+1e3ca48 3 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+1e3ca48 4 -1
+Modification log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä09/08/2008 VPM028âNew property to allow requests by specified duration.
+1e3ca48 5 -1
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä11/19/2010 ENH922 CMC added OUTPUT for debug reporting purposes
+1e3ca48 6 -1
+çäModification Log:çä11/19/2010 ENH922 CMC added OUTPUT for debug reporting purposes
+1e3ca48 7 -1
+çäModification Log:çä11/19/2010 ENH922 CMC added OUTPUT for debug reporting purposes
+1e3ca48 8 -1
+çäModification Log:çä11/19/2010 ENH922 CMC added OUTPUT for debug reporting purposes
+1e3ca48 9 -1
+çäModification Log:çä11/19/2010 ENH922 CMC added OUTPUT for debug reporting purposes
+1e3ca48 10 -1
+çäModification Log:çä11/19/2010 ENH922 CMC added OUTPUT for debug reporting purposes
+1e3d900 -2 -2
+Description: Admin charge amount.  çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3dc60 -2 -2
+Description:  Returns the total projected admin fee charges for the month.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/28/2010 ENH922 JL Add Shadow Target Premium ("SHGT") calctypeçä03/07/2008 CSC Illustrations ILLUS001 Rename CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+1e3e440 -2 -2
+Description:  Returns the projected admin fee charge for the month for the sum of the primary, secondary, and tertiary admin fee rules.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3e7b0 -2 -2
+Description:  Returns the projected admin fee charge for the month for the primary admin fee rule.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3ebb8 -2 -2
+Description:  Returns the projected admin fee charge for the month for the secondary admin fee rule.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3f058 -2 -2
+Description:  Returns the projected admin fee charge for the month for the tertiary admin fee rule.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3f500 -2 -2
+Description:  Returns the projected admin fee charge for the month for the particular admin fee rule.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä01/07/2010 - pA1001 - Performance - BT - wrong parms were being used in "AC Admin Charge Rule Acct Value Pct" so it was updated to fix computes in AdmExChg1.UTVçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä02/18/2009 CMC Change in the name of the rounding number of decimals function to be less product line specific.çä10/31/2007 CSC Initial Calculation/Rule
+1e3fc90 -2 -2
+Description:  Returns the total administrative fee for the particular shadow account.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+49134093 -2 -2
+Description: Admin charge amount.  çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä09/08/2008 - VPM028âNew calculation to allow requests by specified duration.çä10/31/2007 CSC Initial Calculation/Rule
+1e40820 -2 -2
+Description: Admin Charge = pct of account valueçä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä10/31/2007 CSC Initial Calculation/Rule
+1e40fb0 -2 -2
+Description: Admin charge based on a per unit basis/ per coverageçä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e41360 -2 -2
+Description: Returns the flat admin chargeçä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä10/31/2007 CSC Initial Calculation/Rule
+1e41798 -2 -2
+Description: Function checks whether a admin charge is applicable based on policy durationçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1e41f50 -2 -2
+Description: Admin charge amount.  çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/9/2011 - PAC013 calcType - BT - Restructureçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/8/2010 - PAC019 - Rate Access Var - BT - remove since PI includes inputçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/28/2010 ENH922 JL Add Shadow Target Premium ("SHGT") calctypeçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä03/07/2008 CSC Illustrations ILLUS001 Rename CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+1e426e8 -2 -2
+Description:  Returns the fee amount for a shadow account admin or expense fee.çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä1/12/2011 - PAC013 calcType - BT - Restructureçä8/24/2010 - PAC019 - Rate Access Var - BT - remove new inputçä8/13/2010 - PAC019 Rate Access Var - BT - add new inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä10/31/2007 CSC Initial Calculation/Rule
+1e42f88 -2 -2
+Description: Admin charge percent.  çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/8/2010 - PAC019 - Rate Access Var - BT - remove since PI includes inputçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä10/31/2007 CSC Initial Calculation/Rule
+1e433b0 -2 -2
+Description: Admin charge percent.  çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/7/2010 - PAC019 Rate Access Var - BT - remove since input exists in PIçä8/13/2010 - PAC019 Rate Access Var - BT - add new inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/28/2010 ENH922 JL Add Shadow Target Premium ("SHGT") calctypeçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä03/07/2008 CSC Illustrations ILLUS001 Rename CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+1e43b68 -2 -2
+Description: Returns the shadow account expense rate.çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä1/12/2011 - PAC013 calcType - BT - Restructureçä8/24/2010 - PAC019 - Rate Access Var - BT - remove new inputçä8/13/2010 - PAC019 Rate Access Var - BT - add new inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä10/31/2007 CSC Initial Calculation/Rule
+1e44428 -2 -2
+Description: Admin waiver amount.  çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/7/2010 - PAC019 - Rate Access Var - BT - remove since input exists in PIçä8/13/2010 - PAC019 Rate Access Var - BT - add new inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä10/31/2007 CSC Initial Calculation/Rule
+1e44868 -2 -2
+Description: Returns the admin expense charge rule for the rule number specified.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1e44c98 -2 -2
+Description: Returns the rule to calculate the fee waiver amount.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+2102be3d -2 -2
+Description: Parameter functionçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/27/2010 pA RegTest JL - Take out prev change...çä05/27/2010 pA RegTest JL - Only Proj calcse pull FA from vector for BandCode - current calcs get from Inputçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä10/11/2009 - PAC009 - JL - Add vectorSolveParms, if FA given in vectorSolveParms, use BandCode given FA function (for solves)çä08/25/2009 CMC Updated to use the band code entryçä10/31/2007 CSC Initial Calculation/Ruleçä
+1e45970 -2 -2
+Description: Total Admin charge percent.  çä çäModification Log:çä02/14/2013 - PAD1213 - JL - Use "Std Coverage is Inforce" instead of "Coverage is Inforce"çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - DT - PA1013 - added parm yearIndex to 'Coverage Is InForce'çä02/16/2009 - wdp - PA1001 - changed Policy Number of Coverage to use either TransEffDur or yearIndex, depending on what is appropriate for calctype (has specifid effect in case of face amount increases)çä10/31/2007 CSC Initial Calculation/Rule
+1e45d90 -2 -2
+Description: Admin charge percent.  çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä10/11/2009 - PAC009 - JL - Add vectorSolveParmsçä10/31/2007 CSC Initial Calculation/Rule
+1e46368 -2 -2
+Description: Constant representing the policy year maximum for the calculations.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1e46c00 -2 -2
+Description: Returns the rate type to use based on the calcType and the fee_type.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

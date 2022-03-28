@@ -7,3 +7,4 @@ edition = "2018"
 
 [dependencies]
 substring = "1"
+walkdir = "2"

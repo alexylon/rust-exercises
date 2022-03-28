@@ -1,0 +1,1829 @@
+;1	08.12.2016 13:33:06	jlawrie2	
+X0 1e00184 0 0 0 0 0 0
+
+O0 1e0004c 0 0 0 0 0 0
+
+E0 1e000b4 0 0 0 0 0 0
+
+L0 1e0011c 0 0 0 0 0 0
+
+B0 1e002bc 0 0 0 0 0 0
+
+P1 1e001ec 0 1e1f088 0 0 0 2
+
+--description
+This model includes all VERA extension tables. It is included in the VERA_Tables model. Input variable assignment (for CyberLife) occurs in "T_ExtModule" under tables.çä çäRELEASE LOG:çäRELEASE 1101 - PAC011 DERA&VERA
+P13 1e1f088 1e001ec 0 0 0 0 2
+VERA tables model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"VERA tables model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"VERA_tables.pms"
+OUTPUT Source Version Number
+0 //'GEN VersionInfo'ä
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 1e00254 0 1e1f228 0 0 0 0
+
+F1 1e1f228 1e00254 1e1f340 0 0 0 2
+--VERA table access functions--
+Funktion
+
+F1 1e1f340 1e1f228 1e30d98 1e114c8 0 0 2
+--Current COIs--
+Funktion
+
+F1 1e30d98 1e1f340 0 1e30f88 0 0 2
+f_select_and_ult_curr_COI(duration)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_select_and_ult_curr_COI[duration].curr_COI
+F1 1e30f88 1e1f340 0 1e31170 0 0 2
+f_select_and_ult_curr_COI_cov(duration; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_curr_COI[duration]("curr_COI_cov" & cov_index)
+F1 1e31170 1e1f340 0 1e312c0 0 0 2
+f_attained_age_curr_COI(attained_age)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_attained_age_curr_COI[attained_age].curr_COI
+F1 1e312c0 1e1f340 0 1e311e0 0 0 2
+f_attained_age_curr_COI_cov(attained_age; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_attained_age_curr_COI[attained_age]("curr_COI_cov" & cov_index)
+F1 1e311e0 1e1f340 0 1e41998 0 0 2
+f_select_and_ult_curr_COI_joint(duration)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_select_and_ult_curr_COI_joint[duration].curr_COI
+F1 1e41998 1e1f340 0 1e41ba0 0 0 2
+f_select_and_ult_curr_COI_cov_joint(duration; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_curr_COI_joint[duration]("curr_COI_cov" & cov_index)
+F1 1e41ba0 1e1f340 0 1e41de0 0 0 2
+f_attained_age_curr_COI_joint(attained_age)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_attained_age_curr_COI_joint[attained_age].curr_COI
+F1 1e41de0 1e1f340 0 1e41ed8 0 0 2
+f_attained_age_curr_COI_cov_joint(attained_age; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_attained_age_curr_COI_joint[attained_age]("curr_COI_cov" & cov_index)
+F1 1e41ed8 1e1f340 0 1e11260 0 0 2
+f_select_and_ult_curr_COI_ben(duration; benefit_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_supp_ben_curr_COI[duration]("ben" & benefit_index)
+F1 1e11260 1e1f340 0 0 0 0 2
+f_attained_age_curr_COI_ben(attained_age; benefit_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_supp_ben_curr_COI[attained_age]("ben" & benefit_index)
+F1 1e114c8 1e1f228 1e11598 1e11df8 0 0 2
+--Guaranteed COIs--
+Funktion
+
+F1 1e11598 1e114c8 0 1e11740 0 0 2
+f_attained_age_guar_COI(attained_age)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_attained_age_guar_COI[attained_age].guar_COI
+F1 1e11740 1e114c8 0 30f211fb 0 0 2
+f_attained_age_guar_COI_cov(attained_age; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_attained_age_guar_COI[attained_age]("guar_COI_cov" & cov_index)
+F1 30f211fb 1e114c8 0 3a0a6acc 0 0 2
+f_attained_age_guar_COI_joint(attained_age)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_attained_age_guar_COI_joint[attained_age].guar_COI
+F1 3a0a6acc 1e114c8 0 1e119c0 0 0 2
+f_attained_age_guar_COI_cov_joint(attained_age; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_attained_age_guar_COI_joint[attained_age]("guar_COI_cov" & cov_index)
+F1 1e119c0 1e114c8 0 1e11b68 0 0 2
+f_select_and_ult_guar_COI(duration)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_select_and_ult_guar_COI[duration].guar_COI
+F1 1e11b68 1e114c8 0 0 0 0 2
+f_select_and_ult_guar_COI_cov(duration; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_guar_COI[duration]("guar_COI_cov" & cov_index)
+F1 1e11df8 1e1f228 1e11fa0 58d48256 0 0 2
+--Term Rider COIs--
+Funktion
+
+F1 1e11fa0 1e11df8 0 1e12090 0 0 2
+f_select_and_ult_curr_COI_TR(duration; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_select_and_ult_curr_COI[duration]("curr_COI_TR" & rider_index)
+F1 1e12090 1e11df8 0 1e12250 0 0 2
+f_attained_age_curr_COI_TR(attained_age; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_attained_age_curr_COI[attained_age]("curr_COI_TR" & rider_index)
+F1 1e12250 1e11df8 0 1e12348 0 0 2
+f_select_and_ult_curr_COI_TR_joint(duration; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_select_and_ult_curr_COI_joint[duration]("curr_COI_TR" & rider_index)
+F1 1e12348 1e11df8 0 1e12610 0 0 2
+f_attained_age_curr_COI_TR_joint(attained_age; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_attained_age_curr_COI_joint[attained_age]("curr_COI_TR" & rider_index)
+F1 1e12610 1e11df8 0 1e127d0 0 0 2
+f_select_and_ult_guar_COI_TR(duration; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_select_and_ult_guar_COI[duration]("guar_COI_TR" & rider_index)
+F1 1e127d0 1e11df8 0 0 0 0 2
+f_attained_age_guar_COI_TR(attained_age; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_attained_age_guar_COI[attained_age]("guar_COI_TR" & rider_index)
+F1 58d48256 1e1f228 253ab637 4de8dc7a 0 0 2
+--Policy Protection Account COIs--
+Funktion
+
+F1 253ab637 58d48256 0 103cc27b 0 0 2
+f_select_and_ult_PPA_COI(duration)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_select_and_ult_PPA_COI[duration].PPA_COI
+F1 103cc27b 58d48256 0 3e0954cd 0 0 2
+f_select_and_ult_PPA_COI_cov(duration; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_PPA_COI[duration]("PPA_COI_cov" & cov_index)
+F1 3e0954cd 58d48256 0 34d6f1f9 0 0 2
+f_attained_age_PPA_COI(attained_age)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_attained_age_PPA_COI[attained_age].PPA_COI
+F1 34d6f1f9 58d48256 0 0 0 0 2
+f_attained_age_PPA_COI_cov(attained_age; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_attained_age_PPA_COI[attained_age]("PPA_COI_cov" & cov_index)
+F1 4de8dc7a 1e1f228 446578ee e589b1e 0 0 2
+--Current Premiums-
+Funktion
+
+F1 446578ee 4de8dc7a 0 7fb7b5c8 0 0 2
+f_select_and_ult_curr_PRM(duration)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_select_and_ult_curr_PRM[duration].curr_PRM
+F1 7fb7b5c8 4de8dc7a 0 213b1002 0 0 2
+f_select_and_ult_curr_PRM_cov(duration; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_curr_PRM[duration]("curr_PRM_cov" & cov_index)
+F1 213b1002 4de8dc7a 0 7e2e3492 0 0 2
+f_attained_age_curr_PRM(attained_age)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_attained_age_curr_PRM[attained_age].curr_PRM
+F1 7e2e3492 4de8dc7a 0 6aec7919 0 0 2
+f_attained_age_curr_PRM_cov(attained_age; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_attained_age_curr_PRM[attained_age]("curr_PRM_cov" & cov_index)
+F1 6aec7919 4de8dc7a 0 388044b0 0 0 2
+f_select_and_ult_curr_PRM_ben(duration; benefit_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_supp_ben_curr_PRM[duration]("ben" & benefit_index)
+F1 388044b0 4de8dc7a 0 0 0 0 2
+f_attained_age_curr_PRM_ben(attained_age; benefit_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_supp_ben_curr_PRM[attained_age]("ben" & benefit_index)
+F1 e589b1e 1e1f228 73454e31 e148f34 0 0 2
+--Guaranteed Premiums--
+Funktion
+
+F1 73454e31 e589b1e 0 6166f6ff 0 0 2
+f_select_and_ult_guar_PRM(duration)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_select_and_ult_guar_PRM[duration].guar_PRM
+F1 6166f6ff e589b1e 0 1cb90ed5 0 0 2
+f_select_and_ult_guar_PRM_cov(duration; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_select_and_ult_guar_PRM[duration]("guar_PRM_cov" & cov_index)
+F1 1cb90ed5 e589b1e 0 a83295a 0 0 2
+f_attained_age_guar_PRM(attained_age)
+Funktion
+ // This function is used to access rates using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_attained_age_guar_PRM[attained_age].guar_PRM
+F1 a83295a e589b1e 0 0 0 0 2
+f_attained_age_guar_PRM_cov(attained_age; cov_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_attained_age_guar_PRM[attained_age]("guar_PRM_cov" & cov_index)
+F1 e148f34 1e1f228 1e8d3a67 0 0 0 2
+--Term Rider Preimums--
+Funktion
+
+F1 1e8d3a67 e148f34 0 63aa7262 0 0 2
+f_select_and_ult_curr_PRM_TR(duration; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_select_and_ult_curr_PRM[duration]("curr_PRM_TR" & rider_index)
+F1 63aa7262 e148f34 0 954fa0b 0 0 2
+f_attained_age_curr_PRM_TR(attained_age; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_attained_age_curr_PRM[attained_age]("curr_PRM_TR" & rider_index)
+F1 954fa0b e148f34 0 435b9424 0 0 2
+f_select_and_ult_guar_PRM_TR(duration; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_select_and_ult_guar_PRM[duration]("guar_PRM_TR" & rider_index)
+F1 435b9424 e148f34 0 0 0 0 2
+f_attained_age_guar_PRM_TR(attained_age; rider_index)
+Funktion
+ // This function is used to access rates using a multiple node approachçä// ie, attributes are indexed arrays. çäT_TR_attained_age_guar_PRM[attained_age]("guar_PRM_TR" & rider_index)
+A0 1e00324 0 0 0 0 0 0
+
+T0 1e0038c 0 1e12990 0 0 0 0
+
+T80 1e12990 1e0038c 1e12d48 0 0 0 2
+T_ExtModule
+$MODUL
+CKVPMVRA
+POLNUM
+'VERA POLNUM'
+ECM_DEBUG
+'VERA ECM_DEBUG'
+DCBADDRESS
+'VERA DCBADDRESS'
+USERID
+'VERA USERID'
+EFFECTIVEDATE
+'VERA EFFECTIVEDATE'
+ISSUEAGE
+'VERA ISSUEAGE'
+PDFSEARCHKEY
+'VERA PDFSEARCHKEY'
+GENERICCSOCODE
+'VERA GENERICCSOCODE'
+SEXCODE
+'VERA SEXCODE'
+RATECLASS
+'VERA RATECLASS'
+BAND
+'VERA BAND'
+ISSUEAGECOV(cov_index)
+'VERA ISSUEAGECOV'(cov_index)
+PDFSEARCHKEYCOV(cov_index)
+'VERA PDFSEARCHKEYCOV'(cov_index)
+GENERICCSOCODECOV(cov_index)
+'VERA GENERICCSOCODECOV'(cov_index)
+SEXCODECOV(cov_index)
+'VERA SEXCODECOV'(cov_index)
+RATECLASSCOV(cov_index)
+'VERA RATECLASSCOV'(cov_index)
+BANDCOV(cov_index)
+'VERA BANDCOV'(cov_index)
+JOINTISSUEAGE
+'VERA JOINTISSUEAGE'
+JOINTSEXCODE
+'VERA JOINTSEXCODE'
+JOINTRATECLASS
+'VERA JOINTRATECLASS'
+JOINTISSUEAGECOV(cov_index)
+'VERA JOINTISSUEAGECOV'(cov_index)
+JOINTSEXCODECOV(cov_index)
+'VERA JOINTSEXCODECOV'(cov_index)
+JOINTRATECLASSCOV(cov_index)
+'VERA JOINTRATECLASSCOV'(cov_index)
+EFFECTIVEDATEGUAR
+'VERA EFFECTIVEDATEGUAR'
+EFFECTIVEDATEGUARCOV(cov_index)
+'VERA EFFECTIVEDATEGUARCOV'(cov_index)
+RENEWALCLASS
+'VERA RENEWALCLASS'
+PERSONCODE
+'VERA PERSONCODE'
+PERSONSEQ
+'VERA PERSONSEQ'
+RENEWALCLASSCOV(cov_index)
+'VERA RENEWALCLASSCOV'(cov_index)
+ISSUEAGEBEN(benefit_index)
+'VERA ISSUEAGEBEN'(benefit_index)
+PDFSEARCHKEYBEN(benefit_index)
+'VERA PDFSEARCHKEYBEN'(benefit_index)
+GENERICCSOCODEBEN(benefit_index)
+'VERA GENERICCSOCODEBEN'(benefit_index)
+SEXCODEBEN(benefit_index)
+'VERA SEXCODEBEN'(benefit_index)
+RATECLASSBEN(benefit_index)
+'VERA RATECLASSBEN'(benefit_index)
+BANDBEN(benefit_index)
+'VERA BANDBEN'(benefit_index)
+BENEFITTYPE(benefit_index)
+'VERA BENEFITTYPE'(benefit_index)
+BENEFITSUBTYPE(benefit_index)
+'VERA BENEFITSUBTYPE'(benefit_index)
+BENRENEWALIND(benefit_index)
+'VERA BENRENEWALIND'(benefit_index)
+ISSUEAGETR(rider_index)
+'VERA ISSUEAGETR'(rider_index)
+PDFSEARCHKEYTR(rider_index)
+'VERA PDFSEARCHKEYTR'(rider_index)
+GENERICCSOCODETR(rider_index)
+'VERA GENERICCSOCODETR'(rider_index)
+SEXCODETR(rider_index)
+'VERA SEXCODETR'(rider_index)
+RATECLASSTR(rider_index)
+'VERA RATECLASSTR'(rider_index)
+BANDTR(rider_index)
+'VERA BANDTR'(rider_index)
+JOINTISSUEAGETR(rider_index)
+'VERA JOINTISSUEAGETR'(rider_index)
+JOINTSEXCODETR(rider_index)
+'VERA JOINTSEXCODETR'(rider_index)
+JOINTRATECLASSTR(rider_index)
+'VERA JOINTRATECLASSTR'(rider_index)
+EFFECTIVEDATEGUARTR(rider_index)
+'VERA EFFECTIVEDATEGUARTR'(rider_index)
+RENEWALCLASSTR(rider_index)
+'VERA RENEWALCLASSTR'(rider_index)
+PRODLINECODE
+'VERA PRODLINECODE'
+INITRENEWPRD
+'VERA INITRENEWPRD'
+SUBRENEWDUR
+'VERA SUBRENEWDUR'
+SUBRENEWPRD
+'VERA SUBRENEWPRD'
+PRODLINECODECOV(cov_index)
+'VERA PRODLINECODECOV'(cov_index)
+INITRENEWPRDCOV(cov_index)
+'VERA INITRENEWPRDCOV'(cov_index)
+SUBRENEWDURCOV(cov_index)
+'VERA SUBRENEWDURCOV'(cov_index)
+SUBRENEWPRDCOV(cov_index)
+'VERA SUBRENEWPRDCOV'(cov_index)
+INITGRENEWPRD
+'VERA INITGRENEWPRD'
+SUBGRENEWDUR
+'VERA SUBGRENEWDUR'
+SUBGRENEWPRD
+'VERA SUBGRENEWPRD'
+INITGRENEWPRDCOV(cov_index)
+'VERA INITGRENEWPRDCOV'(cov_index)
+SUBGRENEWDURCOV(cov_index)
+'VERA SUBGRENEWDURCOV'(cov_index)
+SUBGRENEWPRDCOV(cov_index)
+'VERA SUBGRENEWPRDCOV'(cov_index)
+PRODLINECODEBEN(benefit_index)
+'VERA PRODLINECODEBEN'(benefit_index)
+PRODLINECODETR(rider_index)
+'VERA PRODLINECODETR'(rider_index)
+INITRENEWPRDTR(rider_index)
+'VERA INITRENEWPRDTR'(rider_index)
+SUBRENEWDURTR(rider_index)
+'VERA SUBRENEWDURTR'(rider_index)
+SUBRENEWPRDTR(rider_index)
+'VERA SUBRENEWPRDTR'(rider_index)
+INITGRENEWPRDTR(rider_index)
+'VERA INITGRENEWPRDTR'(rider_index)
+SUBGRENEWDURTR(rider_index)
+'VERA SUBGRENEWDURTR'(rider_index)
+SUBGRENEWPRDTR(rider_index)
+'VERA SUBGRENEWPRDTR'(rider_index)
+PDFSEARCHKEYPPA
+'VERA PDFSEARCHKEYPPA'
+PDFEFFDATE
+'VERA PDFEFFDATE'
+PDFVERSION
+'VERA PDFVERSION'
+IAFVERSION
+'VERA IAFVERSION'
+PDFSEARCHKEYPPACOV(cov_index)
+'VERA PDFSEARCHKEYPPACOV'(cov_index)
+PDFEFFDATECOV(cov_index)
+'VERA PDFEFFDATECOV'(cov_index)
+PDFVERSIONCOV(cov_index)
+'VERA PDFVERSIONCOV'(cov_index)
+IAFVERSIONCOV(cov_index)
+'VERA IAFVERSIONCOV'(cov_index)
+T2 1e12d48 1e12990 0 1e14c28 0 0 2
+T_CV_TBL
+No
+Cash_Val
+1
+y
+T1 1e14c28 1e12990 0 1e14d08 0 0 2
+--Guaranteed COI tables--
+key
+value
+T2 1e14d08 1e12990 0 eb3624d 0 0 22
+T_attained_age_guar_COI
+attained_age
+guar_COI
+guar_COI_cov0
+guar_COI_cov1
+guar_COI_cov2
+guar_COI_cov3
+guar_COI_cov4
+guar_COI_cov5
+guar_COI_cov6
+guar_COI_cov7
+guar_COI_cov8
+guar_COI_cov9
+guar_COI_cov10
+guar_COI_cov11
+guar_COI_cov12
+guar_COI_cov13
+guar_COI_cov14
+guar_COI_cov15
+guar_COI_cov16
+guar_COI_cov17
+guar_COI_cov18
+guar_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 eb3624d 1e12990 0 1e15570 0 0 22
+T_attained_age_guar_COI_joint
+attained_age
+guar_COI
+guar_COI_cov0
+guar_COI_cov1
+guar_COI_cov2
+guar_COI_cov3
+guar_COI_cov4
+guar_COI_cov5
+guar_COI_cov6
+guar_COI_cov7
+guar_COI_cov8
+guar_COI_cov9
+guar_COI_cov10
+guar_COI_cov11
+guar_COI_cov12
+guar_COI_cov13
+guar_COI_cov14
+guar_COI_cov15
+guar_COI_cov16
+guar_COI_cov17
+guar_COI_cov18
+guar_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e15570 1e12990 0 1e15b98 0 0 22
+T_select_and_ult_guar_COI
+duration
+guar_COI
+guar_COI_cov0
+guar_COI_cov1
+guar_COI_cov2
+guar_COI_cov3
+guar_COI_cov4
+guar_COI_cov5
+guar_COI_cov6
+guar_COI_cov7
+guar_COI_cov8
+guar_COI_cov9
+guar_COI_cov10
+guar_COI_cov11
+guar_COI_cov12
+guar_COI_cov13
+guar_COI_cov14
+guar_COI_cov15
+guar_COI_cov16
+guar_COI_cov17
+guar_COI_cov18
+guar_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 1e15b98 1e12990 0 1e15c60 0 0 2
+--Current COI tables--
+key
+value
+T2 1e15c60 1e12990 0 1e16298 0 0 22
+T_select_and_ult_curr_COI
+duration
+curr_COI
+curr_COI_cov0
+curr_COI_cov1
+curr_COI_cov2
+curr_COI_cov3
+curr_COI_cov4
+curr_COI_cov5
+curr_COI_cov6
+curr_COI_cov7
+curr_COI_cov8
+curr_COI_cov9
+curr_COI_cov10
+curr_COI_cov11
+curr_COI_cov12
+curr_COI_cov13
+curr_COI_cov14
+curr_COI_cov15
+curr_COI_cov16
+curr_COI_cov17
+curr_COI_cov18
+curr_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e16298 1e12990 0 1e168c0 0 0 22
+T_select_and_ult_curr_COI_joint
+duration
+curr_COI
+curr_COI_cov0
+curr_COI_cov1
+curr_COI_cov2
+curr_COI_cov3
+curr_COI_cov4
+curr_COI_cov5
+curr_COI_cov6
+curr_COI_cov7
+curr_COI_cov8
+curr_COI_cov9
+curr_COI_cov10
+curr_COI_cov11
+curr_COI_cov12
+curr_COI_cov13
+curr_COI_cov14
+curr_COI_cov15
+curr_COI_cov16
+curr_COI_cov17
+curr_COI_cov18
+curr_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e168c0 1e12990 0 1e16ee0 0 0 22
+T_attained_age_curr_COI
+attained_age
+curr_COI
+curr_COI_cov0
+curr_COI_cov1
+curr_COI_cov2
+curr_COI_cov3
+curr_COI_cov4
+curr_COI_cov5
+curr_COI_cov6
+curr_COI_cov7
+curr_COI_cov8
+curr_COI_cov9
+curr_COI_cov10
+curr_COI_cov11
+curr_COI_cov12
+curr_COI_cov13
+curr_COI_cov14
+curr_COI_cov15
+curr_COI_cov16
+curr_COI_cov17
+curr_COI_cov18
+curr_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e16ee0 1e12990 0 1e17508 0 0 22
+T_attained_age_curr_COI_joint
+attained_age
+curr_COI
+curr_COI_cov0
+curr_COI_cov1
+curr_COI_cov2
+curr_COI_cov3
+curr_COI_cov4
+curr_COI_cov5
+curr_COI_cov6
+curr_COI_cov7
+curr_COI_cov8
+curr_COI_cov9
+curr_COI_cov10
+curr_COI_cov11
+curr_COI_cov12
+curr_COI_cov13
+curr_COI_cov14
+curr_COI_cov15
+curr_COI_cov16
+curr_COI_cov17
+curr_COI_cov18
+curr_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e17508 1e12990 0 1e17ab8 0 0 22
+T_supp_ben_curr_COI
+age
+rate
+ben0
+ben1
+ben2
+ben3
+ben4
+ben5
+ben6
+ben7
+ben8
+ben9
+ben10
+ben11
+ben12
+ben13
+ben14
+ben15
+ben16
+ben17
+ben18
+ben19
+1
+y single node NA
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e17ab8 1e12990 0 1e18048 0 0 22
+T_select_and_ult_supp_ben_curr_COI
+duration
+rate
+ben0
+ben1
+ben2
+ben3
+ben4
+ben5
+ben6
+ben7
+ben8
+ben9
+ben10
+ben11
+ben12
+ben13
+ben14
+ben15
+ben16
+ben17
+ben18
+ben19
+1
+y single node NA
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 1e18048 1e12990 0 1e180e8 0 0 2
+--Term Rider COI tables--
+key
+value
+T2 1e180e8 1e12990 0 1e18718 0 0 22
+T_TR_select_and_ult_curr_COI
+duration
+curr_COI
+curr_COI_TR0
+curr_COI_TR1
+curr_COI_TR2
+curr_COI_TR3
+curr_COI_TR4
+curr_COI_TR5
+curr_COI_TR6
+curr_COI_TR7
+curr_COI_TR8
+curr_COI_TR9
+curr_COI_TR10
+curr_COI_TR11
+curr_COI_TR12
+curr_COI_TR13
+curr_COI_TR14
+curr_COI_TR15
+curr_COI_TR16
+curr_COI_TR17
+curr_COI_TR18
+curr_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e18718 1e12990 0 1e18d48 0 0 22
+T_TR_select_and_ult_curr_COI_joint
+duration
+curr_COI
+curr_COI_TR0
+curr_COI_TR1
+curr_COI_TR2
+curr_COI_TR3
+curr_COI_TR4
+curr_COI_TR5
+curr_COI_TR6
+curr_COI_TR7
+curr_COI_TR8
+curr_COI_TR9
+curr_COI_TR10
+curr_COI_TR11
+curr_COI_TR12
+curr_COI_TR13
+curr_COI_TR14
+curr_COI_TR15
+curr_COI_TR16
+curr_COI_TR17
+curr_COI_TR18
+curr_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e18d48 1e12990 0 1e19370 0 0 22
+T_TR_attained_age_curr_COI
+attained_age
+curr_COI
+curr_COI_TR0
+curr_COI_TR1
+curr_COI_TR2
+curr_COI_TR3
+curr_COI_TR4
+curr_COI_TR5
+curr_COI_TR6
+curr_COI_TR7
+curr_COI_TR8
+curr_COI_TR9
+curr_COI_TR10
+curr_COI_TR11
+curr_COI_TR12
+curr_COI_TR13
+curr_COI_TR14
+curr_COI_TR15
+curr_COI_TR16
+curr_COI_TR17
+curr_COI_TR18
+curr_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e19370 1e12990 0 1e199a0 0 0 22
+T_TR_attained_age_curr_COI_joint
+attained_age
+curr_COI
+curr_COI_TR0
+curr_COI_TR1
+curr_COI_TR2
+curr_COI_TR3
+curr_COI_TR4
+curr_COI_TR5
+curr_COI_TR6
+curr_COI_TR7
+curr_COI_TR8
+curr_COI_TR9
+curr_COI_TR10
+curr_COI_TR11
+curr_COI_TR12
+curr_COI_TR13
+curr_COI_TR14
+curr_COI_TR15
+curr_COI_TR16
+curr_COI_TR17
+curr_COI_TR18
+curr_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e199a0 1e12990 0 1e19fc8 0 0 22
+T_TR_select_and_ult_guar_COI
+duration
+guar_COI
+guar_COI_TR0
+guar_COI_TR1
+guar_COI_TR2
+guar_COI_TR3
+guar_COI_TR4
+guar_COI_TR5
+guar_COI_TR6
+guar_COI_TR7
+guar_COI_TR8
+guar_COI_TR9
+guar_COI_TR10
+guar_COI_TR11
+guar_COI_TR12
+guar_COI_TR13
+guar_COI_TR14
+guar_COI_TR15
+guar_COI_TR16
+guar_COI_TR17
+guar_COI_TR18
+guar_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1e19fc8 1e12990 0 13ce137e 0 0 22
+T_TR_attained_age_guar_COI
+attained_age
+guar_COI
+guar_COI_TR0
+guar_COI_TR1
+guar_COI_TR2
+guar_COI_TR3
+guar_COI_TR4
+guar_COI_TR5
+guar_COI_TR6
+guar_COI_TR7
+guar_COI_TR8
+guar_COI_TR9
+guar_COI_TR10
+guar_COI_TR11
+guar_COI_TR12
+guar_COI_TR13
+guar_COI_TR14
+guar_COI_TR15
+guar_COI_TR16
+guar_COI_TR17
+guar_COI_TR18
+guar_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 13ce137e 1e12990 0 452a3890 0 0 2
+--Policy Protection Account COI tables--
+key
+value
+T2 452a3890 1e12990 0 3814b800 0 0 22
+T_select_and_ult_PPA_COI
+duration
+PPA_COI
+PPA_COI_cov0
+PPA_COI_cov1
+PPA_COI_cov2
+PPA_COI_cov3
+PPA_COI_cov4
+PPA_COI_cov5
+PPA_COI_cov6
+PPA_COI_cov7
+PPA_COI_cov8
+PPA_COI_cov9
+PPA_COI_cov10
+PPA_COI_cov11
+PPA_COI_cov12
+PPA_COI_cov13
+PPA_COI_cov14
+PPA_COI_cov15
+PPA_COI_cov16
+PPA_COI_cov17
+PPA_COI_cov18
+PPA_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 3814b800 1e12990 0 651b7ad4 0 0 22
+T_attained_age_PPA_COI
+attained_age
+PPA_COI
+PPA_COI_cov0
+PPA_COI_cov1
+PPA_COI_cov2
+PPA_COI_cov3
+PPA_COI_cov4
+PPA_COI_cov5
+PPA_COI_cov6
+PPA_COI_cov7
+PPA_COI_cov8
+PPA_COI_cov9
+PPA_COI_cov10
+PPA_COI_cov11
+PPA_COI_cov12
+PPA_COI_cov13
+PPA_COI_cov14
+PPA_COI_cov15
+PPA_COI_cov16
+PPA_COI_cov17
+PPA_COI_cov18
+PPA_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 651b7ad4 1e12990 0 164d8526 0 0 2
+--Current Premium tables--
+key
+value
+T2 164d8526 1e12990 0 61949a9f 0 0 22
+T_select_and_ult_curr_PRM
+duration
+curr_PRM
+curr_PRM_cov0
+curr_PRM_cov1
+curr_PRM_cov2
+curr_PRM_cov3
+curr_PRM_cov4
+curr_PRM_cov5
+curr_PRM_cov6
+curr_PRM_cov7
+curr_PRM_cov8
+curr_PRM_cov9
+curr_PRM_cov10
+curr_PRM_cov11
+curr_PRM_cov12
+curr_PRM_cov13
+curr_PRM_cov14
+curr_PRM_cov15
+curr_PRM_cov16
+curr_PRM_cov17
+curr_PRM_cov18
+curr_PRM_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 61949a9f 1e12990 0 5e09957b 0 0 22
+T_attained_age_curr_PRM
+attained_age
+curr_PRM
+curr_PRM_cov0
+curr_PRM_cov1
+curr_PRM_cov2
+curr_PRM_cov3
+curr_PRM_cov4
+curr_PRM_cov5
+curr_PRM_cov6
+curr_PRM_cov7
+curr_PRM_cov8
+curr_PRM_cov9
+curr_PRM_cov10
+curr_PRM_cov11
+curr_PRM_cov12
+curr_PRM_cov13
+curr_PRM_cov14
+curr_PRM_cov15
+curr_PRM_cov16
+curr_PRM_cov17
+curr_PRM_cov18
+curr_PRM_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 5e09957b 1e12990 0 1899954a 0 0 22
+T_select_and_ult_supp_ben_curr_PRM
+duration
+rate
+ben0
+ben1
+ben2
+ben3
+ben4
+ben5
+ben6
+ben7
+ben8
+ben9
+ben10
+ben11
+ben12
+ben13
+ben14
+ben15
+ben16
+ben17
+ben18
+ben19
+1
+y single node NA
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 1899954a 1e12990 0 57199322 0 0 22
+T_supp_ben_curr_PRM
+attained_age
+rate
+ben0
+ben1
+ben2
+ben3
+ben4
+ben5
+ben6
+ben7
+ben8
+ben9
+ben10
+ben11
+ben12
+ben13
+ben14
+ben15
+ben16
+ben17
+ben18
+ben19
+1
+y single node NA
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 57199322 1e12990 0 2748d7b4 0 0 2
+--Guaranteed Premium tables--
+key
+value
+T2 2748d7b4 1e12990 0 6d815a7f 0 0 22
+T_select_and_ult_guar_PRM
+duration
+guar_PRM
+guar_PRM_cov0
+guar_PRM_cov1
+guar_PRM_cov2
+guar_PRM_cov3
+guar_PRM_cov4
+guar_PRM_cov5
+guar_PRM_cov6
+guar_PRM_cov7
+guar_PRM_cov8
+guar_PRM_cov9
+guar_PRM_cov10
+guar_PRM_cov11
+guar_PRM_cov12
+guar_PRM_cov13
+guar_PRM_cov14
+guar_PRM_cov15
+guar_PRM_cov16
+guar_PRM_cov17
+guar_PRM_cov18
+guar_PRM_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 6d815a7f 1e12990 0 2f58942d 0 0 22
+T_attained_age_guar_PRM
+attained_age
+guar_PRM
+guar_PRM_cov0
+guar_PRM_cov1
+guar_PRM_cov2
+guar_PRM_cov3
+guar_PRM_cov4
+guar_PRM_cov5
+guar_PRM_cov6
+guar_PRM_cov7
+guar_PRM_cov8
+guar_PRM_cov9
+guar_PRM_cov10
+guar_PRM_cov11
+guar_PRM_cov12
+guar_PRM_cov13
+guar_PRM_cov14
+guar_PRM_cov15
+guar_PRM_cov16
+guar_PRM_cov17
+guar_PRM_cov18
+guar_PRM_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 2f58942d 1e12990 0 152d6551 0 0 2
+--Term Rider Premium tables--
+key
+value
+T2 152d6551 1e12990 0 5cdfef1d 0 0 22
+T_TR_select_and_ult_curr_PRM
+duration
+curr_PRM
+curr_PRM_TR0
+curr_PRM_TR1
+curr_PRM_TR2
+curr_PRM_TR3
+curr_PRM_TR4
+curr_PRM_TR5
+curr_PRM_TR6
+curr_PRM_TR7
+curr_PRM_TR8
+curr_PRM_TR9
+curr_PRM_TR10
+curr_PRM_TR11
+curr_PRM_TR12
+curr_PRM_TR13
+curr_PRM_TR14
+curr_PRM_TR15
+curr_PRM_TR16
+curr_PRM_TR17
+curr_PRM_TR18
+curr_PRM_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 5cdfef1d 1e12990 0 33d22b83 0 0 22
+T_TR_attained_age_curr_PRM
+attained_age
+curr_PRM
+curr_PRM_TR0
+curr_PRM_TR1
+curr_PRM_TR2
+curr_PRM_TR3
+curr_PRM_TR4
+curr_PRM_TR5
+curr_PRM_TR6
+curr_PRM_TR7
+curr_PRM_TR8
+curr_PRM_TR9
+curr_PRM_TR10
+curr_PRM_TR11
+curr_PRM_TR12
+curr_PRM_TR13
+curr_PRM_TR14
+curr_PRM_TR15
+curr_PRM_TR16
+curr_PRM_TR17
+curr_PRM_TR18
+curr_PRM_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 33d22b83 1e12990 0 16e2bdcf 0 0 22
+T_TR_select_and_ult_guar_PRM
+duration
+guar_PRM
+guar_PRM_TR0
+guar_PRM_TR1
+guar_PRM_TR2
+guar_PRM_TR3
+guar_PRM_TR4
+guar_PRM_TR5
+guar_PRM_TR6
+guar_PRM_TR7
+guar_PRM_TR8
+guar_PRM_TR9
+guar_PRM_TR10
+guar_PRM_TR11
+guar_PRM_TR12
+guar_PRM_TR13
+guar_PRM_TR14
+guar_PRM_TR15
+guar_PRM_TR16
+guar_PRM_TR17
+guar_PRM_TR18
+guar_PRM_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 16e2bdcf 1e12990 0 0 0 0 22
+T_TR_attained_age_guar_PRM
+attained_age
+guar_PRM
+guar_PRM_TR0
+guar_PRM_TR1
+guar_PRM_TR2
+guar_PRM_TR3
+guar_PRM_TR4
+guar_PRM_TR5
+guar_PRM_TR6
+guar_PRM_TR7
+guar_PRM_TR8
+guar_PRM_TR9
+guar_PRM_TR10
+guar_PRM_TR11
+guar_PRM_TR12
+guar_PRM_TR13
+guar_PRM_TR14
+guar_PRM_TR15
+guar_PRM_TR16
+guar_PRM_TR17
+guar_PRM_TR18
+guar_PRM_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+I0 68d2252c 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P1
+1e1f088
+F18
+1e1f228
+1e1f340
+1e30d98
+1e30f88
+1e31170
+1e312c0
+1e311e0
+1e41998
+1e41ba0
+1e41de0
+1e41ed8
+1e11260
+1e114c8
+1e11df8
+58d48256
+4de8dc7a
+e589b1e
+e148f34
+A0
+T36
+1e12990
+1e12d48
+1e14c28
+1e14d08
+eb3624d
+1e15570
+1e15b98
+1e15c60
+1e16298
+1e168c0
+1e16ee0
+1e17508
+1e17ab8
+1e18048
+1e180e8
+1e18718
+1e18d48
+1e19370
+1e199a0
+1e19fc8
+13ce137e
+452a3890
+3814b800
+651b7ad4
+164d8526
+61949a9f
+5e09957b
+1899954a
+57199322
+2748d7b4
+6d815a7f
+2f58942d
+152d6551
+5cdfef1d
+33d22b83
+16e2bdcf
+!41
+1e30d98 -2 -2
+Description: Select and Ultimate Current COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e30f88 -2 -2
+Description: Select and Ultimate Current COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e31170 -2 -2
+Description: Attained Age Current COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e312c0 -2 -2
+Description: Attained Age Current COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e311e0 -2 -2
+Description: Select and Ultimate Current Joint COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e41998 -2 -2
+Description: Select and Ultimate Current Joint COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e41ba0 -2 -2
+Description: Attained Age Current Joint COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e41de0 -2 -2
+Description: Attained Age Current Joint COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e41ed8 -2 -2
+Description: Select and Ultimate Guaranteed COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e11260 -2 -2
+Description: Select and Ultimate Guaranteed COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e11598 -2 -2
+Description: Attained Age Guaranteed COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e11740 -2 -2
+Description: Attained Age Guaranteed COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+30f211fb -2 -2
+Description: Attained Age Guaranteed Joint COI.çä çäModification Log:çä11/09/2010 PAC011 DERA&VERA JL Initial calculation/function.
+3a0a6acc -2 -2
+Description: Attained Age Guaranteed Joint COI by Coverage.çä çäModification Log:çä11/09/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e119c0 -2 -2
+Description: Select and Ultimate Current COI by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e11b68 -2 -2
+Description: Attained Age Current COI by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e11fa0 -2 -2
+Description: Select and Ultimate Current COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e12090 -2 -2
+Description: Attained Age Current COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e12250 -2 -2
+Description: Select and Ultimate Current Joint COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e12348 -2 -2
+Description: Attained Age Current Joint COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e12610 -2 -2
+Description: Select and Ultimate Guaranteed COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e127d0 -2 -2
+Description: Attained Age Guaranteed COI Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+253ab637 -2 -2
+Description: Select and Ultimate Current Policy Protection Account COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+103cc27b -2 -2
+Description: Select and Ultimate Current Policy Protection Account COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+3e0954cd -2 -2
+Description: Attained Age Current Policy Protection Account COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+34d6f1f9 -2 -2
+Description: Attained Age Current Policy Protection Account by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+446578ee -2 -2
+Description: Select and Ultimate Current Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+7fb7b5c8 -2 -2
+Description: Select and Ultimate Current Premium Rate by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+213b1002 -2 -2
+Description: Attained Age Current Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+7e2e3492 -2 -2
+Description: Attained Age Current Premium Rate by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+6aec7919 -2 -2
+Description: Select and Ultimate Current Premium Rate by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+388044b0 -2 -2
+Description: Attained Age Current Premium Rate by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+73454e31 -2 -2
+Description: Select and Ultimate Guaranteed Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+6166f6ff -2 -2
+Description: Select and Ultimate Guaranteed Premium Rate by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1cb90ed5 -2 -2
+Description: Attained Age Guaranteed Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+a83295a -2 -2
+Description: Attained Age Guaranteed Premium Rate by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e8d3a67 -2 -2
+Description: Select and Ultimate Current Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+63aa7262 -2 -2
+Description: Attained Age Current Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+954fa0b -2 -2
+Description: Select and Ultimate Guaranteed Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+435b9424 -2 -2
+Description: Attained Age Guaranteed Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e12990 -2 -2
+Description: External Module Linking Table. $MODUL specifies the parm name to be passed; CKVPMVRA specifies the value to assign to each variable.çä çäModification Log:çä11/09/2010 PAC011 DERA&VERA JL Initail Table
+;Offset=00000000

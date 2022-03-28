@@ -1,0 +1,6255 @@
+;1	08.12.2016 13:29:32	jlawrie2	
+X0 19a410c 0 19a4818 0 0 0 0
+
+X0 19a4818 19a410c 19a48b0 0 0 0 0
+-- All Test Cases --
+X0 19a48b0 19a4818 19a4980 1a57670 0 0 0
+-- Option A, 5 Coverages, Corridor DB --
+X9 19a4980 19a48b0 0 19a4e28 0 0 2
+NAAR Initial NAAR Coverage Index
+'NAAR Initial NAAR Coverage Index'("C")
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+X10 19a4e28 19a48b0 0 1a507b8 0 0 2
+NAAR Last NAAR Coverage Index
+'NAAR Last NAAR Coverage Index'("C")
+3
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+1
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+Input TransEffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy EffDate
+01/01/2006
+X30 1a507b8 19a48b0 0 1a50a98 0 0 2
+NAAR Total DB No Corridor
+'NAAR Total DB No Corridor'("C"; 510000; 200000;  5; 1)
+0
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+1
+Input TransEffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X26 1a50a98 19a48b0 0 19a5740 0 0 2
+NAAR Corridor DB
+'NAAR Corridor DB'("C"; 510000; 5)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 19a5740 19a48b0 0 19a6290 0 0 2
+NAAR Corridor Amount
+'NAAR Corridor Amount'("C"; 510000; 200000; 5;1)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X46 19a6290 19a48b0 0 19a9828 0 0 2
+NAAR Total DeathBenefit
+'NAAR Total DeathBenefit'("C"; 510000; 200000; 5;1; "")
+0
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X21 19a9828 19a48b0 0 19aabf8 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 0
+'NAAR Coverage NetAmountAtRisk'("C"; 0; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[4]
+1
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X24 19aabf8 19a48b0 0 19ab148 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 1
+'NAAR Coverage NetAmountAtRisk'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage LifeCovStatus
+3
+INPUT Policy Coverage CurrentAmt[1]
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage DeathBenefitOptType
+0
+INPUT Message Language
+English
+X25 19ab148 19a48b0 0 19abb28 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 2
+'NAAR Coverage NetAmountAtRisk'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X46 19abb28 19a48b0 0 19ac440 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 3
+'NAAR Coverage NetAmountAtRisk'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X25 19ac440 19a48b0 0 19ad538 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 4
+'NAAR Coverage NetAmountAtRisk'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage LifeCovStatus
+3
+INPUT Policy Coverage CurrentAmt[4]
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage DeathBenefitOptType
+0
+INPUT Message Language
+English
+X20 19ad538 19a48b0 0 19ad288 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 0
+'NAAR Discounted Coverage NetRisk DB'("C"; 0; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X10 19ad288 19a48b0 0 19ae2f0 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 1
+'NAAR Discounted Coverage NetRisk DB'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X21 19ae2f0 19a48b0 0 19ae758 0 0 2
+NAAR Discounted Coverage NetRisk DB - Coverage 2
+'NAAR Discounted Coverage NetRisk DB'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+X46 19ae758 19a48b0 0 19aefa8 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 3
+'NAAR Discounted Coverage NetRisk DB'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X11 19aefa8 19a48b0 0 1a53f70 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 4
+'NAAR Discounted Coverage NetRisk DB'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X20 1a53f70 19a48b0 0 1a55188 0 0 2
+NAAR Coverage Allocated CV- Coverage 0
+'NAAR Coverage Allocated CV'("C"; 0; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X20 1a55188 19a48b0 0 1a55590 0 0 2
+NAAR Coverage Allocated CV- Coverage 1
+'NAAR Coverage Allocated CV'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X24 1a55590 19a48b0 0 1a55d48 0 0 2
+NAAR Coverage Allocated CV- Coverage 2
+'NAAR Coverage Allocated CV'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X45 1a55d48 19a48b0 0 1a567f8 0 0 2
+NAAR Coverage Allocated CV- Coverage 3
+'NAAR Coverage Allocated CV'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X45 1a567f8 19a48b0 0 0 0 0 2
+NAAR Coverage Allocated CV- Coverage 4
+'NAAR Coverage Allocated CV'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X0 1a57670 19a4818 1a581b0 1a670d8 0 0 0
+-- Option B, 5 Coverages, Corridor DB --
+X9 1a581b0 1a57670 0 1a58488 0 0 2
+NAAR Initial NAAR Coverage Index
+'NAAR Initial NAAR Coverage Index'("C")
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+X11 1a58488 1a57670 0 1a58890 0 0 2
+NAAR Last NAAR Coverage Index
+'NAAR Last NAAR Coverage Index'("C")
+3
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+1
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+Input TransEffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy EffDate
+01/01/2006
+X30 1a58890 1a57670 0 1a58b18 0 0 2
+NAAR Total DB No Corridor
+'NAAR Total DB No Corridor'("C"; 510000; 200000;  5; 1)
+510000
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+2
+Input TransEffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X26 1a58b18 1a57670 0 1a59288 0 0 2
+NAAR Corridor DB
+'NAAR Corridor DB'("C"; 510000; 5)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 1a59288 1a57670 0 1a59be8 0 0 2
+NAAR Corridor Amount
+'NAAR Corridor Amount'("C"; 510000; 200000; 5; 1)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X46 1a59be8 1a57670 0 1a5ad88 0 0 2
+NAAR Total DeathBenefit
+'NAAR Total DeathBenefit'("C"; 510000; 510000; 5; 1; "")
+510000
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X19 1a5ad88 1a57670 0 1a5c1b8 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 0
+'NAAR Coverage NetAmountAtRisk'("C"; 0; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X24 1a5c1b8 1a57670 0 1a5c6a8 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 1
+'NAAR Coverage NetAmountAtRisk'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage LifeCovStatus
+2
+INPUT Policy Coverage CurrentAmt[1]
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage DeathBenefitOptType
+0
+INPUT Message Language
+English
+X25 1a5c6a8 1a57670 0 1a5d0e8 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 2
+'NAAR Coverage NetAmountAtRisk'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X45 1a5d0e8 1a57670 0 1a5db30 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 3
+'NAAR Coverage NetAmountAtRisk'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X25 1a5db30 1a57670 0 1a5e998 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 4
+'NAAR Coverage NetAmountAtRisk'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage LifeCovStatus
+2
+INPUT Policy Coverage CurrentAmt[4]
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage DeathBenefitOptType
+0
+INPUT Message Language
+English
+X20 1a5e998 1a57670 0 1a5f4d8 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 0
+'NAAR Discounted Coverage NetRisk DB'("C"; 0; 510000; 200000; 5; 1)
+508540.033070457
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X10 1a5f4d8 1a57670 0 1a5f8f8 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 1
+'NAAR Discounted Coverage NetRisk DB'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X21 1a5f8f8 1a57670 0 1a5feb8 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 2
+'NAAR Discounted Coverage NetRisk DB'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+X46 1a5feb8 1a57670 0 1a60520 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 3
+'NAAR Discounted Coverage NetRisk DB'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X11 1a60520 1a57670 0 1a639d0 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 4
+'NAAR Discounted Coverage NetRisk DB'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X20 1a639d0 1a57670 0 1a646c8 0 0 2
+NAAR Coverage Allocated CV- Coverage 0
+'NAAR Coverage Allocated CV'("C"; 0; 510000; 200000; 5; 1)
+508540.033070457
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X20 1a646c8 1a57670 0 1a64c70 0 0 2
+NAAR Coverage Allocated CV- Coverage 1
+'NAAR Coverage Allocated CV'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X25 1a64c70 1a57670 0 1a65428 0 0 2
+NAAR Coverage Allocated CV- Coverage 2
+'NAAR Coverage Allocated CV'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X45 1a65428 1a57670 0 1a65e78 0 0 2
+NAAR Coverage Allocated CV- Coverage 3
+'NAAR Coverage Allocated CV'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X45 1a65e78 1a57670 0 0 0 0 2
+NAAR Coverage Allocated CV- Coverage 4
+'NAAR Coverage Allocated CV'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X0 1a670d8 19a4818 1a67f90 1a77bf0 0 0 0
+-- Option C, 5 Coverages, Corridor DB --
+X9 1a67f90 1a670d8 0 1a68268 0 0 2
+NAAR Initial NAAR Coverage Index
+'NAAR Initial NAAR Coverage Index'("C")
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+X9 1a68268 1a670d8 0 1a688c8 0 0 2
+NAAR Last NAAR Coverage Index
+'NAAR Last NAAR Coverage Index'("C")
+3
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+1
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+Input TransEffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy EffDate
+01/01/2006
+X30 1a688c8 1a670d8 0 1a68ae0 0 0 2
+NAAR Total DB No Corridor
+'NAAR Total DB No Corridor'("C"; 510000; 200000;  5; 1)
+200000
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+3
+Input TransEffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X28 1a68ae0 1a670d8 0 1a693b0 0 0 2
+NAAR Corridor DB
+'NAAR Corridor DB'("C"; 510000; 5)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+X45 1a693b0 1a670d8 0 1a69d10 0 0 2
+NAAR Corridor Amount
+'NAAR Corridor Amount'("C"; 510000; 200000; 5; 1)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X45 1a69d10 1a670d8 0 1a6b288 0 0 2
+NAAR Total DeathBenefit
+'NAAR Total DeathBenefit'("C"; 510000; 200000; 200000; 1; "")
+200000
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X19 1a6b288 1a670d8 0 1a6c2a0 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 0
+'NAAR Coverage NetAmountAtRisk'("C"; 0; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X24 1a6c2a0 1a670d8 0 1a6c868 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 1
+'NAAR Coverage NetAmountAtRisk'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage LifeCovStatus
+2
+INPUT Policy Coverage CurrentAmt[1]
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage DeathBenefitOptType
+0
+INPUT Message Language
+English
+X24 1a6c868 1a670d8 0 1a6d150 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 2
+'NAAR Coverage NetAmountAtRisk'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X46 1a6d150 1a670d8 0 1a6dc30 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 3
+'NAAR Coverage NetAmountAtRisk'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X21 1a6dc30 1a670d8 0 1a6f010 0 0 2
+NAAR Coverage NetAmountAtRisk- Coverage 4
+'NAAR Coverage NetAmountAtRisk'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage LifeCovStatus
+3
+X19 1a6f010 1a670d8 0 1a6fb38 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 0
+'NAAR Discounted Coverage NetRisk DB'("C"; 0; 510000; 200000; 5; 1)
+199427.463949199
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X10 1a6fb38 1a670d8 0 1a6ff18 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 1
+'NAAR Discounted Coverage NetRisk DB'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X20 1a6ff18 1a670d8 0 1a70500 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 2
+'NAAR Discounted Coverage NetRisk DB'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+X45 1a70500 1a670d8 0 1a70d00 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 3
+'NAAR Discounted Coverage NetRisk DB'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X11 1a70d00 1a670d8 0 1a73f48 0 0 2
+NAAR Discounted Coverage NetRisk DB- Coverage 4
+'NAAR Discounted Coverage NetRisk DB'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X19 1a73f48 1a670d8 0 1a750f0 0 0 2
+NAAR Coverage Allocated CV- Coverage 0
+'NAAR Coverage Allocated CV'("C"; 0; 510000; 200000; 5; 1)
+199427.463949199
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+X20 1a750f0 1a670d8 0 1a75728 0 0 2
+NAAR Coverage Allocated CV- Coverage 1
+'NAAR Coverage Allocated CV'("C"; 1; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X24 1a75728 1a670d8 0 1a75ec8 0 0 2
+NAAR Coverage Allocated CV- Coverage 2
+'NAAR Coverage Allocated CV'("C"; 2; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+X45 1a75ec8 1a670d8 0 1a769a8 0 0 2
+NAAR Coverage Allocated CV- Coverage 3
+'NAAR Coverage Allocated CV'("C"; 3; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X45 1a769a8 1a670d8 0 0 0 0 2
+NAAR Coverage Allocated CV- Coverage 4
+'NAAR Coverage Allocated CV'("C"; 4; 510000; 200000; 5; 1)
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+200000
+INPUT Policy Coverage DeathBenefitOptType
+3
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode[4]
+3
+INPUT Policy Coverage LifeCovStatus[4]
+2
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+3
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage CurrentAmount[2]
+300000
+INPUT Policy number of Coverage
+5
+INPUT Policy Coverage IndicatorCode[3]
+3
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage CurrentAmount[3]
+500000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage CurrentAmt[2]
+0
+INPUT Policy Coverage CurrentAmt[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage TermDate[2]
+12/31/2999
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage TermDate[3]
+12/31/2999
+X9 1a77bf0 19a4818 0 1a78f20 0 0 2
+NAAR Discount Factor
+'NAAR Discount Factor'("C")
+1.00287089871908
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X3 1a78f20 19a4818 0 1a79268 0 0 2
+NAAR Corridor Percent
+'NAAR Corridor Percent'(35; 1)
+2.50
+INPUT Calling System
+CL
+INPUT Policy ProductCode
+UL1PA
+X21 1a79268 19a4818 3d6a3940 2e751d24 0 0 2
+NAAR Corridor Attained Age
+'NAAR Corridor Attained Age'("C"; 1)
+25
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Message Language
+9
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0;1]
+6
+INPUT Policy LifeParticipant IssueAge[0;1]
+25
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X21 3d6a3940 1a79268 0 3e6c2bc0 0 0 2
+NAAR Corridor Issue Age
+NAAR Corridor Issue Age("C")
+25
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Message Language
+9
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0;1]
+6
+INPUT Policy LifeParticipant IssueAge[0;1]
+25
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X21 3e6c2bc0 1a79268 0 0 0 0 2
+NAAR Year Based on Age(age)
+NAAR Year Based on Age("C"; 100)
+72
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+29
+INPUT Message Language
+9
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0;1]
+6
+INPUT Policy LifeParticipant IssueAge[0;1]
+29
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X241 2e751d24 19a4818 6ceb80ac 0 0 0 2
+SR#5:  NAAR Cov NSP(yearIndex; coverageIndex)
+NAAR Cov NSP("C"; 70; 0)
+948.894957769971
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageProduct ValuePerUnit[1]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[2]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[3]
+1000
+INPUT Policy number of SubAccount
+0
+INPUT Policy CoverageProduct MaturityAge[1]
+60
+INPUT Policy CoverageProduct MaturityAge[2]
+60
+INPUT Policy CoverageProduct MaturityAge[3]
+60
+INPUT Policy CoverageOptionProduct PayToAge
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;1]
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;2]
+70
+INPUT Policy CoverageOptionProduct PayToAge[0;3]
+41
+INPUT Policy CoverageOptionProduct PayToAge[1]
+60
+INPUT Policy CoverageOptionProduct PayToAge[2]
+60
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+INPUT Message Language
+English
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage BandCode[1]
+1
+INPUT Policy Coverage BandCode[2]
+1
+INPUT Policy Coverage BandCode[3]
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy Coverage CurrentAmt
+200000
+INPUT Policy Coverage CurrentAmt[1]
+100000
+INPUT Policy Coverage CurrentAmt[2]
+50000
+INPUT Policy Coverage CurrentAmt[3]
+50000
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+100
+INPUT Policy Coverage CurrentNumberOfUnits[2]
+50
+INPUT Policy Coverage CurrentNumberOfUnits[3]
+50
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate[1]
+12/31/2009
+INPUT Policy Coverage EffDate[2]
+12/31/2009
+INPUT Policy Coverage EffDate[3]
+12/31/2009
+INPUT Policy Coverage EffDate
+12/31/2009
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+2
+INPUT Policy Coverage IndicatorCode[3]
+2
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage IntialNumberOfUnits
+200
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LifeCovTypeCode[1]
+9
+INPUT Policy Coverage LifeCovTypeCode[2]
+6
+INPUT Policy Coverage LifeCovTypeCode[3]
+116
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT Policy Coverage ProductCode[2]
+STRPA
+INPUT Policy Coverage ProductCode[3]
+CTRPA
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage TargetPremAmt[1]
+0
+INPUT Policy Coverage TargetPremAmt[2]
+0
+INPUT Policy Coverage TargetPremAmt[3]
+0
+INPUT Policy Coverage TargetPremAmt
+7339.85
+INPUT Policy Coverage TermDate[1]
+12/31/2080
+INPUT Policy Coverage TermDate[2]
+12/31/2077
+INPUT Policy Coverage TermDate[3]
+12/31/2045
+INPUT Policy Coverage TermDate
+12/31/2080
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;3]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[2]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;2]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;3]
+12/31/2009
+INPUT Policy CoverageOption EffDate[1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[2]
+12/31/2009
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOption LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[0;2]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[0;3]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[1]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[2]
+10
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Policy CoverageOption PermTableRating[0;3]
+1
+INPUT Policy CoverageOption PermTableRating[1]
+1
+INPUT Policy CoverageOption PermTableRating[2]
+1
+INPUT Policy CoverageOption PremUseCode[0;0]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;1]
+1000500001
+INPUT Policy CoverageOption PremUseCode[0;2]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;3]
+1000500003
+INPUT Policy CoverageOption PremUseCode[1]
+1000500002
+INPUT Policy CoverageOption PremUseCode[2]
+1000500002
+INPUT Policy CoverageOption ProductCode[0;0]
+WSPPA
+INPUT Policy CoverageOption ProductCode[0;1]
+WMDPA
+INPUT Policy CoverageOption ProductCode[0;2]
+ADBPA
+INPUT Policy CoverageOption ProductCode[0;3]
+GIOPA
+INPUT Policy CoverageOption ProductCode[1]
+WSPPA
+INPUT Policy CoverageOption ProductCode[2]
+WSPPA
+INPUT Policy CoverageOption RateVariation FlatAmount[0;1]
+0.12
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;1]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;2]
+12/31/2050
+INPUT Policy CoverageOption TermDate[0;3]
+12/31/2021
+INPUT Policy CoverageOption TermDate[1]
+12/31/2040
+INPUT Policy CoverageOption TermDate[2]
+12/31/2042
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;2]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;3]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;3]
+1
+INPUT Policy CoverageOption UnderwritingClass[1]
+1
+INPUT Policy CoverageOption UnderwritingClass[2]
+1
+INPUT Policy CoverageOptionProduct DurationDesign
+5
+INPUT Policy CoverageOptionProduct MaturityAge[0;0]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;1]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;2]
+70
+INPUT Policy CoverageOptionProduct MaturityAge[0;3]
+41
+INPUT Policy CoverageOptionProduct MaturityAge[1]
+60
+INPUT Policy CoverageOptionProduct MaturityAge[2]
+60
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;0]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;1]
+1000500004
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;2]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;3]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[1]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[2]
+1000500002
+INPUT Policy CoverageProduct LivesType[1]
+1
+INPUT Policy CoverageProduct LivesType[2]
+1
+INPUT Policy CoverageProduct LivesType[3]
+1
+INPUT Policy CoverageProduct LivesType
+1
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy CoverageProduct ValuePerUnit
+1000
+INPUT Policy EffDate
+12/31/2009
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge[1]
+29
+INPUT Policy LifeParticipant IssueAge[2]
+27
+INPUT Policy LifeParticipant IssueAge[3]
+29
+INPUT Policy LifeParticipant IssueAge
+29
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant IssueGender[2]
+2
+INPUT Policy LifeParticipant IssueGender[3]
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[2]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[3]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[2]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[3]
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant PermTableRating[2]
+1
+INPUT Policy LifeParticipant PermTableRating[3]
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[3]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[2]
+1
+INPUT Policy LifeParticipant UnderwritingClass[3]
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+5
+INPUT Policy Loan LoanIntType
+1
+INPUT Policy number of Coverage
+4
+INPUT Policy Number Of CoverageOption[1]
+1
+INPUT Policy Number Of CoverageOption[2]
+1
+INPUT Policy Number Of CoverageOption[3]
+0
+INPUT Policy Number Of CoverageOption
+4
+INPUT Policy Number of LifeParticipant[1]
+1
+INPUT Policy Number of LifeParticipant[2]
+1
+INPUT Policy Number of LifeParticipant[3]
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy Number of Loan
+0
+INPUT Policy PaymentMode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy ProductType
+3
+INPUT PolicyProduct AgeCalculationType
+4
+INPUT PolicyProduct Fee ChargeBasedOn[1]
+1000500014
+INPUT PolicyProduct Fee ChargeBasedOn[3]
+1000500007
+INPUT PolicyProduct Fee ChargeBasedOn[4]
+1000500026
+INPUT PolicyProduct Fee Mode[4]
+4
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[1]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[4]
+1000500022
+INPUT PolicyProduct Fee TableRef TableIdentity[1]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[3]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[4]
+10
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[1]
+
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[4]
+
+INPUT PolicyProduct Fee Type[1]
+16
+INPUT PolicyProduct Fee Type[2]
+15
+INPUT PolicyProduct Fee Type[3]
+22
+INPUT PolicyProduct Fee Type[4]
+8
+INPUT PolicyProduct Fee Type
+28
+INPUT PolicyProduct GuarIntRate
+3.5
+INPUT PolicyProduct MortalityOrMorbidityTable
+1000500004
+INPUT PolicyProduct number of Fee
+5
+INPUT PolicyProduct PolicyProductTypeCode
+3
+INPUT PolicyProduct ReserveFunction
+4
+INPUT TransEffDate
+12/31/2009
+INPUT Policy number of PremiumRate
+1
+INPUT Policy PremiumRate PremiumRateType
+9
+INPUT Policy PremiumRate CalcRateMethod
+1000500001
+INPUT Policy PremiumRate MaturityAge
+
+INPUT Policy PremiumRate MaturityDurationQualifier
+1
+INPUT Policy PremiumRate MaturityDuration
+5
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+71
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT PolicyProduct PayToAge
+100
+INPUT Policy PayToYear
+81
+INPUT Policy Life PaymentAmt
+6000
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life MinPremAmt
+5815.68
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy LifeParticipant TempTableRating[1]
+1
+INPUT Policy LifeParticipant TempTableRating[2]
+1
+INPUT Policy LifeParticipant TempTableRating[3]
+1
+X241 6ceb80ac 2e751d24 0 23d3dc69 0 0 2
+SR#5:  NAAR CovMaturity Is Before PolicyMaturity(coverageIndex)
+NAAR CovMaturity Is Before PolicyMaturity("C"; 1)
+1
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageProduct ValuePerUnit[1]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[2]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[3]
+1000
+INPUT Policy number of SubAccount
+0
+INPUT Policy CoverageProduct MaturityAge[1]
+60
+INPUT Policy CoverageProduct MaturityAge[2]
+60
+INPUT Policy CoverageProduct MaturityAge[3]
+60
+INPUT Policy CoverageOptionProduct PayToAge
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;1]
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;2]
+70
+INPUT Policy CoverageOptionProduct PayToAge[0;3]
+41
+INPUT Policy CoverageOptionProduct PayToAge[1]
+60
+INPUT Policy CoverageOptionProduct PayToAge[2]
+60
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+INPUT Message Language
+English
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage BandCode[1]
+1
+INPUT Policy Coverage BandCode[2]
+1
+INPUT Policy Coverage BandCode[3]
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy Coverage CurrentAmt
+200000
+INPUT Policy Coverage CurrentAmt[1]
+100000
+INPUT Policy Coverage CurrentAmt[2]
+50000
+INPUT Policy Coverage CurrentAmt[3]
+50000
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+100
+INPUT Policy Coverage CurrentNumberOfUnits[2]
+50
+INPUT Policy Coverage CurrentNumberOfUnits[3]
+50
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate[1]
+12/31/2009
+INPUT Policy Coverage EffDate[2]
+12/31/2009
+INPUT Policy Coverage EffDate[3]
+12/31/2009
+INPUT Policy Coverage EffDate
+12/31/2009
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+2
+INPUT Policy Coverage IndicatorCode[3]
+2
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage IntialNumberOfUnits
+200
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LifeCovTypeCode[1]
+9
+INPUT Policy Coverage LifeCovTypeCode[2]
+6
+INPUT Policy Coverage LifeCovTypeCode[3]
+116
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT Policy Coverage ProductCode[2]
+STRPA
+INPUT Policy Coverage ProductCode[3]
+CTRPA
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage TargetPremAmt[1]
+0
+INPUT Policy Coverage TargetPremAmt[2]
+0
+INPUT Policy Coverage TargetPremAmt[3]
+0
+INPUT Policy Coverage TargetPremAmt
+7339.85
+INPUT Policy Coverage TermDate[1]
+12/31/2080
+INPUT Policy Coverage TermDate[2]
+12/31/2077
+INPUT Policy Coverage TermDate[3]
+12/31/2045
+INPUT Policy Coverage TermDate
+12/31/2080
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;3]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[2]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;2]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;3]
+12/31/2009
+INPUT Policy CoverageOption EffDate[1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[2]
+12/31/2009
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOption LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[0;2]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[0;3]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[1]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[2]
+10
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Policy CoverageOption PermTableRating[0;3]
+1
+INPUT Policy CoverageOption PermTableRating[1]
+1
+INPUT Policy CoverageOption PermTableRating[2]
+1
+INPUT Policy CoverageOption PremUseCode[0;0]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;1]
+1000500001
+INPUT Policy CoverageOption PremUseCode[0;2]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;3]
+1000500003
+INPUT Policy CoverageOption PremUseCode[1]
+1000500002
+INPUT Policy CoverageOption PremUseCode[2]
+1000500002
+INPUT Policy CoverageOption ProductCode[0;0]
+WSPPA
+INPUT Policy CoverageOption ProductCode[0;1]
+WMDPA
+INPUT Policy CoverageOption ProductCode[0;2]
+ADBPA
+INPUT Policy CoverageOption ProductCode[0;3]
+GIOPA
+INPUT Policy CoverageOption ProductCode[1]
+WSPPA
+INPUT Policy CoverageOption ProductCode[2]
+WSPPA
+INPUT Policy CoverageOption RateVariation FlatAmount[0;1]
+0.12
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;1]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;2]
+12/31/2050
+INPUT Policy CoverageOption TermDate[0;3]
+12/31/2021
+INPUT Policy CoverageOption TermDate[1]
+12/31/2040
+INPUT Policy CoverageOption TermDate[2]
+12/31/2042
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;2]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;3]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;3]
+1
+INPUT Policy CoverageOption UnderwritingClass[1]
+1
+INPUT Policy CoverageOption UnderwritingClass[2]
+1
+INPUT Policy CoverageOptionProduct DurationDesign
+5
+INPUT Policy CoverageOptionProduct MaturityAge[0;0]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;1]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;2]
+70
+INPUT Policy CoverageOptionProduct MaturityAge[0;3]
+41
+INPUT Policy CoverageOptionProduct MaturityAge[1]
+60
+INPUT Policy CoverageOptionProduct MaturityAge[2]
+60
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;0]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;1]
+1000500004
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;2]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;3]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[1]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[2]
+1000500002
+INPUT Policy CoverageProduct LivesType[1]
+1
+INPUT Policy CoverageProduct LivesType[2]
+1
+INPUT Policy CoverageProduct LivesType[3]
+1
+INPUT Policy CoverageProduct LivesType
+1
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy CoverageProduct ValuePerUnit
+1000
+INPUT Policy EffDate
+12/31/2009
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge[1]
+29
+INPUT Policy LifeParticipant IssueAge[2]
+27
+INPUT Policy LifeParticipant IssueAge[3]
+29
+INPUT Policy LifeParticipant IssueAge
+29
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant IssueGender[2]
+2
+INPUT Policy LifeParticipant IssueGender[3]
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[2]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[3]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[2]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[3]
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant PermTableRating[2]
+1
+INPUT Policy LifeParticipant PermTableRating[3]
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[3]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[2]
+1
+INPUT Policy LifeParticipant UnderwritingClass[3]
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+5
+INPUT Policy Loan LoanIntType
+1
+INPUT Policy number of Coverage
+4
+INPUT Policy Number Of CoverageOption[1]
+1
+INPUT Policy Number Of CoverageOption[2]
+1
+INPUT Policy Number Of CoverageOption[3]
+0
+INPUT Policy Number Of CoverageOption
+4
+INPUT Policy Number of LifeParticipant[1]
+1
+INPUT Policy Number of LifeParticipant[2]
+1
+INPUT Policy Number of LifeParticipant[3]
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy Number of Loan
+0
+INPUT Policy PaymentMode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy ProductType
+3
+INPUT PolicyProduct AgeCalculationType
+4
+INPUT PolicyProduct Fee ChargeBasedOn[1]
+1000500014
+INPUT PolicyProduct Fee ChargeBasedOn[3]
+1000500007
+INPUT PolicyProduct Fee ChargeBasedOn[4]
+1000500026
+INPUT PolicyProduct Fee Mode[4]
+4
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[1]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[4]
+1000500022
+INPUT PolicyProduct Fee TableRef TableIdentity[1]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[3]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[4]
+10
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[1]
+
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[4]
+
+INPUT PolicyProduct Fee Type[1]
+16
+INPUT PolicyProduct Fee Type[2]
+15
+INPUT PolicyProduct Fee Type[3]
+22
+INPUT PolicyProduct Fee Type[4]
+8
+INPUT PolicyProduct Fee Type
+28
+INPUT PolicyProduct GuarIntRate
+3.5
+INPUT PolicyProduct MortalityOrMorbidityTable
+1000500004
+INPUT PolicyProduct number of Fee
+5
+INPUT PolicyProduct PolicyProductTypeCode
+3
+INPUT PolicyProduct ReserveFunction
+4
+INPUT TransEffDate
+12/31/2009
+INPUT Policy number of PremiumRate
+1
+INPUT Policy PremiumRate PremiumRateType
+9
+INPUT Policy PremiumRate CalcRateMethod
+1000500001
+INPUT Policy PremiumRate MaturityAge
+
+INPUT Policy PremiumRate MaturityDurationQualifier
+1
+INPUT Policy PremiumRate MaturityDuration
+5
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+71
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT PolicyProduct PayToAge
+100
+INPUT Policy PayToYear
+81
+INPUT Policy Life PaymentAmt
+6000
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life MinPremAmt
+5815.68
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy LifeParticipant TempTableRating[1]
+1
+INPUT Policy LifeParticipant TempTableRating[2]
+1
+INPUT Policy LifeParticipant TempTableRating[3]
+1
+X241 23d3dc69 2e751d24 0 46ccf18b 0 0 2
+SR#5: NAAR Policy Matures EndOfYear(yearIndex)
+NAAR Policy Matures EndOfYear("C"; 71)
+1
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageProduct ValuePerUnit[1]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[2]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[3]
+1000
+INPUT Policy number of SubAccount
+0
+INPUT Policy CoverageProduct MaturityAge[1]
+60
+INPUT Policy CoverageProduct MaturityAge[2]
+60
+INPUT Policy CoverageProduct MaturityAge[3]
+60
+INPUT Policy CoverageOptionProduct PayToAge
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;1]
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;2]
+70
+INPUT Policy CoverageOptionProduct PayToAge[0;3]
+41
+INPUT Policy CoverageOptionProduct PayToAge[1]
+60
+INPUT Policy CoverageOptionProduct PayToAge[2]
+60
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+INPUT Message Language
+English
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage BandCode[1]
+1
+INPUT Policy Coverage BandCode[2]
+1
+INPUT Policy Coverage BandCode[3]
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy Coverage CurrentAmt
+200000
+INPUT Policy Coverage CurrentAmt[1]
+100000
+INPUT Policy Coverage CurrentAmt[2]
+50000
+INPUT Policy Coverage CurrentAmt[3]
+50000
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+100
+INPUT Policy Coverage CurrentNumberOfUnits[2]
+50
+INPUT Policy Coverage CurrentNumberOfUnits[3]
+50
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate[1]
+12/31/2009
+INPUT Policy Coverage EffDate[2]
+12/31/2009
+INPUT Policy Coverage EffDate[3]
+12/31/2009
+INPUT Policy Coverage EffDate
+12/31/2009
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+2
+INPUT Policy Coverage IndicatorCode[3]
+2
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage IntialNumberOfUnits
+200
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LifeCovTypeCode[1]
+9
+INPUT Policy Coverage LifeCovTypeCode[2]
+6
+INPUT Policy Coverage LifeCovTypeCode[3]
+116
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT Policy Coverage ProductCode[2]
+STRPA
+INPUT Policy Coverage ProductCode[3]
+CTRPA
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage TargetPremAmt[1]
+0
+INPUT Policy Coverage TargetPremAmt[2]
+0
+INPUT Policy Coverage TargetPremAmt[3]
+0
+INPUT Policy Coverage TargetPremAmt
+7339.85
+INPUT Policy Coverage TermDate[1]
+12/31/2080
+INPUT Policy Coverage TermDate[2]
+12/31/2077
+INPUT Policy Coverage TermDate[3]
+12/31/2045
+INPUT Policy Coverage TermDate
+12/31/2080
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;3]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[2]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;2]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;3]
+12/31/2009
+INPUT Policy CoverageOption EffDate[1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[2]
+12/31/2009
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOption LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[0;2]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[0;3]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[1]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[2]
+10
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Policy CoverageOption PermTableRating[0;3]
+1
+INPUT Policy CoverageOption PermTableRating[1]
+1
+INPUT Policy CoverageOption PermTableRating[2]
+1
+INPUT Policy CoverageOption PremUseCode[0;0]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;1]
+1000500001
+INPUT Policy CoverageOption PremUseCode[0;2]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;3]
+1000500003
+INPUT Policy CoverageOption PremUseCode[1]
+1000500002
+INPUT Policy CoverageOption PremUseCode[2]
+1000500002
+INPUT Policy CoverageOption ProductCode[0;0]
+WSPPA
+INPUT Policy CoverageOption ProductCode[0;1]
+WMDPA
+INPUT Policy CoverageOption ProductCode[0;2]
+ADBPA
+INPUT Policy CoverageOption ProductCode[0;3]
+GIOPA
+INPUT Policy CoverageOption ProductCode[1]
+WSPPA
+INPUT Policy CoverageOption ProductCode[2]
+WSPPA
+INPUT Policy CoverageOption RateVariation FlatAmount[0;1]
+0.12
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;1]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;2]
+12/31/2050
+INPUT Policy CoverageOption TermDate[0;3]
+12/31/2021
+INPUT Policy CoverageOption TermDate[1]
+12/31/2040
+INPUT Policy CoverageOption TermDate[2]
+12/31/2042
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;2]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;3]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;3]
+1
+INPUT Policy CoverageOption UnderwritingClass[1]
+1
+INPUT Policy CoverageOption UnderwritingClass[2]
+1
+INPUT Policy CoverageOptionProduct DurationDesign
+5
+INPUT Policy CoverageOptionProduct MaturityAge[0;0]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;1]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;2]
+70
+INPUT Policy CoverageOptionProduct MaturityAge[0;3]
+41
+INPUT Policy CoverageOptionProduct MaturityAge[1]
+60
+INPUT Policy CoverageOptionProduct MaturityAge[2]
+60
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;0]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;1]
+1000500004
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;2]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;3]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[1]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[2]
+1000500002
+INPUT Policy CoverageProduct LivesType[1]
+1
+INPUT Policy CoverageProduct LivesType[2]
+1
+INPUT Policy CoverageProduct LivesType[3]
+1
+INPUT Policy CoverageProduct LivesType
+1
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy CoverageProduct ValuePerUnit
+1000
+INPUT Policy EffDate
+12/31/2009
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge[1]
+29
+INPUT Policy LifeParticipant IssueAge[2]
+27
+INPUT Policy LifeParticipant IssueAge[3]
+29
+INPUT Policy LifeParticipant IssueAge
+29
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant IssueGender[2]
+2
+INPUT Policy LifeParticipant IssueGender[3]
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[2]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[3]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[2]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[3]
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant PermTableRating[2]
+1
+INPUT Policy LifeParticipant PermTableRating[3]
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[3]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[2]
+1
+INPUT Policy LifeParticipant UnderwritingClass[3]
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+5
+INPUT Policy Loan LoanIntType
+1
+INPUT Policy number of Coverage
+4
+INPUT Policy Number Of CoverageOption[1]
+1
+INPUT Policy Number Of CoverageOption[2]
+1
+INPUT Policy Number Of CoverageOption[3]
+0
+INPUT Policy Number Of CoverageOption
+4
+INPUT Policy Number of LifeParticipant[1]
+1
+INPUT Policy Number of LifeParticipant[2]
+1
+INPUT Policy Number of LifeParticipant[3]
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy Number of Loan
+0
+INPUT Policy PaymentMode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy ProductType
+3
+INPUT PolicyProduct AgeCalculationType
+4
+INPUT PolicyProduct Fee ChargeBasedOn[1]
+1000500014
+INPUT PolicyProduct Fee ChargeBasedOn[3]
+1000500007
+INPUT PolicyProduct Fee ChargeBasedOn[4]
+1000500026
+INPUT PolicyProduct Fee Mode[4]
+4
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[1]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[4]
+1000500022
+INPUT PolicyProduct Fee TableRef TableIdentity[1]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[3]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[4]
+10
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[1]
+
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[4]
+
+INPUT PolicyProduct Fee Type[1]
+16
+INPUT PolicyProduct Fee Type[2]
+15
+INPUT PolicyProduct Fee Type[3]
+22
+INPUT PolicyProduct Fee Type[4]
+8
+INPUT PolicyProduct Fee Type
+28
+INPUT PolicyProduct GuarIntRate
+3.5
+INPUT PolicyProduct MortalityOrMorbidityTable
+1000500004
+INPUT PolicyProduct number of Fee
+5
+INPUT PolicyProduct PolicyProductTypeCode
+3
+INPUT PolicyProduct ReserveFunction
+4
+INPUT TransEffDate
+12/31/2009
+INPUT Policy number of PremiumRate
+1
+INPUT Policy PremiumRate PremiumRateType
+9
+INPUT Policy PremiumRate CalcRateMethod
+1000500001
+INPUT Policy PremiumRate MaturityAge
+
+INPUT Policy PremiumRate MaturityDurationQualifier
+1
+INPUT Policy PremiumRate MaturityDuration
+5
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+71
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT PolicyProduct PayToAge
+100
+INPUT Policy PayToYear
+81
+INPUT Policy Life PaymentAmt
+6000
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life MinPremAmt
+5815.68
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy LifeParticipant TempTableRating[1]
+1
+INPUT Policy LifeParticipant TempTableRating[2]
+1
+INPUT Policy LifeParticipant TempTableRating[3]
+1
+X241 46ccf18b 2e751d24 0 0 0 0 2
+SR#5:  NAAR Mort Rate(yearIndex; coverageIndex)
+NAAR Mort Rate("C"; 70; 0)
+0.6581196581
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageProduct ValuePerUnit[1]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[2]
+1000
+INPUT Policy CoverageProduct ValuePerUnit[3]
+1000
+INPUT Policy number of SubAccount
+0
+INPUT Policy CoverageProduct MaturityAge[1]
+60
+INPUT Policy CoverageProduct MaturityAge[2]
+60
+INPUT Policy CoverageProduct MaturityAge[3]
+60
+INPUT Policy CoverageOptionProduct PayToAge
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;1]
+65
+INPUT Policy CoverageOptionProduct PayToAge[0;2]
+70
+INPUT Policy CoverageOptionProduct PayToAge[0;3]
+41
+INPUT Policy CoverageOptionProduct PayToAge[1]
+60
+INPUT Policy CoverageOptionProduct PayToAge[2]
+60
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+INPUT Message Language
+English
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage BandCode[1]
+1
+INPUT Policy Coverage BandCode[2]
+1
+INPUT Policy Coverage BandCode[3]
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy Coverage CurrentAmt
+200000
+INPUT Policy Coverage CurrentAmt[1]
+100000
+INPUT Policy Coverage CurrentAmt[2]
+50000
+INPUT Policy Coverage CurrentAmt[3]
+50000
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+100
+INPUT Policy Coverage CurrentNumberOfUnits[2]
+50
+INPUT Policy Coverage CurrentNumberOfUnits[3]
+50
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate[1]
+12/31/2009
+INPUT Policy Coverage EffDate[2]
+12/31/2009
+INPUT Policy Coverage EffDate[3]
+12/31/2009
+INPUT Policy Coverage EffDate
+12/31/2009
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+2
+INPUT Policy Coverage IndicatorCode[3]
+2
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage IntialNumberOfUnits
+200
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LifeCovTypeCode[1]
+9
+INPUT Policy Coverage LifeCovTypeCode[2]
+6
+INPUT Policy Coverage LifeCovTypeCode[3]
+116
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT Policy Coverage ProductCode[2]
+STRPA
+INPUT Policy Coverage ProductCode[3]
+CTRPA
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage TargetPremAmt[1]
+0
+INPUT Policy Coverage TargetPremAmt[2]
+0
+INPUT Policy Coverage TargetPremAmt[3]
+0
+INPUT Policy Coverage TargetPremAmt
+7339.85
+INPUT Policy Coverage TermDate[1]
+12/31/2080
+INPUT Policy Coverage TermDate[2]
+12/31/2077
+INPUT Policy Coverage TermDate[3]
+12/31/2045
+INPUT Policy Coverage TermDate
+12/31/2080
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;3]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[2]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;2]
+12/31/2009
+INPUT Policy CoverageOption EffDate[0;3]
+12/31/2009
+INPUT Policy CoverageOption EffDate[1]
+12/31/2009
+INPUT Policy CoverageOption EffDate[2]
+12/31/2009
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+16
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+2
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;3]
+66
+INPUT Policy CoverageOption LifeCovOptTypeCode[1]
+17
+INPUT Policy CoverageOption LifeCovOptTypeCode[2]
+17
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[0;2]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[0;3]
+10
+INPUT Policy CoverageOption OptionNumberOfUnits[1]
+40
+INPUT Policy CoverageOption OptionNumberOfUnits[2]
+10
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Policy CoverageOption PermTableRating[0;3]
+1
+INPUT Policy CoverageOption PermTableRating[1]
+1
+INPUT Policy CoverageOption PermTableRating[2]
+1
+INPUT Policy CoverageOption PremUseCode[0;0]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;1]
+1000500001
+INPUT Policy CoverageOption PremUseCode[0;2]
+1000500003
+INPUT Policy CoverageOption PremUseCode[0;3]
+1000500003
+INPUT Policy CoverageOption PremUseCode[1]
+1000500002
+INPUT Policy CoverageOption PremUseCode[2]
+1000500002
+INPUT Policy CoverageOption ProductCode[0;0]
+WSPPA
+INPUT Policy CoverageOption ProductCode[0;1]
+WMDPA
+INPUT Policy CoverageOption ProductCode[0;2]
+ADBPA
+INPUT Policy CoverageOption ProductCode[0;3]
+GIOPA
+INPUT Policy CoverageOption ProductCode[1]
+WSPPA
+INPUT Policy CoverageOption ProductCode[2]
+WSPPA
+INPUT Policy CoverageOption RateVariation FlatAmount[0;1]
+0.12
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;1]
+12/31/2045
+INPUT Policy CoverageOption TermDate[0;2]
+12/31/2050
+INPUT Policy CoverageOption TermDate[0;3]
+12/31/2021
+INPUT Policy CoverageOption TermDate[1]
+12/31/2040
+INPUT Policy CoverageOption TermDate[2]
+12/31/2042
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;2]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;3]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;2]
+1
+INPUT Policy CoverageOption UnderwritingClass[0;3]
+1
+INPUT Policy CoverageOption UnderwritingClass[1]
+1
+INPUT Policy CoverageOption UnderwritingClass[2]
+1
+INPUT Policy CoverageOptionProduct DurationDesign
+5
+INPUT Policy CoverageOptionProduct MaturityAge[0;0]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;1]
+65
+INPUT Policy CoverageOptionProduct MaturityAge[0;2]
+70
+INPUT Policy CoverageOptionProduct MaturityAge[0;3]
+41
+INPUT Policy CoverageOptionProduct MaturityAge[1]
+60
+INPUT Policy CoverageOptionProduct MaturityAge[2]
+60
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;0]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;1]
+1000500004
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;2]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;3]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[1]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[2]
+1000500002
+INPUT Policy CoverageProduct LivesType[1]
+1
+INPUT Policy CoverageProduct LivesType[2]
+1
+INPUT Policy CoverageProduct LivesType[3]
+1
+INPUT Policy CoverageProduct LivesType
+1
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy CoverageProduct ValuePerUnit
+1000
+INPUT Policy EffDate
+12/31/2009
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge[1]
+29
+INPUT Policy LifeParticipant IssueAge[2]
+27
+INPUT Policy LifeParticipant IssueAge[3]
+29
+INPUT Policy LifeParticipant IssueAge
+29
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant IssueGender[2]
+2
+INPUT Policy LifeParticipant IssueGender[3]
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[2]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[3]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[2]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[3]
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant PermTableRating[2]
+1
+INPUT Policy LifeParticipant PermTableRating[3]
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[3]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[3]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[2]
+1
+INPUT Policy LifeParticipant UnderwritingClass[3]
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+5
+INPUT Policy Loan LoanIntType
+1
+INPUT Policy number of Coverage
+4
+INPUT Policy Number Of CoverageOption[1]
+1
+INPUT Policy Number Of CoverageOption[2]
+1
+INPUT Policy Number Of CoverageOption[3]
+0
+INPUT Policy Number Of CoverageOption
+4
+INPUT Policy Number of LifeParticipant[1]
+1
+INPUT Policy Number of LifeParticipant[2]
+1
+INPUT Policy Number of LifeParticipant[3]
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy Number of Loan
+0
+INPUT Policy PaymentMode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy ProductType
+3
+INPUT PolicyProduct AgeCalculationType
+4
+INPUT PolicyProduct Fee ChargeBasedOn[1]
+1000500014
+INPUT PolicyProduct Fee ChargeBasedOn[3]
+1000500007
+INPUT PolicyProduct Fee ChargeBasedOn[4]
+1000500026
+INPUT PolicyProduct Fee Mode[4]
+4
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[1]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[4]
+1000500022
+INPUT PolicyProduct Fee TableRef TableIdentity[1]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[3]
+10
+INPUT PolicyProduct Fee TableRef TableIdentity[4]
+10
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[1]
+
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[4]
+
+INPUT PolicyProduct Fee Type[1]
+16
+INPUT PolicyProduct Fee Type[2]
+15
+INPUT PolicyProduct Fee Type[3]
+22
+INPUT PolicyProduct Fee Type[4]
+8
+INPUT PolicyProduct Fee Type
+28
+INPUT PolicyProduct GuarIntRate
+3.5
+INPUT PolicyProduct MortalityOrMorbidityTable
+1000500004
+INPUT PolicyProduct number of Fee
+5
+INPUT PolicyProduct PolicyProductTypeCode
+3
+INPUT PolicyProduct ReserveFunction
+4
+INPUT TransEffDate
+12/31/2009
+INPUT Policy number of PremiumRate
+1
+INPUT Policy PremiumRate PremiumRateType
+9
+INPUT Policy PremiumRate CalcRateMethod
+1000500001
+INPUT Policy PremiumRate MaturityAge
+
+INPUT Policy PremiumRate MaturityDurationQualifier
+1
+INPUT Policy PremiumRate MaturityDuration
+5
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+71
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT PolicyProduct PayToAge
+100
+INPUT Policy PayToYear
+81
+INPUT Policy Life PaymentAmt
+6000
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life MinPremAmt
+5815.68
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy LifeParticipant TempTableRating[1]
+1
+INPUT Policy LifeParticipant TempTableRating[2]
+1
+INPUT Policy LifeParticipant TempTableRating[3]
+1
+O0 19a3fbc 0 0 0 0 0 0
+
+E0 19a402c 0 0 0 0 0 0
+
+L0 19a409c 0 0 0 0 0 0
+
+B0 19a425c 0 0 0 0 0 0
+
+P3 19a417c 0 1a79728 0 0 0 2
+
+--description
+The Net Amount At Risk (NAR)is defined as the excess of the amount paid by reason of the insured's death over the contract's net surrender value.çä çäThe NAR model calculations support the NAR computations for coverages.çäCorridor adjustment rules are supported.çä çäRELEASE LOG:çäRELEASE 1301 - PAC029 Integrated Term Rider çäRELEASE 1101 - PAC019 Rate Access via InputsçäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.6.1    "
+P13 1a79728 19a417c 1a7a310 0 0 0 2
+Universal Life / Variable Universal Life Net Amount At Risk
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Model for calculating net amount at risk for Universal Life and Variable Universal Life products.çä Author:  John Heumannçä Date:     12/07/2006 çä Modification Log:çä Date              Modeler               Change Descriptionçä 12/07/2006     John Heumann    Created model.çä"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"NETAMOUNTATRISK.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1a7a310 1a79728 0 0 0 0 2
+Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 19a41ec 0 1a7abf8 0 0 0 0
+
+F1 1a7abf8 19a41ec 1a7af80 1a83bd8 0 0 2
+-- NAR Calculation Functions --
+Funktion
+
+F1 1a7af80 1a7abf8 1a7b3a0 0 0 0 2
+NAAR Coverage NetAmountAtRisk(calcType; coverageIndex; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Is coverage charge based on NAR?*/ 'Coverage Is NAR Cost'(calcType;coverageIndex) && 'PolicyStatus In ActiveStatuses'('Policy Coverage LifeCovStatus'(calcType;coverageIndex;yearIndex)) ; çä   // The net amount at risk for a particular coverage segment will equal the discounted death benefitçä// associated with that coverage segment less any cash value to be allocated to the coverage segmentçä/*Yes - return NAR*/'NAAR Discounted Coverage NetRisk DB'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms) - 'NAAR Coverage Allocated CV'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms) ; çä   // Else return zeroçä0çä)
+F1 1a7b3a0 1a7af80 1a7b7c8 1a83280 0 0 2
+NAAR Discounted Coverage NetRisk DB(calcType; coverageIndex; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+'NAAR Coverage NetRisk DB'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms) / 'NAAR Discount Factor'(calcType)
+F1 1a7b7c8 1a7b3a0 0 1a7bba8 0 0 2
+NAAR Discount Factor(calcType)
+Funktion
+'GEN Future Value Factor'('NAAR Interest rate'(calcType);(1 / 12))
+F1 1a7bba8 1a7b3a0 1a7c858 0 0 0 2
+NAAR Coverage NetRisk DB(calcType; coverageIndex; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Is coverage charge based on NAR?*/ 'Coverage Is NAR Cost'(calcType;coverageIndex) && 'PolicyStatus In ActiveStatuses'('Policy Coverage LifeCovStatus'(calcType;coverageIndex;yearindex)) ; çä   // The death benefit to use for the net risk for the coverage will equal the coverage face amount plusçä// any CV or ROP applicable to the DB (to be included in the initial coverage) plus the corridor amount çä// (to be included in the last coverage).çä/*Yes - return death benefit amount*/IF ( /*Solve face amount or policy record face amount?*/ 'SharedVector SolveParms FaceAmount passed'(coverageIndex;vectorSolveParms) ; çä    'SharedVector SolveParms FaceAmount'(coverageIndex;vectorSolveParms;yearIndex) ; çä    round('Policy Coverage CurrentAmt'(calcType;coverageIndex;yearIndex);0)çä  ) + IF ( /*Is this coverage the initial one?*/ 'NAAR Is Initial NAAR Coverage'(calcType;coverageIndex) ; çä   // Yes - The death benefit due to CV or ROP is applied to the initial coverageçäIF ( /*Is death benefit level?*/ 'DeathBenefitOptType Is Level'('NAAR DthBenOpt'(calcType;yearIndex;vectorSolveParms)) ; çä     /*Yes - don't add anything to specified amount*/ 0 ; çä     // Else çäIF ( /*Is death benefit option 2?*/ 'DeathBenefitOptType Is Increasing'('NAAR DthBenOpt'(calcType;yearIndex;vectorSolveParms)) ; çä       /*Yes - add cash value*/ bom_cv ; çä       // ElseçäIF ( /*Is death benefit option 3?*/ 'DeathBenefitOptType Is IncreasingROP'('NAAR DthBenOpt'(calcType;yearIndex;vectorSolveParms)) ; çä         /*Yes - add accumulated premiums*/ pastPremium ; çä         // Else invalid death benefit option - return error message*/âââçä'Messages SystemMessage'("CA1033";'Message Language';v_('NAAR Model Name';"'NAAR Discounted Coverage NetRisk DB'";"Death Benefit Option";'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex)))çä      )çä  )çä) ; çä /*Not initial coverage - don't add anything*/ 0çä) + IF ( /*Is this coverage the final one?*/ 'NAAR Is Last NAAR Coverage'(calcType;coverageIndex) ; çä /*yes - add corridor adjustment*/ 'NAAR Corridor Amount'(calcType;bom_cv;pastPremium;yearIndex;vectorSolveParms) ; çä // Else if it is neither the 1st or last coverage, no additional amount is added to the DBçä0çä) ; çä // Elseçä0çä)
+F1 1a7c858 1a7bba8 1a7ccd0 1a7d788 0 0 2
+NAAR Is Initial NAAR Coverage(calcType; coverageIndex)
+Funktion
+IF ( /*Initial coverage?*/ coverageIndex = 'NAAR Initial NAAR Coverage Index'(calcType) ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä)
+F1 1a7ccd0 1a7c858 1a7d108 0 0 0 2
+NAAR Initial NAAR Coverage Index(calcType)
+Funktion
+'NAAR Initial NAAR Coverage Index Rec'(calcType;0)
+F1 1a7d108 1a7ccd0 0 0 0 0 2
+NAAR Initial NAAR Coverage Index Rec(calcType; coverageIndex)
+Funktion
+IF ( /*Is coverage charge based on NAR*/ 'Coverage Is NAR Cost'(calcType;coverageIndex) && 'PolicyStatus In ActiveStatuses'('Policy Coverage LifeCovStatus'(calcType;coverageIndex;TransEffDur)) ; çä   /*yes - return index*/ coverageIndex ; çä   // Else find next coverageçäIF ( /* If last coverage has been reached*/ coverageIndex = 'Policy Number Of Coverage'(calcType;TransEffDur) - 1 ; çä     /*No NAR coverages defined - return error message*/ 'Messages SystemMessage'("CA1032";'Message Language';v_('NAAR Model Name';"'NAAR Initial NAAR Coverage Index Rec'")) ; çä     // Else look for next coverageçä'NAAR Initial NAAR Coverage Index Rec'(calcType;coverageIndex + 1)çä  )çä)
+F1 1a7d788 1a7bba8 1a7dba0 1a7e3e0 0 0 2
+NAAR Is Last NAAR Coverage(calcType; coverageIndex)
+Funktion
+IF (coverageIndex = 'NAAR Last NAAR Coverage Index'(calcType) ; çä  1 ; çä  0çä)
+F1 1a7dba0 1a7d788 1a7dfb0 0 0 0 2
+NAAR Last NAAR Coverage Index(calcType)
+Funktion
+'NAAR Last NAAR Coverage Index Rec'(calcType;'Policy Number Of Coverage'(calcType;TransEffDur) - 1)
+F1 1a7dfb0 1a7dba0 0 0 0 0 2
+NAAR Last NAAR Coverage Index Rec(calcType; coverageIndex)
+Funktion
+IF ( /*Is coverage charge based on NAR?*/ 'Coverage Is NAR Cost'(calcType;coverageIndex) && 'PolicyStatus In ActiveStatuses'('Policy Coverage LifeCovStatus'(calcType;coverageIndex;TransEffDur)) && NOT('IndicatorCode is Integrated'('Policy Coverage IndicatorCode'(calcType;coverageIndex))) ; çä   /*return index*/ coverageIndex ; çä   // Else keep lookingçäIF ( /*If no NAR coverages found*/ coverageIndex = 0 ; çä     /*Return error message*/ 'Messages SystemMessage'("CA1032";'Message Language';v_('NAAR Model Name';"'NAAR Last NAAR Coverage Index Rec'")) ; çä     // Else try the next coverageçä'NAAR Last NAAR Coverage Index Rec'(calcType;coverageIndex - 1)çä  )çä)
+F1 1a7e3e0 1a7bba8 1a7e8e8 1a82db8 0 0 2
+NAAR Corridor Amount(calcType; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+MAX('NAAR Corridor DB'(calcType;bom_cv;yearIndex) - 'NAAR Total DB No Corridor'(calcType;bom_cv;pastPremium;yearIndex;vectorSolveParms);0)
+F1 1a7e8e8 1a7e3e0 0 1a7f340 0 0 2
+NAAR Total DB No Corridor(calcType; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+ // Total face amountçäSUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;IF ('CalcType Target Is Active'(calcType) || 'CalcType 7702 Is Active'(calcType) ; çä  TransEffDur ; çä  yearIndexçä)) - 1;IF ('Coverage Is NAR Cost'(calcType;#coverageIndex) && 'PolicyStatus In ActiveStatuses'('Policy Coverage LifeCovStatus'(calcType;#coverageIndex;yearIndex)) && 'Std Coverage Is Inforce'(calcType;#coverageIndex;'Policy Coverage EffDate'(calcType;#coverageIndex);yearIndex) ; çäIF ( /*Solve face amount or policy record face amount?*/ 'SharedVector SolveParms FaceAmount passed'('Std BaseCov Index'(calcType);vectorSolveParms) ; çä  'SharedVector SolveParms FaceAmount'(#coverageIndex;vectorSolveParms;yearIndex) ; çä   //round('Policy Coverage CurrentAmt'(calcType; #coverageIndex;yearIndex),0)çä'Policy Coverage CurrentAmt'(calcType;#coverageIndex;yearIndex)çä) ; çä0çä)) +  // Add cv or ROP if applicableçäIF ( /*Is Death benefit option 1*/ 'DeathBenefitOptType Is Level'('NAAR DthBenOpt'(calcType;yearIndex;vectorSolveParms)) ; çä /*return zero*/ 0 ; çä // Else çäIF ( /*If death benefit option 2*/ 'DeathBenefitOptType Is Increasing'('NAAR DthBenOpt'(calcType;yearIndex;vectorSolveParms)) ; çä /*Add cash value */ bom_cv ; çä // ElseçäIF ( /*if death benefit option 3*/ 'DeathBenefitOptType Is IncreasingROP'('NAAR DthBenOpt'(calcType;yearIndex;vectorSolveParms)) ; çä /*Add accumulated premiums*/ pastPremium ; çä // Else invalid death benefit option - return error messageâââçä'Messages SystemMessage'("CA1033";'Message Language';v_('NAAR Model Name';"'NAAR Discounted Coverage NetRisk DB'";"Death Benefit Option";'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex)))çä)çä)çä)
+F1 1a7f340 1a7e3e0 1a7f780 1a80490 0 0 2
+NAAR Corridor DB(calcType; bom_cv; yearIndex)
+Funktion
+IF ( /*Does NAR calculation use corridor?*/ 'NAAR Calc type uses Corridor'(calcType) ; çä   /*return death benefit adjusted for corridor*/ IF ( /*Policy is guideline calc*/ 'DefLifeInsMethod is Guideline'('Policy LifeUSA DefLifeInsMethod') ; çä    'GEN Round'(bom_cv * 'NAAR Corridor Percent'('NAAR Corridor Attained Age'(calcType;yearIndex);yearIndex);2) ; çä     /*else if CVAT */ IF ('DefLifeInsMethod is CVAT'('Policy LifeUSA DefLifeInsMethod') ; çä      'GEN Round'(bom_cv / 'NAAR CVAT Corridor Percent'(calcType;yearIndex);2) ; çä      0çä    )çä) ; çä // Else return zeroçä0çä)
+F1 1a7f780 1a7f340 0 1a7fbf0 0 0 2
+NAAR Corridor Percent(attained_age; yearIndex)
+Funktion
+IF ('PI Use Attributes'("Policy CorridorFactor") ; çä  'STD Policy CorridorFactor'(yearIndex) ; çä  'TABLE Corridor Factors'[attained_age]çä)
+F1 1a7fbf0 1a7f340 54cc1d5d 1a80038 0 0 2
+NAAR Corridor Attained Age(calcType;yearIndex)
+Funktion
+'NAAR Corridor Issue Age'(calcType) + yearIndex - 1
+F1 54cc1d5d 1a7fbf0 0 599847f0 0 0 2
+NAAR Corridor Issue Age(calcType)
+Funktion
+CASE( /*Lives type*/ 'PI CoverageProduct LivesType'(calcType;'Policy ProductCode';0;'Policy EffDate');çä   // Single lifeçä1 : 'Policy LifeParticipant IssueAge'(calcType;0;0);çä   // Joint Life first to die çä2 : 'Oldest Joint Issue Age'(calcType;0);çä   // Joint life last to dieçä3 : 'Youngest Joint Issue Age'(calcType;0);çä   // Else return error messageçä : 'Messages SystemMessage'("CA1022";'Message Language';v_('NAAR Model Name';"'NAAR Corridor Issue Age'")))çä
+F1 599847f0 1a7fbf0 0 0 0 0 2
+NAAR Year Based on Age(calcType; age)
+Funktion
+age - 'NAAR Corridor Issue Age'(calcType) + 1
+F1 1a80038 1a7f340 0 0 0 0 2
+NAAR Corridor Factor(calcType; yearIndex)
+Funktion
+IF ( /*Does NAR calculation use corridor?*/ 'NAAR Calc type uses Corridor'(calcType) ; çä   /*return death benefit adjusted for corridor*/ IF ( /*Policy is guideline calc*/ 'DefLifeInsMethod is Guideline'('Policy LifeUSA DefLifeInsMethod') ; çä    'NAAR Corridor Percent'('NAAR Corridor Attained Age'(calcType;yearIndex);yearIndex) ; çä     /*else CVAT or other*/ 1 //'NAAR CVAT Corridor Percent'(calcType; yearIndex)çäçä  ) ; çä // Else return zeroçä1çä)
+F1 1a80490 1a7e3e0 1a808d8 0 0 0 2
+-- CVAT Functions --
+Funktion
+
+F1 1a808d8 1a80490 0 1a80da8 0 0 2
+NAAR CVAT Corridor Percent(calcType; yearIndex)
+Funktion
+IF ('PI Use Attributes'("Policy CorridorFactor") ; çä  'STD Policy CorridorFactor'(yearIndex) * .01 ; çä  'NAAR Cov NSP'(calcType;yearIndex;0 /*coverageIndex*/ ) / 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;0);0;'Policy EffDate')çä)
+F1 1a80da8 1a80490 7d8f77bb 0 0 0 2
+NAAR Cov NSP(calcType; yearIndex; coverageIndex)
+Funktion
+IF ( //Coverage is a riderçä'IndicatorCode is Rider'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) ; çä  0 ; çä  IF ('NAAR Policy Matures EndOfYear'(calcType;yearIndex) ; çä     // Use discounted value per unitçä('CVAT Interest Discount Factor' * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä     // Otherwise calculate NSP recursivelyçä'NAAR Cov NSP rec'(calcType;yearIndex;coverageIndex)çä  )çä)
+F1 7d8f77bb 1a80da8 2a1ae6fe c7ff8a 0 0 2
+NAAR Cov NSP rec(calcType; yearIndex; coverageIndex)
+Funktion
+IF ('NAAR Policy Matures EndOfYear'(calcType;yearIndex) ; çä  'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') * 'CVAT Interest Discount Factor' ; çä  'NAAR Cov OneYearTerm Premium'(calcType;yearIndex;coverageIndex) + ('CVAT Interest Discount Factor' * (1 - 'NAAR Mort Rate'(calcType;yearIndex;coverageIndex)) * 'NAAR Cov NSP rec'(calcType;yearIndex + 1;coverageIndex))çä)
+F1 2a1ae6fe 7d8f77bb 0 0 0 0 2
+NAAR Cov OneYearTerm Premium(calcType; yearIndex; coverageIndex)
+Funktion
+'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') * ('CVAT Interest Discount Factor' * 'NAAR Mort Rate'(calcType;yearIndex;coverageIndex))
+F1 c7ff8a 1a80da8 0 6cbdbf91 0 0 2
+TEST Vector NAAR Cov NSP(calcType; yearIndex;coverageIndex)
+Funktion
+vectorx(t;yearIndex;('PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;0);0;'Policy EffDate') - 'NAAR Corridor Attained Age'(calcType;yearIndex));'NAAR Cov NSP'(calcType;#t;coverageIndex))
+F1 6cbdbf91 1a80da8 0 131d0460 0 0 2
+NAAR CovMaturity Is Before PolicyMaturity(calcType; coverageIndex)
+Funktion
+('PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') < 'PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;0);0;'Policy EffDate'))
+F1 131d0460 1a80da8 0 1a81678 0 0 2
+NAAR Policy Matures EndOfYear(calcType; yearIndex)
+Funktion
+'NAAR Corridor Attained Age'(calcType;yearIndex) >= ('PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;0);0;'Policy EffDate') - 1)
+F1 1a81678 1a80da8 1a81af0 1a82470 0 0 2
+NAAR Mort Rate(calcType; yearIndex; coverageIndex)
+Funktion
+IF ( /*More than one life on policy*/ 'Policy Number of LifeParticipant'(calcType;coverageIndex) > 1 ; çä   // joint life çä'FRASIER Joint Survivor Annual Rate'("CVAT";coverageIndex;"MORT";yearIndex;1;'GEN Vector Blank') ; çä   /*Single life*/ MIN('NAAR qx'(calcType;yearIndex;coverageIndex) * 'Std Coverage Table Rating factor'(calcType;coverageIndex;yearIndex;0) + 'Std Coverage Total Flat Extra'(calcType;coverageIndex;yearIndex;0);'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) / 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')çä)
+F1 1a81af0 1a81678 0 3c182379 0 0 2
+-- NAAR qx(calcType; yearIndex; coverageIndex)
+Funktion
+Rate(â'Policy Coverage ProductCode'(calcType; coverageIndex); çäâââ"MORT";çäâââTransEffDate;çäâââV_('Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);çäââââyearIndex;çä//ââââage - 'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0) + 1;çäââââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0); çäââââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0); çäââââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); çäââââ1;//'Policy Coverage BandCode'(coverageIndex; TransEffDur);çäââââ'GEN Vector Blank'; 'GEN Vector Blank'; 'GEN Vector Blank'; 'GEN Vector Blank';â// parameters not used for mortality ratesçäââââ'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate');çäââââ'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')çäâââ)çä) çä
+F1 3c182379 1a81678 0 2de25190 0 0 2
+-- NAAR qx(calcType; yearIndex; coverageIndex)
+Funktion
+Rate(â'Policy Coverage ProductCode'(calcType; coverageIndex); çäâââ"MORT";çäâââTransEffDate;çäâââV_('Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);çäââââyearIndex;çä//ââââage - 'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0) + 1;çäââââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0); çäââââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0; yearIndex); çäââââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); çäââââ1;//'Policy Coverage BandCode'(coverageIndex; TransEffDur);çäââââ'GEN Vector Blank'; 'GEN Vector Blank'; 'GEN Vector Blank'; 'GEN Vector Blank';â// parameters not used for mortality ratesçäââââ'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate');çäââââ'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')çäâââ)çä) çä
+F1 2de25190 1a81678 0 0 0 0 2
+NAAR qx(calcType; yearIndex; coverageIndex)
+Funktion
+Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"MORT";TransEffDate;V_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);yearIndex; //ââââage - 'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0) + 1;çä'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;yearIndex);1; //'Policy Coverage BandCode'(coverageIndex; TransEffDur);çä'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank'; // parameters not used for mortality ratesçä'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate');'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate')))
+F1 1a82470 1a80da8 1a82930 0 0 0 2
+CVAT Interest Discount Factor
+Funktion
+1 / (1 + ('TaxCompliance InterestRate' * 0.01))
+F1 1a82930 1a82470 0 0 0 0 2
+TaxCompliance InterestRate
+Funktion
+MAX('ACCS CalcRule Interest Rate'('CalcType CVAT'('GEN Vector Blank');TransEffDate);'PI PolicyProduct GuarIntRate'('Policy ProductCode';'Policy EffDate') * 0.01)
+F1 1a82db8 1a7bba8 0 0 0 0 2
+NAAR Total DeathBenefit(calcType; bom_cv; eom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+MAX('NAAR Total DB No Corridor'(calcType;eom_cv;pastPremium;yearIndex;vectorSolveParms);'NAAR Corridor DB'(calcType;bom_cv;yearIndex))
+F1 1a83280 1a7af80 df05e6b 0 0 0 2
+NAAR Coverage Allocated CV(calcType; coverageIndex; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+CASE('PI PolicyProduct NARAllocMethod'('Policy ProductCode';TransEffDate);çä   //LIFOçä1000500003 : 'NAAR Coverage Allocated CV LIFO'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms);çä   //Pro Rataçä1000500004 : 'NAAR Coverage Allocated CV Prorata'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms);çä   : error("Error calculating NAAR Coverage Allocated CV.  NARAllocMethod=" & 'PI PolicyProduct NARAllocMethod'('Policy ProductCode';TransEffDate) & " not supported."))çä //case ('Std NAR Allocation Method';çä//â"LIFO":  'NAAR Coverage Allocated CV LIFO'(calcType; coverageIndex; bom_cv; pastPremium; yearIndex; vectorSolveParms);çä//â"PRO":â'NAAR Coverage Allocated CV Prorata'(calcType; coverageIndex; bom_cv; yearIndex);çä//â: error("FIFO not currently supported.")çä//)çä
+F1 df05e6b 1a83280 eb8d0b0 100b0f9f 0 0 2
+NAAR Coverage Allocated CV LIFO(calcType; coverageIndex; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+MIN( // Discounted DB for coverageçä'NAAR Discounted Coverage NetRisk DB'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms); // Unallocated cash value available after having cash value allocated to previous coverage segmentsçäIF ( /*If this is initial coverage*/ coverageIndex = 0 ; çä   /*allocated cash value*/ bom_cv ; çä   // Else allocate remaining cash valueçä'NAAR Remaining Unallocated CV LIFO Rec'(calcType;coverageIndex - 1;0;bom_cv;pastPremium;yearIndex;bom_cv;vectorSolveParms)çä))
+F1 eb8d0b0 df05e6b 0 0 0 0 2
+NAAR Remaining Unallocated CV LIFO Rec(calcType; curr_cov; coverageIndex; bom_cv; pastPremium; yearIndex; remaining_cv; vectorSolveParms)
+Funktion
+IF ( /*If recursion has reached current coverage*/ curr_cov = coverageIndex ; çä   /*Return remaining cash value*/ remaining_cv - MIN(remaining_cv;'NAAR Discounted Coverage NetRisk DB'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms)) ; çä   // Else keep going to next coverageçä'NAAR Remaining Unallocated CV LIFO Rec'(calcType;curr_cov;coverageIndex + 1;bom_cv;pastPremium;yearIndex;remaining_cv - MIN(remaining_cv;'NAAR Discounted Coverage NetRisk DB'(calcType;coverageIndex;bom_cv;pastPremium;yearIndex;vectorSolveParms));vectorSolveParms)çä)
+F1 100b0f9f 1a83280 403d2e5 0 0 0 2
+NAAR Coverage Allocated CV Prorata(calcType; coverageIndex; bom_cv; pastPremium; yearIndex; vectorSolveParms)
+Funktion
+bom_cv * 'NAAR Allocation'(calcType;coverageIndex;yearIndex)
+F1 403d2e5 100b0f9f 0 0 0 0 2
+NAAR Allocation(calcType; coverageIndex; yearIndex)
+Funktion
+'Policy Coverage CurrentAmt'(calcType;coverageIndex;yearIndex) / ('Std Total Base CurrentAmt'(calcType;yearIndex) + IF ('Policy Coverage IndicatorCode'(calcType;coverageIndex) = 4 ; çä  'Policy Coverage CurrentAmt'(calcType;coverageIndex;yearIndex) ; çä  0çä))
+F1 1a83bd8 19a41ec 1a84080 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 1a84080 1a83bd8 0 1a84540 0 0 2
+NAAR Model Name
+Funktion
+"NetAmountAtRisk"
+F1 1a84540 1a83bd8 0 21663ef1 0 0 2
+NAAR Calc type uses Corridor(calcType)
+Funktion
+NOT('CalcType 7702 Is Active'(calcType) || 'CalcType Target Is Active'(calcType))
+F1 21663ef1 1a83bd8 1a84a78 1a84f38 0 0 2
+NAAR Interest rate(calcType)
+Funktion
+IF ('PI Use Attributes'("Policy Life NAAR Interest rate") ; çä  'STD Policy Life NAAR Interest rate' ; çä  'NAAR Interest rate access'(calcType)çä)
+F1 1a84a78 21663ef1 0 0 0 0 2
+NAAR Interest rate access(calcType)
+Funktion
+MAX(IF ('CalcType 7702 Is Active'(calcType) ; çä   /*7702 calcs*/ 'ACCS CalcRule Interest Rate'(calcType;TransEffDate) ; çä  IF ( /*Load Target Calc*/ 'CalcType LTGT Is Active'(calcType) ; çä    'DynTarget Interest Rate'(calcType) ; çä     /*Other*/ 0çä  )çä);'PI PolicyProduct GuarIntRate'('Policy ProductCode';'Policy EffDate'))
+F1 1a84f38 1a83bd8 0 0 0 0 2
+NAAR DthBenOpt(calcType; yearIndex; vectorSolveParms)
+Funktion
+IF ('ACCS CalcRule UL CalcType Is Level DB Assumption'('Policy CarrierCode';'Policy ProductCode';calcType;'Policy EffDate') ; çä   // level death benefitçä'DeathBenefitOptType Level' ; çä   // else çäIF ( /*Death Benefit option is passed or Use the policy record*/ 'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms) ; çä     /*Yes*/ 'SharedVector SolveParms DthBenOpt'(vectorSolveParms;yearIndex) ; çä     /*No*/ 'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex)çä  )çä)
+A0 19a42cc 0 0 0 0 0 0
+
+T0 19a433c 0 1a85e08 0 0 0 0
+
+T123 1a85e08 19a433c 0 0 0 0 2
+TABLE Corridor Factors
+Age
+Value
+0
+2.50
+1
+2.50
+2
+2.50
+3
+2.50
+4
+2.50
+5
+2.50
+6
+2.50
+7
+2.50
+8
+2.50
+9
+2.50
+10
+2.50
+11
+2.50
+12
+2.50
+13
+2.50
+14
+2.50
+15
+2.50
+16
+2.50
+17
+2.50
+18
+2.50
+19
+2.50
+20
+2.50
+21
+2.50
+22
+2.50
+23
+2.50
+24
+2.50
+25
+2.50
+26
+2.50
+27
+2.50
+28
+2.50
+29
+2.50
+30
+2.50
+31
+2.50
+32
+2.50
+33
+2.50
+34
+2.50
+35
+2.50
+36
+2.50
+37
+2.50
+38
+2.50
+39
+2.50
+40
+2.50
+41
+2.43
+42
+2.36
+43
+2.29
+44
+2.22
+45
+2.15
+46
+2.09
+47
+2.03
+48
+1.97
+49
+1.91
+50
+1.85
+51
+1.78
+52
+1.71
+53
+1.64
+54
+1.57
+55
+1.50
+56
+1.46
+57
+1.42
+58
+1.38
+59
+1.34
+60
+1.30
+61
+1.28
+62
+1.26
+63
+1.24
+64
+1.22
+65
+1.20
+66
+1.19
+67
+1.18
+68
+1.17
+69
+1.16
+70
+1.15
+71
+1.13
+72
+1.11
+73
+1.09
+74
+1.07
+75
+1.05
+76
+1.05
+77
+1.05
+78
+1.05
+79
+1.05
+80
+1.05
+81
+1.05
+82
+1.05
+83
+1.05
+84
+1.05
+85
+1.05
+86
+1.05
+87
+1.05
+88
+1.05
+89
+1.05
+90
+1.05
+91
+1.04
+92
+1.03
+93
+1.02
+94
+1.01
+95
+1.01
+96
+1.01
+97
+1.01
+98
+1.01
+99
+1.01
+100
+1.00
+101
+1.00
+102
+1.00
+103
+1.00
+104
+1.00
+105
+1.00
+106
+1.00
+107
+1.00
+108
+1.00
+109
+1.00
+110
+1.00
+111
+1.00
+112
+1.00
+113
+1.00
+114
+1.00
+115
+1.00
+116
+1.00
+117
+1.00
+118
+1.00
+119
+1.00
+120
+1.00
+121
+1.00
+I0 19a43ac 0 47113329 0 0 0 0
+
+I0 47113329 19a43ac 0 0 0 0 0
+ActuarialFunctions.pms
+-
+O0
+E0
+L0
+B0
+P2
+1a79728
+1a7a310
+F34
+1a7abf8
+1a7af80
+1a7b3a0
+1a7b7c8
+1a7bba8
+1a7c858
+1a7ccd0
+1a7d108
+1a7d788
+1a7dba0
+1a7dfb0
+1a7e3e0
+1a7e8e8
+1a7f340
+1a7f780
+1a7fbf0
+1a80038
+1a80490
+1a808d8
+1a80da8
+7d8f77bb
+c7ff8a
+6cbdbf91
+131d0460
+1a81678
+1a82470
+1a82930
+1a82db8
+1a83280
+1a83bd8
+1a84080
+1a84540
+21663ef1
+1a84f38
+A0
+T1
+1a85e08
+!47
+1a7af80 -2 -2
+Description:  Returns the net amount at risk associated with the particular coverage segment.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - DT - PA1013 - added parm yearIndex to Policy Coverage LifeCovStatusçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Ruleçä çä
+1a7b3a0 -2 -2
+Description:  Returns the discounted death benefit to be used in the net risk calculation for the particular coverage segment.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Ruleçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit option
+1a7b7c8 -2 -2
+Description: Returns the interest rate factor to discount the NAR by.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1a7bba8 -2 -2
+Description:  Returns the death benefit to be used in the net risk calculation for the particular coverage segment.  7Pay NSP uses level death benefit despite the option.çäAssumption:  çä çäThe CV or ROP applicable to the death benefit will be applied to the initial coverage and any corridor death benefit amount will be applied to the last coverage.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - DT - PA1013 - added parm yearIndex to 'Policy Coverage LifeCovStatus'çä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Rule
+1a7c858 -2 -2
+Description:  Returns the True if coverageIndex is the initial NAR coverage indexçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1a7ccd0 -2 -2
+Description:  Returns the initial active NAR coverage index.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1a7d108 -2 -2
+Description:  Returns the initial active coverage index.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - DT - PA1013 - added parm TransEffDur to 'Policy Coverage LifeCovStatus'çä10/31/2007 CSC Initial Calculation/Rule
+1a7d788 -2 -2
+Description:  Returns the True if coverageIndex is the last NAR coverage indexçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1a7dba0 -2 -2
+Description:  Returns the last active NAR coverage index.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1a7dfb0 -2 -2
+Description:  Returns the last active NAR coverage index.çä çäModification Log:çäPAC029 - 8/13/2012- Integrated Term Rider - JC-Added IndicatorCode is Integrated to the Coverage is NARçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - DT - PA1013 - added parm TransEffDur to 'Policy Coverage LifeCovStatus'çä10/31/2007 CSC Initial Calculation/Rule
+1a7e3e0 -2 -2
+Description:  Returns the amount of the death benefit due to the corridor limit check (if any).çä çäModification Log:çä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Ruleçä
+1a7e8e8 -2 -2
+Description:  Returns the total NAR death benefit without considering the DB corridor.çä çäModification Log:çä8/23/2012- PAC029 - Integrated Term Rider - JC-Added Std Coverage Is Inforce function .çä9/16/2011 - PA RegTest - JL - Remove round to hardcoded 0 decimals. çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä06/03/2009 - DT - PA1013 - added parm yearIndex to 'Policy Coverage LifeCovStatus'çä02/18/2009 - PA1001 - wdp - Changed code for Policy Number of Coverages to use TransEffDur for Guidelines and Targets and yearIndex for CV calcs. This is done for face amount increases.çä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Rule
+1a7f340 -2 -2
+Description:  Returns the DB corridor amount.çä çäModification Log:çä7/28/2010 - PAC019 Rate Access Var - BT - add yearIndex parm to NAAR Corridor Percentçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2010 -Performance - use of 'NAAR CVAT Corridor Percent' replaced with direct use of 'NAAR Cov NSP'çä10/31/2007 CSC Initial Calculation/Ruleçä10/27/2008 CSC added code for CVAT corridorçä
+1a7f780 -2 -2
+Description:  Returns the corridor percent for the attained age.çä çäModification Log:çä8/13/2010 - PAC019 Rate Access Var - BT - change nameçä8/6/2010 - PAC019 - Rate Access Var - added parm to "PI Use Attributes"çä10/31/2007 CSC Initial Calculation/Rule
+1a7fbf0 -2 -2
+Description: Returns the attained age to use for the corridor percent.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/02/2010 - Performance - rm - Moved determination of issue age to separate function to reduce repetitionçä10/31/2007 CSC Initial Calculation/Rule
+54cc1d5d -2 -2
+Description: Returns the issue age to use for the corridor percent.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/02/2010 - Performance - rm - Initial Calculation
+599847f0 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1a80038 -2 -2
+Description: Returns the corridor factorçä çäModification Log:çä7/28/2010 - PAC019 Rate Access Var - BT - add yearIndex parm to NAAR Corridor Percentçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/08/2010 pA Performance CSC Initial Calculation/Rule
+1a808d8 -2 -2
+Description:  get NSP as corridor rate for CVAT db calcçä çäModifications log:çä8/13/2010 - PAC019 Rate Access Var - BT - change nameçä8/6/2010 - PAC019 - Rate Access Var - added parm to "PI Use Attributes"çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/02/2010 - Performance - rm - eliminated parm "age".  Redundant function - should use NAAR Cov NSP directly.çä10/20/2008 CSC initial function
+1a80da8 -2 -2
+Description : Coverage-level net single premium per unit.  çä çä çä çäModification logçä çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/16/2010 - PA1543 - rm - CVAT NSP excludes riders at this timeçä06/03/2010 - PA1543 - rm - Initial function.  Moved recursive calculation into separate function 'NAAR Cov NSP rec'.çä çä
+7d8f77bb -2 -2
+Description : Net single premium per unit recursive functionçä çä çäModification logçä çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/26/2010 - rm - removed repetitive usage of ValuePerUnit and corrected paranthesis around "1-MortRate".çä06/03/2010 - PA1543 - rm - Recursive function moved down from 'NAAR Cov NSP'.çä06/04/2010 - PA1543 - rm - Recursion stops when policy will mature at end of policy year.çä10/27/2008 CSC changed name from TaxCompliance to NAARçä
+2a1ae6fe -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+c7ff8a -2 -2
+Description:  Test function to return vector of NSP'sçä çäModification logçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/15/2010  CSC  Test function
+6cbdbf91 -2 -2
+Description: Maturity age of coverage is before maturity age of base coverageçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/02/2010 - PA1543 - rm - Initial Calculation
+131d0460 -2 -2
+Description:  Boolean expression indicating attained age reaches maturity at end of yearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/04/2010 - PA1543 - rm - Initial Calculation
+1a81678 -2 -2
+Description: mortality rate including table ratings and flat extrasçä çä çäModification logçä çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/04/2010 - PA1543 - rm - Moved dividing single life qx by ValuePerUnit up from NAAR qxçä06/02/2010 - Performance - rm - eliminated use of "age" parameterçä10/27/2008 CSC changed name as moved from TaxCompliance to NAARçä10/31/2007 CSC Initial Calculation/Rule
+1a81678 0 2
+
+1a81af0 -2 -2
+Description: mortality rate excluding table ratings and flat extras for single livesçä çäModification logçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/04/2010 - PA1543 - rm - removed dividing by ValuePerUnitçä06/02/2010 - Performance - rm - replaced use of attained age parameter "age" to calc duration with yearIndexçä10/11/2009 - PAC009 - JL - No banded rates, use bandcode 1çä10/27/2008 CSC changed name as moved from TaxCompliance to NAARçä10/31/2007 CSC Initial Calculation/Ruleçä
+3c182379 -2 -2
+Description: mortality rate excluding table ratings and flat extras for single livesçä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/04/2010 - PA1543 - rm - removed dividing by ValuePerUnitçä06/02/2010 - Performance - rm - replaced use of attained age parameter "age" to calc duration with yearIndexçä10/11/2009 - PAC009 - JL - No banded rates, use bandcode 1çä10/27/2008 CSC changed name as moved from TaxCompliance to NAARçä10/31/2007 CSC Initial Calculation/Ruleçä
+2de25190 -2 -2
+Description: mortality rate excluding table ratings and flat extras for single livesçä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/04/2010 - PA1543 - rm - removed dividing by ValuePerUnitçä06/02/2010 - Performance - rm - replaced use of attained age parameter "age" to calc duration with yearIndexçä10/11/2009 - PAC009 - JL - No banded rates, use bandcode 1çä10/27/2008 CSC changed name as moved from TaxCompliance to NAARçä10/31/2007 CSC Initial Calculation/Ruleçä
+1a82470 -2 -2
+Description:  v interest discount factorçä çäModification logçä06/02/2010 - rm - renamed function to be more descriptive (was 'Vector TCOM Interest Function')çä10/31/2007 CSC Initial Calculation/Ruleçä
+1a82930 -2 -2
+Description: Interest rate for CVAT calculationçä çäModification logçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/14/2011 - PAC013 calcType - BT - Restructureçä2/1/2008 Additional Product Information moved to CalcRulesçä10/31/2007 CSC Initial Calculation/Rule
+1a82db8 -2 -2
+Description:  Returns the total NAR death benefit consider the DB corridor.çä çäModification Log:çä9/16/2011 - PA RegTest - JL - NAR DB Needs EOM CV as well (For deductions to FA from DBOption Changes)çä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Rule
+1a83280 -2 -2
+Description:  Returns the cash value to be allocated to the particular coverage segment.çä çäModification Log:çä06/06/2011 PAC015 rm - Added PI function to allocation method decisionçä03/04/2011 PAC015 MAS - Restructured to allow for Prorata allocation of cash valueçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Rule
+df05e6b -2 -2
+Description:  Returns the cash value to be allocated to the particular coverage segment under the "LIFO" rule.çä çäModification Log:çä03/04/2011 PAC015 MAS - Renamed with "LIFO" in nameçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Rule
+eb8d0b0 -2 -2
+Description:  Returns the remaining unallocated cash value after cash value has been applied to coverage "coverageIndex" and all previous coverage segments.çä çäModification Log:çä03/04/2011 PAC015 MAS - Renamed with "LIFO" in nameçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit optionçä10/31/2007 CSC Initial Calculation/Rule
+100b0f9f -2 -2
+Description:  Returns the cash value to be allocated to the particular coverage segment under the Prorata rule.çä çäModification Log:çä03/04/2011 MAS - PAC015 MVProcessing Initial Calculation
+403d2e5 -2 -2
+Description:  Returns the Prorata Coverage-level Allocation based on coverage amounts, in decimal form.çä çäModification Log:çä8/13/2012- PAC029 - Integrated Term Rider - JC-Added Coverage Amount to the Base for Integrated Term Rider.çä03/04/2011 MAS - PAC015 MVProcessing Initial Calculation
+1a84540 -2 -2
+Description - returns true if calcType uses corridor adjustment to death benefitçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Ruleçä11/05/2009 - wdp - Added check to exclude corridor for target calcsçä06/02/2010 - Performance - simplified boolean expression
+21663ef1 -2 -2
+Description:  Decisions whether to use Policy Net amount at risk interest rate from input look it up internallyçä çäModification Log:çä8/13/2010 - PAC019 Rate Access Var - BT - change nameçä8/6/2010 - PAC019 - Rate Access Var - added parm to "PI Use Attributes"
+1a84a78 -2 -2
+Description: Interest rate looked up internally used for NAR calculation çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/28/2010 - PAC019 - Rate Access Var - rename function from NAAR Interest rate to NAAR Interest rate accessçä7/8/2009 - PA1277 - wdp - Added LTGT to get correct interest rate for Load Target from CalcRulesçä09/16/2009 - PA1277 - wdp - Created LTGT case to get correct interest rate for Load Target from CalcRules. Previous fix was incorrect.çä2/1/2008 Additional Product information moved to CalcRulesçä10/31/2007 CSC Initial Calculation/Ruleçä
+1a84f38 -2 -2
+Description: Returns the Death Benefit Option for  the policy.  This checks to see if the death benefit option is in the vector will be using input functions.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit option
+1a50a98 -2 -2
+5559.02
+19a5740 -2 -2
+5559.02
+19a6290 -2 -2
+5559.02
+19ae758 -2 -2
+5543.10630321438
+1a55d48 -2 -2
+5543.10630321438
+;Offset=00000000

@@ -1,0 +1,216 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 23829a4 0 2384040 0 0 0 0
+
+X0 2384040 23829a4 23847a8 0 0 0 0
+-- All Test Cases --
+X6 23847a8 2384040 0 0 0 0 2
+PREMIUM Projected Periodic Pmt Made - 1
+'PREMIUM Projected Periodic Pmt Made'("C"; 1)
+1
+INPUT Policy PaymentMode
+3
+INPUT Policy ProductCode
+SPIA1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+O0 238283c 0 0 0 0 0 0
+
+E0 23828b4 0 0 0 0 0 0
+
+L0 238292c 0 0 0 0 0 0
+
+B0 2382b0c 0 0 0 0 0 0
+
+P3 2382a1c 0 2384e48 0 0 0 2
+
+--description
+Premiums Model is a submodel used for projected and current premium amounts. çä çäFunctionality supports limiting premiums due to Guideline premium limitations.çä çäRELEASE LOG:çä çäRELEASE 1301 - PAC027 Tax Reporting ChangesçäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.9.1"
+P13 2384e48 2382a1c 0 0 0 0 2
+-- Premiums --
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Premiums model - contains functions for projected and current premium amounts.çä Author:  John Heumannçä Date:     02/13/2007 çä Modification Log:çä Date              ModelerââChange Descriptionçä 02/13/2007     John Heumannâ     âCreated model.çä"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"Premiums.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+//Audit_Control_Block
+"12/12/2016 PA1603 Delivery"
+F0 2382a94 0 23857b8 0 0 0 0
+
+F1 23857b8 2382a94 2385920 0 0 0 2
+:PREMIUM
+Funktion
+
+F1 2385920 23857b8 2385838 23882b8 0 0 2
+-- Projection Functions --
+Funktion
+
+F1 2385838 2385920 0 2385c78 0 0 2
+PREMIUM Projected GrossPremium(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /*premiums need to be tested against guideline limit*/ 'SharedVector CVPROJAddlInfo AdjustForGuidelines'(vectorAddlInfo) ; çä   /*Adjusted premium*/ 'PREMIUM Projected Adjusted GrossPremium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) ; çä   /*since guideline testing not required, return the Unadjusted premium*/ 'PREMIUM Projected Unadjusted GrossPremium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)çä)
+F1 2385c78 2385920 2386380 2386998 0 0 2
+PREMIUM Projected Adjusted GrossPremium(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+MIN( // unadjusted current premiumçä'PREMIUM Projected Unadjusted GrossPremium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex); //  current premium amount available capped at the guideline premium limitationçä'PREMIUM Projected Maximum Allowable Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) //;çä)
+F1 2386380 2385c78 0 0 0 0 2
+PREMIUM Projected Maximum Allowable Premium(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+ //  Premium that would take life to date premium up to guideline limitçä'ULDocs Proj Guideline Premium Limit'(calcType;yearIndex;vectorAddlInfo) - IF ( /*First policy month*/ 'SharedVectorCVPROJAddlInfo First Month of InForce Projection'(vectorAddlInfo;yearIndex;monthIndex) ; çä   /*Premium amount in month 1*/ IF ( /*Policy is in force*/ 'SharedVector CVPROJAddlInfo IsInforceCalc'(calcType;vectorAddlInfo) ; çä     /*Return premium amount*/ 'Policy Life GrossPremAmtATD' ; çä     // zero for policy not in forceçä0çä  ) ; çä /* Premium calculated based on previous premium */ IF (monthIndex = 1 ; çä  'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex - 1;12) - 'PREMIUM Projected LTD NONQBA Charge'(calcType;yearIndex - 1;12;vectorSolveParms) ; çä   // Elseçä'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex - 1) - 'PREMIUM Projected LTD NONQBA Charge'(calcType;yearIndex;monthIndex - 1;vectorSolveParms)çä)çä)
+F1 2386998 2385920 23871d0 2387838 0 0 2
+PREMIUM Projected Unadjusted GrossPremium(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /* Additional info available*/ 'SharedVector CVPROJAddlInfo Passed'(vectorAddlInfo) ; çä   /*Return gross premium using Additional info*/// Add in initial lump sumçä IF ( /*Cyberlife or NBA Calling System?*/ 'Std Calling System Is NBA' ; çä     //||'Std Calling System Is Cyberlife'çä//Yesçä'PREMIUM  Projected Unadjusted GrossPremium CLandNBA'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) ; çä     //NoçäIF (yearIndex = 1 && monthIndex = 1 ; çä      'SharedVector CVPROJAddlInfo InitialLumpSum'(vectorAddlInfo) ; çä      0çä    ) +  // Add in periodic premiumçäIF ( /*Premium due this month*/ 'PREMIUM Projected Periodic Pmt Made'(calcType;monthIndex) ; çä     /*Return premium*/ IF ( /*Premiums vary over time*/ 'SharedVector CVPROJAddlInfo VaryingPremiums'(vectorAddlInfo) ; çä       /*calculate varying premium*/ 'SharedVector CVPROJAddlInfo PeriodicPremium'(vectorAddlInfo;yearIndex) ; çä       /*else use constant premium*/ IF ('SharedVector SolveParms Premium passed'(vectorSolveParms) ; çä        IF ( /*Premium end duration not yet passed*/ yearIndex <= 'SharedVector SolveParms PremiumDuration'(vectorSolveParms) + ('SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo) - 1) ; çä           /*return premium*/ 'SharedVector SolveParms Premium'(vectorSolveParms;yearIndex) ; çä           /*zero premium if passed the premium duration limit*/ 0çä        ) ; çä       /*MAS 12/29/2010 still need to zero out if after premium duration*/ IF (yearIndex <= 'ULDocs Premium Duration'(calcType) ; çä        'ULDocs Policy Life PaymentAmt'(calcType;yearIndex;monthIndex) ; çä        0çä      )çä  )çä) ; çä // Else no periodic payment made for the monthçä0çä)çä) ; çä // Else the additional information vector was left empty.  çäIF ( /*Premium end duration not yet passed*/ yearIndex <= 'SharedVector SolveParms PremiumDuration'(vectorSolveParms) && 'PREMIUM Projected Periodic Pmt Made'(calcType;monthIndex) ; çä /*return premium*/ 'SharedVector SolveParms Premium'(vectorSolveParms;yearIndex) ; çä /*zero premium if passed the premium duration limit*/ 0çä)çä)
+F1 23871d0 2386998 0 0 0 0 2
+PREMIUM  Projected Unadjusted GrossPremium CLandNBA(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /*If at issue*/ yearIndex = 1 && monthIndex = 1 ; çä   //Use Planned Initial Premiumçä'SharedVector CVPROJAddlInfo InitialLumpSum'(vectorAddlInfo) + IF ('SharedVector SolveParms Premium passed'(vectorSolveParms) ; çä    IF ( /*Premium end duration not yet passed*/ yearIndex <= 'SharedVector SolveParms PremiumDuration'(vectorSolveParms) + ('SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo) - 1) ; çä       /*return premium*/ 'SharedVector SolveParms Premium'(vectorSolveParms;yearIndex) ; çä       /*zero premium if passed the premium duration limit*/ 0çä    ) ; çä  IF (yearIndex <= 'ULDocs Premium Duration'(calcType) ; çä    'ULDocs Policy Life PaymentAmt'(calcType;yearIndex;monthIndex) ; çä    0çä  )çä) ; çä // Use Planned periodic premiumçäIF ( /*Premium due this month*/ 'PREMIUM Projected Periodic Pmt Made'(calcType;monthIndex) ; çä /*Return premium*/ IF ( /*Premiums vary over time*/ 'SharedVector CVPROJAddlInfo VaryingPremiums'(vectorAddlInfo) ; çä /*calculate varying premium*/ 'SharedVector CVPROJAddlInfo PeriodicPremium'(vectorAddlInfo;yearIndex) ; çä /*else use constant premium*/ IF ('SharedVector SolveParms Premium passed'(vectorSolveParms) ; çä  IF ( /*Premium end duration not yet passed*/ yearIndex <= 'SharedVector SolveParms PremiumDuration'(vectorSolveParms) + ('SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo) - 1) ; çä     /*return premium*/ 'SharedVector SolveParms Premium'(vectorSolveParms;yearIndex) ; çä     /*zero premium if passed the premium duration limit*/ 0çä  ) ; çäIF (yearIndex <= 'ULDocs Premium Duration'(calcType) ; çä  'ULDocs Policy Life PaymentAmt'(calcType;yearIndex;monthIndex) ; çä  0çä)çä)çä) ; çä // Else no periodic payment made for the monthçä0çä)çä)
+F1 2387838 2385920 0 2387968 0 0 2
+PREMIUM Projected Net Premium(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /*Premium not zero*/ 'PREMIUM Projected GrossPremium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) > 0 ; çä   /*Calculate net premium*/ 'PREMIUM Projected GrossPremium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) - IF ( /*Are fees take off for calc type?*/ 'CHG Calc Type Uses Fees'(calcType) ; çä     /*Yes*/ 'PLC Projected Total Premium Load Charge'(calcType;'FeeType PremiumLoad';yearIndex;'PREMIUM Projected GrossPremium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex); // Vector of the coverage load target premiumsçä'SharedVector CVPROJAddlInfo LoadTargetPremium'(vectorAddlInfo); // Year to date premium paid çäIF (monthIndex = 1 ; çä      0 ; çä       // Elseçä'PREMIUM Projected YTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex - 1)çä    )) ; çä   //calcType does not use feesçä0çä) ; çä // Else gross premium is not greater than 0çä0çä)
+F1 2387968 2385920 0 2387a98 0 0 2
+PREMIUM Projected YTD Prem Rec(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'PREMIUM Projected GrossPremium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) +  // Previous month premium YTDçäIF ( /*First month in a year*/ monthIndex = 1 ; çä   // Starting a new accumulation periodçä0 ; çä   // Else accumulate from begining of yearçäIF ( /*first month of in-force projection*/ 'SharedVectorCVPROJAddlInfo First Month of InForce Projection'(vectorAddlInfo;yearIndex;monthIndex) ; çä     // Starting YTD premium for a inforce projectionçä'Policy Life GrossPremAmtATD' ; çä     // Previous month's YTD premiumçä'PREMIUM Projected YTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex - 1)çä  )çä)
+F1 2387a98 2385920 2387e20 2388188 0 0 2
+PREMIUM Projected Periodic Pmt Made(calcType; monthIndex)
+Funktion
+CASE( /*Premium mode*/ 'PREMIUM Premium Mode To Use'(calcType);çä   /* Annual*/ 1 : IF (monthIndex = 1 ; çä    1 ; çä    0çä  );çä /*Semiannual*/ 2 : IF (monthIndex = 1 || monthIndex = 7 ; çä  1 ; çä  0çä);çä /* Quarterly*/ 3 : IF (monthIndex = 1 || monthIndex = 4 || monthIndex = 7 || monthIndex = 10 ; çä1 ; çä0çä);çä /* Monthly*/ 4 : 1;çä /*Else return error message*/  : 'Messages SystemMessage'("CA1011";'Message Language';v_('PREMIUM Model Name';"'PREMIUM Projected Periodic Pmt Made'")))çä
+F1 2387e20 2387a98 0 0 0 0 2
+PREMIUM Premium Mode To Use(calcType)
+Funktion
+IF ('CalcType 7702 Is Active'(calcType) ; çä   // Guideline premiums - Use annual premium modeçä1 ; çä  IF ('CalcType Target Is Active'(calcType) || 'CalcType GMDB Is Active'(calcType) ; çä     // Targets premiums - Get mode to use from tableçä'ACCS CalcRule Target Premium Mode'(calcType;'Policy CarrierCode';'Policy ProductCode';'Policy EffDate') ; çä     // Else use attributeçä'Policy PaymentMode'çä  )çä)
+F1 2388188 2385920 0 57b7a031 0 0 2
+PREMIUM Projected LTD Prem Rec(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'PREMIUM Projected YTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) + IF ( /*Year is first of projection*/ 'SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex) ; çä   /*No premiums paid yet*/ 0 ; çä   /*Accumulate back to start of projection*/ 'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex - 1;12)çä)
+F1 57b7a031 2385920 0 0 0 0 2
+PREMIUM Projected LTD NONQBA Charge(calcType; yearIndex; monthIndex;vectorSolveParms)
+Funktion
+SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ('ACCS CalcRule 7702 QAB Rules'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;#coverageIndex);"*"; //use wildcard for 'Policy CovOption ProductCode'(calcType; coverageIndex; coverageOptionIndex)çäcalcType;0; //use wildcard for 'Policy LifeParticipant LifeParticipantRoleCode'(calcType; coverageIndex; participantIndex)çä'Policy Coverage EffDate'(calcType;#coverageIndex);"is_qab") = 1 ; çä  0 ; çä  'COV Projected LTD Monthly Coverage NonNAR Charge Rec'(calcType;#coverageIndex;yearIndex;monthIndex;vectorSolveParms)çä)) + SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;SUMX(coverageOptionIndex;0;'Policy number of CovOption'(calcType;#coverageIndex) - 1;IF ('ACCS CalcRule 7702 QAB Rules'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;#coverageIndex);'Policy CovOption ProductCode'(calcType;#coverageIndex;#coverageOptionIndex);calcType;"0"; //use wildcard for 'Policy LifeParticipant LifeParticipantRoleCode'(calcType; coverageIndex; participantIndex)çä'Policy Coverage EffDate'(calcType;#coverageIndex);"is_qab") = 1 ; çä0 ; çä'COV Projected LTD Monthly CovOption Charge Rec'(calcType;#coverageIndex;#coverageOptionIndex;yearIndex;monthIndex)çä)))
+F1 23882b8 23857b8 2388460 2388820 0 0 2
+-- Access functions for higher models --
+Funktion
+
+F1 2388460 23882b8 0 2388630 0 0 2
+Loan Mode Premium
+Funktion
+ // pass mode premium back to Loan Modelçä// This will need to be updated to pass values for vectorSolveParmsçä'PREMIUM Projected GrossPremium'('CalcType Current'("C");'GEN Vector Blank';'GEN Vector Blank';TransEffDur;1)
+F1 2388630 23882b8 0 0 0 0 2
+Loan Accumulated Premiums ITD(yearIndex)
+Funktion
+ // Pass accumulated premiums back to Loan model çä// This will need to be updated to pass values for vectorSolveParmsçä'PREMIUM Projected LTD Prem Rec'('CalcType Current'("C");'GEN Vector Blank';'GEN Vector Blank';yearIndex;12)
+F1 2388820 23857b8 2388a08 2388c08 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 2388a08 2388820 0 0 0 0 2
+PREMIUM Model Name
+Funktion
+"Premiums"
+F1 2388c08 23857b8 2594842d 0 0 0 2
+-- Default Functions --
+Funktion
+
+F1 2594842d 2388c08 0 0 0 0 2
+--ULDocs Proj Guideline Premium Limit(calcType; yearIndex; vectorAddlInfo)
+Funktion
+MAX('Policy LifeUSA CumGuidelineAnnPrem'; 'Policy LifeUSA GuidelineSinglePrem')
+A0 2382b84 0 0 0 0 0 0
+
+T0 2382bfc 0 0 0 0 0 0
+
+I0 2382c74 0 2389400 0 0 0 0
+
+I0 2389400 2382c74 0 23895f8 0 0 0
+Charges.pms
+I0 23895f8 2382c74 0 23897c0 0 0 0
+TargetFunctions.pms
+I0 23897c0 2382c74 0 0 0 0 0
+PremiumLoadCharges.pms
+-
+O0
+E0
+L0
+B0
+P1
+2384e48
+F17
+23857b8
+2385920
+2385838
+2385c78
+2386998
+2387838
+2387968
+2387a98
+2387e20
+2388188
+57b7a031
+23882b8
+2388460
+2388630
+2388820
+2388a08
+2388c08
+A0
+T0
+!15
+2385838 -2 -2
+Description:  Returns the gross premium for the given year and month.  The gross premium amount will be adjusted for the guideline limitations if it is specified to do so.çä çäModification Log:çä02/04/2011 - MAS removed messageçä01/28/2011 - PAC014 - MAS - added messageçä01/14/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+2385c78 -2 -2
+Description:  Returns the gross premium for the year and month limited by the guideline limits.çä çäModification Log:çä07/14/2011 - pA1101 - cleanup - BT - remove unused codeçä10/29/2010 - PAC014 - MAS - added another layer.  Note that though some logic added, the premium adjustment to avoid MEC is still out-of-scopeçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA Performance CMC guideline limit no longer from vector.çä05/20/2010 pA Performance CMC added yearIndex as a parm on the guideline limit functionçä05/20/2010 pA Performance CMC removed yearIndex as a parm on the guideline limit functionçä10/31/2007 CSC Initial Calculation/Rule
+2386380 -2 -2
+Description:  Returns the maximum allowable premium up to the guideline premium limitationçä çäModification Log:çä10/16/2012-PAC027 -  Tax Reporting Changes - JC -Added Function to remove NONQBA charges from Guideline Comparisonçä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä1/19/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/29/2010 - PAC014 - MAS - new function to add clarity
+2386998 -2 -2
+Description:  Returns the unadjusted gross premium for the given year and month.çä çäModification Log:çä01/02/2013 wmA-J 1301 Sprint 8 JIRA 731 CMC update to new calling system decision functions.çä12/07/2010 pA Regression MAS updated to allow for premium to be used without being passed in a vector, per CMC.çä12/17/2009 nbA Integration made change for CL and NBA specificy logic.çä10/31/2007 CSC Initial Calculation/Ruleçä
+23871d0 -2 -2
+Description:  Returns the unadjusted gross premium for the given year and month.  In the first month the premium is passed in via the planned initial premium field.  This assumes that the planned initial premium includes the planned periodic premiumçä çäModification Log:çä12/29/2011 pA2113 call to ULDocs payment amount.çä12/17/2009 nbA Integration added Calculation.çä02/01/2010 nbA Integration CMC added premium in solve vector for year 1 duration 1.çä
+2387838 -2 -2
+Description:  Returns the net premium for the given year and month.çä çäModification Log:çä05/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Ruleçä
+2387968 -2 -2
+Description:  Returns the projected year to date premium paid.çä çäModification Log:çä01/19/2011 - PAC013 calcType - BT - Restructureçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Ruleçä
+2387a98 -2 -2
+Description:  Returns True (i.e. 1) if a periodic payment is to be paid for the particular month.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Ruleçä
+2387e20 -2 -2
+Description:  Returns the premium mode to use for the particular calculation type. çä çäModification Log:çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/10/2010 pA performance added GLPçä10/31/2007 CSC Initial Calculation/Ruleçä
+2388188 -2 -2
+Description:  Returns the projected life to date premium paid.çä çäModification Log:çä07/14/2011 - pA1101 - cleanup - BT - code reuseçä10/31/2007 CSC Initial Calculation/Ruleçä
+57b7a031 -2 -2
+Description:  Returns the cumulative life to date NONQBA  ChargesçäModification Log:çä10/16/2012-PAC027 -  Tax Reporting Changes - JC-Added Function.
+2388460 -2 -2
+çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/12/2011 - PAC013 calcType - BT - Restructure
+2388630 -2 -2
+çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/12/2011 - PAC013 calcType - BT - Restructure
+2388a08 -2 -2
+Description:  Returns the current model name.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Ruleçä
+2594842d -2 -2
+Description:âDefault function to allow lower compile.çä çäModification Logçä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA Performance CMC Intial Function
+;Offset=00000000

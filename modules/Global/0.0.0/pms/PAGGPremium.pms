@@ -1,0 +1,1020 @@
+;1	08.12.2016 13:40:51	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 2c16cf8f 0 0 0 2
+
+--description
+Global Group Products Premium Calculationsçä çäRELEASE LOG:çäRELEASE pA 1601
+P13 2c16cf8f de0804 5fad7507 0 0 0 2
+--Global Group Premiums--
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Group Premium model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGGPremium.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 5fad7507 2c16cf8f 655db993 0 0 0 2
+:OUTPUT GroupPremium
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P7 655db993 5fad7507 0 269e2684 0 0 2
+OUTPUT GroupPremium Posted Premium Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupPremium Posted Premium
+'GroupPremium Posted Premium'
+OUTPUT GroupPremium Posted Extra Mortality Premium
+'GroupPremium Posted Extra Mortality Premium'
+OUTPUT GroupPremium Posted Extra OA Premium
+'GroupPremium Posted Extra OA Premium'
+OUTPUT GroupPremium Fees
+'GroupPremium Fees'
+P6 269e2684 5fad7507 0 26f3de0d 0 0 2
+OUTPUT GroupPremium Posted RI Premium Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupPremium Posted RI Commission
+'GroupPremium Posted RI Commission'
+OUTPUT GroupPremium Posted RI W Management Fee
+'GroupPremium Posted RI W Management Fee'
+OUTPUT GroupPremium Posted RI Wakalah Com
+'GroupPremium Posted RI Wakalah Com'
+P9 26f3de0d 5fad7507 30f852e0 7830056c 0 0 2
+OUTPUT GroupPremium Premium Calc Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupPremium Annual Premium
+'GroupPremium Annual Premium'
+OUTPUT GroupPremium Installment Premium
+'GroupPremium Installment Premium'
+OUTPUT GroupPremium Premium Indicator
+'GroupPremium Premium Indicator'
+OUTPUT GroupPremium Total Suminsured
+'GroupPremium Total Suminsured'
+OUTPUT GroupPremium Gross Premium Rate
+'GroupPremium Gross Premium Rate'
+OUTPUT GroupPremium Net Premium Rate
+'GroupPremium Net Premium Rate'
+P8 30f852e0 26f3de0d 0 0 0 0 2
+OUTPUT GroupPremium Extra Premium Calc Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupPremium Extra Annual ExtraMortality
+'GroupPremium Extra Annual ExtraMortality'
+OUTPUT GroupPremium Extra Installment ExtraMortality
+'GroupPremium Extra Installment ExtraMortality'
+OUTPUT GroupPremium Extra Annual OccupationAvocational
+'GroupPremium Extra Annual OccupationAvocational'
+OUTPUT GroupPremium Extra Installment OccupationAvocational
+'GroupPremium Extra Installment OccupationAvocational'
+OUTPUT GroupPremium Extra Suminsured
+'GroupPremium Extra Suminsured'
+P7 7830056c 5fad7507 2be604b9 0 0 0 2
+OUTPUT GroupPremium RI Premium Calc Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupPremium RI Gross Prem Rate
+'GroupPremium RI Gross Prem Rate'
+OUTPUT GroupPremium RI Net Prem Rate
+'GroupPremium RI Net Prem Rate'
+OUTPUT GroupPremium RI Annual Premium
+'GroupPremium RI Annual Premium'
+OUTPUT GroupPremium RI Installment Premium
+'GroupPremium RI Installment Premium'
+P7 2be604b9 7830056c 0 1b63ef1f 0 0 2
+OUTPUT GroupPremium RI Extra Premium Calc Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupPremium RI Extra Premium Annual Percent
+'GroupPremium RI Extra Premium Annual Percent'
+OUTPUT GroupPremium RI Extra Premium Annual Rate
+'GroupPremium RI Extra Premium Annual Rate'
+OUTPUT GroupPremium RI Extra Premium Installment Percent
+'GroupPremium RI Extra Premium Installment Percent'
+OUTPUT GroupPremium RI Extra Premium Installment Rate
+'GroupPremium RI Extra Premium Installment Rate'
+P4 1b63ef1f 7830056c 0 0 0 0 2
+OUTPUT GroupPremium RI Extra Charge Calc Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupPremium RI Extra Charge Percentage
+'GroupPremium RI Extra Charge Percentage'
+F0 de0860 0 3ddba75b 0 0 0 0
+
+F1 3ddba75b de0860 43b687cc 0 0 0 2
+:GroupPremium
+Funktion
+
+F1 43b687cc 3ddba75b 76a2f885 27f66b3a 0 0 2
+--Posted Premium Calculations--
+Funktion
+
+F1 76a2f885 43b687cc 0 57734a9a 0 0 2
+GroupPremium Get Term Factor
+Funktion
+IF ('GEN Group Get MRTA Flag' EQUAL "Y" && 'Input Group Config Coy Prem Refund Method' EQUAL "02" ; çä  1 - 'GroupPremium Get Termination Factor' ; çä  'GroupPremium Post Prem Freq 00 Factor' * 'GroupPremium Get Termination Factor' * 0.01çä)
+F1 57734a9a 43b687cc 0 1a2705c1 0 0 2
+GroupPremium Post Prem Freq
+Funktion
+'GroupPremium Get Number Of Premium Days' / IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  'GEN Check Leap Year G'("CHECK";'Input Group Premium From Date';'GEN Datcon2'('Input Group Premium To Date';"DY";1;"")) ; çä  'GEN Check Leap Year G'("CHECK";'GEN Group Get Policy or Member CCDate'('Input Group Member Premium StartDate');'GEN Group Get Policy or Member CRDate'('Input Group Member Premium EndDate'))çä)
+F1 1a2705c1 43b687cc 0 61443a4a 0 0 2
+GroupPremium Post Prem_Premium
+Funktion
+'Input Group Annual Premium' / 'GroupPremium Get Bill Frequency'
+F1 61443a4a 43b687cc 0 4358b753 0 0 2
+GroupPremium Post Prem Extra Mortality Premium
+Funktion
+'Input Group Annual ExtraMortality Premium' / 'GroupPremium Get Bill Frequency'
+F1 4358b753 43b687cc 0 5dd8ac09 0 0 2
+GroupPremium Post Prem Extra OA Premium
+Funktion
+'Input Group Annual Extra OA Premium' / 'GroupPremium Get Bill Frequency'
+F1 5dd8ac09 43b687cc 0 206a8c44 0 0 2
+GroupPremium Post RI commission
+Funktion
+'Input Group Annualised RI Commission' / 'GroupPremium Get Bill Frequency'
+F1 206a8c44 43b687cc 0 e02d8ce 0 0 2
+GroupPremium Post RI W Management Fee
+Funktion
+'Input Group Annualized RI W Management Fee' / 'GroupPremium Get Bill Frequency'
+F1 e02d8ce 43b687cc 0 642929a 0 0 2
+GroupPremium Post RI Wakalah Com
+Funktion
+'Input Group Annualised RI Wakalah Com' / 'GroupPremium Get Bill Frequency'
+F1 642929a 43b687cc 49b2450c 76fe28c2 0 0 2
+GroupPremium Get Installments Info
+Funktion
+'Gen Get Number of Installments Fraction'('Input Group Premium From Date';'Input Group Premium To Date';"N";'GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');'GEN Group Get Policy or Member CCDate'('Input Group Member Premium StartDate');'GEN Group Get Policy or Member CRDate'('Input Group Member Premium EndDate'))
+F1 49b2450c 642929a 0 515d71b5 0 0 2
+GroupPremium Get Full Installments
+Funktion
+e_('GroupPremium Get Installments Info';0)
+F1 515d71b5 642929a 0 423e2d21 0 0 2
+GroupPremium Get Fractional Days 01
+Funktion
+e_('GroupPremium Get Installments Info';1)
+F1 423e2d21 642929a 0 582f7200 0 0 2
+GroupPremium Get Fractional Days 02
+Funktion
+e_('GroupPremium Get Installments Info';2)
+F1 582f7200 642929a 0 61e2de7d 0 0 2
+GroupPremium Get Full Days For Fraction 01
+Funktion
+e_('GroupPremium Get Installments Info';3)
+F1 61e2de7d 642929a 0 0 0 0 2
+GroupPremium Get Full Days For Fraction 02
+Funktion
+e_('GroupPremium Get Installments Info';4)
+F1 76fe28c2 43b687cc 761fb2d5 b8f8aa9 0 0 2
+GroupPremium Post Prem Freq 00 Factor
+Funktion
+CASE('Input Group Change Type';çä  "05000";"06000";"05020" : 1;çä   : 'GroupPremium Get Number Of Loan Period Days')çä
+F1 761fb2d5 76fe28c2 797d81af 0 0 0 2
+GroupPremium Get Number Of Loan Period Days
+Funktion
+'GroupPremium Get Number Of Premium Days' / 'GEN Datcon3'('Input Group Member Premium StartDate';'GroupPremium Get Loan End Date';"DY")
+F1 797d81af 761fb2d5 0 0 0 0 2
+GroupPremium Get Loan End Date
+Funktion
+'GEN Datcon2'('Input Group Member Premium StartDate';12;'Input Group Member Premium Term';"")
+F1 b8f8aa9 43b687cc 660e56b5 7c095aa1 0 0 2
+GroupPremium Get Policy Surrender Factor
+Funktion
+IF ('Access Exists'("Rate";"TR9PQ";v_('Input Group Policy Company';"TR9PQ";'Input Group Product Type' & "**";"";'Input TransEffDate');"RNDRULE") ; çä  100 - 'GroupPremium Get From Table TR9PQ'('Input Group Policy Company';'Input Group Product Type' & "**";'Input TransEffDate';'GEN Group Get Number Of Years'('Access Lookup'("Rate";"TR9PQ";v_('Input Group Policy Company';"TR9PQ";'Input Group Product Type' & "**";"";'Input TransEffDate');"RNDRULE");'Input Group Product Attachment Date';'Input TransEffDate');1) ; çä  100çä)
+F1 660e56b5 b8f8aa9 0 1551c572 0 0 2
+GroupPremium Get From Table TR9PQ(coy;itemitem;effdate;nofyears;counter)
+Funktion
+IF ('GroupPremium TR9PQ Loop'(coy;itemitem;'GEN Counter'(counter);effdate) >= nofyears ; çä  'Access Lookup'("Rate";"TR9PQ";v_(coy;"TR9PQ";itemitem;"";effdate);"SURCHG" & 'GEN Counter'(counter)) ; çä  IF (counter >= 20 ; çä    error("Rate not defined in TR9PQ") ; çä    'GroupPremium Get From Table TR9PQ'(coy;itemitem;effdate;nofyears;counter + 1)çä  )çä)
+F1 1551c572 b8f8aa9 0 0 0 0 2
+GroupPremium TR9PQ Loop(coy;itemitem;counter;effdate)
+Funktion
+'Access Lookup'("Rate";"TR9PQ";v_(coy;"TR9PQ";itemitem;"";effdate);"NOFYEAR" & counter)
+F1 7c095aa1 43b687cc 0 18f93e2f 0 0 2
+GroupPremium Get Number Of Premium Days
+Funktion
+'GEN Datcon3'('Input Group Premium From Date';'GEN Datcon2'('Input Group Premium To Date';"DY";1;"");"DY")
+F1 18f93e2f 43b687cc 256e6f95 72f9c517 0 0 2
+GroupPremium Posted Premium
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : 'GroupPremium Posted Premium Freq 00';çä   : 'GroupPremium Posted Premium Common')çä
+F1 256e6f95 18f93e2f 0 5ba0d2d9 0 0 2
+GroupPremium Posted Premium Common
+Funktion
+round(('GroupPremium Post Prem_Premium' * 'GroupPremium Get Full Installments') + IF ('GroupPremium Get Fractional Days 01' <> 0 ; çä  'GroupPremium Post Prem_Premium' * 'GroupPremium Get Fractional Days 01' / 'GroupPremium Get Full Days For Fraction 01' ; çä  0çä) + IF ('GroupPremium Get Fractional Days 02' <> 0 ; çä'GroupPremium Post Prem_Premium' * 'GroupPremium Get Fractional Days 02' / 'GroupPremium Get Full Days For Fraction 02' ; çä0çä);2)
+F1 5ba0d2d9 18f93e2f 0 0 0 0 2
+GroupPremium Posted Premium Freq 00
+Funktion
+CASE('Input Group Change Type';çä  "05029" : round('GroupPremium Get Term Factor' * 'Input Group Annual Premium';2);çä  "05021" : IF ('Input Group Policy Surrender Issue' EQUAL "Y" ; çä    round('Input Group Annual Premium' * 'GroupPremium Post Prem Freq 00 Factor' * 'GroupPremium Get Policy Surrender Factor' * 0.01;2) ; çä    round('Input Group Annual Premium' * 'GroupPremium Post Prem Freq 00 Factor';2)çä  );çä : round('Input Group Annual Premium' * 'GroupPremium Post Prem Freq 00 Factor';2))çä
+F1 72f9c517 43b687cc 41f43525 382464ca 0 0 2
+GroupPremium Posted Extra Mortality Premium
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : 'GroupPremium Posted Extra Mortality Premium Freq 00';çä   : 'GroupPremium Posted Extra Mortality Premium Common')çä
+F1 41f43525 72f9c517 0 7771a25e 0 0 2
+GroupPremium Posted Extra Mortality Premium Common
+Funktion
+round(('GroupPremium Post Prem Extra Mortality Premium' * 'GroupPremium Get Full Installments') + IF ('GroupPremium Get Fractional Days 01' <> 0 ; çä  'GroupPremium Post Prem Extra Mortality Premium' * 'GroupPremium Get Fractional Days 01' / 'GroupPremium Get Full Days For Fraction 01' ; çä  0çä) + IF ('GroupPremium Get Fractional Days 02' <> 0 ; çä'GroupPremium Post Prem Extra Mortality Premium' * 'GroupPremium Get Fractional Days 02' / 'GroupPremium Get Full Days For Fraction 02' ; çä0çä);2)
+F1 7771a25e 72f9c517 0 0 0 0 2
+GroupPremium Posted Extra Mortality Premium Freq 00
+Funktion
+CASE('Input Group Change Type';çä  "05029" : round('GroupPremium Get Term Factor' * 'Input Group Annual ExtraMortality Premium';2);çä  "05021" : IF ('Input Group Policy Surrender Issue' EQUAL "Y" ; çä    round('Input Group Annual ExtraMortality Premium' * 'GroupPremium Post Prem Freq 00 Factor' * 'GroupPremium Get Policy Surrender Factor' * 0.01;2) ; çä    round('Input Group Annual ExtraMortality Premium' * 'GroupPremium Post Prem Freq 00 Factor';2)çä  );çä : round('Input Group Annual ExtraMortality Premium' * 'GroupPremium Post Prem Freq 00 Factor';2))çä
+F1 382464ca 43b687cc 4a13a052 902bc27 0 0 2
+GroupPremium Posted Extra OA Premium
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : 'GroupPremium Posted Extra OA Premium Freq 00';çä   : 'GroupPremium Posted Extra OA Premium Common')çä
+F1 4a13a052 382464ca 0 700c56d9 0 0 2
+GroupPremium Posted Extra OA Premium Common
+Funktion
+round(('GroupPremium Post Prem Extra OA Premium' * 'GroupPremium Get Full Installments') + IF ('GroupPremium Get Fractional Days 01' <> 0 ; çä  'GroupPremium Post Prem Extra OA Premium' * 'GroupPremium Get Fractional Days 01' / 'GroupPremium Get Full Days For Fraction 01' ; çä  0çä) + IF ('GroupPremium Get Fractional Days 02' <> 0 ; çä'GroupPremium Post Prem Extra OA Premium' * 'GroupPremium Get Fractional Days 02' / 'GroupPremium Get Full Days For Fraction 02' ; çä0çä);2)
+F1 700c56d9 382464ca 0 0 0 0 2
+GroupPremium Posted Extra OA Premium Freq 00
+Funktion
+CASE('Input Group Change Type';çä  "05029" : round('GroupPremium Get Term Factor' * 'Input Group Annual Extra OA Premium';2);çä  "05021" : IF ('Input Group Policy Surrender Issue' EQUAL "Y" ; çä    round('Input Group Annual Extra OA Premium' * 'GroupPremium Post Prem Freq 00 Factor' * 'GroupPremium Get Policy Surrender Factor' * 0.01;2) ; çä    round('Input Group Annual Extra OA Premium' * 'GroupPremium Post Prem Freq 00 Factor';2)çä  );çä : round('Input Group Annual Extra OA Premium' * 'GroupPremium Post Prem Freq 00 Factor';2))çä
+F1 902bc27 43b687cc 0 380a9c2 0 0 2
+GroupPremium Fees
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : IF ('Input Group Change Type' EQUAL "05000" ; çä    'GroupPremium Get Termination Factor Fee' ; çä    0çä  );çä : 0)çä
+F1 380a9c2 43b687cc 759bb83c 7084e824 0 0 2
+GroupPremium Posted RI Commission
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : 'GroupPremium Posted RI Commission Freq 00';çä   : 'GroupPremium Posted RI Commission Common')çä
+F1 759bb83c 380a9c2 0 19fd10ff 0 0 2
+GroupPremium Posted RI commission Common
+Funktion
+round(('GroupPremium Post RI Commission' * 'GroupPremium Get Full Installments') + IF ('GroupPremium Get Fractional Days 01' <> 0 ; çä  'GroupPremium Post RI Commission' * 'GroupPremium Get Fractional Days 01' / 'GroupPremium Get Full Days For Fraction 01' ; çä  0çä) + IF ('GroupPremium Get Fractional Days 02' <> 0 ; çä'GroupPremium Post RI Commission' * 'GroupPremium Get Fractional Days 02' / 'GroupPremium Get Full Days For Fraction 02' ; çä0çä);2)
+F1 19fd10ff 380a9c2 0 0 0 0 2
+GroupPremium Posted RI commission Freq 00
+Funktion
+round('Input Group Annualised RI Commission' * 'GroupPremium Post Prem Freq 00 Factor';2)
+F1 7084e824 43b687cc 70fb67c1 364a111a 0 0 2
+GroupPremium Posted RI W Management Fee
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : 'GroupPremium Posted RI W Management Fee Freq 00';çä   : 'GroupPremium Posted RI W Management Fee Common')çä
+F1 70fb67c1 7084e824 0 6181b8a0 0 0 2
+GroupPremium Posted RI W Management Fee Common
+Funktion
+round(('GroupPremium Post RI W Management Fee' * 'GroupPremium Get Full Installments') + IF ('GroupPremium Get Fractional Days 01' <> 0 ; çä  'GroupPremium Post RI W Management Fee' * 'GroupPremium Get Fractional Days 01' / 'GroupPremium Get Full Days For Fraction 01' ; çä  0çä) + IF ('GroupPremium Get Fractional Days 02' <> 0 ; çä'GroupPremium Post RI W Management Fee' * 'GroupPremium Get Fractional Days 02' / 'GroupPremium Get Full Days For Fraction 02' ; çä0çä);2)
+F1 6181b8a0 7084e824 0 0 0 0 2
+GroupPremium Posted RI W Management Fee Freq 00
+Funktion
+round('Input Group Annualized RI W Management Fee' * 'GroupPremium Post Prem Freq 00 Factor';2)
+F1 364a111a 43b687cc 706632a7 6ff8bcb 0 0 2
+GroupPremium Posted RI Wakalah Com
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : 'GroupPremium Posted RI Wakalah Com Freq 00';çä   : 'GroupPremium Posted RI Wakalah Com Common')çä
+F1 706632a7 364a111a 0 7bfe6739 0 0 2
+GroupPremium Posted RI Wakalah Com Common
+Funktion
+round(('GroupPremium Post RI Wakalah Com' * 'GroupPremium Get Full Installments') + IF ('GroupPremium Get Fractional Days 01' <> 0 ; çä  'GroupPremium Post RI Wakalah Com' * 'GroupPremium Get Fractional Days 01' / 'GroupPremium Get Full Days For Fraction 01' ; çä  0çä) + IF ('GroupPremium Get Fractional Days 02' <> 0 ; çä'GroupPremium Post RI Wakalah Com' * 'GroupPremium Get Fractional Days 02' / 'GroupPremium Get Full Days For Fraction 02' ; çä0çä);2)
+F1 7bfe6739 364a111a 0 0 0 0 2
+GroupPremium Posted RI Wakalah Com Freq 00
+Funktion
+round('Input Group Annualised RI Wakalah Com' * 'GroupPremium Post Prem Freq 00 Factor';2)
+F1 6ff8bcb 43b687cc 3bd01251 49448e22 0 0 2
+GroupPremium Get Termination Factor Fee
+Funktion
+IF ('Input Group Config Prod Type' EQUAL "INV" ; çä  0 ; çä  'GroupPremium Get Fees From Member Fee'çä)
+F1 3bd01251 6ff8bcb 3f84bcc7 0 0 0 2
+GroupPremium Get Fees From Member Fee
+Funktion
+'GroupPremium Get Fees From Member Fee Sub'('Input Group Policy Company';'Input Group Product Type';'Input Group Policy Bill Currency';'Input TransEffDate';'Input Group Plan Premium Method')
+F1 3f84bcc7 3bd01251 0 0 0 0 2
+GroupPremium Get Fees From Member Fee Sub(coy;prodtyp;billcurr;Effdate;premmthd)
+Funktion
+IF ('Access Lookup'("Rate";"Fees";v_(prodtyp & billcurr);"APPFLAG" & 'GroupPremium Fees Occurrence'(premmthd)) EQUAL "Y" ; çä  'Access Lookup'("Rate";"Fees";v_(prodtyp & billcurr);"PLCYFEE") ; çä  0çä)
+F1 49448e22 43b687cc 5c9e9b47 0 0 0 2
+GroupPremium Get Termination Factor
+Funktion
+IF ('Input Group Config Coy Prem Refund Method' EQUAL "02" && 'Input Group Config Prod Loan Product' EQUAL "Y" ; çä  IF ('Input Group Change Type' EQUAL "05029" ; çä    'GroupPremium Get MRTA Surrender Factor' ; çä    IF ('Input Group Config Prod Partial Refund Percent' = 0 ; çä      1 ; çä      'Input Group Config Prod Partial Refund Percent'çä    )çä) ; çäIF ('Input Group Config Prod Partial Refund Percent' = 0 ; çä1 ; çä'Input Group Config Prod Partial Refund Percent'çä)çä)
+F1 5c9e9b47 49448e22 61358466 0 0 0 2
+GroupPremium Get MRTA Surrender Factor
+Funktion
+round(('GroupPremium Get MRTA Factor Integer' / 'GroupPremium Get MRTA Premium Term Years') * (IF ('GroupPremium Get MRTA Premium Term Years' <= 5 || 'GroupPremium Get MRTA Factor Integer' > ('GroupPremium Get MRTA Premium Term Years' / 3) ; çä  60 ; çä  30çä) * 0.01);2)
+F1 61358466 5c9e9b47 0 3ced939a 0 0 2
+GroupPremium Get MRTA Factor Integer
+Funktion
+'GroupPremium Get MRTA Premium Term Years' - 'GEN Datcon3'('Input TransEffDate';'Input Group Member Latest TermDate';"01")
+F1 3ced939a 5c9e9b47 0 0 0 0 2
+GroupPremium Get MRTA Premium Term Years
+Funktion
+'Input Group Member Premium Term' DIV 12
+F1 27f66b3a 3ddba75b 33a30922 2249941f 0 0 2
+--Normal Premium Calculations--
+Funktion
+
+F1 33a30922 27f66b3a 1c0b2792 17f2e859 0 0 2
+--Additional Values--
+Funktion
+
+F1 1c0b2792 33a30922 9a3e648 27de4035 0 0 2
+GroupPremium Get Short Term Rate
+Funktion
+IF ('Input Group Short Term Indicator' EQUAL "Y" ; çä  IF ('Input Group Short Term Allowed' EQUAL "Y" ; çä    'GroupPremium Get From Short Term Table' ; çä    0çä  ) ; çä0çä)
+F1 9a3e648 1c0b2792 4556a13b 6ce4305 0 0 2
+GroupPremium Get From Short Term Table
+Funktion
+'GroupPremium Get From Short Term Table Sub'('Input Group Policy Company';'Input Group Policy Type';1;'GroupPremium Get Number Of Short Term Days')
+F1 4556a13b 9a3e648 0 145fd999 0 0 2
+GroupPremium Get From Short Term Table Sub(coy;itemitem;counter;nofdays)
+Funktion
+IF ('GroupPremium ShortTerm Loop'(coy;itemitem;'GEN Counter'(counter)) >= nofdays ; çä  'Access Lookup'("Rate";"ShortTerm";v_(itemitem);"RATFACT" & 'GEN Counter'(counter)) ; çä  IF (counter >= 10 ; çä    error("Rate not defined in ShortTerm") ; çä    'GroupPremium Get From Short Term Table Sub'(coy;itemitem;counter + 1;nofdays)çä  )çä)
+F1 145fd999 9a3e648 0 0 0 0 2
+GroupPremium ShortTerm Loop(coy;itemitem;counter)
+Funktion
+'Access Lookup'("Rate";"ShortTerm";v_(itemitem);"NOFDAY" & counter)
+F1 6ce4305 1c0b2792 0 0 0 0 2
+GroupPremium Get Number Of Short Term Days
+Funktion
+'GEN Datcon3'('GEN Group Get Policy or Member CCDate'('Input Group Member Premium StartDate');'GEN Group Get Policy or Member CRDate'('Input Group Member Premium EndDate');"DY") + 1
+F1 27de4035 33a30922 207790d7 65fd0e75 0 0 2
+GroupPremium Get Additional Amount
+Funktion
+'GroupPremium Get Amount From Member Fee' + ('GroupPremium Get Amount From Member Fee' * 'Input Group Member Standard Premium Load' * 0.01)
+F1 207790d7 27de4035 3c7b94a1 0 0 0 2
+GroupPremium Get Amount From Member Fee
+Funktion
+'GroupPremium Get Amount From Member Fee Sub'('Input Group Policy Company';'Input Group Product Type';'Input Group Policy Bill Currency';'Input TransEffDate';'Input Group Plan Premium Method')
+F1 3c7b94a1 207790d7 0 0 0 0 2
+GroupPremium Get Amount From Member Fee Sub(coy;prodtyp;billcurr;Effdate;premmthd)
+Funktion
+IF ('Access Lookup'("Rate";"Fees";v_(prodtyp & billcurr);"APPFLAG" & 'GroupPremium Fees Occurrence'(premmthd)) EQUAL "Y" ; çä  'Access Lookup'("Rate";"Fees";v_(prodtyp & billcurr);"ADDPREM") ; çä  0çä)
+F1 65fd0e75 33a30922 3ff5dcd 3fc821ef 0 0 2
+GroupPremium Get Additional Rate
+Funktion
+'GroupPremium Get Rate From Member Fee' + ('Input Group Member Standard Premium Load' * 0.01)
+F1 3ff5dcd 65fd0e75 55d09fbd 0 0 0 2
+GroupPremium Get Rate From Member Fee
+Funktion
+'GroupPremium Get Rate From Member Fee Sub'('Input Group Policy Company';'Input Group Product Type';'Input Group Policy Bill Currency';'Input TransEffDate';'Input Group Plan Premium Method')
+F1 55d09fbd 3ff5dcd 0 0 0 0 2
+GroupPremium Get Rate From Member Fee Sub(coy;prodtyp;billcurr;Effdate;premmthd)
+Funktion
+IF ('Access Lookup'("Rate";"Fees";v_(prodtyp & billcurr);"LFERTAPP" & 'GroupPremium Fees Occurrence'(premmthd)) EQUAL "Y" ; çä  'Access Lookup'("Rate";"Fees";v_(prodtyp & billcurr);"GLIFERATE") ; çä  0çä)
+F1 3fc821ef 33a30922 0 0 0 0 2
+GroupPremium Fees Occurrence(premmthd)
+Funktion
+CASE(premmthd;çä  "01" : "01";çä  "02" : "02";çä  "03" : "03";çä  "04" : "04";çä  "05" : "05";çä  "06" : "06";çä  "07" : "07";çä  "08" : "06";çä  "09" : "06";çä  "10" : "10";çä  "11" : "11";çä  "12" : "11";çä  "13" : "04";çä   : error("Invalid Input"))çä
+F1 17f2e859 27f66b3a 6bcff539 4517cc69 0 0 2
+--Age Calculation
+Funktion
+
+F1 6bcff539 17f2e859 0 6bb30a24 0 0 2
+GroupPremium Member Age
+Funktion
+IF ('Input Group Policy Age Basis' EQUAL "U" && 'Input Group Member DOB' = 99999999 ; çä  'Input Group Member Age' ; çä  'GEN Group Get Member Age Calc'('Input Group Policy Calculation Method';0;"Member")çä)
+F1 6bb30a24 17f2e859 2a2c029f 0 0 0 2
+GroupPremium Get Member MRTA Age
+Funktion
+IF ('Input Group Dependent DOB' = 0 || 'Input Group Dependent DOB' = 99999999 ; çä  'GroupPremium Member Age' ; çä  'GroupPremium Get MRTA Average Age'('GroupPremium Member Age';'GroupPremium Get Dependent Age')çä)
+F1 2a2c029f 6bb30a24 0 fb6df32 0 0 2
+GroupPremium Get Dependent Age
+Funktion
+'GEN Group Get Member Age Calc'('Input Group Policy Calculation Method';0;"Dependent")
+F1 fb6df32 6bb30a24 0 0 0 0 2
+GroupPremium Get MRTA Average Age(mbrage;dpntage)
+Funktion
+IF ('Access Lookup'("Rate";"AverageAgeFlag";v_('Input Group Policy Type');"AVEAGEFLG") EQUAL "Y" ; çä  'Access Lookup'("Rate";"AverageAge";v_(mbrage & dpntage);"AVEAGE") ; çä  0çä)
+F1 4517cc69 27f66b3a 656b9852 75403b37 0 0 2
+--FamilyCode
+Funktion
+
+F1 656b9852 4517cc69 0 0 0 0 2
+GroupPremium FamilyCode
+Funktion
+IF ('Input Group Headcount Indicator' EQUAL "H" ; çä  'Input Group Headcount Family code' ; çä  'Input Group Member Family code'çä)
+F1 75403b37 27f66b3a 0 7ed999f9 0 0 2
+GroupPremium Rounding Inputs(amount)
+Funktion
+'GEN Rounding'('Input Group Policy Company';'Input Group Policy Bill Currency';amount)
+F1 7ed999f9 27f66b3a 1edb4c54 1751ad14 0 0 2
+GroupPremium Total Suminsured
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  'GroupPremium Check SI' ; çä  'GroupPremium Check Non SI'çä)
+F1 1edb4c54 7ed999f9 0 7ee03ccd 0 0 2
+GroupPremium Check SI
+Funktion
+IF ('Input Group Headcount Indicator' EQUAL "H" ; çä  'Input Group Headcount Suminsured' ; çä  IF ('Input Group RI Suminsured' <> 0 ; çä    'Input Group RI Suminsured' ; çä    'GroupPremium Get Mbr SI'çä  )çä)
+F1 7ee03ccd 7ed999f9 0 38fb23b3 0 0 2
+GroupPremium Check Non SI
+Funktion
+CASE('Input Group Plan Premium Method';çä  "09" : 1;çä  "11" : 'GroupPremium Get Mbr SI';çä  "12" : 'GroupPremium Get Mbr SI';çä   : 0)çä
+F1 38fb23b3 7ed999f9 0 0 0 0 2
+GroupPremium Get Mbr SI
+Funktion
+IF (('Input Group Policy Status Code' EQUAL "QN" || 'Input Group Policy Status Code' EQUAL "QR") && 'Input Group Config Coy Quotation Indicator' EQUAL "Y" ; çä  'Input Group Member Suminsured' + 'Input Group Member Excess Suminsured' ; çä  'Input Group Member Suminsured'çä)
+F1 1751ad14 27f66b3a 7f2bf424 1f510d37 0 0 2
+GroupPremium Premium Indicator
+Funktion
+CASE('Input Group Plan Premium Method';çä  "01" : 'GroupPremium Premium Indicator PM01';çä  "02" : IF ('Input Group Config Prod Premium Table' EQUAL "PM02c" ; çä    'GroupPremium PM02c Indicator PM02' ; çä    'GroupPremium Premium Indicator Common'çä  );çä"05" : 'GroupPremium Premium Indicator PM01';çä"10" : IF ('Input Group Headcount Indicator' EQUAL "H" ; çä  'GroupPremium Premium Indicator PM01' ; çä  'GroupPremium Premium Indicator Common'çä);çä : 'GroupPremium Premium Indicator Common')çä
+F1 7f2bf424 1751ad14 0 61479f9e 0 0 2
+GroupPremium Premium Indicator PM01
+Funktion
+IF ('Input Group Headcount Indicator' EQUAL "H" ; çä  'Input Group Plan Indicator' ; çä  IF ('Input Group Child Indicator' EQUAL "Y" ; çä    " " ; çä    'Input Group Plan Indicator'çä  )çä)
+F1 61479f9e 1751ad14 0 3656a2df 0 0 2
+GroupPremium PM02c Indicator PM02
+Funktion
+IF ('Access Exists'("Rate";"PM02c";v_('Input Group Policy Type' & 'Input Group Product Type');"Indicator") ; çä  'Access Lookup'("Rate";"PM02c";v_('Input Group Policy Type' & 'Input Group Product Type');"Indicator") ; çä  error("$norow for Key in PM02c")çä)
+F1 3656a2df 1751ad14 0 0 0 0 2
+GroupPremium Premium Indicator Common
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  "R" ; çä  "A"çä)
+F1 1f510d37 27f66b3a 0 71a1059 0 0 2
+GroupPremium Installment Premium
+Funktion
+'GroupPremium Rounding Inputs'(round('GroupPremium Annual Premium' / 'GroupPremium Get Bill Frequency';2))
+F1 71a1059 27f66b3a 58431409 7f33663c 0 0 2
+GroupPremium Annual Premium
+Funktion
+IF ('Input Group Plan Premium Method' EQUAL "07" ; çä  IF ('Input Group Headcount Indicator' EQUAL "M" ; çä    'GroupPremium Rounding Inputs'('GroupPremium Annual Premium Common') ; çä    'GroupPremium Rounding Inputs'('GroupPremium Annual Premium Headcount PM07'(format('Input Group PM07 HC Counter';"~")))çä  ) ; çä'GroupPremium Rounding Inputs'('GroupPremium Annual Premium Common')çä)
+F1 58431409 71a1059 0 6d968d17 0 0 2
+GroupPremium Annual Premium Common
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' NOTEQUAL "Y" ; çä  round('GroupPremium Rounding Inputs'(round(round('GroupPremium Number Of Members' * 'GroupPremium Net Premium Rate';4) * 'GroupPremium Get Modal Factor';4)) * 'GroupPremium Get Bill Frequency';2) ; çä  round(('GroupPremium Total Suminsured' * 'GroupPremium Net Premium Rate' / 'GroupPremium Unit of Rating') * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency';2)çä)
+F1 6d968d17 71a1059 0 2f342a59 0 0 2
+GroupPremium Get Bill Frequency
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  00 : 1;çä  01 : 1;çä  02 : 2;çä  04 : 4;çä  12 : 12;çä   : 0 //â   : error("Invalid Frequency")çä)çä
+F1 2f342a59 71a1059 7696c94f 618efe8c 0 0 2
+GroupPremium Get Modal Factor
+Funktion
+CASE('Input Group Plan Premium Method';çä  "08" : 'GroupPremium Get Modal Factor PM08';çä   : 'GroupPremium Get Modal Factor Common')çä
+F1 7696c94f 2f342a59 af0f25 43979fa5 0 0 2
+GroupPremium Get Modal Factor Common
+Funktion
+IF ('Access Exists'("Rate";"ModalFactor";v_('Input Group Policy Bill Currency');"MODALFAC" & 'GroupPremium Get Field Number'('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency'))) ; çä  'Access Lookup'("Rate";"ModalFactor";v_('Input Group Policy Bill Currency');"MODALFAC" & 'GroupPremium Get Field Number'('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency'))) ; çä  error("$norow for key in ModalFactor")çä)
+F1 af0f25 7696c94f 0 0 0 0 2
+GroupPremium Get Field Number(billfreq)
+Funktion
+CASE(billfreq;çä  00 : "01";çä  01 : "01";çä  02 : "02";çä  04 : "03";çä  12 : "04";çä   : 0 //â   : error("Invalid Frequency")çä)çä
+F1 43979fa5 2f342a59 0 0 0 0 2
+GroupPremium Get Modal Factor PM08
+Funktion
+CASE('GEN Group Get Policy or Member Bill Frequency'('Input Group Member Bill Frequency');çä  "00" : 1;çä  "01" : IF ('Access Exists'("Rate";"TR9NN";v_('Input Group Policy Company';"TR9NN";'Input Group Policy Type' & 'Input Group Policy Bill Currency';"";'Input TransEffDate');"MODALFAC") ; çä    'Access Lookup'("Rate";"TR9NN";v_('Input Group Policy Company';"TR9NN";'Input Group Policy Type' & 'Input Group Policy Bill Currency';"";'Input TransEffDate');"MODALFAC") ; çä    error("$norow for key in TR9NN")çä  );çä : 'GroupPremium Get Modal Factor Common')çä
+F1 618efe8c 71a1059 0 0 0 0 2
+GroupPremium Unit of Rating
+Funktion
+'Input Group Config Prod UnitOfRating'
+F1 7f33663c 27f66b3a 0 22f6e788 0 0 2
+GroupPremium Number Of Members
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  1 ; çä  IF ('Input Group Headcount Indicator' EQUAL "H" ; çä    'Input Group Headcount Number of Members' ; çä    1çä  )çä)
+F1 22f6e788 27f66b3a da4bfe7 7b36bd8b 0 0 2
+GroupPremium Gross Premium Rate
+Funktion
+CASE('Input Group Plan Premium Method';çä  01 : 'GroupPremium Gross Premium Rate Method 01';çä  02 : 'GroupPremium Gross Premium Rate Method 02';çä  03 : 'GroupPremium Gross Premium Rate Method 03';çä  04 : 'GroupPremium Gross Premium Rate Method 04';çä  05 : 'GroupPremium Gross Premium Rate Method 05';çä  06 : 'GroupPremium Gross Premium Rate Method 06';çä  07 : 'GroupPremium Gross Premium Rate Method 07';çä  08 : 'GroupPremium Gross Premium Rate Method 08';çä  09 : 'GroupPremium Gross Premium Rate Method 09';çä  10 : 'GroupPremium Gross Premium Rate Method 10';çä  11 : 'GroupPremium Gross Premium Rate Method 11';çä  12 : 'GroupPremium Gross Premium Rate Method 12';çä  13 : 'GroupPremium Gross Premium Rate Method 13';çä  14 : 'GroupPremium Gross Premium Rate Method 14';çä   // Add premium method calculation rules here for each premium methodââçä : error("Invalid Premium Method"))çä
+F1 da4bfe7 22f6e788 0 396c4f19 0 0 2
+GroupPremium Headcount Premrate
+Funktion
+CASE('GroupPremium FamilyCode';çä  "A" : 'Input Group Premium Amount Rate 01';çä  "B" : 'Input Group Premium Amount Rate 02';çä  "C" : 'Input Group Premium Amount Rate 03';çä  "D" : 'Input Group Premium Amount Rate 04';çä   : 0)çä
+F1 396c4f19 22f6e788 0 28b97dd9 0 0 2
+GroupPremium Member Premrate
+Funktion
+CASE('Input Group Plan Premium Method';çä  01 : 'GroupPremium Member Premrate Method 01';çä  02 : 'GroupPremium Member Premrate Method 02';çä  05 : 'GroupPremium Member Premrate Method 05';çä   // Add premium method calculation rules here for each premium method\sââçä : error("Invalid Premium Method"))çä
+F1 28b97dd9 22f6e788 0 68bc2efe 0 0 2
+GroupPremium Child Premrate
+Funktion
+IF (('Input Group Premium Amount Rate 03' <> 0) && ('Input Group Plan Class Insured' EQUAL "SO" || 'Input Group Plan Class Insured' EQUAL "SC" || 'Input Group Plan Class Insured' EQUAL "MC") ; çä  round('Input Group Premium Amount Rate 03' - 'Input Group Premium Amount Rate 01';6) ; çä  IF (('Input Group Premium Amount Rate 04' <> 0) && ('Input Group Plan Class Insured' EQUAL "MF") ; çä    IF ('Input Group Premium Amount Rate 04' = round(('Input Group Premium Amount Rate 02' + 'Input Group Premium Amount Rate 03' - 'Input Group Premium Amount Rate 01');2) ; çä      'Input Group Premium Amount Rate 03' - 'Input Group Premium Amount Rate 01' ; çä      round(('Input Group Premium Amount Rate 04' - 'Input Group Premium Amount Rate 01') * 0.5;2)çä    ) ; çä  'GroupPremium Check Prem by ChildNumber'çä)çä)
+F1 68bc2efe 22f6e788 116bb02f 11676236 0 0 2
+GroupPremium Check Prem by ChildNumber
+Funktion
+IF ('Input Group Plan Class Insured' EQUAL "SO" || 'Input Group Plan Class Insured' EQUAL "SC" || 'Input Group Plan Class Insured' EQUAL "MC" || 'Input Group Plan Class Insured' EQUAL "MF" ; çä  'GroupPremium Prem By ChildNumber' - 'Input Group Premium Amount Rate 01' ; çä  'GroupPremium Prem By ChildNumber'çä)
+F1 116bb02f 68bc2efe 0 0 0 0 2
+GroupPremium Prem By ChildNumber
+Funktion
+CASE('Input Group Number Of child';çä  0;1 : 'Input Group Premium Amount Rate 05';çä  2 : 'Input Group Premium Amount Rate 06';çä  3 : 'Input Group Premium Amount Rate 07';çä   : 'Input Group Premium Amount Rate 08')çä
+F1 11676236 22f6e788 0 0 0 0 2
+GroupPremium Member Family Rate
+Funktion
+IF ('Input Group Premium Amount Rate 04' = 0 ; çä  round('Input Group Premium Amount Rate 02' - 'Input Group Premium Amount Rate 01';6) ; çä  IF ('Input Group Premium Amount Rate 04' = round(('Input Group Premium Amount Rate 02' + 'Input Group Premium Amount Rate 03' - 'Input Group Premium Amount Rate 01');2) ; çä    'Input Group Premium Amount Rate 02' - 'Input Group Premium Amount Rate 01' ; çä    round(('Input Group Premium Amount Rate 04' - 'Input Group Premium Amount Rate 01') * 0.5;2)çä  )çä)
+F1 7b36bd8b 27f66b3a 0 4d2cd24c 0 0 2
+GroupPremium Net Premium Rate
+Funktion
+'GroupPremium Rounding Inputs'(round(('GroupPremium Gross Premium Rate' - ('GroupPremium Gross Premium Rate' * 'Input Group Product Discount Rate' * 0.01) - ('GroupPremium Gross Premium Rate' * 'Input Group Plan Discount Rate' * 0.01) + 'Input Group Plan Loading') * IF ('Input Group Plan Premium Adj Factor' = 0 ; çä  1 ; çä  'Input Group Plan Premium Adj Factor'çä);6))
+F1 4d2cd24c 27f66b3a 17335ee7 30f707fd 0 0 2
+--Prem Meth 01 Calc--
+Funktion
+
+F1 17335ee7 4d2cd24c 0 302c1194 0 0 2
+GroupPremium Gross Premium Rate Method 01
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + IF ('Input Group Headcount Indicator' EQUAL "H" ; çä    'GroupPremium Headcount Premrate' ; çä    'GroupPremium Member Premrate'çä  );6) ; çäround((IF ('Input Group Headcount Indicator' EQUAL "H" ; çä  'GroupPremium Headcount Premrate' ; çä  'GroupPremium Member Premrate'çä) * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 302c1194 4d2cd24c 0 0 0 0 2
+GroupPremium Member Premrate Method 01
+Funktion
+CASE('Input Group Dependent Indicator';çä  "M" : 'Input Group Premium Amount Rate 01';çä  "S" : IF ('Input Group Plan Class Insured' EQUAL "SO" || 'Input Group Plan Class Insured' EQUAL "SC" || 'Input Group Plan Class Insured' EQUAL "MC" ; çä    'Input Group Premium Amount Rate 02' - 'Input Group Premium Amount Rate 01' ; çä    IF ('Input Group Plan Class Insured' EQUAL "MF" ; çä      'GroupPremium Member Family Rate' ; çä      0çä    )çä);çä"C" : IF ('Input Group Child Indicator' EQUAL "Y" ; çä0 ; çä'GroupPremium Child Premrate'çä);çä : 0)çä
+F1 30f707fd 27f66b3a 72e2db72 5befd17 0 0 2
+--Prem Meth 02 Calc--
+Funktion
+
+F1 72e2db72 30f707fd 0 271adb4a 0 0 2
+GroupPremium Gross Premium Rate Method 02
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + IF ('Input Group Headcount Indicator' EQUAL "H" ; çä    'GroupPremium Headcount Premrate' ; çä    'GroupPremium Member Premrate'çä  );6) ; çäround((IF ('Input Group Headcount Indicator' EQUAL "H" ; çä  'GroupPremium Headcount Premrate' ; çä  'GroupPremium Member Premrate'çä) * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 271adb4a 30f707fd 9d02a3e 0 0 0 2
+GroupPremium Member Premrate Method 02
+Funktion
+CASE('Input Group Config Prod Premium Table';çä  "PM02c" : 'GroupPremium Get Rates from PM02c';çä  "PM02b" : 'GroupPremium Get Rates from PM02b';çä  "PM02a" : 'GroupPremium Get Rates from PM02a';çä   : error("no table"))çä
+F1 9d02a3e 271adb4a 26ad7d3e 79b175b6 0 0 2
+GroupPremium Get Rates from PM02c
+Funktion
+'GroupPremium Get Rates from PM02c Loop'('Input Group Policy Company';'Input Group Policy Type' & 'Input Group Product Type';'Input TransEffDate';1;'GroupPremium Member Age';'Input Group Plan Number';'GroupPremium FamilyCode')
+F1 26ad7d3e 9d02a3e a8a5c07 0 0 0 2
+GroupPremium Get Rates from PM02c Loop(coy;itemitem;Effdate;counter;age;planno;familycode)
+Funktion
+IF ('GroupPremium PM02c Loop'(coy;itemitem;Effdate;'GEN Counter'(counter)) = planno ; çä  'GroupPremium Get PM02c Item Genarea'(coy;itemitem;Effdate;counter;age;planno;familycode) ; çä  IF (counter >= 7 ; çä    IF ('Access Lookup'("Rate";"PM02c";v_(itemitem);"CONTITEM") EQUAL " " ; çä      error("Rate not defined in PM02c") ; çä      'GroupPremium Get Rates from PM02c Loop'(coy;'Access Lookup'("Rate";"PM02c";v_(itemitem);"CONTITEM");Effdate;1;age;planno;familycode)çä    ) ; çä  'GroupPremium Get Rates from PM02c Loop'(coy;itemitem;Effdate;counter + 1;age;planno;familycode)çä)çä)
+F1 a8a5c07 26ad7d3e 0 6a61e9b6 0 0 2
+GroupPremium PM02c Loop(coy;itemitem;Effdate;counter)
+Funktion
+'Access Lookup'("Rate";"PM02c";v_(coy;"PM02c";itemitem;"";Effdate);"PLANNO" & counter)
+F1 6a61e9b6 26ad7d3e 0 32b1bb5e 0 0 2
+GroupPremium Get PM02c Item Genarea(coy;itemitem;Effdate;counter;age;planno;familycode)
+Funktion
+'Access Lookup'("Rate";"PM02c";v_(itemitem);CASE(age;çä  16..29 : "PREMA";çä  30..34 : "PREMB";çä  35..39 : "PREMC";çä  40..44 : "PREMD";çä  45..49 : "PREME";çä  50..54 : "PREMF";çä  55..59 : "PREMG";çä  60..65 : "PREMH";çä   : error("Invalid Age for PM02c " & age))çä & 'GEN Counter'(counter)) * 'GroupPremium Get Family Code Factor'(familycode;coy;itemitem;Effdate;1)
+F1 32b1bb5e 26ad7d3e 0 0 0 0 2
+GroupPremium Get Family Code Factor(familycode;coy;itemitem;Effdate;counter)
+Funktion
+IF ('Access Lookup'("Rate";"PM02c";v_(itemitem);"FMLYCDE" & 'GEN Counter'(counter)) EQUAL familycode ; çä  'Access Lookup'("Rate";"PM02c";v_(itemitem);"PREMMULT" & 'GEN Counter'(counter)) ; çä  IF (counter >= 6 ; çä    error("Familycode not found in PM02c " & familycode) ; çä    'GroupPremium Get Family Code Factor'(familycode;coy;itemitem;Effdate;counter + 1)çä  )çä)
+F1 79b175b6 271adb4a b76f61f 2a3ac7f8 0 0 2
+GroupPremium Get Rates from PM02b
+Funktion
+'GroupPremium Get Rates from PM02b Sub'('Input Group Policy Company';'Input Group Product Type' & 'Input Group Policy Bill Currency';'Input TransEffDate';1;'GroupPremium Member Age';'Input Group Member Gender')
+F1 b76f61f 79b175b6 0 4a946e08 0 0 2
+GroupPremium Get Rates from PM02b Sub(coy;itemitem;Effdate;counter;age;sex)
+Funktion
+IF ('GroupPremium PM02b Access'(coy;itemitem;Effdate;"Age" & 'Gen Counter'(counter)) = 0 ; çä  'GroupPremium PM02b Access'(coy;itemitem;Effdate;IF (sex EQUAL "M" ; çä    "PRMMALE" ; çä    "PRMFMALE"çä  ) & 'GEN Counter'(counter)) ; çäIF ('GroupPremium PM02b Access'(coy;itemitem;Effdate;"Age" & 'Gen Counter'(counter)) = age ; çä  'GroupPremium PM02b Access'(coy;itemitem;Effdate;IF (sex EQUAL "M" ; çä    "PRMMALE" ; çä    "PRMFMALE"çä  ) & 'GEN Counter'(counter)) ; çäIF (age > 'GroupPremium PM02b Access'(coy;itemitem;Effdate;"Age" & 'Gen Counter'(counter)) ; çä  IF (counter = 15 ; çä    IF ('GroupPremium PM02b Access'(coy;itemitem;Effdate;"CONTITEM") EQUAL " " ; çä      'GroupPremium PM02b Access'(coy;itemitem;Effdate;IF (sex EQUAL "M" ; çä        "PRMMALE" ; çä        "PRMFMALE"çä      ) & 'GEN Counter'(counter)) ; çä    'GroupPremium Get Rates from PM02b Sub'(coy;'GroupPremium PM02b Access'(coy;itemitem;Effdate;"CONTITEM");Effdate;1;age;sex)çä  ) ; çäIF ('GroupPremium PM02b Access'(coy;itemitem;Effdate;"Age" & 'Gen Counter'(counter + 1)) <> 0 ; çä  IF (age < 'GroupPremium PM02b Access'(coy;itemitem;Effdate;"Age" & 'Gen Counter'(counter + 1)) ; çä    'GroupPremium PM02b Access'(coy;itemitem;Effdate;IF (sex EQUAL "M" ; çä      "PRMMALE" ; çä      "PRMFMALE"çä    ) & 'GEN Counter'(counter)) ; çä  'GroupPremium Get Rates from PM02b Sub'(coy;itemitem;Effdate;counter + 1;age;sex)çä) ; çäerror("Rate not found in PM02b")çä)çä) ; çäIF (counter = 15 ; çäIF ('GroupPremium PM02b Access'(coy;itemitem;Effdate;"CONTITEM") EQUAL " " ; çäerror("Rate not found in PM02b") ; çä'GroupPremium Get Rates from PM02b Sub'(coy;'GroupPremium PM02b Access'(coy;itemitem;Effdate;"CONTITEM");Effdate;1;age;sex)çä) ; çäIF ('GroupPremium PM02b Access'(coy;itemitem;Effdate;"Age" & 'Gen Counter'(counter + 1)) <> 0 ; çä'GroupPremium Get Rates from PM02b Sub'(coy;itemitem;Effdate;counter + 1;age;sex) ; çäerror("Rate not found in PM02b")çä)çä)çä)çä)çä)
+F1 4a946e08 79b175b6 0 0 0 0 2
+GroupPremium PM02b Access(coy;itemitem;Effdate;column)
+Funktion
+'Access Lookup'("Rate";"PM02b";v_(itemitem);column)
+F1 2a3ac7f8 271adb4a 3601d706 0 0 0 2
+GroupPremium Get Rates from PM02a
+Funktion
+IF ('Input Group Dependent Indicator' EQUAL "C" ; çä  IF ('Input Group Child Indicator' EQUAL "Y" && 'Input Group Number Of child' <> 0 ; çä    'GroupPremium Get PM02a Child Rates' ; çä    0çä  ) ; çä'GroupPremium Get PM02a Adult Rates'(1)çä)
+F1 3601d706 2a3ac7f8 0 40e2afdb 0 0 2
+GroupPremium Get PM02a Child Rates
+Funktion
+'Access Lookup'("Rate";"PM02a";v_('Input Group Policy Company';"PM02a";'Input Group Policy Type' & 'Input Group Product Type' & 'Input Group Member Gender';"";'Input TransEffDate');CASE('Input Group Plan Number';çä  001 : "PREMA";çä  002 : "PREMB";çä  003 : "PREMC";çä  004 : "PREMD";çä  005 : "PREME";çä   : error("Invalid Plan No"))çä & CASE('Input Group Number Of child';çä  1 : "01";çä  2 : "02";çä   : "03")çä)
+F1 40e2afdb 2a3ac7f8 4354a31 0 0 0 2
+GroupPremium Get PM02a Adult Rates(counter)
+Funktion
+IF ('GroupPremium PM02a Loop'('Input Group Policy Company';'Input Group Policy Type' & 'Input Group Product Type' & 'Input Group Member Gender';'Input TransEffDate';'GEN Counter'(counter)) >= 'GroupPremium Member Age' ; çä  'Access Lookup'("Rate";"PM02a";v_('Input Group Policy Type' & 'Input Group Product Type' & 'Input Group Member Gender');CASE('Input Group Plan Number';çä    001 : "PREMA";çä    002 : "PREMB";çä    003 : "PREMC";çä    004 : "PREMD";çä    005 : "PREME";çä     : error("Invalid Plan No"))çä   & 'GEN Counter'(counter + 3)) ; çä  IF (counter >= 9 ; çä    error("Age not found in PM02a") ; çä    'GroupPremium Get PM02a Adult Rates'(counter + 1)çä  )çä)
+F1 4354a31 40e2afdb 0 0 0 0 2
+GroupPremium PM02a Loop(coy;itemitem;Effdate;counter)
+Funktion
+'Access Lookup'("Rate";"PM02a";v_(coy;"PM02a";itemitem;"";Effdate);"AGTO" & counter)
+F1 5befd17 27f66b3a 5c798e02 3a627e0b 0 0 2
+--Prem Meth 03 Calc--
+Funktion
+
+F1 5c798e02 5befd17 0 0 0 0 2
+GroupPremium Gross Premium Rate Method 03
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'Input Group Input Gross Prem Rate';6) ; çä  round(('Input Group Input Gross Prem Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 3a627e0b 27f66b3a 31eaac82 1b5137a2 0 0 2
+--Prem Meth 04 Calc--
+Funktion
+
+F1 31eaac82 3a627e0b 0 0 0 0 2
+GroupPremium Gross Premium Rate Method 04
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'Input Group Input Gross Prem Rate';6) ; çä  round(('Input Group Input Gross Prem Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 1b5137a2 27f66b3a 51a01abc 485cb45 0 0 2
+--Prem Meth 05 Calc--
+Funktion
+
+F1 51a01abc 1b5137a2 0 5025d35c 0 0 2
+GroupPremium Gross Premium Rate Method 05
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + IF ('Input Group Headcount Indicator' EQUAL "H" ; çä    'GroupPremium Headcount Premrate' ; çä    'GroupPremium Member Premrate'çä  );6) ; çäround((IF ('Input Group Headcount Indicator' EQUAL "H" ; çä  'GroupPremium Headcount Premrate' ; çä  'GroupPremium Member Premrate'çä) * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 5025d35c 1b5137a2 0 0 0 0 2
+GroupPremium Member Premrate Method 05
+Funktion
+CASE('Input Group Dependent Indicator';çä  "M" : 'Input Group Premium Amount Rate 01';çä  "S" : 'Input Group Premium Amount Rate 02';çä  "C" : IF ('Input Group Child Indicator' EQUAL "Y" ; çä    0 ; çä    'Input Group Premium Amount Rate 03'çä  );çä : 0)çä
+F1 485cb45 27f66b3a 5ae22981 187a93a1 0 0 2
+--Prem Meth 06 Calc--
+Funktion
+
+F1 5ae22981 485cb45 26bb04d3 0 0 0 2
+GroupPremium Gross Premium Rate Method 06
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'GroupPremium Get TR97B MRTA Rate';6) ; çä  round(('GroupPremium Get TR97B MRTA Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 26bb04d3 5ae22981 25b59c9c 0 0 0 2
+GroupPremium Get TR97B MRTA Rate
+Funktion
+'GroupPremium Get TR97B MRTA Rate Sub'('Input Group Policy Company';'Input Group MRTA Short Code' & 'Input Group Member Loan Term' & 'Input Group Member Loan Interest Rate';1;'GroupPremium Get Member MRTA Age';'Input TransEffDate')
+F1 25b59c9c 26bb04d3 0 7aa044cb 0 0 2
+GroupPremium Get TR97B MRTA Rate Sub(coy;itemitem;counter;age;effdate)
+Funktion
+IF ('GroupPremium TR97B Loop'(coy;itemitem;effdate;'GEN Counter'(counter)) = age ; çä  'Access Lookup'("Rate";"TR97B";v_(coy;"TR97B";itemitem;"";effdate);"GLFRATE" & 'GEN Counter'(counter)) ; çä  IF (counter >= 52 ; çä    error("Rate not defined in TR97B") ; çä    'GroupPremium Get TR97B MRTA Rate Sub'(coy;itemitem;counter + 1;age;effdate)çä  )çä)
+F1 7aa044cb 26bb04d3 0 0 0 0 2
+GroupPremium TR97B Loop(coy;itemitem;effdate;counter)
+Funktion
+'Access Lookup'("Rate";"TR97B";v_(coy;"TR97B";itemitem;"";effdate);"AGE" & counter)
+F1 187a93a1 27f66b3a 4952cd0f 59c9cd99 0 0 2
+--Prem Meth 07 Calc--
+Funktion
+
+F1 4952cd0f 187a93a1 0 20e4c60b 0 0 2
+GroupPremium Gross Premium Rate Method 07
+Funktion
+IF ('Input Group Headcount Indicator' EQUAL "M" ; çä  IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä    round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'Input Group Input Gross Prem Rate';6) ; çä    round(('Input Group Input Gross Prem Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä  ) ; çä0çä)
+F1 20e4c60b 187a93a1 7ca368b7 0 0 0 2
+GroupPremium Annual Premium Headcount PM07(counter)
+Funktion
+sumx(i;0;counter;'GroupPremium Get PM07 HC Annual Premium'('Input Group PM07 HC Male Rate'[#i];'Input Group PM07 HC Male Suminsured'[#i];'Input Group PM07 HC Nof Male'[#i]) + 'GroupPremium Get PM07 HC Annual Premium'('Input Group PM07 HC Female Rate'[#i];'Input Group PM07 HC Female Suminsured'[#i];'Input Group PM07 HC Nof Female'[#i]))
+F1 7ca368b7 20e4c60b 47462701 0 0 0 2
+GroupPremium Get PM07 HC Annual Premium(rate;sumins;nofmbr)
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' NOTEQUAL "Y" ; çä  round(nofmbr * 'GroupPremium Net Premium Rate PM07'('GroupPremium Get HC Indiv Gross Prem PM07'(rate)) * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency';2) ; çä  round((sumins * 'GroupPremium Net Premium Rate PM07'('GroupPremium Get HC Indiv Gross Prem PM07'(rate)) / 'GroupPremium Unit of Rating') * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency';2)çä)
+F1 47462701 7ca368b7 0 57e267af 0 0 2
+GroupPremium Get HC Indiv Gross Prem PM07(rate)
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + rate;6) ; çä  round((rate * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 57e267af 7ca368b7 0 0 0 0 2
+GroupPremium Net Premium Rate PM07(rate)
+Funktion
+IF ('Input Group Plan Premium Adj Factor' = 0 ; çä  rate - (rate * 'Input Group Product Discount Rate' * 0.01) - (rate * 'Input Group Plan Discount Rate' * 0.01) + 'Input Group Plan Loading' ; çä  (rate - (rate * 'Input Group Product Discount Rate' * 0.01) - (rate * 'Input Group Plan Discount Rate' * 0.01) + 'Input Group Plan Loading') * 'Input Group Plan Premium Adj Factor'çä)
+F1 59c9cd99 27f66b3a 6456af1 48360321 0 0 2
+--Prem Meth 08 Calc--
+Funktion
+
+F1 6456af1 59c9cd99 0 704222ef 0 0 2
+GroupPremium Gross Premium Rate Method 08
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'GroupPremium Get TR9NO MRTA Rate';6) ; çä  round(('GroupPremium Get TR9NO MRTA Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 704222ef 59c9cd99 bc02684 0 0 0 2
+GroupPremium Get TR9NO MRTA Rate
+Funktion
+'GroupPremium Get TR9NO MRTA Rate Sub'('Input Group Policy Company';'Input Group MRTA Short Code' & 'Input Group Member Loan Term' & 'Input Group Member Loan Interest Rate';1;'GroupPremium Member Age';'Input TransEffDate')
+F1 bc02684 704222ef 0 4639919e 0 0 2
+GroupPremium Get TR9NO MRTA Rate Sub(coy;itemitem;counter;age;effdate)
+Funktion
+IF ('GroupPremium TR9NO Loop'(coy;itemitem;effdate;'GEN Counter'(counter)) = age ; çä  IF ('Access Exists'("Rate";"TR9NO";v_(coy;"TR9NO";itemitem;"";effdate);"GLFRATE" & 'GEN Counter'(counter)) ; çä    'Access Lookup'("Rate";"TR9NO";v_(coy;"TR9NO";itemitem;"";effdate);"GLFRATE" & 'GEN Counter'(counter)) ; çä    0çä  ) ; çäIF (counter >= 52 ; çä  error("Rate not defined in TR9NO") ; çä  'GroupPremium Get TR9NO MRTA Rate Sub'(coy;itemitem;counter + 1;age;effdate)çä)çä)
+F1 4639919e 704222ef 0 0 0 0 2
+GroupPremium TR9NO Loop(coy;itemitem;effdate;counter)
+Funktion
+IF ('Access Exists'("Rate";"TR9NO";v_(coy;"TR9NO";itemitem;"";effdate);"GLFRATE" & 'GEN Counter'(counter)) ; çä  'Access Lookup'("Rate";"TR9NO";v_(coy;"TR9NO";itemitem;"";effdate);"AGE" & counter) ; çä  -1çä)
+F1 48360321 27f66b3a 52e6b743 7dbd817d 0 0 2
+--Prem Meth 09 Calc--
+Funktion
+
+F1 52e6b743 48360321 0 513b46f9 0 0 2
+GroupPremium Gross Premium Rate Method 09
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'GroupPremium Get MRTA Rate';6) ; çä  round(('GroupPremium Get MRTA Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 513b46f9 48360321 6ad77515 0 0 0 2
+GroupPremium Get MRTA Rate
+Funktion
+'GroupPremium Get MRTA Rate Sub'('Input Group Policy Company';'Input Group MRTA Short Code' & 'Input Group Member Loan Term';1;'GroupPremium Get Member MRTA Age';'Input TransEffDate')
+F1 6ad77515 513b46f9 0 1ef2e26f 0 0 2
+GroupPremium Get MRTA Rate Sub(coy;itemitem;counter;age;effdate)
+Funktion
+IF ('GroupPremium MRTA Loop'(coy;itemitem;effdate;'GEN Counter'(counter)) = age ; çä  'Access Lookup'("Rate";"MRTA";v_(itemitem);"GLFRATE" & 'GEN Counter'(counter)) ; çä  IF (counter >= 52 ; çä    error("Rate not defined in MRTA Table") ; çä    'GroupPremium Get MRTA Rate Sub'(coy;itemitem;counter + 1;age;effdate)çä  )çä)
+F1 1ef2e26f 513b46f9 0 0 0 0 2
+GroupPremium MRTA Loop(coy;itemitem;effdate;counter)
+Funktion
+'Access Lookup'("Rate";"MRTA";v_(itemitem);"AGE" & counter)
+F1 7dbd817d 27f66b3a 3e96e5c5 5fca06c1 0 0 2
+--Prem Meth 10 Calc--
+Funktion
+
+F1 3e96e5c5 7dbd817d 0 0 0 0 2
+GroupPremium Gross Premium Rate Method 10
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'Input Group Input Gross Prem Rate';6) ; çä  round(('Input Group Input Gross Prem Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 5fca06c1 27f66b3a 56af7ece 31660e7c 0 0 2
+--Prem Meth 11 Calc--
+Funktion
+
+F1 56af7ece 5fca06c1 0 1c5ef734 0 0 2
+GroupPremium Gross Premium Rate Method 11
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'GroupPremium Get PM11 Rate';6) ; çä  round(('GroupPremium Get PM11 Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 1c5ef734 5fca06c1 0 0 0 0 2
+GroupPremium Get PM11 Rate
+Funktion
+'Input Group Input Gross Prem Rate' + ('Input Group Input Gross Prem Rate' * ('Input Group Pre Exist Load' + 'Input Group Smoke Load') / 100)
+F1 31660e7c 27f66b3a 523bad35 529294a3 0 0 2
+--Prem Meth 12 Calc--
+Funktion
+
+F1 523bad35 31660e7c 0 0 0 0 2
+GroupPremium Gross Premium Rate Method 12
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'Input Group Input Gross Prem Rate';6) ; çä  round(('Input Group Input Gross Prem Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 529294a3 27f66b3a c7ce305 2c126a94 0 0 2
+--Prem Meth 13 Calc--
+Funktion
+
+F1 c7ce305 529294a3 0 0 0 0 2
+GroupPremium Gross Premium Rate Method 13
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  round('GroupPremium Get Short Term Rate' + 'GroupPremium Get Additional Rate' + 'Input Group Input Gross Prem Rate';6) ; çä  round(('Input Group Input Gross Prem Rate' * (1 + ('GroupPremium Get Short Term Rate' * 0.01)) + 'GroupPremium Get Additional Amount');6)çä)
+F1 2c126a94 27f66b3a 63de3668 0 0 0 2
+--Prem Meth 14 Calc--
+Funktion
+
+F1 63de3668 2c126a94 0 0 0 0 2
+GroupPremium Gross Premium Rate Method 14
+Funktion
+'Access Rate'("PM14";v_(void);v_(void))
+F1 2249941f 3ddba75b 1287737 48a97f33 0 0 2
+--Extra Premium Calculation--
+Funktion
+
+F1 1287737 2249941f 3472f3ec 68af5752 0 0 2
+GroupPremium Extra Annual ExtraMortality
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  'GroupPremium Calc EM SI Prod' ; çä  'GroupPremium Calc EM Non SI Prod'çä)
+F1 3472f3ec 1287737 0 45df62c 0 0 2
+GroupPremium Calc EM Non SI Prod
+Funktion
+IF ('Input Group Member EM Loading on Effdte' = 0 ; çä  0 ; çä  round('Input Group Input Gross Prem Rate' * 'Input Group Member EM Loading on Effdte' * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency' * 0.01;4)çä)
+F1 45df62c 1287737 7c836a8a 0 0 0 2
+GroupPremium Calc EM SI Prod
+Funktion
+sumx(i;0;'Input Group Transaction Number' - 1;'GroupPremium Calc Extra EM Loop'(#i))
+F1 7c836a8a 45df62c 0 0 0 0 2
+GroupPremium Calc Extra EM Loop(counter)
+Funktion
+IF ('Input Group EXSI Indicator'[counter] NOTEQUAL "I" ; çä  0 ; çä  round(('Input Group EXSI Suminsured'[counter] / 'Input Group Config Prod UnitOfRating') * 'Input Group Input Gross Prem Rate' * 'Input Group Member SI EM Load'[counter] * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency' * 0.01;4)çä)
+F1 68af5752 2249941f 3ec0d434 5d5a972f 0 0 2
+GroupPremium Extra Annual OccupationAvocational
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  'GroupPremium Calc OA SI Prod' ; çä  'GroupPremium Calc OA Non SI Prod'çä)
+F1 3ec0d434 68af5752 da2ffb5 771fad6 0 0 2
+GroupPremium Calc OA SI Prod
+Funktion
+sumx(i;0;'Input Group Transaction Number' - 1;'GroupPremium Calc Extra OA Loop'(#i))
+F1 da2ffb5 3ec0d434 0 0 0 0 2
+GroupPremium Calc Extra OA Loop(counter)
+Funktion
+IF ('Input Group EXSI Indicator'[counter] NOTEQUAL "I" ; çä  0 ; çä  round(('Input Group EXSI Suminsured'[counter] / 'Input Group Config Prod UnitOfRating') * 'Input Group Member SI OA Load'[counter] * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency';4)çä)
+F1 771fad6 68af5752 0 0 0 0 2
+GroupPremium Calc OA Non SI Prod
+Funktion
+IF ('Input Group Member OA Loading on Effdte' = 0 ; çä  0 ; çä  round('Input Group Member OA Loading on Effdte' * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency';4)çä)
+F1 5d5a972f 2249941f 0 2bf379ce 0 0 2
+GroupPremium Extra Installment ExtraMortality
+Funktion
+round('GroupPremium Extra Annual ExtraMortality' / 'GroupPremium Get Bill Frequency';4)
+F1 2bf379ce 2249941f 0 6e399f60 0 0 2
+GroupPremium Extra Installment OccupationAvocational
+Funktion
+round('GroupPremium Extra Annual OccupationAvocational' / 'GroupPremium Get Bill Frequency';4)
+F1 6e399f60 2249941f 2c16c4d1 0 0 0 2
+GroupPremium Extra Suminsured
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' EQUAL "Y" ; çä  'GroupPremium Calc Extra SI Prod' ; çä  0çä)
+F1 2c16c4d1 6e399f60 495a1a09 0 0 0 2
+GroupPremium Calc Extra SI Prod
+Funktion
+sumx(i;0;'Input Group Transaction Number' - 1;'GroupPremium Calc Extra SI Loop'(#i))
+F1 495a1a09 2c16c4d1 0 0 0 0 2
+GroupPremium Calc Extra SI Loop(counter)
+Funktion
+IF ('Input Group EXSI Indicator'[counter] NOTEQUAL "I" ; çä  0 ; çä  'Input Group EXSI Suminsured'[counter]çä)
+F1 48a97f33 3ddba75b 1c73a8b8 250163fd 0 0 2
+--RI Premium Calculations--
+Funktion
+
+F1 1c73a8b8 48a97f33 1ddbbd52 408f6ce1 0 0 2
+GroupPremium RI Gross Prem Rate
+Funktion
+CASE('Input Group RI Premium Method';çä  "01" : 'GroupPremium Get RI Gross Prem Common';çä  "05" : 'GroupPremium Get RI Gross Prem RI05';çä  "06" : 'GroupPremium Get RI Gross Prem RI06';çä   : error("Invalid RI Premium Method"))çä
+F1 1ddbbd52 1c73a8b8 cfa3c2 4dc4b364 0 0 2
+GroupPremium Get RI Gross Prem Common
+Funktion
+'GroupPremium Get RI Gross Prem Common Sub'('Input Group Policy Company';'GroupPremium Get RI RI_PremClass PremiumClass' & 'Input Group Policy Bill Currency';'Input TransEffDate';1;'GroupPremium Member Age';'Input Group Member Gender')
+F1 cfa3c2 1ddbbd52 3b05b00a 0 0 0 2
+GroupPremium Get RI Gross Prem Common Sub(coy;itemitem;Effdate;counter;age;sex)
+Funktion
+IF ('GroupPremium RI RI_Prem Loop'(coy;itemitem;Effdate;'GEN Counter'(counter)) >= age ; çä  round('Access Lookup'("Rate";"RI_Prem";v_(itemitem);IF (sex EQUAL "M" ; çä    "RIPRATML" ; çä    "RIPRATFM"çä  ) & 'GEN Counter'(counter - 1));6) ; çäIF (counter >= 15 ; çä  IF ('Access Lookup'("Rate";"RI_Prem";v_(itemitem);"CONTITEM") EQUAL " " ; çä    error("Rate not defined in RI_Prem") ; çä    'GroupPremium Get RI Gross Prem Common Sub'(coy;'Access Lookup'("Rate";"RI_Prem";v_(itemitem);"CONTITEM");Effdate;1;age;sex)çä  ) ; çä'GroupPremium Get RI Gross Prem Common Sub'(coy;itemitem;Effdate;counter + 1;age;sex)çä)çä)
+F1 3b05b00a cfa3c2 0 31e87fe1 0 0 2
+GroupPremium RI RI_Prem Loop(coy;itemitem;Effdate;counter)
+Funktion
+'Access Lookup'("Rate";"RI_Prem";v_(itemitem);"Age" & counter)
+F1 31e87fe1 cfa3c2 0 0 0 0 2
+GroupPremium Get RI RI_PremClass PremiumClass
+Funktion
+'Access Lookup'("Rate";"RI_PremClass";v_('Input Group Risk Class' & 'Input Group Product Type');"RIPRMCLS")
+F1 4dc4b364 1c73a8b8 3e2af1eb 7d964f28 0 0 2
+GroupPremium Get RI Gross Prem RI05
+Funktion
+IF ('GroupPremium Get RI RI_Load Load' <> 0 ; çä  'GroupPremium Get RI Gross Prem Common' * 'GroupPremium Get RI RI_Load Load' ; çä  'GroupPremium Get RI Gross Prem Common'çä)
+F1 3e2af1eb 4dc4b364 0 0 0 0 2
+GroupPremium Get RI RI_Load Load
+Funktion
+IF ('Access Exists'("Rate";"RI_Load";v_('Input Group Member Occupation Class' & 'Input Group Product Type');"RILOAD") ; çä  'Access Lookup'("Rate";"RI_Load";v_('Input Group Member Occupation Class' & 'Input Group Product Type');"RILOAD") ; çä  IF ('Access Exists'("Rate";"RI_Load";v_('Input Group Member Occupation Class' & "****");"RILOAD") ; çä    'Access Lookup'("Rate";"RI_Load";v_('Input Group Member Occupation Class' & "****");"RILOAD") ; çä    0çä  )çä)
+F1 7d964f28 1c73a8b8 30d3c3 0 0 0 2
+GroupPremium Get RI Gross Prem RI06
+Funktion
+round('GroupPremium Get RI Gross Prem Common' * (1 - 'GroupPremium Get RI RI_Load Load' * 0.01) * (1 - 'GroupPremium Get RI RI_DiscountLoad Discount Load' * 0.01);5)
+F1 30d3c3 7d964f28 19911683 0 0 0 2
+GroupPremium Get RI RI_DiscountLoad Discount Load
+Funktion
+IF ('Access Exists'("Rate";"RI_DiscountLoad";v_('Input Group Product Type' & 'Input Group Policy RI Method Variation Code');"NOTO01") ; çä  'GroupPremium Get RI RI_DiscountLoad Discount Load Sub'('Input Group Policy Company';'Input Group Product Type' & 'Input Group Policy RI Method Variation Code';'Input TransEffDate';1;'Input Group Policy Number Of Members') ; çä  0çä)
+F1 19911683 30d3c3 0 1b374066 0 0 2
+GroupPremium Get RI RI_DiscountLoad Discount Load Sub(coy;itemitem;Effdate;counter;nofmbr)
+Funktion
+IF ('GroupPremium RI_DiscountLoad Loop'(coy;itemitem;Effdate;'GEN Counter'(counter)) >= nofmbr ; çä  'Access Lookup'("Rate";"RI_DiscountLoad";v_(itemitem);"DISCRATE" & 'GEN Counter'(counter)) ; çä  IF (counter >= 10 ; çä    error("Rate not defined in RI_DiscountLoad") ; çä    'GroupPremium Get RI RI_DiscountLoad Discount Load Sub'(coy;itemitem;Effdate;counter + 1;nofmbr)çä  )çä)
+F1 1b374066 30d3c3 0 0 0 0 2
+GroupPremium RI_DiscountLoad Loop(coy;itemitem;Effdate;counter)
+Funktion
+'Access Lookup'("Rate";"RI_DiscountLoad";v_(itemitem);"NOTO" & counter)
+F1 408f6ce1 48a97f33 0 63f6f63f 0 0 2
+GroupPremium RI Net Prem Rate
+Funktion
+round('GroupPremium RI Gross Prem Rate' - ('GroupPremium RI Gross Prem Rate' * 'Input Group Product Discount Rate' * 0.01);5)
+F1 63f6f63f 48a97f33 0 37d4acb9 0 0 2
+GroupPremium RI Annual Premium
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' NOTEQUAL "Y" ; çä  round('GroupPremium Rounding Inputs'('GroupPremium RI Net Prem Rate' * 'GroupPremium Get Modal Factor') * 'GroupPremium Get Bill Frequency';2) ; çä  round('Input Group RI Input Suminsured' * 'GroupPremium RI Net Prem Rate' / 'GroupPremium Unit of Rating' * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency';2)çä)
+F1 37d4acb9 48a97f33 0 4f86b196 0 0 2
+GroupPremium RI Installment Premium
+Funktion
+round('GroupPremium RI Annual Premium' / 'GroupPremium Get Bill Frequency';2)
+F1 4f86b196 48a97f33 67640c7 0 0 0 2
+GroupPremium Get Free Cover Limit
+Funktion
+IF ('Input Group Policy FCL Level' EQUAL "PLN" ; çä  'Input Group Plan Coverage Limit' ; çä  'GroupPremium Get ProductLevel FCL'çä)
+F1 67640c7 4f86b196 0 0 0 0 2
+GroupPremium Get ProductLevel FCL
+Funktion
+IF ('Input Group Product Coverage Limit 01' = 0 && 'Input Group Product Coverage Limit 01' = 0 && 'Input Group Product Coverage Limit 01' = 0 && 'Input Group Product Coverage Limit 01' = 0 ; çä  0 ; çä  IF ('Input Group Product Coverage Limit 01' <> 0 && 'GroupPremium Member Age' <= 'Input Group Product Coverage Age 01' ; çä    'Input Group Product Coverage Limit 01' ; çä    IF ('Input Group Product Coverage Limit 02' <> 0 && 'GroupPremium Member Age' <= 'Input Group Product Coverage Age 02' ; çä      'Input Group Product Coverage Limit 02' ; çä      IF ('Input Group Product Coverage Limit 03' <> 0 && 'GroupPremium Member Age' <= 'Input Group Product Coverage Age 03' ; çä        'Input Group Product Coverage Limit 03' ; çä        IF ('Input Group Product Coverage Limit 04' <> 0 && 'GroupPremium Member Age' <= 'Input Group Product Coverage Age 04' ; çä          'Input Group Product Coverage Limit 01' ; çä          0çä        )çä    )çä)çä)çä)
+F1 250163fd 3ddba75b 76b16735 455dbddc 0 0 2
+--RI Extra Premium Calculations--
+Funktion
+
+F1 76b16735 250163fd 723e8748 408eaee0 0 0 2
+GroupPremium RI Extra Premium Annual Percent
+Funktion
+round(IF ('Input Group Config Coy RI Extra Method' EQUAL "01" ; çä  'GroupPremium RI Extra Premium Annual Percent Common'('Input Group RI Input Suminsured') ; çä  IF ('GroupPremium Get ProductLevel FCL' <= 'Input Group RI Limit' ; çä    'GroupPremium RI Extra Premium Annual Percent Common'('Input Group RI Input Suminsured') ; çä    'GroupPremium RI Extra Premium Annual Percent Common'('Input Group RI Input Suminsured' - 'GroupPremium Get ProductLevel FCL' - 'Input Group RI Limit')çä  )çä);2)
+F1 723e8748 76b16735 0 0 0 0 2
+GroupPremium RI Extra Premium Annual Percent Common(amount)
+Funktion
+amount / 'Input Group Config Prod UnitOfRating' * 'Input Group RI Input Gross Rate' * 'GroupPremium Get RI Percent Load' * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency' * 0.01
+F1 408eaee0 250163fd 5c3253a9 42f976ec 0 0 2
+GroupPremium RI Extra Premium Annual Rate
+Funktion
+round(IF ('Input Group Config Coy RI Extra Method' EQUAL "01" ; çä  'GroupPremium RI Extra Premium Annual Rate Common'('Input Group RI Input Suminsured') ; çä  IF ('GroupPremium Get ProductLevel FCL' <= 'Input Group RI Limit' ; çä    'GroupPremium RI Extra Premium Annual Rate Common'('Input Group RI Input Suminsured') ; çä    'GroupPremium RI Extra Premium Annual Rate Common'('Input Group RI Input Suminsured' - 'GroupPremium Get ProductLevel FCL' - 'Input Group RI Limit')çä  )çä);2)
+F1 5c3253a9 408eaee0 0 0 0 0 2
+GroupPremium RI Extra Premium Annual Rate Common(amount)
+Funktion
+amount / 'Input Group Config Prod UnitOfRating' * 'GroupPremium Get RI Percent Rate' * 'GroupPremium Get Modal Factor' * 'GroupPremium Get Bill Frequency'
+F1 42f976ec 250163fd 0 22ced865 0 0 2
+GroupPremium RI Extra Premium Installment Percent
+Funktion
+round('GroupPremium RI Extra Premium Annual Percent' / 'GroupPremium Get Bill Frequency';2)
+F1 22ced865 250163fd 0 26dbe43d 0 0 2
+GroupPremium RI Extra Premium Installment Rate
+Funktion
+round('GroupPremium RI Extra Premium Annual Rate' / 'GroupPremium Get Bill Frequency';2)
+F1 26dbe43d 250163fd 0 33cd812f 0 0 2
+GroupPremium Get RI Percent Load
+Funktion
+CASE('Input Group Plan RI Loading Indicator';çä  1 : 0;çä  2 : 'Input Group Member RI EM Loading';çä  3 : 'Input Group Member EM Loading on Effdte';çä   : 0)çä
+F1 33cd812f 250163fd 0 0 0 0 2
+GroupPremium Get RI Percent Rate
+Funktion
+CASE('Input Group Plan RI Loading Indicator';çä  1 : 0;çä  2 : 'Input Group Member RI OA Loading';çä  3 : 'Input Group Member OA Loading on Effdte';çä   : 0)çä
+F1 455dbddc 3ddba75b 7ca01cd3 0 0 0 2
+--RI Extra Charge Rate Calculations--
+Funktion
+
+F1 7ca01cd3 455dbddc 75ca50ae 0 0 0 2
+GroupPremium RI Extra Charge Percentage
+Funktion
+IF ('Input Group RI Arrangement Type' NOTEQUAL " " ; çä  'GroupPremium Get RI Treaty Rate' ; çä  'Input Group RI Facultative Commission Rate'çä)
+F1 75ca50ae 7ca01cd3 0 0 0 0 2
+GroupPremium Get RI Treaty Rate
+Funktion
+'Access Lookup'("Rate";"RI_TreatyRate";v_('GroupPremium Get RI RI_PremClass PremiumClass' & 'Input Group Policy Bill Currency' & 'Input Group Policy Bill Currency');"CMPRCNT")
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 3384248e 0 55f694c1 0 0 0 0
+
+I0 55f694c1 3384248e 0 0 0 0 0
+PAGGStandard.pms
+-
+O0
+E0
+L0
+B0
+P1
+2c16cf8f
+F1
+3ddba75b
+A0
+T0
+!24
+1551c572 -2 -2
+ 
+4556a13b 0 2
+
+145fd999 -2 -2
+ 
+2f342a59 0 2
+
+7696c94f 0 2
+
+da4bfe7 -2 -2
+Check the Headcount Family code and move rates accordingly.
+26ad7d3e 0 2
+
+a8a5c07 -2 -2
+ 
+b76f61f 0 2
+
+4a946e08 -2 -2
+ 
+4354a31 -2 -2
+ 
+4354a31 0 1
+
+25b59c9c 0 2
+
+7aa044cb -2 -2
+ 
+bc02684 0 2
+
+4639919e -2 -2
+ 
+513b46f9 0 2
+
+6ad77515 0 2
+
+1ef2e26f -2 -2
+ 
+cfa3c2 -2 -2
+ 
+cfa3c2 0 2
+
+3b05b00a -2 -2
+ 
+19911683 0 2
+
+1b374066 -2 -2
+ 
+;Offset=00000000

@@ -1,0 +1,636 @@
+;1	08.12.2016 13:33:06	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P0 de0804 0 1733f856 0 0 0 0
+
+P13 1733f856 de0804 0 0 0 0 2
+Alternate Surrender Charge Rider Benefit Rate Model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Alternate Surrender Charge Rider Benefit Rate Model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RCOLA.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 de0860 0 45fe18dc 0 0 0 0
+
+F1 45fe18dc de0860 41eeaaaa 1209d964 0 0 2
+-- Alternate Surrender Charge Rider Benefit Rates --
+Funktion
+
+F1 41eeaaaa 45fe18dc 33f5ce6a 67781f7d 0 0 2
+FCHGPCT(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Rider Percent Lookup'(s)çä)
+F1 33f5ce6a 41eeaaaa 0 0 0 0 2
+FULLSURR Rider Percent Lookup(s)
+Funktion
+LOOKUPX('TABLE FCHGPCT';'Common RateModel Access Table ID Key'(s);'Common RateModel Access ChargeBasedOn Key'('Fullsurr TableName'(s);s);'Common RateModel Access Jurisdiction Key'('Fullsurr TableName'(s);s);'Common RateModel Access Gender Key'('Fullsurr TableName'(s);s);'Common RateModel Access Underwriting Class Key'('Fullsurr TableName'(s);s);'Common RateModel Access Smoke Code Key'('Fullsurr TableName'(s);s);'Common RateModel Access Band Code Key'('Fullsurr TableName'(s);s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä   /*Then*/ "Year_" & SetParameter("Duration";s) ; çä   /*Else*/ "Ultimate"çä))
+F1 67781f7d 45fe18dc 2a52c042 248ded6a 0 0 2
+PCHGPCT(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Rider Percent Lookup'(s)çä)
+F1 2a52c042 67781f7d 0 0 0 0 2
+PARTSURR Rider Percent Lookup(s)
+Funktion
+LOOKUPX('TABLE PCHGPCT';'Common RateModel Access Table ID Key'(s);'Common RateModel Access ChargeBasedOn Key'('Fullsurr TableName'(s);s);'Common RateModel Access Jurisdiction Key'('Fullsurr TableName'(s);s);'Common RateModel Access Gender Key'('Fullsurr TableName'(s);s);'Common RateModel Access Underwriting Class Key'('Fullsurr TableName'(s);s);'Common RateModel Access Smoke Code Key'('Fullsurr TableName'(s);s);'Common RateModel Access Band Code Key'('Fullsurr TableName'(s);s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'PARTSURR Select Period'(s) ; çä   /*Then*/ "Year_" & SetParameter("Duration";s) ; çä   /*Else*/ "Ultimate"çä))
+F1 248ded6a 45fe18dc 7a4f5ff2 433752cb 0 0 2
+FCHGAMT(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Rider Amount Lookup'(s)çä)
+F1 7a4f5ff2 248ded6a 0 0 0 0 2
+FULLSURR Rider Amount Lookup(s)
+Funktion
+LOOKUPX('TABLE FCHGAMT';'Common RateModel Access Table ID Key'(s);'Common RateModel Access ChargeBasedOn Key'('Fullsurr TableName'(s);s);'Common RateModel Access Jurisdiction Key'('Fullsurr TableName'(s);s);'Common RateModel Access Gender Key'('Fullsurr TableName'(s);s);'Common RateModel Access Underwriting Class Key'('Fullsurr TableName'(s);s);'Common RateModel Access Smoke Code Key'('Fullsurr TableName'(s);s);'Common RateModel Access Band Code Key'('Fullsurr TableName'(s);s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä   /*Then*/ "Year_" & SetParameter("Duration";s) ; çä   /*Else*/ "Ultimate"çä))
+F1 433752cb 45fe18dc 3c3d0c47 0 0 0 2
+PCHGAMT(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'PARTSURR Rider Percent Lookup'(s)çä)
+F1 3c3d0c47 433752cb 0 0 0 0 2
+PARTSURR Rider Amount Lookup(s)
+Funktion
+LOOKUPX('TABLE PCHGAMT';'Common RateModel Access Table ID Key'(s);'Common RateModel Access ChargeBasedOn Key'('Fullsurr TableName'(s);s);'Common RateModel Access Jurisdiction Key'('Fullsurr TableName'(s);s);'Common RateModel Access Gender Key'('Fullsurr TableName'(s);s);'Common RateModel Access Underwriting Class Key'('Fullsurr TableName'(s);s);'Common RateModel Access Smoke Code Key'('Fullsurr TableName'(s);s);'Common RateModel Access Band Code Key'('Fullsurr TableName'(s);s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'PARTSURR Select Period'(s) ; çä   /*Then*/ "Year_" & SetParameter("Duration";s) ; çä   /*Else*/ "Ultimate"çä))
+F1 1209d964 de0860 38dc0d06 603ebd83 0 0 2
+-- Table Names --
+Funktion
+
+F1 38dc0d06 1209d964 0 e40dccc 0 0 2
+FULLSURR TableName(s)
+Funktion
+"TABLE " & SetParameter("Rate_Type";s)
+F1 e40dccc 1209d964 0 0 0 0 2
+PARTSURR TableName(s)
+Funktion
+"TABLE " & SetParameter("Rate_Type";s)
+F1 603ebd83 de0860 2774a66b 39df6b79 0 0 2
+-- Alternate Surrender Charge Rider Charge Rates --
+Funktion
+
+F1 2774a66b 603ebd83 0 57ef5def 0 0 2
+RIDERCHGPCT(s)
+Funktion
+LOOKUPX('TABLE RIDERCHGPCT';SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 15 ; çä   /*Then*/ "Year_" & SetParameter("Duration";s) ; çä   /*Else*/ "Ultimate"çä))
+F1 57ef5def 603ebd83 0 0 0 0 2
+RIDERCHGAMT(s)
+Funktion
+LOOKUPX('TABLE RIDERCHGAMT';SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 15 ; çä   /*Then*/ "Year_" & SetParameter("Duration";s) ; çä   /*Else*/ "Ultimate"çä))
+F1 39df6b79 de0860 3ee55330 0 0 0 2
+-- Select period functions --
+Funktion
+
+F1 3ee55330 39df6b79 0 4915de85 0 0 2
+FULLSURR Select Period(s)
+Funktion
+IF (EXISTS('TABLE Select period';SetParameter("Rate_Type";s)) ; çä  'TABLE Select period'[SetParameter("Rate_Type";s)] ; çä  0çä)
+F1 4915de85 39df6b79 0 0 0 0 2
+PARTSURR Select Period(s)
+Funktion
+IF (EXISTS('TABLE Select period';SetParameter("Rate_Type";s)) ; çä  'TABLE Select period'[SetParameter("Rate_Type";s)] ; çä  0çä)
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 6d1e49bd 0 0 0 0
+
+T1 6d1e49bd de0974 17b86871 671bbe8d 0 0 2
+-- Alternate Surrender Charge Rider Benefit Rates --
+key
+value
+T3 17b86871 6d1e49bd 0 5e546400 0 0 24
+TABLE FCHGPCT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+00
+*
+*
+*
+*
+*
+*
+0
+7.2
+7.2
+7.2
+7.2
+5.6
+4.8
+4
+4
+3.2
+2.4
+0
+0
+0
+0
+0
+0
+13
+*
+*
+*
+*
+*
+*
+0
+7.2
+7.2
+7.2
+7.2
+5.6
+4.8
+4
+4
+3.2
+2.4
+0
+0
+0
+0
+0
+0
+T3 5e546400 6d1e49bd 0 30fb0434 0 0 24
+TABLE FCHGAMT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+00
+*
+*
+*
+*
+*
+*
+0
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+0
+0
+0
+0
+0
+0
+13
+*
+*
+*
+*
+*
+*
+0
+80
+80
+80
+72
+64
+56
+36
+32
+20
+8
+0
+0
+0
+0
+0
+0
+T3 30fb0434 6d1e49bd 0 35dee13d 0 0 24
+TABLE PCHGPCT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+00
+*
+*
+*
+*
+*
+*
+0
+7.2
+7.2
+7.2
+7.2
+5.6
+4.8
+4
+4
+3.2
+2.4
+0
+0
+0
+0
+0
+0
+13
+*
+*
+*
+*
+*
+*
+0
+7.2
+7.2
+7.2
+7.2
+5.6
+4.8
+4
+4
+3.2
+2.4
+0
+0
+0
+0
+0
+0
+T3 35dee13d 6d1e49bd 0 0 0 0 24
+TABLE PCHGAMT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+00
+*
+*
+*
+*
+*
+*
+0
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+0
+0
+0
+0
+0
+0
+13
+*
+*
+*
+*
+*
+*
+0
+80
+80
+80
+72
+64
+56
+36
+32
+20
+8
+0
+0
+0
+0
+0
+0
+T1 671bbe8d de0974 6b6d4e74 ddc7cf0 0 0 2
+-- Alternate Surrender Charge Rider Charge Rates --
+key
+value
+T4 6b6d4e74 671bbe8d 0 703b330f 0 0 17
+TABLE RIDERCHGPCT
+Issue_Age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+18
+0.05
+0.05
+0.05
+0.05
+0.05
+0.05
+0.05
+0.05
+0.05
+0.05
+0.04
+0.04
+0.04
+0.04
+0.04
+0.04
+56
+0.06
+0.06
+0.06
+0.06
+0.06
+0.06
+0.06
+0.06
+0.06
+0.06
+0.05
+0.05
+0.05
+0.05
+0.05
+0.05
+76
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+0.07
+T4 703b330f 671bbe8d 0 0 0 0 17
+TABLE RIDERCHGAMT
+Issue_Age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+18
+75
+75
+75
+75
+75
+75
+50
+50
+50
+50
+40
+40
+40
+40
+40
+40
+56
+60
+60
+60
+60
+60
+60
+60
+60
+60
+60
+50
+50
+50
+50
+50
+50
+76
+70
+70
+70
+70
+70
+70
+70
+70
+70
+70
+60
+60
+60
+60
+60
+60
+T1 ddc7cf0 de0974 326c9451 0 0 0 2
+-- Select Period --
+key
+value
+T5 326c9451 ddc7cf0 0 0 0 0 2
+TABLE Select period
+rate_type
+sel_period
+PCHGAMT
+10
+PCHGPCT
+10
+FCHGAMT
+10
+FCHGPCT
+10
+I0 563fac39 0 7eab93db 0 0 0 0
+
+I0 7eab93db 563fac39 0 0 0 0 0
+RateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+1733f856
+F6
+45fe18dc
+1209d964
+603ebd83
+39df6b79
+3ee55330
+4915de85
+A0
+T3
+6d1e49bd
+671bbe8d
+ddc7cf0
+!16
+41eeaaaa -2 -2
+
+33f5ce6a -2 -2
+
+67781f7d -2 -2
+
+2a52c042 -2 -2
+
+248ded6a -2 -2
+
+7a4f5ff2 -2 -2
+
+433752cb -2 -2
+
+3c3d0c47 -2 -2
+
+3ee55330 -2 -2
+Description: This function returns the full surrender charge select period by rate type, from internal table T_fullsurr_sel_period.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+4915de85 -2 -2
+Description: This function returns the partial surrender charge select period by rate type, from internal table T_partsurr_sel_period.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+17b86871 -2 -2
+Modification Log:çä14/05/2010 DT pA1101 updated rates from partial charges to be more reasonable
+5e546400 -2 -2
+Modification Log:çä14/05/2010 DT pA1101 updated rates from partial charges to be more reasonable
+30fb0434 -2 -2
+Modification Log:çä14/05/2010 DT pA1101 updated rates from partial charges to be more reasonable
+35dee13d -2 -2
+Modification Log:çä14/05/2010 DT pA1101 updated rates from partial charges to be more reasonable
+6b6d4e74 -2 -2
+Description:  This table includes percentages used to calculate the alternate surrender charge rider
+703b330f -2 -2
+Description:  This table includes amounts used for the alternate surrender charge rider charge
+;Offset=00000000

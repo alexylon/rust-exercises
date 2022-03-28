@@ -1,0 +1,151 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 5ab17001 0 0 0 0 0 0
+
+O0 2ce4a0ed 0 0 0 0 0 0
+
+E0 361e3d9e 0 0 0 0 0 0
+
+L0 77a936c0 0 0 0 0 0 0
+
+B0 10c01102 0 0 0 0 0 0
+
+P1 6f96f872 0 967830d 0 0 0 2
+
+--description
+Global Unit Linked Benefit Fees Rates model.çä çäRELEASE LOG:çäRELEASE pA 1401
+P13 967830d 6f96f872 0 0 0 0 2
+Global Unit Linked Benefit Fees Rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Unit Linked Benefit Fees Rates model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RGULPA_EXP.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 54b5ae41 0 646158fb 0 0 0 0
+
+F1 646158fb 54b5ae41 0 496a68ee 0 0 2
+POLFEE(s)
+Funktion
+table('POLFEE GetTableName'(s))['Currency Key'(s)].FEE
+F1 496a68ee 54b5ae41 0 57c72c01 0 0 2
+POLFEE GetTableName(s)
+Funktion
+'FEE TableIndex'[SetParameter("FeeType";s)].TableName
+F1 57c72c01 54b5ae41 0 23751760 0 0 2
+POLFEE_Query(s)
+Funktion
+Rate_Query("FEE")
+F1 23751760 54b5ae41 0 0 0 0 2
+--POLFEE GetColumnName(s)
+Funktion
+'POLFEE TableIndex'[çäâSetParameter("FeeType";s)çä].ColumnName
+A0 5cf40bb0 0 0 0 0 0 0
+
+T0 37cb0481 0 55794449 0 0 0 0
+
+T3 55794449 37cb0481 0 7048ee87 0 0 3
+FEE TableIndex
+FeeType
+TableName
+ColumnName
+1
+TABLE Policy Fee
+Fee
+2
+TABLE Trustee Fee
+Fee
+T3 7048ee87 37cb0481 0 7f0ab087 0 0 2
+FEE Query
+dataItem
+null
+FeeType
+
+Currency
+
+T10 7f0ab087 37cb0481 0 55321a7f 0 0 2
+TABLE Policy Fee
+Currency
+Fee
+HKD
+60
+GBP
+5
+USD
+7.5
+JPY
+1125
+EUR
+7.5
+AUD
+15
+CHF
+12.5
+SEK
+75
+SGD
+12
+T10 55321a7f 37cb0481 0 0 0 0 2
+TABLE Trustee Fee
+Currency
+Fee
+HKD
+25
+GBP
+2.08
+USD
+3.13
+JPY
+468.75
+EUR
+2.36
+AUD
+5.21
+CHF
+5.21
+SEK
+0
+SGD
+0
+I0 48c32f06 0 439b3726 0 0 0 0
+
+I0 439b3726 48c32f06 0 0 0 0 0
+PAGRateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+967830d
+F4
+646158fb
+496a68ee
+57c72c01
+23751760
+A0
+T4
+55794449
+7048ee87
+7f0ab087
+55321a7f
+;Offset=00000000

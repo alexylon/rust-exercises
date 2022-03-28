@@ -1,0 +1,121 @@
+;1	08.12.2016 13:40:53	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 c12fb6b 0 0 0 2
+
+--description
+Global Cash Value Projections model.Š ŠRELEASE LOG:ŠRELEASE pA 1401
+P13 c12fb6b de0804 0 0 0 0 2
+Global Cash Value Projections
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Cash Value Projections model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGCashValueProjections.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 de0860 0 49e78caa 0 0 0 0
+
+F1 49e78caa de0860 1bac744 110e0ce9 0 0 2
+:POLFEE
+Funktion
+
+F1 1bac744 49e78caa 0 26b3b913 0 0 2
+POLFEE Vector Parms Build(feeType;vectorRateQuery)
+Funktion
+vectorx(dataItem;0;v_length(vectorRateQuery) - 1;'POLFEE Vector GetDataItemPair'(feeType;e_(vectorRateQuery;#dataItem)))
+F1 26b3b913 49e78caa 0 527ef755 0 0 2
+POLFEE Vector Parms GetQuery(calcType; rateType)
+Funktion
+v_construct(Rate('Policy ProductCode';rateType & "_Query";TransEffDate;'Gen Vector Blank'))
+F1 527ef755 49e78caa 0 736fed80 0 0 2
+POLFEE Vector GetDataItemPair (feeType;dataItem)
+Funktion
+v_(dataItem;CASE(toupper(dataItem);Š  "FEETYPE" : 'PI PolicyProduct Fee FeeType'('Policy ProductCode';feeType;TransEffDate);Š  "CURRENCY" : 'Payment Currency';Š   : ERROR("Data Item not defined in 'FEE Rate Vector GetDataItemPair': ";dataItem))Š)
+F1 736fed80 49e78caa 0 462b9cc7 0 0 2
+POLFEE Rate Vector Parms(calcType; feeType; rateType)
+Funktion
+'POLFEE Vector Parms Build'(feeType;'POLFEE Vector Parms GetQuery'(calcType;rateType))
+F1 462b9cc7 49e78caa 0 0 0 0 2
+POLFEE Rate(calcType;feeType)
+Funktion
+Rate('Policy ProductCode';"POLFEE";TransEffDate;'POLFEE Rate Vector Parms'(calcType;feeType;"POLFEE"))
+F1 110e0ce9 de0860 0 66da7974 0 0 2
+Vector ULCD CVProj Parms(calcType; yearIndex)
+Funktion
+v_(1; // Check for lapse (True or False) -- parm 1Š'Policy Life InitialPremAmt'; // Initial lump sum payment -- parm 2Š0; //'DefLifeInsMethod is Guideline'('Policy LifeUSA DefLifeInsMethod'); //Adjust if DEFRA Guideline Premium Test -- parm 3Š//‰1;‰// Adjust for DEFRA -- parm 4Š0; //'Vector ULCVector GuidelineLimit'(calcType);‰// Guidelines to calculate limits for each year‰Š0; //'Premium is Specified';‰// Varying premiums (True or False) -- parm 5Š'GEN Vector Blank'; //'Vector of Specified Premiums by Year'(calcType); // Vector of premiums by year (if premiums are to vary) -- parm 6‰‰‰Š0; //'TARGET Premium'(calcType);Š1; // Start yearŠ1 // Start monthŠ)
+F1 66da7974 de0860 0 4e0aff0b 0 0 2
+CVProjection Policy Loaned Amount(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+0 /*Š'ULLoan Total Projected Balance'(Š‰‰calcType; Š‰‰yearIndex;Š‰‰'CVProjection Build ULloan Vector'(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex)Š‰)Š*/ 
+F1 4e0aff0b de0860 0 0 0 0 2
+CVProjection Interest Credited on Loaned Amount(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+0 /*Š'CVProjection Total Projected Balance Plus Interest'(Š‰‰projInterestRate;Š‰‰yearIndex;Š‰‰'ULLoan Projected RegularLoan Balance'(Š‰‰‰calcType; Š‰‰‰yearIndex;Š‰‰‰'CVProjection Build ULloan Vector'(Š‰‰‰‰‰calcType; Š‰‰‰‰‰vectorSolveParms; Š‰‰‰‰‰projInterestRate; Š‰‰‰‰‰vectorAddlInfo; Š‰‰‰‰‰yearIndexŠ‰‰‰)Š‰‰);Š‰‰'ULLoan Projected PreferredLoan Balance'(Š‰‰‰calcType; Š‰‰‰yearIndex;Š‰‰‰'CVProjection Build ULloan Vector'(Š‰‰‰‰‰calcType; Š‰‰‰‰‰vectorSolveParms; Š‰‰‰‰‰projInterestRate; Š‰‰‰‰‰vectorAddlInfo; Š‰‰‰‰‰yearIndexŠ‰‰‰)Š‰‰);Š‰‰vectorAddlInfoŠ‰)Š-Š'ULLoan Projected RegularLoan Balance'(Š‰‰‰calcType; Š‰‰‰yearIndex;Š‰‰‰'CVProjection Build ULloan Vector'(Š‰‰‰‰‰calcType; Š‰‰‰‰‰vectorSolveParms; Š‰‰‰‰‰projInterestRate; Š‰‰‰‰‰vectorAddlInfo; Š‰‰‰‰‰yearIndexŠ‰‰‰)Š)Š-Š'ULLoan Projected PreferredLoan Balance'(Š‰‰‰calcType; Š‰‰‰yearIndex;Š‰‰‰'CVProjection Build ULloan Vector'(Š‰‰‰‰‰calcType; Š‰‰‰‰‰vectorSolveParms; Š‰‰‰‰‰projInterestRate; Š‰‰‰‰‰vectorAddlInfo; Š‰‰‰‰‰yearIndexŠ‰‰‰)Š)ŠŠŠ*/ 
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 1d8522bc 0 2bc966d5 0 0 0 0
+
+I0 2bc966d5 1d8522bc 0 0 0 0 0
+PAGBenefitCharges.pms
+-
+O0
+E0
+L0
+B0
+P1
+c12fb6b
+F4
+49e78caa
+110e0ce9
+66da7974
+4e0aff0b
+A0
+T0
+!8
+1bac744 -2 -2
+Description: Build rate access vectorŠ ŠModification Log:Š12/19/2013 pA-G1401 JC  Modified Function for Policy Fees CaculationsŠ11152013 pA-G1401 JL Initial Rule
+26b3b913 -2 -2
+Description: Query the rate model to ascertain which data items are required for a rates call.Š ŠModification Log:Š11152013 pA-G1401 JL Initial Rule
+527ef755 -2 -2
+Description:  Rate Vector for Commission RateŠModification Log:Š12/19/2013 pA-G1401 JC  Modified Function for Policy Fees CaculationsŠ11152013 pA-G1401 JL Initial Rule
+736fed80 -2 -2
+Description: Build vector for rate model call.Š ŠModification Log:Š12/19/2013 pA-G1401 JC  Modified Function for Policy Fees CalculationsŠ11152013 pA-G1401 JL Initial Rule
+462b9cc7 -2 -2
+11152013 pA-G1401 JL Initial Rule
+110e0ce9 -2 -2
+Description:  Returns the vector to be passed to CV projections for UL Contract Docs.Š ŠModification Log:Š2/2/2011 - PAC013 calctype - BT - add TARGET PremiumŠ1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexŠ1/12/2011 - PAC013 calcType - BT - RestructureŠ8/27/2010 - PAC014 MAS - added logic to recognize specified premiums that vary by yearŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ06/02/2010 - PA1543 - rm - Adjust for DEFRA guideline premiums parameter is 1 only for Guideline Premium TestŠ05/20/2010 pA Performance CMC added yearIndex as a parm to ULCD CVProj Parms vectorŠ05/24/2010 pA Performance CMC removed yearIndex parm from the ULCD CVProj Parms vectorŠ05/21/2010 pA Performance CMC guideline limit no longer from vector.Š01/29/2010 nbA Integration CMC change to initial premium amountŠ11/6/2009 - PA1001 - NT - performance - remove yearIndex parm from CVProj ParmsŠ11/25/2008 CSC Updated to calc target when run for IllustrationŠ10/31/2007 CSC Initial Calculation/Rule
+66da7974 -2 -2
+Š ŠModification Log:Š09/02/2011 pA1975 CMC updated for change to build ULloan vector functionŠ01/14/2011 - PAC013 calcType - BT - Restructure
+4e0aff0b -2 -2
+ŠModification Log:Š09/02/2011 pA1975 CMC updated for change to build ULloan vector function and altered to be just interest credited on loaned amountsŠ01/14/2011 - PAC013 calcType - BT - Restructure
+;Offset=00000000

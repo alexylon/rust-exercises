@@ -1,0 +1,562 @@
+;1	08.12.2016 13:33:05	jlawrie2	
+X0 bb52a0 0 0 0 0 0 0
+
+O0 bb5174 0 0 0 0 0 0
+
+E0 bb51d8 0 0 0 0 0 0
+
+L0 bb523c 0 0 0 0 0 0
+
+B0 bb53cc 0 0 0 0 0 0
+
+P3 bb5304 0 6bfc4eac 0 0 0 2
+
+--description
+VERA simulation submodel that returns rates.çä çäRELEASE LOG:çäRELEASE 1101 - PAC011 DERA&VERA
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"3.60.005"
+P13 6bfc4eac bb5304 0 0 0 0 2
+Simulation Tables for Vera Access Simulation
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"VERA simulation tables model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"VERA_simulation_tables.pms"
+OUTPUT Source Version Number
+0 //'GEN VersionInfo'ä
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 bb5368 0 bc01a0 0 0 0 0
+
+F1 bc01a0 bb5368 15b2ba2e 0 0 0 2
+-- LR VERA FUNCTIONS --
+Funktion
+
+F1 15b2ba2e bc01a0 bc1820 795c8c5 0 0 2
+--Guaranteed COI--
+Funktion
+
+F1 bc1820 15b2ba2e 0 2f444f08 0 0 2
+f_attained_age_guar_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 2f444f08 15b2ba2e 0 bc1d10 0 0 2
+f_attained_age_guar_coi_joint(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc1d10 15b2ba2e 0 0 0 0 2
+f_select_and_ult_guar_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 795c8c5 bc01a0 bc0010 2f592937 0 0 2
+--Current COI--
+Funktion
+
+F1 bc0010 795c8c5 0 bc1b30 0 0 2
+f_select_and_ult_curr_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc1b30 795c8c5 0 bc1a00 0 0 2
+f_select_and_ult_curr_coi_joint(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc1a00 795c8c5 0 bc16f0 0 0 2
+f_attained_age_curr_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc16f0 795c8c5 0 bc1350 0 0 2
+f_attained_age_curr_coi_joint(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc1350 795c8c5 0 bc14a0 0 0 2
+f_supp_ben_curr_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc14a0 795c8c5 0 0 0 0 2
+f_select_and_ult_supp_ben_curr_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 2f592937 bc01a0 bc10f0 651c66d3 0 0 2
+--Term Rider COI--
+Funktion
+
+F1 bc10f0 2f592937 0 bc2f90 0 0 2
+f_tr_select_and_ult_curr_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc2f90 2f592937 0 bc2e60 0 0 2
+f_tr_select_and_ult_curr_coi_joint(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc2e60 2f592937 0 bc2c80 0 0 2
+f_tr_attained_age_curr_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc2c80 2f592937 0 bc2b30 0 0 2
+f_tr_attained_age_curr_coi_joint(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc2b30 2f592937 0 bc29f0 0 0 2
+f_tr_select_and_ult_guar_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc29f0 2f592937 0 0 0 0 2
+f_tr_attained_age_guar_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 651c66d3 bc01a0 14ff2660 765e0aa 0 0 2
+--Policy Protection Account COI--
+Funktion
+
+F1 14ff2660 651c66d3 0 58af11e3 0 0 2
+f_select_and_ult_ppa_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 58af11e3 651c66d3 0 0 0 0 2
+f_attained_age_ppa_coi(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 765e0aa bc01a0 1dced36f 4455b4f3 0 0 2
+--Current Premium--
+Funktion
+
+F1 1dced36f 765e0aa 0 180fd598 0 0 2
+f_select_and_ult_curr_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 180fd598 765e0aa 0 3d48cbae 0 0 2
+f_attained_age_curr_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 3d48cbae 765e0aa 0 76a97427 0 0 2
+f_select_and_ult_supp_ben_curr_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 76a97427 765e0aa 0 0 0 0 2
+f_supp_ben_curr_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 4455b4f3 bc01a0 c3e408b 794530e5 0 0 2
+--Guaranteed Premium--
+Funktion
+
+F1 c3e408b 4455b4f3 0 7936bd56 0 0 2
+f_select_and_ult_guar_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 7936bd56 4455b4f3 0 0 0 0 2
+f_attained_age_guar_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 794530e5 bc01a0 2e4a62e7 bc28a0 0 0 2
+--Term Rider Premium--
+Funktion
+
+F1 2e4a62e7 794530e5 0 798e7e9a 0 0 2
+f_tr_select_and_ult_curr_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 798e7e9a 794530e5 0 2706ffee 0 0 2
+f_tr_attained_age_curr_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 2706ffee 794530e5 0 1b33f907 0 0 2
+f_tr_select_and_ult_guar_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 1b33f907 794530e5 0 0 0 0 2
+f_tr_attained_age_guar_prm(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+'Build LateReference Call'('ACCESS Model Name'(Product_Type;'VSIM RateType'(Rate_Type);"");'Build Function Name'('VSIM RateType'(Rate_Type));'VSIM RateParms'(Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur))
+F1 bc28a0 bc01a0 71fc6e7 491ec226 0 0 2
+-- Value Conversion --
+Funktion
+
+F1 71fc6e7 bc28a0 0 1e4cf81d 0 0 2
+VSIM IssueGender(value)
+Funktion
+table("TABLE VSIM Translate Gender")[value].internal_value
+F1 1e4cf81d bc28a0 0 bc27b0 0 0 2
+VSIM RateType(value)
+Funktion
+table("TABLE VSIM Translate RateType")[value].internal_value
+F1 bc27b0 bc28a0 0 65724b61 0 0 2
+VSIM UnderwritingClass(value)
+Funktion
+table("TABLE VSIM Translate RateClass")[value].UnderwritingClass
+F1 65724b61 bc28a0 0 bc2650 0 0 2
+VSIM TobaccoPremiumBasis(value)
+Funktion
+table("TABLE VSIM Translate RateClass")[value].TobaccoPremiumBasis
+F1 bc2650 bc28a0 0 bc2580 0 0 2
+--f_BAND(value)
+Funktion
+T_translate_band[value].internal_value
+F1 bc2580 bc28a0 0 bc2410 0 0 2
+--f_Rate_Type(value)
+Funktion
+T_translate_Rate_Type[value].internal_value
+F1 bc2410 bc28a0 0 bc2330 0 0 2
+--f_product_rateclass(PDF_key)
+Funktion
+f_Plan_Rules(PDF_key;"Rateclass")
+F1 bc2330 bc28a0 0 bc21b0 0 0 2
+--f_product_name(PDF_key)
+Funktion
+trim(f_Plan_Rules(PDF_key; "Product_Name"))
+F1 bc21b0 bc28a0 0 0 0 0 2
+--f_Plan_Rules(PDF_key; column)
+Funktion
+if(exists(T_Plan_Rules;PDF_key);çäâT_Plan_Rules[PDF_key](column);çäâ0// not includeçä)çäâ
+F1 491ec226 bc01a0 4d9be76f 14964efc 0 0 2
+-- ACCESS Functions --
+Funktion
+
+F1 4d9be76f 491ec226 0 e629295 0 0 2
+ACCESS Model Name(productCode; rateType; effectiveDate)
+Funktion
+'Build LateReference Call'('ACCS Rate Location Model Name';"LOCATION Model Name";'V LR Parms'(productCode;rateType;effectiveDate;""))
+F1 e629295 491ec226 0 5d1891bc 0 0 2
+ACCS Rate Location Model Name
+Funktion
+"LOCATION"
+F1 5d1891bc 491ec226 0 29430695 0 0 2
+Build LateReference Call(modelName;functionName;parm_vector)
+Funktion
+VPMCOMPUTE(modelName;functionName & "(" & Quote(V_STRINGX(parm_vector)) & ")")
+F1 29430695 491ec226 0 26186f1b 0 0 2
+Build Function Name(ratetype)
+Funktion
+ //"f_"& çäratetype
+F1 26186f1b 491ec226 0 665ea173 0 0 2
+Quote(str1)
+Funktion
+""" &  // next comes the parameter you want to surround with quotesçästr1 // use a & to concatonate the parameterçä &  // use 3 double quotes to add quote character in a stringçä"""
+F1 665ea173 491ec226 100c2bb0 4e88e6b4 0 0 2
+V LR Parms(productCode; rateType; effectiveDate; vectorParms)
+Funktion
+'Vector Build'(V_('Product Code Mapping'(productCode;rateType;'LOOKUP Date'(effectiveDate));'Rate Code Mapping'(productCode;rateType;'LOOKUP Date'(effectiveDate));'LOOKUP Date'(effectiveDate));vectorParms)
+F1 100c2bb0 665ea173 0 4a4260b9 0 0 2
+Vector Build(v1;v2)
+Funktion
+V_CONCAT(v1;v2)
+F1 4a4260b9 665ea173 0 7378e3a7 0 0 2
+Product Code Mapping(productCode; rateType;effectiveDate)
+Funktion
+E_(V_CONSTRUCT('ACCS Product Rate Code Mapping'(productCode;rateType;effectiveDate));0)
+F1 7378e3a7 665ea173 0 554f1965 0 0 2
+Rate Code Mapping(productCode; rateType;effectiveDate)
+Funktion
+E_(V_CONSTRUCT('ACCS Product Rate Code Mapping'(productCode;rateType;effectiveDate));1)
+F1 554f1965 665ea173 0 0 0 0 2
+LOOKUP Date(date1)
+Funktion
+IF (ISDATE(date1) ; çä  DATE(date1;0;0;0;"YMD") ; çä  ""çä)
+F1 4e88e6b4 491ec226 0 0 0 0 2
+ACCS Product Rate Code Mapping(productCode; rateType;effectiveDate)
+Funktion
+'Build LateReference Call'('ACCS Rate Location Model Name';"LOCATION Product Rate Code Mapping";V_(productCode;rateType;effectiveDate))
+F1 14964efc bc01a0 0 7375c538 0 0 2
+VSIM RateParms(Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+v_(Product_Type;'VSIM RateType'(Rate_Type);"";Issue_Age;Age_or_Dur;'VSIM IssueGender'(Sex);'VSIM UnderwritingClass'(Rate_Class);'VSIM TobaccoPremiumBasis'(Rate_Class);Band)
+F1 7375c538 bc01a0 0 0 0 0 2
+VSIM Result Filler(Func_Name; Product_Type; Rate_Type; Sex; Rate_Class; Issue_Age; Band; Code; Age_or_Dur)
+Funktion
+message(v_string(v_(Func_Name;Product_Type;Rate_Type;Sex;Rate_Class;Issue_Age;Band;Code;Age_or_Dur);"; ");0)
+A0 bb5430 0 0 0 0 0 0
+
+T0 bb5494 0 bc20a0 0 0 0 0
+
+T1 bc20a0 bb5494 bc22c0 0 0 0 2
+--Translation Tables--
+key
+value
+T4 bc22c0 bc20a0 0 6aebf2c8 0 0 3
+TABLE VSIM Translate Gender
+CyberLife_value
+internal_value
+description
+1
+1
+Male
+2
+2
+Female
+U
+3
+Unisex
+T5 6aebf2c8 bc20a0 0 bc3d40 0 0 4
+TABLE VSIM Translate RateClass
+CyberLife_value
+value
+UnderwritingClass
+TobaccoPremiumBasis
+N
+NON-TOBACCO
+1
+1
+O
+TOBACCO
+1
+2
+P
+PREFERRED
+2
+1
+Q
+PREFERRED TOBACCO
+2
+2
+T5 bc3d40 bc20a0 0 1828fd61 0 0 3
+TABLE VSIM Translate Band
+CyberLife_value
+internal_value
+description
+A
+1
+Band 1
+B
+2
+Band 2
+C
+3
+Band 3
+0
+0
+None
+T28 1828fd61 bc20a0 0 0 0 0 3
+TABLE VSIM Translate RateType
+CyberLife_value
+internal_value
+description
+f_T_select_and_ult_guar_COI
+GCOI
+Select and Ultimate Guaranteed COI
+f_T_attained_age_guar_COI
+GCOI
+Attained Age Guaranteed COI
+f_T_attained_age_guar_COI_joint
+GCOI
+Attained Age Guaranteed Joint COI
+f_T_select_and_ult_curr_COI
+CCOI
+Select and Ultimate Current COI
+f_T_select_and_ult_curr_COI_joint
+CCOI
+Select and Ultimate Current Joint COI
+f_T_select_and_ult_supp_ben_curr_COI
+CCOIGIO
+Supplemental Benefit Select and Ultimate Current COI
+f_T_attained_age_curr_COI
+CCOI
+Attained Age Current COI
+f_T_attained_age_curr_COI_joint
+CCOI
+Attained Age Current Joint COI
+f_T_supp_ben_curr_COI
+CCOIADB
+Supplemental Benefit Current COI
+f_T_TR_select_and_ult_curr_COI
+CCOI
+Term Rider Select and Ultimate Current COI
+f_T_TR_select_and_ult_curr_COI_joint
+CCOI
+Term Rider Select and Ultimate Current Joint COI
+f_T_TR_select_and_ult_guar_COI
+GCOI
+Term Rider Select and Ultimate Guaranteed COI
+f_T_TR_attained_age_curr_COI
+CCOI
+Term Rider Attained Age Current COI
+f_T_TR_attained_age_curr_COI_joint
+CCOI
+Term Rider Attained Age Current Joint COI
+f_T_TR_attained_age_guar_COI
+GCOI
+Term Rider Attained Age Guaranteed COI
+f_T_select_and_ult_PPA_COI
+SCOI
+Policy Protection Account Select and Ultimate Current COI
+f_T_attained_age_PPA_COI
+SCOI
+Policy Protection Account Attained Age Current COI
+f_T_select_and_ult_curr_PRM
+PREM
+Select and Ultimate Current Premium
+f_T_select_and_ult_supp_ben_curr_PRM
+PREM
+Supplemental Benefit Select and Ultimate Current Premium
+f_T_attained_age_curr_PRM
+PREM
+Attained Age Current Premium
+f_T_supp_ben_curr_PRM
+PREM
+Supplemental Benefit Current Premium
+f_T_select_and_ult_guar_PRM
+GRPM
+Select and Ultimate Guaranteed Premium
+f_T_attained_age_guar_PRM
+GRPM
+Attained Age Guaranteed Premium
+f_T_TR_select_and_ult_curr_PRM
+PREM
+Term Rider Select and Ultimate Current Premium
+f_T_TR_attained_age_curr_PRM
+PREM
+Term Rider Attained Age Current Premium
+f_T_TR_select_and_ult_guar_PRM
+GRPM
+Term Rider Select and Ultimate Guaranteed Premium
+f_T_TR_attained_age_guar_PRM
+GRPM
+Term Rider Attained Age Guaranteed Premium
+I0 bb54f8 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P1
+6bfc4eac
+F21
+bc01a0
+15b2ba2e
+795c8c5
+2f592937
+651c66d3
+765e0aa
+4455b4f3
+794530e5
+bc28a0
+71fc6e7
+1e4cf81d
+bc27b0
+65724b61
+bc2650
+bc2580
+bc2410
+bc2330
+bc21b0
+491ec226
+14964efc
+7375c538
+A0
+T5
+bc20a0
+bc22c0
+6aebf2c8
+bc3d40
+1828fd61
+!45
+bc1820 -2 -2
+Description: Attained Age Guaranteed COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+2f444f08 -2 -2
+Description: Attained Age Guaranteed COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc1d10 -2 -2
+Description: Select and Ultimate Guaranteed COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc0010 -2 -2
+Description: Select and Ultimate Current COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc1b30 -2 -2
+Description: Select and Ultimate Current Joint COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc1a00 -2 -2
+Description: Attained Age Current COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc16f0 -2 -2
+Description: Attained Age Current Joint COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc1350 -2 -2
+Description: Attained Age Current COI by Benefit.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc14a0 -2 -2
+Description: Select and Ultimate Current COI by Benefit.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc10f0 -2 -2
+Description: Select and Ultimate Current COI by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2f90 -2 -2
+Description: Select and Ultimate Current Joint COI by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2e60 -2 -2
+Description: Attained Age Current COI by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2c80 -2 -2
+Description: Attained Age Current Joint COI by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2b30 -2 -2
+Description: Select and Ultimate Guaranteed COI by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc29f0 -2 -2
+Description: Attained Age Guaranteed COI Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+14ff2660 -2 -2
+Description: Select and Ultimate Current Policy Protection Account COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+58af11e3 -2 -2
+Description: Attained Age Current Policy Protection Account COI.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1dced36f -2 -2
+Description:  Select and Ultimate Current Premium Rate.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+180fd598 -2 -2
+Description: Attained Age Current Premium Rate.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+3d48cbae -2 -2
+Description: Select and Ultimate Current Premium Rate by Benefit.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+76a97427 -2 -2
+Description: Attained Age Current Premium Rate by Benefit.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+c3e408b -2 -2
+Description: Select and Ultimate Guaranteed Premium Rate.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+7936bd56 -2 -2
+Description: Attained Age Guaranteed Premium Rate.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+2e4a62e7 -2 -2
+Description: Select and Ultimate Current Premium Rate by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+798e7e9a -2 -2
+Description: Attained Age Current Premium Rate by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+2706ffee -2 -2
+Description: Select and Ultimate Guaranteed Premium Rate by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1b33f907 -2 -2
+Description: Attained Age Guaranteed Premium Rate by Term Rider.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Use LR call to return Rateçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1e4cf81d -2 -2
+Description: Returns the rate type to be used in LR callsçä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Initial Calculation
+4d9be76f -2 -2
+Description: Name of rate location model (LOCATION) changed to a function, to allow name of rate location model to vary based on calling system and/or calling program. If Model Name is not found in the Rate Location Model for the plan and rate type, then return an error to the calling application, otherwise this function returns the Model Name of the rate model to call.çä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+e629295 -2 -2
+Description: This function sets the name of the Rate Location model. The name of the Rate Location model can vary by calling system and/or calling programçä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+5d1891bc -2 -2
+Description: Builds the late reference callçä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+29430695 -2 -2
+Description: Appends ratetype on to "f_"çä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+26186f1b -2 -2
+Description: This function receives a string parameter and surrounds that string within quotes. Use 3 double quotes to add quote character in a stringçä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+665ea173 -2 -2
+Description: This vector is used to build the parameter list for Late Referencing calls. If no mapping exists just use the original Product and Rate Typeçä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+100c2bb0 -2 -2
+Description: Concatenate 2 vectorsçä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+4a4260b9 -2 -2
+Description: This function extracts the product code to be used to access ratesçä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+7378e3a7 -2 -2
+Description: This function extracts the rate type to be used to access ratesçä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+554f1965 -2 -2
+Description: If valid date, then convert to YMD format, else return ""çä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+4e88e6b4 -2 -2
+Description: This function returns the product code and rate type to be used for rate access. If an alternate product code is to be used to access rates (ie, rates are shared accross plans), then the alternate product code and rate code is returned as a concantenated string, otherwise, just use the original Product Type and Rate Type.çä çäModification Logçä11/09/2010 PAC011 VERA&DERA JL Copy from ACCESS
+14964efc -2 -2
+Description: Rate info vector created from passed parms, for rate access.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Return vectorçä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+7375c538 -2 -2
+Description: Filler result for rate access function that have not yet been assigned a value. Returns a message string containing relevant information to the rate being retrieved - i.e. function accessed, rate type, product type etc.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc22c0 -2 -2
+Description: Cyberlife to VP/MS Translation Table for Gender.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial Table.
+6aebf2c8 -2 -2
+Description: Cyberlife to VP/MS Translation Table for Rate Class (where this is a combination of Underwriting Class & Tobacco Premium Basis).çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial Table.
+bc3d40 -2 -2
+Description: Cyberlife to VP/MS Translation Table for Band.çäNOTE: band codes define residence, not sizeçä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initail Table.
+1828fd61 -2 -2
+Description: Cyberlife to VP/MS Translation Table for RateType.çä çäModification Log:çä11/09/2010 PAC011 VERA&DERA JL Complete table for different Rate Typesçä10/12/2010 PAC011 DERA&VERA JL Initial Table.
+;Offset=00000000

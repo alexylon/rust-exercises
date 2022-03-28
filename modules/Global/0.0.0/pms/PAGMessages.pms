@@ -1,0 +1,983 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 4f5e0442 0 0 0 2
+
+--description
+Global Messages model.çä çäRELEASE LOG:çäRELEASE pA 1401çäRELEASE Global pA 1301
+P13 4f5e0442 de0804 0 0 0 0 2
+Global Messages
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Messages model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGMessages.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 de0860 0 69320b40 0 0 0 0
+
+F1 69320b40 de0860 709bfb87 611b7518 0 0 2
+:SystemMessage
+Funktion
+
+F1 709bfb87 69320b40 0 5bb6894e 0 0 2
+SystemMessage(MessageCode; Locale)
+Funktion
+IF ( //Does message Code exist?çäEXISTS('TABLE SystemMessage';MessageCode) ; çä   //Yes - Return messageçäF_Table_Access_Locale("TABLE SystemMessage";MessageCode;Locale) ; çä   //No - return problemçä"NoMessageCodeFound"çä)
+F1 5bb6894e 69320b40 0 0 0 0 2
+SystemMessage Vector(MessageCode)
+Funktion
+""
+F1 611b7518 de0860 0 18fdeaba 0 0 2
+F_Table_Access_Locale(tbl; row; locale)
+Funktion
+IF (locale ALIKE "MessageSeverityCode" ; çä  table(tbl)[row].MessageSeverityCode ; çä  F_Table_Access_Locale_with_suffix(tbl;row;locale;"")çä)
+F1 18fdeaba de0860 27653866 13d4f23e 0 0 2
+F_Table_Access_Locale_with_suffix(tbl; row; locale; suffix)
+Funktion
+F_Table_Access(tbl;row;F_LocaleColumnName(v_string(F_LocaleNames_with_suffix_vStr(F_ColumnNames_vStr(tbl);suffix);C_seperator);locale;left(locale;2)) & suffix) // The suffix must include any seperator e.g. "_PDF" if column name is "en_GB_PDF"ä
+F1 27653866 18fdeaba 0 40a759c 0 0 2
+F_LocaleColumnName(columns; locale; short_locale)
+Funktion
+IF (instr(C_seperator & columns & C_seperator;C_seperator & locale & C_seperator) > 0 ; çä  locale ; çä  IF (instr(C_seperator & columns & C_seperator;C_seperator & short_locale & C_seperator) > 0 ; çä    short_locale ; çä    IF (instr(C_seperator & columns;C_seperator & short_locale) > 0 ; çä      mid(columns;instr(C_seperator & columns;C_seperator & short_locale);5) ; çä      left(columns;instr(columns;C_seperator) - 1)çä    )çä)çä) /*çäThe search method for the right language is:çälooking for exact locale (e.g. "en_GB")çälooking for short locale (e.g. "en")çälooking for starting with short locale (e.g. "en_...")çäif all fails, use first language column nameçä*/ 
+F1 40a759c 18fdeaba 0 245df36a 0 0 2
+F_ColumnNames_vStr(tbl)
+Funktion
+cell(table(tbl); 0; 2..tabcols(table(tbl)))çä
+F1 245df36a 18fdeaba 0 77f91bb4 0 0 2
+F_LocaleNames_with_suffix_vStr(vec; suffix)
+Funktion
+vectorx(i;0;v_length(vec) - 1;IF (right(e_(vec;#i);length(suffix)) ALIKE suffix && (length(e_(vec;#i)) - length(suffix) = 2 || length(e_(vec;#i)) - length(suffix) = 5 && mid(e_(vec;#i);3;1) ALIKE "_") ; çä  left(e_(vec;#i);length(e_(vec;#i)) - length(suffix)) ; çä   // returns the column name WITHOUT the suffix!!çävoidçä))
+F1 77f91bb4 18fdeaba 0 0 0 0 2
+C_seperator
+Funktion
+"*"
+F1 13d4f23e de0860 0 0 0 0 2
+F_Table_Access(tbl; row; col)
+Funktion
+table(tbl)[row](col)
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 10857512 0 0 0 0
+
+T173 10857512 de0974 0 0 0 0 5
+TABLE SystemMessage
+MessageCode
+MessageSeverityCode
+en_GB
+en_US
+id_ID
+1000
+2
+Payment due date not equal contract due date. 
+Payment due date not equal contract due date. 
+
+1001
+2
+Transaction payment amount not within overage/shortage limits of contract payment amount.
+Transaction payment amount not within overage/shortage limits of contract payment amount.
+
+1002
+2
+Account number 'XXX01' not found in table.
+Account number 'XXX01' not found in table.
+
+1003
+2
+The total credits do not match the total debits.  Total credits = 'XXX01', total debits = 'XXX02'.
+The total credits do not match the total debits.  Total credits = 'XXX01', total debits = 'XXX02'.
+
+1004
+2
+The payment mode must be annual, semiannual, quarterly, or monthly.
+The payment mode must be annual, semiannual, quarterly, or monthly.
+
+1005
+2
+The payment would increase the paid to date past the premium renewal date.
+The payment would increase the paid to date past the premium renewal date.
+
+1006
+2
+The contract must have a premium paying status.
+The contract must have a premium paying status.
+
+1007
+2
+The payment method is to pay from the PDF account and the premium payment is greater than the PDF balance.
+The payment method is to pay from the PDF account and the premium payment is greater than the PDF balance.
+
+1008
+2
+The overridden accounting amount must equal the transaction amount.
+The overridden accounting amount must equal the transaction amount.
+
+1009
+2
+Rate not found with Product Type: 'XXX03', Rate Type: 'XXX04' and the following parameter list: 'XXX05', 'XXX06', 'XXX07', 'XXX08', 'XXX09', 'XXX10', 'XXX11', 'XXX12', 'XXX13'
+Rate not found with Product Type: 'XXX03', Rate Type: 'XXX04' and the following parameter list: 'XXX05', 'XXX06', 'XXX07', 'XXX08', 'XXX09', 'XXX10', 'XXX11', 'XXX12', 'XXX13'
+
+1010
+2
+No model name found in Location Model with Product Type: 'XXX03', Rate Type: 'XXX04' and Effective_Date 'XXX05'
+No model name found in Location Model with Product Type: 'XXX03', Rate Type: 'XXX04' and Effective_Date 'XXX05'
+
+1011
+2
+Product definition field / table not found with Product type : 'XXX01', Field name : 'XXX02', Object name : 'XXX03' and qualifier : 'XXX04'
+Product definition field / table not found with Product type : 'XXX01', Field name : 'XXX02', Object name : 'XXX03' and qualifier : 'XXX04'
+
+1012
+2
+Product definition access for table 'XXX01' and qualifier 'XXX02' requires full table path.
+Product definition access for table 'XXX01' and qualifier 'XXX02' requires full table path.
+
+-- Calc Model Errors --
+
+
+
+
+NoMsg
+2
+No message found for ('XXX01').
+No message found for ('XXX01').
+
+CA1000
+2
+Invalid rate type assumption.
+Invalid rate type assumption.
+
+CA1001
+2
+Surrender charge rule ('XXX03') not currently supported.
+Surrender charge rule ('XXX03') not currently supported.
+
+CA1002
+2
+Initial ETI Death Benefit Amount rule ('XXX03') not currently supported.
+Initial ETI Death Benefit Amount rule ('XXX03') not currently supported.
+
+CA1003
+2
+Fee calculation rule ('XXX03') not currently supported.
+Fee calculation rule ('XXX03') not currently supported.
+
+CA1004
+2
+Fee addition rule ('XXX03') not currently supported.
+Fee addition rule ('XXX03') not currently supported.
+
+CA1005
+2
+Key field ('XXX03') does not exist in table ('XXX04').
+Key field ('XXX03') does not exist in table ('XXX04').
+
+CA1006
+2
+Premium load rule ('XXX03') not currently supported.
+Premium load rule ('XXX03') not currently supported.
+
+CA1007
+2
+Field value ('XXX03') in product table ('XXX04') is blank.
+Field value ('XXX03') in product table ('XXX04') is blank.
+
+CA1008
+2
+Table search unsuccessful.  Keys ('XXX03'), Table ('XXX04').
+Table search unsuccessful.  Keys ('XXX03'), Table ('XXX04').
+
+CA1009
+2
+Invalid target calculation type ('XXX03').
+Invalid target calculation type ('XXX03').
+
+CA1010
+2
+'XXX03' is an invalid calculation type for surrender targets.
+'XXX03' is an invalid calculation type for surrender targets.
+
+CA1011
+2
+Payment mode not currently supported.
+Payment mode not currently supported.
+
+CA1012
+2
+Invalid withdrawal transaction type ('XXX03')
+Invalid withdrawal transaction type ('XXX03')
+
+CA1013
+2
+Maximum number of iterations was reached in a search.
+Maximum number of iterations was reached in a search.
+
+CA1014
+2
+Expense charge rule ('XXX03') not currently supported.
+Expense charge rule ('XXX03') not currently supported.
+
+CA1015
+2
+A premium or withdrawal was made outside of the monthly processing range ('XXX03') to ('XXX04').
+A premium or withdrawal was made outside of the monthly processing range ('XXX03') to ('XXX04').
+
+CA1016
+2
+A shadow account calculation has been requested for a coverage option that isn't a shadow account or isn't defined in product definition.
+A shadow account calculation has been requested for a coverage option that isn't a shadow account or isn't defined in product definition.
+
+CA1017
+2
+Product definition field / table not found with Product type : 'XXX03', Field name : 'XXX04', Object name : 'XXX05', qualifier : 'XXX06' and keys: 'XXX07'
+Product definition field / table not found with Product type : 'XXX03', Field name : 'XXX04', Object name : 'XXX05', qualifier : 'XXX06' and keys: 'XXX07'
+
+CA1018
+2
+Product definition access for table 'XXX03' and qualifier 'XXX04' requires full table path.
+Product definition access for table 'XXX03' and qualifier 'XXX04' requires full table path.
+
+CA1019
+2
+Death benefit decrease order rule ('XXX03') not currently supported.
+Death benefit decrease order rule ('XXX03') not currently supported.
+
+CA1020
+2
+Internal rate lookup unsucessful for table 'XXX03'.
+Internal rate lookup unsucessful for table 'XXX03'.
+
+CA1021
+2
+The product does not support unbundled M&E charges.
+The product does not support unbundled M&E charges.
+
+CA1022
+2
+LivesType ('XXX03') not currently supported.
+LivesType ('XXX03') not currently supported.
+
+CA1023
+2
+No base coverage exists.
+No base coverage exists.
+
+CA1024
+2
+M&E charges are only applicable to equity funds.
+M&E charges are only applicable to equity funds.
+
+VLD1000
+2
+Please enter a valid 'XXX03' for 'XXX04'!  'XXX05' could not be recognized!
+Please enter a valid 'XXX03' for 'XXX04'!  'XXX05' could not be recognized!
+
+CA1025
+2
+Internal calculation rule ('XXX03') not defined.
+Internal calculation rule ('XXX03') not defined.
+
+CA1026
+2
+Life Insurance Test Method is not currently supported in this model.
+Life Insurance Test Method is not currently supported in this model.
+
+CA1027
+2
+Estimated Yield is negative, stopping iterations.
+Estimated Yield is negative, stopping iterations.
+
+CA1028
+2
+Attained age is greater/smaller than the maximum/minimum allowed age.
+Attained age is greater/smaller than the maximum/minimum allowed age.
+
+CA1029
+2
+GracePeriodEntryType ('XXX03') is not currently supported in this model.
+GracePeriodEntryType ('XXX03') is not currently supported in this model.
+
+CA1030
+2
+Benefit type ('XXX03') is not currently supported in this model
+Benefit type ('XXX03') is not currently supported in this model
+
+CA1031
+2
+Rider type ('XXX03') is not currently supported in this model
+Rider type ('XXX03') is not currently supported in this model
+
+CA1032
+2
+No active coverages associated with net risk are included.
+No active coverages associated with net risk are included.
+
+CA1033
+2
+'XXX01' type ('XXX02') is not currently supported.
+'XXX01' type ('XXX02') is not currently supported.
+
+CA1034
+2
+Requested illustration year is greater than the plan maximum duration.
+Requested illustration year is greater than the plan maximum duration.
+
+CA1035
+2
+IndexCalcMethod type ('XXX03') is not currently supported in this model
+IndexCalcMethod type ('XXX03') is not currently supported in this model
+
+CA1036
+2
+The product type is invalid for the requested calculation.
+The product type is invalid for the requested calculation.
+
+CA1037
+2
+The 'XXX03' CovOption is either not defined in the product definition for the 'XXX04' product or is not included in the policy attributes.
+The 'XXX03' CovOption is either not defined in the product definition for the 'XXX04' product or is not included in the policy attributes.
+
+CA1038
+2
+Payment mode not supported for target solve.
+Payment mode not supported for target solve.
+
+CA1039
+2
+Arrangement Type ('XXX03') not currently supported.
+Arrangement Type ('XXX03') not currently supported.
+
+CA1040
+2
+The product type (XXX03) is invalid for the requested calculation.
+The product type (XXX03) is invalid for the requested calculation.
+
+CA1041
+2
+ValuesInfo RiderSubTypeCode (XXX03) is inconsistent with calculation type
+ValuesInfo RiderSubTypeCode (XXX03) is inconsistent with calculation type
+
+CA1042
+2
+WithdrawalRule (XXX03) invalid for calculation type (XXX04)
+WithdrawalRule (XXX03) invalid for calculation type (XXX04)
+
+CA1043
+2
+AdditionalRiderClassification RiderSubTypeCode (XXX03) in conflict with ValuesInfo RiderSubTypeCode (XXX04)
+AdditionalRiderClassification RiderSubTypeCode (XXX03) in conflict with ValuesInfo RiderSubTypeCode (XXX04)
+
+CA1044
+2
+Maximum number of iterations was exceeded.
+Maximum number of iterations was exceeded.
+
+CA1045
+2
+The CovOption specified in the MNLP property ('XXX03') must be for a no lapse guarantee benefit.
+The CovOption specified in the MNLP property ('XXX03') must be for a no lapse guarantee benefit.
+
+CA1046
+2
+This non-forfeiture option is not allowed with the particular substandard rating present on the policy.
+This non-forfeiture option is not allowed with the particular substandard rating present on the policy.
+
+CA1047
+2
+The starting year for the cash value projection in the premium solve is subsequent to the no lapse period end duration.
+The starting year for the cash value projection in the premium solve is subsequent to the no lapse period end duration.
+
+CA1048
+2
+The face decrease amount exceeds the total base face amount.
+The face decrease amount exceeds the total base face amount.
+
+CA1049
+2
+Age out of range for function.  Range is 'XXX03' to 'XXX04'.
+Age out of range for function.  Range is 'XXX03' to 'XXX04'.
+
+CA1050
+2
+Product 'XXX03' is non-participating.
+Product 'XXX03' is non-participating.
+
+CA1051
+2
+Dividend option ('XXX03') is not currently supported. Please provide a valid dividend option type.
+Dividend option ('XXX03') is not currently supported. Please provide a valid dividend option type.
+
+CA1052
+2
+Mortality Table not supported
+Mortality Table not supported
+
+CA1053
+2
+This product does not have a default dividend option. Please provide a valid dividend option type.
+This product does not have a default dividend option. Please provide a valid dividend option type.
+
+CA1054
+2
+Dividend OYT option type ('XXX03') is not currently supported.
+Dividend OYT option type ('XXX03') is not currently supported.
+
+CA1055
+1
+Loan with loan index ('XXX03') is paid off at duration ('XXX04') with remaining amount ('XXX05').
+Loan with loan index ('XXX03') is paid off at duration ('XXX04') with remaining amount ('XXX05').
+
+CA1056
+2
+Maturity Calc Method ('XXX03') not currently supported for No Lapse Guarantees
+Maturity Calc Method ('XXX03') not currently supported for No Lapse Guarantees
+
+CA1057
+2
+Annuity payout lives type ('XXX3') is not supported.
+Annuity payout lives type ('XXX3') is not supported.
+
+CA1058
+2
+The specified identifier is not found in: TABLE CalcType Vector Position
+The specified identifier is not found in: TABLE CalcType Vector Position
+
+CA1059
+2
+FeeType not currently supported for premium deduction calculaitons
+FeeType not currently supported for premium deduction calculaitons
+
+CA1060
+2
+Federal Tax Withholidng inputs not provided
+Federal Tax Withholidng inputs not provided
+
+CA1061
+2
+State Tax Withholidng inputs not provided
+State Tax Withholidng inputs not provided
+
+CA1062
+2
+Unsupported Loan Interest Timing input specified
+Unsupported Loan Interest Timing input specified
+
+CA1063
+2
+Unsupported annuity Payout Income Option specified
+Unsupported annuity Payout Income Option specified
+
+CA1064
+2
+Loans must be repaid within five years unless the loan is used to acquire a principal residence
+Loans must be repaid within five years unless the loan is used to acquire a principal residence
+
+CA1065
+2
+Loan can be requested as an amount or percentage of cash value only.
+Loan can be requested as an amount or percentage of cash value only.
+
+-- Illustration Errors --
+
+
+
+
+ILL1000
+2
+Assumed interest rate exceeds the product's current interest rate
+Assumed interest rate exceeds the product's current interest rate
+
+ILL1001
+2
+Illustration Charge Multiple less than 100%
+Illustration Charge Multiple less than 100%
+
+ILL1002
+2
+Dividend scale multiple exceeds 100%
+Dividend scale multiple exceeds 100%
+
+ILL1003
+2
+Incorrect illustration transaction type
+Incorrect illustration transaction type
+
+ILL1004
+2
+Dividend option is not currently supported
+Dividend option is not currently supported
+
+ILL1005
+2
+No solution found
+No solution found
+
+ILL1006
+2
+Target duration is less than the starting year of the cash value projection
+Target duration is less than the starting year of the cash value projection
+
+ILL1007
+2
+Target Premium Method not allowed with Face Amount Solves.
+Target Premium Method not allowed with Face Amount Solves.
+
+ILL1008
+2
+Face Amount Solve generates Face Amount allocation below Coverage Minimum for input variables
+Face Amount Solve generates Face Amount allocation below Coverage Minimum for input variables
+
+ILL1009
+2
+Premium Solve not supported
+Premium Solve not supported
+
+ILL1010
+2
+Calling System does not support this Illustrations Output
+Calling System does not support this Illustrations Output
+
+-- Data Validation Errors --
+
+
+
+
+DV1000
+2
+Rider 'XXX01' not allowed with effective date other than issue
+Rider 'XXX01' not allowed with effective date other than issue
+
+DV1001
+1
+Rider 'XXX01' Invalid with QualPlanType 'XXX02'
+Rider 'XXX01' Invalid with QualPlanType 'XXX02'
+
+DV1002
+1
+Rider 'XXX01' mutually exclusive with Rider 'XXX02'
+Rider 'XXX01' mutually exclusive with Rider 'XXX02'
+
+DV1003
+2
+Reduced Paid-Up conversion not allowed for this ProductCode
+Reduced Paid-Up conversion not allowed for this ProductCode
+
+DV1004
+2
+Reduced Paid-Up conversion not allowed in this Jurisdiction
+Reduced Paid-Up conversion not allowed in this Jurisdiction
+
+DV1005
+1
+Reduced Paid-Up conversion not allowed before monthly duration 'XXX01'
+Reduced Paid-Up conversion not allowed before monthly duration 'XXX01'
+
+DV1006
+1
+Reduced Paid-Up conversion not allowed before attained age 'XXX01'
+Reduced Paid-Up conversion not allowed before attained age 'XXX01'
+
+DV1007
+0
+Reduced Paid-Up conversion not allowed until after minimum age/duration
+Reduced Paid-Up conversion not allowed until after minimum age/duration
+
+DV1008
+1
+Reduced Paid-Up amount cannot exceed original specified amt
+Reduced Paid-Up amount cannot exceed original specified amt
+
+DV1009
+1
+Invalid Date - the Annual Statement Start Date must follow the Policy Effective Date
+Invalid Date - the Annual Statement Start Date must follow the Policy Effective Date
+
+DVCL1000
+2
+BEN XXX01 NOT ALLOWED AFTER ISSUE
+BEN XXX01 NOT ALLOWED AFTER ISSUE
+
+DVCL1001
+1
+BEN XXX01 NOT ALLOWED ON  XXX02
+BEN XXX01 NOT ALLOWED ON  XXX02
+
+DVCL1002
+1
+BEN XXX01 NOT ALLOWED WITH BEN XXX02
+BEN XXX01 NOT ALLOWED WITH BEN XXX02
+
+DVCL1003
+2
+RPU not allowed on this plan
+RPU not allowed on this plan
+
+DVCL1004
+2
+RPU not allowed in this state
+RPU not allowed in this state
+
+DVCL1005
+1
+RPU not allowed before month 'XXX01'
+RPU not allowed before month 'XXX01'
+
+DVCL1006
+1
+RPU not allowed before age 'XXX01'
+RPU not allowed before age 'XXX01'
+
+DVCL1007
+0
+RPU not allowed until after minimum age/duration
+RPU not allowed until after minimum age/duration
+
+DVCL1008
+1
+RPU amt cannot exceed original specified amt
+RPU amt cannot exceed original specified amt
+
+-- GPF Errors --
+
+
+
+
+GPF1
+2
+Error message not found:
+Error message not found:
+
+GPF1000
+2
+XXX1 is too low. The minimum is FNX2.
+XXX1 is too low. The minimum is FNX2.
+
+GPF1001
+2
+XXX1 is too high. The maximum is FNX2.
+XXX1 is too high. The maximum is FNX2.
+
+GPF1003
+2
+XXX1 No attribute label specified: attribute is XXX2.
+XXX1 No attribute label specified: attribute is XXX2.
+
+GPF1004
+2
+The ratemodel cannot be located: product is XXX1 and ratetype is XXX2.
+The ratemodel cannot be located: product is XXX1 and ratetype is XXX2.
+
+GPF1005
+2
+Invalid XXX1.
+Invalid XXX1.
+
+GPF1006
+2
+XXX1 is not the right format.
+XXX1 is not the right format.
+
+GPF1007
+2
+XXX1 Range data unknown: attribute is XXX2.
+XXX1 Range data unknown: attribute is XXX2.
+
+GPF1008
+2
+XXX1 Calculation not supported yet: the calctype is XXX2 and the function is XXX3.
+XXX1 Calculation not supported yet: the calctype is XXX2 and the function is XXX3.
+
+GPF1009
+2
+XXX1 No solution to solve: last xn was XXX2 and the combined number of cycles was XXX3.
+XXX1 No solution to solve: last xn was XXX2 and the combined number of cycles was XXX3.
+
+GPF1010
+2
+XXX1 Rate type not supported yet: the ratetype is XXX2 and the function is XXX3.
+XXX1 Rate type not supported yet: the ratetype is XXX2 and the function is XXX3.
+
+GPF1012
+2
+XXX1 XXX2 is currently not supported as product information is incomplete.
+XXX1 XXX2 is currently not supported as product information is incomplete.
+
+GPF1013
+2
+XXX1 must be at least XXX2 characters long.
+XXX1 must be at least XXX2 characters long.
+
+GPF1014
+2
+XXX1 No label specified for XXX2.
+XXX1 No label specified for XXX2.
+
+GPF1015
+2
+XXX1 Wrong label specified for XXX2.
+XXX1 Wrong label specified for XXX2.
+
+GPF1016
+2
+XXX1 has already been selected.
+XXX1 has already been selected.
+
+GPF1017
+2
+XXX1 is incompatible with other benefits already selected.
+XXX1 is incompatible with other benefits already selected.
+
+GPF1018
+2
+A benefit was chosen that is not compatible with XXX1.
+A benefit was chosen that is not compatible with XXX1.
+
+GPF1019
+2
+A withdrawal was already entered for year XXX1.
+A withdrawal was already entered for year XXX1.
+
+GPF1020
+2
+An adhoc premium was already entered for year XXX1.
+An adhoc premium was already entered for year XXX1.
+
+GPF1021
+2
+The total XXX1 must sum to XXX2. 
+The total XXX1 must sum to XXX2. 
+
+GPF1022
+2
+XXX1 has wrong multiple occurrence.
+XXX1 has wrong multiple occurrence.
+
+GPF1023
+2
+XXX1 is not allowed.
+XXX1 is not allowed.
+
+GPF1024
+2
+XXX1 must be specified.
+XXX1 must be specified.
+
+GPF1025
+2
+XXX1 cannot be before FDX2.
+XXX1 cannot be before FDX2.
+
+GPF1026
+2
+XXX1 cannot be after FDX2.
+XXX1 cannot be after FDX2.
+
+GPF1027
+2
+XXX1 The charge function XXX2 is not supported yet. The benefit is XXX3 and the property invoking the error is XXX4.
+XXX1 The charge function XXX2 is not supported yet. The benefit is XXX3 and the property invoking the error is XXX4.
+
+GPF1028
+2
+At least one rider must be selected.
+At least one rider must be selected.
+
+GPF1029
+2
+Invalid relationship. XXX1 is too low.
+Invalid relationship. XXX1 is too low.
+
+GPF1030
+2
+Unknown error.
+Unknown error.
+
+GPF1031
+2
+Required coverage not selected.
+Required coverage not selected.
+
+GPF1032
+2
+XXX1 is required for XXX2 to be available.
+XXX1 is required for XXX2 to be available.
+
+GPF1033
+2
+Per pre-defined UW decision, XXX1 is declined.
+Per pre-defined UW decision, XXX1 is declined.
+
+GPF1034
+2
+Failed to pass the sustainability check. Please either reduce the sum assured value OR increase the premium accordingly.
+Failed to pass the sustainability check. Please either reduce the sum assured value OR increase the premium accordingly.
+
+GPF1035
+2
+Invalid XXX1. Try XXX2.
+Invalid XXX1. Try XXX2.
+
+GPF1036
+2
+The total beneficiary XXX1 must sum to XXX2. 
+The total beneficiary XXX1 must sum to XXX2. 
+
+GPF1037
+2
+Invalid date input @XXX1. XXX2 is not in the correct GPF format XXX3.
+Invalid date input @XXX1. XXX2 is not in the correct GPF format XXX3.
+
+GPF1038
+2
+The sum of XXX1 and XXX2 cannot exceed FNX3.
+The sum of XXX1 and XXX2 cannot exceed FNX3.
+
+GPF1039
+2
+At least one premium must be selected.
+At least one premium must be selected.
+
+GPF1040
+2
+A maximum of two policy owners can be nominated.
+A maximum of two policy owners can be nominated.
+
+GPF1041
+2
+XXX1 too long. The maximum is XXX2 characters.
+XXX1 too long. The maximum is XXX2 characters.
+
+GPF1042
+2
+Invalid selection. Joint life inclusion basis not selected.
+Invalid selection. Joint life inclusion basis not selected.
+
+GPF1043
+2
+Invalid selection. Please indicate relation.
+Invalid selection. Please indicate relation.
+
+GPF1044
+2
+At least one check box, per owner,  must be selected for the proof of identity and for the proof of residential address.
+At least one check box, per owner,  must be selected for the proof of identity and for the proof of residential address.
+
+GPF1045
+2
+XXX1 must be on the first day of the month.
+XXX1 must be on the first day of the month.
+
+GPF1046
+2
+At least one check box, must be selected for the origin of wealth, how the payor acquired the money.
+At least one check box, must be selected for the origin of wealth, how the payor acquired the money.
+
+GPF1047
+2
+Maximum total premium limit of 1,000,000.
+Maximum total premium limit of 1,000,000.
+
+GPF1048
+2
+Policy must be a first of the month and within three months of the current date.
+Policy must be a first of the month and within three months of the current date.
+
+GPF1049
+2
+Another XXX1 is required for this XXX2. 
+Another XXX1 is required for this XXX2. 
+
+GPF1050
+2
+At least XXX1 XXX2 must be entered.
+At least XXX1 XXX2 must be entered.
+
+GPF1051
+2
+Invalid relationship. XXX1 is too low. The minimum XXX2 is XXX3.
+Invalid relationship. XXX1 is too low. The minimum XXX2 is XXX3.
+
+GPF1052
+2
+XXX1 must be on the XXX2 day of the month.
+XXX1 must be on the XXX2 day of the month.
+
+GPF1053
+2
+XXX1 is too low. The minimum is FDX2.
+XXX1 is too low. The minimum is FDX2.
+
+GPF1054
+2
+XXX1 is too high. The maximum is FDX2.
+XXX1 is too high. The maximum is FDX2.
+
+GPF1055
+2
+XXX1 must be a first of the month and within three months of the current date.
+XXX1 must be a first of the month and within three months of the current date.
+
+GPF1056
+2
+XXX1 can be a single XXX2 only.
+XXX1 can be a single XXX2 only.
+
+GPF1057
+2
+XXX1 is too low. It must be greater than FNX2.
+XXX1 is too low. It must be greater than FNX2.
+
+I0 1f1fc97 0 64382ad8 0 0 0 0
+
+I0 64382ad8 1f1fc97 0 f22f534 0 0 0
+GeneralFunctions.pms
+I0 f22f534 1f1fc97 0 0 0 0 0
+DefaultFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+4f5e0442
+F4
+69320b40
+611b7518
+18fdeaba
+13d4f23e
+A0
+T1
+10857512
+!2
+709bfb87 -2 -2
+çäModification Log:çä08022013 pA-G1401 JL 'TABLE SystemMessage' not "TABLE SystemMessage"
+10857512 -2 -2
+Modification Log:çä08132013 pA-G1401 JL Add additional language examples
+;Offset=00000000

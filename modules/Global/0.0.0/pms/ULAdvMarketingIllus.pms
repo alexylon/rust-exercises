@@ -1,0 +1,293 @@
+;1	08.12.2016 13:29:33	jlawrie2	
+X0 19a417c 0 0 0 0 0 0
+
+O0 19a402c 0 0 0 0 0 0
+
+E0 19a409c 0 0 0 0 0 0
+
+L0 19a410c 0 0 0 0 0 0
+
+B0 19a42cc 0 0 0 0 0 0
+
+P3 19a41ec 0 19a6118 0 0 0 2
+
+--description
+Advanced marketing illustrations for Universal Life products.çä çäRELEASE LOG:çäRELEASE 1101 - PAC013 calcTypeçäRELEASE 1101 - PAC017 FINRA Rule 2211
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.7.1    "
+P13 19a6118 19a41ec 553fd607 0 0 0 2
+Cash Value UL Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Advanced Marketing Illustrations"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"ULAdvMarketingIllus.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 553fd607 19a6118 d794115 0 0 0 2
+UL Illustrations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 d794115 553fd607 0 3ada735e 0 50 2
+Advanced Illustrations@AdvMarketingIllus
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 3ada735e 553fd607 0 0 0 50 2
+Illustrations@ULillustrations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 19a425c 0 4b5a9e0a 0 0 0 0
+
+F1 4b5a9e0a 19a425c 596091f6 33ef0bfd 0 0 2
+:AMI
+Funktion
+
+F1 596091f6 4b5a9e0a 3a77eeb 0 0 0 2
+--Deferred Compensation Funding--
+Funktion
+
+F1 3a77eeb 596091f6 49303984 0 0 0 2
+: DefComp
+Funktion
+
+F1 49303984 3a77eeb 4328239a 5edbb741 0 0 2
+--Model Integration--
+Funktion
+
+F1 4328239a 49303984 5114d44b 50c92763 0 0 2
+AMI DefComp Proj CV(calcType; yearIndex; vectorAMI)
+Funktion
+IF ('AMI DefComp Use Inputs'("CV") ; çä  'STD Illus CashValue'(yearIndex) ; çä  IF (('ProductType is Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) || 'ProductType is Variable Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) || 'ProductType is Indexed Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate'))) ; çä    'AMI DefComp Proj UL CV'(calcType;yearIndex;'AMI DefComp vectorSolveParms'(calcType;yearIndex;vectorAMI); //vectorSolveParmsçä'AMI DefComp CVProj Parms' //vectorCVProjçä) ; çä    0çä  )çä)
+F1 5114d44b 4328239a 3bfad365 0 0 0 2
+AMI DefComp Proj UL CV(calcType; yearIndex; vectorSolveParms; vectorCVProj)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec Unrounded'(calcType; //calcTypeçävectorSolveParms; //vectorSolveParmsçäIF ('Calculation is for Multiple Funds' ; çä  'ULDocs ProjFundIntRate Vector'(calcType;yearIndex) ; çä  'ULDocs ProjIntRate'(calcType;yearIndex)çä); //projInterestRateçävectorCVProj; //vectorAddlInfoçäyearIndex; //yearIndexçä12 //monthIndexçä)
+F1 3bfad365 5114d44b 51da6430 6c258234 0 0 2
+AMI DefComp vectorSolveParms(calcType; yearIndex; vectorAMI)
+Funktion
+V_(IF (V_LENGTH('AMI DefComp Vector Non-Level Premiums'(calcType;1;yearIndex;vectorAMI)) > 1 ; çä  V_CONCAT('AMI DefComp Vector Level Premiums'(calcType;yearIndex;vectorAMI);'AMI DefComp Vector Non-Level Premiums'(calcType;1;yearIndex;vectorAMI)) ; çä  'AMI DefComp Vector Level Premiums'(calcType;yearIndex;vectorAMI)çä);VECTORX(yrIdx;1;yearIndex;'AMI DefComp Annual Surrender'(calcType;#yrIdx;vectorAMI));IF ('SharedVector AMI FaceAmount'(vectorAMI;'Std BaseCov Index'(calcType)) = 0 ; çä'GEN Vector Blank' ; çäV_('SharedVector AMI FaceAmount'(vectorAMI;'Std BaseCov Index'(calcType)))çä);VECTORX(yrIdx;1;yearIndex;'AMI DefComp Annual Loan'(calcType;#yrIdx;vectorAMI))) /*çäV_(çäâE_(vectorAMI; 1); //PremiumsçäâE_(vectorAMI; 2); //SurrendersçäâE_(vectorAMI; 0); //Face AmountsçäâE_(vectorAMI; 3) //Loansçä)çä*/ 
+F1 51da6430 3bfad365 0 7fc8814d 0 0 2
+AMI DefComp LevelPremiumDuration(calcType; fromYear; toYear; vectorAMI)
+Funktion
+IF (fromYear = toYear || 'AMI DefComp Annual Premium'(calcType;fromYear;vectorAMI) <> 'AMI DefComp Annual Premium'(calcType;fromYear + 1;vectorAMI) ; çä  fromYear ; çä  'AMI DefComp LevelPremiumDuration'(calcType;fromYear + 1;toYear;vectorAMI)çä)
+F1 7fc8814d 3bfad365 0 1a2e08a3 0 0 2
+AMI DefComp LastPremiumDuration(calcType; fromYear; toYear; vectorAMI)
+Funktion
+IF (fromYear = toYear || 'AMI DefComp Annual Premium'(calcType;toYear;vectorAMI) <> 0 ; çä  toYear ; çä  'AMI DefComp LevelPremiumDuration'(calcType;fromYear;toYear - 1;vectorAMI)çä)
+F1 1a2e08a3 3bfad365 0 693eb1cc 0 0 2
+AMI DefComp Vector Level Premiums(calcType; toYear; vectorAMI)
+Funktion
+V_(MIN(toYear;'AMI DefComp LevelPremiumDuration'(calcType;1;toYear;vectorAMI));'AMI DefComp Annual Premium'(calcType;1;vectorAMI))
+F1 693eb1cc 3bfad365 0 0 0 0 2
+AMI DefComp Vector Non-Level Premiums(calcType; fromYear; toYear; vectorAMI)
+Funktion
+IF ('AMI DefComp LevelPremiumDuration'(calcType;fromYear;toYear;vectorAMI) = 'AMI DefComp LastPremiumDuration'(calcType;fromYear;toYear;vectorAMI) ; çä  'GEN Vector Blank' ; çä  VECTORX(yrIdx;MAX(fromYear;'AMI DefComp LevelPremiumDuration'(calcType;fromYear;toYear;vectorAMI) + 1);MIN(toYear;'AMI DefComp LastPremiumDuration'(calcType;fromYear;toYear;vectorAMI));'AMI DefComp Annual Premium'(calcType;#yrIdx;vectorAMI))çä)
+F1 6c258234 5114d44b 0 0 0 0 2
+AMI DefComp CVProj Parms
+Funktion
+v_(1; // Check for lapse (True or False)çä'Policy Life InitialDepositAmt'; // Initial lump sum paymentçä1; // Adjust for DEFRAçäV_('Policy LifeUSA GuidelineSinglePrem';'Policy LifeUSA GuidelineAnnPrem'); //'Vector ULCVector GuidelineLimit';â// Guideline limits for each year up to illus_yrâçä0; // Varying premiums (True or False)çä'GEN Vector Blank'; // Vector of premiums by year (if premiums are to vary)çäv_(0);1; // Start yearçä1 // Start monthçä)
+F1 50c92763 49303984 7aff4557 77bdffb6 0 0 2
+AMI DefComp Proj DB(calcType; yearIndex; vectorAMI)
+Funktion
+IF ('AMI DefComp Use Inputs'("DB") ; çä  'STD Illus DeathBenefit'(yearIndex) ; çä  IF (('ProductType is Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) || 'ProductType is Variable Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) || 'ProductType is Indexed Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate'))) ; çä    'AMI DefComp Proj UL DB'(calcType;yearIndex;'AMI DefComp vectorSolveParms'(calcType;yearIndex;vectorAMI); //vectorSolveParmsçä'AMI DefComp CVProj Parms' //vectorCVProjçä) ; çä    0çä  )çä)
+F1 7aff4557 50c92763 0 7ae30a22 0 0 2
+AMI DefComp Proj UL DB(calcType; yearIndex; vectorSolveParms; vectorCVProj)
+Funktion
+IF ( /*Policy has lapsed*/ 'AMI DefComp Proj UL CV'(calcType;yearIndex;vectorSolveParms;vectorCVProj) = 'Constant Lapsed CV' ; çä   /* Zero death benefit for lapsed policy*/ 0 ; çä   /*Return death benefit */ 'NAAR Total DeathBenefit'('CalcType Current'(calcType);IF (yearIndex > 1 ; çä    'AMI DefComp Proj UL CV'(calcType;yearIndex - 1;vectorSolveParms;vectorCVProj) ; çä    0çä  ) + 'PREMIUM Projected Net Premium'('CalcType Current'(calcType);vectorSolveParms;vectorCVProj;yearIndex;1);'AMI DefComp Proj UL CV'(calcType;yearIndex;vectorSolveParms;vectorCVProj);'ULDocs Projected LTD Prem Rec'('CalcType Current'(calcType);vectorSolveParms;vectorCVProj;yearIndex;12);yearIndex;vectorSolveParms // empty solve vectorçä)çä)
+F1 7ae30a22 50c92763 55ae105a 0 0 0 2
+AMI DefComp Projected Loan Balance(calcType; yearIndex; vectorAMI)
+Funktion
+IF (('ProductType is Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) || 'ProductType is Variable Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) || 'ProductType is Indexed Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate'))) ; çä  'ULLoan Total Projected Balance'('CalcType Current'(calcType);yearIndex;'AMI DefComp Vector ULProj'(calcType;yearIndex;vectorAMI)) ; çä  0çä)
+F1 55ae105a 7ae30a22 0 0 0 0 2
+AMI DefComp Vector ULProj(calcType; yearIndex; vectorAMI)
+Funktion
+V_('AMI DefComp Proj CV'('CalcType Current'(calcType);yearIndex;vectorAMI); //Proj CVçä'GEN Vector Blank'; //monthly chargeçäVECTORX(yrIdx;1;yearIndex;'AMI DefComp Annual Premium'('CalcType Current'(calcType);#yrIdx;vectorAMI)); // vector premiumsçäVECTORX(yrIdx;1;yearIndex;'AMI DefComp Annual Loan'('CalcType Current'(calcType);#yrIdx;vectorAMI)) // vector loansçä)
+F1 77bdffb6 49303984 0 0 0 0 2
+AMI DefComp Proj Net DB(calcType; yearIndex; vectorAMI)
+Funktion
+IF ('AMI DefComp Use Inputs'("DB") ; çä  'STD Illus NetDeathBenefit'(yearIndex) ; çä  'AMI DefComp Proj DB'(calcType;yearIndex;vectorAMI) - 'AMI DefComp Projected Loan Balance'(calcType;yearIndex;vectorAMI)çä)
+F1 5edbb741 3a77eeb 49ac9ca2 f5f7801 0 0 2
+--FA Solves--
+Funktion
+
+F1 49ac9ca2 5edbb741 0 3d9047c1 0 0 2
+--AMI DefComp Solve FaceAmount OLD
+Funktion
+SOLVE(1;// solve methodçäâFUNCREF('AMI DefComp Solve Proj CV'); //solve functionçäâ0;//funcref for derivertiveçäâ0;//targetçäâ'AMI DefComp FA Solve Initial Guess';//initial guess guessçäâ'AMI DefComp FA Solve Tolerance';//Guess toleranceçäâ'AMI DefComp FA Solve LowBound';//lowboundçäâ'AMI DefComp FA Solve HighBound'; //highboundçäâ100; //max iterationsçäâ//'AMI DefComp STD Illus Retirement BenefitPeriod'(calcType) //parmsçäâ'AMI DefComp STD Illus AssumedMortDuration'(calcType)çä)
+F1 3d9047c1 5edbb741 0 1546ffdc 0 0 2
+AMI DefComp FaceSolve FaceAmount(calcType)
+Funktion
+'GEN Ceil'(IF ('AMI DefComp Calc is UL FaceSolve' ; çä  'AMI DefComp UL FaceSolve FaceAmount'(calcType;'AMI DefComp ULSolve VectorAMI'(calcType;'AMI DefComp STD Illus AssumedMortDuration'(calcType))) ; çä  0çä);0)
+F1 1546ffdc 5edbb741 1d5a325c 0 0 0 2
+--UL Face Solve--
+Funktion
+Description: Calculation of UL Face Amount for Solveçä çäModification Log:çä11/23/09 - PAC02 - JL - Initial Calculation
+F1 1d5a325c 1546ffdc 30be28ba 0 0 0 2
+AMI DefComp UL FaceSolve FaceAmount(calcType; vectorAMI)
+Funktion
+E_('AMI DefComp UL FaceSolve FaceAmount Rec'(calcType;vectorAMI;0; //'AMI DefComp FaceSolve Proj CV'(calcType; 'AMI DefComp STD Illus Retirement BenefitPeriod'(calcType); vectorAMI); çä'AMI DefComp Proj CV'(calcType; //'AMI DefComp STD Illus Retirement BenefitPeriod'(calcType); çä'AMI DefComp STD Illus AssumedMortDuration'(calcType);'SharedVector AMI ReplaceFaceAmount'('AMI DefComp FaceSolve Initial Guess'(calcType;vectorAMI);'Std BaseCov Index'(calcType);vectorAMI));'AMI DefComp FaceSolve Initial Guess'(calcType;vectorAMI); //currFaceAmountGuessçä0; //prevFaceAmountGuessçä'AMI DefComp FaceSolve Initial LowBound'; //lowBoundçä'AMI DefComp FaceSolve Initial HighBound'; //highBoundçä1; //iteration_numçä//'AMI DefComp STD Illus Retirement BenefitPeriod'(calcType); //targetDurçä'AMI DefComp STD Illus AssumedMortDuration'(calcType); //targetDurçä100);0)
+F1 30be28ba 1d5a325c 0 5dd99709 0 0 2
+AMI DefComp ULSolve VectorAMI(calcType; yearIndex)
+Funktion
+V_('GEN Vector Blank';'AMI DefComp Vector Premiums'(calcType;yearIndex;'GEN Vector Blank');'AMI DefComp Vector Surrenders'(calcType;yearIndex;'GEN Vector Blank');'AMI DefComp Vector Loans'(calcType;yearIndex;'GEN Vector Blank'))
+F1 5dd99709 1d5a325c 2c9167fe 128915f 0 0 2
+AMI DefComp UL FaceSolve FaceAmount Rec(calcType; vectorAMI; CVTarget; prevCV; currFaceAmountGuess; prevFaceAmountGuess; lowBound; highBound; iteration_num; targetDur; stopIter)
+Funktion
+IF ( //CV criteria matched, or max number of iterations reachedçä(iteration_num >= stopIter) || (ABS(CVTarget - 'AMI DefComp Proj CV'(calcType;targetDur;'SharedVector AMI ReplaceFaceAmount'(currFaceAmountGuess;'Std BaseCov Index'(calcType);vectorAMI))) < 'AMI DefComp FaceSolve Tolerance') || (iteration_num > 1 && (ABS(lowBound - highBound) < 'AMI DefComp FaceSolve Tolerance')) ; çä   // Return vector of values (for debugging)çäv_(currFaceAmountGuess;prevFaceAmountGuess;lowBound;highBound;iteration_num) ; çä   //  Else, return error message if solve unsuccessfulçäIF ( //max number of iterations reachedçäiteration_num > 100 ; çä     //return error messageçä'Messages SystemMessage'("CA1044";'Message Language';'GEN Vector Blank') ; çä     // Else, recurse with updated valuesçä'AMI DefComp UL FaceSolve FaceAmount Rec'(calcType;vectorAMI; //Target remains constantçäCVTarget; //Update CV based on current FA guessçä'AMI DefComp Proj CV'(calcType;targetDur;'SharedVector AMI ReplaceFaceAmount'(currFaceAmountGuess;'Std BaseCov Index'(calcType);vectorAMI)); //New current face Aount guessçä'AMI DefComp FaceSolve FaceAmount Guess'(CVTarget;prevCV;currFaceAmountGuess;lowBound;highBound); //New previous Face amount guess   çäcurrFaceAmountGuess; //LowBoundâçä'AMI DefComp FaceSolve LowBound'(calcType;CVTarget;lowBound;targetDur;'SharedVector AMI ReplaceFaceAmount'(currFaceAmountGuess;'Std BaseCov Index'(calcType);vectorAMI)); //HighBoundçä'AMI DefComp FaceSolve HighBound'(calcType;CVTarget;highBound;targetDur;'SharedVector AMI ReplaceFaceAmount'(currFaceAmountGuess;'Std BaseCov Index'(calcType);vectorAMI)); //Increase iteration numberçäiteration_num + 1; //TargetDuration remains unchangedçätargetDur; //StopIter remains unchangedçästopIter)çä  )çä)
+F1 2c9167fe 5dd99709 0 5e772e60 0 0 2
+AMI DefComp FaceSolve FaceAmount Guess(CVTarget; prevCV; currFaceAmountGuess; lowBound; highBound)
+Funktion
+IF ( /*Premium guess too low*/ CVTarget < prevCV ; çä   /*Yes - try higher*/ (MAX(lowBound;currFaceAmountGuess) + highBound) * 0.5 ; çä   /*No - try lower*/ (lowBound + MIN(highBound;currFaceAmountGuess)) * 0.5çä)
+F1 5e772e60 5dd99709 0 1467a7 0 0 2
+AMI DefComp FaceSolve LowBound(calcType; CVTarget; lowBound; targetDur; vectorAMI)
+Funktion
+IF ( //Face amount guess too lowçäCVTarget < 'AMI DefComp Proj CV'(calcType;targetDur;vectorAMI) ; çä   //Face Amount guess was too low, increase lower boundçäMAX(lowBound;'SharedVector AMI FaceAmount'(vectorAMI;'Std BaseCov Index'(calcType))) ; çä   //Else face amount guess was too high.  Keep lower bound the sameçälowBoundçä)
+F1 1467a7 5dd99709 0 0 0 0 2
+AMI DefComp FaceSolve HighBound(calcType; CVTarget; highBound; targetDur; vectorAMI)
+Funktion
+IF ( //FaceAmount guess too highçäCVTarget > 'AMI DefComp Proj CV'(calcType;targetDur;vectorAMI) ; çä   //Face Amount guess was too high, lower high boundâçäMIN(highBound;'SharedVector AMI FaceAmount'(vectorAMI;'Std BaseCov Index'(calcType))) ; çä   //Else faceAmount guess was too low.  Keep high bound the sameçähighBoundçä)
+F1 128915f 1d5a325c 0 0 0 0 2
+AMI DefComp FaceSolve Initial Guess(calcType; vectorAMI)
+Funktion
+'AMI DefComp Cumulative Premium'(calcType;'AMI DefComp STD Illus RetirementPeriod'(calcType);vectorAMI)
+F1 f5f7801 3a77eeb 479accfa 0 0 0 2
+--Insurance Costs--
+Funktion
+
+F1 479accfa f5f7801 21879800 0 0 0 2
+AMI DefComp Annual Premium(calcType; yearIndex; vectorAMI)
+Funktion
+IF ('SharedVector AMI Premium Passed'(vectorAMI) ; çä  'SharedVector AMI Premium'(vectorAMI;yearIndex) ; çä  IF ('AMI DefComp Year is Before Retirement'(calcType;yearIndex) ; çä     //'AMI DefComp Year is Before AssumedMortDuration'(calcType; yearIndex);âçäIF (NOT('AMI DefComp Use Inputs'('CalcType PREM Identifier')) ; çä      'FaceSolve Premium from Input'(calcType) ; çä      IF ('Illustration Type is DeferredComp SalaryDeferral'('STD Illus Type Code') ; çä        'AMI DefComp Compensation Basis for Benefit'(calcType;yearIndex;vectorAMI) * 0.01 * ('STD Illus Exec SalaryReductionRate'(yearIndex) + 'STD Illus Corp SalaryContributionRate'(yearIndex)) ; çä        'STD Illus Annual Premium'(yearIndex)çä      )çä  ) ; çä0çä)çä)
+F1 21879800 479accfa 0 683850cb 0 0 2
+AMI DefComp Cumulative Premium(calcType; yearIndex; vectorAMI)
+Funktion
+IF (yearIndex = 1 ; çä  'AMI DefComp Annual Premium'(calcType;yearIndex;vectorAMI) ; çä  'AMI DefComp Annual Premium'(calcType;yearIndex;vectorAMI) + 'AMI DefComp Cumulative Premium'(calcType;yearIndex - 1;vectorAMI)çä)
+F1 683850cb 479accfa 0 0 0 0 2
+AMI DefComp Maximum Premium(calcType; yearIndex; vectorAMI)
+Funktion
+IF (yearIndex = 1 ; çä  'AMI DefComp Annual Premium'(calcType;yearIndex;vectorAMI) ; çä  MAX('AMI DefComp Annual Premium'(calcType;yearIndex;vectorAMI);'AMI DefComp Cumulative Premium'(calcType;yearIndex - 1;vectorAMI))çä)
+F1 33ef0bfd 19a425c 3da98326 0 0 0 2
+--UTVRep.pms overwrites for UTV Illustration Report
+Funktion
+
+F1 3da98326 33ef0bfd 0 0 0 0 2
+ILLUS Get Function Value(calcType; coverageIndex; Parameter; yearIndex; PropertyKey)
+Funktion
+CASE(PropertyKey;çä  1000 : 'ULDocs Base COI Rate'(calcType;coverageIndex;yearIndex);çä  1010 : 'ULDocs Annualized Gross Premium'(calcType;yearIndex);çä  1020 : 'ULDocs Proj Guideline Level Premium'(calcType;yearIndex);çä  1030 : 'ULDocs Proj Guideline Single Premium'(calcType;yearIndex);çä  1040 : 'ULDocs Cumulative Proj Guideline level Premium'(calcType;yearIndex);çä  1050 : 'ULDocs Cumulative Annualized Gross Premium'(calcType;yearIndex);çä  1051 : 'ULDocs Cumulative Annualized Net Premium'(calcType;yearIndex);çä  1060 : 'ULDocs Cumulative Net Premium Paid For 7Pay'(calcType;yearIndex);çä  1070 : 'ULDocs Proj 7 Pay Premium'(calcType;yearIndex);çä  1080 : 'ULDocs Cumulative 7Pay Premium To Date'(calcType;yearIndex);çä  1090 : 'ULDocs Contract MEC Ind'(calcType;yearIndex);çä  1100 : 'TaxCompliance Policy LastMaterialChangeYear'(calcType;yearIndex);çä  1110 : 'TaxCompliance Policy Changes for 7pay'(calcType;yearIndex);çä  1120 : 'TaxCompliance Low Death Benefit'(calcType;yearIndex);çä  1130 : 'TaxCompliance Proj Policy Specified Amount'(calcType;yearIndex);çä  1140 : 'ULDocs Proj 7 Pay NSP'(calcType;yearIndex);çä  1150 : 'ULDocs Annualized Net Premium'(calcType;yearIndex);çä  1160 : 'ULDocs Annualized NONQAB Gross Charges'(calcType;yearIndex);çä  1170 : 'TaxCompliance Necessary GLP'(calcType;yearIndex);çä  1180 : 'TaxCompliance Necessary GSP'(calcType;yearIndex);çä  1190 : 'TaxCompliance Necessary Premium Limit GLP'(calcType;yearIndex);çä  1200 : 'TaxCompliance Necessary Accum GLP'(calcType;yearIndex);çä  1210 : 'TaxCompliance Policy Changes for 7pay Immediate Recog MC'(calcType;yearIndex);çä  1220 : 'TaxCompliance Policy LastMaterialChangeYear'(calcType;yearIndex);çä  1230 : 'TaxCompliance Policy Changes for Guidelines'(calcType;yearIndex);çä  1240 : 0;çä   //'ULDocs Unnecessary Premium Paid'(calcType; yearIndex);çä : 0 //expand this case statement to create function codes for report columnsçä)çä
+A0 19a433c 0 0 0 0 0 0
+
+T0 19a43ac 0 0 0 0 0 0
+
+I0 19a441c 0 33443641 0 0 0 0
+
+I0 33443641 19a441c 0 92834d9 0 0 0
+ULillustrations.pms
+I0 92834d9 19a441c 0 243d047e 0 0 0
+VULillustrations.pms
+I0 243d047e 19a441c 0 5742ed46 0 0 0
+EIULillustrations.pms
+I0 5742ed46 19a441c 0 0 0 0 0
+AdvMarketingIllus.pms
+-
+O0
+E0
+L0
+B0
+P1
+19a6118
+F2
+4b5a9e0a
+33ef0bfd
+A0
+T0
+!28
+3a77eeb -2 -2
+Description: Deferred Compensation Calculationsçä çäModification Log:çä11/23/09 - PAC02 - JL - Initial Calculation
+4328239a -2 -2
+Description: Projected CVçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä11/11/09 - PAC02 - JL - Initial Calculation
+5114d44b -2 -2
+Description: Projected UL CVçä çäModification Log:çä1/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrized. Change to passed vectors.çä11/11/09 - PAC02 - JL - Initial Calculation
+3bfad365 -2 -2
+Description: vectorSolveParms used in UL CV calcçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrized. Build from AMI vector.çä11/10/09 - PAC02 - JL - Initial Calculation
+51da6430 -2 -2
+Description: Returns the last year in which the premium is level; as from the AMI vectorçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Initial Calculation
+7fc8814d -2 -2
+Description: Returns the last year in which a premium is paid; as from the AMI vectorçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Initial Calculation
+1a2e08a3 -2 -2
+Description: Vector of level premiums (first element being the duration of level prems, second being the amount) for use in creating the UL VectorSolveParms vector.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Initial Calculation
+693eb1cc -2 -2
+Description: Vector of Non-Level Premiums, by yearIndex, for use in creating the UL VectorSolveParms vector.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Initial Calculation
+6c258234 -2 -2
+Description: CVProj Parms used in UL CV calcçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamedçä11/10/09 - PAC02 - JL - Use custom Guideline vector to avoid calling FA Inputçä11/10/09 - PAC02 - JL - Update Guideline vector to avoid calling FA Inputçä11/10/09 - PAC02 - JL - Initial Calculation
+50c92763 -2 -2
+Description: Projected DBçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä11/11/09 - PAC02 - JL - Initial Calculation
+7aff4557 -2 -2
+Description: Projected UL DBçä çäModification Log:çä9/16/2011 - PA RegTest - JL - NAR DB Needs EOM CV as well (For deductions to FA from DBOption Changes)çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrized. Change to passed vectors.çä11/11/09 - PAC02 - DT - replaced "" with vectorSolveParmsçä11/11/09 - PAC02 - JL - Initial Calculationçä
+7ae30a22 -2 -2
+Description: Returns the total loan balance due.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/24/2009 PAC002 DT allowed for ULçä11/23/09 - PAC02 - JL - Initial Calculationçä
+55ae105a -2 -2
+Description: Returns the vector containing the Cash Value amount that is required for the ULLoan Amount calculationçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/24/2009 PAC002 DT addedçä
+77bdffb6 -2 -2
+Description: Net Death Benefitçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/09 - PAC02 - JL - Check if value from input is to be usedçä12/09/09 - PAC02 - JL - Initial Calculation
+5edbb741 -2 -2
+Description: Calculation of Face Amount for Solveçä çäModification Log:çä11/10/09 - PAC02 - JL - Initial Calculation
+49ac9ca2 -2 -2
+Description: Solve call for Face Amountçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/26/09 - PAC02 - DT - replaced AMI DefComp STD Illus Retirement BenefitPeriod with AMI DefComp STD Illus AssumedMortDurationçä11/23/09 - PAC02 - JL - Commented Outçä11/10/09 - PAC02 - JL - Replaced with manual solve, to be deletedçä11/10/09 - PAC02 - JL - Initial Calculation
+3d9047c1 -2 -2
+Description: Returns the relevant solved Base Face Amount.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/26/09 - PAC02 - DT - replaced AMI DefComp STD Illus Retirement BenefitPeriod with AMI DefComp STD Illus AssumedMortDurationçä11/25/09 - PAC02 - JL - Round up to higher dollarçä11/12/09 - PAC02 - JL - Add WL CostRecovery caseçä11/10/09 - PAC02 - JL - Initial Calculation
+1d5a325c -2 -2
+Description: Solve call for Face Amountçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/26/09 - PAC02 - DT - replaced AMI DefComp STD Illus Retirement BenefitPeriod with AMI DefComp STD Illus AssumedMortDurationçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä11/11/09 - PAC02 - JL - Check first element, this is the FAçä11/10/09 - PAC02 - JL - Initial Calculation
+30be28ba -2 -2
+Description: VectorAMI used for UL Face Amount Solve.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Initial Calculation
+5dd99709 -2 -2
+Description: Solve recursion for Face Amountçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrized. Update values passed.çä11/10/09 - PAC02 - JL - Initial Calculation
+2c9167fe -2 -2
+Description:  Returns a face amount guess based on the bisection methodçä çäModification logçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä11/10/09 - PAC02 - JL - Initial Calculation
+5e772e60 -2 -2
+Description:  Returns a face amount guess based on the bisection methodçä çäModification logçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä11/10/09 - PAC02 - JL - Initial Calculation
+1467a7 -2 -2
+Description:  Returns a face amount guess based on the bisection methodçä çäModification logçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä11/10/09 - PAC02 - JL - Initial Calculation
+128915f -2 -2
+Description: Initial FA guess used in solve for Face Amountçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä11/10/09 - PAC02 - JL - Initial Calculation
+479accfa -2 -2
+Description: The amount of current premium due.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/19/10 - PAC02 - JL - Modify Prem calc for SDEF to %s (employee + company) of compensationçä12/23/09 - PAC02 - rm - replaced 'WLFaceSolves Total Mode Premium' with 'FaceSolve Premium from Input' for UL plansçä11/26/09 - PAC02 - DT - replaced AMI DefComp Year is Before Retirement with AMI DefComp Year is Before AssumedMortDurationçä11/23/09 - PAC02 - JL - Renamed, reparametrized. Check vector for value, else calculateçä01/13/09 - PAC02 - JL - Reverse 11/26/09 changeçä10/06/09 - PAC02 - JL - Initial Calculation
+21879800 -2 -2
+Description: The sum of premiums due.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä10/06/09 - PAC02 - JL - Initial Calculation
+683850cb -2 -2
+Description: The maximum amount of current and previuos premiums.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/09 - PAC02 - JL - Renamed, reparametrizedçä10/06/09 - PAC02 - JL - Initial Calculation
+3da98326 -2 -2
+Description: Returns a function based on a code in table definition 'TABLE Report Structure' for calculations, rather than outputs.  Can be overwritten for customization.çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/13/2010 - pA Performance MAS replaced 'ULDocs Premium Projected LTD Premium' with recursive 'ULDocs Cumulative Annualized Gross Premium'çä11/8/2010 - PAC014 - MAS - added 1050, 1060, 1070, 1080, 1090 for testingçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/14/2009 - Defects - RWE - additional function
+;Offset=00000000

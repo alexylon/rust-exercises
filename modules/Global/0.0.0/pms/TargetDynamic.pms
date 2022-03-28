@@ -1,0 +1,566 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 3f41b4 0 3f47f0 0 0 0 0
+
+X0 3f47f0 3f41b4 3f4888 0 0 0 0
+-- All Test Cases --
+X0 3f4888 3f47f0 3f4940 0 0 0 0
+-- Function Tests --
+X5 3f4940 3f4888 0 3f4b48 0 0 2
+DynTarget CV Tolerance - 0.01
+'DynTarget CV Tolerance'("LTGT")
+0.01
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Calling Program
+
+X9 3f4b48 3f4888 0 3f4f18 0 0 2
+DynTarget Interest Rate  - 3.5
+'DynTarget Interest Rate'("LTGT")
+3.5
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X1 3f4f18 3f4888 0 1e20460 0 0 2
+DynTarget Model Name
+'DynTarget Model Name'
+Target_Dynamic
+X5 1e20460 3f4888 0 1e20638 0 0 2
+DynTarget Prem Tolerance
+'DynTarget Prem Tolerance'("LTGT")
+0.001
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Calling Program
+
+X21 1e20638 3f4888 0 1e208d8 0 0 2
+DynTarget Target Dur- LTGT
+'DynTarget Target Dur'("LTGT")
+65
+INPUT Policy number of CoverageOption
+1
+INPUT Message Language
+9
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CoverageOption ProductCode
+GMDB1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT TransEffDate
+01/01/2006
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X16 1e208d8 3f4888 0 3f54e0 0 0 2
+DynTarget Target Dur
+'DynTarget Target Dur'("LTGT")
+65
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X25 3f54e0 3f4888 0 0 0 0 2
+DynTarget Face Solve Amount(calc_type)
+'DynTarget Face Solve Amount'("LTGT")
+0
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage CurrentAmount
+1000
+INPUT Policy Coverage CurrentAmount[1]
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage IndicatorCode[1]
+3
+INPUT Policy number of CoverageOption
+1
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CoverageOption ProductCode
+GMDB1PA
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Coverage EffDate[1]
+01/01/2008
+INPUT Policy Coverage TermDate
+01/01/2059
+INPUT Policy Coverage TermDate[1]
+01/01/2050
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Calling Program
+
+INPUT Policy Coverage CurrentAmt
+0
+O0 3f4064 0 0 0 0 0 0
+
+E0 3f40d4 0 0 0 0 0 0
+
+L0 3f4144 0 0 0 0 0 0
+
+B0 3f4304 0 0 0 0 0 0
+
+P3 3f4224 0 3f5990 0 0 0 2
+
+--description
+The Dynamic Target Calculations Model will include properties and associated functions which can be called to return the total annual premium which is calculated utilizing a dynamic iterative solve target calculation on a monthly and annual basis. The premium solve will return the level premium necessary to result in a cash value equal to the specified target cash value at the end of the specific period.  çä çäThe target provisions are defined in the product definition and/or product calculation rules.çä çäRELEASE LOG:çäRELEASE 1301 - SCARAB/JIRA issues PAD820, PAD1213çäRELEASE WMA1001 - ENH922çäRELEASE 1101 - PAC013 calcTypeçä çä
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.4.1"
+P13 3f5990 3f4224 3f71b0 0 0 0 2
+Universal Life / Variable Universal Life
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Target premium calculations for Universal Life or Variable Universal Life products.  The targetçä               premium calculation types are commissionable, surrender, and load.  The solve is a dynamicçäâ iterative solve.çä Author:  Dimitry Masalovçä Date:     12/06/2006 çä Modification Log:çä Date              Modeler               Change Descriptionçä 12/06/2006     Dimitry Masalov    Created model.çä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"TargetDynamic.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 3f71b0 3f5990 3f7698 0 0 0 2
+Target Premiums
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P4 3f7698 3f71b0 0 3f7818 0 0 2
+Load Target Premiums
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Total Load Target
+'DynTarget Total Annual Target Premium'('CalcType LTGT'('GEN Vector Blank');'GEN Vector Blank';TransEffDur)
+P4 3f7818 3f71b0 0 3f79d8 0 0 2
+Minimum No Lapse Target Premiums (MNLP)
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Total MNLP Target
+'DynTarget Total Annual Target Premium'('CalcType MTGT'('GEN Vector Blank');'GEN Vector Blank';TransEffDur)
+P4 3f79d8 3f71b0 0 7c42b385 0 0 2
+Surrender Target Premiums
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Total Surrender Target
+'DynTarget Total Annual Target Premium'('CalcType STGT'('GEN Vector Blank');'GEN Vector Blank';TransEffDur)
+P4 7c42b385 3f71b0 0 0 0 0 2
+Commisionable Target Premiums
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Total Commissionable Target
+'DynTarget Total Annual Target Premium'('CalcType CTGT'('GEN Vector Blank');'GEN Vector Blank';TransEffDur)
+F0 3f4294 0 3f7b90 0 0 0 0
+
+F1 3f7b90 3f4294 3f7d08 0 0 0 2
+:DynTarget
+Funktion
+
+F1 3f7d08 3f7b90 52db18b 3fab48 0 0 2
+-- Calculation Functions --
+Funktion
+
+F1 52db18b 3f7d08 0 4f1bd0ef 0 0 2
+DynTarget Total Annual Target Premium(calcType; vectorSolveParms; yearIndex)
+Funktion
+CASE( /*target premium mode*/ 'ACCS CalcRule Target Premium Mode'(calcType;'Policy CarrierCode';'Policy ProductCode';'Policy EffDate');çä   // Solve for annual target premiumçä1 : 'GEN Round'('Vector TDYN Total Target Premium'(calcType;vectorSolveParms;yearIndex);2);çä   // Solve for monthly target premium and multiply by 12çä4 : 'GEN Round'('Vector TDYN Total Target Premium'(calcType;vectorSolveParms;yearIndex);2) * 12;çä   // Else payment mode not supported for target solve - return error messageçä : 'Messages SystemMessage'("CA1038";'Message Language';v_('DynTarget Model Name';"f_TDYN_Monthly_Target_Premium")))çä
+F1 4f1bd0ef 3f7d08 0 298c8e6 0 0 2
+DynTarget Total Monthly Target Premium(calcType; vectorSolveParms; yearIndex)
+Funktion
+CASE( /*Target premium mode*/ 'ACCS CalcRule Target Premium Mode'(calcType;'Policy CarrierCode';'Policy ProductCode';'Policy EffDate');çä   // Solve for annual premium and divide by 12çä1 : 'GEN Round'(e_('Vector TDYN Total Target Premium'(calcType;vectorSolveParms;yearIndex);0) / 12;2);çä   // Solve for monthly premiumçä4 : 'GEN Round'(e_('Vector TDYN Total Target Premium'(calcType;vectorSolveParms;yearIndex);0);2);çä   // Else payment mode not supported for target solve - return error messageçä : 'Messages SystemMessage'("CA1038";'Message Language';v_('DynTarget Model Name';"f_TDYN_Monthly_Target_Premium")))çä
+F1 298c8e6 3f7d08 0 665d171a 0 0 2
+DynTarget Test Target Solve(calcType; baseFace; stopIteration; elemNum; yearIndex)
+Funktion
+e_('Vector TDYN Total Target Premium Solve'(calcType;'SharedVector SolveParms MakeFaceAmount'(calcType;baseFace);stopIteration;yearIndex);elemNum)
+F1 665d171a 3f7d08 3f88b8 66b355d8 0 0 2
+Vector TDYN Total Target Premium(calcType; vectorSolveParms; yearIndex)
+Funktion
+E_(IF ('SharedVector SolveParms FaceAmount Passed'('Std BaseCov Index'(calcType);vectorSolveParms) ; çä  IF ('DynTarget New Solve Successful'(calctype;vectorSolveParms;yearIndex) ; çä     // don't bother checking for initial guess accuracy for targets...çä'Vector TDYN Total Target Premium Solve New'(calcType;vectorSolveParms;999;yearIndex) ; çä     // else use old solve methodçä'Vector TDYN Total Target Premium Solve2'(calcType;vectorSolveParms;999;yearIndex)çä  ) ; çäIF ('DynTarget New Solve Successful'(calctype;'SharedVector SolveParms MakeFaceAmount'(calcType;'DynTarget Face Solve Amount'(calcType));yearIndex) ; çä  'Vector TDYN Total Target Premium Solve New'(calcType;'SharedVector SolveParms MakeFaceAmount'(calcType;'DynTarget Face Solve Amount'(calcType));999;yearIndex) ; çä  'Vector TDYN Total Target Premium Solve2'(calcType;'SharedVector SolveParms MakeFaceAmount'(calcType;'DynTarget Face Solve Amount'(calcType));999;yearIndex)çä)çä);0)
+F1 3f88b8 665d171a 0 2fe86845 0 0 2
+DynTarget Face Solve Amount(calcType)
+Funktion
+IF ( //'Coverage Is InForce'(calcType; 0; 'TransEffDate'; TransEffDur);çä'Std Coverage Is InForce'(calcType;0;TransEffDate;TransEffDur) ; çä   /*Return base face amount*/ 'Policy Coverage CurrentAmt'(calcType;0;TransEffDur) ; çä  0çä)
+F1 2fe86845 665d171a c24bb88 0 0 0 2
+DynTarget New Solve Successful(calctype;  vectorSolveParms; yearIndex)
+Funktion
+IF (STRCMP('VPMS Runtime Version';"4.6.1") <= 0 ; çä   //temporary bypass until upgradeçä0 ; çä   //bypass solve function for versions 4.6.1 and earlierçäIF (NOT(ISNUMBER('Vector TDYN Total Target Premium Solve New cache'(calctype;vectorSolveParms;'Constant Stop Iteration';yearIndex))) ; çä    0 ; çä     // initial solve not successful, returned #NOTVALID or #NORESçä1 // initial solve successful (can add in extra checks here for range, etc)çäçä  )çä)
+F1 c24bb88 2fe86845 0 0 0 0 2
+DynTarget Initial Guess Successful(vectorSolveParms; vectorSearchCriteria)
+Funktion
+ABS('Solve CashValueSolve'('Solve Initial Premium Guess'(vectorSolveParms;vectorSearchCriteria);'Solve CashValueSolve Constants Vector'(vectorSearchCriteria;vectorSolveParms)) - 'Solve Criteria Target CV'(vectorSearchCriteria)) < 'Solve Criteria CV Tolerance'(vectorSearchCriteria) && 'Solve CashValueSolve'('Solve Initial Premium Guess'(vectorSolveParms;vectorSearchCriteria);'Solve CashValueSolve Constants Vector'(vectorSearchCriteria;vectorSolveParms)) - 'Solve Criteria Target CV'(vectorSearchCriteria) < 0 && 'Solve CashValueSolve'('Solve Initial Premium Guess'(vectorSolveParms;vectorSearchCriteria) + 0.01;'Solve CashValueSolve Constants Vector'(vectorSearchCriteria;vectorSolveParms)) - 'Solve Criteria Target CV'(vectorSearchCriteria) > 0
+F1 66b355d8 3f7d08 4ba85425 7d92ebd6 0 0 2
+Vector TDYN Total Target Premium Solve(calcType; vectorSolveParms; stopIteration; yearIndex)
+Funktion
+IF ( /*Is there a problem with target duration*/ NOT('DynTarget Duration Is Valid'(calcType;yearIndex)) ; çä   /*Yes - return error message*/ 'Messages SystemMessage'("CA1047";'Message Language';v_('DynTarget Model Name';"'Vector TDYN Total Target Premium Solve'")) ; çä   //No - return target premiumçä'Solve Iterative Premium Solve Rec'( // current premium guessçä'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex); // current cash valueâçä'DynTarget Solve Cash Value'(calcType;'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex);vectorSolveParms;yearIndex); // add initial premium guess to vectorSolveParms vectorâ âçä// previous premium guessçä0; // previous cash valueçä0; // low boundââçäIF ('DynTarget Solve Cash Value'(calcType;'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex);vectorSolveParms;yearIndex) < 'DynTarget Target CV'(calcType;vectorSolveParms) ; çä    'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex) ; çä    'DynTarget Solve Initial Premium3'(calcType;vectorSolveParms;stopIteration;yearIndex)çä  ); // high boundçäIF ('DynTarget Solve Cash Value'(calcType;'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex);vectorSolveParms;yearIndex) > 'DynTarget Target CV'(calcType;vectorSolveParms) ; çä  'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex) ; çä  'DynTarget Solve Initial Premium2'(calcType;vectorSolveParms;stopIteration;yearIndex)çä); // iteration numberçä1; // search criteriaçä'Vector SLV Premium Solve Search Criteria'(calcType;'DynTarget Target CV'(calcType;vectorSolveParms);'DynTarget Target Dur'(calcType);'DynTarget Premium Dur'(calcType);'DynTarget Interest Rate'(calcType);'DynTarget CV Tolerance'(calcType);'DynTarget Prem Tolerance'(calcType);stopIteration;'Vector TDYN CV Addl Info'(calcType;yearIndex));vectorSolveParms)çä)
+F1 4ba85425 66b355d8 0 676d2f66 0 0 2
+DynTarget Duration Is Valid(calcType; yearIndex)
+Funktion
+IF ( /*Check target duration*/ 'DynTarget Target Dur'(calcType) >= e_('Vector TDYN CV Addl Info'(calcType;yearIndex);7) ; çä   /*Valid duration*/ 1 ; çä   // The target duration is greater than or equal to the starting year of the cash value projectionçä/*Invalid duration*/0çä)
+F1 676d2f66 66b355d8 0 0 0 0 2
+DynTarget Solve Cash Value(calcType; prem; vectorSolveParms; yearIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms ReplacePremium'(prem;'DynTarget Premium Dur'(calcType);vectorSolveParms); // add initial premium guess to vectorSolveParms vectorçä'DynTarget Interest Rate'(calcType);'Vector TDYN CV Addl Info'(calcType;yearIndex);'DynTarget Target Dur'(calcType);12)
+F1 7d92ebd6 3f7d08 7eebbf2b 11951a74 0 0 2
+Vector TDYN Total Target Premium Solve2(calcType; vectorSolveParms; stopIteration; yearIndex)
+Funktion
+IF ( /*Is there a problem with target duration*/ NOT('DynTarget Duration Is Valid'(calcType;yearIndex)) ; çä   /*Yes - return error message*/ 'Messages SystemMessage'("CA1047";'Message Language';v_('DynTarget Model Name';"'Vector TDYN Total Target Premium Solve'")) ; çä   //No - return target premiumçä'Solve Iterative Premium Solve Rec2'( // current premium guessçä'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex); // current cash valueâçä'Solve CashValueSolve'('DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex);'Solve CashValueSolve Constants Vector'('Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex);vectorSolveParms)) - 'DynTarget Target CV'(calcType;vectorSolveParms); // add initial premium guess to vectorSolveParms vectorâ âçä// previous premium guessçä'DynTarget Prev Prem'(calcType;vectorSolveParms;stopIteration;yearIndex); // previous cash valueçä'Solve CashValueSolve'('DynTarget Prev Prem'(calcType;vectorSolveParms;stopIteration;yearIndex);'Solve CashValueSolve Constants Vector'('Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex);vectorSolveParms)) - 'DynTarget Target CV'(calcType;vectorSolveParms); // low boundââçä'DynTarget Low Bound'(calcType;vectorSolveParms;stopIteration;yearIndex); // high boundçä'DynTarget High Bound'(calcType;vectorSolveParms;stopIteration;yearIndex); // iteration numberçä1; // search criteriaçä'Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex);vectorSolveParms)çä)
+F1 7eebbf2b 7d92ebd6 0 7d95c258 0 0 2
+DynTarget Prev Prem(calcType; vectorSolveParms; stopIteration; yearIndex)
+Funktion
+IF ('Solve CashValueSolve'('DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex);'Solve CashValueSolve Constants Vector'('Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex);vectorSolveParms)) < 'DynTarget Target CV'(calcType;vectorSolveParms) ; çä  'DynTarget Solve Initial Premium2'(calcType;vectorSolveParms;stopIteration;yearIndex) ; çä  'DynTarget Solve Initial Premium3'(calcType;vectorSolveParms;stopIteration;yearIndex)çä)
+F1 7d95c258 7d92ebd6 0 48ac2ced 0 0 2
+DynTarget Low Bound(calcType; vectorSolveParms; stopIteration; yearIndex)
+Funktion
+IF ('Solve CashValueSolve'('DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex);'Solve CashValueSolve Constants Vector'('Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex);vectorSolveParms)) < 'DynTarget Target CV'(calcType;vectorSolveParms) ; çä  'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex) ; çä  'DynTarget Solve Initial Premium3'(calcType;vectorSolveParms;stopIteration;yearIndex)çä)
+F1 48ac2ced 7d92ebd6 0 731b39cb 0 0 2
+DynTarget High Bound(calcType; vectorSolveParms; stopIteration; yearIndex)
+Funktion
+IF ('Solve CashValueSolve'('DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex);'Solve CashValueSolve Constants Vector'('Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex);vectorSolveParms)) > 'DynTarget Target CV'(calcType;vectorSolveParms) ; çä  'DynTarget Solve Initial Premium'(calcType;vectorSolveParms;stopIteration;yearIndex) ; çä  'DynTarget Solve Initial Premium2'(calcType;vectorSolveParms;stopIteration;yearIndex)çä)
+F1 731b39cb 7d92ebd6 0 13a7c3bf 0 0 2
+DynTarget Solve Initial Premium(calcType;  vectorSolveParms;stopIteration; yearIndex)
+Funktion
+'Solve Initial Premium Guess2'(vectorSolveParms;'Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex))
+F1 13a7c3bf 7d92ebd6 0 445b718c 0 0 2
+DynTarget Solve Initial Premium2(calcType;  vectorSolveParms; stopIteration; yearIndex)
+Funktion
+'Solve Initial Premium Guess3'(vectorSolveParms;'Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex))
+F1 445b718c 7d92ebd6 0 0 0 0 2
+DynTarget Solve Initial Premium3(calcType;  vectorSolveParms; stopIteration; yearIndex)
+Funktion
+'Solve Initial Premium Guess4'(vectorSolveParms;'Vector TDYN CV Search Criteria'(calcType;stopIteration;vectorSolveParms;yearIndex))
+F1 11951a74 3f7d08 0 5a26233a 0 0 2
+Vector TDYN Total Target Premium Solve New(calcType; vectorSolveParms; stopIteration; yearIndex)
+Funktion
+IF ( /*Is there a problem with target duration*/ NOT('DynTarget Duration Is Valid'(calcType;yearIndex)) ; çä   /*Yes - return error message*/ 'Messages SystemMessage'("CA1047";'Message Language';v_('DynTarget Model Name';"'Vector TDYN Total Target Premium Solve'")) ; çä   //No - return target premiumçä'Vector TDYN Total Target Premium Solve New cache'(calctype;vectorSolveParms;stopIteration;yearIndex)çä)
+F1 5a26233a 3f7d08 0 0 0 0 2
+Vector TDYN Total Target Premium Solve New cache(calctype; vectorSolveParms; stopIteration; yearIndex)
+Funktion
+SOLVE( // solve methodçä'VPMS Solve Debug Switch'(0); //debug setting determines the solve debug outputçä//solve functionçäFUNCREF('Solve CashValueSolve'); //funcref for derivertiveçä0; //targetçä'DynTarget Target CV'(calcType;vectorSolveParms); //initial guess guessçä'Solve Initial Premium Guess2'(vectorSolveParms;'Vector SLV Premium Solve Search Criteria'(calcType;'DynTarget Target CV'(calcType;vectorSolveParms);'DynTarget Target Dur'(calcType);'DynTarget Premium Dur'(calcType);'DynTarget Interest Rate'(calcType);'DynTarget CV Tolerance'(calcType);'DynTarget Prem Tolerance'(calcType);stopIteration;'Vector TDYN CV Addl Info'(calcType;yearIndex))); //Guess toleranceçä-0.01; //'DynTarget CV Tolerance'(calcType);çä//lowboundçä'DynTarget Low Bound'(calcType;vectorSolveParms;stopIteration;yearIndex); //highboundçä'DynTarget High Bound'(calcType;vectorSolveParms;stopIteration;yearIndex); //Stop IterationçästopIteration; //vConstantsçä'Solve CashValueSolve Constants Vector'('Vector SLV Premium Solve Search Criteria'(calcType;'DynTarget Target CV'(calcType;vectorSolveParms);'DynTarget Target Dur'(calcType);'DynTarget Premium Dur'(calcType);'DynTarget Interest Rate'(calcType);'DynTarget CV Tolerance'(calcType);'DynTarget Prem Tolerance'(calcType);stopIteration;'Vector TDYN CV Addl Info'(calcType;yearIndex));vectorSolveParms))
+F1 3fab48 3f7b90 3fad40 3fcba8 0 0 2
+-- Search Criteria Functions --
+Funktion
+
+F1 3fad40 3fab48 0 3fb328 0 0 2
+DynTarget Target CV(calcType; vectorSolveParms)
+Funktion
+CASE( /*Target calculation rule*/ 'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"targetCashValueRule";'Policy EffDate');çä   // Specified amountçä"S" : 'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"targetCashValue";'Policy EffDate');çä   // Surrender chargeçä"SC" : 'ULSC Projected Full Surrender Charge'(calcType;'DynTarget Target Dur'(calcType);'GEN Vector Blank');çä   // Elseçä : SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;IF ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) ; çä    IF (#coverageIndex = 0 && 'SharedVector SolveParms FaceAmount Passed'(#coverageIndex;vectorSolveParms) ; çä      'SharedVector SolveParms FaceAmount'(#coverageIndex;vectorSolveParms;1) ; çä      'Policy Coverage CurrentAmt'(calcType;#coverageIndex;TransEffDur)çä    ) ; çä   // Elseçä0çä)))çä
+F1 3fb328 3fab48 0 3fbba8 0 0 2
+DynTarget Target Dur(calcType)
+Funktion
+IF ( /*Minimum target calculation?*/ 'CalcType MTGT Is Active'(calcType) ; çä   /*Yes - check if policy has NLG option*/ IF (NOT('Std Policy Has MNLP'(calcType)) ; çä     // No Lapse CovOption not included in Holding - return error messageçä'Messages SystemMessage'("CA1045";'Message Language';v_('TARGET Model Name';"'OUTPUT Total MNLP Target'";'Policy CovOption ProductCode'(calcType;'Std MNLP coverageIndex'(calcType);'Std MNLP coverageOptionIndex'(calcType)))) ; çä     // Elseçä'PIDRV NLG ExpirationDuration'(calcType)çä  ) ; çä // Else - assume maturity duration for all other target calcsçä'PIDRV CoverageProduct MaturityDuration'(calcType;TransEffDate;0)çä)
+F1 3fbba8 3fab48 0 3fbde8 0 0 2
+DynTarget Premium Dur(calcType)
+Funktion
+'DynTarget Target Dur'(calcType)
+F1 3fbde8 3fab48 0 3fc2b8 0 0 2
+DynTarget Interest Rate(calcType)
+Funktion
+CASE( /*Target calculation rule*/ 'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"interest_rule";'Policy EffDate');çä   /*Guaranteed*/ "GUAR";"guar" : 'PI PolicyProduct GuarIntRate'('Policy ProductCode';TransEffDate);çä   /*Current*/ "CURR";"curr" : 'Policy Life CurrIntRate';çä   // Specified interest rateçä"S";"s" : 'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"initial_interest_rate";'Policy EffDate');çä  "SHADOW";"shadow" : 'Vector TDYN Shadow Interest Rate'(calcType);çä   //'SHADOW Shadow Interest Rate'(0; 'Std CovOption Index'(0; 'OptType Shadow'); /*duration*/1);çä// Else assume guaranteedçä : 'PI PolicyProduct GuarIntRate'('Policy ProductCode';TransEffDate))çä
+F1 3fc2b8 3fab48 0 3fc4e0 0 0 2
+DynTarget CV Tolerance(calcType)
+Funktion
+'ACCS CalcRule Target Dynamic Calc Rules'(calctype;'Policy CarrierCode';'Policy ProductCode';"cashValueTolerance";'Policy EffDate')
+F1 3fc4e0 3fab48 0 a625b94 0 0 2
+DynTarget Prem Tolerance(calcType)
+Funktion
+'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"premiumValueTolerance";'Policy EffDate')
+F1 a625b94 3fab48 7b820cb8 0 0 0 2
+Vector TDYN CV Search Criteria(calcType; stopIteration; vectorSolveParms; yearIndex)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType;'DynTarget Target CV'(calcType;vectorSolveParms);'DynTarget Target Dur'(calcType);'DynTarget Premium Dur'(calcType);'DynTarget Interest Rate'(calcType);'DynTarget CV Tolerance'(calcType);'DynTarget Prem Tolerance'(calcType);stopIteration;'Vector TDYN CV Addl Info'(calcType;yearIndex))
+F1 7b820cb8 a625b94 0 58dbd654 0 0 2
+Vector TDYN CV Addl Info(calcType; yearIndex)
+Funktion
+V_(0; // Check for lapse (True of False)çä0; // Initial lump sum amountçä0; // Adjust for DEFRA (True or False)çä'GEN Vector Blank'; // Vector of guideline limitsçä0; // Varying premiums (True of False)çä'GEN Vector Blank'; // Vector of periodic premiumsçäIF ('CalcType LTGT Is Active'(calcType) ; çä  'GEN Vector Blank' ; çä  'TARGET Premium'(calcType;yearIndex)çä); // Vector of annual load target premiums by coverage çä'Duration Year'(TransEffDate;'Policy EffDate'); // Start yearçä1 // Start monthçä)
+F1 58dbd654 a625b94 0 0 0 0 2
+Vector TDYN Shadow Interest Rate(calcType)
+Funktion
+VECTORX(yrIdx;1;'DynTarget Target Dur'(calcType);'SHADOW Shadow Interest Rate'(calcType;#yrIdx))
+F1 3fcba8 3f7b90 1122e6f6 3fd1f8 0 0 2
+-- Test Functions --
+Funktion
+
+F1 1122e6f6 3fcba8 0 6411ee10 0 0 2
+DynTarget Test Target Premium Solve(calcType; periodicPremium; yearIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'DynTarget Premium Dur'(calcType));'DynTarget Interest Rate'(calcType);'Vector TDYN CV Addl Info'(calcType;yearIndex);'DynTarget Target Dur'(calcType);12)
+F1 6411ee10 3fcba8 0 273347e6 0 0 2
+DynTarget Test Target MNLP Premium Solve(calcType; periodicPremium; yearIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'DynTarget Premium Dur'(calcType));'DynTarget Interest Rate'(calcType);'Vector TDYN CV Addl Info'(calcType;yearIndex);'DynTarget Target Dur'(calcType);12)
+F1 273347e6 3fcba8 0 0 0 0 2
+DynTarget Test Cash Value(calcType; premium; yearIndex)
+Funktion
+'Solve CashValueSolve'(premium;V_(calcType;'DynTarget Premium Dur'(calcType);'SharedVector SolveParms MakeFaceAmount'(calcType;'DynTarget Face Solve Amount'(calcType));'DynTarget Interest Rate'(calcType);'Vector TDYN CV Addl Info'(calcType;yearIndex);yearIndex;12;'Vector TDYN CV Search Criteria'(calcType;999;'SharedVector SolveParms MakeFaceAmount'(calcType;'DynTarget Face Solve Amount'(calcType));yearIndex)))
+F1 3fd1f8 3f7b90 3fd448 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 3fd448 3fd1f8 0 0 0 0 2
+DynTarget Model Name
+Funktion
+"Target_Dynamic"
+A0 3f4374 0 0 0 0 0 0
+
+T0 3f43e4 0 0 0 0 0 0
+
+I0 3f4454 0 3fd848 0 0 0 0
+
+I0 3fd848 3f4454 0 0 0 0 0
+Solve.pms
+-
+O0
+E0
+L0
+B0
+P6
+3f5990
+3f71b0
+3f7698
+3f7818
+3f79d8
+7c42b385
+F24
+3f7b90
+3f7d08
+52db18b
+4f1bd0ef
+298c8e6
+665d171a
+66b355d8
+7d92ebd6
+11951a74
+5a26233a
+3fab48
+3fad40
+3fb328
+3fbba8
+3fbde8
+3fc2b8
+3fc4e0
+a625b94
+3fcba8
+1122e6f6
+6411ee10
+273347e6
+3fd1f8
+3fd448
+A0
+T0
+!45
+3f7698 3 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+3f7818 3 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+3f79d8 3 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+7c42b385 3 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+52db18b -2 -2
+Description: Returns the total annual target premium amount based on the dynamic search method for the particular target calculation type.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+52db18b 0 2
+
+4f1bd0ef -2 -2
+Description: Returns the total target premium amount based on the dynamic search method for the particular target calculation type.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+298c8e6 -2 -2
+Description: Returns the specified element from the premium search for the target premium.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+665d171a -2 -2
+Description: Returns the a vector of the premium search results for the total target premium amount based on the dynamic search method for the particular target calculation type.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä02/15/2012 pA PAD-820 CMC added vector extract for final result.çä02/09/2011 pA Regression CMC Corrected the choice of solve method when face amounts are passed in from the solve parms vector.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/7/2010 pA Performance CMC updated to reflect new solve functionalityçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä10/19/2009 - wdp - Changed function to use new solve functionçä10/31/2007 CSC Initial Calculation/Rule
+3f88b8 -2 -2
+Description: Returns the base face amount to be used in the premium solve.çäNote:  Just using initial coverage amount. çä çäModification Log:çä02/14/2013 - PAD1213 - JL - Use "Std Coverage is Inforce" instead of "Coverage is Inforce"çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2010 - BT - nba Merge to Staging - should be base coverage onlyçä06/03/2009 - DT - PA1013 - added parm TransEffDur to 'Coverage Is InForce'çä10/31/2007 CSC Initial Calculation/Ruleçä
+2fe86845 -2 -2
+Description : returns 1 if new internal solve function returns valid answer, else 0çäâNote:  since solve for target value will not be successful. Go straight to "with boundary condition" solve.çäââ If initial solve returns #NOTVALID (low and high bounds results are same sign and do not bound the result)çäââ  or #NORES (no result, no convergence), initial solve was not successful.çä çäModification Log :çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/7/2010 pA Performance CMC used cached result of solveçä11/9/2009 - PA1001 - NT - added function
+2fe86845 0 1
+
+c24bb88 -2 -2
+Description : Checks if the initial guess is good enough to work with, so that the solve can be skipped. If initial guess is slightly too low, and one penny more is slightly too high, we've hit the jackpot. çä çäModification Log :çä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/9/2009 - PA1001 - NT - added function
+66b355d8 -2 -2
+Description: Returns the a vector of the premium search results for the total target premium amount based on the dynamic search method for the particular target calculation type after "stopIteration" iterations.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+66b355d8 0 2
+
+4ba85425 -2 -2
+Description: Returns true (i.e. 1) if the target duration for the premium solve is valid.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+4ba85425 0 2
+
+676d2f66 -2 -2
+çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä04/19/2010 ENH922 JL Merge of Dynamic Solves Code from nbA to wmAçä
+676d2f66 0 2
+
+7d92ebd6 -2 -2
+Description: Returns the a vector of the premium search results for the total target premium amount based on the dynamic search method for the particular target calculation type after "stopIteration" iterations. Updated to new solve method.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/7/2010 CMC pA performance reinstated function.çä9/16/2010 - PAC013 calcType - BT - function not usedçä03/04/2010 pA Performance Initial Calculation
+7eebbf2b -2 -2
+Description:  Determines the previous premium to use in the solve calculation.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä03/04/2010 pA Performance Initial Calculation
+7d95c258 -2 -2
+Description:  Determines the low bound to use in the solve calculation.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä03/04/2010 pA Performance Initial Calculation
+48ac2ced -2 -2
+Description:  Determines the high bound premium to use in the solve calculation.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä03/04/2010 pA Performance Initial Calculation
+731b39cb -2 -2
+Description:  Call to premium guess using monthly and annual switching in calculation.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/04/2010 pA Performance Initial Calculation
+13a7c3bf -2 -2
+Description:  Call to premium guess using  annual with COIs in all duraitons.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/04/2010 pA Performance Initial Calculation
+445b718c -2 -2
+Description:  Call to premium guess using  annual with no COIs in all duraitons.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/04/2010 pA Performance Initial Calculation
+11951a74 -2 -2
+Description: Returns the solve target premium using cached resultçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/7/2010 pA Performance CMC updated function to used cached result of the SOLVE function.çä9/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä10/19/2009 - wdp - CSC Initial function
+5a26233a -2 -2
+Description: Returns the solve target premium using the new internal solverçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä05/20/2011 Regression Testing CMC changed Premium guess to performance optimized premium guessçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/7/2010 pA Performance CMC added function
+5a26233a 0 2
+
+3fad40 -2 -2
+Description: Returns the target cash value to be used in the premium search for the particular target calculation type when the dynamic search is used to determine the target premium.çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä10/31/2007 CSC Initial Calculation/Rule
+3fad40 0 1
+
+3fb328 -2 -2
+Description: Returns the target duration to be used in the premium search for the particular target calculation type when the dynamic search is used to determine the target premium.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3fb328 0 2
+
+3fbba8 -2 -2
+Description: Returns the premium duration to be used in the premium search for the particular target calculation type when the dynamic search is used to determine the target premium.çäAssumption: Premium is paid for all yearsçä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+3fbba8 0 1
+
+3fbde8 -2 -2
+Description: Returns the interest rate to be used in the premium search for the particular target calculation type when the dynamic search is used to determine the target premium.çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä05/02/2010 ENH922 JL Use shadow interest rate (could be a vector) for shadow calc typesçä10/31/2007 CSC Initial Calculation/Rule
+3fc2b8 -2 -2
+Description: Returns the cash value tolerance to be used in the premium search for the particular target calculation type when thedynamic search is used to determine the target premium.  This is the difference between the cash value at the current premium and the cash value at the previous premium.çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+3fc4e0 -2 -2
+Description: Returns the premium tolerance to be used in the premium search for the particular target calculation type when the dynamic search is used to determine the target premium.  This is the difference between the cash value at the current premium and the cash value at the previous premium.çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+a625b94 -2 -2
+çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä04/19/2010 ENH922 JL Merge of Dynamic Solves Code from nbA to wmA
+7b820cb8 -2 -2
+Description: Returns a vector of the additional information needed for the cash value projections.çäNote - CV projections need vector of the annual load target premiums by coverage other than if the calcType is "LTGT" çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/2/2011 - PAC013 calctype - BT - add TARGET Premiumçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/25/2008 CSC Updated to calculate target if called for Illustrationsçä10/31/2007 CSC Initial Calculation/Rule
+7b820cb8 0 1
+
+58dbd654 -2 -2
+Description: Vector of shadow account interest rates (to allow for yearly interest rates)çä çäModification Log:çä05/02/2010 ENH922 JL Initial Calculation
+1122e6f6 -2 -2
+çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+6411ee10 -2 -2
+çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+273347e6 -2 -2
+Description: Test function for cash value, given calctype & premiumçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä05/02/2010 ENH922 JL Initial calculation
+;Offset=00000000

@@ -1,0 +1,1302 @@
+;1	08.12.2016 13:25:54	jlawrie2	
+X0 266023c 0 2661bf0 0 0 0 0
+
+X0 2661bf0 266023c 2661d18 0 0 0 0
+-- All Test Cases --
+X44 2661d18 2661bf0 0 2661fd0 0 0 2
+CVProjection Monthly End Of Month Cash Value Rec
+'CVProjection Monthly End Of Month Cash Value Rec'("C"; 50; 5; ""; 1; 12)
+-1765.3
+'CVProjection Monthly End Of Month Cash Value Rec'("CurrCV"; 5000; 50; 5; ""; 1; 12)
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy PaymentMode
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+500
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy number of CoverageOption
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage CurrentAmount
+500000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+500000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Loan LoanIntType
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy number of SubAccount
+0
+INPUT Policy LifeParticipant SpecialClassCode
+0
+X45 2661fd0 2661bf0 0 26667e0 0 0 2
+CVProjection Monthly BOM Cash Value
+'CVProjection Monthly BOM Cash Value'("C"; 1000; 50; 5; ""; 1; 12)
+853.21
+INPUT Policy PaymentMode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+500
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy number of CoverageOption
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage CurrentAmount
+500000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy ProductType
+3
+INPUT Calling Program
+
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Illust WithdrawalAmt[1]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+500000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeUSA DefLifeInsMethod
+0
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy number of SubAccount
+0
+INPUT Policy LifeParticipant SpecialClassCode
+0
+X1 26667e0 2661bf0 0 2666a00 0 0 2
+CVProjection Annualize Months In Year
+CVProjection Annualize Months In Year(""; 5)
+12
+X0 2666a00 2661bf0 2666aa0 2239d62f 0 0 0
+-- Illustration Test Cases
+X24 2666aa0 2666a00 0 2666cf8 0 0 2
+CVProjection Withdrawal(calcType; yearIndex; vectorWdlGuess)
+CVProjection Withdrawal("C"; 2; "")
+0
+INPUT Illus WithdrawalAmt[1]
+100
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalType
+1
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Illus WithdrawalAmt
+0
+INPUT Illus WithdrawalAmt[2]
+0
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus DisbSearchGoalInd
+0
+X30 2666cf8 2666a00 0 26673c8 0 0 2
+CVProjection Withdrawal(calcType; yearIndex; vectorWdlGuess)
+CVProjection Withdrawal("C"; 2; "")
+100
+INPUT Illus WithdrawalAmt[1]
+100
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalType
+1
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Illus WithdrawalDesignType
+1000500003
+INPUT Illus WithdrawalAmt
+0
+INPUT Illus WithdrawalAmt[2]
+100
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus DisbSearchGoalInd
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductType
+3
+INPUT Illus DisbDesignType
+1000500001
+X25 26673c8 2666a00 0 2667c08 0 0 2
+CVProjection Withdrawal(calcType; yearIndex; vectorWdlGuess)
+CVProjection Withdrawal("C"; 2; "")
+0
+INPUT Illus WithdrawalAmt[1]
+100
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalType
+1
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Illus WithdrawalDesignType
+1000500002
+INPUT Illus WithdrawalAmt
+0
+INPUT Illus WithdrawalAmt[2]
+0
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus DisbSearchGoalInd
+0
+INPUT Policy ProductType
+3
+X26 2667c08 2666a00 0 0 0 0 2
+CVProjection Withdrawal(calcType; yearIndex; vectorWdlGuess)
+CVProjection Withdrawal("C"; 2; "")
+200
+INPUT Illus WithdrawalAmt[1]
+100
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalType
+2
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Illus WithdrawalDesignType
+1000500003
+INPUT Illus WithdrawalAmt
+0
+INPUT Illus WithdrawalAmt[2]
+200
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus DisbSearchGoalInd
+0
+INPUT Policy ProductType
+3
+INPUT Illus DisbDesignType
+1000500001
+X42 2239d62f 2661bf0 0 3d0e065b 0 0 2
+Policy CarrierCode
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy CoverageOption ProductCode
+MNLPPA
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy ProductType
+3
+INPUT Calling Program
+VPMSTEST
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Illust WithdrawalAmt
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus WithdrawalAmt
+0
+INPUT Illus WithdrawalAmt[1]
+0
+INPUT Policy CarrierCode
+00
+X8 3d0e065b 2661bf0 0 0 0 0 2
+Policy PaymentMode
+Policy PaymentMode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+O0 26600ec 0 0 0 0 0 0
+
+E0 266015c 0 0 0 0 0 0
+
+L0 26601cc 0 0 0 0 0 0
+
+B0 266038c 0 0 0 0 0 0
+
+P3 26602ac 0 2668280 0 0 0 2
+
+--description
+Calculations support cash value projection functions which are utilized by many models for the premium solve. Includes both monthly and annual projection functions. çä çäLapse and secondary guarantee checks are supported for Minimum No Lapse Premium (MNLP) and Shadow Accounts.çä çäRELEASE LOG:çäRELEASE 1301 - SCARAB PA2216çäRELEASE 1101 - PAC013 calcTypeçäRELEASE 1101 - PAC017 FINRA Rule 2211
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.8    "
+P13 2668280 26602ac 2669018 0 0 0 2
+Universal Life/Variable Universal Life Cash Value Projections
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Cash value projections for Universal Life and Variable Universal Life products.çä Author:  John Heumannçä Date:     12/06/2006 çä Modification Log:çä Date              Modeler               Change Descriptionçä 12/06/2006     John Heumann    Created model.çä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"CashValueProjections.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+Output Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 2669018 2668280 0 0 0 0 2
+Projection Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 266031c 0 3979d1b0 0 0 0 0
+
+F1 3979d1b0 266031c 0 2669170 0 0 2
+-- Cash Value Projections --
+Funktion
+
+F1 2669170 266031c 26692e8 0 0 0 2
+:CVProjection
+Funktion
+
+F1 26692e8 2669170 63ac1f8a 266b130 0 0 2
+-- Monthly Cash Value Projection Functons ---
+Funktion
+
+F1 63ac1f8a 26692e8 10da8634 2669490 0 0 2
+CVProjection End Of Month Cash Value(calcType; yearIndex; monthIndex)
+Funktion
+'GEN Round'('CVProjection Monthly End Of Month Cash Value Rec'(calcType;'CVProjection SolveParms MakePremium'(calcType;yearIndex);'ULDocs ProjIntRate'(calcType;yearIndex);'Vector ULCD CVProj Parms'(calcType;yearIndex);yearIndex;monthIndex); // Number of places to round toçä'ACCS Decimal'(calcType))
+F1 10da8634 63ac1f8a 0 0 0 0 2
+CVProjection SolveParms MakePremium(calcType; yearIndex)
+Funktion
+'SharedVector SolveParms MakePremium'('AS Premium Amount'(calcType;yearIndex);yearIndex)
+F1 2669490 26692e8 2d356a44 266ad28 0 0 2
+CVProjection Monthly End Of Month Cash Value Rec(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'GEN Round'(IF ('Calculation is for Multiple Funds' ; çä   //Trueçä'CVProjection Total Fund EOM CV from Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) ; çä   //FalseçäIF ( /*First month of projection period*/ 'CVProjection First Month of Projection Period'(vectorAddlInfo;yearIndex;monthIndex) ; çä     //True - At the starting point of the projectionçä'CVProjection Start Point of Projection Period'(calcType;vectorAddlInfo) ; çä     // Else need to recursively determine the EOM CVçäIF ( /*Policy lapsed already*/ 'CVProjection Policy Has Lapsed'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) ; çä       /*return lapsed CV constant*/ 'Constant Lapsed CV' ; çä       // Elseçä'CVProjection Monthly EOM CV'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)çä    )çä)çä); // Number of places to roundçä'ACCS Decimal'(calcType))
+F1 2d356a44 2669490 0 313a1aaf 0 0 2
+CVProjection Total Fund EOM CV from Vector(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Total CV from Vector'('CVProjection Fund End Of Month Cash Value'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex))
+F1 313a1aaf 2669490 0 51b32591 0 0 2
+CVProjection Monthly EOM CV(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Before Withdrawals'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) - IF ( //Withdrawals not used in 7702 projectionçä'CalcType 7702 Is Active'(calcType) || 'CalcType Target Is Active'(calcType) ; çä  0 ; çä  'CVProjection Monthly End Of Month Withdrawals'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)çä)
+F1 51b32591 2669490 1f5dba8a 4c0dee85 0 0 2
+CVProjection Policy Has Lapsed(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Policy Lapsed'(calcType;'CVProjection Adjust Month EOM CV Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex);vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 1f5dba8a 51b32591 0 0 0 0 2
+CVProjection Adjust Month EOM CV Rec(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF (monthIndex > 1 ; çä   // Reduce month index by 1çä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex - 1) ; çä   // Reduce year index by 1 and set month index to 12çä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex - 1;12)çä)
+F1 4c0dee85 2669490 0 266a520 0 0 2
+CVProjection Start Point of Projection Period(calcType; vectorAddlInfo)
+Funktion
+IF ('SharedVector CVPROJAddlInfo IsInforceCalc'(calcType;vectorAddlInfo) ; çä   //trueçä'Policy Life CashValueAmt' ; çä   //Falseçä0çä)
+F1 266a520 2669490 266a730 762c1d0c 0 0 2
+CVProjection Total Projected Balance Plus Interest(projInterestRate; yearIndex; regularLoanBalance; preferredLoanBalance; vectorAddlInfo)
+Funktion
+IF (regularLoanBalance + preferredLoanBalance <= 0 ; çä   //trueçä0 ; çä   //FalseçäIF (yearIndex < 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) ; çä     //Trueçä0 ; çä     //FalseçäregularLoanBalance * (1 + 'CVProjection ProjCreditingIntAdjRate'(projInterestRate;yearIndex;'Constant LoanType Regular') * (.01)) ^ (1 / 12) + preferredLoanBalance * (1 + 'CVProjection ProjCreditingIntAdjRate'(projInterestRate;yearIndex;'Constant LoanType Preferred') * (.01)) ^ (1 / 12)çä  )çä)
+F1 266a730 266a520 0 0 0 0 2
+CVProjection ProjCreditingIntAdjRate(projInterestRate; yearIndex; loanType)
+Funktion
+CASE( /*crediting interest to loan rule*/ 'PI LoanProvision CreditIntAdjRateRule'('Policy ProductCode';'Policy EffDate';loanType);çä   /*unknown*/ 0 : 1;çä   /*exact rate*/ 1 : 'PI LoanProvision CreditIntAdjRate'('Policy ProductCode';'Policy EffDate';loanType);çä   /*discount from current*/ 2 : 'Policy Life CurrIntRate' - 'PI LoanProvision CreditIntAdjRate'('Policy ProductCode';'Policy EffDate';loanType);çä   /*discount from loan rate*/ 3;4 : projInterestRate - 'PI LoanProvision CreditIntAdjRate'('Policy ProductCode';'Policy EffDate';loanType);çä   /*use loan credit rate*/ 5 : projInterestRate)çä /*end case*/ 
+F1 762c1d0c 2669490 5a5f05de 54fbec52 0 0 2
+CVProjection Monthly End Of Month Cash Value Before Withdrawals(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+('CVProjection Adjusted Monthly BOM Cash Value'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) -  //Policy Loaned Amountçä'CVProjection Policy Loaned Amount'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)) * IF ( /*Is CV negative?*/ 'CVProjection Adjusted Monthly BOM Cash Value'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) < 0 && 'CVProjection Use NegCVIntRate'(calcType) ; çä   //True - Apply negative interest based on negative balance interest rate, if applicableçä'GEN Future Value Factor'('ACCS CalcRule ULCV Projection Constants'('Policy CarrierCode';'Policy ProductCode';calcType;'Policy EffDate';"negative_balance_int_rate");(1 / 12)) ; çä   //False - Apply interest based on projected interest rateçä'GEN Future Value Factor'(IF ('CalcType Rate Assumption Is Active'(calcType) ; çä    'ULDocs ProjIntRate'(calcType;yearIndex) ; çä    projInterestRateçä  );(1 / 12))çä) + 'CVProjection Policy Loaned Amount'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) +  //Interest credited on loaned amountçä'CVProjection Interest Credited on Loaned Amount'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 5a5f05de 762c1d0c 0 30f6d4c1 0 0 2
+CVProjection Policy Loaned Amount(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'ULLoan Total Projected Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex))
+F1 30f6d4c1 762c1d0c 0 370546b 0 0 2
+CVProjection Interest Credited on Loaned Amount(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Total Projected Balance Plus Interest'(projInterestRate;yearIndex;'ULLoan Projected RegularLoan Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex));'ULLoan Projected PreferredLoan Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex));vectorAddlInfo) - 'ULLoan Projected RegularLoan Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex)) - 'ULLoan Projected PreferredLoan Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex))
+F1 370546b 762c1d0c 63a3d717 0 0 0 2
+CVProjection Adjusted Monthly BOM Cash Value(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly BOM Cash Value'(calcType; //Trueçä'CVProjection Previous Monthly EOM CV Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex);vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 63a3d717 370546b 0 0 0 0 2
+CVProjection Previous Monthly EOM CV Rec(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF (monthIndex > 1 ; çä   //True - Reduce month index by 1çä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex - 1) ; çä   //False - Reduce year index by 1 and set month index to 12çä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex - 1;12)çä)
+F1 54fbec52 2669490 649c5455 394094a1 0 0 2
+CVProjection Monthly End Of Month Cash Value Rec Unrounded(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ('Calculation is for Multiple Funds' ; çä   //Trueçä'CVProjection Total CV from Vector'('CVProjection Fund End Of Month Cash Value'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)) ; çä   //FalseçäIF ( /*First month of projection period*/ 'CVProjection First Month of Projection Period'(vectorAddlInfo;yearIndex;monthIndex) ; çä     //True - At the starting point of the projectionçä'CVProjection Start Point of Projection Period'(calcType;vectorAddlInfo) ; çä     //False - need to recursively determine the EOM CVçäIF ( /*Policy lapsed already*/ 'CVProjection Policy Has Already Lapsed'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) ; çä       //True - return lapsed CV constantçä'Constant Lapsed CV' ; çä       //Falseçä'CVProjection Monthly EOM CV Before WDs Minus WDs'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)çä    )çä)çä)
+F1 649c5455 54fbec52 0 15953e14 0 0 2
+CVProjection Policy Has Already Lapsed(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Policy Lapsed'(calcType;'CVProjection Previous Monthly EOM CV Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex);vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 15953e14 54fbec52 0 0 0 0 2
+CVProjection Monthly EOM CV Before WDs Minus WDs(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Before Withdrawals'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) - 'CVProjection Monthly End Of Month Withdrawals'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 394094a1 2669490 0 3e2c04bd 0 0 2
+CVProjection Monthly End Of Month Withdrawals(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ('LTC Coverage Exists'(calcType;yearIndex) && 'LTC Include Claims'(calcType) ; çä   //Trueçä'LTC Claims CV Reduction Amount'(E_('LTC Find Indices vec'(calcType;yearIndex);0);calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex;'CVProjection Monthly End Of Month Cash Value Before Withdrawals'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)) ; çä   //Falseçä0çä)
+F1 3e2c04bd 2669490 0 0 0 0 2
+CVProjection First Month of Projection Period(vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+(('SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) = 1) && (yearIndex = 'SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo) - 1) && (monthIndex = 12)) || (('SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) > 1) && ('SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex)) && (monthIndex = 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) - 1))
+F1 266ad28 26692e8 0 0 0 0 2
+CVProjection Monthly BOM Cash Value(calcType; prev_eom_cv; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ('Calculation is for Multiple Funds' ; çä   //Trueçä'CVProjection Total CV from Vector'('CVProjection Fund Monthly BOM Cash Value'(calcType;'CVProjection Fund Previous Month End Of Month Cash Value'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex);vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)) ; çä   //Falseçäprev_eom_cv + 'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) - 'CHG Projected Monthly Total Charges'(calcType;prev_eom_cv + 'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);yearIndex;monthIndex;'SharedVector SolveParms Shorten for Charges'(vectorSolveParms)) // PA PhaseII Illustrations - subtract withdrawal stream bgn of yearçä - IF ( //Withdrawals not used in 7702 projectionçä'CalcType 7702 Is Active'(calcType) || 'CalcType Target Is Active'(calcType) ; çä    0 ; çä    IF (monthIndex = 1 ; çä       //TrueçäMIN( /* Withdrawals cannot be more than Cash Value */ MAX(prev_eom_cv;0);'CVProjection Withdrawal'(calcType;yearIndex;vectorSolveParms)) ; çä       //Falseçä0çä    )çä)çä)
+F1 266b130 2669170 266b220 266be18 0 0 2
+-- Annual Cash Value Projection Functions --
+Funktion
+
+F1 266b220 266b130 0 266ba88 0 0 2
+CVProjection Annualize EOY Cash Value Rec(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex)
+Funktion
+'GEN Round'(IF ( /*First year of projections*/ yearIndex = 'SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo) - 1 ; çä   //True - At the starting point of the projectionçäIF ('SharedVector CVPROJAddlInfo IsInforceCalc'(calcType;vectorAddlInfo) ; çä     //trueçä'Policy Life CashValueAmt' ; çä     //Falseçä0çä  ) ; çä //False - need to recursively determine the EOY CVçäIF ( /*has policy lapsed?*/ 'CVProjection Policy Lapsed'(calcType;'CVProjection Annualize EOY Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex - 1);vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;12) ; çä   //True - Return lapsed CV constant*/çä'Constant Lapsed CV' ; çä   //Falseçä'CVProjection Annualize BOY Cash Value'(calcType;'CVProjection Annualize EOY Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex - 1);vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex) * IF ( /*Is CV Negative?*/ 'CVProjection Annualize BOY Cash Value'(calcType;'CVProjection Annualize EOY Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex - 1);vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex) < 0 ; çä     //True - Apply negative interest based on negative balance interest rate, if applicableçä'GEN Future Value Factor'('ACCS CalcRule ULCV Projection Constants'('Policy CarrierCode';'Policy ProductCode';calcType;'Policy EffDate';"negative_balance_int_rate");1) ; çä     //False - Apply interest based on projected interest rateçä'GEN Future Value Factor'(projInterestRate;1)çä  )çä)çä); // Number of places to roundçä'ACCS Decimal'(calcType))
+F1 266ba88 266b130 0 266bb40 0 0 2
+CVProjection Annualize BOY Cash Value(calcType; prev_eoy_cv; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex)
+Funktion
+MAX( /* Withdrawals cannot be more than Cash Value */ 0;prev_eoy_cv + 'CVProjection Annualize Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex) - (SUMX(monthIndex;IF ( /*Start year*/ 'SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex) ; çä   /*True - then use start month to pro-rate charges*/ 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) ; çä   /*False - use a full year's charges*/ 1çä);12;'CHG Projected Monthly Total Charges'(calcType;prev_eoy_cv + 'CVProjection Annualize Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex);'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;#monthIndex);yearIndex;#monthIndex;vectorSolveParms))) // PA PhaseII Illustrations - subtract withdrawal stream bgn of yearçä - 'CVProjection Withdrawal'(calcType;yearIndex;vectorSolveParms))
+F1 266bb40 266b130 0 266bbf8 0 0 2
+CVProjection Annualize Net Premium(calcType; vectorSolveParms; vectorAddlInfo; yearIndex)
+Funktion
+SUMX(monthIndex;IF ( /* Starting year?*/ 'SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex) ; çä   /*true - Use start month*/ 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) ; çä   /*else use month 1*/ 1çä);12;'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;#monthIndex))
+F1 266bbf8 266b130 0 0 0 0 2
+CVProjection Annualize Months In Year(vectorAddlInfo; yearIndex)
+Funktion
+IF ( /*start year?*/ 'SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex) ; çä   /*True - remaining months in initial year*/ 12 - 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) + 1 ; çä   /*False - full year otherwise*/ 12çä)
+F1 266be18 2669170 266c020 266c130 0 0 2
+-- Common Projection Functions --
+Funktion
+
+F1 266c020 266be18 0 0 0 0 2
+CVProjection CSV(accum_value; calcType; yearIndex)
+Funktion
+accum_value - 'ULSC Projected Full Surrender Charge'(calcType;yearIndex;'GEN Vector Blank')
+F1 266c130 2669170 266c208 266e5a8 0 0 2
+-- Lapse Functions --
+Funktion
+
+F1 266c208 266c130 266c2c0 266d2a8 0 0 2
+CVProjection Policy Lapsed(calcType; prev_eom_cv; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /*Do we need to check for lapse?*/ 'SharedVector CVPROJAddlInfo CheckForLapse'(vectorAddlInfo) ; çä   //TrueçäIF ( /*Policy lapsed already?*/ prev_eom_cv = 'Constant Lapsed CV' ; çä     //True - Policy lapsed previouslyçä1 ; çä     //False - check if policy lapses this monthçäIF ('CVProjection CSV'('CVProjection Monthly BOM Cash Value'(calcType;prev_eom_cv;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex);calcType;yearIndex) < 0 ; çä       //True - CSV is less than 0, see if secondary guarantees keep it from lapsing.   çäIF ('CVProjection Secondary Guarantees Check'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) ; çä         //Trueçä0 ; çä         //Falseçä1çä      ) ; çä     //False - CSV is greater than 0çä0çä  )çä) ; çä //False - not checking for lapseçä0çä)
+F1 266c2c0 266c208 266c3f0 0 0 0 2
+CVProjection Secondary Guarantees Check(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection MNLP Check'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) || 'CVProjection Shadow Account Check'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)
+F1 266c3f0 266c2c0 7be50a75 266cc60 0 0 2
+CVProjection MNLP Check(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ('Std Policy Has MNLP'(calcType) && 'CVProjection In MNLP Period'(calcType;yearIndex) ; çä   //trueçäIF ( /*Is MNLP condition satisfied*/ 'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) >= 'CVProjection ITD MinPrem'(calcType;vectorAddlInfo;yearIndex;monthIndex) ; çä     //True - Cumulative premium is greater than or equal to cumulative minimum premiumçä1 ; çä     //Falseçä0çä  ) ; çä //Falseçä0çä) //IF (/*Does policy has MNLP CovOption?*/çä//âSUMX(çä//ââcoverageOptionIndex;çä//ââ0;çä//ââ'Policy Number of CovOption'(calcType; 0) - 1;çä// Add 1 if CovOption is active MNLP and cumulative premium is greater than or equal to çä// cumulative minimum premiumâçä//ââIF ('OptType Is MNLP'('Policy CovOption LifeCovOptTypeCode'(calcType; 0; #coverageOptionIndex) )çä//ââ     &&âçä//ââ     'Std CovOption Is Inforce'(calcType; 0; #coverageOptionIndex; TransEffDate; yearIndex);çä// This is an active MNLP CovOption object ââçä//âââIF (/*Is MNLP Active?*/'CVProjection In MNLP Period'(0; #coverageOptionIndex; yearIndex);çä//ââââIF (/*Is MNLP condition satisfied*/'PREMIUM Projected LTD Prem Rec'(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex) >=çä//ââââ     'CVProjection ITD MinPrem'(calcType; vectorAddlInfo; yearIndex; monthIndex);çä// Cumulative premium is greater than or equal to cumulative minimum premiumçä//âââââ1;çä//âââââ0çä//ââââ);çä// Else out of the MNLP periodçä//ââââ0çä//âââ);çä// Else not MNLPçä//âââ0çä//ââ)çä//â) > 0;çä// Policy won't lapse because of MNLPçä//â1;çä// Else not saved by MNLPçä//â0çä//)çä
+F1 7be50a75 266c3f0 266c8f0 266cb50 0 0 2
+CVProjection In MNLP Period(calcType; yearIndex)
+Funktion
+IF ('Std Policy Has MNLP covOpt'(calcType) ; çä   //Trueçä'CVProjection In CovOpt MNLP Period'(calcType;yearIndex) ; çä   //Falseçä'CVProjection In PremiumRate MNLP Period'(calcType;yearIndex)çä)
+F1 266c8f0 7be50a75 0 49356bcd 0 0 2
+CVProjection In CovOpt MNLP Period(calcType; yearIndex)
+Funktion
+'Std CovOption Is Inforce'(calcType;'Std MNLP coverageIndex'(calcType);'Std MNLP coverageOptionIndex'(calcType);TransEffDate;yearIndex) && yearIndex <= 'PIDRV CovOptionProduct NLG ExpirationDuration'(calcType;'Std MNLP coverageIndex'(calcType);'Std MNLP coverageOptionIndex'(calcType))
+F1 49356bcd 7be50a75 0 0 0 0 2
+CVProjection In PremiumRate MNLP Period(calcType; yearIndex)
+Funktion
+IF (yearIndex <= 'PIDRV PremiumRate NLG ExpirationDuration'(calcType) ; çä   //Trueçä1 ; çä   //Falseçä0çä)
+F1 266cb50 266c3f0 0 0 0 0 2
+CVProjection ITD MinPrem(calcType; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+ //Add in the cumulative minimum premium as of the recalculation date for inforce illustrationsçäIF ( /*In force calculation*/ 'SharedVector CVPROJAddlInfo IsInforceCalc'(calcType;vectorAddlInfo) ; çä   //True - Get starting point of accumulated min premiumçä'Policy Life CumMinPremAmt' ; çä   //Falseçä0çä) +  // Add in the monthly minimum premium amount multiplied by the number of months projected fromçä// the time of the projection start.  Note that this assumes that MinPremAmt will be annual.  This doesn'tçä// account for projected face changes.çä(('Policy Life MinPremAmt' / 12) * 'CVProjection Total Projected Months'(yearIndex;monthIndex;'SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo);'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo)))
+F1 266cc60 266c2c0 0 0 0 0 2
+CVProjection Shadow Account Check(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /*Does policy have Shadow Account CovOption*//*Yes*/ 'STD Policy Has Shadow Account'(calcType) && (yearIndex <= 'SHADOW CPG PlanExpirationDuration'(calcType)) && 'SHADOW Projected Shadow Account Balance'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) > 0 ; çä   //True - Policy won't lapse because CPG from a shadow account is in effectçä1 ; çä   //False - not saved by shadow accountçä0çä)
+F1 266d2a8 266c130 266d3d8 266da60 0 0 2
+CVProjection Policy Lapse Year(calcType; maxCheckYear; vectorSolveParms; vectorAddlInfo)
+Funktion
+'CVProjection Policy Lapse Year Rec'(calcType;maxCheckYear;vectorSolveParms;vectorAddlInfo;1)
+F1 266d3d8 266d2a8 27814354 0 0 0 2
+CVProjection Policy Lapse Year Rec(calcType; maxCheckYear; vectorSolveParms; vectorAddlInfo; yearIndex)
+Funktion
+IF ( /*Projection past maturity date*/ 'CVProjection Year is Greater Than Max Year to Check or Maturity Dur'(calcType;maxCheckYear;yearIndex) ; çä   // Policy does not lapseçä0 ; çä   //FalseçäIF ( /*policy lapses this year*/ 'CVProjection Policy Lapsed'(calcType; //Previous EOM CVçä'CVProjection Previous EOM CashValue'(calcType;vectorSolveParms;'ULDocs ProjIntRate'(calcType;yearIndex);vectorAddlInfo;yearIndex);vectorSolveParms;'ULDocs ProjIntRate'(calcType;yearIndex);vectorAddlInfo;yearIndex;12) ; çä     //True - This is the year it lapsesçäyearIndex ; çä     //False try the next yearçä'CVProjection Policy Lapse Year Rec'(calcType;maxCheckYear;vectorSolveParms;vectorAddlInfo;yearIndex + 1)çä  )çä)
+F1 27814354 266d3d8 0 68dac00e 0 0 2
+CVProjection Year is Greater Than Max Year to Check or Maturity Dur(calcType; maxCheckYear; yearIndex)
+Funktion
+yearIndex >= 'CVProjection Min of Max Year to Check and Maturity Duration'(calcType;maxCheckYear)
+F1 68dac00e 266d3d8 0 cc14a65 0 0 2
+CVProjection Previous EOM CashValue(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex)
+Funktion
+IF ('SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex) && 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) = 12 ; çä   //True - At the starting point of the projectionçäIF ('SharedVector CVPROJAddlInfo IsInforceCalc'(calcType;vectorAddlInfo) ; çä     //Trueçä'Policy Life CashValueAmt' ; çä     //Falseçä0çä  ) ; çä //False - not recursed back to the start yetçä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;11)çä)
+F1 cc14a65 266d3d8 0 0 0 0 2
+CVProjection Min of Max Year to Check and Maturity Duration(calcType; max_yr_to_check)
+Funktion
+MIN(max_yr_to_check;'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';0))
+F1 266da60 266c130 c3b16af 0 0 0 2
+CVProjection Policy Lapse Date(calcType; maxCheckYear; vectorAddlInfo)
+Funktion
+IF ('CVProjection Policy Does Not Lapse'(calcType;maxCheckYear;vectorAddlInfo) ; çä  'Constant Not Lapsed Date' ; çä   // Does not lapse, so return 12/31/9999çä//Falseçä'CVProjection Policy Lapse Date Rec'(calcType;maxCheckYear;'CVProjection SharedVector SolveParms MakePremium'(calcType;maxCheckYear);vectorAddlInfo;'CVProjection Policy Lapse Year Minus 1'(calcType;maxCheckYear;vectorAddlInfo);12)çä)
+F1 c3b16af 266da60 0 266dd08 0 0 2
+CVProjection SharedVector SolveParms MakePremium(calcType; maxCheckYear)
+Funktion
+'SharedVector SolveParms MakePremium'('Policy Life PaymentAmt';'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';0))
+F1 266dd08 266da60 182e76fc bed2e13 0 0 2
+CVProjection Policy Lapse Date Rec(calcType; maxCheckYear; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /*Projection year past maturity date*/ yearIndex > 'CVProjection Max Year to Check Lapse'(calcType;maxCheckYear) ; çä   //True - Policy does not lapseçä0 ; çä   //FalseçäIF ( /*Policy lapses this year?*/ 'CVProjection Policy Lapses This Year'(calcType;'CVProjection AS SolveParms MakePremium'(calcType;vectorSolveParms;yearIndex);vectorAddlInfo;yearIndex;monthIndex) ; çä     //true - This is the date it lapsesçä'Projection Eff Date'('Policy EffDate';yearIndex;monthIndex) ; çä     //False try the next yearçä'CVProjection Policy Lapse Date Rec'(calcType;maxCheckYear;'CVProjection AS SolveParms MakePremium'(calcType;vectorSolveParms;yearIndex);vectorAddlInfo;'CVProjection Advance Year'(yearIndex;monthIndex); // next month's yearçä'CVProjection Advance Month'(monthIndex) // next monthçä)çä  )çä)
+F1 182e76fc 266dd08 0 4419a8d0 0 0 2
+CVProjection AS SolveParms MakePremium(calcType; vectorSolveParms; yearIndex)
+Funktion
+IF ('CalcType Annual Statement Projections are Active'(calcType) ; çä  'CVProjection SolveParms MakePremium'(calcType;yearIndex) ; çä  vectorSolveParmsçä)
+F1 4419a8d0 266dd08 0 582cfbf1 0 0 2
+CVProjection Max Year to Check Lapse(calcType; maxCheckYear)
+Funktion
+MIN(maxCheckYear;'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';0))
+F1 582cfbf1 266dd08 4d6f3242 13f295ef 0 0 2
+CVProjection Policy Lapses This Year(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+NOT(yearIndex = 0) && 'CVProjection Policy Lapsed'(calcType;'CVProjection Prev EOM CV'(calcType;'CVProjection AS SolveParms MakePremium'(calcType;vectorSolveParms;yearIndex);vectorAddlInfo;yearIndex;monthIndex);vectorSolveParms;'ULDocs ProjIntRate'(calcType;yearIndex);vectorAddlInfo;yearIndex;monthIndex)
+F1 4d6f3242 582cfbf1 15dd8b36 0 0 0 2
+CVProjection Prev EOM CV(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ('SharedVectorCVPROJAddlInfo Year and Month Equal Start Year and Month'(vectorAddlInfo;yearIndex;monthIndex) ; çä   //True - At the starting point of the projectionçä'CVProjection Starting CashValueAmt'(calcType;vectorAddlInfo) ; çä   //False - not recursed back to the start yetçä'CVProjection Monthly EOM CV Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)çä)
+F1 15dd8b36 4d6f3242 0 53c7a3b4 0 0 2
+CVProjection Monthly EOM CV Rec(calcType; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;'ULDocs ProjIntRate'(calcType;yearIndex);vectorAddlInfo;'CVProjection Previous Year'(yearIndex;monthIndex); // prev month's yearçä'CVProjection Previous Month'(monthIndex) // prev monthçä)
+F1 53c7a3b4 4d6f3242 0 0 0 0 2
+CVProjection Starting CashValueAmt(calcType; vectorAddlInfo)
+Funktion
+IF ('SharedVector CVPROJAddlInfo IsInforceCalc'(calcType;vectorAddlInfo) ; çä   //Trueçä'Policy Life CashValueAmt' ; çä   //Falseçä0çä)
+F1 13f295ef 266dd08 0 519a93de 0 0 2
+CVProjection Previous Year(yearIndex; monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  yearIndex - 1 ; çä  yearIndexçä)
+F1 519a93de 266dd08 0 3367391c 0 0 2
+CVProjection Previous Month(monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  12 ; çä  monthIndex - 1çä)
+F1 3367391c 266dd08 0 1f119115 0 0 2
+CVProjection Advance Year(yearIndex; monthIndex)
+Funktion
+IF (monthIndex = 12 ; çä  yearIndex + 1 ; çä  yearIndexçä)
+F1 1f119115 266dd08 0 0 0 0 2
+CVProjection Advance Month(monthIndex)
+Funktion
+IF (monthIndex = 12 ; çä  1 ; çä  monthIndex + 1çä)
+F1 bed2e13 266da60 0 7b204b5d 0 0 2
+CVProjection Policy Lapse Year Minus 1(calcType; maxCheckYear; vectorAddlInfo)
+Funktion
+'CVProjection Policy Lapse Year'(calcType;maxCheckYear;'CVProjection SharedVector SolveParms MakePremium'(calcType;maxCheckYear - 1);vectorAddlInfo) - 1
+F1 7b204b5d 266da60 0 0 0 0 2
+CVProjection Policy Does Not Lapse(calcType; maxCheckYear; vectorAddlInfo)
+Funktion
+'CVProjection Policy Lapse Year'(calcType;maxCheckYear;'CVProjection SharedVector SolveParms MakePremium'(calcType;maxCheckYear);vectorAddlInfo) = 0
+F1 266e5a8 2669170 266e660 266eec8 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 266e660 266e5a8 266e780 266eb20 0 0 2
+CVProjection Guideline Exceed Year(calcType; vectorSolveParms; vectorAddlInfo; lastYearToCheck)
+Funktion
+'CVProjection Guideline Exceed Year Rec'(calcType;vectorSolveParms;V_REPLACE(vectorAddlInfo;FALSE;2); // Don't limit premiums by guidelines for this testçälastYearToCheck;1)
+F1 266e780 266e660 0 0 0 0 2
+CVProjection Guideline Exceed Year Rec(calcType; vectorSolveParms; vectorAddlInfo; lastYearToCheck; yearIndex)
+Funktion
+IF ( /*Is guideline limit exceeded?*/ 'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;12) > 'ULDocs Proj Guideline Premium Limit'(calcType;yearIndex;vectorAddlInfo) ; çä   //TrueçäyearIndex ; çä   //FalseçäIF (yearIndex >= lastYearToCheck || yearIndex >= 'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';0) ; çä     //True - Guideline limits are not exceeded in the timeframe requestedçä0 ; çä     //False - Guidelines not exceeded yet.  Try the next year.çä'CVProjection Guideline Exceed Year Rec'(calcType;vectorSolveParms;vectorAddlInfo;lastYearToCheck;yearIndex + 1)çä  )çä)
+F1 266eb20 266e5a8 0 266edd0 0 0 2
+CVProjection Total Projected Months(yearIndex; monthIndex; startYear; startMonth)
+Funktion
+((yearIndex * 12) + monthIndex) - ((startYear * 12) + startMonth) + 1
+F1 266edd0 266e5a8 0 63d9ccef 0 0 2
+CVProjection Model Name
+Funktion
+"CashValueProjections"
+F1 63d9ccef 266e5a8 0 0 0 0 2
+CVProjection Use NegCVIntRate(calcType)
+Funktion
+'ACCS CalcRule ULCV Projection Rules'('Policy CarrierCode';'Policy ProductCode';calcType;'Policy EffDate';"UseNegCVIntRate")
+F1 266eec8 2669170 266f158 266f690 0 0 2
+-- Illustration Functions --
+Funktion
+
+F1 266f158 266eec8 0 0 0 0 2
+CVProjection Withdrawal(calcType; yearIndex; vectorWdlGuess)
+Funktion
+IF ( /*Calling system is Illustrations*/ 'Std Calling System Is Illustration Based' ; çä   //TrueçäIF ( /*Is a disbursement solve required?*/ 'Illus DisbSearchGoalInd' ; çä     //True - use withdrawal guess amount in order to solve for target cash valueçä'SharedVector WdlGuess'(vectorWdlGuess;yearIndex) ; çä     //FalseçäCASE('Illus WithdrawalDesignType';çä       /* Withdrawal stream not required - return zero*/ 1000500001 : 0;çä       /* Withdrawal Amount is Net - adds partial surrender charges*/ 1000500002 : IF ('Illus WithdrawalAmt'(calcType;yearIndex) > 0 ; çä         //Trueçä'Illus WithdrawalAmt'(calcType;yearIndex) + 'ULSC Projected Partial Surrender Charge'(calcType;yearIndex) ; çä         //Falseçä0çä      );çä     /* Withdrawal Amount is Gross - uses withdrawal amount as passed in*/ 1000500003 : 'Illus WithdrawalAmt'(calcType;yearIndex);çä     /* Else return error message*/  : 'Messages SystemMessage'("ILL1003";'Message Language';v_('CVProjection Model Name';"'CVProjection Withdrawal'")))çäçä) ; çä //Falseçä0çä)
+F1 266f690 2669170 266f770 266fe90 0 0 2
+-- Vector Build Functions --
+Funktion
+
+F1 266f770 266f690 0 0 0 0 2
+CVProjection Build ULloan Vector(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex)
+Funktion
+IF (yearIndex < 'SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo) || 'SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex) ; çä   //|| 'Policy Number Of Loan' = 0;çä//True - don't calculateçä0 ; çä   //False - calculateçä//TrueçäV_('CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex - 1;12);'CHG Projected Monthly Total Charges'(calcType;'CVProjection Monthly End Of Month Cash Value Rec'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex - 1;12) + 'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex - 1;12);'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex - 1;12);yearIndex - 1;12;vectorSolveParms);vectorSolveParms;vectorAddlInfo)çä)
+F1 266fe90 2669170 64e13229 7692759f 0 0 2
+-- Default functions --
+Funktion
+
+F1 64e13229 266fe90 0 cae2375 0 0 2
+--Vector ULCD CVProj Parms(calcType)
+Funktion
+0
+F1 cae2375 266fe90 0 5437206 0 0 2
+--ULDocs SolveParms Default vectorSolveParms(calcType; yearIndex)
+Funktion
+0
+F1 5437206 266fe90 0 5bcf833e 0 0 2
+--ULDocs ProjIntRate(calcType; yearIndex)
+Funktion
+0
+F1 5bcf833e 266fe90 0 69a38e77 0 0 2
+--ULDocs ProjFundIntRate Vector(calcType; yearIndex)
+Funktion
+0
+F1 69a38e77 266fe90 0 0 0 0 2
+--ULDocs Proj Guideline Premium Limit(calcType; yearIndex; vectorAddlInfo)
+Funktion
+MAX('Policy LifeUSA CumGuidelineAnnPrem'; 'Policy LifeUSA GuidelineSinglePrem')
+F1 7692759f 2669170 627dec6a 7eec6f55 0 0 2
+-- Monthly Vector Fund Cash Value Projection Functons ---
+Funktion
+
+F1 627dec6a 7692759f 298cab5d 4a60c619 0 0 2
+--Supporting Functions--
+Funktion
+
+F1 298cab5d 627dec6a 0 53645b4 0 0 2
+CVProjection Constant Lapsed CV Vector
+Funktion
+V_REPLACE('CVProjection Vector SubAccount Zero';'Constant Lapsed CV';0)
+F1 53645b4 627dec6a 0 32da298d 0 0 2
+CVProjection First Month Of Period(vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+(('SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) = 1) && (yearIndex = 'SharedVector CVPROJAddlInfo StartYear'(vectorAddlInfo) - 1) && (monthIndex = 12)) || (('SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) > 1) && ('SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex)) && (monthIndex = 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo) - 1))
+F1 32da298d 627dec6a 0 11d786ca 0 0 2
+CVProjection Policy Lapsed for Funds(calcType; vectorFundCV; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+NOT(('SharedVectorCVPROJAddlInfo Year Equals StartYear'(vectorAddlInfo;yearIndex)) && (monthIndex = 'SharedVector CVPROJAddlInfo StartMonth'(vectorAddlInfo))) && 'CVProjection Policy Lapsed'(calcType;'GEN Vector SumElements'(vectorFundCV;V_LENGTH(vectorFundCV)); //Total prev CVçävectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 11d786ca 627dec6a 0 49d50704 0 0 2
+CVProjection PreviousYear vectorAddlInfo(vectorAddlInfo)
+Funktion
+V_REPLACE(vectorAddlInfo;'CVProjection Vector removeLastElement'(E_(vectorAddlInfo;3));3)
+F1 49d50704 627dec6a 4334d05b 19e1ac19 0 0 2
+CVProjection PreviousYear vectorSolveParms(vectorSolveParms)
+Funktion
+V_REPLACE(vectorSolveParms;'CVProjection Vector removeLastElement'(E_(vectorSolveParms;0));0)
+F1 4334d05b 49d50704 0 0 0 0 2
+CVProjection Vector removeLastElement(vectorParms)
+Funktion
+IF (V_LENGTH(vectorParms) > 1 ; çä   //TrueçäV_ELEMENTS(vectorParms;0;MAX(V_LENGTH(vectorParms) - 1;0)) ; çä   //FalseçävectorParmsçä)
+F1 19e1ac19 627dec6a 0 527273c8 0 0 2
+CVProjection Total CV from Vector(vectorFundCV)
+Funktion
+'GEN Vector SumElements'(vectorFundCV;V_LENGTH(vectorFundCV))
+F1 527273c8 627dec6a 0 7f44fd4 0 0 2
+CVProjection Vector SubAccount StartValue(calcType; vectorAddlInfo)
+Funktion
+IF ('SharedVector CVPROJAddlInfo IsInforceCalc'(calcType;vectorAddlInfo) ; çä   //TrueçäV_INSERT(VECTORX(fundidx;0;'Policy Number of SubAccount' - 1;'Policy SubAccount TotValue'(#fundidx));0;'Policy Number of SubAccount') ; çä   //FalseçäVECTORX(fundidx;0;'Policy Number of SubAccount';0)çä)
+F1 7f44fd4 627dec6a 0 0 0 0 2
+CVProjection Vector SubAccount Zero
+Funktion
+VECTORX(fundidx;0;'Policy Number of SubAccount';0)
+F1 4a60c619 7692759f 68416a29 7037030f 0 0 2
+-- Fund deductions --
+Funktion
+
+F1 68416a29 4a60c619 71c8bc50 5c7902ae 0 0 2
+CVProjection Fund Loan Vector(calcType; vectorFundCV; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+VECTORX(fundIx;0;'Policy Number of SubAccount';-'CVProjection Fund Loan'(calcType;#fundIx;vectorFundCV;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex))
+F1 71c8bc50 68416a29 0 0 0 0 2
+CVProjection Fund Loan(calcType; fundIndex; vectorFundCV; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Deductions Split'( /*loan amount*/ 'ULLoan Total Projected Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex)) - 'CVProjection Total Projected Balance Plus Interest'(projInterestRate;yearIndex;'ULLoan Projected RegularLoan Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex));'ULLoan Projected PreferredLoan Balance'(calcType;yearIndex;'CVProjection Build ULloan Vector'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex));vectorAddlInfo); /*total investment value available*/ 'CVProjection Total CV from Vector'('CVProjection Fund Monthly BOM Cash Value'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)); /*loan allocation rule*/ 'Illus LoanAllocation'(yearIndex); /*specified fund for loan allocation (if relevant)*/ 'Illus LoanAllocation SpecifiedFund'(yearIndex); /*weights vector*/ 'SharedVector MultipleFunds Fund Cash Values excl Grace'('CVProjection Fund Monthly BOM Cash Value'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)); /*current fund index*/ fundIndex)
+F1 5c7902ae 4a60c619 68783686 1c565ca6 0 0 2
+CVProjection Fund Monthly Total Charges Vector(calcType; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+VECTORX(fundIx;0;'Policy Number of SubAccount';-'CVProjection Fund Monthly Total Charges'(calcType;#fundIx;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex))
+F1 68783686 5c7902ae 0 1165f725 0 0 2
+CVProjection Fund Monthly Total Charges(calcType;fundIndex; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Deductions Split'( /*deduction amount*/ 'CHG Projected Monthly Total Charges'(calcType;'CVProjection Total CV from Vector'(vectorFundCV) + 'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);yearIndex;monthIndex;vectorSolveParms); /*total investment value available - BOM*/ 'CVProjection Total CV from Vector'(vectorFundCV) + 'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex); /*charge allocation rule*/ 'Policy Investment PolicyChargeAllocation'; /*specified fund for charge allocation (if relevant)*/ 'Policy Investment PolicyChargeAllocation SpecifiedFund'; /*weights vector*/ 'SharedVector MultipleFunds Fund Cash Values excl Grace'(vectorFundCV + 'CVProjection Fund Net Premium Vector'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)); /*current fund index*/ fundIndex)
+F1 1165f725 5c7902ae 6cc732b5 0 0 0 2
+CVProjection Fund Average Charge(calcType; vectorFundCV; vectorSolveParms; projInterestRate;  vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ('Expense Average is Arithmetic' ; çä  'CVProjection Fund Arithmetic Average Charge'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) ; çä  IF ('Expense Average is Weighted' ; çä    'CVProjection Fund Weighted Average Charge'(calcType;vectorFundCV;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) ; çä    'Messages SystemMessage'("ILL1012";'Message Language';v_('CVProjection Model Name';"CVProjection Fund Average Charge"))çä  )çä)
+F1 6cc732b5 1165f725 0 4d6fb90b 0 0 2
+CVProjection Fund Weighted Average Charge(calcType; vectorFundCV; vectorSolveParms; projInterestRate;  vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+SUMX(fundIx;0;'Policy Number of SubAccount' - 1;'CVProjection Fund Monthly Total Charges'(calcType;#fundIx;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) * 'SharedVector MultipleFunds Fund Cash Value'(vectorFundCV;#fundIx)) / SUMX(fundIx;0;'Policy Number of SubAccount' - 1;'SharedVector MultipleFunds Fund Cash Value'(vectorFundCV;#fundIx)) /*çä'CVProjection Fund Previous Month End Of Month Cash Value'(calcType; vectorSolveParms; projInterestRate;  vectorAddlInfo; yearIndex; monthIndex)çää*/ 
+F1 4d6fb90b 1165f725 0 373b783c 0 0 2
+CVProjection Fund Weighted Average ChargeA(calcType; vectorFundCV; vectorSolveParms; projInterestRate;  vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+SUMX(fundIx;0;'Policy Number of SubAccount' - 1;'CVProjection Fund Monthly Total Charges'(calcType;#fundIx;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) * 'SharedVector MultipleFunds Fund Cash Value'(vectorFundCV;#fundIndex))
+F1 373b783c 1165f725 0 5abf74d7 0 0 2
+CVProjection Fund Weighted Average ChargeB(calcType; vectorFundCV; vectorSolveParms; projInterestRate;  vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+SUMX(fundIx;0;'Policy Number of SubAccount' - 1;'SharedVector MultipleFunds Fund Cash Value'(vectorFundCV;#fundIx)) /*çä'CVProjection Fund Previous Month End Of Month Cash Value'(calcType; vectorSolveParms; projInterestRate;  vectorAddlInfo; yearIndex; monthIndex)çää*/ 
+F1 5abf74d7 1165f725 0 0 0 0 2
+CVProjection Fund Arithmetic Average Charge(calcType; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+SUMX(fundIx;0;'Policy Number of SubAccount' - 1;'CVProjection Fund Monthly Total Charges'(calcType;#fundIx;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)) / ('Policy Number of SubAccount')
+F1 1c565ca6 4a60c619 996c97b 0 0 0 2
+CVProjection Fund Withdrawals Vector(calcType; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+VECTORX(fundIx;0;'Policy Number of SubAccount';-'CVProjection Fund Withdrawals'(calcType;#fundIx;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex))
+F1 996c97b 1c565ca6 0 0 0 0 2
+CVProjection Fund Withdrawals(calcType;fundIndex; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Deductions Split'( /*surrender charge amount*/ MIN( /* Withdrawals cannot be more than Cash Value */ MAX('CVProjection Total CV from Vector'(vectorFundCV);0);'CVProjection Withdrawal'(calcType;yearIndex;vectorSolveParms)); /*total investment value available - BOY*/ 'CVProjection Total CV from Vector'(vectorFundCV) + 'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) - 'CHG Projected Monthly Total Charges'(calcType;'CVProjection Total CV from Vector'(vectorFundCV) + 'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);yearIndex;monthIndex;vectorSolveParms); /*withdrawal allocation rule*/ 'Illus WithdrawalAllocation'; /*specified fund for withdrawal allocation (if relevant)*/ 'Illus WithdrawalAllocation SpecifiedFund'; /*weights vector*/ 'SharedVector MultipleFunds Fund Cash Values excl Grace'(vectorFundCV); /*current fund index*/ fundIndex)
+F1 7037030f 7692759f 2f454414 74b77dd 0 0 2
+CVProjection Fund End Of Month Cash Value(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Fund Monthly End Of Month Cash Value Rec'(calcType;'CVProjection Fund Previous Month End Of Month Cash Value'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex);vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 2f454414 7037030f 380ed245 55c0f842 0 0 2
+CVProjection Fund Monthly End Of Month Cash Value Rec(calcType; vectorFundCV; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( /*First month of projection period*/ 'CVProjection First Month Of Period'(vectorAddlInfo;yearIndex;monthIndex) ; çä   //True - At the starting point of the projectionçä'CVProjection Vector SubAccount StartValue'(calcType;vectorAddlInfo) ; çä   //False - need to recursively determine the EOM CVçäIF ( /*Policy lapsed already*/ 'CVProjection Policy Lapsed for Funds'(calcType;vectorFundCV;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) ; çä     //True - return lapsed CV constantçä'CVProjection Constant Lapsed CV Vector' ; çä     //Falseçä'GEN Vector Round'('CVProjection Fund Monthly EOM Cash Value before Interest'(calcType;vectorFundCV;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex) + 'CVProjection Fund Monthly Interest Vector'(calcType;vectorFundCV;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex);'ACCS Decimal'(calcType))çä  )çä)
+F1 380ed245 2f454414 0 27b6541e 0 0 2
+CVProjection Fund Monthly EOM Cash Value before Interest(calcType; vectorFundCV; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'CVProjection Fund Monthly BOM Cash Value'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) //Fund Loaned Amount & Interest credited on fund loaned amountçä//note this vector contains negative values çä + 'CVProjection Fund Loan Vector'(calcType;vectorFundCV;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex)
+F1 27b6541e 2f454414 53dd7df4 5a8be7d2 0 0 2
+CVProjection Fund Monthly Interest Vector(calcType; vectorFundCV; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+VECTORX(fundIx;0;'Policy Number of SubAccount';'CVProjection Fund Monthly Interest'(calcType;#fundIx;vectorFundCV;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex))
+F1 53dd7df4 27b6541e 6a7a1475 0 0 0 2
+CVProjection Fund Monthly Interest(calcType; fundIndex; vectorFundCV; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'SharedVector MultipleFunds Fund Cash Value'('CVProjection Fund Monthly BOM Cash Value'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);fundIndex) * (IF ( /*Is CV negative, or for Grace Fund*/ fundIndex = 'Std Grace fundIndex' || 'SharedVector MultipleFunds Fund Cash Value'('CVProjection Fund Monthly BOM Cash Value'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);fundIndex) < 0 ; çä   //True - Apply negative interest based on negative balance interest rate, if applicableçä'GEN Future Value Factor'('ACCS CalcRule ULCV Projection Constants'('Policy CarrierCode';'Policy ProductCode';calcType;'Policy EffDate';"negative_balance_int_rate");(1 / 12)) ; çä   //False - Apply interest based on projected interest rateçä'CVProjection Projected Interest Rate'(calcType;fundIndex;projInterestRate;yearIndex)çä) - 1)
+F1 6a7a1475 53dd7df4 3bf611ca 0 0 0 2
+CVProjection Projected Interest Rate(calcType; fundIndex; projInterestRate; yearIndex)
+Funktion
+'GEN Future Value Factor'(IF ('CalcType Rate Assumption Is Active'(calcType) ; çä  IF ('CVProjection Multiple Funds and Current CalcType Active'(calcType) ; çä     //TrueçäIF ('CalcType Annual Statement Projections are Active'(calcType) ; çä      'CVProjection Weighted Average Fund Interest Rates'(calcType;yearIndex) ; çä       //weighted average of fundsçä'SharedVector MultipleFunds IntRate'('ULDocs ProjFundIntRate Vector'(calcType;yearIndex);fundIndex)çä    ) ; çä   //Falseçä'ULDocs ProjIntRate'(calcType;yearIndex)çä) ; çäIF ('CVProjection Multiple Funds and Current CalcType Active'(calcType) ; çä //TrueçäIF ('CalcType Annual Statement Projections are Active'(calcType) ; çä  'CVProjection Weighted Average Fund Interest Rates'(calcType;yearIndex) ; çä   //weighted average of fundsçä'SharedVector MultipleFunds IntRate'(projInterestRate;fundIndex)çä) ; çä //FalseçäprojInterestRateçä)çä);(1 / 12))
+F1 3bf611ca 6a7a1475 0 7fcb918e 0 0 2
+CVProjection Weighted Average Fund Interest Rates(calcType; yearIndex)
+Funktion
+SUMX(fundIx;0;'Policy Number of SubAccount' - 1;'ULDocs ProjFundIntRate'(calcType;#fundIx;yearIndex) * 'Policy SubAccount AllocPercent'(#fundIx) / 100)
+F1 7fcb918e 6a7a1475 0 0 0 0 2
+CVProjection Multiple Funds and Current CalcType Active(calcType)
+Funktion
+'Calculation is for Multiple Funds' && 'CalcType Current Is Active'(calcType) //calcType ALIKE 'CalcType Current'(calcType)ä
+F1 5a8be7d2 2f454414 0 0 0 0 2
+CVProjection Fund Monthly BOM Cash Value(calcType; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+vectorFundCV + 'CVProjection Fund Net Premium Vector'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) //note this vector contains negative values çä + 'CVProjection Fund Monthly Total Charges Vector'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) //PA PhaseII Illustrations - subtract withdrawal stream bgn of yearçä + IF (monthIndex = 1 ; çä   //True - note this vector contains negative values çä'CVProjection Fund Withdrawals Vector'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) ; çä   //Falseçä'CVProjection Vector SubAccount Zero'çä)
+F1 55c0f842 7037030f 0 0 0 0 2
+CVProjection Fund Previous Month End Of Month Cash Value(calcType; vectorSolveParms; projInterestRate;  vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF ( //First month of projection periodçä'CVProjection First Month Of Period'(vectorAddlInfo;yearIndex;monthIndex) ; çä   //True- At the starting point of the projectionçä'CVProjection Vector SubAccount StartValue'(calcType;vectorAddlInfo) ; çä   //FalseçäIF (monthIndex > 1 ; çä     //True - Reduce month index by 1çä'CVProjection Fund End Of Month Cash Value'(calcType;vectorSolveParms;projInterestRate;vectorAddlInfo;yearIndex;monthIndex - 1) ; çä     //False - Reduce year index by 1 and set month index to 12çä'CVProjection Fund End Of Month Cash Value'(calcType;vectorSolveParms; //'CVProjection PreviousYear vectorSolveParms'(vectorSolveParms); çäprojInterestRate;vectorAddlInfo; //'CVProjection PreviousYear vectorAddlInfo'(vectorAddlInfo); çäyearIndex - 1;12)çä  )çä)
+F1 74b77dd 7692759f 1801fdc2 0 0 0 2
+CVProjection Fund Net Premium Vector(calcType; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+VECTORX(fundIx;0;'Policy Number of SubAccount';'CVProjection Fund Net Premium'(calcType;#fundIx;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex))
+F1 1801fdc2 74b77dd 7a1b519 0 0 0 2
+CVProjection Fund Net Premium(calcType; fundIndex; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+IF (fundIndex = 'Std Grace fundIndex' ; çä   //Trueçä'CVProjection Policy Fund Net Premium to Grace Fund'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) ; çä   //Falseçä('PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) - 'CVProjection Policy Fund Net Premium to Grace Fund'(calcType;vectorFundCV;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex)) * 0.01 * 'Policy SubAccount AllocPercent'(fundIndex)çä)
+F1 7a1b519 1801fdc2 0 0 0 0 2
+CVProjection Policy Fund Net Premium to Grace Fund(calcType; vectorFundCV; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+MIN(-'SharedVector MultipleFunds GraceFund Cash Value'(vectorFundCV);'PREMIUM Projected Net Premium'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex))
+F1 7eec6f55 2669170 6db1a686 0 0 0 2
+-- Release Functions --
+Funktion
+
+F1 6db1a686 7eec6f55 0 0 0 0 2
+CVProjection Deductions Split(deduction; investmentValue; allocationType; specifiedFund; bucketVector; fundIndex)
+Funktion
+IF (deduction <= 0 ; çä   //Trueçä0 ; çä   //FalseçäIF ( /*this is the grace fund*/ fundIndex = 'Std Grace fundIndex' ; çä     //True - return the excess deduction over the available investment value, if anyçäMAX(deduction - investmentValue;0) ; çä     //False - return the deduction amount allocated to the fundçäIF ( /*deduction allocated to a specific fund*/ 'Allocation is Specified Fund'(allocationType) ; çä       //True - return the fund deduction amountçäIF ( /*current fund is the specified for the deduction*/ fundIndex = specifiedFund ; çä         //True - return the minimum of the fund value or the deduction amountçäMIN(deduction;E_(bucketVector;specifiedFund)) ; çä         //False - if deduction amount exceeds specified fund's valueçäIF (deduction > E_(bucketVector;specifiedFund) ; çä           //True - split remainder pro-rata over other fundsçä'GEN OrderedReleaseAmt ProRata'(deduction - E_(bucketVector;specifiedFund);fundIndex;v_REPLACE(bucketVector;specifiedFund;0)) ; çä           //False - return 0çä0çä        )çä    ) ; çä   //FalseçäIF ( /*deduction allocated pro-rata*/ 'Allocation is Proportional'(allocationType) || 'Allocation is Percentage in Account'(allocationType) ; çä     //True - return the fund deduction amountçä'GEN OrderedReleaseAmt ProRata'(deduction;fundIndex;bucketVector) ; çä     //False - return 0çä0çä  )çä)çä)çä)
+A0 26603fc 0 0 0 0 0 0
+
+T0 266046c 0 0 0 0 0 0
+
+I0 26604dc 0 f9486a8 0 0 0 0
+
+I0 f9486a8 26604dc 0 128d3f16 0 0 0
+ShadowAccounts.pms
+I0 128d3f16 26604dc 0 39823378 0 0 0
+ULLoans.pms
+I0 39823378 26604dc 0 0 0 0 0
+LongTermCareCalcs.pms
+-
+O0
+E0
+L0
+B0
+P2
+2668280
+2669018
+F50
+3979d1b0
+2669170
+26692e8
+63ac1f8a
+2669490
+2d356a44
+313a1aaf
+51b32591
+4c0dee85
+266a520
+266a730
+762c1d0c
+54fbec52
+394094a1
+3e2c04bd
+266ad28
+266b130
+266b220
+266ba88
+266bb40
+266bbf8
+266be18
+266c020
+266c130
+266c208
+266c2c0
+266c3f0
+7be50a75
+266cb50
+266cc60
+266d2a8
+266d3d8
+266da60
+c3b16af
+266dd08
+bed2e13
+7b204b5d
+266e5a8
+266e660
+266e780
+266eb20
+266edd0
+63d9ccef
+266eec8
+266f158
+266f690
+266f770
+266fe90
+7692759f
+7eec6f55
+A0
+T0
+!101
+2668280 12 -1
+Modification Log:çä02/01/2010 DT pA1001 changed output name to OUTPUT Audit History Block
+63ac1f8a -2 -2
+Description:  Function calls end of month cash value just like OUTPUT, used for death benefit option changesçä çäModifications log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä09/06/2011 - pA1101 - cleanup - BT - add rounding functionçä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - change make premiumçä07/28/2011 - PAC024 Annual Statement - BT - add yearIndex to AS Premium Amountçä07/12/2011 - PAC024 Annual Statement - BT - replace Policy Life PaymentAmt with AS Premium Amountçä01/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/21/2010 pA Performance CMC removed yearIndex as a parm on the ULCD CVProj Parms vectorçä05/20/2010 pA Performance CMC added yearIndex as a parm on the ULCD CVProj Parms vectorçä11/06/2009 - PA1001 - NT - performance - remove yearIndex parm from CVProj Parmsçä02/18/2009 CMC Change in the name of the rounding number of decimals function to be less product line specific.çä12/03/2008 CSC initial function
+10da8634 -2 -2
+Description:  Returns a vector of premium and durationçä çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - move the function to CVProjection model
+2669490 -2 -2
+Description:  Returns the projected cash value for the given year and month.çä çäModification Log:çä09/06/2011 - pA1101 - cleanup - BT - add rounding functionçä01/13/2011 - PAC013 calcType - BT - Restructureçä01/12/2011 - PAC013 calcType - BT - Restructureçä01/29/2010 - Performancd pa1001 CMC withdrawals not used in target or 7702 calcs.  Used shorted solveparms vector to only pass items that are necessary for charge calculations.çä11/16/2009 - PAC002 - JL - reverse 11/10/2009 changeçä11/10/2009 - PAC002 - JL - moved unrounded function to seperate function, as needed for solves fro AMIçä11/2009/2009 - PAC001 - wdp - Moved withdrawals to subfunctionçä10/27/2009 - PAC001 - wdp - Moved actual CV Calc to subfunctionçä10/26/2009 - PAC09 - JL - Allow for Multiple Fundsçä09/21/2009 - PAC001 - wdp - Renamed LTC CV Adjustment function namesçä09/02/2009 - PAC001 - wdp - Added LTC CV Adjustment to functionçä01/07/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+2d356a44 -2 -2
+çä01/13/2011 - PAC013 calcType - BT - Restructure
+313a1aaf -2 -2
+çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/13/2011 - PAC013 calcType - BT - Restructure
+51b32591 -2 -2
+çä02/02/2011 - PAC013 calctype - BT - simplifyçä01/19/2011 - PAC013 calcType - BT - Restructureçä01/13/2011 - PAC013 calcType - BT - Restructure
+1f5dba8a -2 -2
+çä02/02/2011 - PAC013 calctype - BT - added
+4c0dee85 -2 -2
+çä01/13/2011 - PAC013 calcType - BT - Restructure
+266a520 -2 -2
+Modifications log:çä09/02/2011 pA1975 CMC Added Logic for preferred and regular loans with diferent credited rates.çä08/25/2011 pA1975 CMC adjusted rate to be monthly vs. Annual.çä01/07/2009 DT pA1001 cleaned up functionçä11/21/2008 CSC do not look up rate if loanBalance is zero
+266a730 -2 -2
+Description:  Returns the projected guaranteed interest rate by productçä çä çä çäModification Log:çä çä09/02/2011 pA1975 CMC updates to LoanProvision PI functionsçä01/07/2009 DT pA1001 cleaned up functionçä10/27/2008 CSC Initial Calculation/Ruleçä05/12/2008 TB: TABLE LoanProvision CreditIntAdjRateRule does not support varying effective datesçäâââââââPrevious code: DATE('Policy EffDate';â0;â0;âyearIndex);çäâââââââCurrent Code: 'Policy EffDate'çä
+762c1d0c -2 -2
+Description:  Returns the projected cash value for the given year and month before any withdrawalsçä çäModification Log:çä09/02/2011 pA1975 CMC Changed timing of interest on loaned amountsçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/28/2011 - PAC017 FINRA Rule 2211 - modified the multiple fund conditioning.çä02/18/2011 A11429  CMC added check Negative Interest rate usage.çä01/14/2011 - PAC013 calcType - BT - Restructureçä10/27/2009 - PAC001 - wdp - CSC Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up functionçä
+5a5f05de -2 -2
+çä çäModification Log:çä09/02/2011 pA1975 CMC updated for change to build ULloan vector functionçä01/14/2011 - PAC013 calcType - BT - Restructure
+30f6d4c1 -2 -2
+çäModification Log:çä09/02/2011 pA1975 CMC updated for change to build ULloan vector function and altered to be just interest credited on loaned amountsçä01/14/2011 - PAC013 calcType - BT - Restructure
+370546b -2 -2
+çä01/19/2011 - PAC013 calcType - BT - Restructureçä01/14/2011 - PAC013 calcType - BT - Restructure
+63a3d717 -2 -2
+çä01/19/2011 - PAC013 calcType - BT - Restructure
+54fbec52 -2 -2
+Description:  Returns the projected cash value for the given year and month.çä çäModification Log:çä02/2009/2011 - PAC013 calcType - BT - Restructureçä01/19/2011 - PAC013 calcType - BT - Restructureçä11/10/2009 - PAC002 - JL - moved unrounded function to seperate function, as needed for solves fro AMIçä11/2009/2009 - PAC001 - wdp - Moved withdrawals to subfunctionçä10/27/2009 - PAC001 - wdp - Moved actual CV Calc to subfunctionçä10/26/2009 - PAC09 - JL - Allow for Multiple Fundsçä09/21/2009 - PAC001 - wdp - Renamed LTC CV Adjustment function namesçä09/02/2009 - PAC001 - wdp - Added LTC CV Adjustment to functionçä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+649c5455 -2 -2
+çä01/19/2011 - PAC013 calcType - BT - Restructure
+15953e14 -2 -2
+çä02/2009/2011 - PAC013 calcType - BT - Restructure
+394094a1 -2 -2
+Description:  Returns the end of month withdrawalsçäNote: This is a good place to add any other withdrawals in the future.çä çäModification Log:çä11/27/2012 - SCARAB PA2216 - JL - Remove additional ; after CV parm so that model compilesçä11/26/2012 pA1301 CMC Delivery Compile Prep.  Pass cash value as a parmçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/2009/2009 - PAC001 - wdp - CSC Initial Calculation/Ruleçä
+3e2c04bd -2 -2
+çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä01/13/2011 - PAC013 calcType - BT - Restructure
+266ad28 -2 -2
+Description:  Returns the projected beginning of month cash value for the given year and month.çä çäModification Log:çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/29/2010 Performancd pa1001 CMC withdrawals not used in target or 7702 calcs.çä10/26/2009 - PAC09 - JL - Allow for Multiple Fundsçä10/26/2009 - PAC009 - JL - Remove unnecessary "rateAssumption" parmçä01/08/2009 DT pA1001 cleaned up functionçä02/15/2008 LP - PhaseII Illustrations Calculationsçä10/31/2007 CSC Initial Calculation/Ruleçä çä çä
+266b220 -2 -2
+Description:  Returns the projected cash value for the given year and month.çä çäModification Log:çä09/06/2011 - pA1101 - cleanup - BT - add rounding functionçä02/18/2009 CMC Change in the name of the rounding number of decimals function to be less product line specific.çä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+266ba88 -2 -2
+Description:  Returns the projected beginning of month cash value for the given year and month.çä çäModification Log:çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/08/2009 DT pA1001 cleaned up functionçä02/15/2008 LP - PhaseII Illustrations Calculationsçä10/31/2007 CSC Initial Calculation/Ruleçä
+266bb40 -2 -2
+Description:  Returns the annualized net premium for the year.çä çäModification Log:çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+266bbf8 -2 -2
+Description:  Returns the number of months included in the current projection year.çä çäModification Log:çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+266c020 -2 -2
+Description:  Returns the cash surrender value.çä çäModification Log:çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+266c208 -2 -2
+Description:  Returns True (i.e. 1) if the policy either was already lapsed, or lapses in this month.çä çäModification Log:çä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+266c2c0 -2 -2
+Description:  Returns True if a secondary death benefit guarantee is in effect.çä çäModification Log:çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä11/23/2009 nbA Integration modified to use the new no lapse provision checking.çä10/31/2007 CSC Initial Calculation/Rule
+266c3f0 -2 -2
+Description:  Returns True (i.e. 1) if the policy includes a MNLP period and is still within the no-lapse period and the cumulative no lapse premiums are less than or equal to the cumulative premiums paid. çäAssumption:  A CovOption object will be included under the initial Coverage object with a LifeCovOptTypeCode of 9 to indicate that the MNLP is includedçä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/2009 nbA Integration modified to use the new no lapse provision checkingçä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+7be50a75 -2 -2
+Description:  Checks for the existence of No lapse protection under a coverage option and then if that does not exist uses the information from product defintion.çäReturns a 1 if the No lpase protection period is active.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/2009 CSC Initial Calculation/Rule
+266c8f0 -2 -2
+Description:  Returns True (i.e. 1) if the policy is still within the minimum no lapse period defined by the no lapse premium coverage option.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/2009 nbA Integration CMC Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up function
+49356bcd -2 -2
+Description:  Returns True (i.e. 1) if the policy is still within the minimum no lapse period defined by the Premium Rate object in product definition.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/2009 nbA Integration CMC Initial Calculation/Rule
+266cb50 -2 -2
+Description:  Returns the life to date accumulated minimum premium.çä çäModification Log:çä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+266cc60 -2 -2
+Description:  Returns True (i.e. 1) if the policy includes a shadow account and is still within the coverage guarantee period and the shadow account value is greater than or equal to the loan balance.çäAssumption:  A CovOption object will be included under the initial Coverage object with a LifeCovOptTypeCode of 1000500001 to indicate that the shadow account is included.çä çäModification Log:çä01/26/2011 - PAC013 CMC updated method for checking for shadow accountçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+266d2a8 -2 -2
+Description:  Returns the year in which the policy lapses.çä çäModification Log:çä01/27/2011 - PAC017 - VM - removed the projected interest parm and substituted with 'ULDocs ProjIntRate' in a referenced function.çä10/31/2007 CSC Initial Calculation/Rule
+266d3d8 -2 -2
+Description:  Returns the year in which the policy lapses.çä çäModification Log:çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - change min/max functionçä02/02/2011 - PAC013 calctype - BT - simplifyçä01/27/2011 - PAC017 - VM - removed the projected interest parm and substituted with 'ULDocs ProjIntRate'.çä01/19/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+27814354 -2 -2
+Description:  Returns a 1 if year greater than maxCheckYear and MaturityDurçä çäModification Log:çä09/13/2011 - pA1101 - PAC024 Annual Statement - BT - don't check for lapse during maturity yearçä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+68dac00e -2 -2
+çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä01/19/2011 - PAC013 calcType - BT - Restructure
+cc14a65 -2 -2
+çä01/19/2011 - PAC013 calcType - BT - Restructure
+266da60 -2 -2
+Description:  Returns the date in which the policy lapses.çä çäModification Log:çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - condense functionsçä07/29/2011 - pA1101 - BT - PAC024 Annual Statement - added Constant Not Lapsed Dateçä01/27/2011 - PAC017 - VM - removed the projected interest parm and substituted with 'ULDocs ProjIntRate' in a referenced function.çä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007   CSC  Initial Calculation/Rule
+c3b16af -2 -2
+Description: Returns maturity duration and premium in vector formatçä çäModification Log:çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - change payment amountçä08/03/2011 - pA1101 - PAC024 - Annual Statement - BT - add initial function
+266dd08 -2 -2
+Description:  Recursive function which returns the date in which the policy lapses.çä çäModification Log:çä09/06/2011 - pA1101 - PAC024 Annual Statement - cleanup - BT - add advance year and month function08/25/2011 - pA1101 - BT - PAC024 Annual Statement - add advance year and monthçä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - condense functions & add AS SolveParms MakePremçä02/2009/2011 - PAC013 calcType - BT - Restructureçä01/27/2011 - PAC017 - VM - removed the projected interest parm and substituted with 'ULDocs ProjIntRate'.çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/28/2010 nbA Integration CMC added check for yearIndex = 0 for 1st year lapse.çä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007   CSC  Initial Calculation/Ruleçä
+182e76fc -2 -2
+Description: Returns Annual Statement premium and year vectorçä çäModification Log:çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - add AS restriction
+4419a8d0 -2 -2
+Description:  Returns minimum of maxCheckYear and policy maturity durationçä çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+582cfbf1 -2 -2
+Description:  Returns a 1 if the policy lapses in yearIndexçä çäModification Log:çä09/06/2011 - pA1101 - cleanup - BT - add AS Make Premçä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - change eom cv functionçä08/17/2011 - Cleanup - BT - CVProjection Prev EOM CVçä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä02/2009/2011 - PAC013 calcType - BT - Restructure
+4d6f3242 -2 -2
+Description:  If at start year and month return initial end of month cash valueçä çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+15dd8b36 -2 -2
+Description:  Monthly End of Month Cash Valueçä çäModifiction Log:çä09/06/2011 - pA1101 - PAC024 Annual Statement - BT - add previous year and month functionsçä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+53c7a3b4 -2 -2
+Description:  If policy is inforce, return cash value amount from inputçä çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+13f295ef -2 -2
+Description:  Returns the previous yearçä çäModification Log:çä09/06/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+519a93de -2 -2
+Description:  Returns the previous monthçä çäModification Log:çä09/06/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+3367391c -2 -2
+Description:  Advances the yearIndex forward one yearçä çäModification Log:çä09/06/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+1f119115 -2 -2
+Description:  Advances the monthIndex forward one monthçä çäModification Log:çä09/06/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+bed2e13 -2 -2
+Description:  Returns the year before the policy lapsesçä çäModification Log:çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - change make premium functionçä08/03/2011 - pA1101 - PAC024 - Annual Statement - BT - reuse MakePrem functionçä08/03/2011 - pA1101 - PAC024 - Annual Statement - BT - add initial function to break up function
+7b204b5d -2 -2
+Description:  If Lapse Year equals 0 retun a 1 to indicate that the policy never lapsesçä çä08/18/2011 - pA1101 - PAC024 Annual Statement - BT - add initial function
+266e660 -2 -2
+Description:  Returns the year in which the guideline limit is reached.  Set the "Adjust for Guidelines" element to be False for purposes of determining the year in which the guideline limit is reached.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+266e780 -2 -2
+Description:  Recursive function to return the year in which the guideline limit is reached.çä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA Performance CMC guideline limit no longer from vector.çä05/21/2010 pA Performance CMC added yearIndex as a parm on the guideline limit functionçä05/20/2010 pA Performance CMC removed yearIndex as a parm on the guideline limit functionçä01/08/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Ruleçä
+266eb20 -2 -2
+Description:  Returns the total number months that have been projected.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+63d9ccef -2 -2
+Description:  Call to calc rule to determine usage of negative interest rate.çä çäModification Log:çä02/18/2011 A11429  CMC initial Calc
+266f158 -2 -2
+Description: withdrawal stream for Illustrationsçä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/28/2008 LP Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up function
+266f770 -2 -2
+Modifications log:çä09/02/2011 pA1975 CMC remvoed monthIndexçä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä11/11/2010 CMC removed check for loans to avoid unnecessary inputsçä11/10/2009 - PA1001 - NT - performance enhancements - don't do this calc if there are no loans. Also get yearIndex parms in premium calls correct to avoid cacheçä01/08/2009 DT pA1001 cleaned up functionçä10/27/2008 -vj- added year check less than starting indexçä
+266fe90 -2 -2
+Description:  functions added to allow stand-alone compile, they are used only for Universal LifeçäModifications log:çä12/4/2008 CSC Initial function
+64e13229 -2 -2
+Description : Dummy function to allow this model to compile when ULCD model not aroundçä çäModification Log :çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/21/2010 pA Performance CMC removed yearIndex as a parm on the ULCD CVProj Parms vectorçä05/20/2010 pA Performance CMC added yearIndex as a parmçä11/6/2009 - PA1001 - NT - performance - remove yearIndex parm from CVProj Parmsçä
+cae2375 -2 -2
+12/07/2010 pA regression testing MAS added yearIndex as a parmçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+5437206 -2 -2
+Description:  Allows CVProj model to compile since this function has been coded in a higher level model (ULContractDocs)çä çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+5bcf833e -2 -2
+çä01/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+69a38e77 -2 -2
+Description:âDefault function to allow lower compile.çä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA Performance CMC Intial Function
+298cab5d -2 -2
+Description: Returns a vector, with length equal to the number of sub accounts (+1 for the grace fund), of the constant lapse value.çä çäModification Log:çä11/16/2009 - PAC09 - JL - Only pass lapsed CV in first fund elementçä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä
+53645b4 -2 -2
+Description: Returns 1 if this is the first month of the calculation. Else, returns 0.çä çäModification Log:çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+32da298d -2 -2
+Description: Determines if the policy has lapsed, for multiple fund calculationsçä çäModification Log:çä07/14/2011 - Cleanup - BT - add SharedVectorCVPROJAddlInfo Year Equals StartYearçä11/16/2009 - PAC09 - JL - Comment in codeçä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä
+11d786ca -2 -2
+Description: Returns the previous year's "vectorAddlInfo"çä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+49d50704 -2 -2
+Description: Returns the previous year's "vectorSolveParms"çä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+4334d05b -2 -2
+Description: Removes the last element of a vectorçä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up function
+19e1ac19 -2 -2
+Description: Returns the total CV from the funds' CV vectorçä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+527273c8 -2 -2
+Dexcription: Defines the sstarting amounts for each fund in a multiple fund calculationçä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up function
+7f44fd4 -2 -2
+Description: A vector of zero values, with length equal to the number of sub accounts (incl 1 for grace fund)çä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+68416a29 -2 -2
+Description: Vector of loan amounts to Fundsçä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä10/26/2009 - PAC009 - JL - Remove unnecessary "rateAssumption" parm
+71c8bc50 -2 -2
+Description: Loan amount to Fundçä çäModification Log:çä09/02/2011 pA1975 CMC updated for change to build ULloan vector functionçä08/17/2009 - PAC009 - JL - Initial Calculationçä01/08/2009 DT pA1001 cleaned up function
+5c7902ae -2 -2
+Description: Vector of total Charges to Fundsçä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+68783686 -2 -2
+Description: Total Charges to Fundçä çäModification Log:çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up function
+1165f725 -2 -2
+Description: Determines whether to employ an arithmetic or weighted average.çä çäModification Log:çä04/15/11 - PAC017 - VM - Initial Calculation/Rule
+6cc732b5 -2 -2
+Description: Calculates the weigthed average of the charges across all funds.çä çäModification Log:çä04/14/11 - PAC017 - VM - Initial Calculation/Rule
+4d6fb90b -2 -2
+Description: Calculates the weigthed average of the charges across all funds.çä çäModification Log:çä04/14/11 - PAC017 - VM - Initial Calculation/Rule
+373b783c -2 -2
+Description: Calculates the weigthed average of the charges across all funds.çä çäModification Log:çä04/14/11 - PAC017 - VM - Initial Calculation/Rule
+5abf74d7 -2 -2
+Description: Calculates the arithmetic average of the charges across all funds.çä çäModification Log:çä04/14/11 - PAC017 - VM - Initial Calculation/Rule
+1c565ca6 -2 -2
+Description: Vector of Withdrawal amounts to Fundsçä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+996c97b -2 -2
+Description: Withdrawal amount to Fundçä çäModification Log:çä10/03/2011 CMC PA2019 removed year Index from Allocation çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up function
+7037030f -2 -2
+Description:  Function calls end of month cash value just like OUTPUT, used for death benefit option changesçä çäModifications log:çä10/26/2009 - PAC009 - JL - Remove unnecessary "rateAssumption" parmçä08/17/2009 - PAC009 - JL - Multiple Fund Supportçä01/08/2009 DT pA1001 cleaned up functionçä
+2f454414 -2 -2
+Description: EOM CV vector for fundsçä çäModification Log:çä09/06/2011 - pA1101 - cleanup - BT - add rounding functionçä11/16/2009 - PAC009 - JL - Move rounding, round over vector using "GEN Vector Round"çä10/26/2009 - PAC009 - JL - Remove unnecessary "rateAssumption" parmçä08/17/2009 - PAC009 - JL - Initial Calculationçä01/08/2009 DT pA1001 cleaned up function
+380ed245 -2 -2
+Description: Fund CV vector before interest credited.çä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä10/26/2009 - PAC009 - JL - Remove unnecessary "rateAssumption" parmçä01/08/2009 DT pA1001 cleaned up function
+27b6541e -2 -2
+Description: Vector of per fund interest amounts earned.çä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä10/26/2009 - PAC009 - JL - Remove unnecessary "rateAssumption" parm
+53dd7df4 -2 -2
+Description: Monthly interest earned per fund.çä çäModification Log:çä07/29/2011 - pA1101 - PAC024 Annual Statement - BT - add annual statement weighted average05/12/2011 - pA1101 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/28/2011 - PAC017 FINRA Rule 2211 - modified the multiple fund conditioning.çä01/12/2011 - pA1101 - PAC013 calcType - BT - Restructureçä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä01/08/2009 - pA1101 - DT -cleaned up function
+6a7a1475 -2 -2
+Description:çä çäModification Log:çä07/29/2011 - pA1101 - BT - PAC024 Annual Statement - move logic into this function & added weighted average fund interest rate
+3bf611ca -2 -2
+Description:  Returns a weighted average fund interest rateçä çäModification Log:çä07/29/2011 - pA1101 - BT - PAC024 Annual Statement - added initial function
+7fcb918e -2 -2
+Description: Returns a 1 if Multiple Fund and the Current calcType are activeçä çäModification Log:çä07/29/2011 - pA1101 - BT - PAC024 Annual Statement - add initial function
+5a8be7d2 -2 -2
+Description: BOM CV vector for fundsçä çäModification Log:çä08/17/2009 - PAC009 - JL - Initial Calculationçä01/08/2009 DT pA1001 cleaned up function
+55c0f842 -2 -2
+Description: Previous Month Fund CV vectorçä çäModification Log:çä11/16/2009 - PAC009 - JL - Use passed vectorsçä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä10/26/2009 - PAC009 - JL - Remove unnecessary "rateAssumption" parmçä01/08/2009 DT pA1001 cleaned up function
+74b77dd -2 -2
+Description:  Vector of premiums allocated to each fund.çä çäModification Log:çä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+1801fdc2 -2 -2
+Description: Net Premium to Fundçä çäModification Log:çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/26/2009 - PAC09 - JL - Initial Calculation/Ruleçä01/08/2009 DT pA1001 cleaned up function
+7a1b519 -2 -2
+Description: Net Premium to Grace Fundçä çäModification Log:çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/26/2009 - PAC09 - JL - Initial Calculation/Rule
+6db1a686 -2 -2
+Description: Determines the amount of the "deduction" parms being allocated to each of the elements in the "bucketVector". Either this is allocated to a specific fund (and, if there is a remainder, this is split pro-rata over the other buckets)çä çäModification Log:çä08/17/2009 - PAC009 - JL - Inital Calculationçä01/08/2009 DT pA1001 cleaned up function
+;Offset=00000000

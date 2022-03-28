@@ -1,0 +1,153 @@
+;1	08.12.2016 13:25:54	jlawrie2	
+X0 5fc764ce 0 0 0 0 0 0
+
+O0 af2323a 0 0 0 0 0 0
+
+E0 48c1fda1 0 0 0 0 0 0
+
+L0 49427d56 0 0 0 0 0 0
+
+B0 4f3a1adf 0 0 0 0 0 0
+
+P1 136be7f3 0 7ad3be60 0 0 0 2
+
+--description
+Diability benefits model offers an income during periods of disibilityçä çäDisibility support includes:çä- Long and Short termçä- Both accident and sicknessçä- Guaranteed renewable and Non-Cancelable disibility options.  çä çä çäRELEASE LOG:çäRELEASE 1101 - PAC022 
+P13 7ad3be60 136be7f3 0 0 0 0 2
+Disability Income Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Benefits for DI"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"DisabilityBenefits.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 590f8a0c 0 5be9ef6d 0 0 0 0
+
+F1 5be9ef6d 590f8a0c 1c2e5fc0 6a674b26 0 0 2
+-- Benefit Amount Receivable (Sum Insured)--
+Funktion
+
+F1 1c2e5fc0 5be9ef6d 33f2d22d 0 0 0 2
+DIBen Policy BenefitAmt SumInsured(calcType; participantStatus)
+Funktion
+SUMX(cov;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;'DIBen Coverage BenefitAmt SumInsured'(calcType;participantStatus;#cov))
+F1 33f2d22d 1c2e5fc0 57ecc7f2 0 0 0 2
+DIBen Coverage BenefitAmt SumInsured(calcType; participantStatus; coverageIndex)
+Funktion
+'DIBen Coverage BenefitAmt SumInsured Capped'(calcType;CASE(participantStatus;çä   //Deceasedçä3 : 'DIBen Coverage BenefitAmt DeathBenefit'(calcType;coverageIndex);çä   //Disabledçä4 : 'DIBen Coverage BenefitAmt Curr'(calcType;coverageIndex);çä   //Disabled; Partially Recoveredçä1000500001 : 'DIBen Coverage BenefitAmt PartialRecovery'(calcType;coverageIndex);çä   //Elseçä : 0)çä;coverageIndex)
+F1 57ecc7f2 33f2d22d 789ebc51 0 0 0 2
+DIBen Coverage BenefitAmt SumInsured Capped(calcType; benAmt; coverageIndex)
+Funktion
+MIN(benAmt;'DIBen Coverage BenefitAmt AnnualCap'(calcType;coverageIndex);'DIBen Coverage BenefitAmt LifetimeCapCap'(calcType;coverageIndex))
+F1 789ebc51 57ecc7f2 0 421a977 0 0 2
+DIBen Coverage BenefitAmt AnnualCap(calcType; coverageIndex)
+Funktion
+MAX('Policy DisabilityHealth AnnualMaxAmt'(calcType;coverageIndex) - 'Policy DisabilityHealth BenefitAmt ReceivedATD'(calcType;coverageIndex);0)
+F1 421a977 57ecc7f2 0 0 0 0 2
+DIBen Coverage BenefitAmt LifetimeCapCap(calcType; coverageIndex)
+Funktion
+MAX('Policy DisabilityHealth LifetimeMaxAmt'(calcType;coverageIndex) - 'Policy DisabilityHealth BenefitAmt ReceivedLifetime'(calcType;coverageIndex);0)
+F1 6a674b26 590f8a0c 5c81ed6e 0 0 0 2
+-- Coverage Amount --
+Funktion
+
+F1 5c81ed6e 6a674b26 66775045 23c078a2 0 0 2
+DIBen Coverage BenefitAmt Curr(calcType; coverageIndex)
+Funktion
+MIN('DIBen Coverage BenefitAmt Initial'(calcType;coverageIndex) * 'DIBen Coverage BenefitAmt COLAAdjustment Factor'(calcType;coverageIndex);'Policy DisabilityHealth BenefitAmtMaximum'(calcType;coverageIndex))
+F1 66775045 5c81ed6e 0 28686ecb 0 0 2
+DIBen Coverage BenefitAmt Initial(calcType; coverageIndex)
+Funktion
+'Policy DisabilityHealth BenefitAmt'(calcType;coverageIndex)
+F1 28686ecb 5c81ed6e 4760af79 0 0 0 2
+DIBen Coverage BenefitAmt COLAAdjustment Factor(calcType; coverageIndex)
+Funktion
+IF ('DIBen Coverage COLA exists'(calcType;coverageIndex) ; çä  (1 + 'Policy DisabilityHealth IndexRate'(calcType;coverageIndex) * 0.01) ^ ('DIBen Coverage Duration'(calctype;coverageIndex) - 1) ; çä  1çä)
+F1 4760af79 28686ecb 0 41a0de9f 0 0 2
+DIBen Coverage Duration(calctype; coverageIndex)
+Funktion
+'Duration Year'(TransEffDate;'Policy Coverage EffDate'(calctype;coverageIndex))
+F1 41a0de9f 28686ecb 0 73583214 0 0 2
+DIBen Coverage COLA exists(calcType; coverageIndex)
+Funktion
+'DIBen Coverage COLA exists Rec'(calcType;coverageIndex;0)
+F1 73583214 28686ecb 0 0 0 0 2
+DIBen Coverage COLA exists Rec(calcType; coverageIndex; coverageOptionIndex)
+Funktion
+IF (coverageOptionIndex = 'Policy Number of CovOption'(calcType;coverageIndex) ; çä  0 ; çä  IF ('RiderType is COLA'('Policy DisabilityHealth Rider RiderTypeCode'(calcType;coverageIndex;coverageOptionIndex)) ; çä    1 ; çä    'DIBen Coverage COLA exists Rec'(calcType;coverageIndex;coverageOptionIndex + 1)çä  )çä)
+F1 23c078a2 6a674b26 0 abab22c 0 0 2
+DIBen Coverage BenefitAmt PartialRecovery(calcType; coverageIndex)
+Funktion
+'DIBen Coverage BenefitAmt Initial'(calcType;coverageIndex) * 'DIBen Coverage BenefitAmt COLAAdjustment Factor'(calcType;coverageIndex) * 0.5
+F1 abab22c 6a674b26 0 0 0 0 2
+DIBen Coverage BenefitAmt DeathBenefit(calcType; coverageIndex)
+Funktion
+MIN('DIBen Coverage BenefitAmt Curr'(calcType;coverageIndex) * 3;'Policy DisabilityHealth BenefitAmtMaximum'(calcType;coverageIndex))
+A0 114eb506 0 0 0 0 0 0
+
+T0 2bd14394 0 0 0 0 0 0
+
+I0 2e3b367b 0 5af4fb4b 0 0 0 0
+
+I0 5af4fb4b 2e3b367b 0 0 0 0 0
+ModePremium.pms
+-
+O0
+E0
+L0
+B0
+P1
+7ad3be60
+F2
+5be9ef6d
+6a674b26
+A0
+T0
+!13
+1c2e5fc0 -2 -2
+Description: Total Sum Insured for Disability Health products.çä çäModification Log:çä07/18/2011 PAC022 DI JL - Initial Calculation
+33f2d22d -2 -2
+Description: Coverage Sum Insured for Disability Health products.çä çäModification Log:çä07/18/2011 PAC022 DI JL - Initial Calculation
+57ecc7f2 -2 -2
+Description: Caps the uncapped benefit amount dependent on Annual and Lifetime Maximums, dependent on its size (benAmt parm).çä çäModification Log:çä07/18/2011 PAC022 DI JL - Initial Calculation
+789ebc51 -2 -2
+Description: Maximum Annual Benefit Payment.çä çäModification Log:çä07/18/2011 PAC022 DI JL - Initial Calculation
+421a977 -2 -2
+Description: Maximum Lifetime Benefit Payment.çä çäModification Log:çä07/18/2011 PAC022 DI JL - Initial Calculation
+5c81ed6e -2 -2
+Description: Coverage Current Disability Benefit Amount uncapped; but allowing for COLA (if applicable).çä çäModification Log:çä07/18/2011 PAC022 DI JL - Initial Calculation
+66775045 -2 -2
+Description: Coverage Initail Benefit Amount not allowing for COLA (if applicable).çä çäModification Log:çä07/18/2011 PAC022 DI JL - Initial Calculation
+28686ecb -2 -2
+Description: COLA Benefit Adjustment factor.çä çäModification Log:çä08/10/2011 PAC022 DI JL - Add check for COLAçä07/18/2011 PAC022 DI JL - Initial Calculation
+4760af79 -2 -2
+Description: Duration of a coverage, given Cov EffDate & Trans EffDateçä çäModification Log:çä09/01/2011 PAC022 DI JL Swap dates to correct orderçä07/18/2011 PAC022 DI JL - Initial Calculation
+41a0de9f -2 -2
+Description: Returns 1 if a COLA rider exists on the specified coverage, else returns 0.çä çäModification Log:çä08/10/2011 PAC022 DI JL - Initial Calculation
+73583214 -2 -2
+Description: Returns 1 if the specified covOpt is COLA else recurses through the remaining covOpts.çä çäModification Log:çä08/10/2011 PAC022 DI JL - Initial Calculation
+23c078a2 -2 -2
+Description: Coverage Current Partial Recovery Benefit Amount uncapped; but allowing for COLA (if applicable).çä çäModification Log:çä09/01/2011 PAC022 DI Do not use pre-checked max benefit amountçä07/18/2011 PAC022 DI JL - Initial Calculation
+abab22c -2 -2
+Description: Coverage Current Death Benefit Amount uncapped; but allowing for COLA (if applicable).çä çäModification Log:çä09/01/2011 PAC022 DI JL Max benefit amount checkçä07/18/2011 PAC022 DI JL - Initial Calculation
+;Offset=00000000

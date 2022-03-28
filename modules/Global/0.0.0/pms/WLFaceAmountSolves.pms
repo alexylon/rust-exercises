@@ -1,0 +1,853 @@
+;1	15.03.2017 11:57:44	jlawrie2	
+X0 3f4150 0 3f2670 0 0 0 0
+
+X0 3f2670 3f4150 3f26e8 0 0 0 0
+--Test Cases--
+X24 3f26e8 3f2670 0 3f4860 0 0 2
+WLFaceSolves Min(covType)
+WLFaceSolves Min("C"; "BIR")
+
+INPUT Policy Coverage ProductCode[1]
+BIR1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Calling Program
+Illus
+INPUT Calling System
+I1
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage IndicatorCode[1]
+4
+INPUT Policy Coverage ProductVersionCode[1]
+1
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovTypeCode[1]
+24
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur[1]
+20
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Policy Coverage RequestedMaturityDur
+20
+X23 3f4860 3f2670 0 1e109c8 0 0 2
+WLFaceSolves Min(covType)
+'WLFaceSolves Min'("C"; "BASE")
+
+INPUT Policy Coverage ProductCode[1]
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Calling Program
+Illus
+INPUT Calling System
+I1
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage IndicatorCode[1]
+1
+INPUT Policy Coverage ProductVersionCode[1]
+1
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovTypeCode[1]
+24
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur[1]
+20
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+9
+X25 1e109c8 3f2670 0 1e10cf0 0 0 2
+WLFaceSolves Face Amount Solve Mix Dollars
+WLFaceSolves Face Amount Solve Mix Dollars("C")
+0
+INPUT Illus Face Amt Solve DesignType
+1000500013
+INPUT BIR CrossoverDuration
+20
+INPUT Illus Face Amt Solve Total Face
+800000
+INPUT BIR PremiumEndDuration
+20
+Input TransEffDate
+01/01/2006
+INPUT Calling Program
+ILLUS
+INPUT Calling System
+I1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+30
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy EffDate
+01/01/2006
+INPUT Illus Face Amt Solve Premium
+0
+INPUT BIR Premium Design Type
+1000500005
+INPUT Message Language
+9
+X39 1e10cf0 3f2670 0 0 0 0 2
+WLFaceSolves Base Prem(baseFace) - 7233.16
+WLFaceSolves Base Prem("C"; 600000)
+7233.16
+INPUT Payment Mode
+1
+Input TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy Coverage CovNumber
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Message Language
+9
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy PaymentMode
+1
+INPUT Policy Coverage PremiumPerUnit
+10
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductVersionCode
+1
+O0 3f400c 0 0 0 0 0 0
+
+E0 3f4078 0 0 0 0 0 0
+
+L0 3f40e4 0 0 0 0 0 0
+
+B0 3f4294 0 0 0 0 0 0
+
+P3 3f41bc 0 3f5a68 0 0 0 2
+
+--description
+Face amount solves for Whole Life (WL) products.  çä çäSupports the following face amount solve options:çä1. Base and Term Face Amount Mixçä2. Sell Premium for Participating WL çä çäRELEASE LOG:çäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 3f5a68 3f41bc 3f6b78 0 0 0 2
+Illustration Face Amount Solve
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"WL Illustration Face Amount Solve "
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"FaceAmountSolves"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1601 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P4 3f6b78 3f5a68 3f7018 0 0 0 2
+WL Products
+IncType
+mandatory
+IncRule
+'INPUT Calling System'
+IncValue
+"Test"
+//comment
+/*  This model will solve for face amounts for a WL participating Base Coverage and a Blended Insurance Rider (BIR).  çä     The death benefit or face amount of the BIR is comprised of a mix of PUAs and One Year Term (OYT) insurance.  çä çä  
+P5 3f7018 3f6b78 0 0 0 0 2
+Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Illus Face Amt Solve Mix Face
+'WLFaceSolves Face Amount Solve Mix Dollars'('GEN Vector Blank')
+OUTPUT Illus Face Amt Solve Mix Percent
+'WLFaceSolves Face Amount Solve Mix Percent'('GEN Vector Blank')
+F0 3f4228 0 75bfd34e 0 0 0 0
+
+F1 75bfd34e 3f4228 3f6da8 0 0 0 2
+:WLFaceSolves
+Funktion
+
+F1 3f6da8 75bfd34e 0 3f7248 0 0 2
+WLFaceSolves Face Amount Solve Mix Dollars(calcType)
+Funktion
+CASE('Illus Face Amt Solve DesignType'(calcType);çä  10005000013 : 'WLFaceSolves MixSolve'("D");çä   /*output in dollar */  : 0)çä
+F1 3f7248 75bfd34e 0 3f73b0 0 0 2
+WLFaceSolves Face Amount Solve Mix Percent(calcType)
+Funktion
+CASE('Illus Face Amt Solve DesignType'(calcType);çä  10005000013 : 'WLFaceSolves MixSolve'("P");çä   /*output in percent */  : 0)çä
+F1 3f73b0 75bfd34e 3f77f0 523af28a 0 0 2
+WLFaceSolves MixSolve(calcType)
+Funktion
+CASE('WLFaceSolves Input Check'(calcType);çä  1 : 'WLFaceSolves MaxResult'(calcType);çä   /*input premium low */ 2 : 'WLFaceSolves MinResult'(calcType);çä   /*input premium too high*//*within boundaries*/  : 'WLFaceSolves Iteration'(calcType;0; //prevResult    ârecommended BIR premçäWLFaceSolves_Initial_Result(calcType;'Std BIR CrossoverDuration'(calcType);'WLFaceSolves Initial Bir Face'('Illus Face Amt Solve Total Face');'Std BIR PremiumEndDuration'(calcType)); //currResultâ BIR recommended premçä0; //prevGuessâprevious BIR face amountçä'WLFaceSolves Initial Bir Face'('Illus Face Amt Solve Total Face'); //currGuessâcurrent BIR face amountçä0; //lowFace âlow boundaryâçä'Illus Face Amt Solve Total Face'; //highFaceâhigh boundaryçä1; //iterationNumâiteration numberçä30 //stopNumâstop iteration numberçä))çä
+F1 3f77f0 3f73b0 3f7d40 3f8648 0 0 2
+WLFaceSolves Input Check(calcType)
+Funktion
+ //If the input premium is greater than or equal to the sum of the premium for the minimum BIR and çä// the remainder Base, then return input premium is too high (BIR is cheaper, can't get any lower)çäIF ('Illus Face Amt Solve Premium' >= ('WLFaceSolves BIR Prem'(calcType;'Std BIR CrossoverDuration'(calcType);'WLFaceSolves Min'(calcType;"BIR");'Std BIR PremiumEndDuration'(calcType)) + 'WLFaceSolves Base Prem'(calcType;'Illus Face Amt Solve Total Face' - 'WLFaceSolves Min'(calcType;"BIR"))) ; çä  2 ; çä   /*input prem too high*///If the input premium less than the above calculated premium, then check using max BIR.çä IF ('Illus Face Amt Solve Premium' <= 'WLFaceSolves BIR Prem'(calcType;'Std BIR CrossoverDuration'(calcType);'WLFaceSolves Max BIR Face'(calcType);'Std BIR PremiumEndDuration'(calcType)) + 'WLFaceSolves Base Prem'(calcType;'Illus Face Amt Solve Total Face' - 'WLFaceSolves Max BIR Face'(calcType)) ; çä    1 ; çä     /*input prem too low*/ 0 /*resolve for face amount allocation*/ çä  )çä)
+F1 3f7d40 3f77f0 0 3f7e98 0 0 2
+WLFaceSolves Max BIR Face(calcType)
+Funktion
+('WLFaceSolves Max'(calcType;"BIR") / 100) / (1 + ('WLFaceSolves Max'(calcType;"BIR") / 100)) * 'Illus Face Amt Solve Total Face'
+F1 3f7e98 3f77f0 0 3f8200 0 0 2
+WLFaceSolves MinResult(calcType)
+Funktion
+V_('WLFaceSolves Min'(calcType;"BIR"); //minimum BIR face amountçä'Illus Face Amt Solve Total Face' - 'WLFaceSolves Min'(calcType;"BIR"); //remainder of base allocated çä'WLFaceSolves BIR Prem'(calcType;'Std BIR CrossoverDuration'(calcType);'WLFaceSolves Min'(calcType;"BIR");'Std BIR PremiumEndDuration'(calcType)); //bir premçä'WLFaceSolves Base Prem'(calcType;'Illus Face Amt Solve Total Face' - 'WLFaceSolves Min'(calcType;"BIR")); //base premçä'WLFaceSolves BIR Prem'(calcType;'Std BIR CrossoverDuration'(calcType);'WLFaceSolves Min'(calcType;"BIR");'Std BIR PremiumEndDuration'(calcType)) + 'WLFaceSolves Base Prem'(calcType;'Illus Face Amt Solve Total Face' - 'WLFaceSolves Min'(calcType;"BIR")); //total premçä0 //iteration numberâââçä)
+F1 3f8200 3f77f0 0 0 0 0 2
+WLFaceSolves MaxResult(calcType)
+Funktion
+ //çäV_('WLFaceSolves Max BIR Face'(calcType); //maximum BIR face amountçä'Illus Face Amt Solve Total Face' - 'WLFaceSolves Max BIR Face'(calcType); //remainder of base allocated çä'WLFaceSolves BIR Prem'(calcType;'Std BIR CrossoverDuration'(calcType);'WLFaceSolves Max BIR Face'(calcType);'Std BIR PremiumEndDuration'(calcType)); //bir premçä'WLFaceSolves Base Prem'(calcType;'Illus Face Amt Solve Total Face' - 'WLFaceSolves Max BIR Face'(calcType)); //base premçä'WLFaceSolves BIR Prem'(calcType;'Std BIR CrossoverDuration'(calcType);'WLFaceSolves Max BIR Face'(calcType);'Std BIR PremiumEndDuration'(calcType)) + 'WLFaceSolves Base Prem'(calcType;'Illus Face Amt Solve Total Face' - 'WLFaceSolves Max BIR Face'(calcType)); //total premçä0 //iteration numberâââçä)
+F1 3f8648 3f73b0 3f87c0 3f8f98 0 0 2
+WLFaceSolves_Initial_Result(calcType; crossOverYr;BIRFaceAmt;birPayYears)
+Funktion
+'WLFaceSolves BIR Prem'(calcType;crossOverYr;BIRFaceAmt;birPayYears) /*BIR recommended premium*/ 
+F1 3f87c0 3f8648 0 3f88b0 0 0 2
+WLFaceSolves Initial Bir Face(totalFace)
+Funktion
+totalFace * .4 //initial guess is BIR face will be 40% of the total requested face amountä
+F1 3f88b0 3f8648 3f89d8 3f8da0 0 0 2
+WLFaceSolves Base Prem(calcType; baseFace)
+Funktion
+'WLFaceSolves CalculateBasePremium'(calcType;baseFace / 1000)
+F1 3f89d8 3f88b0 0 0 0 0 2
+WLFaceSolves CalculateBasePremium(calcType; units)
+Funktion
+'WLFaceSolves ModePremium Coverage Mode Premium Units'(calcType;0;v_('Policy PaymentMode';0; //Forced Payment Modeçä1; //Mode Premium Calc Optionçä0; //Commission Premium Calc Indçä0; //Specified Phaseçä0; //Specified Elementçä0; //Specified Element IndexçäTransEffDate;0; //Premium Typeçä0; //Premium Subtypeçä0; //Rate Info Passed Indçä'Calling System';0; //Payment Formçä1; //yearIndexçä1; //yearIndexçä'CalcType Current'(calcType); //rateAssumptionçä0 //allows the variability of unitsçä);units //base coverage unitsçä)
+F1 3f8da0 3f8648 0 0 0 0 2
+WLFaceSolves Base Face(birFace;totalFace)
+Funktion
+totalFace - birFace
+F1 3f8f98 3f73b0 0 3f9348 0 0 2
+WLFaceSolves BIR Prem(calcType; crossOverYr;birface;birPayYears)
+Funktion
+'TGTDB Recommended Premium'('CalcType Current'(calcType); //rate assumptionçä0; //year of BIR payment year - send zero for iterationçäV_( // vector informationçä0; //BIR premium    //TDB model will calculate premium and return in this fieldçäcrossOverYr; //BIR Cross Over YearçäbirFace; //BIR face amount for this guess iteration to be sent ast BIR TDBçäbirPayYears; //BIR premium paying yearsçä'GEN Round'(('WLFaceSolves Base Face'(birFace;'Illus Face Amt Solve Total Face') / 1000);4) //Base number of units                                             çä);'TGTDB WithdrawalVector'('CalcType Current'(calcType);1) //NE - yearIndex = 0 passed through above - left yearIndex = 1 as defaultçä//wdp - set rateAssumption to 'CalcType Current'(calcType) to correspond with aboveçä)
+F1 3f9348 3f73b0 3f9420 0 0 0 2
+--Solve Iteration--
+Funktion
+
+F1 3f9420 3f9348 3f9b78 3fabc0 0 0 2
+WLFaceSolves Iteration(calcType; prevResult;currResult;prevGuess;currGuess;lowFace;highFace;iterationNum;stopNum)
+Funktion
+IF  /*if current iteration equal stop iteration*/ (iterationNum = stopNum || (abs('Illus Face Amt Solve Premium' - 'WLFaceSolves totalResult'(calcType;currResult;currGuess;'Illus Face Amt Solve Total Face')) < 'WLFaceSolves tolerance'("R")) ; çä   /*Or current result within tolerance*/ 'WLFaceSolves Output'(calcType;currResult;currGuess;lowFace;highFace;iterationNum) ; çä   /*return vector of results*/ 'WLFaceSolves Iteration'(calcType;currResult; //prevResult    âprev BIR recommended premçä'WLFaceSolves Calc Next Result'(calcType;round('WLFaceSolves Calc Next Guess'(calcType;prevResult;currResult;prevGuess;currGuess;lowFace;highFace;iterationNum;'Illus Face Amt Solve Total Face');0); //currResultânext BIR recommended premçä'Std BIR CrossoverDuration'(calcType);'Std BIR PremiumEndDuration'(calcType));currGuess; //prevGuessâprevious BIR face amountçäround('WLFaceSolves Calc Next Guess'(calcType;prevResult;currResult;prevGuess;currGuess;lowFace;highFace;iterationNum;'Illus Face Amt Solve Total Face');0); //nextGuessânext BIR face amountçä'WLFaceSolves Low Boundary'(calcType;currResult;currGuess;lowFace;'Illus Face Amt Solve Total Face'); //lowFaceâââââçä'WLFaceSolves High Boundary'(calcType;currResult;currGuess;highFace;'Illus Face Amt Solve Total Face'); //highFaceâçäiterationNum + 1; //increment iterationNumçästopNum //stop iterationçä)çä)
+F1 3f9b78 3f9420 0 3f9ef8 0 0 2
+WLFaceSolves Output(calcType; currResult;currGuess;lowFace;highFace;iterationNum)
+Funktion
+V_('WLFaceSolves BIR Final Face'(currGuess;'Illus Face Amt Solve Total Face';calcType); //BIR coverage face amount or percentage of total face amount âçä'WLFaceSolves Base Final Face'(currGuess;'Illus Face Amt Solve Total Face';calcType); //base coverage face amount or percentage of total face amountçäround(currResult;2); //current BIR recommended premiumçäround(('WLFaceSolves totalResult'(calcType;currResult;currGuess;'Illus Face Amt Solve Total Face') - currResult);2); //base premiumçäround('WLFaceSolves totalResult'(calcType;currResult;currGuess;'Illus Face Amt Solve Total Face');2); //total calculated premium  çäiterationNum //iteration numberââââââ  âçä)
+F1 3f9ef8 3f9420 0 3fa180 0 0 2
+WLFaceSolves Low Boundary(calcType; currResult;currGuess;lowFace;totalFace)
+Funktion
+IF ( /*Calc prem too low */ 'WLFaceSolves totalResult'(calcType;currResult;currGuess;totalFace) < 'Illus Face Amt Solve Premium' ; çä  IF ('WLFaceSolves PPUBIR'(currResult;currGuess) >= 'WLFaceSolves PPUBase'(calcType;currGuess;totalFace) ; çä    max(currGuess;lowFace) ; çä    lowFaceçä  ) ; çä /*else calc prem too high*/ IF ('WLFaceSolves PPUBIR'(currResult;currGuess) >= 'WLFaceSolves PPUBase'(calcType;currGuess;totalFace) ; çä  lowFace ; çä  max(currGuess;lowFace)çä)çä)
+F1 3fa180 3f9420 3fa570 3fa7c8 0 0 2
+WLFaceSolves High Boundary(calcType; currResult;currGuess;highFace;totalFace)
+Funktion
+IF ( /*Calc prem too low */ 'WLFaceSolves totalResult'(calcType;currResult;currGuess;totalFace) < 'Illus Face Amt Solve Premium' ; çä  IF ('WLFaceSolves PPUBIR'(currResult;currGuess) >= 'WLFaceSolves PPUBase'(calcType;currGuess;totalFace) ; çä    highFace ; çä    min(highFace;currGuess)çä  ) ; çä /*else calc prem too high*/ IF ('WLFaceSolves PPUBIR'(currResult;currGuess) >= 'WLFaceSolves PPUBase'(calcType;currGuess;totalFace) ; çä  min(highFace;currGuess) ; çä  highFaceçä)çä)
+F1 3fa570 3fa180 0 3fa6d8 0 0 2
+WLFaceSolves PPUBIR(currResult;currGuess)
+Funktion
+ //  BIR premium per unit =  currResult /  (currGuess / 1000)çäround(currResult / (MAX(currGuess;0.01) / 1000);4)
+F1 3fa6d8 3fa180 0 0 0 0 2
+WLFaceSolves PPUBase(calcType; currGuess;totalFace)
+Funktion
+ //  Base premium per unit =  base premium /  (base face / 1000)çäround('WLFaceSolves Base Prem'(calcType;'WLFaceSolves Base Face'(currGuess;totalFace)) / ('WLFaceSolves Base Face'(currGuess;totalFace) / 1000);4)
+F1 3fa7c8 3f9420 0 3faa60 0 0 2
+WLFaceSolves tolerance(parmType)
+Funktion
+CASE(toupper(parmType);çä  "R" : 1.000;çä   //result - premiumçä"G" : 1.000;çä   //guess - face amountçä : 0)çä
+F1 3faa60 3f9420 0 0 0 0 2
+WLFaceSolves totalResult(calcType; currResult;currGuess;totalFace)
+Funktion
+currResult + 'WLFaceSolves Base Prem'(calcType;'WLFaceSolves Base Face'(currGuess;totalFace))
+F1 3fabc0 3f9348 0 3fad18 0 0 2
+WLFaceSolves Calc Next Result(calcType; nextGuess;crossOverYr;birPayYears)
+Funktion
+'WLFaceSolves BIR Prem'(calcType;crossOverYr;nextGuess;birPayYears)
+F1 3fad18 3f9348 0 3fb368 0 0 2
+WLFaceSolves Calc Next Guess(calcType; prevResult;currResult;prevGuess;currGuess;lowFace;highFace;iterationNum;totalFace)
+Funktion
+ //bisection methodçäIF ( /*if Face Amt LT Minimum*/ 'WLFaceSolves LessThanMin'(calcType;currGuess;'Illus Face Amt Solve Total Face') ; çä   /*Return Error Message*/ 'Messages SystemMessage'("ILL1008";'Message Language';v_('WLFaceSolves Model Name';"WLFaceSolves Calc Next Guess")) ; çä  IF ( /*calc prem LT tgt prem*/ 'WLFaceSolves totalResult'(calcType;currResult;currGuess;'Illus Face Amt Solve Total Face') < 'Illus Face Amt Solve Premium' ; çä    IF ('WLFaceSolves PPUBIR'(currResult;currGuess) >= 'WLFaceSolves PPUBase'(calcType;currGuess;totalFace) ; çä      (max(lowFace;currGuess) + highFace) * .5 ; çä      (min(highFace;currGuess) + lowFace) * .5çä    ) ; çä   /*calc prem GE tgt prem*/ IF ('WLFaceSolves PPUBIR'(currResult;currGuess) >= 'WLFaceSolves PPUBase'(calcType;currGuess;totalFace) ; çä    (min(highFace;currGuess) + lowFace) * .5 ; çä    (max(lowFace;currGuess) + highFace) * .5çä  )çä)çä)
+F1 3fb368 3f9348 3fb5a8 3fba20 0 0 2
+WLFaceSolves LessThanMin(calcType;currGuess;totalFace)
+Funktion
+IF ( /*if Current Base or BIR face LT min*/ currguess < 'WLFaceSolves Min'(calcType;"BIR") || totalFace - currguess < 'WLFaceSolves Min'(calcType;"Base") ; çä  1 ; çä   /*return 1*/ 0çä)
+F1 3fb5a8 3fb368 0 3fb7e0 0 0 2
+WLFaceSolves Min(calcType;covType)
+Funktion
+CASE(covType;çä  "Base" : 'PI CoverageProduct MinFaceAmt'(calcType;'Policy Coverage ProductCode'(calcType;0);0;TransEffDate);çä   /*base coverage min face*/  : 'PI CoverageProduct MinFaceAmt'(calcType;'Policy Coverage ProductCode'(calcType;'Std BIR coverageIndex'(calcType));'Std BIR coverageIndex'(calcType);TransEffDate) /*BIR coverage min face*/ )çä
+F1 3fb7e0 3fb368 0 0 0 0 2
+WLFaceSolves Max(calcType;covType)
+Funktion
+'PI CoverageProduct MaxFaceRatio'(calcType;'Policy Coverage ProductCode'(calcType;'Std BIR coverageIndex'(calcType));'Std BIR coverageIndex'(calcType);TransEffDate)
+F1 3fba20 3f9348 0 3fbc88 0 0 2
+WLFaceSolves Base Final Face(currGuess;totalFace;calcType)
+Funktion
+IF ( /*output in dollars*/ calcType EQUAL "D" ; çä  max(round(totalFace - currGuess;0);0) ; çä  max(round((totalFace - currGuess) / totalFace;2);0)çä)
+F1 3fbc88 3f9348 0 0 0 0 2
+WLFaceSolves BIR Final Face(currGuess;totalFace;calcType)
+Funktion
+IF ( /*output in dollar*/ calcType EQUAL "D" ; çä  max(round(currGuess;0);0) ; çä  max(round((currGuess / totalFace);2);0)çä)
+F1 523af28a 75bfd34e 7c0d78f5 54b5341d 0 0 2
+--Mode Premium functions --
+Funktion
+
+F1 7c0d78f5 523af28a 874822a 3083d9bb 0 0 2
+WLFaceSolves Total Mode Premium(calcType; baseFaceUnits)
+Funktion
+ // Total modal premium using base face units as an inputçäSUMX(coverageIndex;0;'Policy Number of Coverage'(calcType;1) - 1;IF ('WLFaceSolves Coverage depends on Base'(calcType;#coverageIndex) ; çä  'WLFaceSolves ModePremium Coverage Modal Premium Units'(calcType;#coverageIndex;'Vector ModePremium Create Parms Vector From Inputs';'WLFaceSolves Coverage Units From Base'(calcType;#coverageIndex;baseFaceUnits)) ; çä   // coverage doesn't depend on base - use standard formulaçäIF ( /*Coverage is PUAR*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate)) ; çä     // Yes - ignore PUAR for Money purchase solveçä0 ; çä    'ModePremium Coverage Mode Premium'(calcType;#coverageIndex;'Vector ModePremium Create Parms Vector for FaceSolve'('CalcType Current'(calcType);'Policy PaymentMode';1)) + 'WLFaceSolves ModePremium Coverage CovOptions'(calcType;#coverageIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector ModePremium Create Parms Vector From Inputs';'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;1))çä  )çä))
+F1 874822a 7c0d78f5 0 0 0 0 2
+WLFaceSolves ModePremium Coverage Modal Premium Units(calcType; coverageIndex; vectorParms; units)
+Funktion
+ // Mode premium, using actual mode premium factorçäIF ( /*Coverage is PUAR*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä   // Yes - ignore ALIR for Money purchase solveçä0 ; çä   /*'ALIR Total Unscheduled Payments'(1) +  'ALIR Modal Payment'('CalcType Current'(calcType); 1);*///'ALIR Premium Stream'('CalcType Guaranteed'(calcType); coverageIndex; 'ModePremium Policy Duration'(vectorParms));çä// No - normal calculation for other coveragesçä 'ModePremium Round'('ModePremium Coverage Premium'(calcType;coverageIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector WLFaceSolves Units Adjusted'(vectorParms;units)) + 'ModePremium Coverage Flat Extras'(calcType;coverageIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector WLFaceSolves Units Adjusted'(vectorParms;units)))çä)
+F1 3083d9bb 523af28a 7c78ed89 3fc150 0 0 2
+WLFaceSolves Total Mode Premium Waiver(calcType;baseFaceUnits)
+Funktion
+ // Total modal premium using base face units as an inputçäSUMX(coverageIndex;0;'Policy Number of Coverage'(calcType;1) - 1;IF ( /*Coverage is PUAR*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate)) ; çä   // Yes - ignore PUAR for Money purchase solveçä0 ; çä  'ModePremium Coverage Mode Premium'(calcType;#coverageIndex;'Vector ModePremium Create Parms Vector for FaceSolve'('CalcType Current'(calcType);'Policy PaymentMode';1))çä))
+F1 7c78ed89 3083d9bb 0 0 0 0 2
+Vector ModePremium Create Parms Vector FaceSolve(calcType)
+Funktion
+v_('Policy PaymentMode';0; //Forced Payment Modeçä1; //Mode Premium Calc Optionçä0; //Commission Premium Calc Indçä0; //Specified Phaseçä0; //Specified Elementçä0; //Specified Element IndexçäTransEffDate;0; //Premium Typeçä0; //Premium Subtypeçä0; //Rate Info Passed Indçä'Calling System';0; //Payment Formçä1; //yearIndexçä'CalcType Current'(calcType) //rateAssumptionçä)
+F1 3fc150 523af28a ef47da7 0 0 0 2
+WLFaceSolves ModePremium Coverage Mode Premium Units(calcType; coverageIndex; vectorParms;units)
+Funktion
+'ModePremium Round'('ModePremium Coverage Premium'(calcType;coverageIndex;1;'Vector WLFaceSolves Units Adjusted'(vectorParms;units)) + 'ModePremium Coverage Flat Extras'(calcType;coverageIndex;1;'Vector WLFaceSolves Units Adjusted'(vectorParms;units)))
+F1 ef47da7 3fc150 6d950980 6ae3ca16 0 0 2
+--WLFaceSolves ModePremium Coverage Premium(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+â'WLFaceSolves ModePremium Coverage Base Premium'(coverageIndex; modalFactor; vectorParms;units) çäâ+ çäâ'WLFaceSolves ModePremium Coverage Table Rating'(coverageIndex; modalFactor; vectorParms;units)çäâ+ çäâ'WLFaceSolves ModePremium Coverage Fees'(coverageIndex; modalFactor; vectorParms;units) çäâ   // Flat extras added in laterçäâ+ çäâ'WLFaceSolves ModePremium Coverage CovOptions'(coverageIndex; modalFactor; vectorParms;units)çä
+F1 6d950980 ef47da7 0 7aa90f13 0 0 2
+--WLFaceSolves ModePremium Coverage Base Premium(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+IF (/*Is base premium included?*/çäâ'ModePremium Coverage Base Premium Is Included'(coverageIndex; vectorParms);çäâ/*Yes - return premium*/çäâIF (/*Does coverage have endowment benefit?*/çäââ'LifeCovType is Endowment'('PI CoverageProduct LifeCovTypeCode'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'TransEffDate'));çäââ/*Yes - return ROP premium*/çäââ'ModePremium Round Intermediate Calculation'(çäâââ'ModePremium Coverage ROP PremiumPerUnit'(coverageIndex; vectorParms);çäâââ'ModePremium ROP Annual Eligible Premium Exclude Coverage'(çäââââcoverageIndex;çäââââIF ('ModePremium Parameters Passed'(vectorParms);çäâââââvectorParms;çäâââââ// Elseçäâââââ'Vector ModePremium Create Parms Vector From Inputs'çäââââ)çäâââ);çäâââmodalFactor;çäâââ1çäââ);çäââ//else check for PUA riderçäââIF(/*Is coverage a PUA rider?*/'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'TransEffDate'));çäâââ/*yes - return premium from attribute*/ 'Policy Coverage ModalPremAmt'(coverageIndex);çä çäâââ// Else return standard premium çäâââ'ModePremium Round Intermediate Calculation'(çäââââ'ModePremium Coverage PremiumPerUnit'(calcType; coverageIndex; vectorParms);çä//ââââ'Policy Coverage CurrentNumberOfUnits'(calcType; coverageIndex; 'TransEffDur');çäââââunits;    //use passed units not units from above functionçäââââmodalFactor;çäââââ1çäâââ)çäââ)çäâ);çäâ// Else no - return zeroçäâ0çä)
+F1 7aa90f13 ef47da7 0 4afa0f3d 0 0 2
+--WLFaceSolves ModePremium Coverage Table Rating(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+'ModePremium Coverage Table Rating'(coverageIndex; modalFactor; vectorParms)
+F1 4afa0f3d ef47da7 3060ee34 8947d53 0 0 2
+--WLFaceSolves ModePremium Coverage Fees(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+IF (/*Initial coverage?*/çäâcoverageIndex = 0;çäâ// Assume policy fees and collection fees only apply to the base coverageçäâ'WLFaceSolves ModePremium Policy Fee'(coverageIndex; modalFactor; vectorParms) çä             +  'ModePremium Collection Fee'(coverageIndex; modalFactor; vectorParms);çäâ/*Return zero for other coverages*/çäâ0çä)
+F1 3060ee34 4afa0f3d 5084f4f8 0 0 0 2
+--WLFaceSolves ModePremium Policy Fee(coverageIndex; modalFactor; vectorParms)
+Funktion
+IF (/*If policy fee is included*/çäâ'ModePremium Policy Fee Is Included'(coverageIndex; vectorParms);çäâ/*Return policy fee*/çäâ'ModePremium Round Intermediate Calculation'('WLFaceSolves ModePremium Annual Policy Fee'(coverageIndex; vectorParms); 1; modalFactor; 1);çäâ/*else return zero*/çäâ0çä)
+F1 5084f4f8 3060ee34 0 0 0 0 2
+--WLFaceSolves ModePremium Annual Policy Fee(coverageIndex; vectorParms)
+Funktion
+IF (/*Fee is included in premium */'ModePremium Fee Active For Mode'('PI PolicyProduct Fee FeeAddRule'('Policy ProductCode'; 'FeeType PolicyFee'; 'Policy EffDate'); vectorParms)çä     && (coverageIndex = 0);  çä      // Assume only base coverage has fees for now, and these come from the PolicyProduct.çäâCASE (/*Fee calc rule*/çäââ'PI PolicyProduct Fee FeeCalcRule'('Policy ProductCode'; 'FeeType PolicyFee'; 'Policy EffDate');çäâ// Fee is always the same amountçäââ"1000500001": 'ModePremium Policy Fee Fixed Amt';  ââçäââçäâ//Else return error messageçäâââ      : 'Messages SystemMessage'("CA1003"; 'Message Language'; çäâââââ                 v_('WLFaceSolves Model Name'; çäâââââ                     "'WLFaceSolves ModePremium Annual Policy Fee"; çäââââ                                    'PI PolicyProduct Fee FeeCalcRule'('Policy ProductCode'; çäâââââââââ     'FeeType PolicyFee'; çäâââââââââ     'Policy EffDate'çäââââââ        )çäâââ                                              )çäâ    â                      )çäâ);çäâ// Else return zeroçäâ0çä)çä* 'GEN Payments In Year'('PI PolicyProduct Fee FeeMode'('Policy Coverage ProductCode'(calcType;coverageIndex); 'FeeType PolicyFee'; 'Policy EffDate'))çä
+F1 8947d53 ef47da7 0 0 0 0 2
+WLFaceSolves ModePremium Coverage CovOptions(calcType;coverageIndex; modalFactor; vectorParms;units)
+Funktion
+IF ( /*Are there any covoptions on this coverage?*/ 'Policy Number of CovOption'(calcType;coverageIndex) > 0 ; çä   /*Yes - return covoption premium*/ SUMX(coverageOptionIndex;0;'Policy Number of CovOption'(calcType;coverageIndex) - 1;IF ('Std CovOption Is Inforce'(calcType;coverageIndex;#coverageOptionIndex;'ModePremium TransEffDate'(vectorParms);TransEffDur) ; çä    'ModePremium Coverage CovOption'(calcType;coverageIndex;#coverageOptionIndex;modalFactor;vectorParms) ; çä     // Elseçä0çä  )) ; çä // Else return zeroçä0çä)
+F1 6ae3ca16 3fc150 44f7eec3 21bae4ac 0 0 2
+--WLFaceSolves ModePremium Coverage Flat Extras(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+'WLFaceSolves ModePremium Coverage Perm Flat Extra'(coverageIndex; modalFactor; vectorParms;units)çä+çä'WLFaceSolves ModePremium Coverage 1stTemp Flat Extra'(coverageIndex; modalFactor; vectorParms;units)çä+çä'WLFaceSolves ModePremium Coverage Subsequent Flat Extras'(coverageIndex; modalFactor; vectorParms;units)çä çä
+F1 44f7eec3 6ae3ca16 0 73db1747 0 0 2
+--WLFaceSolves ModePremium Coverage Perm Flat Extra(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+IF (/*Is flat extra included in premium?*/çäâ'ModePremium Coverage Flat Extra Is Included'(coverageIndex; 0; vectorParms);çäâ/*Yes - include flat extra*/çäâ'ModePremium Round Intermediate Calculation'('Policy LifeParticipant PermFlatExtraAmt'(coverageIndex; 0); çä//âââââ'Policy Coverage CurrentNumberOfUnits'(calcType; coverageIndex; TransEffDur);çäâââââunits;                //use passed unitsçäâââââmodalFactor;çäâââââ1çäâ);çäâ/*No - return zero*/çäâ0çä)
+F1 73db1747 6ae3ca16 0 596c64eb 0 0 2
+--WLFaceSolves ModePremium Coverage 1stTemp Flat Extra(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+IF (/*include flat extras in premium?*/'ModePremium Coverage Flat Extra Is Included'(coverageIndex; 1; vectorParms) çä     && 'Policy LifeParticipant TempFlatExtraAmt'(coverageIndex; 0) > 0çä     && 'DATE Date In Range'(IF ('ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank';   // Not a projectionçäâââ'ModePremium TransEffDate'(vectorParms); çäâââ// Elseçäâââ'Increase Date By Years'('Policy EffDate'; 'ModePremium Policy Duration'(vectorParms) )çäââ        );çäââ        'Policy LifeParticipant TempFlatStartDate'(coverageIndex; 0); çäââ        'Policy LifeParticipant TempFlatEndDate'(coverageIndex; 0)çä           );çäâ//Yes - return flat extra premiumçäâçäâ'ModePremium Round Intermediate Calculation'('Policy LifeParticipant TempFlatExtraAmt'(coverageIndex; 0);çä//â               âââ'Policy Coverage CurrentNumberOfUnits'(calcType; coverageIndex; TransEffDur);çä                                                                       units;        //used passed unitsçäâ               âââmodalFactor;çäâââââ1çäâ);çäâ// ELSE return zeroââââçäâ0çä)
+F1 596c64eb 6ae3ca16 0 3a906546 0 0 2
+--WLFaceSolves ModePremium Coverage Subsequent Flat Extras(coverageIndex; modalFactor; vectorParms;units)
+Funktion
+'ModePremium Coverage Subsequent Flat Extras'(coverageIndex; modalFactor; vectorParms)
+F1 3a906546 6ae3ca16 0 0 0 0 2
+WLFaceSolves Model Name
+Funktion
+"WLFaceAmountSolves"
+F1 21bae4ac 3fc150 0 0 0 0 2
+Vector WLFaceSolves Units Adjusted(vectorParms; units)
+Funktion
+v_replace(vectorParms;units;16)
+F1 54b5341d 75bfd34e 4b5edf73 4eac072a 0 0 2
+-- Rider Face Amount Functions --
+Funktion
+
+F1 4b5edf73 54b5341d 0 0 0 0 2
+WLFaceSolves Coverage Units From Base(calcType;coverageIndex; baseFaceUnits)
+Funktion
+IF ( /*Base coverage*/ coverageIndex = 0 ; çä  baseFaceUnits ; çä  'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;1)çä)
+F1 4eac072a 75bfd34e 745ee7f3 42e4a12a 0 0 2
+-- Max Min face Amounts --
+Funktion
+
+F1 745ee7f3 4eac072a 0 55c4260 0 0 2
+WLFaceSolves Max Base Face
+Funktion
+100000000
+F1 55c4260 4eac072a 0 0 0 0 2
+WLFaceSolves Min Base Face
+Funktion
+50000
+F1 42e4a12a 75bfd34e 4300cea9 3ff8d0 0 0 2
+-- Sell Premium Solve --
+Funktion
+/* Two methods here. çä çäThe "using solve" method. It solves using the binary search approachçäwithin a selected premium band. çäThe other uses a direct method - takes premium less constants, and divides by a rate per unit to get çäbase face units. çä çäBoth methods have been tested to give the same answers. The second is a little quicker. çä çä*/
+F1 4300cea9 42e4a12a 1859bad0 320bcf5a 0 0 2
+WLFaceSolves Face Amount Solve Sell Premium(calcType)
+Funktion
+ // check for minimums, and get highest face amount supporting that premiumçä//'WLFaceSolves Face Amount Solve Sell Premium using Solve'(calcType)çä// NT - quick fix for delivery - something wrong with waiver on quicker method. Use old solve çä// method in the meantimeçä'GEN Ceil'(IF ('WLFaceSolves Min Premium Check'(calcType) ; çä  'WLFaceSolves Adjust Face for Minimums'(calcType;0) * 1000 ; çä  'WLFaceSolves Adjust Face for Minimums'(calcType;'WLFaceSolves Get Max Solved Face Amount'(calcType;'WLFaceSolves Variable Coverage Face Amount'(calcType;'WLFaceSolves Check Sell Premium in Band Rec'(calcType;'WLFaceSolves Maximum Band'(calcType))) * 0.001)) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;0);0;'Policy EffDate')çä);0)
+F1 1859bad0 4300cea9 5ac1cbac 43eb4526 0 0 2
+WLFaceSolves Variable Coverage Face Amount(calcType;bandCode)
+Funktion
+ // Note that this function doesn't use band code, as rates in base PA aren't bandedçä// however, band parm is added to this function to allow for mods that do use bands. çä'GEN Floor'(('WLFaceSolves Variable Coverage Premium Available'(calcType) / (SUMX(coverageIndex;0;'Policy Number of Coverage'(calcType;1) - 1;0) / ('WLFaceSolves LowBound'(bandCode) * 0.001))) * 1000;0)
+F1 5ac1cbac 1859bad0 0 e076210 0 0 2
+WLFaceSolves Variable Coverage Premium Available(calcType)
+Funktion
+'WLFaceSolves Get Solve Premium'(calcType) - 'WLFaceSolves Fixed Coverage Premium'(calcType)
+F1 e076210 1859bad0 0 0 0 0 2
+WLFaceSolves Fixed Coverage Premium(calcType)
+Funktion
+SUMX(coverageIndex;0;'Policy Number of Coverage'(calcType;1) - 1; // mode premium, including flat extras and covoptionsçäIF ( /*Coverage is PUAR*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate)) ; çä   // Yes - ignore ALIR for Money purchase solveçä0 ; çä  'ModePremium Coverage Premium'(calcType;#coverageIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector ModePremium Create Parms Vector for FaceSolve'('CalcType Current'(calcType);'Policy PaymentMode';1)) + 'WLFaceSolves ModePremium Coverage CovOptions'(calcType;#coverageIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector ModePremium Create Parms Vector for FaceSolve'('CalcType Current'(calcType);'Policy PaymentMode';1);'Policy Coverage CurrentNumberofUnits'(calcType;#coverageIndex;1))çä))
+F1 43eb4526 4300cea9 0 53e6f1f8 0 0 2
+WLFaceSolves Get Solve Premium(calcType)
+Funktion
+IF ('Illus Face Amt Solve Premium' EQUAL "S" ; çä  'WLFaceSolves Total Mode Premium'(calcType;'INPUT Illus FaceAmt'[1] * 0.001) ; çä  'Illus Face Amt Solve Premium'çä)
+F1 53e6f1f8 4300cea9 7a94e399 793c015 0 0 2
+WLFaceSolves Adjust Face for Minimums(calcType;baseFaceUnits)
+Funktion
+IF (('UnderwritingClass is Preferred'('Policy LifeParticipant UnderwritingClass'(calcType;0;0;TransEffDur)) && 'TobaccoPremiumBasis Is NonSmoker'('Policy LifeParticipant TobaccoPremiumBasis'(calcType;0;0;TransEffDur))) || 'UnderwritingClass is UltraPreferred'('Policy LifeParticipant UnderwritingClass'(calcType;0;0;TransEffDur)) ; çä  MAX(50;baseFaceUnits) ; çä  IF ('Plan is NonQualified' ; çä    MAX(25;baseFaceUnits) ; çä    IF ('Plan is Qualified' ; çä      MAX(10;baseFaceUnits) ; çä      baseFaceUnitsçä    )çä)çä)
+F1 7a94e399 53e6f1f8 0 0 0 0 2
+WLFaceSolves Min Premium Check(calcType)
+Funktion
+IF ('WLFaceSolves Get Solve Premium'(calcType) < 1 || 'WLFaceSolves Check Sell Premium in Band Rec'(calcType;'WLFaceSolves Maximum Band'(calcType)) < 0 ; çä  1 ; çä  0çä)
+F1 793c015 4300cea9 250d70b 2c402c63 0 0 2
+WLFaceSolves Get Max Solved Face Amount(calcType; baseFaceUnits)
+Funktion
+ // Increases face amount by $1 until face amount results in a higher premium than that solved. çä// This function returns units, not amountçä'WLFaceSolves Get Max Solved Face Amount Rec'(calcType;baseFaceUnits)
+F1 250d70b 793c015 0 0 0 0 2
+WLFaceSolves Get Max Solved Face Amount Rec(calcType;baseFaceUnits)
+Funktion
+ // Increases face amount by $1 until face amount results in a higher premium than that solved. çäIF ('WLFaceSolves Total Mode Premium'(calcType;baseFaceUnits) > 'WLFaceSolves Get Solve Premium'(calcType) + 0.001 ; çä  baseFaceUnits - 0.001 ; çä  'WLFaceSolves Get Max Solved Face Amount Rec'(calcType;baseFaceUnits + 0.001)çä)
+F1 2c402c63 4300cea9 2a451742 0 0 0 2
+WLFaceSolves Check Sell Premium in Band Rec(calcType; bandCode)
+Funktion
+IF (bandCode = 0 && NOT('WLFaceSolves Premium Valid In Band'(calcType;bandCode)) ; çä  -1 ; çä   //"ERROR - No face Amount found for given premium";çäIF ('WLFaceSolves Premium Valid In Band'(calcType;bandCode) ; çä    bandCode ; çä    'WLFaceSolves Check Sell Premium in Band Rec'(calcType;bandCode - 1)çä  )çä)
+F1 2a451742 2c402c63 0 19844f4c 0 0 2
+WLFaceSolves Premium Valid In Band(calcType;bandCode)
+Funktion
+IF ( /*Does the band code exist?*/ 'WLFaceSolves Is Valid Band'(bandCode) ; çä   // Yes - check if the face amount falls in itçäIF ( /*Does premium cause a face amount which falls in band? */// check against lower bound of bandçä 'WLFaceSolves Total Mode Premium'(calcType;'StdTable Band Lower FaceAmt'(bandCode) * 0.001) < 'WLFaceSolves Get Solve Premium'(calcType) // and check that it's lower than the next bandçä && IF (bandCode < 'WLFaceSolves Maximum Band'(calcType) ; çä    'WLFaceSolves Total Mode Premium'(calcType;'StdTable Band Lower FaceAmt'(bandCode + 1) * 0.001) > 'WLFaceSolves Get Solve Premium'(calcType) ; çä    1 // if this is the highest band, then no need to check upper limitçäçä  ) ; çä   /*Yes - return true if face amount does fall in this band*/ 1 ; çä   /*No - return false if face amount is outside this band*/ 0çä) ; çä // No - band code does not exist. çä0çä)
+F1 19844f4c 2c402c63 d428ec3 0 0 0 2
+WLFaceSolves Maximum Band(calcType)
+Funktion
+ //LOOKUPX('TABLE Illus BandCode'; 'Policy Coverage ProductCode'(calcType; 'Std BaseCov Index'(calcType)); 'WLFaceSolves Max Base Face'; "BandCode")çä'ACCS Band Code'('Policy Coverage ProductCode'(calcType;'Std BaseCov Index'(calcType));'Policy EffDate';'WLFaceSolves Max Base Face')
+F1 d428ec3 19844f4c 0 0 0 0 2
+WLFaceSolves Is Valid Band(bandCode)
+Funktion
+ // StdTable function returns -1 if band code does not exist.çä'StdTable Band Lower FaceAmt'(bandCode) >= 0
+F1 320bcf5a 42e4a12a d71b543 0 0 0 2
+WLFaceSolves Face Amount Solve Sell Premium using Solve(calcType)
+Funktion
+ // round the result up to the next dollarçä'GEN Ceil'('WLFaceSolves Sell Premium Face Solve Call'(calcType);0)
+F1 d71b543 320bcf5a 22942b70 6cf87b0c 0 0 2
+WLFaceSolves Sell Premium Face Solve Call(calcType)
+Funktion
+ //handles the call for the sell premium face solveçä// First check for minimum premiumçäIF ('WLFaceSolves Min Premium Check'(calcType) ; çä  'WLFaceSolves Adjust Face for Minimums'(calcType;0) * 1000 ; çä  'WLFaceSolves Adjust Face for Minimums'(calcType;'WLFaceSolves Get Max Solved Face Amount'(calcType;'GEN floor'('WLFaceSolves Solve Within Band Rec'(calcType;('WLFaceSolves LowBound'('WLFaceSolves Check Sell Premium in Band Rec'(calcType;'WLFaceSolves Maximum Band'(calcType))) + 'WLFaceSolves HighBound'(calcType;'WLFaceSolves Check Sell Premium in Band Rec'(calcType;'WLFaceSolves Maximum Band'(calcType)))) / 2; // CurrGuessçä0; // prev guessçä'WLFaceSolves LowBound'('WLFaceSolves Check Sell Premium in Band Rec'(calcType;'WLFaceSolves Maximum Band'(calcType)));'WLFaceSolves HighBound'(calcType;'WLFaceSolves Check Sell Premium in Band Rec'(calcType;'WLFaceSolves Maximum Band'(calcType))));0) * 0.001 // round to the lower dollar, and convert to units.çä)) * 1000 // convert to face amountçäçä)
+F1 22942b70 d71b543 0 4a461bb8 0 0 2
+WLFaceSolves LowBound(bandCode)
+Funktion
+'StdTable Band Lower FaceAmt'(bandCode)
+F1 4a461bb8 d71b543 0 0 0 0 2
+WLFaceSolves HighBound(calcType; bandCode)
+Funktion
+IF ( /*Is face in the top band?*/ bandCode = 'WLFaceSolves Maximum Band'(calcType) ; çä   // highboundçä//Yes - use max face as upper boundçä'WLFaceSolves Max Base Face' ; çä   // No - use lower bound of next bandçä'StdTable Band Lower FaceAmt'(bandCode + 1)çä)
+F1 6cf87b0c 320bcf5a 0 4010ded3 0 0 2
+WLFaceSolves Is Face Amount Below Minimum(calcType;baseFaceUnits)
+Funktion
+'WLFaceSolves Adjust Face for Minimums'(calcType;baseFaceUnits) <> baseFaceUnits
+F1 4010ded3 320bcf5a 0 1d32d513 0 0 2
+WLFaceSolves Coverage depends on Base(calcType; coverageIndex)
+Funktion
+'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || CASE('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate);çä  41 : 1;çä   // Waiver on disabilityçä : 0)çä
+F1 1d32d513 320bcf5a 0 0 0 0 2
+WLFaceSolves Solve Within Band Rec(calcType;currGuess; prevGuess; lowBound; highBound)
+Funktion
+ // recursively solves for the face amount which provides a premium equal to the input premiumçäIF ( /*Face Amount is within tolerance limits*/ ABS('WLFaceSolves Total Mode Premium'(calcType;currGuess * 0.001) - 'WLFaceSolves Get Solve Premium'(calcType)) < 0.01 || currGuess = prevGuess || currGuess = lowBound || currGuess = highBound ; çä   //True - return current guessçäcurrGuess ; çä   // Else call this function again with a different guessçäIF ('WLFaceSolves Total Mode Premium'(calcType;currGuess * 0.001) < 'WLFaceSolves Get Solve Premium'(calcType) ; çä     // Face amount is too lowçä'WLFaceSolves Solve Within Band Rec'(calcType;(highBound + currGuess) * 0.5;currGuess;currGuess;highBound) ; çä     // currGuess Face is too highçä'WLFaceSolves Solve Within Band Rec'(calcType;(lowBound + currGuess) * 0.5;currGuess;lowBound;currGuess)çä  )çä)
+F1 3ff8d0 75bfd34e 3ffb88 0 0 0 2
+--Testing--
+Funktion
+
+F1 3ffb88 3ff8d0 0 0 0 0 2
+WLFaceSolves Test2(calcType;recNumber)
+Funktion
+E_('WLFaceSolves Face Amount Solve Mix Dollars'(calcType);recNumber)
+A0 3f4300 0 0 0 0 0 0
+
+T0 3f436c 0 3ffea8 0 0 0 0
+
+T1 3ffea8 3f436c 0 3fff78 0 0 2
+-- List Tables --
+key
+value1
+T1 3fff78 3f436c 0 0 0 0 2
+--Rules --
+key
+value1
+I0 3f43d8 0 262732bb 0 0 0 0
+
+I0 262732bb 3f43d8 0 0 0 0 0
+TradContractDocuments.pms
+-
+O0
+E0
+L0
+B0
+P3
+3f5a68
+3f6b78
+3f7018
+F64
+75bfd34e
+3f6da8
+3f7248
+3f73b0
+3f77f0
+3f7d40
+3f7e98
+3f8200
+3f8648
+3f87c0
+3f88b0
+3f89d8
+3f8da0
+3f8f98
+3f9348
+3f9420
+3f9b78
+3f9ef8
+3fa180
+3fa570
+3fa6d8
+3fa7c8
+3faa60
+3fabc0
+3fad18
+3fb368
+3fb5a8
+3fb7e0
+3fba20
+3fbc88
+523af28a
+7c0d78f5
+874822a
+3083d9bb
+7c78ed89
+3fc150
+54b5341d
+4b5edf73
+4eac072a
+745ee7f3
+55c4260
+42e4a12a
+4300cea9
+1859bad0
+5ac1cbac
+e076210
+43eb4526
+53e6f1f8
+7a94e399
+793c015
+250d70b
+2c402c63
+2a451742
+19844f4c
+d428ec3
+320bcf5a
+d71b543
+22942b70
+4a461bb8
+6cf87b0c
+4010ded3
+1d32d513
+3ff8d0
+3ffb88
+A0
+T2
+3ffea8
+3fff78
+!73
+3f7018 3 -1
+Description: çäWill return a string consisting of BIR face amount, çäBase Face amount, BIR premium, Base premium,çätotal calculated premium, iteration number çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008   CSC Illustrations  ILLUS001
+3f7018 4 -1
+ will return a string consisting of BIR percent of total face, çäBase percent of total face amount, current BIR premium, low Bir face, çähigh BIR face, iteration number, total calculated premium çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3f6da8 -2 -2
+Description:çäWill return a vector of valuesçäBIR Face amount,çäBase Face AmountçäBIR Recommended PremiumçäBase PremiumçäTotal Calculated PremiumçäIteration Numberçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/18/2008 vj     Added comments to case statementçä03/06/2008 CSC Illustrations ILLUS001
+3f7248 -2 -2
+Description:çäWill return a vector of valuesçäBIR % of Total Face amountçäBase % of Total Face Amount çäBIR Recommended PremiumçäBase PremiumçäTotal Calculated PremiumçäIteration Numçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/18/2008 vj     Added comments to case stmtçä03/06/2008 CSC Illustrations ILLUS001
+3f73b0 -2 -2
+Description:çäSets up values for initial iterationçä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parm from 'WLFaceSolves Iteration'çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 add initial prem checkçä03/06/2008 CSC Illustrations ILLUS001
+3f73b0 0 2
+
+3f77f0 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3f7d40 -2 -2
+Description:çäDetermine max BIR face amount allowedçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Illustrations ILLUS001
+3f7e98 -2 -2
+Description:çäReturn values when input premium is too low for variables enteredçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Illustrations ILLUS001
+3f8200 -2 -2
+Description:çäReturn values when input premium is too high for variables enteredçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Illustrations ILLUS001
+3f8648 -2 -2
+Description:çäCalls TargetDeathBenefit for BIR Recommended Premiumçäfor Specified BIR Face Amtçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001
+3f87c0 -2 -2
+Description:çäCalculate the initial BIR face amount çä çäModification Log:çä03/06/2008 CSC Illustrations ILLUS001
+3f88b0 -2 -2
+Description:çäCalculate the base coverage premium using the çäbase coverage number of unitsçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001
+3f89d8 -2 -2
+Description:çäCalculate Base Premiumçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/20/2009 - PAC002 - JL - Update to match current vetorModePremium arrangement (add yearIndex)çä05.27.09 - PA1277 - vm - included a 16th element to allow for the variabily of units in Face Solves.çä03/06/2008 CSC Illustrations ILLUS001
+3f8da0 -2 -2
+Description:çäDetermine how much of the total face to be allocated çäto the base coverageçä çäModification Log:çä03/06/2008 CSC Illustrations ILLUS001
+3f8da0 0 2
+
+3f8f98 -2 -2
+Description:çäCalculate the recommended BIR premium passing çä the BIR vectorçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/20/2009 - PAC002 - JL - Replace "round" with "GEN Round"çä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä03/06/2008 CSC Illustrations ILLUS001
+3f9420 -2 -2
+Description:çäFace Amount Solve Iterationçä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parm from here & 'WLFaceSolves Output'çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001
+3f9b78 -2 -2
+Description: The OUTPUTs are  a vector of valuesçäthis functions display an element of the vector output per specifiied recNumberçäand the face amts by Dollar or % per calcType (D=$, P=%)çä çä0 - Bir Face Amtçä1 - Base Face Amtçä2 - BIR recommended premium çä3 - Base premiumçä4 -Total prem calculated by model (may differ from input prem per tolerance)çä5 - last iteration numberçä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parmçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001
+3f9ef8 -2 -2
+Description:   Low boundary for next guessçä çä  if calculated prem too low and the ppu BIR is GE ppu Base,   max(currGuess;lowFace)çä  if calculated prem too low and the ppu BIR is LT ppu Base,    lowFaceâââ      çä  if calculated prem too high and the ppu BIR is GE ppu Base,  low faceâçä  if calculated prem too high and the ppu BIR is LT ppu Base,    max(currGuess;lowFace)çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001 
+3fa180 -2 -2
+Description:   Low boundary for next guessçä çäif calculated prem too low and the ppu BIR is GE ppu Base,    highFace)çäif calculated prem too low and the ppu BIR is LT ppu Base,     min(highFace;currGuess)âââ      çäif calculated prem too high and the ppu BIR is GE ppu Base,   min(currGuess;highFace)âçäif calculated prem too high and the ppu BIR is LT ppu Base,    highFaceâçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001 
+3fa570 -2 -2
+Description: calculate the prem per unit for BIR, çäused to determine low/high boundariesçä çäModification Log:çä11/20/2009 - PAC002 - JL - Add Max to avoid division by 0çä03/06/2008 CSC Illustrations ILLUS001 
+3fa6d8 -2 -2
+Description: calculate the prem per unit for Base, çäused to determine low/high boundariesçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001 
+3fa7c8 -2 -2
+Description:çäTolerances used in the iterative functionsçä"R" = result  ([premium)çä çäModification Log:çä03/06/2008 CSC Illustrations ILLUS001
+3faa60 -2 -2
+Description:çäModel calculated total premium (BIR + Base)çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001
+3fabc0 -2 -2
+Description:çäCalculate the new BIR recommended premium çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008 CSC Illustrations ILLUS001
+3fad18 -2 -2
+Description:çäComputes a next guess (BIR face) using the bisection failsafe methodçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/19/2008 added min face amount errorçä03/06/2008 CSC Illustrations ILLUS001
+3fb368 -2 -2
+Description:Dertermin if base or BIR allocated face amount çäis below coverage minimum  çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/19/2008 CSC Illustrations ILLUS001
+3fb5a8 -2 -2
+Description:Retrieve coverage minimum  çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/18/2008 -vj- added comments to case stmtçä03/19/2008 CSC Illustrations ILLUS001
+3fb5a8 0 2
+
+3fb7e0 -2 -2
+Description:Retrieve BIR max ratio of BIR face to base face çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Illustrations ILLUS001
+3fba20 -2 -2
+Description:çäOutput base face amount or base percentage of total face amountçä çäModification Log:çä03/06/2008 CSC Illustrations ILLUS001
+3fbc88 -2 -2
+Description:çäOutput BIR face amount or BIR percentage of total face amountçä çäModification Log:çä03/06/2008 CSC Illustrations ILLUS001
+7c0d78f5 -2 -2
+Description : Total mode premium using units as parmçä çäModification Log :çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/26/2008 - Phase 3 - RPU - BMS - Add mode to coverage premiumçä08/18/2008 - NT  - Changed PUAR, add waiver to riders
+874822a -2 -2
+Description:çäCalculate mode premium for specified coverage and unitsçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - PA1277 - vm - Mode Premium fucntionality is now used as opposed to the WLFace Solve duplicates.çä7/17/2008 - NT - fixed mode premium factor being passed downçä03/06/2008 CSC Illustrations ILLUS001
+3083d9bb -2 -2
+Description : Total mode premium using units and waiver as parmçä çäModification Log :çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/05/2008 - SLA_tests - NT - use different function for coverage mode premiumçä08/26/2008 - Phase 3 - RPU - BMS - Add mode to coverage premiumçä08/18/2008 - NT -  Changed PUAR, add waiver to riders
+7c78ed89 -2 -2
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fc150 -2 -2
+Description:çäCalculate mode premium for specified coverage and unitsçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - PA1277 - vm - modified to allow for variability in unit for WLFace Solves.çä03/06/2008 CSC Illustrations ILLUS001
+ef47da7 -2 -2
+Description:çäTotal Base premium including extras and feesçä çäModification Log:çä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+6d950980 -2 -2
+Description:çäBase Coverage Premiumçä çäModification Log:çä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+7aa90f13 -2 -2
+Description:çäBase Coverage Table Ratingçä çäModification Log:çä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+4afa0f3d -2 -2
+Description:çäCoverage Feesçä çäModification Log:çä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+3060ee34 -2 -2
+Description: Returns the policy fee amount to be included in the mode premium calculation.çä çäModification Log:çä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+3060ee34 0 2
+
+5084f4f8 -2 -2
+Description: Returns the annual policy fee amount. çä Note that the policy fee stored is assumed to be the annual policy fee.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+8947d53 -2 -2
+Description:çäCoverage Options Base coverageçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/11/2008 CSC Illustrations ILLUS001 (LP) added 'yearIndex' (as TransEffDur) to 'Std CovOption Is Inforce'çä03/06/2008 CSC Illustrations ILLUS001
+6ae3ca16 -2 -2
+Description:çäCalculate Flat Extrasçä çäModification Log:çä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+44f7eec3 -2 -2
+Description:çäPerm Flat Extrasçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+73db1747 -2 -2
+Description:çä1st Temp Flat Extraçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+596c64eb -2 -2
+Description:çäSubsequent Flat Extrasçä çäModification Log:çä05.22.09 - vm - commented due to the incorporation of ModePremium functionalityçä03/06/2008 CSC Illustrations ILLUS001
+3a906546 -2 -2
+Description:çäDefine model name for error messageçä çäModification Log:çä03/06/2008 CSC Illustrations ILLUS001
+21bae4ac -2 -2
+Description:çämodifies the vector "vectorParms" by replacing the policy units with parm "units".çä çäModification Log:çä11/17/2009 - PAC002 - JL - FA is stored in position 16, not 15çä05/22/2009 CSC Illustrations ILLUS001
+4b5edf73 -2 -2
+Description : Adjusts number of units in coverage depending on base unitsçä çäModification Log :çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/20/2008 - NT - changed reference from function to attribute to avoid infinite loops in money purchase callsçä4/26/2008 - NT - Added function
+4300cea9 -2 -2
+Description : Returns the face amount to satisfy a given sell premium.çä çäModification log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/12/2008 - NT - reversed quick fix for delivery, and used quicker direct method for face solveçä07/07/08 - Initial CSC function
+1859bad0 -2 -2
+Description : Returns face amount able to be bought by premium remaining for buying base coverage after fixed coverage (riders, etc) premium has been taken off the solve premiumçä çäModification log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/07/08 - Initial CSC function
+5ac1cbac -2 -2
+Description : Returns premium remaining for buying base coverage after fixed coverage (riders, etc) premium has been taken off the solve premiumçä çäModification log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/07/08 - Initial CSC function
+e076210 -2 -2
+Description : Returns the total premium for all coverages which are not çä  linked to base coverage unitsçä çäModification log : çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/12/2008 - NT - reversed quick fix for delivery, and used quicker direct method for face solveçä08/26/2008 - Phase 3 - RPU - BMS - Add mode to coverage premiumçä07/07/08 - Initial CSC function
+43eb4526 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+53e6f1f8 -2 -2
+Description : If premium is below $1, return minimum face amountçä çäModification Log : çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/09/2008 - NT - Initial function
+7a94e399 -2 -2
+Description : If premium is below $1, return minimum face amountçä çäModification Log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/09/08 - JL - Defect 299_300 - Include check on FaceAmount less than Minimum (Bandcode -1); Added includeWaiver parameterçä07/09/2008 - NT - Initial function
+793c015 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+250d70b -2 -2
+Description : Recursively works it's way up until the resulting premium is larger than the solve premiumçä çäModification Log :çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "WLFaceSolves Total Mode Premium" to pass the base unitsçä08/18/2008 - NT  - add 0.001 to premium to make sure it gets there at least
+2c402c63 -2 -2
+Description : Recursively checks the face amount for each band to see if the sell premium produces a face amount in that band, using that band's premium ratesçä çäModification Log :çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/08/2008 - NT - CSC initial calculation rule
+2a451742 -2 -2
+Description : Returns 1 if the remaining solve premium can purchase a face amount in this band. çä çäModification log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "WLFaceSolves Total Mode Premium" to pass the base unitsçä07/07/08 - Initial CSC function
+19844f4c -2 -2
+Description : Returns the maximum band number applicable to the productçä çäModification log : çä03/28/2012 CL Integration CMC moved band code table to calc rules instead of standard tables.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/03/2009 - PAC006 - wdp - Edited function to work with updated table structure.çä07/07/08 - Initial CSC function
+d428ec3 -2 -2
+Description : Returns 1 if the band code exists. This is to avoid errors when bandCode 0 is passed , or ir band codes are skipped in the tableçä çä çäModification log : çä07/07/08 - Initial CSC function
+320bcf5a -2 -2
+Description : Returns the face amount to satisfy a given sell premium.çä çäModification log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/07/08 - Initial CSC function
+d71b543 -2 -2
+Description : makes the actual call to the solve routine to return the amount solved for. çä çäModification Log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/09/08 - JL - Defect 299_300 - Include 'includeWaiver' parameter in 'WLFaceSolve Min Premium Check'çä7/25/2008 - NT - added rounding (down) to initial solve to get a dollar amount to work with çä
+4a461bb8 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+6cf87b0c -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+4010ded3 -2 -2
+Description : Returns 1 if coverage units are linked to base coverage unitsçä çäModification log : çä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/07/08 - Initial CSC function
+1d32d513 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "WLFaceSolves Total Mode Premium" to pass the base units
+3ffb88 -2 -2
+Description: The OUTPUTs are  a vector of valuesçäthis functions display an element of the vector output per specifiied recNumberçäand the face amts by Dollar or % per calcType (D=$, P=%)çä0 - Bir Face Amtçä1 - Base Face Amtçä2 - BIR recommended premium çä3 - Low boundaryçä4 - High boundaryçä5 - last iteration numberçä6 - total prem calculated by model (may differ from input prem per tolerance)çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/26/2008 CSC Illustrations ILLUS001
+;Offset=00000000

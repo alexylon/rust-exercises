@@ -1,0 +1,1175 @@
+;1	08.12.2016 13:29:32	jlawrie2	
+X0 de07a8 0 399ac401 0 0 0 0
+
+X16 399ac401 de07a8 0 187da51a 0 0 2
+OUTPUT Policy Annuity RMDAmount (No Riders)
+OUTPUT Policy Annuity RMDAmount
+3438.14852574205
+INPUT Policy Participant BirthDate
+11/12/1933
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+Input TransEffDate
+11/12/2013
+INPUT Policy Annuity AccumValueIntRateCurrent
+6.25
+INPUT Policy Investment AccountValue
+60000
+INPUT Policy number of Rider
+0
+INPUT Policy Annuity RMDCalcMeth
+1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueAge[0;1]
+35
+INPUT Policy Annuity RMDDate
+11/12/2013
+INPUT Policy Arrangement RMDTaxRule
+2
+INPUT Policy Participant BeneficiaryDesignation
+9
+INPUT Policy EffDate
+01/01/2006
+X35 187da51a de07a8 0 77ad814a 0 0 2
+OUTPUT Policy Annuity RMDAmount (GMDB)
+OUTPUT Policy Annuity RMDAmount
+3796.65350234576
+INPUT Policy Participant BirthDate
+11/12/1933
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+Input TransEffDate
+11/12/2013
+INPUT Policy Annuity AccumValueIntRateCurrent
+6.25
+INPUT Policy Investment AccountValue
+60000
+INPUT Policy number of Rider
+1
+INPUT Policy Annuity RMDCalcMeth
+1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueAge
+72
+INPUT Policy Participant IssueAge[0;1]
+72
+INPUT Policy Annuity RMDDate
+11/12/2013
+INPUT Policy Arrangement RMDTaxRule
+2
+INPUT Policy Participant BeneficiaryDesignation
+9
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct MaturityAge
+85
+INPUT Policy Rider RiderStatus
+1
+INPUT Discount Int Rate
+4
+INPUT Policy Rider RiderTypeCode
+206
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmt
+100000
+INPUT Mortality Table
+1
+INPUT Policy Participant IssueGender
+3
+INPUT Policy Jurisdiction
+1000
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage ProductCode
+FPA1PA
+INPUT Policy ProductType
+9
+INPUT Policy FeatureOptProduct LivesType
+1
+INPUT Policy FeatureOptProduct number of Fee
+0
+INPUT Policy FeatureOptProduct Fee Type
+0
+INPUT Policy Rider RiderCode
+GMDB1PA
+X16 77ad814a de07a8 0 19aedffa 0 0 2
+OUTPUT Policy Annuity RMDAmount (No Riders)
+OUTPUT Policy Annuity RMDAmount
+343.814852574205
+INPUT Policy Participant BirthDate
+11/12/1933
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+Input TransEffDate
+11/12/2013
+INPUT Policy Annuity AccumValueIntRateCurrent
+6.25
+INPUT Policy Investment AccountValue
+6000
+INPUT Policy number of Rider
+0
+INPUT Policy Annuity RMDCalcMeth
+1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueAge[0;1]
+35
+INPUT Policy Annuity RMDDate
+11/12/2013
+INPUT Policy Arrangement RMDTaxRule
+2
+INPUT Policy Participant BeneficiaryDesignation
+9
+INPUT Policy EffDate
+01/01/2006
+X35 19aedffa de07a8 0 18edd181 0 0 2
+OUTPUT Policy Annuity RMDAmount (GMIB)
+OUTPUT Policy Annuity RMDAmount
+402.144799663762
+INPUT Policy Participant BirthDate
+11/12/1933
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+Input TransEffDate
+11/12/2013
+INPUT Policy Annuity AccumValueIntRateCurrent
+6.25
+INPUT Policy Investment AccountValue
+6000
+INPUT Policy number of Rider
+1
+INPUT Policy Annuity RMDCalcMeth
+1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueAge
+72
+INPUT Policy Participant IssueAge[0;1]
+72
+INPUT Policy Annuity RMDDate
+11/12/2013
+INPUT Policy Arrangement RMDTaxRule
+2
+INPUT Policy Participant BeneficiaryDesignation
+9
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct MaturityAge
+85
+INPUT Policy Rider RiderStatus
+1
+INPUT Discount Int Rate
+4
+INPUT Policy Rider RiderTypeCode
+204
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmt
+100000
+INPUT Mortality Table
+1
+INPUT Policy Participant IssueGender
+3
+INPUT Policy Jurisdiction
+1000
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage ProductCode
+FPA1PA
+INPUT Policy ProductType
+9
+INPUT Policy FeatureOptProduct LivesType
+1
+INPUT Policy FeatureOptProduct number of Fee
+0
+INPUT Policy FeatureOptProduct Fee Type
+0
+INPUT Policy Rider RiderCode
+GMIB1PA
+X35 18edd181 de07a8 0 66b26581 0 0 2
+OUTPUT Policy Annuity RMDAmount (GMAB)
+OUTPUT Policy Annuity RMDAmount
+3615.45132405529
+INPUT Policy Participant BirthDate
+11/12/1933
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+Input TransEffDate
+11/12/2013
+INPUT Policy Annuity AccumValueIntRateCurrent
+6.25
+INPUT Policy Investment AccountValue
+60000
+INPUT Policy number of Rider
+1
+INPUT Policy Annuity RMDCalcMeth
+1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueAge
+72
+INPUT Policy Participant IssueAge[0;1]
+72
+INPUT Policy Annuity RMDDate
+11/12/2013
+INPUT Policy Arrangement RMDTaxRule
+2
+INPUT Policy Participant BeneficiaryDesignation
+9
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct MaturityAge
+85
+INPUT Policy Rider RiderStatus
+1
+INPUT Discount Int Rate
+4
+INPUT Policy Rider RiderTypeCode
+338
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmt
+100000
+INPUT Mortality Table
+1
+INPUT Policy Participant IssueGender
+3
+INPUT Policy Jurisdiction
+1000
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage ProductCode
+FPA1PA
+INPUT Policy ProductType
+9
+INPUT Policy FeatureOptProduct LivesType
+1
+INPUT Policy FeatureOptProduct number of Fee
+0
+INPUT Policy FeatureOptProduct Fee Type
+0
+INPUT Policy Rider RiderCode
+GMAB1PA
+X36 66b26581 de07a8 0 0 0 0 2
+OUTPUT Policy Annuity RMDAmount (GMWB)
+OUTPUT Policy Annuity RMDAmount
+3438.14852574205
+INPUT Policy Participant BirthDate
+11/12/1933
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+Input TransEffDate
+11/12/2013
+INPUT Policy Annuity AccumValueIntRateCurrent
+6.25
+INPUT Policy Investment AccountValue
+60000
+INPUT Policy number of Rider
+1
+INPUT Policy Annuity RMDCalcMeth
+1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueAge
+72
+INPUT Policy Participant IssueAge[0;1]
+72
+INPUT Policy Annuity RMDDate
+11/12/2013
+INPUT Policy Arrangement RMDTaxRule
+2
+INPUT Policy Participant BeneficiaryDesignation
+9
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct MaturityAge
+85
+INPUT Policy Rider RiderStatus
+1
+INPUT Discount Int Rate
+4
+INPUT Policy Rider RiderTypeCode
+336
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmt
+100000
+INPUT Mortality Table
+1
+INPUT Policy Participant IssueGender
+3
+INPUT Policy Jurisdiction
+1000
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage ProductCode
+FPA1PA
+INPUT Policy ProductType
+9
+INPUT Policy FeatureOptProduct LivesType
+1
+INPUT Policy FeatureOptProduct number of Fee
+0
+INPUT Policy FeatureOptProduct Fee Type
+0
+INPUT Policy Rider RiderCode
+GMWB1PA
+INPUT Policy FeatureOptProduct AnnualWdlLimitPct
+5
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 a663b9d 0 0 0 2
+
+--description
+Determines the Required Minimum Distribution Amount for the year using Life Expectancy Factors.çä çäRERLEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1301 - SCARAB/JIRA issues PAD912
+P13 a663b9d de0804 49ed4b74 0 0 0 2
+Qualified Annuities
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Required Minimum Distribution Model with Actuarial Present Value of Additional Benefits"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RequiredMinimumDistribution.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P7 49ed4b74 a663b9d 0 799ceeb1 0 0 2
+Actuarial Value of Additional Benefits
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT AV Addl Benefits
+IF ('RMDCalc ROP Exclusion' || 'RMDCalc Prorata 120 Pct Exclusion' ; çä  0 ; çä  'GEN Round'(MAX('RMDCalc AV Addl Benefits';0);2)çä)
+OUTPUT ROP Exclusion Applies
+'RMDCalc ROP Exclusion'
+OUTPUT Prorata 120 pct exclusion applies
+'RMDCalc Prorata 120 Pct Exclusion'
+OUTPUT AV optional benefit(riderIndex)
+ // Returns the actuarial value of the requested optional benefitçä'RMDCalc AV Optional Benefit'(riderIndex)
+P7 799ceeb1 a663b9d 0 0 0 0 2
+Required Minimum Distribution Amounts
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Annuity RMDAmount
+'RMDCalc AV Annual Amt'('RMDCalc Attained Age') + 'RMD Amount'('RMDCalc Attained Age')
+OUTPUT Policy Annuity RMD LEF
+'RMD LEF'('RMDCalc Attained Age')
+OUTPUT RMD Primary Attained Age
+'Policy Participant IssueAge'(0;0) + 'Duration Year'(DATE(TransEffDate;0;0;1);'Policy Effdate') - 1
+OUTPUT RMD Beneficiary Attained Age
+IF ('Policy Annuity BeneficiaryDesignation' ALIKE "" || 'Policy Annuity BeneficiaryDesignation' = 0 ; çä  0 ; çä  'Policy Participant IssueAge'(0;1) + 'Duration Year'(DATE(TransEffDate;0;0;1);'Policy Effdate') - 1çä)
+F0 de0860 0 17105e6f 0 0 0 0
+
+F1 17105e6f de0860 6619d091 384f3579 0 0 2
+--Actuarial Value Functions--
+Funktion
+
+F1 6619d091 17105e6f 3503e7dc 1aa38837 0 0 2
+RMDCalc AV Addl Benefits
+Funktion
+SUMX(riderIndex;0;'Policy Number of Rider' - 1;'RMDCalc PV Date'(#riderIndex))
+F1 3503e7dc 6619d091 4b04a54f 0 0 0 2
+RMDCalc PV Date(riderIndex)
+Funktion
+'RMDCalc PV Age'('RMDCalc Start Age'; //start ageçä'RMDCalc End Age'; //end ageçäriderIndex)
+F1 4b04a54f 3503e7dc 44dd33d9 0 0 0 2
+RMDCalc PV Age(ageStart; ageEnd; riderIndex)
+Funktion
+SUMX(age;ageStart;ageEnd;'RMDCalc Alt Benefit PV'(ageStart;#age;riderIndex))
+F1 44dd33d9 4b04a54f 42e9672 0 0 0 2
+RMDCalc Alt Benefit PV(ageStart;ageCurrent; riderIndex)
+Funktion
+IF ('Policy Rider RiderStatus'(riderIndex) = 1 ; çä   /*Then*/ 'RMDCalc TPx'('Policy Rider RiderTypeCode'(riderIndex);ageStart;ageCurrent;"B";riderIndex) * 'RMDCalc Discount'(ageStart;ageCurrent) * 'RMDCalc Benefit'(ageCurrent;riderIndex) ; çä   /*Else*/ 0çä)
+F1 42e9672 44dd33d9 0 18c92a37 0 0 2
+RMDCalc Discount(ageStart; ageCurrent)
+Funktion
+IF (ageStart < ageCurrent && ageStart > 0 ; çä   /*Then*/ 'ACT V Discount Factor'('INPUT Discount Int Rate') ^ (ageCurrent - ageStart + 1) ; çä   /*Else*/ IF (ageStart >= ageCurrent && ageCurrent > 0 ; çä     /*Then*/ 'ACT V Discount Factor'('INPUT Discount Int Rate') ^ (ageStart - ageCurrent + 1) ; çä     /*Else*/ 'RMDCalc ErrorGen'(2006;v_("RMDCalc Discount";"RMDAVAB1";ageStart;ageCurrent);"")çä  )çä)
+F1 18c92a37 44dd33d9 1ce91b6c 0 0 0 2
+RMDCalc TPx(benefitType; ageStart; ageCurrent; addbenType; riderIndex)
+Funktion
+IF (ageCurrent <= ageStart ; çä   /*Then*/ 1 ; çä   /*Else*/ IF ('RiderType is GMWB'('Policy Rider RiderTypeCode'(riderIndex)) && 'RMDCalc In The Money'(benefitType;ageCurrent - 1;addbenType;riderIndex) ; çä     /*Then*/ 'RMDCalc TPx'(benefitType;ageStart;ageCurrent - 1;addbenType;riderIndex) ; çä     /*Else*/ 'RMDCalc TPx'(benefitType;ageStart;ageCurrent - 1;addbenType;riderIndex) * (1 - 'RMDCalc Ann Qx'(ageCurrent - 1)) * (1 - 'RMDCalc Lapse Rate'('Policy ProductCode';riderIndex) / 100) * IF ('RiderType is GMIB'('Policy Rider RiderTypeCode'(riderIndex)) ; çä       /*Then*/ (1 - 'RMDCalc Annuitization Rate'('Policy ProductCode';riderIndex)) ; çä       /*Else*/ 1çä    )çä)çä)
+F1 1ce91b6c 18c92a37 0 0 0 0 2
+RMDCalc In The Money(benefitType; ageCurrent; addbenType; riderIndex)
+Funktion
+CASE('Policy Rider RiderTypeCode'(riderIndex);çä  338 : 'RMDCalc GMAB Benefit'(ageCurrent;riderIndex);çä  206 : 'RMDCalc GMDB Benefit'(ageCurrent;riderIndex);çä  204 : 'RMDCalc GMIB Benefit'(ageCurrent;riderIndex);çä  336 : 'RMDCalc GMWB Benefit'(ageCurrent;riderIndex))çä > 0
+F1 1aa38837 17105e6f 25c311a8 6fa95ec 0 0 2
+RMDCalc ROP Exclusion
+Funktion
+IF ('RMDCalc Count ROP Benefits' = 0 ; çä  1 ; çä  0çä)
+F1 25c311a8 1aa38837 0 0 0 0 2
+RMDCalc Count ROP Benefits
+Funktion
+SUMX(riderIndex;0;'Policy Number of Rider' - 1;IF ('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';#riderIndex;'Policy EffDate') = 1000500005 ; çä  0 ; çä  1çä))
+F1 6fa95ec 17105e6f 5f3ba4ba 12d63cd1 0 0 2
+RMDCalc Prorata 120 Pct Exclusion
+Funktion
+IF ('RMDCalc Count Pro Rata Provisions' = 0 ; çä   /*Then*/ IF ('RMDCalc AV Addl Benefits' <= 0.20 * 'Policy Investment AccountValue' ; çä     /*Then*/ 1 ; çä     /*Else*/ 0çä  ) ; çä /*Else*/ 0çä)
+F1 5f3ba4ba 6fa95ec 0 0 0 0 2
+RMDCalc Count Pro Rata Provisions
+Funktion
+SUMX(riderIndex;0;'Policy Number of Rider' - 1;IF ('WithdrawalRule is Proportional'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';#riderIndex;'Policy EffDate')) ; çä  0 ; çä  1çä))
+F1 12d63cd1 17105e6f 0 472aacc3 0 0 2
+RMDCalc AV Optional Benefit(riderIndex)
+Funktion
+'RMDCalc PV Date'(riderIndex)
+F1 472aacc3 17105e6f 0 0 0 0 2
+RMDCalc AV Annual Amt(age)
+Funktion
+'RMDCalc AV Addl Benefits' * 'RMDCalc Distribution Percentage'(age)
+F1 384f3579 de0860 6cbf64f6 e711493 0 0 2
+--Info functions--
+Funktion
+
+F1 6cbf64f6 384f3579 715290d2 0 0 0 2
+RMDCalc Projection End Date
+Funktion
+IF ('Policy Number of Rider' > 0 ; çä   /*Then*/ "12/31/" & ('RMDCalc Get Max Alt Benefit Age' - 'Policy Participant IssueAge'(0;0) + YEAR('Policy EffDate')) ; çä   /*Else*/ DATE(TransEffDate;0;0;'Table Calc Rules'["projection_period"])çä)
+F1 715290d2 6cbf64f6 7e9b8e8 0 0 0 2
+RMDCalc Get Max Alt Benefit Age
+Funktion
+'RMDCalc Get Max Benefit Age Loop'(0;0)
+F1 7e9b8e8 715290d2 0 0 0 0 2
+RMDCalc Get Max Benefit Age Loop(riderIndex;prevMax)
+Funktion
+IF ('Policy Number Of Rider' = 0 ; çä   /*Then*/ 0 ; çä   /*Else*/ IF (riderIndex = 'Policy Number Of Rider' - 1 ; çä     /*Then*/ MAX(prevMax;'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Else*/ 'RMDCalc Get Max Benefit Age Loop'(riderIndex + 1;MAX('PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate');prevMax))çä  )çä)
+F1 e711493 de0860 5dd979d9 6f8a5555 0 0 2
+-- Benefit Calculation Functions --
+Funktion
+
+F1 5dd979d9 e711493 1e484090 542eebaa 0 0 2
+RMDCalc Benefit(age;riderIndex)
+Funktion
+CASE('Policy Rider RiderTypeCode'(riderIndex);çä  338 : 'RMDCalc GMAB Benefit Calculation'(age;riderIndex);çä  206 : 'RMDCalc GMDB Benefit Calculation'(age;riderIndex);çä  204 : 'RMDCalc GMIB Benefit Calculation'(age;riderIndex);çä  336 : 'RMDCalc GMWB Benefit Calculation'(age;riderIndex);çä  "EEDB" : 0;çä   // not currently supported çä"ODB" : 0;çä   // not currently supported çä : 'RMDCalc ErrorGen'(2004;v_("Benefit";"RMDAVAB1";'Policy Rider RiderTypeCode'(riderIndex));""))çä
+F1 1e484090 5dd979d9 3b447e83 685e596a 0 0 2
+RMDCalc GMAB Benefit Calculation(age;riderIndex)
+Funktion
+'RMDCalc GMAB Benefit'(age;riderIndex) - 'RMDCalc GMAB Benefit Charge'(age;riderIndex)
+F1 3b447e83 1e484090 26e2ddbd 6d27a004 0 0 2
+RMDCalc GMAB Benefit(age;riderIndex)
+Funktion
+IF (age = 'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate') ; çä   /*Then*/ MAX('RMDCalc GMAB Benefit Base'(age;riderIndex) - 'RMDCalc Average Account Value'("yearend";age);0) ; çä   /*Else*/ 0çä)
+F1 26e2ddbd 3b447e83 0 0 0 0 2
+RMDCalc GMAB Benefit Base(age;riderIndex)
+Funktion
+IF (age <= 'RMDCalc Attained Age' ; çä   /*Then*/ 'RMDCalc Starting Benefit Base'(riderIndex) + 'RMDCalc Cumulative Premiums'(riderIndex;0) - 'RMDCalc Cumulative Withdrawals'(riderIndex;0) ; çä   /*Else*/ IF (age > 'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate') ; çä     /*Then*/ 0 ; çä     /*Else*/ IF ('WithdrawalRule is Proportional'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä       /*Then*/ 'RMDCalc GMAB Benefit Base'(age - 1;riderIndex) * (1 - 1 / 'RMDCalc Ann Life Expectancy'(age - 1)) ; çä       /*Else*/ 'RMDCalc GMAB Benefit Base'(age - 1;riderIndex) - 'RMD Amount'(age - 1)çä    )çä)çä)
+F1 6d27a004 1e484090 0 0 0 0 2
+RMDCalc GMAB Benefit Charge(age;riderIndex)
+Funktion
+IF (age <= 'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate') ; çä   /*Then*/ IF (ISNUMBER('PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate')) ; çä    ('PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate') / 100) * CASE('PI FeatureOptProduct Fee ChargeBasedOn'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate');çä      7 : 'RMDCalc GMAB Benefit Base'(age;riderIndex);çä      2 : 'RMDCalc Average Account Value'("yearend";age);çä       : 'RMDCalc ErrorGen'(2002;V_("GMAB Benefit Charge";"RMDAVAB1";'PI FeatureOptProduct Fee ChargeBasedOn'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate'));""))çä     ; çä    0çä  ) ; çä /*Else*/ 0çä)
+F1 685e596a 5dd979d9 2262adbf 37f1c806 0 0 2
+RMDCalc GMDB Benefit Calculation(age;riderIndex)
+Funktion
+'RMDCalc GMDB Benefit'(age;riderIndex) - 'RMDCalc GMDB Benefit Charge'(age;riderIndex)
+F1 2262adbf 685e596a 0 743b48da 0 0 2
+RMDCalc GMDB Benefit Charge(age;riderIndex)
+Funktion
+IF (age > 'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate') ; çä   /*Then*/ 0 ; çä   /*Else*/ IF (ISNUMBER('PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate')) ; çä    ('PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate') / 100) * CASE('PI FeatureOptProduct Fee ChargeBasedOn'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate');çä      7 : IF ('WithdrawalRule is Proportional'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä        'RMDCalc GMDB Benefit DB Pro Rata'(age;riderIndex) ; çä        'RMDCalc GMDB Benefit DB Dollar'(age;riderIndex)çä      );çä    2 : 'RMDCalc Average Account Value'("yearend";age);çä     : 'RMDCalc ErrorGen'(2002;V_("GMDB Benefit Charge";"RMDAVAB1";'PI FeatureOptProduct Fee ChargeBasedOn'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate'));""))çä   ; çä  0çä)çä)
+F1 743b48da 685e596a 3cafe71 0 0 0 2
+RMDCalc GMDB Benefit(age;riderIndex)
+Funktion
+'RMDCalc GMDB Benefit Excess DB'(age;riderIndex) * 'RMDCalc Ann Qx'(age)
+F1 3cafe71 743b48da 7c0ed0a4 0 0 0 2
+RMDCalc GMDB Benefit Excess DB(age;riderIndex)
+Funktion
+IF (age > 'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate') ; çä   /*Then*/ 0 ; çä   /*Else*/ MAX(0;IF ('WithdrawalRule is Proportional'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then*/ 'RMDCalc GMDB Benefit DB Pro Rata'(age;riderIndex) - 'RMDCalc Average Account Value'("yearend";age) ; çä     /*Else*/ 'RMDCalc GMDB Benefit DB Dollar'(age;riderIndex) - 'RMDCalc Account Value EOY After RMD'("yearend";age)çä  ))çä)
+F1 7c0ed0a4 3cafe71 0 3f9dd5f1 0 0 2
+RMDCalc GMDB Benefit DB Pro Rata(age;riderIndex)
+Funktion
+CASE('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate');çä  1000500004 : IF (age <= 'RMDCalc Attained Age' ; çä    'RMDCalc Starting Benefit Base'(riderIndex) + 'RMDCalc Cumulative Premiums'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex)) - 'RMDCalc Cumulative Withdrawals'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex)) ; çä    'RMDCalc GMDB Benefit DB Pro Rata'(age - 1;riderIndex) * (1 - 'RMDCalc Distribution Percentage'(age - 1))çä  );çä1000500003 : IF (age <= 'RMDCalc Attained Age' ; çä  'RMDCalc Starting Benefit Base'(riderIndex) ; çä  'RMDCalc GMDB Benefit DB Pro Rata'(age - 1;riderIndex) * (1 + 'PI FeatureOptProduct CompoundGrowthRateFactor'('Policy ProductCode';riderIndex;TransEffDate) / 100) * (1 - 'RMDCalc Distribution Percentage'(age - 1))çä);çä1000500001 : IF (age <= 'RMDCalc Attained Age' ; çä'RMDCalc EEDB Initial Amount'(riderIndex) + 'RMDCalc Average Account Value'("yearend";age) ; çä'RMDCalc EEDB Amount'(age) * ('RMDCalc EEDB Percentage'('Policy ProductCode';'Policy Participant IssueAge'(0;0)) / 100) * (1 - 'RMDCalc Distribution Percentage'(age - 1)) + 'RMDCalc Average Account Value'("yearend";age)çä);çä //1000500025: 'Altval Additional 3 Amount'(riderIndex);çä : 'RMDCalc ErrorGen'(2001;V_("f_GMBD_benefit_DB_pro_rata";"RMDAVAB1";'PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate'));""))çä
+F1 3f9dd5f1 3cafe71 0 0 0 0 2
+RMDCalc GMDB Benefit DB Dollar(age;riderIndex)
+Funktion
+CASE('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate');çä  1000500004 : IF (age <= 'RMDCalc Attained Age' ; çä    'RMDCalc Starting Benefit Base'(riderIndex) + 'RMDCalc Cumulative Premiums'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex)) - 'RMDCalc Cumulative Withdrawals'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex)) ; çä    'RMDCalc GMDB Benefit DB Dollar'(age - 1;riderIndex) - 'RMD Amount'(age)çä  );çä1000500003 : IF (age <= 'RMDCalc Attained Age' ; çä  'RMDCalc Starting Benefit Base'(riderIndex) ; çä  'RMDCalc GMDB Benefit DB Dollar'(age - 1;riderIndex) * (1 + 'PI FeatureOptProduct CompoundGrowthRateFactor'('Policy ProductCode';riderIndex;TransEffDate) / 100) - 'RMD Amount'(age)çä);çä1000500001 : IF (age <= 'RMDCalc Attained Age' ; çä'RMDCalc EEDB Initial Amount'(riderIndex) + 'RMDCalc Average Account Value'("yearend";age) ; çä('RMDCalc EEDB Amount'(age) - 'RMD Amount'(age)) * ('RMDCalc EEDB Percentage'('Policy ProductCode';'Policy Participant IssueAge'(0;0)) / 100) + 'RMDCalc Average Account Value'("yearend";age)çä);çä //1000500025: 'Altval Additional 3 Amount'(riderIndex);çä : 'RMDCalc ErrorGen'(2001;V_("GMDB Benefit DB Dollar";"RMDAVAB_BENEFIT_CALCS";'PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate'));""))çä
+F1 37f1c806 5dd979d9 5d6d5949 7caec97c 0 0 2
+RMDCalc GMIB Benefit Calculation(age;riderIndex)
+Funktion
+'RMDCalc GMIB Benefit'(age;riderIndex) - 'RMDCalc GMIB Benefit Charge'(age;riderIndex)
+F1 5d6d5949 37f1c806 1f1e090 35942869 0 0 2
+RMDCalc GMIB Benefit(age;riderIndex)
+Funktion
+IF (age > 'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate') ; çä   /*Then*/ 0 ; çä   /*Else*/ 'RMDCalc GMIB NAAR'(age;riderIndex) * (1 - 'RMDCalc Ann Qx'(age) * 'RMDCalc Time Adj Factor'("issuedate")) * 'RMDCalc Annuitization Rate'('Policy ProductCode';riderIndex)çä)
+F1 1f1e090 5d6d5949 0 3593490d 0 0 2
+RMDCalc GMIB NAAR(age;riderIndex)
+Funktion
+MAX('RMDCalc GMIB Benefit Base Pol Ann'(age;riderIndex) * 'RMDCalc Guar Annuitization Factor'('Policy ProductCode';riderIndex) - 'RMDCalc Account Value BOY After RMD'("yearend";age) * 'GEN Future Value Factor'('Policy Annuity AccumValueIntRateCurrent';'RMDCalc Time Adj Factor'("issuedate"));0)
+F1 3593490d 5d6d5949 0 2bb0907f 0 0 2
+RMDCalc GMIB Benefit Base Pol Ann(age;riderIndex)
+Funktion
+'RMDCalc GMIB Benefit Base'(age - 1;riderIndex) * IF ('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate') = 1000500003 ; çä   /*Then*/ (1 + 'RMDCalc GMIB Rollup'(riderIndex)) ^ ('RMDCalc Time Adj Factor'("issuedate")) ; çä   /*Else*/ 1çä)
+F1 2bb0907f 5d6d5949 0 7de7f07f 0 0 2
+RMDCalc GMIB Benefit Base(age;riderIndex)
+Funktion
+CASE('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate');çä  1000500004 : IF (age <= 'RMDCalc Attained Age' ; çä    'RMDCalc Starting Benefit Base'(riderIndex) + 'RMDCalc Cumulative Premiums'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex)) - 'RMDCalc Cumulative Withdrawals'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex)) ; çä    CASE('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate');çä      1000500002 : 'RMDCalc GMIB Benefit Base'(age - 1;riderIndex) - 'RMD Amount'(age);çä      1000500001 : IF ('RMDCalc Account Value EOY Before RMD'("yearend";age) = 0 ; çä        'RMDCalc GMIB Benefit Base'(age - 1;riderIndex) ; çä        'RMDCalc GMIB Benefit Base'(age - 1;riderIndex) * (1 - 'RMD Amount'(age) / 'RMDCalc Account Value EOY Before RMD'("yearend";age))çä      );çä     : 'RMDCalc ErrorGen'(2007;V_("GMIB Benefit Base";"RMDAVAB1";'PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate'));""))çäçä);çä1000500003 : IF (age <= 'RMDCalc Attained Age' ; çä'RMDCalc Starting Benefit Base'(riderIndex) ; çäCASE('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate');çä  1000500002 : 'RMDCalc GMIB Benefit Base'(age - 1;riderIndex) * (1 + 'RMDCalc GMIB Rollup'(riderIndex)) - 'RMD Amount'(age);çä  1000500001 : IF ('RMDCalc Account Value EOY Before RMD'("yearend";age) = 0 ; çä    'RMDCalc GMIB Benefit Base'(age - 1;riderIndex) ; çä    'RMDCalc GMIB Benefit Base'(age - 1;riderIndex) * (1 - 'RMD Amount'(age) / 'RMDCalc Account Value EOY Before RMD'("yearend";age))çä  );çä : 'RMDCalc ErrorGen'(2007;V_("RMDCalc GMIB Benefit Base";"RMDAVAB1";'PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate'));""))çäçä);çä : 'RMDCalc ErrorGen'(2008;V_("GMIB Benefit Base";"RMDAVAB1";'PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate'));""))çä
+F1 7de7f07f 5d6d5949 0 0 0 0 2
+RMDCalc GMIB Rollup(riderIndex)
+Funktion
+'PI FeatureOptProduct CompoundGrowthRateFactor'('Policy ProductCode';riderIndex;TransEffDate) / 100
+F1 35942869 37f1c806 0 0 0 0 2
+RMDCalc GMIB Benefit Charge(age;riderIndex)
+Funktion
+IF (age > 'PI FeatureOptProduct MaturityAge'('Policy ProductCode';riderIndex;'Policy EffDate') ; çä   /*Then*/ 0 ; çä   /*Else*/ IF (ISNUMBER('PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate')) ; çä    ('PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate') / 100) * CASE('PI FeatureOptProduct Fee ChargeBasedOn'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate');çä      7 : ('RMDCalc GMIB Benefit Base'(age;riderIndex));çä      2 : 'RMDCalc Average Account Value'("yearend";age);çä       : 'RMDCalc ErrorGen'(2002;V_("GMIB Benefit Charge";"RMDAVAB1";'PI FeatureOptProduct Fee ChargeBasedOn'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate'));""))çä     ; çä    0çä  )çä)
+F1 7caec97c 5dd979d9 67c4ef8e 0 0 0 2
+RMDCalc GMWB Benefit Calculation(age;riderIndex)
+Funktion
+'RMDCalc GMWB Benefit'(age;riderIndex) - 'RMDCalc GMWB Benefit Charge'(age;riderIndex)
+F1 67c4ef8e 7caec97c 391ba27e 7a7050a4 0 0 2
+RMDCalc GMWB Benefit(age;riderIndex)
+Funktion
+MAX(0;'RMDCalc GMWB Benefit Withdrawn'(age;riderIndex) - 'RMDCalc Account Value EOY Before RMD'("yearend";age))
+F1 391ba27e 67c4ef8e 0 3102e29c 0 0 2
+RMDCalc GMWB Benefit Withdrawn(age;riderIndex)
+Funktion
+MIN('RMDCalc GMWB Ann Withd'(age;riderIndex);'RMDCalc GMWB Benefit Balance'(age;riderIndex))
+F1 3102e29c 67c4ef8e 5aaa0de0 0 0 0 2
+RMDCalc GMWB Benefit Balance(age;riderIndex)
+Funktion
+IF (age - 1 <= 'RMDCalc Attained Age' ; çä   /*Then*/ 'RMDCalc Starting Benefit Base'(riderIndex) ; çä   /*Else*/ MAX(0;'RMDCalc GMWB Benefit Balance'(age - 1;riderIndex) - 'RMDCalc GMWB Ann Withd'(age;riderIndex))çä)
+F1 5aaa0de0 3102e29c 0 0 0 0 2
+RMDCalc GMWB Ann Withd(age;riderIndex)
+Funktion
+'RMDCalc Starting Benefit Base'(riderIndex) * 'PI FeatureOptProduct AnnualWithdrawalLimitPct'('Policy ProductCode';riderIndex;'Policy EffDate') / 100
+F1 7a7050a4 7caec97c 0 0 0 0 2
+RMDCalc GMWB Benefit Charge(age;riderIndex)
+Funktion
+'RMDCalc GMWB Benefit Balance'(age - 1;riderIndex) * IF (ISNUMBER('PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate')) ; çä  'PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;'FeeType OtherAssetBasedCharge';'Policy EffDate') / 100 ; çä  0çä)
+F1 542eebaa e711493 0 44df09dc 0 0 2
+RMDCalc EEDB Initial Amount(riderIndex)
+Funktion
+MAX(0;('Policy Investment AccountValue' - 'Policy Annuity TotalDepositITD') * ('RMDCalc EEDB Percentage'('Policy ProductCode';'Policy Participant IssueAge'(0;0)) / 100))
+F1 44df09dc e711493 0 5c937f09 0 0 2
+RMDCalc EEDB Amount(age)
+Funktion
+MAX(0;('RMDCalc Account Value EOY Before RMD'("yearend";age) - 'Policy Annuity TotalDepositITD'))
+F1 5c937f09 e711493 0 0 0 0 2
+RMDCalc Starting Benefit Base(riderIndex)
+Funktion
+CASE('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate');çä   //Annual Ratchetçä1000500004 : 'Policy ValuesInfo CashValueAmt'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex));çä   //Rollupâ çä1000500003 : 'Policy ValuesInfo TaxBasis'(riderIndex;'RMD Growth SubTypeIndex'(riderIndex));çä  1000500028 : MAX('Policy ValuesInfo CashValueAmt'(riderIndex;'RMD StepUp SubTypeIndex'(riderIndex));'Policy ValuesInfo TaxBasis'(riderIndex;'RMD Growth SubTypeIndex'(riderIndex)));çä   : ERROR("Unrecognized basis selected"))çä
+F1 6f8a5555 de0860 4f55fd2c 4a16ac2b 0 0 2
+--Account Value Functions--
+Funktion
+
+F1 4f55fd2c 6f8a5555 4a9a24e1 4f42c875 0 0 2
+RMDCalc Time Adj Factor(calcType)
+Funktion
+'RMDCalc Fraction'('GEN Round'(CASE(TOLOWER(calcType);çä  "birthdate" : 'RMDCalc Time Adj Factor Birthdate';çä  "issuedate" : 'RMDCalc Time Adj Factor Issuedate';çä  "yearend" : 'RMDCalc Time Adj Factor Year End';çä   : 'RMDCalc ErrorGen'(2003;v_("Time Adj Factor";"RMDAVAB1";calcType);""))çä;2))
+F1 4a9a24e1 4f55fd2c 0 6bdad955 0 0 2
+RMDCalc Time Adj Factor Birthdate
+Funktion
+'RMDCalc Fraction'(1 - ('RMDCalc Attained Age' - 'RMDCalc Truncate'('RMDCalc Attained Age')))
+F1 6bdad955 4f55fd2c 0 4f6e6e0f 0 0 2
+RMDCalc Time Adj Factor Issuedate
+Funktion
+'RMDCalc Fraction'('RMDCalc Fraction'('Date Diff'('Policy Participant Birthdate'(0;0);'Policy EffDate')) + 'RMDCalc Time Adj Factor'("birthdate"))
+F1 4f6e6e0f 4f55fd2c 0 0 0 0 2
+RMDCalc Time Adj Factor Year End
+Funktion
+'RMDCalc Fraction'('RMDCalc Fraction'('Date Diff'('Policy Participant Birthdate'(0;0);DATE("12/31/2005";0;0;0;"M/D/Y"))) + 'RMDCalc Time Adj Factor'("birthdate"))
+F1 4f42c875 6f8a5555 0 30fe26fd 0 0 2
+RMDCalc Account Value BOY After RMD(calcType;  age)
+Funktion
+IF (age <= 'RMDCalc Attained Age' ; çä   /*Then*/ 'Policy Investment AccountValue' * 'GEN Future Value Factor'('Policy Annuity AccumValueIntRateCurrent';'RMDCalc Time Adj Factor'(calcType)) ; çä   /*Else*/ 'RMDCalc Account Value EOY After RMD'(calcType;age - 1)çä)
+F1 30fe26fd 6f8a5555 0 34e011bd 0 0 2
+RMDCalc Account Value EOY Before RMD(calcType; age)
+Funktion
+'RMDCalc Account Value EOY After RMD'(calcType;age - 1) * (1 + 'Policy Annuity AccumValueIntRateCurrent' / 100)
+F1 34e011bd 6f8a5555 0 566c3144 0 0 2
+RMDCalc Account Value EOY After RMD(calcType; age)
+Funktion
+IF (age <= 'RMDCalc Attained Age' ; çä  'Policy Investment AccountValue' * 'GEN Future Value Factor'('Policy Annuity AccumValueIntRateCurrent';'RMDCalc Time Adj Factor'(calcType)) ; çä  'RMDCalc Account Value EOY Before RMD'(calcType;age) - IF ('RMDCalc Account Benefit Deductions'(age) = 0 ; çä     /*Then*/ 'RMD Amount'(age) ; çä     /*Else*/ MIN('RMDCalc Account Benefit Deductions'(age);'RMDCalc Account Value EOY Before RMD'(calcType;age))çä  )çä)
+F1 566c3144 6f8a5555 0 7e7b7ce 0 0 2
+RMDCalc Account Benefit Deductions(age)
+Funktion
+SUMX(riderIndex;0;'Policy Number of Rider' - 1;IF ('RiderType is GMWB'('Policy Rider RiderTypeCode'(#riderIndex)) ; çä   /*Then*/ 'RMDCalc GMWB Benefit Withdrawn'(age;#riderIndex) ; çä   /*Else*/ 0çä))
+F1 7e7b7ce 6f8a5555 0 74560b4b 0 0 2
+RMDCalc Average Account Value(calcType; age)
+Funktion
+('RMDCalc Account Value BOY After RMD'(calcType;age) + 'RMDCalc Account Value EOY Before RMD'(calcType;age)) / 2
+F1 74560b4b 6f8a5555 0 75b47cf2 0 0 2
+RMD Amount(age)
+Funktion
+MIN('RMDCalc Account Value EOY Before RMD'("yearend";age);MAX(0;'RMDCalc Account Value BOY After RMD'("yearend";age))) * 'RMDCalc Distribution Percentage'(age)
+F1 75b47cf2 6f8a5555 0 0 0 0 2
+RMDCalc Distribution Percentage(age)
+Funktion
+IF (age < 70.5 ; çä   /*Then*/ 0 ; çä   /*Else*/ 1 / 'RMDCalc Ann Life Expectancy'(age)çä)
+F1 4a16ac2b de0860 43324d38 160c2d6b 0 0 2
+--General functions--
+Funktion
+
+F1 43324d38 4a16ac2b 0 1368a96d 0 0 2
+RMDCalc Attained Age
+Funktion
+'Date Diff'('Policy Participant Birthdate'(0;0);TransEffDate)
+F1 1368a96d 4a16ac2b 0 696fa371 0 0 2
+RMDCalc Truncate(name)
+Funktion
+IF (name = 0 ; çä  0 ; çä  round(name - 0.5)çä)
+F1 696fa371 4a16ac2b 0 42707ebd 0 0 2
+RMDCalc Fraction(name)
+Funktion
+name - 'RMDCalc Truncate'(name)
+F1 42707ebd 4a16ac2b 0 21fe8080 0 0 2
+RMDCalc Start Age
+Funktion
+ //FLOOR('Date Diff'('Policy Participant Birthdate'(0;0); 'TransEffDate'))çä'Age Near Birthday'('Policy Participant Birthdate'(0;0);TransEffDate)
+F1 21fe8080 4a16ac2b 0 36abac84 0 0 2
+RMDCalc End Age
+Funktion
+FLOOR('Date Diff'('Policy Participant Birthdate'(0;0);'RMDCalc Projection End Date'))
+F1 36abac84 4a16ac2b 0 38926839 0 0 2
+RMD Growth SubTypeIndex(riderIndex)
+Funktion
+IF ('ValuesInfo is Growth'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;0)) ; çä  0 ; çä  1çä)
+F1 38926839 4a16ac2b 0 33ac6d55 0 0 2
+RMD StepUp SubTypeIndex(riderIndex)
+Funktion
+IF ('ValuesInfo is Step up'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;0)) ; çä  0 ; çä  1çä)
+F1 33ac6d55 4a16ac2b 0 0 0 0 2
+RMD Duration
+Funktion
+'Duration Year'(DATE(TransEffDate;0;0;1);'Policy Annuity RMDDate') - 1
+F1 160c2d6b de0860 202d6d09 7b7237de 0 0 2
+--Mortality Functions--
+Funktion
+
+F1 202d6d09 160c2d6b 0 57d0dca5 0 0 2
+RMDCalc Ann Life Expectancy(age)
+Funktion
+'RMD LEF'(FLOOR(age)) * (1 + FLOOR(age) - age) + 'RMD LEF'(FLOOR(age) + 1) * (age - FLOOR(age))
+F1 57d0dca5 160c2d6b 72fec913 e9299d8 0 0 2
+RMDCalc Ann Qx(age)
+Funktion
+'RMDCalc Qx'(age) * (1 - 'RMDCalc Fractional Age') + 'RMDCalc Qx'(age + 1) * 'RMDCalc Fractional Age'
+F1 72fec913 57d0dca5 0 370e79a8 0 0 2
+RMDCalc Qx(age)
+Funktion
+IF (age < 0 || age > 120 ; çä  0 ; çä  1 - 'RMDCalc Lx'(age + 1) / 'RMDCalc Lx'(age)çä)
+F1 370e79a8 57d0dca5 0 65fb145c 0 0 2
+RMDCalc Fractional Age
+Funktion
+CASE('RMDCalc Fractional Age Rule';çä  "0" : 0;çä  "1" : 'Date Diff'('Policy Participant Birthdate'(0;0);TransEffDate) - FLOOR('Date Diff'('Policy Participant Birthdate'(0;0);TransEffDate));çä  "2" : (12 - MONTH('Policy Participant Birthdate'(0;0))) / 12;çä   : 0 //default to no RMDCalc Fractional Age, if rule is not foundçä)çä
+F1 65fb145c 57d0dca5 0 0 0 0 2
+RMDCalc Fractional Age Rule
+Funktion
+'Table Calc Rules'["fract_age_rule"]
+F1 e9299d8 160c2d6b 0 2a8c5bc7 0 0 2
+RMDCalc Ann Lx(age)
+Funktion
+'RMDCalc Lx'(FLOOR(age)) * (1 + FLOOR(age) - age) + 'RMDCalc Lx'(FLOOR(age) + 1) * (age - FLOOR(age))
+F1 2a8c5bc7 160c2d6b 0 4cee810a 0 0 2
+RMDCalc Dx(age)
+Funktion
+ /*'RMDCalc Lx'(age)çä* (1 + 'INPUT Discount Int Rate' / 100) ^ (- age)*/ 'ACT Dx'('CalcType Current'('GEN Vector Blank');age - 'Policy Participant IssueAge'(0;0) + 1;0;'RMDCalc ActlVector'(age))
+F1 4cee810a 160c2d6b 24b9b6c4 193a4b77 0 0 2
+RMDCalc Nx(age)
+Funktion
+ /*SUMX(a;age;120;çäâ'RMDCalc Dx'(#a)çä)*/ 'ACT Nx'('CalcType Current'('GEN Vector Blank');age - 'Policy Participant IssueAge'(0;0) + 1;0;'RMDCalc ActlVector'(age))
+F1 24b9b6c4 4cee810a 0 0 0 0 2
+RMDCalc Ann Nx(age)
+Funktion
+'RMDCalc Nx'(FLOOR(age)) * (1 + FLOOR(age) - age) + 'RMDCalc Nx'(FLOOR(age) + 1) * (age - FLOOR(age))
+F1 193a4b77 160c2d6b 0 4a430e57 0 0 2
+RMDCalc Lx(age)
+Funktion
+ /*IF(age < 0 || age > 120;çäâ0;çäâ'Rate'(çäââ"RMD";çäââ"RMD";çäââTransEffDate;çäââV_("Rate lx";çäâââ"Standard";çäâââage;çäâââ"";çäâââ"";çäâââ"")çäâ)çä)*/ 'ACT lx'('CalcType Current'('GEN Vector Blank');age - 'Policy Participant IssueAge'(0;0) + 1;0;'RMDCalc ActlVector'(age))
+F1 4a430e57 160c2d6b 0 0 0 0 2
+RMDCalc ActlVector(age)
+Funktion
+v_('Policy Participant IssueAge'(0;0); //'PIDRV CoverageProduct MaturityDuration'(calcType;TransEffDate; coverageIndex);çä0;'INPUT Discount Int Rate' / 100;IF ('Mortality table' = 1 ; çä  1000500012 ; çä   //Annuity 2000çä1000500013 //1994 GARçäçä);3; //'Policy Participant IssueGender'(0; 0);  (Assume unisex)çä'Policy Participant UnderwritingClass'(0;0);'Policy Participant TobaccoPremiumBasis'(0;0);'Policy ProductCode';'Policy EffDate';'Policy Jurisdiction';'PI PolicyProduct AgeCalculationType'('Policy ProductCode';'Policy EffDate');0; // Include Table Ratingsçä0; // Include Flat Extrasçä1 //'PIDRV PolicyProduct PayToDuration'('CalcType Current'('GEN Vector Blank'); TransEffDate)çä) /*V_(çäââ'Policy Participant IssueAge'(0; 0) ;âââçäââage - 'Policy Participant IssueAge'(0; 0) + 1;âââââçäââ3;âââçäââ'Policy Participant UnderwritingClass'(0; 0; 0);ââçäââ'Policy Participant TobaccoPremiumBasis'(0; 0; 0);çäââ0;ââââââââââ// bandââââââçäââ'GEN Vector Blank';ââââçäââ'GEN Vector Blank';ââââââ// tableçäââ'GEN Vector Blank';ââââââ// ruleçäââ'GEN Vector Blank';ââââââ// death benefit optionçäââIF('Mortality table' = 1;çäâââ1000500012;âââââââ//Annuity 2000çäâââ1000500013âââââââ//1994 GARçäââ);âçäââçäââ2çäâ)*/ 
+F1 7b7237de de0860 2a86e083 2fb89c30 0 0 2
+-- Late Reference Functions --
+Funktion
+
+F1 2a86e083 7b7237de 0 12a9984f 0 0 2
+RMDCalc Lapse Rate(productCode; riderIndex)
+Funktion
+Rate(productCode;"RMD";TransEffDate;V_("lapse_rate";"";"";"";'Policy Rider RiderCode'(riderIndex);""))
+F1 12a9984f 7b7237de 0 77f6f0b9 0 0 2
+RMDCalc Annuitization Rate(productCode; riderIndex)
+Funktion
+Rate(productCode;"RMD";TransEffDate;V_("option_pc";"";"";"";'Policy Rider RiderCode'(riderIndex);""))
+F1 77f6f0b9 7b7237de 0 45f7e585 0 0 2
+RMDCalc Guar Annuitization Factor(productCode; riderIndex)
+Funktion
+Rate(productCode;"RMD";TransEffDate;V_("guar_ann_factor";"";"";"";'Policy Rider RiderCode'(riderIndex);""))
+F1 45f7e585 7b7237de 0 2f3ab403 0 0 2
+RMDCalc EEDB Percentage(productCode;age)
+Funktion
+Rate(productCode;"RMD";TransEffDate;V_("EEDB Percentage";"";age;"";"";""))
+F1 2f3ab403 7b7237de 0 0 0 0 2
+RMDCalc ErrorGen(errNum;vector;addlField)
+Funktion
+"errNum " & errNum & " vector (" & V_STRING(vector;";") & ")" & " addlField " & addlField & " *** This is a temporary function for the ERROR generation ***"
+F1 2fb89c30 de0860 4834e6 220ce3d3 0 0 2
+-- LEF
+Funktion
+
+F1 4834e6 2fb89c30 671662e4 2dfb5bbd 0 0 2
+RMD LEF(age)
+Funktion
+CASE('Policy Annuity RMDCalcMeth';çä  2 : Rate('Policy ProductCode';"LEF";DATE(TransEffDate;0;0;1);'RMD Vector'(age));çä  1 : 'RMD NonRecalculate'(age);çä   : ERROR("No RMDCalcMeth Selected";"INPUT Policy Annuity RMDCalcMeth"))çä
+F1 671662e4 4834e6 0 0 0 0 2
+RMD Vector(age)
+Funktion
+V_('Policy Participant IssueAge'(0;0);age - 'Policy Participant IssueAge'(0;0) + 1;IF ('Policy Participant BeneficiaryDesignation'(0;0) ALIKE "" || 'Policy Participant BeneficiaryDesignation'(0;0) = 0 ; çä  "" ; çä  'Policy Participant IssueAge'(0;1) /*+ Dur*/ çä);'RMD LEF Table') //'Duration Year'('Required Begin Date';'Policy Participant BirthDate'(0; 0))çä// -çä// 'Policy Participant IssueAge'(0; 0)ä
+F1 2dfb5bbd 2fb89c30 470ce48e 29f91b93 0 0 2
+RMD NonRecalculate(age)
+Funktion
+Rate('Policy ProductCode';"LEF";DATE(TransEffDate;0;0;1);'RMD NonRecalc RMD Vector'(age))
+F1 470ce48e 2dfb5bbd 31cec6b2 0 0 0 2
+RMD NonRecalc RMD Vector(age)
+Funktion
+V_('Policy Participant IssueAge'(0;0);age - 'Policy Participant IssueAge'(0;0) + 1;'RMD NonRecalc Beneficiary Age'(age);'RMD LEF Table')
+F1 31cec6b2 470ce48e 5a656abc 0 0 0 2
+RMD NonRecalc Beneficiary Age(age)
+Funktion
+IF (age = 'RMDCalc Start Age' ; çä  'Policy Participant IssueAge'(0;1) + 'RMD Duration' ; çä  Rate('Policy ProductCode';"LEFAge";DATE(TransEffDate;0;0;1);'RMD Beneficiary Age Vector'(age - 'Policy Participant IssueAge'(0;0) + 1 + 'RMD Duration')) - 'Duration Year'(DATE(TransEffDate;0;0;1);'Policy Effdate')çä)
+F1 5a656abc 31cec6b2 0 6cf45fe0 0 0 2
+RMD Beneficiary Age Vector(age)
+Funktion
+V_('Policy Participant IssueAge'(0;1) + 'RMD Duration';'Duration Year'('Policy Annuity RMDDate';'Policy Effdate');0; //participant age not used hereçäIF ('Policy Arrangement RMDTaxRule' ALIKE 2 ; çä  4 ; çä  1çä); //lookup from the single life expectancy table.çä'RMD Check'(age))
+F1 6cf45fe0 31cec6b2 0 1430903f 0 0 2
+RMD Check(age)
+Funktion
+Rate('Policy ProductCode';"LEF";DATE(TransEffDate;0;0;1);'RMD Beneficiary Vector') - (age - 'RMDCalc Start Age')
+F1 1430903f 31cec6b2 0 0 0 0 2
+RMD Beneficiary Vector
+Funktion
+V_('Policy Participant IssueAge'(0;1) + 'RMD Duration';'Duration Year'('Policy Annuity RMDDate';'Policy Effdate');0; //participant age not used hereçäIF ('Policy Arrangement RMDTaxRule' ALIKE 2 ; çä  4 ; çä  1çä) //lookup from the single life expectancy table.çä)
+F1 29f91b93 2fb89c30 7df649a4 0 0 0 2
+RMD LEF Table
+Funktion
+IF ('Policy Arrangement RMDTaxRule' = 2 ; çä   //use the old tablesçäCASE('Policy Participant BeneficiaryDesignation'(0;0);çä    "1" : 'RMD LEF Table for NonSpouse'("Old");çä     //"NonSpouse"âçä"9" : 'RMD LEF Table for Spouse'("Old");çä     //"Spouse"çä"0" : 'RMD LEF Table for Single'("Old");çä     //"Individual" çä : 'RMD LEF Table for Single'("Old") //"Individual" çä)çä   ; çä   //use the new tablesçäCASE('Policy Participant BeneficiaryDesignation'(0;0);çä    "1" : 'RMD LEF Table for NonSpouse'("New");çä     //"NonSpouse"çä"9" : 'RMD LEF Table for Spouse'("New");çä     //"Spouse"çä"0" : 'RMD LEF Table for Single'("Old");çä     //"Individual" çä : 'RMD LEF Table for Single'("New") //"Individual" çä)çäçä)
+F1 7df649a4 29f91b93 0 7a88b780 0 0 2
+RMD LEF Table for Single(ind)
+Funktion
+IF ('ParticipantRoleCode is Annuitant'('Policy Participant ParticipantRoleCode'(0;0)) ; çä   //"Annuitant"çä//Use the uniform life expectancy tableçä'RMD LEF Table Number'(Ind;"Uniform") ; çä   //Use the single life expectancy tableçä'RMD LEF Table Number'(Ind;"Single")çä)
+F1 7a88b780 29f91b93 0 5b4353dc 0 0 2
+RMD LEF Table for Spouse(ind)
+Funktion
+IF ('Policy Participant IssueAge'(0;0) - 'Policy Participant IssueAge'(0;1) >= 10 ; çä   //Use the joint life expectancy tableçä'RMD LEF Table Number'(Ind;"Joint") ; çä   //Use the uniform life expectancy tableçä'RMD LEF Table Number'(Ind;"Uniform")çä)
+F1 5b4353dc 29f91b93 0 55229f3 0 0 2
+RMD LEF Table for NonSpouse(ind)
+Funktion
+IF ('Policy Participant IssueAge'(0;0) - 'Policy Participant IssueAge'(0;1) >= 10 ; çä   //Use the joint life expectancy tableçä'RMD LEF Table Number'(Ind;"Joint") ; çä   //Use the uniform life expectancy tableçä'RMD LEF Table Number'(Ind;"Single")çä)
+F1 55229f3 29f91b93 0 0 0 0 2
+RMD LEF Table Number(Ind;Life)
+Funktion
+'TABLE LEF Number'[Ind; Life]
+F1 220ce3d3 de0860 6d61ae89 0 0 0 2
+-- Financial Activity --
+Funktion
+
+F1 6d61ae89 220ce3d3 0 a0d4bdf 0 0 2
+RMDCalc Set LastEvaluationDate(riderIndex;riderSubTypeIndex)
+Funktion
+IF ( /*no last evaluation date or last evaluation date before policy effective date*/ STRICMP('Policy ValuesInfo LastEvaluationDate'(riderIndex;riderSubTypeIndex);'GEN Vector Blank') = 0 || 'DATE Is Date1 Less Than Date2'('Policy ValuesInfo LastEvaluationDate'(riderIndex;riderSubTypeIndex);'Policy EffDate') ; çä   /*Then policy effective date*/ 'Policy EffDate' ; çä   /*Else last evaluation date*/ 'Policy ValuesInfo LastEvaluationDate'(riderIndex;riderSubTypeIndex)çä)
+F1 a0d4bdf 220ce3d3 0 44e93cf3 0 0 2
+RMDCalc Activity To Be Processed(riderIndex;riderSubTypeIndex; financialActivityIndex)
+Funktion
+IF ( /*equal dates*/ 'DATE Are Dates Equal'(TransEffDate;'Policy EffDate') ; çä   /*Then check activity date*/ IF ( /*financial activity after transaction date*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(financialActivityIndex);TransEffDate) ; çä     //then - 0çä0 ; çä     //else - 1çä1çä  ) ; çä /*Else date in range*/ IF ( /*date in range*/ 'DATE Date In Range'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'Increase Date By Days'('RMDCalc Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);1);TransEffDate) ; çä   //then - 1çä1 ; çä   //else - 0çä0çä)çä)
+F1 44e93cf3 220ce3d3 0 64131bcf 0 0 2
+RMDCalc Cumulative Premiums(riderIndex;riderSubTypeIndex)
+Funktion
+SUMX(finAct;0;'Policy Number of FinancialActivity' - 1;IF ('RMDCalc Activity To Be Processed'(riderIndex;riderSubTypeIndex;#finAct) && 'FinActivityType is Grouped Premium Payment'('Policy FinancialActivity FinActivityType'(#finAct)) ; çä  'Policy FinancialActivity FinActivityGrossAmt'(#finAct) ; çä  0çä))
+F1 64131bcf 220ce3d3 0 0 0 0 2
+RMDCalc Cumulative Withdrawals(riderIndex;riderSubTypeIndex)
+Funktion
+SUMX(finAct;0;'Policy Number of FinancialActivity' - 1;IF ('RMDCalc Activity To Be Processed'(riderIndex;riderSubTypeIndex;#finAct) && 'FinActivityType is Grouped Partial Surrender'('Policy FinancialActivity FinActivityType'(#finAct)) ; çä  'Policy FinancialActivity FinActivityGrossAmt'(#finAct) ; çä  0çä))
+A0 de0918 0 9ac1638 0 0 0 0
+
+A0 9ac1638 de0918 0 0 0 0 0
+INPUT Discount Int Rate
+T0 de0974 0 3eb9d6ab 0 0 0 0
+
+T3 3eb9d6ab de0974 0 3155bfd5 0 0 3
+Table Calc Rules
+key
+value
+comment
+fract_age_rule
+1
+0=none, 1=days, 2=months
+projection_period
+20
+
+T7 3155bfd5 de0974 0 0 0 0 3
+TABLE LEF Number
+Ind
+Life
+Number
+New
+Single
+1
+New
+Joint
+2
+New
+Uniform
+3
+Old
+Single
+4
+Old
+Joint
+5
+Old
+Uniform
+6
+I0 283c9f2d 0 12861ce4 0 0 0 0
+
+I0 12861ce4 283c9f2d 0 0 0 0 0
+ActuarialFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+a663b9d
+F75
+17105e6f
+6619d091
+3503e7dc
+4b04a54f
+44dd33d9
+42e9672
+18c92a37
+1ce91b6c
+1aa38837
+6fa95ec
+12d63cd1
+472aacc3
+384f3579
+6cbf64f6
+715290d2
+e711493
+5dd979d9
+1e484090
+3b447e83
+26e2ddbd
+6d27a004
+685e596a
+2262adbf
+743b48da
+3cafe71
+7c0ed0a4
+3f9dd5f1
+37f1c806
+5d6d5949
+1f1e090
+3593490d
+2bb0907f
+7de7f07f
+35942869
+7caec97c
+67c4ef8e
+391ba27e
+3102e29c
+5aaa0de0
+7a7050a4
+542eebaa
+44df09dc
+5c937f09
+6f8a5555
+4f55fd2c
+4f42c875
+30fe26fd
+34e011bd
+566c3144
+7e7b7ce
+74560b4b
+75b47cf2
+4a16ac2b
+43324d38
+1368a96d
+696fa371
+42707ebd
+21fe8080
+36abac84
+38926839
+33ac6d55
+160c2d6b
+202d6d09
+57d0dca5
+72fec913
+370e79a8
+65fb145c
+e9299d8
+2a8c5bc7
+4cee810a
+193a4b77
+4a430e57
+7b7237de
+2fb89c30
+220ce3d3
+A1
+9ac1638
+T2
+3eb9d6ab
+3155bfd5
+!95
+799ceeb1 6 -1
+06/13/2013 wmA-J 1401 JvdM Release 1 Sprint 1 Added a 0 for individuals.
+6619d091 -2 -2
+Description:  Sum of the individual rider present valuesçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+3503e7dc -2 -2
+Description:  Present value of the benefits of a specific riderçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+4b04a54f -2 -2
+Description:  Calculate actuarial PV of additional benefits incurred from ageStart to 'ageEnd' evaluated at ageStartçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+44dd33d9 -2 -2
+Description:  Benefits incurred in year following ageCurrent Discounted for interest and survivorship to ageStartçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+42e9672 -2 -2
+Description:  interest discount factorçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+18c92a37 -2 -2
+Description:  çä çäAll types use 'Policy ProductCode'  to get lapse rate and GMIB option pc.çäDifferent factors depending on benefit - some bens have option percentages, etc. çäFor GMWB, if option is RMDCalc In The Money, survivorship remains constant...çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+1ce91b6c -2 -2
+Description:  Returns 1 if the option is in the money, 0 if not.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+1aa38837 -2 -2
+Description:  Indicator if the ROP exclusion appliesçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+25c311a8 -2 -2
+Description:  Counts the number of riders that have a subtype code of return of premiumçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+6fa95ec -2 -2
+Description:  Indicator if the 120% exclusion appliesçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+5f3ba4ba -2 -2
+Description:  Counts the number of riders with an proportional withdrawal ruleçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+12d63cd1 -2 -2
+Description:  Returns the actuarial value of the requested optional benefitçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+472aacc3 -2 -2
+Description:  Returns the annual withdrawal amount based on the present value of rider benefits.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+6cbf64f6 -2 -2
+Description:  The end date for the projection of benefits.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+715290d2 -2 -2
+Description:  This function returns the max age for benefits and/or provisionsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+7e9b8e8 -2 -2
+Description:  This function loops through riders to determine the maximum age.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+5dd979d9 -2 -2
+Description:  This function returns the beneift for the selected riderçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+1e484090 -2 -2
+Description:  Calculation module for GMAB stand-alone benefitsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+3b447e83 -2 -2
+Description:  Calculation module for GMAB stand-alone benefitsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+26e2ddbd -2 -2
+Description:  Determines the benefit base for GMAB benefits.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+6d27a004 -2 -2
+Description:  Calculates the charge for the GMAB benefit.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+685e596a -2 -2
+Description:  Calculation module for GMDB stand-alone benefitsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+2262adbf -2 -2
+Description:  Calculates charge for GMDB benefitçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+743b48da -2 -2
+Description:  Calculates the GMDB benefit at the specific ageçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+3cafe71 -2 -2
+Description:  Determines the excess death benefit provided by the GMDB benefit.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+7c0ed0a4 -2 -2
+Description:  Calculates the prorata reduction in the GMDB benefit base due to withdrawalsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+3f9dd5f1 -2 -2
+Description:  Calculates the dollar for dollar reduction in the GMDB benefit base due to withdrawalsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+37f1c806 -2 -2
+Description:  Calculation module for GMIB stand-alone benefitsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+5d6d5949 -2 -2
+Description:  Calculates the GMIB benefit amountçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+1f1e090 -2 -2
+Description:  Calculates the GMIB net amount at risk.  This is the assumed amount of GMIB that is annuitized in excess of the account value on the policy.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+3593490d -2 -2
+Description:  Calculates the GMIB benefit base as of the policy anniversaryçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+2bb0907f -2 -2
+Description:  Calculates the GMIB benefit baseçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+7de7f07f -2 -2
+Description:  Returns the GMIB rollup percentageçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+35942869 -2 -2
+Description:  Calculates the charge for GMIB benefitçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+7caec97c -2 -2
+Description:  Calculation module for GMWB stand-alone benefitsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculationçä
+67c4ef8e -2 -2
+Description:  Calculation of the excess GMWB benefit amountçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+391ba27e -2 -2
+Description:  can be either full GMWB_ann_withd, or average between that and distribution. Take former for now...çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+3102e29c -2 -2
+Description:  Calculates the GMWB benefit balance.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+5aaa0de0 -2 -2
+Description:  Calculates the GMWB Annual withdrawal amountçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+7a7050a4 -2 -2
+Description:  Calculates the GMWB charge amountçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+542eebaa -2 -2
+Description:  EEDB start of projection benefit amountçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+44df09dc -2 -2
+Description:  EEDB projected benefit amountçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+5c937f09 -2 -2
+Description:  Used to establish the beginning benefit balance for the GMX benefitsçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+4f55fd2c -2 -2
+Description:  Adjustes for the fractional portion of a year based on the calculation type.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+4a9a24e1 -2 -2
+Description:  fractional portion of a year based on birthdayçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+6bdad955 -2 -2
+Description:  fractional portion of a year based on policy effective dateçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+4f6e6e0f -2 -2
+Description:  fractional portion of a year based on calendar year endçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+4f42c875 -2 -2
+Description:  Calculates the beginning of year account vlaue after withdrawal RMD withdrawalçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+30fe26fd -2 -2
+Description:  Calculates the end of year account vlaue before withdrawal RMD withdrawalçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+34e011bd -2 -2
+Description:  Calculates the end of year account vlaue after withdrawal RMD withdrawalçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+566c3144 -2 -2
+Description:  Total amount of benefit withdrawals for reduction of account valueçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+7e7b7ce -2 -2
+Description:  Calculates the average account value for the year.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+74560b4b -2 -2
+Description:  Calculates the Account value based RMD amountçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+75b47cf2 -2 -2
+Description:  Calculates the percentage of account value that needs to be distributed for RMDçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+43324d38 -2 -2
+Description:  Calculates the attained age based on the transaction effective date and the birth date.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+696fa371 -2 -2
+returns the fractional portion of n
+42707ebd -2 -2
+Description:  Calculates the projection starting age.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+21fe8080 -2 -2
+Description:  Calculates the projection ending age.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+36abac84 -2 -2
+Description : checks to see if the rider sub type is growth.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+38926839 -2 -2
+Description : checks to see if the rider sub type is step up.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+33ac6d55 -2 -2
+Description : Calculates the duration from the transaction effective date to the RMD date.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+202d6d09 -2 -2
+Description : Calculates the average life expectancy based on current age and the next age.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+57d0dca5 -2 -2
+Description : Calculates the average mortality factor based on current age and the next age.  Allows calculation of qx by exact age (linear interpolation)çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+72fec913 -2 -2
+Description : Calculates the current age mortality factor.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+370e79a8 -2 -2
+Description :  Fractional age based on rulses for daily or monthly.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+65fb145c -2 -2
+Description :  Retrieves fractional age rule from the rule table.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+e9299d8 -2 -2
+Description :  Allows exact age calculation of lx (linear interpolation)çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+2a8c5bc7 -2 -2
+Description :  Allows exact age calculation of Dxçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+4cee810a -2 -2
+Description :  Allows exact age calculation of Nxçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+24b9b6c4 -2 -2
+Description :  Allows exact age calculation of Dx.  Allows calculation of Nx by exact age (linear interpolation)çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+193a4b77 -2 -2
+Description :  Allows exact age calculation of lxçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculationçä
+4a430e57 -2 -2
+Description :  Collects data necessary for the calculation of commutation functions.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+2a86e083 -2 -2
+Description :  Returns the lapse rate from a late referenced call to a rate model.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+12a9984f -2 -2
+Description :  Returns the annuitization rate from a late referenced call to a rate model.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+77f6f0b9 -2 -2
+Description :  Returns the guaranteed annuitization rate from a late referenced call to a rate model.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+45f7e585 -2 -2
+Description :  Returns the EEDB percentage rate from a late referenced call to a rate model.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+2f3ab403 -2 -2
+Description :  Creates error messages to be returned to the calling system.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+4834e6 -2 -2
+Description : Life Expectancy Factor for calculating the actuarial value of additional benefits.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+671662e4 -2 -2
+Description : Vector used for actuarial value of additional benefits calculations.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+2dfb5bbd -2 -2
+Description : NonRecalculation LEF factor.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+470ce48e -2 -2
+Description :  Vector of data necessary to return the life expectancy factor under non recalc scenarios.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+31cec6b2 -2 -2
+Description : Determines the Beneficiary Age to use for the NonRecalculation method.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+5a656abc -2 -2
+Description : Vector of data necessary to return the life expectancy factor opf the beneficiary under non recalc scenarios. Includes age checkçä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+6cf45fe0 -2 -2
+Description :  Age check calculationçä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+1430903f -2 -2
+Description : Vector of data necessary to return the life expectancy factor opf the beneficiary under non recalc scenarios without age check data.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+29f91b93 -2 -2
+Description : Decides which table to use.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+7df649a4 -2 -2
+Description : Determines LEF Table to use.çä çäModification logçä05/16/2013 wmA-J Release 4 Sprint 14 JvdM Input names changeçä09/27/2012 - wmAj 417 - JvdM - Initial calculation.
+7a88b780 -2 -2
+Description : Determines LEF Table to use.çä çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+5b4353dc -2 -2
+Description : Determines LEF Table to use.çä çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+55229f3 -2 -2
+Description : Lookup Table number indicator.çä çäModification logçä11/13/2013 pA 1401 CSC Initial Calculation
+6d61ae89 -2 -2
+Description: Establish last evaluation date.  If the last evaluation date is null or less than the contract issue date set to the contract issue date.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+a0d4bdf -2 -2
+Description: Determine if the current financial activity falls within the range of the last evaluation date and the transaction effective date.  If the transaction effective date is equal to the contract issue date, allow financial activities prior to the  issue date to be considered.çä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+44e93cf3 -2 -2
+Description: Accumulates the premium financial activitiesçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+64131bcf -2 -2
+Description: Accumulates the withdrawal financial activitiesçä çäModification Log:çä11/13/2013 pA 1401 CSC Initial Calculation
+;Offset=00000000

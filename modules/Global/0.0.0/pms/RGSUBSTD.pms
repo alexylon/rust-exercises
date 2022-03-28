@@ -1,0 +1,195 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 1c43ca0 0 1c445d0 0 0 0 0
+
+X0 1c445d0 1c43ca0 1c44670 0 0 0 0
+-- All Test Cases - RSUBSTD --
+X1 1c44670 1c445d0 0 1c44768 0 0 2
+SetParameter("Product_code";s)
+SetParameter("Product_code"; "(INDP10Y!)")
+INDP10Y
+X0 1c44768 1c445d0 1c44830 0 0 0 0
+-- Substandard_Table_Ratings --
+X1 1c44830 1c44768 0 1c44918 0 0 2
+SSTD(s) 0
+SSTD("(INDP10Y!SSTD!20060101!0!)")
+1
+X1 1c44918 1c44768 0 1c44a18 0 0 2
+SSTD(s) 1
+SSTD("(INDP10Y!SSTD!20060101!1!)")
+1
+X1 1c44a18 1c44768 0 1c44b50 0 0 2
+SSTD(s) 2
+SSTD("(INDP10Y!SSTD!20060101!2!)")
+1.25
+X1 1c44b50 1c44768 0 1c44c90 0 0 2
+SSTD(s) 3
+SSTD("(INDP10Y!SSTD!20060101!3!)")
+1.375
+X1 1c44c90 1c44768 0 1c44dd8 0 0 2
+SSTD(s) 4
+SSTD("(INDP10Y!SSTD!20060101!4!)")
+1.5
+X1 1c44dd8 1c44768 0 1c44f28 0 0 2
+SSTD(s) 5
+SSTD("(INDP10Y!SSTD!20060101!5!)")
+1.625
+X1 1c44f28 1c44768 0 1cd0490 0 0 2
+SSTD(s) 6
+SSTD("(INDP10Y!SSTD!20060101!6!)")
+1.75
+X1 1cd0490 1c44768 0 1cd05d8 0 0 2
+SSTD(s) 7
+SSTD("(INDP10Y!SSTD!20060101!7!)")
+2
+X1 1cd05d8 1c44768 0 1cd0740 0 0 2
+SSTD(s) 8
+SSTD("(INDP10Y!SSTD!20060101!8!)")
+2.25
+X1 1cd0740 1c44768 0 1cd08b0 0 0 2
+SSTD(s) 9
+SSTD("(INDP10Y!SSTD!20060101!9!)")
+2.5
+X1 1cd08b0 1c44768 0 1cd07b8 0 0 2
+SSTD(s) 10
+SSTD("(INDP10Y!SSTD!20060101!10!)")
+2.75
+X1 1cd07b8 1c44768 0 1cd0b30 0 0 2
+SSTD(s) 11
+SSTD("(INDP10Y!SSTD!20060101!11!)")
+3
+X1 1cd0b30 1c44768 0 1cd0c28 0 0 2
+SSTD(s) 17
+SSTD("(INDP10Y!SSTD!20060101!17!)")
+4.5
+X1 1cd0c28 1c44768 0 1cd0db8 0 0 2
+SSTD(s) 18
+SSTD("(INDP10Y!SSTD!20060101!18!)")
+4.75
+X1 1cd0db8 1c44768 0 0 0 0 2
+SSTD(s) 19
+SSTD("(INDP10Y!SSTD!20060101!19!)")
+5
+O0 1c43b5c 0 0 0 0 0 0
+
+E0 1c43bc8 0 0 0 0 0 0
+
+L0 1c43c34 0 0 0 0 0 0
+
+B0 1c43de4 0 0 0 0 0 0
+
+P3 1c43d0c 0 321ebfad 0 0 0 2
+
+--description
+Global Substandard Table Rating Factors Rates model.çä çäRELEASE LOG:çäRELEASE pA 1401
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 321ebfad 1c43d0c 0 0 0 0 2
+Global Substandard Table Rating Factors Rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Substandard Table Rating Factors Rates model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RGSUBSTD.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 1c43d78 0 1cd1460 0 0 0 0
+
+F1 1cd1460 1c43d78 0 0 0 0 2
+SSTD(s)
+Funktion
+IF (SetParameter("LookupValue";s) >= 100 && SetParameter("LookupValue";s) <> 2147483647 ; çä  SetParameter("LookupValue";s) / 100 ; çä  IF (EXISTS('TABLE Substandard Table Ratings';SetParameter("Product_code";s);SetParameter("LookupValue";s);"factor") ; çä    'TABLE Substandard Table Ratings'[SetParameter("Product_code";s); SetParameter("LookupValue";s)].factor ; çä    'TABLE Substandard Table Ratings'["*"; SetParameter("LookupValue";s)].factorçä  )çä)
+A0 1c43e50 0 0 0 0 0 0
+
+T0 1c43ebc 0 1cd1a00 0 0 0 0
+
+T16 1cd1a00 1c43ebc 0 0 0 0 3
+TABLE Substandard Table Ratings
+Product_Code
+ACORD_code_value
+factor
+*
+0
+1
+*
+1
+1
+*
+2
+1.25
+*
+3
+1.375
+*
+4
+1.5
+*
+5
+1.625
+*
+6
+1.75
+*
+7
+2
+*
+8
+2.25
+*
+9
+2.5
+*
+10
+2.75
+*
+11
+3
+*
+17
+4.5
+*
+18
+4.75
+*
+19
+5
+I0 1c43f28 0 93a717a 0 0 0 0
+
+I0 93a717a 1c43f28 0 0 0 0 0
+PAGRateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+321ebfad
+F1
+1cd1460
+A0
+T1
+1cd1a00
+!1
+1cd1460 -2 -2
+Description: Returns substandard table ratingçä çäModification Log: çä01/05/2010 nbA Integration CMC added abiling for substd rating to be passed in as a percentage.çä10/31/2007 CSC Initial Calculation/Ruleçä
+;Offset=00000000

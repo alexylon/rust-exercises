@@ -1,0 +1,2425 @@
+;1	10.03.2017 08:28:02	jtomlienovic	
+X0 23e1f68 0 23e25a8 0 0 0 0
+
+X0 23e25a8 23e1f68 23e2640 0 0 0 0
+-- Unit Test Cases --
+X0 23e2640 23e25a8 23e26f8 26b0968 0 0 0
+-- Output Test Cases --
+X8 23e26f8 23e2640 0 23e2a98 0 0 2
+OUTPUT Primary DivType
+'OUTPUT Primary DivType'
+1000500002
+INPUT Policy Life DivType
+1000500002
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+X2 23e2a98 23e2640 0 23e2bd0 0 0 2
+OUTPUT Secondary DivType
+'OUTPUT Secondary DivType'
+5
+INPUT Policy Life DivType
+17
+X8 23e2bd0 23e2640 0 23e2ed0 0 0 2
+OUTPUT Tertiary DivType
+'OUTPUT Tertiary DivType'
+2
+INPUT Policy Life DivType
+16
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+X40 23e2ed0 23e2640 0 26a61d8 0 0 2
+OUTPUT DivOpt Primary Dividend Option Amount(rate_assumption)
+'OUTPUT DivOpt Primary Dividend Option Amount'("C")
+10000
+INPUT Policy Life DivType
+1000500002
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+0
+INPUT Policy ParAccumValues TotalUnits
+100
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Life CashValueAmt
+10000
+INPUT Policy ProductType
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X40 26a61d8 23e2640 0 26a7940 0 0 2
+OUTPUT DivOpt Secondary Dividend Option Amount(rate_assumption)
+'OUTPUT DivOpt Secondary Dividend Option Amount'("C")
+0
+INPUT Policy Life DivType
+1000500009
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+3000
+INPUT Policy Loan LoanBalance
+0
+INPUT Policy ParAccumValues TotalUnits
+100
+INPUT Payment Mode
+1
+INPUT Policy Life RegularLoanBalance
+300
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Life CashValueAmt
+100000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X33 26a7940 23e2640 0 26a8820 0 0 2
+OUTPUT DivOpt Tertiary Dividend Option Amount(rate_assumption)
+'OUTPUT DivOpt Tertiary Dividend Option Amount'("C")
+0
+INPUT Policy Life DivType
+16
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+0
+INPUT Policy ParAccumValues TotalUnits
+5000
+INPUT Payment Mode
+1
+INPUT Policy Life RegularLoanBalance
+1500
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X36 26a8820 23e2640 0 26aa838 0 0 2
+OUTPUT Policy Life DivCashVal
+'OUTPUT Policy Life DivCashVal'("C")
+24660
+INPUT Policy Life DivType
+2
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+0
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X49 26aa838 23e2640 0 26ac850 0 0 2
+OUTPUT Policy Life OYTPurchaseAmt(rate_assumption)
+'OUTPUT Policy Life OYTPurchaseAmt'("C")
+3400
+INPUT Policy Life DivType
+1000500004
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Life CashValueAmt
+3400
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy Coverage MaturityAge
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X45 26ac850 23e2640 0 26ac518 0 0 2
+OUTPUT Policy Life DivLoanReduceAmt
+'OUTPUT Policy Life DivLoanReduceAmt'("C")
+0
+INPUT Policy Life DivType
+11
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Policy Life RegularLoanBalance
+300
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Policy Number of Loan
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X45 26ac518 23e2640 26aec80 26afae0 0 0 2
+OUTPUT Policy Life DivPUA
+'OUTPUT Policy Life DivPUA'("C")
+24660
+INPUT Policy Life DivType
+3
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Calling Program
+VPMSTEST
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Illus FaceAmt[1]
+1000000
+INPUT Policy ProductType
+1
+INPUT Policy Coverage ProductVersionCode
+1
+X45 26aec80 26ac518 0 0 0 0 2
+OUTPUT Policy ParAccumValues PUADeathBenAdjAmt(coverageIndex; sourceofFunds)
+'OUTPUT Policy ParAccumValues PUADeathBenAdjAmt'(0; 9)
+1234
+INPUT Policy Life DivType
+3
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X47 26afae0 23e2640 0 0 0 0 2
+OUTPUT Policy Life DivOYTPUAPurchaseAmt
+OUTPUT Policy Life DivOYTPUAPurchaseAmt
+13554
+INPUT Policy Life DivType
+25
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Message Language
+9
+INPUT Calling Program
+""
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X0 26b0968 23e25a8 26b1590 0 0 0 0
+-- Function Test Cases --
+X0 26b1590 26b0968 26b19b0 26b5698 0 0 0
+-- Output functions --
+X35 26b19b0 26b1590 0 26b23b8 0 0 2
+DivOpt Secondary Dividend Option Amount(rate_assumption)
+DivOpt Secondary Dividend Option Amount("C")
+49340
+INPUT Policy Life DivType
+15
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+3000
+INPUT Policy Loan LoanBalance
+1200
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life RegularLoanBalance
+400
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Policy Number of Loan
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X36 26b23b8 26b1590 0 26b2f18 0 0 2
+DivOpt Tertiary Dividend Option Amount(rate_assumption)
+DivOpt Tertiary Dividend Option Amount("C")
+0
+INPUT Policy Life DivType
+16
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+350
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life RegularLoanBalance
+350
+INPUT Forced Payment Mode
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X36 26b2f18 26b1590 0 26b4dd8 0 0 2
+DivOpt DivCashVal
+DivOpt DivCashVal("C")
+24660
+INPUT Policy Life DivType
+2
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+1000
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2026
+X36 26b4dd8 26b1590 0 0 0 0 2
+DivOpt OYTPurchaseAmt(rate_assumption)
+DivOpt OYTPurchaseAmt("C")
+0
+INPUT Policy Life DivType
+2147483647
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+4
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+X0 26b5698 26b0968 26b63b8 26b7858 0 0 0
+-- Cash Dividend Functions --
+X32 26b63b8 26b5698 0 26b6718 0 0 2
+DivOpt Primary Divs InCash
+DivOpt Primary Divs InCash("C")
+24660
+INPUT Policy Life DivType
+2
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2026
+X32 26b6718 26b5698 0 26b70a8 0 0 2
+DivOpt Secondary Divs InCash(usedDiv)
+DivOpt Secondary Divs InCash("C"; 200)
+24460
+INPUT Policy Life DivType
+7
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2026
+X2 26b70a8 26b5698 0 0 0 0 2
+DivOpt Option Is Cash(DivType)
+DivOpt Option Is Cash(2)
+1
+INPUT Policy Life DivType
+2
+X0 26b7858 26b0968 26b9138 26b9838 0 0 0
+-- Dividend Accum Functions --
+X2 26b9138 26b7858 0 0 0 0 2
+DivOpt Option Is Accum(DivType)
+DivOpt Option Is Accum(5)
+1
+INPUT Policy Life DivType
+5
+X0 26b9838 26b0968 26b98e0 26bd0e8 0 0 0
+-- Paid Up Adds Dividend Functions --
+X42 26b98e0 26b9838 26bbaf8 26bc7e0 0 0 2
+DivOpt Divs PUA
+DivOpt Divs PUA("C")
+24660
+INPUT Policy Life DivType
+3
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Calling Program
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X42 26bbaf8 26b98e0 0 0 0 0 2
+DivOpt Coverage Dividend PUA Split(coverageIndex; sourceofFundsTC)
+DivOpt Coverage Dividend PUA Split("C"; 0; 20)
+12320
+INPUT Policy Life DivType
+3
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Calling Program
+
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy ProductVersionCode
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X2 26bc7e0 26b9838 0 0 0 0 2
+DivOpt Option Is PUA(DivType)
+DivOpt Option Is PUA(4)
+0
+INPUT Policy Life DivType
+3
+X0 26bd0e8 26b0968 26bd498 26beb08 0 0 0
+-- Premium Reduction Dividend Functions --
+X2 26bd498 26bd0e8 0 0 0 0 2
+DivOpt Option Is ReducePrem(DivType)
+DivOpt Option Is ReducePrem(11)
+0
+INPUT Policy Life DivType
+9
+X0 26beb08 26b0968 26beee8 26bf870 0 0 0
+-- Loan Reduction Dividend Functions --
+X2 26beee8 26beb08 0 0 0 0 2
+DivOpt Option Is ReduceLoan(DivType)
+DivOpt Option Is ReduceLoan(11)
+1
+INPUT Policy Life DivType
+16
+X0 26bf870 26b0968 26bf918 26c2c98 0 0 0
+-- One Year Term Dividend Functions --
+X34 26bf918 26bf870 26bfc18 26c1a60 0 0 2
+DivOpt Divs OneYearTerm(rate_assumption)
+DivOpt Divs OneYearTerm("C")
+0
+INPUT Policy Life DivType
+2147483647
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+0
+INPUT Policy ParAccumValues TotalUnits
+50
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+3000
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Message Language
+9
+X33 26bfc18 26bf918 0 0 0 0 2
+DivOpt Primary OYT Option(rate_assumption)
+DivOpt Primary OYT Option("C")
+0
+INPUT Policy Life DivType
+2147483647
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+0
+INPUT Policy ParAccumValues TotalUnits
+50
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+3000
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+X26 26c1a60 26bf870 26c2558 0 0 0 2
+DivOpt Adjusted OYT Purchase Rate(yearIndex; rateAssumption)
+DivOpt Adjusted OYT Purchase Rate("C";1)
+1.29626775
+INPUT Message Language
+9
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+4
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X19 26c2558 26c1a60 0 0 0 0 2
+DivOpt Unadjusted OYT Purchase Rate( yearIndex; rateAssumption)
+DivOpt Unadjusted OYT Purchase Rate("C";1)
+0.8641785
+INPUT Message Language
+9
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode
+1
+X0 26c2c98 26b0968 26c3088 26c4e20 0 0 0
+-- Combination Dividend Functions --
+X42 26c3088 26c2c98 26c33d8 26c42b8 0 0 2
+DivOpt Divs Combination
+DivOpt Divs Combination("C")
+24660
+INPUT Policy Life DivType
+25
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Calling Program
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X42 26c33d8 26c3088 0 0 0 0 2
+DivOpt Coverage Divs Combination(coverageIndex)
+DivOpt Coverage Divs Combination("C";0)
+24660
+INPUT Policy Life DivType
+25
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Policy Coverage EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Loan LoanBalance
+5000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ParAccumValues TotalUnits
+1100
+INPUT Payment Mode
+1
+INPUT Policy Life DivOnDepositAmt
+760
+INPUT Policy Life DivOnDepositIntRate
+4.5
+INPUT Policy Life DivOYTOptType
+2
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Life CashValueAmount
+2600
+INPUT Calling Program
+
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X3 26c42b8 26c2c98 0 0 0 0 2
+DivOpt Option Is Combination(DivType)
+DivOpt Option Is Combination(25)
+1
+INPUT Policy Life DivType
+25
+INPUT Message Language
+English
+X0 26c4e20 26b0968 26c4ec0 26c53a8 0 0 0
+-- Projected Dividend Splits --
+X3 26c4ec0 26c4e20 0 26c5218 0 0 2
+DivOpt Proj Primary Option Amount(divAmount)
+DivOpt Proj Primary Option Amount("C"; 1; 1000)
+1000
+INPUT Policy Life DivType
+17
+INPUT Payment Mode
+1
+X3 26c5218 26c4e20 0 0 0 0 2
+DivOpt Proj Secondary Option Amount(divAmount; primaryDivAmount)
+DivOpt Proj Secondary Option Amount(950; 390)
+560
+INPUT Policy Life DivType
+17
+INPUT Payment Mode
+1
+X0 26c53a8 26b0968 26c5440 26c65b8 0 0 0
+-- Dividend Options --
+X3 26c5440 26c53a8 0 26c55d8 0 0 2
+DivOpt Primary Option
+DivOpt Primary Option
+11
+INPUT Policy Life DivType
+11
+INPUT Payment Mode
+1
+X2 26c55d8 26c53a8 0 26c5710 0 0 2
+DivOpt Secondary Option
+DivOpt Secondary Option
+3
+INPUT Policy Life DivType
+8
+X7 26c5710 26c53a8 0 26c5c80 0 0 2
+DivOpt Tertiary Option
+'DivOpt Tertiary Option'
+2
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+X4 26c5c80 26c53a8 26c5df8 26c5f08 0 0 2
+DivOpt Proj Primary Option(yearIndex)
+DivOpt Proj Primary Option("C"; 4)
+4
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+INPUT Illus DivType[4]
+166
+X1 26c5df8 26c5c80 0 0 0 0 2
+DivOpt Proj Illustrations Primary Option(DivType)
+DivOpt Proj Illustrations Primary Option(1613)
+11
+X5 26c5f08 26c53a8 26c6110 26c61e8 0 0 2
+DivOpt Proj Secondary Option(yearIndex)
+DivOpt Proj Secondary Option("C";4)
+5
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+INPUT Illus DivType[4]
+168
+INPUT Illus DivType[9]
+161
+X1 26c6110 26c5f08 0 0 0 0 2
+DivOpt Proj Illustrations Secondary Option(DivType)
+DivOpt Proj Illustrations Secondary Option(167)
+3
+X1 26c61e8 26c53a8 0 0 0 0 2
+DivOpt DivType Code Mapping(DivType)
+DivOpt DivType Code Mapping(169)
+15
+X0 26c65b8 26b0968 26c6950 0 0 0 0
+-- Miscellaneous Functions --
+X5 26c6950 26c65b8 0 26c7518 0 0 2
+DivOpt Dividend Duration
+DivOpt Dividend Duration
+3
+Input TransEffDate
+06/01/2008
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Calling System
+I1
+X1 26c7518 26c65b8 0 0 0 0 2
+DivOpt Model Name
+DivOpt Model Name
+Dividend Options Calcs
+O0 23e1e24 0 0 0 0 0 0
+
+E0 23e1e90 0 0 0 0 0 0
+
+L0 23e1efc 0 0 0 0 0 0
+
+B0 23e20ac 0 0 0 0 0 0
+
+P3 23e1fd4 0 26e4638 0 0 0 2
+
+--description
+Globlal Whole Life contracts have multiple ways to use the dividends that are paid.  This model will supply support for the following uses of dividends:çä çä‚Ä¢âPaid in Cashçä‚Ä¢âReduce Premiumsçä‚Ä¢âAccumulate at Interestçä‚Ä¢âPurchase One Year Term (OYT)çä‚Ä¢âAdditions limited to Cash Valueçä‚Ä¢âPurchase Paid Up Additions (PUA)çä‚Ä¢   Simple Bonus Calculationsçä‚Ä¢   Reversionary Bonus çä‚Ä¢   Termination Bonus çä çä çäThe model will return the amount to be used under the above dividend options. The model will return the amount of the accumulated Bonus amount and also the amount of one year term purchased. It will not provide for PUA calculations ‚Äì the amount of PUA units purchased will be calculated in the PUACalcs model. çä çä çäRELEASE LOG:çä çäRELEASE PA1403 çä
+LICENSENAME
+"csc us internal use only - workbench"
+COMPILERVERSION
+"4.5.4"
+P13 26e4638 23e1fd4 0 0 0 0 2
+Bonus Options
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model: Global  Whole Life BenefitBonus Options Model."
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"BonusOptons.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 23e2040 0 26e6220 0 0 0 0
+
+F1 26e6220 23e2040 133e0538 0 0 0 2
+:Bonus
+Funktion
+
+F1 133e0538 26e6220 0 b5dca85 0 0 2
+Bonus Proj Total Amount(calcType; yearIndex; vectorSolveParms; vectorWLProj)
+Funktion
+IF ('Whole Life is Participating'('PI PolicyProduct ParticipatingType'('Product ProductCode';'Product EffDate')) ; çä  CASE('Product BonusType';çä    2 :  /*Cash*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj);çä    3 :  /*PUA*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj);çä    4 :  /*ReducePrem*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj);çä    5 :  /*AccumAtInt*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj);çä    6 :  /*OneYearTerm*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj);çä    7 :  /*Termination*/ 'Bonus Termination Amount'(calcType;yearIndex;vectorSolveParms);çä    8 :  /*Compound*/ 'Bonus Compound Amount'(calcType;yearIndex;vectorSolveParms);çä    9 :  /*Simple*/ 'Bonus Simple Amount'(calcType;yearIndex;vectorSolveParms);çä     : 0)çä   ; çä  0çä)
+F1 b5dca85 26e6220 0 4c7adb9a 0 0 2
+--Bonus Proj Amount (calcType; yearIndex;vectorSolveParms; vectorWLProj)
+Funktion
+Case('Product BonusType';çä  çä 2 :/*Cash*/ 'Bonus Proj InCash'(calcType; yearIndex; vectorWLProj); çä çä   3 :/*PUA*/  'Bonus Proj PUA Amount'(calcType; yearIndex; vectorWLProj);çä   çä     4 :/*ReducePrem*/ 'Bonus Proj ReducePrem'(calcType; yearIndex; vectorWLProj);çä çä      5 :/*AccumAtInt*/ 'Bonus Proj AccumAtInt'(calcType; yearIndex; vectorWLProj);çä çä        6 :/*OneYearTerm*/ 'Bonus Proj OneYearTerm'(calcType; yearIndex; vectorWLProj);çä        çä         7: /*Termination*/ 'Bonus Termination Amount'(calcType;yearIndex;vectorSolveParms);çä         çä           8: /*Compound*/'Bonus Compound Amount'(calcType;yearIndex;vectorSolveParms);çä           çä             9 :/*Simple*/  'Bonus Simple Amount'(calcType;yearIndex;vectorSolveParms); çä          çä             :0)çä          çä            
+F1 4c7adb9a 26e6220 0 661d0694 0 0 2
+Bonus Proj Primary Amount(calcType; yearIndex;vectorSolveParms; vectorWLProj)
+Funktion
+IF ('Whole Life is Participating'('PI PolicyProduct ParticipatingType'('Product ProductCode';'Product EffDate')) ; çä  CASE('Product BonusType';çä    2 :  /*Cash*/ 'Bonus Proj Total Amount'(calcType;yearIndex;vectorSolveParms;vectorWLProj);çä    3 :  /*PUA*/ 'Bonus Proj Total Amount'(calcType;yearIndex;vectorSolveParms;vectorWLProj);çä    4 :  /*ReducePrem*/ 'Bonus Proj ReducePrem'(calcType;yearIndex;vectorWLProj);çä    5 :  /*AccumAtInt*/ 'Bonus Proj Total Amount'(calcType;yearIndex;vectorSolveParms;vectorWLProj);çä    6 :  /*OneYearTerm*/ 'Bonus Proj Total Amount'(calcType;yearIndex;vectorSolveParms;vectorWLProj);çä    7 :  /*Termination*/ 'Bonus Termination Amount'(calcType;yearIndex;vectorSolveParms);çä    8 :  /*Compound*/ 'Bonus Compound Amount'(calcType;yearIndex;vectorSolveParms);çä    9 :  /*Simple*/ 'Bonus Simple Amount'(calcType;yearIndex;vectorSolveParms);çä     : 0)çä   ; çä  0çä)
+F1 661d0694 26e6220 0 26e82f8 0 0 2
+Bonus Proj Secondary Amount(calcType; yearIndex;vectorSolveParms; vectorWLProj)
+Funktion
+IF ('Whole Life is Participating'('PI PolicyProduct ParticipatingType'('Product ProductCode';'Product EffDate')) ; çä  MAX('Bonus Proj Total Amount'(calcType;yearIndex;vectorSolveParms;vectorWLProj) - 'Bonus Proj Primary Amount'(calcType;yearIndex;vectorSolveParms;vectorWLProj);0) ; çä  0çä)
+F1 26e82f8 26e6220 26e7e90 26e83f0 0 0 2
+-- Cash BonusFunctions --
+Funktion
+
+F1 26e7e90 26e82f8 0 26e8058 0 0 2
+Bonus InCash(calcType)
+Funktion
+IF ( /*Primary Div Option is Cash*/ 'BonusType is Cash'('Product BonusType') ; çä   /*Yes*/ 'DivAmount Policy Dividend'(calcType) ; çä   /*No*/ 0çä)
+F1 26e8058 26e82f8 0 26e8dd0 0 0 2
+Bonus Proj InCash(calcType; yearIndex; vectorWLProj)
+Funktion
+IF ( /*Primary Div Option is Cash*/ 'BonusType is Cash'('Bonus Type'(calcType;yearIndex)) ; çä   /*Yes*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj) ; çä   /*No*/ 0çä)
+F1 26e8dd0 26e82f8 0 0 0 0 2
+BonusType is Cash(DivType)
+Funktion
+DivType = 2
+F1 26e83f0 26e6220 26e84d0 1d48c045 0 0 2
+-- Bonus Accum Functions --
+Funktion
+
+F1 26e84d0 26e83f0 0 26e89c8 0 0 2
+DivOpt Primary Divs AccumAtInt(calcType)
+Funktion
+IF ( /*Primary Div Option is Accumulate*/ 'BonusType is AccumAtInt'('Product BonusType') ; çä   /*Yes*/ ('Policy Life DivOnDepositAmt' + 'Bonus BonusOnDepositInterest'(calcType) + ('DivAmount Policy Dividend'(calcType))) ; çä   /*No*/ 0çä)
+F1 26e89c8 26e83f0 0 26e8a58 0 0 2
+Bonus BonusOnDepositInterest(calcType)
+Funktion
+'Policy Life DivOnDepositAmt' * ('PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';'Policy EffDate';'Duration Year'(TransEffDate;'Policy EffDate')) / 100) // Added 'Duration Year' needed to accommodate Split Interest Rateçä
+F1 26e8a58 26e83f0 26e8b60 26e9cb0 0 0 2
+--Bonus Proj Divs AccumAtInt(calcType; yearIndex; vectorWLProj)
+Funktion
+if(yearIndex<1;0;çä çäIF(/*Start point of projection?*/çä     yearIndex = 'Duration Year'(TransEffDate; 'Policy EffDate'); çä çä     /*Start with inputs*/çä     'Policy Life DivOnDepositAmt';çä     çä     if ( yearIndex<1;0;çä çä     /*Else start with previous year accumulated at interest*/çä     'Bonus Proj AccumAtInt'(calcType; yearIndex - 1; vectorWLProj)çä      *(1 + 'PI PolicyProduct ReserveIntRate'(calcType; 'Policy ProductCode'; 'Policy EffDate'; yearIndex)/100) // Added yearIndex needed to accommodate Split Interest Rateçä      + çä       IF(/*Primary Div Option is Accumulate*/çä           'BonusType is AccumAtInt'('Bonus Type'(calcType; yearIndex));çä           /*Yes*/çä           'DivAmount Proj Policy Dividend'(calcType; yearIndex; vectorWLProj);çä           /*No*/çä           0) çä      çä     çä   ))çä   )çä çä çä çä çä çä
+F1 26e8b60 26e8a58 712495c5 0 0 0 2
+Bonus Proj AccumAtInt(calcType; yearIndex; vectorWLProj)
+Funktion
+IF ( /*Primary Div Option is Accumulate*/ 'BonusType is AccumAtInt'('Bonus Type'(calcType;yearIndex)) ; çä   /*Yes*/ IF ( /*Start point of projection?*/ yearIndex = 1 /*'Duration Year'(TransEffDate; 'Policy EffDate')*/  ; çä     /*Start with inputs*//*'Policy Life DivOnDepositAmt'*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj) ; çä     /*Else start with previous year accumulated at interest*/ 'Bonus Proj AccumAtInt'(calcType;yearIndex - 1;'TGTDB Vector WLProj BOY'(calcType;yearIndex - 1;'Vector TradDocs BIR Parms'(calcType;yearIndex - 1);'TGTDB WithdrawalVector'(calcType;yearIndex - 1))) * (1 + 'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';'Policy EffDate';yearIndex) / 100) // Added yearIndex needed to accommodate Split Interest Rateçä + 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj)çä  ) ; çä /*No*/ 0çä)
+F1 712495c5 26e8b60 0 0 0 0 2
+DivOpt Proj Divs AccumAtInt(calcType; yearIndex; vectorWLProj)
+Funktion
+'Bonus Proj AccumAtInt'(calcType;yearIndex;vectorWLProj)
+F1 26e9cb0 26e83f0 0 0 0 0 2
+BonusType is AccumAtInt (DivType)
+Funktion
+DivType = 5
+F1 1d48c045 26e6220 4e85d436 5a617e6d 0 0 2
+--Simple Bonus
+Funktion
+
+F1 4e85d436 1d48c045 0 41f1e3c2 0 0 2
+Bonus Amount Rec(calcType;yearIndex;vectorSolveParms)
+Funktion
+'Bonus Simple Amount'(calcType;yearIndex;vectorSolveParms) + IF (YearIndex = 1 ; çä  0 ; çä  'Bonus Amount Rec'(calcType;yearIndex - 1;vectorSolveParms)çä)
+F1 41f1e3c2 1d48c045 0 57ddbf7b 0 0 2
+Bonus Simple Amount(calcType;yearIndex;vectorSolveParms)
+Funktion
+IF ( /*Base Amount only Bonus*/ 'Bonus is Simple'('Product BonusType') ; çä   /*Yes*/ BenefitAmount(calcType;0;0;yearIndex;vectorSolveParms) * 'Bonus Rate'(calcType;yearIndex) / 100 ; çä   /*No*/ 0çä)
+F1 57ddbf7b 1d48c045 0 0 0 0 2
+Bonus is Simple(BonusType)
+Funktion
+BonusType = 9
+F1 5a617e6d 26e6220 f396dbc 4f4e018 0 0 2
+-- Reversionary Bonus
+Funktion
+
+F1 f396dbc 5a617e6d 0 254e78f2 0 0 2
+Bonus Compound Amount(calcType;yearIndex;vectorSolveParms)
+Funktion
+BenefitAmount(calcType;0;0;yearIndex;vectorSolveParms) * prodx(yearIndexs;1;yearIndex;1 + 'Bonus Rate'(calcType;#yearIndexs) / 100) - BenefitAmount(calcType;0;0;yearIndex;vectorSolveParms)
+F1 254e78f2 5a617e6d 0 17e9b911 0 0 2
+Bonus Annual Reversionary Amount(calcType;yearIndex;vectorSolveParms)
+Funktion
+IF ( /*Base Amount only Bonus*/ 'Bonus is Reversionary'('Product BonusType') ; çä   /*Yes*/ BenefitAmount(calcType;0;0;yearIndex;vectorSolveParms) * 'Bonus Rate'(calcType;yearIndex) / 100 ; çä   /*No*/ 0çä)
+F1 17e9b911 5a617e6d 0 0 0 0 2
+Bonus is Reversionary(BonusType)
+Funktion
+BonusType = 8
+F1 4f4e018 26e6220 7c83836d 26e8ec8 0 0 2
+--Termination Bonus
+Funktion
+
+F1 7c83836d 4f4e018 0 6407ef25 0 0 2
+Bonus Termination Amount(calcType;yearIndex;vectorSolveParms)
+Funktion
+IF ('Bonus is Termination'('Product BonusType') ; çä  IF ('PI PAGDRV Benefit MaturityDuration'(calcType;TransEffDate;0) = YearIndex /*Base Amount only Bonus*/  ; çä     /*Yes*/ BenefitAmount(calcType;0;0;yearIndex;vectorSolveParms) * 'Bonus Rate'(calcType;yearIndex) / 100 ; çä    0çä  ) ; çä /*No*/ 0çä)
+F1 6407ef25 4f4e018 0 0 0 0 2
+Bonus is Termination(BonusType)
+Funktion
+BonusType = 7
+F1 26e8ec8 26e6220 26e9ae0 26ea020 0 0 2
+-- Paid Up Adds Bonus Functions --
+Funktion
+
+F1 26e9ae0 26e8ec8 26e9b98 26e9f28 0 0 2
+Bonus Proj PUA Amount(calcType; yearIndex; vectorWLProj)
+Funktion
+'Bonus PUA Amount'(calcType;yearIndex;vectorWLProj) / 'PUACalc Rate'(calcType;0;yearIndex)
+F1 26e9b98 26e9ae0 0 26e9db8 0 0 2
+Bonus PUA Amount(calcType; yearIndex; vectorWLProj)
+Funktion
+IF ( /*Primary Dividend Option is Buy Paid up Adds*/ 'BonusType is PUA'('Bonus Type'(calcType;yearIndex)) ; çä   /*Yes*/ 'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj) ; çä   /*No*/ 0çä)
+F1 26e9db8 26e9ae0 4f680c41 0 0 0 2
+Bonus Proj Benefit  PUA Split(calcType; coverageIndex; yearIndex; vectorWLProj; sourceOfFundsTC)
+Funktion
+'Bonus Proj Benefit PUA only'(calcType;coverageIndex;yearIndex;vectorWLProj;sourceOfFundsTC)
+F1 4f680c41 26e9db8 0 0 0 0 2
+Bonus Proj Benefit PUA only(calcType; coverageIndex; yearIndex; vectorWLProj; sourceOfFundsTC)
+Funktion
+IF ( /* Option is PUA*/ ('BonusType is PUA'('Bonus Type'(calcType;yearIndex))) ; çä   /*Yes*/ 'DivAmount Proj Coverage Dividend'(calcType;coverageIndex;yearIndex;vectorWLProj;sourceOfFundsTC) ; çä   /*No*/ 0çä)
+F1 26e9f28 26e8ec8 0 0 0 0 2
+BonusType is PUA(DivType)
+Funktion
+DivType = 3
+F1 26ea020 26e6220 26ea110 26ea480 0 0 2
+-- Premium Reduction Bonus Functions --
+Funktion
+
+F1 26ea110 26ea020 0 26ea900 0 0 2
+Bonus ReducePrem(calcType)
+Funktion
+IF ( /*Bonus Option is ReducePremium*/ 'BonusOptionType is ReducedPremium'('Product BonusType') ; çä   /*Yes*/ MIN('Bonus Mode Premium Amt'(calcType;TransEffDur);'DivAmount Policy Dividend'(calcType)) ; çä   /*No*/ 0çä)
+F1 26ea900 26ea020 0 26eaf00 0 0 2
+Bonus Proj ReducePrem(calcType; yearIndex; vectorWLProj)
+Funktion
+IF ( /*Primary Bonus Option is Reduce Premium*/ 'BonusOptionType is ReducedPremium'('Product BonusType') ; çä   /*Yes*/ MIN('Bonus Mode Premium Amt'(calcType;yearIndex);'DivAmount Proj Policy Dividend'(calcType;yearIndex;vectorWLProj)) ; çä   /*No*/ 0çä)
+F1 26eaf00 26ea020 0 0 0 0 2
+BonusOptionType is ReducedPremium(bonusType)
+Funktion
+BonusType = 4
+F1 26ea480 26e6220 0 26eb528 0 0 2
+-- Loan Reduction Bonus Functions --
+Funktion
+
+F1 26eb528 26e6220 26ebb98 26ebfd0 0 0 2
+-- One Year Term Bonus Functions --
+Funktion
+
+F1 26ebb98 26eb528 26eb020 26eb110 0 0 2
+Bonus OneYearTerm(calcType)
+Funktion
+'Bonus OYT Type'(calcType)
+F1 26eb020 26ebb98 0 0 0 0 2
+Bonus OYT Type(calcType)
+Funktion
+IF ('BonusType is OYT'('Product BonusType') ; çä  'DivAmount Policy Dividend'(calcType) / 'Bonus Adjusted OYT Purchase Rate'(calcType;'Bonus Duration') ; çä  0çä)
+F1 26eb110 26eb528 26eb278 26eb388 0 0 2
+Bonus Proj OneYearTerm(calcType; yearIndex; vectorWLProj)
+Funktion
+'Bonus Proj OYT Amount'(calcType;yearIndex;vectorWLProj)
+F1 26eb278 26eb110 0 0 0 0 2
+Bonus Proj OYT Amount(calcType; yearIndex; vectorWLProj)
+Funktion
+IF ('BonusType is OYT'('Product BonusType') ; çä  SUMX(cov;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;'DivAmount Proj Total Coverage Dividend'(calcType;#cov;yearIndex;vectorWLProj)) //'DivAmount Proj Policy Dividend'(calcType; yearIndex; vectorWLProj)çä / 'Bonus Adjusted OYT Purchase Rate'('CalcType Current'(calcType);yearIndex) ; çä   /*No*/ 0çä)
+F1 26eb388 26eb528 26eb440 0 0 0 2
+Bonus Adjusted OYT Purchase Rate(calcType; yearIndex)
+Funktion
+IF ('PI Use Attributes'("Unadjusted OYT COI Purchase Rate") ; çä  'STD Unadjusted OYT COI Purchase Rate'(yearIndex) ; çä  'Bonus Unadjusted OYT Purchase Rate'(calcType;yearIndex)çä) * IF ( /*base coverage is rated*/ 'Std Coverage Has TableRating'(calcType;0) ; çä /*Yes*/ 'Std Coverage Table Rating factor'(calcType;0;yearIndex;0) ; çä /*No*/ 1çä) + IF ( /*base coverage has flat extra*/ 'Std Coverage Has FlatExtra'(calcType;0) ; çä /*Yes*/ 'Std Coverage Total Flat Extra'(calcType;0;yearIndex;0) ; çä /*No*/ 0çä)
+F1 26eb440 26eb388 0 0 0 0 2
+Bonus Unadjusted OYT Purchase Rate(calcType; yearIndex)
+Funktion
+CASE(TOUPPER(calcType);çä  "M" :  /*Midpoint of current and guaranteed OYT rates*/ (Rate('Policy Coverage ProductCode'(calcType;0);"OYTCOI";TransEffDate;'Vector DivOpt Proj OYTRate Info'(calcType;0;yearIndex)) + Rate('Policy Coverage ProductCode'(calcType;0);"OYTCOI";TransEffDate;'Vector DivOpt Proj OYTRate Info'(calcType;0;yearIndex))) * 0.5;çä  "C" :  /*Current OYT Rate*/ Rate('Policy Coverage ProductCode'(calcType;0);"OYTCOI";TransEffDate;'Vector DivOpt Proj OYTRate Info'(calcType;0;yearIndex));çä  "G" :  /*Guaranteed OYT Rate*/ Rate('Policy Coverage ProductCode'(calcType;0);"OYTCOI";TransEffDate;'Vector DivOpt Proj OYTRate Info'(calcType;0;yearIndex));çä  "A" :  /*For an assumed rate illustration use the Current OYT Rate*/ MIN(Rate('Policy Coverage ProductCode'(calcType;0);"OYTCOI";TransEffDate;'Vector DivOpt Proj OYTRate Info'(calcType;0;yearIndex)) * 'Std ChargeMult' / 100;Rate('Policy Coverage ProductCode'(calcType;0);"OYTCOI";TransEffDate;'Vector DivOpt Proj OYTRate Info'(calcType;0;yearIndex)));çä   /*Else return an error message*/  : 'Messages SystemMessage'("CA1000";'Message Language';v_('DivOpt Model Name';"DivOpt Unadjusted OYT Purchase Rate")))çä
+F1 26ebfd0 26e6220 26ecb80 26ed6d8 0 0 2
+-- Bonus Options --
+Funktion
+
+F1 26ecb80 26ebfd0 0 0 0 0 2
+Bonus Type(calcType; yearIndex)
+Funktion
+ //IF(/*Calling system is an Illustrations System*/çä//   'Std Calling System Is Illustration Based';çä/*Yes - retrieve the appropriate dividend option for the specific policy year from the dividend option stream*/// 'DivOpt Proj Illustrations Primary Option'('Illus DivType'(calcType;yearIndex));çä/*No - use the standard dividend option*/// )çä'Product BonusType'
+F1 26ed6d8 26e6220 26ed7b8 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 26ed7b8 26ed6d8 0 26ed8f0 0 0 2
+Bonus Mode Premium Amt(calcType;yearIndex)
+Funktion
+ //'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'(1; 'Policy Duration'; yearIndex; 'Policy Rate Assumption'))çä//'TradDocs Policy Mode Premium'(calcType; yearIndex)çä//'ModePremium Coverage Base Premium'(calcType;0;1;'Vector ModePremium Create Parms Vector From Inputs and Parms'(1; 'Policy Duration'; yearIndex;calcType))çä//'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'(1; 'Policy Duration'; yearIndex; calcType))çäSUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;'Policy Duration') - 1;IF ( /*Is coverage in force*/ 'Std Coverage Is Inforce'(calcType;#coverageIndex;TransEffDate;'Policy Duration') || 'Std Coverage Is Pending'(calcType;#coverageIndex;TransEffDate;'Policy Duration') ; çä   /*yes - return premium*/ IF ('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate)) ; çä    'ModePremium Coverage Mode Premium'(calcType;#coverageIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Policy PaymentMode';'Policy Duration';yearIndex;calcType)) * 'GEN Payments In Year'('Policy PaymentMode') ; çä    'ModePremium Coverage Mode Premium'(calcType;#coverageIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'(1;'Policy Duration';yearIndex;calcType))çä  ) ; çä /*No - return zero*/ 0çä))
+F1 26ed8f0 26ed6d8 0 26ed9e0 0 0 2
+Vector Bonus OYTRate Info(calcType; coverageIndex)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);'Bonus Duration';'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;TransEffDur);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;TransEffDur);'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur);'Policy Jurisdiction';'GEN Vector Blank'; //Table - Not usedçä'GEN Vector Blank'; //Rule - Not usedçä'GEN Vector Blank'; //Death Benefit option type - Not usedçä'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate');'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate'))
+F1 26ed9e0 26ed6d8 0 26ee420 0 0 2
+Bonus Duration
+Funktion
+'Duration Year'(TransEffDate;'Policy EffDate')
+F1 26ee420 26ed6d8 0 11a43875 0 0 2
+DivOpt Model Name
+Funktion
+"Dividend Options Calcs"
+F1 11a43875 26ed6d8 0 71930615 0 0 2
+DivOpt Proj Mode Premium Amt(calcType;yearIndex)
+Funktion
+'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector for RedPrem Divs'('CalcType Current'(calcType);yearIndex;'Policy PaymentMode';0;0;'CalcType Current'(calcType);'Decrease Date By Months'('Increase Date By Years'('Policy EffDate';yearIndex);1)))
+F1 71930615 26ed6d8 0 409ffb4a 0 0 2
+Vector DivOpt Proj OYTRate Info(calcType; coverageIndex; yearIndex)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);yearIndex;'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;yearIndex);'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur);'Policy Jurisdiction';'GEN Vector Blank'; //Table - Not usedçä'GEN Vector Blank'; //Rule - Not usedçä'GEN Vector Blank'; //Death Benefit option type - Not usedçä'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate');'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate'))
+F1 409ffb4a 26ed6d8 0 1c2c10ce 0 0 2
+Bonus Vector Parms Build(BonusType;yearIndex;vectorRateQuery)
+Funktion
+vectorx(dataItem;0;v_length(vectorRateQuery) - 1;'Bonus Vector GetDataItemPair'(BonusType;yearIndex;e_(vectorRateQuery;#dataItem)))
+F1 1c2c10ce 26ed6d8 0 7ecced2d 0 0 2
+Bonus Vector Parms GetQuery(calcType; rateType)
+Funktion
+v_construct(Rate('Policy ProductCode';rateType & "_Query";TransEffDate;'Gen Vector Blank'))
+F1 7ecced2d 26ed6d8 0 7dfea8ac 0 0 2
+Bonus Vector GetDataItemPair (BonusType;yearIndex;dataItem)
+Funktion
+v_(dataItem;CASE(toupper(dataItem);çä  "BONUSTYPE" : BonusType;çä  "DURATION" : yearIndex;çä   : ERROR("Data Item not defined in 'Bonus Rate Vector GetDataItemPair': ";dataItem))çä)
+F1 7dfea8ac 26ed6d8 0 5521984f 0 0 2
+Bonus Rate Vector Parms(calcType;BonusType; yearIndex;rateType)
+Funktion
+'Bonus Vector Parms Build'(BonusType;yearIndex;'Bonus Vector Parms GetQuery'(calcType;rateType))
+F1 5521984f 26ed6d8 0 0 0 0 2
+Bonus Rate(calcType;yearIndex)
+Funktion
+Rate('Policy ProductCode';"Bonus_Rate";TransEffDate;'Bonus Rate Vector Parms'(calcType;'Product BonusType';yearIndex;"Bonus_Rate"))
+A0 23e2118 0 0 0 0 0 0
+
+T0 23e2184 0 0 0 0 0 0
+
+I0 23e21f0 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P1
+26e4638
+F48
+26e6220
+133e0538
+b5dca85
+4c7adb9a
+661d0694
+26e82f8
+26e7e90
+26e8058
+26e8dd0
+26e83f0
+26e84d0
+26e89c8
+26e8a58
+26e9cb0
+1d48c045
+5a617e6d
+4f4e018
+26e8ec8
+26e9ae0
+26e9b98
+26e9db8
+26e9f28
+26ea020
+26ea110
+26ea900
+26eaf00
+26ea480
+26eb528
+26ebb98
+26eb020
+26eb110
+26eb278
+26eb388
+26eb440
+26ebfd0
+26ecb80
+26ed6d8
+26ed7b8
+26ed8f0
+26ed9e0
+26ee420
+11a43875
+71930615
+409ffb4a
+1c2c10ce
+7ecced2d
+7dfea8ac
+5521984f
+A0
+T0
+!45
+133e0538 -2 -2
+çä çä29/9/2014 PA1403 PAC038: Global Whole Life JL Intial Function.
+b5dca85 -2 -2
+Description: Returns the total projected  bonus çä çäModification Log:çä23/9/2014 PA1403 PAC038: Global Whole Life JC Intial Function.
+4c7adb9a -2 -2
+Description: Returns the total projected  secondary bonus çä çäModification Log:çä29/9/2014 PA1403 PAC038: Global Whole Life JL Intial Function.
+661d0694 -2 -2
+Description: Returns the total projected  secondary bonus çä çäModification Log:çä29/9/2014 PA1403 PAC038: Global Whole Life JL Intial Function.
+26e7e90 -2 -2
+Description: Returns the amount of dividend paid out in cash under the primary dividend optionçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26e8058 -2 -2
+Description: Returns the total projected amount of dividend paid out in cashçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26e8dd0 -2 -2
+Description: Boolean Indicator for whether the Dividend Option is Cashçä çäModification Log:çä01/21/2008 CSC Initial Calculation/Rule
+26e84d0 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+26e89c8 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+26e8a58 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/16/2009 - RegTest - JL - First year divs were being ignored. Add -1 in first check to check for START of projectionçä06/19/2009 - PA1013 - JL - Correct duration such that the first year dividends are counted
+26e8b60 -2 -2
+çäModification Log:çä10/6/2014 PA1403 PAC038: Global Whole Life JC  Accumulate from year 1.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+4e85d436 -2 -2
+Description: Returns the total projected amount of simple dividend declared to current year.çä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Intial Function.çä
+41f1e3c2 -2 -2
+Description: Returns the total projected amount of simple dividend declared per year çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Intial Function.çä
+57ddbf7b -2 -2
+çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Intial Rule.
+f396dbc -2 -2
+Description: Returns the total projected Compound Bonus Amount çä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Intial Function.çä
+254e78f2 -2 -2
+Description: Returns the declared bonus amount per yaer çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Intial Function.çä
+17e9b911 -2 -2
+çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Intial Rule.
+7c83836d -2 -2
+Description: Returns the total projected amount of declared  Termination BonusçäModification Log:çä07/23/2014 PA1403 PAC038: Global Whole Life JC Intial Function.çä
+6407ef25 -2 -2
+çäModification Log:çä07/23/2014 PA1403 PAC038: Global Whole Life JC Intial Rule.
+26e9ae0 -2 -2
+Description: Returns the total projected amount of dividend used to purchase PUAsçä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Adjusted Calcs for pA Global.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26e9b98 -2 -2
+Description: Returns the projected amount of dividend used to purchase PUAs under the primary dividend optionçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26e9db8 -2 -2
+Description: Returns the projected amount of coverage dividend earned from a specific Source of PUA Funds that is used to purchase PUAs.  If dividend is used in following year, return zero.çä çäModification Log:çä04/06/2011 wmA merge regresion CMC changed to use coverage is XX function.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/08/2009 - PA1013çä01/21/2008 CSC Initial Calculation/Rule
+4f680c41 -2 -2
+Description: Returns dividend for specified coverage when only option is PUA  i.e. dividend is not split.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/05/09 - PA1277 - JL - Remove PUAR check.çä05/08/2009 - PA1013
+26e9f28 -2 -2
+Description: Boolean Indicator for whether the dividend option is buy PUAsçä çäModification Log:çä01/21/2008 CSC Initial Calculation/Rule
+26ea110 -2 -2
+Description: Returns the amount of dividend used to reduce the mode premiumçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26ea900 -2 -2
+Description: Returns the projected amount of dividend used to reduce the mode premiumçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26eaf00 -2 -2
+Description: Boolean Indicator for whether the primary dividend option is Reduce Premiumçä çäModification Log:çä01/21/2008 CSC Initial Calculation/Rule
+26ebb98 -2 -2
+Description: Returns the amount of dividend used to purchase OYTçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26eb020 -2 -2
+Description: Returns the amount of dividend used to purchase OYT under the primary optionçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26eb110 -2 -2
+Description: Returns the total projected amount of dividend used to purchase OYTçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26eb278 -2 -2
+Description: Returns the projected amount of dividend used to purchase OYT under the primary dividend optionçä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Adjusted Calcs for pA Global.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/12/09 - PA1277 - JL - Calculate OYT for both Capped at GCV & Full. Use non-rounded divs.çä01/21/2008 CSC Initial Calculation/Rule
+26eb388 -2 -2
+Description: Returns the adjusted annual OYT purchase rate, after adjustments for any table ratings and flat extrasçä çäModification Log:çä11/8/2013 pA1401-26 CMC removed yearIndex from Perm Flats and Perm Tablesçä08/13/2013 PA1401-26 - rm - added yearIndex parm for risk class inputsçä9/1/2010 - PAC019 - Rate Var -  BT - add OYT Purchase Rate Inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26eb440 -2 -2
+Description: Returns the unadjusted annual OYT purchase rate, as obtained from the appropriate rate modelçä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Adjusted Calcs for pA Global.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/12/09 - PA1277 - JL -Add yearIndex to the OYTRate vector, for projectionsçä01/21/2008 CSC Initial Calculation/Rule
+26ecb80 -2 -2
+Description: Returns Bonus Optionçä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Blanked out DivOpt Calcs çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+26ed7b8 -2 -2
+Description: Returns the mode premium amount to be used in the Dividend Option calculationsçä çäModification Log:çä10/7/2014 PA1403 PAC038: Global Whole Life JC Mode Premium Annualçä29/9/2014 PA1403 PAC038: Global Whole Life JL Use TradDocs Mode Premiumçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/11/2009 - PA1013çä01/21/2008 CSC Initial Calculation/Ruleçä
+26ed8f0 -2 -2
+Description: Returns a vector with the necessary information to retrieve the One Year Term purchase rates from the appropriate rate modelçä çäModification Log:çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Ruleçä
+26ed9e0 -2 -2
+Description: Returns the dividend policy durationçä çäModification Log:çä01/21/2008 CSC Initial Calculation/Rule
+26ee420 -2 -2
+Description: Returns the Model Nameçä çäModification Log:çä01/21/2008 CSC Initial Calculation/Rule
+11a43875 -2 -2
+Description: Returns the mode premium amount to be used in the Dividend Option calculationsçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/11/2009 - PA1013çä01/21/2008 CSC Initial Calculation/Ruleçä
+71930615 -2 -2
+Description: Returns a vector with the necessary information to retrieve the One Year Term purchase rates from the appropriate rate modelçä çäModification Log:çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/12/09 - PA1277 - JL - Use yearIndex, for projectionsçä01/21/2008 CSC Initial Calculation/Ruleçä
+409ffb4a -2 -2
+Description: Build rate access vectorçä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Modified for Bonus Rate  çä11152013 pA-G1401 JL Initial Rule
+1c2c10ce -2 -2
+Description: Query the rate model to ascertain which data items are required for a rates call.çä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Modified for Bonus Rate  çä11152013 pA-G1401 JL Initial Rule
+7ecced2d -2 -2
+Description: Build vector for dataitem call.çä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Modified for Bonus Rate  çä11152013 pA-G1401 JL Initial Rule
+7dfea8ac -2 -2
+Description: Build vector for rate model call.çä çäModification Log:çä çä11152013 pA-G1401 JL Initial Rule
+5521984f -2 -2
+11152013 pA-G1401 JL Initial Rule
+;Offset=00000000

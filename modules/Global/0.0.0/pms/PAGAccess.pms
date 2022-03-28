@@ -1,0 +1,1993 @@
+;1	30.03.2017 09:40:04	rbelfer	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 60197a45 0 0 0 2
+
+--description
+Global Access model.çä çäRELEASE LOG:çäRELEASE pA 1403çäRELEASE pA 1401çäRELEASE Global pA 1301
+P13 60197a45 de0804 0 0 0 0 2
+Global Access
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Access model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGAccess.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 de0860 0 10028233 0 0 0 0
+
+F1 10028233 de0860 59957a08 324dd0ef 0 0 2
+:PI
+Funktion
+
+F1 59957a08 10028233 394fd01f 3df4aec6 0 0 2
+:Product
+Funktion
+
+F1 394fd01f 59957a08 0 19e7fd86 0 0 2
+PI Product productType(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product productType") ; çä  'INPUT Product productType' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"productType";"Product";'GEN Vector Blank')çä)
+F1 19e7fd86 59957a08 0 a20e6c1 0 0 2
+PI Product productName(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product productName") ; çä  'INPUT Product productName' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"productName";"Product";'GEN Vector Blank')çä)
+F1 a20e6c1 59957a08 0 7ad31fe2 0 0 2
+PI Product variantName(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product variantName") ; çä  'INPUT Product variantName' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"variantName";"Product";'GEN Vector Blank')çä)
+F1 7ad31fe2 59957a08 0 65b5cf50 0 0 2
+PI Product versionDate(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product versionDate") ; çä  'INPUT Product versionDate' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"versionDate";"Product";'GEN Vector Blank')çä)
+F1 65b5cf50 59957a08 0 76dbd2e6 0 0 2
+PI Product description(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product description") ; çä  'INPUT Product description' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"description";"Product";'GEN Vector Blank')çä)
+F1 76dbd2e6 59957a08 0 5db18c77 0 0 2
+PI Product lineOfBusiness(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product lineOfBusiness") ; çä  'INPUT Product lineOfBusiness' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"lineOfBusiness";"Product";'GEN Vector Blank')çä)
+F1 5db18c77 59957a08 0 294ec91e 0 0 2
+PI Product currency(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product currency") ; çä  'INPUT Product currency' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"currency";"Product";'GEN Vector Blank')çä)
+F1 294ec91e 59957a08 0 4deda5e0 0 0 2
+PI Product saleExpirationDate(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product saleExpirationDate") ; çä  'INPUT Product saleExpirationDate' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"saleExpirationDate";"Product";'GEN Vector Blank')çä)
+F1 4deda5e0 59957a08 0 560db32a 0 0 2
+PI Product ageCalculationMethod( productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product ageCalculationMethod") ; çä  'INPUT Product ageCalculationMethod' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"ageCalculationMethod";"Product";'GEN Vector Blank')çä)
+F1 560db32a 59957a08 0 4fc0646e 0 0 2
+PI Product mortalityOrMorbidityTable(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product mortalityOrMorbidityTable") ; çä  'INPUT Product mortalityOrMorbidityTable' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"mortalityOrMorbidityTable";"Product";'GEN Vector Blank')çä)
+F1 4fc0646e 59957a08 0 7e39193e 0 0 2
+PI Product reserveFunction(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product reserveFunction") ; çä  'INPUT Product reserveFunction' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"reserveFunction";"Product";'GEN Vector Blank')çä)
+F1 7e39193e 59957a08 0 139f3973 0 0 2
+PI Product ReserveIntRate(calcType; productCode; effectiveDate;yearIndex)
+Funktion
+IF ('PI Use Attributes'("Product ReserveIntRate") ; çä  'INPUT Product ReserveIntRate' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"ReserveIntRate";"Product";'GEN Vector Blank')çä)
+F1 139f3973 59957a08 0 c9bca0e 0 0 2
+PI Product id(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Product id") ; çä  'INPUT Product id' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"id";"Product";'GEN Vector Blank')çä)
+F1 c9bca0e 59957a08 0 5311dffe 0 0 2
+PI Product LoanDirectRecognitionType(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("LoanDirectRecognitionType") ; çä  'INPUT Product LoanDirectRecognitionType' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"LoanDirectRecognitionType";"Product";'GEN Vector Blank')çä)
+F1 5311dffe 59957a08 0 0 0 0 2
+PI Product ParticipatingInd(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("ParticipatingInd") ; çä  'INPUT Product ParticipatingInd' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"ParticipatingInd";"Product";'GEN Vector Blank')çä)
+F1 3df4aec6 10028233 49791677 75190465 0 0 2
+:Jurisdiction
+Funktion
+
+F1 49791677 3df4aec6 0 3e6d7dcc 0 0 2
+PI Jurisdiction salesEffectiveDate(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Jurisdiction salesEffectiveDate") ; çä  'INPUT Jurisdiction salesEffectiveDate' ; çä  'Product Info'('Vector Jurisdiction Parms'(productCode;effectiveDate);"salesEffectiveDate";"Jurisdiction";'GEN Vector Blank')çä)
+F1 3e6d7dcc 3df4aec6 0 6e360304 0 0 2
+PI Jurisdiction saleExpirationDate(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Jurisdiction saleExpirationDate") ; çä  'INPUT Jurisdiction saleExpirationDate' ; çä  'Product Info'('Vector Jurisdiction Parms'(productCode;effectiveDate);"saleExpirationDate";"Jurisdiction";'GEN Vector Blank')çä)
+F1 6e360304 3df4aec6 0 0 0 0 2
+PI Jurisdiction id(calcType; productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Jurisdiction id") ; çä  'INPUT Jurisdiction id' ; çä  'Product Info'('Vector Jurisdiction Parms'(productCode;effectiveDate);"id";"Jurisdiction";'GEN Vector Blank')çä)
+F1 75190465 10028233 385318ed 4a995b0 0 0 2
+:Benefit
+Funktion
+
+F1 385318ed 75190465 0 8d2491b 0 0 2
+PI Benefit benefitName(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit benefitName") ; çä  'INPUT Benefit benefitName'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"benefitName";"Benefit";'GEN Vector Blank')çä)
+F1 8d2491b 75190465 0 4905f5fa 0 0 2
+PI Benefit variantName(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit variantName") ; çä  'INPUT Benefit variantName'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"variantName";"Benefit";'GEN Vector Blank')çä)
+F1 4905f5fa 75190465 0 34b4603d 0 0 2
+PI Benefit saleExpirationDate(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit saleExpirationDate") ; çä  'INPUT Benefit saleExpirationDate'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"saleExpirationDate";"Benefit";'GEN Vector Blank')çä)
+F1 34b4603d 75190465 0 19f11af4 0 0 2
+PI Benefit ageCalculationMethod(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit ageCalculationMethod") ; çä  'INPUT Benefit ageCalculationMethod'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"ageCalculationMethod";"Benefit";'GEN Vector Blank')çä)
+F1 19f11af4 75190465 0 46a2bf42 0 0 2
+PI Benefit jointAgeCalcMethod(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit jointAgeCalcMethod") ; çä  'INPUT Benefit jointAgeCalcMethod'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"jointAgeCalcMethod";"Benefit";'GEN Vector Blank')çä)
+F1 46a2bf42 75190465 0 64879468 0 0 2
+PI Benefit participatingInd(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("participatingInd") ; çä  'INPUT Benefit participatingInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"participatingInd";"Benefit";'GEN Vector Blank')çä)
+F1 64879468 75190465 0 2d6ad98c 0 0 2
+PI Benefit dBOptChangesAllowed(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit dBOptChangesAllowed") ; çä  'INPUT Benefit dBOptChangesAllowed'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"dBOptChangesAllowed";"Benefit";'GEN Vector Blank')çä)
+F1 2d6ad98c 75190465 0 6f7f8e7d 0 0 2
+PI Benefit unitType(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit unitType") ; çä  'INPUT Benefit unitType'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"unitType";"Benefit";'GEN Vector Blank')çä)
+F1 6f7f8e7d 75190465 0 6887176d 0 0 2
+PI Benefit covAmountChanges(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit covAmountChanges") ; çä  'INPUT Benefit covAmountChanges'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"covAmountChanges";"Benefit";'GEN Vector Blank')çä)
+F1 6887176d 75190465 0 23884414 0 0 2
+PI Benefit covScope(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit covScope") ; çä  'INPUT Benefit covScope'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"covScope";"Benefit";'GEN Vector Blank')çä)
+F1 23884414 75190465 0 464bc3ca 0 0 2
+PI Benefit livesType(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit livesType") ; çä  'INPUT Benefit livesType'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"livesType";"Benefit";'GEN Vector Blank')çä)
+F1 464bc3ca 75190465 0 5a531c54 0 0 2
+PI Benefit maxMultiLives(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit maxMultiLives") ; çä  'INPUT Benefit maxMultiLives'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"maxMultiLives";"Benefit";'GEN Vector Blank')çä)
+F1 5a531c54 75190465 0 5bdc73e7 0 0 2
+PI Benefit reqRelToPrimaryIns(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit reqRelToPrimaryIns") ; çä  'INPUT Benefit reqRelToPrimaryIns'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"reqRelToPrimaryIns";"Benefit";'GEN Vector Blank')çä)
+F1 5bdc73e7 75190465 0 c616ce4 0 0 2
+PI Benefit maxCovInstances(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit maxCovInstances") ; çä  'INPUT Benefit maxCovInstances'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"maxCovInstances";"Benefit";'GEN Vector Blank')çä)
+F1 c616ce4 75190465 0 659fc4bc 0 0 2
+PI Benefit valuePerUnit(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit valuePerUnit") ; çä  'INPUT Benefit valuePerUnit'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"valuePerUnit";"Benefit";'GEN Vector Blank')çä)
+F1 659fc4bc 75190465 0 5f884bd5 0 0 2
+PI Benefit renewableInd(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit renewableInd") ; çä  'INPUT Benefit renewableInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"renewableInd";"Benefit";'GEN Vector Blank')çä)
+F1 5f884bd5 75190465 0 1a33f9d5 0 0 2
+PI Benefit maxFlatExtra(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit maxFlatExtra") ; çä  'INPUT Benefit maxFlatExtra'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"maxFlatExtra";"Benefit";'GEN Vector Blank')çä)
+F1 1a33f9d5 75190465 0 4dca0952 0 0 2
+PI Benefit dBCalcMethodType(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit dBCalcMethodType") ; çä  'INPUT Benefit dBCalcMethodType'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"dBCalcMethodType";"Benefit";'GEN Vector Blank')çä)
+F1 4dca0952 75190465 0 2f2f7d1b 0 0 2
+PI Benefit benefitTypeCode(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit benefitTypeCode") ; çä  'INPUT Benefit benefitTypeCode'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"benefitTypeCode";"Benefit";'GEN Vector Blank')çä)
+F1 2f2f7d1b 75190465 0 1e257c31 0 0 2
+PI Benefit initialPremRenewYrs(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit initialPremRenewYrs") ; çä  'INPUT Benefit initialPremRenewYrs'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"initialPremRenewYrs";"Benefit";'GEN Vector Blank')çä)
+F1 1e257c31 75190465 0 bb15350 0 0 2
+PI Benefit subseqPremStartYr(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit subseqPremStartYr") ; çä  'INPUT Benefit subseqPremStartYr'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"subseqPremStartYr";"Benefit";'GEN Vector Blank')çä)
+F1 bb15350 75190465 0 5cbc6637 0 0 2
+PI Benefit subseqPremRenewYrs(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit subseqPremRenewYrs") ; çä  'INPUT Benefit subseqPremRenewYrs'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"subseqPremRenewYrs";"Benefit";'GEN Vector Blank')çä)
+F1 5cbc6637 75190465 0 369acbaa 0 0 2
+PI Benefit guarInitRenewYrs(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit guarInitRenewYrs") ; çä  'INPUT Benefit guarInitRenewYrs'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"guarInitRenewYrs";"Benefit";'GEN Vector Blank')çä)
+F1 369acbaa 75190465 0 57a3e656 0 0 2
+PI Benefit guarSubseqRenewStartYr(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit guarSubseqRenewStartYr") ; çä  'INPUT Benefit guarSubseqRenewStartYr'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"guarSubseqRenewStartYr";"Benefit";'GEN Vector Blank')çä)
+F1 57a3e656 75190465 0 7bdc4f4f 0 0 2
+PI Benefit guarSubseqRenewYrs(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit guarSubseqRenewYrs") ; çä  'INPUT Benefit guarSubseqRenewYrs'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"guarSubseqRenewYrs";"Benefit";'GEN Vector Blank')çä)
+F1 7bdc4f4f 75190465 0 1ca739ec 0 0 2
+PI Benefit indeterPremRenewPeriod(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit indeterPremRenewPeriod") ; çä  'INPUT Benefit indeterPremRenewPeriod'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"indeterPremRenewPeriod";"Benefit";'GEN Vector Blank')çä)
+F1 1ca739ec 75190465 0 1443850 0 0 2
+PI Benefit indeterPremRenewMode(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit indeterPremRenewMode") ; çä  'INPUT Benefit indeterPremRenewMode'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"indeterPremRenewMode";"Benefit";'GEN Vector Blank')çä)
+F1 1443850 75190465 0 195a80d 0 0 2
+PI Benefit dBDecreaseMethod(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit dBDecreaseMethod") ; çä  'INPUT Benefit dBDecreaseMethod'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"dBDecreaseMethod";"Benefit";'GEN Vector Blank')çä)
+F1 195a80d 75190465 0 b2c8596 0 0 2
+PI Benefit dBDecreaseOrderType(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit dBDecreaseOrderType") ; çä  'INPUT Benefit dBDecreaseOrderType'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"dBDecreaseOrderType";"Benefit";'GEN Vector Blank')çä)
+F1 b2c8596 75190465 0 21387128 0 0 2
+PI Benefit dBIncreaseMethod(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit dBIncreaseMethod") ; çä  'INPUT Benefit dBIncreaseMethod'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"dBIncreaseMethod";"Benefit";'GEN Vector Blank')çä)
+F1 21387128 75190465 0 6150670d 0 0 2
+PI Benefit dBIncreaseOrderType(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit dBIncreaseOrderType") ; çä  'INPUT Benefit dBIncreaseOrderType'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"dBIncreaseOrderType";"Benefit";'GEN Vector Blank')çä)
+F1 6150670d 75190465 0 6ce2d30c 0 0 2
+PI Benefit mandatoryInd(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit mandatoryInd") ; çä  'INPUT Benefit mandatoryInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"mandatoryInd";"Benefit";'GEN Vector Blank')çä)
+F1 6ce2d30c 75190465 0 2ff91168 0 0 2
+PI Benefit payToAge(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit payToAge") ; çä  'INPUT Benefit payToAge'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"payToAge";"Benefit";'GEN Vector Blank')çä)
+F1 2ff91168 75190465 0 1ab16d8e 0 0 2
+PI Benefit id(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit id") ; çä  'INPUT Benefit id'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"id";"Benefit";'GEN Vector Blank')çä)
+F1 1ab16d8e 75190465 0 1ab3eea5 0 0 2
+PI Benefit BandPremInd(calcType; productCode; benefitIndex; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("BandPremInd") ; çä  'INPUT Benefit BandPremInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);"BandPremInd";"Benefit";'GEN Vector Blank')çä)
+F1 1ab3eea5 75190465 165d6197 1db53c83 0 0 2
+:Commission
+Funktion
+
+F1 165d6197 1ab3eea5 0 7fa738e5 0 0 2
+PI Benefit Commission commissionType(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission commissionType") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission commissionType'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"commissionType";"Commission";"Benefit")çä)
+F1 7fa738e5 1ab3eea5 0 9066435 0 0 2
+PI Benefit Commission commissionRateRule(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission commissionRateRule") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission commissionRateRule'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"commissionRateRule";"Commission";"Benefit")çä)
+F1 9066435 1ab3eea5 0 1e787bb3 0 0 2
+PI Benefit Commission agencyCommIndicator(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission agencyCommIndicator") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission agencyCommIndicator'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"agencyCommIndicator";"Commission";"Benefit")çä)
+F1 1e787bb3 1ab3eea5 0 4b8bd9cc 0 0 2
+PI Benefit Commission minCommAmount(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission minCommAmount") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission minCommAmount'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"minCommAmount";"Commission";"Benefit")çä)
+F1 4b8bd9cc 1ab3eea5 0 20f36d43 0 0 2
+PI Benefit Commission maxCommAmount(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission maxCommAmount") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission maxCommAmount'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"maxCommAmount";"Commission";"Benefit")çä)
+F1 20f36d43 1ab3eea5 0 28650743 0 0 2
+PI Benefit Commission commUpliftmentIndicator(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission commUpliftmentIndicator") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission commUpliftmentIndicator'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"commUpliftmentIndicator";"Commission";"Benefit")çä)
+F1 28650743 1ab3eea5 0 402780a0 0 0 2
+PI Benefit Commission minCommPct(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission minCommPct") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission minCommPct'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"minCommPct";"Commission";"Benefit")çä)
+F1 402780a0 1ab3eea5 0 68fe680a 0 0 2
+PI Benefit Commission maxCommPct(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission maxCommPct") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission maxCommPct'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"maxCommPct";"Commission";"Benefit")çä)
+F1 68fe680a 1ab3eea5 0 1729cb09 0 0 2
+PI Benefit Commission minCommOverrideAmt(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission minCommOverrideAmt") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission minCommOverrideAmt'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"minCommOverrideAmt";"Commission";"Benefit")çä)
+F1 1729cb09 1ab3eea5 0 360ec602 0 0 2
+PI Benefit Commission maxCommOverrideAmt(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission maxCommOverrideAmt") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission maxCommOverrideAmt'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"maxCommOverrideAmt";"Commission";"Benefit")çä)
+F1 360ec602 1ab3eea5 0 25812a8b 0 0 2
+PI Benefit Commission minCommOverridePct(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission minCommOverridePct") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission minCommOverridePct'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"minCommOverridePct";"Commission";"Benefit")çä)
+F1 25812a8b 1ab3eea5 0 11012ce3 0 0 2
+PI Benefit Commission maxCommOverridePct(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission maxCommOverridePct") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission maxCommOverridePct'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"maxCommOverridePct";"Commission";"Benefit")çä)
+F1 11012ce3 1ab3eea5 0 2f7e55de 0 0 2
+PI Benefit Commission minCommSacrificeAmt(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission minCommSacrificeAmt") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission minCommSacrificeAmt'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"minCommSacrificeAmt";"Commission";"Benefit")çä)
+F1 2f7e55de 1ab3eea5 0 528c6052 0 0 2
+PI Benefit Commission maxComSacrificeAmt(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission maxComSacrificeAmt") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission maxComSacrificeAmt'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"maxComSacrificeAmt";"Commission";"Benefit")çä)
+F1 528c6052 1ab3eea5 0 5dec5ef7 0 0 2
+PI Benefit Commission minCommSacrificePct(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission minCommSacrificePct") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission minCommSacrificePct'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"minCommSacrificePct";"Commission";"Benefit")çä)
+F1 5dec5ef7 1ab3eea5 0 69d8daf4 0 0 2
+PI Benefit Commission maxComSacrificePct(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission maxComSacrificePct") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission maxComSacrificePct'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"maxComSacrificePct";"Commission";"Benefit")çä)
+F1 69d8daf4 1ab3eea5 0 4f4df5bf 0 0 2
+PI Benefit Commission minCommTerm(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission minCommTerm") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission minCommTerm'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"minCommTerm";"Commission";"Benefit")çä)
+F1 4f4df5bf 1ab3eea5 0 1d269fad 0 0 2
+PI Benefit Commission maxCommTerm(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission maxCommTerm") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission maxCommTerm'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"maxCommTerm";"Commission";"Benefit")çä)
+F1 1d269fad 1ab3eea5 0 7596e07d 0 0 2
+PI Benefit Commission expirationDate(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission expirationDate") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission expirationDate'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"expirationDate";"Commission";"Benefit")çä)
+F1 7596e07d 1ab3eea5 0 f455b71 0 0 2
+PI Benefit Commission premiumRoundingRule(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"premiumRoundingRule";"Commission";"Benefit")
+F1 f455b71 1ab3eea5 0 0 0 0 2
+PI Benefit Commission id(calcType; productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Commission id") ; çä  IF ('PI Benefit Commission Index'(benefitIndex;commissionCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Commission id'[benefitIndex; 'PI Benefit Commission Index'(benefitIndex;commissionCode)]çä  ) ; çä'Product Info'('Vector Benefit Commission Parms'(productCode;benefitIndex;commissionCode;effectiveDate);"id";"Commission";"Benefit")çä)
+F1 1db53c83 75190465 4890c8e 15cf7b55 0 0 2
+:Maturity
+Funktion
+
+F1 4890c8e 1db53c83 0 78ffa004 0 0 2
+PI Benefit Maturity ageCalculationMethod(calcType; productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Maturity ageCalculationMethod") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Maturity ageCalculationMethod'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit Maturity Parms'(productCode;benefitIndex;lifeRoleCode;effectiveDate);"ageCalculationMethod";"Maturity";"Benefit")çä)
+F1 78ffa004 1db53c83 0 7445b327 0 0 2
+PI Benefit Maturity minIssueAge(calcType; productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Maturity minIssueAge") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Maturity minIssueAge'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit Maturity Parms'(productCode;benefitIndex;lifeRoleCode;effectiveDate);"minIssueAge";"Maturity";"Benefit")çä)
+F1 7445b327 1db53c83 0 5413b7fb 0 0 2
+PI Benefit Maturity maxIssueAge(calcType; productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Maturity maxIssueAge") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Maturity maxIssueAge'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit Maturity Parms'(productCode;benefitIndex;lifeRoleCode;effectiveDate);"maxIssueAge";"Maturity";"Benefit")çä)
+F1 5413b7fb 1db53c83 0 10f6fa9c 0 0 2
+PI Benefit Maturity matureCalcMethod(calcType; productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Maturity matureCalcMethod") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Maturity matureCalcMethod'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit Maturity Parms'(productCode;benefitIndex;lifeRoleCode;effectiveDate);"matureCalcMethod";"Maturity";"Benefit")çä)
+F1 10f6fa9c 1db53c83 0 7c14f104 0 0 2
+PI Benefit Maturity matureYr(calcType; productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Maturity matureYr") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Maturity matureYr'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit Maturity Parms'(productCode;benefitIndex;lifeRoleCode;effectiveDate);"matureYr";"Maturity";"Benefit")çä)
+F1 7c14f104 1db53c83 0 7bb1b563 0 0 2
+PI Benefit Maturity ageUse(calcType; productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Maturity ageUse") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Maturity ageUse'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit Maturity Parms'(productCode;benefitIndex;lifeRoleCode;effectiveDate);"ageUse";"Maturity";"Benefit")çä)
+F1 7bb1b563 1db53c83 0 0 0 0 2
+PI Benefit Maturity id(calcType; productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Maturity id") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit Maturity id'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit Maturity Parms'(productCode;benefitIndex;lifeRoleCode;effectiveDate);"id";"Maturity";"Benefit")çä)
+F1 15cf7b55 75190465 5525387 3d23e23a 0 0 2
+:MandatoryBenefit
+Funktion
+
+F1 5525387 15cf7b55 0 25a4229d 0 0 2
+PI Benefit MandatoryBenefit salesEffectiveDate(calcType; productCode; benefitIndex; mandatoryBenefitCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit MandatoryBenefit salesEffectiveDate") ; çä  IF ('PI Benefit MandatoryBenefit Index'(benefitIndex;mandatoryBenefitCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit MandatoryBenefit salesEffectiveDate'[benefitIndex; 'PI Benefit MandatoryBenefit Index'(benefitIndex;mandatoryBenefitCode)]çä  ) ; çä'Product Info'('Vector Benefit MandatoryBenefit Parms'(productCode;benefitIndex;mandatoryBenefitCode;effectiveDate);"salesEffectiveDate";"MandatoryBenefit";"Benefit")çä)
+F1 25a4229d 15cf7b55 0 6e947596 0 0 2
+PI Benefit MandatoryBenefit salesExpirationDate(calcType; productCode; benefitIndex; mandatoryBenefitCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit MandatoryBenefit salesExpirationDate") ; çä  IF ('PI Benefit MandatoryBenefit Index'(benefitIndex;mandatoryBenefitCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit MandatoryBenefit salesExpirationDate'[benefitIndex; 'PI Benefit MandatoryBenefit Index'(benefitIndex;mandatoryBenefitCode)]çä  ) ; çä'Product Info'('Vector Benefit MandatoryBenefit Parms'(productCode;benefitIndex;mandatoryBenefitCode;effectiveDate);"salesExpirationDate";"MandatoryBenefit";"Benefit")çä)
+F1 6e947596 15cf7b55 0 0 0 0 2
+PI Benefit MandatoryBenefit id(calcType; productCode; benefitIndex; mandatoryBenefitCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit MandatoryBenefit id") ; çä  IF ('PI Benefit MandatoryBenefit Index'(benefitIndex;mandatoryBenefitCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit MandatoryBenefit id'[benefitIndex; 'PI Benefit MandatoryBenefit Index'(benefitIndex;mandatoryBenefitCode)]çä  ) ; çä'Product Info'('Vector Benefit MandatoryBenefit Parms'(productCode;benefitIndex;mandatoryBenefitCode;effectiveDate);"id";"MandatoryBenefit";"Benefit")çä)
+F1 3d23e23a 75190465 50a2ee87 2935c31f 0 0 2
+:IncompatibleBenefit
+Funktion
+
+F1 50a2ee87 3d23e23a 0 5f31e32a 0 0 2
+PI Benefit IncompatibleBenefit salesEffectiveDate(calcType; productCode; benefitIndex; incompatibleBenefitCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit IncompatibleBenefit salesEffectiveDate") ; çä  IF ('PI Benefit IncompatibleBenefit Index'(benefitIndex;incompatibleBenefitCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit IncompatibleBenefit salesEffectiveDate'[benefitIndex; 'PI Benefit IncompatibleBenefit Index'(benefitIndex;incompatibleBenefitCode)]çä  ) ; çä'Product Info'('Vector Benefit IncompatibleBenefit Parms'(productCode;benefitIndex;incompatibleBenefitCode;effectiveDate);"salesEffectiveDate";"IncompatibleBenefit";"Benefit")çä)
+F1 5f31e32a 3d23e23a 0 263bfc75 0 0 2
+PI Benefit IncompatibleBenefit salesExpirationDate(calcType; productCode; benefitIndex; incompatibleBenefitCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit IncompatibleBenefit salesExpirationDate") ; çä  IF ('PI Benefit IncompatibleBenefit Index'(benefitIndex;incompatibleBenefitCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit IncompatibleBenefit salesExpirationDate'[benefitIndex; 'PI Benefit IncompatibleBenefit Index'(benefitIndex;incompatibleBenefitCode)]çä  ) ; çä'Product Info'('Vector Benefit IncompatibleBenefit Parms'(productCode;benefitIndex;incompatibleBenefitCode;effectiveDate);"salesExpirationDate";"IncompatibleBenefit";"Benefit")çä)
+F1 263bfc75 3d23e23a 0 0 0 0 2
+PI Benefit IncompatibleBenefit id(calcType; productCode; benefitIndex; incompatibleBenefitCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit IncompatibleBenefit id") ; çä  IF ('PI Benefit IncompatibleBenefit Index'(benefitIndex;incompatibleBenefitCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit IncompatibleBenefit id'[benefitIndex; 'PI Benefit IncompatibleBenefit Index'(benefitIndex;incompatibleBenefitCode)]çä  ) ; çä'Product Info'('Vector Benefit IncompatibleBenefit Parms'(productCode;benefitIndex;incompatibleBenefitCode;effectiveDate);"id";"IncompatibleBenefit";"Benefit")çä)
+F1 2935c31f 75190465 7343650c 7c5b1502 0 0 2
+:BenefitLimit
+Funktion
+
+F1 7343650c 2935c31f 0 22d60c24 0 0 2
+PI Benefit BenefitLimit minAmtCalcMethod(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit minAmtCalcMethod") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit minAmtCalcMethod'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"minAmtCalcMethod";"BenefitLimit";"Benefit")çä)
+F1 22d60c24 2935c31f 0 825f53a 0 0 2
+PI Benefit BenefitLimit maxAmtCalcMethod(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit maxAmtCalcMethod") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit maxAmtCalcMethod'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"maxAmtCalcMethod";"BenefitLimit";"Benefit")çä)
+F1 825f53a 2935c31f 0 2f0f44ca 0 0 2
+PI Benefit BenefitLimit minAmt(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit minAmt") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit minAmt'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"minAmt";"BenefitLimit";"Benefit")çä)
+F1 2f0f44ca 2935c31f 0 6dfa82e7 0 0 2
+PI Benefit BenefitLimit maxAmt(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit maxAmt") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit maxAmt'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"maxAmt";"BenefitLimit";"Benefit")çä)
+F1 6dfa82e7 2935c31f 0 31dae03f 0 0 2
+PI Benefit BenefitLimit minRatioToBase(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit minRatioToBase") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit minRatioToBase'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"minRatioToBase";"BenefitLimit";"Benefit")çä)
+F1 31dae03f 2935c31f 0 71b8331d 0 0 2
+PI Benefit BenefitLimit maxRatioToBase(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit maxRatioToBase") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit maxRatioToBase'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"maxRatioToBase";"BenefitLimit";"Benefit")çä)
+F1 71b8331d 2935c31f 0 3d9c59d6 0 0 2
+PI Benefit BenefitLimit minAmtDecrease(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit minAmtDecrease") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit minAmtDecrease'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"minAmtDecrease";"BenefitLimit";"Benefit")çä)
+F1 3d9c59d6 2935c31f 0 4329af0e 0 0 2
+PI Benefit BenefitLimit maxAmtDecrease(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit maxAmtDecrease") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit maxAmtDecrease'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"maxAmtDecrease";"BenefitLimit";"Benefit")çä)
+F1 4329af0e 2935c31f 0 19149949 0 0 2
+PI Benefit BenefitLimit minAmtIncrease(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit minAmtIncrease") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit minAmtIncrease'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"minAmtIncrease";"BenefitLimit";"Benefit")çä)
+F1 19149949 2935c31f 0 219c409 0 0 2
+PI Benefit BenefitLimit maxAmtIncrease(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit maxAmtIncrease") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit maxAmtIncrease'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"maxAmtIncrease";"BenefitLimit";"Benefit")çä)
+F1 219c409 2935c31f 0 379d7ef1 0 0 2
+PI Benefit BenefitLimit minPctIncrease(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit minPctIncrease") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit minPctIncrease'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"minPctIncrease";"BenefitLimit";"Benefit")çä)
+F1 379d7ef1 2935c31f 0 5d4d4966 0 0 2
+PI Benefit BenefitLimit maxPctIncrease(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit maxPctIncrease") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit maxPctIncrease'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"maxPctIncrease";"BenefitLimit";"Benefit")çä)
+F1 5d4d4966 2935c31f 0 5d46e219 0 0 2
+PI Benefit BenefitLimit minAmtAfterDecrease(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit minAmtAfterDecrease") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit minAmtAfterDecrease'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"minAmtAfterDecrease";"BenefitLimit";"Benefit")çä)
+F1 5d46e219 2935c31f 0 1c75bcd5 0 0 2
+PI Benefit BenefitLimit covAmtModulusFactor(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit covAmtModulusFactor") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit covAmtModulusFactor'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"covAmtModulusFactor";"BenefitLimit";"Benefit")çä)
+F1 1c75bcd5 2935c31f 0 0 0 0 2
+PI Benefit BenefitLimit id(calcType; productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit BenefitLimit id") ; çä  IF ('PI Benefit Life Index'(benefitIndex;lifeRoleCode) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit BenefitLimit id'[benefitIndex; 'PI Benefit Life Index'(benefitIndex;lifeRoleCode)]çä  ) ; çä'Product Info'('Vector Benefit BenefitLimit Parms'(productCode;benefitIndex;lifeRoleCode;currencyCode;effectiveDate);"id";"BenefitLimit";"Benefit")çä)
+F1 7c5b1502 75190465 44581197 31bc9eaf 0 0 2
+:Premium
+Funktion
+
+F1 44581197 7c5b1502 0 4c3d6a9a 0 0 2
+PI Benefit Premium premRule(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium premRule") ; çä  'INPUT Benefit Premium premRule'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"premRule";"Premium";"Benefit")çä)
+F1 4c3d6a9a 7c5b1502 0 33abf6c5 0 0 2
+PI Benefit Premium tableIdentity(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium tableIdentity") ; çä  'INPUT Benefit Premium tableIdentity'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"tableIdentity";"Premium";"Benefit")çä)
+F1 33abf6c5 7c5b1502 0 26406b10 0 0 2
+PI Benefit Premium bandPremInd(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium bandPremInd") ; çä  'INPUT Benefit Premium bandPremInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"bandPremInd";"Premium";"Benefit")çä)
+F1 26406b10 7c5b1502 0 5ae1e18f 0 0 2
+PI Benefit Premium bandTableIdentity(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium bandTableIdentity") ; çä  'INPUT Benefit Premium bandTableIdentity'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"bandTableIdentity";"Premium";"Benefit")çä)
+F1 5ae1e18f 7c5b1502 0 1f05491c 0 0 2
+PI Benefit Premium selectPeriodYears(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium selectPeriodYears") ; çä  'INPUT Benefit Premium selectPeriodYears'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"selectPeriodYears";"Premium";"Benefit")çä)
+F1 1f05491c 7c5b1502 0 1381517d 0 0 2
+PI Benefit Premium WPContributionInd(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium WPContributionInd") ; çä  'INPUT Benefit Premium WPContributionInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"WPContributionInd";"Premium";"Benefit")çä)
+F1 1381517d 7c5b1502 0 5b25ad3a 0 0 2
+PI Benefit Premium minPremAmtType(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium minPremAmtType") ; çä  'INPUT Benefit Premium minPremAmtType'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"minPremAmtType";"Premium";"Benefit")çä)
+F1 5b25ad3a 7c5b1502 0 6ac4d6fd 0 0 2
+PI Benefit Premium minPremAmt(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium minPremAmt") ; çä  'INPUT Benefit Premium minPremAmt'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"minPremAmt";"Premium";"Benefit")çä)
+F1 6ac4d6fd 7c5b1502 0 5cf6db1e 0 0 2
+PI Benefit Premium countryFlatExtasInd(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium countryFlatExtasInd") ; çä  'INPUT Benefit Premium countryFlatExtasInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"countryFlatExtasInd";"Premium";"Benefit")çä)
+F1 5cf6db1e 7c5b1502 0 39bf5f31 0 0 2
+PI Benefit Premium occupationFlatExtraInd(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium occupationFlatExtraInd") ; çä  'INPUT Benefit Premium occupationFlatExtraInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"occupationFlatExtraInd";"Premium";"Benefit")çä)
+F1 39bf5f31 7c5b1502 0 18d09aa0 0 0 2
+PI Benefit Premium countryPercentageLoadingInd(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium countryPercentageLoadingInd") ; çä  'INPUT Benefit Premium countryPercentageLoadingInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"countryPercentageLoadingInd";"Premium";"Benefit")çä)
+F1 18d09aa0 7c5b1502 0 7e181c5d 0 0 2
+PI Benefit Premium occupationPercentageLoadingInd(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium occupationPercentageLoadingInd") ; çä  'INPUT Benefit Premium occupationPercentageLoadingInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"occupationPercentageLoadingInd";"Premium";"Benefit")çä)
+F1 7e181c5d 7c5b1502 0 397c5618 0 0 2
+PI Benefit Premium PCLoadInd(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium PCLoadInd") ; çä  'INPUT Benefit Premium PCLoadInd'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"PCLoadInd";"Premium";"Benefit")çä)
+F1 397c5618 7c5b1502 0 6cf329d 0 0 2
+PI Benefit Premium multipleLifesPremCapPercentage(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium multipleLifesPremCapPercentage") ; çä  'INPUT Benefit Premium multipleLifesPremCapPercentage'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"multipleLifesPremCapPercentage";"Premium";"Benefit")çä)
+F1 6cf329d 7c5b1502 0 0 0 0 2
+PI Benefit Premium id(calcType; productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Premium id") ; çä  'INPUT Benefit Premium id'[benefitIndex] ; çä  'Product Info'('Vector Benefit Premium Parms'(productCode;benefitIndex;currencyCode;mode;effectiveDate);"id";"Premium";"Benefit")çä)
+F1 31bc9eaf 75190465 4c27fedf 6b7f3696 0 0 2
+:Investment
+Funktion
+
+F1 4c27fedf 31bc9eaf 0 4be65874 0 0 2
+PI Benefit Investment mode(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment mode") ; çä  'INPUT Benefit Investment mode'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"mode";"Investment";"Benefit")çä)
+F1 4be65874 31bc9eaf 0 401523fd 0 0 2
+PI Benefit Investment minAccAmount(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment minAccAmount") ; çä  'INPUT Benefit Investment minAccAmount'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"minAccAmount";"Investment";"Benefit")çä)
+F1 401523fd 31bc9eaf 0 7080eeed 0 0 2
+PI Benefit Investment bonusRate(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment bonusRate") ; çä  'INPUT Benefit Investment bonusRate'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"bonusRate";"Investment";"Benefit")çä)
+F1 7080eeed 31bc9eaf 0 6f8d2a44 0 0 2
+PI Benefit Investment allocationBand(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment allocationBand") ; çä  'INPUT Benefit Investment allocationBand'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"allocationBand";"Investment";"Benefit")çä)
+F1 6f8d2a44 31bc9eaf 0 3ed66f33 0 0 2
+PI Benefit Investment withdrawalBasis(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment withdrawalBasis") ; çä  'INPUT Benefit Investment withdrawalBasis'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"withdrawalBasis";"Investment";"Benefit")çä)
+F1 3ed66f33 31bc9eaf 0 7cf7b23b 0 0 2
+PI Benefit Investment relation(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment relation") ; çä  'INPUT Benefit Investment relation'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"relation";"Investment";"Benefit")çä)
+F1 7cf7b23b 31bc9eaf 0 105057a3 0 0 2
+PI Benefit Investment escalation(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment escalation") ; çä  'INPUT Benefit Investment escalation'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"escalation";"Investment";"Benefit")çä)
+F1 105057a3 31bc9eaf 0 7efa7c99 0 0 2
+PI Benefit Investment intialContributionPeriod(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment intialContributionPeriod") ; çä  'INPUT Benefit Investment intialContributionPeriod'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"intialContributionPeriod";"Investment";"Benefit")çä)
+F1 7efa7c99 31bc9eaf 0 49214666 0 0 2
+PI Benefit Investment rateType(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment rateType") ; çä  'INPUT Benefit Investment rateType'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"rateType";"Investment";"Benefit")çä)
+F1 49214666 31bc9eaf 0 77f07df7 0 0 2
+PI Benefit Investment jurisdiction(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment jurisdiction") ; çä  'INPUT Benefit Investment jurisdiction'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"jurisdiction";"Investment";"Benefit")çä)
+F1 77f07df7 31bc9eaf 0 27b41b97 0 0 2
+PI Benefit Investment guarRate(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment guarRate") ; çä  'INPUT Benefit Investment guarRate'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"guarRate";"Investment";"Benefit")çä)
+F1 27b41b97 31bc9eaf 0 2c209c04 0 0 2
+PI Benefit Investment unitPrice(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment unitPrice") ; çä  'INPUT Benefit Investment unitPrice'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"unitPrice";"Investment";"Benefit")çä)
+F1 2c209c04 31bc9eaf 0 6425d514 0 0 2
+PI Benefit Investment guarEndDate(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment guarEndDate") ; çä  'INPUT Benefit Investment guarEndDate'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"guarEndDate";"Investment";"Benefit")çä)
+F1 6425d514 31bc9eaf 0 72db27bc 0 0 2
+PI Benefit Investment growthRate(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment growthRate") ; çä  'INPUT Benefit Investment growthRate'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"growthRate";"Investment";"Benefit")çä)
+F1 72db27bc 31bc9eaf 0 61a774d8 0 0 2
+PI Benefit Investment minAmt(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment minAmt") ; çä  'INPUT Benefit Investment minAmt'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"minAmt";"Investment";"Benefit")çä)
+F1 61a774d8 31bc9eaf 0 541edb18 0 0 2
+PI Benefit Investment maxAmt(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment maxAmt") ; çä  'INPUT Benefit Investment maxAmt'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"maxAmt";"Investment";"Benefit")çä)
+F1 541edb18 31bc9eaf 0 0 0 0 2
+PI Benefit Investment id(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Investment id") ; çä  'INPUT Benefit Investment id'[benefitIndex] ; çä  'Product Info'('Vector Benefit Investment Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"id";"Investment";"Benefit")çä)
+F1 6b7f3696 75190465 25de0971 7ceece55 0 0 2
+:Bonus
+Funktion
+
+F1 25de0971 6b7f3696 0 0 0 0 2
+PI Benefit Bonus id(calcType; productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit Bonus id") ; çä  'INPUT Benefit Bonus id'[benefitIndex] ; çä  'Product Info'('Vector Benefit Bonus Parms'(productCode;benefitIndex;currencyCode;effectiveDate);"id";"Bonus";"Benefit")çä)
+F1 7ceece55 75190465 2a70a06e 0 0 0 2
+:FeeAndCharge
+Funktion
+
+F1 2a70a06e 7ceece55 0 2adeaf5b 0 0 2
+PI Benefit FeeAndCharge mode(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge mode") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge mode'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"mode";"FeeAndCharge";"Benefit")çä)
+F1 2adeaf5b 7ceece55 0 79905472 0 0 2
+PI Benefit FeeAndCharge feeAmt(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge feeAmt") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge feeAmt'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"feeAmt";"FeeAndCharge";"Benefit")çä)
+F1 79905472 7ceece55 0 412063ad 0 0 2
+PI Benefit FeeAndCharge feePct(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge feePct") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge feePct'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"feePct";"FeeAndCharge";"Benefit")çä)
+F1 412063ad 7ceece55 0 46128a45 0 0 2
+PI Benefit FeeAndCharge minFeeAmt(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge minFeeAmt") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge minFeeAmt'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"minFeeAmt";"FeeAndCharge";"Benefit")çä)
+F1 46128a45 7ceece55 0 1e524f4d 0 0 2
+PI Benefit FeeAndCharge maxFeeAmt(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge maxFeeAmt") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge maxFeeAmt'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"maxFeeAmt";"FeeAndCharge";"Benefit")çä)
+F1 1e524f4d 7ceece55 0 384f90a5 0 0 2
+PI Benefit FeeAndCharge maxFeePct(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge maxFeePct") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge maxFeePct'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"maxFeePct";"FeeAndCharge";"Benefit")çä)
+F1 384f90a5 7ceece55 0 8866a9d 0 0 2
+PI Benefit FeeAndCharge minFeePct(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge minFeePct") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge minFeePct'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"minFeePct";"FeeAndCharge";"Benefit")çä)
+F1 8866a9d 7ceece55 0 36c060fb 0 0 2
+PI Benefit FeeAndCharge feeCalcRule(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge feeCalcRule") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge feeCalcRule'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"feeCalcRule";"FeeAndCharge";"Benefit")çä)
+F1 36c060fb 7ceece55 0 55689465 0 0 2
+PI Benefit FeeAndCharge tableIdentity(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge tableIdentity") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge tableIdentity'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"tableIdentity";"FeeAndCharge";"Benefit")çä)
+F1 55689465 7ceece55 0 0 0 0 2
+PI Benefit FeeAndCharge id(calcType; productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Benefit FeeAndCharge id") ; çä  IF ('PI Benefit FeeAndCharge Index'(benefitIndex;feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT Benefit FeeAndCharge id'[benefitIndex; 'PI Benefit FeeAndCharge Index'(benefitIndex;feeType)]çä  ) ; çä'Product Info'('Vector Benefit FeeAndCharge Parms'(productCode;benefitIndex;feeType;effectiveDate);"id";"FeeAndCharge";"Benefit")çä)
+F1 4a995b0 10028233 110aa5d2 3b386cc1 0 0 2
+:Payment
+Funktion
+
+F1 110aa5d2 4a995b0 0 492087c7 0 0 2
+PI Payment minPaymentAmt(calcType; productCode; currencyCode; mode; paymentMethod; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Payment minPaymentAmt") ; çä  'INPUT Payment minPaymentAmt' ; çä  'Product Info'('Vector Payment Parms'(productCode;currencyCode;mode;paymentMethod;effectiveDate);"minPaymentAmt";"Payment";'GEN Vector Blank')çä)
+F1 492087c7 4a995b0 0 7fa31432 0 0 2
+PI Payment maxPaymentAmt(calcType; productCode; currencyCode; mode; paymentMethod; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Payment maxPaymentAmt") ; çä  'INPUT Payment maxPaymentAmt' ; çä  'Product Info'('Vector Payment Parms'(productCode;currencyCode;mode;paymentMethod;effectiveDate);"maxPaymentAmt";"Payment";'GEN Vector Blank')çä)
+F1 7fa31432 4a995b0 0 7cf668e2 0 0 2
+PI Payment allowedDay(calcType; productCode; currencyCode; mode; paymentMethod; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Payment allowedDay") ; çä  'INPUT Payment allowedDay' ; çä  'Product Info'('Vector Payment Parms'(productCode;currencyCode;mode;paymentMethod;effectiveDate);"allowedDay";"Payment";'GEN Vector Blank')çä)
+F1 7cf668e2 4a995b0 0 51359cea 0 0 2
+PI Payment jurisdiction(calcType; productCode; currencyCode; mode; paymentMethod; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Payment jurisdiction") ; çä  'INPUT Payment jurisdiction' ; çä  'Product Info'('Vector Payment Parms'(productCode;currencyCode;mode;paymentMethod;effectiveDate);"jurisdiction";"Payment";'GEN Vector Blank')çä)
+F1 51359cea 4a995b0 0 0 0 0 2
+PI Payment id(calcType; productCode; currencyCode; mode; paymentMethod; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Payment id") ; çä  'INPUT Payment id' ; çä  'Product Info'('Vector Payment Parms'(productCode;currencyCode;mode;paymentMethod;effectiveDate);"id";"Payment";'GEN Vector Blank')çä)
+F1 3b386cc1 10028233 648a5b3a 5c14fd5e 0 0 2
+:Tax
+Funktion
+
+F1 648a5b3a 3b386cc1 0 1395a7ad 0 0 2
+PI Tax taxCode(calcType; productCode; taxCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Tax taxCode") ; çä  'INPUT Tax taxCode' ; çä  'Product Info'('Vector Tax Parms'(productCode;taxCode;effectiveDate);"taxCode";"Tax";'GEN Vector Blank')çä)
+F1 1395a7ad 3b386cc1 0 101b80b2 0 0 2
+PI Tax taxCalcMethod(calcType; productCode; taxCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Tax taxCalcMethod") ; çä  'INPUT Tax taxCalcMethod' ; çä  'Product Info'('Vector Tax Parms'(productCode;taxCode;effectiveDate);"taxCalcMethod";"Tax";'GEN Vector Blank')çä)
+F1 101b80b2 3b386cc1 0 419f0ab9 0 0 2
+PI Tax jurisdiction(calcType; productCode; taxCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Tax jurisdiction") ; çä  'INPUT Tax jurisdiction' ; çä  'Product Info'('Vector Tax Parms'(productCode;taxCode;effectiveDate);"jurisdiction";"Tax";'GEN Vector Blank')çä)
+F1 419f0ab9 3b386cc1 0 0 0 0 2
+PI Tax id(calcType; productCode; taxCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Tax id") ; çä  'INPUT Tax id' ; çä  'Product Info'('Vector Tax Parms'(productCode;taxCode;effectiveDate);"id";"Tax";'GEN Vector Blank')çä)
+F1 5c14fd5e 10028233 19495a1c 2f75dfca 0 0 2
+:Ownership
+Funktion
+
+F1 19495a1c 5c14fd5e 0 3d60bb8a 0 0 2
+PI Ownership relation(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership relation") ; çä  'INPUT Ownership relation' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"relation";"Ownership";'GEN Vector Blank')çä)
+F1 3d60bb8a 5c14fd5e 0 45f4006d 0 0 2
+PI Ownership allowedBenefit(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership allowedBenefit") ; çä  'INPUT Ownership allowedBenefit' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"allowedBenefit";"Ownership";'GEN Vector Blank')çä)
+F1 45f4006d 5c14fd5e 0 7d973e8e 0 0 2
+PI Ownership maxPrimaryBeneficiaries(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership maxPrimaryBeneficiaries") ; çä  'INPUT Ownership maxPrimaryBeneficiaries' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"maxPrimaryBeneficiaries";"Ownership";'GEN Vector Blank')çä)
+F1 7d973e8e 5c14fd5e 0 2233af88 0 0 2
+PI Ownership jurisdiction(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership jurisdiction") ; çä  'INPUT Ownership jurisdiction' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"jurisdiction";"Ownership";'GEN Vector Blank')çä)
+F1 2233af88 5c14fd5e 0 75bf6591 0 0 2
+PI Ownership maxNumContingentCoveredPersons(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership maxNumContingentCoveredPersons") ; çä  'INPUT Ownership maxNumContingentCoveredPersons' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"maxNumContingentCoveredPersons";"Ownership";'GEN Vector Blank')çä)
+F1 75bf6591 5c14fd5e 0 740c7226 0 0 2
+PI Ownership maxIssueAgeContingentOwner(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership maxIssueAgeContingentOwner") ; çä  'INPUT Ownership maxIssueAgeContingentOwner' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"maxIssueAgeContingentOwner";"Ownership";'GEN Vector Blank')çä)
+F1 740c7226 5c14fd5e 0 2f6acb8e 0 0 2
+PI Ownership ownerJointAndContingentAllowed(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership ownerJointAndContingentAllowed") ; çä  'INPUT Ownership ownerJointAndContingentAllowed' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"ownerJointAndContingentAllowed";"Ownership";'GEN Vector Blank')çä)
+F1 2f6acb8e 5c14fd5e 0 0 0 0 2
+PI Ownership id(calcType; productCode; ownershipType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Ownership id") ; çä  'INPUT Ownership id' ; çä  'Product Info'('Vector Ownership Parms'(productCode;ownershipType;effectiveDate);"id";"Ownership";'GEN Vector Blank')çä)
+F1 2f75dfca 10028233 3c71c3f4 6352cfe6 0 0 2
+:FeeAndCharge
+Funktion
+
+F1 3c71c3f4 2f75dfca 0 37d4f60a 0 0 2
+PI FeeAndCharge mode(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge mode") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge mode'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"mode";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 37d4f60a 2f75dfca 0 1ffb06d2 0 0 2
+PI FeeAndCharge feeAmt(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge feeAmt") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge feeAmt'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"feeAmt";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 1ffb06d2 2f75dfca 0 53c87119 0 0 2
+PI FeeAndCharge feePct(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge feePct") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge feePct'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"feePct";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 53c87119 2f75dfca 0 311751bd 0 0 2
+PI FeeAndCharge minFeeAmt(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge minFeeAmt") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge minFeeAmt'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"minFeeAmt";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 311751bd 2f75dfca 0 270775b2 0 0 2
+PI FeeAndCharge maxFeeAmt(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge maxFeeAmt") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge maxFeeAmt'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"maxFeeAmt";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 270775b2 2f75dfca 0 68bdecda 0 0 2
+PI FeeAndCharge maxFeePct(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge maxFeePct") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge maxFeePct'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"maxFeePct";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 68bdecda 2f75dfca 0 64ee9add 0 0 2
+PI FeeAndCharge minFeePct(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge minFeePct") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge minFeePct'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"minFeePct";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 64ee9add 2f75dfca 0 77cabf8f 0 0 2
+PI FeeAndCharge feeCalcRule(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge feeCalcRule") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge feeCalcRule'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"feeCalcRule";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 77cabf8f 2f75dfca 0 4925214f 0 0 2
+PI FeeAndCharge tableIdentity(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge tableIdentity") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge tableIdentity'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"tableIdentity";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 4925214f 2f75dfca 0 0 0 0 2
+PI FeeAndCharge id(calcType; productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("FeeAndCharge id") ; çä  IF ('PI FeeAndCharge Index'(feeType) = 99 ; çä    'GEN Vector Blank' ; çä    'INPUT FeeAndCharge id'['PI FeeAndCharge Index'(feeType)]çä  ) ; çä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"id";"FeeAndCharge";'GEN Vector Blank')çä)
+F1 6352cfe6 10028233 21edc1a5 f81b8de 0 0 2
+:Billing
+Funktion
+
+F1 21edc1a5 6352cfe6 0 0 0 0 2
+PI Billing id(calcType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Billing id") ; çä  'INPUT Billing id' ; çä  'Product Info'('Vector Billing Parms'(effectiveDate);"id";"Billing";'GEN Vector Blank')çä)
+F1 f81b8de 10028233 3b60211e 4d782361 0 0 2
+:Distribution
+Funktion
+
+F1 3b60211e f81b8de 0 6071eb05 0 0 2
+PI Distribution channelCode(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution channelCode") ; çä  'INPUT Distribution channelCode' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"channelCode";"Distribution";'GEN Vector Blank')çä)
+F1 6071eb05 f81b8de 0 5b41b6c 0 0 2
+PI Distribution versionDate(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution versionDate") ; çä  'INPUT Distribution versionDate' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"versionDate";"Distribution";'GEN Vector Blank')çä)
+F1 5b41b6c f81b8de 0 5e0ba02b 0 0 2
+PI Distribution generationDate(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution generationDate") ; çä  'INPUT Distribution generationDate' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"generationDate";"Distribution";'GEN Vector Blank')çä)
+F1 5e0ba02b f81b8de 0 2aa0d0f2 0 0 2
+PI Distribution region(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution region") ; çä  'INPUT Distribution region' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"region";"Distribution";'GEN Vector Blank')çä)
+F1 2aa0d0f2 f81b8de 0 459936d4 0 0 2
+PI Distribution vpmFileName(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution vpmFileName") ; çä  'INPUT Distribution vpmFileName' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"vpmFileName";"Distribution";'GEN Vector Blank')çä)
+F1 459936d4 f81b8de 0 46726e8e 0 0 2
+PI Distribution variant(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution variant") ; çä  'INPUT Distribution variant' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"variant";"Distribution";'GEN Vector Blank')çä)
+F1 46726e8e f81b8de 0 460291d 0 0 2
+PI Distribution marketingName(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution marketingName") ; çä  'INPUT Distribution marketingName' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"marketingName";"Distribution";'GEN Vector Blank')çä)
+F1 460291d f81b8de 0 0 0 0 2
+PI Distribution id(calcType; currencyCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("Distribution id") ; çä  'INPUT Distribution id' ; çä  'Product Info'('Vector Distribution Parms'(currencyCode;effectiveDate);"id";"Distribution";'GEN Vector Blank')çä)
+F1 4d782361 10028233 4d1f129c 0 0 0 2
+:NonProvision
+Funktion
+
+F1 4d1f129c 4d782361 0 21f8770 0 0 2
+PI Product NonForProvision NetSinglePremIntRate(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("NetSinglePremIntRate") ; çä  'INPUT Product NetSinglePremIntRate' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"NetSinglePremIntRate";"Product";'GEN Vector Blank')çä) //Vector Benefit NonForProvision Parms(productCode; benefitIndex; nonFortProv;effectiveDate)çä//IF ('PI Use Attributes'("NetSinglePremIntRate") ; çä// 'INPUT Product NetSinglePremIntRate'; çä//  'Product Info'('Vector Benefit NonForProvision Parms'(productCode; benefitIndex; nonFortProv;effectiveDate);"NetSinglePremIntRate";"Product";'GEN Vector Blank')çä//)çä
+F1 21f8770 4d782361 0 1cf0a1a3 0 0 2
+PI Product NonFortProvType(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("nonFortProvType") ; çä  'INPUT Product nonFortProv' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"nonFortProvType";"Product";'GEN Vector Blank')çä) //IF ('PI Use Attributes'("nonFortProvType") ; çä// 'INPUT Product NetSinglePremIntRate'; çä//  'Product Info'('Vector Benefit NonForProvision Parms'(productCode; benefitIndex; nonFortProv;effectiveDate);"NetSinglePremIntRate";"Product";'GEN Vector Blank')çä//)çä
+F1 1cf0a1a3 4d782361 0 4406d9f9 0 0 2
+PI Product AllowPercentRatingPolicyInd(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("AllowPercentRatingPolicyInd") ; çä  'INPUT Product AllowPercentRatingPolicyInd' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"AllowPercentRatingPolicyInd";"Product";'GEN Vector Blank')çä)
+F1 4406d9f9 4d782361 0 17cb81e2 0 0 2
+PI Product NonFortinitialAmtType(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("nonFortinitialAmtType") ; çä  'INPUT Product NonFortinitialAmtType' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"NonFortinitialAmtType";"Product";'GEN Vector Blank')çä)
+F1 17cb81e2 4d782361 0 0 0 0 2
+PI Product NonForLoanAdjType(productCode; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("NonForLoanAdjType") ; çä  'INPUT Product NonForLoanAdjType' ; çä  'Product Info'('Vector Product Parms'(productCode;effectiveDate);"NonForLoanAdjType";"Product";'GEN Vector Blank')çä)
+F1 324dd0ef de0860 1aefdd01 14e4b444 0 0 2
+-- Access Vector Functions --
+Funktion
+
+F1 1aefdd01 324dd0ef 0 36b9c171 0 0 2
+Vector Product Parms(productCode; effectiveDate)
+Funktion
+v_('INPUT Policy CarrierCode';productCode;'INPUT Policy ProductVersionCode';DATE(effectiveDate;0;0;0;"M/D/Y"))
+F1 36b9c171 324dd0ef 0 41304901 0 0 2
+Vector Jurisdiction Parms(productCode; effectiveDate)
+Funktion
+v_concat('Vector Product Parms'(productCode;effectiveDate);v_('INPUT Product jurisdiction'))
+F1 41304901 324dd0ef 0 50933825 0 0 2
+Vector Benefit Parms(productCode; benefitIndex; effectiveDate)
+Funktion
+v_concat('Vector Product Parms'(productCode;effectiveDate);v_('INPUT Benefit indicatorCode'[benefitIndex];'INPUT Benefit benefitCode'[benefitIndex];'INPUT Benefit productVersionCode'[benefitIndex];DATE(effectiveDate;0;0;0;"M/D/Y")))
+F1 50933825 324dd0ef 0 75bc9f1b 0 0 2
+Vector Benefit Commission Parms(productCode; benefitIndex; commissionCode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_('INPUT Product jurisdiction';'INPUT Product channelCode';commissionCode))
+F1 75bc9f1b 324dd0ef 0 62648ff6 0 0 2
+Vector Benefit Maturity Parms(productCode; benefitIndex; lifeRoleCode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(lifeRoleCode))
+F1 62648ff6 324dd0ef 0 6924164b 0 0 2
+Vector Benefit MandatoryBenefit Parms(productCode; benefitIndex; mandatoryBenefitCode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(mandatoryBenefitCode))
+F1 6924164b 324dd0ef 0 209ef1c0 0 0 2
+Vector Benefit IncompatibleBenefit Parms(productCode; benefitIndex; incompatibleBenefitCode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(incompatibleBenefitCode))
+F1 209ef1c0 324dd0ef 0 59cb2f16 0 0 2
+Vector Benefit BenefitLimit Parms(productCode; benefitIndex; lifeRoleCode; currencyCode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(currencyCode;lifeRoleCode))
+F1 59cb2f16 324dd0ef 0 14e99bda 0 0 2
+Vector Benefit Premium Parms(productCode; benefitIndex; currencyCode; mode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(currencyCode;mode))
+F1 14e99bda 324dd0ef 0 3acad83c 0 0 2
+Vector Benefit Investment Parms(productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(currencyCode))
+F1 3acad83c 324dd0ef 0 1a88eabe 0 0 2
+Vector Benefit Bonus Parms(productCode; benefitIndex; currencyCode; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(currencyCode))
+F1 1a88eabe 324dd0ef 0 5e9aa965 0 0 2
+Vector Benefit FeeAndCharge Parms(productCode; benefitIndex; feeType; effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(feeType))
+F1 5e9aa965 324dd0ef 0 2159f4e9 0 0 2
+Vector Payment Parms(productCode; currencyCode; mode; paymentMethod; effectiveDate)
+Funktion
+v_concat('Vector Product Parms'(productCode;effectiveDate);v_(currencyCode;mode;paymentMethod))
+F1 2159f4e9 324dd0ef 0 525e1084 0 0 2
+Vector Tax Parms(productCode; taxCode; effectiveDate)
+Funktion
+v_concat('Vector Product Parms'(productCode;effectiveDate);v_(taxCode))
+F1 525e1084 324dd0ef 0 7b735c8f 0 0 2
+Vector Ownership Parms(productCode; ownershipType; effectiveDate)
+Funktion
+v_concat('Vector Product Parms'(productCode;effectiveDate);v_(ownershipType))
+F1 7b735c8f 324dd0ef 0 22e610e9 0 0 2
+Vector FeeAndCharge Parms(productCode; feeType; effectiveDate)
+Funktion
+v_concat('Vector Product Parms'(productCode;effectiveDate);v_(feeType))
+F1 22e610e9 324dd0ef 0 1b53bd64 0 0 2
+Vector Billing Parms(effectiveDate)
+Funktion
+v_(DATE(effectiveDate;0;0;0;"M/D/Y"))
+F1 1b53bd64 324dd0ef 0 f933ced 0 0 2
+Vector Distribution Parms(currencyCode; effectiveDate)
+Funktion
+v_(currencyCode;DATE(effectiveDate;0;0;0;"M/D/Y"))
+F1 f933ced 324dd0ef 0 0 0 0 2
+--Vector Benefit NonForProvision Parms(productCode; benefitIndex; nonFortProv;effectiveDate)
+Funktion
+v_concat('Vector Benefit Parms'(productCode;benefitIndex;effectiveDate);v_(nonFortProv;))
+F1 14e4b444 de0860 139415bc 7e034354 0 0 2
+--PGDerived Functions--
+Funktion
+
+F1 139415bc 14e4b444 0 0 0 0 2
+PI PAGDRV Benefit MaturityDuration(calcType; effectiveDate; coverageIndex)
+Funktion
+ //'PI CoverageProduct MaturityAge'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy Coverage EffDate'(calcType; coverageIndex)) çä//   - çä// 'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0)çä'PI Benefit Maturity matureYr'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;1;effectiveDate) - 'Life IssueAge'(coverageIndex;0)
+F1 7e034354 de0860 3d9a0352 62b3201d 0 0 2
+-- Index Lookup Functions --
+Funktion
+
+F1 3d9a0352 7e034354 5214455e 44c8f484 0 0 2
+PI Benefit Commission Index(benefitIndex; commissionCode)
+Funktion
+IF ( /*Check for definition*/ 'INPUT Benefit number of Commission'[benefitIndex] = 0 ; çä   // Return 99 if object not foundçä99 ; çä   // Elseçä'PI Benefit Commission Index Rec'(benefitIndex;commissionCode;'INPUT Benefit number of Commission'[benefitIndex] - 1)çä)
+F1 5214455e 3d9a0352 0 0 0 0 2
+PI Benefit Commission Index Rec(benefitIndex; commissionCode; commissionIndex)
+Funktion
+IF ( /*If type is found*/ 'INPUT Benefit Commission commissionCode'[benefitIndex; commissionIndex] = commissionCode ; çä   /*Return index of correct object*/ commissionIndex ; çä   /*Else keep looking*/ IF ( /*If object can't be found*/ commissionIndex = 0 ; çä     /*Give up*/ 99 ; çä     /*Keep looking*/ 'PI Benefit Commission Index Rec'(benefitIndex;commissionCode;commissionIndex - 1)çä  )çä)
+F1 44c8f484 7e034354 642b7230 1afa54d5 0 0 2
+PI Benefit Life Index(benefitIndex; lifeRoleCode)
+Funktion
+IF ( /*Check for definition*/ 'INPUT Benefit number of Lives'[benefitIndex] = 0 ; çä   // Return 99 if object not foundçä99 ; çä   // Elseçä'PI Benefit Life Index Rec'(benefitIndex;lifeRoleCode;'INPUT Benefit number of Lives'[benefitIndex] - 1)çä)
+F1 642b7230 44c8f484 0 0 0 0 2
+PI Benefit Life Index Rec(benefitIndex; lifeRoleCode; lifeIndex)
+Funktion
+IF ( /*If type is found*/ 'INPUT Benefit Life lifeRoleCode'[benefitIndex; lifeIndex] = lifeRoleCode ; çä   /*Return index of correct object*/ lifeIndex ; çä   /*Else keep looking*/ IF ( /*If object can't be found*/ lifeIndex = 0 ; çä     /*Give up*/ 99 ; çä     /*Keep looking*/ 'PI Benefit Life Index Rec'(benefitIndex;lifeRoleCode;lifeIndex - 1)çä  )çä)
+F1 1afa54d5 7e034354 6131734a 536339f5 0 0 2
+PI Benefit MandatoryBenefit Index(benefitIndex; mandatoryBenefitCode)
+Funktion
+IF ( /*Check for definition*/ 'INPUT Benefit number of MandatoryBenefit'[benefitIndex] = 0 ; çä   // Return 99 if object not foundçä99 ; çä   // Elseçä'PI Benefit MandatoryBenefit Index Rec'(benefitIndex;mandatoryBenefitCode;'INPUT Benefit number of MandatoryBenefit'[benefitIndex] - 1)çä)
+F1 6131734a 1afa54d5 0 0 0 0 2
+PI Benefit MandatoryBenefit Index Rec(benefitIndex; mandatoryBenefitCode; mandatoryBenefitIndex)
+Funktion
+IF ( /*If type is found*/ 'INPUT Benefit MandatoryBenefit benefitCode'[benefitIndex; mandatoryBenefitIndex] = mandatoryBenefitCode ; çä   /*Return index of correct object*/ mandatoryBenefitIndex ; çä   /*Else keep looking*/ IF ( /*If object can't be found*/ mandatoryBenefitIndex = 0 ; çä     /*Give up*/ 99 ; çä     /*Keep looking*/ 'PI Benefit MandatoryBenefit Index Rec'(benefitIndex;mandatoryBenefitCode;mandatoryBenefitIndex - 1)çä  )çä)
+F1 536339f5 7e034354 d22eded 3b493651 0 0 2
+PI Benefit IncompatibleBenefit Index(benefitIndex; incompatibleBenefitCode)
+Funktion
+IF ( /*Check for definition*/ 'INPUT Benefit number of IncompatibleBenefit'[benefitIndex] = 0 ; çä   // Return 99 if object not foundçä99 ; çä   // Elseçä'PI Benefit IncompatibleBenefit Index Rec'(benefitIndex;incompatibleBenefitCode;'INPUT Benefit number of IncompatibleBenefit'[benefitIndex] - 1)çä)
+F1 d22eded 536339f5 0 0 0 0 2
+PI Benefit IncompatibleBenefit Index Rec(benefitIndex; incompatibleBenefitCode; incompatibleBenefitIndex)
+Funktion
+IF ( /*If type is found*/ 'INPUT Benefit IncompatibleBenefit benefitCode'[benefitIndex; incompatibleBenefitIndex] = incompatibleBenefitCode ; çä   /*Return index of correct object*/ incompatibleBenefitIndex ; çä   /*Else keep looking*/ IF ( /*If object can't be found*/ incompatibleBenefitIndex = 0 ; çä     /*Give up*/ 99 ; çä     /*Keep looking*/ 'PI Benefit IncompatibleBenefit Index Rec'(benefitIndex;incompatibleBenefitCode;incompatibleBenefitIndex - 1)çä  )çä)
+F1 3b493651 7e034354 13b4a151 709132e8 0 0 2
+PI Benefit FeeAndCharge Index(benefitIndex; feeType)
+Funktion
+IF ( /*Check for definition*/ 'INPUT Benefit number of FeeAndCharge'[benefitIndex] = 0 ; çä   // Return 99 if object not foundçä99 ; çä   // Elseçä'PI Benefit FeeAndCharge Index Rec'(benefitIndex;feeType;'INPUT Benefit number of FeeAndCharge'[benefitIndex] - 1)çä)
+F1 13b4a151 3b493651 0 0 0 0 2
+PI Benefit FeeAndCharge Index Rec(benefitIndex; feeType; feeIndex)
+Funktion
+IF ( /*If type is found*/ 'INPUT Benefit FeeAndCharge feeType'[benefitIndex; feeIndex] = feeType ; çä   /*Return index of correct object*/ feeIndex ; çä   /*Else keep looking*/ IF ( /*If object can't be found*/ feeIndex = 0 ; çä     /*Give up*/ 99 ; çä     /*Keep looking*/ 'PI Benefit FeeAndCharge Index Rec'(benefitIndex;feeType;feeIndex - 1)çä  )çä)
+F1 709132e8 7e034354 5d815dbd 0 0 0 2
+PI FeeAndCharge Index(feeType)
+Funktion
+IF ( /*Check for definition*/ 'INPUT Product number of FeeAndCharge' = 0 ; çä   // Return 99 if object not foundçä99 ; çä   // Elseçä'PI FeeAndCharge Index Rec'(feeType;'INPUT Product number of FeeAndCharge' - 1)çä)
+F1 5d815dbd 709132e8 0 0 0 0 2
+PI FeeAndCharge Index Rec(feeType; feeIndex)
+Funktion
+IF ( /*If type is found*/ 'INPUT FeeAndCharge feeType'[feeIndex] = feeType ; çä   /*Return index of correct object*/ feeIndex ; çä   /*Else keep looking*/ IF ( /*If object can't be found*/ feeIndex = 0 ; çä     /*Give up*/ 99 ; çä     /*Keep looking*/ 'PI FeeAndCharge Index Rec'(feeType;feeIndex - 1)çä  )çä)
+F1 62b3201d de0860 1d840b4f 3962754c 0 0 2
+--Mapping --
+Funktion
+
+F1 1d840b4f 62b3201d 70a74b4a 0 0 0 2
+:PI
+Funktion
+
+F1 70a74b4a 1d840b4f ee96753 7a733524 0 0 2
+:PolicyProduct
+Funktion
+
+F1 ee96753 70a74b4a 0 3b279a81 0 0 2
+PI PolicyProduct PayToAge(productCode; effectiveDate)
+Funktion
+ //100çä'PI Benefit payToAge'('GEN vector Blank';productCode;'Std BaseCov Index'('GEN vector Blank');effectiveDate)
+F1 3b279a81 70a74b4a 0 35c400b7 0 0 2
+PI PolicyProduct PolicyProductTypeCode(productCode; effectiveDate)
+Funktion
+'PI Product productType'('GEN Vector Blank';productCode;effectiveDate)
+F1 35c400b7 70a74b4a 0 62e0c811 0 0 2
+PI PolicyProduct Fee FeeType(productCode; feeType; effectiveDate)
+Funktion
+IF ('PI Use Attributes'("PolicyProduct Fee FeeType") ; çä  IF ('PI PolicyProduct FeeType Index'(feeType) = 99 ; çä     // No fee rule foundçä'GEN Vector Blank' ; çä     // Elseçä'INPUT PolicyProduct Fee Type'['PI PolicyProduct FeeType Index'(feeType)]çä  ) ; çä // Else obtain value from product definition tableçäIF (LEFT('Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"feeType";"FeeAndCharge";'GEN Vector Blank');5) ALIKE "ERROR" ; çä   // No fee rule foundçä'GEN Vector Blank' ; çä   // Elseçä'Product Info'('Vector FeeAndCharge Parms'(productCode;feeType;effectiveDate);"feeType";"FeeAndCharge";'GEN Vector Blank')çä)çä)
+F1 62e0c811 70a74b4a 0 761ca111 0 0 2
+PI PolicyProduct Fee FeeAddRule(productCode; feeType; effectiveDate)
+Funktion
+'PI FeeAndCharge mode'('GEN vector Blank';productCode;feeType;effectiveDate)
+F1 761ca111 70a74b4a 0 58021c4b 0 0 2
+PI PolicyProduct Fee FeeCalcRule(productCode; feeType; effectiveDate)
+Funktion
+'PI FeeAndCharge feeCalcRule'('GEN Vector Blank';productCode;feeType;effectiveDate)
+F1 58021c4b 70a74b4a 0 2a3ef8b1 0 0 2
+PI PolicyProduct Fee ChargeBasedOn(productCode; feeType; effectiveDate)
+Funktion
+'PI FeeAndCharge feeCalcRule'('GEN Vector Blank';productCode;feeType;effectiveDate)
+F1 2a3ef8b1 70a74b4a 0 4e7ef62d 0 0 2
+PI PolicyProduct NARMonthlyChargeOrder(productCode; effectiveDate)
+Funktion
+1000500001
+F1 4e7ef62d 70a74b4a 0 4e709005 0 0 2
+PI PolicyProduct Fee TableRef TableRefKey(productCode; feeType; effectiveDate)
+Funktion
+'PI FeeAndCharge tableIdentity'('GEN Vector Blank';productCode;feeType;effectiveDate)
+F1 4e709005 70a74b4a 0 77589f37 0 0 2
+PI PolicyProduct ReserveIntRate(calcType; productCode; effectiveDate;yearIndex)
+Funktion
+'PI Product ReserveIntRate'(calcType;productCode;effectiveDate;yearIndex)
+F1 77589f37 70a74b4a 0 3b25e3f1 0 0 2
+PI PolicyProduct ReserveFunction( productCode; effectiveDate)
+Funktion
+'PI Product reserveFunction'(productCode;effectiveDate)
+F1 3b25e3f1 70a74b4a 0 781db0d0 0 0 2
+PI PolicyProduct MortalityOrMorbidityTable( productCode; effectiveDate)
+Funktion
+'PI Product mortalityOrMorbidityTable'(productCode;effectiveDate)
+F1 781db0d0 70a74b4a 0 4a343e9 0 0 2
+PI PolicyProduct AgeCalculationType( productCode; effectiveDate)
+Funktion
+'PI Product ageCalculationMethod'(productCode;effectiveDate)
+F1 4a343e9 70a74b4a 0 2d65abb1 0 0 2
+PI PolicyProduct LoanDirectRecognitionType( productCode; effectiveDate)
+Funktion
+'PI Product LoanDirectRecognitionType'(productCode;effectiveDate)
+F1 2d65abb1 70a74b4a 0 24ee1455 0 0 2
+PI PolicyProduct ParticipatingType( productCode; effectiveDate)
+Funktion
+'PI Product ParticipatingInd'(productCode;effectiveDate)
+F1 24ee1455 70a74b4a 0 430fde50 0 0 2
+:NonProvision
+Funktion
+
+F1 430fde50 70a74b4a 0 aa0d87d 0 0 2
+PI NonForProvision NetSinglePremIntRate(productCode; nonFortProv; effectiveDate)
+Funktion
+'PI Product NonForProvision NetSinglePremIntRate'(productCode;effectiveDate)
+F1 aa0d87d 70a74b4a 0 2fa5d6d7 0 0 2
+PI NonForProvision MortalityOrMorbidityTable(productCode; nonFortProv;effectiveDate)
+Funktion
+'PI Product mortalityOrMorbidityTable'(productCode;effectiveDate)
+F1 2fa5d6d7 70a74b4a 0 4b5c3d4e 0 0 2
+PI AllowedSubstandard AllowPercentRatingPolicyInd(productCode; nonFortProv; substdType; effectiveDate)
+Funktion
+'PI Product AllowPercentRatingPolicyInd'(productCode;effectiveDate)
+F1 4b5c3d4e 70a74b4a 0 5433a673 0 0 2
+PI NonForProvision BenefitType(productCode; nonFortProv; effectiveDate)
+Funktion
+'PI Product NonFortProvType'(productCode;effectiveDate)
+F1 5433a673 70a74b4a 0 4712eb9a 0 0 2
+PI NonForProvision InitialAmtType(productCode; nonFortProv; effectiveDate)
+Funktion
+'PI Product NonFortinitialAmtType'(productCode;effectiveDate)
+F1 4712eb9a 70a74b4a 0 0 0 0 2
+PI NonForProvision LoanAdjType(productCode; nonFortProv; effectiveDate)
+Funktion
+'PI Product NonForLoanAdjType'(productCode;effectiveDate)
+F1 7a733524 1d840b4f 418b7cc5 496056e7 0 0 2
+:CoverageProduct
+Funktion
+
+F1 418b7cc5 7a733524 0 5a01b86c 0 0 2
+PI CoverageProduct LifeCovTypeCode(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit benefitTypeCode'(calcType;rootProductCode;coverageIndex;effectiveDate)
+F1 5a01b86c 7a733524 0 4bad9e3 0 0 2
+PI CoverageProduct IndeterPremRenewMode(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit indeterPremRenewMode'(calcType;rootProductCode;coverageIndex;effectiveDate)
+F1 4bad9e3 7a733524 0 5c6acb4e 0 0 2
+PI CoverageProduct IndeterPremRenewPeriod(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit indeterPremRenewPeriod'(calcType;rootProductCode;coverageIndex;effectiveDate)
+F1 5c6acb4e 7a733524 0 43d2ab43 0 0 2
+PI CoverageProduct BandPremInd(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit BandPremInd'(calcType;rootProductCode;coverageIndex;effectiveDate)
+F1 43d2ab43 7a733524 0 190e49c9 0 0 2
+PI CoverageProduct ValuePerUnit(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit valuePerUnit'(calcType;rootProductCode;coverageIndex;effectiveDate)
+F1 190e49c9 7a733524 0 711d8cf7 0 0 2
+PI CoverageProduct LivesType(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit livesType'(calcType;rootProductCode;coverageIndex;effectiveDate)
+F1 711d8cf7 7a733524 0 488dbcde 0 0 2
+PI CoverageProduct MaturityAge(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit Maturity matureYr'(calcType;rootProductCode;coverageIndex;1;effectiveDate)
+F1 488dbcde 7a733524 0 0 0 0 2
+PI CoverageProduct ParticipatingInd(calcType; rootProductCode; coverageIndex; effectiveDate)
+Funktion
+'PI Benefit participatingInd'(calcType;rootProductCode;coverageIndex;effectiveDate)
+F1 496056e7 1d840b4f 67c8c596 7ce35ccc 0 0 2
+:PaymentAssembly
+Funktion
+
+F1 67c8c596 496056e7 0 0 0 0 2
+PI PaymentAssembly PaymentRateCategory(productCode; effectiveDate)
+Funktion
+1000500004
+F1 7ce35ccc 1d840b4f 713cb9a7 0 0 0 2
+:DerivedFuctions
+Funktion
+
+F1 713cb9a7 7ce35ccc 0 0 0 0 2
+PIDRV CoverageProduct MaturityDuration(calcType; effectiveDate; coverageIndex)
+Funktion
+'PI PAGDRV Benefit MaturityDuration'(calcType;effectiveDate;coverageIndex)
+F1 3962754c de0860 146a962a 1b7d2116 0 0 2
+--Overrides --
+Funktion
+
+F1 146a962a 3962754c 740d540 0 0 0 2
+:ACCS
+Funktion
+
+F1 740d540 146a962a 0 2a00686a 0 0 2
+ACCS Band Code(productCode; effectiveDate; faceAmount)
+Funktion
+'ACCS CalcRule GetCalcRule'("CalcRules Band Code";productCode;effectiveDate;v_(Quote(productCode);'Payment Currency';Quote(faceAmount)))
+F1 2a00686a 146a962a 0 3ddf626c 0 0 2
+PIDRV Coverage Curr Rate Is Guaranteed(calcType; coverageIndex; rate_effectiveDate; trans_effectiveDate)
+Funktion
+IF ( /*Product is Indeterminate Premium*/ 'ProductType is Term Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Yes*/ IF ('PI Benefit renewableInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;trans_effectiveDate) && 'DATE Is Date1 Greater Than Date2'(rate_effectiveDate;'Increase Date By Period'('Policy Coverage EffDate'(calcType;coverageIndex);'PI CoverageProduct IndeterPremRenewPeriod'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;trans_effectiveDate);'PI CoverageProduct IndeterPremRenewMode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;trans_effectiveDate))) ; çä     // The rate effective date is greater than the end date of the period in which the current rates are guaranteedçä0 ; çä     // The rate effective date is within the period in which the current rates are guaranteedçä1çä  ) ; çä /*No - not term*/ 0çä)
+F1 3ddf626c 146a962a 0 2544deef 0 0 2
+PI Derived PayToYear(calcType; productCode; effectiveDate; coverageIndex; participantIndex)
+Funktion
+'PI PolicyProduct PayToAge'(productCode;effectiveDate) - 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;participantIndex)
+F1 2544deef 146a962a 0 0 0 0 2
+PI PolicyProduct NARAllocMethod(productCode; effectiveDate)
+Funktion
+1000500004 /*çäIF ('PI Use Attributes'("PolicyProduct NARAllocMethod");çäâ'INPUT Policy NARAllocMethod';   çäâ'Product Info'('Vector PolicyProduct Parms'(productCode; effectiveDate); "NARAllocMethod"; "PolicyProduct";'GEN Vector Blank')çä)ä*/ 
+F1 1b7d2116 de0860 36702e2a 249d7fc3 0 0 2
+--CalcRule--
+Funktion
+
+F1 36702e2a 1b7d2116 0 410ff838 0 0 2
+ACCS CalcRule CountryGroup(productCode; effDate; jurisdiction)
+Funktion
+'ACCS CalcRule GetCalcRule'("CalcRules Country Group";productCode;effDate;v_(Quote(productCode);Quote(jurisdiction)))
+F1 410ff838 1b7d2116 0 3cf92196 0 0 2
+ACCS CalcRule OccupationClass(productCode; effDate; occupation)
+Funktion
+'ACCS CalcRule GetCalcRule'("CalcRules Occupation Class";productCode;effDate;v_(Quote(productCode);Quote(occupation)))
+F1 3cf92196 1b7d2116 0 0 0 0 2
+ACCS CalcRule WP RateAdjType(carrierCode; productCode; effDate)
+Funktion
+'ACCS CalcRule GetCalcRule'("CalcRules WP RateAdjType";productCode;effDate;v_(Quote(carrierCode);Quote(productCode)))
+F1 249d7fc3 de0860 0 0 0 0 2
+ACCS Rate Location Model Name
+Funktion
+ // Use vpmexist function to determine if the LOCATION model name has an extensionçäIF (vpmexist("PAGLOC.vpm") ; çä  "PAGLOC.vpm" ; çä  IF (vpmexist("PAGLOC.VPM") ; çä    "PAGLOC.VPM" ; çä    IF (vpmexist("PAGLOC") ; çä      "PAGLOC" ; çä       // else default to LOCATION modelçä"LOCATION"çä    )çä)çä)
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 5e05b5e8 0 0 0 0
+
+T19 5e05b5e8 de0974 0 7550ef37 0 0 4
+TABLE ACORD Table Name Lookup
+Object
+Qualifier
+FunctionName
+TableName
+Product
+None
+P
+Table Product
+Jurisdiction
+None
+P Jurisdiction
+Table Product Jurisdiction
+Benefit
+None
+P B
+Table Product Benefit
+Commission
+Benefit
+P B Commission
+Table Product Benefit Commission
+Maturity
+Benefit
+P B Maturity
+Table Product Benefit Maturity
+MandatoryBenefit
+Benefit
+P B MandatoryBenefit
+Table Product Benefit MandatoryBenefit
+IncompatibleBenefit
+Benefit
+P B IncompatibleBenefit
+Table Product Benefit IncompatibleBenefit
+BenefitLimit
+Benefit
+P B BenefitLimit
+Table Product Benefit BenefitLimit
+Premium
+Benefit
+P B Premium
+Table Product Benefit Premium
+Investment
+Benefit
+P B Investment
+Table Product Benefit Investment
+Bonus
+Benefit
+P B Bonus
+Table Product Benefit Bonus
+FeeAndCharge
+Benefit
+P B FeeAndCharge
+Table Product Benefit FeeAndCharge
+Payment
+None
+P Payment
+Table Product Payment
+Tax
+None
+P Tax
+Table Product Tax
+Ownership
+None
+P Ownership
+Table Product Ownership
+FeeAndCharge
+None
+P FeeAndCharge
+Table Product FeeAndCharge
+Billing
+None
+Billing
+Table Billing
+Distribution
+None
+Distribution
+Table Distribution
+T85 7550ef37 de0974 0 0 0 0 2
+TABLE Rate Type
+Rate_Type
+Description
+CCOI
+Current COI for coverages and riders
+CCOIADB
+Current COI for Accidental death benefit
+CCOIGIO
+Current COI for guaranteed insurability option benefit
+CCOIWMD
+Current COI for Waiver of monthly deduction benefit
+CCOIWP
+Current COI for Premium Waiver benefit
+CEXP
+Current Expense Charge Rate
+CEXPAMT
+Current Expense Amount
+CEXPMAX
+Current Expense Maximum
+CEXPPCT
+Current Expense Percentage
+CEXPTHRHLD
+Current Expense Account Value Threshold
+CTGT
+Commission target for coverages and riders
+CTGTADB
+Commission target for Accidental death benefit
+CTGTGIO
+Commission target for guaranteed insurability option benefit
+CTGTWP
+Commission target for Premium Waiver Benefit
+CURRINT
+Current Interest Rate
+EIAIV
+Equity Index Annuity Index Value
+FALLOW
+Full Surrender Allow code
+FCHGAMT
+Full Surrender Charge Amount
+FCHGPCT
+Full Surrender Charge Percent
+FFREEMO
+Full Surrender Free Months
+FFREEPCT
+Full Surrender Free Percent
+FGRPDXIN
+Full Surrender Grace Period/Excess Interest
+GCOI
+Guaranteed COI for coverages and riders
+GCOIADB
+Guaranteed COI for Accidental death benefit
+GCOIGIO
+Guaranteed COI for Guaranteed Insurability Option
+GCOIWMD
+Guaranteed COI for Waiver of Monthly Deductions
+GCOIWP
+Guaranteed COI for Waiver of Premium
+GCV
+Guaranteed cash values calls rate table
+GEXP
+Guaranteed Expense Charge Rate
+GEXPAMT
+Guaranteed Expense Amount
+GEXPMAX
+Guaranteed Expense Maximum
+GEXPPCT
+Guaranteed Expense Percentage
+GEXPTHRHLD
+Current Expense Account Value Threshold
+GMDB
+Guaranteed minimum death benefit
+GMIB
+Guaranteed minimum initial benefit
+GMWB
+Guaranteed minimum withdrawal benefit
+GPRM
+Maximum guaranteed premium for indeterminate premium plans
+GUARINT
+Guaranteed Interest Rate
+LCHGAMT
+Premium Load Charge Amount
+LCHGRATE
+Premium Load Charge Rate < Target (1st Rate)
+LSECRATE
+Premium Load Charge Rate > Target (2nd Rate)
+LTGT
+Load target for coverages and riders
+LTGTADB
+Load target for Accidental Death Benefit
+LTGTGIO
+Load target for Guaranteed Insurability Option
+LTGTWP
+Load target for waiver of specified premium
+MNLPPRD
+MNLP period in months
+MORT
+General mortality rate reference
+MTGT
+MNLP target for coverages and riders
+MTGTADB
+MNLP target for Accidental Death Benefit
+MTGTGIO
+MNLP target for Guaranteed Insurability Option
+MTGTWMD
+MNLP target for waiver of Monthly deductions
+MTGTWP
+MNLP target for premium waiver
+PALLOW
+Partial Surrender Allow code
+PCHGAMT
+Partial Surrender Charge Amount
+PCHGPCT
+Partial Surrender Charge Percent
+PFREEMO
+Partial Surrender Free Months
+PFREEPCT
+Partial Surrender Free Percent
+PGRPDXIN
+Partial Surrender Grace Period/Excess Interest
+POLFEE
+Policy fee amount
+PREM
+Standard rate access function for payor death benefit and payor disability
+PREMART
+Premium rates for Indeterminate Premium plans past the intial term period
+PREMPW
+Premium waiver rate
+ROPCV
+Return of premium cash value factor.
+ROPPREM
+Return of premium current premium rate.
+SCOI
+Shadow account COI for coverages and riders
+SEXP
+Shadow account expense charge rate
+SEXPMAX
+Shadow account expense charge maximum
+SLCHGAMT
+Shadow account premium load charge amount
+SLCHGRATE
+Shadow account premium load charge rate
+SLSECRATE
+Shadow account premium load secondary charge rate
+SSTD
+Substandard percentage
+STGT
+Surrender load target for coverages and riders
+UNITVAL
+Unit Value for fund
+PUA
+Paid Up Addition Rate
+WL
+Whole Life Premium Rate
+GIO
+GIO Cost of Insurance Rate
+GCOIWPBase
+WP Rates on Base Cov
+GCOIWPGIO
+WP Rates on GIO
+CDIV
+Current Dividend Rate
+GDIV
+Guaranteed Dividend Rate
+CTC
+Blended Insurance Rider - Current Term Charge
+GTC
+Blended Insurance Rider - Guaranteed Term Charge
+CTCWP
+Blended Insurance Rider - WP on Current Term Charge
+GTCWP
+Blended Insurance Rider - WP on Guaranteed Term Charge
+I0 7f6cc0fd 0 45d82d96 0 0 0 0
+
+I0 45d82d96 7f6cc0fd 0 452ae9b9 0 0 0
+PAGErrorFunctions.pms
+I0 452ae9b9 7f6cc0fd 0 0 0 0 0
+PAGStandard.pms
+-
+O0
+E0
+L0
+B0
+P1
+60197a45
+F8
+10028233
+324dd0ef
+14e4b444
+7e034354
+62b3201d
+3962754c
+1b7d2116
+249d7fc3
+A0
+T2
+5e05b5e8
+7550ef37
+!255
+394fd01f -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+19e7fd86 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+a20e6c1 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7ad31fe2 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+65b5cf50 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+76dbd2e6 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5db18c77 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+294ec91e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4deda5e0 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+560db32a -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+4fc0646e -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+7e39193e -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+139f3973 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+c9bca0e -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+5311dffe -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+49791677 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3e6d7dcc -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6e360304 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+385318ed -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+8d2491b -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4905f5fa -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+34b4603d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+19f11af4 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+46a2bf42 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä03/30/2015 - Delivery - JL - Correct PI Lookup nameçä07232013 pA-G1401 GPF-12 JL Initial Function
+64879468 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2d6ad98c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6f7f8e7d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6887176d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+23884414 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+464bc3ca -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5a531c54 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5bdc73e7 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+c616ce4 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+659fc4bc -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5f884bd5 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1a33f9d5 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4dca0952 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2f2f7d1b -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1e257c31 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+bb15350 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5cbc6637 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+369acbaa -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+57a3e656 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7bdc4f4f -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1ca739ec -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1443850 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+195a80d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+b2c8596 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+21387128 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6150670d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6ce2d30c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä11132013 pA-G1401 GPF-12 JL Initial Function
+2ff91168 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1ab16d8e -2 -2
+çäModification Log:çäDescription: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+165d6197 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7fa738e5 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+9066435 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1e787bb3 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4b8bd9cc -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+20f36d43 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+28650743 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+402780a0 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+68fe680a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1729cb09 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+360ec602 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+25812a8b -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+11012ce3 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2f7e55de -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+528c6052 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5dec5ef7 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+69d8daf4 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4f4df5bf -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1d269fad -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7596e07d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä08212013 pA-G1401 GPF-12 JL Initial Function
+f455b71 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4890c8e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+78ffa004 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7445b327 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5413b7fb -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+10f6fa9c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7c14f104 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7bb1b563 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5525387 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+25a4229d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6e947596 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+50a2ee87 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5f31e32a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+263bfc75 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7343650c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+22d60c24 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+825f53a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2f0f44ca -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6dfa82e7 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+31dae03f -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+71b8331d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3d9c59d6 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4329af0e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+19149949 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+219c409 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+379d7ef1 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5d4d4966 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5d46e219 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1c75bcd5 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+44581197 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4c3d6a9a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+33abf6c5 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+26406b10 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5ae1e18f -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1f05491c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1381517d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5b25ad3a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6ac4d6fd -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä08022013 pA-G1401 GPF-12 JL Initial Function
+5cf6db1e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä08022013 pA-G1401 GPF-12 JL Initial Function
+39bf5f31 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä08132013 pA-G1401 JL Correct Spelling mistakeçä08022013 pA-G1401 GPF-12 JL Initial Function
+18d09aa0 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä08132013 pA-G1401 JL Correct Spelling mistakeçä08022013 pA-G1401 GPF-12 JL Initial Function
+7e181c5d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä08192013 pA-G1401 GPF-12 JL Initial Function
+397c5618 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä08142013 pA-G1401 JL Initial Function
+6cf329d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4c27fedf -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4be65874 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+401523fd -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7080eeed -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6f8d2a44 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3ed66f33 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7cf7b23b -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+105057a3 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7efa7c99 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+49214666 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+77f07df7 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+27b41b97 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2c209c04 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6425d514 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+72db27bc -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+61a774d8 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+541edb18 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+25de0971 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2a70a06e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2adeaf5b -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+79905472 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+412063ad -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+46128a45 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1e524f4d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+384f90a5 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+8866a9d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+36c060fb -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+55689465 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+110aa5d2 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+492087c7 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7fa31432 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7cf668e2 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+51359cea -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+648a5b3a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1395a7ad -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+101b80b2 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+419f0ab9 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+19495a1c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3d60bb8a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+45f4006d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7d973e8e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2233af88 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+75bf6591 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+740c7226 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2f6acb8e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3c71c3f4 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+37d4f60a -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1ffb06d2 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+53c87119 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+311751bd -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+270775b2 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+68bdecda -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+64ee9add -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+77cabf8f -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4925214f -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+21edc1a5 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3b60211e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6071eb05 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5b41b6c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5e0ba02b -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2aa0d0f2 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+459936d4 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+46726e8e -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+460291d -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+4d1f129c -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+21f8770 -2 -2
+Description: Global PI Access Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1cf0a1a3 -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+4406d9f9 -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+17cb81e2 -2 -2
+Description: Global PI Access FunctionçäModification Log:çä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+1aefdd01 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+36b9c171 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+41304901 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+50933825 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+75bc9f1b -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+62648ff6 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6924164b -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+209ef1c0 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+59cb2f16 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+14e99bda -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3acad83c -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1a88eabe -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5e9aa965 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+2159f4e9 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+525e1084 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+7b735c8f -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+22e610e9 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1b53bd64 -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+f933ced -2 -2
+Description: Global PI Access Vectorçä çäModification Log:çä07/22/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+3d9a0352 -2 -2
+Description: Global PI Index Determination Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5214455e -2 -2
+Description: Global PI Index Determination Recursion Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+44c8f484 -2 -2
+Description: Global PI Index Determination Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+642b7230 -2 -2
+Description: Global PI Index Determination Recursion Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+1afa54d5 -2 -2
+Description: Global PI Index Determination Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+6131734a -2 -2
+Description: Global PI Index Determination Recursion Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+536339f5 -2 -2
+Description: Global PI Index Determination Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+d22eded -2 -2
+Description: Global PI Index Determination Recursion Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+3b493651 -2 -2
+Description: Global PI Index Determination Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+13b4a151 -2 -2
+Description: Global PI Index Determination Recursion Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+709132e8 -2 -2
+Description: Global PI Index Determination Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+5d815dbd -2 -2
+Description: Global PI Index Determination Recursion Functionçä çäModification Log:çä07232013 pA-G1401 GPF-12 JL Initial Function
+ee96753 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Log:çä11132013 pA-G1401 JL Use PI Callçä0732013 pA-G1401 GPF JL Initial Function
+3b279a81 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä0732013 pA-G1401 GPF JL Initial Function
+35c400b7 -2 -2
+Description:  Returns the FeeType.  If no fee rule is found, returns "".çä çäModification Logçä08142013 pA-G1401 JL Initial Override
+62e0c811 -2 -2
+Description:  Returns the FeeType.  If no fee rule is found, returns "".çä çäModification Logçä08142013 pA-G1401 JL Initial Override
+761ca111 -2 -2
+Description: Returns the fee cap amount.  If no fee rule is found, returns 0.çä çäModification Logçä08142013 pA-G1401 JL Initial Overrideçä çä
+2a3ef8b1 -2 -2
+Description: Global PI Access Overwrite Functionçä çäModification Log:çä11152013 pA-G1401 JL Initial Function
+4e709005 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+77589f37 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä06/04/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+3b25e3f1 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+781db0d0 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä05/23/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+4a343e9 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä06/17/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+2d65abb1 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä06/17/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+430fde50 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä07/22/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+aa0d87d -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä07/22/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+2fa5d6d7 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä07/22/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+4b5c3d4e -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä07/22/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+5433a673 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä07/22/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+4712eb9a -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä07/22/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+418b7cc5 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä0732013 pA-G1401 GPF JL Initial Function
+5a01b86c -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä0732013 pA-G1401 GPF JL Initial Function
+4bad9e3 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä0732013 pA-G1401 GPF JL Initial Function
+5c6acb4e -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä06/04/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+43d2ab43 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä0732013 pA-G1401 GPF JL Initial Function
+190e49c9 -2 -2
+Description: Global PI Access Overwrite Functionçä çäModification Log:çä11152013 pA-G1401 JL Initial Function
+711d8cf7 -2 -2
+Description: Global PI Access Overwrite Functionçä çäModification Log:çä11152013 pA-G1401 JL Initial Function
+488dbcde -2 -2
+Description: Global PI Access Overwrite Functionçä çäModification Log:çä11152013 pA-G1401 JL Initial Function
+67c8c596 -2 -2
+Description: Override function to route to support PAG Data Modelçä çäModification Logçä0732013 pA-G1401 GPF JL Initial Function
+740d540 -2 -2
+Description:  Access band code based on face amount from calcrules model.çä çäModification Log:çä0732013 pA-G1401 GPF JL Override to support Currency
+2a00686a -2 -2
+Description: Returns True (i.e. 1) if the policy is in a period in which the coverage rates are guaranteed.çä çäModification Logçä08132013 pA-G1401 JL Override. Check Renew Indicator, and use applicable rateçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3ddf626c -2 -2
+Description: Global PI Access Overwrite Functionçä çäModification Log:çä11152013 pA-G1401 JL Initial Function
+2544deef -2 -2
+Description: Returns the NAR allocation rule.  This is a new Policy Product extension:çäâââââOLifE/PolicyProduct/OLifEExtension/PolicyProductExtension/NARAllocMethodçä çäModification Logçä4/27/2011 - PAC015 - rm - Original rule/calculation
+36702e2a -2 -2
+Description: Returns the Country Group for a specific Countryçä çäModification Log:çä08132013 pA-G1401 JL Initail Rule
+410ff838 -2 -2
+Description: Returns the Occupation Class for a specific Occupationçä çäModification Log:çä08192013 pA-G1401 JL Initail Rule
+3cf92196 -2 -2
+Description:  Returns rules relating the Waiver of Premium Calcs.çä çäModification Log:çä09/29/2014 CSC Initial Calculation/Rule
+249d7fc3 -2 -2
+Description: This function sets the name of the Rate Location model. The name of the Rate Location model can vary by calling system and/or calling programçä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+5e05b5e8 -2 -2
+Discription: Table of PI Object Names for PAG Data Modelçä çäModification Log:çä0732013 pA-G1401 GPF JL Initial Table
+5e05b5e8 1 -1
+çä çä08/23/2013 CMC updated for Generated Function Name
+5e05b5e8 3 -1
+08/23/2013 CMC updated for Generated Function Name
+;Offset=00000000

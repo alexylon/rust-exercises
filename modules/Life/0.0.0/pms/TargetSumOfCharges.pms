@@ -1,0 +1,196 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 3f41cc 0 3f4808 0 0 0 0
+
+X0 3f4808 3f41cc 0 0 0 0 0
+-- All Test Cases --
+O0 3f407c 0 0 0 0 0 0
+
+E0 3f40ec 0 0 0 0 0 0
+
+L0 3f415c 0 0 0 0 0 0
+
+B0 3f431c 0 0 0 0 0 0
+
+P3 3f423c 0 3fb010 0 0 0 2
+
+--description
+The Sum of Charges Target Calculations Model will include properties and functions which can be called to return various target premiums which are calculated utilizing  çäthe sum of the cost of insurance charges, rider charges, and coverage option charges over the no lapse period, plus an amount equal to the surrender charge at the end of the no lapse premium period divided by the number of months in the no lapse period.çä çäThe target provisions are defined in the product definition and/or product calculation rules.çä çäRELEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.4.1"
+P13 3fb010 3f423c 3fb2e8 0 0 0 2
+Universal Life
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Target premium calculations for Universal Life products. The target premium calculation types are commissionable, surrender, and load. çä  â The solve method implemented is the sum of charges solve.çä Author:  Dimitry Masalovçä Date:     01/17/2007 çä Modification Log:çä Date              Modeler               Change Descriptionçä 01/17/2007     Dimitry Masalov    Created model.çäçäThe sum of charges minimum no lapse premium will equal the monthly premium necessary to cover the sum of the cost of insurance charges, rider charges, çäand coverage option charges over the no lapse premium period, plus an amount equal to the surrender charge at the end of the no lapse premium period, çädivided by the number of months in the no lapse protection period.çä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"TargetSumOfCharges.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P10 3fb2e8 3fb010 0 0 0 0 2
+Test Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Test Sum Of Charges Target Monthly Target(coverageIndex; coverageOptionIndex)
+'SumOfCharge Monthly Target'('V CalcType MTGT MNLP'('CalcType MTGT Identifier';coverageIndex;coverageOptionIndex);'GEN Vector Blank';TransEffDur)
+OUTPUT Test Sum Of Charges Target Avg Premium Load Rate(coverageIndex; coverageOptionIndex)
+'SumOfCharge Avg Premium Load Rate'('CalcType MTGT'('GEN Vector Blank');'GEN Vector Blank')
+OUTPUT Test Sum Of Charges Target Total Charges(coverageIndex; coverageOptionIndex)
+'SumOfCharge Total Charges'('V CalcType MTGT MNLP'('CalcType MTGT Identifier';coverageIndex;coverageOptionIndex);'GEN Vector Blank')
+OUTPUT Test Sum Of Charges Target Total Annual Charge(coverageIndex; coverageOptionIndex; yearIndex)
+'SumOfCharge Total Annual Charge'('V CalcType MTGT MNLP'('CalcType MTGT Identifier';coverageIndex;coverageOptionIndex);yearIndex;'GEN Vector Blank')
+OUTPUT Test Sum Of Charges Target Total Monthly Charge(coverageIndex; coverageOptionIndex; yearIndex; monthIndex)
+'SumOfCharge Total Monthly Charge'('V CalcType MTGT MNLP'('CalcType MTGT Identifier';coverageIndex;coverageOptionIndex);yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Test Sum Of Charges Target Months In MAP Period(coverageIndex; coverageOptionIndex)
+'SumOfCharge Months In MAP Period'('V CalcType MTGT MNLP'('CalcType MTGT Identifier';coverageIndex;coverageOptionIndex))
+OUTPUT Test Sum Of Charges Target MAP Period Duration(coverageIndex; coverageOptionIndex)
+'SumOfCharge MAP Period Duration'('V CalcType MTGT MNLP'('CalcType MTGT Identifier';coverageIndex;coverageOptionIndex))
+F0 3f42ac 0 3fc3c0 0 0 0 0
+
+F1 3fc3c0 3f42ac 3fc478 0 0 0 2
+:SumOfCharge
+Funktion
+
+F1 3fc478 3fc3c0 197fd26f 3fd668 0 0 2
+-- Sum of Charges Target Calculation Functions --
+Funktion
+
+F1 197fd26f 3fc478 2869b8ef 0 0 0 2
+SumOfCharge Monthly Target(calcType; vectorSolveParms; yearIndex)
+Funktion
+'GEN Round'((('SumOfCharge Total Charges'(calcType;vectorSolveParms) + 'SumOfCharge Surrender Charge Amount'(calcType;'SumOfCharge MAP Period Duration'(calcType))) / 'SumOfCharge Months In MAP Period'(calcType)) / (1 - 'SumOfCharge Avg Premium Load Rate'(calcType;vectorSolveParms;yearIndex));2)
+F1 2869b8ef 197fd26f 0 3fcd90 0 0 2
+SumOfCharge Avg Premium Load Rate(calcType; vectorSolveParms; yearIndex)
+Funktion
+IF ('Std Calling System Is Illustration Based' && NOT('ACCS TARGET CalcMethod Used'(calcType) = 1 || 'ACCS TARGET CalcMethod Used'(calcType) = 1000500001) && IF ('SharedVector SolveParms FaceAmount Passed'(0;vectorSolveParms) ; çä  'TARGET Total Target Premium FaceSolve'('SharedVector SolveParms FaceAmount'(0;vectorSolveParms;TransEffDur);calcType) ; çä  'TARGET Total Target Premium'('CalcType LTGT'(calcType);yearIndex)çä) = 0 ; çä /*Illustration run and Target is zero*//*Return zero premium load rate*/ 0 ; çäIF (NOT('Std Calling System Is Illustration Based') && 'Policy Coverage TargetPremAmt'(0) = 0 ; çä   /*Return zero premium load rate*/ 0 ; çä   // ElseçäSUMX(yearIndex;1;'SumOfCharge MAP Period Duration'(calcType);'PLC Projected Total Premium Load Charge'( //'CalcType MTGT'(calcType); çäcalcType;'FeeType PremiumLoad';#yearIndex;IF ('CalcType LTGT Is Active'(calcType) && ('ACCS TARGET CalcMethod Used'(calcType) = 1 || 'ACCS TARGET CalcMethod Used'(calcType) = 1000500001) ; çä    1 ; çä    IF ('SharedVector SolveParms FaceAmount Passed'(0;vectorSolveParms) ; çä      'TARGET Total Target Premium FaceSolve'('SharedVector SolveParms FaceAmount'(0;vectorSolveParms;TransEffDur);'CalcType LTGT'(calcType)) ; çä      'Policy Coverage TargetPremAmt'(0)çä    )çä);IF ('CalcType LTGT Is Active'(calcType) && ('ACCS TARGET CalcMethod Used'(calcType) = 1 || 'ACCS TARGET CalcMethod Used'(calcType) = 1000500001) ; çä1 ; çäIF ('SharedVector SolveParms FaceAmount Passed'(0;vectorSolveParms) ; çä  V_('TARGET Total Target Premium FaceSolve'('SharedVector SolveParms FaceAmount'(0;vectorSolveParms;TransEffDur);'CalcType LTGT'(calcType))) ; çä  'TARGET Premium'('CalcType LTGT'(calcType);yearIndex)çä)çä); //'TARGET Premium'('CalcType LTGT'(calcType));çä0) /*end sumx*/  / IF ('Std Calling System Is Illustration Based' ; çä /*Solve for Illustration*/ IF ('CalcType LTGT Is Active'(calcType) && ('ACCS TARGET CalcMethod Used'(calcType) = 1 || 'ACCS TARGET CalcMethod Used'(calcType) = 1000500001) ; çä1 ; çäIF ('SharedVector SolveParms FaceAmount Passed'(0;vectorSolveParms) ; çä'TARGET Total Target Premium FaceSolve'('SharedVector SolveParms FaceAmount'(0;vectorSolveParms;TransEffDur);'CalcType LTGT'(calcType)) ; çä'TARGET Total Target Premium'('CalcType LTGT'(calcType);yearIndex)çä)çä) ; çä /*else use INPUT*/ 'Policy Coverage TargetPremAmt'(0)çä))çä)çä) / 'SumOfCharge MAP Period Duration'(calcType)
+F1 3fcd90 197fd26f 3fce88 3fd310 0 0 2
+SumOfCharge Total Charges(calcType; vectorSolveParms)
+Funktion
+SUMX(yr;1;'SumOfCharge MAP Period Duration'(calcType);'SumOfCharge Total Annual Charge'(calcType;#yr;vectorSolveParms))
+F1 3fce88 3fcd90 3fcfb0 0 0 0 2
+SumOfCharge Total Annual Charge(calcType; yearIndex; vectorSolveParms)
+Funktion
+SUMX(month;1;12;'SumOfCharge Total Monthly Charge'(calcType;yearIndex;#month;vectorSolveParms))
+F1 3fcfb0 3fce88 3fd0c8 0 0 0 2
+SumOfCharge Total Monthly Charge(calcType; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'CHG Projected Monthly Total Charges'(calcType;0; //bom_cvçä0; //past premçäyearIndex;monthIndex;vectorSolveParms)
+F1 3fd0c8 3fcfb0 0 3fd180 0 0 2
+SumOfCharge prev End Of Month year(yearIndex; monthIndex)
+Funktion
+IF ( /*policy start month*/ monthIndex = 1 && yearIndex = 1 ; çä   /*Return year 1*/ 1 ; çä   /*Reduce year by one if this is month 1*/ IF (monthIndex = 1 ; çä    yearIndex - 1 ; çä    yearIndexçä  )çä)
+F1 3fd180 3fcfb0 0 0 0 0 2
+SumOfCharge prev End Of Month month(yearIndex; monthIndex)
+Funktion
+IF ( /*Policy start month*/ monthIndex = 1 && yearIndex = 1 ; çä   /*Return month 1*/ 1 ; çä   /*else reduce month by 1 (unless previous month was 1)*/ IF (monthIndex = 1 ; çä    12 ; çä    monthIndex - 1çä  )çä)
+F1 3fd310 197fd26f 0 3fd440 0 0 2
+SumOfCharge Surrender Charge Amount(calcType; yearIndex)
+Funktion
+'ULSC Projected Full Surrender Charge'(calcType;yearIndex;'GEN Vector Blank')
+F1 3fd440 197fd26f 3fd578 0 0 0 2
+SumOfCharge Months In MAP Period(calcType)
+Funktion
+'SumOfCharge MAP Period Duration'(calcType) * 12
+F1 3fd578 3fd440 0 0 0 0 2
+SumOfCharge MAP Period Duration(calcType)
+Funktion
+'PIDRV NLG ExpirationDuration'(calcType)
+F1 3fd668 3fc3c0 3fd818 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 3fd818 3fd668 0 3fd8d0 0 0 2
+Vector SOCTGT CVProj Parms(yearIndex)
+Funktion
+v_(0; // Check for lapse (True or False)çä0; // Initial lump sum paymentçä0; // Adjust for DEFRAçä'GEN Vector Blank'; // Guideline limits for each year up to yearIndexçä0; // Varying premiums (True or False)çä'GEN Vector Blank'; // Vector of premiums by year (if premiums are to vary)çä'GEN Vector Blank'; // Vector of annual load target premiums by coverageçä1; // Start yearçä1 // Start monthçä)
+F1 3fd8d0 3fd668 0 0 0 0 2
+SumOfCharge Model Name
+Funktion
+"Target_SumOfCharges"
+A0 3f438c 0 0 0 0 0 0
+
+T0 3f43fc 0 0 0 0 0 0
+
+I0 3f446c 0 3fdae8 0 0 0 0
+
+I0 3fdae8 3f446c 0 0 0 0 0
+CashValueProjections.pms
+-
+O0
+E0
+L0
+B0
+P2
+3fb010
+3fb2e8
+F6
+3fc3c0
+3fc478
+197fd26f
+3fd668
+3fd818
+3fd8d0
+A0
+T0
+!18
+3fb2e8 3 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/12/2011 - PAC013 calcType - BT - Restructure
+3fb2e8 4 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/09/2011 pA Regression CMC Added solve parms vector as a parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+3fb2e8 5 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+3fb2e8 6 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+3fb2e8 7 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+3fb2e8 8 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+3fb2e8 9 -1
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+197fd26f -2 -2
+Description: Returns the total monthly target premium amount based on the sum of charges method for the particular target calculation type.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä02/09/2011 pA Regression CMC Added solve parms vector as a parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+2869b8ef -2 -2
+Description: Returns the average premium load rate over the MAP period.  çäAssume a premium paid equal to the load target premium to back into the premium load percent.  çäIf the target premium passed is 0, assume no premium load (to avoid a divide by zero error).çä çäModification Log:çä çä11/8/2013pA 1401 - 26 CMC removed yearIndex from calls to face solve functionçä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä5/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/26/2011 CL Merge CMC regression update following mergeçä02/10/2011 pA Regression CMC in premium load charge only pass a 1 as the target premium when doing a load target solve.çä02/09/2011 pA Regression CMC Added solve parms vector as a parm.  Modified to use a $1 face amount when solving for this type of target premium.çä2/2/2011 - PAC013 calctype - BT - add TARGET Premiumçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/25/2008 CSC Updated to calc target when run for Illustrationsçä10/31/2007 Initial Calculation/Rule
+3fcd90 -2 -2
+Description: Returns the total sum of charges amount over the MAP periodçä çäModification Log:çä10/31/2007 Initial Calculation/Rule
+3fce88 -2 -2
+Description: Calculates the total charge amount for a given yearçä çäModification Log:çä10/31/2007 Initial Calculation/Rule
+3fcfb0 -2 -2
+Description: Calculates the total charge for a given month by accessing the expense charge function in the included VPA_Calc_Charges.pms modelçä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 Initial Calculation/Rule
+3fd0c8 -2 -2
+Description: Previous end of month (EOM) year. Used for cash value functions.çä çäModification Log:çä10/31/2007 Initial Calculation/Rule
+3fd180 -2 -2
+Description: Previous end of month (EOM) month. Used for cash value functions.çä çäModification Log:çä10/31/2007 Initial Calculation/Rule
+3fd310 -2 -2
+Description: Returns the surrender charge amount at the desired contract duration yr_tçä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 Initial Calculation/Rule
+3fd440 -2 -2
+Description: Calculates the number of months in the MAP periodçä çäModification Log:çä10/31/2007 Initial Calculation/Rule
+3fd578 -2 -2
+Description: Returns the annual duration of the MAP period.  Loop through all the coverage options attached to the base coverage and check for No Lapse Guarantee Coverage Optionçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/2009 nbA Integration modified to use the new no lapse provision checking.çä10/31/2007 Initial Calculation/Rule
+3fd818 -2 -2
+Description:  Returns a vector of the additional information needed for the cash value projections for Minimum No Lapse Premium calculationsçä çäModification Log:çä10/31/2007 Initial Calculation/Rule
+;Offset=00000000

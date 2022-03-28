@@ -1,0 +1,1946 @@
+;1	08.12.2016 13:38:32	jlawrie2	
+X0 1ec25ae8 0 0 0 0 0 0
+
+O0 28748606 0 0 0 0 0 0
+
+E0 6e50fa97 0 0 0 0 0 0
+
+L0 eebb8f3 0 0 0 0 0 0
+
+B0 59f4f219 0 0 0 0 0 0
+
+P1 782083d2 0 1132daf6 0 0 0 2
+
+--description
+CalcType model constains CalcType functionality which enables a modeler to re-use functions for different purposes.  These are routinely used throughout the base pA content calculations; they are not associated with specificly defined outputs.çä çäIncludes base pA content models Standard.pmsçä çäRELEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1301 - PAC028 Shadow Account Catch Up PremiumçäRELEASE 1101 - PAC024 Policy Owner Annual Statement Projectionsçä5/11/2011 - PAC013 - CalcType - BT - New Model Createdçä5/13/2011 - PAC017 - FINRA Rule 2211 - VM - accommodate new calctypes.çä
+P13 1132daf6 782083d2 0 0 0 0 2
+CalcType Model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Calctype.PMS"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"CalcType.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+F0 317211d4 0 81d7cd 0 0 0 0
+
+F1 81d7cd 317211d4 3c05450 0 0 0 2
+:CalcType
+Funktion
+
+F1 3c05450 81d7cd 76c7b6b3 428a2618 0 0 2
+CalcType Initial Vector(calcType)
+Funktion
+'CalcType Variable Illustration'('CalcType Annual Statement Projection'(calcType))
+F1 76c7b6b3 3c05450 0 34da333b 0 0 2
+CalcType Variable Illustration(calcType)
+Funktion
+IF ('CalcType Is VarIllGuarAssumed Identifier'(calcType) ; çä  'CalcType VarIllGuarAssumed'(calcType) ; çä  IF ('CalcType Is VarIllCurrAssumed Identifier'(calcType) ; çä    'CalcType VarIllCurrAssumed'(calcType) ; çä    IF ('CalcType Is VarIllGuarZero Identifier'(calcType) ; çä      'CalcType VarIllGuarZero'(calcType) ; çä      IF ('CalcType Is VarIllCurrZero Identifier'(calcType) ; çä        'CalcType VarIllCurrZero'(calcType) ; çä        IF ('CalcType Is VarIllGuarMid Identifier'(calcType) ; çä          'CalcType VarIllGuarMid'(calcType) ; çä          IF ('CalcType Is VarIllCurrMid Identifier'(calcType) ; çä            'CalcType VarIllCurrMid'(calcType) ; çä            calcTypeçä          )çä      )çä  )çä)çä)çä)
+F1 34da333b 3c05450 0 0 0 0 2
+CalcType Annual Statement Projection(calcType)
+Funktion
+IF ('Calculate AS Projections with Planned Premium'(calcType) ; çä  'CalcType AS Planned Premium'("") ; çä  IF ('Calculate AS Projections with No Premium'(calcType) ; çä    'CalcType AS No Premium'("") ; çä    IF ('Calculate AS Projections with Alternative Premium'(calcType) ; çä      'CalcType AS Alternative Premium'("") ; çä      IF ('Calculate AS Projections with Shadow Premium'(calcType) ; çä        'CalcType AS Shadow Account Premium'("") ; çä        calcTypeçä      )çä  )çä)çä)
+F1 428a2618 81d7cd b3290c0 4b8dde93 0 0 2
+-- Identifiers --
+Funktion
+
+F1 b3290c0 428a2618 61339467 2fac31ee 0 0 2
+-- Advanced Marketing Illustrations --
+Funktion
+
+F1 61339467 b3290c0 0 3fa4a17f 0 0 2
+CalcType AMICV Identifier
+Funktion
+"AMICV"
+F1 3fa4a17f b3290c0 0 47ac2556 0 0 2
+CalcType AMIDB Identifier
+Funktion
+"AMIDB"
+F1 47ac2556 b3290c0 0 6ab36f98 0 0 2
+CalcType AMIPCT Identifier
+Funktion
+"AMIPCT"
+F1 6ab36f98 b3290c0 0 0 0 0 2
+CalcType AMIPREM Identifier
+Funktion
+"AMIPREM"
+F1 2fac31ee 428a2618 498c09c8 1fff6dfb 0 0 2
+-- Annual Statement --
+Funktion
+
+F1 498c09c8 2fac31ee 0 573a898d 0 0 2
+CalcType AS PLANPRM Identifier
+Funktion
+"PLANPRM"
+F1 573a898d 2fac31ee 0 df5c786 0 0 2
+CalcType AS NOPRM Identifier
+Funktion
+"NOPRM"
+F1 df5c786 2fac31ee 0 5acdf6ca 0 0 2
+CalcType AS ALTPRM Identifier
+Funktion
+"ALTPRM"
+F1 5acdf6ca 2fac31ee 0 741a837a 0 0 2
+CalcType AS SHADOWPRM Identifier
+Funktion
+"SHADOWPRM"
+F1 741a837a 2fac31ee 0 7445f593 0 0 2
+CalcType AS NXTANNIV Identifier
+Funktion
+"NXTANNIV"
+F1 7445f593 2fac31ee 0 0 0 0 2
+CalcType AS MATURITY Identifier
+Funktion
+"MATURITY"
+F1 1fff6dfb 428a2618 265f2655 2902c191 0 0 2
+-- Product Types --
+Funktion
+
+F1 265f2655 1fff6dfb 0 1305c7ff 0 0 2
+CalcType Fixed Identifier
+Funktion
+"FIXED"
+F1 1305c7ff 1fff6dfb 0 0 0 0 2
+CalcType Variable Identifier
+Funktion
+"VARIABLE"
+F1 2902c191 428a2618 657d768 4ae5cd2a 0 0 2
+-- Rate Assumption --
+Funktion
+
+F1 657d768 2902c191 71bc3561 558fdf2a 0 0 2
+-- Primary --
+Funktion
+
+F1 71bc3561 657d768 0 77eaa764 0 0 2
+CalcType Current Identifier
+Funktion
+"C"
+F1 77eaa764 657d768 0 2568962f 0 0 2
+CalcType Guaranteed Identifier
+Funktion
+"G"
+F1 2568962f 657d768 0 5f4063ed 0 0 2
+CalcType Midpoint Identifier
+Funktion
+"M"
+F1 5f4063ed 657d768 0 0 0 0 2
+CalcType Assumed Identifier
+Funktion
+"A"
+F1 558fdf2a 2902c191 43267b5c 0 0 0 2
+-- Secondary --
+Funktion
+
+F1 43267b5c 558fdf2a 0 128210be 0 0 2
+CalcType Current 2 Identifier
+Funktion
+"C2"
+F1 128210be 558fdf2a 0 5e94cc47 0 0 2
+CalcType Guaranteed 2 Identifier
+Funktion
+"G2"
+F1 5e94cc47 558fdf2a 0 6b7b00d7 0 0 2
+CalcType Midpoint 2 Identifier
+Funktion
+"M2"
+F1 6b7b00d7 558fdf2a 0 d8bea79 0 0 2
+CalcType Assumed 2 Identifier
+Funktion
+"A2"
+F1 d8bea79 558fdf2a 0 7991fcfa 0 0 2
+CalcType AssumedNULL 2 Identifier
+Funktion
+"ANULL"
+F1 7991fcfa 558fdf2a 0 0 0 0 2
+CalcType AssumedMID 2 Identifier
+Funktion
+"AMID"
+F1 4ae5cd2a 428a2618 79b2f518 24805f32 0 0 2
+-- Targets --
+Funktion
+
+F1 79b2f518 4ae5cd2a 0 52430564 0 0 2
+CalcType CTGT Identifier
+Funktion
+"CTGT"
+F1 52430564 4ae5cd2a 0 6a9d7fb6 0 0 2
+CalcType STGT Identifier
+Funktion
+"STGT"
+F1 6a9d7fb6 4ae5cd2a 0 1e2964e7 0 0 2
+CalcType LTGT Identifier
+Funktion
+"LTGT"
+F1 1e2964e7 4ae5cd2a 0 4a98035e 0 0 2
+CalcType MTGT Identifier
+Funktion
+"MTGT"
+F1 4a98035e 4ae5cd2a 0 0 0 0 2
+CalcType SHGT Identifier
+Funktion
+"SHGT"
+F1 24805f32 428a2618 1137cd38 6ac8a4f9 0 0 2
+-- Dates --
+Funktion
+
+F1 1137cd38 24805f32 0 34b50ed7 0 0 2
+CalcType LastCalYear Identifier
+Funktion
+"LastCalYear"
+F1 34b50ed7 24805f32 0 3f247461 0 0 2
+CalcType LastAnn Identifier
+Funktion
+"LastAnn"
+F1 3f247461 24805f32 0 7dd448b5 0 0 2
+CalcType FirstPSurrCalYear Identifier
+Funktion
+"FirstPSurrCalYear"
+F1 7dd448b5 24805f32 0 7f016edc 0 0 2
+CalcType FirstPSurrPolYear Identifier
+Funktion
+"FirstPSurrPolYear"
+F1 7f016edc 24805f32 0 0 0 0 2
+CalcType TransYear Identifier
+Funktion
+"TransYear"
+F1 6ac8a4f9 428a2618 5350ff66 51a2d37b 0 0 2
+-- GMB --
+Funktion
+
+F1 5350ff66 6ac8a4f9 0 7cb79b41 0 0 2
+CalcType GMDB Identifier
+Funktion
+"GMDB"
+F1 7cb79b41 6ac8a4f9 0 19adc42b 0 0 2
+CalcType GMIB Identifier
+Funktion
+"GMIB"
+F1 19adc42b 6ac8a4f9 0 0 0 0 2
+CalcType GMWB Identifier
+Funktion
+"GMDB"
+F1 51a2d37b 428a2618 25d16fa6 7fb8e64b 0 0 2
+-- 7702 --
+Funktion
+
+F1 25d16fa6 51a2d37b 0 5e58f799 0 0 2
+CalcType GLP Identifier
+Funktion
+"GLP"
+F1 5e58f799 51a2d37b 0 5f83620d 0 0 2
+CalcType GSP Identifier
+Funktion
+"GSP"
+F1 5f83620d 51a2d37b 0 17461b13 0 0 2
+CalcType 7PP Identifier
+Funktion
+"7PP"
+F1 17461b13 51a2d37b 0 21bd116c 0 0 2
+CalcType 7PN Identifier
+Funktion
+"7PN"
+F1 21bd116c 51a2d37b 0 f4b6608 0 0 2
+CalcType NPT Identifier
+Funktion
+"NPT"
+F1 f4b6608 51a2d37b 0 0 0 0 2
+CalcType GLLOAD Identifier
+Funktion
+"GLLOAD"
+F1 7fb8e64b 428a2618 0 59127b6b 0 0 2
+CalcType APO Identifier
+Funktion
+"APO"
+F1 59127b6b 428a2618 0 3f2b83c 0 0 2
+CalcType CURR Identifier
+Funktion
+"CURR"
+F1 3f2b83c 428a2618 0 6ccc859e 0 0 2
+CalcType CVAT Identifier
+Funktion
+"CVAT"
+F1 6ccc859e 428a2618 0 7a68dfc2 0 0 2
+CalcType CVBasePUA Identifier
+Funktion
+"CVBasePUA"
+F1 7a68dfc2 428a2618 0 405f9577 0 0 2
+CalcType CVBIRPUADiv Identifier
+Funktion
+"CVBIRPUADiv"
+F1 405f9577 428a2618 0 25755431 0 0 2
+CalcType CVBIRPUAPrem Identifier
+Funktion
+"CVBIRPUAPrem"
+F1 25755431 428a2618 0 4f97ed29 0 0 2
+CalcType CVPUARDiv Identifier
+Funktion
+"CVPUARDiv"
+F1 4f97ed29 428a2618 0 7903e752 0 0 2
+CalcType CVPUARPrem Identifier
+Funktion
+"CVPUARPrem"
+F1 7903e752 428a2618 0 779c6bc0 0 0 2
+CalcType DivBase Identifier
+Funktion
+"DivBase"
+F1 779c6bc0 428a2618 0 10959b0d 0 0 2
+CalcType DivBasePUA Identifier
+Funktion
+"DivBasePUA"
+F1 10959b0d 428a2618 0 5953d90a 0 0 2
+CalcType DivBIRPUADiv Identifier
+Funktion
+"DivBIRPUADiv"
+F1 5953d90a 428a2618 0 22f87ebd 0 0 2
+CalcType DivBIRPUAPrem Identifier
+Funktion
+"DivBIRPUAPrem"
+F1 22f87ebd 428a2618 0 30f4e404 0 0 2
+CalcType DivPUARDiv Identifier
+Funktion
+"DivPUARDiv"
+F1 30f4e404 428a2618 0 4cb62030 0 0 2
+CalcType DivPUARPrem Identifier
+Funktion
+"DivPUARPrem"
+F1 4cb62030 428a2618 0 6709214b 0 0 2
+CalcType ILLUS Identifier
+Funktion
+"ILLUS"
+F1 6709214b 428a2618 0 79572d48 0 0 2
+CalcType IRS Premium Identifier
+Funktion
+"IRSPREM"
+F1 79572d48 428a2618 0 425bef0c 0 0 2
+CalcType PREM Identifier
+Funktion
+"PREM"
+F1 425bef0c 428a2618 0 4096de33 0 0 2
+CalcType RPU Identifier
+Funktion
+"RPU"
+F1 4096de33 428a2618 0 6bfbb138 0 0 2
+CalcType SHADOW Identifier
+Funktion
+"SHADOW"
+F1 6bfbb138 428a2618 0 6563393a 0 0 2
+CalcType SHADOWCatchUp Identifier
+Funktion
+"SHADOWCatchUp"
+F1 6563393a 428a2618 0 699841ed 0 0 2
+CalcType Substandard Identifier
+Funktion
+"SSTD"
+F1 699841ed 428a2618 0 4d8bb518 0 0 2
+CalcType VarIllGuarAssumed Identifier
+Funktion
+"VarIllGuarAssumed"
+F1 4d8bb518 428a2618 0 22016b26 0 0 2
+CalcType VarIllCurrAssumed Identifier
+Funktion
+"VarIllCurrAssumed"
+F1 22016b26 428a2618 0 400ecd0c 0 0 2
+CalcType VarIllGuarZero Identifier
+Funktion
+"VarIllGuarZero"
+F1 400ecd0c 428a2618 0 22dd776e 0 0 2
+CalcType VarIllCurrZero Identifier
+Funktion
+"VarIllCurrZero"
+F1 22dd776e 428a2618 0 4de26a35 0 0 2
+CalcType VarIllGuarMid Identifier
+Funktion
+"VarIllGuarMid"
+F1 4de26a35 428a2618 0 0 0 0 2
+CalcType VarIllCurrMid Identifier
+Funktion
+"VarIllCurrMid"
+F1 4b8dde93 81d7cd 9df369b 464ce678 0 0 2
+-- CalcTypes --
+Funktion
+
+F1 9df369b 4b8dde93 5451ddd9 7c535a8f 0 0 2
+-- Annual Statement --
+Funktion
+
+F1 5451ddd9 9df369b 0 53dbe2ed 0 0 2
+CalcType AS Planned Premium(calcType)
+Funktion
+'CalcType Switch AS PlanPrem'(calcType;'CalcType AS PLANPRM Identifier')
+F1 53dbe2ed 9df369b 0 2ea90f76 0 0 2
+CalcType AS No Premium(calcType)
+Funktion
+'CalcType Switch AS NoPrem'(calcType;'CalcType AS NOPRM Identifier')
+F1 2ea90f76 9df369b 0 1447b7fe 0 0 2
+CalcType AS Alternative Premium(calcType)
+Funktion
+'CalcType Switch AS AltPrem'(calcType;'CalcType AS ALTPRM Identifier')
+F1 1447b7fe 9df369b 0 6487e311 0 0 2
+CalcType AS Shadow Account Premium(calcType)
+Funktion
+'CalcType Switch AS ShadowAcctPrem'(calcType;'CalcType AS SHADOWPRM Identifier')
+F1 6487e311 9df369b 0 2d0d9e6a 0 0 2
+CalcType AS Next Anniversary(calcType)
+Funktion
+'CalcType Switch AS NextAnniversary'(calcType;'CalcType AS NXTANNIV Identifier')
+F1 2d0d9e6a 9df369b 0 0 0 0 2
+CalcType AS Maturity(calcType)
+Funktion
+'CalcType Switch AS Maturity'(calcType;'CalcType AS MATURITY Identifier')
+F1 7c535a8f 4b8dde93 263a02b0 6bb3aea6 0 0 2
+-- Product Type --
+Funktion
+
+F1 263a02b0 7c535a8f 0 4c5f2c19 0 0 2
+CalcType Fixed(calcType)
+Funktion
+'CalcType Switch Fixed'(calcType;'CalcType Fixed Identifier')
+F1 4c5f2c19 7c535a8f 0 0 0 0 2
+CalcType Variable(calcType)
+Funktion
+'CalcType Switch Variable'(calcType;'CalcType Variable Identifier')
+F1 6bb3aea6 4b8dde93 2255e59b 2d7c2289 0 0 2
+-- Calling System --
+Funktion
+
+F1 2255e59b 6bb3aea6 0 0 0 0 2
+CalcType ILLUS(calcType)
+Funktion
+'CalcType Switch ILLUS'(calcType;'CalcType ILLUS Identifier')
+F1 2d7c2289 4b8dde93 232949fb 3e91941a 0 0 2
+-- Rate Assumptions --
+Funktion
+
+F1 232949fb 2d7c2289 70ac0f4e 284d8b65 0 0 2
+-- Primary --
+Funktion
+
+F1 70ac0f4e 232949fb 38ce708d 3b774f 0 0 2
+CalcType Rate Assumption Off(calcType)
+Funktion
+IF ('CalcType Current Is Active'(calcType) ; çä  'CalcType Current Off'(calcType) ; çä  IF ('CalcType Guaranteed Is Active'(calcType) ; çä    'CalcType Guaranteed Off'(calcType) ; çä    IF ('CalcType Midpoint Is Active'(calcType) ; çä      'CalcType Midpoint Off'(calcType) ; çä      'CalcType Assumed Off'(calcType)çä    )çä)çä)
+F1 38ce708d 70ac0f4e 0 3ed0b536 0 0 2
+CalcType Current Off(calcType)
+Funktion
+IF ('CalcType RA Element is Alike Identifier'(calcType;'CalcType Current Identifier') ; çä  'CalcType Switch Curr'(calcType;0) ; çä  calcTypeçä)
+F1 3ed0b536 70ac0f4e 0 309ccf96 0 0 2
+CalcType Guaranteed Off(calcType)
+Funktion
+IF ('CalcType RA Element is Alike Identifier'(calcType;'CalcType Guaranteed Identifier') ; çä  'CalcType Switch Guar'(calcType;0) ; çä  calcTypeçä)
+F1 309ccf96 70ac0f4e 0 343085a3 0 0 2
+CalcType Midpoint Off(calcType)
+Funktion
+IF ('CalcType RA Element is Alike Identifier'(calcType;'CalcType Midpoint Identifier') ; çä  'CalcType Switch Midpoint'(calcType;0) ; çä  calcTypeçä)
+F1 343085a3 70ac0f4e 0 0 0 0 2
+CalcType Assumed Off(calcType)
+Funktion
+IF ('CalcType RA Element is Alike Identifier'(calcType;'CalcType Assumed Identifier') ; çä  'CalcType Switch Assumed'(calcType;0) ; çä  calcTypeçä)
+F1 3b774f 232949fb 0 5c518f58 0 0 2
+CalcType Current(calcType)
+Funktion
+'CalcType Switch Curr'(calcType;'CalcType Current Identifier')
+F1 5c518f58 232949fb 0 3bfcd40c 0 0 2
+CalcType Guaranteed(calcType)
+Funktion
+'CalcType Switch Guar'(calcType;'CalcType Guaranteed Identifier')
+F1 3bfcd40c 232949fb 0 7bac917d 0 0 2
+CalcType Midpoint(calcType)
+Funktion
+'CalcType Switch Midpoint'(calcType;'CalcType Midpoint Identifier')
+F1 7bac917d 232949fb 0 0 0 0 2
+CalcType Assumed(calcType)
+Funktion
+'CalcType Switch Assumed'(calcType;'CalcType Assumed Identifier')
+F1 284d8b65 2d7c2289 7513f68f 30e243d1 0 0 2
+-- Secondary --
+Funktion
+
+F1 7513f68f 284d8b65 0 12456c9e 0 0 2
+CalcType Assumed 2(calcType)
+Funktion
+'CalcType Switch Assumed 2'(calcType;'CalcType Assumed 2 Identifier')
+F1 12456c9e 284d8b65 0 6810e1fb 0 0 2
+CalcType Current 2(calcType)
+Funktion
+'CalcType Switch Curr 2'(calcType;'CalcType Current 2 Identifier')
+F1 6810e1fb 284d8b65 0 7795e942 0 0 2
+CalcType Guaranteed 2(calcType)
+Funktion
+'CalcType Switch Guar 2'(calcType;'CalcType Guaranteed 2 Identifier')
+F1 7795e942 284d8b65 0 74d5174a 0 0 2
+CalcType Midpoint 2(calcType)
+Funktion
+'CalcType Switch Midpoint 2'(calcType;'CalcType Midpoint 2 Identifier')
+F1 74d5174a 284d8b65 0 17535f28 0 0 2
+CalcType AssumedNULL 2(calcType)
+Funktion
+'CalcType Switch AssumedNULL 2'(calcType;'CalcType AssumedNULL 2 Identifier')
+F1 17535f28 284d8b65 0 0 0 0 2
+CalcType AssumedMID 2(calcType)
+Funktion
+'CalcType Switch AssumedMID 2'(calcType;'CalcType AssumedMID 2 Identifier')
+F1 30e243d1 2d7c2289 3ed38363 0 0 0 2
+-- Combination --
+Funktion
+
+F1 3ed38363 30e243d1 0 6863acaf 0 0 2
+CalcType VarIllCurrAssumed(calcType)
+Funktion
+'CalcType Variable'('CalcType ILLUS'('CalcType Current'('CalcType Assumed 2'('GEN Vector Blank'))))
+F1 6863acaf 30e243d1 0 265f993a 0 0 2
+CalcType VarIllCurrZero(calcType)
+Funktion
+'CalcType Variable'('CalcType ILLUS'('CalcType Current'('CalcType AssumedNULL 2'('GEN Vector Blank'))))
+F1 265f993a 30e243d1 0 66b8504a 0 0 2
+CalcType VarIllGuarZero(calcType)
+Funktion
+'CalcType Variable'('CalcType ILLUS'('CalcType Guaranteed'('CalcType AssumedNULL 2'('GEN Vector Blank'))))
+F1 66b8504a 30e243d1 0 641befd 0 0 2
+CalcType VarIllGuarAssumed(calcType)
+Funktion
+'CalcType Variable'('CalcType ILLUS'('CalcType Guaranteed'('CalcType Assumed 2'('GEN Vector Blank'))))
+F1 641befd 30e243d1 0 2669e6d6 0 0 2
+CalcType VarIllGuarMid(calcType)
+Funktion
+'CalcType Variable'('CalcType ILLUS'('CalcType Guaranteed'('CalcType AssumedMID 2'('GEN Vector Blank'))))
+F1 2669e6d6 30e243d1 0 0 0 0 2
+CalcType VarIllCurrMid(calcType)
+Funktion
+'CalcType Variable'('CalcType ILLUS'('CalcType Current'('CalcType AssumedMID 2'('GEN Vector Blank'))))
+F1 3e91941a 4b8dde93 1efa0b13 37059fb6 0 0 2
+-- 7702 --
+Funktion
+
+F1 1efa0b13 3e91941a 235cb602 754ccae8 0 0 2
+CalcType 7702(Identifier)
+Funktion
+IF (Identifier ALIKE 'CalcType GLP Identifier' ; çä  'CalcType GLP'('GEN Vector Blank') ; çä  IF (Identifier ALIKE 'CalcType GSP Identifier' ; çä    'CalcType GSP'('GEN Vector Blank') ; çä    IF (Identifier ALIKE 'CalcType 7PP Identifier' ; çä      'CalcType 7PP'('GEN Vector Blank') ; çä      IF (Identifier ALIKE 'CalcType 7PN Identifier' ; çä        'CalcType 7PN'('GEN Vector Blank') ; çä        IF (Identifier ALIKE 'CalcType NPT Identifier' ; çä          'CalcType NPT'('GEN Vector Blank') ; çä          'GEN Vector Blank'çä        )çä    )çä)çä)çä)
+F1 235cb602 1efa0b13 0 399a148e 0 0 2
+CalcType GLP(calcType)
+Funktion
+'CalcType Switch GLP'(calcType;'CalcType GLP Identifier')
+F1 399a148e 1efa0b13 0 34753b38 0 0 2
+CalcType GSP(calcType)
+Funktion
+'CalcType Switch GSP'(calcType;'CalcType GSP Identifier')
+F1 34753b38 1efa0b13 0 2e15a0a1 0 0 2
+CalcType 7PN(calcType)
+Funktion
+'CalcType Switch 7PN'(calcType;'CalcType 7PN Identifier')
+F1 2e15a0a1 1efa0b13 0 51a9dbc6 0 0 2
+CalcType 7PP(calcType)
+Funktion
+'CalcType Switch 7PP'(calcType;'CalcType 7PP Identifier')
+F1 51a9dbc6 1efa0b13 0 0 0 0 2
+CalcType NPT(calcType)
+Funktion
+'CalcType Switch 7PN'(calcType;V_('CalcType 7PN Identifier';'CalcType NPT Identifier'))
+F1 754ccae8 3e91941a 16de2ec1 6bb0e3f2 0 0 2
+CalcType 7702 Off(calcType)
+Funktion
+IF ('CalcType GSP Is Active'(calcType) ; çä  'CalcType GSP Off'(calcType) ; çä  IF ('CalcType GLP Is Active'(calcType) ; çä    'CalcType GLP Off'(calcType) ; çä    IF ('CalcType 7PP Is Active'(calcType) ; çä      'CalcType 7PP Off'(calcType) ; çä      'CalcType 7PN Off'(calcType)çä    )çä)çä)
+F1 16de2ec1 754ccae8 0 a5c7f0d 0 0 2
+CalcType GSP Off(calcType)
+Funktion
+'CalcType Switch GSP'(calcType;0)
+F1 a5c7f0d 754ccae8 0 682c05b5 0 0 2
+CalcType GLP Off(calcType)
+Funktion
+'CalcType Switch GLP'(calcType;0)
+F1 682c05b5 754ccae8 0 f87b629 0 0 2
+CalcType 7PP Off(calcType)
+Funktion
+'CalcType Switch 7PP'(calcType;0)
+F1 f87b629 754ccae8 0 0 0 0 2
+CalcType 7PN Off(calcType)
+Funktion
+'CalcType Switch 7PN'(calcType;0)
+F1 6bb0e3f2 3e91941a 0 0 0 0 2
+CalcType GLLOAD(calcType)
+Funktion
+'CalcType Switch GLLOAD'(calcType;'CalcType GLLOAD Identifier')
+F1 37059fb6 4b8dde93 3fe28860 3a00f1a5 0 0 2
+-- Targets --
+Funktion
+
+F1 3fe28860 37059fb6 0 6b5aa99e 0 0 2
+CalcType CTGT(calcType)
+Funktion
+'CalcType Switch CTGT'(calcType;'CalcType CTGT Identifier')
+F1 6b5aa99e 37059fb6 0 789cf07a 0 0 2
+CalcType LTGT(calcType)
+Funktion
+'CalcType Switch LTGT'(calcType;'CalcType LTGT Identifier')
+F1 789cf07a 37059fb6 0 287a3266 0 0 2
+CalcType STGT(calcType)
+Funktion
+'CalcType Switch STGT'(calcType;'CalcType STGT Identifier')
+F1 287a3266 37059fb6 0 1b0cd939 0 0 2
+CalcType MTGT(calcType)
+Funktion
+'CalcType Switch MTGT'(calcType;'CalcType MTGT Identifier')
+F1 1b0cd939 37059fb6 0 0 0 0 2
+CalcType SHGT(calcType)
+Funktion
+'CalcType Switch MTGT'(calcType;'CalcType SHGT Identifier')
+F1 3a00f1a5 4b8dde93 3ed91ee0 38162f11 0 0 2
+-- Date --
+Funktion
+
+F1 3ed91ee0 3a00f1a5 2b6033b9 5640b769 0 0 2
+CalcType Date Assumption Off(calcType)
+Funktion
+IF ('CalcType LastAnn Is Active'(calcType) ; çä  'CalcType LastAnn Off'(calcType) ; çä  IF ('CalcType LastCalYear Is Active'(calcType) ; çä    'CalcType LastCalYear Off'(calcType) ; çä    IF ('CalcType FirstPSurrCalYear Is Active'(calcType) ; çä      'CalcType FirstPSurrCalYear Off'(calcType) ; çä      IF ('CalcType FirstPSurrPolYear Is Active'(calcType) ; çä        'CalcType FirstPSurrPolYear Off'(calcType) ; çä        IF ('CalcType TransYear Is Active'(calcType) ; çä          'CalcType TransYear Off'(calcType) ; çä          'CalcType Assumed Off'(calcType)çä        )çä    )çä)çä)çä)
+F1 2b6033b9 3ed91ee0 0 3283f062 0 0 2
+CalcType LastAnn Off(calcType)
+Funktion
+IF ('CalcType DATE Element is Alike Identifier'(calcType;'CalcType LastAnn Identifier') ; çä  'CalcType Switch LastAnn'(calcType;0) ; çä  calcTypeçä)
+F1 3283f062 3ed91ee0 0 63bcc7b2 0 0 2
+CalcType LastCalYear Off(calcType)
+Funktion
+IF ('CalcType DATE Element is Alike Identifier'(calcType;'CalcType LastCalYear Identifier') ; çä  'CalcType Switch LastCalYear'(calcType;0) ; çä  calcTypeçä)
+F1 63bcc7b2 3ed91ee0 0 1c1716f7 0 0 2
+CalcType FirstPSurrCalYear Off(calcType)
+Funktion
+IF ('CalcType DATE Element is Alike Identifier'(calcType;'CalcType FirstPSurrCalYear Identifier') ; çä  'CalcType Switch FirstPSurrCalYear'(calcType;0) ; çä  calcTypeçä)
+F1 1c1716f7 3ed91ee0 0 643fc695 0 0 2
+CalcType FirstPSurrPolYear Off(calcType)
+Funktion
+IF ('CalcType DATE Element is Alike Identifier'(calcType;'CalcType FirstPSurrPolYear Identifier') ; çä  'CalcType Switch FirstPSurrPolYear'(calcType;0) ; çä  calcTypeçä)
+F1 643fc695 3ed91ee0 0 0 0 0 2
+CalcType TransYear Off(calcType)
+Funktion
+IF ('CalcType DATE Element is Alike Identifier'(calcType;'CalcType TransYear Identifier') ; çä  'CalcType Switch TransYear'(calcType;0) ; çä  calcTypeçä)
+F1 5640b769 3a00f1a5 0 2a817973 0 0 2
+CalcType LastAnn(calcType)
+Funktion
+'CalcType Switch LastAnn'(calcType;'CalcType LastAnn Identifier')
+F1 2a817973 3a00f1a5 0 6169af15 0 0 2
+CalcType LastCalYear(calcType)
+Funktion
+'CalcType Switch LastCalYear'(calcType;'CalcType LastCalYear Identifier')
+F1 6169af15 3a00f1a5 0 1a0ba94 0 0 2
+CalcType FirstPSurrCalYear(calcType)
+Funktion
+'CalcType Switch FirstPSurrCalYear'(calcType;'CalcType FirstPSurrCalYear Identifier')
+F1 1a0ba94 3a00f1a5 0 aabaa89 0 0 2
+CalcType FirstPSurrPolYear(calcType)
+Funktion
+'CalcType Switch FirstPSurrPolYear'(calcType;'CalcType FirstPSurrPolYear Identifier')
+F1 aabaa89 3a00f1a5 0 0 0 0 2
+CalcType TransYear(calcType)
+Funktion
+'CalcType Switch TransYear'(calcType;'CalcType TransYear Identifier')
+F1 38162f11 4b8dde93 56cf8898 18d29074 0 0 2
+-- Shadow --
+Funktion
+
+F1 56cf8898 38162f11 0 326ead97 0 0 2
+CalcType Shadow(calcType)
+Funktion
+'CalcType Switch Shadow'(calcType;'CalcType SHADOW Identifier')
+F1 326ead97 38162f11 0 7d03a50b 0 0 2
+CalcType ShadowCatchUp(calcType)
+Funktion
+'CalcType Switch ShadowCatchUp'(calcType;'CalcType SHADOWCatchUp Identifier')
+F1 7d03a50b 38162f11 0 66aeeee6 0 0 2
+CalcType ShadowCatchUp Off(calcType)
+Funktion
+'CalcType Shadow'(calcType)
+F1 66aeeee6 38162f11 0 0 0 0 2
+CalcType Shadow Off(calcType)
+Funktion
+'CalcType Switch Shadow'(calcType;0)
+F1 18d29074 4b8dde93 2743e983 56a32414 0 0 2
+-- Switches --
+Funktion
+
+F1 2743e983 18d29074 5179b6b 728ca302 0 0 2
+-- Annual Statement --
+Funktion
+
+F1 5179b6b 2743e983 0 169ab46c 0 0 2
+CalcType Switch AS PlanPrem(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AS PLANPRM Identifier';switch)
+F1 169ab46c 2743e983 0 128eb2a1 0 0 2
+CalcType Switch AS NoPrem(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AS NOPRM Identifier';switch)
+F1 128eb2a1 2743e983 0 11df15e2 0 0 2
+CalcType Switch AS AltPrem(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AS ALTPRM Identifier';switch)
+F1 11df15e2 2743e983 0 1b2ce9cd 0 0 2
+CalcType Switch AS ShadowAcctPrem(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AS SHADOWPRM Identifier';switch)
+F1 1b2ce9cd 2743e983 0 7e1714bf 0 0 2
+CalcType Switch AS NextAnniversary(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AS NXTANNIV Identifier';switch)
+F1 7e1714bf 2743e983 0 0 0 0 2
+CalcType Switch AS Maturity(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AS MATURITY Identifier';switch)
+F1 728ca302 18d29074 6f4a7735 2652824b 0 0 2
+-- Product Types --
+Funktion
+
+F1 6f4a7735 728ca302 0 733703db 0 0 2
+CalcType Switch Fixed(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Fixed Identifier';switch)
+F1 733703db 728ca302 0 0 0 0 2
+CalcType Switch Variable(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Variable Identifier';switch)
+F1 2652824b 18d29074 2b1b43aa 18fb8d7c 0 0 2
+-- Calling System --
+Funktion
+
+F1 2b1b43aa 2652824b 0 0 0 0 2
+CalcType Switch ILLUS(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType ILLUS Identifier';switch)
+F1 18fb8d7c 18d29074 1f6f599a 1cbdc963 0 0 2
+-- Rate Assumptions --
+Funktion
+
+F1 1f6f599a 18fb8d7c 7c51a9a9 5bd37c53 0 0 2
+-- Primary --
+Funktion
+
+F1 7c51a9a9 1f6f599a 0 7986ac3c 0 0 2
+CalcType Switch Curr(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Current Identifier';switch)
+F1 7986ac3c 1f6f599a 0 28f5ffe3 0 0 2
+CalcType Switch Guar(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Guaranteed Identifier';switch)
+F1 28f5ffe3 1f6f599a 0 7026f660 0 0 2
+CalcType Switch Midpoint(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Midpoint Identifier';switch)
+F1 7026f660 1f6f599a 0 0 0 0 2
+CalcType Switch Assumed(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Assumed Identifier';switch)
+F1 5bd37c53 18fb8d7c 4c0d406d 0 0 0 2
+-- Secondary --
+Funktion
+
+F1 4c0d406d 5bd37c53 0 18337bf7 0 0 2
+CalcType Switch Curr 2(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Current 2 Identifier';switch)
+F1 18337bf7 5bd37c53 0 790d9fb9 0 0 2
+CalcType Switch Guar 2(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Guaranteed 2 Identifier';switch)
+F1 790d9fb9 5bd37c53 0 3926d165 0 0 2
+CalcType Switch Midpoint 2(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Midpoint 2 Identifier';switch)
+F1 3926d165 5bd37c53 0 2bc9b3ca 0 0 2
+CalcType Switch Assumed 2(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType Assumed 2 Identifier';switch)
+F1 2bc9b3ca 5bd37c53 0 5575874b 0 0 2
+CalcType Switch AssumedNULL 2(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AssumedNULL 2 Identifier';switch)
+F1 5575874b 5bd37c53 0 0 0 0 2
+CalcType Switch AssumedMID 2(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType AssumedMID 2 Identifier';switch)
+F1 1cbdc963 18d29074 5075822f 2354bee9 0 0 2
+-- Targets --
+Funktion
+
+F1 5075822f 1cbdc963 0 2f0cdbd8 0 0 2
+CalcType Switch STGT(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType STGT Identifier';switch)
+F1 2f0cdbd8 1cbdc963 0 2c235b2b 0 0 2
+CalcType Switch CTGT(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType CTGT Identifier';switch)
+F1 2c235b2b 1cbdc963 0 5de26890 0 0 2
+CalcType Switch MTGT(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType MTGT Identifier';switch)
+F1 5de26890 1cbdc963 0 0 0 0 2
+CalcType Switch LTGT(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType LTGT Identifier';switch)
+F1 2354bee9 18d29074 50616df0 6851e562 0 0 2
+-- Dates --
+Funktion
+
+F1 50616df0 2354bee9 0 70ff3553 0 0 2
+CalcType Switch LastAnn(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType LastAnn Identifier';switch)
+F1 70ff3553 2354bee9 0 7f9a48cb 0 0 2
+CalcType Switch LastCalYear(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType LastCalYear Identifier';switch)
+F1 7f9a48cb 2354bee9 0 399bb598 0 0 2
+CalcType Switch FirstPSurrCalYear(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType FirstPSurrCalYear Identifier';switch)
+F1 399bb598 2354bee9 0 5305c9a0 0 0 2
+CalcType Switch FirstPSurrPolYear(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType FirstPSurrPolYear Identifier';switch)
+F1 5305c9a0 2354bee9 0 0 0 0 2
+CalcType Switch TransYear(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType TransYear Identifier';switch)
+F1 6851e562 18d29074 63e19020 21f39428 0 0 2
+-- 7702 --
+Funktion
+
+F1 63e19020 6851e562 0 742a6dd9 0 0 2
+CalcType Switch GSP(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType GSP Identifier';switch)
+F1 742a6dd9 6851e562 0 505082b9 0 0 2
+CalcType Switch GLP(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType GLP Identifier';switch)
+F1 505082b9 6851e562 0 be928ff 0 0 2
+CalcType Switch 7PN(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType 7PN Identifier';switch)
+F1 be928ff 6851e562 0 53769be0 0 0 2
+CalcType Switch 7PP(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType 7PP Identifier';switch)
+F1 53769be0 6851e562 0 549ef2ec 0 0 2
+--CalcType Switch NPT(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType; 'CalcType NPT Identifier'; switch)
+F1 549ef2ec 6851e562 0 0 0 0 2
+CalcType Switch GLLOAD(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType GLLOAD Identifier';switch)
+F1 21f39428 18d29074 0 7c7b72 0 0 2
+CalcType Switch Shadow(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType SHADOW Identifier';switch)
+F1 7c7b72 18d29074 0 1232c1be 0 0 2
+CalcType Switch ShadowCatchUp(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType SHADOWCatchUp Identifier';switch)
+F1 1232c1be 18d29074 0 5a481c60 0 0 2
+CalcType Switch RPU(calcType; switch)
+Funktion
+IF ('Illus RPU Election' && 'Illus RPU StartDuration' > 0 ; çä  'CalcType Vector Adjustment'(calcType;'CalcType RPU Identifier';switch) ; çä  calcTypeçä)
+F1 5a481c60 18d29074 0 1e8ff013 0 0 2
+CalcType Switch APO(calcType; switch; yearIndex)
+Funktion
+ //IF('APO is Active'(calcType; yearIndex);çä'CalcType Vector Adjustment'(calcType;'CalcType APO Identifier';switch) //;çä//âcalcTypeçä//)ä
+F1 1e8ff013 18d29074 0 2ed43e0b 0 0 2
+CalcType Switch CVAT(calcType; switch)
+Funktion
+'CalcType Vector Adjustment'(calcType;'CalcType CVAT Identifier';switch)
+F1 2ed43e0b 18d29074 0 4d5f865 0 0 2
+--CalcType Switch 7702(calcType; switch)
+Funktion
+IF('CalcType 7702 in Table'(calcType);çäâçäâ'CalcType Vector Adjustment'(calcType; "7702; switch);çäâçäâcalcTypeçä)
+F1 4d5f865 18d29074 0 14dcaebd 0 0 2
+--CalcType Switch Flex with Evidence(calcType; switch)
+Funktion
+IF('ALIR Evidence Required' && 'Illus Flex Income Election'; çäâçäâ'CalcType Vector Adjustment'(calcType; "FLEX"; switch);çäâââçäâcalcTypeçä)
+F1 14dcaebd 18d29074 0 773155ad 0 0 2
+--CalcType Switch DisbSolve(calcType; switch)
+Funktion
+IF('Disbursement Solve Done'(calcType);çäâçäâ'CalcType Vector Adjustment'(calcType; "DISB"; switch);çäâçäâcalcTypeçä)
+F1 773155ad 18d29074 0 0 0 0 2
+--CalcType Switch Income(calcType; switch)
+Funktion
+IF('Income Elected'(calcType);çäâçäâ'CalcType Vector Adjustment'(calcType; "INC"; switch);çäâçäâcalcTypeçä)
+F1 56a32414 4b8dde93 0 0 0 0 2
+CalcType CVAT(calcType)
+Funktion
+'CalcType Switch CVAT'(calcType;'CalcType CVAT Identifier')
+F1 464ce678 81d7cd edffd2c 91261f 0 0 2
+-- Vector Positions
+Funktion
+
+F1 edffd2c 464ce678 4e229fee 12bca3a6 0 0 2
+CalcType Get Position(Identifier)
+Funktion
+'ACCS CalcType Vector Position'('Policy ProductCode';'Policy EffDate';Identifier)
+F1 4e229fee edffd2c 0 602324e4 0 0 2
+CalcType Target Position
+Funktion
+'CalcType Get Position'("MTGT")
+F1 602324e4 edffd2c 0 15bc8ae8 0 0 2
+CalcType Shadow Position
+Funktion
+'CalcType Get Position'("SHADOW")
+F1 15bc8ae8 edffd2c 0 0 0 0 2
+CalcType RA Position
+Funktion
+'CalcType Get Position'('CalcType Current Identifier')
+F1 12bca3a6 464ce678 0 79462d65 0 0 2
+CalcType Flex with Evidence(calcType)
+Funktion
+'CalcType Position Length Check'(calcType;"FLEX")
+F1 79462d65 464ce678 2d100c3f 67041f5 0 0 2
+CalcType Position Result(calcType; Identifier)
+Funktion
+E_(calctype;'CalcType Get Position'(Identifier))
+F1 2d100c3f 79462d65 0 5392422d 0 0 2
+CalcType TARGET Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType MTGT Identifier')
+F1 5392422d 79462d65 0 510f8575 0 0 2
+CalcType 7702 Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType GSP Identifier')
+F1 510f8575 79462d65 0 64e69c31 0 0 2
+CalcType ASP Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType AS PLANPRM Identifier')
+F1 64e69c31 79462d65 0 2c7f27bf 0 0 2
+CalcType SHADOW Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType SHADOW Identifier')
+F1 2c7f27bf 79462d65 0 181b9ad4 0 0 2
+CalcType RA Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType Current Identifier')
+F1 181b9ad4 79462d65 0 61da7376 0 0 2
+CalcType ILLUS Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType ILLUS Identifier')
+F1 61da7376 79462d65 0 38eac79e 0 0 2
+CalcType GLLOAD Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType GLLOAD Identifier')
+F1 38eac79e 79462d65 0 c9f2b97 0 0 2
+CalcType CVAT Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType CVAT Identifier')
+F1 c9f2b97 79462d65 0 0 0 0 2
+CalcType DATE Element(calcType)
+Funktion
+'CalcType Position Result'(calcType;'CalcType LastAnn Identifier')
+F1 67041f5 464ce678 0 7962debe 0 0 2
+CalcType Position Length Check(calcType; Identifier)
+Funktion
+IF ('CalcType Length Is Greater Than Position'(calcType;Identifier) ; çä  'CalcType Get Position'(Identifier) ; çä  0çä)
+F1 7962debe 464ce678 0 0 0 0 2
+CalcType FaceSolve Position(calcType)
+Funktion
+CASE('Illus Face Amt Solve DesignType'(calcType);çä  "1013200001" : 'CalcType Get Position'("SOLVE_3");çä  "1013200002" : 'CalcType Get Position'("SOLVE_4");çä  "1013200003" : 'CalcType Get Position'("SOLVE_5");çä  "1013200004" : 'CalcType Get Position'("SOLVE_1");çä  "1013200005" : 'CalcType Get Position'("SOLVE_MP");çä  "1013200006" : 'CalcType Get Position'("SOLVE_MP");çä   : -1)çä
+F1 91261f 81d7cd 41b6ddf9 2eb44edc 0 0 2
+-- Vector Manipulation --
+Funktion
+
+F1 41b6ddf9 91261f 6d77a590 0 0 0 2
+CalcType Vector Adjustment(calcType; Identifier; switch)
+Funktion
+IF ('CalcType Get Position'(Identifier) EQUAL -1 ; çä   //Error Messageçä'Messages SystemMessage'("CA1058";'Message Language';V_('CalcType Model Name';"'CalcType Vector Adjustment'")) ; çä  'CalcType VectorManipulate'(calcType;Identifier;'CalcType On Off'(switch;Identifier);'CalcType Get Position'(Identifier))çä)
+F1 6d77a590 41b6ddf9 268d27bc 5691863a 0 0 2
+CalcType VectorManipulate(calcType; Identifier; OnOffIndicator; calcTypePosition)
+Funktion
+ //IF switching on and if the vector is too smallçäIF ('CalcType Position Is Greater Than Vector Length'(calcType;Identifier) ; çä   //Then add needed positions before updating vectorçä'CalcType VectorManipulate'('CalcType Update'('CalcType Add Vector Positions'(calcType;Identifier);calcTypePosition);Identifier;OnOffIndicator;calcTypePosition) ; çä   //Otherwise, the vector is long enough and may need to be trimmed after vector updates are madeçäIF ('CalcType Last Vector Element Is Blank'('CalcType Vector Replace'(calcType;OnOffIndicator;calcTypePosition)) ; çä    'CalcType Remove Blanks'('CalcType Vector Replace'(calcType;OnOffIndicator;'CalcType Last Vector Position'(calcType));'CalcType Last Vector Position'(calcType)) ; çä    'CalcType Return RA Element Check'('CalcType Vector Replace'(calcType;OnOffIndicator;calcTypePosition))çä  )çä)
+F1 268d27bc 6d77a590 a42d80c 7480a416 0 0 2
+CalcType Remove Blanks(calcType; position)
+Funktion
+IF ('CalcType Last Vector Element Is Blank'(calcType) && 'CalcType Vector Length Greater Than 1'(calcType) ; çä   //Iteratively rebuild vector until no blanks exist at endçä'CalcType Remove Blanks'('CalcType Update'(calcType;'CalcType Last Vector Position'(calcType) - 1);position) ; çä  'CalcType Return RA Element Check'(calcType)çä)
+F1 a42d80c 268d27bc 5dd20c47 0 0 0 2
+CalcType Update(calcType; vectorLength)
+Funktion
+VECTORX(nr; //counter  çä0; //fromçävectorLength; //toçä'CalcType Element'(calcType;#nr) //expressionçä)
+F1 5dd20c47 a42d80c 33374447 0 0 0 2
+CalcType Reset(calcType; Identifier; OnOffIndicator; position)
+Funktion
+IF ('CalcType Vector Length Is Greater Than Zero'(calcType) ; çä  'CalcType Return RA Element Check'('CalcType Vector Replace'(calcType;OnOffIndicator;position)) ; çä  calcTypeçä)
+F1 33374447 5dd20c47 0 0 0 0 2
+CalcType Return RA Element Check(vector)
+Funktion
+IF ('CalcType Vector Length'(vector) EQUAL 1 ; çä  E_(vector;0) ; çä  vectorçä)
+F1 7480a416 6d77a590 0 0 0 0 2
+CalcType Add Vector Positions(calctype;Identifier)
+Funktion
+V_CONCAT(calcType;VECTORX(nr;'CalcType Last Vector Position'(calcType);'CalcType Get Position'(Identifier) + 1;'GEN Vector Blank'))
+F1 5691863a 41b6ddf9 0 0 0 0 2
+CalcType On Off(switch; Identifier)
+Funktion
+IF (switch EQUAL 1 || switch ALIKE Identifier ; çä  switch ; çä  'GEN Vector Blank'çä)
+F1 2eb44edc 81d7cd 5996159f 39eb9fb9 0 0 2
+-- Basic Vector Functions --
+Funktion
+
+F1 5996159f 2eb44edc 0 368f229e 0 0 2
+CalcType Last Vector Element(calcType)
+Funktion
+'CalcType Element'(calcType;'CalcType Vector Length'(calcType) - 1)
+F1 368f229e 2eb44edc 0 7bb6b490 0 0 2
+CalcType Last Vector Position(calcType)
+Funktion
+'CalcType Vector Length'(calcType) - 1
+F1 7bb6b490 2eb44edc 0 4023a60d 0 0 2
+CalcType Vector Replace(vector; element; position)
+Funktion
+V_REPLACE(vector;element;position)
+F1 4023a60d 2eb44edc 0 71989359 0 0 2
+CalcType Element(vector; position)
+Funktion
+E_(vector;position)
+F1 71989359 2eb44edc 0 3ea81dc4 0 0 2
+CalcType Vector Length(vector)
+Funktion
+V_LENGTH(vector)
+F1 3ea81dc4 2eb44edc 0 0 0 0 2
+CalcType Element 0(calcType)
+Funktion
+E_(calcType;0)
+F1 39eb9fb9 81d7cd 6b3f0792 488dceff 0 0 2
+-- Readability --
+Funktion
+
+F1 6b3f0792 39eb9fb9 362285f5 781812ff 0 0 2
+CalcType Is Active(calcType; Identifier)
+Funktion
+IF ('CalcType Length and Position Equal 0'(calcType;Identifier) && 'CalcType Identifier Equals Element 0'(calcType;Identifier) ; çä  1 ; çä  IF ('CalcType Length Is Less Than or Equal to Position'(calcType;Identifier) || 'CalcType Position Is Greater Than Vector Length'(calcType;Identifier) ; çä    0 ; çä    IF ('CalcType Position Result'(calcType;Identifier) ALIKE Identifier || 'CalcType Position Result'(calcType;Identifier) EQUAL 1 ; çä      1 ; çä      0çä    )çä)çä)
+F1 362285f5 6b3f0792 1081ecb0 49d50947 0 0 2
+CalcType Annual Statement Projections are Active(calcType)
+Funktion
+'CalcType AS Specified Premium Is Active'(calcType) || 'CalcType AS Shadow Account Premium Is Active'(calcType)
+F1 1081ecb0 362285f5 50fb4e6c 3bed5514 0 0 2
+CalcType AS Specified Premium Is Active(calcType)
+Funktion
+'CalcType AS Planned Premium Is Active'(calcType) || 'CalcType AS No Premium Is Active'(calcType) || 'CalcType AS Alternative Premium Is Active'(calcType)
+F1 50fb4e6c 1081ecb0 0 4a790805 0 0 2
+CalcType AS Planned Premium Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AS PLANPRM Identifier')
+F1 4a790805 1081ecb0 0 453994c3 0 0 2
+CalcType AS No Premium Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AS NOPRM Identifier')
+F1 453994c3 1081ecb0 0 0 0 0 2
+CalcType AS Alternative Premium Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AS ALTPRM Identifier')
+F1 3bed5514 362285f5 0 3df8d91b 0 0 2
+CalcType AS Shadow Account Premium Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AS SHADOWPRM Identifier')
+F1 3df8d91b 362285f5 0 139407c 0 0 2
+CalcType AS Next Anniversary Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AS NXTANNIV Identifier')
+F1 139407c 362285f5 0 0 0 0 2
+CalcType AS Maturity Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AS MATURITY Identifier')
+F1 49d50947 6b3f0792 354a290 5cf32690 0 0 2
+CalcType Rate Assumption Is Active(calcType)
+Funktion
+'CalcType Current Is Active'(calcType) || 'CalcType Guaranteed Is Active'(calcType) || 'CalcType Midpoint Is Active'(calcType) || 'CalcType Assumed Is Active'(calcType)
+F1 354a290 49d50947 0 6ffeeaf 0 0 2
+CalcType Midpoint Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType Midpoint Identifier')
+F1 6ffeeaf 49d50947 0 6f2b8c17 0 0 2
+CalcType Guaranteed Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType Guaranteed Identifier')
+F1 6f2b8c17 49d50947 0 7bc170ef 0 0 2
+CalcType Current Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType Current Identifier')
+F1 7bc170ef 49d50947 0 39afcffa 0 0 2
+CalcType Curr or Guar Is Active(calcType)
+Funktion
+'CalcType Current Is Active'(calcType) || 'CalcType Guaranteed Is Active'(calcType)
+F1 39afcffa 49d50947 0 169a3b3d 0 0 2
+CalcType Assumed Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType Assumed Identifier')
+F1 169a3b3d 49d50947 0 8a52f33 0 0 2
+CalcType Assumed 2 Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType Assumed 2 Identifier')
+F1 8a52f33 49d50947 0 1302537 0 0 2
+CalcType AssumedNULL 2 Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AssumedNULL 2 Identifier')
+F1 1302537 49d50947 0 0 0 0 2
+CalcType AssumedMID 2 Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType AssumedMID 2 Identifier')
+F1 5cf32690 6b3f0792 4a099c48 3acabe3e 0 0 2
+CalcType GDB Is Active(calcType)
+Funktion
+'CalcType GMDB Is Active'(calcType) || 'CalcType GMIB Is Active'(calcType) || 'CalcType GMWB Is Active'(calcType)
+F1 4a099c48 5cf32690 0 5bcb3d31 0 0 2
+CalcType GMDB Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType GMDB Identifier')
+F1 5bcb3d31 5cf32690 0 1638ec97 0 0 2
+CalcType GMIB Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType GMIB Identifier')
+F1 1638ec97 5cf32690 0 0 0 0 2
+CalcType GMWB Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType GMWB Identifier')
+F1 3acabe3e 6b3f0792 3eb5a090 8f6ec54 0 0 2
+CalcType 7702 Is Active(calcType)
+Funktion
+'CalcType GSP Is Active'(calcType) || 'CalcType GLP Is Active'(calcType) || 'CalcType 7PP Is Active'(calcType) || 'CalcType 7PN Is Active'(calcType)
+F1 3eb5a090 3acabe3e 0 176f4ca8 0 0 2
+CalcType GSP Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType GSP Identifier')
+F1 176f4ca8 3acabe3e 0 37a7460f 0 0 2
+CalcType GLP Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType GLP Identifier')
+F1 37a7460f 3acabe3e 0 2c9ffae2 0 0 2
+CalcType 7PP Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType 7PP Identifier')
+F1 2c9ffae2 3acabe3e 0 0 0 0 2
+CalcType 7PN Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType 7PN Identifier')
+F1 8f6ec54 6b3f0792 7877cdb7 17ddad71 0 0 2
+CalcType Target Is Active(calcType)
+Funktion
+'CalcType CTGT Is Active'(calcType) || 'CalcType LTGT Is Active'(calcType) || 'CalcType STGT Is Active'(calcType) || 'CalcType MTGT Is Active'(calcType) || 'CalcType SHGT Is Active'(calcType)
+F1 7877cdb7 8f6ec54 0 2b323f2b 0 0 2
+CalcType CTGT Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType CTGT Identifier')
+F1 2b323f2b 8f6ec54 0 2f05e28 0 0 2
+CalcType LTGT Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType LTGT Identifier')
+F1 2f05e28 8f6ec54 0 3ae6fb70 0 0 2
+CalcType STGT Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType STGT Identifier')
+F1 3ae6fb70 8f6ec54 0 2284d4fa 0 0 2
+CalcType MTGT Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType MTGT Identifier')
+F1 2284d4fa 8f6ec54 0 0 0 0 2
+CalcType SHGT Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType SHGT Identifier')
+F1 17ddad71 6b3f0792 438337fa 3df1aae1 0 0 2
+CalcType DATE Is Active(calcType)
+Funktion
+'CalcType LastAnn Is Active'(calcType) || 'CalcType LastCalYear Is Active'(calcType) || 'CalcType FirstPSurrCalYear Is Active'(calcType) || 'CalcType FirstPSurrPolYear Is Active'(calcType) || 'CalcType TransYear Is Active'(calcType)
+F1 438337fa 17ddad71 0 6ad29ad6 0 0 2
+CalcType LastAnn Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType LastAnn Identifier')
+F1 6ad29ad6 17ddad71 0 c3dda1d 0 0 2
+CalcType LastCalYear Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType LastCalYear Identifier')
+F1 c3dda1d 17ddad71 0 fde90f0 0 0 2
+CalcType FirstPSurrCalYear Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType FirstPSurrCalYear Identifier')
+F1 fde90f0 17ddad71 0 281ed83f 0 0 2
+CalcType FirstPSurrPolYear Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType FirstPSurrPolYear Identifier')
+F1 281ed83f 17ddad71 0 0 0 0 2
+CalcType TransYear Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType TransYear Identifier')
+F1 3df1aae1 6b3f0792 0 16e71bcb 0 0 2
+CalcType Shadow Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType SHADOW Identifier') || 'CalcType ShadowCatchUp Is Active'(calcType)
+F1 16e71bcb 6b3f0792 0 c5e3e46 0 0 2
+CalcType ShadowCatchUp Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType SHADOWCatchUp Identifier')
+F1 c5e3e46 6b3f0792 0 73c2bdf0 0 0 2
+CalcType ILLUS Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType ILLUS Identifier')
+F1 73c2bdf0 6b3f0792 0 5e7bbdcc 0 0 2
+CalcType Fixed Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType Fixed Identifier')
+F1 5e7bbdcc 6b3f0792 0 6469b6bb 0 0 2
+CalcType Variable Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType Variable Identifier')
+F1 6469b6bb 6b3f0792 0 39c9a52b 0 0 2
+CalcType RPU Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType RPU Identifier')
+F1 39c9a52b 6b3f0792 0 1176332 0 0 2
+CalcType VarIllGuarZero Is Active(calcType)
+Funktion
+'CalcType Variable Is Active'(calcType) && 'CalcType ILLUS Is Active'(calcType) && 'CalcType Guaranteed Is Active'(calcType) && 'CalcType AssumedNULL 2 Is Active'(calcType)
+F1 1176332 6b3f0792 0 77188539 0 0 2
+CalcType VarIllGuarAssumed Is Active(calcType)
+Funktion
+'CalcType Variable Is Active'(calcType) && 'CalcType ILLUS Is Active'(calcType) && 'CalcType Guaranteed Is Active'(calcType) && 'CalcType Assumed 2 Is Active'(calcType)
+F1 77188539 6b3f0792 0 1af360ca 0 0 2
+CalcType VarIllCurrZero Is Active(calcType)
+Funktion
+'CalcType Variable Is Active'(calcType) && 'CalcType ILLUS Is Active'(calcType) && 'CalcType Current Is Active'(calcType) && 'CalcType AssumedNULL 2 Is Active'(calcType)
+F1 1af360ca 6b3f0792 0 68cc246e 0 0 2
+CalcType VarIllCurrAssumed Is Active(calcType)
+Funktion
+'CalcType Variable Is Active'(calcType) && 'CalcType ILLUS Is Active'(calcType) && 'CalcType Current Is Active'(calcType) && 'CalcType Assumed 2 Is Active'(calcType)
+F1 68cc246e 6b3f0792 0 5121ae53 0 0 2
+CalcType GLLOAD Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType GLLOAD Identifier')
+F1 5121ae53 6b3f0792 0 1bf739 0 0 2
+CalcType CVAT Is Active(calcType)
+Funktion
+'CalcType Is Active'(calcType;'CalcType CVAT Identifier')
+F1 1bf739 6b3f0792 0 2099fc78 0 0 2
+CalcType VarIllGuarMid Is Active(calcType)
+Funktion
+'CalcType Variable Is Active'(calcType) && 'CalcType ILLUS Is Active'(calcType) && 'CalcType Guaranteed Is Active'(calcType) && 'CalcType AssumedMID 2 Is Active'(calcType)
+F1 2099fc78 6b3f0792 0 0 0 0 2
+CalcType VarIllCurrMid Is Active(calcType)
+Funktion
+'CalcType Variable Is Active'(calcType) && 'CalcType ILLUS Is Active'(calcType) && 'CalcType Current Is Active'(calcType) && 'CalcType AssumedMID 2 Is Active'(calcType)
+F1 781812ff 39eb9fb9 4b6c7900 7674245 0 0 2
+-- Vector Length, Position, & Elements --
+Funktion
+
+F1 4b6c7900 781812ff 0 7b15aad7 0 0 2
+CalcType Vector Length Is Greater Than Zero(vector)
+Funktion
+'CalcType Vector Length'(vector) > 0
+F1 7b15aad7 781812ff 0 16555a8c 0 0 2
+CalcType Vector Length Greater Than 1(vector)
+Funktion
+'CalcType Vector Length'(vector) > 1
+F1 16555a8c 781812ff 0 69660528 0 0 2
+CalcType Position Is Greater Than Vector Length(calcType; Identifier)
+Funktion
+'CalcType Get Position'(Identifier) >= 'CalcType Vector Length'(calcType)
+F1 69660528 781812ff 0 75a5a8a5 0 0 2
+CalcType Length Is Less Than or Equal to Position(calcType; Identifier)
+Funktion
+'CalcType Vector Length'(calcType) <= 'CalcType Get Position'(Identifier)
+F1 75a5a8a5 781812ff 0 7259825 0 0 2
+CalcType Length Is Greater Than Position(calcType; Identifier)
+Funktion
+'CalcType Vector Length'(calcType) > 'CalcType Get Position'(Identifier)
+F1 7259825 781812ff 2889dc06 6744a1b0 0 0 2
+CalcType Length Is Greater Than or Equal to Position(calcType; Identifier)
+Funktion
+'CalcType Vector Length'(calcType) >= 'CalcType Get Position'(Identifier)
+F1 2889dc06 7259825 0 0 0 0 2
+CalcType Length Greater Than or Equal to Target Position(calcType)
+Funktion
+'CalcType Vector Length'(calcType) >= 'CalcType Target Position'
+F1 6744a1b0 781812ff 0 22e7900 0 0 2
+CalcType Length and Position Equal 0(calcType; Identifier)
+Funktion
+'CalcType Vector Length'(calcType) EQUAL 0 && 'CalcType Get Position'(Identifier) EQUAL 0
+F1 22e7900 781812ff 0 6c37a71c 0 0 2
+CalcType Last Vector Element Is Blank(calcType)
+Funktion
+'Is Blank'('CalcType Last Vector Element'(calcType)) || 'CalcType Last Vector Element'(calcType) ALIKE "/q"
+F1 6c37a71c 781812ff 0 0 0 0 2
+CalcType Identifier Equals Element 0(calcType; Identifier)
+Funktion
+Identifier EQUAL E_(calcType;0)
+F1 7674245 39eb9fb9 0 78f18962 0 0 2
+CalcType Not 7702 or Target(calcType)
+Funktion
+NOT('CalcType 7702 in Table'(calcType) || 'CalcType Target in Table'(calcType))
+F1 78f18962 39eb9fb9 0 4195620a 0 0 2
+CalcType RA Element is Alike Identifier(calcType; Identifier)
+Funktion
+'CalcType RA Element'(calcType) ALIKE Identifier
+F1 4195620a 39eb9fb9 0 2eba6d7f 0 0 2
+CalcType DATE Element is Alike Identifier(calcType; Identifier)
+Funktion
+'CalcType DATE Element'(calcType) ALIKE Identifier
+F1 2eba6d7f 39eb9fb9 7b9a156b 0 0 0 2
+CalcType SolveCriteria Alike LTGT(vectorSearchCriteria)
+Funktion
+'CalcType SolveCriteria Target'(vectorSearchCriteria) ALIKE 'CalcType LTGT Identifier'
+F1 7b9a156b 2eba6d7f d96810c 0 0 0 2
+CalcType SolveCriteria Target(vectorSearchCriteria)
+Funktion
+IF ('CalcType Length Greater Than or Equal to Target Position'('CalcType SolveCriteria'(vectorSearchCriteria)) ; çä  'CalcType TARGET Element'('CalcType SolveCriteria'(vectorSearchCriteria)) ; çä  'CalcType SolveCriteria'(vectorSearchCriteria)çä)
+F1 d96810c 7b9a156b 0 0 0 0 2
+CalcType SolveCriteria(vectorSearchCriteria)
+Funktion
+E_(vectorSearchCriteria;0)
+F1 488dceff 81d7cd 1d9777a 490f8b80 0 0 2
+-- Tables
+Funktion
+
+F1 1d9777a 488dceff 0 1cf85ad4 0 0 2
+CalcType Target in Table(calcType)
+Funktion
+ //Calctype is a target calculationçäEXISTS('TABLE CalcType Group';"Target";'CalcType TARGET Element'(calcType))
+F1 1cf85ad4 488dceff 0 0 0 0 2
+CalcType 7702 in Table(calcType)
+Funktion
+ //Calctype is a 7702 calculationçäEXISTS('TABLE CalcType Group';"7702";'CalcType 7702 Element'(calcType))
+F1 490f8b80 81d7cd 0 0 0 0 2
+CalcType Model Name
+Funktion
+"CalcType"
+A0 678756bf 0 0 0 0 0 0
+
+T0 154e815e 0 0 0 0 0 0
+
+I0 478d501c 0 40f08d96 0 0 0 0
+
+I0 40f08d96 478d501c 0 0 0 0 0
+Standard.pms
+-
+O0
+E0
+L0
+B0
+P1
+1132daf6
+F1
+81d7cd
+A0
+T0
+!300
+3c05450 -2 -2
+çä7/14/2011 -pA1101 -  PAC024 Annual Statement - BT - split code into two functionsçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - accommodated "CalcType VarIllCurrMid" and "CalcType VarIllGuarMid".çä1/18/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä
+76c7b6b3 -2 -2
+Description:  Initializes the calcType that is passed into the output for variable illustrationsçä çäModification Log:çä7/14/2011 - PAC024 AS Projections - BT - separated code from Initial Vector into here
+34da333b -2 -2
+Description:  Initializes the calcType that is passed into the output for Annual Statement projectionsçä çäModification Log:çä7/14/2011 - PAC024 AS Projections - BT - add initial function
+428a2618 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+61339467 -2 -2
+Description:  Advanced Marketing Illustration Cash Value Identifierçä çäModification Log:çäpA1101 - 9/6/2011 - cleanup - BT - Add new Identifier
+3fa4a17f -2 -2
+Description:  Advanced Marketing Illustration Death Benefit Identifierçä çäModification Log:çäpA1101 - 9/6/2011 - cleanup - BT - Add new Identifier
+47ac2556 -2 -2
+Description:  Advanced Marketing Illustration Percent Identifierçä çäModification Log:çäpA1101 - 9/6/2011 - cleanup - BT - Add new Identifier
+6ab36f98 -2 -2
+Description:  Advanced Marketing Illustration Premium Identifierçä çäModification Log:çäpA1101 - 9/6/2011 - cleanup - BT - Add new Identifier
+2fac31ee -2 -2
+Description:  Annual Statement Identifiersçä çäModification Log:çä7/12/2011 - PAC024 Annual Statement - BT - Add new Identifiers
+498c09c8 -2 -2
+Description:  Planned Premium Identifierçä çäModification Log:çä7/12/2011 - PAC024 Annual Statement - BT - Add new Identifier
+573a898d -2 -2
+Description:  No Premium Identifierçä çäModification Log:çä7/12/2011 - PAC024 Annual Statement - BT - Add new Identifier
+df5c786 -2 -2
+Description:  Alternative Premium Identifierçä çäModification Log:çä7/12/2011 - PAC024 Annual Statement - BT - Add new Identifier
+5acdf6ca -2 -2
+Description:  Shadow Account Premium Identifierçä çäModification Log:çä7/12/2011 - PAC024 Annual Statement - BT - Add new Identifier
+741a837a -2 -2
+Description: Annual Statement Next Anniversary Identifierçä çäModification Log:çä7/25/2011 - PAC024 Annual Statement - BT - Add new Identifier
+7445f593 -2 -2
+Description:  Annual Statement Maturity Identifierçä çäModification Log:çä7/25/2011 - PAC024 Annual Statement - BT - Add new Identifier
+1fff6dfb -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+265f2655 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+1305c7ff -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+2902c191 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+657d768 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+71bc3561 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+77eaa764 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+2568962f -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5f4063ed -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+558fdf2a -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+43267b5c -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+128210be -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5e94cc47 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6b7b00d7 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+d8bea79 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/1/2011 - PAC017 FINRA Rule 2211 - VM - Initial calculation
+7991fcfa -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/1/2011 - PAC017 FINRA Rule 2211 - VM - Initial calculation
+4ae5cd2a -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+79b2f518 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+52430564 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6a9d7fb6 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+1e2964e7 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+4a98035e -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/18/2011 - Merge for WMA Enhancement ENH922 CMC
+24805f32 -2 -2
+Modification Log:çä çä08/29/2012 - wmAJ - Release
+1137cd38 -2 -2
+Description:  Identifier for date as at the start of the last calendar year.çä çäModification Logçä çä08/29/2012 - wmAJ - Release 1 Sprint 3 - BP - Initial calculation rule
+34b50ed7 -2 -2
+Description:  Identifier for date as at the start of the last policy anniversaryçä çäModification Logçä çä08/29/2012 - wmAJ - Release 1 Sprint 3 - BP - Initial calculation rule
+3f247461 -2 -2
+Description:  Identifier for date as at the start of the last policy anniversaryçä çäModification Logçä çä08/29/2012 - wmAJ - Release 1 Sprint 3 - BP - Initial calculation rule
+7dd448b5 -2 -2
+Description:  Identifier for date as at the start of the last policy anniversaryçä çäModification Logçä çä08/29/2012 - wmAJ - Release 1 Sprint 3 - BP - Initial calculation rule
+7f016edc -2 -2
+Description:  Identifier for date as at the start of the last policy anniversaryçä çäModification Logçä çä08/29/2012 - wmAJ - Release 1 Sprint 3 - BP - Initial calculation rule
+6ac8a4f9 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+5350ff66 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7cb79b41 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+19adc42b -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+51a2d37b -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+25d16fa6 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+5e58f799 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+5f83620d -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+17461b13 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+21bd116c -2 -2
+çä1/22/2015 - PAC030 - rm - Initial function
+f4b6608 -2 -2
+çä1/18/2011 - PAC013 calcType - BT - Restructure
+7fb8e64b -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+59127b6b -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+3f2b83c -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6ccc859e -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+7a68dfc2 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+405f9577 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+25755431 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - add identifier
+4f97ed29 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - add identifier
+7903e752 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+779c6bc0 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+10959b0d -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+5953d90a -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+22f87ebd -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - add identifier
+30f4e404 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - add identifier
+4cb62030 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6709214b -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+79572d48 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - add premium identifier
+425bef0c -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+4096de33 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6bfbb138 -2 -2
+Description: Shadow Account Catch Up Premium Identifierçä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Initial Rule
+6563393a -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+699841ed -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+4d8bb518 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+22016b26 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+400ecd0c -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+22dd776e -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/1/2011 - PAC017 FINRA Rule 2211 - VM - Initial calculation
+4de26a35 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/1/2011 - PAC017 FINRA Rule 2211 - VM - Initial calculation
+4b8dde93 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+5451ddd9 -2 -2
+Description: Turns the annual statement planned premium calcType on çä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Added Initial Planned Premium calcType
+53dbe2ed -2 -2
+Description: Turns the annual statement no premium calcType onçä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Added Initial No Premium calcType
+2ea90f76 -2 -2
+Description: Turns the annual statement alternative premium calcType onçä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Added Initial Alternative Premium calcType
+1447b7fe -2 -2
+Description: Turns the annual statement shadow account premium on çä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Added Initial Planned Premium calcType
+6487e311 -2 -2
+Description: Turns Annual Statement Next Anniversary calcType on çä çäModification Log:çä7/25/2011 - PAC024 Annual Statement - BT - Add initial calctype
+2d0d9e6a -2 -2
+Description: Turns the annual statement maturity calcType on çä çäModification Log:çä7/25/2011 - PAC024 Annual Statement - BT - Add initial calctype
+7c535a8f -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+263a02b0 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+4c5f2c19 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6bb3aea6 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+2255e59b -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2d7c2289 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+232949fb -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+70ac0f4e -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+38ce708d -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/1/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+3ed0b536 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/1/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+309ccf96 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/1/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+343085a3 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/1/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+3b774f -2 -2
+Description: Returns a constant used to define the current cash value calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5c518f58 -2 -2
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+3bfcd40c -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7bac917d -2 -2
+Description: Returns a constant used to define the assumed cash value calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+284d8b65 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+7513f68f -2 -2
+Description: Returns a constant used to define the assumed cash value calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+12456c9e -2 -2
+Description: Returns a constant used to define the current cash value calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6810e1fb -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7795e942 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+74d5174a -2 -2
+Description: Returns a constant used to define the assumed cash value calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - accommodating secondary rate assumption "ANULL".
+17535f28 -2 -2
+Description: Returns a constant used to define the assumed cash value calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - accommodating secondary rate assumption "AMID".
+30e243d1 -2 -2
+çä3/17/2011 - PAC013 calcType - BT - moved the functions to a place a user could find them
+3ed38363 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6863acaf -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - accommodating secondary rate assumption "ANULL"çä1/12/2011 - PAC013 calcType - BT - Restructureçä
+265f993a -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - accommodating secondary rate assumption "ANULL"çä1/12/2011 - PAC013 calcType - BT - Restructureçä
+66b8504a -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+641befd -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - accommodating secondary rate assumption "AMID"çä1/12/2011 - PAC013 calcType - BT - Restructureçä
+2669e6d6 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - accommodating secondary rate assumption "AMID"çä1/12/2011 - PAC013 calcType - BT - Restructureçä
+3e91941a -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+1efa0b13 -2 -2
+3/5/2015çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/19/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+235cb602 -2 -2
+Description: çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+399a148e -2 -2
+Description:çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+34753b38 -2 -2
+Description: Returns a constant used to define the 7 pay calculation type.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+2e15a0a1 -2 -2
+Description: Returns a constant used to define the 7 pay premium calculation type.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+51a9dbc6 -2 -2
+Description: Returns a constant used to define the 7 pay premium calculation type for necessary premium testing.çä çäModification Log:çä1/22/2015 - PAC030 - rm - Initial function
+754ccae8 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+16de2ec1 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+a5c7f0d -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+682c05b5 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+f87b629 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+6bb0e3f2 -2 -2
+Description: çä çäModification Log:çä1/18/2011 - PAC013 calcType - BT - Restructure
+37059fb6 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+3fe28860 -2 -2
+Description: Returns a constant used to define the commissionable target calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6b5aa99e -2 -2
+Description: çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+789cf07a -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+287a3266 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+1b0cd939 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+3ed91ee0 -2 -2
+Modification Logçä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial Calculation Ruleçä
+2b6033b9 -2 -2
+Modification Logçä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial Calculation Rule
+3283f062 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmaJ Release 1 Sprint 3 - Initial Calculation Rule
+63bcc7b2 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmaJ Release 1 Sprint 3 - Initial Calculation Rule
+1c1716f7 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmaJ Release 1 Sprint 3 - Initial Calculation Rule
+643fc695 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmaJ Release 1 Sprint 3 - Initial Calculation Rule
+5640b769 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial Calculation Rule
+2a817973 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial calculation rule
+6169af15 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial calculation rule
+1a0ba94 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial calculation rule
+aabaa89 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial calculation rule
+38162f11 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+56cf8898 -2 -2
+Description: Turns the Shadow Account calcType onçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+326ead97 -2 -2
+Description: Turns the Shadow Account Catch Up premium calcType onçä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Initial Rule
+7d03a50b -2 -2
+Description: Turns the Shadow Account Catch Up premium calcType off, reverting it to normal Shadowçä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Initial Rule
+66aeeee6 -2 -2
+Description: Turns the Shadow Account calcType offçä çä1/12/2011 - PAC013 calcType - BT - Restructure
+18d29074 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+5179b6b -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Add initial function
+169ab46c -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Add initial function
+128eb2a1 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Add initial function
+11df15e2 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä7/12/2011 - PAC013 calcType - BT - Add initial function
+1b2ce9cd -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä7/25/2011 - PAC024 Annual Statement - BT - Add initial function
+7e1714bf -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä7/25/2011 - PAC024 Annual Statement - BT - Add initial function
+728ca302 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+6f4a7735 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä
+733703db -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2652824b -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+2b1b43aa -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+18fb8d7c -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+1f6f599a -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+7c51a9a9 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7986ac3c -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+28f5ffe3 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7026f660 -2 -2
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5bd37c53 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+4c0d406d -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+18337bf7 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+790d9fb9 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+3926d165 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2bc9b3ca -2 -2
+Description: Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - Accommdating secondary rate assumption "ANULL".
+5575874b -2 -2
+Description: Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/04/2011 - PAC017 FINRA Rule 2211 - VM - Accommdating secondary rate assumption "AMID".
+1cbdc963 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+5075822f -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2f0cdbd8 -2 -2
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2c235b2b -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5de26890 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2354bee9 -2 -2
+Modification Log:çä çä08/29/2012 - wmAJ - Release 1 Sprint 3 - Initial Calculation Ruleçä çä
+6851e562 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+63e19020 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä
+742a6dd9 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä
+505082b9 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+be928ff -2 -2
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+53769be0 -2 -2
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+549ef2ec -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it will automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä
+21f39428 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7c7b72 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Initial Rule
+1232c1be -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5a481c60 -2 -2
+Description: çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+1e8ff013 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2ed43e0b -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - BT - Add in a reusable functionçä7/28/2010 - PAC013 - BT - Add initial function
+4d5f865 -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - BT - Add in a reusable functionçä7/21/2010 - PAC013 - BT - Add initial function
+14dcaebd -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - BT - Add in a reusable functionçä7/21/2010 - PAC013 - BT - Add initial function
+773155ad -2 -2
+Description: Switches the calcType indicator to on or off.  When switched to off it wll automatically shorten vector to exclude all 0 or switched off elements if possible.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - BT - Add in a reusable functionçä7/21/2010 - PAC013 - BT - Add initial function
+56a32414 -2 -2
+Description: Returns a constant used to define the cash value accumulation test calculation type.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+edffd2c -2 -2
+Description:âCalls the access function with the current policy informationçä çäModification Log:çä7/21/2010 - PAC013 - calcType - BT - Initially added function
+4e229fee -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+602324e4 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/10/2011 - PAC013 calcType - BT - Restructure
+15bc8ae8 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/1/2011 - PAC013 calcType - BT - Restructureçä1/14/2011 - PAC013 calcType - BT - Restructure
+12bca3a6 -2 -2
+Description: Retrieves the second calctype element for Flex which is shared by FLEX/APO and RPUçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä12/9/2010 - PAC013 - BT - Add in a reusable functionçä9/16/2010 - PAC013 calcType - BT - use standard position functionçä7/21/2010 - PAC013 - calcType - add initial function
+79462d65 -2 -2
+Description: Returns what is in the specified position for a specified piece of functionality within the calcType vectorçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - BT - Add in a reusable function, change descriptionçä9/16/2010 - PAC013 calcType - BT - add initial function
+2d100c3f -2 -2
+Description: Returns the target position valueçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+5392422d -2 -2
+Description: Returns what is in the specified position for a specified piece of functionality within the calcType vectorçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+510f8575 -2 -2
+Description: Returns the specified position for Annual Statement Projectionsçä çäModification Log:çä7/14/2011 - PAC024 Annual Statement Projection - BT - add initial function
+64e69c31 -2 -2
+Description: Returns the SHADOW position valueçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructure
+2c7f27bf -2 -2
+Description: Returns the rate assumption position valueçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä1/14/2011 - PAC013 calcType - BT - Restructure
+181b9ad4 -2 -2
+Description: Returns the ILLUS position valueçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructure
+61da7376 -2 -2
+Description: Returns the GLLOAD  position valueçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructure
+38eac79e -2 -2
+Description: Returns the CVAT position valueçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructure
+c9f2b97 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial Calculation Rule
+67041f5 -2 -2
+Description: Retrieves the specified calctype elementçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - calcType - BT - add initial function
+7962debe -2 -2
+Description:âReturns the position that of the FaceSolve in the calctype vector; Returns -1 otherwise.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - BT - change function nameçäPAC013 - calcType - 7/21/2010 - BT - Initially added function
+41b6ddf9 -2 -2
+Description:çä çäModification Log:çäpA1101 - 8/1/2011 - PAC024 Annual Statement - BT - changed model name in error messageçäpA1101 - 5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçäpA1101 - 3/11/2011 - PAC013 calcType - BT - add error messageçäpA1101 - 1/12/2011 - PAC013 calcType - BT - RestructureçäpA1101 - 12/9/2010 - PAC013 - BT - initial function
+6d77a590 -2 -2
+Description:  Decides whether or not positions need to be added before the vector position that is being changed or if blanks need to be removed after the changed vector positionçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/10/2010 - PAC013 - calcType - initial function
+268d27bc -2 -2
+Description:  Removes blanks after the changed vector positionçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä12/10/2010 - PAC013 - calcType - initial function
+a42d80c -2 -2
+Description: Builds a vector from the elements of the reset vectorçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - calcType - BT - add initial function
+5dd20c47 -2 -2
+Description:  Changes the specified vector positionçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/10/2010 - PAC013 - calcType - initial function
+33374447 -2 -2
+Description: if the calcType contains rateAssumption only, just return the letter in text format (not vector format - this is uneccessary)çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä12/13/2010 - PAC013 - calcType - BT - added initial function
+7480a416 -2 -2
+Description:  Adds vector positions before the changed vector positionçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä12/10/2010 - PAC013 - calcType - initial function
+5691863a -2 -2
+Description: Set the switch to itself if it is a rate assumption or is set to 1; otherwise, set it to a blankçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - PAC013 - BT - Create initial function
+5996159f -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+368f229e -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+7bb6b490 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+4023a60d -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType model
+71989359 -2 -2
+Description:  Returns the length of the calcType vector passed inçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä12/9/2010 - PAC013 - BT - Create initial function
+3ea81dc4 -2 -2
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä7/7/2010 - BT - PAC013 - calcType - Initial function çä
+6b3f0792 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+362285f5 -2 -2
+Description: Returns a 1 if Annual Statement Projections are active via the calcTypeçä çäModification Log:çä9/9/2011 - PAC024 Annual Statement - BT - use CalcType AS Specified Premium Is Activeçä7/14/2011 - PAC024 Annual Statement - BT - add initial function
+1081ecb0 -2 -2
+Description: Returns a 1 if specified premium Annual Statement Projections are active via the calcTypeçä çäModification Log:çä9/9/2011 - PAC024 Annual Statement - BT - add initial function
+50fb4e6c -2 -2
+Description: Returns a 1 if Annual Statement Projections use planned premiumçä çäModification Log:çä9/9/2011 - PAC024 Annual Statement - BT - move functionçä7/12/2011 - PAC024 Annual Statement - BT - add initial function
+4a790805 -2 -2
+Description: Returns a 1 if Annual Statement Projections use a premium amount of zeroçä çäModification Log:çä9/9/2011 - PAC024 Annual Statement - BT - move functionçä7/12/2011 - PAC024 Annual Statement - BT - add initial function
+453994c3 -2 -2
+Description: Returns a 1 if Annual Statement Projections use alternaive premiumçä çäModification Log:çä9/9/2011 - PAC024 Annual Statement - BT - move functionçä7/12/2011 - PAC024 Annual Statement - BT - add initial function
+3bed5514 -2 -2
+Description: Returns a 1 if Annual Statement Projections use shadow account premiumçä çäModification Log:çä7/12/2011 - PAC024 Annual Statement - BT - add initial function
+3df8d91b -2 -2
+Description: Returns a 1 if Annual Statement Projections use next anniversary end dateçä çäModification Log:çä8/3/2011 -pA1101 -  PAC024 - Annual Statement - BT - change function nameçä7/25/2011 -pA1101 -  PAC024 Annual Statement - BT - add initial function
+139407c -2 -2
+Description: Returns a 1 if Annual Statement Projections use maturity end dateçä çäModification Log:çä8/3/2011 -pA1101 -  PAC024 - Annual Statement - BT - change function nameçä7/25/2011 -pA1101 -  PAC024 Annual Statement - BT - add initial function
+49d50947 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+354a290 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+6ffeeaf -2 -2
+çä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+6f2b8c17 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+7bc170ef -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+39afcffa -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+169a3b3d -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/9/2011 - PAC013 calcType - BT - use correct identifierçä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+8a52f33 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/1/2011 - PAC017 FINRA Rule 2211 - VM - initial calculation
+1302537 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä4/1/2011 - PAC017 FINRA Rule 2211 - VM - initial calculation
+5cf32690 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+4a099c48 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5bcb3d31 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+1638ec97 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+3acabe3e -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+3eb5a090 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+176f4ca8 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+37a7460f -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2c9ffae2 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+8f6ec54 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/18/2011 - Merge for WMA Enhancement ENH922 CMCçä1/12/2011 - PAC013 calcType - BT - Restructure
+7877cdb7 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2b323f2b -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2f05e28 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+3ae6fb70 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+2284d4fa -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/18/2011 - Merge for WMA Enhancement ENH922 CMC
+17ddad71 -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial calculation rule
+3df1aae1 -2 -2
+Modification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Include Shadow Catch up as a type of Shadow calcTypeçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+16e71bcb -2 -2
+Description: Shadow Account Catch Up Premium calcType is Activeçä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Initial Rule
+c5e3e46 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+73c2bdf0 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+5e7bbdcc -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+6469b6bb -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+39c9a52b -2 -2
+4/04/2011 - PAC017 FINRA Rule - VM - included additional condition for the secondary rate assumption to be set "ANULL"çä1/18/2011 - PAC013 calcType - BT - Restructure
+1176332 -2 -2
+4/04/2011 - PAC017 FINRA Rule 2211 - expanded due to modiification made to "CalcType VarIllGuarZero Is Active".çä1/18/2011 - PAC013 calcType - BT - Restructure
+77188539 -2 -2
+4/04/2011 - PAC017 FINRA Rule - VM - included additional condition for the secondary rate assumption to be set "ANULL"çä1/18/2011 - PAC013 calcType - BT - Restructure
+1af360ca -2 -2
+4/04/2011 - PAC017 FINRA Rule 2211 - expanded due to modiification made to "CalcType VarIllCurrZero Is Active".çä1/18/2011 - PAC013 calcType - BT - Restructureçä
+68cc246e -2 -2
+çä1/18/2011 - PAC013 calcType - BT - Restructure
+5121ae53 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructure
+1bf739 -2 -2
+Description: determines whether a midpoint rate will be used with guaranteed charges for illustrative purposes.çä çäModification Log:çä4/04/2011 - PAC017 FINRA Rule 2211 - Initial Calculation
+2099fc78 -2 -2
+Description: determines whether a midpoint rate will be used with current charges for illustrative purposes.çä çäModification Log:çä4/04/2011 - PAC017 FINRA Rule 2211 - Initial Calculationçä
+781812ff -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+4b6c7900 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7b15aad7 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+16555a8c -2 -2
+çä7/25/2011 - PAC024 Annual Statement - BT - added equal signçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+69660528 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+75a5a8a5 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7259825 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/17/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructure
+2889dc06 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/17/2011 - PAC013 calcType - BT - Restructure
+6744a1b0 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+22e7900 -2 -2
+Description:  Returns 1 (True) if the last element vector is a "" or a "/q" (empty vector)çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/10/2010 - PAC013 - calcType - BT - added initial function
+6c37a71c -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7674245 -2 -2
+çäpA1101 - 7/14/2011 - PAC024 Annual Statement - BT -add in annual statement projectionsçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/10/2011 - PAC013 calcType - BT - Restructure
+78f18962 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä2/1/2011 - PAC013 calcType - BT - added
+4195620a -2 -2
+Modification Log:çä çä09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial calculation rule
+2eba6d7f -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+7b9a156b -2 -2
+Description:  Extract the calculation type from the search criteria vector.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+d96810c -2 -2
+Description:  Extract the calculation type from the search criteria vector.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1d9777a -2 -2
+Description: Returns True (i.e. 1) if the calcType is in the list of "Target" calculation types.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/19/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä11/30/2010 - PERF - rm - eliminated unnecessary IF statement, since function has Boolean resultçä10/31/2007 CSC Initial Calculation/Rule
+1cf85ad4 -2 -2
+Description: Returns True (i.e. 1) if the calcType is in the list of "7702" calculation types.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/19/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä11/30/2010 - PERF - rm - eliminated unnecessary IF statement, since function has Boolean resultçä10/31/2007 CSC Initial Calculation/Rule
+490f8b80 -2 -2
+Description:  Returns the CalcType Model Nameçä çäModification Log:çäpA1101 - 8/3/2011 - PAC024 - Annual Statement - BT - add initial function
+;Offset=00000000

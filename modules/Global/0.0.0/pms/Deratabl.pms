@@ -1,0 +1,646 @@
+;1	08.12.2016 13:33:07	jlawrie2	
+X0 1090138 0 0 0 0 0 0
+
+O0 109000c 0 0 0 0 0 0
+
+E0 1090070 0 0 0 0 0 0
+
+L0 10900d4 0 0 0 0 0 0
+
+B0 1090264 0 0 0 0 0 0
+
+P0 109019c 0 b712f0 0 0 0 0
+
+P13 b712f0 109019c 0 0 0 0 2
+DERA tables model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"DERA tables model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"DERAtabl.pms"
+OUTPUT Source Version Number
+0 //'GEN VersionInfo'ä
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 1090200 0 b71170 0 0 0 0
+
+F1 b71170 1090200 b71080 0 0 0 2
+--DERA IAF table access functions--
+Funktion
+
+F1 b71080 b71170 1bc17075 b72ba0 0 0 2
+--Current COIs--
+Funktion
+
+F1 1bc17075 b71080 0 b72da0 0 0 2
+f_attained_age_curr_COI_rate_cov(attained_age;cov)
+Funktion
+ // This function is used to access the IAF for models using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_Cost_of_Risk_Table_Cov[attained_age]("curr_COI_cov" & cov)
+F1 b72da0 b71080 0 3c7686d7 0 0 2
+f_attained_age_curr_COI_rate_bnft(attained_age;bnft)
+Funktion
+ // This function is used to access the IAF for models using a multiple node approachçä// ie, attributes are indexed arrays. çäT_Cost_of_Risk_Table_Bnft[attained_age]("curr_COI_bnft" & bnft)
+F1 3c7686d7 b71080 0 0 0 0 2
+f_attained_age_curr_COI_rate_rdr(attained_age;rdr)
+Funktion
+ // This function is used to access the IAF for models using a multiple node approachçä// ie, attributes are indexed arrays. çäT_Cost_of_Risk_Table_TR[attained_age]("curr_COI_TR" & rdr)
+F1 b72ba0 b71170 b72a70 0 0 0 2
+--Guaranteed COIs--
+Funktion
+
+F1 b72a70 b72ba0 0 b726c0 0 0 2
+f_attained_age_guar_COI_cov(attained_age;cov)
+Funktion
+ // This function is used to access the IAF for models using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_Guar_Cost_of_Risk_Table_cov[attained_age]("guar_COI_cov" & cov)
+F1 b726c0 b72ba0 0 b728d0 0 0 2
+f_attained_age_guar_COI_bnft(attained_age;bnft)
+Funktion
+ // This function is used to access the IAF for models using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_Guar_Cost_of_Risk_Table_bnft[attained_age]("guar_COI_bnft" & bnft)
+F1 b728d0 b72ba0 0 0 0 0 2
+f_attained_age_guar_COI_rdr(attained_age;rdr)
+Funktion
+ // This function is used to access the IAF for models using a single node approachçä// ie, attributes are not subscripted or indexed. çäT_Guar_Cost_of_Risk_Table_TR[attained_age]("guar_COI_TR" & rdr)
+A0 10902c8 0 0 0 0 0 0
+
+T0 109032c 0 b724a0 0 0 0 0
+
+T51 b724a0 109032c b72100 0 0 0 2
+T_ExtModule
+$MODUL
+ITVX01G
+comment
+"access values"
+ECM_DEBUG
+'DERA ECM DEBUG'
+comment
+"policy level attribs"
+COMPANY_CODE
+'DERA COMPANY CODE'
+PLAN_CODE
+'DERA PLAN CODE'
+TRX_EFFECTIVE_DATE
+'DERA TRX EFFECTIVE DATE'
+PRODUCT_CODE
+'DERA PRODUCT CODE'
+SPECIAL_CLASS_CODE
+'DERA SPECIAL CLASS CODE'
+CALC_TYPE_IND
+'DERA CALC TYPE IND'
+LEV_VAR_IND
+'DERA LEV VAR IND'
+PROJ_RB_IND
+'DERA PROJ RB IND'
+VARIATION
+'DERA VARIATION'
+SEX_CODE
+'DERA SEX CODE'
+comment
+"rider/cov/bene attribs"
+AGE
+'DERA AGE'
+AGE_TR(RDR)
+'DERA AGE TR'(RDR)
+AGE_COV(COV)
+'DERA AGE COV'(COV)
+AGE_BNFT(BNFT)
+'DERA AGE BNFT'(BNFT)
+DURATION
+'DERA DURATION'
+DURATION_TR(RDR)
+'DERA DURATION TR'(RDR)
+DURATION_COV(COV)
+'DERA DURATION COV'(COV)
+DURATION_BNFT(BNFT)
+'DERA DURATION BNFT'(BNFT)
+EFFECTIVE_DATE
+'DERA EFFECTIVE DATE'
+EFFECTIVE_DATE_TR(RDR)
+'DERA EFFECTIVE DATE TR'(RDR)
+EFFECTIVE_DATE_COV(COV)
+'DERA EFFECTIVE DATE COV'(COV)
+EFFECTIVE_DATE_BNFT(BNFT)
+'DERA EFFECTIVE DATE BNFT'(BNFT)
+PREMIUM_CLASS_CODE
+'DERA PREMIUM CLASS CODE'
+PREMIUM_CLASS_CODE_TR(RDR)
+'DERA PREMIUM CLASS CODE TR'(RDR)
+PREMIUM_CLASS_CODE_COV(COV)
+'DERA PREMIUM CLASS CODE COV'(COV)
+PREMIUM_CLASS_CODE_BNFT(BNFT)
+'DERA PREMIUM CLASS CODE BNFT'(BNFT)
+UNITS
+'DERA UNITS'
+UNITS_TR(RDR)
+'DERA UNITS TR'(RDR)
+UNITS_COV(COV)
+'DERA UNITS COV'(COV)
+UNITS_BNFT(BNFT)
+'DERA UNITS BNFT'(BNFT)
+COVERAGE_PLAN_CODE(COV)
+'DERA COVERAGE PLAN CODE'(COV)
+RATING_FACTOR
+'DERA RATING FACTOR'
+comment
+"face amounts"
+AMOUNT_AT_RISK
+'DERA AMOUNT AT RISK'
+AMOUNT_AT_RISK_COV(COV)
+'DERA AMOUNT AT RISK COV'(COV)
+AMOUNT_AT_RISK_TR(RDR)
+'DERA AMOUNT AT RISK TR'(RDR)
+AMOUNT_AT_RISK_BNFT(BNFT)
+'DERA AMOUNT AT RISK BNFT'(BNFT)
+PLAN_CODE_COV(COV)
+'DERA PLAN CODE COV'(COV)
+PLAN_CODE_TR(RDR)
+'DERA PLAN CODE TR'(RDR)
+PLAN_CODE_BNFT(BNFT)
+'DERA PLAN CODE BNFT'(BNFT)
+RATING_FACTOR_TR(RDR)
+'DERA RATING FACTOR TR'(RDR)
+RATING_FACTOR_COV(COV)
+'DERA RATING FACTOR COV'(COV)
+RATING_FACTOR_BNFT(BNFT)
+'DERA RATING FACTOR BNFT'(BNFT)
+SEX_CODE_COV(COV)
+'DERA SEX CODE COV'(COV)
+SEX_CODE_TR(RDR)
+'DERA SEX CODE TR'(RDR)
+SEX_CODE_BNFT(BNFT)
+'DERA SEX CODE BNT'(BNFT)
+T1 b72100 b724a0 0 b73220 0 0 2
+---Guar COI Tables---
+key
+value
+T2 b73220 b724a0 0 b75f70 0 0 22
+T_Guar_Cost_of_Risk_Table_Cov
+attained_age
+guar_COI
+guar_COI_cov0
+guar_COI_cov1
+guar_COI_cov2
+guar_COI_cov3
+guar_COI_cov4
+guar_COI_cov5
+guar_COI_cov6
+guar_COI_cov7
+guar_COI_cov8
+guar_COI_cov9
+guar_COI_cov10
+guar_COI_cov11
+guar_COI_cov12
+guar_COI_cov13
+guar_COI_cov14
+guar_COI_cov15
+guar_COI_cov16
+guar_COI_cov17
+guar_COI_cov18
+guar_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 b75f70 b724a0 0 b74670 0 0 22
+T_Guar_Cost_of_Risk_Table_Bnft
+attained_age
+guar_COI
+guar_COI_bnft0
+guar_COI_bnft1
+guar_COI_bnft2
+guar_COI_bnft3
+guar_COI_bnft4
+guar_COI_bnft5
+guar_COI_bnft6
+guar_COI_bnft7
+guar_COI_bnft8
+guar_COI_bnft9
+guar_COI_bnft10
+guar_COI_bnft11
+guar_COI_bnft12
+guar_COI_bnft13
+guar_COI_bnft14
+guar_COI_bnft15
+guar_COI_bnft16
+guar_COI_bnft17
+guar_COI_bnft18
+guar_COI_bnft19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 b74670 b724a0 0 b75170 0 0 22
+T_Guar_Cost_of_Risk_Table_TR
+attained_age
+guar_COI
+guar_COI_TR0
+guar_COI_TR1
+guar_COI_TR2
+guar_COI_TR3
+guar_COI_TR4
+guar_COI_TR5
+guar_COI_TR6
+guar_COI_TR7
+guar_COI_TR8
+guar_COI_TR9
+guar_COI_TR10
+guar_COI_TR11
+guar_COI_TR12
+guar_COI_TR13
+guar_COI_TR14
+guar_COI_TR15
+guar_COI_TR16
+guar_COI_TR17
+guar_COI_TR18
+guar_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 b75170 b724a0 0 b76290 0 0 2
+---COI Tables---
+key
+value
+T2 b76290 b724a0 0 b769a0 0 0 22
+T_Cost_of_Risk_Table_Cov
+attained_age
+curr_COI
+curr_COI_cov0
+curr_COI_cov1
+curr_COI_cov2
+curr_COI_cov3
+curr_COI_cov4
+curr_COI_cov5
+curr_COI_cov6
+curr_COI_cov7
+curr_COI_cov8
+curr_COI_cov9
+curr_COI_cov10
+curr_COI_cov11
+curr_COI_cov12
+curr_COI_cov13
+curr_COI_cov14
+curr_COI_cov15
+curr_COI_cov16
+curr_COI_cov17
+curr_COI_cov18
+curr_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 b769a0 b724a0 0 b77b90 0 0 22
+T_Cost_of_Risk_Table_Bnft
+attained_age
+curr_COI
+curr_COI_bnft0
+curr_COI_bnft1
+curr_COI_bnft2
+curr_COI_bnft3
+curr_COI_bnft4
+curr_COI_bnft5
+curr_COI_bnft6
+curr_COI_bnft7
+curr_COI_bnft8
+curr_COI_bnft9
+curr_COI_bnft10
+curr_COI_bnft11
+curr_COI_bnft12
+curr_COI_bnft13
+curr_COI_bnft14
+curr_COI_bnft15
+curr_COI_bnft16
+curr_COI_bnft17
+curr_COI_bnft18
+curr_COI_bnft19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 b77b90 b724a0 0 b78df0 0 0 22
+T_Cost_of_Risk_Table_TR
+attained_age
+curr_COI
+curr_COI_TR0
+curr_COI_TR1
+curr_COI_TR2
+curr_COI_TR3
+curr_COI_TR4
+curr_COI_TR5
+curr_COI_TR6
+curr_COI_TR7
+curr_COI_TR8
+curr_COI_TR9
+curr_COI_TR10
+curr_COI_TR11
+curr_COI_TR12
+curr_COI_TR13
+curr_COI_TR14
+curr_COI_TR15
+curr_COI_TR16
+curr_COI_TR17
+curr_COI_TR18
+curr_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T1 b78df0 b724a0 0 b78480 0 0 2
+---Special Class Tables--
+key
+value
+T2 b78480 b724a0 0 b79d50 0 0 22
+T_Special_Class_Table_Cov
+attained_age
+curr_COI
+curr_COI_cov0
+curr_COI_cov1
+curr_COI_cov2
+curr_COI_cov3
+curr_COI_cov4
+curr_COI_cov5
+curr_COI_cov6
+curr_COI_cov7
+curr_COI_cov8
+curr_COI_cov9
+curr_COI_cov10
+curr_COI_cov11
+curr_COI_cov12
+curr_COI_cov13
+curr_COI_cov14
+curr_COI_cov15
+curr_COI_cov16
+curr_COI_cov17
+curr_COI_cov18
+curr_COI_cov19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 b79d50 b724a0 0 b78b90 0 0 22
+T_Special_Class_Table_Bnft
+attained_age
+curr_COI
+curr_COI_bnft0
+curr_COI_bnft1
+curr_COI_bnft2
+curr_COI_bnft3
+curr_COI_bnft4
+curr_COI_bnft5
+curr_COI_bnft6
+curr_COI_bnft7
+curr_COI_bnft8
+curr_COI_bnft9
+curr_COI_bnft10
+curr_COI_bnft11
+curr_COI_bnft12
+curr_COI_bnft13
+curr_COI_bnft14
+curr_COI_bnft15
+curr_COI_bnft16
+curr_COI_bnft17
+curr_COI_bnft18
+curr_COI_bnft19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+T2 b78b90 b724a0 0 0 0 0 22
+T_Special_Class_Table_TR
+attained_age
+curr_COI
+curr_COI_TR0
+curr_COI_TR1
+curr_COI_TR2
+curr_COI_TR3
+curr_COI_TR4
+curr_COI_TR5
+curr_COI_TR6
+curr_COI_TR7
+curr_COI_TR8
+curr_COI_TR9
+curr_COI_TR10
+curr_COI_TR11
+curr_COI_TR12
+curr_COI_TR13
+curr_COI_TR14
+curr_COI_TR15
+curr_COI_TR16
+curr_COI_TR17
+curr_COI_TR18
+curr_COI_TR19
+1
+y single node
+y multiple node 0
+y multiple node 1
+y multiple node2
+y multiple node3
+y multiple node4
+y multiple node5
+y multiple node6
+y multiple node7
+y multiple node8
+y multiple node9
+y multiple node10
+y multiple node11
+y multiple node12
+y multiple node13
+y multiple node14
+y multiple node15
+y multiple node16
+y multiple node17
+y multiple node18
+y multiple node19
+-
+O0
+E0
+L0
+B0
+P1
+b712f0
+F9
+b71170
+b71080
+1bc17075
+b72da0
+3c7686d7
+b72ba0
+b72a70
+b726c0
+b728d0
+A0
+T13
+b724a0
+b72100
+b73220
+b75f70
+b74670
+b75170
+b76290
+b769a0
+b77b90
+b78df0
+b78480
+b79d50
+b78b90
+;Offset=00000000

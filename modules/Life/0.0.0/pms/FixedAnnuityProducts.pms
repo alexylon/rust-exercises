@@ -1,0 +1,7330 @@
+;1	08.12.2016 13:38:33	jlawrie2	
+X0 3e40c8 0 1651700 0 0 0 0
+
+X26 1651700 3e40c8 0 14b36fda 0 0 2
+OUTPUT Policy Death Benefit - SPDA w/o MVA
+'OUTPUT Policy Death Benefit'("C"; 2)
+12293.13
+INPUT Calling System
+I1
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Calling Program
+VPMSTEST
+Input TransEffDate
+12/31/2006
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy SubAccount ProductCode
+SPDA1PA
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+10000
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+X29 14b36fda 3e40c8 41dad989 1c476e6f 0 0 2
+OUTPUT Policy Death Benefit - SPDA w/ MVA
+'OUTPUT Policy Death Benefit'("C"; 2)
+12426.14
+INPUT Calling System
+I1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Calling Program
+VPMSTEST
+Input TransEffDate
+12/31/2006
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy SubAccount ProductCode
+FPA1PA
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+10000
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+0
+X29 41dad989 14b36fda 0 0 0 0 2
+OUTPUT Policy Death Benefit - FPDA w/MVA
+'OUTPUT Policy Death Benefit'("C"; 1)
+11058.39
+INPUT Calling System
+I1
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Calling Program
+VPMSTEST
+Input TransEffDate
+12/31/2006
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy SubAccount ProductCode
+BFUND3
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+1000
+INPUT Policy Annuity InitDepositAmt
+9000
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+0
+X0 1c476e6f 3e40c8 7ed32a75 43237a62 0 0 2
+-- Sprint8 Test Cases --
+X30 7ed32a75 1c476e6f 0 26f3178e 0 0 2
+OUTPUT Contribution Bonus
+OUTPUT Contribution Bonus
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+03/15/2010
+INPUT Calling Program
+
+INPUT Premium Payment
+1000.00
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueGender
+2
+INPUT Policy SubAccount AllocSequence
+
+INPUT Calling System
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy EffDate
+03/15/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Participant IssueAge
+55
+INPUT Policy FinancialActivity FinActivityType
+8
+INPUT Policy SubAccount AllocPercent
+100
+INPUT Policy Annuity initPaymentAmt
+1000.00
+INPUT Policy number of SubAccount
+1
+INPUT Policy TaxLocality
+78572
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy FinancialActivity FinEffDate
+03/15/2010
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000.00
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy PaymentAmt
+1000.00
+INPUT Policy SubAccount AllocationAmt
+0
+INPUT Policy PaymentMode
+1
+X30 26f3178e 1c476e6f 0 35f38331 0 0 2
+OUTPUT Contribution Bonus Percent
+OUTPUT Contribution Bonus Percent
+00.000
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+03/15/2010
+INPUT Calling Program
+
+INPUT Premium Payment
+1000.00
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueGender
+2
+INPUT Policy SubAccount AllocSequence
+
+INPUT Calling System
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy EffDate
+03/15/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Participant IssueAge
+55
+INPUT Policy FinancialActivity FinActivityType
+8
+INPUT Policy SubAccount AllocPercent
+100
+INPUT Policy Annuity initPaymentAmt
+1000.00
+INPUT Policy number of SubAccount
+1
+INPUT Policy TaxLocality
+78572
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy FinancialActivity FinEffDate
+03/15/2010
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000.00
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy PaymentAmt
+1000.00
+INPUT Policy SubAccount AllocationAmt
+0
+INPUT Policy PaymentMode
+1
+X30 35f38331 1c476e6f 0 68c7572e 0 0 2
+OUTPUT Net Premium("C")
+OUTPUT Net Premium("C")
+915
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+03/15/2010
+INPUT Calling Program
+
+INPUT Premium Payment
+1000.00
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueGender
+2
+INPUT Policy SubAccount AllocSequence
+
+INPUT Calling System
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy EffDate
+03/15/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Participant IssueAge
+55
+INPUT Policy FinancialActivity FinActivityType
+8
+INPUT Policy SubAccount AllocPercent
+100
+INPUT Policy Annuity initPaymentAmt
+1000.00
+INPUT Policy number of SubAccount
+1
+INPUT Policy TaxLocality
+78572
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy FinancialActivity FinEffDate
+03/15/2010
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000.00
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy PaymentAmt
+1000.00
+INPUT Policy SubAccount AllocationAmt
+0
+INPUT Policy PaymentMode
+1
+X30 68c7572e 1c476e6f 0 2a2518b9 0 0 2
+OUTPUT Premium Load Charge
+OUTPUT Premium Load Charge
+15
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+03/15/2010
+INPUT Calling Program
+
+INPUT Premium Payment
+1000.00
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueGender
+2
+INPUT Policy SubAccount AllocSequence
+
+INPUT Calling System
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy EffDate
+03/15/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Participant IssueAge
+55
+INPUT Policy FinancialActivity FinActivityType
+8
+INPUT Policy SubAccount AllocPercent
+100
+INPUT Policy Annuity initPaymentAmt
+1000.00
+INPUT Policy number of SubAccount
+1
+INPUT Policy TaxLocality
+78572
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy FinancialActivity FinEffDate
+03/15/2010
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000.00
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy PaymentAmt
+1000.00
+INPUT Policy SubAccount AllocationAmt
+0
+INPUT Policy PaymentMode
+1
+X30 2a2518b9 1c476e6f 0 38c109 0 0 2
+OUTPUT Premium Local Tax
+OUTPUT Premium Local Tax
+20
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+03/15/2010
+INPUT Calling Program
+
+INPUT Premium Payment
+1000.00
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueGender
+2
+INPUT Policy SubAccount AllocSequence
+
+INPUT Calling System
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy EffDate
+03/15/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Participant IssueAge
+55
+INPUT Policy FinancialActivity FinActivityType
+8
+INPUT Policy SubAccount AllocPercent
+100
+INPUT Policy Annuity initPaymentAmt
+1000.00
+INPUT Policy number of SubAccount
+1
+INPUT Policy TaxLocality
+78572
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy FinancialActivity FinEffDate
+03/15/2010
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000.00
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy PaymentAmt
+1000.00
+INPUT Policy SubAccount AllocationAmt
+0
+INPUT Policy PaymentMode
+1
+X30 38c109 1c476e6f 0 0 0 0 2
+OUTPUT Premium State Tax
+OUTPUT Premium State Tax
+50
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Jurisdiction
+51
+INPUT TransEffDate
+03/15/2010
+INPUT Calling Program
+
+INPUT Premium Payment
+1000.00
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueGender
+2
+INPUT Policy SubAccount AllocSequence
+
+INPUT Calling System
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy EffDate
+03/15/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Participant IssueAge
+55
+INPUT Policy FinancialActivity FinActivityType
+8
+INPUT Policy SubAccount AllocPercent
+100
+INPUT Policy Annuity initPaymentAmt
+1000.00
+INPUT Policy number of SubAccount
+1
+INPUT Policy TaxLocality
+78572
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy FinancialActivity FinEffDate
+03/15/2010
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000.00
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy PaymentAmt
+1000.00
+INPUT Policy SubAccount AllocationAmt
+0
+INPUT Policy PaymentMode
+1
+X0 43237a62 3e40c8 3b1718f1 2d6f2dc1 0 0 0
+-- Sprint 19 --
+X17 3b1718f1 43237a62 0 47649115 0 0 2
+AV Cumulative Withdrawals(calcType; fundIndex)
+AV Cumulative Withdrawals("C"; 1)
+2.1
+INPUT Policy number of SubAccount FinancialActivity
+2
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+11
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+12/31/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+4/2/2012
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+1
+INPUT Policy number of SubAccount FinancialActivity[1]
+2
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+11
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+12/31/2005
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1]
+1.05
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;1]
+11
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;1]
+12/31/2005
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;1]
+1.05
+INPUT Policy ProductCode
+FPA1PA
+X15 47649115 43237a62 0 6c99e141 0 0 2
+IntRate Rates Vector(calcType; fundIndex)
+IntRate Rates Vector("C";0)
+
+INPUT Policy Subaccount IntRates
+
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount ProductCode
+POLYR
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+9
+INPUT Policy SubAccount OpenDate
+8/1/2004
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy EffDate
+01/01/2006
+X17 6c99e141 43237a62 0 0 0 0 2
+PI InvestProductInfo GuaranteeDuration(rootProductCode; fundIndex; effectiveDate)
+PI InvestProductInfo GuaranteeDuration("FPA1PA"; 0; "11/01/2010")
+5
+INPUT Policy SubAccount ProductCode
+POLYR
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+11/01/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy EffDate
+11/01/1986
+INPUT Policy InvestProductInfo GuaranteeType
+ECONT
+INPUT Policy SubAccount OpenDate
+11/01/1986
+INPUT Policy SubAccount ValuationAsOfDate
+05/01/1997
+INPUT Policy InvestProductInfo GuaranteeDuration
+6
+INPUT Policy Subaccount IntRates
+((11//1//1986!8.5)!(5//1//1987!8.5)!(11//01//1987!8)!(01//01//1989!8.11)!(04//01//1989!8.15)!(05//01//1989!8.25)!(08//01//1989!8.15)!(10//01//1989!8)!(01//01//1990!7.85)!(04//01//1990!8)!(08//01//1990!7.85)!(11//01//1990!7.95)!(12//01//1990!8)!(02//01//1991!7.95)!(03//01//1991!7.7)!(04//01//1991!7.65)!(06//01//1991!7.5)!(08//01//1991!7.4)!(09//01//1991!7.25)!(10//01//1991!7.1)!(12//01//1991!6.9)!(01//01//1992!6.8)!(02//01//1992!6.6)!(03//01//1992!6.35)!(04//01//1992!6.2)!(08//01//1992!5.85)!(09//01//1992!5.8)!(11//01//1992!5.75)!(12//01//1992!5.65)!(02//01//1993!5.55)!(04//01//1993!5.35)!(06//01//1993!5)!(07//01//1993!4.9)!(08//01//1993!4.8)!(09//01//1993!4.65)!(10//01//1993!4.4)!(01//01//1994!4.2)!(02//01//1994!4.1)!(04//01//1994!4.25)!(06//01//1994!4.35)!(07//01//1994!4.5)!(09//01//1994!4.65)!(10//01//1994!4.75)!(11//01//1994!4.85)!(01//01//1995!4.9)!(02//01//1995!5)!(09//01//1995!5.1)!(11//01//1995!5.05)!(03//01//1996!5)!(06//01//1996!5.05)!(05//01//1997!5.1))
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of SubAccount
+1
+INPUT Message Language
+9
+X92 2d6f2dc1 3e40c8 0 16668dfb 0 0 2
+OUTPUT Free Withdrawal Amt
+OUTPUT Free Withdrawal Amt
+6174.895
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy EffDate
+01/15/2005
+Input TransEffDate
+08/20/2008
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+3
+INPUT Policy number of SubAccount FinancialActivity[0]
+3
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+39098.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+01/15/2005
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+1.51
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;2]
+1.42
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;2]
+01/15/2007
+INPUT Policy SubAccount OpenDate[0]
+1/15/2005
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Subaccount IntRates[0]
+
+INPUT Policy SubAccount ValuationAsOfDate[0]
+1/15/2005
+INPUT Policy SubAccount ProductCode[0]
+CALYR
+INPUT Policy Subaccount ID[0]
+1
+INPUT Policy number of SubAccount FinancialActivity[1]
+7
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1;0]
+9798.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;0]
+02/01/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;1]
+1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;2]
+-1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;2]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;3]
+1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;3]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;4]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;4]
+-1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;4]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;5]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;5]
+1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;5]
+01/15/2010
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;6]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;6]
+-1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;6]
+01/15/2010
+INPUT Policy SubAccount OpenDate[1]
+2/1/2007
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+2/1/2007
+INPUT Policy SubAccount ProductCode[1]
+CALYR2
+INPUT Policy Subaccount ID[1]
+2
+INPUT Policy number of SubAccount FinancialActivity[2]
+4
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2;0]
+2938.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;0]
+08/15/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;1]
+1.59
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;2]
+1.49
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;2]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;3]
+1.40
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;3]
+01/15/2010
+INPUT Policy SubAccount OpenDate[2]
+8/15/2007
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+8/15/2007
+INPUT Policy SubAccount ProductCode[2]
+CALYR2
+INPUT Policy Subaccount ID[2]
+3
+INPUT Policy FeatureOptProduct PostingOrder
+5
+INPUT Policy InvestProductInfo GuaranteeDuration[0]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[1]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[2]
+4
+INPUT Policy InvestProductInfo InterestCreditDaysType[0]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[1]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[2]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[0]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[1]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[2]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1000500001
+INPUT InvestProduct InvestProductTypeCode[0]
+22
+INPUT InvestProduct InvestProductTypeCode[1]
+22
+INPUT InvestProduct InvestProductTypeCode[2]
+22
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Investment AccountValueLastAnn
+61748.95
+X84 16668dfb 3e40c8 144cc504 54cae5e4 0 0 2
+OUTPUT AV Cash Accumulation Value("C")
+OUTPUT AV Cash Accumulation Value("C")
+65384.22
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy EffDate
+01/15/2005
+Input TransEffDate
+08/20/2008
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy InvestProductInfo GuaranteeDuration[0]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[1]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[2]
+4
+INPUT Policy InvestProductInfo InterestCreditDaysType[0]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[1]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[2]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[0]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[1]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[2]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1000500001
+INPUT InvestProduct InvestProductTypeCode[0]
+22
+INPUT InvestProduct InvestProductTypeCode[1]
+22
+INPUT InvestProduct InvestProductTypeCode[2]
+22
+INPUT Policy number of SubAccount
+3
+INPUT Policy number of SubAccount FinancialActivity[0]
+3
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+39098.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+01/15/2005
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+1.51
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;2]
+1.42
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;2]
+01/15/2007
+INPUT Policy SubAccount OpenDate[0]
+1/15/2005
+INPUT Policy Subaccount IntRates[0]
+
+INPUT Policy SubAccount ValuationAsOfDate[0]
+1/15/2005
+INPUT Policy SubAccount ProductCode[0]
+CALYR
+INPUT Policy Subaccount ID
+1
+INPUT Policy number of SubAccount FinancialActivity[1]
+7
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1;0]
+9798.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;0]
+02/01/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;1]
+1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;2]
+-1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;2]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;3]
+1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;3]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;4]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;4]
+-1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;4]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;5]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;5]
+1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;5]
+01/15/2010
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;6]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;6]
+-1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;6]
+01/15/2010
+INPUT Policy SubAccount OpenDate[1]
+2/1/2007
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+2/1/2007
+INPUT Policy SubAccount ProductCode[1]
+CALYR2
+INPUT Policy Subaccount ID[1]
+2
+INPUT Policy number of SubAccount FinancialActivity[2]
+4
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2;0]
+2938.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;0]
+08/15/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;1]
+1.59
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;2]
+1.49
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;2]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;3]
+1.40
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;3]
+01/15/2010
+INPUT Policy SubAccount OpenDate[2]
+8/15/2007
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+8/15/2007
+INPUT Policy SubAccount ProductCode[2]
+CALYR2
+INPUT Policy Subaccount ID[2]
+3
+INPUT Policy FeatureOptProduct PostingOrder
+5
+X84 144cc504 16668dfb 0 0 0 0 2
+AV Fund Accumulation Value Array(calcType)
+AV Fund Accumulation Value Array("C")
+CALYR;51069.05#CALYR2;14315.17
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy EffDate
+01/15/2005
+Input TransEffDate
+08/20/2008
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy InvestProductInfo GuaranteeDuration[0]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[1]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[2]
+4
+INPUT Policy InvestProductInfo InterestCreditDaysType[0]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[1]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[2]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[0]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[1]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[2]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1000500001
+INPUT InvestProduct InvestProductTypeCode[0]
+22
+INPUT InvestProduct InvestProductTypeCode[1]
+22
+INPUT InvestProduct InvestProductTypeCode[2]
+22
+INPUT Policy number of SubAccount
+3
+INPUT Policy number of SubAccount FinancialActivity[0]
+3
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+39098.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+01/15/2005
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+1.51
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;2]
+1.42
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;2]
+01/15/2007
+INPUT Policy SubAccount OpenDate[0]
+1/15/2005
+INPUT Policy Subaccount IntRates[0]
+
+INPUT Policy SubAccount ValuationAsOfDate[0]
+1/15/2005
+INPUT Policy SubAccount ProductCode[0]
+CALYR
+INPUT Policy Subaccount ID
+1
+INPUT Policy number of SubAccount FinancialActivity[1]
+7
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1;0]
+9798.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;0]
+02/01/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;1]
+1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;2]
+-1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;2]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;3]
+1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;3]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;4]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;4]
+-1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;4]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;5]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;5]
+1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;5]
+01/15/2010
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;6]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;6]
+-1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;6]
+01/15/2010
+INPUT Policy SubAccount OpenDate[1]
+2/1/2007
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+2/1/2007
+INPUT Policy SubAccount ProductCode[1]
+CALYR2
+INPUT Policy Subaccount ID[1]
+2
+INPUT Policy number of SubAccount FinancialActivity[2]
+4
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2;0]
+2938.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;0]
+08/15/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;1]
+1.59
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;2]
+1.49
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;2]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;3]
+1.40
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;3]
+01/15/2010
+INPUT Policy SubAccount OpenDate[2]
+8/15/2007
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+8/15/2007
+INPUT Policy SubAccount ProductCode[2]
+CALYR2
+INPUT Policy Subaccount ID[2]
+3
+INPUT Policy FeatureOptProduct PostingOrder
+5
+X87 54cae5e4 3e40c8 0 aa79f4c 0 0 2
+OUTPUT Allocated Withdrawals(calcType)
+OUTPUT Allocated Withdrawals("C")
+3;CALYR2;0#2;CALYR2;193.07619160177#1;CALYR;597.929811197621
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy EffDate
+01/15/2005
+Input TransEffDate
+08/20/2008
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy InvestProductInfo GuaranteeDuration[0]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[1]
+4
+INPUT Policy InvestProductInfo GuaranteeDuration[2]
+4
+INPUT Policy InvestProductInfo InterestCreditDaysType[0]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[1]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType[2]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[0]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[1]
+1000500001
+INPUT Policy InvestProductInfo GuaranteeType[2]
+1000500001
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1000500001
+INPUT InvestProduct InvestProductTypeCode[0]
+22
+INPUT InvestProduct InvestProductTypeCode[1]
+22
+INPUT InvestProduct InvestProductTypeCode[2]
+22
+INPUT Policy number of SubAccount
+3
+INPUT Policy number of SubAccount FinancialActivity[0]
+3
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+39098.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+01/15/2005
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+1.51
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;2]
+1.42
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;2]
+01/15/2007
+INPUT Policy SubAccount OpenDate[0]
+1/15/2005
+INPUT Policy Subaccount IntRates[0]
+
+INPUT Policy SubAccount ValuationAsOfDate[0]
+1/15/2005
+INPUT Policy SubAccount ProductCode[0]
+CALYR
+INPUT Policy Subaccount ID
+1
+INPUT Policy number of SubAccount FinancialActivity[1]
+7
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1;0]
+9798.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;0]
+02/01/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;1]
+1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;2]
+-1.54
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;2]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;3]
+1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;3]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;4]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;4]
+-1.45
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;4]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;5]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;5]
+1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;5]
+01/15/2010
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;6]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;6]
+-1.36
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;6]
+01/15/2010
+INPUT Policy SubAccount OpenDate[1]
+2/1/2007
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+2/1/2007
+INPUT Policy SubAccount ProductCode[1]
+CALYR2
+INPUT Policy Subaccount ID[1]
+2
+INPUT Policy number of SubAccount FinancialActivity[2]
+4
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2;0]
+2938.14
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;0]
+08/15/2007
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;1]
+1.59
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;1]
+01/15/2008
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;2]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;2]
+1.49
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;2]
+01/15/2009
+INPUT Policy SubAccount FinancialActivity FinActivityType[2;3]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[2;3]
+1.40
+INPUT Policy SubAccount FinancialActivity FinEffDate[2;3]
+01/15/2010
+INPUT Policy SubAccount OpenDate[2]
+8/15/2007
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+8/15/2007
+INPUT Policy SubAccount ProductCode[2]
+CALYR2
+INPUT Policy Subaccount ID[2]
+3
+INPUT Policy FeatureOptProduct PostingOrder
+5
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+X18 aa79f4c 3e40c8 0 2ead16e0 0 0 2
+IntRate Accum Factor(calcType; fundIndex)
+IntRate Accum Factor("C"; 0)
+1.07727967070077
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+Input TransEffDate
+12/31/2004
+INPUT Policy SubAccount OpenDate
+1/1/2004
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2004
+INPUT Policy InvestProductInfo GuaranteeDuration
+12
+INPUT Policy SubAccount ProductCode
+POLYR
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+35
+INPUT Message Language
+9
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1000500001
+INPUT Policy number of SubAccount
+1
+INPUT InvestProduct InvestProductTypeCode
+26
+X43 2ead16e0 3e40c8 0 4dbcdc2 0 0 2
+OUTPUT Net Withdrawal Amt (Request:  Gross Withdrawal)
+OUTPUT Net Withdrawal Amt
+17234.14
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+294
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+20000
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 4dbcdc2 3e40c8 0 5760ffe2 0 0 2
+OUTPUT Net Withdrawal Amt Charges Only (Request:  Gross Withdrawal)
+OUTPUT Net Withdrawal Amt Charges Only
+18505.44
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+294
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+20000
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 5760ffe2 3e40c8 0 74fd1fb7 0 0 2
+OUTPUT Gross Withdrawal Amt (Request:  Gross Withdrawal)
+OUTPUT Gross Withdrawal Amt
+20000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+294
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+20000
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 74fd1fb7 3e40c8 0 74fa7179 0 0 2
+OUTPUT Annuity Surrender Charge (Request:  Gross Withdrawal)
+OUTPUT Annuity Surrender Charge
+1494.56
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+294
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+20000
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 74fa7179 3e40c8 0 3bf84f9b 0 0 2
+OUTPUT Net Withdrawal Amt (Request:  Net Amount Surrender Charges Only)
+OUTPUT Net Withdrawal Amt
+17234.14
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+18505.44
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 3bf84f9b 3e40c8 0 6209acfc 0 0 2
+OUTPUT Net Withdrawal Amt Charges Only (Request:  Net Amount Surrender Charges Only)
+OUTPUT Net Withdrawal Amt Charges Only
+18505.44
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+18505.44
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 6209acfc 3e40c8 0 6e4924ca 0 0 2
+OUTPUT Gross Withdrawal Amt (Request:  Net Amount Surrender Charges Only)
+OUTPUT Gross Withdrawal Amt
+20000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+18505.44
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 6e4924ca 3e40c8 0 52167db8 0 0 2
+OUTPUT Annuity Surrender Charge (Request:  Net Amount Surrender Charges Only)
+OUTPUT Annuity Surrender Charge
+1494.56
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+18505.44
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 52167db8 3e40c8 0 39e8294c 0 0 2
+OUTPUT Net Withdrawal Amt (Request:  Net Amount Charges, fees and Tax)
+OUTPUT Net Withdrawal Amt
+17234.14
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+17234.14
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 39e8294c 3e40c8 0 3b6c5fc9 0 0 2
+OUTPUT Net Withdrawal Amt Charges Only (Request:  Net Amount Charge, fees and Tax)
+OUTPUT Net Withdrawal Amt Charges Only
+18505.44
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+17234.14
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X43 3b6c5fc9 3e40c8 0 637ff3e6 0 0 2
+OUTPUT Gross Withdrawal Amt (Request:  Net Amount Charges, fees and Tax)
+OUTPUT Gross Withdrawal Amt
+20000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+17234.14
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+X45 637ff3e6 3e40c8 0 5689bbf3 0 0 2
+OUTPUT Annuity Surrender Charge (Request:  Net Amount Charges, fees and Tax)
+OUTPUT Annuity Surrender Charge
+
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+17234.14
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+
+X45 5689bbf3 3e40c8 0 2fb2c415 0 0 2
+OUTPUT Total Withholding Amount
+OUTPUT Total Withholding Amount
+1271.301
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT Policy FinancialActivity FinActivityType
+294
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement TotalAmt
+20000
+Input TransEffDate
+12/31/2011
+INPUT Policy EffDate
+01/01/2010
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Investment AccountValueFirstPartialPolYear
+33937.67
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount OpenDate
+01/01/2010
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Jurisdiction
+6
+INPUT Policy SubAccount ValuationAsOfDate
+01/01/2010
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+01/06/2010
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/06/2010
+INPUT Policy SubAccount ProductCode[2]
+FPA1
+INPUT Policy SubAccount OpenDate[2]
+12/31/2010
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+12/31/2010
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+30
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Annuity CashValueAmt
+33937.67
+INPUT Policy CostBasis
+29700
+INPUT Policy FinancialActivity TaxWithholding TaxDisbursementType
+2
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity FirstTaxYear
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+01
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductType
+9
+INPUT Policy FinancialActivity FinActivityGrossAmt
+20000
+X39 2fb2c415 3e40c8 0 6f4faa13 0 0 2
+OUTPUT Annuity Surrender Charge - With ALTSCHG Rider
+OUTPUT Annuity Surrender Charge
+340.88
+INPUT Calling Program
+PolicyValues
+INPUT Policy Arrangement ArrType
+8
+INPUT Policy number of Rider
+1
+INPUT Policy Rider RiderCode
+ALTSCHG
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Participant IssueGender
+1
+INPUT TransEffDate
+10/10/2008
+INPUT Calling System
+WMAJ
+INPUT Policy Subaccount IntRates
+
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Rider EffDate
+01/15/2008
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1000500001
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+01/15/2008
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+01/15/2008
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy Participant IssueAge
+45
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+4868.42
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+4868.42
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+INPUT InvestProduct InvestProductTypeCode
+22
+INPUT Policy number of SubAccount
+1
+INPUT Policy Arrangement TotalAmt
+5221.32
+INPUT Policy SubAccount ValuationAsOfDate
+01/15/2008
+INPUT Policy InvestProductInfo GuaranteeDuration
+4
+INPUT Policy Annuity TotalDepositITD
+5045.00
+INPUT Policy SubAccount ID
+2
+INPUT Policy InvestProduct InfoInterestCreditDaysType
+1000500001
+INPUT Policy FeatureOptProduct PostingOrder
+5
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy SubAccount OpenDate
+01/15/2008
+INPUT Policy Rider RiderTypeCode
+202
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+
+X34 6f4faa13 3e40c8 0 cda78cd 0 0 2
+OUTPUT Policy Annuity RMDAmount
+OUTPUT Policy Annuity RMDAmount
+1025.42
+INPUT Calling System
+1000500001
+INPUT Calling Program
+RMDQuote
+INPUT Message Language
+9
+INput TransEffDate
+12/31/2009
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/15/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Annuity BeneficiaryDesignation
+0
+INPUT Policy Annuity RmdCalcMeth
+2
+INPUT Policy Annuity RmdDate
+12/31/2007
+INPUT Policy Annuity ParticipantRoleCode
+27
+INPUT Policy Participant IssueAge
+69
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Arrangement RmdTaxRule
+
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount ID
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount OpenDate
+01/15/2007
+INPUT Policy SubAccount ValuationAsOfDate
+01/15/2007
+INPUT Policy number of SubAccount FinancialActivity
+2
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;1]
+5.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;1]
+
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+01/15/2007
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+20091.50
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+20091.50
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+20000
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+01/01/2008
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+4.61
+X34 cda78cd 3e40c8 0 14b694c0 0 0 2
+OUTPUT Policy Annuity RMDAmount
+OUTPUT Policy Annuity RMDAmount
+0.02
+INPUT Calling System
+1000500001
+INPUT Calling Program
+RMDQuote
+INPUT Message Language
+9
+INput TransEffDate
+12/31/2009
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/15/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Annuity BeneficiaryDesignation
+0
+INPUT Policy Annuity RmdCalcMeth
+2
+INPUT Policy Annuity RmdDate
+12/31/2007
+INPUT Policy Annuity ParticipantRoleCode
+27
+INPUT Policy Participant IssueAge
+69
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Arrangement RmdTaxRule
+
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount ID
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount OpenDate
+01/15/2007
+INPUT Policy SubAccount ValuationAsOfDate
+01/15/2007
+INPUT Policy number of SubAccount FinancialActivity
+2
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;1]
+5.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+14
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;1]
+5
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+01/15/2007
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+20091.50
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+20091.50
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+5
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+01/01/2008
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+4.61
+X0 14b694c0 3e40c8 f537989 17899b9c 0 0 2
+-- WMAJ1301-983 --
+X66 f537989 14b694c0 0 6ec51d07 0 0 2
+OUTPUT Allocated Gross Withdrawals("C")
+OUTPUT Allocated Gross Withdrawals("C")
+1;FPA1;212.06
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X66 6ec51d07 14b694c0 0 659a7d16 0 0 2
+OUTPUT Allocated Gross Withdrawal Subaccount ID("C"; 0)
+OUTPUT Allocated Gross Withdrawal Subaccount ID("C"; 0)
+1
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X66 659a7d16 14b694c0 0 20ee1cac 0 0 2
+OUTPUT Allocated Gross Withdrawal Subaccount ProductCode("C"; 0)
+OUTPUT Allocated Gross Withdrawal Subaccount ProductCode("C"; 0)
+FPA1
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X66 20ee1cac 14b694c0 0 4a35bb98 0 0 2
+OUTPUT Allocated Gross Withdrawal Amount("C"; 0)
+OUTPUT Allocated Gross Withdrawal Amount("C"; 0)
+212.06
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X66 4a35bb98 14b694c0 0 447f2020 0 0 2
+OUTPUT Allocated Withdrawals("C")
+OUTPUT Allocated Withdrawals("C")
+1;FPA1;208.44
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X66 447f2020 14b694c0 0 26b93da8 0 0 2
+OUTPUT Allocated Withdrawal Subaccount ID("C"; 0)
+OUTPUT Allocated Withdrawal Subaccount ID("C"; 0)
+1
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X66 26b93da8 14b694c0 0 6abd88c4 0 0 2
+OUTPUT Allocated Withdrawal Subaccount ProductCode("C"; 0)
+OUTPUT Allocated Withdrawal Subaccount ProductCode("C"; 0)
+FPA1
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X66 6abd88c4 14b694c0 0 0 0 0 2
+OUTPUT Allocated Withdrawal Amount("C"; 0)
+OUTPUT Allocated Withdrawal Amount("C"; 0)
+208.44
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+CommonWithdrawal
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct[1]
+0
+INPUT Policy Arrangement number of Taxwithholding
+2
+INPUT Message Language
+
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace
+1
+INPUT Policy number of Rider
+0
+Input TransEffDate
+05/01/2009
+INPUT Policy arrangement arrdestination transferpct
+100
+INPUT Policy Annuity FirstTaxYear
+02/01/2009
+INPUT Policy QualifiedCode
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Arrangement TaxWithholding TaxOwnershipType
+1000500001
+INPUT Policy arrangement number of arrdestination
+1
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy EffDate
+02/01/2009
+INPUT Policy Annuity NumWthdrwYTD
+0
+INPUT Policy arrangement arrdestination partyId
+3
+INPUT Policy Participant IssueAge
+60
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt[1]
+0
+INPUT Party GovtIDTC
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+915.00
+INPUT Policy Arrangement TotalAmt
+200
+INPUT Party GovtIDStat
+1
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2009
+INPUT Policy SubAccount ID
+1
+INPUT Policy ProductType
+9
+INPUT Policy arrangement arrdestination partysequence
+1
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0.00
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+7
+INPUT Policy arrangement arrdestination transferamt
+0
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldAmt
+0
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Annuity RothIraNetContributionAmt
+
+INPUT Calling System
+1000500001
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement amountQualifier
+1
+INPUT Policy Arrangement TaxWithholding TaxWithheldPct
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+02/01/2009
+INPUT Policy Annuity CashValueAmt
+1000.00
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy arrangement arrdestination transferamttype
+3
+INPUT Policy Arrangement TaxWithholding TaxWithholdingPlace[1]
+2
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+915.00
+INPUT Policy number of Loan
+0
+INPUT Policy SubAccount FinancialActivity FinActivityNetAmt[0;0]
+915.00
+INPUT Policy Arrangement TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy Annuity TotalDepositITD
+1000.00
+INPUT Policy Arrangement TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy FinancialActivity FinActivity PreTEFRA CostBasis
+0
+INPUT Policy Arrangement TaxWithholding TaxDisbursementType
+2
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Annuity SurrenderCharge
+0
+INPUT Policy SubAccount OpenDate
+02/01/2009
+INPUT Party ResidenceState
+
+INPUT Policy FinancialActivity Number Of Fee
+
+X0 17899b9c 3e40c8 3516cc01 54bbe69a 0 0 2
+-- WMAJ1401-1000 --
+X78 3516cc01 17899b9c 0 6c485e20 0 0 2
+AV Cumulative TransfersFromFund(calcType; fundIndex)
+AV Cumulative TransfersFromFund("C";0)
+11491.35561
+INPUT Calling Program
+ValuationService
+INPUT Calling System
+1000500001
+INPUT TransEffDate
+05/10/2008
+INPUT Policy EffDate
+01/15/2006
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy ProductType
+9
+INPUT Policy ProductVersionCode
+2
+INPUT Policy PolicyStatus
+25
+INPUT Policy TaxLocality
+78572
+INPUT Policy Jurisdiction
+51
+INPUT Policy Participant IssueAge
+52
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy PaymentMode
+4
+INPUT Policy InitDepositAmt
+159574.8
+INPUT Policy PaymentAmt
+159574.8
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+159574.8
+INPUT Policy Annuity TotalDepositITD
+159574.8
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement ArrSubType
+21
+INPUT Policy Arrangement ArrType
+37
+INPUT Policy Arrangement Arrdestination ArrDestinationId[0]
+1
+INPUT Policy Arrangement Arrdestination ArrDestinationId[1]
+5
+INPUT Policy Arrangement Arrdestination ArrDestinationId[2]
+8
+INPUT Policy Arrangement Arrdestination ForcedIntRate[0]
+0
+INPUT Policy Arrangement Arrdestination ForcedIntRate[1]
+0
+INPUT Policy Arrangement Arrdestination ForcedIntRate[2]
+0
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+FPA1PA
+INPUT Policy Arrangement Arrdestination Subaccount productCode[1]
+M1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[2]
+M2
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Subaccount sequence[1]
+2
+INPUT Policy Arrangement Arrdestination Subaccount sequence[2]
+3
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination Transferamttype[1]
+3
+INPUT Policy Arrangement Arrdestination Transferamttype[2]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+49.9999937
+INPUT Policy Arrangement Arrdestination TransferPct[1]
+30.0000063
+INPUT Policy Arrangement Arrdestination TransferPct[2]
+20
+INPUT Policy Arrangement Number of arrdestination
+3
+INPUT Policy FinancialActivity Number Of Fee
+0
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ID
+1
+INPUT Policy SubAccount ID[1]
+2
+INPUT Policy SubAccount ID[2]
+3
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount OpenDate
+01/15/2006
+INPUT Policy SubAccount OpenDate[1]
+01/15/2006
+INPUT Policy SubAccount OpenDate[2]
+01/15/2006
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount ProductCode[1]
+M1
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount ValuationAsOfDate
+01/15/2006
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/15/2006
+INPUT Policy SubAccount ValuationAsOfDate[2]
+01/15/2006
+INPUT Policy SubAccount number of FinancialActivity
+2
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+74992.64
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+44995.6
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+29997.068
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+1000500071
+INPUT Policy SubAccount number of FinancialActivity[-1]
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+05/10/2008
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+11491.35561
+X82 6c485e20 17899b9c 0 6052bf83 0 0 2
+AV Cumulative TransfersToFund(calcType; fundIndex)
+AV Cumulative TransfersToFund("C";1)
+13000
+INPUT Calling Program
+ValuationService
+INPUT Calling System
+1000500001
+INPUT TransEffDate
+10/01/2008
+INPUT Policy EffDate
+01/15/2006
+INPUT Policy CarrierCode
+VCS
+INPUT Policy ProductCode
+FP1WMAJ
+INPUT Policy ProductType
+9
+INPUT Policy ProductVersionCode
+2
+INPUT Policy PolicyStatus
+25
+INPUT Policy TaxLocality
+78572
+INPUT Policy Jurisdiction
+51
+INPUT Policy Participant IssueAge
+52
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy PaymentMode
+4
+INPUT Policy InitDepositAmt
+159574.8
+INPUT Policy PaymentAmt
+159574.8
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+159574.8
+INPUT Policy Annuity TotalDepositITD
+159574.8
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Arrangement ArrSubType
+21
+INPUT Policy Arrangement ArrType
+37
+INPUT Policy Arrangement Arrdestination ArrDestinationId[0]
+1
+INPUT Policy Arrangement Arrdestination ArrDestinationId[1]
+5
+INPUT Policy Arrangement Arrdestination ArrDestinationId[2]
+8
+INPUT Policy Arrangement Arrdestination ForcedIntRate[0]
+0
+INPUT Policy Arrangement Arrdestination ForcedIntRate[1]
+0
+INPUT Policy Arrangement Arrdestination ForcedIntRate[2]
+0
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+FPA1PA
+INPUT Policy Arrangement Arrdestination Subaccount productCode[1]
+M1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[2]
+M2
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Subaccount sequence[1]
+2
+INPUT Policy Arrangement Arrdestination Subaccount sequence[2]
+3
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination Transferamttype[1]
+3
+INPUT Policy Arrangement Arrdestination Transferamttype[2]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+49.9999937
+INPUT Policy Arrangement Arrdestination TransferPct[1]
+30.0000063
+INPUT Policy Arrangement Arrdestination TransferPct[2]
+20
+INPUT Policy Arrangement Number of arrdestination
+3
+INPUT Policy FinancialActivity Number Of Fee
+0
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ID
+1
+INPUT Policy SubAccount ID[1]
+2
+INPUT Policy SubAccount ID[2]
+3
+INPUT Policy Subaccount IntRates
+
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount OpenDate
+01/15/2006
+INPUT Policy SubAccount OpenDate[1]
+01/15/2006
+INPUT Policy SubAccount OpenDate[2]
+01/15/2006
+INPUT Policy SubAccount ProductCode
+FPA1
+INPUT Policy SubAccount ProductCode[1]
+M1
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount ValuationAsOfDate
+01/15/2006
+INPUT Policy SubAccount ValuationAsOfDate[1]
+01/15/2006
+INPUT Policy SubAccount ValuationAsOfDate[2]
+01/15/2006
+INPUT Policy SubAccount number of FinancialActivity
+2
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+74992.64
+INPUT Policy SubAccount number of FinancialActivity[1]
+2
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+44995.6
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+01/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+29997.068
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;1]
+1000500071
+INPUT Policy SubAccount number of FinancialActivity[-1]
+0
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;1]
+05/10/2008
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;1]
+11491.35561
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;1]
+1000500072
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;1]
+10/01/2008
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1;1]
+13944.5
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[1;1]
+13000
+X11 6052bf83 17899b9c 3e95ef1d e4b348d 0 0 2
+ANNCD Fund Source Transfer Amount Total
+ANNCD Fund Source Transfer Amount Total
+1000
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+2
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement ArrSource TransferAmt
+200
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence[1]
+
+INPUT Policy Arrangement ArrSource TransferAmt[1]
+800
+INPUT Policy Arrangement ArrSource SubAccount ProductCode[1]
+M1
+INPUT Calling System
+WMAJ
+X11 3e95ef1d 6052bf83 0 1474996c 0 0 2
+ANNCD Fund Source Transfer Amount(fundIndex)
+ANNCD Fund Source Transfer Amount(1)
+800
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+2
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement ArrSource TransferAmt
+200
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence[1]
+
+INPUT Policy Arrangement ArrSource TransferAmt[1]
+800
+INPUT Policy Arrangement ArrSource SubAccount ProductCode[1]
+M1
+INPUT Calling System
+WMAJ
+X51 1474996c 6052bf83 0 0 0 0 2
+OUTPUT Allocated Transfer Source Amount(fundIndex)
+OUTPUT Allocated Transfer Destination Amount(1)
+
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement TotalAmt
+400
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement ArrSource TransferAmt
+100
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+M1
+INPUT Policy Arrangement ArrSource SubAccount Sequence[1]
+
+INPUT Policy Arrangement ArrSource TransferAmt[1]
+300
+INPUT Policy Arrangement ArrSource SubAccount ProductCode[1]
+FPA1
+INPUT Calling System
+WMAJ
+INPUT Policy Arrangement ArrSource TransferPct[1]
+100
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+Input TransEffDate
+01/02/2006
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy Arrangement ArrSource TransferPct
+25
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination TransferAmt
+
+INPUT Policy Arrangement ArrDestination TransferPct
+75
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+25
+INPUT Policy Subaccount ID
+16
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy Subaccount ID[2]
+18
+X66 e4b348d 17899b9c 0 4a29780b 0 0 2
+OUTPUT Allocated Transfer Gross Source Amount(fundIndex)
+OUTPUT Allocated Transfer Source Number of SubAccounts(0)
+2
+INPUT Calling System
+WMAJ
+INPUT Policy Arrangement ArrSource TransferPct[1]
+100
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INput TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+8195
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct
+25
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence
+
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+4
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+3000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode[1]
+M1
+INPUT Policy Arrangement ArrSource TransferAmt[1]
+500
+INPUT Policy SubAccount FinancialActivity FinActivityType[1;1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1;1]
+1/15/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1;1]
+2000
+INPUT Policy SubAccount ProductCode[3]
+FPA1
+INPUT Policy SubAccount OpenDate[3]
+9/1/2006
+INPUT Policy Subaccount IntRates[3]
+
+INPUT Policy SubAccount ValuationAsOfDate[3]
+9/1/2006
+INPUT Policy Subaccount ID[3]
+19
+INPUT Policy SubAccount number of FinancialActivity[3]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityType[3]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[3]
+9/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[3]
+5195
+X0 4a29780b 17899b9c 53aa8898 0 0 0 2
+-- 1 Source 2 Destinations --
+X51 53aa8898 4a29780b 0 46599c11 0 0 2
+OUTPUT Allocated Transfer Source Number of SubAccounts(0)
+OUTPUT Allocated Transfer Source Number of SubAccounts(0)
+?OUTPUT Allocated Transfer Source Number of SubAccounts(0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 46599c11 4a29780b 0 49d7287c 0 0 2
+OUTPUT Allocated Transfer Source SubAccount ID(0;0)
+OUTPUT Allocated Transfer Source SubAccount ID(0;0)
+?OUTPUT Allocated Transfer Source SubAccount ID(0;0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 49d7287c 4a29780b 0 4561e912 0 0 2
+OUTPUT Allocated Transfer Source SubAccount ProductCode(0;0)
+OUTPUT Allocated Transfer Source SubAccount ProductCode(0;0)
+?OUTPUT Allocated Transfer Source SubAccount ProductCode(0;0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 4561e912 4a29780b 0 9559e20 0 0 2
+OUTPUT Allocated Transfer Source Fee(0)
+OUTPUT Allocated Transfer Source Fee(0)
+?OUTPUT Allocated Transfer Source Fee(0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 9559e20 4a29780b 0 38ff742f 0 0 2
+OUTPUT Allocated Transfer Gross Source Amount(0;0)
+OUTPUT Allocated Transfer Gross Source Amount(0;0)
+?OUTPUT Allocated Transfer Gross Source Amount(0;0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 38ff742f 4a29780b 0 7d830878 0 0 2
+OUTPUT Allocated Transfer Source Amount(0;0)
+OUTPUT Allocated Transfer Source Amount(0;0)
+?OUTPUT Allocated Transfer Source Amount(0;0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 7d830878 4a29780b 0 6a2af8d 0 0 2
+OUTPUT Allocated Transfer Destination SubAccount ProductCode(0)
+OUTPUT Allocated Transfer Destination SubAccount ProductCode(0)
+?OUTPUT Allocated Transfer Destination SubAccount ProductCode(0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 6a2af8d 4a29780b 0 18892ddf 0 0 2
+OUTPUT Allocated Transfer Gross Destination Amount(0)
+OUTPUT Allocated Transfer Gross Destination Amount(0)
+?OUTPUT Allocated Transfer Gross Destination Amount(0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 18892ddf 4a29780b 0 756b446d 0 0 2
+OUTPUT Allocated Transfer Destination Amount(0)
+OUTPUT Allocated Transfer Destination Amount(0)
+?OUTPUT Allocated Transfer Destination Amount(0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 756b446d 4a29780b 0 680bd31f 0 0 2
+OUTPUT Allocated Transfer Destination SubAccount ProductCode(1)
+OUTPUT Allocated Transfer Destination SubAccount ProductCode(1)
+?OUTPUT Allocated Transfer Destination SubAccount ProductCode(1)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 680bd31f 4a29780b 0 11ae6a56 0 0 2
+OUTPUT Allocated Transfer Gross Destination Amount(1)
+OUTPUT Allocated Transfer Gross Destination Amount(1)
+?OUTPUT Allocated Transfer Gross Destination Amount(1)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 11ae6a56 4a29780b 0 58e443bf 0 0 2
+OUTPUT Allocated Transfer Destination Amount(1)
+OUTPUT Allocated Transfer Destination Amount(1)
+?OUTPUT Allocated Transfer Destination Amount(1)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 58e443bf 4a29780b 0 26269c84 0 0 2
+ANNCD Fund Destination Transfer Amount(0)
+ANNCD Fund Destination Transfer Amount(0)
+?ANNCD Fund Destination Transfer Amount(0)
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X54 26269c84 4a29780b 0 353aa053 0 0 2
+ANNCD Fund Destination Transfer Amount(1)
+ANNCD Fund Source Transfer Amount(1)
+
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+INPUT Policy Arrangement ArrSource TransferAmt[1]
+
+INPUT Policy Arrangement ArrSource TransferPct[1]
+
+INPUT Policy Arrangement ArrSource SubAccount ProductCode[1]
+
+X51 353aa053 4a29780b 0 41d3b182 0 0 2
+Policy Arrangement ArrDestination TransferPct(0)
+Policy Arrangement ArrDestination TransferPct(0)
+25
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 41d3b182 4a29780b 0 fef5232 0 0 2
+Policy Arrangement ArrDestination TransferPct(1)
+Policy Arrangement ArrDestination TransferPct(1)
+75
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 fef5232 4a29780b 0 3e403f55 0 0 2
+Policy Arrangement DestTransferAmtType
+Policy Arrangement DestTransferAmtType
+3
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 3e403f55 4a29780b 0 404b4363 0 0 2
+TransferType is Amount(3)
+TransferType is Amount(3)
+0
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 404b4363 4a29780b 0 2213b83d 0 0 2
+TransferType is Percent(3)
+TransferType is Percent(3)
+1
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X51 2213b83d 4a29780b 0 0 0 0 2
+ANNCD Fund Source Transfer Amount Total
+ANNCD Fund Destination Transfer Amount Total
+948.51
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Calling Program
+VPMSTEST
+INPUT Policy EffDate
+01/01/2006
+INPut TransEffDate
+01/01/2007
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Arrangement number of ArrSource
+1
+INPUT Policy Arrangement SourceTransferAmtType
+2
+INPUT Policy Arrangement ArrSource TransferAmt
+1000
+INPUT Policy Arrangement ArrSource SubAccount ProductCode
+FPA1
+INPUT Policy Arrangement ArrSource SubAccount Sequence
+
+INPUT Policy Arrangement number of ArrDestination
+2
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[0]
+M1
+INPUT Policy Arrangement ArrDestination TransferPct[0]
+25
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[0]
+
+INPUT Policy Arrangement ArrDestination SubAccount ProductCode[1]
+M2
+INPUT Policy Arrangement ArrDestination TransferPct[1]
+75
+INPUT Policy Arrangement ArrDestination SubAccount Sequence[1]
+
+INPUT Policy number of SubAccount
+3
+INPUT Policy SubAccount number of FinancialActivity
+1
+INPUT Policy Subaccount ID
+16
+INPUT Policy SubAccount ProductCode
+M1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+2000
+INPUT Policy SubAccount number of FinancialActivity[1]
+1
+INPUT Policy Subaccount ID[1]
+17
+INPUT Policy SubAccount ProductCode[1]
+FPA1
+INPUT Policy SubAccount OpenDate[1]
+1/1/2006
+INPUT Policy Subaccount IntRates[1]
+
+INPUT Policy SubAccount ValuationAsOfDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[1]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[1]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[1]
+8000
+INPUT Policy SubAccount number of FinancialActivity[2]
+1
+INPUT Policy Subaccount ID[2]
+18
+INPUT Policy SubAccount ProductCode[2]
+M2
+INPUT Policy SubAccount OpenDate[2]
+1/1/2006
+INPUT Policy Subaccount IntRates[2]
+
+INPUT Policy SubAccount ValuationAsOfDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityType[2]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[2]
+1/1/2006
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[2]
+5000
+X53 54bbe69a 3e40c8 751d1b61 4af5b905 0 0 2
+OUTPUT FULL SURRENDER CHARGE
+OUTPUT FREE WITHDRAWAL AMT
+0
+INPUT CALLING SYSTEM
+CL
+INPUT CALLING PROGRAM
+CKULSCIF
+INPUT MESSAGE LANGUAGE
+9
+INPUT TRANSEFFDATE
+08/01/2056
+INPUT POLICY EFFDATE
+08/01/2009
+INPUT POLICY CARRIERCODE
+00
+INPUT POLICY JURISDICTION
+17
+INPUT POLICY POLNUMBER
+PAFPA0005E
+INPUT POLICY PRODUCTCODE
+SPDA1PA
+INPUT POLICY PRODUCTTYPE
+9
+INPUT POLICY PRODUCTVERSIONCODE
+1
+INPUT POLICY ANNUITY CUMWTHDRWLAMTATD
+0.00
+INPUT POLICY ANNUITY CUMWTHDRWLAMTITD
+0.00
+INPUT POLICY ANNUITY CUMWTHDRWLAMTYTD
+0.00
+INPUT POLICY ANNUITY GUARINTRATE
+7.000
+INPUT POLICY ANNUITY GUARMINCASHSURRDATE
+01/01/1900
+INPUT POLICY ANNUITY GUARMINCASHSURRVALUE
+0.00
+INPUT POLICY ANNUITY NETPAYMENTSFIRSTYEAR
+0.00
+INPUT POLICY ANNUITY NETPREMAMTITD
+0.00
+INPUT POLICY ANNUITY NETWTHDRWLAMTITD
+0.00
+INPUT POLICY ANNUITY NUMWTHDRWATD
+0
+INPUT POLICY ANNUITY NUMWTHDRWYTD
+0
+INPUT POLICY ANNUITY TOTALDEPOSITITD
+0.00
+INPUT POLICY ARRANGEMENT ARRTYPE
+31
+INPUT POLICY INVESTMENT ACCOUNTVALUE
+1225863.97
+INPUT POLICY INVESTMENT ACCOUNTVALUEFIRSTPARTIALCALYEAR
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUEFIRSTPARTIALPOLYEAR
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUELASTANN
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUELASTCALYEAR
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUETRANSYEAR
+0.00
+INPUT POLICY INVESTMENT GUARACCOUNTVALUE
+0.00
+INPUT POLICY NUMBER OF FINANCIALACTIVITY
+1
+INPUT POLICY NUMBER OF SUBACCOUNT
+1
+INPUT POLICY SUBACCOUNT ASSETCLASS
+
+INPUT POLICYPRODUCT FEE FEEWAIVERTIMINGBASIS
+1
+INPUT POLICYPRODUCT NUMBER OF FEE
+1
+INPUT POLICYPRODUCT GUARINTRATE
+7.000
+INPUT POLICY ARRANGEMENT TOTALAMT
+1225863.97
+INPUT POLICY PARTICIPANT ISSUEAGE[0;0]
+33
+INPUT POLICY PARTICIPANT ISSUEGENDER[0;0]
+1
+INPUT POLICY PARTICIPANT TOBACCOPREMIUMBASIS[0;0]
+1
+INPUT POLICY PARTICIPANT UNDERWRITINGCLASS[0;0]
+2
+INPUT POLICYPRODUCT FEE CHARGEBASEDON[0]
+1000500030
+INPUT POLICYPRODUCT FEE SECONDARYCHARGEBASEDON[0]
+1000500022
+INPUT POLICYPRODUCT FEE TABLEREF TABLEREFKEY[0]
+13
+INPUT POLICYPRODUCT FEE TERTIARYCHARGEBASEDON[0]
+1000500022
+INPUT POLICYPRODUCT FEE TYPE[0]
+15
+INPUT POLICY FINANCIALACTIVITY FINACTIVITYGROSSAMT[0]
+0.00
+INPUT POLICY FINANCIALACTIVITY FINACTIVITYNETAMT[0]
+1225863.97
+INPUT POLICY FINANCIALACTIVITY FINACTIVITYTYPE[0]
+6
+INPUT POLICY FINANCIALACTIVITY FINEFFDATE[0]
+08/01/2056
+INPUT POLICY SUBACCOUNT TOTVALUE
+1225863.97
+X53 751d1b61 54bbe69a 0 0 0 0 2
+OUTPUT FREE WITHDRAWAL AMT
+OUTPUT FREE WITHDRAWAL AMT
+0
+INPUT CALLING SYSTEM
+CL
+INPUT CALLING PROGRAM
+CKULSCIF
+INPUT MESSAGE LANGUAGE
+9
+INPUT TRANSEFFDATE
+08/01/2056
+INPUT POLICY EFFDATE
+08/01/2009
+INPUT POLICY CARRIERCODE
+00
+INPUT POLICY JURISDICTION
+17
+INPUT POLICY POLNUMBER
+PAFPA0005E
+INPUT POLICY PRODUCTCODE
+SPDA1PA
+INPUT POLICY PRODUCTTYPE
+9
+INPUT POLICY PRODUCTVERSIONCODE
+1
+INPUT POLICY ANNUITY CUMWTHDRWLAMTATD
+0.00
+INPUT POLICY ANNUITY CUMWTHDRWLAMTITD
+0.00
+INPUT POLICY ANNUITY CUMWTHDRWLAMTYTD
+0.00
+INPUT POLICY ANNUITY GUARINTRATE
+7.000
+INPUT POLICY ANNUITY GUARMINCASHSURRDATE
+01/01/1900
+INPUT POLICY ANNUITY GUARMINCASHSURRVALUE
+0.00
+INPUT POLICY ANNUITY NETPAYMENTSFIRSTYEAR
+0.00
+INPUT POLICY ANNUITY NETPREMAMTITD
+0.00
+INPUT POLICY ANNUITY NETWTHDRWLAMTITD
+0.00
+INPUT POLICY ANNUITY NUMWTHDRWATD
+0
+INPUT POLICY ANNUITY NUMWTHDRWYTD
+0
+INPUT POLICY ANNUITY TOTALDEPOSITITD
+0.00
+INPUT POLICY ARRANGEMENT ARRTYPE
+31
+INPUT POLICY INVESTMENT ACCOUNTVALUE
+1225863.97
+INPUT POLICY INVESTMENT ACCOUNTVALUEFIRSTPARTIALCALYEAR
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUEFIRSTPARTIALPOLYEAR
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUELASTANN
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUELASTCALYEAR
+0.00
+INPUT POLICY INVESTMENT ACCOUNTVALUETRANSYEAR
+0.00
+INPUT POLICY INVESTMENT GUARACCOUNTVALUE
+0.00
+INPUT POLICY NUMBER OF FINANCIALACTIVITY
+1
+INPUT POLICY NUMBER OF SUBACCOUNT
+1
+INPUT POLICY SUBACCOUNT ASSETCLASS
+
+INPUT POLICYPRODUCT FEE FEEWAIVERTIMINGBASIS
+1
+INPUT POLICYPRODUCT NUMBER OF FEE
+1
+INPUT POLICYPRODUCT GUARINTRATE
+7.000
+INPUT POLICY ARRANGEMENT TOTALAMT
+1225863.97
+INPUT POLICY PARTICIPANT ISSUEAGE[0;0]
+33
+INPUT POLICY PARTICIPANT ISSUEGENDER[0;0]
+1
+INPUT POLICY PARTICIPANT TOBACCOPREMIUMBASIS[0;0]
+1
+INPUT POLICY PARTICIPANT UNDERWRITINGCLASS[0;0]
+2
+INPUT POLICYPRODUCT FEE CHARGEBASEDON[0]
+1000500030
+INPUT POLICYPRODUCT FEE SECONDARYCHARGEBASEDON[0]
+1000500022
+INPUT POLICYPRODUCT FEE TABLEREF TABLEREFKEY[0]
+13
+INPUT POLICYPRODUCT FEE TERTIARYCHARGEBASEDON[0]
+1000500022
+INPUT POLICYPRODUCT FEE TYPE[0]
+15
+INPUT POLICY FINANCIALACTIVITY FINACTIVITYGROSSAMT[0]
+0.00
+INPUT POLICY FINANCIALACTIVITY FINACTIVITYNETAMT[0]
+1225863.97
+INPUT POLICY FINANCIALACTIVITY FINACTIVITYTYPE[0]
+6
+INPUT POLICY FINANCIALACTIVITY FINEFFDATE[0]
+08/01/2056
+INPUT POLICY SUBACCOUNT TOTVALUE
+1225863.97
+X0 4af5b905 3e40c8 1de2f8b3 0 0 0 2
+-- SPIA1--
+X41 1de2f8b3 4af5b905 0 266f4cbe 0 0 2
+OUTPUT Annuity Factor(1;1)
+OUTPUT Annuity Factor(1;1)
+11.41862
+INPUT Policy CarrierCode
+00
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+1/1/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+80
+INPUT Policy Coverage ProductCode
+SPIA1PA
+INPUT Policy Coverage EffDate
+1/1/2006
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+SPIA1PA
+INPUT Policy Payout IncomeOption
+1
+INPUT Policy Payout LivesType
+1
+INPUT Policy Payout PayoutType
+1
+INPUT Message Language
+9
+INPUT Policy Participant IssueAge[0;0]
+33
+INPUT Policy Participant IssueAge[0;1]
+26
+INPUT Policy Participant IssueGender[0;0]
+1
+INPUT Policy Participant IssueGender[0;1]
+2
+INPUT Policy Participant UnderwritingClass[0;0]
+1
+INPUT Policy Participant UnderwritingClass[0;1]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Annuity BandPremInd
+0
+INPUT Policy Annuity InitDepositAmt
+5000
+INPUT Policy Annuity InitPaymentAmt
+5000
+INPUT Policy Payout PeriodCertainPeriods
+0
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy Payout PayoutMode
+1
+INPUT Policy Payout StartDate
+1/1/2006
+INPUT Policy Payout PayoutAmt
+1000
+INPUT Policy Payout PrimaryReductionPct
+0
+INPUT Policy Payout SecondaryReductionPct
+0
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy SubAccount ProductCode
+SPIA1PA
+INPUT Policy Payout AllowedPayoutPct
+0
+X41 266f4cbe 4af5b905 0 66af363e 0 0 2
+ANNCALC Single Annuity Factor("CALCTYPE"; 1;1;1)
+ANNCALC Single Annuity Factor("CALCTYPE"; 1;1;1)
+11.4186222317944
+INPUT Policy CarrierCode
+00
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+1/1/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+80
+INPUT Policy Coverage ProductCode
+SPIA1PA
+INPUT Policy Coverage EffDate
+1/1/2006
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+SPIA1PA
+INPUT Policy Payout IncomeOption
+1
+INPUT Policy Payout LivesType
+1
+INPUT Policy Payout PayoutType
+1
+INPUT Message Language
+9
+INPUT Policy Participant IssueAge[0;0]
+33
+INPUT Policy Participant IssueAge[0;1]
+26
+INPUT Policy Participant IssueGender[0;0]
+1
+INPUT Policy Participant IssueGender[0;1]
+2
+INPUT Policy Participant UnderwritingClass[0;0]
+1
+INPUT Policy Participant UnderwritingClass[0;1]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Annuity BandPremInd
+0
+INPUT Policy Annuity InitDepositAmt
+5000
+INPUT Policy Annuity InitPaymentAmt
+5000
+INPUT Policy Payout PeriodCertainPeriods
+0
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy Payout PayoutMode
+1
+INPUT Policy Payout StartDate
+1/1/2006
+INPUT Policy Payout PayoutAmt
+1000
+INPUT Policy Payout PrimaryReductionPct
+0
+INPUT Policy Payout SecondaryReductionPct
+0
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy SubAccount ProductCode
+SPIA1PA
+INPUT Policy Payout AllowedPayoutPct
+0
+X41 66af363e 4af5b905 0 1a603249 0 0 2
+ANNCALC Single Annuity Delay Factor("CALCTYPE"; 1)
+ANNCALC Single Annuity Delay Factor("CALCTYPE"; 1)
+1
+INPUT Policy CarrierCode
+00
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+1/1/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+80
+INPUT Policy Coverage ProductCode
+SPIA1PA
+INPUT Policy Coverage EffDate
+1/1/2006
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+SPIA1PA
+INPUT Policy Payout IncomeOption
+1
+INPUT Policy Payout LivesType
+1
+INPUT Policy Payout PayoutType
+1
+INPUT Message Language
+9
+INPUT Policy Participant IssueAge[0;0]
+33
+INPUT Policy Participant IssueAge[0;1]
+26
+INPUT Policy Participant IssueGender[0;0]
+1
+INPUT Policy Participant IssueGender[0;1]
+2
+INPUT Policy Participant UnderwritingClass[0;0]
+1
+INPUT Policy Participant UnderwritingClass[0;1]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Annuity BandPremInd
+0
+INPUT Policy Annuity InitDepositAmt
+5000
+INPUT Policy Annuity InitPaymentAmt
+5000
+INPUT Policy Payout PeriodCertainPeriods
+0
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy Payout PayoutMode
+1
+INPUT Policy Payout StartDate
+1/1/2006
+INPUT Policy Payout PayoutAmt
+1000
+INPUT Policy Payout PrimaryReductionPct
+0
+INPUT Policy Payout SecondaryReductionPct
+0
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy SubAccount ProductCode
+SPIA1PA
+INPUT Policy Payout AllowedPayoutPct
+0
+X41 1a603249 4af5b905 0 2c07c2b 0 0 2
+OUTPUT Policy Mode Annuity Payout
+OUTPUT Policy Mode Annuity Payout
+804.46
+INPUT Policy CarrierCode
+00
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+1/1/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+80
+INPUT Policy Coverage ProductCode
+SPIA1PA
+INPUT Policy Coverage EffDate
+1/1/2006
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+SPIA1PA
+INPUT Policy Payout IncomeOption
+1
+INPUT Policy Payout LivesType
+1
+INPUT Policy Payout PayoutType
+1
+INPUT Message Language
+9
+INPUT Policy Participant IssueAge[0;0]
+33
+INPUT Policy Participant IssueAge[0;1]
+26
+INPUT Policy Participant IssueGender[0;0]
+1
+INPUT Policy Participant IssueGender[0;1]
+2
+INPUT Policy Participant UnderwritingClass[0;0]
+1
+INPUT Policy Participant UnderwritingClass[0;1]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Annuity BandPremInd
+0
+INPUT Policy Annuity InitDepositAmt
+5000
+INPUT Policy Annuity InitPaymentAmt
+5000
+INPUT Policy Payout PeriodCertainPeriods
+0
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy Payout PayoutMode
+1
+INPUT Policy Payout StartDate
+1/1/2006
+INPUT Policy Payout PayoutAmt
+1000
+INPUT Policy Payout PrimaryReductionPct
+0
+INPUT Policy Payout SecondaryReductionPct
+0
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy SubAccount ProductCode
+SPIA1PA
+INPUT Policy Payout AllowedPayoutPct
+0
+X41 2c07c2b 4af5b905 0 0 0 0 2
+OUTPUT Policy Single Premium
+OUTPUT Policy Single Premium
+12400.87
+INPUT Policy CarrierCode
+00
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+1/1/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+80
+INPUT Policy Coverage ProductCode
+SPIA1PA
+INPUT Policy Coverage EffDate
+1/1/2006
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy ProductCode
+SPIA1PA
+INPUT Policy Payout IncomeOption
+1
+INPUT Policy Payout LivesType
+1
+INPUT Policy Payout PayoutType
+1
+INPUT Message Language
+9
+INPUT Policy Participant IssueAge[0;0]
+33
+INPUT Policy Participant IssueAge[0;1]
+26
+INPUT Policy Participant IssueGender[0;0]
+1
+INPUT Policy Participant IssueGender[0;1]
+2
+INPUT Policy Participant UnderwritingClass[0;0]
+1
+INPUT Policy Participant UnderwritingClass[0;1]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy Participant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Annuity BandPremInd
+0
+INPUT Policy Annuity InitDepositAmt
+5000
+INPUT Policy Annuity InitPaymentAmt
+5000
+INPUT Policy Payout PeriodCertainPeriods
+0
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy Payout PayoutMode
+1
+INPUT Policy Payout StartDate
+1/1/2006
+INPUT Policy Payout PayoutAmt
+1000
+INPUT Policy Payout PrimaryReductionPct
+0
+INPUT Policy Payout SecondaryReductionPct
+0
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy SubAccount ProductCode
+SPIA1PA
+INPUT Policy Payout AllowedPayoutPct
+0
+O1 3e3f84 0 0 0 0 0 2
+
+--CACHESIZE
+350000
+E0 3e3ff0 0 0 0 0 0 0
+
+L0 3e405c 0 0 0 0 0 0
+
+B0 3e420c 0 0 0 0 0 0
+
+P1 3e4134 0 3e4758 0 0 0 2
+
+--description
+Main Integration Model for the Fixed Annuity Product
+P13 3e4758 3e4134 4e7ee1bc 0 0 0 2
+Fixed Annuity Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Main Integration Model for Fixed Annuity Products"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"FixedAnnuityProducts.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P3 4e7ee1bc 3e4758 3bd04cfc 6ebcc1e3 0 0 2
+Admin System
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+0
+P3 3bd04cfc 4e7ee1bc 0 56438905 0 50 2
+Contract Documents@AnnuityContractDocuments
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 56438905 4e7ee1bc 0 175d85ea 0 50 2
+AV Cash Value Calculations@AdminValuation
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 175d85ea 4e7ee1bc 0 873bc56 0 50 2
+Loans@AdminLoans
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 873bc56 4e7ee1bc 0 5f8a393a 0 50 2
+Withholding@TaxWithholding
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 5f8a393a 4e7ee1bc 0 37a5d77b 0 50 2
+Actuarial Value of Additional Benefits@RequiredMinimumDistribution
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 37a5d77b 4e7ee1bc 0 3afc659a 0 50 2
+Required Minimum Distribution Amounts@RequiredMinimumDistribution
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 3afc659a 4e7ee1bc 0 0 0 50 2
+Standard Date Functions@DateFunctions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 6ebcc1e3 3e4758 7d8240ca 0 0 0 2
+Illustrations
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+1
+P3 7d8240ca 6ebcc1e3 0 0 0 50 2
+Illustrations@FAillustrations
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+F0 3e41a0 0 0 0 0 0 0
+
+A0 3e4278 0 0 0 0 0 0
+
+T0 3e42e4 0 0 0 0 0 0
+
+I0 3e4350 0 3273ed28 0 0 0 0
+
+I0 3273ed28 3e4350 0 f2822a6 0 0 0
+FAillustrations.pms
+I0 f2822a6 3e4350 0 7f6604a2 0 0 0
+AdminValuation.pms
+I0 7f6604a2 3e4350 0 0 0 0 0
+RequiredMinimumDistribution.pms
+-
+O0
+E0
+L0
+B0
+P3
+3e4758
+4e7ee1bc
+6ebcc1e3
+F0
+A0
+T0
+;Offset=00000000

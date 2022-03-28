@@ -1,0 +1,1279 @@
+;1	08.12.2016 13:29:33	jlawrie2	
+X0 3f4070 0 3f2828 0 0 0 0
+
+X0 3f2828 3f4070 3f28c8 0 0 0 0
+-- Internal Test Cases --
+X0 3f28c8 3f2828 3f4628 3f7030 0 0 0
+-- OUTPUTS --
+X38 3f4628 3f28c8 0 3f49a8 0 0 2
+OUTPUT Total Cash Value
+0//'OUTPUT Total Cash Value'("C")
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage IndicatorCode[1]
+4
+INPUT Policy Number of ParAccumValues[1]
+2
+INPUT Policy ParAccumValues TotalUnits[1]
+20
+INPUT Policy ParAccumValues TotalUnits[1;1]
+15
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy Coverage ProductCode[1]
+BIR1PA
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Life DivType
+3
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X32 3f49a8 3f28c8 0 0 0 0 2
+OUTPUT Coverage Cash Value(coverageIndex)
+0//'OUTPUT Coverage Cash Value'(0)
+0
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Number of ParAccumValues
+2
+INPUT Policy ParAccumValues TotalUnits
+0
+INPUT Policy ParAccumValues TotalUnits[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+X0 3f7030 3f2828 3f77a8 0 0 0 0
+-- Functions --
+X34 3f77a8 3f7030 0 3f7ab0 0 0 2
+WLCashValue Total Cash Value
+0//WLCashValue Total Cash Value("C")
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Life DivOnDepositAmt
+10
+INPUT Policy Life DivOnDepositIntRate
+2
+INPUT Policy Life DivType
+2
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues TotalUnits
+30
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X34 3f7ab0 3f7030 0 3f8680 0 0 2
+WLCashValue Coverage Cash Value(coverageIndex)
+WLCashValue Coverage Cash Value("C"; 0)
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Life DivOnDepositAmt
+10
+INPUT Policy Life DivOnDepositIntRate
+2
+INPUT Policy Life DivType
+2
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues TotalUnits
+30
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X34 3f8680 3f7030 0 3f9328 0 0 2
+WLCashValue Proj Coverage CV(rateAssumption; coverageIndex; yearIndex)
+0//WLCashValue Proj Coverage CV("C"; 0; 5; "")
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Life DivOnDepositAmt
+10
+INPUT Policy Life DivOnDepositIntRate
+2
+INPUT Policy Life DivType
+2
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues TotalUnits
+30
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X31 3f9328 3f7030 0 3f9f00 0 0 2
+WLCashValue Proj Accum Dividends(rateAssumption; yearIndex; PUAVector)
+0//WLCashValue Proj Accum Dividends("C"; 5; 44)
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Life DivOnDepositAmt
+10
+INPUT Policy Life DivOnDepositIntRate
+2
+INPUT Policy Life DivType
+2
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues TotalUnits
+30
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X27 3f9f00 3f7030 0 3fa838 0 0 2
+WLCashValue Coverage PUAIndex PUA CV(coverageIndex; PUAIndex)
+0//WLCashValue Coverage PUAIndex PUA CV("C";0; 0)
+0
+INPUT Policy ParAccumValues PUADeathBenAdjAmt
+500
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X34 3fa838 3f7030 0 3fafa8 0 0 2
+WLCashValue Coverage CV(coverageIndex)
+0//WLCashValue Coverage CV("C";0)
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Life DivOnDepositAmt
+10
+INPUT Policy Life DivOnDepositIntRate
+2
+INPUT Policy Life DivType
+2
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues TotalUnits
+30
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X34 3fafa8 3f7030 0 3fc1c8 0 0 2
+WLCashValue Coverage PUA CV(coverageIndex)
+0//WLCashValue Coverage PUA CV("C";0)
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Life DivOnDepositAmt
+10
+INPUT Policy Life DivOnDepositIntRate
+2
+INPUT Policy Life DivType
+2
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues TotalUnits
+30
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X39 3fc1c8 3f7030 0 3fcea8 0 0 2
+WLCashValue Accum Dividends
+0//WLCashValue Accum Dividends("C")
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+200
+INPUT Policy Life DivOnDepositAmt
+10
+INPUT Policy Life DivOnDepositIntRate
+2
+INPUT Policy Life DivType
+5
+INPUT Policy Number of ParAccumValues
+1
+INPUT Policy ParAccumValues TotalUnits
+30
+INPUT Policy Loan LoanBalance
+0
+INPUT Policy Coverage BandCode
+0
+INPUT Policy ParAccumValues SourceOfFundsTC
+9
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage LifeCovTypeCode
+2
+INPUT Policy Life RegularLoanBalance
+0
+INPUT Policy Life CurrLoanIntRate
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage ProductVersionCode
+1
+X0 3fcea8 3f7030 3fca80 3fedc8 0 0 0
+-- Phase II Illustration Mod Testing --
+X7 3fca80 3fcea8 0 3fdc68 0 0 2
+WLCashValue Proj Withdrawal(yearIndex)
+WLCashValue Proj Withdrawal("C";2)
+0
+INPUT Illus WithdrawalAmt[2]
+100
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalType
+11
+INPUT Message Language
+9
+INPUT Illus WithdrawalDesignType
+1000500001
+X7 3fdc68 3fcea8 0 3fded8 0 0 2
+WLCashValue Proj Withdrawal(yearIndex)
+WLCashValue Proj Withdrawal("C";2)
+100
+INPUT Illus WithdrawalAmt[2]
+100
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalType
+11
+INPUT Message Language
+9
+INPUT Illus WithdrawalDesignType
+1000500002
+X6 3fded8 3fcea8 0 3fe108 0 0 2
+WLCashValue Proj Withdrawal(yearIndex)
+WLCashValue Proj Withdrawal("C";5)
+1000
+INPUT Illus WithdrawalAmt[2]
+100
+INPUT Illus WithdrawalAmt[5]
+1000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalDesignType
+1000500002
+X6 3fe108 3fcea8 0 3fe6a0 0 0 2
+WLCashValue Proj Withdrawal(yearIndex)
+WLCashValue Proj Withdrawal("C";10)
+500
+INPUT Illus WithdrawalAmt[2]
+100
+INPUT Illus WithdrawalAmt[10]
+500
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus WithdrawalDesignType
+1000500002
+X8 3fe6a0 3fcea8 0 0 0 0 2
+WLCashValue Rate Withdrawal(rateAssumption)
+WLCashValue Curr Interest Rate(1)
+0
+INPUT Policy Life CurrIntRate
+4
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Invest Rate Type
+12
+INPUT Invest Rate Sub Type
+6
+INPUT Policy CarrierCode
+00
+X26 3fedc8 3f7030 3ff0a8 0 0 0 2
+WLCashValue ACT vector(rateAssumption; coverageIndex; yearIndex)
+WLCashValue ACT vector("C"; 2; 2)
+35
+INPUT Policy LifeParticipant IssueAge[2]
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+3
+INPUT Policy Coverage IndicatorCode[2]
+4
+INPUT Policy Coverage ProductCode[2]
+PUAR1PA
+INPUT Policy Coverage ProductVersionCode[2]
+1
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Invest Rate Type
+0
+INPUT Invest Rate Sub Type
+0
+INPUT Policy LifeParticipant IssueGender[2]
+1
+INPUT Policy LifeParticipant UnderwritingClass[2]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2]
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode[1]
+4
+INPUT Policy Coverage RequestedMaturityDur[1]
+20
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode[2]
+1
+X37 3ff0a8 3fedc8 0 0 0 0 2
+WLCashValue Proj Coverage PUA CV(rateAssumption; coverageIndex; yearIndex; vectorWLProj)
+WLCashValue Proj Coverage PUA CV("C"; 2; 2; V_(V_(10002000;0;0);V_(0;0;0);0;0;0;0))
+0
+INPUT Policy LifeParticipant IssueAge[2]
+35
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+3
+INPUT Policy Coverage ProductCode[2]
+PUAR2PA
+INPUT Policy Coverage IndicatorCode[2]
+2
+INPUT Policy Coverage ProductVersionCode[2]
+1
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Invest Rate Type
+0
+INPUT Invest Rate Sub Type
+0
+INPUT Policy LifeParticipant IssueGender[2]
+1
+INPUT Policy LifeParticipant UnderwritingClass[2]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2]
+1
+INPUT Policy LifeParticipant TempTableRating[2]
+1
+INPUT Policy LifeParticipant PermTableRating[2]
+1
+INPUT Policy Number of LifeParticipant[2]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[2]
+1000
+INPUT Policy LifeParticipant TempFlatExtraAmount[2]
+1000
+INPUT Policy LifeParticipant number of SubstandardRating[2]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[2]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[2]
+01/01/2006
+INPUT Policy LifeParticipant PermFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[2]
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode[1]
+4
+INPUT Policy Coverage RequestedMaturityDur[1]
+20
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode[2]
+6
+O0 3f3f2c 0 0 0 0 0 0
+
+E0 3f3f98 0 0 0 0 0 0
+
+L0 3f4004 0 0 0 0 0 0
+
+B0 3f41b4 0 0 0 0 0 0
+
+P3 3f40dc 0 3ff740 0 0 0 2
+
+--description
+Whole Life cash value projections model.çä çäRELEASE LOG:çäRELEASE 1301 - CyberLife IntegrationçäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.6.1    "
+P13 3ff740 3f40dc 1e114a0 0 0 0 2
+Whole Life CashValue Projections
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Whole Life rate model.çä Author:  Nicholas Esterhuysençä Date:     01/02/2007 çä Modification Log:çä Date              Modeler               Change Descriptionçäçä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"WLCashValueProjections.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P10 1e114a0 3ff740 0 1e11850 0 0 2
+Cash Value Projections
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Total Cash Value(rateAssumption)
+IF ('Coverage Type is Whole Life'(rateAssumption;0) ; çä  'WLCashValue Total Cash Value'(rateAssumption) ; çä  0çä)
+OUTPUT Coverage Cash Value(coverageIndex)
+IF ( //'LifeCovType is Whole Life'('Policy Coverage LifeCovTypeCode'(0));çä'Coverage Type is Whole Life'('GEN Vector Blank';0) ; çä  'WLCashValue Coverage Cash Value'('GEN Vector Blank';coverageIndex) ; çä  0çä)
+OUTPUT Coverage Tabular Cash Value(coverageIndex)
+IF ('Coverage Type is Whole Life'('GEN Vector Blank';0) ; çä  'WLCashValue Coverage Cash Value'('GEN Vector Blank';coverageIndex) ; çä  0çä)
+OUTPUT Coverage Tabular Cash Value per unit(coverageIndex; yearIndex)
+IF ('Coverage Type is Whole Life'('GEN Vector Blank';0) ; çä  'WLCashValue Coverage CV per unit'('GEN Vector Blank';coverageIndex;yearIndex) ; çä  0çä)
+-- Projection --
+
+--OUTPUT Proj Total Cash Value(rateAssumption; yearIndex)
+IF(//'LifeCovType is Whole Life'('Policy Coverage LifeCovTypeCode'(0));çäâ'Coverage Type is Whole Life'(rateAssumption;0);çäâSUMX(covIdx; 0; 'Policy Number Of Coverage'(rateAssumption;yearIndex) - 1;çäâ'WLCashValue Proj Coverage CV'(rateAssumption; #covIdx; yearIndex; 0));//EMPTY VectorWLProjçäâ0)
+OUTPUT Proj Coverage Cash Value(rateAssumption; coverageIndex; yearIndex)
+IF ( //'LifeCovType is Whole Life'('Policy Coverage LifeCovTypeCode'(0));çä'Coverage Type is Whole Life'(rateAssumption;0) ; çä  'WLCashValue Proj Coverage CV'(rateAssumption;coverageIndex;yearIndex;0) ; çä   //EMPTY VectorWLProjçä0çä)
+P3 1e11850 3ff740 0 1e11a58 0 50 2
+Mode Premium@ModePremium
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e11a58 3ff740 0 0 0 50 2
+Dividend Option Calculations@DividendOptions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 3f4148 0 1e11b90 0 0 0 0
+
+F1 1e11b90 3f4148 1e11c60 0 0 0 2
+:WLCashValue
+Funktion
+
+F1 1e11c60 1e11b90 1e11d48 1e125c8 0 0 2
+-- Access functions for higher models--
+Funktion
+
+F1 1e11d48 1e11c60 0 1e11e58 0 0 2
+WLCashValue Proj Total Cash Value(calcType; yearIndex; vectorWLProj)
+Funktion
+SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;'WLCashValue Proj Coverage CV'(calcType;#coverageIndex;yearIndex;vectorWLProj) + 'WLCashValue Proj Coverage PUA CV'(calcType;#coverageIndex;yearIndex;vectorWLProj)) + 'WLCashValue Proj Accum Dividends'(calcType;yearIndex;vectorWLProj)
+F1 1e11e58 1e11c60 0 1e12030 0 0 2
+WLCashValue Proj Coverage Cash Value(calcType; coverageIndex; yearIndex; vectorWLProj)
+Funktion
+'WLCashValue Proj Coverage CV'(calcType;coverageIndex;yearIndex;vectorWLProj) + 'WLCashValue Proj Coverage PUA CV'(calcType;coverageIndex;yearIndex;vectorWLProj)
+F1 1e12030 1e11c60 0 1e12120 0 0 2
+WLCashValue Total Cash Value(calcType)
+Funktion
+SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;'WLCashValue Coverage CV'(calcType;#coverageIndex) + 'WLCashValue Coverage PUA CV'(calcType;#coverageIndex)) + 'WLCashValue Accum Dividends'(calcType)
+F1 1e12120 1e11c60 0 1e12278 0 0 2
+WLCashValue Coverage Cash Value(calcType; coverageIndex)
+Funktion
+'WLCashValue Coverage CV'(calcType;coverageIndex) + 'WLCashValue Coverage PUA CV'(calcType;coverageIndex)
+F1 1e12278 1e11c60 1e124a0 0 0 0 2
+-- Loan model Functions --
+Funktion
+
+F1 1e124a0 1e12278 0 0 0 0 2
+Loan Current Total Cash Value(calcType)
+Funktion
+'WLCashValue Total Cash Value'(calcType)
+F1 1e125c8 1e11b90 1e12c58 1e13418 0 0 2
+-- Projection Calculation functions --
+Funktion
+
+F1 1e12c58 1e125c8 1e12d78 1e13130 0 0 2
+WLCashValue Proj Coverage PUA CV(calcType; coverageIndex; yearIndex; vectorWLProj)
+Funktion
+'WL CashValue Proj Coverage PremPUA CV'(calcType;coverageIndex;yearIndex;vectorWLProj) + 'WL CashValue Proj Coverage DivPUA CV'(calcType;coverageIndex;yearIndex;vectorWLProj)
+F1 1e12d78 1e12c58 0 1e12e98 0 0 2
+WL CashValue Proj Coverage PremPUA CV(calcType; coverageIndex; yearIndex; vectorWLProj)
+Funktion
+IF ( /*vectorWLProj is an empty vector*/ V_LENGTH(vectorWLProj) = 0 || 'SharedVector WLProj PremPUAUnits'(vectorWLProj;coverageIndex) = 0 ; çä  0 ; çä  'SharedVector WLProj PremPUAUnits'(vectorWLProj;coverageIndex) * MAX(0;'ACT NSP Rec'(calcType;yearIndex + 1;coverageIndex;'WLCashValue ACT vector'(calcType;coverageIndex;yearIndex)))çä)
+F1 1e12e98 1e12c58 0 0 0 0 2
+WL CashValue Proj Coverage DivPUA CV(calcType; coverageIndex; yearIndex; vectorWLProj)
+Funktion
+IF ( /*vectorWLProj is an empty vector*/ V_LENGTH(vectorWLProj) = 0 || 'SharedVector WLProj DivPUAUnits'(vectorWLProj;coverageIndex) = 0 ; çä   /*True*/ 0 ; çä   /*False*/ 'SharedVector WLProj DivPUAUnits'(vectorWLProj;coverageIndex) * MAX(0;'ACT NSP Rec'(calcType;yearIndex + 1;coverageIndex;'WLCashValue ACT vector'(calcType;coverageIndex;yearIndex)))çä)
+F1 1e13130 1e125c8 0 5cfafc82 0 0 2
+WLCashValue Proj Accum Dividends(calcType; yearIndex; vectorWLProj)
+Funktion
+'DivOpt Proj Divs AccumAtInt'(calcType;yearIndex;vectorWLProj)
+F1 5cfafc82 1e125c8 261f7e21 0 0 0 2
+WLCashValue Proj Total Base Coverage CV(calcType; yearIndex; vectorWLProj)
+Funktion
+SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;'WLCashValue Proj Coverage CV'(calcType;#coverageIndex;yearIndex;vectorWLProj))
+F1 261f7e21 5cfafc82 0 0 0 0 2
+WLCashValue Proj Coverage CV(calcType; coverageIndex; yearIndex; vectorWLProj)
+Funktion
+IF ( /*base or base increase and inforce*/ ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex))) && ('Std Coverage Is InForce'(calcType;coverageIndex;TransEffDate;yearIndex) || 'Std Coverage Is Pending'(calcType;coverageIndex;TransEffDate;yearIndex)) ; çä   // calculate cash valueçäMAX(0;'ACT Min Cash Value'(calcType;yearIndex;coverageIndex;IF ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) ; çä    'WLCashValue ACT vector'(calcType;'Std BaseCov Index'(calcType);yearIndex) ; çä    'WLCashValue ACT vector'(calcType;coverageIndex;yearIndex)çä  ))) * IF ('Illustration Type is DeferredComp'('STD Illus Type Code') ; çä  'SharedVector WLProj BaseUnits'(vectorWLProj) ; çä  'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;yearIndex)çä) ; çä // Else no cash value for ridersçä0çä)
+F1 1e13418 1e11b90 1e13500 1e14080 0 0 2
+-- Current Calculation functions --
+Funktion
+
+F1 1e13500 1e13418 3e4a3cd4 1e139b8 0 0 2
+WLCashValue Coverage CV(calcType;coverageIndex)
+Funktion
+'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;TransEffDur) * 'WLCashValue Coverage CV per unit'(calcType;coverageIndex;TransEffDur)
+F1 3e4a3cd4 1e13500 0 0 0 0 2
+WLCashValue Coverage CV per unit(calcType; coverageIndex; yearIndex)
+Funktion
+IF ( /*base or base increase and inforce*/ ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex))) && ('Std Coverage Is InForce'(calcType;coverageIndex;TransEffDate;TransEffDur) || 'Std Coverage Is Pending'(calcType;coverageIndex;TransEffDate;TransEffDur)) ; çä   // calculate cash valueçäMAX(0;'ACT Min Cash Value'(calcType;yearIndex;coverageIndex;'WLCashValue ACT vector'('CalcType Guaranteed'(calcType);coverageIndex;TransEffDur))) ; çä   // no cash value for rider unitsçä0çä)
+F1 1e139b8 1e13418 1e13b80 1e13cf8 0 0 2
+WLCashValue Coverage PUA CV(calcType; coverageIndex)
+Funktion
+'WLCashValue Coverage PUA Units'(coverageIndex) * MAX(0;'ACT NSP Rec'(calcType;'Duration Year'(TransEffDate;'Policy EffDate') + 1;coverageIndex;'WLCashValue ACT vector'('CalcType Guaranteed'(calcType);coverageIndex;TransEffDur)))
+F1 1e13b80 1e139b8 0 0 0 0 2
+WLCashValue Coverage PUA Units(coverageIndex)
+Funktion
+SUMX(pua;0;'Policy Number of ParAccumValues'(coverageIndex) - 1;'Policy ParAccumValues TotalUnits'(coverageIndex;#pua))
+F1 1e13cf8 1e13418 0 1e13f58 0 0 2
+WLCashValue Coverage PUAIndex PUA CV(calcType;coverageIndex; PUAIndex)
+Funktion
+('Policy ParAccumValues PUADeathBenAdjAmt'(coverageIndex;PUAIndex) / 'PI CoverageProduct ValuePerUnit'(calcType;'Policy ProductCode';coverageIndex;'Policy Coverage EffDate'(calcType;coverageIndex))) * MAX(0;'ACT NSP Rec'(calcType;'Duration Year'(TransEffDate;'Policy EffDate') + 1;coverageIndex;'WLCashValue ACT vector'('CalcType Guaranteed'(calcType);coverageIndex;TransEffDur)))
+F1 1e13f58 1e13418 0 0 0 0 2
+WLCashValue Accum Dividends(calcType)
+Funktion
+'DivOpt DivOnDepositAmt'(calcType)
+F1 1e14080 1e11b90 1e14160 1e14410 0 0 2
+-- Interest Rate Functions --
+Funktion
+
+F1 1e14160 1e14080 0 0 0 0 2
+WLCashValue Curr Interest Rate(yearIndex)
+Funktion
+Rate("BFUND1";"CURRINT";'Policy Effdate';'SharedVector Curr Int Rate Parms'(yearIndex)) / 100
+F1 1e14410 1e11b90 1e144f0 1e14ea0 0 0 2
+-- Miscellaneous functions --
+Funktion
+
+F1 1e144f0 1e14410 0 1e14be8 0 0 2
+WLCashValue ACT vector(calcType; coverageIndex; yearIndex)
+Funktion
+v_( // participantIndex = 0çä'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);'PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy Coverage EffDate'(calcType;coverageIndex)) - 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);'PI PolicyProduct ReserveIntRate'(calcType;'Policy productCode';'Policy EffDate';yearIndex); // Added yearIndex needed to accommodate Split Interest Rateçä'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode';'Policy EffDate');'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;yearIndex);'Policy Coverage ProductCode'(calcType;coverageIndex);'Policy Coverage EffDate'(calcType;coverageIndex);'Policy Jurisdiction';'PI PolicyProduct AgeCalculationType'('Policy ProductCode';'Policy EffDate');1;1;'PI PolicyProduct PayToAge'('Policy ProductCode';'Policy EffDate') - 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0))
+F1 1e14be8 1e14410 0 0 0 0 2
+WLCashValue Model Name
+Funktion
+"WLCashValueProjections"
+F1 1e14ea0 1e11b90 1e15160 0 0 0 2
+-- Illustration functions --
+Funktion
+
+F1 1e15160 1e14ea0 0 1e156a8 0 0 2
+WLCashValue Proj Withdrawal(calcType; yearIndex)
+Funktion
+IF ( /*Calling system is Illustrations*/ 'Std Calling System Is Illustration Based' ; çä  CASE('Illus WithdrawalDesignType';çä     /*Withdrawal stream not required*/ 1000500001 :  /*Return zero withdrawal amount*/ 0;çä     /* Withdrawal Amount is Net or Gross - uses withdrawal amount as passed in*//* No partial surrender charges for Whole Life*/ 1000500002;1000500003 : 'Illus WithdrawalAmt'(calcType;yearIndex);çä     /* Else return error message*/  : 'Messages SystemMessage'("ILL1003";'Message Language';v_('WLCashValue Model Name';"'WLCashValue Proj Withdrawal'")))çä   ; çä  0çä)
+F1 1e156a8 1e14ea0 0 1e15d68 0 0 2
+WLCashValue Withdrawal AccumDecrease(calcType; coverageIndex; yearIndex; withdrawalAmt; vectorWLProj)
+Funktion
+IF ('Withdrawal Order Is LIFO'('Policy SubAccount WithdrawalOrder') ; çä  IF (coverageIndex >= 'Policy Number Of Coverage'(calcType;yearIndex) - 1 ; çä    0 ; çä    'WLCashValue Withdrawal Decrease'(calcType;coverageIndex + 1;yearIndex;withdrawalAmt;vectorWLProj) + 'WLCashValue Withdrawal AccumDecrease'(calcType;coverageIndex + 1;yearIndex;withdrawalAmt;vectorWLProj)çä  ) ; çäIF ('Withdrawal Order Is FIFO'('Policy SubAccount WithdrawalOrder') ; çä  IF (coverageIndex <= 0 ; çä    0 ; çä    'WLCashValue Withdrawal Decrease'(calcType;coverageIndex - 1;yearIndex;withdrawalAmt;vectorWLProj) + 'WLCashValue Withdrawal AccumDecrease'(calcType;coverageIndex - 1;yearIndex;withdrawalAmt;vectorWLProj)çä  ) ; çä'Messages SystemMessage'("ILL1003";'Message Language';v_('WLCashValue Model Name';"'WLCashValue Withdrawal AccumDecrease'"))çä)çä)
+F1 1e15d68 1e14ea0 0 1e16608 0 0 2
+WLCashValue Withdrawal Decrease(calcType; coverageIndex; yearIndex; withdrawalAmt; vectorWLProj)
+Funktion
+IF ('Withdrawal Design Type is None'('Illus WithdrawalDesignType') ; çä  0 ; çä  MIN(withdrawalAmt - 'WLCashValue Withdrawal AccumDecrease'(calcType;coverageIndex;yearIndex;withdrawalAmt;vectorWLProj);'WL CashValue Proj Coverage PremPUA CV'(calcType;coverageIndex;yearIndex;vectorWLProj) + 'WL CashValue Proj Coverage DivPUA CV'(calcType;coverageIndex;yearIndex;vectorWLProj))çä)
+F1 1e16608 1e14ea0 1e16928 0 0 0 2
+WLCashValue Total CV Release from Face Decrease(calcType; yearIndex)
+Funktion
+0 /*çäif( 'WLCashValue Face Amount Decrease Exists'( calcType; yearIndex);çäçä   SUMX ( coverageIndex; 0; 'Policy Number Of Coverage'(calcType;yearIndex) - 1;çäâçä             âIF('Illus Coverage is'(#coverageIndex;"BASE");çäçäââ               'WLCashValue CV Release from Face Decrease'(calcType;#coverageIndex; yearIndex);çäçäâ                       â0çäâ                )çäâ        );âçäâ0çä )ä*/ 
+F1 1e16928 1e16608 0 0 0 0 2
+WLCashValue Proj Coverage BOY DCV(calcType; coverageIndex; lowDByear; yearIndex)
+Funktion
+IF ('Illus Coverage is'(calcType;coverageIndex;"BASE") && yearIndex > 1 ; çä  'Gen Round'('WLCashValue Coverage CV'(calcType;coverageIndex);2) ; çä   // Else no cash value for riders or at issueçä0çä)
+A0 3f4220 0 0 0 0 0 0
+
+T0 3f428c 0 0 0 0 0 0
+
+I0 3f42f8 0 330ad4ef 0 0 0 0
+
+I0 330ad4ef 3f42f8 0 0 0 0 0
+PaidUpAdditions.pms
+-
+O0
+E0
+L0
+B0
+P4
+3ff740
+1e114a0
+1e11850
+1e11a58
+F31
+1e11b90
+1e11c60
+1e11d48
+1e11e58
+1e12030
+1e12120
+1e12278
+1e124a0
+1e125c8
+1e12c58
+1e12d78
+1e12e98
+1e13130
+5cfafc82
+1e13418
+1e13500
+1e139b8
+1e13b80
+1e13cf8
+1e13f58
+1e14080
+1e14160
+1e14410
+1e144f0
+1e14be8
+1e14ea0
+1e15160
+1e156a8
+1e15d68
+1e16608
+1e16928
+A0
+T0
+!48
+1e114a0 3 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "Coverage Type is WholeLife" instead of "LifeCovType is Whole Life" as lifeCovType 1 is no longer unique (WL and AIR)
+1e114a0 4 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "Coverage Type is WholeLife" instead of "LifeCovType is Whole Life" as lifeCovType 1 is no longer unique (WL and AIR)
+1e114a0 5 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "Coverage Type is WholeLife" instead of "LifeCovType is Whole Life" as lifeCovType 1 is no longer unique (WL and AIR)
+1e114a0 6 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä12/10/2010âA11414âAdded yearIndex parameter to allow host cash value per unit updating by requested durationçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "Coverage Type is WholeLife" instead of "LifeCovType is Whole Life" as lifeCovType 1 is no longer unique (WL and AIR)
+1e114a0 8 -1
+çäModification Log:çä11/1/2011 pA Regression CMC removed duplicate outputçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "Coverage Type is WholeLife" instead of "LifeCovType is Whole Life" as lifeCovType 1 is no longer unique (WL and AIR)çä11/16/09 - PAC002 - JL - Add empty WLProjVector parm
+1e114a0 9 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - Use "Coverage Type is WholeLife" instead of "LifeCovType is Whole Life" as lifeCovType 1 is no longer unique (WL and AIR)
+1e11d48 -2 -2
+Description : provides total cash value for projected calculationsçä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/16/09 - PAC002 - JL - Add WLProjVector parmçä1/21/2008 : Initial CSC formula Phase II
+1e11e58 -2 -2
+Description : provides coverage cash value for projected calculationsçä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/16/09 - PAC002 - JL - Add WLProjVector parm to CV calcçä1/21/2008 : Initial CSC formula Phase II
+1e11e58 0 1
+
+1e12030 -2 -2
+Description : provides total cash value for current calculationsçä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula Phase II
+1e12120 -2 -2
+Description : provides coverage cash value for current calculationsçä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula Phase II
+1e124a0 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e12c58 -2 -2
+Description : provides coverage PUA cash value for projected calculations çä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä3/07/2008 : LP - Phase II Ilustrations update (Withdrawal Stream)çä1/21/2008 : Initial CSC formula Phase II
+1e12d78 -2 -2
+çäModification Log:çä12/10/2011 pA PAD-825 JL Don't calculate NSP for 0 PremPUAsçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e12e98 -2 -2
+çäModification Log:çä12/10/2011 pA PAD-825 JL Don't calculate NSP for 0 DivPUAsçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.25.2010 - VM - sets the function to 0 if the vectorWLProj parm is blank.
+1e13130 -2 -2
+Description : Projected Accumulated dividends at interest - note that starting balance would accumulate but with no further dividends added for Guaranteed basis. çä çäModification logçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula
+5cfafc82 -2 -2
+Description : Total cash value (excluding PUAs) for base coveragesçä çäModification Log :çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/16/09 - PAC002 - JL - Add WLProjVector parmçä5/8/2009 - PA1013 - NT - added function
+261f7e21 -2 -2
+Description : provides coverage base unit cash value for projected calculations (excludes PUAs)çä çäModification log:çä03/28/2012 CL Integration CMC change call to Min Cash Value from yearIndex - 1 to yearIndexçä12/10/2010âA11414âAdded check to allow pending coverages to processçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä2/16/2010 pA1001 Dt if base increase then pick up base rate not base rate plus age of duration coverageçä11/16/09 - PAC002 - JL - For DefComp use vectorWLProjçä12/15/2008 CSC - send duration to Actuarial functions instead of Yearçä1/21/2008 : Initial CSC formula Phase IIçä
+261f7e21 0 2
+
+1e13500 -2 -2
+Description : Cash value from base units on coverageçä çäModification logçä12/10/2010âA11414âAdded TransEffDur parameter on function call "WLCashValue Coverage CV per unit" to allow host cash value per unit updating by requested durationçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/22/2009 Changed to split Per Unit Cash Value and Cash Valueçä1/21/2008 : Initial CSC formula
+1e13500 0 2
+
+3e4a3cd4 -2 -2
+Description : Cash value from base units on coverageçä çäModification logçä03/28/2012 CL Integration CMC change call to Min Cash Value from yearIndex - 1 to yearIndexçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/10/2010âA11414âAdded check to allow pending coverages to processçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/22/2009 : Initial CSC formula
+3e4a3cd4 0 2
+
+1e139b8 -2 -2
+Description : Cash value from PUAs on coverageçä çäModification logçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula
+1e139b8 0 2
+
+1e13b80 -2 -2
+Description : Accumulated units on PUAs on the coverageçä çäModification logçä1/21/2008 : Initial CSC formula
+1e13cf8 -2 -2
+Description : Cash value from specified PUA SourceOfFund on coverageçä çäModification logçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula
+1e13cf8 0 2
+
+1e13f58 -2 -2
+Description : Accumulated dividends at interest - always included for current cash value calculationçä çäModification logçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula
+1e14160 -2 -2
+Description: Returns the current interest rateçä çäModification Log:çä02/20/2008 CSC Initial Calculation/Ruleçä
+1e144f0 -2 -2
+Description: Creates basis vector to pass to NSP calculationçä çäModification log:çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula
+1e144f0 0 2
+
+1e14be8 -2 -2
+Description : Model name
+1e15160 -2 -2
+Description: provides annual withdrawal for Illustratoins withdrawal stream purposesçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/30/2008 LP Initial Calculation/Rule
+1e156a8 -2 -2
+Description : Accumulates by coverage the number of units of decrease associated with each coverageçä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/12/2008 : Updated (LP) Withdrawal stream specificçä01/21/2008 : Initial CSC formula Phase II
+1e15d68 -2 -2
+Description : The number of units of decrease attributable to coverageIndexçä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/21/2008 : Initial CSC formula Phase II
+1e16608 -2 -2
+Description: Sum cash value released due to face decrease over all base coveragesçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä12/9/2008 CSC Phase 2 Initial Calc
+1e16928 -2 -2
+Description: Deemed Cash Value for specified coverage at beginning of specified year using face amount çäin effect for taxStartYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä12/9/2008 CSC Phase 2 Initial Calc
+3f4628 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3f49a8 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3f77a8 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3f7ab0 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3f8680 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3f9328 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3f9f00 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3fa838 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3fafa8 -2 -2
+Takes >3 min to run. Export to UTV to test.
+3fc1c8 -2 -2
+Takes >3 min to run. Export to UTV to test.
+;Offset=00000000

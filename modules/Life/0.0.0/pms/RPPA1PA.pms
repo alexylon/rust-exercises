@@ -1,0 +1,1411 @@
+;1	08.12.2016 13:35:28	jlawrie2	
+X0 1c43ca0 0 1c445d0 0 0 0 0
+
+X0 1c445d0 1c43ca0 1c44668 0 0 0 0
+--All Test Cases--
+X0 1c44668 1c445d0 1c44700 1c447d8 0 0 0
+-- SCOI --
+X1 1c44700 1c44668 0 0 0 0 2
+SCOI- M NS age 40
+SCOI("(PPA1PA!SCOI!01/01/2007!35!6!1!!1!0)")
+0.3078
+X0 1c447d8 1c445d0 1c44880 1c449b8 0 0 0
+-- SEXP --
+X1 1c44880 1c447d8 0 0 0 0 2
+SEXP
+SEXP("(VUL2PA_PPA1PA!SEXP!20060101!35!5!1!1!1!1!**!00!1!A!1!1)")
+5
+X0 1c449b8 1c445d0 1c44a88 1c44bf0 0 0 0
+-- SLCHGRATE --
+X1 1c44a88 1c449b8 0 0 0 0 2
+SLCHGRATE
+SLCHGRATE("(VUL2PA_PPA1PA!SLCHGRATE!20060101!35!5!1!1!1!1!**!00!1!A!1!1)")
+3
+X0 1c44bf0 1c445d0 1c44cd0 1c44e48 0 0 0
+-- SLCHGAMT --
+X1 1c44cd0 1c44bf0 0 0 0 0 2
+SLCHGAMT
+SLCHGAMT("(VUL2PA_PPA1PA!SLCHGAMT!20060101!35!5!1!1!1!1!**!00!1!A!1!1)")
+10
+X0 1c44e48 1c445d0 1c44ed8 1cd0460 0 0 0
+-- SLSECRATE --
+X1 1c44ed8 1c44e48 0 0 0 0 2
+SLSECRATE
+SLSECRATE("(VUL2PA_PPA1PA!SLSECRATE!20060101!35!5!1!1!1!1!**!00!1!A!1!1)")
+2
+X0 1cd0460 1c445d0 1cd0560 0 0 0 0
+-- SINTRATE --
+X1 1cd0560 1cd0460 0 0 0 0 2
+SINTRATE
+SINTRATE("(VUL2PA_PPA1PA!SINTRATE!20060101!35!5!1!1!1!1!**!00)")
+5
+O1 1c43b5c 0 0 0 0 0 2
+
+--CACHESIZE
+2000
+E0 1c43bc8 0 0 0 0 0 0
+
+L0 1c43c34 0 0 0 0 0 0
+
+B0 1c43de4 0 0 0 0 0 0
+
+P3 1c43d0c 0 1cd05d8 0 0 0 2
+
+--description
+Main rate model for the Policy Protection Account / Shadow Account product.çä çäRate types include (but not limited to) here, besides those in the included models:çä - "shadow" current cost of insurance (SCOI)çä - "shadow" expense rate (SEXP)çä - "shadow" interest rate (SINTRATE)çä - "shadow" load charge amount (SLCHGAMT)çä - "shadow" load charge rate (SLCHGRATE)çä - "shadow" load secondary charge rate (SLSECRATE)çä çäRELEASE LOG:çäRELEASE 1301 - PAC028 Shadow Account Catch Up Premium
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 1cd05d8 1c43d0c 1cd0c88 0 0 0 2
+Policy Protection (Shadow Account) pA Plan 1
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Rate tables model for Policy Protection (Shadow Account) pA Plan 1"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RPPA1PA.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JCH"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1cd0c88 1cd05d8 0 0 0 0 2
+PPA1PA Plan
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 1c43d78 0 1c45270 0 0 0 0
+
+F1 1c45270 1c43d78 1c45400 0 0 0 2
+-- Late Referenced rate access --
+Funktion
+
+F1 1c45400 1c45270 1c455a8 0 0 0 2
+-- Rate Access Functions
+Funktion
+
+F1 1c455a8 1c45400 0 120c8cef 0 0 2
+SCOI(s)
+Funktion
+IF ('Parm Validation'(V_("Gender_Code";"Smoke_Code";"Issue_Age";"Duration");s) ; çä  "NoRateFound" ; çä   // Elseçä'TABLE SCOI'['Common RateModel AttainedAge'(s)]('Gender Code Key'(s) & "_" & 'Smoke Code Key'(s))çä)
+F1 120c8cef 1c45400 0 1c45840 0 0 2
+SCUCOI(s)
+Funktion
+IF ('Parm Validation'(V_("Gender_Code";"Smoke_Code";"Issue_Age";"Duration");s) ; çä  "NoRateFound" ; çä   // Elseçä'TABLE SCUCOI'['Common RateModel AttainedAge'(s)]('Gender Code Key'(s) & "_" & 'Smoke Code Key'(s))çä)
+F1 1c45840 1c45400 0 1c45bd8 0 0 2
+SEXP(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // ElseçäLOOKUPX('TABLE SEXP';'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);'Access Smoke Code Key'(s);'Access Band Code Key'(s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'Fee Select Period'(s) ; çä    "Year_" & SetParameter("Duration";s) ; çä    "Ultimate"çä  ))çä)
+F1 1c45bd8 1c45400 0 1c45f88 0 0 2
+SLCHGRATE(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // ElseçäLOOKUPX('TABLE SLCHGRATE';'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);'Access Smoke Code Key'(s);'Access Band Code Key'(s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'Fee Select Period'(s) ; çä    "Year_" & SetParameter("Duration";s) ; çä    "Ultimate"çä  ))çä)
+F1 1c45f88 1c45400 0 1c46348 0 0 2
+SLCHGAMT(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // ElseçäLOOKUPX('TABLE SLCHGAMT';'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);'Access Smoke Code Key'(s);'Access Band Code Key'(s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'Fee Select Period'(s) ; çä    "Year_" & SetParameter("Duration";s) ; çä    "Ultimate"çä  ))çä)
+F1 1c46348 1c45400 0 1c46708 0 0 2
+SLSECRATE(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // ElseçäLOOKUPX('TABLE SLSECRATE';'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);'Access Smoke Code Key'(s);'Access Band Code Key'(s);SetParameter("Issue_Age";s);IF (SetParameter("Duration";s) <= 'Fee Select Period'(s) ; çä    "Year_" & SetParameter("Duration";s) ; çä    "Ultimate"çä  ))çä)
+F1 1c46708 1c45400 0 1c468d0 0 0 2
+SINTRATE(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // ElseçäLOOKUPX('TABLE SINTRATE';'Access Table ID Key'(s);SetParameter("Duration";s);"InterestRate")çä)
+F1 1c468d0 1c45400 1c46ab0 1c46c70 0 0 2
+-- Select Period Functions --
+Funktion
+
+F1 1c46ab0 1c468d0 0 0 0 0 2
+Fee Select Period(s)
+Funktion
+IF (EXISTS('TABLE Fee Select Period';SetParameter("Rate_Type";s)) ; çä  'TABLE Fee Select Period'[SetParameter("Rate_Type";s)] ; çä  0çä)
+F1 1c46c70 1c45400 1c46d48 0 0 0 2
+-- Build Access Keys --
+Funktion
+
+F1 1c46d48 1c46c70 0 1c470a0 0 0 2
+Access Table ID Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));SetParameter("Table_Code";s)) ; çä   // Row exists in table.  Use TableIdentity value in searchçäSetParameter("Table_Code";s) ; çä   // Else use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));"*") ; çä    "*" ; çä     // Else no matchçä"nomatch"çä  )çä)
+F1 1c470a0 1c46c70 0 1c47468 0 0 2
+Access ChargeBasedOn Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);SetParameter("Rule_Code";s)) ; çä   // Row exists in table.  Use ChargeBasedOn value in searchçäSetParameter("Rule_Code";s) ; çä   // Else use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);"*") ; çä     // Return the wildcard as the search parameterçä"*" ; çä     // Else no matchçä"nomatch"çä  )çä)
+F1 1c47468 1c46c70 0 1c47848 0 0 2
+Access Jurisdiction Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);SetParameter("State_Code";s)) ; çä   // Row exists in table.  Use Jurisdiction value in searchâçäSetParameter("State_Code";s) ; çä   // Else use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);"**") ; çä    "**" ; çä     // Else no matchçä"nomatch"çä  )çä)
+F1 1c47848 1c46c70 0 1c47c60 0 0 2
+Access Gender Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Gender Code Key'(s)) ; çä   // Row exists in table.  Use Gender value in searchâçä'Gender Code Key'(s) ; çä   // Else use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);"*") ; çä    "*" ; çä     // Else no matchçä"nomatch"çä  )çä)
+F1 1c47c60 1c46c70 0 1c480e0 0 0 2
+Access Underwriting Class Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Underwriting Class Key'(s)) ; çä   // Row exists in table.  Use Underwriting Class value in searchâçä'Underwriting Class Key'(s) ; çä   // Else use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);"*") ; çä    "*" ; çä     // Else no matchçä"nomatch"çä  )çä)
+F1 1c480e0 1c46c70 0 1c48598 0 0 2
+Access Smoke Code Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);'Smoke Code Key'(s)) ; çä   // Row exists in table.  Use Smoke Code value in searchâçä'Smoke Code Key'(s) ; çä   // Else use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);"*") ; çä    "*" ; çä     // Else no matchçä"nomatch"çä  )çä)
+F1 1c48598 1c46c70 0 0 0 0 2
+Access Band Code Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);'Access Smoke Code Key'(s);SetParameter("Band_Code";s)) ; çä   // Row exists in table.  Use Band Code value in searchâçäSetParameter("Band_Code";s) ; çä   // Else use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Access Table ID Key'(s);'Access ChargeBasedOn Key'(s);'Access Jurisdiction Key'(s);'Access Gender Key'(s);'Access Underwriting Class Key'(s);'Access Smoke Code Key'(s);"*") ; çä    "*" ; çä     // Else no matchçä"nomatch"çä  )çä)
+A0 1c43e50 0 0 0 0 0 0
+
+T0 1c43ebc 0 1c48bf8 0 0 0 0
+
+T1 1c48bf8 1c43ebc 1c48e28 0 0 0 2
+-- Rate Tables --
+key
+value
+T84 1c48e28 1c48bf8 0 4d2cd3c5 0 0 5
+TABLE SCOI
+Attained_Age
+M_NS
+M_S
+F_NS
+F_S
+18
+0.14274
+0.157014
+0.114192
+0.1256112
+19
+0.14693
+0.161623
+0.117544
+0.1292984
+20
+0.15111
+0.166221
+0.120888
+0.1329768
+21
+0.15362
+0.168982
+0.122896
+0.1351856
+22
+0.15613
+0.171743
+0.124904
+0.1373944
+23
+0.15863
+0.174493
+0.126904
+0.1395944
+24
+0.16031
+0.176341
+0.128248
+0.1410728
+25
+0.16198
+0.178178
+0.129584
+0.1425424
+26
+0.16449
+0.180939
+0.131592
+0.1447512
+27
+0.16784
+0.184624
+0.134272
+0.1476992
+28
+0.17118
+0.188298
+0.136944
+0.1506384
+29
+0.17537
+0.192907
+0.140296
+0.1543256
+30
+0.18039
+0.198429
+0.144312
+0.1587432
+31
+0.18541
+0.203951
+0.148328
+0.1631608
+32
+0.19043
+0.209473
+0.152344
+0.1675784
+33
+0.19713
+0.216843
+0.157704
+0.1734744
+34
+0.20467
+0.225137
+0.163736
+0.1801096
+35
+0.21472
+0.236192
+0.171776
+0.1889536
+36
+0.22728
+0.250008
+0.181824
+0.2000064
+37
+0.24237
+0.266607
+0.193896
+0.2132856
+38
+0.26165
+0.287815
+0.20932
+0.230252
+39
+0.28346
+0.311806
+0.226768
+0.2494448
+40
+0.3078
+0.33858
+0.24624
+0.270864
+41
+0.33467
+0.368137
+0.267736
+0.2945096
+42
+0.36408
+0.400488
+0.291264
+0.3203904
+43
+0.3952
+0.43472
+0.31616
+0.347776
+44
+0.4297
+0.47267
+0.34376
+0.378136
+45
+0.46845
+0.515295
+0.37476
+0.412236
+46
+0.51061
+0.561671
+0.408488
+0.4493368
+47
+0.55788
+0.613668
+0.446304
+0.4909344
+48
+0.61027
+0.671297
+0.488216
+0.5370376
+49
+0.66866
+0.735526
+0.534928
+0.5884208
+50
+0.73221
+0.805431
+0.585768
+0.6443448
+51
+0.80181
+0.881991
+0.641448
+0.7055928
+52
+0.87748
+0.965228
+0.701984
+0.7721824
+53
+0.9601
+1.05611
+0.76808
+0.844888
+54
+1.05058
+1.155638
+0.840464
+0.9245104
+55
+1.14896
+1.263856
+0.919168
+1.0110848
+56
+1.25787
+1.383657
+1.006296
+1.1069256
+57
+1.3774
+1.51514
+1.10192
+1.212112
+58
+1.50935
+1.660285
+1.20748
+1.328228
+59
+1.65385
+1.819235
+1.32308
+1.455388
+60
+1.81189
+1.993079
+1.449512
+1.5944632
+61
+1.98449
+2.182939
+1.587592
+1.7463512
+62
+2.17446
+2.391906
+1.739568
+1.9135248
+63
+2.38203
+2.620233
+1.905624
+2.0961864
+64
+2.61099
+2.872089
+2.088792
+2.2976712
+65
+2.86346
+3.149806
+2.290768
+2.5198448
+66
+3.14433
+3.458763
+2.515464
+2.7670104
+67
+3.45595
+3.801545
+2.76476
+3.041236
+68
+3.79897
+4.178867
+3.039176
+3.3430936
+69
+4.16951
+4.586461
+3.335608
+3.6691688
+70
+4.56268
+5.018948
+3.650144
+4.0151584
+71
+4.97531
+5.472841
+3.980248
+4.3782728
+72
+5.40317
+5.943487
+4.322536
+4.7547896
+73
+5.85141
+6.436551
+4.681128
+5.1492408
+74
+6.33507
+6.968577
+5.068056
+5.5748616
+75
+6.86988
+7.556868
+5.495904
+6.0454944
+76
+7.47438
+8.221818
+5.979504
+6.5774544
+77
+8.16333
+8.979663
+6.530664
+7.1837304
+78
+8.9449
+9.83939
+7.15592
+7.871512
+79
+9.81296
+10.794256
+7.850368
+8.6354048
+80
+10.76377
+11.840147
+8.611016
+9.4721176
+81
+11.79061
+12.969671
+9.432488
+10.3757368
+82
+12.88565
+14.174215
+10.30852
+11.339372
+83
+14.05282
+15.458102
+11.242256
+12.3664816
+84
+15.3
+16.83
+12.24
+13.464
+85
+16.64307
+18.307377
+13.314456
+14.6459016
+86
+18.09354
+19.902894
+14.474832
+15.9223152
+87
+19.67704
+21.644744
+15.741632
+17.3157952
+88
+21.4318
+23.57498
+17.14544
+18.859984
+89
+23.41805
+25.759855
+18.73444
+20.607884
+90
+25.71602
+28.287622
+20.572816
+22.6300976
+91
+28.43947
+31.283417
+22.751576
+25.0267336
+92
+31.73935
+34.913285
+25.39148
+27.930628
+93
+35.82834
+39.411174
+28.662672
+31.5289392
+94
+41.17486
+45.292346
+32.939888
+36.2338768
+95
+49.07841
+53.986251
+39.262728
+43.1890008
+96
+55.01234
+60.513574
+44.009872
+48.4108592
+97
+60.78434
+66.862774
+48.627472
+53.4902192
+98
+67.38475
+74.123225
+53.9078
+59.29858
+99
+75.23478
+82.758258
+60.187824
+66.2066064
+100
+81.37485
+89.512335
+65.09988
+71.609868
+T84 4d2cd3c5 1c48bf8 0 1c494a8 0 0 5
+TABLE SCUCOI
+Attained_Age
+M_NS
+M_S
+F_NS
+F_S
+18
+0.14977
+0.16475
+0.11982
+0.1318
+19
+0.15413
+0.16955
+0.12331
+0.13564
+20
+0.1654
+0.18194
+0.13232
+0.14555
+21
+0.16761
+0.18438
+0.13409
+0.1475
+22
+0.16412
+0.18054
+0.1313
+0.14443
+23
+0.16918
+0.1861
+0.13535
+0.14888
+24
+0.16111
+0.17722
+0.12889
+0.14177
+25
+0.16451
+0.18096
+0.13161
+0.14477
+26
+0.17473
+0.1922
+0.13978
+0.15376
+27
+0.17264
+0.1899
+0.13811
+0.15192
+28
+0.17655
+0.1942
+0.14124
+0.15536
+29
+0.17583
+0.19341
+0.14066
+0.15473
+30
+0.18997
+0.20897
+0.15198
+0.16717
+31
+0.20258
+0.22283
+0.16206
+0.17827
+32
+0.19285
+0.21214
+0.15428
+0.16971
+33
+0.19724
+0.21696
+0.15779
+0.17357
+34
+0.22296
+0.24526
+0.17837
+0.1962
+35
+0.21904
+0.24094
+0.17523
+0.19275
+36
+0.234
+0.2574
+0.1872
+0.20592
+37
+0.24874
+0.27362
+0.19899
+0.21889
+38
+0.26283
+0.28911
+0.21026
+0.23129
+39
+0.29207
+0.32128
+0.23366
+0.25702
+40
+0.33424
+0.36767
+0.2674
+0.29413
+41
+0.35379
+0.38917
+0.28303
+0.31133
+42
+0.39694
+0.43664
+0.31755
+0.34931
+43
+0.43182
+0.475
+0.34545
+0.38
+44
+0.44716
+0.49187
+0.35773
+0.3935
+45
+0.49487
+0.54436
+0.3959
+0.43549
+46
+0.52408
+0.57649
+0.41927
+0.46119
+47
+0.57342
+0.63077
+0.45874
+0.50461
+48
+0.65757
+0.72333
+0.52606
+0.57866
+49
+0.68472
+0.75319
+0.54778
+0.60256
+50
+0.76549
+0.84204
+0.61239
+0.67363
+51
+0.81407
+0.89548
+0.65126
+0.71638
+52
+0.87978
+0.96776
+0.70383
+0.77421
+53
+1.00445
+1.10489
+0.80356
+0.88391
+54
+1.10331
+1.21364
+0.88265
+0.97091
+55
+1.16621
+1.28283
+0.93296
+1.02626
+56
+1.35297
+1.48827
+1.08238
+1.19062
+57
+1.46009
+1.6061
+1.16807
+1.28488
+58
+1.63073
+1.79381
+1.30459
+1.43504
+59
+1.67928
+1.8472
+1.34342
+1.47776
+60
+1.99269
+2.19196
+1.59415
+1.75357
+61
+2.03681
+2.24049
+1.62945
+1.79239
+62
+2.30141
+2.53155
+1.84113
+2.02524
+63
+2.40236
+2.64259
+1.92189
+2.11407
+64
+2.61407
+2.87548
+2.09126
+2.30038
+65
+2.89232
+3.18155
+2.31385
+2.54524
+66
+3.2105
+3.53155
+2.5684
+2.82524
+67
+3.58994
+3.94893
+2.87195
+3.15914
+68
+4.03872
+4.44259
+3.23097
+3.55407
+69
+4.54197
+4.99616
+3.63357
+3.99693
+70
+4.99188
+5.49107
+3.9935
+4.39285
+71
+5.05079
+5.55586
+4.04063
+4.44469
+72
+5.50939
+6.06033
+4.40751
+4.84826
+73
+6.07905
+6.68696
+4.86324
+5.34957
+74
+6.54504
+7.19955
+5.23604
+5.75964
+75
+7.08222
+7.79045
+5.66578
+6.23236
+76
+7.50977
+8.26075
+6.00782
+6.6086
+77
+8.72562
+9.59819
+6.9805
+7.67855
+78
+9.32357
+10.25593
+7.45886
+8.20474
+79
+10.36085
+11.39693
+8.28868
+9.11755
+80
+11.40735
+12.54809
+9.12588
+10.03847
+81
+12.28702
+13.51572
+9.82961
+10.81257
+82
+13.13648
+14.45013
+10.50919
+11.56011
+83
+15.38544
+16.92398
+12.30835
+13.53919
+84
+16.60819
+18.26901
+13.28655
+14.61521
+85
+17.74008
+19.51408
+14.19206
+15.61127
+86
+19.8319
+21.81509
+15.86552
+17.45207
+87
+19.95402
+21.94942
+15.96321
+17.55954
+88
+23.53107
+25.88418
+18.82486
+20.70734
+89
+25.63563
+28.19919
+20.5085
+22.55935
+90
+27.96881
+30.7657
+22.37505
+24.61256
+91
+30.18833
+33.20716
+24.15066
+26.56573
+92
+32.40727
+35.648
+25.92582
+28.5184
+93
+37.54683
+41.30152
+30.03747
+33.04121
+94
+44.89395
+49.38335
+35.91516
+39.50668
+95
+50.38258
+55.42083
+40.30606
+44.33667
+96
+55.38647
+60.92512
+44.30918
+48.74009
+97
+64.55328
+71.0086
+51.64262
+56.80688
+98
+68.03104
+74.83414
+54.42483
+59.86731
+99
+76.70212
+84.37233
+61.3617
+67.49787
+100
+85.45604
+94.00164
+68.36483
+75.20131
+T3 1c494a8 1c48bf8 0 1cd7728 0 0 19
+TABLE SEXP
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Ultimate
+*
+*
+**
+*
+*
+*
+*
+0
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+*
+*
+**
+*
+*
+*
+*
+100
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+T3 1cd7728 1c48bf8 0 1cd7f48 0 0 24
+TABLE SLCHGRATE
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+*
+*
+**
+*
+*
+*
+*
+0
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+*
+*
+**
+*
+*
+*
+*
+100
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+T3 1cd7f48 1c48bf8 0 1cd8600 0 0 24
+TABLE SLCHGAMT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+*
+*
+**
+*
+*
+*
+*
+0
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+*
+*
+**
+*
+*
+*
+*
+100
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+T3 1cd8600 1c48bf8 0 1cd8cb0 0 0 24
+TABLE SLSECRATE
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Year_11
+Year_12
+Year_13
+Year_14
+Year_15
+Ultimate
+*
+*
+**
+*
+*
+*
+*
+0
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+*
+*
+**
+*
+*
+*
+*
+100
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+T6 1cd8cb0 1c48bf8 0 1cd9058 0 0 3
+TABLE SINTRATE
+TableIdentity
+Duration
+InterestRate
+01
+1
+5.5
+01
+11
+5.0
+01
+120
+4.5
+*
+1
+5
+*
+120
+5
+T3 1cd9058 1c48bf8 0 0 0 0 2
+TABLE Fee Select Period
+rate_type
+sel_period
+SEXP
+10
+SLCHGRATE
+15
+I0 1c43f28 0 10979705 0 0 0 0
+
+I0 10979705 1c43f28 0 0 0 0 0
+RateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P2
+1cd05d8
+1cd0c88
+F19
+1c45270
+1c45400
+1c455a8
+120c8cef
+1c45840
+1c45bd8
+1c45f88
+1c46348
+1c46708
+1c468d0
+1c46ab0
+1c46c70
+1c46d48
+1c470a0
+1c47468
+1c47848
+1c47c60
+1c480e0
+1c48598
+A0
+T9
+1c48bf8
+1c48e28
+4d2cd3c5
+1c494a8
+1cd7728
+1cd7f48
+1cd8600
+1cd8cb0
+1cd9058
+!16
+1c455a8 -2 -2
+Description: Returns the shadow account cost of insurance rate based on the gender, tobacco premium basis, and attained age.  Returns "NoRateFound" if the rate lookup is unsuccessful.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+120c8cef -2 -2
+Description: Returns the shadow account catch-up premium cost of insurance rate based on the gender, tobacco premium basis, and attained age.  Returns "NoRateFound" if the rate lookup is unsuccessful.çä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Initial Rule
+1c45840 -2 -2
+Description: Returns the shadow account expense rate based on the gender, tobacco premium basis, and attained age.  Returns "NoRateFound" if the rate lookup is unsuccessful.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c45bd8 -2 -2
+Description: Returns the shadow account premium load rate based on the gender, tobacco premium basis, and attained age.  Returns "NoRateFound" if the rate lookup is unsuccessful.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c45f88 -2 -2
+Description: Returns the shadow account premium load amount based on the gender, tobacco premium basis, and attained age.  Returns "NoRateFound" if the rate lookup is unsuccessful.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c46348 -2 -2
+Description: Returns the shadow account premium load secondary rate based on the gender, tobacco premium basis, and attained age.  Returns "NoRateFound" if the rate lookup is unsuccessful.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c46708 -2 -2
+Description:  Returns the shadow account interest rate to use for the particular duration.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c46ab0 -2 -2
+Description: Returns the select period for the particular type of rate.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c46d48 -2 -2
+Description: Returns the TableIdentity value to use in the search.  If a row exists for the specific TableIdentity, the TableIdentity value will be used.  Otherwise, a wildcard will be used.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c470a0 -2 -2
+Description: Returns the ChargeBasedOn value to use in the search.  If a row exists for the specific ChargeBasedOn, the ChargeBasedOn value will be used.  Otherwise, a wildcard will be used.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c47468 -2 -2
+Description: Returns the Jurisdiction value to use in the search.  If a row exists for the specific Jurisdiction, the Jurisdiction value will be used.  Otherwise, a wildcard will be used.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c47848 -2 -2
+Description: Returns the Gender value to use in the search.  If a row exists for the specific Gender, the Gender value will be used.  Otherwise, a wildcard will be used.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c47c60 -2 -2
+Description: Returns the Underwriting Class value to use in the search.  If a row exists for the specific Underwriting Class, the Underwriting Class value will be used.  Otherwise, a wildcard will be used.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c480e0 -2 -2
+Description: Returns the Smoke Code value to use in the search.  If a row exists for the specific Smoke Code, the Smoke Code value will be used.  Otherwise, a wildcard will be used.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c48598 -2 -2
+Description: Returns the Band Code value to use in the search.  If a row exists for the specific Band Code, the Band Code value will be used.  Otherwise, a wildcard will be used.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+4d2cd3c5 -2 -2
+Description: Shadow account catch-up premium cost of insurance rate based on the gender, tobacco premium basis, and attained age.çä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Initial Entry
+;Offset=00000000

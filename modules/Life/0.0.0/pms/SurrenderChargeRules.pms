@@ -1,0 +1,673 @@
+;1	08.12.2016 13:29:32	jlawrie2	
+X0 24bdb78 0 24cd030 0 0 0 0
+
+X0 24cd030 24bdb78 24cd0c8 0 0 0 0
+-- All Test Cases --
+X19 24cd0c8 24cd030 0 2556570 0 0 2
+SCRule Full Surrender Charge
+'SCRule Full Surrender Charge'("C")
+2000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X20 2556570 24cd030 0 2556c08 0 0 2
+SCRule Partial Surrender Charge
+'SCRule Partial Surrender Charge'("C")
+160
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+500
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X31 2556c08 24cd030 0 2557120 0 0 2
+SCRule Projected Full Surrender Charge - 25626.9
+'SCRule Projected Full Surrender Charge'("C"; 1; "")
+25626.9
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy number of LifeParticipant
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X25 2557120 24cd030 0 2557ee8 0 0 2
+--SCRule Surrender Charge Rule Dynamic Pct Of Target - 8123.98
+//'SCRule Surrender Charge Rule Dynamic Pct Of Target'("C"; 16; 0; 15; 10000; 0)
+8123.98
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+Ul1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+0
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+X14 2557ee8 24cd030 0 24bf320 0 0 2
+SCRule Surrender Charge Rule Flat Charge
+'SCRule Surrender Charge Rule Flat Charge'("C"; 0; 16; 1)
+200
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X15 24bf320 24cd030 0 24bf728 0 0 2
+SCRule Surrender Charge Rule Pct of Target - 130
+'SCRule Surrender Charge Rule Pct of Target'("C"; 15; 0; 1; 1000; 50)
+130
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+UL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+45
+INPUT TransEffDate
+03/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 24bf728 24cd030 24bf8d8 24c0798 0 0 0
+-- Plan and Rate Access Functions --
+X9 24bf8d8 24bf728 0 24bfbb0 0 0 2
+SCRule Surrender Charge Rule 1000500014
+'SCRule Surrender Charge Rule'(1; 16)
+1000500014
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X14 24bfbb0 24bf728 0 24bfef0 0 0 2
+SCRule Surrender Charge FeeAmt - 160
+'SCRule Surrender Charge FeeAmt'("C"; 1; 15)
+160
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X14 24bfef0 24bf728 0 24c0308 0 0 2
+SCRule Surrender Charge FeePct - 100
+'SCRule Surrender Charge FeePct'("C"; 1; 16)
+100
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X14 24c0308 24bf728 0 0 0 0 2
+SCRule Surrender Charge FeePct- Full Surr Pct JSUL1 - 100
+'SCRule Surrender Charge FeePct'("C"; 1;16)
+100
+INPUT Policy ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 24c0798 24cd030 24c16b0 0 0 0 0
+-- PhaseII Illustration Tests --
+X10 24c16b0 24c0798 0 0 0 0 2
+SCRule Surrender Target Premium(coverageIndex)
+SCRule Surrender Target Premium(0)
+0
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Calling Program
+
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+O0 24bda34 0 0 0 0 0 0
+
+E0 24bdaa0 0 0 0 0 0 0
+
+L0 24bdb0c 0 0 0 0 0 0
+
+B0 24bdcbc 0 0 0 0 0 0
+
+P3 24bdbe4 0 24c20b0 0 0 0 2
+
+--description
+Surrender charge rules and their associated calculations are included here. This sub-model will be utilized by the surrender charge and specified amount decrease charge models.Š ŠRELEASE LOG:ŠRELEASE 1301 - SCARAB/JIRA issues pA2118, PAD1213ŠRELEASE wmA 9.2.0 - ENH1011 ŠRELEASE 1101 - PAC019 Rate Access via InputsŠRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.4.1"
+P13 24c20b0 24bdbe4 24c23e0 0 0 0 2
+Universal Life & Variable Universal Life
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Universal Life & Variable Universal Life surrender charge rules calculation model.Š Author:  John HeumannŠ Date:     10/19/2006 Š Modification Log:Š Date              Modeler               Change DescriptionŠ 01/22/2007     John Heumann     Created model.Š"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"SurrenderChargeRules.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 24c23e0 24c20b0 0 0 0 0 2
+Surrender Charge Rules
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 24bdc50 0 746106e7 0 0 0 0
+
+F1 746106e7 24bdc50 24c2670 0 0 0 2
+:SCRule
+Funktion
+
+F1 24c2670 746106e7 24c2710 0 0 0 2
+-- UL/VUL Surrender Charge Rule Functions --
+Funktion
+
+F1 24c2710 24c2670 24c27f0 24c2e18 0 0 2
+SCRule Full Surrender Charge(calcType)
+Funktion
+MAX(SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;'SCRule Coverage Full Surrender Charge'(calcType;#coverageIndex)); // Cannot be negativeŠ0)
+F1 24c27f0 24c2710 0 0 0 0 2
+SCRule Coverage Full Surrender Charge(calcType; coverageIndex)
+Funktion
+ // Primary surrender charge rule Š'SCRule Surrender Charge Rule Amount'(calcType;1; // Primary surrender charge ruleŠcoverageIndex; // Coverage indexŠ'FeeType FullSurrenderCharge'; // Full surrender charge typeŠ'Duration Year'(TransEffDate;'Policy EffDate'); // Policy year‰Š0; // Withdrawal amount (not needed for full surrenders)Š'Policy Coverage SurrTargetPrem'(coverageIndex); // Surrender target premium‰Š'Policy Coverage SurrChargeITD'(coverageIndex) // Surrender charges previously applied to coverageŠ) +  // Secondary surrender charge ruleŠ'SCRule Surrender Charge Rule Amount'(calcType;2;coverageIndex;'FeeType FullSurrenderCharge';'Duration Year'(TransEffDate;'Policy EffDate');0;'Policy Coverage SurrTargetPrem'(coverageIndex);'Policy Coverage SurrChargeITD'(coverageIndex)) +  // Tertiary surrender charge ruleŠ'SCRule Surrender Charge Rule Amount'(calcType;3;coverageIndex;'FeeType FullSurrenderCharge';'Duration Year'(TransEffDate;'Policy EffDate');0;'Policy Coverage SurrTargetPrem'(coverageIndex);'Policy Coverage SurrChargeITD'(coverageIndex))
+F1 24c2e18 24c2670 24c2ef8 24c34e8 0 0 2
+SCRule Partial Surrender Charge(calcType)
+Funktion
+MAX(SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;'SCRule Coverage Partial Surrender Charge'(calcType;#coverageIndex)); // Cannot be negativeŠ0)
+F1 24c2ef8 24c2e18 0 0 0 0 2
+SCRule Coverage Partial Surrender Charge(calcType; coverageIndex)
+Funktion
+ // Primary surrender charge rule Š'SCRule Surrender Charge Rule Amount'(calcType;1; // Primary surrender charge ruleŠcoverageIndex; // Coverage indexŠ'FeeType PartialSurrenderCharge'; // Full surrender charge typeŠ'Duration Year'(TransEffDate;'Policy EffDate'); // Policy year‰Š'Policy Arrangement TotalAmt'; // Withdrawal amount (not needed for full surrenders)Š'Policy Coverage SurrTargetPrem'(coverageIndex); // Surrender target premiums for the coverageŠ'Policy Coverage SurrChargeITD'(coverageIndex) // Surrender charges previously applied to the coverageŠ) +  // Secondary surrender charge ruleŠ'SCRule Surrender Charge Rule Amount'(calcType;2;coverageIndex;'FeeType PartialSurrenderCharge';'Duration Year'(TransEffDate;'Policy EffDate');'Policy Arrangement TotalAmt';'Policy Coverage SurrTargetPrem'(coverageIndex);'Policy Coverage SurrChargeITD'(coverageIndex)) +  // Tertiary surrender charge ruleŠ'SCRule Surrender Charge Rule Amount'(calcType;3;coverageIndex;'FeeType PartialSurrenderCharge';'Duration Year'(TransEffDate;'Policy EffDate');'Policy Arrangement TotalAmt';'Policy Coverage SurrTargetPrem'(coverageIndex);'Policy Coverage SurrChargeITD'(coverageIndex))
+F1 24c34e8 24c2670 24c35a0 24c3ba0 0 0 2
+SCRule Projected Full Surrender Charge(calcType; yearIndex; v_prev_surr_charges)
+Funktion
+MAX(SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ( //'Coverage Is InForce'(calcType; #coverageIndex; 'Projection Eff Date'('Policy EffDate'; yearIndex; 1); yearIndex);Š'Std Coverage Is InForce'(calcType;#coverageIndex;'Projection Eff Date'('Policy EffDate';yearIndex;1);yearIndex) ; Š  'SCRule Coverage Projected Full Surrender Charge'(calcType;yearIndex;#coverageIndex;IF (V_LENGTH(v_prev_surr_charges) > #coverageIndex ; Š    E_(v_prev_surr_charges;#coverageIndex) ; Š    0Š  )) ; Š0Š)); // Cannot be negativeŠ0)
+F1 24c35a0 24c34e8 777c4a39 0 0 0 2
+SCRule Coverage Projected Full Surrender Charge(calcType; yearIndex; coverageIndex; cov_prev_surr_charges)
+Funktion
+ // Primary surrender charge rule Š'SCRule Full Surrender Rule Amount'(calcType;1;yearIndex;coverageIndex;cov_prev_surr_charges) +  // Secondary surrender charge ruleŠ'SCRule Full Surrender Rule Amount'(calcType;2;yearIndex;coverageIndex;cov_prev_surr_charges) +  // Tertiary surrender charge ruleŠ'SCRule Full Surrender Rule Amount'(calcType;3;yearIndex;coverageIndex;cov_prev_surr_charges)
+F1 777c4a39 24c35a0 0 9b45c18 0 0 2
+-- SCRule Full Surrender Rule Amount(calcType; surrChargeRule; yearIndex; coverageIndex; cov_prev_surr_charges)
+Funktion
+'SCRule Surrender Charge Rule Amount'(calcType; Š‰surrChargeRule;‰‰‰‰‰// Primary surrender charge ruleŠ‰coverageIndex;‰‰‰‰‰// Coverage indexŠ‰'FeeType FullSurrenderCharge';‰// Full surrender charge typeŠ‰yearIndex;‰‰‰‰‰‰// Policy year‰Š‰0;‰‰‰‰‰‰‰‰// Withdrawal amount (not needed for full surrenders)Š‰'SCRule Surrender Target Premium'(coverageIndex);‰// Calculate surrender target premiumŠ‰cov_prev_surr_charges‰‰‰// Surrender charges previously applied to the coverageŠ)‰
+F1 9b45c18 24c35a0 0 24c36c8 0 0 2
+SCRule Full Surrender Rule Amount(calcType; surrChargeRule; yearIndex; coverageIndex; cov_prev_surr_charges)
+Funktion
+'SCRule Surrender Charge Rule Amount'(calcType;surrChargeRule; // Primary surrender charge ruleŠcoverageIndex; // Coverage indexŠ'FeeType FullSurrenderCharge'; // Full surrender charge typeŠyearIndex; // Policy year‰Š0; // Withdrawal amount (not needed for full surrenders)Š'SCRule Surrender Target Premium'(coverageIndex;yearIndex); // Calculate surrender target premiumŠcov_prev_surr_charges // Surrender charges previously applied to the coverageŠ)
+F1 24c36c8 24c35a0 0 273b6895 0 0 2
+-- SCRule Surrender Target Premium(coverageIndex)
+Funktion
+‰CASE (/*Target premium calc method*/Š‰‰'ACCS CalcRule Target Calc Method'('CalcType STGT'('GEN Vector Blank');Š‰‰ ‰'Policy CarrierCode'; Š‰‰ ‰'Policy ProductCode'; Š‰‰ ‰'Policy EffDate');Š‰‰// Sum of chargesŠ‰‰1: 'Messages SystemMessage'(Š‰‰‰"CA1010"; Š‰‰‰'Message Language'; Š‰‰‰v_('SCRule Model Name'; "'SCRule Surrender Target Premium'"; "Sum of Charges")Š‰‰    );Š‰‰// Rate fileŠ‰‰2: 'RateFile RateLookup Coverage Target'('CalcType STGT'('GEN Vector Blank');coverageIndex; 1; 'GEN Vector Blank');Š‰‰// Iterative solveŠ‰‰3: 'Messages SystemMessage'(Š‰‰‰"CA1010"; Š‰‰‰'Message Language'; Š‰‰‰v_('SCRule Model Name'; "'SCRule Surrender Target Premium'"; "Iterative Solve")Š‰‰    );Š‰‰// Present value of expensesŠ‰‰4:  'TARGET Coverage PV Method'('CalcType STGT'('GEN Vector Blank'); coverageIndex; 'GEN Vector Blank');Š‰‰// Else return error messageŠ‰‰: 'Messages SystemMessage'(Š‰‰‰"CA1010"; Š‰‰‰'Message Language'; Š‰‰‰v_('SCRule Model Name'; "'SCRule Surrender Target Premium'"; 'Policy ProductCode' & "; " & 'CalcType STGT'('GEN Vector Blank'))Š‰‰   ) Š‰)Š
+F1 273b6895 24c35a0 0 0 0 0 2
+SCRule Surrender Target Premium(coverageIndex; yearIndex)
+Funktion
+CASE( /*Target premium calc method*/ 'ACCS CalcRule Target Calc Method'('CalcType STGT'('GEN Vector Blank');'Policy CarrierCode';'Policy ProductCode';'Policy EffDate');Š   // Sum of chargesŠ1 : 'Messages SystemMessage'("CA1010";'Message Language';v_('SCRule Model Name';"'SCRule Surrender Target Premium'";"Sum of Charges"));Š   // Rate fileŠ2 : 'RateFile RateLookup Coverage Target'('CalcType STGT'('GEN Vector Blank');coverageIndex;yearIndex;1;'GEN Vector Blank');Š   // Iterative solveŠ3 : 'Messages SystemMessage'("CA1010";'Message Language';v_('SCRule Model Name';"'SCRule Surrender Target Premium'";"Iterative Solve"));Š   // Present value of expensesŠ4 : 'TARGET Coverage PV Method'('CalcType STGT'('GEN Vector Blank');coverageIndex;'GEN Vector Blank';yearIndex);Š   // Else return error messageŠ : 'Messages SystemMessage'("CA1010";'Message Language';v_('SCRule Model Name';"'SCRule Surrender Target Premium'";'Policy ProductCode' & "; " & 'CalcType STGT'('GEN Vector Blank'))))Š
+F1 24c3ba0 24c2670 24c4228 24c45e8 0 0 2
+SCRule Surrender Charge Rule Amount(calcType; rule_num; coverageIndex; fee_type; yearIndex; wdrwl_amt; surr_target_prem; prev_surr_charges)
+Funktion
+CASE( /*Surrender charge rule*/ 'SCRule Surrender Charge Rule'(rule_num;fee_type);Š   // No charge applicableŠ"";"1000500022" : 0;Š   // Perent of Account ValueŠ"2" : 'SCRule Surrender Charge Pct of Surrender'(calcType;fee_type;yearIndex;coverageIndex);Š   // Flat amount per transactionŠ"1000500030" : 'SCRule Surrender Charge Rule Flat Charge'(calcType;coverageIndex;fee_type;yearIndex);Š   /* The surrender charge amount is calculated by multiplying the surrender target premium by a Š‰ surrender charge percent based on the issue age and current duration of the policy.  Any previouslyŠ‰ deducted partial surrender target charges are subtracted  from the full surrender target charge amountŠ‰ to determine the charge applicable.*/ "1000500014" : 'SCRule Surrender Charge Rule Pct of Target'(calcType;fee_type;coverageIndex;yearIndex;surr_target_prem;prev_surr_charges);Š   // Same as rule 1000500014 except that the runoff percents are dynamically calculated.Š"1000500027" : 'SCRule Surrender Charge Rule Dynamic Pct Of Target'(calcType;fee_type;coverageIndex;yearIndex;surr_target_prem;prev_surr_charges);Š   // else return error messageŠ : 'Messages SystemMessage'("CA1001";'Message Language';v_('SCRule Model Name';"'SCRule Surrender Charge Rule Amount'";'SCRule Surrender Charge Rule'(rule_num;fee_type))))Š
+F1 24c4228 24c3ba0 0 24c42e0 0 0 2
+SCRule Surrender Charge Rule Pct of Target(calcType; fee_type; coverageIndex; yearIndex; cov_surr_target_prem; cov_prev_surr_charges)
+Funktion
+'GEN Round'(cov_surr_target_prem * 'SCRule Surrender Charge FeePct'(calcType;yearIndex - 'Duration Year'('Policy Coverage EffDate'(calcType;coverageIndex);'Policy EffDate') + 1;fee_type) * 0.01;2) - cov_prev_surr_charges
+F1 24c42e0 24c3ba0 24c4428 24c4530 0 0 2
+SCRule Surrender Charge Rule Dynamic Pct Of Target(calcType;fee_type; coverageIndex; yearIndex; cov_surr_target_prem; cov_prev_surr_charges)
+Funktion
+'GEN Round'(cov_surr_target_prem * 'SCRule Dynamic Surrender Runoff Percent'(calcType;coverageIndex;yearIndex) * 0.01;2) - cov_prev_surr_charges
+F1 24c4428 24c42e0 0 2ed271dd 0 0 2
+-- SCRule Dynamic Surrender Runoff Percent(calcType; coverageIndex; yearIndex)
+Funktion
+IF (yearIndex <= 15;Š‰('ACT Annuity Due'(calcType; yearIndex - 1; coverageIndex; 'Vector SCR ACT Info'(calcType; coverageIndex) )Š‰ /Š‰ 'ACT Annuity Due'(calcType; 0; coverageIndex; 'Vector SCR ACT Info'(calcType; coverageIndex) ) )Š‰* 100;Š‰// ElseŠ‰0Š)Š
+F1 2ed271dd 24c42e0 0 0 0 0 2
+SCRule Dynamic Surrender Runoff Percent(calcType; coverageIndex; yearIndex)
+Funktion
+IF (yearIndex <= 15 ; Š  ('ACT Annuity Due'(calcType;yearIndex - 1;coverageIndex;'Vector SCR ACT Info'(calcType;coverageIndex;yearIndex)) / 'ACT Annuity Due'(calcType;0;coverageIndex;'Vector SCR ACT Info'(calcType;coverageIndex;yearIndex))) * 100 ; Š   // ElseŠ0Š)
+F1 24c4530 24c3ba0 0 4108925d 0 0 2
+SCRule Surrender Charge Rule Flat Charge(calcType; coverageIndex; fee_type; yearIndex)
+Funktion
+IF ( /*Base coverage*/ coverageIndex = 0 ; Š   /*then charge surrender fee*/ 'SCRule Surrender Charge FeeAmt'(calcType;yearIndex;fee_type) ; Š   // Only apply the flat transaction fee to the initial coverageŠ0Š)
+F1 4108925d 24c3ba0 322e1d03 0 0 0 2
+SCRule Surrender Charge Pct of Surrender(calcType; feeType; yearIndex; coverageIndex)
+Funktion
+IF (coverageIndex = 0 ; Š   //Only calculate surrender charge for the base coverageŠCASE( /*Arrangement type*/ 'Policy Arrangement ArrType';Š     // Net WithdrawalŠ7 : 'SCRule Surrender Charge Rule Pct Of Surrender Net Partial'(calcType;feeType;yearIndex;'Policy Arrangement TotalAmt');Š     // Gross WithdrawalŠ8 : 'SCRule Surrender Charge Rule Pct Of Surrender Gross Partial'(calcType;feeType;yearIndex;'Policy Arrangement TotalAmt');Š     // Full SurrenderŠ31 : 'SCRule Surrender Charge Rule Pct Of Surrender Full'(calcType;feeType;yearIndex;'Policy Arrangement TotalAmt');Š     // else return error message Š : 'Messages SystemMessage'("CA1012";'Message Language';v_('SCRule Model Name';"SCRule Surrender Charge Pct of Surrender";'Policy Arrangement ArrType')))Š   ; Š   //surrender charge is zero for non- base coveragesŠ0Š)
+F1 322e1d03 4108925d 0 228a9a20 0 0 2
+SCRule Surrender Charge Rule Pct Of Surrender Net Partial(calcType; feeType; yearIndex; amtWithdrawn)
+Funktion
+'GEN Round'((amtWithdrawn / (1 - 'SCRule Surrender Charge FeePct'(calcType;yearIndex;feeType) * 0.01)) - amtWithdrawn;2)
+F1 228a9a20 4108925d 0 691bc728 0 0 2
+SCRule Surrender Charge Rule Pct Of Surrender Gross Partial(calcType; feeType; yearIndex; amtWithdrawn)
+Funktion
+'GEN Round'(amtWithdrawn * 'SCRule Surrender Charge FeePct'(calcType;yearIndex;feeType) * 0.01;2)
+F1 691bc728 4108925d 0 0 0 0 2
+SCRule Surrender Charge Rule Pct Of Surrender Full(calcType; feeType; yearIndex; amtWithdrawn)
+Funktion
+'GEN Round'(amtWithdrawn * 'SCRule Surrender Charge FeePct'(calcType;yearIndex;feeType) * 0.01;2)
+F1 24c45e8 24c2670 24c4820 24c4f08 0 0 2
+-- Product Definition and Rate Access Functions --
+Funktion
+
+F1 24c4820 24c45e8 0 24c4ac0 0 0 2
+SCRule Surrender Charge Rule(rule_num; fee_type)
+Funktion
+CASE( /*Surrender charge rule*/ rule_num;Š   /*Primary*/ 1 : 'PI PolicyProduct Fee ChargeBasedOn'('Policy ProductCode';fee_type;'Policy EffDate');Š   /*Secondary*/ 2 : 'PI PolicyProduct Fee SecondaryChargeBasedOn'('Policy ProductCode';fee_type;'Policy EffDate');Š   /*Tertiary*/ 3 : 'PI PolicyProduct Fee TertiaryChargeBasedOn'('Policy ProductCode';fee_type;'Policy EffDate');Š   /*No other charge rules*/  : 0)Š
+F1 24c4ac0 24c45e8 0 24c4d08 0 0 2
+SCRule Surrender Charge FeeAmt(calcType; yearIndex; fee_type)
+Funktion
+ //IF('PI Use Attributes'("PolicyProduct Fee FeeAmt");Š//'STD PolicyProduct Fee FeeAmt'(yearIndex);ŠIF ('PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; Š   // Rate Table not defined.  Get premium load flat amount from FeeAmt in plan info.  Š'PI PolicyProduct Fee FeeAmt'('Policy ProductCode';fee_type;'Policy EffDate') ; Š   // Rate Table defined.  Get premium load flat amount from rate access.ŠRate('Policy ProductCode';IF (fee_type = 'FeeType PartialSurrenderCharge' ; Š    "PCHGAMT" ; Š    "FCHGAMT"Š  );TransEffDate;'Vector SCR SurrenderCharge Rate Parms'(calcType;yearIndex;'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate')))Š) //)Š
+F1 24c4d08 24c45e8 0 24c4e00 0 0 2
+SCRule Surrender Charge FeePct(calcType; yearIndex; fee_type)
+Funktion
+ //IF('PI Use Attributes'("PolicyProduct Fee FeePct");Š//'STD PolicyProduct Fee FeePct'(yearIndex);ŠIF ( /*Is rate tabnle defined in product def?*/ 'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; Š   // TableRef not defined.  Get surrender charge percent from FeePct in plan info.  Š'PI PolicyProduct Fee FeePct'('Policy ProductCode';fee_type;'Policy EffDate') ; Š   // TableRef defined.  Get surrender charge percent from rate access.ŠRate('Policy ProductCode';IF (fee_type = 'FeeType PartialSurrenderCharge' ; Š    "PCHGPCT" ; Š    "FCHGPCT"Š  );TransEffDate;'Vector SCR SurrenderCharge Rate Parms'(calcType;yearIndex;'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate')))Š) //)Š
+F1 24c4e00 24c45e8 0 5417ef3 0 0 2
+-- Vector SCR SurrenderCharge Rate Parms(calcType; yearIndex; table_identity)
+Funktion
+v_(Š‰'Policy LifeParticipant IssueAge'(calcType; 0; 0);Š‰yearIndex;Š‰'Policy LifeParticipant IssueGender'(calcType; 0; 0);Š‰'Policy LifeParticipant UnderwritingClass'(calcType; 0; 0);Š‰'Policy LifeParticipant TobaccoPremiumBasis'(calcType; 0; 0);Š‰1;   // BandŠ‰'Policy Jurisdiction';Š‰table_identity;Š‰1   // RuleŠ)
+F1 5417ef3 24c45e8 0 393bb248 0 0 2
+-- Vector SCR SurrenderCharge Rate Parms(calcType; yearIndex; table_identity)
+Funktion
+v_(Š‰'Policy LifeParticipant IssueAge'(calcType; 0; 0);Š‰yearIndex;Š‰'Policy LifeParticipant IssueGender'(calcType; 0; 0);Š‰'Policy LifeParticipant UnderwritingClass'(calcType; 0; 0; yearIndex);Š‰'Policy LifeParticipant TobaccoPremiumBasis'(calcType; 0; 0);Š‰1;   // BandŠ‰'Policy Jurisdiction';Š‰table_identity;Š‰1   // RuleŠ)
+F1 393bb248 24c45e8 0 0 0 0 2
+Vector SCR SurrenderCharge Rate Parms(calcType; yearIndex; table_identity)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;0;0);yearIndex;'Policy LifeParticipant IssueGender'(calcType;0;0);'Policy LifeParticipant UnderwritingClass'(calcType;0;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;0;0;yearIndex);1; // BandŠ'Policy Jurisdiction';table_identity;1 // RuleŠ)
+F1 24c4f08 24c2670 24c4fe8 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 24c4fe8 24c4f08 0 24c50c0 0 0 2
+SCRule Model Name
+Funktion
+"SurrenderChargeRules"
+F1 24c50c0 24c4f08 0 420f6c34 0 0 2
+-- Vector SCR ACT Info(calcType; coverageIndex)
+Funktion
+v_(Š‰'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);‰Š‰'PIDRV CoverageProduct MaturityDuration'(calcType; 'Policy Coverage EffDate'(calcType; coverageIndex); coverageIndex);   Š‰'PI PolicyProduct GuarIntRate'('Policy ProductCode'; 'Policy EffDate');Š‰'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode'; 'Policy EffDate');Š‰'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0);Š‰'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0);Š‰'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); Š‰'Policy ProductCode';Š‰'Policy EffDate';Š‰'Policy Jurisdiction';‰‰‰‰Š‰'PI PolicyProduct AgeCalculationType'('Policy ProductCode'; 'Policy EffDate');Š‰1;‰// Include Table RatingsŠ‰1‰// Include Flat Extras‰Š)Š
+F1 420f6c34 24c4f08 0 47bf554a 0 0 2
+-- Vector SCR ACT Info(calcType; coverageIndex; yearIndex)
+Funktion
+v_(Š‰'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);‰Š‰'PIDRV CoverageProduct MaturityDuration'(calcType; 'Policy Coverage EffDate'(calcType; coverageIndex); coverageIndex);   Š‰'PI PolicyProduct GuarIntRate'('Policy ProductCode'; 'Policy EffDate');Š‰'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode'; 'Policy EffDate');Š‰'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0);Š‰'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0; yearIndex);Š‰'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); Š‰'Policy ProductCode';Š‰'Policy EffDate';Š‰'Policy Jurisdiction';‰‰‰‰Š‰'PI PolicyProduct AgeCalculationType'('Policy ProductCode'; 'Policy EffDate');Š‰1;‰// Include Table RatingsŠ‰1‰// Include Flat Extras‰Š)Š
+F1 47bf554a 24c4f08 0 0 0 0 2
+Vector SCR ACT Info(calcType; coverageIndex; yearIndex)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy Coverage EffDate'(calcType;coverageIndex);coverageIndex);'PI PolicyProduct GuarIntRate'('Policy ProductCode';'Policy EffDate');'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode';'Policy EffDate');'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;yearIndex);'Policy ProductCode';'Policy EffDate';'Policy Jurisdiction';'PI PolicyProduct AgeCalculationType'('Policy ProductCode';'Policy EffDate');1; // Include Table RatingsŠ1 // Include Flat Extras‰Š)
+A0 24bdd28 0 0 0 0 0 0
+
+T0 24bdd94 0 0 0 0 0 0
+
+I0 24bde00 0 4e886a1a 0 0 0 0
+
+I0 4e886a1a 24bde00 0 6a8ad1ca 0 0 0
+TargetRateFile.pms
+I0 6a8ad1ca 24bde00 0 0 0 0 0
+TargetPresentValue.pms
+-
+O0
+E0
+L0
+B0
+P2
+24c20b0
+24c23e0
+F1
+746106e7
+A0
+T0
+!29
+24c2710 -2 -2
+Description: Returns the total full surrender charge for a transaction based on the rule(s) defined in the product definition for a full surrender.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c27f0 -2 -2
+Description: Returns the total full surrender charge for the coverage for a transaction based on the rule(s) defined in the product definition for a full surrender.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c2e18 -2 -2
+Description: Returns the total partial surrender charge for a transaction based on the rule(s) defined in the product definition for a full surrender.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c2ef8 -2 -2
+Description: Returns the total partial surrender charge for the coverage for a transaction based on the rule(s) defined in the product definition for a full surrender.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c34e8 -2 -2
+Description: Returns the total surrender charge for a transaction based on the rule(s) defined in the product definition for a full surrender. JCH Note - Only new business projections with not including projected changes are within the scope of iteration 1.Š ŠModification Log:Š02/14/2013 - PAD1213 - JL - Use "Std Coverage is Inforce" instead of "Coverage is Inforce"Š02/25/2011 pA Regression MAS change call to number of coverage to use yearIndex instead of TransEffDur, since this is used for IllustrationsŠ1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexŠ1/12/2011 - PAC013 calcType - BT - RestructureŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ06/03/2009 - DT - PA1013 - added parm yearindex to 'Coverage Is InForce'Š10/31/2007 CSC Initial Calculation/Rule
+24c35a0 -2 -2
+Description: Returns the total surrender charge for the coverage for a transaction based on the rule(s) defined in the product definition for a full surrender. JCH Note - Only new business projections with not including projected changes are within the scope of iteration 1.Š ŠModification Log:Š1/12/2011 - PAC013 calcType - BT - RestructureŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+777c4a39 -2 -2
+ŠModification Log:Š1/12/2011 - PAC013 calcType - BT - Restructure
+9b45c18 -2 -2
+ŠModification Log:Š07/10/2013 PA1401-26 KC added yearIndex parmŠ1/12/2011 - PAC013 calcType - BT - Restructure
+24c36c8 -2 -2
+Description: Returns the calculated surrender target premium to be used for projections.Š ŠModification Log:Š5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelŠ1/12/2011 - PAC013 calcType - BT - RestructureŠ10/31/2007 CSC Initial Calculation/Rule
+273b6895 -2 -2
+Description: Returns the calculated surrender target premium to be used for projections.Š ŠModification Log:Š07/10/2013 PA1401-26 KC added yearIndex parmŠ5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelŠ1/12/2011 - PAC013 calcType - BT - RestructureŠ10/31/2007 CSC Initial Calculation/Rule
+24c3ba0 -2 -2
+Description: Returns the surrender charge for a particular rule defined in the product definition.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ11/30/2009 wmA Integration ENH1011 CMC added percent of surrender rule ("2")Š10/31/2007 CSC Initial Calculation/Rule
+24c4228 -2 -2
+Description: The surrender charge amount is calculated by multiplying the surrender target premium by a surrender charge percent based on the issue age and current duration of the policy.  Any previously deducted partial surrender target charges are subtracted  from the full surrender target charge amount to determine the charge applicable.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c42e0 -2 -2
+Description: The surrender charge amount is calculated by multiplying the surrender target premium by a dynamically calculated surrender charge percent based on the issue age and current duration of the policy.  Any previously deducted partial surrender target charges are subtracted  from the full surrender target charge amount to determine the charge applicable.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c4428 -2 -2
+Description: Returns the dynamically calculated surrender run off percent.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+2ed271dd -2 -2
+Description: Returns the dynamically calculated surrender run off percent.Š ŠModification Log:Š07/10/2013 PA1401-26 KC added yearIndex parmŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c4530 -2 -2
+Description: Flat surrender charge per surrender.  Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+4108925d -2 -2
+Description: Surrender charge as a percentage of the amount withdrawn.  Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ11/30/2009 wmA Integration ENH1011 CMC Initial Calculation/Rule
+322e1d03 -2 -2
+Description: Calculates the surrender charge assuming that the amount to be withdrawn is to be net of surrender chages.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ11/30/2009 wmA Integration CMC Initial Calculation/Rule
+228a9a20 -2 -2
+Description: Calculates the surrender charge assuming that the amount to be withdrawn is the gross withdawal amount.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ11/30/2009 wmA Integration CMC Initial Calculation/Rule
+691bc728 -2 -2
+Description: Full Surrender charge as a percentage of the amount withdrawn.  Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ11/30/2009 wmA Integration CMC Initial Calculation/Rule
+24c4820 -2 -2
+Description: Returns the surrender charge rule for the rule number specified.Š ŠModification Log:Š10/31/2007 CSC Initial Calculation/Rule
+24c4ac0 -2 -2
+Description: Surrender charge flat amount.  Š ŠModification Log:Š06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyŠ9/7/2010 - PAC019 - Rate Access Var - BT - remove since input exists in PIŠ08/13/2010 - PAC019 - Rate Access Var - BT - added inputŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c4d08 -2 -2
+Description: Returns the surrender charge percent.Š ŠModification Log:Š06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyŠ9/7/2010 - PAC019 - Rate Access Var - BT - remove since input exists in PIŠ08/13/2010 - PAC019 - Rate Access Var - BT - added inputŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c4e00 -2 -2
+Description: Returns a vector of parameters needed for surrender charge rate access.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+5417ef3 -2 -2
+Description: Returns a vector of parameters needed for surrender charge rate access.Š ŠModification Log:Š07/10/2013 PA1401-26 KC added yearIndex parmŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+393bb248 -2 -2
+Description: Returns a vector of parameters needed for surrender charge rate access.Š ŠModification Log:Š07/10/2013 PA1401-26 KC added yearIndex parmŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+24c50c0 -2 -2
+Description: Returns a vector to be passed to the Common Actuarial functions model.Š ŠModification Log:Š7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+420f6c34 -2 -2
+Description: Returns a vector to be passed to the Common Actuarial functions model.Š ŠModification Log:Š07/10/2013 PA1401-26 KC added yearIndex parmŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+47bf554a -2 -2
+Description: Returns a vector to be passed to the Common Actuarial functions model.Š ŠModification Log:Š07/10/2013 PA1401-26 KC added yearIndex parmŠ7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmŠ10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

@@ -1,0 +1,3896 @@
+;1	17.03.2017 10:57:53	jtomlienovic	
+X0 3f4150 0 484f667 0 0 0 0
+
+X0 484f667 3f4150 2bc3ada 50746f24 0 0 0
+-- NBA --
+X172 2bc3ada 484f667 0 0 0 0 2
+--Minimum Annual Target
+0//OUTPUT Total MNLP Target
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy CoverageOption ProductCode
+MNLPPA
+INPUT Policy CoverageOptionProduct DurationDesign
+5
+INPUT PolicyProduct PolicyProductTypeCode
+3
+INPUT PolicyProduct number of Fee
+5
+INPUT PolicyProduct Fee Type[4]
+8
+INPUT PolicyProduct Fee Type[3]
+22
+INPUT PolicyProduct Fee Type[2]
+15
+INPUT PolicyProduct Fee Type[1]
+16
+INPUT PolicyProduct Fee Type
+28
+INPUT PolicyProduct Fee ChargeBasedOn[4]
+1000500026
+INPUT PolicyProduct Fee Mode[4]
+4
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+4
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2077
+INPUT Policy Coverage CurrentAmt
+200000
+INPUT Policy CoverageProduct ValuePerUnit
+1000
+INPUT PolicyProduct Fee TableRef TableIdentity[4]
+10
+INPUT Policy LifeParticipant IssueAge
+29
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage IndicatorCode[2]
+2
+INPUT Policy Coverage IndicatorCode[3]
+2
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[4]
+1000500022
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[4]
+
+INPUT Policy Number Of CoverageOption
+5
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;4]
+66
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;3]
+2
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+16
+INPUT Policy CoverageOption ProductCode[0;2]
+WMDPA
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy CoverageOption EffDate[0;2]
+01/01/2006
+INPUT Policy CoverageOption TermDate[0;2]
+12/31/2042
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;2]
+1000500004
+INPUT Policy CoverageProduct LivesType
+1
+INPUT Policy CoverageOptionProduct MaturityAge[0;2]
+65
+INPUT Policy CoverageOption PremUseCode[0;2]
+1000500001
+INPUT Policy CoverageOption RateVariation FlatAmount
+0.12
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage TermDate[1]
+12/31/2077
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+100
+INPUT Policy CoverageProduct LivesType[1]
+1
+INPUT Policy Coverage LifeCovTypeCode[1]
+9
+INPUT Policy LifeParticipant IssueAge[1]
+29
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy Coverage BandCode[1]
+1
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+1000500004
+INPUT PolicyProduct AgeCalculationType
+4
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy Coverage ProductCode[2]
+STRPA
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage TermDate[2]
+12/31/2079
+INPUT Policy Coverage CurrentNumberOfUnits[2]
+50
+INPUT Policy CoverageProduct LivesType[2]
+1
+INPUT Policy Coverage LifeCovTypeCode[2]
+6
+INPUT Policy LifeParticipant IssueAge[2]
+27
+INPUT Policy LifeParticipant IssueGender[2]
+2
+INPUT Policy LifeParticipant UnderwritingClass[2]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2]
+1
+INPUT Policy Coverage BandCode[2]
+1
+INPUT Policy LifeParticipant PermTableRating[2]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[2]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[2]
+0
+INPUT Policy Coverage ProductCode[3]
+CTRPA
+INPUT Policy Coverage EffDate[3]
+01/01/2006
+INPUT Policy Coverage LifeCovStatus[3]
+1
+INPUT Policy Coverage TermDate[3]
+12/31/2042
+INPUT Policy Coverage CurrentNumberOfUnits[3]
+50
+INPUT Policy CoverageProduct LivesType[3]
+1
+INPUT Policy Coverage LifeCovTypeCode[3]
+116
+INPUT Policy LifeParticipant IssueAge[3]
+29
+INPUT Policy LifeParticipant IssueGender[3]
+1
+INPUT Policy LifeParticipant UnderwritingClass[3]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[3]
+1
+INPUT Policy Coverage BandCode[3]
+1
+INPUT Policy CoverageOption ProductCode[0;1]
+WSPPA
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CoverageOption EffDate[0;1]
+01/01/2006
+INPUT Policy CoverageOption TermDate[0;1]
+12/31/2042
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;1]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityAge[0;1]
+65
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+17
+INPUT Policy CoverageOption OptionNumberOfUnits[0;1]
+400
+INPUT Policy CoverageOption PremUseCode[0;1]
+1000500003
+INPUT Policy CoverageOption UnderwritingClass[0;1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;1]
+1
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Policy CoverageOption ProductCode[0;3]
+ADBPA
+INPUT Policy CoverageOption CoverageOptionStatus[0;3]
+1
+INPUT Policy CoverageOption EffDate[0;3]
+01/01/2006
+INPUT Policy CoverageOption TermDate[0;3]
+12/31/2047
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;3]
+1000500002
+INPUT Policy CoverageOptionProduct MaturityAge[0;3]
+70
+INPUT Policy CoverageOption OptionNumberOfUnits[0;3]
+10
+INPUT Policy CoverageOption PremUseCode[0;3]
+1000500003
+INPUT Policy CoverageOption UnderwritingClass[0;3]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;3]
+1
+INPUT Policy CoverageOption PermTableRating[0;3]
+1
+INPUT Policy CoverageOption ProductCode[0;4]
+GIOPA
+INPUT Policy CoverageOption CoverageOptionStatus[0;4]
+1
+INPUT Policy CoverageOption EffDate[0;4]
+01/01/2006
+INPUT Policy CoverageOption TermDate[0;4]
+12/31/2018
+INPUT Policy CoverageOptionProduct MaturityCalcMethod[0;4]
+1000500006
+INPUT Policy CoverageOptionProduct MaturityAge[0;4]
+41
+INPUT Policy CoverageOption OptionNumberOfUnits[0;4]
+10
+INPUT Policy CoverageOption PremUseCode[0;4]
+1000500003
+INPUT Message Language
+English
+INPUT Policy CoverageOption UnderwritingClass[0;4]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;4]
+1
+INPUT Policy CoverageOption PermTableRating[0;4]
+1
+INPUT Policy Number Of CoverageOption[1]
+0
+INPUT Policy Number Of CoverageOption[2]
+0
+INPUT Policy Number Of CoverageOption[3]
+0
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT PolicyProduct GuarIntRate
+3.5
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT PolicyProduct ReserveFunction
+4
+INPUT Policy Coverage IntialNumberOfUnits
+200
+INPUT PolicyProduct Fee ChargeBasedOn[1]
+1000500014
+INPUT PolicyProduct Fee TableRef TableIdentity[1]
+10
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[1]
+1000500022
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[1]
+
+INPUT Policy Coverage TargetPremAmt
+1000
+INPUT Policy Coverage TargetPremAmt[1]
+1000
+INPUT Policy Coverage TargetPremAmt[2]
+1000
+INPUT Policy Coverage TargetPremAmt[3]
+1000
+INPUT PolicyProduct Fee ChargeBasedOn[3]
+1000500007
+INPUT PolicyProduct Fee TableRef TableIdentity[3]
+10
+INPUT PolicyProduct Fee SecondaryChargeBasedOn[3]
+1000500022
+INPUT PolicyProduct Fee TertiaryChargeBasedOn[3]
+1000500022
+INPUT Policy number of PremiumRate
+0
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOptionProduct MaturityCalcMethod
+0
+INPUT Policy CoverageOptionProduct PayToAge
+80
+INPUT Policy CoverageOption RateVariation FlatAmount[0;2]
+0
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode
+0
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;1]
+0
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;2]
+0
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;3]
+0
+INPUT Policy CoverageOptionProduct LifeCovOptTypeCode[0;4]
+0
+X97 50746f24 3f4150 1a79e8e3 701c47f5 0 0 2
+OUTPUT Illus WithdrawalAmt("C";1)
+OUTPUT Illus WithdrawalAmt("C";1)
+0
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy PayToYear
+79
+INPUT Policy Coverage RequestedMaturityDur
+79
+INPUT Policy number of SubAccount
+0
+INPUT Policy number of PremiumRate
+1
+INPUT Policy PremiumRate PremiumRateType
+0
+INPUT Policy PolNumber
+1
+INPUT Policy Loan LoanIntType
+1
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmt
+5554.44
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+01/01/2011
+INPUT Policy LifeUSA GuidelineAnnPrem
+6635.68
+INPUT Policy LifeUSA GuidelineSinglePrem
+69741.3
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmt
+5248.43
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life PaymentAmt
+7000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+INPUT User ID
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+
+INPUT Policy PaymentMode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+01/01/2106
+INPUT Policy PaymentAmt
+7000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+INPUT Policy IssueState
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmt[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage ProductVersionCode[0]
+1
+INPUT Policy Coverage TermDate[0]
+01/01/2106
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmt[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmt[0]
+5554.44
+INPUT Policy Coverage SurrTargetPrem[0]
+1926.7
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0; 0]
+21
+INPUT Policy LifeParticipant IssueGender[0; 0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0; 0]
+1
+INPUT Policy LIfeParticipant UnderwritingSubClass[0; 0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0; 0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0; 0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt[0; 0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0; 0]
+12/31/2010
+INPUT Policy LifeParticipant TempFlatExtraAmt[0; 0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0; 0]
+01/01/2006
+INPUT Policy LifeParticipant TempTableRating[0; 0]
+0
+INPUT Policy LifeParticipant PermTableRating[0; 0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0; 0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0; 0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0; 0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0; 0; 0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0; 0; 0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0; 0; 0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmt[0; 0; 0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy CoverageOption RequestedEffDur
+1
+INPUT Policy CoverageOption RequestedMaturityDur
+79
+INPUT Policy Coverage MaturityAge
+26
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Illus DisbSolveDesignType
+1000500001
+INPUT Illus DisbStartAge
+22
+INPUT Policy LifeParticipant IssueAge
+21
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Illus FaceAmtDesignType
+1000500001
+X102 1a79e8e3 50746f24 0 0 0 0 2
+OUTPUT Illus LoanAmt("C";1)
+OUTPUT Illus LoanAmt("C";1)
+0
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy PayToYear
+79
+INPUT Policy Coverage RequestedMaturityDur
+79
+INPUT Policy number of SubAccount
+0
+INPUT Policy number of PremiumRate
+1
+INPUT Policy PremiumRate PremiumRateType
+0
+INPUT Policy PolNumber
+1
+INPUT Policy Loan LoanIntType
+1
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmt
+5554.44
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+01/01/2011
+INPUT Policy LifeUSA GuidelineAnnPrem
+6635.68
+INPUT Policy LifeUSA GuidelineSinglePrem
+69741.3
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmt
+5248.43
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life PaymentAmt
+7000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+INPUT User ID
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+
+INPUT Policy PaymentMode
+1
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy TermDate
+01/01/2106
+INPUT Policy PaymentAmt
+7000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+INPUT Policy IssueState
+51
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Number of Loan
+0
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmt[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Policy Coverage ProductVersionCode[0]
+1
+INPUT Policy Coverage TermDate[0]
+01/01/2106
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmt[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmt[0]
+5554.44
+INPUT Policy Coverage SurrTargetPrem[0]
+1926.7
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0; 0]
+21
+INPUT Policy LifeParticipant IssueGender[0; 0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0; 0]
+1
+INPUT Policy LIfeParticipant UnderwritingSubClass[0; 0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0; 0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0; 0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt[0; 0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0; 0]
+12/31/2010
+INPUT Policy LifeParticipant TempFlatExtraAmt[0; 0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0; 0]
+01/01/2006
+INPUT Policy LifeParticipant TempTableRating[0; 0]
+0
+INPUT Policy LifeParticipant PermTableRating[0; 0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0; 0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0; 0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0; 0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0; 0; 0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0; 0; 0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0; 0; 0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmt[0; 0; 0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy CoverageOption RequestedEffDur
+1
+INPUT Policy CoverageOption RequestedMaturityDur
+79
+INPUT Policy Coverage MaturityAge
+26
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Illus DisbStartAge
+18
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus DisbEndAge
+121
+INPUT Illus DisbSolveDesignType
+1000500001
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant SpecialClassCode
+0
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Life QualPlanType
+0
+INPUT Illus DisbDesignType
+1000500001
+INPUT Policy LifeParticipant TempTableRating
+1
+X220 701c47f5 3f4150 0 2ef059a6 0 0 2
+OUTPUT TOTAL COMMISSIONABLE TARGET
+OUTPUT Coverage Commissionable Target(0)
+
+INPUT CALLING PROGRAM
+CKUBMVTD
+INPUT CALLING SYSTEM
+CL
+INPUT COMMISSION PREMIUM CALC IND
+
+INPUT MESSAGE LANGUAGE
+9
+INPUT TRANSEFFDATE
+07/01/2012
+INPUT POLICY CARRIERCODE
+00
+INPUT POLICY EFFDATE
+06/01/2010
+INPUT POLICY JURISDICTION
+22
+INPUT POLICY PAYMENTMODE
+1
+INPUT POLICY POLNUMBER
+PUL100018A
+INPUT POLICY PRODUCTCODE
+JSUL1PA
+INPUT POLICY PRODUCTTYPE
+3
+INPUT POLICY PRODUCTVERSIONCODE
+
+INPUT POLICY QUALIFIEDCODE
+1
+INPUT POLICY TAXLOCALITY
+76116
+INPUT POLICYPRODUCT AGECALCULATIONTYPE
+2
+INPUT POLICYPRODUCT GUARINTRATE
+3.500
+INPUT POLICYPRODUCT MORTALITYORMORBIDITYTABLE
+133
+INPUT POLICYPRODUCT POLICYPRODUCTTYPECODE
+3
+INPUT POLICYPRODUCT RESERVEFUNCTION
+4
+INPUT POLICY NUMBER OF COVERAGE
+3
+INPUT POLICY COVERAGE BANDCODE[0]
+0
+INPUT POLICY COVERAGE BANDCODE[1]
+0
+INPUT POLICY COVERAGE BANDCODE[2]
+0
+INPUT POLICY COVERAGE CURRENTAMT[0]
+300000.00
+INPUT POLICY COVERAGE CURRENTAMT[1]
+50000.00
+INPUT POLICY COVERAGE CURRENTAMT[2]
+100000.00
+INPUT POLICY COVERAGE CURRENTNUMBEROFUNITS[0]
+300.000
+INPUT POLICY COVERAGE CURRENTNUMBEROFUNITS[1]
+50.000
+INPUT POLICY COVERAGE CURRENTNUMBEROFUNITS[2]
+100.000
+INPUT POLICY COVERAGE DEATHBENEFITOPTTYPE[0]
+1
+INPUT POLICY COVERAGE DEATHBENEFITOPTTYPE[1]
+1
+INPUT POLICY COVERAGE DEATHBENEFITOPTTYPE[2]
+1
+INPUT POLICY COVERAGE EFFDATE[0]
+06/01/2010
+INPUT POLICY COVERAGE EFFDATE[1]
+06/01/2010
+INPUT POLICY COVERAGE EFFDATE[2]
+07/01/2012
+INPUT POLICY COVERAGE INDICATORCODE[0]
+1
+INPUT POLICY COVERAGE INDICATORCODE[1]
+2
+INPUT POLICY COVERAGE INDICATORCODE[2]
+3
+INPUT POLICY COVERAGE INITCOVAMT[0]
+300000.00
+INPUT POLICY COVERAGE INITCOVAMT[1]
+50000.00
+INPUT POLICY COVERAGE INITCOVAMT[2]
+100000.00
+INPUT POLICY COVERAGE INTIALNUMBEROFUNITS[0]
+300.000
+INPUT POLICY COVERAGE INTIALNUMBEROFUNITS[1]
+50.000
+INPUT POLICY COVERAGE INTIALNUMBEROFUNITS[2]
+100.000
+INPUT POLICY COVERAGE LIFECOVSTATUS[0]
+1
+INPUT POLICY COVERAGE LIFECOVSTATUS[1]
+1
+INPUT POLICY COVERAGE LIFECOVSTATUS[2]
+1
+INPUT POLICY COVERAGE LIFECOVTYPECODE[0]
+9
+INPUT POLICY COVERAGE LIFECOVTYPECODE[1]
+9
+INPUT POLICY COVERAGE LIFECOVTYPECODE[2]
+9
+INPUT POLICY COVERAGE PRODUCTCODE[0]
+JSUL1PA
+INPUT POLICY COVERAGE PRODUCTCODE[1]
+PITRJSPA
+INPUT POLICY COVERAGE PRODUCTCODE[2]
+JSUL1PA
+INPUT POLICY COVERAGE PRODUCTVERSIONCODE[0]
+1
+INPUT POLICY COVERAGE PRODUCTVERSIONCODE[1]
+1
+INPUT POLICY COVERAGE PRODUCTVERSIONCODE[2]
+1
+INPUT POLICY COVERAGE REQUESTEDEFFDUR[0]
+3
+INPUT POLICY COVERAGE REQUESTEDEFFDUR[1]
+3
+INPUT POLICY COVERAGE REQUESTEDEFFDUR[2]
+1
+INPUT POLICY COVERAGE REQUESTEDMATURITYDUR[0]
+92
+INPUT POLICY COVERAGE REQUESTEDMATURITYDUR[1]
+92
+INPUT POLICY COVERAGE REQUESTEDMATURITYDUR[2]
+89
+INPUT POLICY COVERAGE TARGETPREMAMT[0]
+3565.02
+INPUT POLICY COVERAGE TARGETPREMAMT[1]
+0.00
+INPUT POLICY COVERAGE TARGETPREMAMT[2]
+0.00
+INPUT POLICY COVERAGE TERMDATE[0]
+06/01/2101
+INPUT POLICY COVERAGE TERMDATE[1]
+06/01/2101
+INPUT POLICY COVERAGE TERMDATE[2]
+06/01/2101
+INPUT POLICY COVERAGEPRODUCT LIVESTYPE[0]
+3
+INPUT POLICY COVERAGEPRODUCT LIVESTYPE[1]
+3
+INPUT POLICY COVERAGEPRODUCT LIVESTYPE[2]
+3
+INPUT POLICY COVERAGEPRODUCT MATURITYAGE[0]
+121
+INPUT POLICY COVERAGEPRODUCT MATURITYAGE[1]
+121
+INPUT POLICY COVERAGEPRODUCT MATURITYAGE[2]
+120
+INPUT POLICY COVERAGEPRODUCT VALUEPERUNIT[0]
+1000.00
+INPUT POLICY COVERAGEPRODUCT VALUEPERUNIT[1]
+1000.00
+INPUT POLICY COVERAGEPRODUCT VALUEPERUNIT[2]
+1000.00
+INPUT POLICY NUMBER OF COVERAGEOPTION[0]
+1
+INPUT POLICY NUMBER OF COVERAGEOPTION[1]
+0
+INPUT POLICY NUMBER OF COVERAGEOPTION[2]
+0
+INPUT POLICY COVERAGEOPTION COVERAGEOPTIONSTATUS[0;0]
+1
+INPUT POLICY COVERAGEOPTION EFFDATE[0;0]
+06/01/2010
+INPUT POLICY COVERAGEOPTION LIFECOVOPTTYPECODE[0;0]
+17
+INPUT POLICY COVERAGEOPTION NUMBER OF SUBSTANDARDRATING[0;0]
+1
+INPUT POLICY COVERAGEOPTION OPTIONNUMBEROFUNITS[0;0]
+300.000
+INPUT POLICY COVERAGEOPTION PERMFLATEXTRAAMT[0;0]
+0.00
+INPUT POLICY COVERAGEOPTION PERMTABLERATING[0;0]
+1
+INPUT POLICY COVERAGEOPTION PRODUCTCODE[0;0]
+WSPPA
+INPUT POLICY COVERAGEOPTION SPECIALCLASSCODE[0;0]
+0.00
+INPUT POLICY COVERAGEOPTION SUBSTANDARDRATING TEMPFLATENDDATE[0;0;0]
+06/01/2045
+INPUT POLICY COVERAGEOPTION SUBSTANDARDRATING TEMPFLATEXTRAAMT[0;0;0]
+0.05000
+INPUT POLICY COVERAGEOPTION TEMPFLATEXTRAAMT[0;0]
+0.00
+INPUT POLICY COVERAGEOPTION TEMPTABLERATING[0;0]
+0.00
+INPUT POLICY COVERAGEOPTION TERMDATE[0;0]
+06/01/2045
+INPUT POLICY COVERAGEOPTION TOBACCOPREMIUMBASIS[0;0]
+1
+INPUT POLICY COVERAGEOPTION UNDERWRITINGCLASS[0;0]
+2
+INPUT POLICY COVERAGEOPTIONPRODUCT MATURITYAGE[0;0]
+65
+INPUT POLICY COVERAGEOPTIONPRODUCT MATURITYCALCMETHOD[0;0]
+1
+INPUT POLICY COVERAGEOPTIONPRODUCT PAYTOAGE[0;0]
+65
+INPUT POLICY LIFE CASHVALUEAMT
+0.00
+INPUT POLICY LIFE CURRINTRATE
+0
+INPUT POLICY LIFE QUALPLANTYPE
+1
+INPUT POLICY NUMBER OF LIFEPARTICIPANT[0]
+2
+INPUT POLICY NUMBER OF LIFEPARTICIPANT[1]
+2
+INPUT POLICY NUMBER OF LIFEPARTICIPANT[2]
+2
+INPUT POLICY LIFEPARTICIPANT ISSUEAGE[0;0]
+30
+INPUT POLICY LIFEPARTICIPANT ISSUEAGE[0;1]
+30
+INPUT POLICY LIFEPARTICIPANT ISSUEAGE[1;0]
+30
+INPUT POLICY LIFEPARTICIPANT ISSUEAGE[1;1]
+30
+INPUT POLICY LIFEPARTICIPANT ISSUEAGE[2;0]
+32
+INPUT POLICY LIFEPARTICIPANT ISSUEAGE[2;1]
+32
+INPUT POLICY LIFEPARTICIPANT ISSUEGENDER[0;0]
+2
+INPUT POLICY LIFEPARTICIPANT ISSUEGENDER[0;1]
+1
+INPUT POLICY LIFEPARTICIPANT ISSUEGENDER[1;0]
+2
+INPUT POLICY LIFEPARTICIPANT ISSUEGENDER[1;1]
+1
+INPUT POLICY LIFEPARTICIPANT ISSUEGENDER[2;0]
+2
+INPUT POLICY LIFEPARTICIPANT ISSUEGENDER[2;1]
+1
+INPUT POLICY LIFEPARTICIPANT LIFEPARTICIPANTROLECODE[0;0]
+1
+INPUT POLICY LIFEPARTICIPANT LIFEPARTICIPANTROLECODE[0;1]
+6
+INPUT POLICY LIFEPARTICIPANT LIFEPARTICIPANTROLECODE[1;0]
+1
+INPUT POLICY LIFEPARTICIPANT LIFEPARTICIPANTROLECODE[1;1]
+6
+INPUT POLICY LIFEPARTICIPANT LIFEPARTICIPANTROLECODE[2;0]
+1
+INPUT POLICY LIFEPARTICIPANT LIFEPARTICIPANTROLECODE[2;1]
+6
+INPUT POLICY LIFEPARTICIPANT PERMFLATEXTRAAMT[0;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT PERMFLATEXTRAAMT[0;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT PERMFLATEXTRAAMT[1;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT PERMFLATEXTRAAMT[1;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT PERMFLATEXTRAAMT[2;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT PERMFLATEXTRAAMT[2;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT PERMTABLERATING[0;0]
+1
+INPUT POLICY LIFEPARTICIPANT PERMTABLERATING[0;1]
+1
+INPUT POLICY LIFEPARTICIPANT PERMTABLERATING[1;0]
+1
+INPUT POLICY LIFEPARTICIPANT PERMTABLERATING[1;1]
+1
+INPUT POLICY LIFEPARTICIPANT PERMTABLERATING[2;0]
+1
+INPUT POLICY LIFEPARTICIPANT PERMTABLERATING[2;1]
+1
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDATE[0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDATE[0;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDATE[1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDATE[1;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDATE[2;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDATE[2;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDURATION[0;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDURATION[0;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDURATION[1;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDURATION[1;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDURATION[2;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATENDDURATION[2;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATEXTRAAMT[0;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATEXTRAAMT[0;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATEXTRAAMT[1;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATEXTRAAMT[1;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATEXTRAAMT[2;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATEXTRAAMT[2;1]
+0.00
+INPUT POLICY LIFEPARTICIPANT TEMPFLATSTARTDATE[0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATSTARTDATE[0;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATSTARTDATE[1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATSTARTDATE[1;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATSTARTDATE[2;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPFLATSTARTDATE[2;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATING[0;0]
+1
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATING[0;1]
+1
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATING[1;0]
+1
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATING[1;1]
+1
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATING[2;0]
+1
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATING[2;1]
+1
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATINGENDDATE[0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATINGENDDATE[0;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATINGENDDATE[1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATINGENDDATE[1;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATINGENDDATE[2;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TEMPTABLERATINGENDDATE[2;1]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT TOBACCOPREMIUMBASIS[0;0]
+1
+INPUT POLICY LIFEPARTICIPANT TOBACCOPREMIUMBASIS[0;1]
+1
+INPUT POLICY LIFEPARTICIPANT TOBACCOPREMIUMBASIS[1;0]
+1
+INPUT POLICY LIFEPARTICIPANT TOBACCOPREMIUMBASIS[1;1]
+1
+INPUT POLICY LIFEPARTICIPANT TOBACCOPREMIUMBASIS[2;0]
+2
+INPUT POLICY LIFEPARTICIPANT TOBACCOPREMIUMBASIS[2;1]
+2
+INPUT POLICY LIFEPARTICIPANT UNDERWRITINGCLASS[0;0]
+2
+INPUT POLICY LIFEPARTICIPANT UNDERWRITINGCLASS[0;1]
+2
+INPUT POLICY LIFEPARTICIPANT UNDERWRITINGCLASS[1;0]
+2
+INPUT POLICY LIFEPARTICIPANT UNDERWRITINGCLASS[1;1]
+2
+INPUT POLICY LIFEPARTICIPANT UNDERWRITINGCLASS[2;0]
+1
+INPUT POLICY LIFEPARTICIPANT UNDERWRITINGCLASS[2;1]
+1
+INPUT POLICY LIFEPARTICIPANT NUMBER OF SUBSTANDARDRATING[0;0]
+1
+INPUT POLICY LIFEPARTICIPANT NUMBER OF SUBSTANDARDRATING[0;1]
+1
+INPUT POLICY LIFEPARTICIPANT NUMBER OF SUBSTANDARDRATING[1;0]
+0
+INPUT POLICY LIFEPARTICIPANT NUMBER OF SUBSTANDARDRATING[1;1]
+1
+INPUT POLICY LIFEPARTICIPANT NUMBER OF SUBSTANDARDRATING[2;0]
+0
+INPUT POLICY LIFEPARTICIPANT NUMBER OF SUBSTANDARDRATING[2;1]
+1
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATENDDATE[0;0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATENDDATE[0;1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATENDDATE[1;0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATENDDATE[1;1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATENDDATE[2;0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATENDDATE[2;1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATEXTRAAMT[0;0;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATEXTRAAMT[0;1;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATEXTRAAMT[1;0;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATEXTRAAMT[1;1;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATEXTRAAMT[2;0;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATEXTRAAMT[2;1;0]
+0.00
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATSTARTDATE[0;0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATSTARTDATE[0;1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATSTARTDATE[1;0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATSTARTDATE[1;1;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATSTARTDATE[2;0;0]
+01/01/1900
+INPUT POLICY LIFEPARTICIPANT SUBSTANDARDRATING TEMPFLATSTARTDATE[2;1;0]
+01/01/1900
+INPUT POLICY LIFEUSA DEFLIFEINSMETHOD
+4
+INPUT POLICY NUMBER OF LOAN
+0
+INPUT POLICY LOAN LOANINTTIMING
+2
+INPUT POLICY LOAN LOANINTTYPE
+1
+INPUT POLICY NUMBER OF SUBACCOUNT
+0
+INPUT POLICYPRODUCT NUMBER OF FEE
+1
+INPUT POLICYPRODUCT FEE CHARGEBASEDON[0]
+1000500007
+INPUT POLICYPRODUCT FEE SECONDARYCHARGEBASEDON[0]
+1000500022
+INPUT POLICYPRODUCT FEE TABLEREF TABLEREFKEY[0]
+10
+INPUT POLICYPRODUCT FEE TERTIARYCHARGEBASEDON[0]
+1000500022
+INPUT POLICYPRODUCT FEE TYPE[0]
+22
+X430 2ef059a6 3f4150 0 80e465a 0 0 2
+OUTPUT Death Benefit V_("";"";"";"";"";"LTGT")
+ULDocs Death Benefit("C"; 1)
+1
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis
+0
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass[1]
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis[1]
+0
+INPUT IllustrationTxn Schedule CovOpt UnderwritingClass[0;0]
+0
+INPUT IllustrationTxn Schedule CovOpt TobaccoPremiumBasis[0;0]
+0
+INPUT Policy CoverageOption TempTableRating
+0
+INPUT Illus DisbSolveDesignType
+1000500006
+INPUT Policy TaxLocality
+75875
+INPUT Policy QualifiedCode
+1
+INPUT Policy Life QualPlanType
+
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant SpecialClassCode
+1
+INPUT Policy LifeParticipant SpecialClassCode[1]
+1
+INPUT Illus DisbDesignType
+1000500001
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmt
+8870.87
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+01/01/2011
+INPUT Policy LifeUSA GuidelineAnnPrem
+5931.24
+INPUT Policy LifeUSA GuidelineSinglePrem
+66754.72
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmt
+3527.64
+INPUT Policy Life PaymentAmt
+5500
+INPUT Policy Life CashValueAmt
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+INPUT User ID
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+01/01/2106
+INPUT Policy PaymentAmt
+5500
+INPUT Premium Payment
+5500
+INPUT Policy ProductType
+3
+INPUT PolicyStatus
+1
+INPUT Message Language
+9
+INPUT Policy Arrangement ArrType
+31
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Life GrossPremAmtATD
+0
+INPUT Policy Life GrossPremAmountAnniversary to Date
+0
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage BandCode
+1
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage CurrentAmt
+500000
+INPUT Policy Coverage ValuePerUnit
+1000
+INPUT Policy Coverage CurrentNumberOfUnits
+500
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+69
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+01/01/2075
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage InitCovAmt
+500000
+INPUT Policy Coverage IntialNumberOfUnits
+500
+INPUT Policy Coverage TargetPremAmt
+8870.87
+INPUT Policy Coverage SurrTargetPrem
+11919.6
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LivesType
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage PaidToDate
+01/00/1900
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueAge
+32
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+2
+INPUT Policy LIfeParticipant UnderwritingSubClass
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2005
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDuration
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate
+12/31/2005
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDuration
+0
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption RequestedEffDur
+1
+INPUT Policy CoverageOption RequestedMaturityDur
+69
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption OptionNumberOfUnits
+0
+INPUT Policy CoverageOption ProductCode
+MNLPPA
+INPUT Policy CoverageOption TermDate
+01/01/2011
+INPUT Policy CoverageOption UnderwritingClass
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy Coverage BandCode[1]
+1
+INPUT Policy Coverage DeathBenefitOptType[1]
+1
+INPUT Policy Coverage CurrentAmt[1]
+250000
+INPUT Policy Coverage ValuePerUnit[1]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+250
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT Policy Coverage RequestedMaturityDur[1]
+25
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage ProductCode[1]
+AIR1PA
+INPUT Policy Coverage ProductVersionCode[1]
+1
+INPUT Policy Coverage TermDate[1]
+12/31/2030
+INPUT Policy Coverage LifeCovTypeCode[1]
+24
+INPUT Policy Coverage InitCovAmt[1]
+250000
+INPUT Policy Coverage IntialNumberOfUnits[1]
+250
+INPUT Policy Coverage TargetPremAmt[1]
+0
+INPUT Policy Coverage SurrTargetPrem[1]
+0
+INPUT Policy Coverage SurrChargeITD[1]
+0
+INPUT Policy Coverage SurrChargeIssue to date[1]
+0
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage PaymentMode[1]
+1
+INPUT Policy Coverage PaidToDate[1]
+01/01/2007
+INPUT Policy number of LifeParticipant[1]
+1
+INPUT Policy LifeParticipant IssueAge[1; 0]
+40
+INPUT Policy LifeParticipant IssueGender[1; 0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1; 0]
+2
+INPUT Policy LIfeParticipant UnderwritingSubClass[1; 0]
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1; 0]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1; 0]
+2
+INPUT Policy LifeParticipant PermFlatExtraAmt[1; 0]
+0
+INPUT Policy LifeParticipant PermTableRating[1; 0]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[1; 0]
+12/31/2005
+INPUT Policy LifeParticipant TempFlatExtraAmt[1; 0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1; 0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDuration[1; 0]
+0
+INPUT Policy LifeParticipant TempTableRating[1; 0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[1; 0]
+01/00/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[1; 0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[1; 0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[1; 0; 0]
+0
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[1; 0; 0]
+01/01/2006
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[1; 0; 0]
+12/31/2005
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDuration[1; 0; 0]
+0
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[1; 0; 0]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Illus DisbSearchGoalInd
+0
+INPUT Illus PremSuppSolveType
+1
+INPUT Illus PremTargetCashValue
+500000
+INPUT Illus PremTargetDuration
+69
+INPUT Rate Assumption
+C
+INPUT Policy PayToYear
+69
+INPUT Current Interest Rate
+0.035
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Illus Something
+1
+INPUT Policy number of SubAccount
+0
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Illus PremiumStreamAmt[1]
+5500
+INPUT Illus PremiumStreamAmt[2]
+5500
+INPUT Illus PremiumStreamAmt[3]
+5500
+INPUT Illus PremiumStreamAmt[4]
+5500
+INPUT Illus PremiumStreamAmt[5]
+5500
+INPUT Illus PremiumStreamAmt[6]
+5500
+INPUT Illus PremiumStreamAmt[7]
+5500
+INPUT Illus PremiumStreamAmt[8]
+5500
+INPUT Illus PremiumStreamAmt[9]
+5500
+INPUT Illus PremiumStreamAmt[10]
+5500
+INPUT Illus PremiumStreamAmt[11]
+5500
+INPUT Illus PremiumStreamAmt[12]
+5500
+INPUT Illus PremiumStreamAmt[13]
+5500
+INPUT Illus PremiumStreamAmt[14]
+5500
+INPUT Illus PremiumStreamAmt[15]
+5500
+INPUT Illus PremiumStreamAmt[16]
+5500
+INPUT Illus PremiumStreamAmt[17]
+5500
+INPUT Illus PremiumStreamAmt[18]
+5500
+INPUT Illus PremiumStreamAmt[19]
+5500
+INPUT Illus PremiumStreamAmt[20]
+5500
+INPUT Illus PremiumStreamAmt[21]
+5500
+INPUT Illus PremiumStreamAmt[22]
+5500
+INPUT Illus PremiumStreamAmt[23]
+5500
+INPUT Illus PremiumStreamAmt[24]
+5500
+INPUT Illus PremiumStreamAmt[25]
+5500
+INPUT Illus PremiumStreamAmt[26]
+5500
+INPUT Illus PremiumStreamAmt[27]
+5500
+INPUT Illus PremiumStreamAmt[28]
+5500
+INPUT Illus PremiumStreamAmt[29]
+5500
+INPUT Illus PremiumStreamAmt[30]
+5500
+INPUT Illus PremiumStreamAmt[31]
+5500
+INPUT Illus PremiumStreamAmt[32]
+5500
+INPUT Illus PremiumStreamAmt[33]
+5500
+INPUT Illus PremiumStreamAmt[34]
+5500
+INPUT Illus PremiumStreamAmt[35]
+5500
+INPUT Illus PremiumStreamAmt[36]
+5500
+INPUT Illus PremiumStreamAmt[37]
+5500
+INPUT Illus PremiumStreamAmt[38]
+5500
+INPUT Illus PremiumStreamAmt[39]
+5500
+INPUT Illus PremiumStreamAmt[40]
+5500
+INPUT Illus PremiumStreamAmt[41]
+5500
+INPUT Illus PremiumStreamAmt[42]
+5500
+INPUT Illus PremiumStreamAmt[43]
+5500
+INPUT Illus PremiumStreamAmt[44]
+5500
+INPUT Illus PremiumStreamAmt[45]
+5500
+INPUT Illus PremiumStreamAmt[46]
+5500
+INPUT Illus PremiumStreamAmt[47]
+5500
+INPUT Illus PremiumStreamAmt[48]
+5500
+INPUT Illus PremiumStreamAmt[49]
+5500
+INPUT Illus PremiumStreamAmt[50]
+5500
+INPUT Illus PremiumStreamAmt[51]
+5500
+INPUT Illus PremiumStreamAmt[52]
+5500
+INPUT Illus PremiumStreamAmt[53]
+5500
+INPUT Illus PremiumStreamAmt[54]
+5500
+INPUT Illus PremiumStreamAmt[55]
+5500
+INPUT Illus PremiumStreamAmt[56]
+5500
+INPUT Illus PremiumStreamAmt[57]
+5500
+INPUT Illus PremiumStreamAmt[58]
+5500
+INPUT Illus PremiumStreamAmt[59]
+5500
+INPUT Illus PremiumStreamAmt[60]
+5500
+INPUT Illus PremiumStreamAmt[61]
+5500
+INPUT Illus PremiumStreamAmt[62]
+5500
+INPUT Illus PremiumStreamAmt[63]
+5500
+INPUT Illus PremiumStreamAmt[64]
+5500
+INPUT Illus PremiumStreamAmt[65]
+5500
+INPUT Illus PremiumStreamAmt[66]
+5500
+INPUT Illus PremiumStreamAmt[67]
+5500
+INPUT Illus PremiumStreamAmt[68]
+5500
+INPUT Illus PremiumStreamAmt[69]
+5500
+INPUT Illus PremiumStreamAmt[70]
+5500
+INPUT Illus PremiumStreamAmt[71]
+5500
+INPUT Illus PremiumStreamAmt[72]
+5500
+INPUT Illus PremiumStreamAmt[73]
+5500
+INPUT Illus PremiumStreamAmt[74]
+5500
+INPUT Illus PremiumStreamAmt[75]
+5500
+INPUT Illus PremiumStreamAmt[76]
+5500
+INPUT Illus PremiumStreamAmt[77]
+5500
+INPUT Illus PremiumStreamAmt[78]
+5500
+INPUT Illus PremiumStreamAmt[79]
+5500
+INPUT Illus PremiumStreamAmt[80]
+5500
+INPUT Illus PremiumStreamAmt[81]
+5500
+INPUT Illus PremiumStreamAmt[82]
+5500
+INPUT Illus PremiumStreamAmt[83]
+5500
+INPUT Illus PremiumStreamAmt[84]
+5500
+INPUT Illus PremiumStreamAmt[85]
+5500
+INPUT Illus PremiumStreamAmt[86]
+5500
+INPUT Illus PremiumStreamAmt[87]
+5500
+INPUT Illus PremiumStreamAmt[88]
+5500
+INPUT Illus PremiumStreamAmt[89]
+5500
+INPUT Illus PremiumStreamAmt[90]
+5500
+INPUT Illus PremiumStreamAmt[91]
+5500
+INPUT Illus PremiumStreamAmt[92]
+5500
+INPUT Illus PremiumStreamAmt[93]
+5500
+INPUT Illus PremiumStreamAmt[94]
+5500
+INPUT Illus PremiumStreamAmt[95]
+5500
+INPUT Illus PremiumStreamAmt[96]
+5500
+INPUT Illus PremiumStreamAmt[97]
+5500
+INPUT Illus PremiumStreamAmt[98]
+5500
+INPUT Illus PremiumStreamAmt[99]
+5500
+INPUT Illus PremiumStreamAmt[100]
+5500
+INPUT Illus WithdrawalType
+1
+INPUT Illus WithdrawalDesignType
+1000500002
+INPUT Illus WithdrawalAmt[1]
+0
+INPUT Illus WithdrawalAmt[2]
+0
+INPUT Illus WithdrawalAmt[3]
+0
+INPUT Illus WithdrawalAmt[4]
+0
+INPUT Illus WithdrawalAmt[5]
+0
+INPUT Illus WithdrawalAmt[6]
+0
+INPUT Illus WithdrawalAmt[7]
+0
+INPUT Illus WithdrawalAmt[8]
+0
+INPUT Illus WithdrawalAmt[9]
+0
+INPUT Illus WithdrawalAmt[10]
+0
+INPUT Illus WithdrawalAmt[11]
+0
+INPUT Illus WithdrawalAmt[12]
+0
+INPUT Illus WithdrawalAmt[13]
+0
+INPUT Illus WithdrawalAmt[14]
+0
+INPUT Illus WithdrawalAmt[15]
+0
+INPUT Illus WithdrawalAmt[16]
+0
+INPUT Illus WithdrawalAmt[17]
+0
+INPUT Illus WithdrawalAmt[18]
+0
+INPUT Illus WithdrawalAmt[19]
+0
+INPUT Illus WithdrawalAmt[20]
+0
+INPUT Illus WithdrawalAmt[21]
+0
+INPUT Illus WithdrawalAmt[22]
+0
+INPUT Illus WithdrawalAmt[23]
+0
+INPUT Illus WithdrawalAmt[24]
+0
+INPUT Illus WithdrawalAmt[25]
+0
+INPUT Illus WithdrawalAmt[26]
+0
+INPUT Illus WithdrawalAmt[27]
+0
+INPUT Illus WithdrawalAmt[28]
+0
+INPUT Illus WithdrawalAmt[29]
+0
+INPUT Illus WithdrawalAmt[30]
+0
+INPUT Illus WithdrawalAmt[31]
+0
+INPUT Illus WithdrawalAmt[32]
+0
+INPUT Illus WithdrawalAmt[33]
+0
+INPUT Illus WithdrawalAmt[34]
+0
+INPUT Illus WithdrawalAmt[35]
+0
+INPUT Illus WithdrawalAmt[36]
+0
+INPUT Illus WithdrawalAmt[37]
+0
+INPUT Illus WithdrawalAmt[38]
+0
+INPUT Illus WithdrawalAmt[39]
+0
+INPUT Illus WithdrawalAmt[40]
+0
+INPUT Illus WithdrawalAmt[41]
+0
+INPUT Illus WithdrawalAmt[42]
+0
+INPUT Illus WithdrawalAmt[43]
+0
+INPUT Illus WithdrawalAmt[44]
+0
+INPUT Illus WithdrawalAmt[45]
+0
+INPUT Illus WithdrawalAmt[46]
+0
+INPUT Illus WithdrawalAmt[47]
+0
+INPUT Illus WithdrawalAmt[48]
+0
+INPUT Illus WithdrawalAmt[49]
+0
+INPUT Illus WithdrawalAmt[50]
+0
+INPUT Illus WithdrawalAmt[51]
+0
+INPUT Illus WithdrawalAmt[52]
+0
+INPUT Illus WithdrawalAmt[53]
+0
+INPUT Illus WithdrawalAmt[54]
+0
+INPUT Illus WithdrawalAmt[55]
+0
+INPUT Illus WithdrawalAmt[56]
+0
+INPUT Illus WithdrawalAmt[57]
+0
+INPUT Illus WithdrawalAmt[58]
+0
+INPUT Illus WithdrawalAmt[59]
+0
+INPUT Illus WithdrawalAmt[60]
+0
+INPUT Illus WithdrawalAmt[61]
+0
+INPUT Illus WithdrawalAmt[62]
+0
+INPUT Illus WithdrawalAmt[63]
+0
+INPUT Illus WithdrawalAmt[64]
+0
+INPUT Illus WithdrawalAmt[65]
+0
+INPUT Illus WithdrawalAmt[66]
+0
+INPUT Illus WithdrawalAmt[67]
+0
+INPUT Illus WithdrawalAmt[68]
+0
+INPUT Illus WithdrawalAmt[69]
+0
+INPUT Illus WithdrawalAmt[70]
+0
+INPUT Illus WithdrawalAmt[71]
+0
+INPUT Illus WithdrawalAmt[72]
+0
+INPUT Illus WithdrawalAmt[73]
+0
+INPUT Illus WithdrawalAmt[74]
+0
+INPUT Illus WithdrawalAmt[75]
+0
+INPUT Illus WithdrawalAmt[76]
+0
+INPUT Illus WithdrawalAmt[77]
+0
+INPUT Illus WithdrawalAmt[78]
+0
+INPUT Illus WithdrawalAmt[79]
+0
+INPUT Illus WithdrawalAmt[80]
+0
+INPUT Illus WithdrawalAmt[81]
+0
+INPUT Illus WithdrawalAmt[82]
+0
+INPUT Illus WithdrawalAmt[83]
+0
+INPUT Illus WithdrawalAmt[84]
+0
+INPUT Illus WithdrawalAmt[85]
+0
+INPUT Illus WithdrawalAmt[86]
+0
+INPUT Illus WithdrawalAmt[87]
+0
+INPUT Illus WithdrawalAmt[88]
+0
+INPUT Illus WithdrawalAmt[89]
+0
+INPUT Illus WithdrawalAmt[90]
+0
+INPUT Illus WithdrawalAmt[91]
+0
+INPUT Illus WithdrawalAmt[92]
+0
+INPUT Illus WithdrawalAmt[93]
+0
+INPUT Illus WithdrawalAmt[94]
+0
+INPUT Illus WithdrawalAmt[95]
+0
+INPUT Illus WithdrawalAmt[96]
+0
+INPUT Illus WithdrawalAmt[97]
+0
+INPUT Illus WithdrawalAmt[98]
+0
+INPUT Illus WithdrawalAmt[99]
+0
+INPUT Illus WithdrawalAmt[100]
+0
+INPUT Illus LoanAmt[1]
+0
+INPUT Illus LoanAmt[2]
+0
+INPUT Illus LoanAmt[3]
+0
+INPUT Illus LoanAmt[4]
+0
+INPUT Illus LoanAmt[5]
+0
+INPUT Illus LoanAmt[6]
+0
+INPUT Illus LoanAmt[7]
+0
+INPUT Illus LoanAmt[8]
+0
+INPUT Illus LoanAmt[9]
+0
+INPUT Illus LoanAmt[10]
+0
+INPUT Illus LoanAmt[11]
+0
+INPUT Illus LoanAmt[12]
+0
+INPUT Illus LoanAmt[13]
+0
+INPUT Illus LoanAmt[14]
+0
+INPUT Illus LoanAmt[15]
+0
+INPUT Illus LoanAmt[16]
+0
+INPUT Illus LoanAmt[17]
+0
+INPUT Illus LoanAmt[18]
+0
+INPUT Illus LoanAmt[19]
+0
+INPUT Illus LoanAmt[20]
+0
+INPUT Illus LoanAmt[21]
+0
+INPUT Illus LoanAmt[22]
+0
+INPUT Illus LoanAmt[23]
+0
+INPUT Illus LoanAmt[24]
+0
+INPUT Illus LoanAmt[25]
+0
+INPUT Illus LoanAmt[26]
+0
+INPUT Illus LoanAmt[27]
+0
+INPUT Illus LoanAmt[28]
+0
+INPUT Illus LoanAmt[29]
+0
+INPUT Illus LoanAmt[30]
+0
+INPUT Illus LoanAmt[31]
+0
+INPUT Illus LoanAmt[32]
+0
+INPUT Illus LoanAmt[33]
+0
+INPUT Illus LoanAmt[34]
+0
+INPUT Illus LoanAmt[35]
+0
+INPUT Illus LoanAmt[36]
+0
+INPUT Illus LoanAmt[37]
+0
+INPUT Illus LoanAmt[38]
+0
+INPUT Illus LoanAmt[39]
+0
+INPUT Illus LoanAmt[40]
+0
+INPUT Illus LoanAmt[41]
+0
+INPUT Illus LoanAmt[42]
+0
+INPUT Illus LoanAmt[43]
+0
+INPUT Illus LoanAmt[44]
+0
+INPUT Illus LoanAmt[45]
+0
+INPUT Illus LoanAmt[46]
+0
+INPUT Illus LoanAmt[47]
+0
+INPUT Illus LoanAmt[48]
+0
+INPUT Illus LoanAmt[49]
+0
+INPUT Illus LoanAmt[50]
+0
+INPUT Illus LoanAmt[51]
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant TempTableRating[1]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+0
+X828 80e465a 3f4150 0 0 0 0 2
+Illus Test 70
+CalcType Rate Assumption Off("(C!!!!!7PN)")
+(C!!!!!7PN)
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis
+0
+INPUT Policy LifeParticipant SpecialClassCode
+0
+INPUT Policy TaxLocality
+55555
+INPUT Policy QualifiedCode
+2
+INPUT Policy Life QualPlanType
+0
+INPUT Policy Life CurrIntRate
+4.5
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmt
+1260.12
+INPUT Policy Life InitialPremAmt
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductVersionCode
+
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy ProductType
+3
+INPUT PolicyStatus
+1
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+70
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+01/01/2077
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage IntialNumberOfUnits
+200
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LivesType
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueAge
+30
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2005
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDuration
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate
+12/31/2005
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDuration
+0
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption RequestedEffDur
+1
+INPUT Policy CoverageOption RequestedMaturityDur
+71
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption OptionNumberOfUnits
+0
+INPUT Policy CoverageOption ProductCode
+MNLPPA
+INPUT Policy CoverageOption TermDate
+01/01/2011
+INPUT Policy CoverageOption UnderwritingClass
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Illus DisbDesignType
+1000500003
+INPUT Illus DisbSolveDesignType
+1000500006
+INPUT Illus DisbSearchGoalInd
+0
+INPUT Illus PremSuppSolveType
+1
+INPUT Illus PremTargetCashValue
+100000
+INPUT Illus PremTargetDuration
+30
+INPUT Policy PayToYear
+71
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Illus PremiumStreamAmt[1]
+2042.37
+INPUT Illus PremiumStreamAmt[2]
+2042.37
+INPUT Illus PremiumStreamAmt[3]
+2042.37
+INPUT Illus PremiumStreamAmt[4]
+2042.37
+INPUT Illus PremiumStreamAmt[5]
+2042.37
+INPUT Illus PremiumStreamAmt[6]
+2042.37
+INPUT Illus PremiumStreamAmt[7]
+2042.37
+INPUT Illus PremiumStreamAmt[8]
+2042.37
+INPUT Illus PremiumStreamAmt[9]
+2042.37
+INPUT Illus PremiumStreamAmt[10]
+2042.37
+INPUT Illus PremiumStreamAmt[11]
+2042.37
+INPUT Illus PremiumStreamAmt[12]
+2042.37
+INPUT Illus PremiumStreamAmt[13]
+2042.37
+INPUT Illus PremiumStreamAmt[14]
+2042.37
+INPUT Illus PremiumStreamAmt[15]
+2042.37
+INPUT Illus PremiumStreamAmt[16]
+2042.37
+INPUT Illus PremiumStreamAmt[17]
+2042.37
+INPUT Illus PremiumStreamAmt[18]
+2042.37
+INPUT Illus PremiumStreamAmt[19]
+2042.37
+INPUT Illus PremiumStreamAmt[20]
+2042.37
+INPUT Illus PremiumStreamAmt[21]
+2042.37
+INPUT Illus PremiumStreamAmt[22]
+2042.37
+INPUT Illus PremiumStreamAmt[23]
+2042.37
+INPUT Illus PremiumStreamAmt[24]
+2042.37
+INPUT Illus PremiumStreamAmt[25]
+2042.37
+INPUT Illus PremiumStreamAmt[26]
+2042.37
+INPUT Illus PremiumStreamAmt[27]
+2042.37
+INPUT Illus PremiumStreamAmt[28]
+2042.37
+INPUT Illus PremiumStreamAmt[29]
+2042.37
+INPUT Illus PremiumStreamAmt[30]
+2042.37
+INPUT Illus PremiumStreamAmt[31]
+0
+INPUT Illus PremiumStreamAmt[32]
+0
+INPUT Illus PremiumStreamAmt[33]
+0
+INPUT Illus PremiumStreamAmt[34]
+0
+INPUT Illus PremiumStreamAmt[35]
+0
+INPUT Illus PremiumStreamAmt[36]
+0
+INPUT Illus PremiumStreamAmt[37]
+0
+INPUT Illus PremiumStreamAmt[38]
+0
+INPUT Illus PremiumStreamAmt[39]
+0
+INPUT Illus PremiumStreamAmt[40]
+0
+INPUT Illus PremiumStreamAmt[41]
+0
+INPUT Illus PremiumStreamAmt[42]
+0
+INPUT Illus PremiumStreamAmt[43]
+0
+INPUT Illus PremiumStreamAmt[44]
+0
+INPUT Illus PremiumStreamAmt[45]
+0
+INPUT Illus PremiumStreamAmt[46]
+0
+INPUT Illus PremiumStreamAmt[47]
+0
+INPUT Illus PremiumStreamAmt[48]
+0
+INPUT Illus PremiumStreamAmt[49]
+0
+INPUT Illus PremiumStreamAmt[50]
+0
+INPUT Illus PremiumStreamAmt[51]
+0
+INPUT Illus PremiumStreamAmt[52]
+0
+INPUT Illus PremiumStreamAmt[53]
+0
+INPUT Illus PremiumStreamAmt[54]
+0
+INPUT Illus PremiumStreamAmt[55]
+0
+INPUT Illus PremiumStreamAmt[56]
+0
+INPUT Illus PremiumStreamAmt[57]
+0
+INPUT Illus PremiumStreamAmt[58]
+0
+INPUT Illus PremiumStreamAmt[59]
+0
+INPUT Illus PremiumStreamAmt[60]
+0
+INPUT Illus PremiumStreamAmt[61]
+0
+INPUT Illus PremiumStreamAmt[62]
+0
+INPUT Illus PremiumStreamAmt[63]
+0
+INPUT Illus PremiumStreamAmt[64]
+0
+INPUT Illus PremiumStreamAmt[65]
+0
+INPUT Illus PremiumStreamAmt[66]
+0
+INPUT Illus PremiumStreamAmt[67]
+0
+INPUT Illus PremiumStreamAmt[68]
+0
+INPUT Illus PremiumStreamAmt[69]
+0
+INPUT Illus PremiumStreamAmt[70]
+0
+INPUT Illus PremiumStreamAmt[71]
+0
+INPUT Illus PremiumStreamAmt[72]
+0
+INPUT Illus PremiumStreamAmt[73]
+0
+INPUT Illus PremiumStreamAmt[74]
+0
+INPUT Illus PremiumStreamAmt[75]
+0
+INPUT Illus PremiumStreamAmt[76]
+0
+INPUT Illus PremiumStreamAmt[77]
+0
+INPUT Illus PremiumStreamAmt[78]
+0
+INPUT Illus PremiumStreamAmt[79]
+0
+INPUT Illus PremiumStreamAmt[80]
+0
+INPUT Illus PremiumStreamAmt[81]
+0
+INPUT Illus PremiumStreamAmt[82]
+0
+INPUT Illus PremiumStreamAmt[83]
+0
+INPUT Illus PremiumStreamAmt[84]
+0
+INPUT Illus PremiumStreamAmt[85]
+0
+INPUT Illus PremiumStreamAmt[86]
+0
+INPUT Illus PremiumStreamAmt[87]
+0
+INPUT Illus PremiumStreamAmt[88]
+0
+INPUT Illus PremiumStreamAmt[89]
+0
+INPUT Illus PremiumStreamAmt[90]
+0
+INPUT Illus PremiumStreamAmt[91]
+0
+INPUT Illus PremiumStreamAmt[92]
+0
+INPUT Illus PremiumStreamAmt[93]
+0
+INPUT Illus PremiumStreamAmt[94]
+0
+INPUT Illus PremiumStreamAmt[95]
+0
+INPUT Illus PremiumStreamAmt[96]
+0
+INPUT Illus PremiumStreamAmt[97]
+0
+INPUT Illus PremiumStreamAmt[98]
+0
+INPUT Illus PremiumStreamAmt[99]
+0
+INPUT Illus WithdrawalType
+1
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Illus FaceAmt[1]
+200000
+INPUT Illus FaceAmt[2]
+200000
+INPUT Illus FaceAmt[3]
+200000
+INPUT Illus FaceAmt[4]
+200000
+INPUT Illus FaceAmt[5]
+200000
+INPUT Illus FaceAmt[6]
+200000
+INPUT Illus FaceAmt[7]
+200000
+INPUT Illus FaceAmt[8]
+200000
+INPUT Illus FaceAmt[9]
+200000
+INPUT Illus FaceAmt[10]
+200000
+INPUT Illus FaceAmt[11]
+200000
+INPUT Illus FaceAmt[12]
+200000
+INPUT Illus FaceAmt[13]
+200000
+INPUT Illus FaceAmt[14]
+200000
+INPUT Illus FaceAmt[15]
+200000
+INPUT Illus FaceAmt[16]
+200000
+INPUT Illus FaceAmt[17]
+200000
+INPUT Illus FaceAmt[18]
+200000
+INPUT Illus FaceAmt[19]
+200000
+INPUT Illus FaceAmt[20]
+200000
+INPUT Illus FaceAmt[21]
+200000
+INPUT Illus FaceAmt[22]
+200000
+INPUT Illus FaceAmt[23]
+200000
+INPUT Illus FaceAmt[24]
+200000
+INPUT Illus FaceAmt[25]
+200000
+INPUT Illus FaceAmt[26]
+200000
+INPUT Illus FaceAmt[27]
+200000
+INPUT Illus FaceAmt[28]
+200000
+INPUT Illus FaceAmt[29]
+200000
+INPUT Illus FaceAmt[30]
+200000
+INPUT Illus FaceAmt[31]
+200000
+INPUT Illus FaceAmt[32]
+200000
+INPUT Illus FaceAmt[33]
+200000
+INPUT Illus FaceAmt[34]
+200000
+INPUT Illus FaceAmt[35]
+200000
+INPUT Illus FaceAmt[36]
+200000
+INPUT Illus FaceAmt[37]
+200000
+INPUT Illus FaceAmt[38]
+200000
+INPUT Illus FaceAmt[39]
+200000
+INPUT Illus FaceAmt[40]
+200000
+INPUT Illus FaceAmt[41]
+200000
+INPUT Illus FaceAmt[42]
+200000
+INPUT Illus FaceAmt[43]
+200000
+INPUT Illus FaceAmt[44]
+200000
+INPUT Illus FaceAmt[45]
+200000
+INPUT Illus FaceAmt[46]
+200000
+INPUT Illus FaceAmt[47]
+200000
+INPUT Illus FaceAmt[48]
+200000
+INPUT Illus FaceAmt[49]
+200000
+INPUT Illus FaceAmt[50]
+200000
+INPUT Illus FaceAmt[51]
+200000
+INPUT Illus FaceAmt[52]
+200000
+INPUT Illus FaceAmt[53]
+200000
+INPUT Illus FaceAmt[54]
+200000
+INPUT Illus FaceAmt[55]
+200000
+INPUT Illus FaceAmt[56]
+200000
+INPUT Illus FaceAmt[57]
+200000
+INPUT Illus FaceAmt[58]
+200000
+INPUT Illus FaceAmt[59]
+200000
+INPUT Illus FaceAmt[60]
+200000
+INPUT Illus FaceAmt[61]
+200000
+INPUT Illus FaceAmt[62]
+200000
+INPUT Illus FaceAmt[63]
+200000
+INPUT Illus FaceAmt[64]
+200000
+INPUT Illus FaceAmt[65]
+200000
+INPUT Illus FaceAmt[66]
+200000
+INPUT Illus FaceAmt[67]
+200000
+INPUT Illus FaceAmt[68]
+200000
+INPUT Illus FaceAmt[69]
+200000
+INPUT Illus FaceAmt[70]
+200000
+INPUT Illus FaceAmt[71]
+200000
+INPUT Illus FaceAmt[72]
+200000
+INPUT Illus FaceAmt[73]
+200000
+INPUT Illus FaceAmt[74]
+200000
+INPUT Illus FaceAmt[75]
+200000
+INPUT Illus FaceAmt[76]
+200000
+INPUT Illus FaceAmt[77]
+200000
+INPUT Illus FaceAmt[78]
+200000
+INPUT Illus FaceAmt[79]
+200000
+INPUT Illus FaceAmt[80]
+200000
+INPUT Illus FaceAmt[81]
+200000
+INPUT Illus FaceAmt[82]
+200000
+INPUT Illus FaceAmt[83]
+200000
+INPUT Illus FaceAmt[84]
+200000
+INPUT Illus FaceAmt[85]
+200000
+INPUT Illus FaceAmt[86]
+200000
+INPUT Illus FaceAmt[87]
+200000
+INPUT Illus FaceAmt[88]
+200000
+INPUT Illus FaceAmt[89]
+200000
+INPUT Illus FaceAmt[90]
+200000
+INPUT Illus FaceAmt[91]
+200000
+INPUT Illus FaceAmt[92]
+200000
+INPUT Illus FaceAmt[93]
+200000
+INPUT Illus FaceAmt[94]
+200000
+INPUT Illus FaceAmt[95]
+200000
+INPUT Illus FaceAmt[96]
+200000
+INPUT Illus FaceAmt[97]
+200000
+INPUT Illus FaceAmt[98]
+200000
+INPUT Illus FaceAmt[99]
+200000
+INPUT Illus FaceAmt[100]
+200000
+INPUT Illus FaceAmtDBOption[1]
+1
+INPUT Illus FaceAmtDBOption[2]
+1
+INPUT Illus FaceAmtDBOption[3]
+1
+INPUT Illus FaceAmtDBOption[4]
+1
+INPUT Illus FaceAmtDBOption[5]
+1
+INPUT Illus FaceAmtDBOption[6]
+1
+INPUT Illus FaceAmtDBOption[7]
+1
+INPUT Illus FaceAmtDBOption[8]
+1
+INPUT Illus FaceAmtDBOption[9]
+1
+INPUT Illus FaceAmtDBOption[10]
+1
+INPUT Illus FaceAmtDBOption[11]
+1
+INPUT Illus FaceAmtDBOption[12]
+1
+INPUT Illus FaceAmtDBOption[13]
+1
+INPUT Illus FaceAmtDBOption[14]
+1
+INPUT Illus FaceAmtDBOption[15]
+1
+INPUT Illus FaceAmtDBOption[16]
+1
+INPUT Illus FaceAmtDBOption[17]
+1
+INPUT Illus FaceAmtDBOption[18]
+1
+INPUT Illus FaceAmtDBOption[19]
+1
+INPUT Illus FaceAmtDBOption[20]
+1
+INPUT Illus FaceAmtDBOption[21]
+1
+INPUT Illus FaceAmtDBOption[22]
+1
+INPUT Illus FaceAmtDBOption[23]
+1
+INPUT Illus FaceAmtDBOption[24]
+1
+INPUT Illus FaceAmtDBOption[25]
+1
+INPUT Illus FaceAmtDBOption[26]
+1
+INPUT Illus FaceAmtDBOption[27]
+1
+INPUT Illus FaceAmtDBOption[28]
+1
+INPUT Illus FaceAmtDBOption[29]
+1
+INPUT Illus FaceAmtDBOption[30]
+1
+INPUT Illus FaceAmtDBOption[31]
+1
+INPUT Illus FaceAmtDBOption[32]
+1
+INPUT Illus FaceAmtDBOption[33]
+1
+INPUT Illus FaceAmtDBOption[34]
+1
+INPUT Illus FaceAmtDBOption[35]
+1
+INPUT Illus FaceAmtDBOption[36]
+1
+INPUT Illus FaceAmtDBOption[37]
+1
+INPUT Illus FaceAmtDBOption[38]
+1
+INPUT Illus FaceAmtDBOption[39]
+1
+INPUT Illus FaceAmtDBOption[40]
+1
+INPUT Illus FaceAmtDBOption[41]
+1
+INPUT Illus FaceAmtDBOption[42]
+1
+INPUT Illus FaceAmtDBOption[43]
+1
+INPUT Illus FaceAmtDBOption[44]
+1
+INPUT Illus FaceAmtDBOption[45]
+1
+INPUT Illus FaceAmtDBOption[46]
+1
+INPUT Illus FaceAmtDBOption[47]
+1
+INPUT Illus FaceAmtDBOption[48]
+1
+INPUT Illus FaceAmtDBOption[49]
+1
+INPUT Illus FaceAmtDBOption[50]
+1
+INPUT Illus FaceAmtDBOption[51]
+1
+INPUT Illus FaceAmtDBOption[52]
+1
+INPUT Illus FaceAmtDBOption[53]
+1
+INPUT Illus FaceAmtDBOption[54]
+1
+INPUT Illus FaceAmtDBOption[55]
+1
+INPUT Illus FaceAmtDBOption[56]
+1
+INPUT Illus FaceAmtDBOption[57]
+1
+INPUT Illus FaceAmtDBOption[58]
+1
+INPUT Illus FaceAmtDBOption[59]
+1
+INPUT Illus FaceAmtDBOption[60]
+1
+INPUT Illus FaceAmtDBOption[61]
+1
+INPUT Illus FaceAmtDBOption[62]
+1
+INPUT Illus FaceAmtDBOption[63]
+1
+INPUT Illus FaceAmtDBOption[64]
+1
+INPUT Illus FaceAmtDBOption[65]
+1
+INPUT Illus FaceAmtDBOption[66]
+1
+INPUT Illus FaceAmtDBOption[67]
+1
+INPUT Illus FaceAmtDBOption[68]
+1
+INPUT Illus FaceAmtDBOption[69]
+1
+INPUT Illus FaceAmtDBOption[70]
+1
+INPUT Illus FaceAmtDBOption[71]
+1
+INPUT Illus FaceAmtDBOption[72]
+1
+INPUT Illus FaceAmtDBOption[73]
+1
+INPUT Illus FaceAmtDBOption[74]
+1
+INPUT Illus FaceAmtDBOption[75]
+1
+INPUT Illus FaceAmtDBOption[76]
+1
+INPUT Illus FaceAmtDBOption[77]
+1
+INPUT Illus FaceAmtDBOption[78]
+1
+INPUT Illus FaceAmtDBOption[79]
+1
+INPUT Illus FaceAmtDBOption[80]
+1
+INPUT Illus FaceAmtDBOption[81]
+1
+INPUT Illus FaceAmtDBOption[82]
+1
+INPUT Illus FaceAmtDBOption[83]
+1
+INPUT Illus FaceAmtDBOption[84]
+1
+INPUT Illus FaceAmtDBOption[85]
+1
+INPUT Illus FaceAmtDBOption[86]
+1
+INPUT Illus FaceAmtDBOption[87]
+1
+INPUT Illus FaceAmtDBOption[88]
+1
+INPUT Illus FaceAmtDBOption[89]
+1
+INPUT Illus FaceAmtDBOption[90]
+1
+INPUT Illus FaceAmtDBOption[91]
+1
+INPUT Illus FaceAmtDBOption[92]
+1
+INPUT Illus FaceAmtDBOption[93]
+1
+INPUT Illus FaceAmtDBOption[94]
+1
+INPUT Illus FaceAmtDBOption[95]
+1
+INPUT Illus FaceAmtDBOption[96]
+1
+INPUT Illus FaceAmtDBOption[97]
+1
+INPUT Illus FaceAmtDBOption[98]
+1
+INPUT Illus FaceAmtDBOption[99]
+1
+INPUT Illus FaceAmtDBOption[100]
+1
+INPUT Policy Loan LoanOriginationDate[0]
+01/01/2005
+INPUT Policy Loan LoanIntMethod
+2
+INPUT Illus Loan DesignType
+1000500003
+INPUT PolicyProduct LoanProvision CreditingIntAdjRateRule
+2
+INPUT PolicyProduct LoanProvision CreditingIntAdjRate
+2
+INPUT PolicyProduct LoanProvision RateVariation TableRef
+04
+INPUT Policy Number of FinancialActivity
+0
+INPUT Policy number of SubAccount
+1
+INPUT Policy number of PremiumRate
+0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy Life PaymentAmt
+1000
+INPUT Policy Coverage CurrentAmt
+200000
+INPUT Policy Number of Loan
+0
+INPUT Illus LoanAmt[1]
+0
+INPUT Illus LoanAmt[2]
+0
+INPUT Illus LoanAmt[3]
+0
+INPUT Illus LoanAmt[4]
+0
+INPUT Illus LoanAmt[5]
+0
+INPUT Illus LoanAmt[6]
+0
+INPUT Illus LoanAmt[7]
+0
+INPUT Illus LoanAmt[8]
+0
+INPUT Illus LoanAmt[9]
+0
+INPUT Illus LoanAmt[10]
+0
+INPUT Illus LoanAmt[11]
+0
+INPUT Illus LoanAmt[12]
+0
+INPUT Illus LoanAmt[13]
+0
+INPUT Illus LoanAmt[14]
+0
+INPUT Illus LoanAmt[15]
+0
+INPUT Illus LoanAmt[16]
+0
+INPUT Illus LoanAmt[17]
+0
+INPUT Illus LoanAmt[18]
+0
+INPUT Illus LoanAmt[19]
+0
+INPUT Illus LoanAmt[20]
+0
+INPUT Illus LoanAmt[21]
+0
+INPUT Illus LoanAmt[22]
+0
+INPUT Illus LoanAmt[23]
+0
+INPUT Illus LoanAmt[24]
+0
+INPUT Illus LoanAmt[25]
+0
+INPUT Illus LoanAmt[26]
+0
+INPUT Illus LoanAmt[27]
+0
+INPUT Illus LoanAmt[28]
+0
+INPUT Illus LoanAmt[29]
+0
+INPUT Illus LoanAmt[30]
+0
+INPUT Illus LoanAmt[31]
+0
+INPUT Illus LoanAmt[32]
+0
+INPUT Illus LoanAmt[33]
+0
+INPUT Illus LoanAmt[34]
+0
+INPUT Illus LoanAmt[35]
+0
+INPUT Illus LoanAmt[36]
+0
+INPUT Illus LoanAmt[37]
+0
+INPUT Illus LoanAmt[38]
+0
+INPUT Illus LoanAmt[39]
+0
+INPUT Illus LoanAmt[40]
+0
+INPUT Illus LoanAmt[41]
+0
+INPUT Illus LoanAmt[42]
+0
+INPUT Illus LoanAmt[43]
+0
+INPUT Illus LoanAmt[44]
+0
+INPUT Illus LoanAmt[45]
+0
+INPUT Illus LoanAmt[46]
+0
+INPUT Illus LoanAmt[47]
+0
+INPUT Illus LoanAmt[48]
+0
+INPUT Illus LoanAmt[49]
+0
+INPUT Illus LoanAmt[50]
+0
+INPUT Illus LoanAmt[51]
+0
+INPUT Illus LoanAmt[52]
+0
+INPUT Illus LoanAmt[53]
+0
+INPUT Illus LoanAmt[54]
+0
+INPUT Illus LoanAmt[55]
+0
+INPUT Illus LoanAmt[56]
+0
+INPUT Illus LoanAmt[57]
+0
+INPUT Illus LoanAmt[58]
+0
+INPUT Illus LoanAmt[59]
+0
+INPUT Illus LoanAmt[60]
+0
+INPUT Illus LoanAmt[61]
+0
+INPUT Illus LoanAmt[62]
+0
+INPUT Illus LoanAmt[63]
+0
+INPUT Illus LoanAmt[64]
+0
+INPUT Illus LoanAmt[65]
+0
+INPUT Illus LoanAmt[66]
+0
+INPUT Illus LoanAmt[67]
+0
+INPUT Illus LoanAmt[68]
+0
+INPUT Illus LoanAmt[69]
+0
+INPUT Illus LoanAmt[70]
+0
+INPUT Illus LoanAmt[71]
+0
+INPUT Illus LoanAmt[72]
+0
+INPUT Illus LoanAmt[73]
+0
+INPUT Illus LoanAmt[74]
+0
+INPUT Illus LoanAmt[75]
+0
+INPUT Illus LoanAmt[76]
+0
+INPUT Illus LoanAmt[77]
+0
+INPUT Illus LoanAmt[78]
+0
+INPUT Illus LoanAmt[79]
+0
+INPUT Illus LoanAmt[80]
+0
+INPUT Illus LoanAmt[81]
+0
+INPUT Illus LoanAmt[82]
+0
+INPUT Illus LoanAmt[83]
+0
+INPUT Illus LoanAmt[84]
+0
+INPUT Illus LoanAmt[85]
+0
+INPUT Illus LoanAmt[86]
+0
+INPUT Illus LoanAmt[87]
+0
+INPUT Illus LoanAmt[88]
+0
+INPUT Illus LoanAmt[89]
+0
+INPUT Illus LoanAmt[90]
+0
+INPUT Illus LoanAmt[91]
+0
+INPUT Illus LoanAmt[92]
+0
+INPUT Illus LoanAmt[93]
+0
+INPUT Illus LoanAmt[94]
+0
+INPUT Illus LoanAmt[95]
+0
+INPUT Illus LoanAmt[96]
+0
+INPUT Illus LoanAmt[97]
+0
+INPUT Illus LoanAmt[98]
+0
+INPUT Illus LoanAmt[99]
+0
+INPUT Illus LoanAmt[100]
+0
+INPUT Illus LoanRepaymentAmt[0; 1]
+0
+INPUT Illus LoanRepaymentAmt[0; 2]
+0
+INPUT Illus LoanRepaymentAmt[0; 3]
+0
+INPUT Illus LoanRepaymentAmt[0; 4]
+0
+INPUT Illus LoanRepaymentAmt[0; 5]
+0
+INPUT Illus LoanRepaymentAmt[0; 6]
+0
+INPUT Illus LoanRepaymentAmt[0; 7]
+0
+INPUT Illus LoanRepaymentAmt[0; 8]
+0
+INPUT Illus LoanRepaymentAmt[0; 9]
+0
+INPUT Illus LoanRepaymentAmt[0; 10]
+0
+INPUT Illus LoanRepaymentAmt[0; 11]
+0
+INPUT Illus LoanRepaymentAmt[0; 12]
+0
+INPUT Illus LoanRepaymentAmt[0; 13]
+0
+INPUT Illus LoanRepaymentAmt[0; 14]
+0
+INPUT Illus LoanRepaymentAmt[0; 15]
+0
+INPUT Illus LoanRepaymentAmt[0; 16]
+0
+INPUT Illus LoanRepaymentAmt[0; 17]
+0
+INPUT Illus LoanRepaymentAmt[0; 18]
+0
+INPUT Illus LoanRepaymentAmt[0; 19]
+0
+INPUT Illus LoanRepaymentAmt[0; 20]
+0
+INPUT Illus LoanRepaymentAmt[0; 21]
+0
+INPUT Illus LoanRepaymentAmt[0; 22]
+0
+INPUT Illus LoanRepaymentAmt[0; 23]
+0
+INPUT Illus LoanRepaymentAmt[0; 24]
+0
+INPUT Illus LoanRepaymentAmt[0; 25]
+0
+INPUT Illus LoanRepaymentAmt[0; 26]
+0
+INPUT Illus LoanRepaymentAmt[0; 27]
+0
+INPUT Illus LoanRepaymentAmt[0; 28]
+0
+INPUT Illus LoanRepaymentAmt[0; 29]
+0
+INPUT Illus LoanRepaymentAmt[0; 30]
+0
+INPUT Illus LoanRepaymentAmt[0; 31]
+0
+INPUT Illus LoanRepaymentAmt[0; 32]
+0
+INPUT Illus LoanRepaymentAmt[0; 33]
+0
+INPUT Illus LoanRepaymentAmt[0; 34]
+0
+INPUT Illus LoanRepaymentAmt[0; 35]
+0
+INPUT Illus LoanRepaymentAmt[0; 36]
+0
+INPUT Illus LoanRepaymentAmt[0; 37]
+0
+INPUT Illus LoanRepaymentAmt[0; 38]
+0
+INPUT Illus LoanRepaymentAmt[0; 39]
+0
+INPUT Illus LoanRepaymentAmt[0; 40]
+0
+INPUT Illus LoanRepaymentAmt[0; 41]
+0
+INPUT Illus LoanRepaymentAmt[0; 42]
+0
+INPUT Illus LoanRepaymentAmt[0; 43]
+0
+INPUT Illus LoanRepaymentAmt[0; 44]
+0
+INPUT Illus LoanRepaymentAmt[0; 45]
+0
+INPUT Illus LoanRepaymentAmt[0; 46]
+0
+INPUT Illus LoanRepaymentAmt[0; 47]
+0
+INPUT Illus LoanRepaymentAmt[0; 48]
+0
+INPUT Illus LoanRepaymentAmt[0; 49]
+0
+INPUT Illus LoanRepaymentAmt[0; 50]
+0
+INPUT Illus LoanRepaymentAmt[0; 51]
+0
+INPUT Illus LoanRepaymentAmt[0; 52]
+0
+INPUT Illus LoanRepaymentAmt[0; 53]
+0
+INPUT Illus LoanRepaymentAmt[0; 54]
+0
+INPUT Illus LoanRepaymentAmt[0; 55]
+0
+INPUT Illus LoanRepaymentAmt[0; 56]
+0
+INPUT Illus LoanRepaymentAmt[0; 57]
+0
+INPUT Illus LoanRepaymentAmt[0; 58]
+0
+INPUT Illus LoanRepaymentAmt[0; 59]
+0
+INPUT Illus LoanRepaymentAmt[0; 60]
+0
+INPUT Illus LoanRepaymentAmt[0; 61]
+0
+INPUT Illus LoanRepaymentAmt[0; 62]
+0
+INPUT Illus LoanRepaymentAmt[0; 63]
+0
+INPUT Illus LoanRepaymentAmt[0; 64]
+0
+INPUT Illus LoanRepaymentAmt[0; 65]
+0
+INPUT Illus LoanRepaymentAmt[0; 66]
+0
+INPUT Illus LoanRepaymentAmt[0; 67]
+0
+INPUT Illus LoanRepaymentAmt[0; 68]
+0
+INPUT Illus LoanRepaymentAmt[0; 69]
+0
+INPUT Illus LoanRepaymentAmt[0; 70]
+0
+INPUT Illus LoanRepaymentAmt[0; 71]
+0
+INPUT Illus LoanRepaymentAmt[0; 72]
+0
+INPUT Illus LoanRepaymentAmt[0; 73]
+0
+INPUT Illus LoanRepaymentAmt[0; 74]
+0
+INPUT Illus LoanRepaymentAmt[0; 75]
+0
+INPUT Illus LoanRepaymentAmt[0; 76]
+0
+INPUT Illus LoanRepaymentAmt[0; 77]
+0
+INPUT Illus LoanRepaymentAmt[0; 78]
+0
+INPUT Illus LoanRepaymentAmt[0; 79]
+0
+INPUT Illus LoanRepaymentAmt[0; 80]
+0
+INPUT Illus LoanRepaymentAmt[0; 81]
+0
+INPUT Illus LoanRepaymentAmt[0; 82]
+0
+INPUT Illus LoanRepaymentAmt[0; 83]
+0
+INPUT Illus LoanRepaymentAmt[0; 84]
+0
+INPUT Illus LoanRepaymentAmt[0; 85]
+0
+INPUT Illus LoanRepaymentAmt[0; 86]
+0
+INPUT Illus LoanRepaymentAmt[0; 87]
+0
+INPUT Illus LoanRepaymentAmt[0; 88]
+0
+INPUT Illus LoanRepaymentAmt[0; 89]
+0
+INPUT Illus LoanRepaymentAmt[0; 90]
+0
+INPUT Illus LoanRepaymentAmt[0; 91]
+0
+INPUT Illus LoanRepaymentAmt[0; 92]
+0
+INPUT Illus LoanRepaymentAmt[0; 93]
+0
+INPUT Illus LoanRepaymentAmt[0; 94]
+0
+INPUT Illus LoanRepaymentAmt[0; 95]
+0
+INPUT Illus LoanRepaymentAmt[0; 96]
+0
+INPUT Illus LoanRepaymentAmt[0; 97]
+0
+INPUT Illus LoanRepaymentAmt[0; 98]
+0
+INPUT Illus LoanRepaymentAmt[0; 99]
+0
+INPUT Illus LoanRepaymentAmt[0; 100]
+0
+INPUT Illus LoanRepaymentAmt[1; 1]
+0
+INPUT Illus LoanRepaymentAmt[1; 2]
+0
+INPUT Illus LoanRepaymentAmt[1; 3]
+0
+INPUT Illus LoanRepaymentAmt[1; 4]
+0
+INPUT Illus LoanRepaymentAmt[1; 5]
+0
+INPUT Illus LoanRepaymentAmt[1; 6]
+0
+INPUT Illus LoanRepaymentAmt[1; 7]
+0
+INPUT Illus LoanRepaymentAmt[1; 8]
+0
+INPUT Illus LoanRepaymentAmt[1; 9]
+0
+INPUT Illus LoanRepaymentAmt[1; 10]
+0
+INPUT Illus LoanRepaymentAmt[1; 11]
+0
+INPUT Illus LoanRepaymentAmt[1; 12]
+0
+INPUT Illus LoanRepaymentAmt[1; 13]
+0
+INPUT Illus LoanRepaymentAmt[1; 14]
+0
+INPUT Illus LoanRepaymentAmt[1; 15]
+0
+INPUT Illus LoanRepaymentAmt[1; 16]
+0
+INPUT Illus LoanRepaymentAmt[1; 17]
+0
+INPUT Illus LoanRepaymentAmt[1; 18]
+0
+INPUT Illus LoanRepaymentAmt[1; 19]
+0
+INPUT Illus LoanRepaymentAmt[1; 20]
+0
+INPUT Illus LoanRepaymentAmt[1; 21]
+0
+INPUT Illus LoanRepaymentAmt[1; 22]
+0
+INPUT Illus LoanRepaymentAmt[1; 23]
+0
+INPUT Illus LoanRepaymentAmt[1; 24]
+0
+INPUT Illus LoanRepaymentAmt[1; 25]
+0
+INPUT Illus LoanRepaymentAmt[1; 26]
+0
+INPUT Illus LoanRepaymentAmt[1; 27]
+0
+INPUT Illus LoanRepaymentAmt[1; 28]
+0
+INPUT Illus LoanRepaymentAmt[1; 29]
+0
+INPUT Illus LoanRepaymentAmt[1; 30]
+0
+INPUT Illus LoanRepaymentAmt[1; 31]
+0
+INPUT Illus LoanRepaymentAmt[1; 32]
+0
+INPUT Illus LoanRepaymentAmt[1; 33]
+0
+INPUT Illus LoanRepaymentAmt[1; 34]
+0
+INPUT Illus LoanRepaymentAmt[1; 35]
+0
+INPUT Illus LoanRepaymentAmt[1; 36]
+0
+INPUT Illus LoanRepaymentAmt[1; 37]
+0
+INPUT Illus LoanRepaymentAmt[1; 38]
+0
+INPUT Illus LoanRepaymentAmt[1; 39]
+0
+INPUT Illus LoanRepaymentAmt[1; 40]
+0
+INPUT Illus LoanRepaymentAmt[1; 41]
+0
+INPUT Illus LoanRepaymentAmt[1; 42]
+0
+INPUT Illus LoanRepaymentAmt[1; 43]
+0
+INPUT Illus LoanRepaymentAmt[1; 44]
+0
+INPUT Illus LoanRepaymentAmt[1; 45]
+0
+INPUT Illus LoanRepaymentAmt[1; 46]
+0
+INPUT Illus LoanRepaymentAmt[1; 47]
+0
+INPUT Illus LoanRepaymentAmt[1; 48]
+0
+INPUT Illus LoanRepaymentAmt[1; 49]
+0
+INPUT Illus LoanRepaymentAmt[1; 50]
+0
+INPUT Illus LoanRepaymentAmt[1; 51]
+0
+INPUT Illus LoanRepaymentAmt[1; 52]
+0
+INPUT Illus LoanRepaymentAmt[1; 53]
+0
+INPUT Illus LoanRepaymentAmt[1; 54]
+0
+INPUT Illus LoanRepaymentAmt[1; 55]
+0
+INPUT Illus LoanRepaymentAmt[1; 56]
+0
+INPUT Illus LoanRepaymentAmt[1; 57]
+0
+INPUT Illus LoanRepaymentAmt[1; 58]
+0
+INPUT Illus LoanRepaymentAmt[1; 59]
+0
+INPUT Illus LoanRepaymentAmt[1; 60]
+0
+INPUT Illus LoanRepaymentAmt[1; 61]
+0
+INPUT Illus LoanRepaymentAmt[1; 62]
+0
+INPUT Illus LoanRepaymentAmt[1; 63]
+0
+INPUT Illus LoanRepaymentAmt[1; 64]
+0
+INPUT Illus LoanRepaymentAmt[1; 65]
+0
+INPUT Illus LoanRepaymentAmt[1; 66]
+0
+INPUT Illus LoanRepaymentAmt[1; 67]
+0
+INPUT Illus LoanRepaymentAmt[1; 68]
+0
+INPUT Illus LoanRepaymentAmt[1; 69]
+0
+INPUT Illus LoanRepaymentAmt[1; 70]
+0
+INPUT Illus LoanRepaymentAmt[1; 71]
+0
+INPUT Illus LoanRepaymentAmt[1; 72]
+0
+INPUT Illus LoanRepaymentAmt[1; 73]
+0
+INPUT Illus LoanRepaymentAmt[1; 74]
+0
+INPUT Illus LoanRepaymentAmt[1; 75]
+0
+INPUT Illus LoanRepaymentAmt[1; 76]
+0
+INPUT Illus LoanRepaymentAmt[1; 77]
+0
+INPUT Illus LoanRepaymentAmt[1; 78]
+0
+INPUT Illus LoanRepaymentAmt[1; 79]
+0
+INPUT Illus LoanRepaymentAmt[1; 80]
+0
+INPUT Illus LoanRepaymentAmt[1; 81]
+0
+INPUT Illus LoanRepaymentAmt[1; 82]
+0
+INPUT Illus LoanRepaymentAmt[1; 83]
+0
+INPUT Illus LoanRepaymentAmt[1; 84]
+0
+INPUT Illus LoanRepaymentAmt[1; 85]
+0
+INPUT Illus LoanRepaymentAmt[1; 86]
+0
+INPUT Illus LoanRepaymentAmt[1; 87]
+0
+INPUT Illus LoanRepaymentAmt[1; 88]
+0
+INPUT Illus LoanRepaymentAmt[1; 89]
+0
+INPUT Illus LoanRepaymentAmt[1; 90]
+0
+INPUT Illus LoanRepaymentAmt[1; 91]
+0
+INPUT Illus LoanRepaymentAmt[1; 92]
+0
+INPUT Illus LoanRepaymentAmt[1; 93]
+0
+INPUT Illus LoanRepaymentAmt[1; 94]
+0
+INPUT Illus LoanRepaymentAmt[1; 95]
+0
+INPUT Illus LoanRepaymentAmt[1; 96]
+0
+INPUT Illus LoanRepaymentAmt[1; 97]
+0
+INPUT Illus LoanRepaymentAmt[1; 98]
+0
+INPUT Illus LoanRepaymentAmt[1; 99]
+0
+INPUT Illus LoanRepaymentAmt[1; 100]
+0
+INPUT Illus LoanRepaymentAmt[2; 1]
+0
+INPUT Illus LoanRepaymentAmt[2; 2]
+0
+INPUT Illus LoanRepaymentAmt[2; 3]
+0
+INPUT Illus LoanRepaymentAmt[2; 4]
+0
+INPUT Illus LoanRepaymentAmt[2; 5]
+0
+INPUT Illus LoanRepaymentAmt[2; 6]
+0
+INPUT Illus LoanRepaymentAmt[2; 7]
+0
+INPUT Illus LoanRepaymentAmt[2; 8]
+0
+INPUT Illus LoanRepaymentAmt[2; 9]
+0
+INPUT Illus LoanRepaymentAmt[2; 10]
+0
+INPUT Illus LoanRepaymentAmt[2; 11]
+0
+INPUT Illus LoanRepaymentAmt[2; 12]
+0
+INPUT Illus LoanRepaymentAmt[2; 13]
+0
+INPUT Illus LoanRepaymentAmt[2; 14]
+0
+INPUT Illus LoanRepaymentAmt[2; 15]
+0
+INPUT Illus LoanRepaymentAmt[2; 16]
+0
+INPUT Illus LoanRepaymentAmt[2; 17]
+0
+INPUT Illus LoanRepaymentAmt[2; 18]
+0
+INPUT Illus LoanRepaymentAmt[2; 19]
+0
+INPUT Illus LoanRepaymentAmt[2; 20]
+0
+INPUT Illus LoanRepaymentAmt[2; 21]
+0
+INPUT Illus LoanRepaymentAmt[2; 22]
+0
+INPUT Illus LoanRepaymentAmt[2; 23]
+0
+INPUT Illus LoanRepaymentAmt[2; 24]
+0
+INPUT Illus LoanRepaymentAmt[2; 25]
+0
+INPUT Illus LoanRepaymentAmt[2; 26]
+0
+INPUT Illus LoanRepaymentAmt[2; 27]
+0
+INPUT Illus LoanRepaymentAmt[2; 28]
+0
+INPUT Illus LoanRepaymentAmt[2; 29]
+0
+INPUT Illus LoanRepaymentAmt[2; 30]
+0
+INPUT Illus LoanRepaymentAmt[2; 31]
+0
+INPUT Illus LoanRepaymentAmt[2; 32]
+0
+INPUT Illus LoanRepaymentAmt[2; 33]
+0
+INPUT Illus LoanRepaymentAmt[2; 34]
+0
+INPUT Illus LoanRepaymentAmt[2; 35]
+0
+INPUT Illus LoanRepaymentAmt[2; 36]
+0
+INPUT Illus LoanRepaymentAmt[2; 37]
+0
+INPUT Illus LoanRepaymentAmt[2; 38]
+0
+INPUT Illus LoanRepaymentAmt[2; 39]
+0
+INPUT Illus LoanRepaymentAmt[2; 40]
+0
+INPUT Illus LoanRepaymentAmt[2; 41]
+0
+INPUT Illus LoanRepaymentAmt[2; 42]
+0
+INPUT Illus LoanRepaymentAmt[2; 43]
+0
+INPUT Illus LoanRepaymentAmt[2; 44]
+0
+INPUT Illus LoanRepaymentAmt[2; 45]
+0
+INPUT Illus LoanRepaymentAmt[2; 46]
+0
+INPUT Illus LoanRepaymentAmt[2; 47]
+0
+INPUT Illus LoanRepaymentAmt[2; 48]
+0
+INPUT Illus LoanRepaymentAmt[2; 49]
+0
+INPUT Illus LoanRepaymentAmt[2; 50]
+0
+INPUT Illus LoanRepaymentAmt[2; 51]
+0
+INPUT Illus LoanRepaymentAmt[2; 52]
+0
+INPUT Illus LoanRepaymentAmt[2; 53]
+0
+INPUT Illus LoanRepaymentAmt[2; 54]
+0
+INPUT Illus LoanRepaymentAmt[2; 55]
+0
+INPUT Illus LoanRepaymentAmt[2; 56]
+0
+INPUT Illus LoanRepaymentAmt[2; 57]
+0
+INPUT Illus LoanRepaymentAmt[2; 58]
+0
+INPUT Illus LoanRepaymentAmt[2; 59]
+0
+INPUT Illus LoanRepaymentAmt[2; 60]
+0
+INPUT Illus LoanRepaymentAmt[2; 61]
+0
+INPUT Illus LoanRepaymentAmt[2; 62]
+0
+INPUT Illus LoanRepaymentAmt[2; 63]
+0
+INPUT Illus LoanRepaymentAmt[2; 64]
+0
+INPUT Illus LoanRepaymentAmt[2; 65]
+0
+INPUT Illus LoanRepaymentAmt[2; 66]
+0
+INPUT Illus LoanRepaymentAmt[2; 67]
+0
+INPUT Illus LoanRepaymentAmt[2; 68]
+0
+INPUT Illus LoanRepaymentAmt[2; 69]
+0
+INPUT Illus LoanRepaymentAmt[2; 70]
+0
+INPUT Illus LoanRepaymentAmt[2; 71]
+0
+INPUT Illus LoanRepaymentAmt[2; 72]
+0
+INPUT Illus LoanRepaymentAmt[2; 73]
+0
+INPUT Illus LoanRepaymentAmt[2; 74]
+0
+INPUT Illus LoanRepaymentAmt[2; 75]
+0
+INPUT Illus LoanRepaymentAmt[2; 76]
+0
+INPUT Illus LoanRepaymentAmt[2; 77]
+0
+INPUT Illus LoanRepaymentAmt[2; 78]
+0
+INPUT Illus LoanRepaymentAmt[2; 79]
+0
+INPUT Illus LoanRepaymentAmt[2; 80]
+0
+INPUT Illus LoanRepaymentAmt[2; 81]
+0
+INPUT Illus LoanRepaymentAmt[2; 82]
+0
+INPUT Illus LoanRepaymentAmt[2; 83]
+0
+INPUT Illus LoanRepaymentAmt[2; 84]
+0
+INPUT Illus LoanRepaymentAmt[2; 85]
+0
+INPUT Illus LoanRepaymentAmt[2; 86]
+0
+INPUT Illus LoanRepaymentAmt[2; 87]
+0
+INPUT Illus LoanRepaymentAmt[2; 88]
+0
+INPUT Illus LoanRepaymentAmt[2; 89]
+0
+INPUT Illus LoanRepaymentAmt[2; 90]
+0
+INPUT Illus LoanRepaymentAmt[2; 91]
+0
+INPUT Illus LoanRepaymentAmt[2; 92]
+0
+INPUT Illus LoanRepaymentAmt[2; 93]
+0
+INPUT Illus LoanRepaymentAmt[2; 94]
+0
+INPUT Illus LoanRepaymentAmt[2; 95]
+0
+INPUT Illus LoanRepaymentAmt[2; 96]
+0
+INPUT Illus LoanRepaymentAmt[2; 97]
+0
+INPUT Illus LoanRepaymentAmt[2; 98]
+0
+INPUT Illus LoanRepaymentAmt[2; 99]
+0
+INPUT Illus LoanRepaymentAmt[2; 100]
+0
+INPUT Illus LoanRepaymentAmt[3; 1]
+0
+INPUT Illus LoanRepaymentAmt[3; 2]
+0
+INPUT Illus LoanRepaymentAmt[3; 3]
+0
+INPUT Illus LoanRepaymentAmt[3; 4]
+0
+INPUT Illus LoanRepaymentAmt[3; 5]
+0
+INPUT Illus LoanRepaymentAmt[3; 6]
+0
+INPUT Illus LoanRepaymentAmt[3; 7]
+0
+INPUT Illus LoanRepaymentAmt[3; 8]
+0
+INPUT Illus LoanRepaymentAmt[3; 9]
+0
+INPUT Illus LoanRepaymentAmt[3; 10]
+0
+INPUT Illus LoanRepaymentAmt[3; 11]
+0
+INPUT Illus LoanRepaymentAmt[3; 12]
+0
+INPUT Illus LoanRepaymentAmt[3; 13]
+0
+INPUT Illus LoanRepaymentAmt[3; 14]
+0
+INPUT Illus LoanRepaymentAmt[3; 15]
+0
+INPUT Illus LoanRepaymentAmt[3; 16]
+0
+INPUT Illus LoanRepaymentAmt[3; 17]
+0
+INPUT Illus LoanRepaymentAmt[3; 18]
+0
+INPUT Illus LoanRepaymentAmt[3; 19]
+0
+INPUT Illus LoanRepaymentAmt[3; 20]
+0
+INPUT Illus LoanRepaymentAmt[3; 21]
+0
+INPUT Illus LoanRepaymentAmt[3; 22]
+0
+INPUT Illus LoanRepaymentAmt[3; 23]
+0
+INPUT Illus LoanRepaymentAmt[3; 24]
+0
+INPUT Illus LoanRepaymentAmt[3; 25]
+0
+INPUT Illus LoanRepaymentAmt[3; 26]
+0
+INPUT Illus LoanRepaymentAmt[3; 27]
+0
+INPUT Illus LoanRepaymentAmt[3; 28]
+0
+INPUT Illus LoanRepaymentAmt[3; 29]
+0
+INPUT Illus LoanRepaymentAmt[3; 30]
+0
+INPUT Illus LoanRepaymentAmt[3; 31]
+0
+INPUT Illus LoanRepaymentAmt[3; 32]
+0
+INPUT Illus LoanRepaymentAmt[3; 33]
+0
+INPUT Illus LoanRepaymentAmt[3; 34]
+0
+O1 3f400c 0 0 0 0 0 2
+
+--CACHESIZE
+350000
+E0 3f4078 0 0 0 0 0 0
+
+L0 3f40e4 0 0 0 0 0 0
+
+B0 3f4294 0 0 0 0 0 0
+
+P3 3f41bc 0 3f27c8 0 0 0 2
+
+--description
+Main Integration Model for the Universal Life Products
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.8    "
+P13 3f27c8 3f41bc 3f4988 0 0 0 2
+Universal Life Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Universal Life Products"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"UniversalLifeProducts.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P3 3f4988 3f27c8 4f6f3d92 1e10690 0 0 2
+Non-Illustrations
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+0
+P3 4f6f3d92 3f4988 0 3f4f00 0 50 2
+Annual Statement Projections@AnnualStatement
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 3f4f00 3f4988 0 1e10490 0 50 2
+Contract Documents@ULCONTRACTDOCUMENTS
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e10490 3f4988 0 1e10578 0 50 2
+UL Face Amount Solves@ULFACEAMOUNTSOLVES
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e10578 3f4988 0 0 0 50 2
+Target Premiums (Commissionable, MNLP, Surrender, and Load)@TargetCalcs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e10690 3f27c8 729a5e4d 0 0 0 2
+Illustrations
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+1
+P3 729a5e4d 1e10690 0 26101f0 0 50 2
+UL Illustrations@ULAdvMarketingIllus
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 26101f0 1e10690 0 55774861 0 50 2
+Test Properties@ULillustrations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P10 55774861 1e10690 0 0 0 0 2
+Service Layer List Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Annual Premium List(rateAssumption; yearIndex)
+'ILLUS Output'(FUNCREF('ULDocs Annualized Gross Premium');2;V_('CalcType Initial Vector'(rateAssumption));yearIndex)
+OUTPUT Accum Value List(rateAssumption; yearIndex)
+'ILLUS Output'(FUNCREF('ULDocs Accum Value');2;V_('CalcType Initial Vector'(rateAssumption));yearIndex)
+OUTPUT Cash Surrender Value List(rateAssumption; yearIndex)
+'ILLUS Output'(FUNCREF('ULDocs Cash Surrender Value');0;V_('CalcType Initial Vector'(rateAssumption);'ULDocs ProjIntRate'(rateAssumption;yearIndex));yearIndex)
+OUTPUT Death Benefit List(rateAssumption; yearIndex)
+'ILLUS Output'(FUNCREF('ULDocs Death Benefit');0;V_('CalcType Initial Vector'(rateAssumption));yearIndex)
+OUTPUT Illus WithdrawalAmt List(rateAssumption; yearIndex)
+'ILLUS Output'(FUNCREF('Illus WithdrawalAmt');2;V_('CalcType Initial Vector'(rateAssumption));yearIndex)
+OUTPUT Illus LoanAmt List(rateAssumption; yearIndex)
+'ILLUS Output'(FUNCREF('Illus LoanAmt');2;V_('CalcType Initial Vector'(rateAssumption));yearIndex)
+OUTPUT Base COI Rate List(rateAssumption; coverageIndex; yearIndex)
+'ILLUS Output'(FUNCREF('ULDocs Base COI Rate');5;V_('CalcType Initial Vector'(rateAssumption);0);yearIndex)
+F0 3f4228 0 0 0 0 0 0
+
+A0 3f4300 0 0 0 0 0 0
+
+T0 3f436c 0 0 0 0 0 0
+
+I0 3f43d8 0 8db07cc 0 0 0 0
+
+I0 8db07cc 3f43d8 0 2af49c77 0 0 0
+ULFaceAmountSolves.pms
+I0 2af49c77 3f43d8 0 3743819b 0 0 0
+ULAdvMarketingIllus.pms
+I0 3743819b 3f43d8 0 0 0 0 0
+AnnualStatement.pms
+-
+O0
+E0
+L0
+B0
+P6
+3f27c8
+3f4988
+1e10690
+729a5e4d
+26101f0
+55774861
+F0
+A0
+T0
+!9
+55774861 3 -1
+Description: Generic Function call to the high level function to return values either by year or for all years including the 'to' durationçäModification Log:çä09/29/2011 - SLPA01 - RWE - Added Generic call logic to support Service Layer functionality
+55774861 3 2
+
+55774861 4 -1
+Description: Generic Function call to the high level function to return values either by year or for all years including the 'to' durationçäModification Log:çä09/29/2011 - SLPA01 - RWE - Added Generic call logic to support Service Layer functionality
+55774861 5 -1
+Description: Generic Function call to the high level function to return values either by year or for all years including the 'to' durationçäModification Log:çä09/29/2011 - SLPA01 - RWE - Added Generic call logic to support Service Layer functionality
+55774861 6 -1
+Description: Generic Function call to the high level function to return values either by year or for all years including the 'to' durationçäModification Log:çä09/29/2011 - SLPA01 - RWE - Added Generic call logic to support Service Layer functionality
+55774861 7 -1
+Description: Generic Function call to the high level function to return values either by year or for all years including the 'to' durationçäModification Log:çä09/29/2011 - SLPA01 - RWE - Added Generic call logic to support Service Layer functionality
+55774861 8 -1
+Description: Generic Function call to the high level function to return values either by year or for all years including the 'to' durationçäModification Log:çä09/29/2011 - SLPA01 - RWE - Added Generic call logic to support Service Layer functionality
+55774861 9 -1
+Description: Generic Function call to the high level function to return values either by year or for all years including the 'to' durationçäModification Log:çä09/29/2011 - SLPA01 - RWE - Added Generic call logic to support Service Layer functionality
+2bc3ada -2 -2
+Test takes too long to run internally. Runs externally with the addition of !INPUT Policy ProductType=1
+;Offset=00000000

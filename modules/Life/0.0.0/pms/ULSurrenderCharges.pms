@@ -1,0 +1,4492 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 3f41bc 0 3f47f8 0 0 0 0
+
+X0 3f47f8 3f41bc 3f4890 1e2b0e0 0 0 0
+-- Unit Test Cases --
+X0 3f4890 3f47f8 3f4928 3f7bc0 0 0 0
+-- UL1PA --
+X0 3f4928 3f4890 3f49c8 3f72a0 0 0 0
+-- Transactions --
+X23 3f49c8 3f4928 0 3f4c78 0 0 2
+Full Surrender - 2000
+'OUTPUT Surrender Charge'
+2000
+INPUT ArrangementType
+31
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X33 3f4c78 3f4928 0 1e20e88 0 0 2
+Net Withdrawal - 183.67
+'ULSC Surrender Charge'("C")
+183.67
+INPUT ArrangementType
+7
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+47
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentAmount
+100000
+INPUT Policy Coverage InitCovAmount
+100000
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+100000
+INPUT Policy Life CashValueAmt
+30000
+INPUT Policy Coverage TermDate
+12/31/2999
+X31 1e20e88 3f4928 0 3f61d8 0 0 2
+Gross Withdrawal - 176.47
+'ULSC Surrender Charge'("C")
+176.47
+INPUT ArrangementType
+8
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentAmount
+100000
+INPUT Policy Coverage InitCovAmount
+100000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X32 3f61d8 3f4928 0 3f67c0 0 0 2
+Maximum Withdrawal - 176.47
+'ULSC Surrender Charge'("C")
+176.47
+INPUT ArrangementType
+17
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+5
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentAmount
+100000
+INPUT Policy Coverage InitCovAmount
+100000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Message Language
+English
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X26 3f67c0 3f4928 0 0 0 0 2
+Withdrawal by Coverage - 2000
+'OUTPUT Coverage Surrender Charge'(0)
+2000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT ArrangementType
+7
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentAmount
+100000
+INPUT Policy Coverage InitCovAmount
+100000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Life CashValueAmount
+30000
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 3f72a0 3f4890 3f78f8 0 0 0 0
+-- Projections --
+X34 3f78f8 3f72a0 0 0 0 0 2
+OUTPUT Projected Full Surrender Charge - 25626.9
+'OUTPUT Projected Full Surrender Charge'(1)
+25626.9
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy number of LifeParticipant
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X0 3f7bc0 3f47f8 3f90f0 3fb718 0 0 0
+-- UL2PA --
+X0 3f90f0 3f7bc0 3f9188 3fb158 0 0 0
+-- Transactions --
+X21 3f9188 3f90f0 0 3f9460 0 0 2
+Full Surrender - Year 3 - 1500
+'OUTPUT Surrender Charge'
+1500
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+UL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X33 3f9460 3f90f0 0 3f9200 0 0 2
+Net Withdrawal - Year 3 - 82.16
+'OUTPUT Surrender Charge'
+82.16
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+UL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Life CashValueAmount
+100000
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Life CashValueAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X23 3f9200 3f90f0 0 3fa0b8 0 0 2
+Gross Withdrawal - Year 3 - 80
+'OUTPUT Surrender Charge'
+80
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+UL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X31 3fa0b8 3f90f0 0 3fa680 0 0 2
+Maximum Withdrawal - Year 3 - 98.04
+'OUTPUT Surrender Charge'
+98.04
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+UL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X18 3fa680 3f90f0 0 0 0 0 2
+Withdrawal by Coverage - 2000
+'OUTPUT Coverage Surrender Charge'(0)
+2000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+UL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 3fb158 3f7bc0 3fb1f0 0 0 0 0
+-- Projections --
+X22 3fb1f0 3fb158 0 0 0 0 2
+OUTPUT Projected Full Surrender Charge - 4910
+'OUTPUT Projected Full Surrender Charge'(1)
+4910
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X0 3fb718 3f47f8 3fba30 3fe3a8 0 0 0
+-- JSUL2PA --
+X0 3fba30 3fb718 3fbac8 3fdcb8 0 0 0
+-- Transactions --
+X21 3fbac8 3fba30 0 3fbde8 0 0 2
+Full Surrender - Year 3 - 1700
+'OUTPUT Surrender Charge'
+1700
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X34 3fbde8 3fba30 0 3fc280 0 0 2
+Net Withdrawal - Year 3 - 81.84
+'OUTPUT Surrender Charge'
+81.84
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Life CashValueAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X24 3fc280 3fba30 0 3fced8 0 0 2
+Gross Withdrawal - Year 3 - 80
+'OUTPUT Surrender Charge'
+80
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X32 3fced8 3fba30 0 3fd390 0 0 2
+Maximum Withdrawal - Year 3 - 95.38
+'OUTPUT Surrender Charge'
+95.38
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+24
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X18 3fd390 3fba30 0 0 0 0 2
+Withdrawal by Coverage - 2000
+'OUTPUT Coverage Surrender Charge'(0)
+2000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 3fdcb8 3fb718 3fde38 0 0 0 0
+-- Projections --
+X49 3fde38 3fdcb8 0 0 0 0 2
+OUTPUT Projected Full Surrender Charge - 13929.1
+'OUTPUT Projected Full Surrender Charge'(1)
+13929.1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0;1]
+6
+INPUT Policy LifeParticipant IssueAge[0;1]
+50
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+X0 3fe3a8 3f47f8 1e22408 1e249c0 0 0 0
+-- VUL1PA --
+X0 1e22408 3fe3a8 1e224a0 1e244a8 0 0 0
+-- Transactions --
+X22 1e224a0 1e22408 0 1e22770 0 0 2
+Full Surrender - Year 3 - 360
+'OUTPUT Surrender Charge'
+360
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X33 1e22770 1e22408 0 1e22ce0 0 0 2
+Net Withdrawal - Year 3 - 183.6
+'OUTPUT Surrender Charge'
+183.6
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X24 1e22ce0 1e22408 0 1e23498 0 0 2
+Gross Withdrawal - Year 3 - 180
+'OUTPUT Surrender Charge'
+180
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X32 1e23498 1e22408 0 1e23b68 0 0 2
+Maximum Withdrawal - Year 3 - 180.3
+'OUTPUT Surrender Charge'
+180.3
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+24
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Coverage TermDate
+12/31/2999
+X18 1e23b68 1e22408 0 0 0 0 2
+Withdrawal by Coverage - 400
+'OUTPUT Coverage Surrender Charge'(0)
+400
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 1e244a8 3fe3a8 1e24540 0 0 0 0
+-- Projections --
+X34 1e24540 1e244a8 0 0 0 0 2
+OUTPUT Projected Full Surrender Charge - 8083.75
+'OUTPUT Projected Full Surrender Charge'(1)
+8083.75
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy number of LifeParticipant
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X0 1e249c0 3f47f8 1e25448 1e280b0 0 0 0
+-- VUL2PA --
+X0 1e25448 1e249c0 1e254e0 1e27898 0 0 0
+-- Transactions --
+X21 1e254e0 1e25448 0 1e257b0 0 0 2
+Full Surrender - Year 3 - 360
+'OUTPUT Surrender Charge'
+360
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X34 1e257b0 1e25448 0 1e25c18 0 0 2
+Net Withdrawal - Year 3 - 80.39
+'OUTPUT Surrender Charge'
+80.39
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+VUL2PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Life CashValueAmount
+20000
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Life CashValueAmt
+100000
+INPUT Policy Coverage TermDate
+12/31/2999
+X24 1e25c18 1e25448 0 1e26638 0 0 2
+Gross Withdrawal - Year 3 - 80
+'OUTPUT Surrender Charge'
+80
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X32 1e26638 1e25448 0 1e26bf0 0 0 2
+Maximum Withdrawal - Year 3 - 80.36
+'OUTPUT Surrender Charge'
+80.36
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+VUL2PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+24
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Coverage TermDate
+12/31/2999
+X18 1e26bf0 1e25448 0 0 0 0 2
+Withdrawal by Coverage - 400
+'OUTPUT Coverage Surrender Charge'(0)
+400
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+VUL2PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 1e27898 1e249c0 1e27aa8 0 0 0 0
+-- Projections --
+X22 1e27aa8 1e27898 0 0 0 0 2
+OUTPUT Projected Full Surrender Charge - 982
+'OUTPUT Projected Full Surrender Charge'(1)
+982
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+VUL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+X0 1e280b0 3f47f8 1e28550 0 0 0 0
+-- JSVUL1PA --
+X0 1e28550 1e280b0 1e28778 1e2ab90 0 0 0
+-- Transactions --
+X22 1e28778 1e28550 0 1e289d8 0 0 2
+Full Surrender - Year 3 - 180
+'OUTPUT Surrender Charge'
+180
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X34 1e289d8 1e28550 0 1e290b8 0 0 2
+Net Withdrawal - Year 3 - 80.19
+'OUTPUT Surrender Charge'
+80.19
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Life CashValueAmount
+0
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Life CashValueAmt
+1000000
+INPUT Policy Coverage TermDate
+12/31/2999
+X24 1e290b8 1e28550 0 1e29a38 0 0 2
+Gross Withdrawal - Year 3 - 80
+'OUTPUT Surrender Charge'
+80
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+2
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X32 1e29a38 1e28550 0 1e2a1a8 0 0 2
+Maximum Withdrawal - Year 3  - 80.17
+'OUTPUT Surrender Charge'
+80.17
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT TransEffDate
+01/01/2009
+INPUT Policy EffDate
+01/01/2006
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Message Language
+24
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+1000
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Coverage TermDate
+12/31/2999
+X18 1e2a1a8 1e28550 0 0 0 0 2
+Withdrawal by Coverage - 200
+'OUTPUT Coverage Surrender Charge'(0)
+200
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage SurrTargetPrem
+2000
+INPUT Policy Coverage SurrChargeIssue to date
+0
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 1e2ab90 1e280b0 1e2ade8 0 0 0 0
+-- Projections --
+X49 1e2ade8 1e2ab90 0 0 0 0 2
+OUTPUT Projected Full Surrender Charge - 1392.91
+'OUTPUT Projected Full Surrender Charge'(1)
+1392.91
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0;1]
+6
+INPUT Policy LifeParticipant IssueAge[0;1]
+50
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+X0 1e2b0e0 3f41bc 1e2c9c8 1e452c8 0 0 0
+-- Regression Test Cases --
+X0 1e2c9c8 1e2b0e0 1e2ca58 1e2cf28 0 0 0
+-- SC000001 --
+X26 1e2ca58 1e2c9c8 0 0 0 0 2
+-- SC000001 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000001
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT PolicyProduct Fee SecondaryChargeBasedOn
+
+INPUT PolicyProduct Fee TertiaryChargeBasedOn
+
+X0 1e2cf28 1e2b0e0 1e2d2b8 1e2d750 0 0 0
+-- SC000002 --
+X27 1e2d2b8 1e2cf28 0 0 0 0 2
+-- SC000002 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+1500
+INPUT TransEffDate
+01/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000002
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+13
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+X0 1e2d750 1e2b0e0 1e2dce8 1e2e1c8 0 0 0
+-- SC000004 --
+X32 1e2dce8 1e2d750 0 0 0 0 2
+-- SC000004 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+1500
+INPUT TransEffDate
+01/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000004
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e2e1c8 1e2b0e0 1e2e8c0 1e2ed88 0 0 0
+-- SC000006 --
+X32 1e2e8c0 1e2e1c8 0 0 0 0 2
+-- SC000006 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+1300
+INPUT TransEffDate
+01/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL2PA
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e2ed88 1e2b0e0 1e2f538 1e30ec8 0 0 0
+-- SC000008 --
+X32 1e2f538 1e2ed88 0 1e2fa20 0 0 2
+-- SC000008 -- f_SCR_Partial_Surrender_Charge
+'SCRule Partial Surrender Charge'("C")
+160
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000008
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X39 1e2fa20 1e2ed88 0 1e30438 0 0 2
+-- SC000008 -- f_ULSC_Decrease_Charge(10)
+'ULSC Decrease Charge'("C";10; 1)
+0
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000008
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Arrangement ArrType
+7
+INPUT Policy ProductVersionCode
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Life CashValueAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X38 1e30438 1e2ed88 0 0 0 0 2
+-- SC000008 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+160
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000008
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Life CashValueAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1e30ec8 1e2b0e0 1e316c8 1e31bc0 0 0 0
+-- SC000009 --
+X34 1e316c8 1e30ec8 0 0 0 0 2
+-- SC000009 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+80
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000009
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+2
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+JSUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e31bc0 1e2b0e0 1e323c0 1e328c8 0 0 0
+-- SC000010 --
+X34 1e323c0 1e31bc0 0 0 0 0 2
+-- SC000010 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+80
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000010
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+2
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL2PA
+INPUT Arrangement TotalAmount
+2800
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e328c8 1e2b0e0 1e330c8 1e34cb8 0 0 0
+-- SC000011 --
+X32 1e330c8 1e328c8 0 1e335f0 0 0 2
+-- SC000011 -- f_SCR_Partial_Surrender_Charge
+'SCRule Partial Surrender Charge'("C")
+160
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000011
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X38 1e335f0 1e328c8 0 1e34020 0 0 2
+-- SC000011 -- f_ULSC_Decrease_Charge(10)
+'ULSC Decrease Charge'("C";10;1)
+0
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000011
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Arrangement ArrType
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X37 1e34020 1e328c8 0 0 0 0 2
+-- SC000011 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+160
+INPUT TransEffDate
+06/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000011
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1e34cb8 1e2b0e0 1e354c0 1e359f8 0 0 0
+-- SC000014 --
+X32 1e354c0 1e34cb8 0 0 0 0 2
+-- SC000014 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+280
+INPUT TransEffDate
+01/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000014
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e359f8 1e2b0e0 1e361f8 1e36740 0 0 0
+-- SC000016 --
+X32 1e361f8 1e359f8 0 0 0 0 2
+-- SC000016 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+280
+INPUT TransEffDate
+01/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000016
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL2PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e36740 1e2b0e0 1e36f40 1e38e58 0 0 0
+-- SC000017 --
+X32 1e36f40 1e36740 0 1e374a8 0 0 2
+-- SC000017 -- f_SCR_Partial_Surrender_Charge
+'SCRule Partial Surrender Charge'("C")
+120
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000017
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X37 1e374a8 1e36740 0 1e38180 0 0 2
+-- SC000017 -- f_ULSC_Decrease_Charge(120)
+'ULSC Decrease Charge'("C";120;1)
+0
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000017
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement ArrType
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X37 1e38180 1e36740 0 0 0 0 2
+-- SC000017 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+120
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000017
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1e38e58 1e2b0e0 1e39910 1e39e88 0 0 0
+-- SC000018 --
+X33 1e39910 1e38e58 0 0 0 0 2
+-- SC000018 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+80
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000018
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+8
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+2
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+JSVUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+8
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e39e88 1e2b0e0 1e3a968 1e3aef0 0 0 0
+-- SC000019 --
+X33 1e3a968 1e39e88 0 0 0 0 2
+-- SC000019 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+80
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000019
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+2
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL2PA
+INPUT Arrangement TotalAmount
+2800
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e3aef0 1e2b0e0 1e3b9c8 1e3d9a0 0 0 0
+-- SC000020 --
+X33 1e3b9c8 1e3aef0 0 1e3bf70 0 0 2
+-- SC000020 -- f_SCR_Partial_Surrender_Charge
+'SCRule Partial Surrender Charge'("C")
+80
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000020
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL2PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X37 1e3bf70 1e3aef0 0 1e3cc88 0 0 2
+-- SC000020 -- f_ULSC_Decrease_Charge(120)
+'ULSC Decrease Charge'("C";120;1)
+0
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000020
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL2PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement ArrType
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X38 1e3cc88 1e3aef0 0 0 0 0 2
+-- SC000020 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+80
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000020
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL2PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Life CashValueAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1e3d9a0 1e2b0e0 1e3e498 1e404d0 0 0 0
+-- SC000021 --
+X32 1e3e498 1e3d9a0 0 1e3ea60 0 0 2
+-- SC000021 -- f_SCR_Partial_Surrender_Charge
+'SCRule Partial Surrender Charge'("C")
+120
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000021
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X37 1e3ea60 1e3d9a0 0 1e3f798 0 0 2
+-- SC000021 -- f_ULSC_Decrease_Charge(120)
+'ULSC Decrease Charge'("C";120;1)
+0
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000021
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement ArrType
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X37 1e3f798 1e3d9a0 0 0 0 0 2
+-- SC000021 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+120
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000021
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+7
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+7
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1e404d0 1e2b0e0 1e40fe8 1e43080 0 0 0
+-- SC000022 --
+X32 1e40fe8 1e404d0 0 1e415d0 0 0 2
+-- SC000022 -- f_SCR_Partial_Surrender_Charge
+'SCRule Partial Surrender Charge'("C")
+120
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000022
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+17
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X37 1e415d0 1e404d0 0 1e42328 0 0 2
+-- SC000022 -- f_ULSC_Decrease_Charge(120)
+'ULSC Decrease Charge'("C";120;1)
+0
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000022
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Calling Program
+
+INPUT Policy Arrangement ArrType
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+X37 1e42328 1e404d0 0 0 0 0 2
+-- SC000022 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+120
+INPUT TransEffDate
+06/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000022
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+17
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Arrangement ArrType
+17
+INPUT Calling Program
+
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage InitCovAmt
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1e43080 1e2b0e0 1e43bb8 0 0 0 0
+-- SC000023 --
+X45 1e43bb8 1e43080 0 1e441c8 0 0 2
+-- SC000023 -- P_Proj_Full_Surrender_Charge(6)
+'OUTPUT Projected Full Surrender Charge'(6)
+288.69
+INPUT TransEffDate
+01/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000023
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage IntialNumberOfUnits[0]
+100
+INPUT Policy Coverage TermDate[0]
+01/01/2059
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy number of LifeParticipant
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X42 1e441c8 1e43080 0 0 0 0 2
+-- SC000023 -- P_Surrender_Charge
+'OUTPUT Surrender Charge'
+280
+INPUT TransEffDate
+01/01/2011
+INPUT Calling System
+I1
+INPUT Message Language
+9
+A_Policy_PolNumber
+SC000023
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT ArrangementType
+31
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage SurrTargetPrem[0]
+2000
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT PolicyProduct number of Fee
+1
+INPUT PolicyProduct Fee Type
+16
+INPUT PolicyProduct Fee ChargeBasedOn
+6
+INPUT Policy Life CashValueAmount
+30000
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+100000
+INPUT Policy Coverage InitCovAmount[0]
+100000
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Arrangement TotalAmount
+1000
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage IntialNumberOfUnits[0]
+100
+INPUT Policy Coverage TermDate[0]
+01/01/2059
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy Arrangement ArrType
+31
+INPUT Calling Program
+
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy ProductVersionCode
+
+X0 1e452c8 3f41bc 1e45f88 0 0 0 0
+-- PhaseII Illustration Tests --
+X14 1e45f88 1e452c8 0 0 0 0 2
+--ULSC Projected Partial Surrender Charge(yearIndex; amtWithdrawn; vectorPrevSurrCharges)
+ULSC Projected Partial Surrender Charge("C"; 2)
+0
+INPUT Policy number of Coverage
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+9
+O0 3f406c 0 0 0 0 0 0
+
+E0 3f40dc 0 0 0 0 0 0
+
+L0 3f414c 0 0 0 0 0 0
+
+B0 3f430c 0 0 0 0 0 0
+
+P3 3f422c 0 1e46c20 0 0 0 2
+
+--description
+Calculations support the determination of surrender charges for the Universal Life coverages, including support for assessing a pro-rata portion of the surrender charge for decreases in the specified amount of coverage on the contract.çä çäSub-models include specified amount decrease charge and surrender charge rules.çä çäRELEASE LOG:çäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.4.1"
+P13 1e46c20 3f422c 1e471a8 0 0 0 2
+Universal Life / Variable Universal Life
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Universal Life surrender charge calculation model.çä Author:  John Heumannçä Date:     10/19/2006 çä Modification Log:çä Date              Modeler               Change Descriptionçä 10/19/2006     John Heumann     Created model.çä"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"ULSurrenderCharges.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P6 1e471a8 1e46c20 1e478e8 0 0 0 2
+Surrender Charges
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Surrender Charge
+'ULSC Surrender Charge'('GEN Vector Blank')
+OUTPUT Coverage Surrender Charge(coverageIndex)
+'SCRule Coverage Full Surrender Charge'('GEN Vector Blank';coverageIndex)
+OUTPUT Projected Full Surrender Charge(yearIndex)
+'SCRule Projected Full Surrender Charge'('GEN Vector Blank';yearIndex;'GEN Vector Blank')
+P3 1e478e8 1e471a8 0 0 0 50 2
+Decrease Charges@ULDecreaseCharge
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 3f429c 0 1e48158 0 0 0 0
+
+F1 1e48158 3f429c 1e485c8 0 0 0 2
+:ULSC
+Funktion
+
+F1 1e485c8 1e48158 1e48a60 0 0 0 2
+-- UL/VUL Surrender Charge Functions --
+Funktion
+
+F1 1e48a60 1e485c8 1e48ef0 1e4b408 0 0 2
+ULSC Surrender Charge(calcType)
+Funktion
+CASE( /*Arrangement type*/ 'Policy Arrangement ArrType';çä   // Net Withdrawalçä7 : 'SCRule Partial Surrender Charge'(calcType) + 'ULSC Decrease Charge'(calcType;'SCRule Partial Surrender Charge'(calcType);'GEN Vector Blank');çä   //blank vectorçä// Gross Withdrawalçä8 : 'SCRule Partial Surrender Charge'(calcType) + 'ULSC Decrease Charge'(calcType;'SCRule Partial Surrender Charge'(calcType);'GEN Vector Blank');çä   //blank vectorçä// Maximum Withdrawalçä17 : 'SCRule Partial Surrender Charge'(calcType) + 'ULSC Decrease Charge'(calcType;'SCRule Partial Surrender Charge'(calcType);'GEN Vector Blank');çä   //blank vectorçä// Full Surrenderçä31 : 'SCRule Full Surrender Charge'(calcType);çä   // else return error messageçä : 'Messages SystemMessage'("CA1012";'Message Language';v_('ULSC Model Name';"'ULSC Surrender Charge'";'Policy Arrangement ArrType')))çä
+F1 1e48ef0 1e48a60 1e49830 0 0 0 2
+ULSC Decrease Charge(calcType; partialWithdrawalCharge; vectorSolveParms)
+Funktion
+IF ( /*Option A policy*/ 'DeathBenefitOptType Is Level'('ULSC DthBenOpt'(calcType;TransEffDur;vectorSolveParms)) ; çä   /*Yes - return decrease charge*/ IF ( /*Net withdrawal?*/ 'ArrType Is NetWithdrawal'('Policy Arrangement ArrType') ; çä     /*Yes - calculate decrease charge on grossed up withdrawal*/ IF ( /*Is amount passed net?*/ 'AmountType Is Net'('PI LifeProduct WthdrwlDBDecreaseAmtQualifier'('Policy ProductCode';'Policy EffDate')) ; çä       /*Yes - calculatedecrease charge on grossed up withdrawal*/ 'DecrCharge Total Decrease Charge'(calcType;'Policy Arrangement TotalAmt') ; çä       // Elseçä'GEN Round'('DecrCharge Total Decrease Charge'(calcType;'ULSC NetToGross Solve'(calcType;partialWithdrawalCharge));2)çä    ) ; çä   // Else gross or maximum withdrawal is being madeçäIF ('AmountType Is Gross'('PI LifeProduct WthdrwlDBDecreaseAmtQualifier'('Policy ProductCode';'Policy EffDate')) ; çä    'DecrCharge Total Decrease Charge'(calcType;'Policy Arrangement TotalAmt') ; çä     // Elseçä'GEN Round'('DecrCharge Total Decrease Charge'(calcType;'ULSC GrossToNet Solve'(calcType;partialWithdrawalCharge));2)çä  )çä) ; çä // Else decrease charges only apply to level death benefit policiesçä0çä)
+F1 1e49830 1e48ef0 0 1e49f50 0 0 2
+ULSC NetToGross Solve(calcType; partialWithdrawalCharge)
+Funktion
+'GEN Round'('ULSC Decrease Amt Solve Rec'(calcType; // Current guessçä'Policy Arrangement TotalAmt'; // Current valueçä'Policy Arrangement TotalAmt' - 'DecrCharge Total Decrease Charge'(calcType;'Policy Arrangement TotalAmt'); // Previous guessçä0; // Previous valueçä0; // Low boundaryçä'Policy Arrangement TotalAmt'; // High boundaryçä'Policy Life CashValueAmt'; // Target valueçä'Policy Arrangement TotalAmt' + partialWithdrawalCharge; // Iteration numberçä1; // Maximum durationçä999; // Face decrease basisçä1 // Face decrease based on net withdrawalçä);2)
+F1 1e49f50 1e48ef0 0 1e4a410 0 0 2
+ULSC GrossToNet Solve(calcType; partialWithdrawalCharge)
+Funktion
+'GEN Round'('ULSC Decrease Amt Solve Rec'(calcType; // Current guessçä'Policy Arrangement TotalAmt'; // Current valueçä'Policy Arrangement TotalAmt' + 'DecrCharge Total Decrease Charge'(calcType;'Policy Arrangement TotalAmt'); // Previous guessçä0; // Previous valueçä0; // Low boundaryçä0; // High boundaryçä'Policy Arrangement TotalAmt'; // Target valueçä'Policy Arrangement TotalAmt' - partialWithdrawalCharge; // Iteration numberçä1; // Maximum durationçä999; // Face decrease basisçä2 // Decrease amount based on gross withdrawalçä);2)
+F1 1e4a410 1e48ef0 0 1e4af70 0 0 2
+ULSC Decrease Amt Solve Rec(calcType; currGuess; currValue; prevGuess; prevValue; lowBound; highBound; targetValue; iterationNumber; maxIterations; faceDecreaseBasis)
+Funktion
+IF ( /*Tolerance levels reached*/ ABS(currValue - targetValue) < 0.01 || ABS(currGuess - prevGuess) <= 0.01 ; çä   // Search successful and can stopçäv_(currGuess;currValue;lowBound;highBound;iterationNumber) ; çä   // Else not done yetçäIF ( /*Have we reached maximum iterations yet?*/ iterationNumber + 1 = maxIterations ; çä     // Search unsuccessfulçä'Messages SystemMessage'("CA1013";'Message Language';'GEN Vector Blank') ; çä     // Else try another valueçä'ULSC Decrease Amt Solve Rec'(calcType; // Current guessçä'ULSC WD Guess'(currGuess;currValue;lowBound;highBound;targetValue); // Current valueçäIF ('AmountType Is Gross'(faceDecreaseBasis) ; çä      'ULSC WD Guess'(currGuess;currValue;lowBound;highBound;targetValue) + 'DecrCharge Total Decrease Charge'(calcType;'ULSC WD Guess'(currGuess;currValue;lowBound;highBound;targetValue)) ; çä       // Else face decrease is based on net withdrawalçä'ULSC WD Guess'(currGuess;currValue;lowBound;highBound;targetValue) - 'DecrCharge Total Decrease Charge'(calcType;'ULSC WD Guess'(currGuess;currValue;lowBound;highBound;targetValue))çä    ); // Previous guessçäcurrGuess; // Previous valueçäcurrValue; // Low boundçäIF ( /*guess too low*/ currValue < targetValue ; çä     /*set new lower bound*/ currGuess ; çä     /*else leave lower bound in place*/ lowBoundçä  ); // High boundçäIF ( /* Guess too high*/ currValue > targetValue ; çä   /*Set new higher bound*/ currGuess ; çä   /*else leave higher bound in place*/ highBoundçä); // Target valueçätargetValue; // Iteration numberçäiterationNumber + 1; // Maximum iterationsçämaxIterations; // Face decrease basisçäfaceDecreaseBasis)çä)çä)
+F1 1e4af70 1e48ef0 0 0 0 0 2
+ULSC WD Guess(currGuess; currValue; lowBound; highBound; targetValue)
+Funktion
+IF ( /*Guess too high*/ currValue > targetValue ; çä   /*Increase next guess*/ (lowBound + currGuess) * 0.5 ; çä   /*Decrease next guess*/ (currGuess + highBound) * 0.5çä)
+F1 1e4b408 1e485c8 0 1e4b8a8 0 0 2
+ULSC Projected Full Surrender Charge(calcType; yearIndex; vectorPrevSurrCharges)
+Funktion
+'SCRule Projected Full Surrender Charge'(calcType;yearIndex;vectorPrevSurrCharges)
+F1 1e4b8a8 1e485c8 0 1e4bde8 0 0 2
+ULSC Projected Partial Surrender Charge(calcType; yearIndex)
+Funktion
+'SCRule Surrender Charge FeeAmt'(calcType;yearIndex;'FeeType PartialSurrenderCharge')
+F1 1e4bde8 1e485c8 1e4c298 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 1e4c298 1e4bde8 0 1e4c788 0 0 2
+ULSC Model Name
+Funktion
+"ULSurrenderCharges"
+F1 1e4c788 1e4bde8 0 0 0 0 2
+ULSC DthBenOpt(calcType; yearIndex; vectorSolveParms)
+Funktion
+IF ( /*Death Benefit option is passed or Use the policy record*/ 'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms) ; çä   /*Yes*/ 'SharedVector SolveParms DthBenOpt'(vectorSolveParms;yearIndex) ; çä   /*No*/ 'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex)çä)
+A0 3f437c 0 0 0 0 0 0
+
+T0 3f43ec 0 0 0 0 0 0
+
+I0 3f445c 0 1e4c388 0 0 0 0
+
+I0 1e4c388 3f445c 0 0 0 0 0
+ULDecreaseCharge.pms
+-
+O0
+E0
+L0
+B0
+P3
+1e46c20
+1e471a8
+1e478e8
+F1
+1e48158
+A0
+T0
+!12
+1e471a8 3 -1
+çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e471a8 4 -1
+çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e471a8 5 -1
+çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e48a60 -2 -2
+Description: Returns the total surrender charge associated with a withdrawal transaction.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit option.  This is being passed as a blank vector so that the input functions will be used.çä10/31/2007 CSC Initial Calculation/Ruleçä
+1e48ef0 -2 -2
+Description: Returns the decrease charge, if applicable.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit option. çä10/31/2007 CSC Initial Calculation/Ruleçä
+1e49830 -2 -2
+Description: Solve for the gross withdrawal amount based on the transaction amount for the net withdrawal and the partial withdrawal and decrease charge rules.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e49f50 -2 -2
+Description: Solve for the net withdrawal amount based on the transaction amount for the gross withdrawal and the partial withdrawal and decrease charge rules.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e4a410 -2 -2
+Description: Recursive function to solve for a face decrease amount.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e4af70 -2 -2
+Description: Made the next guess for the withdrawal.  Just using a binary search for now.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1e4b408 -2 -2
+Description: Returns the total projected full surrender charge.çä çäModification Log:çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e4b8a8 -2 -2
+Description: Returns the total projected full surrender charge.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e4c788 -2 -2
+Description: Returns the Death Benefit Option for  the policy.  This checks to see if the death benefit option is in the vector will be using input functions.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit option. 
+;Offset=00000000

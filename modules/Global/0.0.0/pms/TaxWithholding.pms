@@ -1,0 +1,1582 @@
+;1	08.12.2016 13:29:33	jlawrie2	
+X0 40cb52c 0 48fb240 0 0 0 0
+
+X2 48fb240 40cb52c 0 48fb2c0 0 0 2
+Federal Tax Withholding indicator
+Federal Tax Withholding indicator
+
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+X2 48fb2c0 40cb52c 0 48fb340 0 0 2
+Qualified Indicator
+Qualified Indicator
+0
+INPUT Party GovtIDTC
+1
+X2 48fb340 40cb52c 0 48fb3c0 0 0 2
+Federal Withholding Override Indicator
+Federal Withholding Override Indicator
+0
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+X2 48fb3c0 40cb52c 0 48fb440 0 0 2
+State Witholding Override Indicator
+State Witholding Override Indicator
+0
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+1
+X6 48fb440 40cb52c 0 48fb4c0 0 0 2
+TWH Lookup StateWHBasis
+TWH Lookup StateWHBasis
+T
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Party ResidenceState
+25
+INPUT QualifiedCode
+2
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+1000500001
+X7 48fb4c0 40cb52c 0 48fb540 0 0 2
+TWH Lookup WithholdingApplies
+TWH Lookup WithholdingApplies
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity FinActivityType
+1000500003
+INPUT Policy FinancialActivity FinActivityReasonCode
+1000500004
+INPUT Policy LifeUSA MECInd
+*
+INPUT QualifiedCode
+*
+X7 48fb540 40cb52c 0 48fb5c0 0 0 2
+TWH Lookup FedWHpct
+TWH Lookup FedWHpct
+10
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+X7 48fb5c0 40cb52c 0 48fb640 0 0 2
+TWH Lookup FedIntWHpct
+TWH Lookup FedIntWHpct
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+X7 48fb640 40cb52c 0 48fb6c0 0 0 2
+TWH Lookup AllowOptOut(index)
+TWH Lookup AllowOptOut(1)
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+X6 48fb6c0 40cb52c 0 48fb740 0 0 2
+TWH Lookup AllowOptOut(index)
+TWH Lookup AllowOptOut(2)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Party ResidenceState
+25
+INPUT QualifiedCode
+2
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+1000500001
+X6 48fb740 40cb52c 0 48fb7c0 0 0 2
+TWH Lookup StateWHpct
+TWH Lookup StateWHpct
+7.75
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Party ResidenceState
+25
+INPUT QualifiedCode
+2
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+1000500001
+X6 48fb7c0 40cb52c 0 48fb840 0 0 2
+TWH Lookup StateWHBasis
+TWH Lookup StateWHBasis
+T
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Party ResidenceState
+25
+INPUT QualifiedCode
+2
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+1000500001
+X8 48fb840 40cb52c 0 48fb8c0 0 0 2
+TWH WithholdingBypass(index)
+TWH WithholdingBypass(1)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+X6 48fb8c0 40cb52c 0 48fb9c0 0 0 2
+TWH WithholdingBypass(index)
+TWH WithholdingBypass(2)
+0
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/1900
+INPUT Party ResidenceState
+25
+INPUT QualifiedCode
+2
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+1000500001
+X2 48fb9c0 40cb52c 0 48fb940 0 0 2
+TWH FederalIntIndicator
+TWH FederalIntIndicator
+1
+INPUT Policy FinancialActivity FinActivityType
+262
+X16 48fb940 40cb52c 0 48fba40 0 0 2
+OUTPUT Federal Withholding Amount
+OUTPUT Federal Withholding Amount
+400
+INPUT Policy FinancialActivity FinActivityType
+1000500003
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity FinActivityReasonCode
+1000500004
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+10000
+INPUT Policy LifeUSA CashValue
+11000
+INPUT Policy CostBasis
+7000
+X14 48fba40 40cb52c 0 48fbac0 0 0 2
+OUTPUT State Withholding Amount
+OUTPUT State Withholding Amount
+20
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity FinActivityType
+19
+INPUT Policy FinancialActivity FinActivityReasonCode
+*
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Party ResidenceState
+55
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+*
+INPUT Policy Number of Loan
+1
+INPUT Policy Loan LoanBalance
+1000
+INPUT Policy CostBasis
+500
+INPUT Policy LifeUSA CashValue
+1500
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+X7 48fbac0 40cb52c 0 48fbb40 0 0 2
+OUTPUT Taxable Amount
+OUTPUT Taxable Amount
+1000
+INPUT Policy FinancialActivity FinActivityType
+262
+INPUT Policy CostBasisKnown
+1
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy LifeUSA CashValue
+50000
+INPUT Policy CostBasis
+500
+X11 48fbb40 40cb52c 0 48fbbc0 0 0 2
+OUTPUT Interest Federal Withholding Amount
+OUTPUT Interest Federal Withholding Amount
+500
+INPUT Policy FinancialActivity FinActivityType
+312
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500002
+INPUT Party GovtIDTC
+*
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivityGrossAmt
+10000
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+6
+INPUT Policy FinancialActivity TaxWithholding TaxWithheldIntPct[1]
+5
+X19 48fbbc0 40cb52c 0 48fbc40 0 0 2
+OUTPUT Federal Withholding Amount
+OUTPUT Federal Withholding Amount
+1000
+INPUT Policy FinancialActivity FinActivityType
+19
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity FinActivityReasonCode
+*
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+8
+INPUT Policy CostBasisKnown
+1
+INPUT Policy Number of Loan
+1
+INPUT Policy Loan LoanBalance
+1000
+INPUT Policy CostBasis
+500
+INPUT Policy LifeUSA CashValue
+1200
+INPUT Policy FinancialActivity TaxWithholding TaxWithheldAmt[1]
+1000
+INPUT Policy FinancialActivity TaxWithholding TaxWithheldPct[1]
+5
+X2 48fbc40 40cb52c 0 48fbcc0 0 0 2
+Federal Withholding Override Indicator
+Federal Withholding Override Indicator
+Error
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+8
+X8 48fbcc0 40cb52c 0 48fbd40 0 0 2
+OUTPUT Taxable Amount
+OUTPUT Taxable Amount
+1
+INPUT Policy FinancialActivity FinActivityType
+19
+INPUT Policy CostBasisKnown
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1
+INPUT Policy Number of Loan
+1
+INPUT Policy Loan LoanBalance
+1999
+INPUT Policy CostBasis
+299
+INPUT Policy LifeUSA CashValue
+2000
+X19 48fbd40 40cb52c 0 48fbdc0 0 0 2
+OUTPUT Federal Withholding Amount
+OUTPUT Federal Withholding Amount
+60
+INPUT Policy FinancialActivity FinActivityType
+1000500003
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/2001
+INPUT Policy FinancialActivity FinActivityReasonCode
+1000500004
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+6
+INPUT Policy FinancialActivity TaxWithholding TaxWithheldPct[1]
+6
+INPUT Policy CostBasisKnown
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy LifeUSA CashValue
+2000
+INPUT Policy CostBasis
+500
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+X18 48fbdc0 40cb52c 0 48fbe40 0 0 2
+OUTPUT State Withholding Amount
+OUTPUT State Withholding Amount
+12
+INPUT Policy ProductCode
+*
+Input TransEffDate
+06/14/1984
+INPUT Policy FinancialActivity FinActivityType
+19
+INPUT Policy FinancialActivity FinActivityReasonCode
+*
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Party ResidenceState
+55
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[2]
+6
+INPUT Policy Number of Loan
+1
+INPUT Policy Loan LoanBalance
+1000
+INPUT Policy CostBasis
+500
+INPUT Policy LifeUSA CashValue
+1200
+INPUT Policy FinancialActivity TaxWithholding TaxWithheldPct[2]
+6
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+X10 48fbe40 40cb52c 0 48fbec0 0 0 2
+OUTPUT Interest Federal Withholding Amount
+OUTPUT Interest Federal Withholding Amount
+0
+INPUT Policy FinancialActivity FinActivityType
+262
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy ProductCode
+*
+Input TransEffDate
+06/14/1984
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+X15 48fbec0 40cb52c 0 48fbfc0 0 0 2
+OUTPUT Total Withholding Amount
+OUTPUT Total Withholding Amount
+
+INPUT Policy FinancialActivity FinActivityType
+1000500003
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity FinActivityReasonCode
+1000500004
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+4
+INPUT Party ResidenceState
+55
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+X8 48fbfc0 40cb52c 0 48fc040 0 0 2
+TWH GainRemoved
+TWH GainRemoved
+2000
+INPUT Policy FinancialActivity FinActivityType
+19
+INPUT Policy LifeUSA MECInd
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+10000
+INPUT Policy LifeUSA CashValue
+12000
+INPUT Policy CostBasis
+8000
+INPUT Policy Number of Loan
+1
+INPUT Policy Loan LoanBalance
+10000
+X8 48fc040 40cb52c 0 48fc0c0 0 0 2
+TWH WithholdingBypass(index)
+TWH WithholdingBypass(1)
+
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+*
+INPUT Party GovtIDStat
+*
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+4
+X17 48fc0c0 40cb52c 0 48fc140 0 0 2
+TWH Total Withholding Amount
+TWH Total Withholding Amount
+
+INPUT Policy FinancialActivity FinActivityType
+1000500003
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1999
+INPUT Policy FinancialActivity FinActivityReasonCode
+1000500004
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy LifeUSA CashValue
+12000
+INPUT Policy CostBasis
+500
+INPUT Party ResidenceState
+55
+X17 48fc140 40cb52c 0 48fc1c0 0 0 2
+TWH Total Withholding Amount
+TWH Total Withholding Amount
+
+INPUT Policy FinancialActivity FinActivityType
+1000500003
+INPUT Policy ProductCode
+*
+Input TransEffDate
+01/01/1900
+INPUT Policy FinancialActivity FinActivityReasonCode
+1000500004
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+1
+INPUT Policy CostBasisKnown
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+10000
+INPUT Policy LifeUSA CashValue
+12000
+INPUT Policy CostBasis
+9000
+INPUT Party ResidenceState
+25
+X19 48fc1c0 40cb52c 0 48fc240 0 0 2
+OUTPUT Federal Withholding Amount
+OUTPUT Federal Withholding Amount
+500
+INPUT Policy FinancialActivity FinActivityType
+268
+INPUT Policy ProductCode
+*
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy FinancialActivity FinActivityReasonCode
+*
+INPUT Policy LifeUSA MECInd
+*
+INPUT Policy QualifiedCode
+*
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500008
+INPUT Party GovtIDTC
+2
+INPUT Party GovtIDStat
+18
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+6
+INPUT Policy FinancialActivity TaxWithholding TaxWithheldPct[1]
+5
+INPUT Policy CostBasisKnown
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+10000
+INPUT Policy LifeUSA CashValue
+90000
+INPUT Policy CostBasis
+50000
+X11 48fc240 40cb52c 0 48fc2c0 0 0 2
+TWH WithholdingType(index)
+TWH WithholdingType(1)
+NotApplicable
+INPUT Policy FinancialActivity TaxWithholding TaxWithholdingType[1]
+4
+INPUT Policy ProductCode
+*
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2010
+INPUT Policy FinancialActivity TaxWithholding TaxOwnershipType
+1000500001
+INPUT Party GovtIDStat
+2
+INPUT Party GovtIDTC
+1
+INPUT Policy FinancialActivity TaxWithholding Payment PayeeRelationRoleCode
+18
+INPUT Policy Life QualPlanType
+1
+X2 48fc2c0 40cb52c 0 0 0 0 2
+Qualified Indicator
+Qualified Indicator
+0
+INPUT Policy QualifiedCode
+1
+O0 40cb3c4 0 0 0 0 0 0
+
+E0 40cb43c 0 0 0 0 0 0
+
+L0 40cb4b4 0 0 0 0 0 0
+
+B0 40cb694 0 0 0 0 0 0
+
+P1 40cb5a4 0 48fc340 0 0 0 2
+
+--description
+Federal and State tax withholding calculations. Support for override of federal and state taxes.çä çäRELEASE LOG:çäRELEASE 1301 - wmA-J Developmentçä
+P13 48fc340 40cb5a4 48fc3c0 0 0 0 2
+Product Information
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Tax Withholding"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"TaxWithholding.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P13 48fc3c0 48fc340 0 48fc440 0 0 2
+Withholding
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Taxable Amount
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'GEN Round'('Annuity TWH TaxableAmount'('Annuity TWH Adj Withdrawal Amount');2) ; çä  'TWH TaxableAmount'çä)
+OUTPUT Federal Withholding Amount
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Annuity TWH Federal Withholding Amount'('Annuity TWH Adj Withdrawal Amount') ; çä   //â'Annuity TWH Federal Withholding Amount'('Annuity TWH Withdrawal Amount');çä'TWH Federal Withholding Amount'çä)
+OUTPUT State Withholding Amount
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Annuity TWH State Withholding Amount'('Annuity TWH Adj Withdrawal Amount') ; çä   //â'Annuity TWH State Withholding Amount'('Annuity TWH Withdrawal Amount');çä'TWH State Withholding Amount'çä)
+OUTPUT Interest Federal Withholding Amount
+'TWH Federal Interest Withholding Amount'
+OUTPUT Total Withholding Amount
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Annuity TWH Total Withholding'('Annuity TWH Adj Withdrawal Amount') ; çä   //â'Annuity TWH Total Withholding'('Annuity TWH Withdrawal Amount');çä'TWH Total Withholding Amount'çä)
+OUTPUT Minimum Interest Reporting Amount
+0
+OUTPUT Municipal Withholding Amount
+0
+OUTPUT Gain Removed
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Annuity TWH GainRemoved'('Annuity TWH Adj Withdrawal Amount') ; çä  'TWH GainRemoved'çä)
+OUTPUT Tax Penalty
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Annuity TWH EWP Tax Withholding Amount'('Annuity TWH Adj Withdrawal Amount') ; çä   //â 'Annuity TWH EWP Tax Withholding Amount'('Annuity TWH Withdrawal Amount');çä'TWH MECTaxPenalty'(TransEffDur)çä)
+OUTPUT Cost Basis Removed
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Annuity TWH CostBasisRemoved'('Annuity TWH Adj Withdrawal Amount') ; çä  'CBG CostBasisAdj'çä)
+P7 48fc440 48fc340 0 0 0 0 2
+Annuity Tax Withholding
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Annuity TWH Total Withholding(calcType)
+'Annuity TWH Total Withholding'('Policy FinancialActivity FinActivity 1035Amt'(0))
+OUTPUT Annuity TWH GainRemoved(calcType)
+'Annuity TWH GainRemoved'('Policy FinancialActivity FinActivity 1035Amt'(0))
+OUTPUT Annuity TWH Federal Withholding(calcType)
+'Annuity TWH Federal Withholding Amount'('Policy FinancialActivity FinActivity 1035Amt'(0))
+OUTPUT Annuity TWH State Withholding(calcType)
+'Annuity TWH State Withholding Amount'('Policy FinancialActivity FinActivity 1035Amt'(0))
+F0 40cb61c 0 48fc4c0 0 0 0 0
+
+F1 48fc4c0 40cb61c 48fc540 4a7aff8 0 0 2
+-- 1035CostBasis --
+Funktion
+
+F1 48fc540 48fc4c0 48fc5c0 48fc740 0 0 2
+--Life Policies
+Funktion
+
+F1 48fc5c0 48fc540 0 48fc640 0 0 2
+TaxCompliance 1035CostBasis
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActTYpe");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä   //thençä'LifeUSA Basis1035' + 'Policy FinancialActivity CostBasis'(#financialactivityindex) + 'Policy FinancialActivity CostBasisAdjAmt'(#financialactivityindex) ; çä   //elseçä0çä))
+F1 48fc640 48fc540 0 48fc6c0 0 0 2
+TaxCompliance 1035TaxableGain
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActTYpe");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä   //thençä'Policy LifeUSA TaxableGain1035'(#financialactivityindex) + 'Policy FinancialActivity RolloverIntAmt'(#financialactivityindex) ; çä   //elseçä0çä))
+F1 48fc6c0 48fc540 0 0 0 0 2
+TaxCompliance 1035AccumValue
+Funktion
+'TaxCompliance 1035CostBasis' + 'TaxCompliance 1035TaxableGain'
+F1 48fc740 48fc4c0 48fc7c0 0 0 0 2
+--Nonqualified Annuities
+Funktion
+
+F1 48fc7c0 48fc740 0 48fc840 0 0 2
+TaxCompliance PreTEFRACostBasis
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActType");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä  'Policy AnnuityUSA PreTEFRACostBasis'(#financialactivityindex) + 'Policy FinancialActivity FinActivity PreTEFRA CostBasis'(#financialactivityindex) ; çä   //'LifeUSA PreTEFRA CostBasisAdjAmt'(#financialactivityindex);çä0çä))
+F1 48fc840 48fc740 0 48fc8c0 0 0 2
+TaxCompliance PostTEFRACostBasisAmt
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActType");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä  'Policy AnnuityUSA PostTEFRACostBasisAmt'(#financialactivityindex) + 'Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt'(#financialactivityindex) ; çä   //'LifeUSA PostTEFRA CostBasisAdjAmt'(#financialactivityindex);çä0çä))
+F1 48fc8c0 48fc740 0 48fc940 0 0 2
+TaxCompliance PreTEFRARollIntAmt
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActType");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä  'Policy AnnuityUSA PreTEFRA RolloverIntAmt'(#financialactivityindex) + 'Policy FinancialActivity FinActivity PreTEFRA RolloverIntAmt'(#financialactivityindex) ; çä  0çä))
+F1 48fc940 48fc740 0 48fc9c0 0 0 2
+TaxCompliance PostTEFRARollIntAmt
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActType");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä  'Policy AnnuityUSA PostTEFRA RolloverIntAmt'(#financialactivityindex) + 'Policy FinancialActivity FinActivity PostTEFRA RolloverIntAmt'(#financialactivityindex) ; çä  0çä))
+F1 48fc9c0 48fc740 0 48fca40 0 0 2
+TaxCompliance PreTEFRAAccumValue
+Funktion
+'TaxCompliance PreTEFRACostBasis' + 'TaxCompliance PreTEFRARollIntAmt'
+F1 48fca40 48fc740 0 48fcac0 0 0 2
+TaxCompliance PostTEFRAAccumValue
+Funktion
+'TaxCompliance PostTEFRACostBasisAmt' + 'TaxCompliance PostTEFRARollIntAmt'
+F1 48fcac0 48fc740 48fcb40 0 0 0 2
+--Partial 1035 exchange
+Funktion
+
+F1 48fcb40 48fcac0 0 48fcbc0 0 0 2
+TaxCompliance Partial 1035Rate(financialactivityindex)
+Funktion
+'Policy FinancialActivity FinActivity 1035Amt'(financialactivityindex) / 'Policy AnnuityUSA Amount1035'(financialactivityindex)
+F1 48fcbc0 48fcac0 0 48fcc40 0 0 2
+TaxCompliance Partial PreTEFRACostBasis
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActTYpe");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä  'Policy FinancialActivity FinActivity PreTEFRA CostBasis'(#financialactivityindex) * 'TaxCompliance Partial 1035Rate'(#financialactivityindex) ; çä  0çä))
+F1 48fcc40 48fcac0 0 4a7aef8 0 0 2
+TaxCompliance Partial PostTEFRACostBasisAmt
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActTYpe");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") || 'TaxWithholding TaxDisburseType is Withdrawal for Rollover_IRS 1099 for 1035 Exchange'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä  'Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt'(#financialactivityindex) * 'TaxCompliance Partial 1035Rate'(#financialactivityindex) ; çä  0çä))
+F1 4a7aef8 48fcac0 0 4a7af78 0 0 2
+TaxCompliance Partial PreTEFRARollIntAmt
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActTYpe");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä  'Policy FinancialActivity FinActivity PreTEFRA RolloverIntAmt'(#financialactivityindex) * 'TaxCompliance Partial 1035Rate'(#financialactivityindex) ; çä  0çä))
+F1 4a7af78 48fcac0 0 0 0 0 2
+TaxCompliance Partial PostTEFRARollIntAmt
+Funktion
+SUMX(financialactivityindex;0;'Policy Number of FinancialActivity' - 1;IF (EXISTS(table("TABLE FinActTYpe");'Policy FinancialActivity FinActivityType'(#financialactivityindex);"*") ; çä  'Policy FinancialActivity FinActivity PostTEFRA RolloverIntAmt'(#financialactivityindex) * 'TaxCompliance Partial 1035Rate'(#financialactivityindex) ; çä  0çä))
+F1 4a7aff8 40cb61c 4a7b078 4a7cf78 0 0 2
+:Annuity TWH
+Funktion
+
+F1 4a7b078 4a7aff8 4a7b0f8 4a7b6f8 0 0 2
+-- Withholding Amounts --
+Funktion
+
+F1 4a7b0f8 4a7b078 0 4a7b178 0 0 2
+Annuity TWH Total Withholding(disburseAmt)
+Funktion
+'Annuity TWH Federal Withholding Amount'(disburseAmt) + 'Annuity TWH State Withholding Amount'(disburseAmt) + 'Annuity TWH EWP Tax Withholding Amount'(disburseAmt)
+F1 4a7b178 4a7b078 4a7b1f8 4a7b2f8 0 0 2
+Annuity TWH Federal Withholding Amount(disburseAmt)
+Funktion
+'GEN Round'(IF ('Annuity TWH Federal Withholding OR Indicator' && 'TaxWithholding TaxWithholding Type is FlatDollar'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä   /*Specified amount overide*///Trueçä 'Policy Arrangement TaxWithholding TaxWithheldAmt'('TWH Federal Withholding Index') ; çä   //FalseçäIF ('ArrType Is FullAnnuitization'('Policy Arrangement ArrType') || 'ArrType Is PartialAnnuitization'('Policy Arrangement ArrType') || 'Annuity TWH Basis'('TWH Federal Withholding Index';disburseAmt) <= 0 ; çä     //Federal withholding basis is less than zeroçä//Trueçä0 ; çä     //FalseçäIF ('TaxWithholding TaxDisburseType is Withdrawal for Rollover_IRS 1099 for 1035 Exchange'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä       /*1035 Exchange*///Trueçä 0 ; çä       //FalseçäIF ('Annuity TWH Federal Withholding OR Indicator' && 'TaxWithholding TaxWithholding Type is Combine Both Pct and Flat Dollar'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä         /*Flat amount and specified percentage override*///True - Sum specified percentage withholding and flat amount withholdingçä 'Annuity TWH TaxableAmount'(disburseAmt) * 'Annuity TWH FedWHPct'('Annuity TWH FedPctRule') * 0.01 + 'Policy Arrangement TaxWithholding TaxWithheldAmt'('TWH Federal Withholding Index') ; çä         //False çä'Annuity TWH TaxableAmount'(disburseAmt) * 'Annuity TWH FedWHPct'('Annuity TWH FedPctRule') * 0.01çä      )çä  )çä)çä);2)
+F1 4a7b1f8 4a7b178 4a7b278 0 0 0 2
+Annuity TWH FedWHPct(pctRule)
+Funktion
+CASE(pctRule;çä  1 : IF ('Annuity TWH LookupPct'('TWH Federal Withholding Index') ALIKE 'GEN Vector Blank' ; çä     /*No State Percentage in Table*///Trueçä 0 ; çä     //Falseçä'Annuity TWH LookupPct'('TWH Federal Withholding Index')çä  );çä //Standard federal withholding percentçä2 : 20;çä //Mandatory withholding on qualified annuityçä//3: 10 + 'Annuity TWH LookupPct'('TWH Federal Withholding Index');çä4 : 'Annuity TWH ORPct';çä //Override percentageçä5 : 0;çä :  //No withholding applies (qualifed distribution on Roth IRA)çä"Error:UnsupportedpctRule")çä
+F1 4a7b278 4a7b1f8 0 0 0 0 2
+Annuity TWH ORPct
+Funktion
+IF ('Policy Arrangement TaxWithholding TaxWithheldPct'('TWH Federal Withholding Index') ALIKE 'GEN Vector Blank' ; çä   //Trueçä0 ; çä   //Falseçä'Policy Arrangement TaxWithholding TaxWithheldPct'('TWH Federal Withholding Index')çä)
+F1 4a7b2f8 4a7b078 4a7b378 4a7b3f8 0 0 2
+Annuity TWH State Withholding Amount(disburseAmt)
+Funktion
+'GEN Round'(IF ('Annuity TWH State Withholding OR Indicator' && 'TaxWithholding TaxWithholding Type is FlatDollar'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH State Withholding Index')) ; çä   /*Flat amount override*///Trueçä 'Policy Arrangement TaxWithholding TaxWithheldAmt'('TWH State Withholding Index') ; çä   //FalseçäIF ('ArrType Is FullAnnuitization'('Policy Arrangement ArrType') || 'ArrType Is PartialAnnuitization'('Policy Arrangement ArrType') || 'Annuity TWH Basis'('TWH State Withholding Index';disburseAmt) <= 0 ; çä     //Federal withholding basis is less than zeroçä//Trueçä0 ; çä     //FalseçäIF ('TaxWithholding TaxDisburseType is Withdrawal for Rollover_IRS 1099 for 1035 Exchange'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä       /*1035 Exchange*///Trueçä 0 ; çä       //FalseçäIF ('Annuity TWH State Withholding OR Indicator' && 'TaxWithholding TaxWithholding Type is Combine Both Pct and Flat Dollar'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH State Withholding Index')) ; çä         /*Flat amount and specified percentage override*///True - Sum specified percentage withholding and flat amount withholdingçä 'Annuity TWH TaxableAmount'(disburseAmt) * ('Annuity TWH StateWHPct'('Annuity TWH StatePctRule') * 0.01) + 'Policy Arrangement TaxWithholding TaxWithheldAmt'('TWH State Withholding Index') ; çä         //Falseçä'Annuity TWH TaxableAmount'(disburseAmt) * ('Annuity TWH StateWHPct'('Annuity TWH StatePctRule') * 0.01)çä      )çä  )çä)çä);2)
+F1 4a7b378 4a7b2f8 0 0 0 0 2
+Annuity TWH StateWHPct(pctRule)
+Funktion
+CASE(pctRule;çä  1 : IF ('Annuity TWH LookupPct'('TWH State Withholding Index') ALIKE 'GEN Vector Blank' ; çä     /*No State Percentage in Table*///Trueçä 0 ; çä     //Falseçä'Annuity TWH LookupPct'('TWH State Withholding Index')çä  );çä //Standard state withholding percentage appliesçä2 : 20;çä //20% Mandatory withholding on qualified annuityçä//3: 10 + 'Annuity TWH LookupPct'(2);çä4 : 'Policy Arrangement TaxWithholding TaxWithheldPct'('TWH State Withholding Index');çä //Specified percentage overrideçä5 : 0;çä :  //No withholding applies (qualifed distribution frpm Roth IRA)çäERROR("Unsupported pctRule"))çä
+F1 4a7b3f8 4a7b078 4a7b478 0 0 0 2
+Annuity TWH EWP Tax Withholding Amount(disburseAmt)
+Funktion
+'GEN Round'(IF (NOT('ArrType Is FullAnnuitization'('Policy Arrangement ArrType') || 'ArrType Is PartialAnnuitization'('Policy Arrangement ArrType')) && 'Annuity TWH EWP Ind' ; çä   //Early withdrawal penalty applies if drawnçä//TrueçäIF (NOT('Annuity TWH QualifiedDistReqInd'(0;0)) ; çä     //Annuitant is not over age 59.5 and/or the withdrawal is not an allowable exceptionçä//True - Conversion Amount EWPçä'Annuity TWH TenPercenEWPTaxAmt'(disburseAmt) ; çä     //Falseçä0çä  ) + IF (NOT('Annuity TWH QualifiedDistInd') ; çä   /*Not a qualified distribution i.e. disbursed within the 5 year qualification period ANDçäââânot over age 59.5 and/or the withdrawal is not an allowable exception*///True - EWP on non-qualified distrubutionçä 10 * 0.01 * 'Annuity TWH GainRemoved'(disburseAmt) ; çä   //Falseçä0çä) ; çä //Falseçä0çä);2)
+F1 4a7b478 4a7b3f8 4a7b4f8 4a7b678 0 0 2
+Annuity TWH TenPercenEWPTaxAmt(disburseAmt)
+Funktion
+IF ('Annuity TWH calcType' ALIKE "RIRA" ; çä   //Trueçä'Annuity TWH ConversionTaxPenaltyTaxableAmt'(disburseAmt) * 0.01 * 10 ; çä   //Falseçä0çä)
+F1 4a7b4f8 4a7b478 4a7b578 0 0 0 2
+Annuity TWH ConversionTaxPenaltyTaxableAmt(disburseAmt)
+Funktion
+IF (disburseAmt > 'Annuity TWH Cost Basis Amt' ; çä   /*Disbursed amount exceeds cost basis*//*True -If within 5 year period, return 'Conversion Amount' disbursed for çäââââeach 'Conversion Amount/Conversion Year' pairing*/ SUMX(conversionIndex;0;'Policy Number of RothIRAConversions' - 1;IF ('Annuity TWH ConverFiveYrPrdInd'(#conversionIndex) ; çä     //Trueçä'Annuity TWH ConversionAmtDisbursed'(#conversionIndex;disburseAmt) ; çä     //Falseçä0çä  )) ; çä //False - no conversion amounts are disbursedçä0çä)
+F1 4a7b578 4a7b4f8 0 4a7b5f8 0 0 2
+Annuity TWH ConverFiveYrPrdInd(conversionIndex)
+Funktion
+'DATE Is Date1 Less Than or Equal to Date2'(TransEffDate;'Increase Date By Years'('Policy FinancialActivity RothIra1stYrConverIncome'(conversionIndex);5)) && 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity RothIra1stYrConverIncome'(conversionIndex);'Policy Annuity FirstTaxYear') && 'Annuity TWH EWP Ind'
+F1 4a7b5f8 4a7b4f8 0 0 0 0 2
+Annuity TWH ConversionAmtDisbursed(conversionIndex; disburseAmt)
+Funktion
+'GEN OrderedReleaseAmt FIFO'(MIN(MAX(disburseAmt - 'Annuity TWH Cost Basis Amt';0);'Annuity TWH TotalConverAmt');conversionIndex;VECTORX(convIndex;0;'Policy Number of RothIRAConversions' - 1;'Policy FinancialActivity RothIRAConverIncAmt'(#convIndex)))
+F1 4a7b678 4a7b3f8 0 0 0 0 2
+--Annuity TWH EWP Conditions
+Funktion
+'Annuity TWH FiveYrQualPrdInd'çä&&çäIF('Std Attained Age'('Policy Participant IssueAge'(0; 0); çäââââââ'Policy EffDate'; çäââââââTransEffDateçäââââââ) < 60;çäââââââ  1;çäââââââ  0çäââââââ )
+F1 4a7b6f8 4a7aff8 4a7b778 4a7bb78 0 0 2
+-- Taxable Amount --
+Funktion
+
+F1 4a7b778 4a7b6f8 4a7b7f8 0 0 0 2
+Annuity TWH TaxableAmount(disburseAmt)
+Funktion
+IF (('TaxWithholding TaxDisburseType is Withdrawal for Rollover_IRS 1099 for 1035 Exchange'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) || 'ArrType Is FullAnnuitization'('Policy Arrangement ArrType') || 'ArrType Is PartialAnnuitization'('Policy Arrangement ArrType') || 'Annuity TWH Basis'('TWH Federal Withholding Index';disburseAmt) <= 0 && 'Annuity TWH Basis'('TWH State Withholding Index';disburseAmt) <= 0) ; çä   //Trueçä0 ; çä   //FalseçäCASE('Annuity TWH calcType';çä    "NQ" : 'Annuity TWH TaxableAmount Type1'(disburseAmt);çä     //Non-qualified annuitiesçä"Q" : 'Annuity TWH TaxableAmount Type2'(disburseAmt);çä     //Qualified annuitiesçä"RIRA" : 'Annuity TWH TaxableAmount Type3'(disburseAmt);çä     :  //Roth Iraçä//Elseçä"UnsupportedTWHType")çäçä)
+F1 4a7b7f8 4a7b778 0 4a7b878 0 0 2
+Annuity TWH TaxableAmount Type1(disburseAmt)
+Funktion
+IF ('Policy CostBasisKnown' ; çä   /*The cost basis on the contract is known*///True - Gain removedçä 'Annuity TWH GainRemoved'(disburseAmt) ; çä   //False - Distribution amountçädisburseAmtçä)
+F1 4a7b878 4a7b778 0 4a7b8f8 0 0 2
+Annuity TWH TaxableAmount Type2(disburseAmt)
+Funktion
+IF ('TaxWithholding TaxDisburseType is Excess Contrib Before Filing Date'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä   /*Disbursement type is a return of excess contributions before the filing date*///Trueçä 'Policy FinancialActivity EarningsDistributed'(0) ; çä   //Falseçä'Annuity TWH GainRemoved'(disburseAmt)çä)
+F1 4a7b8f8 4a7b778 4a7b978 0 0 0 2
+Annuity TWH TaxableAmount Type3(disburseAmt)
+Funktion
+IF ('Annuity TWH QualifiedDistInd' ; çä   /*'Qualified' distribution*///Trueçä IF ('TaxWithholding TaxDisburseType is Excess Contrib Before Filing Date'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä     /*Disbursement type is a return of excess contributions before the filing date*///Trueçä 'Policy FinancialActivity EarningsDistributed'(0) ; çä     //Falseçä0çä  ) ; çä //FalseçäIF (NOT('Annuity TWH QualifiedDistInd') ; çä   /*Not a 'Qualified' distribution*///Trueçä IF ('TaxWithholding TaxDisburseType is Excess Contrib Before Filing Date'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä     /*Disbursement type is a return of excess contributions before the filing date*///Trueçä 'Policy FinancialActivity EarningsDistributed'(0) ; çä     //Falseçä'Annuity TWH GainRemoved'(disburseAmt)çä  ) ; çä //Falseçä"Error:UnsupportedValueForQualifiedDistInd"çä)çä)
+F1 4a7b978 4a7b8f8 4a7b9f8 0 0 0 2
+Annuity TWH QualifiedDistInd
+Funktion
+NOT('Annuity TWH FiveYrQualPrdInd') && 'Annuity TWH QualifiedDistReqInd'(0;0)
+F1 4a7b9f8 4a7b978 4a7ba78 4a7baf8 0 0 2
+Annuity TWH QualifiedDistReqInd(riderIndex; participantIndex)
+Funktion
+IF ('Std Attained Age'('Policy Participant IssueAge'(riderIndex;participantIndex);'Policy EffDate';TransEffDate) > 60 ; çä  1 ; çä  0çä) || 'Annuity TWH AllowableException'
+F1 4a7ba78 4a7b9f8 0 0 0 0 2
+Annuity TWH AllowableException
+Funktion
+'TaxWithholding TaxDisburseType is Annuitant Purchases Primary Residence'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) || 'TaxWithholding TaxDisburseType is Disability'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) || 'TaxWithholding TaxDisburseType is Medical Disability'('Policy Arrangement TaxWithholding TaxDisbursementType'(0))
+F1 4a7baf8 4a7b978 0 0 0 0 2
+Annuity TWH FiveYrQualPrdInd
+Funktion
+'DATE Is Date1 Less Than or Equal to Date2'(TransEffDate;'Increase Date By Years'('Policy Annuity FirstTaxYear';5))
+F1 4a7bb78 4a7aff8 4a7bbf8 4a7bdf8 0 0 2
+-- Withholding Basis --
+Funktion
+
+F1 4a7bbf8 4a7bb78 4a7bc78 0 0 0 2
+Annuity TWH Basis(index; disburseAmt)
+Funktion
+CASE('Annuity TWH calcType';çä  "NQ" : 'Annuity TWH Basis Type 1'(index;disburseAmt);çä   //Non-qualified annuitiesçä"Q" : 'Annuity TWH Basis Type 2'(index;disburseAmt);çä   //Qualified annuitiesçä"RIRA" : 'Annuity TWH Basis Type 3'(index;disburseAmt);çä   :  //Roth Iraçä//Elseçä"UnsupportedTWHType")çä
+F1 4a7bc78 4a7bbf8 0 4a7bcf8 0 0 2
+Annuity TWH Basis Type 1(index; disburseAmt)
+Funktion
+IF ('Annuity TWH TaxableGain'(disburseAmt) > 0 && CashDistInd = 1 && NOT('Annuity TWH Bypass'(index)) ; çä   /*There is gain on the contract, a cash distribution on the transaction and tax withholding is not bypassed*///Trueçä IF ('Policy CostBasisKnown' ; çä     //True - Taxable gain is basisçä'Annuity TWH TaxableGain'(disburseAmt) ; çä     //False - Distribution amount is basisçädisburseAmtçä  ) ; çä //Falseçä0çä)
+F1 4a7bcf8 4a7bbf8 0 4a7bd78 0 0 2
+Annuity TWH Basis Type 2(index; disburseAmt)
+Funktion
+IF ('Annuity TWH TaxableGain'(disburseAmt) > 0 && CashDistInd = 1 && NOT('Annuity TWH Bypass'(index)) ; çä   /*There is gain on the contract, a cash distribution on the transaction and tax withholding is not bypassed*///Trueçä//'Policy FinancialActivity FinActivityNetAmt'(0);çä disburseAmt ; çä   //Falseçä0çä)
+F1 4a7bd78 4a7bbf8 0 0 0 0 2
+Annuity TWH Basis Type 3(index; disburseAmt)
+Funktion
+IF ('Annuity TWH TaxableGain'(disburseAmt) > 0 && CashDistInd = 1 && NOT('Annuity TWH Bypass'(index)) ; çä   /*There is gain on the contract, a cash distribution on the transaction and tax withholding is not bypassed*///Trueçä IF ('Annuity TWH GainRemoved'(disburseAmt) > 0 ; çä     /*The gain removed is greater than 0*///Trueçä IF ('Annuity TWH QualifiedDistInd' ; çä       //Trueçä0 ; çä       //Falseçä'Annuity TWH GainRemoved'(disburseAmt)çä    ) ; çä   //Falseçä0çä) ; çä //Falseçä0çä)
+F1 4a7bdf8 4a7aff8 4a7be78 4a7c0f8 0 0 2
+-- Gain --
+Funktion
+
+F1 4a7be78 4a7bdf8 0 4a7bef8 0 0 2
+Annuity TWH TaxableGain(disburseAmt)
+Funktion
+MAX(0;IF ('Std Calling System Is wmaJ' ; çä  ('AV Cash Accumulation Value'('CalcType Current'('GEN Vector Blank')) - IF ( //'ArrType Is FullSurrender'('Policy Arrangement ArrType');çä('STD Derived ArrType'('Policy Arrangement ArrType') ALIKE "FULL_SURRENDER") ; çä    'AnnSC Annuity Surrender Charge'(TransEffDur;disburseAmt) ; çä    0çä  )) ; çä('Policy Annuity CashValueAmt' - IF ( //'ArrType Is FullSurrender'('Policy Arrangement ArrType');çä('STD Derived ArrType'('Policy Arrangement ArrType') ALIKE "FULL_SURRENDER") ; çä  'Policy Annuity SurrenderCharge' ; çä  0çä))çä) - 'Annuity TWH Cost Basis Amt') /*çäMAX(disburseAmt-'Annuity TWH Cost Basis Amt'çäçä-çäçäIF('ArrType Is FullSurrender'('Policy Arrangement ArrType');çäçäâIF('Std Calling System Is wmaJ';çäââçäâââ'AnnSC Annuity Surrender Charge'(TransEffDur; disburseAmt);çäâââçäâââ'Policy Annuity SurrenderCharge'çäâ);çäâ0çä);0)*/ 
+F1 4a7bef8 4a7bdf8 4a7bf78 0 0 0 2
+Annuity TWH GainRemoved(disburseAmt)
+Funktion
+ //IF('Annuity TWH Basis'(index) > 0;çäCASE('Annuity TWH calcType';çä  "NQ" : 'Annuity TWH GainRemoved Type1'(disburseAmt);çä   //Non-qualified annuitiesçä"Q" : 'Annuity TWH GainRemoved Type2'(disburseAmt);çä   //Qualified annuitiesçä"RIRA" : 'Annuity TWH GainRemoved Type3'(disburseAmt);çä   :  //Roth IRAçä//Elseçä"UnsupportedTWHType")çä //;çä//0)çä
+F1 4a7bf78 4a7bef8 0 4a7bff8 0 0 2
+Annuity TWH GainRemoved Type1(disburseAmt)
+Funktion
+IF ('TaxWithholding TaxDisburseType is Withdrawal for Rollover_IRS 1099 for 1035 Exchange'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä   /*1035 Exchange on a non-qualified annuity*///Trueçä 'Policy FinancialActivity FinActivity 1035Amt'(0) - 'TaxCompliance Partial PostTEFRACostBasisAmt' ; çä   //FalseçäMIN('Annuity TWH TaxableGain'(disburseAmt);disburseAmt)çä)
+F1 4a7bff8 4a7bef8 0 4a7c078 0 0 2
+Annuity TWH GainRemoved Type2(disburseAmt)
+Funktion
+IF ('TaxWithholding TaxDisburseType is Excess Contrib Before Filing Date'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä   /*Disbursement type is a return of excess contributions before the filing date*///Trueçä 'Policy FinancialActivity EarningsDistributed'(0) ; çä   //FalseâçäMIN(disburseAmt /*'Policy FinancialActivity FinActivityNetAmt'(0)*/ ;'Annuity TWH TaxableGain'(disburseAmt))çä)
+F1 4a7c078 4a7bef8 0 0 0 0 2
+Annuity TWH GainRemoved Type3(disburseAmt)
+Funktion
+IF ('TaxWithholding TaxDisburseType is Excess Contrib Before Filing Date'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä   /*Disbursement type is a return of excess contributions before the filing date*///Trueçä 'Policy FinancialActivity EarningsDistributed'(0) ; çä   //FalseçäMIN('Annuity TWH TaxableGain'(disburseAmt);MAX(disburseAmt - ('Annuity TWH Cost Basis Amt');0))çä)
+F1 4a7c0f8 4a7aff8 4a7c178 4a7c6f8 0 0 2
+-- Cost Basis --
+Funktion
+
+F1 4a7c178 4a7c0f8 0 4a7c1f8 0 0 2
+Annuity TWH Cost Basis(disburseAmt)
+Funktion
+IF ('CalcType is Qualified'('Annuity TWH calcType') ; çä  0 ; çä  MAX('Annuity TWH Cost Basis Amt' - IF ('CBG CostBasisAdjType' = 3 ; çä    'Annuity TWH CostBasisRemoved'(disburseAmt) ; çä    'CBG CostBasisAdj'çä  );0)çä)
+F1 4a7c1f8 4a7c0f8 4a7c278 4a7c378 0 0 2
+Annuity TWH Cost Basis Amt
+Funktion
+CASE('Annuity TWH calcType';çä  "NQ" : 'Annuity TWH Total Cost Basis Amt';çä   //Non-Qualified annuitiesçä"Q" : 0;çä   //Qualified annuities (except for Roth IRA's)çä"RIRA" : 'Policy Annuity RothIraNetContributionAmt' //Roth IRAçä + 'Annuity TWH Total Cost Basis Amt';çä   //Elseçä : "UnsupportedTWHType")çä /*IF('QualPlanType is Non Qualified Annuity'('Policy Annuity QualPlanType');çäçäâ//Trueçäâ'Policy CostBasis';çäâçäâ//FalseçäâIF('QualPlanType is Grouped Qualified Annuity'('Policy Annuity QualPlanType');çäââçäââ//Trueçäââ0;çäââçäââ//FalseçäââIF('QualPlanType is ROTH IRA'('Policy Annuity QualPlanType');çäââçäâââ//Trueçäâââ'Policy Annuity RothIraNetContributionAmt'/*+'Annuity TWH TotalConverAmt'*///;çä//Falseçä/*"Error:LOBNotSupported"çäâââ//)çäââ//)çäâ//)*/ 
+F1 4a7c278 4a7c1f8 4a7c2f8 0 0 0 2
+Annuity TWH Total Cost Basis Amt
+Funktion
+'Policy FinancialActivity FinActivity PreTEFRA CostBasis'(0) + 'Policy FinancialActivity FinActivity PostTEFRA CostBasisAmt'(0)
+F1 4a7c2f8 4a7c278 0 0 0 0 2
+Annuity TWH TotalConverAmt
+Funktion
+IF ('Policy Number of RothIRAConversions' > 0 ; çä   /*At least one conversion payment has taken place*///Trueçä SUMX(conversionIndex;0;'Policy Number of RothIRAConversions' - 1;'Policy FinancialActivity RothIRAConverIncAmt'(#conversionIndex)) ; çä   //Falseçä0çä)
+F1 4a7c378 4a7c0f8 4a7c3f8 0 0 0 2
+Annuity TWH CostBasisRemoved(disburseAmt)
+Funktion
+CASE('Annuity TWH calcType';çä  "NQ" : 'Annuity TWH CostBasisRemoved Type1'(disburseAmt);çä   //Non-Qualified annuitiesçä"Q" : 'Annuity TWH CostBasisRemoved Type2';çä   //Qualified annuities (except for Roth IRA's)çä"RIRA" : 'Annuity TWH CostBasisRemoved Type3'(disburseAmt);çä   //Roth IRAçä//Elseçä : "UnsupportedTWHType")çä
+F1 4a7c3f8 4a7c378 4a7c478 4a7c5f8 0 0 2
+Annuity TWH CostBasisRemoved Type1(disburseAmt)
+Funktion
+IF ('TaxWithholding TaxDisburseType is Withdrawal for Rollover_IRS 1099 for 1035 Exchange'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä   /*1035 Exchange on a non-qualified annuity*///Trueçä 'TaxCompliance Partial PostTEFRACostBasisAmt' ; çä   //Falseçä'Annuity TWH PreTefra CostBasisRemoved Type1'(disburseAmt) + 'Annuity TWH PostTefra CostBasisRemoved Type1'(disburseAmt)çä)
+F1 4a7c478 4a7c3f8 4a7c4f8 4a7c578 0 0 2
+Annuity TWH PreTefra CostBasisRemoved Type1(disburseAmt)
+Funktion
+MAX(MIN(disburseAmt - 'AnnSC Annuity Surrender Charge'(TransEffDur;disburseAmt) - 'PLC Projected Total Premium Load Charge'('CalcType Current'('GEN Vector Blank');'FeeType PremTaxSurr';TransEffDur;0;'GEN Vector Blank';disburseAmt - 'AnnSC Annuity Surrender Charge'(TransEffDur;disburseAmt));'TaxCompliance Partial PreTEFRACostBasis');0)
+F1 4a7c4f8 4a7c478 0 0 0 0 2
+Annuity TWH Pre Tefra Gain Increase(disburseAmt)
+Funktion
+'AnnSC Annuity Surrender Charge'(TransEffDur;disburseAmt) - 'PLC Projected Total Premium Load Charge'('CalcType Current'('GEN Vector Blank');'FeeType PremTaxSurr';TransEffDur;0;'GEN Vector Blank';disburseAmt - 'AnnSC Annuity Surrender Charge'(TransEffDur;disburseAmt))
+F1 4a7c578 4a7c3f8 0 0 0 0 2
+Annuity TWH PostTefra CostBasisRemoved Type1(disburseAmt)
+Funktion
+IF ('TaxWithholding TaxDisburseType is Withdrawal for Rollover_IRS 1099 for 1035 Exchange'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä   /*1035 Exchange on a non-qualified annuity*///Trueçä 'TaxCompliance Partial PostTEFRACostBasisAmt' ; çä   //FalseçäMAX('TaxCompliance Partial PostTEFRACostBasisAmt' - MIN(disburseAmt - 'Annuity TWH Pre Tefra Gain Increase'(disburseAmt) - 'Annuity TWH PreTefra CostBasisRemoved Type1'(disburseAmt);'Annuity TWH TaxableGain'(disburseAmt));0)çä)
+F1 4a7c5f8 4a7c378 0 4a7c678 0 0 2
+Annuity TWH CostBasisRemoved Type2
+Funktion
+0
+F1 4a7c678 4a7c378 0 0 0 0 2
+Annuity TWH CostBasisRemoved Type3(disburseAmt)
+Funktion
+IF ('TaxWithholding TaxDisburseType is Excess Contrib Before Filing Date'('Policy Arrangement TaxWithholding TaxDisbursementType'(0)) ; çä   /*Disbursement type is a return of excess contributions before the filing date*///Trueçä MIN(disburseAmt - 'Policy FinancialActivity EarningsDistributed'(0);'Annuity TWH Cost Basis Amt') ; çä   //FalseâçäMIN('Annuity TWH Cost Basis Amt';disburseAmt)çä)
+F1 4a7c6f8 4a7aff8 4a7c778 4a7c7f8 0 0 2
+-- calcType --
+Funktion
+
+F1 4a7c778 4a7c6f8 0 0 0 0 2
+Annuity TWH calcType
+Funktion
+ //'ACCS CalcRules AnnuityTWH calcType'('Policy ProductCode'; TransEffDate)çäCASE('Policy Annuity QualPlanType';çä  1 : "NQ";çä  2;5;8;30;44 : "Q";çä  6 : "RIRA";çä   : "Unsupported Annuity")çä
+F1 4a7c7f8 4a7aff8 4a7c878 4a7cbf8 0 0 2
+-- Lookups --
+Funktion
+
+F1 4a7c878 4a7c7f8 0 4a7c8f8 0 0 2
+Annuity TWH FedPctRule
+Funktion
+'ACCS CalcRules Annuity TWH FedWH PctRule'('Policy ProductCode';TransEffDate)
+F1 4a7c8f8 4a7c7f8 0 4a7c978 0 0 2
+Annuity TWH StatePctRule
+Funktion
+'ACCS CalcRules Annuity TWH StateWH PctRule'('Policy ProductCode';TransEffDate)
+F1 4a7c978 4a7c7f8 0 4a7c9f8 0 0 2
+Annuity TWH EWP Ind
+Funktion
+'ACCS CalcRules Annuity TWH EWPInd'('Policy ProductCode';TransEffDate)
+F1 4a7c9f8 4a7c7f8 0 4a7ca78 0 0 2
+Annuity TWH LookupPct(index)
+Funktion
+ /*CASE(index;çäçäâ'TWH Federal Withholding Index':â'ACCS CalcRules Annuity TWH FedWHpct'('Policy ProductCode'; TransEffDate);çäâ'TWH State Withholding Index':â'TWH Lookup StateWHpct';çäâââââââââ:â"Error:UnsupportedIndex"çäâ)*/ IF (index = 'TWH Federal Withholding Index' ; çä  'ACCS CalcRules Annuity TWH FedWHpct'('Policy ProductCode';TransEffDate) ; çä  IF (index = 'TWH State Withholding Index' ; çä    'TWH Lookup StateWHpct' ; çä    "Error:UnsupportedIndex"çä  )çä)
+F1 4a7ca78 4a7c7f8 4a7caf8 0 0 0 2
+Annuity TWH Bypass(index)
+Funktion
+'Annuity TWH Applies' || 'Annuity TWH WithholdingBypass'(index)
+F1 4a7caf8 4a7ca78 0 4a7cb78 0 0 2
+Annuity TWH Applies
+Funktion
+'ACCS CalcRules AnnuityTWH Applies'('Policy ProductCode';TransEffDate)
+F1 4a7cb78 4a7ca78 0 0 0 0 2
+Annuity TWH WithholdingBypass(index)
+Funktion
+'ACCS CalcRules Annuity TWH ORAllowed'('Policy ProductCode';TransEffDate) = 1 && ('TaxWithholding TaxWithholding Type is DoNotWithholdTaxes'('Policy Arrangement TaxWithholding TaxWithholdingType'(index)))
+F1 4a7cbf8 4a7aff8 4a7cc78 4a7cdf8 0 0 2
+-- Indicators --
+Funktion
+
+F1 4a7cc78 4a7cbf8 0 4a7ccf8 0 0 2
+Annuity TWH Federal Withholding OR Indicator
+Funktion
+CASE('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index');çä  "1" : 0;çä  "3";"4";"6";"8";"9" : 1;çä   : "Error")çä && 'ACCS CalcRules Annuity TWH ORAllowed'('Policy ProductCode';TransEffDate)
+F1 4a7ccf8 4a7cbf8 0 4a7cd78 0 0 2
+Annuity TWH State Withholding OR Indicator
+Funktion
+CASE('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH State Withholding Index');çä  "1" : 0;çä  "2";"3";"4";"6";"8";"9" : 1;çä   : ERROR("TaxWithholdingType Error"))çä && 'ACCS CalcRules Annuity TWH ORAllowed'('Policy ProductCode';TransEffDate)
+F1 4a7cd78 4a7cbf8 0 0 0 0 2
+Annuity TWH MandTwentyPctIndicator
+Funktion
+'ACCS CalcRules AnnuityTWH MandatoryWH'('Policy ProductCode';TransEffDate)
+F1 4a7cdf8 4a7aff8 4a7ce78 0 0 0 2
+--  Misc  --
+Funktion
+
+F1 4a7ce78 4a7cdf8 0 4a7cef8 0 0 2
+Annuity TWH Withdrawal Amount
+Funktion
+IF ( //'ArrType Is FullSurrender'('Policy Arrangement ArrType');çä('STD Derived ArrType'('Policy Arrangement ArrType') ALIKE "FULL_SURRENDER") ; çä  'AV Cash Accumulation Value'('CalcType Current'('GEN Vector Blank')) ; çä  IF ('Annuity TWH calcType' ALIKE "Q" ; çä    'Policy Arrangement TotalAmt' ; çä     //'Policy FinancialActivity FinActivityNetAmt'(0);çä'Policy Arrangement TotalAmt' //'Policy FinancialActivity FinActivityGrossAmt'(0)çäçä  )çä)
+F1 4a7cef8 4a7cdf8 0 0 0 0 2
+Annuity TWH Adj Withdrawal Amount
+Funktion
+IF ( //'ArrType Is FullSurrender'('Policy Arrangement ArrType');çä('STD Derived ArrType'('Policy Arrangement ArrType') ALIKE "FULL_SURRENDER") ; çä  ('AV Cash Accumulation Value'('CalcType Current'('GEN Vector Blank')) - 'AnnSC Transaction Fee'('CalcType Current'('GEN Vector Blank'))) ; çä  IF ('Annuity TWH calcType' ALIKE "Q" ; çä    'AnnSC Gross Withdrawal Amt'('CalcType Current'('GEN Vector Blank');'Policy Arrangement ArrType') - 'AnnSC Annuity Surrender Charge'(TransEffDur;'AnnSC Gross Withdrawal Amt'('CalcType Current'('GEN Vector Blank');'Policy Arrangement ArrType')) ; çä     //'Policy Arrangement TotalAmt' - 'AnnSC Transaction Fee'('CalcType Current'('GEN Vector Blank'))çä'AnnSC Gross Withdrawal Amt'('CalcType Current'('GEN Vector Blank');'Policy Arrangement ArrType')çä  )çä)
+F1 4a7cf78 40cb61c 4a7cff8 4a7e778 0 0 2
+:TWH
+Funktion
+
+F1 4a7cff8 4a7cf78 0 4a7d0f8 0 0 2
+TWH Total Withholding Amount
+Funktion
+'TWH Federal Interest Withholding Amount' + 'TWH Federal Withholding Amount' + 'TWH State Withholding Amount'
+F1 4a7d0f8 4a7cf78 4a7d178 4a7d2f8 0 0 2
+--Federal Withholding Amounts
+Funktion
+
+F1 4a7d178 4a7d0f8 0 4a7d1f8 0 0 2
+TWH FederalIntIndicator
+Funktion
+CASE('Policy Arrangement ArrType';çä   /*Interest Federal Tax Withholding applies*/ 11;12;13 : 1;çä   //"312","262":1;çä/*Interest on Death Claims or Dividend interest transaction*/ : 0 /*Otherwise no interest withholding*/ )çä
+F1 4a7d1f8 4a7d0f8 0 4a7d278 0 0 2
+TWH Federal Withholding Amount
+Funktion
+IF (('TWH FederalIntIndicator' EQUAL 0 && 'TWH Lookup WithholdingApplies' EQUAL 0 && 'TWH WithholdingBypass'('TWH Federal Withholding Index') EQUAL 0) ; çä   /*Not an interest withholding, withholding applies and is not bypassed*/ IF ('Federal Withholding Override Indicator' /*EQUAL 1*/  && 'TaxWithholding TaxWithholding Type is FlatDollar'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä     /*Override amount requested*/ 'Policy Arrangement TaxWithholding TaxWithheldAmt'('TWH Federal Withholding Index') ; çä    IF ('Federal Withholding Override Indicator' /*EQUAL 1*/  && 'TaxWithholding TaxWithholding Type is SpecifiedPercentage'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä       /*Override % requested*/ ('Policy Arrangement TaxWithholding TaxWithheldPct'('TWH Federal Withholding Index') * 'TWH Withholding Basis'('TWH Federal Withholding Index') * 0.01) ; çä      IF ('TaxWithholding TaxWithholding Type is Standard'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä         /*Standard withholding applies*/ 'TWH Lookup FedWHpct' * 'TWH Withholding Basis'('TWH Federal Withholding Index') * 0.01 ; çä        "Error"çä      )çä  )çä) ; çä0çä)
+F1 4a7d278 4a7d0f8 0 0 0 0 2
+TWH Federal Interest Withholding Amount
+Funktion
+IF ('TWH FederalIntIndicator' /*EQUAL 1*/  ; çä   /*Interest federal withholding applies*/ IF ('TaxWithholding TaxWithholding Type is Standard'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä     /*Standard withholding applies*/ 'TWH Lookup FedIntWHpct' * 'TWH Withholding Basis'(3) * 0.01 ; çä    IF ('Federal Withholding Override Indicator' /*EQUAL 1*/  && 'TaxWithholding TaxWithholding Type is SpecifiedPercentage'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä       /*Override % applies*/ ('Policy FinancialActivity TaxWithholding TaxWithheldIntPct'('TWH Federal Withholding Index') * 'TWH Withholding Basis'(3) * 0.01) ; çä      IF ('Federal Withholding Override Indicator' /*EQUAL 1*/  && 'TaxWithholding TaxWithholding Type is FlatDollar'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index')) ; çä         /*Override amount applies*/ 'Policy FinancialActivity TaxWithholding TaxWithheldIntAmt'('TWH Federal Withholding Index') ; çä        "Error: Invalid TWH Type"çä      )çä  )çä) ; çä0çä)
+F1 4a7d2f8 4a7cf78 4a7d378 4a7d3f8 0 0 2
+--State Withholding Amounts
+Funktion
+
+F1 4a7d378 4a7d2f8 0 0 0 0 2
+TWH State Withholding Amount
+Funktion
+IF ('TWH Lookup WithholdingApplies' EQUAL 0 && 'TWH WithholdingBypass'('TWH State Withholding Index') EQUAL 0 ; çä   /*Transaction Code and Transaction Reason Code indicate withholding required and no override to 0*/ IF ('TWH Lookup StateWHBasis' ALIKE "PA" ; çä     /*State withholding basis is policyholder chosen percentage of taxable gain*/ 'TWH Withholding Basis'('TWH State Withholding Index') * 'Policy Arrangement TaxWithholding TaxWithheldPct'('TWH State Withholding Index') * 0.01 ; çä     /*Else*/ IF ('State Witholding Override Indicator' EQUAL 1 && 'TaxWithholding TaxWithholding Type is SpecifiedPercentage'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH State Withholding Index')) ; çä       /*Override Percentage applies*/ 'TWH Withholding Basis'('TWH State Withholding Index') * 'Policy Arrangement TaxWithholding TaxWithheldPct'('TWH State Withholding Index') * 0.01 ; çä      IF ('State Witholding Override Indicator' EQUAL 1 && 'TaxWithholding TaxWithholding Type is FlatDollar'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH State Withholding Index')) ; çä         /*Override amount applies*/ 'Policy Arrangement TaxWithholding TaxWithheldAmt'('TWH State Withholding Index') ; çä        IF ('TaxWithholding TaxWithholding Type is Standard'('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH State Withholding Index')) ; çä           /*Standard withholding % applies*/ 'TWH Withholding Basis'('TWH State Withholding Index') * 'TWH Lookup StateWHpct' * 0.01 ; çä          "Error: Invalid TWH Type"çä        )çä    )çä)çä) ; çä0çä)
+F1 4a7d3f8 4a7cf78 4a7d478 4a7d7f8 0 0 2
+--Withhholding Basis Calculations
+Funktion
+
+F1 4a7d478 4a7d3f8 0 4a7d4f8 0 0 2
+TWH Withholding Basis(index)
+Funktion
+CASE(index;çä   /*Federal Tax withholding*/ 1 : IF ('Policy CostBasis is known'('Policy CostBasisKnown') ; çä    IF (CashDistInd EQUAL 1 && 'TWH GainExists' EQUAL 1 ; çä      'TWH GainRemoved' ; çä       /*Else*/ 0çä    ) ; çä   /*Else*/ 'Policy Arrangement TotalAmt'çä);çä /*State Tax Withholding*/ 2 : CASE('TWH Lookup StateWHBasis';çä /*State tax withholding basis*/ "T" : 'TWH GainRemoved';çä /*Taxable gain or policy holder chosen % of taxable gain*/ "FT" : 'TWH Federal Withholding Amount';çä /*Federal Tax Withholding*/ "PFA" : 'Policy Arrangement TaxWithholding TaxWithheldAmt'('TWH State Withholding Index');çä /*Policy holder chosen flat amount*/ "PA" : 'TWH GainRemoved';çä /*Taxable gain or policy holder chosen % of taxable gain*/  : "No State Basis Found")çä;çä3 : 'Policy Arrangement TotalAmt';çä : "Error")çä
+F1 4a7d4f8 4a7d3f8 0 4a7d578 0 0 2
+TWH TaxableAmount
+Funktion
+IF ('FinActivityType is Accumulation Dividend Option'('Policy FinancialActivity FinActivityType'(0)) || 'FinActType is Interest Credited on Death Claim'('Policy FinancialActivity FinActivityType'(0)) ; çä  'Policy Arrangement TotalAmt' ; çä  IF ('Policy CostBasis is known'('Policy CostBasisKnown') ; çä    'TWH TaxableAmt'(0;0) ; çä    'Policy Arrangement TotalAmt'çä  )çä)
+F1 4a7d578 4a7d3f8 4a7d5f8 4a7d678 0 0 2
+TWH GainRemoved
+Funktion
+IF ('ArrType Is Cancellation'('Policy FinancialActivity FinActivityType'(0)) && 'TWH LoanExcessOnBasis' > 0 ; çä   /*If lapse, and loan balance exceeds cost basis*///Trueçä 'TWH LoanExcessOnBasis' ; çä   /*excess of loan balance over basis is gain removed*///Falseââââââââââçä ABS('TWH GainAdj'(0))çä)
+F1 4a7d5f8 4a7d578 0 0 0 0 2
+TWH LoanExcessOnBasis
+Funktion
+MAX('Policy Loan LoanBalance'(0) - 'Policy CostBasis';0)
+F1 4a7d678 4a7d3f8 0 4a7d6f8 0 0 2
+TWH GainExists
+Funktion
+'TWH GainRemoved' > 0
+F1 4a7d6f8 4a7d3f8 0 4a7d778 0 0 2
+TWH WithholdingBypass(index)
+Funktion
+('TWH Lookup AllowOptOut'(index) EQUAL 1) && ('TaxWithholding TaxWithholding Type is DoNotWithholdTaxes'('Policy Arrangement TaxWithholding TaxWithholdingType'(index)))
+F1 4a7d778 4a7d3f8 0 0 0 0 2
+TWH WithholdingType(index)
+Funktion
+IF ('TaxWithholding TaxWithholding Type is Standard'('Policy Arrangement TaxWithholding TaxWithholdingType'(index)) && 'TWH Lookup AllowOptOut'(index) = 0 ; çä   //Not allowed to OptOutçä"Mandatory" ; çä  IF (('TaxWithholding TaxWithholding Type is Standard'('Policy Arrangement TaxWithholding TaxWithholdingType'(index)) || 'TaxWithholding TaxWithholding Type is DoNotWithholdTaxes'('Policy Arrangement TaxWithholding TaxWithholdingType'(index)) || 'TaxWithholding TaxWithholding Type is SpecifiedPercentage'('Policy Arrangement TaxWithholding TaxWithholdingType'(index)) || 'TaxWithholding TaxWithholding Type is FlatDollar'('Policy Arrangement TaxWithholding TaxWithholdingType'(index))) && 'TWH Lookup AllowOptOut'(index) = 1 ; çä     //Allowed to OptOutçä"Voluntary" ; çä    IF (('TaxWithholding TaxWithholding Type is DoNotWithholdTaxes'('Policy Arrangement TaxWithholding TaxWithholdingType'(index))) && 'TWH Lookup AllowOptOut'(index) = 0 ; çä       //Not allowed to OptOutçä"NotApplicable" ; çä      "Error"çä    )çä)çä)
+F1 4a7d7f8 4a7cf78 4a7d878 4a7e0f8 0 0 2
+-- Taxable Gain Calcs --
+Funktion
+
+F1 4a7d878 4a7d7f8 4a7d8f8 4a7d978 0 0 2
+TWH GainAdj(financialActivityIndex)
+Funktion
+IF ('CBG BypassAdjInd' = 1 ; çä   /*Financial activity has no effect on the gain on the contract*///True - Return 0çä 0 ; çä   //FalseçäIF ('TWH DurationType' = 2 && 'TWH TaxableGainUnadj' > 0 ; çä     //In years 6 to 15 of the contract and there is a gainçä//True - Allocate distribution to gain firstçä-MIN('Policy Arrangement TotalAmt'; //'Policy FinancialActivity FinActivityNetAmt'(financialActivityIndex);çä'TWH TaxableGainUnadj') ; çä     //False âçä'TWH GainAdjType1'(financialActivityIndex)çä  )çä)
+F1 4a7d8f8 4a7d878 0 0 0 0 2
+TWH GainAdjType1(financialActivityIndex)
+Funktion
+IF ('Policy CostBasisKnown' = 1 ; çä   /*Cost basis is known and transaction type affects cost basis*/ IF ('Policy LifeUSA MECInd' = 0 ; çä     /*Non-MEC*/ -MAX(('Policy Arrangement TotalAmt' //'Policy FinancialActivity FinActivityNetAmt'(financialActivityIndex)çä - 'Policy CostBasis');0) ; çä     //Allocate distribution to basis firstçäIF ('Policy LifeUSA MECInd' = 1 ; çä       /*MEC*/ -MIN('Policy Arrangement TotalAmt'; //'Policy FinancialActivity FinActivityNetAmt'(financialActivityIndex);çä'TWH TaxableGainUnadj') ; çä       //Allocate distribution to gain firstçä"Error:GainRemovedType1"çä    )çä) ; çä'Policy Arrangement TotalAmt' //'Policy FinancialActivity FinActivityNetAmt'(financialActivityIndex)çä/*If the cost basis is unknown, the entire distribution amount is returnedçäââas the gain removed*/çä)
+F1 4a7d978 4a7d7f8 0 4a7d9f8 0 0 2
+TWH DurationType
+Funktion
+IF (TransEffDur <= 6 ; çä   /*Duration is less than or equal to 6 years*///Trueçä 1 ; çä   //FalseçäIF (TransEffDur <= 16 ; çä     /*In years 6 to 15*///Trueâçä 2 ; çä     //Falseçä3çä  )çä)
+F1 4a7d9f8 4a7d7f8 4a7da78 4a7dc78 0 0 2
+TWH TaxableAmt(financialActivityIndex; yearIndex)
+Funktion
+IF ('CBG BypassAdjInd' = 1 ; çä   /*Financial activity type has no impact on the cost basis*///True - Return 0çä 0 ; çä   //FalseçäCASE('TWH TaxableAmtType';çä     /*Lookup the appropriate gain adjustment type to calculate*/ 1 : 'TWH TaxableAmtType1'(financialActivityIndex;0);çä    2 : 'TWH TaxableAmtType2'(financialActivityIndex;0);çä    3 : 'TWH TaxableAmtType3'(financialActivityIndex);çä    4 : 'TWH TaxableAmtType4'(financialActivityIndex);çä     : "Error:UnsupportedTaxableAmtType" /*Return error message*/ )çäçä)
+F1 4a7da78 4a7d9f8 0 4a7daf8 0 0 2
+TWH TaxableAmtType1(financialActivityIndex; loanIndex)
+Funktion
+IF ('TWH DurationType' = 1 ; çä   /*Contract in years 1 to 5*///Trueçä IF ('TWH TaxableGainUnadj' > 0 ; çä     /*There is a gain on the contract*///True çä IF ('Policy LifeUSA MECInd' = 0 ; çä       //TrueçäIF ('TWH DEFRATestType' = 1 ; çä         /*Contract subject to CVAT test*///True - Return the recapture amountçä 'TWH RecaptureAmt'(loanIndex) ; çä         //False çä"Error:TestTypeNotSupported"çä      ) ; çä     //FalseâçäMIN('TWH TaxableGainUnadj';'Policy Arrangement TotalAmt') //'Policy FinancialActivity FinActivityNetAmt'(0))çäçä  ) ; çä //Falseâçä0çä) ; çä //Falseçä"Error:ContractNotInYears1to5"çä)
+F1 4a7daf8 4a7d9f8 0 4a7db78 0 0 2
+TWH TaxableAmtType2(financialActivityIndex; loanIndex)
+Funktion
+IF ('TWH DurationType' = 1 ; çä   /*Duration in years 1 to 5*///Trueçä IF ('TWH TaxableGainUnadj' > 0 ; çä     /*There is a gain on the contract and in years 1 to 5*///Trueçä IF ('Policy LifeUSA MECInd' = 0 ; çä       //TrueçäIF ('TWH DEFRATestType' = 2 ; çä         /*Subject to the GLP/CV Corridor test*///Trueçä 'TWH RecaptureAmt'(loanIndex) ; çä         //Falseçä"Error:UnsupportedTestType"çä      ) ; çä     //FalseâçäMIN('TWH TaxableGainUnadj';'Policy Arrangement TotalAmt') //'Policy FinancialActivity FinActivityNetAmt'(0))çäçä  ) ; çä //False - No gain on contract => Return 0âçä0çä) ; çä //Falseçä"Error:NotInYears1to5"çä)
+F1 4a7db78 4a7d9f8 0 4a7dbf8 0 0 2
+TWH TaxableAmtType3(financialActivityIndex)
+Funktion
+IF ('TWH DurationType' = 2 && 'TWH TaxableGainUnadj' > 0 ; çä   /*Years 6 to 15 of contract and gain on contract greater than 0*///Trueçä MIN('Policy Life CashValueAmt' - 'TWH CVCorridorMaxCV';ABS('TWH GainAdj'(financialActivityIndex));'Policy Arrangement TotalAmt') ; çä   //'Policy FinancialActivity FinActivityNetAmt'(financialActivityIndex));çä//Falseâçä"DurationTypeNotYears6to15"çä)
+F1 4a7dbf8 4a7d9f8 0 0 0 0 2
+TWH TaxableAmtType4(financialActivityIndex)
+Funktion
+IF ('TWH DurationType' = 3 && 'TWH TaxableGainUnadj' > 0 ; çä   //Years 16+ and taxable gain greater than 0çä//TrueçäMAX('Policy Arrangement TotalAmt' //'Policy FinancialActivity FinActivityNetAmt'(financialActivityIndex)çä - 'CBG UnadjustedCostBasis';0) ; çä   //Falseâçä"DurationTypeNotGreaterThan16"çä)
+F1 4a7dc78 4a7d7f8 0 4a7dcf8 0 0 2
+TWH TaxableAmtType
+Funktion
+'ACCS CalcRule GetCalcRule'("CalcRules TaxableAmtType";'Policy ProductCode';TransEffDate;V_(Quote('Policy LifeUSA MECInd');Quote('PI LifeUSAProduct DefLifeInsMethodCC id ext'('Policy ProductCode';TransEffDate));Quote('TWH DurationType')))
+F1 4a7dcf8 4a7d7f8 0 4a7dd78 0 0 2
+--TWH RolloverTaxableGain
+Funktion
+IF('Policy CostBasisKnown'çäâ&&çäâ'FinActivityType is External Rollover'('Policy Arrangement ArrType');çäâ/*Cost basis is known and transaction is an external rollover*/çäââçäâ//True - Rollover interest amountçäâ'Policy FinancialActivity RolloverIntAmt'(0);çäâçäâ//False - Errror messageçäâ"Error:UnknownCostBasis")
+F1 4a7dd78 4a7d7f8 0 4a7ddf8 0 0 2
+TWH TaxableGain
+Funktion
+IF ('CBG Exchange1035Ind'(0) = 1 ; çä   /*Transaction is 1035 exchange*///Trueçä 'TaxCompliance 1035TaxableGain' ; çä   //Falseçä'TWH TaxableGainUnadj' + 'TWH GainAdj'(0)çä)
+F1 4a7ddf8 4a7d7f8 0 4a7de78 0 0 2
+TWH TaxableGainUnadj
+Funktion
+MAX('Policy Life CashValueAmt' - 'Policy CostBasis';0)
+F1 4a7de78 4a7d7f8 0 4a7def8 0 0 2
+TWH DEFRATestType
+Funktion
+CASE('INPUT Policy LifeUSA DefLifeInsMethod';çä  5 : 1;çä  4 : 2;çä   : "Error:TestCodeNotRecognized")çä
+F1 4a7def8 4a7d7f8 0 4a7df78 0 0 2
+TWH CVCorridorMaxCV
+Funktion
+'Policy Life FaceAmt' / 'Policy LifeUSA CVCorridorFactor'
+F1 4a7df78 4a7d7f8 0 4a7dff8 0 0 2
+TWH RecaptureAmt(loanIndex)
+Funktion
+IF ('TWH DEFRATestType' = 1 ; çä   /*CVAT test applies*///Trueçä 'Policy Life CashValueAmt' - 'Policy LifeUSA GuidelineSinglePrem' ; çä   //FalseâçäIF ('TWH DEFRATestType' = 2 ; çä     /*GLP/CV corridor test applies*///Trueçä MAX('Policy CostBasis' - 'Policy LifeUSA GuidelineAnnPrem';'Policy Life CashValueAmt' - 'TWH CVCorridorMaxCV') ; çä     //Falseçä"Error:UnsupportedDEFRATestTypeCode"çä  )çä)
+F1 4a7dff8 4a7d7f8 0 4a7e078 0 0 2
+TWH MECTaxPenalty(yearIndex)
+Funktion
+IF ('ArrType Is Loans'('Policy Arrangement ArrType') ; çä   //'FinActivityType is Gross Loan'('Policy Arrangement ArrType') || çä//'FinActivityType is Automatic Premium Loan'('Policy Arrangement ArrType');çä/*Gross loan or automatic premium loan*///True - Transaction treated as disbursement, penalty on gain removedçäMIN('Policy Arrangement TotalAmt'; //'Policy FinancialActivity FinActivityNetAmt'(0);çä'TWH TaxableGainUnadj') * 0.01 * 'Policy LifeUSA MECTaxPenaltyPct' ; çä   //False - Penalty on transaction amountçäIF ('TWH MECTaxPenaltyInd'(yearIndex) = 1 ; çä     /*MEC Tax penalty applies*///True - Return the tax penaltyçä 'Policy LifeUSA MECTaxPenaltyPct' * 'TWH TaxableAmt'(0;0) * 0.01 ; çä     //False - Return error messageçä0çä  )çä)
+F1 4a7e078 4a7d7f8 0 0 0 0 2
+TWH MECTaxPenaltyInd(yearIndex)
+Funktion
+IF ('ParticipantStatus is Disabled'('Policy LifeParticipant ParticipantStatus'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');0)) || 'Std Attained Age'('Policy LifeParticipant IssueAge'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');0);'Policy EffDate';TransEffDate) >= 60 ; çä   /*Owner is disabled or older than 60*///True - Return 0çä 0 ; çä   //FalseçäIF (('Policy LifeUSA MECInd' && 'Std Attained Age'('Policy LifeParticipant IssueAge'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');0);'Policy EffDate';TransEffDate) < 60) || 'OrgForm is Corporation'('Party OrgForm') ; çä     /*Contract is MEC and owner's age is less than 59.5 or owner is a corporation*///True - Return 1çä 1 ; çä     //False - Return 0çä0çä  )çä)
+F1 4a7e0f8 4a7cf78 4a7e178 4a7e478 0 0 2
+--CalcRule Lookups
+Funktion
+
+F1 4a7e178 4a7e0f8 0 4a7e1f8 0 0 2
+TWH Lookup WithholdingApplies
+Funktion
+'ACCS CalcRules TWH Applies'('Policy ProductCode';TransEffDate)
+F1 4a7e1f8 4a7e0f8 0 4a7e278 0 0 2
+TWH Lookup FedWHpct
+Funktion
+'ACCS CalcRules TWH FedWHpct'('Policy ProductCode';TransEffDate)
+F1 4a7e278 4a7e0f8 0 4a7e2f8 0 0 2
+TWH Lookup FedIntWHpct
+Funktion
+'ACCS CalcRules TWH FedIntWHpct'('Policy ProductCode';TransEffDate)
+F1 4a7e2f8 4a7e0f8 0 4a7e378 0 0 2
+TWH Lookup AllowOptOut(index)
+Funktion
+CASE(index;çä  1 : 'ACCS CalcRules TWH FedAllowOptOut'('Policy ProductCode';TransEffDate);çä  2 : 'ACCS CalcRules TWH StateAllowOptOut'('Policy ProductCode';TransEffDate);çä   : "Incorrect Index")çä
+F1 4a7e378 4a7e0f8 0 4a7e3f8 0 0 2
+TWH Lookup StateWHpct
+Funktion
+'ACCS CalcRules TWH StateWHpct'('Policy ProductCode';TransEffDate)
+F1 4a7e3f8 4a7e0f8 0 0 0 0 2
+TWH Lookup StateWHBasis
+Funktion
+'ACCS CalcRules TWH StateWHBasis'('Policy ProductCode';TransEffDate)
+F1 4a7e478 4a7cf78 4a7e4f8 0 0 0 2
+--Indicators
+Funktion
+
+F1 4a7e4f8 4a7e478 0 4a7e578 0 0 2
+Federal Tax Withholding indicator
+Funktion
+CASE('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index');çä  "1";"6";"8" : 1;çä  "4" : 0;çä   : "Error")çä
+F1 4a7e578 4a7e478 0 4a7e5f8 0 0 2
+Qualified Indicator
+Funktion
+IF ('Qualified Code is NotQualified'('Policy QualifiedCode') ; çä  0 ; çä  IF ('Qualified Code is Qualified'('Policy QualifiedCode') ; çä    1 ; çä    "Error: Incorrect value for 'INPUT Policy QualifiedCode"çä  )çä)
+F1 4a7e5f8 4a7e478 0 4a7e678 0 0 2
+Federal Withholding Override Indicator
+Funktion
+CASE('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH Federal Withholding Index');çä  "1" : 0;çä  "4";"6";"8" : 1;çä   : "Error")çä
+F1 4a7e678 4a7e478 0 4a7e6f8 0 0 2
+State Witholding Override Indicator
+Funktion
+CASE('Policy Arrangement TaxWithholding TaxWithholdingType'('TWH State Withholding Index');çä  "1" : 0;çä  "4";"6";"8" : 1;çä   : "Error")çä
+F1 4a7e6f8 4a7e478 0 0 0 0 2
+CashDistInd
+Funktion
+CASE('Policy Arrangement ArrType';çä   /*Transaction Codes for transactions withhout a cash distribution*/ 4;1000500007;1000500008 : 0;çä   /*Dividend Apply,Collateral Assignment on MEC or Qualified contract or Taxable Ownership Change*/  : 1 /*Else*/ )çä
+F1 4a7e778 40cb61c 4a7e7f8 0 0 0 2
+--  Misc  --
+Funktion
+
+F1 4a7e7f8 4a7e778 4a7e878 4a7e8f8 0 0 2
+TWH Federal Withholding Index
+Funktion
+'TWH Federal Withholding Index rec'(0)
+F1 4a7e878 4a7e7f8 0 0 0 0 2
+TWH Federal Withholding Index rec(index)
+Funktion
+IF (UNDEFINED("INPUT Policy Arrangement number of TaxWithholding") ; çä  1 ; çä  IF (index >= 'Policy Arrangement number of TaxWithholding' ; çä    'Messages SystemMessage'("CA1060";'Message Language';V_('TaxWithholding Model Name';"'TWH Federal Withholding Index rec'")) ; çä    IF ('Policy Arrangement TaxWithholding TaxWithholdingPlace'(index) = 1 ; çä      index ; çä      'TWH Federal Withholding Index rec'(index + 1)çä    )çä)çä)
+F1 4a7e8f8 4a7e778 4a7e978 4a7e9f8 0 0 2
+TWH State Withholding Index
+Funktion
+'TWH State Withholding Index rec'(0)
+F1 4a7e978 4a7e8f8 0 0 0 0 2
+TWH State Withholding Index rec(index)
+Funktion
+IF (UNDEFINED("INPUT Policy Arrangement number of TaxWithholding") ; çä  2 ; çä  IF (index >= 'Policy Arrangement number of TaxWithholding' ; çä    'Messages SystemMessage'("CA1061";'Message Language';V_('TaxWithholding Model Name';"'TWH State Withholding Index rec'")) ; çä    IF ('Policy Arrangement TaxWithholding TaxWithholdingPlace'(index) = 2 ; çä      index ; çä      'TWH State Withholding Index rec'(index + 1)çä    )çä)çä)
+F1 4a7e9f8 4a7e778 0 0 0 0 2
+TaxWithholding Model Name
+Funktion
+"TaxWithholding"
+A0 40cb70c 0 0 0 0 0 0
+
+T0 40cb784 0 4a7ea78 0 0 0 0
+
+T1 4a7ea78 40cb784 4a7eaf8 0 0 0 2
+--1035CostBasis
+key
+value
+T4 4a7eaf8 4a7ea78 0 0 0 0 2
+TABLE FinActType
+FinActType
+Ind
+196
+*
+210
+*
+211
+*
+I0 40cb7fc 0 4a7eb78 0 0 0 0
+
+I0 4a7eb78 40cb7fc 0 0 0 0 0
+CostBasis.pms
+-
+O0
+E0
+L0
+B0
+P1
+48fc340
+F16
+48fc4c0
+4a7aff8
+4a7cf78
+4a7cff8
+4a7d0f8
+4a7d2f8
+4a7d3f8
+4a7d7f8
+4a7e0f8
+4a7e478
+4a7e4f8
+4a7e578
+4a7e5f8
+4a7e678
+4a7e6f8
+4a7e778
+A0
+T1
+4a7ea78
+!123
+48fc3c0 3 -1
+Description: Taxable amount applicable for federal, interest federal and state tax withholding.çä çäModification Log:çä9/20/2013 - WMAJ1301-1298 - CMC - replaced call to withdrawal amount with Adj Withdrawal Amountçä09/12/2012 wmAJ Relase 2 Sprint 4 CMC updated to use withdrawal amount function for valuation callçä07/12/2012 wmaJ Release 2 Sprint 1 CMC updated to use product type to split the logicçäwmA-J - 1/3/2012 - MC - B27-3-US225-13 - Initial Calculation/Rule.çä07/24/2012 wmaJ Release 2 Sprint 1 GDR updated to use Annuity TWH TaxableAmount çäfor the calculation of OUTPUT Taxable Amount.
+48fc3c0 4 -1
+Description: Calculation of federal tax withholding amount.çä çäModification Log:çä04/19/2013 - WMAJ1301-942 - rm - Replaced withdrawal amount parameter with 'Annuity TWH Adj Withdrawal Amount'çä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä09/12/2012 wmAJ Relase 2 Sprint 4 CMC updated to use withdrawal amount function for valuation callçä07/12/2012 wmaJ Release 2 Sprint 1 CMC updated to use product type to split the logicçäwmA-J - 1/3/2012 - MC - B27-3-US225-13 - Initial Calculation/Rule.
+48fc3c0 5 -1
+Description: Calculation of state tax withholding amount.çä çäModification Log:çä04/19/2013 - WMAJ1301-942 - rm - Replaced withdrawal amount parameter with 'Annuity TWH Adj Withdrawal Amount'çä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä09/12/2012 wmAJ Relase 2 Sprint 4 CMC updated to use withdrawal amount function for valuation callçä07/12/2012 wmaJ Release 2 Sprint 1 CMC updated to use product type to split the logicçäwmA-J - 1/3/2012 - MC - B27-3-US225-13 - Initial Calculation/Rule.
+48fc3c0 5 2
+
+48fc3c0 6 -1
+Description: Calculation of interest federal tax withholding amount.çä çäModification Log:çä çäwmA-J - 1/3/2012 - MC - B27-3-US225-13 - Initial Calculation/Rule.
+48fc3c0 7 -1
+Description: Calculation of the total tax withholding amount.çä çäModification Log:çä04/19/2013 - WMAJ1301-942 - rm - Replaced withdrawal amount parameter with 'Annuity TWH Adj Withdrawal Amount'çä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä09/12/2012 wmAJ Relase 2 Sprint 4 CMC updated to use withdrawal amount function for valuation callçä07/12/2012 wmaJ Release 2 Sprint 1 CMC updated to use product type to split the logicçäwmA-J - 1/3/2012 - MC - B27-3-US225-13 - Initial Calculation/Rule.
+48fc3c0 8 -1
+Description: Minimum interest reporting amount for tax withholding purposes.çä çäModification Log:çä çäwmA-J - 1/3/2012 - MC - B27-3-US225-13 - Initial Calculation/Rule.
+48fc3c0 10 -1
+Description: Returns the Taxable Gain on a contract after a supported transaction has been processed.çä çäModification Log:çä9/20/2013 - WMAJ1301-1298 - CMC - replaced call to withdrawal amount with Adj Withdrawal Amountçä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä09/12/2012 wmAJ Relase 2 Sprint 4 CMC updated to use withdrawal amount function for valuation callçä07/12/2012 wmaJ Release 2 Sprint 1 CMC updated to use product type to split the logicçäwmA-J - 4/17/2012 - MC - U12 - Added annuity support.çäwmA-J - 2/14/2012 - MC - U15-US333 - Initial Calculation/Rule.
+48fc3c0 11 -1
+Description: Returns the MEC tax penalty that applies on the contract.çä çäModification Log:çä04/19/2013 - WMAJ1301-942 - rm - Replaced withdrawal amount parameter with 'Annuity TWH Adj Withdrawal Amount'çä11/08/2012 wmAJ 1301 Release 2 Sprint 6 CMC removed MEC from OUTPUT Name.çä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä09/12/2012 wmAJ Relase 2 Sprint 4 CMC updated to use withdrawal amount function for valuation callçä07/12/2012 wmaJ Release 2 Sprint 1 CMC updated to use product type to split the logicçäwmA-J - 4/17/2012 - MC - U12 - Added annuity support.çäwmA-J - 3/9/2012 - MC - U15-US333 - Changes required as a result of 'Policy Coverage CurrentAmt' replacing 'Policy Life FaceAmt'.çäwmA-J - 2/18/2012 - JL - U15 - Don;t hardocde yearIndex to 0, rather TransEffDurçäwmA-J - 2/14/2012 - MC - U15-US333 - Initial Calculation/Rule.
+48fc3c0 12 -1
+Description: Returns the Cost Basis removed for supported transaction types.çä çäModification Log:çä9/20/2013 - WMAJ1301-1298 - CMC - replaced call to withdrawal amount with Adj Withdrawal Amountçä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä09/12/2012 wmAJ Relase 2 Sprint 4 CMC updated to use withdrawal amount function for valuation callçä07/12/2012 wmaJ Release 2 Sprint 1 CMC updated to use product type to split the logicçäwmA-J - 4/17/2012 - MC - U12 - Added annuity support.çäwmA-J - 4/12/2012 - MC - U15-US333 - Initial Calculation/Rule.
+48fc5c0 -2 -2
+Description: Calculates the cost basis after an incoming 1035 exchange or a cost basis adjustmentçä çä
+48fc640 -2 -2
+Description: Calculates the taxable gain after an incoming 1035 exchangeçä
+48fc6c0 -2 -2
+Description: Calculates the 1035 accumulated value.çä
+48fc7c0 -2 -2
+Description: Calculates the Pre-TEFRA Cost Basis after an incoming 1035 exchange.çä çäModification log:çä07/05/2012 - wmA-J - BP - Remover LifeUSA transactionçä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fc840 -2 -2
+Description: Calculates the Post-TEFRA Cost Basis after an incoming 1035 exchange.çä çäModification log:çä07/05/2012 - wmA-J - BP - Remover LifeUSA transactionçä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fc8c0 -2 -2
+Description: Calculates the Pre-TEFRA Rollover interest after an incoming 1035 exchange.çä çäModification log:çä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fc940 -2 -2
+Description: Calculates the Post-TEFRA Rollover interest after an incoming 1035 exchange.çä çäModification log:çä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fc9c0 -2 -2
+Description: Calculates the Pre-TEFRA Accumulated value.çä çäModification log:çä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fca40 -2 -2
+Description: Calculates the Post-TEFRA Accumulated value.çä çäModification log:çä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fcb40 -2 -2
+Description: Calculates the pro-rata rate to apply to the partial 1035 exchange.çä çäModification log:çä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fcbc0 -2 -2
+Description: Calculates the pro-rata pre-TEFRA portion to be exchanged.çä çäModification log:çä01/25/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Removed roundingçä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+48fcc40 -2 -2
+Description: Calculates the pro-rata post-TEFRA portion to be exchanged.çä çäModification log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä05/15/2012 - 5/15/2012 - wmA-J - MC - U12 - Added funtionality to support outgoing 1035 exchange tax withholding calculations on annuities.çä01/25/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Removed roundingçä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+4a7aef8 -2 -2
+Description: Calculates the pro-rata pre-TEFRA portion to be exchanged.çä çäModification log:çä01/25/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Removed roundingçä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+4a7af78 -2 -2
+Description: Calculates the pro-rata post-TEFRA portion to be exchanged.çä çäModification log:çä01/25/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Removed roundingçä01/09/2012 - 5/15/2012 - wmA-J - JvdM - U14 (US518) - Initial calculation
+4a7b0f8 -2 -2
+Description:  Total policy withholidng.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä07/09/2012 - wmA-J - BP - Add EWP amount.
+4a7b178 -2 -2
+ Description: Returns the federal tax withholding amountçä çäModification Log:çä12/03/2014 wmA-J 1501 Sprint 9 JvdM Override moved to be the first IF statement.çä1/30/2013 wmA-J 1301 Release 2 Sprint 9 Jira 765 update for check for full and partial annuitizations.çä09/27/2012 wmaJ Release 2 Sprint 4 CMC added roundingçä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' to 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä06/19/2012 - 5/15/2012 - wmA-J - MC - U12 - Index no longer required as parameter for 'Annuity TWH TaxableAmount' function.çä5/2/2012 - 5/15/2012 - wmA-J - MC - U12-US232 - Added support for 1035 Exchanges.çä3/26/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7b178 0 1
+
+4a7b1f8 -2 -2
+Description: Returns the federal withholding percentage for supported annuities.çä çäModification Log:çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä5/14/2012 - 5/15/2012 - wmA-J - MC - U12 - Add functionality to return an override percentage of zero if input left blank.çä5/14/2012 - 5/15/2012 - wmA-J - MC - U12 - Add functionality to ensure override percentage cannot equal zero.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b278 -2 -2
+Description: Returns the federal withholding override percentage.çä çäModification Log:çä09/27/2012 wmaJ Release 2 Sprint 4 CMC change the hard coded 1 to the Federal withholding index functionçä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä5/14/2012 - 5/15/2012 - wmA-J - MC - U12 - Add functionality to return an override percentage of zero if input left blank.
+4a7b2f8 -2 -2
+Description: Returns the state tax withholding amount.çä çäModification Log:çä12/03/2014 wmA-J 1501 Sprint 9 JvdM Override moved to be the first IF statement.çä1/30/2013 wmA-J 1301 Release 2 Sprint 9 Jira 765 update for check for full and partial annuitizations.çä09/27/2012 wmaJ Release 2 Sprint 4 CMC added roundingçä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' with 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä06/19/2012 - 5/15/2012 - wmA-J - MC - U12 - Index no longer required as parameter for 'Annuity TWH TaxableAmount' function.çä5/2/2012 - 5/15/2012 - wmA-J - MC - U12-US232 - Added support for 1035 Exchanges.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b2f8 0 2
+
+4a7b378 -2 -2
+Description: Returns the state withholding percentage on supported annuities.çä çäModification Log:çä09/16/2013 - WMAJ1301-1298 - rm - Replaced string error message with standard ERROR functionçä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä6/13/2012 - 5/15/2012 - wmA-J - MC - U12 - State withholding tax override based on whether withholding type is "Default", "Mandatory" or "N/A".çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b3f8 -2 -2
+Description: Returns the Early withdrawal penalty that applies on the annuity. If a 'non-qualified' distribution occurs on a Roth IRA AND it occurs within the 5 year waiting period, a 10% penalty tax is withheld on the gain removed. If 'Conversion Amounts' (funds from another annuity that are transferred into a Roth IRA) are withdrawn from a Roth IRA within the 5 year period that applies (note that this may differ from the 5 year period on the Roth IRA itself), a 10% penalty is withheld on the 'Conversion Amounts' that have been withdrawn.çä çäModification Log:çä1/30/2013 wmA-J 1301 Release 2 Sprint 9 Jira 765 update for check for full and partial annuitizations.çä09/27/2012 wmaJ Release 2 Sprint 4 CMC added roundingçä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä05/16/2012 - 5/15/2012 - wmA-J - MC - U12-US232 - Replaced 'Annuity TWH EWP Conditions' with NOT('Annuity TWH QualifiedDistInd')çä04/24/2012 - 5/15/2012 - wmA-J - MC - U12-US232 - Support for Early withdrawal penalty calculation on non-Roth IRA contracts.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b478 -2 -2
+Description: The 10% Early Withdrawal Penalty (EWP) tax amount as a result of 'Conversion Amounts' being withdrawan early (from a Roth IRA).çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä04/24/2012 - 5/15/2012 - wmA-J - MC - U12 - Added Roth IRA checkçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b4f8 -2 -2
+Description: Returns the total 'Conversion Amounts' drawn that are subject to the early withdrawal penalty.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to Cost Basis Amt functionçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b578 -2 -2
+Description: Returns True IF the EWP applies otherwise retuns Falseçä çäModification Log:çä30/04/2012 - 5/15/2012 - wmA-J - MC - U12 - Added check to ensure conversion amount 'first tax year' is after the contract 'first tax year'.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b5f8 -2 -2
+Description: Returns 'Conversion Amounts' disbursed from a 'Conversion Amount/Conversion Year' pairing on a first in first out basis.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to Cost Basis Amt functionçä05/16/2012 - 5/15/2012 - wmA-J - MC - U12 - Correction to function used to determine the conversion monies disbursed.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b678 -2 -2
+Description: Returns True IF a 10% early withdrawal penalty appliesçä çäModification Log:çä04/24/2012 - 5/15/2012 - wmA-J - MC - U12-US232 - 'Annuity TWH QualifiedDistInd' function does the same thing.çä04/24/2012 - 5/15/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7b778 -2 -2
+Description: Returns the Taxable amount on the annuity.çä çäModification Log:çä07/03/2013 wmaJ 1193 cmc added Full and partial annuitization checks and re ordered the conditions.çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä07/02/2012 - wmA-J - MC - U12 - Renamed 'Policy FinancialActivity TaxWithholding TaxDisburseType' to 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä06/19/2012 - 5/15/2012 - wmA-J - MC - U12 - Index no longer required as parameterçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b7f8 -2 -2
+Description: Retruns the taxable amount on disbursements from a non-qualified annuity.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä3/26/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7b878 -2 -2
+Description: Retruns the taxable amount on disbursements from a qualified annuity.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä07/02/2012 - wmA-J - MC - U12 - Renamed 'Policy FinancialActivity TaxWithholding TaxDisburseType' to 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b8f8 -2 -2
+Description: Retruns the taxable amount on disbursements from a Roth IRA.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä07/02/2012 - wmA-J - MC - U12 - Renamed 'Policy FinancialActivity TaxWithholding TaxDisburseType' to 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b978 -2 -2
+Description: Returns true if the disbursement from a Roth IRA is a 'qualified' distribution.çä çäModification Log:çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7b9f8 -2 -2
+Description: Returns True IF the individual satisfies the 'qualified' distribution requriements otherwise returns False.çä çäModification Log:çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7ba78 -2 -2
+Description: Returns True if the disbursement type is an allowoble exception for tax purposesçä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä07/02/2012 - wmA-J - MC - U12 - Renamed 'Policy FinancialActivity TaxWithholding TaxDisburseType' to 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7baf8 -2 -2
+Description: Returns True IF the transaction effective date occurs within 5 years of the 'First Tax Year' and an EWP applies.çä çäModification Log:çä03/30/2012 - 5/15/2012 - wmA-J - MC - U12 - Initial Rule.
+4a7bbf8 -2 -2
+Description: Returns the withholding basis on an annuity contract.çä çä1=Federalçä2=Stateçä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7bc78 -2 -2
+Description: Returns the withholding basis on a non-qualified annuity.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC use disbursement amout parm instead of FinActivityGrossAmtçä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TAxableGain functionçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7bcf8 -2 -2
+Description: Description: Returns the withholding basis on a qualified annuity.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TAxableGain functionçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7bd78 -2 -2
+Description: Description: Returns the withholding basis on a Roth IRA.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TaxableGain functionçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7be78 -2 -2
+Description: Returns the taxable gain on the contract.çä çäModification Log:çä10/30/2013 - WMAJ1301-1392 - rm - Replaced check for arrType with 'STD Derived ArrType'çä05/16/2013 - WMAJ1301-941 - rm - Use cash value instead of disburseAmt parameter to determine gainçä11/1/2012 wmaJ 1301 Release 2 Sprint 6 CMC updated partial withdrawal to use disburseAmt parm and restructured.çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/10/2012 - wmaJ Release 2 Sprint 4 CMC for wmA J call Surrender charge calc instead of input data.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TAxableGain functionçä3/26/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7bef8 -2 -2
+Description: Returns the gain removed as a result of a disbursement.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7bf78 -2 -2
+Description: Returns the taxable gain removed as a result of a disbursement on non-qualified annuities.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TAxableGain functionçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' with 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä5/15/2012 - wmA-J - MC - U12-US232 - Added functionality to support 1035 exchange calculations.çä3/26/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7bff8 -2 -2
+Description: Returns the taxable gain removed as a result of a disbursement on qualified annuities.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TAxableGain functionçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' with 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä5/15/2012 - wmA-J - MC - U12 - Added functionality to return the earnings distributed as the gain removed if the tax disbursement type is a withdrawal of excess contributions before the filing date.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c078 -2 -2
+Description: Returns the gain removed as a result of a disbursement on Roth IRA.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TAxableGain functionçä07/02/2012 - wmA-J - MC - U12 - Renamed 'Policy FinancialActivity TaxWithholding TaxDisburseType' to 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä5/15/2012 - wmA-J - MC - U12 - Added functionality to return the earnings distributed as the gain removed if the tax disbursement type is a withdrawal of excess contributions before the filing date.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c178 -2 -2
+Description: Returns the cost basis on a contract after a disbursement.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to Cost Basis Amt functionçä07/05/2012 - wmA-J - BP - Restricted cost basis to Non-Qualified Annuities and Roth IRAs.çä07/03/2012 - wmA-J - BP - Added CBG CostBasisAdj to allow cost basis to update for different transaction types if not disbursement.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c1f8 -2 -2
+Description: Returns the cost basis on a contract before any disbursements.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to Cost Basis Amt functionçä06/14/2012 - wmA-J - MC - U12 - Correction to Cost Basis for Roth IRA's (i.e. add 'Policy CostBasis')çä05/16/2012 - wmA-J - MC - U12 - Modified to use calctypeçä05/16/2012 - wmA-J - MC - U12 - Assume all conversion payments are from deductible contributions and are taxable when withdrawn.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c278 -2 -2
+Description:âDetermines the totoal cost basis as the sum of the pre TEFRA and post TEFRA cost basis amounts.çä çäModification Log:çä08/13/2012   - wmA-J - Release 2 Sprint 1 CMC initial calc.
+4a7c2f8 -2 -2
+Description: Returns tthe gross amount of all conversion payments on a Roth IRA.çä çäModification Log:çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä5/15/2012 - wmA-J - MC - U12 - Only perform the calculation if a conversion payment has taken place on the roth IRA.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c378 -2 -2
+Description: Returns the cost basis removed as a result of a disbursement.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC added disbursement amount parm to Cost basis removed type 3çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to Cost Basis Removed functionsçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c3f8 -2 -2
+Description: Returns the cost basis removed as a result of a disbursement from a non-qualified annuity.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TaxableGain functionçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' with 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä5/15/2012 - wmA-J - MC - U12-US232 - Correction to the allocation of a distribution to basis and gain, allocated to gain first and then cost basis.çä5/2/2012 - wmA-J - MC - U12-US232 - Added support for 1035 Exchanges.çä3/26/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7c478 -2 -2
+Description: Returns the cost basis removed as a result of a disbursement from a non-qualified annuity.çä çäModification Log:çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TaxableGain functionçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' with 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä5/15/2012 - wmA-J - MC - U12-US232 - Correction to the allocation of a distribution to basis and gain, allocated to gain first and then cost basis.çä5/2/2012 - wmA-J - MC - U12-US232 - Added support for 1035 Exchanges.çä3/26/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7c578 -2 -2
+Description: Returns the cost basis removed as a result of a disbursement from a non-qualified annuity.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to TaxableGain functionçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' with 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä5/15/2012 - wmA-J - MC - U12-US232 - Correction to the allocation of a distribution to basis and gain, allocated to gain first and then cost basis.çä5/2/2012 - wmA-J - MC - U12-US232 - Added support for 1035 Exchanges.çä3/26/2012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule.
+4a7c5f8 -2 -2
+Description:  Returns the cost basis removed as a result of a disbursement from a qualified annuity.çä çäModification Log:çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c678 -2 -2
+Description:  Returns the cost basis removed as a result of a disbursement from a Roth IRA.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC replace FinActivityGrossAmt with disbursement Amount parmçä08/24/2012 - wmaJ Release 2 Sprint 3 Tax Withholding  - removed calcType from withholding functions.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC added disburseAmt parm to Cost Basis Amt functionçä07/02/2012 - wmA-J - MC - U12 - Replaced 'Policy FinancialActivity TaxWithholding TaxDisburseType' with 'Policy FinancialActivity TaxWithholding TaxDisbursementType' to ensure consistency with ACORD standards as 'TaxDisbursementType' is a supported property.çä5/15/2012 - wmA-J - MC - U12 - Added functionality supporting withdrawals of excess contributions before the filing date.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c778 -2 -2
+Description: Returns the "calcType" used for the line of business under consideration (OLI_LU_QUALPLANTYPE).çä çäNQ= Non qualified annuityçäQ= Qualified annuity that is not Roth-IRAçäRIRA= Roth-IRAçä çäModification Log:çä09/25/2012 wmA-J Release 2 Sprint 4 CMC added 401k (2).çä05/23/2012 - wmA-J - MC - U12-US232 - calcType used as opposed to WHType.çä03/26/2012 - wmA-J - MC - U12-US232 - Initial rule.çä
+4a7c878 -2 -2
+Description: Returns the federal withholding percent rule.çä çä1=Standard federal withholding percent appliesçä2=Mandatory 20% withholding appliesçä4=Withholding override percentageçä5=No withholding applies because qualified distribution from a Roth IRA.çä çäModification Log:çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c8f8 -2 -2
+Description: Returns the state withholding percent rule.çä çä1=Standard state withholding percent appliesçä2=Mandatory 20% withholding appliesçä4=Withholding override percentageçä5=No withholding applies because qualified distribution from a Roth IRA.çä çäModification Log:çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c978 -2 -2
+Description: Returns True IF the 10% early withdrawal penalty (EWP) on qualified annuities applies, otherwise returns false.çä çäModification Log:çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7c9f8 -2 -2
+Description: Returns the federal and/or state withholding amount.çä çä1=index value for Federal tax withholding çä2=index value for State tax withholdingçä çäModification Log:çä08/13/2012   - wmA-J - Release 2 Sprint 1 CMC changed to IF structure so that calculated index value could be used for comparison.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7ca78 -2 -2
+Description: Returns True IF the withholding should be bypassed based on the transaction code and the tax disbursement type code and False otherwise.çä çä1=index value for federal withholdingçä2=index value for state withholdingçä çäModification Log:çä03/26/2012 - wmA-J - MC - U12-US232 - Initial rule
+4a7caf8 -2 -2
+Description: Returns True IF the withholding should be bypassed (based on transaction type, tax disbursement type and qualified plan type) otherwise returns False.çä çäModification Log:çä03/26/2012 - wmA-J - MC - U12-US232 - Initial rule
+4a7cb78 -2 -2
+Description: Returns True IF withholding should be bypassed as a result of an override to 0.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7cc78 -2 -2
+Description: Returns True IF federal tax withholding is an override.çä çäModification Log:çä09/27/2012 wmaJ Release 2 Sprint 4 CMC added type 3çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/13/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7ccf8 -2 -2
+Description: Description: Returns True IF state tax withholding is an override.çä çäModification Log:çä09/16/2013 - WMAJ1301-1298 - rm - Replaced string error message with standard ERROR functionçä10/31/2012 wmaJ Release 2 Sprint 4 CMC added type 2çä09/27/2012 wmaJ Release 2 Sprint 4 CMC added type 3çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/13/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä6/13/2012 - wmA-J - MC - U12 - Add check on whether state withholding type is "Default", "Mandatory" or "N/A".çä04/03/2012 - wmA-J - MC - U12 - Initial Calculation/Rule.
+4a7cd78 -2 -2
+Description: Returns True IF a 20% Mandatory withholding applies on a qualified annuity. çä çäModification Log:çä 3/262012 - wmA-J - MC - U12-US232 - Initial Calculation/Rule. 
+4a7ce78 -2 -2
+Description:  Returns the amount to be applied to the withholding calculation.çä çäModification Log:çä10/30/2013 - WMAJ1301-1392 - rm - Replaced check for arrType with 'STD Derived ArrType'çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/12/2012 wmA-J Release 2 Sprint 4 initial calc
+4a7cef8 -2 -2
+Description:  Returns the amount to be applied to the withholding calculation with adjustments for qualified plans.çä çäModification Log:çä10/30/2013 - WMAJ1301-1392 - rm - Replaced check for arrType with 'STD Derived ArrType'çä9/20/2013 - WMAJ1301-1298 - CMC - changed usage of Policy Arrangement TotalAmt with Gross Withdrawal Amt functionsçä07/30/2013 wmA-J 1401 Release 1 Sprint 3 JvdM Deduct transaction fee.çä04/19/2013 - WMAJ1301-942 - rm - Initial calcçä
+4a7cff8 -2 -2
+Description: Calculate the total withholding amountçä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule
+4a7d178 -2 -2
+Description: Determine if federal interest withholding applies. Returns 1 if it applies otherwise returns 0çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule
+4a7d1f8 -2 -2
+ Description: Calculates federal withholding amountçä çäModification Log:çä05/20/2013 - pA1401 - rm - commented out "EQUAL 1" for boolean expressionsçä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule.
+4a7d278 -2 -2
+Description: Calculates the federal interest withholding amountçä çäModification Log:çä05/20/2013 - pA1401 - rm - commented out "EQUAL 1" for boolean expressionsçä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule.
+4a7d378 -2 -2
+Description: Calculates the state withholding amount.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule.
+4a7d478 -2 -2
+Description: Determine the withholding basis used to calculate federal and state withholding amounts. If 'index'=1, then the federal withholding basis is returned. If 'index'=2, the state withholding basis is returned and if 'index'=3, the interest federal withholding basis is returned.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä1/9/2012 - wmA-J - MC - B27-3-US225-13 - Initial Calculation/Rule. 
+4a7d4f8 -2 -2
+Description: Calculates the taxable amount on the transactionçä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä2/15/2012 - wmA-J - MC - B27-3-US225 - Integration with requirement U15-US333 (Cost basis and Taxable gain) 'CBG TaxableAmt' function.çä2/03/2012 - wmA-J - MC - B27-3-US225-15 - Added correct readability rule.çä1/9/2012 - wmA-J - MC - B27-3-US225-15 - Initial Calculation/Rule.
+4a7d578 -2 -2
+Description: Determine the gain removed on the transaction.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä5/15/2012 - wmA-J - 2/16/2012 - MC - B27-3-US225 - Added 'ABS' function to 'CBG GainAdj' to ensure non-negative tax withholding.çä2/15/2012 - wmA-J - MC - B27-3-US225 - Integration with requirement U15-US333 (Cost basis and Taxable gain) 'CBG GainAdj' function.çä2/3/2012 - wmA-J - MC - B27-3-US225-14- Correction of gain removed if lapse and loan balance exceeds cost basis.çä1/9/2012 - wmA-J - MC - B27-3-US225-14 - Initial Calculation/Rule. 
+4a7d678 -2 -2
+Description: Determines if there is a gain on the transaction. Returns a 1 if there is a gain otherwise returns 0.çä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-13 - Initial Calculation/Rule.
+4a7d6f8 -2 -2
+Description: Determine whether to bypass the tax withholding. If 'index' = 1, federal tax withholding is under consideration. If 'index' = 2, state tax withholding is under consideration. Returns 1 if the withholding is bypassed otherwise returns 0.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä1/09/2012 - wmA-J - MC - B27-3-US225-12 - Initial Calculation/Rule.
+4a7d778 -2 -2
+Description: Determines whether the tax withholding is mandatory, voluntary or non-applicable. Index =1 represents a federal tax withholding and index = 2 represents a state tax withholding.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä09/19/2012 wmaJ Release 2 Sprint 4 CMC renamed Withholding readabiltiy to remove FinancialActivity from name.çä2/03/2012 - wmA-J - MC - B27-3-US225-15 - Initial Calculation/Ruleçä çä
+4a7d878 -2 -2
+Description: Returns the Taxable Gain Adjustment for different transaction types.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä
+4a7d8f8 -2 -2
+Description: Returns the gain removed as a result of a transaction.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä
+4a7d978 -2 -2
+Description: Returns the duration type.çä çä1 = years 1 to 5çä2 = years 6 to 15çä3 = years 16+çä çä
+4a7d9f8 -2 -2
+Description: Returns the Taxable Amount on a supported transaction.çä çä
+4a7da78 -2 -2
+Description: Returns the gain removed as a result of a transaction.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä
+4a7daf8 -2 -2
+Description: Returns the gain removed as a result of a transaction.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä
+4a7db78 -2 -2
+Description: Returns the gain removed as a result of a transaction.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä
+4a7dbf8 -2 -2
+Description: Returns the gain removed as a result of a transaction.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä
+4a7dc78 -2 -2
+Description: Late referenced table lookup to determine which taxable amount type to compute for a supported transaction.çä çäModification Log:çä03/19/2012 - wmA-J - MC - B12 - Life insurance test type called from product information instead of input.çä3/09/2012 - wmA-J - MC - U15-US333 - Replaced 'CBG DEFRATestType' with base pA function 'Policy LifeUSA DefLifeInsMethod'.çä2/16/2012 - wmA-J - MC - U15-US333 - Added 'Quote' function in vector of parameters.çä2/14/2012 - wmA-J - MC - U15-US333 - Initial Calculation/Rule.
+4a7dcf8 -2 -2
+Description: Returns the taxable gain amount pn funds rolled over into an insurance contract.çä çä çä
+4a7dd78 -2 -2
+Description: Returns the taxable gain on the contract after a supported tranaction has been processed.çä
+4a7ddf8 -2 -2
+Description: Returns the taxable gain on the contract before any transactions have been processed.çä çä
+4a7de78 -2 -2
+Description: Returns the tax penalty that applies on the contract.çä çä4 = DEFRA Guideline Premium Test.çä5 = DEFRA Cash Value Accumulation Testçä çä
+4a7def8 -2 -2
+Description: Returns the cash value corridor test maximum cash value.çä çä
+4a7df78 -2 -2
+Description: Returns the contract recapture amount.çä çä
+4a7dff8 -2 -2
+Description: Returns the tax penalty that applies on the contract.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä
+4a7e078 -2 -2
+Description: Returns True IF a tax penalty as a result of the policies MEC status applies otherwise returns False.çä
+4a7e178 -2 -2
+Description: Look up if tax withholding applies based on the transaction code and the transaction reason code. Returns 0 if withholding applies otherwise returns 1.çä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-11 - Initial Calculation/Rule.
+4a7e1f8 -2 -2
+Description: Lookup the federal withholding percentage that applies on the transaction.çä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule.
+4a7e278 -2 -2
+Description: Lookup the federal interest withholding percentage that applies on the transaction.çä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule.
+4a7e2f8 -2 -2
+Description: Determine whether opting out of the  tax witholding is allowed. If 'index' = 1, federal tax withholding is under consideration. If 'index' = 2, state tax withholding is under consideration. If opt out is allowed, returns 1 otherwise returns 0.çä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-12 - Initial Calculation/Rule.
+4a7e378 -2 -2
+Description: Lookup the state withholding percentage that applies on the transaction.çä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-17 - Initial Calculation/Rule.
+4a7e3f8 -2 -2
+Description: Lookup the state withholding basis that applies on the transaction.çä çäModification Log:çä1/9/2012 - wmA-J - MC - B27-3-US225-13 - Initial Calculatin/Rule.
+4a7e4f8 -2 -2
+Description: If federal withholding applies, returns 1 otherwise returns 0.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä1/9/2012 - wmA-J - MC - B27-3-US225-2 - Initial Calculation/Rule.
+4a7e578 -2 -2
+Description: If contract is Qualified returns 1 otherwise returns 0.çä çäModification Log:çä2/3/2012 - wmA-J - MC - B27-3-US225-4 - Added readability functions.çä1/9/2012 - wmA-J - MC - B27-3-US225-4 - Initial Calculation/Rule.
+4a7e5f8 -2 -2
+Description: If the federal tax withholding is overriden, returns 1 otherwise returns 0.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä1/9/2012 - wmA-J - MC - B27-3-US225-5 - Initial Calculation/Rule.
+4a7e678 -2 -2
+Description: If the state tax withholding is overriden, returns 1 otherwise returns 0.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC changed to federal and/or state index function from coded index valueçä1/9/2012 - wmA-J - MC - B27-3-US225-6 - Initial Calculation/Rule.
+4a7e6f8 -2 -2
+Description: Determines if there is a cash distribution on the transaction. Returns 1 if there is a cash distribution otherwise returns 0.çä çäModification Log:çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä1/9/2012 - wmA-J - MC - B27-3-US225-13 - Initial Calculation/Rule.
+4a7e7f8 -2 -2
+Description: Start of recursive function to determine which withholding index is the federal index.çä çäModification Log:çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC initial function
+4a7e878 -2 -2
+Description: Recursive function to determine which withholding index is the federal index.  If number of withholdings is not provided then assumes that federal withholding is index 1çä çäModification Log:çä09/27/2012 wmaJ Release 2 Sprint 4 CMC changed to allow the order or withholdings to vary so removed hardcoded 0 for index and used the index of the recursion.çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC initial function
+4a7e8f8 -2 -2
+Description: Start Recursive function to determine which withholding index is the state index.çä çäModification Log:çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC initial function
+4a7e978 -2 -2
+Description: Recursive function to determine which withholding index is the state index.  If number of withholdings is not provided then assumes that state withholding is index 2çä çäModification Log:çä09/27/2012 wmaJ Release 2 Sprint 4 CMC changed to allow the order or withholdings to vary so removed hardcoded 01for index and used the index of the recursion.çä09/19/2012 wmaJ Release 2 Sprint 4 CMC changed taxwithholding input from FinActivity to Arrangementçä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC initial function
+4a7e9f8 -2 -2
+Description: Model name used for error functionsçä çäModification Log:çä08/10/2012  - wmA-J - Release 2 Sprint 1 CMC initial function
+4a7eaf8 -2 -2
+çäThese are the financial activity types that we will be associating with a 1035 exchange.çä çä196â:âRollover from an external source that is a 1035 exchangeâçä210â:âInitial Payment - 1035 Exchange çä211â:âAdditional Payment - 1035 Exchange
+;Offset=00000000

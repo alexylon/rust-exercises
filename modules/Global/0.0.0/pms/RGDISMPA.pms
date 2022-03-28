@@ -1,0 +1,222 @@
+;1	08.12.2016 13:40:53	jlawrie2	
+X0 97a06c8 0 2230298 0 0 0 0
+
+X1 2230298 97a06c8 0 0 0 0 2
+PREM(s)
+PREM("(GTERMPA!PREM!20150109!30)")
+
+O0 336111e4 0 0 0 0 0 0
+
+E0 6bc1e1af 0 0 0 0 0 0
+
+L0 45e15c89 0 0 0 0 0 0
+
+B0 4db816ac 0 0 0 0 0 0
+
+P1 4841b8b 0 71d18c55 0 0 0 2
+
+--description
+Global UL Dismemberment Rider Rates model.çä çäRELEASE LOG:çäRELEASE pA 1401
+P13 71d18c55 4841b8b 0 0 0 0 2
+Global UL Dismemberment Rider Rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global UL Dismemberment Rider Rates model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RGDISMPA.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 3afa142e 0 236b0ec 0 0 0 0
+
+F1 236b0ec 3afa142e 0 54b1d66 0 0 2
+CCOI(s)
+Funktion
+'TABLE CCOI'['Common RateModel AttainedAge'(s)].CCOI
+F1 54b1d66 3afa142e 0 0 0 0 2
+CCOI_Query(s)
+Funktion
+Rate_Query("CCOI")
+A0 36e5c7d4 0 0 0 0 0 0
+
+T0 34d307b6 0 464f9862 0 0 0 0
+
+T3 464f9862 34d307b6 0 2827f5f9 0 0 2
+CCOI Query
+dataItem
+null
+Issue_Age
+
+Duration
+
+T66 2827f5f9 34d307b6 0 0 0 0 2
+TABLE CCOI
+Attained_Age
+CCOI
+1
+0.0016
+2
+0.0016
+3
+0.0016
+4
+0.0016
+5
+0.0017
+6
+0.0017
+7
+0.0017
+8
+0.0017
+9
+0.0017
+10
+0.0017
+11
+0.0017
+12
+0.0018
+13
+0.0018
+14
+0.0018
+15
+0.0019
+16
+0.0019
+17
+0.0019
+18
+0.0019
+19
+0.0019
+20
+0.0019
+21
+0.0019
+22
+0.0019
+23
+0.0019
+24
+0.0019
+25
+0.0019
+26
+0.0019
+27
+0.0019
+28
+0.0017
+29
+0.0017
+30
+0.0017
+31
+0.0017
+32
+0.0017
+33
+0.0017
+34
+0.0017
+35
+0.0015
+36
+0.0015
+37
+0.0015
+38
+0.0015
+39
+0.0015
+40
+0.0015
+41
+0.0015
+42
+0.0015
+43
+0.0015
+44
+0.0015
+45
+0.0015
+46
+0.0015
+47
+0.0017
+48
+0.0017
+49
+0.0017
+50
+0.0017
+51
+0.0017
+52
+0.0017
+53
+0.0017
+54
+0.0017
+55
+0.0017
+56
+0.0018
+57
+0.0018
+58
+0.0018
+59
+0.0018
+60
+0.002
+61
+0.002
+62
+0.002
+63
+0.002
+64
+0.002
+65
+0.0022
+I0 7130abba 0 1bae1ed3 0 0 0 0
+
+I0 1bae1ed3 7130abba 0 0 0 0 0
+PAGRateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+71d18c55
+F2
+236b0ec
+54b1d66
+A0
+T2
+464f9862
+2827f5f9
+;Offset=00000000

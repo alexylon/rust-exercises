@@ -1,0 +1,1157 @@
+;1	08.12.2016 13:38:33	jlawrie2	
+X0 234a98c 0 234afa0 0 0 0 0
+
+X0 234afa0 234a98c 234c110 0 0 0 0
+-- All Tests - DateFunctions --
+X1 234c110 234afa0 234c1a8 234c390 0 0 2
+Age Near Birthday
+Age Near Birthday("02/02/1986"; "01/01/2007")
+21
+X1 234c1a8 234c110 0 234c288 0 0 2
+Age Near Birthday
+Age Near Birthday("02/02/1986"; "03/01/2007")
+21
+X1 234c288 234c110 0 0 0 0 2
+Age Near Birthday
+Age Near Birthday("02/02/1986"; "08/02/2007")
+22
+X1 234c390 234afa0 234c4a8 234c678 0 0 2
+Align MV
+Align MV("02/15/2004";"02/01/2006")
+1/15/2006
+X1 234c4a8 234c390 0 234c578 0 0 2
+Align MV
+Align MV("02/29/2004";"02/28/2008")
+1/29/2008
+X1 234c578 234c390 0 0 0 0 2
+Align MV
+Align MV("02/29/2004";"03/15/2007")
+02/28/2007
+X1 234c678 234afa0 234c750 234c868 0 0 2
+Align MV Date In Month
+Align MV Date In Month("02/29/2004";"03/15/2004")
+3/29/2004
+X1 234c750 234c678 0 0 0 0 2
+Align MV Date In Month
+Align MV Date In Month("02/29/2004";"02/28/2008")
+2/29/2008
+X1 234c868 234afa0 234c980 234ca98 0 0 2
+Align MV Day
+Align MV Day("02/29/2004";"02/28/2006")
+28
+X1 234c980 234c868 0 0 0 0 2
+Align MV Day(iss_date; eff_date)1
+Align MV Day("02/29/2004";"02/28/2008")
+29
+X1 234ca98 234afa0 5951f184 234cc28 0 0 2
+Build Date
+Build Date("02/01/2001"; "03/03/2003";"04/04/2004")
+02/03/2004
+X1 5951f184 234ca98 0 21b76448 0 0 2
+Build Date in Leap Year
+Build Date("02/01/2001"; "03/29/2003";"04/04/2012")
+02/29/2012
+X1 21b76448 234ca98 0 0 0 0 2
+Build Date not in Leap Year
+Build Date("02/01/2001"; "03/29/2003";"04/04/2014")
+02/28/2014
+X1 234cc28 234afa0 0 234cca0 0 0 2
+Calc Last Anniversary Date
+Calc Last Anniversary Date("03/01/2000"; "01/01/2007")
+03/01/2006
+X1 234cca0 234afa0 234cff0 234d5e8 0 0 2
+Calc Last Monthiversary Date- Test 1
+Calc Last Monthiversary Date("01/01/2006"; "03/03/2007")
+03/01/2007
+X1 234cff0 234cca0 0 234d420 0 0 2
+Calc Last Monthiversary Date- Test 2
+Calc Last Monthiversary Date("01/07/2006"; "03/03/2007")
+02/07/2007
+X1 234d420 234cca0 0 0 0 0 2
+Calc Last Monthiversary Date- Test 3
+Calc Last Monthiversary Date("01/07/2006"; "01/03/2007")
+12/07/2006
+X1 234d5e8 234afa0 234d7b0 234d980 0 0 2
+Calc Next Anniversary Date
+Calc Next Anniversary Date("03/01/2000"; "01/01/2007")
+03/01/2007
+X1 234d7b0 234d5e8 0 0 0 0 2
+Calc Next Anniversary Date
+Calc Next Anniversary Date("03/29/2000"; "01/01/2007")
+03/29/2007
+X1 234d980 234afa0 0 234da78 0 0 2
+Check Date
+Check Date("1/2/2003")
+01/02/2003
+X1 234da78 234afa0 0 234dc30 0 0 2
+DATE Coverage Duration
+DATE Coverage Duration(5;"12/31/2007";"12/31/2009")
+3
+X1 234dc30 234afa0 234de08 234e4f0 0 0 2
+DATE Date In Range- bef
+DATE Date In Range("11/01/2006"; "12/01/2006"; "02/20/2007")
+0
+X1 234de08 234dc30 0 234dff0 0 0 2
+DATE Date In Range- eq low
+DATE Date In Range("12/01/2006"; "12/01/2006"; "02/20/2007")
+1
+X1 234dff0 234dc30 0 234e1e0 0 0 2
+DATE Date In Range- between
+DATE Date In Range("02/02/2007"; "12/01/2006"; "02/20/2007")
+1
+X1 234e1e0 234dc30 0 234e3d8 0 0 2
+DATE Date In Range- eq hi
+DATE Date In Range("02/20/2007"; "12/01/2006"; "02/20/2007")
+1
+X1 234e3d8 234dc30 0 0 0 0 2
+DATE Date In Range- aft
+DATE Date In Range("02/20/2008"; "12/01/2006"; "02/20/2007")
+0
+X1 234e4f0 234afa0 0 234e6d8 0 0 2
+DATE Format MMDD
+DATE Format MMDD("04/15/2006")
+0415
+X1 234e6d8 234afa0 234e7e8 234ea18 0 0 2
+DATE Monthly Duration
+DATE Monthly Duration("03/12/2004"; "02/02/2000")
+50
+X1 234e7e8 234e6d8 0 234e900 0 0 2
+DATE Monthly Duration- 1
+DATE Monthly Duration("02/12/2000"; "02/02/2000")
+1
+X1 234e900 234e6d8 0 0 0 0 2
+DATE Monthly Duration- 14
+DATE Monthly Duration("03/12/2001"; "02/02/2000")
+14
+X1 234ea18 234afa0 234eb48 234ed98 0 0 2
+DATE Is Date1 Greater Than Date2- greater
+DATE Is Date1 Greater Than Date2("02/02/2008"; "02/02/2007")
+1
+X1 234eb48 234ea18 0 234ec70 0 0 2
+DATE Is Date1 Greater Than Date2- eq
+DATE Is Date1 Greater Than Date2("02/02/2007"; "02/02/2007")
+0
+X1 234ec70 234ea18 0 0 0 0 2
+DATE Is Date1 Greater Than Date2- less
+DATE Is Date1 Greater Than Date2("02/02/2006"; "02/02/2007")
+0
+X1 234ed98 234afa0 234efa0 234f330 0 0 2
+DATE Is Date1 Greater Than Or Equal Date2- eq
+DATE Is Date1 Greater Than Or Equal Date2("02/02/2007"; "02/02/2007")
+1
+X1 234efa0 234ed98 0 234f0e0 0 0 2
+DATE Is Date1 Greater Than Or Equal Date2- greater
+DATE Is Date1 Greater Than Or Equal Date2("02/03/2007"; "02/02/2007")
+1
+X1 234f0e0 234ed98 0 0 0 0 2
+DATE Is Date1 Greater Than Or Equal Date2- less
+DATE Is Date1 Greater Than Or Equal Date2("02/01/2007"; "02/02/2007")
+0
+X1 234f330 234afa0 234f3e8 234f500 0 0 2
+DATE Are Dates Equal - eq
+DATE Are Dates Equal("02/02/2007"; "02/02/2007")
+1
+X1 234f3e8 234f330 0 0 0 0 2
+DATE Are Dates Equal- not eq
+DATE Are Dates Equal("02/01/2007"; "02/02/2007")
+0
+X1 234f500 234afa0 234f608 234f920 0 0 2
+DATE Days In Mode Period- Annual
+DATE Days In Mode Period(1)
+365
+X1 234f608 234f500 0 234f710 0 0 2
+DATE Days In Mode Period- Semiannual
+DATE Days In Mode Period(2)
+182
+X1 234f710 234f500 0 234f818 0 0 2
+DATE Days In Mode Period- Quarterly
+DATE Days In Mode Period(3)
+91
+X1 234f818 234f500 0 0 0 0 2
+DATE Days In Mode Period- Monthly
+DATE Days In Mode Period(4)
+30
+X1 234f920 234afa0 234fa20 234fe20 0 0 2
+DATE Days In Month
+DATE Days In Month("01/01/2006")
+31
+X1 234fa20 234f920 0 234fb20 0 0 2
+DATE Days In Month
+DATE Days In Month("02/01/2006")
+28
+X1 234fb20 234f920 0 234fc20 0 0 2
+DATE Days In Month
+DATE Days In Month("03/01/2006")
+31
+X1 234fc20 234f920 0 234fd20 0 0 2
+DATE Days In Month
+DATE Days In Month("04/01/2006")
+30
+X1 234fd20 234f920 0 0 0 0 2
+DATE Days In Month
+DATE Days In Month("05/01/2006")
+31
+X1 234fe20 234afa0 234ff20 2350028 0 0 2
+DATE Days In Year- leap
+DATE Days In Year("01/01/2004")
+366
+X1 234ff20 234fe20 0 0 0 0 2
+DATE Days In Year- not leap
+DATE Days In Year("01/01/2005")
+365
+X1 2350028 234afa0 4743f896 2350160 0 0 2
+Decrease Date By Months(start_date;num_months)
+Decrease Date By Months("12/15/2000";3)
+9/15/2000
+X1 4743f896 2350028 0 0 0 0 2
+Decrease Date By Months(start_date;num_months) Leap Year
+Decrease Date By Months("2/29/2012";1)
+1/29/2012
+X1 2350160 234afa0 2350258 2350b50 0 0 2
+Duration Year- 1st
+Duration Year("03/01/2007"; "01/01/2007")
+1
+X1 2350258 2350160 0 2350360 0 0 2
+Duration Year - 1st
+Duration Year("03/03/2007"; "01/01/2006")
+2
+X1 2350360 2350160 0 2350468 0 0 2
+Duration Year- 20
+Duration Year("03/01/2026"; "12/01/2006")
+20
+X1 2350468 2350160 0 2350730 0 0 2
+Duration Year- Month 1
+Duration Year("01/01/2006"; "01/01/2006")
+1
+X1 2350730 2350160 0 2350838 0 0 2
+Duration Year- Month 12
+Duration Year("12/01/2006"; "01/01/2006")
+1
+X1 2350838 2350160 0 2350940 0 0 2
+Duration Year- Month 13
+Duration Year("01/01/2007"; "01/01/2006")
+2
+X1 2350940 2350160 0 2350a48 0 0 2
+Duration Year- Month 24
+Duration Year("12/01/2007"; "01/01/2006")
+2
+X1 2350a48 2350160 0 0 0 0 2
+Duration Year- Month 25
+Duration Year("01/01/2008"; "01/01/2006")
+3
+X1 2350b50 234afa0 2350c70 2350d88 0 0 2
+Increase Date By Months
+Increase Date By Months("12/12/2003"; 13)
+1/12/2005
+X1 2350c70 2350b50 0 0 0 0 2
+Increase Date By Months
+Increase Date By Months("12/30/2003"; 2)
+3/1/2004
+X1 2350d88 234afa0 0 2350e98 0 0 2
+Increase Date By Years
+Increase Date By Years("02/14/2003"; 3)
+2/14/2006
+X1 2350e98 234afa0 2350f78 23513a8 0 0 2
+Mode Adj Factor- 1
+Mode Adj Factor(1)
+1
+X1 2350f78 2350e98 0 2351068 0 0 2
+Mode Adj Factor- 2
+Mode Adj Factor(2)
+0.51
+X1 2351068 2350e98 0 2351158 0 0 2
+Mode Adj Factor- 3
+Mode Adj Factor(3)
+0.26
+X1 2351158 2350e98 0 0 0 0 2
+Mode Adj Factor- 4
+Mode Adj Factor(4)
+0.0875
+X1 23513a8 234afa0 2351448 2351738 0 0 2
+Months In Mode Period- 1
+Months In Mode Period(1)
+12
+X1 2351448 23513a8 0 2351538 0 0 2
+Months In Mode Period- 2
+Months In Mode Period(2)
+6
+X1 2351538 23513a8 0 2351638 0 0 2
+Months In Mode Period- 3
+Months In Mode Period(3)
+3
+X1 2351638 23513a8 0 0 0 0 2
+Months In Mode Period- 4
+Months In Mode Period(4)
+1
+X1 2351738 234afa0 0 2351848 0 0 2
+Table Date(date1)
+Table Date("01/03/2007")
+20070103
+X1 2351848 234afa0 2351948 2351dd0 0 0 2
+Total Duration Month
+Total Duration Month("02/01/2007"; "01/01/2000")
+86
+X1 2351948 2351848 0 2351a60 0 0 2
+Total Duration Month- 14
+Total Duration Month("02/01/2001"; "01/01/2000")
+14
+X1 2351a60 2351848 0 0 0 0 2
+Total Duration Month - 25
+Total Duration Month("01/01/2002"; "01/01/2000")
+25
+X1 2351dd0 234afa0 0 2351ee0 0 0 2
+Yearly Duration Month
+Yearly Duration Month("03/03/2007"; "01/01/2006")
+3
+X1 2351ee0 234afa0 2352000 6498736e 0 0 2
+Years Between Dates- date1 < date2
+Years Between Dates("12/01/2005"; "01/01/2006")
+0
+X1 2352000 2351ee0 0 2352120 0 0 2
+Years Between Dates- date1 = date2
+Years Between Dates("12/01/2006"; "12/01/2006")
+0
+X1 2352120 2351ee0 0 2352240 0 0 2
+Years Between Dates- date1 > date2
+Years Between Dates("12/01/2006"; "01/01/2006")
+0
+X1 2352240 2351ee0 0 2352360 0 0 2
+Years Between Dates- date1 > date2
+Years Between Dates("04/13/2008"; "04/14/2005")
+2
+X1 2352360 2351ee0 0 0 0 0 2
+Years Between Dates- date2 < date1
+Years Between Dates("04/14/2008"; "04/13/2011")
+2
+X1 6498736e 234afa0 4ab2dee9 5e9fdefe 0 0 2
+LOOKUP Date
+LOOKUP Date("01/10/2007")
+20070110
+X1 4ab2dee9 6498736e 0 0 0 0 2
+LOOKUP Date - return blank
+LOOKUP Date("0110/2007")
+
+X1 5e9fdefe 234afa0 0 73ef917e 0 0 2
+Increase Date By Months(startDate; numberOfMonths)
+Increase Date By Months("02/29/2012"; 12)
+3/1/2013
+X1 73ef917e 234afa0 0 618876eb 0 0 2
+Date EDATE(inDate; nMonths)
+Date EDATE("05/31/2008"; 4)
+6/30/2008
+X1 618876eb 234afa0 0 747962aa 0 0 2
+DATE Based on Year and Month(startDate;yearIndex; monthIndex)
+DATE TransactionDate Based on Duration("12/1/2006";2; 2)
+1/1/2009
+X1 747962aa 234afa0 0 7cfe0b34 0 0 2
+DATE Last Calendar Year Beginning(date1)
+DATE Last Calendar Year Beginning("10/7/2011")
+01/01/2011
+X3 7cfe0b34 234afa0 0 3f35b83 0 0 2
+OUTPUT Duration Year
+OUTPUT Duration Year
+6
+Input TransEffDate
+01/01/2009
+INPUT Policy IssueDate
+01/01/2004
+X4 3f35b83 234afa0 0 24f85aef 0 0 2
+OUTPUT Increase Date by Period
+OUTPUT Increase Date By Period
+1/1/2012
+Input TransEffDate
+01/01/2010
+INPUT Number of Periods
+2
+INPUT Payment Mode
+1
+X1 24f85aef 234afa0 0 3694e361 0 0 2
+DATE Convert YMD to Date(dateYMD)
+DATE Convert YMD to Date(20041231)
+12/31/2004
+X1 3694e361 234afa0 0 55b5a6ae 0 0 2
+DATE number of Leap Years(date1; date2)
+DATE number of Leap Years("01/01/1996"; "02/29/2012")
+5
+X1 55b5a6ae 234afa0 0 33d32f1d 0 0 2
+Check Date(date1)
+Check Date("1/1/2011")
+01/01/2011
+X1 33d32f1d 234afa0 0 7e9403f1 0 0 2
+Calc Last Anniversary Date(issue_date; point_in_time_date)
+Calc Last Anniversary Date("2/29/2012"; "4/11/2014")
+03/01/2014
+X1 7e9403f1 234afa0 0 2d29407a 0 0 2
+Number Of Months(effectiveDate; issue_date)
+Number Of Months("3/29/2016"; "2/29/2012")
+1
+X1 2d29407a 234afa0 0 5178e08f 0 0 2
+Calc Last Monthiversary Date(issue_date; point_in_time_date)
+Calc Last Monthiversary Date("2/29/2012"; "3/1/2013")
+02/28/2013
+X1 5178e08f 234afa0 0 0 0 0 2
+DATE Monthly Duration(point_in_time_date; issue_date)
+DATE Monthly Duration("1/15/2013"; "1/16/2012")
+12
+O0 234a83c 0 0 0 0 0 0
+
+E0 234a8ac 0 0 0 0 0 0
+
+L0 234a91c 0 0 0 0 0 0
+
+B0 234aadc 0 0 0 0 0 0
+
+P3 234a9fc 0 23525a0 0 0 0 2
+
+--description
+Common sub-model containing common date functions used throughout the models.çä çäAge, anniversary, monthly processing dates, date formatting, contract duration, mode premium, and date difference computations, are some of the items contained here.çä çäRELEASE LOG:çäRELEASE 1501 - PAC039 DIAçäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1101 - PAC011 External RatesçäRELEASE 1101 - PAC013 calcTypeçäRELEASE 1101 - PAC020 Back-dating Support
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.6.1    "
+P13 23525a0 234a9fc 2352800 0 0 0 2
+DateFunctions Model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Date Functions model.çä Author:  John Heumannçä Date:     10/31/2007 çä Modification Log:çä Date              Modeler               Change Descriptionçä 10/31/2007     John Heumann     Created model.çä"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"DateFunctions.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P3 2352800 23525a0 0 5ff5d8f0 0 0 2
+All Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P11 5ff5d8f0 23525a0 0 0 0 0 2
+Standard Date Functions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Duration Year
+'Duration Year'(TransEffDate;'Policy IssueDate')
+OUTPUT Increase Date By Period
+'Increase Date By Period'(TransEffDate;'Number of Periods';'Payment Mode')
+OUTPUT Decrease Date By Period
+'Decrease Date By Period'(TransEffDate;'Number of Periods';'Payment Mode')
+OUTPUT Age Last Birthday
+'Age Last Birthday'('Participant BirthDate';TransEffDate)
+OUTPUT Age Near Birthday
+'Age Near Birthday'('Participant BirthDate';TransEffDate)
+OUTPUT Age Next Birthday
+'Age Next Birthday'('Participant BirthDate';TransEffDate)
+OUTPUT Issue Age
+CASE('INPUT PolicyProduct AgeCalculationType';çä  1 : 'Age Next Birthday'('Participant BirthDate';TransEffDate);çä  2 : 'Age Last Birthday'('Participant BirthDate';TransEffDate);çä  3 : 'Age Near Birthday in Days'('Participant BirthDate';TransEffDate);çä  4 : 'Age Near Birthday in Months'('Participant BirthDate';TransEffDate);çä   : 'OUTPUT Age Near Birthday')çä
+OUTPUT Adjusted Duration
+IF ('Policy FinancialActivity OverrideDur'(0) ALIKE "" ; çä  'Duration Year'(TransEffDate;'Policy IssueDate') + 'Policy Load Duration Adjust' ; çä  'Policy FinancialActivity OverrideDur'(0)çä)
+F0 234aa6c 0 2352b20 0 0 0 0
+
+F1 2352b20 234aa6c 2352bd0 6884d035 0 0 2
+:DATE
+Funktion
+
+F1 2352bd0 2352b20 2352ca8 0 0 0 2
+-- Date Functions --
+Funktion
+
+F1 2352ca8 2352bd0 2352d78 2352f40 0 0 2
+-- Age --
+Funktion
+
+F1 2352d78 2352ca8 0 7a2e8f68 0 0 2
+Age Near Birthday(birth_date; issue_date)
+Funktion
+'GEN Round'(YEARS(issue_date) - YEARS(birth_date);0)
+F1 7a2e8f68 2352ca8 0 1965ed92 0 0 2
+Age Next Birthday(birth_date; curr_date)
+Funktion
+'Years Between Dates'(birth_date;'Calc Next Anniversary Date'(birth_date;curr_date)) + IF ('DATE Are Dates Equal'(curr_date;'Calc Next Anniversary Date'(birth_date;curr_date)) ; çä  1 ; çä  0çä)
+F1 1965ed92 2352ca8 0 bf870e5 0 0 2
+Date Ceil Last Age Next Birthday(birth_date; curr_date)
+Funktion
+'Decrease Date By Days'('Calc Last Anniversary Date'(birth_date;curr_date);1)
+F1 bf870e5 2352ca8 0 17369443 0 0 2
+Age Last Birthday(birth_date; curr_date)
+Funktion
+'Years Between Dates'(birth_date;'Calc Last Anniversary Date'(birth_date;curr_date))
+F1 17369443 2352ca8 0 4d2e46a3 0 0 2
+Date Ceil Last Age Last Birthday(birth_date; curr_date)
+Funktion
+'Decrease Date By Days'('Calc Last Anniversary Date'(birth_date;curr_date);1)
+F1 4d2e46a3 2352ca8 0 40b1624c 0 0 2
+Age Near Birthday in Days(birth_date; curr_date)
+Funktion
+IF ('DATE Days Difference'(curr_date;'Calc Last Anniversary Date'(birth_date;curr_date)) <= 182 ; çä  'Age Last Birthday'(birth_date;curr_date) ; çä  'Age Next Birthday'(birth_date;curr_date)çä)
+F1 40b1624c 2352ca8 0 6fa9f0da 0 0 2
+Date Ceil Last Age Near Birthday in Days(birth_date; curr_date)
+Funktion
+IF ('DATE Is Date1 Greater Than Date2'('Increase Date By Days'('Calc Last Anniversary Date'(birth_date;curr_date);182);curr_date) ; çä  'Increase Date By Days'('Decrease Date By Years'('Calc Last Anniversary Date'(birth_date;curr_date);1);182) ; çä  'Increase Date By Days'('Calc Last Anniversary Date'(birth_date;curr_date);182)çä)
+F1 6fa9f0da 2352ca8 0 53a9b376 0 0 2
+Age Near Birthday in Months(birth_date; curr_date)
+Funktion
+IF ('DATE Monthly Duration'(curr_date;'Calc Last Anniversary Date'(birth_date;curr_date)) <= 6 ; çä  'Age Last Birthday'(birth_date;curr_date) ; çä  'Age Next Birthday'(birth_date;curr_date)çä)
+F1 53a9b376 2352ca8 0 0 0 0 2
+Date Ceil Last Age Near Birthday in Months(birth_date; curr_date)
+Funktion
+IF ('DATE Is Date1 Greater Than Date2'('Increase Date By Months'('Calc Last Anniversary Date'(birth_date;curr_date);6);curr_date) ; çä  'Decrease Date By Days'('Increase Date By Months'('Decrease Date By Years'('Calc Last Anniversary Date'(birth_date;curr_date);1);6);1) ; çä  'Decrease Date By Days'('Increase Date By Months'('Calc Last Anniversary Date'(birth_date;curr_date);6);1)çä)
+F1 2352f40 2352bd0 2353030 2353b00 0 0 2
+-- Anniversary or Monthly Processing Date --
+Funktion
+
+F1 2353030 2352f40 455732ff 2353710 0 0 2
+Align MV(iss_date; effectiveDate)
+Funktion
+IF (('Align MV Month'(iss_date;effectiveDate) = 2 && 'Align MV Day'(iss_date;effectiveDate) = 29) ; çä  'DATE Leap Date'(effectiveDate) ; çä  'Align MV Date'(iss_date;effectiveDate)çä)
+F1 455732ff 2353030 0 23530e8 0 0 2
+Align MV Date(iss_date; effectiveDate)
+Funktion
+'Align MV Month'(iss_date;effectiveDate) & "/" & 'Align MV Day'(iss_date;effectiveDate) & "/" & 'Align MV Year'(iss_date;effectiveDate)
+F1 23530e8 2353030 0 23531d0 0 0 2
+Align MV Month(iss_date; effectiveDate)
+Funktion
+IF ( /*Current day after MV date day*/ DAY('Align MV Date In Month'(iss_date;effectiveDate)) <= DAY(effectiveDate) ; çä   /*current month*/ MONTH(effectiveDate) ; çä   /*Previous month*/ IF (MONTH(effectiveDate) = 1 ; çä    12 ; çä    MONTH(effectiveDate) - 1çä  )çä)
+F1 23531d0 2353030 0 23532b8 0 0 2
+Align MV Day(iss_date; effectiveDate)
+Funktion
+IF (DAY('Align MV Date In Month'(iss_date;effectiveDate)) <= DAY(effectiveDate) ; çä  DAY('Align MV Date In Month'(iss_date;effectiveDate)) ; çä  MIN(DAY(iss_date);'DATE Days In Month'(effectiveDate))çä)
+F1 23532b8 2353030 0 2353468 0 0 2
+Align MV Year(iss_date; effectiveDate)
+Funktion
+YEAR(effectiveDate) - IF (DAY('Align MV Date In Month'(iss_date;effectiveDate)) <= DAY(effectiveDate) ; çä  0 ; çä  IF (MONTH(effectiveDate) = 1 ; çä    1 ; çä    0çä  )çä)
+F1 2353468 2353030 0 2353558 0 0 2
+Align MV Date In Month(iss_date; effectiveDate)
+Funktion
+MONTH(effectiveDate) & "/" & MIN(DAY(iss_date);'DATE Days In Month'(effectiveDate)) & "/" & YEAR(effectiveDate)
+F1 2353558 2353030 0 0 0 0 2
+DATE Days In Month(date1)
+Funktion
+CASE(MONTH(date1);çä  2 : IF ('DATE Is Leap Year'(date1) ; çä    29 ; çä    28çä  );çä1;3;5;7;8;10;12 : 31;çä4;6;9;11 : 30)çä
+F1 2353710 2352f40 0 2353810 0 0 2
+Calc Last Anniversary Date(issue_date; point_in_time_date)
+Funktion
+IF ((DAYS('Build Date'(issue_date;issue_date;point_in_time_date)) > DAYS(point_in_time_date)) ; çä  DATE('Build Date'(issue_date;issue_date;point_in_time_date);0;0;-1;"M/D/Y") ; çä  'Build Date'(issue_date;issue_date;point_in_time_date)çä)
+F1 2353810 2352f40 0 2353910 0 0 2
+Calc Last Monthiversary Date(issue_date; point_in_time_date)
+Funktion
+IF (DAY(point_in_time_date) >= DAY(issue_date) ; çä   // Last monthiversary date is in same date as point in time monthçä'Build Date'(point_in_time_date;issue_date;point_in_time_date) ; çä   // Else need to go back to previous calendar monthçä'Build Date'('Decrease Date By Months'(point_in_time_date;1);issue_date;'Decrease Date By Months'(point_in_time_date;1))çä)
+F1 2353910 2352f40 0 1c779de5 0 0 2
+Calc Next Anniversary Date(issue_date; point_in_time_date)
+Funktion
+IF ((DAYS('Build Date'(issue_date;issue_date;point_in_time_date)) < DAYS(point_in_time_date)) ; çä  DATE('Build Date'(issue_date;issue_date;point_in_time_date);0;0;1;"M/D/Y") ; çä  'Build Date'(issue_date;issue_date;point_in_time_date)çä)
+F1 1c779de5 2352f40 0 40853ffb 0 0 2
+Number Of Months(effectiveDate; issue_date)
+Funktion
+'GEN Floor'(MONTHS(effectiveDate) - MONTHS(issue_date);0) MOD 12 //IF(MONTH(effectiveDate) - MONTH(issue_date) >0;çä//âMONTH(effectiveDate) - MONTH(issue_date);çä//â12 + MONTH(effectiveDate) - MONTH(issue_date)çä// )ä
+F1 40853ffb 2352f40 0 0 0 0 2
+DATE TransactionDate Based on Duration(startDate;yearIndex; monthIndex)
+Funktion
+'Increase Date By Months'(startDate;monthIndex + (12 * yearIndex) - 1)
+F1 2353b00 2352bd0 2353bd8 23544f0 0 0 2
+-- Comparison --
+Funktion
+
+F1 2353bd8 2353b00 0 2353c90 0 0 2
+DATE Date In Range(transactionDate; startDate; endDate)
+Funktion
+IF ('DATE Is Date1 Greater Than Or Equal Date2'(startDate;"12/31/2199") ; çä  1 ; çä  (DATEDAY(transactionDate) >= DATEDAY(startDate)) && (DATEDAY(transactionDate) <= DATEDAY(endDate))çä)
+F1 2353c90 2353b00 0 2353d80 0 0 2
+DATE Is Date1 Greater Than Date2(date1; date2)
+Funktion
+DATEDAY(date1) > DATEDAY(date2)
+F1 2353d80 2353b00 0 795b8168 0 0 2
+DATE Is Date1 Less Than Date2(date1; date2)
+Funktion
+DATEDAY(date1) < DATEDAY(date2)
+F1 795b8168 2353b00 0 23541d0 0 0 2
+DATE Is Date1 Less Than or Equal to Date2(date1; date2)
+Funktion
+DATEDAY(date1) <= DATEDAY(date2)
+F1 23541d0 2353b00 0 2354360 0 0 2
+DATE Is Date1 Greater Than Or Equal Date2(date1; date2)
+Funktion
+DATEDAY(date1) >= DATEDAY(date2)
+F1 2354360 2353b00 0 554c2e36 0 0 2
+DATE Are Dates Equal(date1; date2)
+Funktion
+DATEDAY(date1) = DATEDAY(date2)
+F1 554c2e36 2353b00 0 15300342 0 0 2
+DATE Max of Date1 and Date2(date1; date2)
+Funktion
+IF (DATEDAY(date1) >= DATEDAY(date2) ; çä  date1 ; çä  date2çä)
+F1 15300342 2353b00 0 0 0 0 2
+DATE Min of Date1 and Date2(date1; date2)
+Funktion
+IF (DATEDAY(date1) <= DATEDAY(date2) ; çä  date1 ; çä  date2çä)
+F1 23544f0 2352bd0 2354940 2355730 0 0 2
+-- Date Format --
+Funktion
+
+F1 2354940 23544f0 0 2354da0 0 0 2
+Build Date(date1; date2; date3)
+Funktion
+IF ( //Resulting date is Feb 29thçäDAY(date2) = 29 && MONTH(date1) = 2 ; çä  'DATE Leap Date'(date3) ; çä   //use last day of February for date3 year.çäRIGHT("0" & MONTH(date1);2) & "/" & RIGHT("0" & DAY(date2);2) & "/" & YEAR(date3)çä)
+F1 2354da0 23544f0 0 2354e78 0 0 2
+Check Date(date1)
+Funktion
+DATE(LEFT(date1;10);0;0;0;"M/D/Y")
+F1 2354e78 23544f0 0 2354f70 0 0 2
+Decrease Date By Months(startDate;numberOfMonths)
+Funktion
+DATE(startDate;0;-numberOfMonths;0)
+F1 2354f70 23544f0 0 424a6d58 0 0 2
+Increase Date By Days(startDate; numDays)
+Funktion
+DATE(startDate;numDays;0;0)
+F1 424a6d58 23544f0 0 2355060 0 0 2
+Decrease Date By Days(startDate; numDays)
+Funktion
+DATE(startDate;-numDays;0;0)
+F1 2355060 23544f0 0 2355218 0 0 2
+Increase Date By Months(startDate; numberOfMonths)
+Funktion
+DATE(startDate;0;numberOfMonths;0)
+F1 2355218 23544f0 0 4f9198e4 0 0 2
+Increase Date By Years(startDate; num_years)
+Funktion
+DATE(startDate;0;0;num_years)
+F1 4f9198e4 23544f0 0 2355308 0 0 2
+Decrease Date By Years(startDate; num_years)
+Funktion
+DATE(startDate;0;0;-num_years)
+F1 2355308 23544f0 0 24d89827 0 0 2
+Table Date(date1)
+Funktion
+DATE(date1;0;0;0;"YMD")
+F1 24d89827 23544f0 0 10a4fe1f 0 0 2
+Reverse Table Date(date1)
+Funktion
+DATE("01/01/1800";RIGHT(date1;2) - 1;MID(date1;5;2) - 1;LEFT(date1;4) - 1800;"M/D/Y")
+F1 10a4fe1f 23544f0 0 7f599ee9 0 0 2
+DERA Date(date1)
+Funktion
+YEAR(date1) & FORMAT(MONTH(date1);"2") & FORMAT(DAY(date1);"2")
+F1 7f599ee9 23544f0 0 27ecc6c7 0 0 2
+Convert Date to MDY(date1)
+Funktion
+(MID(date1;5;2) & "/" & RIGHT(date1;2) & "/" & LEFT(date1;4))
+F1 27ecc6c7 23544f0 0 120ae74 0 0 2
+Convert Date to YMD(date1)
+Funktion
+DATE(LEFT(date1;10);0;0;0;"YMD")
+F1 120ae74 23544f0 0 1201418c 0 0 2
+DATE Convert YMD to Date(dateYMD)
+Funktion
+IF (ISDATE(dateYMD) ; çä  dateYMD ; çä  DATE((MID(dateYMD;5;2) & "/" & RIGHT(dateYMD;2) & "/" & LEFT(dateYMD;4));0;0;0;"M/D/Y")çä)
+F1 1201418c 23544f0 0 0 0 0 2
+LOOKUP Date(date1)
+Funktion
+IF (ISDATE(date1) ; çä  DATE(date1;0;0;0;"YMD") ; çä  'GEN Vector Blank'çä)
+F1 2355730 2352bd0 2355bb8 2357288 0 0 2
+-- Duration --
+Funktion
+
+F1 2355bb8 2355730 23566a0 2355d90 0 0 2
+DATE Monthly Duration(point_in_time_date; issue_date)
+Funktion
+'Total Duration Month'(point_in_time_date;issue_date)
+F1 23566a0 2355bb8 0 0 0 0 2
+Total Duration Month(MV_date; issue_date)
+Funktion
+((YEAR(MV_date) - YEAR(issue_date)) * 12) + (MONTH(MV_date) - MONTH(issue_date)) + (DAY(MV_Date) >= DAY(issue_date))
+F1 2355d90 2355730 0 23564f8 0 0 2
+DATE Days In Year(date1)
+Funktion
+IF ('DATE Is Leap Year'(date1) ; çä  366 ; çä  365çä)
+F1 23564f8 2355730 0 23565e8 0 0 2
+Duration Year(effectiveDate; issue_date)
+Funktion
+'GEN Floor'('Total Duration Month'(effectiveDate;issue_date) / 12;0) + IF ('Total Duration Month'(effectiveDate;issue_date) MOD 12 > 0 ; çä  1 ; çä  0çä)
+F1 23565e8 2355730 0 23568d0 0 0 2
+DATE Coverage Duration(policy_duration; policy_effectiveDate; cov_effectiveDate)
+Funktion
+policy_duration - ('Duration Year'(cov_effectiveDate;policy_effectiveDate) - 1)
+F1 23568d0 2355730 0 2356b10 0 0 2
+Yearly Duration Month(effectiveDate; issue_date)
+Funktion
+'Total Duration Month'(effectiveDate;issue_date) - (('Duration Year'(effectiveDate;issue_date) - 1) * 12)
+F1 2356b10 2355730 0 2356bf8 0 0 2
+Coverage Plan Years(issdate; termdate)
+Funktion
+YEAR(termdate) - YEAR(issdate)
+F1 2356bf8 2355730 0 2357188 0 0 2
+Year Number(month_number)
+Funktion
+CEIL(month_number / 12)
+F1 2357188 2355730 0 7ded755d 0 0 2
+Coverage Maturity Duration(calcType; coverageIndex; cov_maturity_age)
+Funktion
+cov_maturity_age - 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0) + 1
+F1 7ded755d 2355730 0 55ae9f3e 0 0 2
+Date EDATE(inDate; nMonths)
+Funktion
+IF ('DATE Is Date1 Greater Than Date2'('Increase Date By Months'(inDate;nMonths);date("01/01/1800";-1;month(inDate) + nMonths;year(inDate) - 1800;"m/d/y")) ; çä  DATE("01/01/1800";-1;MONTH(inDate) + 1;YEAR(inDate) - 1800;"m/d/y") ; çä  'Increase Date By Months'(inDate;nMonths)çä)
+F1 55ae9f3e 2355730 0 37bbfb34 0 0 2
+DERA Annual Duration(date1 ; date2)
+Funktion
+ //  çäfloor(.0001 * ('DERA Date'(date2) - 'DERA Date'(date1))) + 1
+F1 37bbfb34 2355730 0 0 0 0 2
+DATE ModeDurationToMonth(ModeDuration; Mode)
+Funktion
+'GEN Round'(ModeDuration * 'Months In Mode Period'(Mode);0)
+F1 2357288 2352bd0 2357360 2357af0 0 0 2
+-- Mode Period --
+Funktion
+
+F1 2357360 2357288 0 2357440 0 0 2
+DATE Days In Mode Period(mode)
+Funktion
+CASE( /*Mode*/ mode;çä   //annualçä1 : 365;çä   //semi-annualçä2 : 182;çä   //quarterlyçä3 : 91;çä   //monthlyçä4 : 30;çä   //weeklyçä6 : 7;çä   //Bi-weeklyçä7 : 14;çä   //Dailyçä8 : 1;çä   // otherwise mode not supportedçä : 0)çä
+F1 2357440 2357288 0 2357520 0 0 2
+Months In Mode Period(mode)
+Funktion
+CASE( /*Mode*/ mode;çä   // annualçä1 : 12;çä   // semi-annualçä2 : 6;çä   // quarterlyçä3 : 3;çä   // monthlyçä4 : 1;çä   // otherwise mode not supportedçä : 0)çä
+F1 2357520 2357288 0 1d42196d 0 0 2
+Number Of Payments Per Year(mode)
+Funktion
+CASE( /*Mode*/ mode;çä   //annualçä1 : 1;çä   //semi-annualçä2 : 2;çä   //quarterlyçä3 : 4;çä   //monthly    çä4 : 12;çä   // bi-weekly;çä7 : 26;çä   //otherwiseçä : 0)çä
+F1 1d42196d 2357288 0 2356f40 0 0 2
+ModePeriod to Mode(ModePeriod)
+Funktion
+CASE( /*ModePeriod*/ ModePeriod;çä   //annualçä1 : 1;çä   //semi-annualçä2 : 2;çä   //quarterlyçä4 : 3;çä   //monthly    çä12 : 4;çä   //otherwiseçä : 0)çä
+F1 2356f40 2357288 0 0 0 0 2
+Mode Adj Factor(mode)
+Funktion
+CASE( /*Mode*/ mode;çä   //annualçä1 : 1;çä   //semi-annualçä2 : 0.51;çä   //quarterlyçä3 : 0.26;çä   //monthlyçä4 : 0.0875;çä   //otherwiseçä : 0)çä
+F1 2357af0 2352bd0 23577a0 35e9d26a 0 0 2
+-- Misc --
+Funktion
+
+F1 23577a0 2357af0 0 2357960 0 0 2
+DATE Days In Year CalcsNRules(date1)
+Funktion
+IF ('DATE Is Leap Year'(date1) ; çä  366 ; çä   // Elseçä365çä)
+F1 2357960 2357af0 0 2357a48 0 0 2
+DATE Are Days Equal(date1;date2)
+Funktion
+DAY(date1) = DAY(date2)
+F1 2357a48 2357af0 0 2357ca8 0 0 2
+DATE Days Difference(date1;date2)
+Funktion
+IF (DATEDAY(date1) < DATEDAY(date2) ; çä  DATEDAY(date2) - DATEDAY(date1) ; çä  DATEDAY(date1) - DATEDAY(date2)çä)
+F1 2357ca8 2357af0 0 70e6fd65 0 0 2
+Increase Date By Period(startDate; num_periods; mode)
+Funktion
+IF (mode = 6 || mode = 7 || mode = 8 ; çä  'Increase Date By Days'(startDate;num_periods * 'DATE Days In Mode Period'(mode)) ; çä  'Increase Date By Months'(startDate;num_periods * 'Months In Mode Period'(mode))çä)
+F1 70e6fd65 2357af0 0 2357ee0 0 0 2
+Decrease Date By Period(startDate; num_periods; mode)
+Funktion
+IF (mode = 6 || mode = 7 || mode = 8 ; çä  'Decrease Date By Days'(startDate;num_periods * 'DATE Days In Mode Period'(mode)) ; çä  'Decrease Date By Months'(startDate;num_periods * 'Months In Mode Period'(mode))çä)
+F1 2357ee0 2357af0 0 4942761b 0 0 2
+Month Day Equal(date1;date2)
+Funktion
+(DAY(date1) = DAY(date2)) && (MONTH(date1) = MONTH(date2))
+F1 4942761b 2357af0 0 2358610 0 0 2
+Year Month Equal(date1;date2)
+Funktion
+(YEAR(date1) = YEAR(date2)) && (MONTH(date1) = MONTH(date2))
+F1 2358610 2357af0 0 2358250 0 0 2
+Projection Eff Date(issue_date; yearIndex; monthIndex)
+Funktion
+'Increase Date By Months'(issue_date;((yearIndex - 1) * 12) + (monthIndex - 1))
+F1 2358250 2357af0 2358b00 68c04af6 0 0 2
+Years Between Dates(date1; date2)
+Funktion
+ABS(YEAR(date1) - YEAR(date2)) - IF ((DATEDAY(date1) > DATEDAY(date2)) ; çä  CASE(STRCMP('DATE Format MMDD'(date1);'DATE Format MMDD'(date2));çä    -1 : 1;çä    0 : 0;çä    1 : 0)çä   ; çä  CASE(STRCMP('DATE Format MMDD'(date2);'DATE Format MMDD'(date1));çä    -1 : 1;çä    0 : 0;çä    1 : 0)çäçä)
+F1 2358b00 2358250 0 0 0 0 2
+DATE Format MMDD(date1)
+Funktion
+DATE(date1;0;0;0;"MD")
+F1 68c04af6 2357af0 0 19bfaa23 0 0 2
+DATE Last Calendar Year Beginning(date1)
+Funktion
+"01" & "/" & "01" & "/" & YEAR(date1)
+F1 19bfaa23 2357af0 0 40db585b 0 0 2
+DATE Next Calendar Year Beginning(date1)
+Funktion
+"01" & "/" & "01" & "/" & YEAR(date1) + 1
+F1 40db585b 2357af0 0 1be84fd3 0 0 2
+Last day of the month check(date1)
+Funktion
+'DATE Are Days Equal'(date1;'End of Month Date'(date1))
+F1 1be84fd3 2357af0 66efde6e 18fa7a48 0 0 2
+End of Month Date(date1)
+Funktion
+'Decrease Date By Days'('Start of Next Month Date'(date1);1)
+F1 66efde6e 1be84fd3 0 0 0 0 2
+Start of Next Month Date(date1)
+Funktion
+IF (MONTH(date1) = 12 ; çä  "01" & "/" & "01" & "/" & YEAR(date1) + 1 ; çä  MONTH(date1) + 1 & "/" & "01" & "/" & YEAR(date1)çä)
+F1 18fa7a48 2357af0 0 4f823cc5 0 0 2
+Next CalendarQtr Beg(date1)
+Funktion
+CASE(MONTH(date1);çä  1;2;3 : "04" & "/" & "01" & "/" & YEAR(date1);çä  4;5;6 : "07" & "/" & "01" & "/" & YEAR(date1);çä  7;8;9 : "10" & "/" & "01" & "/" & YEAR(date1);çä   : "01" & "/" & "01" & "/" & YEAR(date1) + 1)çä
+F1 4f823cc5 2357af0 0 279c847a 0 0 2
+Last CalendarQtr Beg(date1)
+Funktion
+CASE(MONTH(date1);çä  1;2;3 : "01" & "/" & "01" & "/" & YEAR(date1);çä  4;5;6 : "04" & "/" & "01" & "/" & YEAR(date1);çä  7;8;9 : "07" & "/" & "01" & "/" & YEAR(date1);çä   : "10" & "/" & "01" & "/" & YEAR(date1))çä
+F1 279c847a 2357af0 0 7d67147e 0 0 2
+Date Diff(date1; date2)
+Funktion
+IF (DATEDAY(date2) > DATEDAY(date1) ; çä   /*Then*/ YEAR(date2) - YEAR(date1) + (MONTH(date2) - MONTH(date1)) / 12 + (DAY(date2) - DAY(date1)) / 365 ; çä   /*Else*/ YEAR(date1) - YEAR(date2) + (MONTH(date1) - MONTH(date2)) / 12 + (DAY(date1) - DAY(date2)) / 365çä)
+F1 7d67147e 2357af0 66d1c159 28ad24ec 0 0 2
+DATE Prior Month YearIndex(yearIndex; monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  yearIndex - 1 ; çä  yearIndexçä)
+F1 66d1c159 7d67147e 0 0 0 0 2
+prev mth yr(yearIndex; monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  yearIndex - 1 ; çä  yearIndexçä)
+F1 28ad24ec 2357af0 7937d005 0 0 0 2
+DATE Prior Month MonthIndex(monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  12 ; çä  monthIndex - 1çä)
+F1 7937d005 28ad24ec 0 0 0 0 2
+prev mth(monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  12 ; çä  monthIndex - 1çä)
+F1 35e9d26a 2352bd0 23576c0 2358760 0 0 2
+-- Leap Year functions--
+Funktion
+
+F1 23576c0 35e9d26a 0 43bd9252 0 0 2
+DATE Is Leap Year(date1)
+Funktion
+(((YEAR(date1) MOD 4) = 0) && NOT(((YEAR(date1) MOD 100) = 0))) || ((YEAR(date1) MOD 400) = 0)
+F1 43bd9252 35e9d26a 0 7674003b 0 0 2
+DATE Is Leap Day(date1)
+Funktion
+DAY(date1) = 29 && MONTH(date1) = 2 && 'DATE Is Leap Year'(date1)
+F1 7674003b 35e9d26a 28abe7d9 0 0 0 2
+DATE Number of Leap Years(date1; date2)
+Funktion
+'DATE Number of Leap Years before year'('DATE Max of Date1 and Date2'(date1;date2)) - 'Date Number of Leap years before year'('DATE Min of Date1 and Date2'(date1;date2)) + IF ('DATE Is Leap Year'('DATE Min of Date1 and Date2'(date1;date2)) ; çä  IF (MONTH('DATE Min of Date1 and Date2'(date1;date2)) < 3 ; çä    1 ; çä    0çä  ) ; çä0çä) - IF ('DATE Is Leap Year'('DATE Max of Date1 and Date2'(date1;date2)) ; çäIF ('DATE Is Date1 Less Than Date2'('DATE Max of Date1 and Date2'(date1;date2);'DATE Leap Date'('DATE Max of Date1 and Date2'(date1;date2))) ; çä1 ; çä0çä) ; çä0çä)
+F1 28abe7d9 7674003b 0 730b6f47 0 0 2
+Date Number of Leap years before year(date1)
+Funktion
+YEAR(date1) DIV 4 - YEAR(date1) DIV 100 + YEAR(date1) DIV 400
+F1 730b6f47 7674003b 0 0 0 0 2
+DATE Leap Date(date1)
+Funktion
+"02/" & IF ('DATE Is Leap Year'(date1) ; çä  "29/" ; çä  "28/"çä) & YEAR(date1)
+F1 2358760 2352bd0 63511564 0 0 0 2
+-- Default functions --
+Funktion
+
+F1 63511564 2358760 0 0 0 0 2
+Policy LifeParticipant IssueAge(calcType; coverageIndex; participantIndex)
+Funktion
+0
+F1 6884d035 234aa6c 0 43f3f964 0 0 2
+Number of Periods
+Funktion
+'INPUT Number of Periods'
+F1 43f3f964 234aa6c 0 334461f8 0 0 2
+Participant BirthDate
+Funktion
+'INPUT Participant BirthDate'
+F1 334461f8 234aa6c 0 63f67552 0 0 2
+Payment Mode
+Funktion
+'INPUT Payment Mode'
+F1 63f67552 234aa6c 0 2d9036ab 0 0 2
+Policy IssueDate
+Funktion
+'INPUT Policy IssueDate'
+F1 2d9036ab 234aa6c 0 46cda2f8 0 0 2
+PolicyProduct AgeCalculationType
+Funktion
+'INPUT PolicyProduct AgeCalculationType'
+F1 46cda2f8 234aa6c 0 0 0 0 2
+TransEffDate
+Funktion
+'INPUT TransEffDate'
+A0 234ab4c 0 4821101e 0 0 0 0
+
+A0 4821101e 234ab4c 7594a1d4 0 0 0 0
+-- wmA-J Test Inputs l--
+A1 7594a1d4 4821101e 0 25ec3604 0 0 2
+INPUT Number of Periods
+default
+1
+A1 25ec3604 4821101e 0 230c1eea 0 0 2
+INPUT Participant BirthDate
+default
+"1/1/1970"
+A1 230c1eea 4821101e 0 7d36b2a0 0 0 2
+INPUT Payment Mode
+default
+1
+A1 7d36b2a0 4821101e 0 6a912e58 0 0 2
+INPUT Policy IssueDate
+default
+"20060101"
+A1 6a912e58 4821101e 0 67929214 0 0 2
+INPUT PolicyProduct AgeCalculationType
+default
+2
+A1 67929214 4821101e 0 0 0 0 2
+Input TransEffDate
+default
+"20060101"
+T0 234abbc 0 0 0 0 0 0
+
+I0 234ac2c 0 23588f0 0 0 0 0
+
+I0 23588f0 234ac2c 0 0 0 0 0
+GeneralFunctions.pms
+-
+O0
+E0
+L0
+B0
+P3
+23525a0
+2352800
+5ff5d8f0
+F29
+2352b20
+2352bd0
+2352ca8
+2352f40
+2353b00
+23544f0
+2355730
+2355bb8
+2355d90
+23564f8
+23565e8
+23568d0
+2356b10
+2356bf8
+2357188
+7ded755d
+55ae9f3e
+37bbfb34
+2357288
+2357af0
+35e9d26a
+2358760
+63511564
+6884d035
+43f3f964
+334461f8
+63f67552
+2d9036ab
+46cda2f8
+A1
+4821101e
+T0
+!91
+2352d78 -2 -2
+Description:çäReturns the age nearest birthdate based on the birth date and the issue date.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+7a2e8f68 -2 -2
+Description: Age next birthday at curr_date, given brith_date.çä çäModification Log:çä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+1965ed92 -2 -2
+Description: Last date at which the policyholder is younger than at curr_date, given birth_date, using age next birthday.çä çäModification Log:çä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+bf870e5 -2 -2
+Description: Age last birthday at curr_date, given brith_date.çä çäModification Log:çä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+17369443 -2 -2
+Description: Last date at which the policyholder is younger than at curr_date, given birth_date, using age last birthday.çä çäModification Log:çä01/18/2011 PAC020 Back-dating Support JL Decrease by 1 dayçä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+4d2e46a3 -2 -2
+Description: Age near birthday (in days) at curr_date, given brith_date.çä çäModification Log:çä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+40b1624c -2 -2
+Description: Last date at which the policyholder is younger than at curr_date, given birth_date, using age near birthday (in days).çä çäModification Log:çä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+6fa9f0da -2 -2
+Description: Age near birthday (in months) at curr_date, given brith_date.çä çäModification Log:çä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+53a9b376 -2 -2
+Description: Last date at which the policyholder is younger than at curr_date, given birth_date, using age near birthday (in months).çä çäModification Log:çä07/20/2010 PAC020 Back-dating Support JL Initial Calculation
+2353030 -2 -2
+Description:çäThis function returns the MV date on or prior to the effective dateçä çäModification Log:çä05/01/2014 - PA1403 - rm - Prevent date 2/29 from occurring when year is not a Leap Yearçä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+455732ff -2 -2
+Description:çäThis function returns the MV date on or prior to the effective dateçäNote:  Moved down from 'Align MV'çä çäModification Log:çä05/22/2012 - PA1403 - Initial function.
+23530e8 -2 -2
+Description: This function returns the MV month on or prior to the effective dateçä çäModification Log:çä02/09/2007âpA base
+23531d0 -2 -2
+Description:çäThis function returns the MV day on or prior to the effective dateçä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+23531d0 0 2
+
+23532b8 -2 -2
+Description:çäThis function returns the MV year on or prior to the effective dateçä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2353468 -2 -2
+Description:çäThis function returns the MV date in the month that the effective date falls inçä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2353558 -2 -2
+ Description:  çäThis function returns the number of days in the calendar month.çä çä Modification Log:çä02/01/2011 - rm - Replaced duplicate function 'Is Leap Year' function with 'DATE Is Leap Year'.çä02/09/2007 -  pA base
+2353710 -2 -2
+Description:çäCalculates the date as of the last anniversary based on the issue date and the point in time date.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base function
+2353710 0 2
+
+2353810 -2 -2
+Description:çäCalculates the date as of the last anniversary based on the issue date and the point in time date.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä04/30/2007 âJohn HeumannâCreated Function
+2353910 -2 -2
+Description:  Calculates the date as of the next anniversary based on the issue date and the point in time date.çä çäModification Log:çä07/08/2011 - cleanup - BT - moved note into note sectionçä02/09/2007âpA base functionçä
+1c779de5 -2 -2
+Description: This function calculates number of months from anniversary monthçä çäModification Log:çä04/11/2014 - PA1403 - rm - Use MONTHS function to correct for Leap Day issue dates.çä09/15/2006   Dimitry Masalov   Created function.çä 
+2353bd8 -2 -2
+Description:çäThis function returns true if transactionDate is on or after start date and on or before end date.çä çäModification Log:çä07/18/2013 pA 1401 wmA 1060 CMC added check up front due to wmA initialized dates with 12/31/2199çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA baseçä
+2353c90 -2 -2
+Description:çäReturns True if date 1 is subsequent to date 2.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2353d80 -2 -2
+Description:çäReturns True if date 1 < date 2.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+795b8168 -2 -2
+Description:çä   Returns True if date 1 <= date 2.çä çä Modification Log:çä04/26/2011 wm|A-J cmc Initial Calculationçä
+23541d0 -2 -2
+Description:çäReturns True if date 1 >= date 2.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2354360 -2 -2
+Description:çäReturns True if date1 is the same date as date2.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+554c2e36 -2 -2
+Description: Determines the maximum of two interest ratesçä çäModification Logçä10/11/2011 wmA-J CMC Initial Calculation/Rule
+15300342 -2 -2
+Description: Determines the minimum of two interest ratesçä çäModification Logçä10/11/2011 wmA-J CMC Initial Calculation/Rule
+2354940 -2 -2
+Description:çäBuilds a date based on the month from date1, day from date2, and year from date3.çä çäModification Log:çä04/11/2014 - PA1403 - rm - Added check for building Leap Year date in wrong yearsçä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base function
+2354940 0 2
+
+2354da0 -2 -2
+Description:çäReturns a date formatted MM/DD/YYYY.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2354e78 -2 -2
+Description:çäReturns a date where startDate is decreased by numberOfMonths.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2354f70 -2 -2
+Description:çäReturns a date where startDate is increased by numDays.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä06/30/2007âpA base
+424a6d58 -2 -2
+Description: Returns a date where startDate is decreased by numDaysçä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä07/20/2010 PAC020 Back-dating Support JL Initial Calculationçä06/30/2007âpA base
+2355060 -2 -2
+Description:çäReturns a date where startDate is increased by numberOfMonths.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2355218 -2 -2
+Description:çäReturns a date where startDate is increased by num_years.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+4f9198e4 -2 -2
+Description: Returns a date where startDate is decreased by num_yearsçä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä07/20/2010 PAC020 Back-dating Support JL Initial Calculationçä02/09/2007âpA base
+2355308 -2 -2
+Description : converts a date into YYYYMMDD format in order to use LOOKUPX in a tableçä çäModification logçä05/22/2012 - wmA-J - rm - moved function comments to function noteçä03/02/2007âNick Ticknerâcreated function
+24d89827 -2 -2
+çäModification Log:çä05/10/2011 PPLUS CMC change from m/d/y to M/D/Y to capture the leading zeros.
+10a4fe1f -2 -2
+Description : converts date 'date1' into form YYYYMMDDçä çäModification logçä05/22/2012 - wmA-J - rm - moved function comments to function noteçä
+7f599ee9 -2 -2
+Description:  Converts date from YYYYMMDD to MM/DD/YYYY
+27ecc6c7 -2 -2
+Description:  Converts a date from MM/DD/YYYY to YYYYMMDD
+120ae74 -2 -2
+Description: Converts date format YYYYMMDD to M/D/Yçä çäModification Logçä04/02/2012 wmA-J Sprint 20 - rm - Added to prevent rate access errors
+1201418c -2 -2
+Description: If valid date, then convert to YMD format, else return ""çä çäModification Logçä02/27/2012 wmA-J Sprint 18 - CMC - Valuation Calcs -- moved from Access modelçä10/31/2007 CSC Initial Calculation/Ruleçä
+2355bb8 -2 -2
+Description: Returns the monthly duration based on the issue date and the point in time date.çä çäModification Log:çä02/09/2009âpA base
+23566a0 -2 -2
+Description:çä  Returns the current total monthly duration based on the effective date and the issue date.çä çäModification Log:çä10/05/2006   John Heumann   Created function.çä
+2355d90 -2 -2
+ Description:  çäThis function returns the number of days in the calendar year.çä çä Modification Log:çä02/01/2011 - rm - Replaced duplicate function 'Is Leap Year' function with 'DATE Is Leap Year'.çä02/09/2007 -  pA -  pA base
+23564f8 -2 -2
+Description:âReturns the current duration based on the effective date and the issue date.çä çäModification Log:çä  10/05/2006âJohn HeumannâCreated function.çä  05/31/2007âJohn HeumannâChanged function so that it returns 1 for months 1-12, 2 for months 13-24, etc.çä  08/28/2007âPerry MyersâEdited to use 'GEN Floor'
+23565e8 -2 -2
+Description:  Returns the duration year of the coverage as of the policy duration.  For example, if a coverageçä                     is issued in the 3rd policy year, as of the 5th policy year the coverage will be in its 3rd duration.çä çäModification Log:çä06/11/2007   John Heumann   Created function.
+23568d0 -2 -2
+Description: Returns the month number (1 thru 12) of the year in which the effective date falls during the policy year.çä çä Modification Log:çä  01/29/2007   John Heumann   Created function.
+2356b10 -2 -2
+Description: Total number of plan years for the specific coverage/coverage option çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/15/2007   Dimitry Masalov   Created function.çä
+2356bf8 -2 -2
+Description: Calculates the policy/coverage year number.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/15/2007   Dimitry Masalov   Created function.
+2357188 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+7ded755d -2 -2
+Description: Returns the date that is the indicated number of months before or after a specified date (the inDate). Use EDATE to calculate maturity dates or due dates that fall on the same day of the month as the date of issue. Matches Excel EDATE function, but returns an actual date (not serial number).çä çäModification Log:çä05/22/2012 - wmA-J - rm - changed internal vpms functions to all caps to agree with standard practiceçä09/21/2010 PA1101 rm - replaced comma delimitersçä09/15/2010 PA1101 JL Initial Calculation
+55ae9f3e -2 -2
+Description:çäAnnual duration containing 'date2' (MM/DD/YYYY format) relative to an issue date of 'date1' (MM/DD/YYYY format)çä çäModification log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä
+37bbfb34 -2 -2
+Description:  Conversion of duration from current mode into monthsçä çäModification Log:çä07/15/2014 PA1403 PAC039 DIA JL Initial Rule
+2357360 -2 -2
+Description:çäReturns the number of months for a particular mode period.çä çäModification Log:çä01/11/2013 wmaJ 1301 Release 3 Jira 759 CMC added Biweekly and Dailyçä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+2357440 -2 -2
+Description:çäReturns the number of months for a particular mode period.çä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base function
+2357520 -2 -2
+Description: Number of payments per year based on the payment modeçä çäModification Log:çä06/09/2011  PAC022 DI JL Add Bi-Weeklyçä02/14/2007   Dimitry Masalov   Created function.
+1d42196d -2 -2
+Description: maps modePeriod back to modeçä çäModification log:çä04/09/2009 PAC005 DT added function
+2356f40 -2 -2
+Description:çäReturns the mode adjustment factor for a particular payment modeçä çäModification Log:çä05/22/2012 - wmA-J - rm - moved function comments to function noteçä02/09/2007âpA base
+23577a0 -2 -2
+Description:  Returns the number of days in the year within date.çä çäModification Log:çä06/11/2007   John Heumann   Created function.çä
+2357960 -2 -2
+Description:  Returns True (1) if the day of date1 is equal to the day of date2.çä çäModification Log:çä10/21/2011 - rm - Simplified Boolean comparisonçä03/05/2007   Don Sinclair   Created function.
+2357a48 -2 -2
+Description: Total number of days between two dates çä çäModification Log:çä03/05/2007   Don Sinclair   Created function.çä
+2357ca8 -2 -2
+Description: Returns the starting date increased by the period of time represented by the number of periods and the period mode.çä çäModification Log:çä01/13/2013 wmA-J 1301 Release 3 JIRA 759 CMC added daily periodsçä04/13/2007âJohn HeumannâCreated function.çä
+70e6fd65 -2 -2
+Description: Returns the starting date increased by the period of time represented by the number of periods and the period mode.çä çäModification Log:çä01/13/2013 wmA-J 1301 Release 3 JIRA 759 CMC new function
+2357ee0 -2 -2
+Description:  Returns True (1) if month and day of date1 is equal to the month and day of date2.çä çäModification Log:çä10/21/2011 - rm - Simplified Boolean comparisonçä03/05/2007   Don Sinclair   Created function.çä
+4942761b -2 -2
+Description:  Returns True (1) if month and year of date1 is equal to the month and day of date2.çä çäModification Log:çä05/02/2013 wmA-J Release 3 Sprint 13 JvdM Initial Calculation.çä
+2358610 -2 -2
+Description: Returns the projection date based on the issue date and the number of years and months into  the projection it is.çä çäModification Log:çä03/02/2007   John Heumann   Created function.çä
+2358250 -2 -2
+Description: Computes the number of years between 2 datesçä çäModification Logçä05/02/2007âPerry Myersâ
+2358b00 -2 -2
+Description: Converts the month and day to MMDD formatçä çäModification Log:çä05/03/2007âPerry Myersâ
+68c04af6 -2 -2
+Description: Determines the beginning of the calendar yearçä çäModification Logçä10/11/2011 wmA-J CMC Initial Calculation/Rule
+19bfaa23 -2 -2
+Description: Determines the beginning of the next calendar yearçä çäModification Logçä10/11/2011 wmA-J CMC Initial Calculation/Rule
+40db585b -2 -2
+10/25/2012 wmA-J 1301 Release 2 Sprint 5 JvdM Initial Calc
+1be84fd3 -2 -2
+10/25/2012 wmA-J 1301 Release 2 Sprint 5 JvdM Initial Calc
+66efde6e -2 -2
+10/25/2012 wmA-J 1301 Release 2 Sprint 5 JvdM Initial Calc
+18fa7a48 -2 -2
+Description:  Calculate the next calendar quarter start date.çä çäModification Log:çä05/06/2013 wmA-J Release 4 Sprint 13 JvdM Initial Calc
+4f823cc5 -2 -2
+Description:  Calculate the next calendar quarter start date.çä çäModification Log:çä05/06/2013 wmA-J Release 4 Sprint 13 JvdM Initial Calc
+7d67147e -2 -2
+Description: returns year index for one month earlier.  çä çäModification Log:çä05/28/2014 - PA1403 - rm - Moved from TaxCompliance.pms.  (was 'prev mth yr'(yearIndex; monthIndex))çä10/31/2007 CSC Initial Calculation/Rule
+66d1c159 -2 -2
+Description: returns year index for one month earlier.  çä çäModification Log:çä05/28/2014 - PA1403 - rm - Moved from TaxCompliance.pms.  (was 'prev mth yr'(yearIndex; monthIndex))çä10/31/2007 CSC Initial Calculation/Rule
+28ad24ec -2 -2
+Description: returns month index for one month previouslyçä çäModification Log:çä05/28/2014 - PA1403 - rm - Moved from TaxCompliance.pms (was 'prev mth'(monthIndex))çä10/31/2007 CSC Initial Calculation/Rule
+7937d005 -2 -2
+Description: returns month index for one month previouslyçä çäModification Log:çä05/28/2014 - PA1403 - rm - Moved from TaxCompliance.pms (was 'prev mth'(monthIndex))çä10/31/2007 CSC Initial Calculation/Rule
+23576c0 -2 -2
+Description:  Returns True (i.e. 1) if the date1 parameter has a year that is a leap year.çä çäModification Log:çä06/11/2007   John Heumann   Created function.çä
+43bd9252 -2 -2
+escription:  Returns True if parameter date1 is on Leap Dayçä çäModification Log:çä04/11/2014 - PA1403 - rm - Created function.çä
+7674003b -2 -2
+Description:  Number of Leap Years between two Datesçä çäModification Log:çä02/27/2012 wmA-J Sprint 18 - CMC - Valuation Calcs
+28abe7d9 -2 -2
+Description:âNumber of leap years that have occurred before the current dateçä çäModification Log:çä02/27/2012 wmA-J Sprint 18 - CMC - Valuation Calcs
+730b6f47 -2 -2
+Description:âReturns the last day of February, including Feb 29th for Leap Years.çä çäModification Log:çä05/01/2014 - PA1403 - rm - Added check that current date is leap year to prevent date errorsçä02/27/2012 wmA-J Sprint 18 - CMC - Valuation Calcs
+2358760 -2 -2
+Description:  functions added to allow stand-alone compileçäModifications log:çä12/4/2008 CSC Initial function
+63511564 -2 -2
+Modification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+;Offset=00000000

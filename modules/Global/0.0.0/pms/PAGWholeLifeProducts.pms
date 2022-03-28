@@ -1,0 +1,115 @@
+;1	08.12.2016 13:40:51	jlawrie2	
+X0 d76fe51 0 0 0 0 0 0
+
+O0 6413d775 0 0 0 0 0 0
+
+E0 34856ad5 0 0 0 0 0 0
+
+L0 716ac242 0 0 0 0 0 0
+
+B0 5de23d5f 0 0 0 0 0 0
+
+P1 5f2a7020 0 7d07bad3 0 0 0 2
+
+--description
+Global Whole Life Products Display model.çä çäRELEASE LOG:çäRELEASE pA 1401çäRELEASE Global pA 1301
+P13 7d07bad3 5f2a7020 2fa38a6f 0 0 0 2
+Global Whole Life Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Whole Life Products Display model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGWholeLifeProducts.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P8 2fa38a6f 7d07bad3 284d71dc 0 0 0 2
+-- OUTPUTS --
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Product Mode Premium(rateAssumption; yearIndex)
+'OUTPUT Policy Mode Premium'(rateAssumption;yearIndex)
+OUTPUT Product DeathBenefitAmt(rateAssumption; yearIndex)
+SUMX(coverageIndex;0;'Policy Number Of Coverage'(rateAssumption;yearIndex) - 1;IF ( /*base or increase and inforce*/ (('IndicatorCode is Base'('Policy Coverage IndicatorCode'(rateAssumption;#coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(rateAssumption;#coverageIndex))) && 'Std Coverage Is InForce'(rateAssumption;#coverageIndex;'Increase Date By Years'('Policy EffDate';yearIndex);yearIndex)) ; çä   //True - calculate death benefitçä'Policy Coverage CurrentNumberOfUnits'(rateAssumption;#coverageIndex;yearIndex) * 'PI CoverageProduct ValuePerUnit'(rateAssumption;'Policy Coverage ProductCode'(rateAssumption;#coverageIndex);#coverageIndex;'Policy EffDate') ; çä   //False - rider benefitsçäIF ( /*Is coverage an integrated rider*/ 'IndicatorCode is Integrated'('Policy Coverage IndicatorCode'(rateAssumption;#coverageIndex)) ; çä    'Policy Coverage CurrentNumberOfUnits'(rateAssumption;#coverageIndex;yearIndex) * 'PI CoverageProduct ValuePerUnit'(rateAssumption;'Policy Coverage ProductCode'(rateAssumption;#coverageIndex);#coverageIndex;'Policy EffDate') ; çä    0çä  )çä))
+OUTPUT Product Benefit Mode Premium(rateAssumption; coverageIndex; yearIndex)
+'GEN Round'('OUTPUT Coverage Mode Premium'(rateAssumption;coverageIndex;yearIndex);2)
+OUTPUT Product Benefit Life Mode Premium(rateAssumption; coverageIndex; lifeparticipantIndex; yearIndex)
+'GEN Round'('ModePremium Capped Coverage Life Mode Premium'(rateAssumption;coverageIndex;lifeparticipantIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Policy PaymentMode';'Policy Duration';yearIndex;rateAssumption));2)
+OUTPUT Product InitialCommission(rateAssumption; yearIndex)
+'Comm Total Intial'(rateAssumption;yearIndex)
+P3 284d71dc 2fa38a6f 0 0 0 50 2
+Traditional Products@TraditionalProducts
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 555d29b8 0 0 0 0 0 0
+
+A0 5be40a7c 0 0 0 0 0 0
+
+T0 40d0330b 0 0 0 0 0 0
+
+I0 26b5604b 0 4cf72bbd 0 0 0 0
+
+I0 4cf72bbd 26b5604b 0 6dcab916 0 0 0
+Premiums.pms
+I0 6dcab916 26b5604b 0 63d009c8 0 0 0
+PAGSurrenderValues.pms
+I0 63d009c8 26b5604b 0 56f9ca7f 0 0 0
+PAGTraditionalProducts.pms
+I0 56f9ca7f 26b5604b 0 22b9e0ba 0 0 0
+UniversalLifeProducts.pms
+I0 22b9e0ba 26b5604b 0 6e99f5f3 0 0 0
+TraditionalProducts.pms
+I0 6e99f5f3 26b5604b 0 3dd6c652 0 0 0
+WholeLifeProducts.pms
+I0 3dd6c652 26b5604b 0 2d3982f5 0 0 0
+PAGBenefitCharges.pms
+I0 2d3982f5 26b5604b 0 0 0 0 0
+PAGModePremium.pms
+-
+O0
+E0
+L0
+B0
+P1
+7d07bad3
+F0
+A0
+T0
+!5
+2fa38a6f 3 -1
+Description: Total Policy Modal Premium for a given yearIndex, based on rateAssumptionçä çäModification Log:çä07302013 pA-G1401 GPF JL Initial Output
+2fa38a6f 4 -1
+Description: Total Death Benefit for a given yearIndex, based on rateAssumptionçä çäModification Log:çä07302013 pA-G1401 GPF JL Initial Output
+2fa38a6f 5 -1
+Description: Total Benefit Modal Premium for a given yearIndex, based on rateAssumptionçä çäModification Log:çä08142013 pA-G1401 GPF JL Initial Output
+2fa38a6f 6 -1
+Description: Total Initial Commission for a given yearIndex, based on rateAssumptionçä çäModification Log:çä08202013 pA-G1401 GPF JL Initial Output
+2fa38a6f 7 -1
+Description: Total Benefit Initial Commission for a given benefit and yearIndex, based on rateAssumptionçä çäModification Log:çä08202013 pA-G1401 GPF JL Initial Output
+;Offset=00000000

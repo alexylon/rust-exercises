@@ -1,0 +1,661 @@
+;1	08.12.2016 13:33:06	jlawrie2	
+X0 1c43ca0 0 1c445d0 0 0 0 0
+
+X0 1c445d0 1c43ca0 1c44668 0 0 0 0
+-- All Test Cases --
+X1 1c44668 1c445d0 0 1c44748 0 0 2
+EIAIV(s)
+EIAIV("(EIA2PA!EIAIV!2002/01/01!35!10!1!1!1!1!**!06!1!A!1!1)")
+10.3265
+X1 1c44748 1c445d0 0 1c44860 0 0 2
+CURRINT(s)
+CURRINT("(EIA2PA!CURRINT!2001/01/01!35!10!1!1!1!1!**!06!1!A!1!1)")
+6.5
+X1 1c44860 1c445d0 0 0 0 0 2
+GUARINT(s)
+GUARINT("(EIA2PA!GUARINT!2000/01/01!35!10!1!1!1!1!**!06!1!A!1!1)")
+4
+O1 1c43b5c 0 0 0 0 0 2
+
+--CACHESIZE
+2500
+E0 1c43bc8 0 0 0 0 0 0
+
+L0 1c43c34 0 0 0 0 0 0
+
+B0 1c43de4 0 0 0 0 0 0
+
+P3 1c43d0c 0 1c44c48 0 0 0 2
+
+--description
+Main rate model for the Equity Indexed Annuity product.çä çäModel includes rate models for expenses, full and partial surrender.çä çäRate types include (but not limited to) here, besides those in the included models:çä - fund index values (EIAIV)çä - current interest rate (CURRINT)çä - guaranteed interest rate (GUARINT)çä - percentage contribution added to calculation of GMCSV (GMCSVPCT)
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.4.1"
+P13 1c44c48 1c43d0c 1cd0488 0 0 0 2
+Equity Indexed Annuity rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Rate tables model for REIA2PA plan"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"REIA2PA.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1cd0488 1c44c48 0 0 0 0 2
+EIA2PA Plan
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 1c43d78 0 1cd09a0 0 0 0 0
+
+F1 1cd09a0 1c43d78 1cd0ab8 0 0 0 2
+-- Rate Types --
+Funktion
+
+F1 1cd0ab8 1cd09a0 1cd0a18 1c45550 0 0 2
+-- Equity Indexed Annuity rate types --
+Funktion
+
+F1 1cd0a18 1cd0ab8 0 1cd0c80 0 0 2
+EIAIV(s)
+Funktion
+LOOKUPX('TABLE EIAIV';SetParameter("Effective_Date";s);"Index_Value")
+F1 1cd0c80 1cd0ab8 0 1cd0d50 0 0 2
+CURRINT(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'Currint Rate Lookup'(s)çä)
+F1 1cd0d50 1cd0ab8 0 1cd0ea8 0 0 2
+GUARINT(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'Guarint Rate Lookup'(s)çä)
+F1 1cd0ea8 1cd0ab8 0 1c450a0 0 0 2
+GMCSVPCT(s)
+Funktion
+IF ('Parm Validation'(V_("Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'GMCSV Pct Lookup'(s)çä)
+F1 1c450a0 1cd0ab8 1c45228 0 0 0 2
+--Select period functions--
+Funktion
+
+F1 1c45228 1c450a0 0 1c453b0 0 0 2
+Select Period(s)
+Funktion
+IF (EXISTS('TABLE Select Period';SetParameter("Rate_Type";s)) ; çä  'TABLE Select Period'[SetParameter("Rate_Type";s)] ; çä  0çä)
+F1 1c453b0 1c450a0 0 0 0 0 2
+Select Ultimate Lookup Column(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'Select Period'(s) ; çä  "Year_" & SetParameter("Duration";s) ; çä  "Ultimate"çä)
+F1 1c45550 1cd09a0 1c456f0 0 0 0 2
+--Table access functions--
+Funktion
+
+F1 1c456f0 1c45550 0 1c45918 0 0 2
+Currint Rate Lookup(s)
+Funktion
+LOOKUPX('TABLE CURRINT';'Access Jurisdiction Key'(s);'Access Eff Date Key'(s);'Select Ultimate Lookup Column'(s))
+F1 1c45918 1c45550 0 1c45b48 0 0 2
+Guarint Rate Lookup(s)
+Funktion
+LOOKUPX('TABLE GUARINT';'Access Jurisdiction Key'(s);'Access Eff Date Key'(s);'Select Ultimate Lookup Column'(s))
+F1 1c45b48 1c45550 0 1c45d70 0 0 2
+GMCSV Pct Lookup(s)
+Funktion
+LOOKUPX('TABLE GMCSVPCT';SetParameter("Duration";s);"Table_" & SetParameter("Table_Code";s))
+F1 1c45d70 1c45550 1c45f28 0 0 0 2
+--Build access keys--
+Funktion
+
+F1 1c45f28 1c45d70 0 1c460f0 0 0 2
+Access Jurisdiction Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));SetParameter("State_Code";s)) ; çä  SetParameter("State_Code";s) ; çä  IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));"*") ; çä    "*" ; çä    "nomatch"çä  )çä)
+F1 1c460f0 1c45d70 0 0 0 0 2
+Access Eff Date Key(s)
+Funktion
+SetParameter("Effective_Date";s)
+A0 1c43e50 0 0 0 0 0 0
+
+T0 1c43ebc 0 1c463e8 0 0 0 0
+
+T1 1c463e8 1c43ebc 1c465b8 0 0 0 2
+--Rate Tables--
+key
+value
+T38 1c465b8 1c463e8 0 1c46828 0 0 2
+TABLE EIAIV
+Effective_Date
+Index_Value
+20010701
+9.716
+20010801
+9.7718
+20010901
+9.8035
+20011001
+9.7895
+20011101
+10.2485
+20011201
+10.3546
+20020101
+10.3265
+20020201
+10.4425
+20020301
+10.4635
+20020401
+10.6605
+20020501
+11.0867
+20020601
+10.8115
+20020701
+11.0055
+20020801
+11.1635
+20020901
+11.4755
+20021001
+12.9785
+20021101
+12.1227
+20021201
+11.9815
+20030101
+11.7485
+20030201
+11.9075
+20030301
+12.2065
+20030401
+12.4886
+20030501
+12.8205
+20030601
+13.1325
+20030701
+13.5805
+20030801
+14.6075
+20030901
+14.6965
+20031001
+14.7457
+20031101
+14.6795
+20031201
+15.2335
+20040101
+15.6717
+20040201
+16.0395
+20040301
+16.3205
+20040401
+17.4385
+20040501
+18.2735
+20040601
+18.9115
+20060101
+24.8729
+T14 1c46828 1c463e8 0 1c49810 0 0 13
+TABLE CURRINT
+Jurisdiction
+effective_date
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Ultimate
+*
+19900101
+6.5
+6.75
+7
+6.5
+5.25
+6
+5.75
+5.5
+6.25
+6
+5.75
+*
+20010616
+6.25
+6.5
+6.75
+6.25
+5
+5.75
+5.5
+5.25
+6
+5.75
+5.5
+*
+20010617
+6
+6.25
+6.5
+6
+4.75
+5.5
+5.25
+5
+5.75
+5.5
+5.25
+*
+20020801
+5.75
+6
+6.25
+5.75
+4.5
+5.25
+5
+4.75
+5.5
+5.25
+5
+*
+20021001
+5.5
+5.75
+6
+5.5
+4.25
+5
+4.75
+4.5
+5.25
+5
+4.75
+*
+20030101
+5.25
+5.5
+5.75
+5.25
+4
+4.75
+4.5
+4.25
+5
+4.75
+4.5
+*
+20030701
+5
+5.25
+5.5
+5
+3.75
+4.5
+4.25
+4
+4.75
+4.5
+4.25
+*
+20040201
+4.75
+5
+5.25
+4.75
+3.5
+4.25
+4
+3.75
+4.5
+4.25
+4
+*
+20050401
+4.5
+4.75
+5
+4.5
+3.25
+4
+3.75
+3.5
+4.25
+4
+3.75
+*
+20050701
+4.25
+4.5
+4.75
+4.25
+3
+3.75
+3.5
+3.25
+4
+3.75
+3.5
+*
+20060101
+4
+4.25
+4.5
+4
+2.75
+3.5
+3.25
+3
+3.75
+3.5
+3.25
+*
+20061001
+3.75
+4
+4.25
+3.75
+2.5
+3.25
+3
+2.75
+3.5
+3.25
+3
+*
+20070101
+3.5
+3.75
+4
+3.5
+2.25
+3
+2.75
+2.5
+3.25
+3
+2.75
+T14 1c49810 1c463e8 0 1c4b0e0 0 0 13
+TABLE GUARINT
+Jurisdiction
+effective_date
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Year_9
+Year_10
+Ultimate
+*
+19900101
+4.5
+4.75
+5
+4.5
+3.25
+4
+3.75
+3.5
+4.25
+4
+3.75
+*
+20010616
+4.25
+4.5
+4.75
+4.25
+3
+3.75
+3.5
+3.25
+4
+3.75
+3.5
+*
+20010617
+4
+4.25
+4.5
+4
+2.75
+3.5
+3.25
+3
+3.75
+3.5
+3.25
+*
+20020801
+3.75
+4
+4.25
+3.75
+2.5
+3.25
+3
+2.75
+3.5
+3.25
+3
+*
+20021001
+3.5
+3.75
+4
+3.5
+2.25
+3
+2.75
+2.5
+3.25
+3
+2.75
+*
+20030101
+3.25
+3.5
+3.75
+3.25
+2
+2.75
+2.5
+2.25
+3
+2.75
+2.5
+*
+20030701
+3
+3.25
+3.5
+3
+1.75
+2.5
+2.25
+2
+2.75
+2.5
+2.25
+*
+20040201
+2.75
+3
+3.25
+2.75
+1.5
+2.25
+2
+1.75
+2.5
+2.25
+2
+*
+20050401
+2.5
+2.75
+3
+2.5
+1.25
+2
+1.75
+1.5
+2.25
+2
+1.75
+*
+20050701
+2.25
+2.5
+2.75
+2.25
+1
+1.75
+1.5
+1.25
+2
+1.75
+1.5
+*
+20060101
+2
+2.25
+2.5
+2
+0.75
+1.5
+1.25
+1
+1.75
+1.5
+1.25
+*
+20061001
+1.75
+2
+2.25
+1.75
+0.5
+1.25
+1
+0.75
+1.5
+1.25
+1
+*
+20070101
+1.5
+1.75
+2
+1.5
+0.25
+1
+0.75
+0.5
+1.25
+1
+0.75
+T3 1c4b0e0 1c463e8 0 1c4bab8 0 0 2
+TABLE GMCSVPCT
+Duration
+Table_13
+1
+80
+2
+87.5
+T3 1c4bab8 1c463e8 0 0 0 0 2
+TABLE Select Period
+rate_type
+sel_period
+GUARINT
+10
+CURRINT
+10
+I0 1c43f28 0 76d521ef 0 0 0 0
+
+I0 76d521ef 1c43f28 0 654237b0 0 0 0
+REIA2PA_EXP.pms
+I0 654237b0 1c43f28 0 29381ead 0 0 0
+REIA2PA_FULLSURR.pms
+I0 29381ead 1c43f28 0 77114420 0 0 0
+REIA2PA_PARTSURR.pms
+I0 77114420 1c43f28 0 0 0 0 0
+REIA2PA_PRMLOAD.pms
+-
+O0
+E0
+L0
+B0
+P1
+1c44c48
+F9
+1cd09a0
+1cd0ab8
+1c45550
+1c456f0
+1c45918
+1c45b48
+1c45d70
+1c45f28
+1c460f0
+A0
+T1
+1c463e8
+!11
+1cd0a18 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the EIA index value, from internal table T_EIAIV.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1cd0c80 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the current interest rate, from internal table T_CURRINT. The effective date is parsed from the passed serialized vector string (s).  The interest rate returned is from the row where the interest table effective date is equal to or less than the parm effective date.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1cd0d50 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the guaranteed interest rate, from internal table T_GUARINT. The effective date is parsed from the passed serialized vector string (s).  The interest rate returned is from the row where the interest table effective date is equal to or less than the parm effective date.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1cd0ea8 -2 -2
+Description: This function is called by late referencing from the Access Model and returns the percentage contribution added to calculation of GMCSV from internal table T_GMCSVPCTçä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45228 -2 -2
+Description: This function returns, the full surrender select period by rate type, from internal table T_Select_Period.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c453b0 -2 -2
+Description: Checks to see if the duration is still in the select period or not. Returns the column name to use for rate table lookup.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c456f0 -2 -2
+Description: This function performs a look up in internal table T_CURRINT and returns the guaranteed interest rate for the appropriate effective date, jurisdiction, and duration. The look up is based on a select and ultimate basis and Jurisdiction can contain a wildcard (*).  The Jurisdiction parm will check for a match on the input value, but if that exact match is not found, then that parm will be overridden with the wildcard value (*).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45918 -2 -2
+Description: This function performs a look up in internal table T_GUARINT and returns the guaranteed interest rate for the appropriate effective date, jurisdiction, and duration.  The look up is based on a select and ultimate basis and Jurisdiction can contain a wildcard (*).  The Jurisdiction parm will check for a match on the input value, but if that exact match is not found, then that parm will be overridden with the wildcard value (*).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45b48 -2 -2
+Description: This function performs a look up in internal table T_GMCSVPCT and returns the percentage by which the relevant contribution must be multiplied byçä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45f28 -2 -2
+Description: This function parses and validates the jurisdiction code from the passed serialized vector string (s). A test is performed, using all established parms to this position, to insure the existence of the parm value, and if present, returns the original parm value.  If the exact parm value is not within the table, an attempt is made using the wildcard value (*).  If the wildcard entry is located the wildcard value (*) is returned.  If neither test is successful, a no match value is returned.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c460f0 -2 -2
+Description: This function parses and returns the table identity code from the passed serialized vector string (s).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

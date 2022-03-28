@@ -1,0 +1,128 @@
+;1	13.03.2017 14:41:41	jtomlienovic	
+X0 3f4150 0 0 0 0 0 0
+
+O1 3f400c 0 0 0 0 0 2
+
+--CACHESIZE
+350000
+E0 3f4078 0 0 0 0 0 0
+
+L0 3f40e4 0 0 0 0 0 0
+
+B0 3f4294 0 0 0 0 0 0
+
+P3 3f41bc 0 3f27c0 0 0 0 2
+
+--description
+Main Integration Model for the Equity Indexed Universal Life Product
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.8    "
+P13 3f27c0 3f41bc 3f4990 0 0 0 2
+Equity Indexed Universal Life Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+" Main Integration Model for Equity Indexed Universal Life Products"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"EquityIndexedAnnuityProducts.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P3 3f4990 3f27c0 43bb3d62 1e105b0 0 0 2
+Admin System
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+0
+P3 43bb3d62 3f4990 0 3f4ec8 0 50 2
+Annual Statement Projections@AnnualStatement
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 3f4ec8 3f4990 0 1e10490 0 50 2
+Contract Documents@ULContractDocuments
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e10490 3f4990 0 0 0 50 2
+Equity Credit@ULEquityIndexedFunds
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e105b0 3f27c0 475ba587 0 0 0 2
+Illustrations
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+1
+P3 475ba587 1e105b0 0 0 0 50 2
+EIUL Illustrations@EIULAdvMarketingIllus
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 3f4228 0 0 0 0 0 0
+
+A0 3f4300 0 0 0 0 0 0
+
+T0 3f436c 0 0 0 0 0 0
+
+I0 3f43d8 0 72ddc87f 0 0 0 0
+
+I0 72ddc87f 3f43d8 0 24cf7e6 0 0 0
+ULEquityIndexedFunds.pms
+I0 24cf7e6 3f43d8 0 36bf7b19 0 0 0
+EIULAdvMarketingIllus.pms
+I0 36bf7b19 3f43d8 0 0 0 0 0
+AnnualStatement.pms
+-
+O0
+E0
+L0
+B0
+P7
+3f27c0
+3f4990
+43bb3d62
+3f4ec8
+1e10490
+1e105b0
+475ba587
+F0
+A0
+T0
+;Offset=00000000

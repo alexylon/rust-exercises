@@ -1,0 +1,1157 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 73f9ed07 0 0 0 2
+
+--description
+Global Group General Functions Modelçä çäRELEASE LOG:çäRELEASE pA 1601
+P13 73f9ed07 de0804 0 0 0 0 2
+--Global Group General--
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Group General model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGGGeneral.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 de0860 0 3ba847fc 0 0 0 0
+
+F1 3ba847fc de0860 33fd8013 69e83e8b 0 0 2
+:Gen
+Funktion
+
+F1 33fd8013 3ba847fc 5a0479f8 168db509 0 0 2
+Gen DatconA(func;gregdate;juliandays)
+Funktion
+CASE(func;çä  "GREG" : 'Gen Convert To Gregorian'(juliandays);çä  "JULN" : 'Gen Convert To Julianday'(gregdate);çä   : error("Invalid Function passed to DATCONA" & func))çä
+F1 5a0479f8 33fd8013 74dd98df 40100997 0 0 2
+Gen Convert To Gregorian(juliandays)
+Funktion
+'Gen Get Proper Year'(juliandays) & 'Gen Get Month'(juliandays) & 'Gen Get Day'(juliandays)
+F1 74dd98df 5a0479f8 0 60127ecd 0 0 2
+Gen Subtract Juliandays(juliandays)
+Funktion
+juliandays - 366
+F1 60127ecd 5a0479f8 0 53ed3a83 0 0 2
+Gen Get Reminder(juliandays)
+Funktion
+'Gen Subtract Juliandays'(juliandays) - (('Gen Subtract Juliandays'(juliandays) DIV 1461) * 1461)
+F1 53ed3a83 5a0479f8 778966bb 1242e08 0 0 2
+Gen Get Day(juliandays)
+Funktion
+IF ('Gen Get Reminder'(juliandays) = 0 ; çä  31 ; çä  'Gen Counter'('Gen Get Correct Day'('Gen Get Remindercount'('Gen Get Reminder'(juliandays));'Gen Check Leap Year'('Gen Get Year'(juliandays));1))çä)
+F1 778966bb 53ed3a83 0 0 0 0 2
+Gen Get Correct Day(reminder;isleapyear;monthcount)
+Funktion
+IF (IF (isleapyear EQUAL "Y" ; çä  'Gen Get Leapyear Month'(monthcount) ; çä  'Gen Get NonLeapyear Month'(monthcount)çä) >= reminder ; çäreminder - IF (isleapyear EQUAL "Y" ; çä  'Gen Get Leapyear Month'(monthcount - 1) ; çä  'Gen Get NonLeapyear Month'(monthcount - 1)çä) ; çä'Gen Get Correct Day'(reminder;isleapyear;monthcount + 1)çä)
+F1 1242e08 5a0479f8 6fd95c86 3d22b797 0 0 2
+Gen Get Month(juliandays)
+Funktion
+IF ('Gen Get Reminder'(juliandays) = 0 ; çä  12 ; çä  'Gen Counter'('Gen Get Correct Month'('Gen Get Remindercount'('Gen Get Reminder'(juliandays));'Gen Check Leap Year'('Gen Get Year'(juliandays));1))çä)
+F1 6fd95c86 1242e08 0 0 0 0 2
+Gen Get Correct Month(reminder;isleapyear;monthcount)
+Funktion
+IF (IF (isleapyear EQUAL "Y" ; çä  'Gen Get Leapyear Month'(monthcount) ; çä  'Gen Get NonLeapyear Month'(monthcount)çä) >= reminder ; çämonthcount - 1 ; çä'Gen Get Correct Month'(reminder;isleapyear;monthcount + 1)çä)
+F1 3d22b797 5a0479f8 185a6db7 625fa845 0 0 2
+Gen Get Proper Year(juliandays)
+Funktion
+CASE(length('Gen Get Year'(juliandays));çä  1 : "000" & 'Gen Get Year'(juliandays);çä  2 : "00" & 'Gen Get Year'(juliandays);çä  3 : "0" & 'Gen Get Year'(juliandays);çä  4 : 'Gen Get Year'(juliandays);çä   : error("Invalid Length for Year"))çä
+F1 185a6db7 3d22b797 0 0 0 0 2
+Gen Get Year(juliandays)
+Funktion
+(('Gen Subtract Juliandays'(juliandays) DIV 1461) * 4) + IF ('Gen Get Reminder'(juliandays) = 0 ; çä  0 ; çä  1 + 'Gen Get Yearcount'('Gen Get Reminder'(juliandays))çä)
+F1 625fa845 5a0479f8 0 e69e6a9 0 0 2
+Gen Check Leap Year(leapyear)
+Funktion
+IF (leapyear MOD 4 = 0 ; çä  "Y" ; çä  "N"çä)
+F1 e69e6a9 5a0479f8 0 43e1a9f7 0 0 2
+Gen Get Leapyear Month(monthcount)
+Funktion
+CASE(monthcount;çä  1 : 0;çä  2 : 31;çä  3 : 60;çä  4 : 91;çä  5 : 121;çä  6 : 152;çä  7 : 182;çä  8 : 213;çä  9 : 244;çä  10 : 274;çä  11 : 305;çä  12 : 335;çä  13 : 366;çä   : error("Invalid Month " & monthcount))çä
+F1 43e1a9f7 5a0479f8 0 30aa322a 0 0 2
+Gen Get NonLeapyear Month(monthcount)
+Funktion
+CASE(monthcount;çä  1 : 0;çä  2 : 31;çä  3 : 59;çä  4 : 90;çä  5 : 120;çä  6 : 151;çä  7 : 181;çä  8 : 212;çä  9 : 243;çä  10 : 273;çä  11 : 304;çä  12 : 334;çä  13 : 365;çä   : error("Invalid Month" & monthcount))çä
+F1 30aa322a 5a0479f8 0 6e618c72 0 0 2
+Gen Get Yearcount(reminder)
+Funktion
+IF (reminder < 366 ; çä  0 ; çä  1 + 'Gen Get Yearcount'((reminder - 365))çä)
+F1 6e618c72 5a0479f8 0 0 0 0 2
+Gen Get Remindercount(reminder)
+Funktion
+IF (reminder < 366 ; çä  reminder ; çä  'Gen Get Remindercount'((reminder - 365))çä)
+F1 40100997 33fd8013 3ad24c4d 0 0 0 2
+Gen Convert To Julianday(gregdate)
+Funktion
+((('Gen Julian Year'(gregdate) * 1461) + 3) DIV 4) + 'Gen Julian Get Monthdays'(gregdate) + 'Gen Julian Day'(gregdate)
+F1 3ad24c4d 40100997 0 2fce556e 0 0 2
+Gen Julian Year(gregdate)
+Funktion
+IF ((mid(gregdate;1;4) > 2110 && mid(gregdate;1;4) < 1851) ; çä  error("Invalid Year " & mid(gregdate;1;4)) ; çä  mid(gregdate;1;4)çä)
+F1 2fce556e 40100997 1a29f17e 3d069124 0 0 2
+Gen Julian Get Monthdays(gregdate)
+Funktion
+IF ('Gen Julian Year'(gregdate) = (('Gen Julian Year'(gregdate) DIV 4) * 4) && 'Gen Julian Year'(gregdate) <> 1900 ; çä  'Gen Get Leapyear Month'('Gen Julian Month'(gregdate)) ; çä  'Gen Get NonLeapyear Month'('Gen Julian Month'(gregdate))çä)
+F1 1a29f17e 2fce556e 0 0 0 0 2
+Gen Julian Month(gregdate)
+Funktion
+IF ((mid(gregdate;5;2) > 12 && mid(gregdate;5;2) < 1) ; çä  error("Invalid Month " & mid(gregdate;5;2)) ; çä  mid(gregdate;5;2)çä)
+F1 3d069124 40100997 0 59f34e64 0 0 2
+Gen Julian Day(gregdate)
+Funktion
+IF (mid(gregdate;7;2) > 'Gen Day Calendar'(mid(gregdate;5;2);'Gen Check Leap Year'(mid(gregdate;1;4))) ; çä  error("Invalid Input Date " & mid(gregdate;7;2)) ; çä  mid(gregdate;7;2)çä)
+F1 59f34e64 40100997 0 0 0 0 2
+Gen Day Calendar(monthdate;isleapyear)
+Funktion
+CASE(monthdate;çä  01 : 31;çä  02 : IF (isleapyear EQUAL "Y" ; çä    29 ; çä    28çä  );çä03 : 31;çä04 : 30;çä05 : 31;çä06 : 30;çä07 : 31;çä08 : 31;çä09 : 30;çä10 : 31;çä11 : 30;çä12 : 31;çä : error("Invalid Month " & monthdate))çä
+F1 168db509 3ba847fc 0 56c283d0 0 0 2
+Gen Days Difference GDAYSDT(Fromdate;todate)
+Funktion
+IF (fromdate > todate ; çä  error("Fromdate > Todate") ; çä  'Gen DatconA'("JULN";todate;0) - 'Gen DatconA'("JULN";fromdate;0) + 1çä)
+F1 56c283d0 3ba847fc 0 7360f0d9 0 0 2
+Gen Add Sub Day GASONED(Inputdate;addsubind)
+Funktion
+CASE(addsubind;çä  "A" : 'Gen DatconA'("GREG";0;'Gen DatconA'("JULN";Inputdate;0) + 1);çä  "S" : 'Gen DatconA'("GREG";0;'Gen DatconA'("JULN";Inputdate;0) - 1);çä   : error("Invalid Indicator " & addsubind))çä
+F1 7360f0d9 3ba847fc d149190 393b46e5 0 0 2
+Gen Add Sub Frequency GADSUBF(Inputdate;freq;addsubind;crdate)
+Funktion
+CASE(addsubind;çä  "A";"S" : 'Gen Freq Year'(Inputdate;freq;addsubind) & 'Gen Freq Month'(Inputdate;freq;addsubind) & 'Gen Freq Day'(Inputdate;freq;addsubind;crdate);çä   : error("Invalid Indicator " & addsubind))çä
+F1 d149190 7360f0d9 7359c5b9 4adfbc18 0 0 2
+Gen Freq Year(Inputdate;freq;addsubind)
+Funktion
+CASE(freq;çä  "00" : 'Gen Julian Year'(Inputdate);çä  "01" : IF (addsubind EQUAL "A" ; çä    'Gen Julian Year'(Inputdate) + 1 ; çä    'Gen Julian Year'(Inputdate) - 1çä  );çä"02" : 'Gen Julian Year'(Inputdate) + 'Gen Yearcalc'('Gen Julian Month'(Inputdate);6;addsubind);çä"04" : 'Gen Julian Year'(Inputdate) + 'Gen Yearcalc'('Gen Julian Month'(Inputdate);3;addsubind);çä"12" : 'Gen Julian Year'(Inputdate) + 'Gen Yearcalc'('Gen Julian Month'(Inputdate);1;addsubind);çä : error("Invalid Frequency"))çä
+F1 7359c5b9 d149190 0 0 0 0 2
+Gen Yearcalc(Inputmonth;count;addsubind)
+Funktion
+IF (addsubind EQUAL "A" ; çä  IF (Inputmonth + count > 12 ; çä    1 ; çä    0çä  ) ; çäIF (Inputmonth - count <= 0 ; çä  -1 ; çä  0çä)çä)
+F1 4adfbc18 7360f0d9 22dd5056 45117b52 0 0 2
+Gen Freq Month(Inputdate;freq;addsubind)
+Funktion
+'Gen Counter'(CASE(freq;çä  "00" : 'Gen Julian Month'(Inputdate);çä  "01" : 'Gen Julian Month'(Inputdate);çä  "02" : 'Gen Monthcalc'('Gen Julian Month'(Inputdate);6;addsubind);çä  "04" : 'Gen Monthcalc'('Gen Julian Month'(Inputdate);3;addsubind);çä  "12" : 'Gen Monthcalc'('Gen Julian Month'(Inputdate);1;addsubind);çä   : error("Invalid Frequency"))çä)
+F1 22dd5056 4adfbc18 0 0 0 0 2
+Gen Monthcalc(Inputmonth;count;addsubind)
+Funktion
+IF (addsubind EQUAL "A" ; çä  IF (Inputmonth + count > 12 ; çä    12 - (Inputmonth + count) ; çä    Inputmonth + countçä  ) ; çäIF (Inputmonth - count <= 0 ; çä  12 + (Inputmonth - count) ; çä  Inputmonth - countçä)çä)
+F1 45117b52 7360f0d9 0 0 0 0 2
+Gen Freq Day(Inputdate;freq;addsubind;crdate)
+Funktion
+IF ('Gen Julian Day'(crdate) > 'Gen Day Calendar'('Gen Freq Month'(Inputdate;freq;addsubind);'Gen Check Leap Year'('Gen Freq Year'(Inputdate;freq;addsubind))) ; çä  'Gen Day Calendar'('Gen Freq Month'(Inputdate;freq;addsubind);'Gen Check Leap Year'('Gen Freq Year'(Inputdate;freq;addsubind))) ; çä  IF ('Gen Julian Day'(crdate) = 'Gen Day Calendar'('Gen Julian Month'(crdate);'Gen Check Leap Year'('Gen Julian Year'(crdate))) ; çä    'Gen Day Calendar'('Gen Freq Month'(Inputdate;freq;addsubind);'Gen Check Leap Year'('Gen Freq Year'(Inputdate;freq;addsubind))) ; çä    'Gen Julian Day'(crdate)çä  )çä)
+F1 393b46e5 3ba847fc 0 23b6f84a 0 0 2
+Gen Counter(counter)
+Funktion
+CASE(counter;çä  1 : "01";çä  2 : "02";çä  3 : "03";çä  4 : "04";çä  5 : "05";çä  6 : "06";çä  7 : "07";çä  8 : "08";çä  9 : "09";çä  10 : "10";çä  11 : "11";çä  12 : "12";çä  13 : "13";çä  14 : "14";çä  15 : "15";çä  16 : "16";çä  17 : "17";çä  18 : "18";çä  19 : "19";çä  20 : "20";çä  21 : "21";çä  22 : "22";çä  23 : "23";çä  24 : "24";çä  25 : "25";çä  26 : "26";çä  27 : "27";çä  28 : "28";çä  29 : "29";çä  30 : "30";çä  31 : "31";çä  32 : "32";çä  33 : "33";çä  34 : "34";çä  35 : "35";çä  36 : "36";çä  37 : "37";çä  38 : "38";çä  39 : "39";çä  40 : "40";çä  41 : "41";çä  42 : "42";çä  43 : "43";çä  44 : "44";çä  45 : "45";çä  46 : "46";çä  47 : "47";çä  48 : "48";çä  49 : "49";çä  50 : "50";çä  51 : "51";çä  52 : "52";çä  53 : "53";çä  54 : "54";çä  55 : "55";çä  56 : "56";çä  57 : "57";çä  58 : "58";çä  59 : "59";çä  60 : "60";çä  61 : "61";çä  62 : "62";çä  63 : "63";çä  64 : "64";çä  65 : "65";çä  66 : "66";çä  67 : "67";çä  68 : "68";çä  69 : "69";çä  70 : "70";çä  71 : "71";çä  72 : "72";çä  73 : "73";çä  74 : "74";çä  75 : "75";çä  76 : "76";çä  77 : "77";çä  78 : "78";çä  79 : "79";çä  80 : "80";çä  81 : "81";çä  82 : "82";çä  83 : "83";çä  84 : "84";çä  85 : "85";çä  86 : "86";çä  87 : "87";çä  88 : "88";çä  89 : "89";çä  90 : "90";çä  91 : "91";çä  92 : "92";çä  93 : "93";çä  94 : "94";çä  95 : "95";çä  96 : "96";çä  97 : "97";çä  98 : "98";çä  99 : "99";çä   : "00")çä
+F1 23b6f84a 3ba847fc 4da2a300 35a7e75b 0 0 2
+Gen Datcon3(date1;date2;freq)
+Funktion
+ // Given 2 dates, say DATE1 and DATE2, and a frequency, ie 01 for Annualçä// 02 for half yearly, etc. Return a factor which is the number of timesçä// the frequency occurs between the two dates.çä// 01=annual;ââ02=semi annualçä// 04=quarterly;â12=monthlyçä// 00=once offââDY=dailyçäIF (freq EQUAL "00" ; çä   // once offçä1 ; çä  IF (freq EQUAL "DY" ; çä     // dailyçä'Gen Datcon3 Julian Date'(date2) - 'Gen Datcon3 Julian Date'(date1) ; çä    'Gen Datcon3 Number of Installments'(date1;date2;freq) // othersçäçä  )çä)
+F1 4da2a300 23b6f84a 0 73599f3a 0 0 2
+Gen Datcon3 Number of Installments(date1;date2;freq)
+Funktion
+ // Given 2 dates, say DATE1 and DATE2, and a frequency, ie 01 for Annualçä// 02 for half yearly, etc. Count the absolute number of Installmentsçä// 01=annual;ââ02=semi annualçä// 04=quarterly;â12=monthlyçä//çäIF (freq EQUAL "12" ; çä   // monthlyçä'Gen Datcon3 Number of Months'(date1;'Gen Datcon3 End Date'(date1;date2);0) + 'Gen Datcon3 Number of Months Fraction'(date1;'Gen Datcon3 End Date'(date1;date2)) ; çä  IF (freq EQUAL "04" ; çä     // quarterlyçäfloor('Gen Datcon3 Number of Months'(date1;'Gen Datcon3 End Date'(date1;date2);0) / 3) + 'Gen Datcon3 Number of Quarters Fraction'(date1;date2) ; çä    IF (freq EQUAL "02" ; çä       // semi annualçä'Gen Datcon3 Number of Semis'(date1;'Gen Datcon3 End Date'(date1;date2);0) + 'Gen Datcon3 Number of Semis Fraction'(date1;date2) ; çä      IF (freq EQUAL "01" ; çä         // annualçä'Gen Datcon3 Number of Years'('Gen Datcon3 Years Start'(date1;date2);'Gen Datcon3 Years End'(date1;date2);0) + 'Gen Datcon3 Number of Years Fraction'('Gen Datcon3 Years Start'(date1;date2);'Gen Datcon3 Years End'(date1;date2)) ; çä        0çä      )çä  )çä)çä)
+F1 73599f3a 23b6f84a 0 37a583a8 0 0 2
+Gen Datcon3 Number of Months(date1;date2;c)
+Funktion
+ // Counts the number of months between the 2 datesçäIF (date1 > date2 ; çä   //stop conditionçäc - 1 ; çä   //returning valueçä'Gen Datcon3 Number of Months'('Gen Datcon3 Add Month'(date1);date2;c + 1)çä)
+F1 37a583a8 23b6f84a 0 4ef68bda 0 0 2
+Gen Datcon3 Number of Months Fraction(date1;date2)
+Funktion
+ // Counts the fraction of the number of monthsçä('Gen Datcon3 Julian Date'(date2) - 'Gen Datcon3 Julian Date'('Gen Datcon3 Latest Month'(date1;date2;date1;date1))) / 'Gen Datcon3 Divisor'('Gen Datcon3 Latest Month'(date1;date2;date1;date1);"12")
+F1 4ef68bda 23b6f84a 0 d1e9fda 0 0 2
+Gen Datcon3 Latest Month(date1;date2;c;startdate)
+Funktion
+ // Advance to the latest month between the 2 datesçäIF (date1 <= date2 ; çä   //stop conditionçä'Gen Datcon3 Latest Month'('Gen Datcon3 Add Month'(date1);date2;date1;startdate) ; çä  'Gen Datcon3 Latest Month Date'(c;startdate)çä)
+F1 d1e9fda 23b6f84a 0 13cf5f71 0 0 2
+Gen Datcon3 Latest Month Date(c;startdate)
+Funktion
+ //Returns the latest Advanced Date, but need to check if the startçä//Date is month end. If the start date is month end, the return dateçä//must also be month endçä// eg, from 30/04 to 01/06 --> returns 31/05çäIF ('Gen Datcon3 Is It Last Date of Month'(startdate) EQUAL "Y" ; çä  'Gen Datcon3 Last Date of Month'(c) ; çä  cçä)
+F1 13cf5f71 23b6f84a 503f544c 24e03387 0 0 2
+Gen Datcon3 Number of Quarters Fraction(date1;date2)
+Funktion
+ // Counts the fraction of the number of quartersçä// if its an exact match for month end, then set as 0, otherwise compute the julian differencesçäIF ('Gen Datcon3 Quarter Exact Match'(date1;'Gen Datcon3 End Date'(date1;date2)) EQUAL "Y" ; çä  0 ; çä  ('Gen Datcon3 Julian Date'(date2) - 'Gen Datcon3 Julian Date'('Gen Datcon3 Latest Quarter'(date1;date2;date1;date1))) / 'Gen Datcon3 Divisor'('Gen Datcon3 Latest Quarter'(date1;date2;date1;date1);"04")çä)
+F1 503f544c 13cf5f71 0 33d10e16 0 0 2
+Gen Datcon3 Quarter Exact Match(date1;date2)
+Funktion
+ // Returns whether an exact 3 month (Quarter) match is foundçäIF (date1 >= date2 ; çä   //stop conditionçäIF (date1 = date2 ; çä     //return conditionçä"Y" ; çä    "N"çä  ) ; çä'Gen Datcon3 Quarter Exact Match'('Gen Datcon3 Add Quarter'(date1);date2)çä)
+F1 33d10e16 13cf5f71 0 0 0 0 2
+Gen Datcon3 Latest Quarter(date1;date2;c;startdate)
+Funktion
+ // Advance to the latest quarter between the 2 datesçä//if (date1 <= date2;ââ//stop conditionçä//âF_Datcon3_Latest_Quarter(F_Datcon3_Add_Quarter(date1);date2;date1);çäIF (date1 <= date2 ; çä   //stop conditionçä'Gen Datcon3 Latest Quarter'('Gen Datcon3 Add Quarter'(date1);date2;date1;startdate) ; çä  'Gen Datcon3 Check Max Date'('Gen Datcon3 Latest Month Date'(c;startdate)) //31/08 or 31/09çäçä)
+F1 24e03387 23b6f84a 0 1b1cebdf 0 0 2
+Gen Datcon3 Check Max Date(date)
+Funktion
+ // Checks the max date in a month and reduce it if it exceedsçä// For eg, 31/09/2010 will be reduced to 30/09/2010çäIF (mid(date;5;2) EQUAL "04" || mid(date;5;2) EQUAL "06" || mid(date;5;2) EQUAL "09" || mid(date;5;2) EQUAL "11" ; çä  IF (mid(date;7;2) EQUAL "31" ; çä    mid(date;1;6) & "30" ; çä    dateçä  ) ; çäIF (mid(date;5;2) EQUAL "02" && 'Gen Datcon3 Leap Year'(date) EQUAL "Y" && mid(date;7;2) > 29 ; çä  mid(date;1;6) & "29" ; çä  IF (mid(date;5;2) EQUAL "02" && 'Gen Datcon3 Leap Year'(date) EQUAL "N" && mid(date;7;2) > 28 ; çä    mid(date;1;6) & "28" ; çä    dateçä  )çä)çä)
+F1 1b1cebdf 23b6f84a 0 37f94424 0 0 2
+Gen Datcon3 End Date(date1;date2)
+Funktion
+ // Given 2 dates, if the from date is the last day of month,çä//  it modifies the End date to match the From dateçäIF ('Gen Datcon3 Is It Last Date of Month'(date1) EQUAL "Y" && 'Gen Datcon3 Is It Last Date of Month'(date2) EQUAL "Y" ; çä  mid(date2;1;6) & mid(date1;7;2) ; çä  IF ('Gen Datcon3 Is It Last Date of Month'(date1) EQUAL "Y" && 'Gen Datcon3 Is It Last Date of Month'(date2) EQUAL "N" ; çä    IF (mid(date2;7;2) > mid(date1;7;2) ; çä      mid(date2;1;6) & mid(date1;7;2) ; çä      date2çä    ) ; çä  date2çä)çä)
+F1 37f94424 23b6f84a 0 5d4b4286 0 0 2
+Gen Datcon3 Is It Last Date of Month(date)
+Funktion
+ // Given a date, it returns whether it is the last date of monthçäIF (date = 'Gen Datcon3 Last Date of Month'(date) ; çä  "Y" ; çä  "N"çä)
+F1 5d4b4286 23b6f84a 0 489234e8 0 0 2
+Gen Datcon3 Last Date of Month(date)
+Funktion
+ // Given a date, it returns the last date of the monthçä// Leap Year is also handledçä// eg 20120301 -> 20120331çä//    20120210 -> 20120229çäIF (mid(date;5;2) EQUAL "01" || mid(date;5;2) EQUAL "03" || mid(date;5;2) EQUAL "05" || mid(date;5;2) EQUAL "07" || mid(date;5;2) EQUAL "08" || mid(date;5;2) EQUAL "10" || mid(date;5;2) EQUAL "12" ; çä  mid(date;1;6) & "31" ; çä  IF (mid(date;5;2) EQUAL "04" || mid(date;5;2) EQUAL "06" || mid(date;5;2) EQUAL "09" || mid(date;5;2) EQUAL "11" ; çä    mid(date;1;6) & "30" ; çä    IF (mid(date;5;2) EQUAL "02" && 'Gen Datcon3 Leap Year'(date) EQUAL "Y" ; çä      mid(date;1;6) & "29" ; çä      mid(date;1;6) & "28"çä    )çä)çä)
+F1 489234e8 23b6f84a 0 9d13aed 0 0 2
+Gen Datcon3 Leap Year(date)
+Funktion
+ // Given a date, it returns whether it is Leap Year or notçäIF ((mid(date;1;4) MOD 4) = 0 ; çä  "Y" ; çä  "N"çä)
+F1 9d13aed 23b6f84a 0 3c67b509 0 0 2
+Gen Datcon3 Add Month(date)
+Funktion
+ // Increment date by 1 monthçäIF (mid(date;5;2) < 12 ; çä  date + 100 ; çä  (mid(date;1;4) + 1) & "01" & mid(date;7;2) // advance to Jan next yearçäçä)
+F1 3c67b509 23b6f84a 0 799c8ca4 0 0 2
+Gen Datcon3 Add Quarter(date)
+Funktion
+ // Increment by 1 quarterçäIF (mid(date;5;2) < 10 ; çä  date + 300 ; çä  IF (mid(date;5;2) EQUAL "10" ; çä    (mid(date;1;4) + 1) & "01" & mid(date;7;2) ; çä     // advance to Jan next yearçäIF (mid(date;5;2) EQUAL "11" ; çä      (mid(date;1;4) + 1) & "02" & mid(date;7;2) ; çä       // advance to Feb next yearçäIF (mid(date;5;2) EQUAL "12" ; çä        (mid(date;1;4) + 1) & "03" & mid(date;7;2) ; çä         // advance to Mar next yearçädateçä      )çä  )çä)çä)
+F1 799c8ca4 23b6f84a 39579429 78d262ad 0 0 2
+Gen Datcon3 Number of Semis(date1;date2;c)
+Funktion
+ // Counts the number of semi-years (6 months) between the 2 datesçäIF (date1 > date2 ; çä   //stop conditionçäc - 1 ; çä   //returning valueçä'Gen Datcon3 Number of Semis'('Gen Datcon3 Add Semi'(date1);date2;c + 1)çä)
+F1 39579429 799c8ca4 0 711ea668 0 0 2
+Gen Datcon3 Number of Semis Fraction(date1;date2)
+Funktion
+ // Counts the fraction of the semi-annual (6 months)çä// Counts the fraction of the number of semi-annual (6 months)çä// if its an exact match for month end, then set as 0, otherwise compute the julian differencesçä// if it is monthend to monthend, try to match first.çä// if cannot, then only use fractionçä// 28/02 to 28/08 Quarter - errorçä// 28/02 to 29/08 Quarter - errorçä// 28/02 to 30/08 Quarter - errorçäIF ('Gen Datcon3 Semis Exact Match'(date1;'Gen Datcon3 End Date'(date1;date2)) EQUAL "Y" ; çä  0 ; çä  ('Gen Datcon3 Julian Date'(date2) - 'Gen Datcon3 Julian Date'('Gen Datcon3 Latest Semi'(date1;date2;date1;date1))) / 'Gen Datcon3 Divisor'('Gen Datcon3 Latest Semi'(date1;date2;date1;date1);"02")çä)
+F1 711ea668 799c8ca4 0 71f6a41a 0 0 2
+Gen Datcon3 Semis Exact Match(date1;date2)
+Funktion
+ // Returns whether an exact 6 month match is foundçäIF (date1 >= date2 ; çä   //stop conditionçäIF (date1 = date2 ; çä     //return conditionçä"Y" ; çä    "N"çä  ) ; çä'Gen Datcon3 Semis Exact Match'('Gen Datcon3 Add Semi'(date1);date2)çä)
+F1 71f6a41a 799c8ca4 0 62d9635b 0 0 2
+Gen Datcon3 Latest Semi(date1;date2;c;startdate)
+Funktion
+ // Advance to the latest semi-annual (6 months) between the 2 datesçäIF (date1 <= date2 ; çä   //stop conditionçä'Gen Datcon3 Latest Semi'('Gen Datcon3 Add Semi'(date1);date2;date1;startdate) ; çä  'Gen Datcon3 Check Max Date'('Gen Datcon3 Latest Semi Date'(c;startdate;date2)) //31/08 or 31/09çäçä)
+F1 62d9635b 799c8ca4 0 67901178 0 0 2
+Gen Datcon3 Latest Semi Date(c;startdate;enddate)
+Funktion
+ //Modifies the latest Advanced Date, but need to check if the startçä//Date is month end. If the start date is month end, then theçä//Return Date must also be month endçä//This is necessary because if it was advanced from 30/04, it willçä//be 30/10. so it must return 31/10çäIF ('Gen Datcon3 Is It Last Date of Month'(startdate) EQUAL "Y" ; çä  'Gen Datcon3 Last Date of Month'(c) ; çä  cçä)
+F1 67901178 799c8ca4 0 0 0 0 2
+Gen Datcon3 Add Semi(date)
+Funktion
+ // Increment by 1 semi-year (avance 6 months)çäIF (mid(date;5;2) < 7 ; çä  date + 600 ; çä  (date - 600) + 10000çä)
+F1 78d262ad 23b6f84a 16de840f 2a4f6a13 0 0 2
+Gen Datcon3 Number of Years(date1;date2;c)
+Funktion
+ // Counts the number of years between the 2 datesçäIF (date1 > date2 ; çä   //stop conditionçäc - 1 ; çä   //returning valueçä'Gen Datcon3 Number of Years'(date1 + 10000;date2;c + 1)çä)
+F1 16de840f 78d262ad 0 70700042 0 0 2
+Gen Datcon3 Number of Years Fraction(date1;date2)
+Funktion
+ // Counts the fraction of the number of monthsçä('Gen Datcon3 Julian Date'(date2) - 'Gen Datcon3 Julian Date'('Gen Datcon3 Latest Year'(date1;date2;date1))) / 'Gen Datcon3 Divisor'('Gen Datcon3 Latest Year'(date1;date2;date1);"01")
+F1 70700042 78d262ad 0 320e12e4 0 0 2
+Gen Datcon3 Years Start(date1;date2)
+Funktion
+ // If the start and end date are both EOM February, then adjust bothçä// dates to 28/02. This is so that it will be counted as a full yearçä// for Yearly calculations. Leap year is also handled.çäIF (mid(date1;5;2) EQUAL "02" && mid(date2;5;2) EQUAL "02" && 'Gen Datcon3 Is It Last Date of Month'(date1) EQUAL "Y" && 'Gen Datcon3 Is It Last Date of Month'(date2) EQUAL "Y" ; çä  mid(date1;1;6) & "28" ; çä  date1çä)
+F1 320e12e4 78d262ad 0 30fa1ca7 0 0 2
+Gen Datcon3 Years End(date1;date2)
+Funktion
+ // If the start and end date are both EOM February, then adjust bothçä// dates to 28/02. This is so that it will be counted as a full yearçä// for Yearly calculations. Leap year is also handled.çäIF (mid(date1;5;2) EQUAL "02" && mid(date2;5;2) EQUAL "02" && 'Gen Datcon3 Is It Last Date of Month'(date1) EQUAL "Y" && 'Gen Datcon3 Is It Last Date of Month'(date2) EQUAL "Y" ; çä  mid(date2;1;6) & "28" ; çä  date2çä)
+F1 30fa1ca7 78d262ad 0 0 0 0 2
+Gen Datcon3 Latest Year(date1;date2;c)
+Funktion
+ // Advance to the latest year between the 2 datesçäIF (date1 <= date2 ; çä   //stop conditionçä'Gen Datcon3 Latest Year'(date1 + 10000;date2;date1) ; çä  cçä)
+F1 2a4f6a13 23b6f84a 27c74695 55b5f2b 0 0 2
+Gen Datcon3 Divisor(date;freq)
+Funktion
+ // Given a date, it returns the divisorçäIF (freq EQUAL "01" ; çä  'Gen Datcon3 Divisor Annual'(date) ; çä  IF (freq EQUAL "02" ; çä    'Gen Datcon3 Divisor Semi Annual'(date) ; çä    IF (freq EQUAL "04" ; çä      'Gen Datcon3 Divisor Quarter'(date) ; çä      IF (freq EQUAL "12" ; çä        'Gen Datcon3 Divisor Monthly'(date) ; çä        0çä      )çä  )çä)çä)
+F1 27c74695 2a4f6a13 0 6cd6c30a 0 0 2
+Gen Datcon3 Divisor Annual(date)
+Funktion
+ // Returns the divisor for Yearly modeçä// It is based on From Date, and add 1 Year to Fromdate.çä// Then julian the From and End Dateçä'Gen Datcon3 Julian Date'(date + 10000) - 'Gen Datcon3 Julian Date'(date)
+F1 6cd6c30a 2a4f6a13 770644a6 77b4de7 0 0 2
+Gen Datcon3 Divisor Semi Annual(date)
+Funktion
+ // Returns the divisor for Semi-Annual modeçä// It is based on From Date, and add 1 semi-year (6 months)çä// to Fromdate. Then julian the From and End Dateçä'Gen Datcon3 Julian Date'('Gen Datcon3 Divisor Semi Add'(date)) - 'Gen Datcon3 Julian Date'(date)
+F1 770644a6 6cd6c30a 0 0 0 0 2
+Gen Datcon3 Divisor Semi Add(date)
+Funktion
+ // Increment date by 6 month, but if it is end month, it returns lastçä// day of monthçäIF ('Gen Datcon3 Is It Last Date of Month'(date) EQUAL "Y" ; çä  'Gen Datcon3 Last Date of Month'('Gen Datcon3 Add Semi'(date)) ; çä  'Gen Datcon3 Add Semi'(date)çä)
+F1 77b4de7 2a4f6a13 3a2c6209 4816bdbe 0 0 2
+Gen Datcon3 Divisor Quarter(date)
+Funktion
+ // Returns the divisor for Quarter modeçä// It is based on From Date, and add 1 Quarter to Fromdate.çä// Then julian the From and End Dateçä'Gen Datcon3 Julian Date'('Gen Datcon3 Divisor Quarter Add'(date)) - 'Gen Datcon3 Julian Date'(date)
+F1 3a2c6209 77b4de7 0 0 0 0 2
+Gen Datcon3 Divisor Quarter Add(date)
+Funktion
+ // Increment date by 1 month, but if it is end month, it returns lastçä// day of monthçäIF ('Gen Datcon3 Is It Last Date of Month'(date) EQUAL "Y" ; çä  'Gen Datcon3 Last Date of Month'('Gen Datcon3 Add Quarter'(date)) ; çä  'Gen Datcon3 Add Quarter'(date)çä)
+F1 4816bdbe 2a4f6a13 58c9800 0 0 0 2
+Gen Datcon3 Divisor Monthly(date)
+Funktion
+ // Returns the divisor for monthly modeçä// It is based on From Date, and add 1 month to Fromdate.çä// Then julian the From and End Dateçä'Gen Datcon3 Julian Date'('Gen Datcon3 Divisor Monthly Add'(date)) - 'Gen Datcon3 Julian Date'(date)
+F1 58c9800 4816bdbe 0 0 0 0 2
+Gen Datcon3 Divisor Monthly Add(date)
+Funktion
+ // Increment date by 1 month, but if it is end month, it returns lastçä// day of monthçäIF ('Gen Datcon3 Is It Last Date of Month'(date) EQUAL "Y" ; çä  'Gen Datcon3 Last Date of Month'('Gen Datcon3 Add Month'(date)) ; çä  'Gen Datcon3 Add Month'(date)çä)
+F1 55b5f2b 23b6f84a 648ac317 0 0 0 2
+Gen Datcon3 Julian Date(date)
+Funktion
+'Gen Datcon3 Julian Year'('Gen Datcon3 Check Max Date'(date);1900;0) //'Gen Datcon3 Julian Year'(date;1900;0)çä
+F1 648ac317 55b5f2b 0 66dc2275 0 0 2
+Gen Datcon3 Julian Days(date)
+Funktion
+IF ((mid(date;1;4) MOD 4) <> 0 ; çä   //non leap yearçäIF (mid(date;5;2) EQUAL "01" ; çä    0 + mid(date;7;2) ; çä    IF (mid(date;5;2) EQUAL "02" ; çä      31 + mid(date;7;2) ; çä      IF (mid(date;5;2) EQUAL "03" ; çä        59 + mid(date;7;2) ; çä        IF (mid(date;5;2) EQUAL "04" ; çä          90 + mid(date;7;2) ; çä          IF (mid(date;5;2) EQUAL "05" ; çä            120 + mid(date;7;2) ; çä            IF (mid(date;5;2) EQUAL "06" ; çä              151 + mid(date;7;2) ; çä              IF (mid(date;5;2) EQUAL "07" ; çä                181 + mid(date;7;2) ; çä                IF (mid(date;5;2) EQUAL "08" ; çä                  212 + mid(date;7;2) ; çä                  IF (mid(date;5;2) EQUAL "09" ; çä                    243 + mid(date;7;2) ; çä                    IF (mid(date;5;2) EQUAL "10" ; çä                      273 + mid(date;7;2) ; çä                      IF (mid(date;5;2) EQUAL "11" ; çä                        304 + mid(date;7;2) ; çä                        IF (mid(date;5;2) EQUAL "12" ; çä                          334 + mid(date;7;2) ; çä                          0çä                        )çä                    )çä                )çä            )çä        )çä    )çä)çä)çä)çä)çä)çä) ; çäIF (mid(date;5;2) EQUAL "01" ; çä // leap yearçä0 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "02" ; çä31 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "03" ; çä60 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "04" ; çä91 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "05" ; çä121 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "06" ; çä152 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "07" ; çä182 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "08" ; çä213 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "09" ; çä244 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "10" ; çä274 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "11" ; çä305 + mid(date;7;2) ; çäIF (mid(date;5;2) EQUAL "12" ; çä  335 + mid(date;7;2) ; çä  0çä)çä)çä)çä)çä)çä)çä)çä)çä)çä)çä)çä)çä)
+F1 66dc2275 55b5f2b 0 5ae88f57 0 0 2
+Gen Datcon3 Julian Year Days(julyear)
+Funktion
+ // Given a date, it returns 365 or 366 depending it is Leap Year or notçäIF ((mid(julyear;1;4) MOD 4) = 0 ; çä  366 ; çä  365çä)
+F1 5ae88f57 55b5f2b 0 0 0 0 2
+Gen Datcon3 Julian Year(date;julyear;c)
+Funktion
+IF (mid(date;1;4) - julyear = 0 ; çä   //stop conditionçäc + 'Gen Datcon3 Julian Days'(date) ; çä   //returning valueçä'Gen Datcon3 Julian Year'(date;julyear + 1;c + 'Gen Datcon3 Julian Year Days'(julyear))çä)
+F1 35a7e75b 3ba847fc 6150e0f7 ba06a92 0 0 2
+Gen Get Number of Installments Fraction(fromdate;todate;duedateflg;billfreq;ccdate;crdate)
+Funktion
+IF (fromdate = todate ; çä  IF (duedateflg EQUAL "Y" ; çä    v_(0;0;0;0;0;0) ; çä    v_(0;1;0;'Gen Get Number Of Instl Days'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;v_length('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate)) - 1);0)çä  ) ; çäIF (fromdate > todate ; çä  v_(0;0;0;0;0) ; çä  'Gen Get Installment Output'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;v_length('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate)) - 1;0;0;0;0;0)çä)çä)
+F1 6150e0f7 35a7e75b 0 484dd84a 0 0 2
+Gen Get Inst Array(duedatflg;billfreq;Inputdate;ccdate;crdate)
+Funktion
+IF (ccdate = crdate ; çä  v_(v_(ccdate;crdate)) ; çä  IF (duedatflg EQUAL "Y" ; çä    IF (Inputdate <= ccdate ; çä      v_(v_('Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(Inputdate;billfreq;"S";crdate);"A");Inputdate)) ; çä      v_insert('Gen Get Inst Array'(duedatflg;billfreq;'Gen Add Sub Frequency GADSUBF'(Inputdate;billfreq;"S";crdate);ccdate;crdate);v_('Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(Inputdate;billfreq;"S";crdate);"A");Inputdate);0)çä    ) ; çä  IF (Inputdate < ccdate ; çä    v_(v_('Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(Inputdate;billfreq;"S";crdate);"A");Inputdate)) ; çä    v_insert('Gen Get Inst Array'(duedatflg;billfreq;'Gen Add Sub Frequency GADSUBF'(Inputdate;billfreq;"S";crdate);ccdate;crdate);v_('Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(Inputdate;billfreq;"S";crdate);"A");Inputdate);0)çä  )çä)çä)
+F1 484dd84a 35a7e75b 0 1ad9c98b 0 0 2
+Gen Get Number Of Instl Days(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter)
+Funktion
+IF (counter < 0 ; çä  error("Date is Out of Range") ; çä  IF (fromdate >= e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0) && todate <= e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1) ; çä    'Gen Days Difference GDAYSDT'(e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0);e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1)) ; çä    'Gen Get Number Of Instl Days'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter - 1)çä  )çä)
+F1 1ad9c98b 35a7e75b 0 7ab5c194 0 0 2
+Gen Get Installment Output(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter;full;frac01;frac02;nofdays01;nofdays02)
+Funktion
+IF (duedateflg EQUAL "Y" ; çä  IF (todate <= fromdate ; çä    v_(full;frac01;frac02;nofdays01;nofdays02) ; çä    CASE(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);0);çä      "CF" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);duedateflg;billfreq;ccdate;crdate;counter;full + 1;frac01;frac02;nofdays01;nofdays02);çä      "CFR" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);duedateflg;billfreq;ccdate;crdate;counter;full;IF (frac01 <> 0 ; çä        frac01 ; çä        IF (duedateflg EQUAL "Y" ; çä          'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä          'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä        )çä    );IF (frac02 <> 0 ; çä    frac02 ; çä    IF (frac01 <> 0 ; çä      IF (duedateflg EQUAL "Y" ; çä        'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä        'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä      ) ; çä    0çä  )çä);IF (nofdays01 <> 0 ; çänofdays01 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4))çä);IF (nofdays02 <> 0 ; çänofdays02 ; çäIF (nofdays01 <> 0 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4)) ; çä0çä)çä));çä"YF" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Day GASONED'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);"S");duedateflg;billfreq;ccdate;crdate;counter;full + 1;frac01;frac02;nofdays01;nofdays02);çä"YFR" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Day GASONED'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);"S");duedateflg;billfreq;ccdate;crdate;counter;full;IF (frac01 <> 0 ; çäfrac01 ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä)çä);IF (frac02 <> 0 ; çäfrac02 ; çäIF (frac01 <> 0 ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä) ; çä0çä)çä);IF (nofdays01 <> 0 ; çänofdays01 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4))çä);IF (nofdays02 <> 0 ; çänofdays02 ; çäIF (nofdays01 <> 0 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4)) ; çä0çä)çä));çä : error("Invalid Output"))çäçä) ; çäIF (todate < fromdate ; çäv_(full;frac01;frac02;nofdays01;nofdays02) ; çäCASE(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);0);çä"CF" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);duedateflg;billfreq;ccdate;crdate;counter;full + 1;frac01;frac02;nofdays01;nofdays02);çä"CFR" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);duedateflg;billfreq;ccdate;crdate;counter;full;IF (frac01 <> 0 ; çäfrac01 ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä)çä);IF (frac02 <> 0 ; çäfrac02 ; çäIF (frac01 <> 0 ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä) ; çä0çä)çä);IF (nofdays01 <> 0 ; çänofdays01 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4))çä);IF (nofdays02 <> 0 ; çänofdays02 ; çäIF (nofdays01 <> 0 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4)) ; çä0çä)çä));çä"YF" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Day GASONED'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);"S");duedateflg;billfreq;ccdate;crdate;counter;full + 1;frac01;frac02;nofdays01;nofdays02);çä"YFR" : 'Gen Get Installment Output'(fromdate;'Gen Add Sub Day GASONED'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);"S");duedateflg;billfreq;ccdate;crdate;counter;full;IF (frac01 <> 0 ; çäfrac01 ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä)çä);IF (frac02 <> 0 ; çäfrac02 ; çäIF (frac01 <> 0 ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2)) - 1 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);1);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);2))çä) ; çä0çä)çä);IF (nofdays01 <> 0 ; çänofdays01 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4))çä);IF (nofdays02 <> 0 ; çänofdays02 ; çäIF (nofdays01 <> 0 ; çä'Gen Days Difference GDAYSDT'(e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);3);e_('Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);4)) ; çä0çä)çä));çä : error("Invalid Output"))çäçä)çä)
+F1 7ab5c194 35a7e75b 55025cf4 4c00148c 0 0 2
+Gen Get Inslt Loop(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter)
+Funktion
+CASE(e_('Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter);0);çä  "C" : CASE('Gen Get Full Cycles'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter;IF (IF (duedateflg EQUAL "Y" ; çä    'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä    'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä  ) < ccdate ; çä  ccdate ; çä  IF (duedateflg EQUAL "Y" ; çä    'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä    'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä  )çä);todate);çä"F" : v_("CF";IF (IF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä) < ccdate ; çäccdate ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä)çä);0;0;0);çä"FR" : v_("CFR";IF (IF (IF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä) < ccdate ; çäccdate ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä)çä) > fromdate ; çäIF (IF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä) < ccdate ; çäccdate ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä)çä) ; çäfromdateçä);todate;e_('Gen Get Fractional Dates'(IF (IF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä) < ccdate ; çäccdate ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä)çä);todate;duedateflg;billfreq;ccdate;crdate;counter);0);e_('Gen Get Fractional Dates'(IF (IF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä) < ccdate ; çäccdate ; çäIF (duedateflg EQUAL "Y" ; çä'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä)çä);todate;duedateflg;billfreq;ccdate;crdate;counter);1));çä : error("Error found in Full Cycles"))çä;çä"Y" : CASE('Gen Get Full Cycles'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter;e_('Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter);1);todate);çä"F" : v_("YF";e_('Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter);1);0;0;0);çä"FR" : v_("YFR";IF (e_('Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter);1) > fromdate ; çäe_('Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter);1) ; çäfromdateçä);todate;e_('Gen Get Fractional Dates'(e_('Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter);1);todate;duedateflg;billfreq;ccdate;crdate;counter);0);e_('Gen Get Fractional Dates'(e_('Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter);1);todate;duedateflg;billfreq;ccdate;crdate;counter);1));çä : error("Error found in Full Cycles"))çä;çä : error("Error found in Instl Loop"))çä
+F1 55025cf4 7ab5c194 0 0 0 0 2
+Gen Get Inslt Check Date Found(todate;duedateflg;billfreq;ccdate;crdate;counter)
+Funktion
+IF (counter < 0 ; çä  v_("C";0) ; çä  IF (((todate > e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0) && todate < e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1)) || todate = e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0)) ; çä    v_("Y";e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0)) ; çä    'Gen Get Inslt Check Date Found'(todate;duedateflg;billfreq;ccdate;crdate;counter - 1)çä  )çä)
+F1 4c00148c 35a7e75b 0 1e9bdc88 0 0 2
+Gen Get Inslt LoopBK(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter)
+Funktion
+IF (todate <= fromdate ; çä  IF (counter < 0 ; çä    v_('Gen Get Full Cycles'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;v_length('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate)) - 1;IF (IF (duedateflg EQUAL "Y" ; çä      'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä      'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä    ) < ccdate ; çä    ccdate ; çä    IF (duedateflg EQUAL "Y" ; çä      'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä      'Gen Add Sub Day GASONED'('Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate);"A")çä    )çä);todate);'Gen Get Number of Installmentsallments Fraction Output'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter)) ; çäIF (((todate > e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0) && todate < e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1)) || todate = e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0)) ; çäv_('Gen Get Full Cycles'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;v_length('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate)) - 1;e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0);todate);'Gen Get Number of Installmentsallments Fraction Output'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter)) /*âGen Get Full Cycles(fromdate;todate;duedateflg;billfreq;ccdate;crdate;çäââââââââââv_length(Gen Get Inst Array(duedateflg;billfreq;crdate;ccdate;crdate))-1;çäââââââââââe_(e_(Gen Get Inst Array(duedateflg;billfreq;crdate;ccdate;crdate);counter);0);çäââââââââââtodate)â*/  ; çä'Gen Get Inslt Loop'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter - 1)çä)çä) ; çä'Gen Get Inslt Loop'(fromdate;'Gen Get todate'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;v_length('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate)) - 1);duedateflg;billfreq;ccdate;crdate;v_length('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate)) - 1)çä)
+F1 1e9bdc88 35a7e75b 0 225d8e66 0 0 2
+Gen Get Full Cycles(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter;Inputfrmdate;startdate)
+Funktion
+IF (counter < 0 ; çä  "FR" //Indicates Fractionçä ; çä  IF (((Inputfrmdate = e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0) && startdate = e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1)) && Inputfrmdate >= fromdate) ; çä    "F" //Full Cycle Foundçä ; çä    'Gen Get Full Cycles'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter - 1;Inputfrmdate;startdate)çä  )çä)
+F1 225d8e66 35a7e75b 0 37078c7a 0 0 2
+Gen Get Full Cycles bk(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter;Inputfrmdate;startdate)
+Funktion
+ /*if(counter < 0;çäââv_insert(F_G_Get_Fractional_Daysçäââââââ;çäâââââââv_(if(Inputfrmdateâ>âfromdate;Inputfrmdate;fromdate);startdate)çäââââââ;0)çäââ;çäââââif(çäââââ((Inputfrmdateâ=âe_(e_(Gen Get Inst Array(duedateflg;billfreq;crdate;ccdate;crdate);counter);0)â&&çäââââtodateâ=âe_(e_(Gen Get Inst Array(duedateflg;billfreq;crdate;ccdate;crdate);counter);1))â||çäââââfromdateâ>= Inputfrmdate)ââçäââââ;çäââââv_replace(Gen Get Number of Installmentsallments Fraction Output(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);çäâââââe_(Gen Get Number of Installmentsallments Fraction Output(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter);0)+1;0)çäââ;çäâââââGen Get Full Cycles(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter-1;Inputfrmdate;startdate)çäâ)çä)çä*/ 0
+F1 37078c7a 35a7e75b 0 4a027ed7 0 0 2
+Gen Get todate(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter)
+Funktion
+IF (counter < 0 ; çä  'Gen Add Sub Frequency GADSUBF'(todate;billfreq;"S";crdate) ; çä  IF (((todate > e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0) && todate < e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1)) || todate = e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0)) ; çä    'Gen Add Sub Day GASONED'(e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0);"S") ; çä    'Gen Get todate'(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter - 1)çä  )çä)
+F1 4a027ed7 35a7e75b 0 40aebde1 0 0 2
+Gen Get Fractional Dates(fracfromdate;fractodate;duedateflg;billfreq;ccdate;crdate;counter)
+Funktion
+IF (counter < 0 ; çä  error("Date out of Range" & fracfromdate & fractodate) ; çä  IF ((fracfromdate >= e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0) && fractodate <= e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1)) ; çä    v_(e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);0);e_(e_('Gen Get Inst Array'(duedateflg;billfreq;crdate;ccdate;crdate);counter);1)) ; çä    'Gen Get Fractional Dates'(fracfromdate;fractodate;duedateflg;billfreq;ccdate;crdate;counter - 1)çä  )çä)
+F1 40aebde1 35a7e75b 0 0 0 0 2
+Gen Get Number of Installmentsallments Fraction Output(fromdate;todate;duedateflg;billfreq;ccdate;crdate;counter)
+Funktion
+ /*v_(â0;çäâif(v_length(F_G_Get_Fractional_Days) - 1 >=â0;çäââGen Days Difference GDAYSDT(e_(F_G_Get_Fractional_Days;0);e_(F_G_Get_Fractional_Days;0))â;â0çäââ);çäââçäâif(v_length(F_G_Get_Fractional_Days) - 1 >=â1;çäââGen Days Difference GDAYSDT(e_(F_G_Get_Fractional_Days;0);e_(F_G_Get_Fractional_Days;0))â;â0çäââ);çäââçäâif(v_length(F_G_Get_Fractional_Days) - 1 >=â0;çäââGen Get Number Of Instl Days(e_(F_G_Get_Fractional_Days;0);e_(F_G_Get_Fractional_Days;0);duedateflg;billfreq;ccdate;crdate;counter)â;â0çäââ);çäâif(v_length(F_G_Get_Fractional_Days) - 1 >=â1;çäââGen Get Number Of Instl Days(e_(F_G_Get_Fractional_Days;0);e_(F_G_Get_Fractional_Days;0);duedateflg;billfreq;ccdate;crdate;counter)â;â0çäââ)çäââ)çä*/ 0
+F1 ba06a92 3ba847fc 3aac1ad5 48ee6ef2 0 0 2
+Gen Check Leap Year G(func;fromdate;todate)
+Funktion
+CASE(func;çä  "EDIT" : v_('Gen Check Leap Year Conditions'(fromdate);365);çä  "CHECK" : v_(IF ('Gen Check Leap Year Conditions'(fromdate) EQUAL "Y" || 'Gen Check Leap Year Conditions'(todate) EQUAL "Y" ; çä    "Y" ; çä    "N"çä  );IF ('Gen Check Leap Year Conditions'(fromdate) EQUAL "Y" ; çä  'Gen Check Leap Month Conditions'(fromdate;todate;'Gen Julian Year'(fromdate) & 0229) ; çä  IF ('Gen Check Leap Year Conditions'(todate) EQUAL "Y" ; çä    'Gen Check Leap Month Conditions'(fromdate;todate;'Gen Julian Year'(todate) & 0229) ; çä    365çä  )çä));çä : error("Invalid function"))çä
+F1 3aac1ad5 ba06a92 0 6fb899fc 0 0 2
+Gen Check Leap Year Conditions(Inputdate)
+Funktion
+IF (('Gen Julian Year'(Inputdate) MOD 4 = 0 && 'Gen Julian Year'(Inputdate) MOD 100 = 0 && 'Gen Julian Year'(Inputdate) MOD 400 = 0) || 'Gen Julian Year'(Inputdate) MOD 4 = 0 ; çä  "Y" ; çä  "N"çä)
+F1 6fb899fc ba06a92 0 0 0 0 2
+Gen Check Leap Month Conditions(fromdate;todate;leapdate)
+Funktion
+IF (fromdate > todate ; çä  IF (leapdate <= fromdate && leapdate >= todate ; çä    366 ; çä    365çä  ) ; çäIF (leapdate <= todate && leapdate >= fromdate ; çä  366 ; çä  365çä)çä)
+F1 48ee6ef2 3ba847fc 73c063ab 45c07095 0 0 2
+Gen Datcon2(Inputdate;frequency;freqfactor;func)
+Funktion
+CASE(func;çä  "DOW" : 'Gen Check DOW'(Inputdate);çä   : 'Gen Compute Correct New Date'('Gen Compute New Date'(Inputdate;IF (frequency EQUAL "DY" ; çä    0.01 ; çä    frequencyçä  );freqfactor)))çä
+F1 73c063ab 48ee6ef2 0 445afa85 0 0 2
+Gen Check DOW(Inputdate)
+Funktion
+('Gen Convert To Julianday'(Inputdate) MOD 7) + 1
+F1 445afa85 48ee6ef2 f9e787c 363c43a3 0 0 2
+Gen Compute New Date(Inputdate;frequency;freqfactor)
+Funktion
+CASE(frequency;çä  "01";1 : freqfactor + 'Gen Julian Year'(Inputdate) & 'Gen Julian Month'(Inputdate) & 'Gen Julian Day'(Inputdate);çä  "02";2 : 'Gen Get Correct Year'(Inputdate;freqfactor;2;6);çä  "04";4 : 'Gen Get Correct Year'(Inputdate;freqfactor;4;3);çä  "12";12 : 'Gen Get Correct Year'(Inputdate;freqfactor;12;1);çä  "24";24 : 'Gen Get Correct Month Year'(Inputdate;freqfactor;24;15);çä  "52";52 : 'Gen Get Correct Month Datcon2'(Inputdate;freqfactor;7);çä  "26";26 : 'Gen Get Correct Month Datcon2'(Inputdate;freqfactor;14);çä  0.01 : 'Gen Get Correct Month Datcon2'(Inputdate;freqfactor;1);çä  "00";00 : Inputdate;çä   : error("Invalid Frequency " & frequency))çä
+F1 f9e787c 445afa85 0 4ac938b9 0 0 2
+Gen Get Correct Year(Inputdate;freqfactor;divfactor;addfactor)
+Funktion
+'Gen Julian Year'(Inputdate) + (freqfactor DIV divfactor) & 'Gen Counter'(IF (freqfactor MOD divfactor <> 0 ; çä  IF (freqfactor < 0 ; çä    'Gen Julian Month'(Inputdate) + (addfactor * (freqfactor MOD divfactor)) ; çä    'Gen Julian Month'(Inputdate) + (addfactor * (freqfactor MOD divfactor))çä  ) ; çä'Gen Julian Month'(Inputdate)çä)) & 'Gen Counter'('Gen Julian Day'(Inputdate))
+F1 4ac938b9 445afa85 2fa3913 27f07272 0 0 2
+Gen Get Correct Month Year(Inputdate;freqfactor;divfactor;addfactor)
+Funktion
+'Gen Julian Year'(Inputdate) + (freqfactor DIV divfactor) & 'Gen Counter'(IF ('Gen Julian Month'(Inputdate) + ((freqfactor MOD divfactor) DIV 2) + e_('Gen Get Date Changes'(Inputdate;((freqfactor MOD divfactor) MOD 2);addfactor);0) = 2 && e_('Gen Get Date Changes'(Inputdate;((freqfactor MOD divfactor) MOD 2);addfactor);1) > 28 ; çä  IF ('Gen Check Leap Year'(Inputdate) EQUAL "Y" ; çä    2 ; çä    3çä  ) ; çä'Gen Julian Month'(Inputdate) + ((freqfactor MOD divfactor) DIV 2) + e_('Gen Get Date Changes'(Inputdate;((freqfactor MOD divfactor) MOD 2);addfactor);0)çä)) & 'Gen Counter'(IF ('Gen Julian Month'(Inputdate) + ((freqfactor MOD divfactor) MOD 2) + e_('Gen Get Date Changes'(Inputdate;((freqfactor MOD divfactor) MOD 2);addfactor);0) = 2 && e_('Gen Get Date Changes'(Inputdate;((freqfactor MOD divfactor) MOD 2);addfactor);1) > 28 ; çäIF ('Gen Check Leap Year'(Inputdate) EQUAL "Y" ; çäe_('Gen Get Date Changes'(Inputdate;((freqfactor MOD divfactor) MOD 2);addfactor);1) ; çä3çä) ; çäe_('Gen Get Date Changes'(Inputdate;((freqfactor MOD divfactor) MOD 2);addfactor);1)çä))
+F1 2fa3913 4ac938b9 0 0 0 0 2
+Gen Get Date Changes(Inputdate;checkfactor;addfactor)
+Funktion
+IF (checkfactor <> 0 ; çä  CASE('Gen Julian Day'(Inputdate);çä    1 : IF (checkfactor < 0 ; çä      v_(-1;15) ; çä      v_(0;'Gen Julian Day'(Inputdate))çä    );çä  15 : IF (checkfactor > 0 ; çä    v_(1;1) ; çä    v_(0;'Gen Julian Day'(Inputdate))çä  );çä16..31 : IF (checkfactor > 0 ; çä  v_(1;'Gen Julian Day'(Inputdate) - addfactor) ; çä  v_(0;'Gen Julian Day'(Inputdate) - addfactor)çä);çä2..14 : IF (checkfactor < 0 ; çäv_(-1;'Gen Julian Day'(Inputdate) + addfactor) ; çäv_(0;'Gen Julian Day'(Inputdate) + addfactor)çä);çä : error("Invalid Date " & Inputdate))çä ; çäv_(0;'Gen Julian Day'(Inputdate))çä)
+F1 27f07272 445afa85 0 0 0 0 2
+Gen Get Correct Month Datcon2(Inputdate;freqfactor;addfactor)
+Funktion
+'Gen Convert To Gregorian'('Gen Convert To Julianday'(Inputdate) + (addfactor * freqfactor))
+F1 363c43a3 48ee6ef2 198f013f 0 0 0 2
+Gen Compute Correct New Date(Inputdate)
+Funktion
+'Gen Compute Year'(Inputdate) & 'Gen Counter'(e_('Gen Compute Month'(Inputdate;mid(Inputdate;5;2);0);0)) & 'Gen Counter'('Gen Compute Date'(Inputdate))
+F1 198f013f 363c43a3 0 2bdf6c05 0 0 2
+Gen Compute Year(Inputdate)
+Funktion
+mid(Inputdate;1;4) + e_('Gen Compute Month'(Inputdate;mid(Inputdate;5;2);0);1)
+F1 2bdf6c05 363c43a3 0 36683424 0 0 2
+Gen Compute Month(Inputdate;Inputmonth;count)
+Funktion
+IF (Inputmonth > 12 ; çä  'Gen Compute Month'(Inputdate;Inputmonth - 12;count + 1) ; çä  IF (Inputmonth < 1 ; çä    'Gen Compute Month'(Inputdate;Inputmonth + 12;count - 1) ; çä    v_(Inputmonth;count)çä  )çä)
+F1 36683424 363c43a3 0 0 0 0 2
+Gen Compute Date(Inputdate)
+Funktion
+IF (mid(Inputdate;7;2) > 'Gen Day Calendar'(e_('Gen Compute Month'(Inputdate;mid(Inputdate;5;2);0);0);'Gen Check Leap Year'('Gen Compute Year'(Inputdate))) ; çä  'Gen Day Calendar'(e_('Gen Compute Month'(Inputdate;mid(Inputdate;5;2);0);0);'Gen Check Leap Year'('Gen Compute Year'(Inputdate))) ; çä  mid(Inputdate;7;2)çä)
+F1 45c07095 3ba847fc 146eecec 550d2387 0 0 2
+Gen Agecalculation(agetype;fromdate;todate )
+Funktion
+CASE(agetype;çä  "E" : 'Gen Datcon3'(fromdate;todate;"01");çä  "P" : 'Gen Datcon3'(fromdate;todate;"01") DIV 1;çä  "C" : 'Gen Get Nearest Year'(fromdate;todate;fromdate);çä  "N" : ('Gen Datcon3'(fromdate;todate;"01") DIV 1) + 1;çä   : error("Invalid Agetype " & agetype))çä
+F1 146eecec 45c07095 0 0 0 0 2
+Gen Get Nearest Year(attachmentdate;todate;fromdate)
+Funktion
+IF (fromdate >= todate ; çä  IF ('Gen Datcon3'(todate;fromdate;"DY") >= 'Gen Datcon3'('Gen Datcon2'(fromdate;"01";-1;"");todate;"DY") ; çä    'Gen Datcon3'(attachmentdate;'Gen Datcon2'(fromdate;"01";-1;"");"01") DIV 1 ; çä    'Gen Datcon3'(attachmentdate;fromdate;"01") DIV 1çä  ) ; çä'Gen Get Nearest Year'(attachmentdate;todate;'Gen Datcon2'(fromdate;"01";1;""))çä)
+F1 550d2387 3ba847fc 0 3eb7a088 0 0 2
+Gen Group Age Calculation(agetype;ccdate;dob;startdate;enddate;language)
+Funktion
+0
+F1 3eb7a088 3ba847fc 28cdcdb8 f9612c3 0 0 2
+Gen AgeCalc(birthdate,currdate,cnttype)
+Funktion
+ // Calculates the age Next, Last, Previous Birthday based on setupçä// in table.çäIF ('Gen AgeCalc Method'(cnttype) EQUAL "Next" ; çä  floor('Gen Datcon3'(birthdate;currdate;"01") + 0.999999) ; çä  IF ('Gen AgeCalc Method'(cnttype) EQUAL "Last" ; çä    floor('Gen Datcon3'(birthdate;currdate;"01")) ; çä    IF ('Gen AgeCalc Method'(cnttype) EQUAL "Nearest" ; çä      floor('Gen Datcon3'(birthdate;currdate;"01") + 0.5) ; çä      0çä    )çä)çä)
+F1 28cdcdb8 3eb7a088 0 0 0 0 2
+Gen AgeCalc Method(cnttype)
+Funktion
+'Input Group Plan Age Calc Method'
+F1 f9612c3 3ba847fc 1698ce2e 220fa975 0 0 2
+Gen Danny Datcon3(date1;date2;freq)
+Funktion
+ // Given 2 dates, say DATE1 and DATE2, and a frequency, ie 01 for Annualçä// 02 for half yearly, etc. Return a factor which is the number of timesçä// the frequency occurs between the two dates.çä// çäIF (freq EQUAL "01" ; çä  Floor('Gen Elapsed Years'(date1;date2)) + 1 ; çä  IF (freq EQUAL "04" ; çä    Floor(('Gen Elapsed Years'(date1;date2)) * 4) ; çä    Floor(('Gen Elapsed Years'(date1;date2)) * 12)çä  )çä)
+F1 1698ce2e f9612c3 0 0 0 0 2
+Gen Elapsed Years(date1;date2)
+Funktion
+IF (date1 EQUAL date2 ; çä  (Days(date1) - Days(date2)) / 360 ; çä  (Days(date2) - Days(date1)) / 360çä)
+F1 220fa975 3ba847fc 0 3f8fad1d 0 0 2
+Gen TableName(tabname,tabid,ratingdate)
+Funktion
+lookupx(table(tabname);tabid;ratingdate;"TargetTable")
+F1 3f8fad1d 3ba847fc 0 12aa235f 0 0 2
+Gen TableDate to VPMS(indate)
+Funktion
+date("01/01/2000";right(indate;2) - 1;mid(indate;5;2) - 1;left(indate;4) - 2000)
+F1 12aa235f 3ba847fc 0 4b9d114c 0 0 2
+Gen Round(method,currency,amount,ratingdate)
+Funktion
+IF (lookupx(table('Gen TableName'("T_Com_Index";"DISCOUNT";ratingdate));method;currency;1;"Rounding") EQUAL "3D" ; çä  round(amount;3) ; çä  IF (lookupx(table('Gen TableName'("T_Com_Index";"DISCOUNT";ratingdate));method;currency;1;"Rounding") EQUAL "2D" ; çä    round(amount;2) ; çä    IF (lookupx(table('Gen TableName'("T_Com_Index";"DISCOUNT";ratingdate));method;currency;1;"Rounding") EQUAL "1D" ; çä      round(amount;1) ; çä      IF (lookupx(table('Gen TableName'("T_Com_Index";"DISCOUNT";ratingdate));method;currency;1;"Rounding") EQUAL "1W" ; çä        round(amount;0) ; çä        IF (lookupx(table('Gen TableName'("T_Com_Index";"DISCOUNT";ratingdate));method;currency;1;"Rounding") EQUAL "2W" ; çä          round(amount;-1) ; çä          IF (lookupx(table('Gen TableName'("T_Com_Index";"DISCOUNT";ratingdate));method;currency;1;"Rounding") EQUAL "3W" ; çä            round(amount;-2) ; çä            IF (lookupx(table('Gen TableName'("T_Com_Index";"DISCOUNT";ratingdate));method;currency;1;"Rounding") EQUAL "4W" ; çä              round(amount;-4) ; çä              amountçä            )çä        )çä    )çä)çä)çä)çä)
+F1 4b9d114c 3ba847fc 2d8ab699 478fd2ce 0 0 2
+Gen Rounding(coy;currency;amount)
+Funktion
+IF ('Access Exists'("Rate";"RoundingRules";v_(currency);"UNITR") = 1 ; çä  IF ('Access Lookup'("Rate";"RoundingRules";v_(currency);"CENTSIND") EQUAL "E" ; çä    'Gen Get Rounding'(amount;'Access Lookup'("Rate";"RoundingRules";v_(currency);"UNITR")) ; çä    amountçä  ) ; çäamountçä)
+F1 2d8ab699 4b9d114c 0 0 0 0 2
+Gen Get Rounding(amount;unitr)
+Funktion
+IF (unitr = 0 ; çä  IF (amount < 0 ; çä    amount - 0.5 ; çä    amount + 0.5çä  ) ; çäIF (amount < 0 ; çä  ((amount / unitr) - 0.5) * unitr ; çä  ((amount / unitr) + 0.5) * unitrçä)çä)
+F1 478fd2ce 3ba847fc db7475e 473933cd 0 0 2
+Gen Group Period Calculations(coy;calcMthd;dteatt;dteapp;prvpoldt;dob;ccdate;todate;enddate)
+Funktion
+'Gen Agecalculation'('Gen Getagetype'(coy;calcMthd);e_('Gen GetPeriod'(coy;calcMthd;dteatt;dteapp;prvpoldt;dob;ccdate;todate;enddate);0);e_('Gen GetPeriod'(coy;calcMthd;dteatt;dteapp;prvpoldt;dob;ccdate;todate;enddate);1))
+F1 db7475e 478fd2ce 0 1d27dca0 0 0 2
+Gen GetCalculation Type(coy;calcMthd;column)
+Funktion
+'Access Lookup'("Config";"TR93D";v_(coy;"TR93D";calcMthd;"";0);column)
+F1 1d27dca0 478fd2ce 0 114dfb17 0 0 2
+Gen Getagetype(coy;calcMthd)
+Funktion
+CASE('Gen GetCalculation Type'(coy;calcMthd;"FRCRRULE");çä  "H" : "N";çä  "L" : "P";çä  "N" : "C";çä   : error("Invalid Agetype in TR93D " & 'Gen GetCalculation Type'(coy;calcMthd;"FRCRRULE")))çä
+F1 114dfb17 478fd2ce 0 0 0 0 2
+Gen GetPeriod(coy;calcMthd;dteatt;dteapp;prvpoldt;dob;ccdate;todate;enddate)
+Funktion
+CASE('Gen GetCalculation Type'(coy;calcMthd;"STRDTPRD");çä  "DEM" : v_(dteapp;enddate);çä  "DPL" : v_(dteatt;enddate);çä  "DPP" : v_(prvpoldt;enddate);çä  "AGM" : v_(dob;IF (dteatt > ccdate ; çä    dteatt ; çä    ccdateçä  ));çä"AGP" : v_(dob;ccdate);çä"AGX" : v_(dob;prvpoldt);çä"AGC" : v_(dob;todate);çä"ELIG" : v_(dob;dteatt);çä"ELI1" : v_(dob;dteapp);çä : error("Invalid Calc Method"))çä
+F1 473933cd 3ba847fc 15605377 113cbf96 0 0 2
+GEN GetContribution Percentage(itemitem;age;experience;sequence;agecounter;experiencecounter)
+Funktion
+IF ('GEN TR94B AgeLoop'(itemitem;sequence;agecounter) >= age ; çä  'GEN TR94B Experience'(itemitem;age;experience;sequence;agecounter;experiencecounter) ; çä  IF (agecounter >= 06 ; çä    'GEN GetContribution Percentage'(itemitem;age;experience;IF (sequence EQUAL "" ; çä      01 ; çä      sequence + 1çä    );1;1) ; çä  'GEN GetContribution Percentage'(itemitem;age;experience;sequence;agecounter + 1;1)çä)çä)
+F1 15605377 473933cd 0 3b5982d3 0 0 2
+GEN TR94B AgeLoop(itemitem;sequence;agecounter)
+Funktion
+'Access Lookup'("Rate";"TR94B";v_('Input Group Policy Company';"TR94B";itemitem;sequence;0);"AGTO" & 'GEN Counter'(agecounter))
+F1 3b5982d3 473933cd 0 2708dfbd 0 0 2
+GEN TR94B Experience(itemitem;age;experience;sequence;agecounter;experiencecounter)
+Funktion
+IF ('GEN TR94B ExperienceLoop'(itemitem;sequence;experiencecounter) >= experience ; çä  'Access Lookup'("Rate";"TR94B";v_('Input Group Policy Company';"TR94B";itemitem;sequence;0);"PRCNT" & 'GEN Counter'((agecounter - 1) * 15 + experiencecounter)) ; çä  IF (experiencecounter >= 15 ; çä    'GEN GetContribution Percentage'(itemitem;age;experience;IF (sequence EQUAL "" ; çä      01 ; çä      sequence + 1çä    );1;1) ; çä  'GEN TR94B Experience'(itemitem;age;experience;sequence;agecounter;experiencecounter + 1)çä)çä)
+F1 2708dfbd 473933cd 0 0 0 0 2
+GEN TR94B ExperienceLoop(itemitem;sequence;experiencecounter)
+Funktion
+'Access Lookup'("Rate";"TR94B";v_('Input Group Policy Company';"TR94B";itemitem;sequence;0);"TOYEAR" & 'GEN Counter'(experiencecounter))
+F1 113cbf96 3ba847fc 761f30b6 0 0 0 2
+: Group
+Funktion
+
+F1 761f30b6 113cbf96 63d30f78 5283883b 0 0 2
+: Get
+Funktion
+
+F1 63d30f78 761f30b6 0 6fece85d 0 0 2
+GEN Group Get MRTA Flag
+Funktion
+IF ('Input Group Config Pol BillLevel' EQUAL "M" ; çä  "Y" ; çä  "N"çä)
+F1 6fece85d 761f30b6 35ef09c 2e45d008 0 0 2
+--Access Tables
+Funktion
+
+F1 35ef09c 6fece85d 0 11fe05d0 0 0 2
+GEN Group Access Tables(tablenme;itemitem;column)
+Funktion
+'Access Lookup'("Rate";tablenme;v_('Input Group Policy Company';tablenme;itemitem;"";'Input TransEffDate');column)
+F1 11fe05d0 6fece85d 0 0 0 0 2
+GEN Group Access Exists(tablenme;itemitem;column)
+Funktion
+'Access Exists'("Rate";tablenme;v_('Input Group Policy Company';tablenme;itemitem;"";'Input TransEffDate');column)
+F1 2e45d008 761f30b6 b0e59b 25325178 0 0 2
+: Policy or Member
+Funktion
+
+F1 b0e59b 2e45d008 0 50b9ba22 0 0 2
+GEN Group Get Policy or Member CCDate(ccdate)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    ccdate ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy CCDate'çä)
+F1 50b9ba22 2e45d008 0 605055c5 0 0 2
+GEN Group Get Policy or Member CRDate(crdate)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    crdate ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy CRDate'çä)
+F1 605055c5 2e45d008 0 e9862ad 0 0 2
+GEN Group Get Policy or Member Bill Frequency(billfreq)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    billfreq ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy Bill Frequency'çä)
+F1 e9862ad 2e45d008 0 5a4b67b5 0 0 2
+GEN Group Get Policy or Member FirstBillDateNBRenewal(btdatenr)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    btdatenr ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy FirstBillDateNBRenewal'çä)
+F1 5a4b67b5 2e45d008 0 2ee34b3c 0 0 2
+GEN Group Get Policy or Member Adjustment Frequency(adjfreq)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    adjfreq ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy Adjustment Frequency'çä)
+F1 2ee34b3c 2e45d008 0 292cafe9 0 0 2
+GEN Group Get Policy or Member Bill To Date(btdate)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    btdate ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy Bill To Date'çä)
+F1 292cafe9 2e45d008 0 4a42c293 0 0 2
+GEN Group Get Policy or Member Adjustment Date(adjdate)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    adjdate ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy Adjustment Date'çä)
+F1 4a42c293 2e45d008 0 0 0 0 2
+GEN Group Get Policy or Member Paid To Date(ptdate)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" ; çä  IF ('GEN Group Get MRTA Flag' EQUAL "Y" ; çä    ptdate ; çä    error("Invalid Configuration")çä  ) ; çä'Input Group Policy Paid To Date'çä)
+F1 25325178 761f30b6 61edad62 3db935a9 0 0 2
+--Instalment Dates
+Funktion
+
+F1 61edad62 25325178 5bcf4c5 49c916ee 0 0 2
+GEN Group Get Last and Next Instalment(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+IF ('GEN Group Get Policy or Member Bill Frequency'(billfreq) EQUAL "00" ; çä  v_(0;0;'GEN Group Get Policy or Member CCDate'(ccdate);'GEN Group Get Policy or Member CRDate'(crdate)) ; çä  IF ('Input Group Policy Status Code' EQUAL "PN" || 'Input Group Policy Status Code' EQUAL "PR" || 'Input Group Policy Status Code' EQUAL "QR" || 'GEN Group Get Policy or Member Bill To Date'(btdate) = 99999999 ; çä    'GEN Group Get No Bills Issued Yet'(ccdate;crdate;btdate;btdatenr;billfreq) ; çä    'GEN Group Get Instalment Dates'(ccdate;crdate;btdate;btdatenr;billfreq)çä  )çä)
+F1 5bcf4c5 61edad62 0 366ba70a 0 0 2
+GEN Group Get No Bills Issued Yet(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+v_(0;0;'GEN Group Get Policy or Member CCDate'(ccdate);'GEN Add Sub Day GASONED'('GEN Group Get Policy or Member FirstBillDateNBRenewal'(btdatenr);"S"))
+F1 366ba70a 61edad62 295e096c 0 0 0 2
+GEN Group Get Instalment Dates(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+IF ('GEN Add Sub Day GASONED'('GEN Group Get Policy or Member Bill To Date'(btdate);"A") = 'GEN Group Get Policy or Member FirstBillDateNBRenewal'(btdatenr) ; çä  'GEN Group Get Instalment Dates First Bill'(ccdate;crdate;btdate;btdatenr;billfreq) ; çä  IF ('GEN Group Get Policy or Member Bill To Date'(btdate) = 'GEN Group Get Policy or Member CRDate'(crdate) ; çä    'GEN Group Get Instalment Dates Last Bill Sent'(ccdate;crdate;btdate;btdatenr;billfreq) ; çä    'GEN Group Get Instalment Dates Process Last Bill'(ccdate;crdate;btdate;btdatenr;billfreq)çä  )çä)
+F1 295e096c 366ba70a 0 39c5d649 0 0 2
+GEN Group Get Instalment Dates First Bill(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+v_('GEN Group Get Policy or Member CCDate'(ccdate);'GEN Group Get Policy or Member Bill To Date'(btdate);'GEN Add Sub Day GASONED'('GEN Group Get Policy or Member Bill To Date'(btdate);"A");'GEN Add Sub Frequency GADSUBF'('GEN Group Get Policy or Member Bill To Date'(btdate);'GEN Group Get Policy or Member Bill Frequency'(billfreq);"A";'GEN Group Get Policy or Member CRDate'(crdate)))
+F1 39c5d649 366ba70a 0 20f9eca9 0 0 2
+GEN Group Get Instalment Dates Last Bill Sent(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+v_('GEN Add Sub Frequency GADSUBF'('GEN Add Sub Day GASONED'('GEN Group Get Policy or Member Bill To Date'(btdate);"A");'GEN Group Get Policy or Member Bill Frequency'(billfreq);"S";'GEN Group Get Policy or Member CRDate'(crdate));'GEN Group Get Policy or Member CRDate'(crdate);0;0)
+F1 20f9eca9 366ba70a 0 0 0 0 2
+GEN Group Get Instalment Dates Process Last Bill(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+v_('GEN Add Sub Frequency GADSUBF'('GEN Add Sub Day GASONED'('GEN Group Get Policy or Member Bill To Date'(btdate);"A");'GEN Group Get Policy or Member Bill Frequency'(billfreq);"S";'GEN Group Get Policy or Member CRDate'(crdate));'GEN Group Get Policy or Member Bill To Date'(btdate);'GEN Add Sub Day GASONED'('GEN Group Get Policy or Member Bill To Date'(btdate);"A");'GEN Add Sub Frequency GADSUBF'('GEN Group Get Policy or Member Bill To Date'(btdate);'GEN Group Get Policy or Member Bill Frequency'(billfreq);"A";'GEN Group Get Policy or Member CRDate'(crdate)))
+F1 49c916ee 25325178 0 39ab9c8d 0 0 2
+GEN Group Get Last Instalment From Date(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+e_('GEN Group Get Last and Next Instalment'(ccdate;crdate;btdate;btdatenr;billfreq);0)
+F1 39ab9c8d 25325178 0 7a2d5738 0 0 2
+GEN Group Get Last Instalment To Date(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+e_('GEN Group Get Last and Next Instalment'(ccdate;crdate;btdate;btdatenr;billfreq);1)
+F1 7a2d5738 25325178 0 1cabe731 0 0 2
+GEN Group Get Next Instalment From Date(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+e_('GEN Group Get Last and Next Instalment'(ccdate;crdate;btdate;btdatenr;billfreq);2)
+F1 1cabe731 25325178 0 0 0 0 2
+GEN Group Get Next Instalment To Date(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+e_('GEN Group Get Last and Next Instalment'(ccdate;crdate;btdate;btdatenr;billfreq);3)
+F1 3db935a9 761f30b6 47883f46 29900249 0 0 2
+--Member Age Calc
+Funktion
+
+F1 47883f46 3db935a9 0 626acc02 0 0 2
+GEN Group Get CCDate for Age(ccdate;crdate;btdate;btdatenr;billfreq)
+Funktion
+IF ('Input Group Config Pol EndDateLevel' EQUAL "M" && 'Input Group Policy Bill Frequency' EQUAL "01" && 'Input Group Policy Status Code' NOTEQUAL "PN" ; çä  IF ('Input Group Mode Indicator' EQUAL "BATCH" && 'Input Group Policy Status Code' NOTEQUAL "PE" ; çä    'GEN Group Get Next Instalment From Date'(ccdate;crdate;btdate;btdatenr;billfreq) ; çä    'GEN Group Get Last Instalment From Date'(ccdate;crdate;btdate;btdatenr;billfreq)çä  ) ; çä'Input Group Policy CCDate'çä)
+F1 626acc02 3db935a9 2ec1af16 0 0 0 2
+GEN Group Get Member Age Calc(calcMthd;EndDate;Type)
+Funktion
+'GEN Group Period Calculations'('Input Group Policy Company';calcMthd;'GEN Group Get Dteatt For AgeCalc'(Type);'GEN Group Get Dteapp For AgeCalc'(Type);'GEN Group Get PrvpolDt For AgeCalc'(Type);'GEN Group Get DOB For AgeCalc'(Type);'GEN Group Get CCDate for Age'('GEN Group Get MbrCCDate For AgeCalc'(Type);'GEN Group Get MbrCRDate For AgeCalc'(Type);'GEN Group Get MbrBTDate For AgeCalc'(Type);'GEN Group Get MbrBTDatenr For AgeCalc'(Type);'GEN Group Get MbrBillFreq For AgeCalc'(Type));'Input Group Today';IF (EndDate = 0 || EndDate = 99999999 ; çä  'Input Group Today' ; çä  EndDateçä))
+F1 2ec1af16 626acc02 0 6c6118d5 0 0 2
+GEN Group Get Dteatt For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member Attachment Date';çä  "Dependent" : 'Input Group Member Attachment Date';çä  "Period" : 'Input Group Period Attachment Date';çä  "Vesting" : 'Input Group Vesting Attachment Date';çä  "Sumins" : 'Input Group SumInsured Attachment Date';çä   : error("Invalid Type for Attachment"))çä
+F1 6c6118d5 626acc02 0 1e17a768 0 0 2
+GEN Group Get Dteapp For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member Appointment Date';çä  "Dependent" : 'Input Group Member Appointment Date';çä  "Period" : 'Input Group Period Appointment Date';çä  "Vesting" : 'Input Group Vesting Appointment Date';çä  "Sumins" : 'Input Group SumInsured Appointment Date';çä   : error("Invalid Type for Attachment"))çä
+F1 1e17a768 626acc02 0 28f5eafa 0 0 2
+GEN Group Get PrvpolDt For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member Prev Policy Date';çä  "Dependent" : 'Input Group Member Prev Policy Date';çä  "Period" : 'Input Group Period Prev Policy Date';çä  "Vesting" : 'Input Group Vesting Prev Policy Date';çä  "Sumins" : 'Input Group SumInsured Prv PolDate';çä   : error("Invalid Type for Attachment"))çä
+F1 28f5eafa 626acc02 0 143ad51e 0 0 2
+GEN Group Get DOB For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member DOB';çä  "Dependent" : 'Input Group Dependent DOB';çä  "Period" : 'Input Group Period DOB';çä  "Vesting" : 'Input Group Vesting DOB';çä  "Sumins" : 'Input Group SumInsured DateOfBirth';çä   : error("Invalid Type for Attachment"))çä
+F1 143ad51e 626acc02 0 3ce5d290 0 0 2
+GEN Group Get MbrCCDate For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member Premium StartDate';çä  "Dependent" : 'Input Group Dependent Premium StartDate';çä  "Period" : 'Input Group Period Premium StartDate';çä  "Vesting" : 'Input Group Vesting Premium StartDate';çä  "Sumins" : 'Input Group SumInsured MBR CCDate';çä   : error("Invalid Type for Attachment"))çä
+F1 3ce5d290 626acc02 0 56102e4a 0 0 2
+GEN Group Get MbrCRDate For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member Premium EndDate';çä  "Dependent" : 'Input Group Dependent Premium EndDate';çä  "Period" : 'Input Group Period Premium EndDate';çä  "Vesting" : 'Input Group Vesting Premium EndDate';çä  "Sumins" : 'Input Group SumInsured MBR CRDate';çä   : error("Invalid Type for Attachment"))çä
+F1 56102e4a 626acc02 0 6584f41c 0 0 2
+GEN Group Get MbrBTDate For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member Bill To Date';çä  "Dependent" : 'Input Group Dependent Bill To Date';çä  "Period" : 'Input Group Period Bill To Date';çä  "Vesting" : 'Input Group Vesting Bill To Date';çä  "Sumins" : 'Input Group SumInsured MBR BTDate';çä   : error("Invalid Type for Attachment"))çä
+F1 6584f41c 626acc02 0 156a61b1 0 0 2
+GEN Group Get MbrBTDatenr For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member FirstBillDateNBRenewal';çä  "Dependent" : 'Input Group Dependent FirstBillDateNBRenewal';çä  "Period" : 'Input Group Period FirstBillDateNBRenewal';çä  "Vesting" : 'Input Group Vesting FirstBillDateNBRenewal';çä  "Sumins" : 'Input Group SumInsured MBR BTDateNBRnw';çä   : error("Invalid Type for Attachment"))çä
+F1 156a61b1 626acc02 0 0 0 0 2
+GEN Group Get MbrBillFreq For AgeCalc(Type)
+Funktion
+CASE(Type;çä  "Member" : 'Input Group Member Bill Frequency';çä  "Dependent" : 'Input Group Dependent Bill Frequency';çä  "Period" : 'Input Group Period Bill Frequency';çä  "Vesting" : 'Input Group Vesting Bill Frequency';çä  "Sumins" : 'Input Group SumInsured MBR BillFreq';çä   : error("Invalid Type for Attachment"))çä
+F1 29900249 761f30b6 5b5a3f0e 0 0 0 2
+--Number of Years based on Rounding factor for Surrender
+Funktion
+
+F1 5b5a3f0e 29900249 7874e361 0 0 0 2
+GEN Group Get Number Of Years(roundind;attachmentdate;effectivedate)
+Funktion
+CASE(roundind;çä  "P" : 'GEN Datcon3'(effectivedate;attachmentdate;01) DIV 1;çä  "N" : 'GEN Group Get Nearest Year'(attachmentdate;effectivedate;attachmentdate);çä   : ('GEN Datcon3'(effectivedate;attachmentdate;01) DIV 1) + 1)çä
+F1 7874e361 5b5a3f0e 0 0 0 0 2
+GEN Group Get Nearest Year(attachmentdate;todate;fromdate)
+Funktion
+IF (fromdate >= todate ; çä  IF ('GEN Datcon3'(todate;fromdate;"DY") >= 'GEN Datcon3'('GEN Datcon2'(fromdate;01;-1;"");todate;"DY") ; çä    'GEN Datcon3'(attachmentdate;'GEN Datcon2'(fromdate;01;-1;"");01) DIV 1 ; çä    'GEN Datcon3'(attachmentdate;fromdate;01) DIV 1çä  ) ; çä'GEN Group Get Nearest Year'(attachmentdate;todate;'GEN Datcon2'(fromdate;01;1;""))çä)
+F1 5283883b 113cbf96 4042e090 18d88790 0 0 2
+-- Benefit Amount
+Funktion
+
+F1 4042e090 5283883b 4c9d9ee6 0 0 0 2
+: Benefit
+Funktion
+
+F1 4c9d9ee6 4042e090 3d1b556a 0 0 0 2
+GEN Group Benefit Amount(func;effdate;dteapp;dob;monsal;benrule)
+Funktion
+IF ('GEN Group Access Tables'("TR9PH";benrule;"MAXCAP") EQUAL "Y" && func NOTEQUAL "MAXOK" && 'GEN Group Access Tables'("TR9PH";benrule;"MAXLMT") < 'GEN Group Benefit CalcBeneftAmount'(func;effdate;dteapp;dob;monsal;benrule) ; çä  'GEN Group Access Tables'("TR9PH";benrule;"MAXLMT") ; çä  'GEN Group Benefit CalcBeneftAmount'(func;effdate;dteapp;dob;monsal;benrule)çä)
+F1 3d1b556a 4c9d9ee6 fba5a11 0 0 0 2
+GEN Group Benefit CalcBeneftAmount(func;effdate;dteapp;dob;monsal;benrule)
+Funktion
+IF ('GEN Group Access Tables'("TR9PH";benrule;"MINSRVCAP") EQUAL "Y" ; çä  'Gen Group Benefit Get Min Srvc Months Amount'(func;effdate;dteapp;dob;monsal;benrule) ; çä  'Gen Group Benefit Get Srvc Years Calc'(func;effdate;dteapp;dob;monsal;benrule)çä)
+F1 fba5a11 3d1b556a 0 27f9df9e 0 0 2
+Gen Group Benefit Get Min Srvc Months Amount(func;effdate;dteapp;dob;monsal;benrule)
+Funktion
+IF ('Gen Datcon3'(dteapp;effdate;"12") DIV 1 < 'GEN Group Access Tables'("TR9PH";benrule;"MINSRVMTH") && func NOTEQUAL "MAXOK" ; çä  0 ; çä  'Gen Group Benefit Get Srvc Years Calc'(func;effdate;dteapp;dob;monsal;benrule)çä)
+F1 27f9df9e 3d1b556a 483f282b 77179800 0 0 2
+Gen Group Benefit Get Srvc Years Calc(func;effdate;dteapp;dob;monsal;benrule)
+Funktion
+IF ('GEN Group Access Tables'("TR9PH";benrule;"GRFRFAC") EQUAL "Y" ; çä  'GEN Group Benefit Get AmountBased on FractionFactor'(monsal;1;benrule;0;dteapp;effdate) ; çä  'GEN Group Benefit Get AmountBased on PeriodFactor'('GEN Group Benefit Get NoofYears'(dteapp;effdate);1;benrule;monsal)çä)
+F1 483f282b 27f9df9e 43a373cc fbe8df9 0 0 2
+GEN Group Benefit Get AmountBased on FractionFactor(monsal;counter;benrule;periodcnt;dteapp;effdate)
+Funktion
+IF ('GEN Group Benefit TR9PI Values'(benrule;"TOYEAR" & 'Gen Counter'(counter)) <= 'GEN Group Benefit Get NoofYears'(dteapp;effdate) ; çä  'GEN Group Benefit Calc PrcntAmt'(monsal;benrule;counter;'GEN Group Benefit GetPeriodFactor'(counter;benrule;periodcnt)) + 'GEN Group Benefit Get AmountBased on FractionFactor'(monsal;counter + 1;benrule;'GEN Group Benefit GetPeriodFactor'(counter;benrule;periodcnt);dteapp;effdate) ; çä  'GEN Group Benefit Calc PrcntAmt'(monsal;benrule;counter;'GEN Group Benefit TR9PI Values'(benrule;"TOYEAR" & 'Gen Counter'(counter)) - 'GEN Group Benefit Get NoofYears'(dteapp;effdate))çä)
+F1 43a373cc 483f282b 0 27af4326 0 0 2
+GEN Group Benefit Calc PrcntAmt(monsal;benrule;counter;periodcnt)
+Funktion
+(monsal * 'GEN Group Benefit TR9PI Values'(benrule;"NUMER" & 'Gen Counter'(counter)) * 'GEN Group Benefit TR9PJ Values'(benrule;"PDFAC" & 'Gen Counter'(periodcnt))) / 'GEN Group Benefit TR9PI Values'(benrule;"DENOM" & 'Gen Counter'(counter))
+F1 27af4326 483f282b 0 0 0 0 2
+GEN Group Benefit GetPeriodFactor(counter;benrule;periodcnt)
+Funktion
+'GEN Group Access Tables'("TR9PI";'GEN Group Access Tables'("TR9PH";benrule;"FRFACRULE");"TOYEAR" & 'Gen Counter'(counter)) - periodcnt
+F1 fbe8df9 27f9df9e 218664c4 0 0 0 2
+GEN Group Benefit Get AmountBased on PeriodFactor(factor;counter;benrule;monsal)
+Funktion
+(monsal * 'GEN Group Benefit Get Period Factor'(factor;counter;benrule) * 'GEN Group Benefit Get FractionNumerator'(factor;counter;benrule)) / 'GEN Group Benefit Get FractionDenominator'(factor;counter;benrule)
+F1 218664c4 fbe8df9 0 6ddbafc3 0 0 2
+GEN Group Benefit Get Period Factor(factor;counter;benrule)
+Funktion
+IF ('GEN Group Benefit TR9PJ Values'(benrule;"TOYEAR" & 'Gen Counter'(counter)) >= factor ; çä  'GEN Group Benefit TR9PJ Values'(benrule;"PDFAC" & 'Gen Counter'(counter)) ; çä  'GEN Group Benefit Get Period Factor'(factor;counter + 1;benrule)çä)
+F1 6ddbafc3 fbe8df9 0 1c231d90 0 0 2
+GEN Group Benefit Get FractionNumerator(factor;counter;benrule)
+Funktion
+IF ('GEN Group Benefit TR9PI Values'(benrule;"TOYEAR" & 'Gen Counter'(counter)) >= factor ; çä  'GEN Group Benefit TR9PI Values'(benrule;"NUMER" & 'Gen Counter'(counter)) ; çä  'GEN Group Benefit Get FractionNumerator'(factor;counter + 1;benrule)çä)
+F1 1c231d90 fbe8df9 0 0 0 0 2
+GEN Group Benefit Get FractionDenominator(factor;counter;benrule)
+Funktion
+IF ('GEN Group Benefit TR9PI Values'(benrule;"TOYEAR" & 'Gen Counter'(counter)) >= factor ; çä  'GEN Group Benefit TR9PI Values'(benrule;"DENOM" & 'Gen Counter'(counter)) ; çä  'GEN Group Benefit Get FractionDenominator'(factor;counter + 1;benrule)çä)
+F1 77179800 3d1b556a 0 455211c 0 0 2
+GEN Group Benefit Get NoofYears(dteapp;effdate)
+Funktion
+('Gen Datcon3'(dteapp;effdate;"01") + 0.49999) DIV 1
+F1 455211c 3d1b556a 10b2a295 0 0 0 2
+GEN Group Benefit TR9PJ Values(benrule;column)
+Funktion
+'GEN Group Access Tables'("TR9PJ";'GEN Group Access Tables'("TR9PH";benrule;"PDFACRULE");column)
+F1 10b2a295 455211c 0 0 0 0 2
+GEN Group Benefit TR9PI Values(benrule;column)
+Funktion
+'GEN Group Access Tables'("TR9PI";'GEN Group Access Tables'("TR9PH";benrule;"FRFACRULE");column)
+F1 18d88790 113cbf96 5b1d5ce3 4efd1a16 0 0 2
+-- Benefit Payment
+Funktion
+
+F1 5b1d5ce3 18d88790 65edbcb 0 0 0 2
+: BnfPmt
+Funktion
+
+F1 65edbcb 5b1d5ce3 46dddecb 0 0 0 2
+GEN Group BnfPmt BnftAmount(formulacode;effdate;monsal;bnftfact;benrule;salfreq;earning;encshdleaves;vestrule;enddate;dteapp;dob)
+Funktion
+CASE(formulacode;çä  "02" : IF (vestrule EQUAL "" ; çä    0 ; çä    'GEN Group BnfPmt Check FactorEmplmntSal'(vestrule;monsal;bnftfact)çä  );çä"03" : 'GEN Group BnfPmt Check GratuityFactor'(effdate;enddate;dteapp;dob;monsal;benrule);çä"04" : 'GEN Group BnfPmt Check LeaveEncashment'(encshdleaves;effDate;salfreq;earning);çä : 0)çä
+F1 46dddecb 65edbcb 0 682615cf 0 0 2
+GEN Group BnfPmt Check FactorEmplmntSal(vestrule;monsal;bnftfact)
+Funktion
+'GEN Group Vesting Exp'("AGE";vestrule;"Member") * monsal * bnftfact
+F1 682615cf 65edbcb 0 2258b75a 0 0 2
+GEN Group BnfPmt Check GratuityFactor(effdate;enddate;dteapp;dob;monsal;benrule)
+Funktion
+IF ('GEN Group Access Tables'("TR9PH";benrule;"STTMINCHK") EQUAL "Y" ; çä  IF ('GEN Group Benefit Amount'("";effdate;dteapp;dob;monsal;'GEN Group Access Tables'("TR9PH";benrule;"STTRULE")) > 'GEN Group Benefit Amount'("";effdate;dteapp;dob;monsal;benrule) ; çä    'GEN Group Benefit Amount'("";effdate;dteapp;dob;monsal;'GEN Group Access Tables'("TR9PH";benrule;"STTRULE")) ; çä    'GEN Group Benefit Amount'("";effdate;dteapp;dob;monsal;benrule)çä  ) ; çä'GEN Group Benefit Amount'("";effdate;dteapp;dob;monsal;benrule)çä)
+F1 2258b75a 65edbcb 593ba060 1283e6f7 0 0 2
+GEN Group BnfPmt Check LeaveEncashment(encshdleaves;EffDate;Salfreq;Earning)
+Funktion
+encshdleaves * 'GEN Group BnfPmt Get NoofDays'(EffDate;Salfreq;Earning)
+F1 593ba060 2258b75a 0 0 0 0 2
+GEN Group BnfPmt Get NoofDays(EffDate;Salfreq;Earning)
+Funktion
+IF ('Gen Check Leap Year'('Gen Julian Year'(Effdate)) EQUAL "Y" ; çä  IF (Salfreq EQUAL "A" ; çä    Earning / 369 ; çä    Earning / 'Gen Day Calendar'('Gen Julian Month'(Effdate);"Y")çä  ) ; çäIF (Salfreq EQUAL "A" ; çä  Earning / 368 ; çä  Earning / 'Gen Day Calendar'('Gen Julian Month'(Effdate);"N")çä)çä)
+F1 1283e6f7 65edbcb 0 0 0 0 2
+GEN Group BnfPmt GetMonthlySal(salfreq;earning)
+Funktion
+IF (salfreq EQUAL "A" ; çä  earning / 12 ; çä  earningçä)
+F1 4efd1a16 113cbf96 17d2d0e8 0 0 0 2
+--Group Vesting
+Funktion
+case(funcâ;çä"AGE"ââ: 'GEN Group Get Age and Experience';çä"VEST"ââ: 'GEN Group Get All Vesting Percentages";çä)ââ
+F1 17d2d0e8 4efd1a16 18b94915 0 0 0 2
+: Vesting
+Funktion
+
+F1 18b94915 17d2d0e8 0 7b123429 0 0 2
+GEN Group Vesting Get EndDate(Type)
+Funktion
+CASE(Type;çä  "Vesting" : 'Input Group Vesting EndDate';çä  "Sumins" : 'Input Group SumInsured EffDate';çä  "Member" : 'Input Group BftPmt Effective Date';çä   : error("Invalid Function in Vesting EndDate"))çä
+F1 7b123429 17d2d0e8 4aeb5530 7bf92547 0 0 2
+GEN Group Vesting Age(func;vestrule;Type)
+Funktion
+CASE(func;çä  "AGE" : 'GEN Group Get Member Age Calc'("AGP";'GEN Group Vesting Get EndDate'(Type);Type);çä  "VEST" : 'GEN Group Vesting Get AgeCalc Based on VestingRules'(vestrule;Type);çä   : error("Invalid Function " & func))çä
+F1 4aeb5530 7b123429 0 0 0 0 2
+GEN Group Vesting Get AgeCalc Based on VestingRules(vestrule;Type)
+Funktion
+'GEN Group Get Member Age Calc'('GEN Group Access Tables'("TR93R";vestrule;"CALCMTHD01");'GEN Group Vesting Get EndDate'(Type);Type)
+F1 7bf92547 17d2d0e8 5f1f3c0d 152f1c5e 0 0 2
+GEN Group Vesting Exp(func;vestrule;Type)
+Funktion
+CASE(func;çä  "AGE" : 'GEN Group Get Member Age Calc'("DEM";'GEN Group Vesting Get EndDate'(Type);Type);çä  "VEST" : 'GEN Group Vesting Get ExpCalc Based on VestingRules'(vestrule;Type);çä   : error("Invalid Function " & func))çä
+F1 5f1f3c0d 7bf92547 0 0 0 0 2
+GEN Group Vesting Get ExpCalc Based on VestingRules(vestrule;Type)
+Funktion
+IF ('GEN Group Access Tables'("TR93R";vestrule;"VESTFML") EQUAL "02" ; çä  'GEN Group Get Member Age Calc'('GEN Group Access Tables'("TR93R";vestrule;"CALCMTHD02");'GEN Group Vesting Get EndDate'(Type);Type) ; çä  0çä)
+F1 152f1c5e 17d2d0e8 3593dfaa 10e7d1f 0 0 2
+GEN Group Vesting Values(func;vestrule;Type)
+Funktion
+vectorx(counter;1;tabrows('Table Vesting Contribution');'GEN Group Vesting Contribution'(func;#counter;vestrule;Type))
+F1 3593dfaa 152f1c5e d121ca 0 0 0 2
+GEN Group Vesting Contribution(func;counter;vestrule;Type)
+Funktion
+IF (func EQUAL "VEST" ; çä  IF ('GEN Group Access Tables'("TR93R";vestrule;"VESTFML") EQUAL "01" ; çä    'GEN Group Vesting CorrectContrType01'(counter;vestrule;Type) ; çä    IF ('GEN Group Access Tables'("TR93R";vestrule;"VESTFML") EQUAL "02" ; çä      'GEN Group Vesting CorrectContrType02'(counter;vestrule;Type) ; çä      v_("";0)çä    )çä) ; çäv_("";0)çä)
+F1 d121ca 3593dfaa 2d148053 4491cecd 0 0 2
+GEN Group Vesting CorrectContrType01(counter;vestrule;Type)
+Funktion
+IF ('GEN Group Access Exists'("TR93S";'Gen Group Vesting Get TR93A'(counter) & vestrule;"CALCMTHD") ; çä  IF ('GEN Group Access Tables'("TR93S";'Gen Group Vesting Get TR93A'(counter) & vestrule;"CALCMTHD") NOTEQUAL "" ; çä    'GEN Group Vesting CheckTR93SCalcMthd'('Gen Group Vesting Get TR93A'(counter) & vestrule;counter;vestrule;Type) ; çä    'GEN Group Vesting CheckPercentageExists for CtbTyp'('Gen Group Vesting Get TR93A'(counter) & vestrule;vestrule;Type;counter)çä  ) ; çäv_("";0)çä)
+F1 2d148053 d121ca 598e242e 0 0 0 2
+GEN Group Vesting CheckTR93SCalcMthd(itemitem;counter;Vestrule;Type)
+Funktion
+IF ('GEN Group Get Member Age Calc'('GEN Group Access Tables'("TR93S";itemitem;"CALCMTHD");'GEN Group Vesting Get EndDate'(Type);Type) < 'GEN Group Access Tables'("TR93S";itemitem;"TYEARNO") ; çä  v_('Gen Group Vesting Get TR93A'(counter);0) ; çä  'GEN Group Vesting CheckPercentageExists for CtbTyp'(itemitem;vestrule;Type;counter)çä)
+F1 598e242e 2d148053 1d3c6b5b 0 0 0 2
+GEN Group Vesting CheckPercentageExists for CtbTyp(itemitem;vestrule;Type;tablcntr)
+Funktion
+IF (e_('GEN Group Vesting PercentageFound'(itemitem;1;vestrule;Type);0) EQUAL "Y" ; çä  v_('Gen Group Vesting Get TR93A'(tablcntr);'GEN Group Access Tables'("TR93S";itemitem;"PRCNT" & 'Gen Counter'(e_('GEN Group Vesting PercentageFound'(itemitem;1;vestrule;Type);1)))) ; çä  IF ('GEN Group Access Tables'("TR93S";itemitem;"CONTITEM") EQUAL "" ; çä    error("Error Found") ; çä    'GEN Group Vesting CheckPercentageExists for CtbTyp'('GEN Group Access Tables'("TR93S";itemitem;"CONTITEM");vestrule;Type;tablcntr)çä  )çä)
+F1 1d3c6b5b 598e242e 0 0 0 0 2
+GEN Group Vesting PercentageFound(itemitem;counter;vestrule;Type)
+Funktion
+IF ('GEN Group Access Tables'("TR93S";itemitem;"TOYEAR" & 'Gen Counter'(counter)) >= 'GEN Group Vesting Exp'("VEST";vestrule;Type) ; çä  v_("Y";counter) ; çä  IF (counter >= 50 ; çä    v_("N";counter) ; çä    'GEN Group Vesting PercentageFound'(itemitem;counter + 1;vestrule;Type)çä  )çä)
+F1 4491cecd 3593dfaa 0 6a8b8157 0 0 2
+GEN Group Vesting CorrectContrType02(counter;vestrule;Type)
+Funktion
+IF ('GEN Group Access Exists'("TR94B";"V" & cell('Table Vesting Contribution';counter;3) & vestrule;"PRCNT01") ; çä  v_(cell('Table Vesting Contribution';counter;3);'GEN GetContribution Percentage'("V" & cell('Table Vesting Contribution';counter;3) & vestrule;'GEN Group Vesting Get AgeCalc Based on VestingRules'(vestrule;Type);'GEN Group Vesting Get ExpCalc Based on VestingRules'(vestrule;Type);"";1;1)) ; çä  v_("";0)çä)
+F1 6a8b8157 3593dfaa 0 0 0 0 2
+Gen Group Vesting Get TR93A(counter)
+Funktion
+IF (counter + 1 > tabrows('Table Vesting Contribution') ; çä  "" ; çä  cell('Table Vesting Contribution';counter;3)çä)
+F1 10e7d1f 17d2d0e8 0 18d683c8 0 0 2
+GEN Group Vesting VestingPrcntage(func;vestrule;Type;Arrayposition;counter;vectcntr)
+Funktion
+IF (counter + 1 <= v_length('GEN Group Vesting Values'(func;vestrule;Type)) ; çä  IF (e_(e_('GEN Group Vesting Values'(func;vestrule;Type);counter);0) NOTEQUAL "" ; çä    IF (Arrayposition = vectcntr + 1 ; çä      e_(e_('GEN Group Vesting Values'(func;vestrule;Type);counter);1) ; çä      'GEN Group Vesting VestingPrcntage'(func;vestrule;Type;Arrayposition;counter + 1;vectcntr + 1)çä    ) ; çä  'GEN Group Vesting VestingPrcntage'(func;vestrule;Type;Arrayposition;counter + 1;vectcntr)çä) ; çä0çä)
+F1 18d683c8 17d2d0e8 0 0 0 0 2
+GEN Group Vesting CtbType(func;vestrule;Type;Arrayposition;counter;vectcntr)
+Funktion
+IF (counter + 1 <= v_length('GEN Group Vesting Values'(func;vestrule;Type)) ; çä  IF (e_(e_('GEN Group Vesting Values'(func;vestrule;Type);counter);0) NOTEQUAL "" ; çä    IF (Arrayposition = vectcntr + 1 ; çä      e_(e_('GEN Group Vesting Values'(func;vestrule;Type);counter);0) ; çä      'GEN Group Vesting CtbType'(func;vestrule;Type;Arrayposition;counter + 1;vectcntr + 1)çä    ) ; çä  'GEN Group Vesting CtbType'(func;vestrule;Type;Arrayposition;counter + 1;vectcntr)çä) ; çä""çä)
+F1 69e83e8b de0860 75ac5ab0 0 0 0 2
+-- MM Version Info --
+Funktion
+
+F1 75ac5ab0 69e83e8b 27bed825 41b48bdf 0 0 2
+GEN VersionInfo
+Funktion
+'GEN VersionInformation'(1)
+F1 27bed825 75ac5ab0 5e9e8647 0 0 0 2
+GEN VersionInformation(i)
+Funktion
+IF (i >= TABROWS(T_RepositoryInformation) ; çä  'GEN Info'(i) ; çä  IF ('GEN Exist'(i - 1;T_RepositoryInformation[i]) ; çä    'GEN VersionInformation'(i + 1) ; çä    'GEN Info'(i) & 'GEN nl' & 'GEN VersionInformation'(i + 1)çä  )çä)
+F1 5e9e8647 27bed825 3e03fef7 4835e923 0 0 2
+GEN Info(i)
+Funktion
+LEFT(T_RepositoryInformation[i];INSTR(T_RepositoryInformation[i];";") - 1) & " - " & 'GEN CUT'(SUBST('GEN Next'('GEN Next'('GEN Next'(T_RepositoryInformation[i])));";";" - "))
+F1 3e03fef7 5e9e8647 0 26b1257d 0 0 2
+GEN Next(s)
+Funktion
+MID(s;INSTR(s;";") + 1)
+F1 26b1257d 5e9e8647 0 0 0 0 2
+GEN CUT(s)
+Funktion
+LEFT(s;INSTR(s;"moduleTag") - 3)
+F1 4835e923 27bed825 0 0 0 0 2
+GEN Exist(i;s)
+Funktion
+IF ( /*If recursion stopping point has been reached*/ i < 1 ; çä   /*stop*/ 1 ; çä   /*Keep going*/ NOT(TRIM(MID(T_RepositoryInformation[i];INSTR(T_RepositoryInformation[i];"parent"))) ALIKE TRIM(MID(s;INSTR(s;"parent")))) && 'GEN Exist'(i - 1;s)çä)
+F1 41b48bdf 69e83e8b 6c058a5c 4fc2e0bc 0 0 2
+GEN Version
+Funktion
+'GEN Versions'(1;TABROWS(T_RepositoryInformation))
+F1 6c058a5c 41b48bdf 3f0e2d59 0 0 0 2
+GEN Versions(i; tabrow)
+Funktion
+IF (i >= tabrow ; çä  SUBST(T_RepositoryInformation[tabrow];";";'GEN nl') ; çä  SUBST(T_RepositoryInformation[i];";";'GEN nl') & 'GEN nl' & 'GEN nl' & 'GEN Versions'(i + 1;tabrow)çä)
+F1 3f0e2d59 6c058a5c 0 0 0 0 2
+GEN nl
+Funktion
+chr(10)
+F1 4fc2e0bc 69e83e8b 0 0 0 0 2
+nl
+Funktion
+chr(10)
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 6b59a3d0 0 0 0 0
+
+T9 6b59a3d0 de0974 0 30f51d10 0 0 16
+Table Vesting Contribution
+coy
+table
+item
+itemSeq
+itmFrm
+itmTo
+vFlag
+shortdesc E
+longdesc E
+shortdesc S
+longdesc S
+CTBCLS
+CTBGRP
+CTBWHO
+EXBFLG
+PREMTYP
+3
+TR93A
+CBT
+
+0
+
+1
+C-Bulk
+Company - Bulk Transfer
+C-Bulk
+
+A
+
+C
+N
+
+3
+TR93A
+CPS
+
+0
+
+1
+C-Past
+Company Past service
+C-Past
+
+R
+
+C
+Y
+
+3
+TR93A
+CRE
+
+0
+
+1
+C-Regular
+Company Regular
+C-Regular
+
+R
+
+C
+Y
+
+3
+TR93A
+FLT
+
+0
+
+1
+Floact
+Float Account
+Floact
+
+A
+
+C
+N
+
+3
+TR93A
+MIT
+
+0
+
+1
+M-Transfer
+Member Individual Transfer-in
+M-Transfer
+
+A
+
+C
+N
+
+3
+TR93A
+MRE
+
+0
+
+1
+M-Regular
+Member Regular
+M-Regular
+
+R
+
+M
+Y
+
+3
+TR93A
+MVO
+
+0
+
+2
+M-Voluntry
+Member Voluntary
+M-Voluntry
+
+
+
+
+
+
+3
+TR93A
+N.A
+
+0
+
+1
+N/A
+Not Applicable
+N.A
+
+A
+
+C
+N
+
+T10 30f51d10 de0974 0 0 0 0 2
+T_RepositoryInformation
+key
+value1
+1
+ModelName=1;2;3;4;5;6;7;8;9
+2
+Repository
+3
+isDirty
+4
+Revision
+5
+Tag
+6
+Time
+7
+moduleTag
+8
+IsModuleDirty
+9
+Parent
+I0 79976827 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P1
+73f9ed07
+F2
+3ba847fc
+69e83e8b
+A0
+T2
+6b59a3d0
+30f51d10
+!43
+33fd8013 -2 -2
+It is similar to DATCONA Subroutine in Group
+168db509 -2 -2
+This is Similar to Subroutine GDAYSDT which calculates the difference between two dates
+56c283d0 -2 -2
+This subroutine is similar to GASONED. It adds or subtracts based on the Input given.
+7360f0d9 -2 -2
+This subroutine is similar to GADSUBF subroutine in Group. It adds/subtracts the days based on the given frequency.
+23b6f84a -2 -2
+Return frequency between 2 dates (similar to SMART's Datcon3)
+55b5f2b -2 -2
+Converts a Date to Julian beginning from 19000101
+35a7e75b -2 -2
+This function is similar to GDTTOIN subroutine
+35a7e75b 0 2
+
+6150e0f7 0 2
+
+484dd84a 0 2
+
+1ad9c98b 0 2
+
+7ab5c194 0 2
+
+4c00148c 0 2
+
+1e9bdc88 0 2
+
+4a027ed7 0 2
+
+ba06a92 -2 -2
+This is similar to GLEAPYR copybook which checks whether the fromyear/toyear are leap years and returns the number of days accordingly. 
+4ac938b9 0 2
+
+146eecec 0 2
+
+3eb7a088 -2 -2
+Calculates Age Next, Last, Previous Birthday based on setup in Table
+f9612c3 -2 -2
+Danny's Datcon3 (do not use)
+220fa975 -2 -2
+Get table active table
+12aa235f -2 -2
+Premium Rounding based on Method, Currency setup in Table. 
+473933cd -2 -2
+This is Similar to CTBVSTPâ
+63d30f78 -2 -2
+This is to Identify if the Bill level is at Policy or Member.
+2e45d008 -2 -2
+
+25325178 -2 -2
+This is Similar to GLNINPR
+61edad62 -2 -2
+This is Similar to GLNINPR Subroutine
+7874e361 0 2
+
+5283883b -2 -2
+This is Similar to Subroutine GBNFAM2
+18d88790 -2 -2
+Benefit Payment Subroutine GBFTAMT
+d121ca 0 2
+
+4491cecd 0 2
+
+75ac5ab0 -2 -2
+Description:  Retrieve Version Informationçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Ruleçä
+27bed825 -2 -2
+Description:  Retrieve Version Informationçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Ruleçä
+5e9e8647 -2 -2
+Description:  Cut out necessary Info from Repository table entryçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+3e03fef7 -2 -2
+Description:  Cut out necessary Info from Repository table entryçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+26b1257d -2 -2
+Description:  Cut out necessary Info from Repository table entryçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+4835e923 -2 -2
+Description:  Retrieve Version Informationçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+41b48bdf -2 -2
+Description:  Returns Model Manger version informationçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+6c058a5c -2 -2
+Description:  Returns repository informationçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+3f0e2d59 -2 -2
+Description: Returns CHR(10) which represents a new line control characterçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+4fc2e0bc -2 -2
+Description: Returns CHR(10) which represents a new line control characterçä çäModification Log:çä03/05/2008 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Rule
+30f51d10 -2 -2
+Named T_RepositoryInformation as this the is how Model Manager is expecting the name.
+;Offset=00000000

@@ -1,0 +1,750 @@
+;1	08.12.2016 13:29:33	jlawrie2	
+X0 943244 0 9449e0 0 0 0 0
+
+X17 9449e0 943244 948e20 c5dc48 0 0 2
+IntRate Accum Factor(calcType; fundIndex)
+IntRate Accum Factor("C" ; 0)
+
+INPUT Policy SubAccount ProductCode
+CALYR
+INPUT Policy SubAccount OpenDate
+01/01/2006
+INPUT Calling System
+WMAJ
+INPUT Policy ProductCode
+FPA1PA
+INPUT InvestProduct InvestProductTypeCode
+22
+INPUT Policy number of SubAccount
+1
+INPUT Policy Subaccount IntRates
+
+INPUT Calling Program
+VPMSTEST
+Input TransEffDate
+3/28/2012
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+INPUT Policy InvestProductInfo GuaranteeDuration
+12
+X18 948e20 9449e0 0 0 0 0 2
+IntRate Accum Factor(calcType; fundIndex)
+IntRate Accum Factor("C"; 0)
+
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+NBA
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+Input TransEffDate
+12/31/2004
+INPUT Policy SubAccount OpenDate
+1/1/2004
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2004
+INPUT Policy InvestProductInfo GuaranteeDuration
+12
+INPUT Policy SubAccount ProductCode
+POLYR
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+35
+INPUT Message Language
+9
+INPUT Policy InvestProductInfo InterestCreditDaysType
+1000500001
+INPUT Policy number of SubAccount
+1
+INPUT InvestProduct InvestProductTypeCode
+26
+X6 c5dc48 943244 0 c5e698 0 0 2
+IntRate Last Anniversary Rates Renewal Date(fundIndex; yearIndex)
+IntRate Last Anniversary Rates Renewal Date(0; 1)
+
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+CL
+INPUT Policy EffDate
+01/15/2005
+INPUT Policy SubAccount OpenDate
+01/15/2005
+INPUT Policy SubAccount ValuationAsOfDate
+02/01/2007
+X17 c5e698 943244 0 c5ea10 0 0 2
+IntRate Vector Parms for RateAccess(calcType; fundIndex)
+PI InvestProductInfo GuaranteeType("FPA1PA"; 0; "11/1/1986") //IntRate Vector Parms for RateAccess("C"; 0)
+ERROR: CA1017 - In Model: 'PFAPA.VPM' and Function: 'PP IPInfo' -> Product definition field / table not found with Product type : 'FPA1PA', Field name : 'GuaranteeDuration', Object name : 'InvestProductInfo', qualifier : 'PolicyProduct' and keys: '(00!FPA1PA!1!11//01//1986!POLYR!11//1//1986)'
+INPUT Policy SubAccount ProductCode
+POLYR
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+11/01/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy EffDate
+11/01/1986
+INPUT Policy InvestProductInfo GuaranteeType
+ECONT
+INPUT Policy SubAccount OpenDate
+11/01/1986
+INPUT Policy SubAccount ValuationAsOfDate
+05/01/1997
+INPUT Policy InvestProductInfo GuaranteeDuration
+6
+INPUT Policy Subaccount IntRates
+
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of SubAccount
+1
+INPUT Message Language
+9
+X15 c5ea10 943244 0 c5edf0 0 0 2
+IntRate Vector Parms for RateAccess(calcType; fundIndex)
+IntRate Vector Parms for RateAccess("C"; 0)
+VCS
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount ProductCode
+POLYR
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+CL
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy SubAccount OpenDate
+1/15/2005
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy EffDate
+1/15/2005
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+INPUT Policy InvestProductInfo GuaranteeDuration
+12
+X17 c5edf0 943244 94b068 0 0 0 2
+IntRate Rates Vector(calcType; fundIndex)
+IntRate Rates Vector("C";  0)
+01/01/2006
+INPUT Policy Subaccount IntRates
+
+INPUT Policy number of SubAccount
+1
+INPUT Policy SubAccount ProductCode
+CALYR
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+CL
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+9
+INPUT Policy SubAccount OpenDate
+1/1/2006
+INPUT Policy SubAccount ValuationAsOfDate
+1/1/2008
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+INPUT Policy InvestProductInfo GuaranteeDuration
+12
+X17 94b068 c5edf0 0 94bc38 0 0 2
+IntRate Rates Vector(calcType; fundIndex)
+IntRate Rates Vector("C";  0)
+01/15/2005
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+CL
+INPUT Policy EffDate
+01/15/2005
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy InvestProductInfo InvestRateSubType
+10
+INPUT Policy SubAccount OpenDate
+01/15/2005
+INPUT Policy InvestProductInfo GuaranteeDuration
+4
+INPUT Policy number of SubAccount
+2
+Input TransEffDate
+01/15/2005
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy SubAccount ProductCode
+CALYR
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/15/2005
+X17 94bc38 c5edf0 0 0 0 0 2
+IntRate Rates Vector(calcType; fundIndex)
+IntRate Rates Vector("C";  0)
+01/15/2008
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+CL
+INPUT Policy EffDate
+01/15/2005
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy InvestProductInfo InvestRateSubType
+10
+INPUT Policy SubAccount OpenDate
+01/15/2005
+INPUT Policy InvestProductInfo GuaranteeDuration
+4
+INPUT Policy number of SubAccount
+2
+Input TransEffDate
+01/15/2008
+INPUT Policy CarrierCode
+VCS
+INPUT Policy Jurisdiction
+1000
+INPUT Message Language
+9
+INPUT Policy SubAccount ProductCode
+CALYR
+INPUT Policy InvestProductInfo GuaranteeType
+1000500001
+INPUT Policy Subaccount IntRates
+
+INPUT Policy SubAccount ValuationAsOfDate
+1/15/2008
+O0 9430dc 0 0 0 0 0 0
+
+E0 943154 0 0 0 0 0 0
+
+L0 9431cc 0 0 0 0 0 0
+
+B0 9433ac 0 0 0 0 0 0
+
+P1 9432bc 0 94c5c8 0 0 0 2
+
+--description
+Interest rate model for rate access for multiple interest rate methods.Š ŠCurrently Supported Methods:ŠPolicy YearŠCalendar YearŠ Š ŠRelease Log:ŠRELEASE 1301 - wmA-J Development
+P13 94c5c8 9432bc 0 0 0 0 2
+Interest Rate Methods
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   InterestRateMethods"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"InterestRateMethods"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 943334 0 94c648 0 0 0 0
+
+F1 94c648 943334 94cc30 0 0 0 2
+:IntRate
+Funktion
+
+F1 94cc30 94c648 94cba0 94ed50 0 0 2
+IntRate Accum Factor(calcType; fundIndex)
+Funktion
+CASE('PI InvestProduct InvestProductTypeCode'('Policy SubAccount ProductCode'(fundIndex);fundIndex;'Policy SubAccount OpenDate'(fundIndex));Š  21;22;26;27;28 : 'IntRate Fixed Accum Factor rec'(calcType;fundIndex;'IntRate Number of Rates'(calcType;fundIndex) - 1);Š   //Fixed InterestŠ15 : 'IndexFund Unit Value'(calcType;fundIndex);Š   //  Place holder for variable processingŠ1000500002 : (1 + 'IndexFund Total Equity Rate'(fundIndex));Š   //  Place holder for index processingŠ : 0)Š
+F1 94cba0 94cc30 94ccb0 0 0 0 2
+IntRate Fixed Accum Factor rec(calcType; fundIndex; rateCounter)
+Funktion
+IF (rateCounter < 0 ; Š  1 ; Š  'IntRate Fixed Accum Factor rec'(calcType;fundIndex;rateCounter - 1) * 'IntRate Periodic Factor'(calcType;fundIndex;rateCounter)Š)
+F1 94ccb0 94cba0 94cf28 0 0 0 2
+IntRate Periodic Factor(calcType; fundIndex; rateCounter )
+Funktion
+'IntRate Interest Rate'(calcType;fundIndex;rateCounter) ^ ('IntRate Number of Days for Rate'(calcType;fundIndex;rateCounter) / 'IntRate Number of Days per Year'(calcType;fundIndex;rateCounter))
+F1 94cf28 94ccb0 0 94d078 0 0 2
+IntRate Interest Rate(calcType; fundIndex; rateCounter)
+Funktion
+(1 + E_(E_('IntRate Rates Vector'(calcType;fundIndex);rateCounter);1) / 100)
+F1 94d078 94ccb0 94e370 94e5a8 0 0 2
+IntRate Number of Days for Rate(calcType; fundIndex; rateCounter)
+Funktion
+'IntRate Number of Days for Rate Calc'('IntRate Rate Start Date'(calcType;fundIndex;rateCounter);'IntRate Rate End Date'(calcType;fundIndex;rateCounter);fundIndex)
+F1 94e370 94d078 0 94d1f8 0 0 2
+IntRate Number of Days for Rate Calc(date1; date2; fundIndex)
+Funktion
+'DATE Days Difference'(date1;date2) - IF ('InterestCreditDaysType is 365'('PI InvestProductInfo InterestCreditDaysType'('Policy ProductCode';fundIndex;'Policy EffDate')) ; Š  'DATE number of Leap Years'(date1;date2) ; Š  0Š)
+F1 94d1f8 94d078 0 94e430 0 0 2
+IntRate Rate End Date(calcType; fundIndex; rateCounter)
+Funktion
+IF (rateCounter = 0 ; Š  IF (V_LENGTH('IntRate Rates Vector'(calcType;fundIndex)) = 1 ; Š    'IntRate DateOfValuation'(calcType) ; Š     //TransEffDate;ŠE_(E_('IntRate Rates Vector'(calcType;fundIndex);rateCounter + 1);0)Š  ) ; ŠE_(E_('IntRate Rates Vector'(calcType;fundIndex);rateCounter);0)Š)
+F1 94e430 94d078 0 0 0 0 2
+IntRate Rate Start Date(calcType; fundIndex; rateCounter)
+Funktion
+IF (rateCounter = 0 ; Š  'DATE Max of Date1 and Date2'('Policy SubAccount ValuationAsOfDate'(fundIndex);E_(E_('IntRate Rates Vector'(calcType;fundIndex);rateCounter);0)) ; Š  IF (rateCounter = V_LENGTH('IntRate Rates Vector'(calcType;fundIndex)) - 1 ; Š    'IntRate DateOfValuation'(calcType) ; Š     //TransEffDate;ŠE_(E_('IntRate Rates Vector'(calcType;fundIndex);rateCounter + 1);0)Š  )Š)
+F1 94e5a8 94ccb0 0 94e7a8 0 0 2
+IntRate Number of Days per Year(calcType; fundIndex; rateCounter)
+Funktion
+ /*IF('InterestCreditDaysType is 365'(Š‰‰'PI InvestProductInfo InterestCreditDaysType'('Policy ProductCode'; fundIndex; 'Policy EffDate')Š‰);Š‰365;Š‰IF('DATE Days Difference'(Š‰‰‰'DATE Min of Date1 and Date2'(Š‰‰‰‰'IntRate Date1'(calcType; fundIndex; rateCounter); Š‰‰‰‰'IntRate Date2'(calcType; fundIndex; rateCounter)Š‰‰‰);Š‰‰‰'Increase Date By Years'(Š‰‰‰‰'DATE Min of Date1 and Date2'(Š‰‰‰‰‰'IntRate Date1'(calcType; fundIndex; rateCounter); Š‰‰‰‰‰'IntRate Date2'(calcType; fundIndex; rateCounter)Š‰‰‰‰); Š‰‰‰‰1Š‰‰‰)Š‰‰)=366;Š‰‰366;Š‰‰365Š‰)Š)*/ 365
+F1 94e7a8 94ccb0 94ea28 0 0 0 2
+IntRate SubAccount EffDate(calcType; fundIndex; rateCounter)
+Funktion
+IF (ISDATE('IntRate SubAccount EffDate From Vector'(calcType;fundIndex;rateCounter)) ; Š  'IntRate SubAccount EffDate From Vector'(calcType;fundIndex;rateCounter) ; Š  'DATE Convert YMD to Date'('IntRate SubAccount EffDate From Vector'(calcType;fundIndex;rateCounter))Š)
+F1 94ea28 94e7a8 0 0 0 0 2
+IntRate SubAccount EffDate From Vector(calcType; fundIndex; rateCounter)
+Funktion
+E_(E_('IntRate Rates Vector'(calcType;fundIndex);rateCounter);0)
+F1 94ed50 94c648 94f040 c60900 0 0 2
+-- Rate Access -- (current all rates are accessed with one call to the rate model)
+Funktion
+
+F1 94f040 94ed50 c5f000 c5f980 0 0 2
+-- Misc --
+Funktion
+
+F1 c5f000 94f040 0 c5f080 0 0 2
+IntRate Start Year(fundIndex)
+Funktion
+'Duration Year'('Policy SubAccount ValuationAsOfDate'(fundIndex);'Policy SubAccount OpenDate'(fundIndex)) /*+Š'Duration Year'('Policy SubAccount OpenDate'(fundIndex); 'Policy EffDate')Š-Š1*/ 
+F1 c5f080 94f040 0 c5f100 0 0 2
+IntRate Start Counter(calcType; fundIndex)
+Funktion
+IF ('PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') EQUAL "1000500023" || 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') EQUAL "1000500015" || 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') EQUAL "1000500019" || 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') EQUAL "1000500011" || 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') EQUAL "1000500007" || 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') EQUAL "1000500003" || 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') EQUAL "1000500013" ; Š  0 ; Š  Rate('Policy SubAccount ProductCode'(fundIndex);'IntRate RateType Counter'(calcType);'Policy SubAccount OpenDate'(fundIndex);'IntRate Vector Parms with Date'(fundIndex;TransEffDate))Š) /*Rate('Policy SubAccount ProductCode'(fundIndex);Š‰'IntRate RateType Counter'(calcType);Š‰'DATE Max of Date1 and Date2'('Policy SubAccount ValuationAsOfDate'(fundIndex);Š‰‰'IntRate SubAccount RatesRenewalDate'(calcType; fundIndex; 0; 0)Š‰);Š‰'IntRate Vector Parms with Date'(fundIndex; Š‰‰'DATE Max of Date1 and Date2'('Policy SubAccount ValuationAsOfDate'(fundIndex);Š‰‰‰'IntRate SubAccount RatesRenewalDate'(calcType; fundIndex; 0; 0)Š‰‰)Š‰)Š)Š‰Š*/ 
+F1 c5f100 94f040 c5f180 c5f380 0 0 2
+IntRate End Counter(calcType; fundIndex)
+Funktion
+CASE('PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate');Š  "1000500023";"1000500015";"1000500019";"1000500011";"1000500007";"1000500003" : 'IntRate Repeat End Counter'(fundIndex);Š  "1000500013" : IF ('DATE Is Date1 Less Than or Equal to Date2'(TransEffDate;'IntRate MFND date'('Increase Date By Months'('Policy SubAccount OpenDate'(fundIndex);'IntRate Guar Duration'(fundIndex) * 'IntRate Repeat End Counter'(fundIndex));fundIndex)) && NOT('Year Month Equal'(TransEffDate;'Policy SubAccount OpenDate'(fundIndex))) ; Š     //deduct one for mfndŠ'IntRate Repeat End Counter'(fundIndex) ; Š     // - 1;Š//else Š'IntRate Repeat End Counter'(fundIndex)Š  );Š : Rate('Policy SubAccount ProductCode'(fundIndex);'IntRate RateType Counter'(calcType);'IntRate DateOfValuation'(calcType); //TransEffDate;Š'IntRate Vector Parms with Date'(fundIndex;TransEffDate)))Š
+F1 c5f180 c5f100 0 c5f200 0 0 2
+IntRate Last Guarantee Date(i; fundIndex)
+Funktion
+IF ('DATE Is Date1 Less Than or Equal to Date2'('Increase Date By Months'('Policy EffDate';'IntRate Guar Duration'(fundIndex) * i);'Policy SubAccount OpenDate'(fundIndex)) ; Š  'IntRate Last Guarantee Date'(i + 1;fundIndex) ; Š  CASE('PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate');Š    "1000500019";"1000500011";"1000500003" : 'Policy SubAccount OpenDate'(fundIndex);Š    "1000500013" : 'IntRate MFND date'('Policy SubAccount OpenDate'(fundIndex);fundIndex);Š     : 'Increase Date By Months'('Policy EffDate';'IntRate Guar Duration'(fundIndex) * (i - 1)))ŠŠ)
+F1 c5f200 c5f100 0 c5f280 0 0 2
+IntRate Repeat End Counter(fundIndex)
+Funktion
+'DATE Monthly Duration'(TransEffDate;'IntRate Last Guarantee Date'(0;fundIndex)) DIV 'IntRate Guar Duration'(fundIndex)
+F1 c5f280 c5f100 0 c5f300 0 0 2
+IntRate MFND date(date1; fundIndex)
+Funktion
+CASE('PI InvestProductInfo GuaranteeSubType'('Policy ProductCode';fundIndex;'Policy EffDate');Š  1000500001 : 'Start of the Month Date'(date1);Š   //- Month BeginningŠ1000500002 : 'Start of Next Month Date'(date1);Š   //- Month EndŠ1000500003 : 'Last CalendarQtr Beg'(date1);Š   //- Quarter BeginningŠ1000500004 : 'Next CalendarQtr Beg'(date1);Š   //- Quarter EndŠ : "")Š
+F1 c5f300 c5f100 0 0 0 0 2
+Start of the Month Date(date1)
+Funktion
+MONTH(date1) & "/" & "01" & "/" & YEAR(date1)
+F1 c5f380 94f040 0 c5f400 0 0 2
+IntRate End Year(calcType; fundIndex)
+Funktion
+'Duration Year'('IntRate DateOfValuation'(calcType) /*TransEffDate*/ ;'Policy EffDate') - 'Duration Year'('Policy SubAccount OpenDate'(fundIndex);'Policy EffDate') + 1
+F1 c5f400 94f040 c5f480 c5f600 0 0 2
+-- Rate function data --
+Funktion
+
+F1 c5f480 c5f400 0 c5f500 0 0 2
+--IntRate RateType(calcType)
+Funktion
+IF('CalcType Current Is Active'(calcType);Š‰"ADMINCURRINT";Š‰IF('CalcType Guaranteed Is Active'(calcType);Š‰‰"ADMINGUARINT";Š‰‰""Š‰)Š)
+F1 c5f500 c5f400 0 c5f580 0 0 2
+--IntRate RateType CounterDate(calcType)
+Funktion
+IF('CalcType Current Is Active'(calcType);Š‰"ADMINCURRINTCOUNTERDATE";Š‰IF('CalcType Guaranteed Is Active'(calcType);Š‰‰"ADMINGUARINTCOUNTERDATE";Š‰‰""Š‰)Š)
+F1 c5f580 c5f400 0 0 0 0 2
+IntRate RateType Counter(calcType)
+Funktion
+IF ('CalcType Current Is Active'(calcType) ; Š  "ADMINCURRINTCOUNTER" ; Š  IF ('CalcType Guaranteed Is Active'(calcType) ; Š    "ADMINGUARINTCOUNTER" ; Š    ""Š  )Š)
+F1 c5f600 94f040 0 c5f680 0 0 2
+--IntRate Compare Renewal to Guarantee(calcType; fundIndex; yearIndex; counter)
+Funktion
+IF(yearIndex <> -1;Š‰'DATE Is Date1 Less Than Date2'(Š‰‰'Increase Date By Months'(Š‰‰‰'Policy EffDate';Š‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰);Š‰‰'IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0)Š‰);Š‰'DATE Is Date1 Less Than Date2'(Š‰‰'Increase Date By Months'(Š‰‰‰'Policy EffDate';Š‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰);Š‰‰'Reverse Table Date'('IntRate Counter Date'(calcType; fundIndex; counter))Š‰)Š)Š‰
+F1 c5f680 94f040 0 c5f700 0 0 2
+--IntRate Counter Date(calcType; fundIndex; counter)
+Funktion
+Rate('Policy SubAccount ProductCode'(fundIndex);Š‰'IntRate RateType CounterDate'(calcType);Š‰TransEffDate;Š‰'IntRate Vector Parms with counter'(fundIndex; counter)Š)
+F1 c5f700 94f040 0 c5f780 0 0 2
+--IntRate End Guar Period Counter(calcType; fundIndex)
+Funktion
+'DATE Monthly Duration'(Š‰TransEffDate;Š‰IF('IntRate Multiple Guarantee Periods'(fundIndex);Š‰‰'Policy EffDate';Š‰‰'Policy SubAccount OpenDate'(fundIndex)Š‰)Š)ŠDIVŠ'IntRate Guar Duration'(fundIndex)
+F1 c5f780 94f040 0 c5f800 0 0 2
+--IntRate Multiple Guarantee Periods(fundIndex)
+Funktion
+CASE('PI InvestProductInfo GuaranteeType'('Policy ProductCode'; fundIndex; 'Policy EffDate');Š Š‰"CONTR", "ISSUE", "REPET"‰: ‰1;Š‰‰‰‰‰‰‰‰:‰0Š Š)
+F1 c5f800 94f040 0 c5f880 0 0 2
+--IntRate SubAccount yearIndex(fundIndex; counter)
+Funktion
+'Duration Year'(Š‰'Increase Date By Months'(Š‰‰'Policy SubAccount OpenDate'(fundIndex);Š‰‰'IntRate Guar Duration'(fundIndex)*counterŠ‰);Š‰'Policy SubAccount OpenDate'(fundIndex)Š)Š-1
+F1 c5f880 94f040 0 c5f900 0 0 2
+IntRate Guar Duration(fundIndex)
+Funktion
+'PI InvestProductInfo GuaranteeDuration'('Policy ProductCode';fundIndex;'Policy EffDate')
+F1 c5f900 94f040 0 0 0 0 2
+IntRate Renewal Method(fundIndex)
+Funktion
+IF ('PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') ALIKE 'GEN Vector Blank' ; Š  0 ; Š  CASE('PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate');Š    1000500004;1000500001;1000500009;1000500006;1000500016;1000500012;1000500010;1000500002;1000500014;1000500008 : "Annual";Š    1000500020;1000500024;1000500017;1000500018;1000500022 : "Counter";Š    1000500003;1000500007;1000500013; //‰1000500019,‰1000500012,‰1000500023,‰1000500011Š1000500019;1000500015;1000500023;1000500011 : "Repeating";Š     : 0)ŠŠ) /*Still to addŠ1000500004 - Issue (Policy Year)Š1000500005 - MFND (Policy Year)Š1000500007 - REPET (Policy Year)Š1000500008 - None (Policy Year)Š1000500012 - Issue (Calendar Year)Š1000500013 - MFND (Calendar Year)Š1000500015 - REPET (Calendar Year)Š1000500016 - None (Calendar Year)Š1000500017 - Polyr (Effective Date)Š1000500020 - Issue (Effective Date)Š1000500021 - MFND (Effective Date)Š1000500022 - PCAR (Effective Date)Š1000500023 - REPET (Effective Date)ŠŠ*/ 
+F1 c5f980 94ed50 c5fa00 0 0 0 2
+IntRate Rates Vector(calcType; fundIndex)
+Funktion
+IF ('Policy SubAccount CurrRate'(fundIndex) ALIKE "" ; Š   //No interest rate overrideŠ'IntRate Rate Vector After Bonus Rate'(calcType;fundIndex) ; Š   //Calculate the overrideŠ'IntRate Rate Vector Override'(calcType;fundIndex)Š)
+F1 c5fa00 c5f980 c5fa80 c60100 0 0 2
+--IntRate Rates Vector(calcType; fundIndex)
+Funktion
+CASE('IntRate Renewal Method'(fundIndex);Š Š‰"Annual": 'IntRate Rates Vector Annual Rec'(calcType; fundIndex; 'IntRate End Year'(fundIndex)-1; V_CONSTRUCT('Policy SubAccount IntRates'(fundIndex)));Š‰Š‰"Counter": 'IntRate Rates Vector Continuous Rec'(calcType; fundIndex; 'IntRate End Counter'(calcType; fundIndex); V_CONSTRUCT('Policy SubAccount IntRates'(fundIndex)));Š‰Š‰"Repeating": 'IntRate Rates Vector Repeating Rec'(calcType; fundIndex; 'IntRate End Guar Period Counter'(calcType; fundIndex); V_CONSTRUCT('Policy SubAccount IntRates'(fundIndex)))Š)
+F1 c5fa80 c5fa00 0 c5fb00 0 0 2
+--IntRate Rates Vector Repeating Rec(calcType; fundIndex; counter; vectorRates)
+Funktion
+IF(counter = 0;Š‰‰V_(Š‰‰‰V_('Policy SubAccount OpenDate'(fundIndex);Š‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex; 'IntRate SubAccount RatesRenewalDate'(fundIndex; 'IntRate SubAccount yearIndex'(fundIndex; counter); counter))Š‰‰‰)Š‰‰);‰‰Š‰‰V_INSERT(Š‰‰‰'IntRate Rates Vector Repeating Rec'(calcType; fundIndex; counter-1; vectorRates);Š‰‰‰V_('Increase Date By Months'('Policy SubAccount OpenDate'(fundIndex); 'IntRate Guar Duration'(fundIndex)*counter);Š‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex;Š‰‰‰‰‰'IntRate SubAccount RatesRenewalDate'(fundIndex; 'IntRate SubAccount yearIndex'(fundIndex; counter); (counter * 'IntRate Guar Duration'(fundIndex)) MOD 12)Š‰‰‰‰)Š‰‰‰);Š‰‰‰V_LENGTH('IntRate Rates Vector Repeating Rec'(calcType; fundIndex; counter-1; vectorRates))Š‰‰)Š)Š
+F1 c5fb00 c5fa00 0 c5fb80 0 0 2
+--IntRate Rates Vector Continuous Rec(calcType; fundIndex; counter; vectorRates)
+Funktion
+IF(counter = 'IntRate Start Counter'(calcType; fundIndex)Š‰&&Š‰V_LENGTH(vectorRates) = 0;Š‰IF('DATE Is Date1 Greater than or equal Date2'(Š‰‰‰'DATE Max of Date1 and Date2'(Š‰‰‰‰'IntRate SubAccount RatesRenewalDate'(fundIndex; 'IntRate Start Year'(fundIndex)-1; 0);Š‰‰‰‰'Policy SubAccount OpenDate'(fundIndex)Š‰‰‰);Š‰‰‰'Increase Date By Months'(Š‰‰‰‰'Policy EffDate';Š‰‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰‰)Š‰‰)Š‰‰||Š‰‰'DATE Is Date1 Less Than or Equal to Date2'(Š‰‰‰TransEffDate;Š‰‰‰'Increase Date By Months'(Š‰‰‰‰'Policy EffDate';Š‰‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰‰)Š‰‰);Š‰‰V_(V_REPLACE(V_CONSTRUCT('IntRate Rate with Counter'(calcType; fundIndex; 'IntRate Start Counter'(calcType; fundIndex)));Š‰‰‰‰'Reverse Table Date'(E_(V_CONSTRUCT('IntRate Rate with Counter'(calcType; fundIndex; 'IntRate Start Counter'(calcType; fundIndex)));0));Š‰‰‰‰0Š‰‰));Š‰‰V_(Š‰‰‰V_('DATE Max of Date1 and Date2'('IntRate SubAccount RatesRenewalDate'(fundIndex; 0; 0);Š‰‰‰‰‰'Policy SubAccount OpenDate'(fundIndex)Š‰‰‰‰);Š‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex; 'IntRate SubAccount RatesRenewalDate'(fundIndex; 0; 0))Š‰‰‰);Š‰‰‰V_('Increase Date By Months'(Š‰‰‰‰‰'Policy EffDate';Š‰‰‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰‰‰);Š‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex; Š‰‰‰‰‰'Increase Date By Months'(Š‰‰‰‰‰‰'Policy EffDate';Š‰‰‰‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰‰‰‰)Š‰‰‰‰)Š‰‰‰)Š‰‰)Š‰);Š‰Š‰‰IF('IntRate Compare Renewal to Guarantee'(calcType; fundIndex; -1; counter);Š‰‰‰V_INSERT(Š‰‰‰‰'IntRate Rates Vector Continuous Rec'(calcType; fundIndex; counter-1; vectorRates);Š‰‰‰‰V_REPLACE(V_CONSTRUCT('IntRate Rate with Counter'(calcType; fundIndex; counter));Š‰‰‰‰‰'Reverse Table Date'(E_(V_CONSTRUCT('IntRate Rate with Counter'(calcType; fundIndex; counter));0));Š‰‰‰‰‰0Š‰‰‰‰);Š‰‰‰‰V_LENGTH('IntRate Rates Vector Continuous Rec'(calcType; fundIndex; counter-1; vectorRates))Š‰‰‰);Š‰‰‰'IntRate Rates Vector Continuous Rec'(calcType; fundIndex; counter-1; vectorRates)Š‰‰)Š Š)
+F1 c5fb80 c5fa00 c5fc00 c5fc80 0 0 2
+--IntRate Rate with Date(calcType; fundIndex; date1)
+Funktion
+Rate('Policy SubAccount ProductCode'(fundIndex);Š‰'IntRate RateType'(calcType);Š‰TransEffDate;Š‰'IntRate Vector Parms with Date'(fundIndex; date1)Š)Š‰
+F1 c5fc00 c5fb80 0 0 0 0 2
+IntRate Vector Parms with Date(fundIndex; date1)
+Funktion
+V_('Policy CarrierCode';'Policy Jurisdiction';'LOOKUP Date'('Policy SubAccount OpenDate'(fundIndex));'LOOKUP Date'(date1);"Date";'LOOKUP Date'('Policy EffDate'))
+F1 c5fc80 c5fa00 0 c5fd00 0 0 2
+--IntRate Rates Vector Annual Rec(calcType; fundIndex; yearIndex; vectorRates)
+Funktion
+IF(yearIndex < 'IntRate Start Year'(fundIndex)Š‰&&Š‰V_LENGTH(vectorRates) = 0;Š‰IF('DATE Is Date1 Greater than or equal Date2'(Š‰‰‰'DATE Max of Date1 and Date2'(Š‰‰‰‰'IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0);Š‰‰‰‰'Policy SubAccount OpenDate'(fundIndex)Š‰‰‰);Š‰‰‰'Increase Date By Months'(Š‰‰‰‰'Policy EffDate';Š‰‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰‰)Š‰‰)Š‰‰||Š‰‰'DATE Is Date1 Less Than or Equal to Date2'(Š‰‰‰TransEffDate;Š‰‰‰'Increase Date By Months'(Š‰‰‰‰'Policy EffDate';Š‰‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰‰)Š‰‰);Š‰‰V_(Š‰‰‰V_('DATE Max of Date1 and Date2'('IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0);Š‰‰‰‰‰'Policy SubAccount OpenDate'(fundIndex)Š‰‰‰‰);Š‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex; 'IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0))Š‰‰‰)Š‰‰);Š‰‰V_(Š‰‰‰V_('DATE Max of Date1 and Date2'('IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0);Š‰‰‰‰‰'Policy SubAccount OpenDate'(fundIndex)Š‰‰‰‰);Š‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex; 'IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0))Š‰‰‰);Š‰‰‰V_('Increase Date By Months'(Š‰‰‰‰‰'Policy EffDate';Š‰‰‰‰‰'IntRate Guar Duration'(fundIndex)Š‰‰‰‰);Š‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex; Š‰‰‰‰‰'IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0)Š‰‰‰‰)Š‰‰‰)Š‰‰)Š‰);Š‰IF(yearIndex < 'IntRate Start Year'(fundIndex);Š‰‰vectorRates;Š‰‰IF('IntRate Compare Renewal to Guarantee'(calcType; fundIndex; yearIndex; 0);Š‰‰‰V_INSERT(Š‰‰‰‰'IntRate Rates Vector Annual Rec'(calcType; fundIndex; yearIndex-1; vectorRates);Š‰‰‰‰V_('Increase Date By Years'('Policy SubAccount OpenDate'(fundIndex); yearIndex);Š‰‰‰‰‰'IntRate Rate with Date'(calcType; fundIndex;Š‰‰‰‰‰‰'IntRate SubAccount RatesRenewalDate'(fundIndex; yearIndex; 0)Š‰‰‰‰‰)Š‰‰‰‰);Š‰‰‰‰V_LENGTH('IntRate Rates Vector Annual Rec'(calcType; fundIndex; yearIndex-1; vectorRates))Š‰‰‰);Š‰‰‰'IntRate Rates Vector Annual Rec'(calcType; fundIndex; yearIndex-1; vectorRates)Š‰‰)Š‰)Š)Š‰
+F1 c5fd00 c5fa00 c5fd80 c5fe00 0 0 2
+--IntRate Rate with Counter(calcType; fundIndex; counter)
+Funktion
+Rate('Policy SubAccount ProductCode'(fundIndex);Š‰'IntRate RateType'(calcType);Š‰TransEffDate;Š‰'IntRate Vector Parms with counter'(fundIndex; counter)Š)Š‰
+F1 c5fd80 c5fd00 0 0 0 0 2
+IntRate Vector Parms with Counter(fundIndex; counter)
+Funktion
+V_('Policy CarrierCode';'Policy Jurisdiction';'LOOKUP Date'('Policy SubAccount OpenDate'(fundIndex));counter;"Counter";'LOOKUP Date'('Policy EffDate'))
+F1 c5fe00 c5fa00 0 c5fe80 0 0 2
+IntRate Number of Rates(calcType; fundIndex)
+Funktion
+V_LENGTH('IntRate Rates Vector'(calcType;fundIndex))
+F1 c5fe80 c5fa00 c5ff00 0 0 0 2
+IntRate SubAccount RatesRenewalDate(calcType; fundIndex; yearIndex; monthIndex)
+Funktion
+CASE('PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate');Š  "POLYR";"PCAR";"PCONT";"PCONTR" : 'IntRate Last Anniversary Rates Renewal Date'(fundIndex;yearIndex);Š  "CALYR";"CCAR";"CCONT";"CCONTR" : 'IntRate Last Calendar Year Rates Renewal Date'(fundIndex;yearIndex);Š  "ECONT";"ECONTR";"NONE" : 'IntRate OpenDate Renewal Date'(fundIndex;yearIndex;monthIndex);Š  "ISSUE";"REPET" : 'IntRate IssueDate Renewal Date'(fundIndex;yearIndex;monthIndex);Š   : 'IntRate DateOfValuation'(calcType) //TransEffDateŠ)Š
+F1 c5ff00 c5fe80 0 c5ff80 0 0 2
+IntRate Last Anniversary Rates Renewal Date(fundIndex; yearIndex)
+Funktion
+IF (yearIndex = 0 && 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') ALIKE "PCAR" ; Š  'Policy SubAccount OpenDate'(fundIndex) ; Š  'Calc Last Anniversary Date'('Policy EffDate';'Increase Date By Years'('Policy SubAccount OpenDate'(fundIndex);yearIndex))Š)
+F1 c5ff80 c5fe80 0 c60000 0 0 2
+IntRate Last Calendar Year Rates Renewal Date(fundIndex; yearIndex)
+Funktion
+IF (yearIndex = 0 && 'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate') ALIKE "CCAR" ; Š  'Policy SubAccount OpenDate'(fundIndex) ; Š  'DATE Last Calendar Year Beginning'('Increase Date By Years'('Policy SubAccount OpenDate'(fundIndex);yearIndex))Š)
+F1 c60000 c5fe80 0 c60080 0 0 2
+IntRate OpenDate Renewal Date(fundIndex; yearIndex; monthIndex)
+Funktion
+'Increase Date By Months'('Increase Date By Years'('Policy SubAccount OpenDate'(fundIndex);yearIndex);monthIndex)
+F1 c60080 c5fe80 0 0 0 0 2
+IntRate IssueDate Renewal Date(fundIndex; yearIndex; monthIndex)
+Funktion
+'Increase Date By Months'('Increase Date By Years'('Policy EffDate';yearIndex);monthIndex)
+F1 c60100 c5f980 c60180 c60200 0 0 2
+IntRate Vector Parms for RateAccess(calcType; fundIndex)
+Funktion
+V_('Policy CarrierCode';'Policy Jurisdiction';'PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate'); //could be sub account product  code.ŠIF ('IntRate Renewal Method'(fundIndex) ALIKE "Annual" ; Š  'IntRate End Year'(calcType;fundIndex) ; Š  'IntRate End Counter'(calcType;fundIndex)Š);IF ('IntRate Renewal Method'(fundIndex) ALIKE "Annual" ; Š'IntRate Start Year'(fundIndex) ; Š'IntRate Start Counter'(calcType;fundIndex)Š) + IF (V_LENGTH(V_CONSTRUCT('Policy SubAccount IntRates'(fundIndex))) >= 1 ; Š1 ; Š0Š);'LOOKUP Date'('Policy SubAccount OpenDate'(fundIndex));'LOOKUP Date'('Policy EffDate');'IntRate Guar Duration'(fundIndex);'IntRate Start Year'(fundIndex);IF (V_LENGTH(V_CONSTRUCT('Policy SubAccount IntRates'(fundIndex))) >= 1 ; Š1 ; Š0Š);CASE('PI InvestProductInfo GuaranteeType'('Policy ProductCode';fundIndex;'Policy EffDate');Š"1000500013" : 'PI InvestProductInfo GuaranteeSubType'('Policy ProductCode';fundIndex;'Policy EffDate');Š : "")Š;'Policy SubAccount CurrRate'(fundIndex);'LOOKUP Date'('IntRate Actual EndDate'(fundIndex)))
+F1 c60180 c60100 0 0 0 0 2
+IntRate LR Test
+Funktion
+Rate('Policy SubAccount ProductCode'(0);"ADMINCURRINTRATES";TransEffDate;'IntRate Vector Parms for RateAccess'("C";0))
+F1 c60200 c5f980 0 c60280 0 0 2
+IntRate CalcType RateType(calcType)
+Funktion
+CASE('CalcType RA Element'(calcType);Š  "C" : "ADMINCURRINTRATES";Š  "G" : "ADMINGUARINTRATES";Š   : "ADMINCURRINTRATES")Š
+F1 c60280 c5f980 c60300 0 0 0 2
+IntRate Rate Vector Override(calcType; fundIndex)
+Funktion
+VECTORX(group;0;'IntRate Number of Rates After Bonus Rates'(calcType;fundIndex) - 1;IF (#group = 0 ; Š  V_(E_(E_('IntRate Rate Vector After Bonus Rate'(calcType;fundIndex);0);0);'Policy SubAccount CurrRate'(fundIndex)) ; Š  IF (#group = 1 && ('IntRate Override Place'(calcType;fundIndex;0;'IntRate Actual EndDate'(fundIndex)) - 1 = 0) ; Š    V_('IntRate Actual EndDate'(fundIndex);E_(E_('IntRate Rate Vector After Bonus Rate'(calcType;fundIndex);#group);1)) ; Š    IF (#group < 'IntRate Override Place'(calcType;fundIndex;0;'IntRate Actual EndDate'(fundIndex)) - 1 ; Š       //thenŠVOID ; Š       //elseŠIF (#group = 'IntRate Override Place'(calcType;fundIndex;0;'IntRate Actual EndDate'(fundIndex)) - 1 ; Š         //thenŠV_('IntRate Actual EndDate'(fundIndex);E_(E_('IntRate Rate Vector After Bonus Rate'(calcType;fundIndex);#group);1)) ; Š         //elseŠV_(E_(E_('IntRate Rate Vector After Bonus Rate'(calcType;fundIndex);#group);0);E_(E_('IntRate Rate Vector After Bonus Rate'(calcType;fundIndex);#group);1))Š      )Š  )Š)Š))
+F1 c60300 c60280 0 c60380 0 0 2
+IntRate Rate Vector Before Override(calcType; fundIndex)
+Funktion
+IF (V_LENGTH(V_CONSTRUCT('Policy SubAccount IntRates'(fundIndex))) > 0 ; Š  V_CONCAT(V_CONSTRUCT('Policy SubAccount IntRates'(fundIndex));V_CONSTRUCT(Rate('Policy SubAccount ProductCode'(fundIndex);'IntRate CalcType RateType'(calcType);'IntRate DateOfValuation'(calcType); //TransEffDate;Š'IntRate Vector Parms for RateAccess'(calcType;fundIndex)))) ; Š  V_CONSTRUCT(Rate('Policy SubAccount ProductCode'(fundIndex);'IntRate CalcType RateType'(calcType);'IntRate DateOfValuation'(calcType); //TransEffDate;Š'IntRate Vector Parms for RateAccess'(calcType;fundIndex)))Š)
+F1 c60380 c60280 c60400 c60680 0 0 2
+IntRate Rate Vector After Bonus Rate(calcType; fundIndex)
+Funktion
+IF (('PI Reward DurationAccruedStart'('Policy ProductCode';'RewardResultType InterestBonus';'Policy EffDate') EQUAL 'GEN Vector Blank') || 'DATE Is Date1 Less Than Date2'(TransEffDate;'IntRate Bonus Rate Start Date'(calcType;fundIndex)) ; Š  'IntRate Rate Vector Before Override'(calcType;fundIndex) ; Š  V_CONCAT('IntRate Vector1'(calcType;fundIndex);V_CONCAT('IntRate Vector2'(calcType;fundIndex);'IntRate Vector3'(calcType;fundIndex)))Š) /*ŠVECTORX(group; 0 ; 'IntRate Number of Rates Before Override'(calcType; fundIndex)-1;ŠŠ‰IF(#group = 0 && 'IntRate Override Place'(calcType; fundIndex; 0; 'IntRate Bonus Rate Start Date'(calcType; fundIndex)) = 0;Š‰‰‰‰//then‰Š‰‰‰‰V_(Š‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);0);0);Š‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);1) + 5Š‰‰‰‰);‰Š‰‰‰‰//elseŠ‰‰‰‰IF(#group > 'IntRate Override Place'(calcType; fundIndex; 0; 'IntRate Bonus Rate Start Date'(calcType; fundIndex))&&Š‰‰‰‰   #group < 'IntRate Override Place'(calcType; fundIndex; 0; 'IntRate Bonus Rate End Date'(calcType; fundIndex));Š‰‰‰Š‰‰‰‰‰//thenŠ‰‰‰‰‰V_(Š‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);0);Š‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);1) + 5Š‰‰‰‰‰);Š‰‰‰‰‰//elseŠ‰‰‰‰‰IF(#group = 'IntRate Override Place'(calcType; fundIndex; 0; 'IntRate Bonus Rate Start Date'(calcType; fundIndex));Š‰‰‰‰‰‰Š‰‰‰‰‰‰//thenŠ‰‰‰‰‰‰Š‰‰‰‰‰‰V_CONCAT(Š‰‰‰‰‰‰‰V_(Š‰‰‰‰‰‰‰‰'IntRate Bonus Rate Start Date'(calcType; fundIndex);Š‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group-1);1) + 5Š‰‰‰‰‰‰‰);‰‰‰‰‰‰Š‰‰‰‰‰‰‰V_(Š‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);0);Š‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);1) + 5Š‰‰‰‰‰‰‰)‰‰‰‰‰‰Š‰‰‰‰‰‰)Š‰‰‰‰‰‰Š‰‰‰‰‰‰Š‰‰‰‰‰‰;Š‰‰‰‰‰‰//elseŠ‰‰‰‰‰‰IF(#group = 'IntRate Override Place'(calcType; fundIndex; 0; 'IntRate Bonus Rate End Date'(calcType; fundIndex));Š‰‰‰‰‰‰Š‰‰‰‰‰‰‰//thenŠ‰‰‰‰‰‰‰V_CONCAT(Š‰‰‰‰‰‰‰‰V_(Š‰‰‰‰‰‰‰‰‰'IntRate Bonus Rate End Date'(calcType; fundIndex);Š‰‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group-1);1) + 5Š‰‰‰‰‰‰‰‰);Š‰‰‰‰‰‰‰‰V_(Š‰‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);0);Š‰‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);1)Š‰‰‰‰‰‰‰‰)Š‰‰‰‰‰‰‰);‰‰‰‰‰Š‰‰‰‰‰‰‰//elseŠ‰‰‰‰‰‰‰V_(Š‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);0);Š‰‰‰‰‰‰‰‰E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group);1)Š‰‰‰‰‰‰‰)Š‰‰‰‰‰‰)Š‰‰‰‰‰)Š‰‰‰‰‰Š‰‰‰‰)Š‰)Š)Š*/ 
+F1 c60400 c60380 0 c60480 0 0 2
+IntRate Bonus Rate Start Date(calcType; fundIndex)
+Funktion
+ //"12/12/2010"Š'Increase Date By Years'('Policy EffDate';'PI Reward DurationAccruedStart'('Policy ProductCode';'RewardResultType InterestBonus';'Policy EffDate'))
+F1 c60480 c60380 0 c60500 0 0 2
+IntRate Bonus Rate End Date(calcType; fundIndex)
+Funktion
+ //"12/12/2012"Š'Increase Date By Years'('Policy EffDate';'PI Reward DurationAccruedEnd'('Policy ProductCode';'RewardResultType InterestBonus';'Policy EffDate'))
+F1 c60500 c60380 0 c60580 0 0 2
+IntRate Vector1(calcType; fundIndex)
+Funktion
+VECTORX(group;0;'IntRate Bonus Place'(calcType;fundIndex;0;'IntRate Bonus Rate Start Date'(calcType;fundIndex)) - 1;V_(E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);0);E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);1)))
+F1 c60580 c60380 0 c60600 0 0 2
+IntRate Vector2(calcType; fundIndex)
+Funktion
+VECTORX(group;0;'IntRate Number of Rates Before Override'(calcType;fundIndex) - 1;IF (#group = 'IntRate Bonus Place'(calcType;fundIndex;0;'IntRate Bonus Rate Start Date'(calcType;fundIndex)) - 1 ; Š   //thenŠIF ('DATE Are Dates Equal'('IntRate Bonus Rate Start Date'(calcType;fundIndex); //‰‰   E_(E_('IntRate Rate Vector Before Override'(calcType; fundIndex);#group+1);0));ŠE_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);0)) ; Š     //elseŠV_('IntRate Bonus Rate Start Date'(calcType;fundIndex);E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group + 1);1) + 5) ; Š     //elseŠV_('IntRate Bonus Rate Start Date'(calcType;fundIndex);E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);1) + 5)Š  ) ; Š //elseŠIF (#group > 'IntRate Bonus Place'(calcType;fundIndex;0;'IntRate Bonus Rate Start Date'(calcType;fundIndex)) && #group < 'IntRate Bonus Place'(calcType;fundIndex;0;'IntRate Bonus Rate End Date'(calcType;fundIndex)) ; Š   //thenŠV_(E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);0);E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);1) + 5) ; Š  IF (#group = 'IntRate Bonus Place'(calcType;fundIndex;0;'IntRate Bonus Rate End Date'(calcType;fundIndex)) ; Š     //thenŠIF ('DATE Are Dates Equal'('IntRate Bonus Rate End Date'(calcType;fundIndex);E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);0)) ; Š      VOID ; Š      V_('IntRate Bonus Rate End Date'(calcType;fundIndex);E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group - 1);1))Š    ) ; Š  VOIDŠ)Š)Š))
+F1 c60600 c60380 0 0 0 0 2
+IntRate Vector3(calcType; fundIndex)
+Funktion
+VECTORX(group;'IntRate Bonus Place'(calcType;fundIndex;0;'IntRate Bonus Rate End Date'(calcType;fundIndex));'IntRate Number of Rates Before Override'(calcType;fundIndex) - 1;V_(E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);0);E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);#group);1)))
+F1 c60680 c60280 0 c60700 0 0 2
+IntRate Override Place(calcType; fundIndex; place; date1)
+Funktion
+IF (place > 'IntRate Number of Rates After Bonus Rates'(calcType;fundIndex) - 1 ; Š   //thenŠ'IntRate Number of Rates After Bonus Rates'(calcType;fundIndex) ; Š   //elseŠIF ('DATE Is Date1 Less Than or Equal to Date2'(date1;E_(E_('IntRate Rate Vector After Bonus Rate'(calcType;fundIndex);place);0)) ; Š     //thenŠplace ; Š     //elseŠ'IntRate Override Place'(calcType;fundIndex;place + 1;date1)Š  )Š)
+F1 c60700 c60280 0 c60780 0 0 2
+IntRate Bonus Place(calcType; fundIndex; place; date1)
+Funktion
+IF (place > 'IntRate Number of Rates Before Override'(calcType;fundIndex) - 1 ; Š   //thenŠ'IntRate Number of Rates Before Override'(calcType;fundIndex) ; Š   //elseŠIF ('DATE Is Date1 Less Than or Equal to Date2'(date1;E_(E_('IntRate Rate Vector Before Override'(calcType;fundIndex);place);0)) ; Š     //thenŠplace ; Š     //elseŠ'IntRate Bonus Place'(calcType;fundIndex;place + 1;date1)Š  )Š)
+F1 c60780 c60280 0 c60800 0 0 2
+IntRate Number of Rates Before Override(calcType; fundIndex)
+Funktion
+V_LENGTH('IntRate Rate Vector Before Override'(calcType;fundIndex))
+F1 c60800 c60280 0 c60880 0 0 2
+IntRate Number of Rates After Bonus Rates(calcType; fundIndex)
+Funktion
+V_LENGTH('IntRate Rate Vector After Bonus Rate'(calcType;fundIndex))
+F1 c60880 c60280 0 0 0 0 2
+IntRate Actual EndDate(fundIndex)
+Funktion
+IF ('Policy SubAccount CurrRate'(fundIndex) ALIKE "" ; Š  'Policy SubAccount OpenDate'(fundIndex) ; Š  'Policy SubAccount ActualEndDate'(fundIndex)Š)
+F1 c60900 94c648 c60980 0 0 0 2
+IntRate DateOfValuation(calcType)
+Funktion
+IF ('CalcType DATE Is Active'(calcType) ; Š  CASE('CalcType DATE Element'(calcType);Š    "LastAnn" : 'Calc Last Anniversary Date'('Policy EffDate';TransEffDate);Š    "LastCalYear" : 'DATE Last Calendar Year Beginning'(TransEffDate);Š    "FirstPSurrCalYear" : 'IntRate Calc First Partial Surrender in CalYear'(0;0;TransEffDate);Š    "FirstPSurrPolYear" : 'IntRate Calc First Partial Surrender in PolYear'(0;0;'Policy EffDate';TransEffDate);Š    "TransYear" : 'IntRate Calc Transaction Year'(0;0;TransEffDate);Š     : TransEffDate)Š   ; Š  TransEffDateŠ)
+F1 c60980 c60900 0 c60a00 0 0 2
+IntRate Calc First Partial Surrender in CalYear(fundindex; transIndex; point_in_time_date)
+Funktion
+IF (fundIndex < 'Policy Number of SubAccount' ; Š  IF (transIndex < 'Policy number of SubAccount FinancialActivity'(fundIndex) ; Š    IF ('FinActivityType Is Withdrawal'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;transIndex)) && 'DATE Is Date1 Greater Than Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex);'DATE Last Calendar Year Beginning'(point_in_time_date)) && 'DATE Is Date1 Less Than or Equal to Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex);point_in_time_date) ; Š      'Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex) ; Š      'IntRate Calc First Partial Surrender in CalYear'(fundIndex;transIndex + 1;point_in_time_date)Š    ) ; Š  'IntRate Calc First Partial Surrender in CalYear'(fundIndex + 1;0;point_in_time_date)Š) ; ŠTransEffDateŠ)
+F1 c60a00 c60900 0 c60a80 0 0 2
+IntRate Calc First Partial Surrender in PolYear(fundIndex; transIndex; issue_date; point_in_time_date)
+Funktion
+IF (fundIndex < 'Policy Number of SubAccount' ; Š  IF (transIndex < 'Policy number of SubAccount FinancialActivity'(fundIndex) ; Š    IF ('FinActivityType Is Withdrawal'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;transIndex)) && 'DATE Is Date1 Greater Than Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex);'Calc Last Anniversary Date'(issue_date;point_in_time_date)) && 'DATE Is Date1 Less Than or Equal to Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex);point_in_time_date) ; Š      'Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex) ; Š      'IntRate Calc First Partial Surrender in PolYear'(fundIndex;transIndex + 1;issue_date;point_in_time_date)Š    ) ; Š  'IntRate Calc First Partial Surrender in PolYear'(fundIndex + 1;0;issue_date;point_in_time_date)Š) ; ŠTransEffDateŠ)
+F1 c60a80 c60900 0 0 0 0 2
+IntRate Calc Transaction Year(fundIndex; transIndex; point_in_time_date)
+Funktion
+IF (fundIndex < 'Policy number of SubAccount' ; Š  IF (transIndex < 'Policy number of SubAccount FinancialActivity'(fundIndex) ; Š    IF ('FinActivityType Is Withdrawal'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;transIndex)) && 'DATE Is Date1 Less Than or Equal to Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex);point_in_time_date) && 'DATE Is Date1 Greater Than Or Equal Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex);'Decrease Date By Months'(point_in_time_date;12)) ; Š      'Policy SubAccount FinancialActivity FinEffDate'(fundIndex;transIndex) ; Š      'IntRate Calc Transaction Year'(fundIndex;transIndex + 1;point_in_time_date)Š    ) ; Š  'IntRate Calc Transaction Year'(fundIndex + 1;0;point_in_time_date)Š) ; ŠTransEffDateŠ)
+A0 943424 0 0 0 0 0 0
+
+T0 94349c 0 0 0 0 0 0
+
+I0 943514 0 c60b00 0 0 0 0
+
+I0 c60b00 943514 0 0 0 0 0
+ACCESS.pms
+-
+O0
+E0
+L0
+B0
+P1
+94c5c8
+F29
+94c648
+94cc30
+94ed50
+94f040
+c5f000
+c5f080
+c5f100
+c5f380
+c5f400
+c5f600
+c5f680
+c5f700
+c5f780
+c5f800
+c5f880
+c5f900
+c5f980
+c5fa00
+c5fa80
+c5fb00
+c5fb80
+c5fc80
+c5fd00
+c5fe00
+c5fe80
+c60100
+c60200
+c60280
+c60900
+A0
+T0
+!60
+94cc30 -2 -2
+Description:  Interest rate factor for valuation using dates.Š ŠModification Log:Š05/26/2014 wmA-J 1501 Release 1 Sprint 2 JvdM Added calctype for VA.Š01/29/2014 wmA-J 1401 Release 3 Sprint 10 JvdM Interest rate for VA added.Š12/03/2013 wmA-J - rm - Added 1 to IndexFund rateŠ08/23/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Added IndexFund Total Equity Rate.Š06/18/2012 rm - used semi-colon separatorsŠ02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94cba0 -2 -2
+Description:  Recursive function to build accumulation factor.Š ŠModification Log:Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94ccb0 -2 -2
+Description:  Single Period interest accumulation factorŠ ŠModification Log:Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94cf28 -2 -2
+Description:  Extracts the interest rate from the rate vector for the counterŠ ŠModification Log:Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94d078 -2 -2
+Description: Number of days that an interest rate appliesŠ ŠModification Log:Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94e370 -2 -2
+Description:  Calculates the date difference and then adjusts for the recognition of leap yearsŠ ŠModification Log:Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94d1f8 -2 -2
+Description:  End date for the rate associated with the rate counterŠ ŠModification Log:Š04/04/2012 wmA-J Sprint20 rm Valuations - Moved date conversion to rate modelŠ04/02/2012 wmA-J Sprint20 rm Valuations - convert dates back to M/D/Y formatŠ02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94e430 -2 -2
+Description:  Start date for the rate associated with the rate counterŠ ŠModification Log:Š04/04/2012 wmA-J Sprint20 rm Valuations - Moved date conversion to rate modelŠ04/02/2012 wmA-J Sprint20 rm Valuations - convert dates back to M/D/Y formatŠ02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94e5a8 -2 -2
+Description:  Assumed number of days in a yearŠ ŠModification Log:Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+94e7a8 -2 -2
+Š04/02/2012 wmA-J Sprint20 rm Valuations - If date format is YMD format, convert to M/D/Y formatŠ
+c5f000 -2 -2
+Description:  Start year for the interest rate vector creation.Š ŠModification Log:Š10/12/2011 wmA-J CMC Changed Policy EffDate to SubAccount OpenDate.Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f080 -2 -2
+Description:  Start counter for the interest rate vector creation.Š ŠModification Log:Š10/29/2013 - WMAJ-1400 - rm - Added consideration for blank guaranteeType's to prevent "Number expected" errorsŠ05/02/2013 wmA-J JVDM Release 4 Sprint 13 Added more methods.Š04/02/2013 wmA-J Release 3 Sprint 12 JvdM Added 1000500023 and 1000500015.Š01/24/2013 wmA-J Release 3 Sprint 9 JvdM Changed date functions, old code below.Š10/13/2011 wmA-J CMC Initial Calculation.
+c5f100 -2 -2
+Description:  End counter for the interest rate vector creation.Š ŠModification Log:Š10/29/2013 - WMAJ-1400 - rm - Added consideration for blank guaranteeType's to prevent "Number expected" errorsŠ05/02/2013 wmA-J Release 3 Sprint 13 JvdM Added IF to correct counter for MFND.Š04/02/2013 wmA-J Release 3 Sprint 12 JvdM Added Number of months for REPET.Š10/13/2011 wmA-J CMC Initial Calculation.
+c5f180 -2 -2
+Description: Determines the the start date of the latest guarantee date.Š ŠModification log:Š10/29/2013 - WMAJ-1400 - rm - Added consideration for blank guaranteeType's to prevent "Number expected" errorsŠ05/06/2013 wmA-J Release 4 Sprint 13 JvdM Changed second IF to CASE.Š04/02/2013 wmA-J Release 3 Sprint 12 JvdM Initial Calc.
+c5f200 -2 -2
+Description:  Calculates the end counter for repeat interest rate methods.Š ŠModification Log:Š05/02/2013 wmA-J Release 3 Sprint 12 JvdM Initial Calculation.
+c5f280 -2 -2
+Description:  Differentiate between the different money funds.Š ŠModification Log:Š05/02/2013 wmA-J Release 3 Sprint 12 JvdM Initial Calculation.
+c5f300 -2 -2
+05/02/2013 wmA-J 1301 Release 2 Sprint 5 JvdM Initial Calc
+c5f380 -2 -2
+Description: End year method renewal date using year parameter.Š ŠModification Log:Š10/13/2011 wmA-J CMC Changed Policy EffDate to SubAccount OpenDate which also then needed fundIndex parm.Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f400 -2 -2
+Description:  Function for accessing the current interest rate for a sub account.Š ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f480 -2 -2
+Description:  RateType constant for late reference model access.Š ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f500 -2 -2
+Description:  RateType constant for late reference model access to return counter for rate access.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5f580 -2 -2
+Description:  RateType constant for late reference model access to return counter for rate access.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5f600 -2 -2
+Description:  Compares the renewal date to the guaratee period end date.Š ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f680 -2 -2
+Description:  Returns the effective date of an interest rate that is accessed using countersŠ ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f700 -2 -2
+Description:  Start counter for the interest rate vector creation.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5f780 -2 -2
+Description:  Boolean function to determine if a policy can have more than one guarantee periodŠ ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5f800 -2 -2
+Description:  Returns the number of complete years for a rateŠ ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f880 -2 -2
+Description:  Returns the number of guarantee monthsŠ ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5f900 -2 -2
+Description:  Boolean function to determine if rates only renew once a year.Š ŠModification Log:Š10/29/2013 - WMAJ-1400 - rm - Added consideration for blank guaranteeType's to prevent "Number expected" errors.Š05/02/2013 wmA-J JVDM Release 4 Sprint 13 Added more methods.Š3/1/2013 wmA-J JVDM Release 3 Sprint 11 Change order aroundŠ10/13/2011 wmA-J CMC Initial Calculation.
+c5f980 -2 -2
+Description:  Rate access that allows a counter to be passed in.Š ŠModification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Adjusted for Bonus interest rate.Š08/20/2012 wmA-J Release 2 Sprint 3 CMC Valuations - update to use rate type function.Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+c5fa00 -2 -2
+Description:  Vector of rates to be use with the accumulation factor.Š ŠModification Log:Š10/13/2011 wmA-J CMC allowed for switching for different rate access methods.Š10/11/2011 wmA-J CMC Initial Calculation.
+c5fa80 -2 -2
+Description:  Recursive function to build rate vector.  Uses repeating guaratnee periodsŠ ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5fb00 -2 -2
+Description:  Recursive function to build rate vector.  Multiple rates per year.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5fb80 -2 -2
+Description:  Rate access that allows a date to be passed in.Š ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5fc00 -2 -2
+Description:  Vector parms allowing for a date to be passed in as one of the parms.Š ŠModification Log:Š10/13/2011 wmA-J CMC added indicator for rate access by date or counter.Š10/11/2011 wmA-J CMC Initial Calculation.
+c5fc80 -2 -2
+Description:  Recursive function to build rate vector.  Builds 1 rate per policy year or calendar year.Š ŠModification Log:Š10/13/2011 wmA-J CMC Changed name.Š10/11/2011 wmA-J CMC Initial Calculation.
+c5fd00 -2 -2
+Description:  Rate access that allows a counter to be passed in.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5fd80 -2 -2
+Description:  Vector parms allowing for a counter to be passed in as one of the parms.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c5fe00 -2 -2
+Description:  Number of rates in the rate vectorŠ ŠModification Log:Š10/11/2011 wmA-J CMC Initial Calculation.
+c5fe80 -2 -2
+Description:  Renewal dates for interest rate methods using once a year renewal.Š ŠModification Log:Š10/13/2011 wmA-J CMC Added PCAR and CCAR methods.Š10/11/2011 wmA-J CMC Initial Calculation.
+c5ff00 -2 -2
+Description:  Policy year method renewal date using year parameter.Š ŠModification Log:Š10/13/2011 wmA-J CMC Changed function name to make it more general.Š10/12/2011 wmA-J CMC Changed Policy EffDate to SubAccount OpenDate for point in time date.Š10/11/2011 wmA-J CMC Initial Calculation.
+c5ff80 -2 -2
+Description:  Calendar year method renewal date using year parameter.Š ŠModification Log:Š10/13/2011 wmA-J CMC Changed function name to make it more general.Š10/12/2011 wmA-J CMC Changed Policy EffDate to SubAccount OpenDate for point in time date.Š10/11/2011 wmA-J CMC Initial Calculation.
+c60000 -2 -2
+Description:  Advances the SubAccount opendate for the given number of years.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c60080 -2 -2
+Description:  Advances the SubAccount opendate for the given number of years.Š ŠModification Log:Š10/13/2011 wmA-J CMC Initial Calculation.
+c60100 -2 -2
+Description:  Vector parms allowing for a counter to be passed in as one of the parms.Š ŠModification Log:Š10/29/2013 - WMAJ-1400 - rm - Added consideration for blank guaranteeType's to prevent "Number expected" errorsŠ07/17/2013 wmA-J 1401 Release 1 Sprint 2 JvdM Removed the IF function for ActualEndDate.Š05/02/2013 wmA-J Release 4 Sprint 13 JvdM Added GuaranteeSubType.Š10/13/2011 wmA-J CMC Initial Calculation.
+c60200 -2 -2
+Description:  Determines the rate function to uses to look up interest rates.Š ŠModification Log:Š08/20/2012 wmA-J Release 2 Sprint 3 CMC Valuations - Initial Calc
+c60280 -2 -2
+Description: This function adds in the forced interest rate override into the rate vector.Š ŠModification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Adjusted for bonus interest rate.Š07/12/2013 wmA-J 1401 Release 1 Sprint 2 JvdM Initial Calculation.
+c60300 -2 -2
+Description:  Rate access that allows a counter to be passed in.Š ŠModification Log:Š07/12/2013 wmA-J 1401 Release 1 Sprint 2 JvdM Used to be Rates Vector(calcType; fundIndex)Š08/20/2012 wmA-J Release 2 Sprint 3 CMC Valuations - update to use rate type function.Š02/27/2012 wmA-J Sprint 18 CMC Valuations - Initial Calc
+c60380 -2 -2
+Description: Determines where in the vector the bonus will go.Š ŠModification Log:Š09/09/2013 - WMAJ1301-1099 - rm - Exclude bonus rate if transaction date is prior to bonus start dateŠ08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60400 -2 -2
+Description: Interest Bonus start dateŠ ŠModification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60480 -2 -2
+Description: Interest Bonus end dateŠ ŠModification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60500 -2 -2
+Modification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60580 -2 -2
+Modification Log:Š08/26/2013 - rm - wmA-J 1401 Release 1 Sprint 4 - Corrected index error by removing "+1"Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60600 -2 -2
+Modification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60680 -2 -2
+Description: Determines where in the vector the override will go.Š ŠModification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Adjusted for bonus interest rate.Š08/12/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Added the first IF as a check.Š07/12/2013 wmA-J 1401 Release 1 Sprint 2 JvdM Initial Calculation.
+c60700 -2 -2
+Description: Determines where in the vector the bonus will go.Š ŠModification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60780 -2 -2
+Description:  Number of rates in the rate vectorŠ ŠModification Log:Š07/12/2013 wmA-J 1401 Release 1 Sprint 2 JvdM Initial Calculation.
+c60800 -2 -2
+Description: Determines number of rates in vector.Š ŠModification Log:Š08/20/2013 wmA-J 1401 Release 1 Sprint 4 JvdM Initial Calc
+c60880 -2 -2
+Description: The end date of the forced interest rate.Š ŠModification log:Š07/17/2013 wmA-J 1401 Release 1 Sprint 2 JvdM Initila Calc.
+c60900 -2 -2
+Description:  Function that replaces transEffDate in order to determine the accumulation value at various points in time.Š ŠModification Log:Š Š09/03/2012 - BP - wmAJ Release 1 Sprint 3 - Initial Calculation Rule
+;Offset=00000000

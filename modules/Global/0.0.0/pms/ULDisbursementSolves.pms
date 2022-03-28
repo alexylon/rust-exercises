@@ -1,0 +1,789 @@
+;1	15.03.2017 12:09:37	jlawrie2	
+X0 3f41cc 0 3f4808 0 0 0 0
+
+X0 3f4808 3f41cc 3f48a0 0 0 0 0
+-- Unit Test Cases --
+X0 3f48a0 3f4808 3f4938 3f49d8 0 0 0
+-- Outputs --
+X0 3f4938 3f48a0 0 0 0 0 0
+-- Please See Note --
+X0 3f49d8 3f4808 3f4aa0 3f4b70 0 0 0
+-- Output Functions --
+X0 3f4aa0 3f49d8 0 0 0 0 0
+-- Please See Note --
+X0 3f4b70 3f4808 3f4c28 1e34318 0 0 0
+-- Level Disbursement Functions --
+X0 3f4c28 3f4b70 0 0 0 0 0
+-- Please See Note --
+X35 1e34318 3f4808 1e35b48 1e36b80 0 0 2
+-- Withdrawals Switch To Loans Functions --
+INPUT Illus DisbSolveDesignType
+1000500002
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Policy number of Coverage
+1
+INPUT Policy ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Invest Rate Type
+11
+INPUT Invest Rate Sub Type
+10
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Illus FaceAmtDesignType
+1000500002
+INPUT Illus FaceAmt[1]
+100000
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Illus DivType[1]
+161
+INPUT Illus LoanAmt[1]
+0
+INPUT IllustrationTxn IncreasePercent
+0
+X0 1e35b48 1e34318 0 0 0 0 0
+-- Please See Note --
+X0 1e36b80 3f4808 1e36c58 0 0 0 1
+-- Miscellaneous Functions --
+X1 1e36c58 1e36b80 0 0 0 0 2
+ULDisbSolve Model Name
+ULDisbSolve Model Name
+ULDisbursementSolves
+O0 3f407c 0 0 0 0 0 0
+
+E0 3f40ec 0 0 0 0 0 0
+
+L0 3f415c 0 0 0 0 0 0
+
+B0 3f431c 0 0 0 0 0 0
+
+P3 3f423c 0 1e37078 0 0 0 2
+
+--description
+The following Disbursement Solve options are supported for UL and VUL Products:çä çä‚Ä¢âLevel disbursement amount based on target cash value and target durationçä‚Ä¢âMaximum disbursement amount (non-level amount) çä çäSupport is also provided for annual adjustments to the withdrawal amount for cost of living adjustments based on specified amounts or specified percentages.çä çäDisbursements are assumed to be on an annual basis and are assumed to take place at the end of a specified policy year.çä çäPlease refer to the SRS_Illustrations_Disbursement_Solves_Income_Streams specification document for more information.çä çäRELEASE LOG:çäRELEASE 1101 - PAC019 Rate Access via InputsçäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"csc us internal use only - workbench"
+COMPILERVERSION
+"4.5.4"
+P13 1e37078 3f423c 1e37330 0 0 0 2
+Universal Life Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Universal/Variable Universal Life Disbursement Solve calculation modelçä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"ULDisbursementSolves.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1601 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P6 1e37330 1e37078 0 0 0 0 2
+Disbursement Solve
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Solve WithdrawalAmt(rateAssumption; yearIndex)
+IF ( /*Calling system is Illustrations Based*/ 'Std Calling System Is Illustration Based' ; çä  IF ('Withdrawal Design Type is None'('Illus WithdrawalDesignType') ; çä     /*Yes*/ 0 ; çä    IF ( /*Is Withdrawal Allowed in specific policy year?*/ 'ULDisbSolve Disbursement Allowed Ind'(rateAssumption;yearIndex) ; çä       /*Yes - Return Withdrawal Amount*/ 'GEN Round'('ULDisbSolve Withdrawal Amount'(rateAssumption;yearIndex);2) ; çä       /*No*/ 0çä    )çä) ; çä /*Else return error message*/ 'Messages SystemMessage'("ILL1010";'Message Language';V_('ULDisbSolve Model Name';"OUTPUT Illus WithdrawalAmt"))çä)
+OUTPUT Solve LoanAmt(rateAssumption; yearIndex)
+IF ( /*Calling system is Illustrations Based*/ 'Std Calling System Is Illustration Based' ; çä  IF ( /*Is Loan Allowed in specific policy year?*/ 'ULDisbSolve Disbursement Allowed Ind'(rateAssumption;yearIndex) ; çä     /*Yes - Return Withdrawal Amount*/ 'GEN Round'('ULDisbSolve Loan Amount'(rateAssumption;yearIndex);2) ; çä     /*No*/ 0çä  ) ; çä /*Else return error message*/ 'Messages SystemMessage'("ILL1010";'Message Language';V_('ULDisbSolve Model Name';"OUTPUT Illus LoanAmt"))çä)
+OUTPUT Illus WithdrawalAmt(rateAssumption; yearIndex)
+IF ( /*Calling system is Illustrations Based*/ 'Std Calling System Is Illustration Based' ; çä  IF ('Withdrawal Design Type is None'('Illus WithdrawalDesignType') ; çä     /*Yes*/ 0 ; çä    'GEN Round'('Illus Total WithdrawalAmt'(rateAssumption;yearIndex);2)çä  ) ; çä /*Else return error message*/ 'Messages SystemMessage'("ILL1010";'Message Language';V_('ULDisbSolve Model Name';"OUTPUT Illus WithdrawalAmt"))çä)
+F0 3f42ac 0 1e37620 0 0 0 0
+
+F1 1e37620 3f42ac 3d24d083 0 0 0 2
+:ULDisbSolve
+Funktion
+
+F1 3d24d083 1e37620 1e46208 0 0 0 2
+-- Universal Life Disbursement Solve Functions --
+Funktion
+
+F1 1e46208 3d24d083 1e45da8 1e377c8 0 0 2
+-- Test Functions --
+Funktion
+
+F1 1e45da8 1e46208 0 0 0 0 2
+ULDisbSolve TEST Iterative Withdrawal Solve Rec(calcType; yearIndex; currWdlGuess; currCashValue; prevWdlGuess; prevCashValue; lowBound; highBound; iteration_num)
+Funktion
+'ULDisbSolve Iterative Withdrawal Solve Rec'(calcType;currWdlGuess;currCashValue;prevWdlGuess;prevCashValue;lowBound;highBound;iteration_num;'ULDisbSolve Vector Withdrawal Solve Search Criteria'('CalcType ILLUS'(calcType);'Illus DisbTargetCashValue';'Illus DisbTargetDuration';'ULDisbSolve Withdrawal Dur';'ULDisbSolve Interest Rate'('CalcType ILLUS'(calcType);yearIndex);'ULDisbSolve CV Tolerance'('CalcType ILLUS'(calcType));'ULDisbSolve Withdrawal Tolerance'('CalcType ILLUS'(calcType));100;'ULDisbSolve Vector CV Addl Info'))
+F1 1e377c8 3d24d083 1e378a0 1e45f18 0 0 2
+-- Output Functions --
+Funktion
+
+F1 1e378a0 1e377c8 0 1e37ba0 0 0 2
+ULDisbSolve Withdrawal Amount(calcType; yearIndex)
+Funktion
+IF ( /*Income Design Type is supported in this phase of Product Accelerator*/ 'ULDisbSolve Disb Design Type Supported Ind'('Illus DisbSolveDesignType') ; çä   /*Yes - Return Withdrawal Amount*/ IF (yearIndex < 'Illus DisbStartDuration'(calcType) || yearIndex > 'Illus DisbEndDuration'(calcType) ; çä    0 ; çä    'ULDisbSolve Level Amount Solve'(calcType;yearIndex) + 'ULDisbSolve Max Non-Level Amount'(calcType;yearIndex)çä  ) ; çä /*Else return error message*/ 'Messages SystemMessage'("ILL1003";'Message Language';V_('ULDisbSolve Model Name';"OUTPUT Illus WithdrawalAmt"))çä)
+F1 1e37ba0 1e377c8 0 0 0 0 2
+ULDisbSolve Loan Amount(calcType; yearIndex)
+Funktion
+IF ( /*Income Design Type is supported in this phase of Product Accelerator*/ 'Disbursement Option is None'('Illus DisbSolveDesignType') ; çä  0 ; çä  IF ( /*Income Design Type is supported in this phase of Product Accelerator*/ 'ULDisbSolve Disb Design Type Supported Ind'('Illus DisbSolveDesignType') ; çä     /*Yes - Return Loan Amount*/ IF ( /*Is Withdrawal Design Type = Withdrawals Switch to Loans at Cost Basis?*/ 'Withdrawal Design Type is Withdrawal Switch to Loan'('Illus WithdrawalDesignType') ; çä       /*Yes - determine the loan amount after switch*/ 'ULDisbSolve Switch Loan Amount'(calcType;yearIndex;'ULDisbSolve Level Withdrawal Amount'(calcType;yearIndex)) ; çä       /*No - return the maximum preferred loan amount, if applicable*/ 'ULDisbSolve Max Preferred Loan Amount'(calcType;yearIndex)çä    ) ; çä   /*Else return error message*/ 'Messages SystemMessage'("ILL1003";'Message Language';V_('ULDisbSolve Model Name';"OUTPUT Illus WithdrawalAmt"))çä)çä)
+F1 1e45f18 3d24d083 1e46ee8 1e407b8 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 1e46ee8 1e45f18 0 1e46108 0 0 2
+ULDisbSolve Disbursement Allowed Ind(calcType; yearIndex)
+Funktion
+IF ( /*Does the current duration fall between the disbursement start and end duration years?*/ yearIndex >= 'Illus DisbStartDuration'(calcType) && yearIndex <= 'Illus DisbEndDuration'(calcType) ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä)
+F1 1e46108 1e45f18 0 1e463e0 0 0 2
+ULDisbSolve Disb Design Type Supported Ind(DisbSolveDesignType)
+Funktion
+'Disbursement Option is Solve for Level Amount'(DisbSolveDesignType) || 'Disbursement Option is Solve for Max Withdrawal'(DisbSolveDesignType) || 'Disbursement Option is Max Pref Loan Amount'(DisbSolveDesignType)
+F1 1e463e0 1e45f18 0 1e464d8 0 0 2
+ULDisbSolve Vector Level Withdrawal Guess(calcType; wdlGuess)
+Funktion
+V_('GEN Vector Blank';VECTORX(yr;1;'Policy Coverage RequestedMaturityDur'(calcType;0);wdlGuess * 'ULDisbSolve Disbursement Allowed Ind'(calcType;#yr) * (1 + ('IllustrationTxn IncreasePercent' * 0.01)) + IF ( /*Is level withdrawal amount equal to zero?*/ wdlGuess = 0 ; çä   /*Yes - do not add the additional increase amount to the withdrawal amount*/ 0 ; çä   /*No - add the additional increase amount to the withdrawal amount*/ 'ULDisbSolve Cumulative Increase Amount'(#yr)çä));'GEN Vector Blank';'GEN Vector Blank')
+F1 1e464d8 1e45f18 0 1e46608 0 0 2
+ULDisbSolve Cumulative Increase Amount(yearIndex)
+Funktion
+yearIndex * 'IllustrationTxn IncreaseAmt'
+F1 1e46608 1e45f18 1e46b30 1e46c20 0 0 2
+ULDisbSolve Vector ULProj(yearIndex)
+Funktion
+V_('GEN Vector Blank'; //Total PremPuaUnitsçä'GEN Vector Blank'; //Total DivPuaUnitsçä'GEN Vector Blank'; //Loan Total Projected Balanceçä'ULDisbSolve Vector Prior Cash Values'(yearIndex);3; //Loan Weighted Loan IntRateçä'GEN Vector Blank' //BIR base unitsçä)
+F1 1e46b30 1e46608 0 0 0 0 2
+ULDisbSolve Vector Prior Cash Values(yearIndex)
+Funktion
+IF (yearIndex = 1 ; çä  0 ; çä  VECTORX(durIdx;1;yearIndex - 1;'ULDocs Accum Value'("guar";#durIdx))çä)
+F1 1e46c20 1e45f18 0 1e46d28 0 0 2
+ULDisbSolve Vector Maximum Withdrawal Amount(calcType; yearIndex)
+Funktion
+VECTORX(yr;1;yearIndex;IF (#yr = 1 ; çä  0 ; çä  'ULDisbSolve Adjusted Maximum Withdrawal Amount'(calcType;#yr - 1)çä))
+F1 1e46d28 1e45f18 0 538edf4e 0 0 2
+-- ULDisbSolve Vector ACT(calcType; yearIndex)
+Funktion
+çäV_(çäâ'Policy LifeParticipant IssueAge'(calcType; 0; 0);  //base coverage and primary insuredçäâ'PI CoverageProduct MaturityAge'(calcType; 'Policy ProductCode'; 0; 'Policy EffDate') - 'Policy LifeParticipant IssueAge'(calcType; 0; 0);çäâCASE(calcType;çäââ"C": 'STD Curr Interest Rate'(yearIndex);çäââ"G": 'PI PolicyProduct ReserveIntRate'(calcType; 'Policy productCode'; 'Policy EffDate';yearIndex);çäââ"M": ('STD Curr Interest Rate'(yearIndex) + 'PI PolicyProduct ReserveIntRate'(calcType; 'Policy ProductCode'; 'Policy EffDate';yearIndex))/2;çäââ     : 'PI PolicyProduct ReserveIntRate'(calcType; 'Policy ProductCode'; 'Policy EffDate';yearIndex)çäâ           );çäâ'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode'; 'Policy EffDate');çäâ'Policy LifeParticipant IssueGender'(calcType; 0; 0);çäâ'Policy LifeParticipant UnderwritingClass'(calcType; 0; 0);çäâ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; 0; 0);çäâ'Policy Coverage ProductCode'(calcType; 0);çäâ'Policy Coverage EffDate'(calcType; 0);çäâ'Policy Jurisdiction';çäâ'PI PolicyProduct AgeCalculationType'('Policy ProductCode'; 'Policy EffDate');çäâ1;çäâ1çä     )çäâçäâçäâ
+F1 538edf4e 1e45f18 0 348bf4f6 0 0 2
+-- ULDisbSolve Vector ACT(calcType; yearIndex)
+Funktion
+çäV_(çäâ'Policy LifeParticipant IssueAge'(calcType; 0; 0);  //base coverage and primary insuredçäâ'PI CoverageProduct MaturityAge'(calcType; 'Policy ProductCode'; 0; 'Policy EffDate') - 'Policy LifeParticipant IssueAge'(calcType; 0; 0);çäâCASE(calcType;çäââ"C": 'STD Curr Interest Rate'(yearIndex);çäââ"G": 'PI PolicyProduct ReserveIntRate'(calcType; 'Policy productCode'; 'Policy EffDate';yearIndex);çäââ"M": ('STD Curr Interest Rate'(yearIndex) + 'PI PolicyProduct ReserveIntRate'(calcType; 'Policy ProductCode'; 'Policy EffDate';yearIndex))/2;çäââ     : 'PI PolicyProduct ReserveIntRate'(calcType; 'Policy ProductCode'; 'Policy EffDate';yearIndex)çäâ           );çäâ'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode'; 'Policy EffDate');çäâ'Policy LifeParticipant IssueGender'(calcType; 0; 0);çäâ'Policy LifeParticipant UnderwritingClass'(calcType; 0; 0; yearIndex);çäâ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; 0; 0);çäâ'Policy Coverage ProductCode'(calcType; 0);çäâ'Policy Coverage EffDate'(calcType; 0);çäâ'Policy Jurisdiction';çäâ'PI PolicyProduct AgeCalculationType'('Policy ProductCode'; 'Policy EffDate');çäâ1;çäâ1çä     )çäâçäâçäâ
+F1 348bf4f6 1e45f18 0 1e47838 0 0 2
+ULDisbSolve Vector ACT(calcType; yearIndex)
+Funktion
+V_('Policy LifeParticipant IssueAge'(calcType;0;0); //base coverage and primary insuredçä'PI CoverageProduct MaturityAge'(calcType;'Policy ProductCode';0;'Policy EffDate') - 'Policy LifeParticipant IssueAge'(calcType;0;0);CASE(calcType;çä  "C" : 'STD Curr Interest Rate'(yearIndex);çä  "G" : 'PI PolicyProduct ReserveIntRate'(calcType;'Policy productCode';'Policy EffDate';yearIndex);çä  "M" : ('STD Curr Interest Rate'(yearIndex) + 'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';'Policy EffDate';yearIndex)) / 2;çä   : 'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';'Policy EffDate';yearIndex))çä;'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode';'Policy EffDate');'Policy LifeParticipant IssueGender'(calcType;0;0);'Policy LifeParticipant UnderwritingClass'(calcType;0;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;0;0;yearIndex);'Policy Coverage ProductCode'(calcType;0);'Policy Coverage EffDate'(calcType;0);'Policy Jurisdiction';'PI PolicyProduct AgeCalculationType'('Policy ProductCode';'Policy EffDate');1;1)
+F1 1e47838 1e45f18 0 79ebbf90 0 0 2
+ULDisbSolve Model Name
+Funktion
+"ULDisbursementSolves"
+F1 79ebbf90 1e45f18 0 0 0 0 2
+Illus Total WithdrawalAmt(calcType; yearIndex)
+Funktion
+IF ('Withdrawal Design Type is None'('Illus WithdrawalDesignType') ; çä   /*Yes*/ 0 ; çä  'Illus WithdrawalAmt'(calcType;yearIndex) + IF ( /*Income Design Type is supported in this phase of Product Accelerator*/ 'ULDisbSolve Disb Design Type Supported Ind'('Illus DisbSolveDesignType') ; çä     /*Yes - Return Withdrawal Amount*/ 'ULDisbSolve Withdrawal Amount'(calcType;yearIndex) ; çä     /*No - Return 0*/ 0çä  )çä)
+F1 1e407b8 3d24d083 1e408a0 1e3ee68 0 0 2
+-- Max Preferred Loan Functions --
+Funktion
+
+F1 1e408a0 1e407b8 0 0 0 0 2
+ULDisbSolve Max Preferred Loan Amount(calcType; yearIndex)
+Funktion
+IF ( /*DisbSolve Solve Option is Maximum Preferred Loan Amount*/ 'Disbursement Option is Max Pref Loan Amount'('Illus DisbSolveDesignType') ; çä  IF ( /*Is the Loan Allowed?*/ 'ULDisbSolve Disbursement Allowed Ind'(calcType;yearIndex) ; çä     /*Yes - Return Loan Amount*/ MAX(0;'ULLoan Projected Maximum Pref Loan Amount'(calcType;yearIndex;'ULDisbSolve Vector ULProj'(yearIndex))) ; çä     /*No*/ 0çä  ) ; çä0çä)
+F1 1e3ee68 3d24d083 2f0dcff3 1e37c98 0 0 2
+-- Max Disbursement Functions --
+Funktion
+
+F1 2f0dcff3 1e3ee68 1e3f380 0 0 0 2
+ULDisbSolve Max Non-Level Amount(calcType; yearIndex)
+Funktion
+IF ( /*Is DisbSolve Solve Option = Solve for Non-Level Maximum Withdrawal Amount?*/ 'Disbursement Option is Solve for Max Withdrawal'('Illus DisbSolveDesignType') ; çä   /*Yes - return the maximum withdrawal amount*/ 'ULDisbSolve Adjusted Maximum Withdrawal Amount'(calcType;yearIndex) ; çä   /*No*/ 0çä)
+F1 1e3f380 2f0dcff3 1e3f490 0 0 0 2
+ULDisbSolve Adjusted Maximum Withdrawal Amount(calcType; yearIndex)
+Funktion
+IF ( /*Is the Withdrawal Allowed?*/ 'ULDisbSolve Disbursement Allowed Ind'(calcType;yearIndex) ; çä   /*Yes - Return Withdrawal Amount*/ 'ULDisbSolve Maximum Withdrawal Amount'(calcType;yearIndex) * (1 + ('IllustrationTxn IncreasePercent' * 0.01)) + IF ( /*Is withdrawal amount equal to zero?*/ 'ULDisbSolve Maximum Withdrawal Amount'(calcType;yearIndex) = 0 ; çä     /*Yes - do not add the additional increase amount to the withdrawal amount*/ 0 ; çä     /*No - add the additional increase amount to the withdrawal amount*/ 'ULDisbSolve Cumulative Increase Amount'(yearIndex)çä  ) ; çä /*No*/ 0çä)
+F1 1e3f490 1e3f380 1e3f8d8 0 0 0 2
+ULDisbSolve Maximum Withdrawal Amount(calcType; yearIndex)
+Funktion
+MAX('ULDisbSolve Max Withdrawal Surrender Value'(calcType;yearIndex) - 'ULDisbSolve Min Balance Amount'(calcType;'PI PolicyProduct Fee MinBalanceCalcRule MinBalanceCalcRuleType'('Policy ProductCode';15; //fee type typecode - withdrawal feeçä2; //balance type typecode - minimum remaining balanceçä'Policy EffDate');yearIndex);0)
+F1 1e3f8d8 1e3f490 1e3fd30 0 0 0 2
+ULDisbSolve Min Balance Amount(calcType; typeAssumption; yearIndex)
+Funktion
+MAX(CASE( /*Minimum remaining CV balance calculation type*/ typeAssumption;çä   //flat amountçä1 : 'PI PolicyProduct Fee MinBalanceCalcRule FlatAmount'('Policy ProductCode';15;2;'Policy EffDate');çä   //percent of surrender valueçä6 : 'ULDisbSolve Max Withdrawal Surrender Value'(calcType;yearIndex) * (1 - 'PI PolicyProduct Fee MinBalanceCalcRule MinPct'('Policy ProductCode';15;2;'Policy EffDate') / 100);çä   //percent of unloaned cash valueçä7 : 'ULDisbSolve Unloaned Cash Value'(calcType;yearIndex) * (1 - 'PI PolicyProduct Fee MinBalanceCalcRule MinPct'('Policy ProductCode';15;2;'Policy EffDate') / 100);çä   //noneçä11 : 0;çä   //else - noneçä : 0)çä;0)
+F1 1e3fd30 1e3f8d8 0 1e40258 0 0 2
+ULDisbSolve Unloaned Cash Value(calcType; yearIndex)
+Funktion
+'ULDisbSolve Cash Value'(calcType;yearIndex) - 'ULLoan Total Projected Balance'(calcType;yearIndex;'ULDisbSolve Vector ULProj'(yearIndex))
+F1 1e40258 1e3f8d8 1e40360 0 0 0 2
+ULDisbSolve Max Withdrawal Surrender Value(calcType; yearIndex)
+Funktion
+'ULDisbSolve Cash Value'(calcType;yearIndex) - 'ULSC Projected Full Surrender Charge'(calcType;yearIndex;'GEN Vector Blank')
+F1 1e40360 1e40258 0 0 0 0 2
+ULDisbSolve Cash Value(calcType; yearIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'('CalcType ILLUS'(calcType);'ULDisbSolve Vector Maximum Withdrawal Amount'(calcType;yearIndex);'ULDisbSolve Interest Rate'('CalcType ILLUS'(calcType);yearIndex);'ULDisbSolve Vector CV Addl Info';'Illus DisbTargetDuration';1)
+F1 1e37c98 3d24d083 1e37d80 1e45b00 0 0 2
+-- Level Disbursement Functions --
+Funktion
+
+F1 1e37d80 1e37c98 1e37e38 0 0 0 2
+ULDisbSolve Level Amount Solve(calcType; yearIndex)
+Funktion
+IF ( /*Is DisbSolve Solve Option = Solve for Level Amount based on target cash value and target duration?*/ 'Disbursement Option is Solve for Level Amount'('Illus DisbSolveDesignType') ; çä   /*Yes - Return Withdrawal Amount*/ IF ( /*Is Withdrawal Design Type = Withdrawals Switch to Loans at Cost Basis?*/ 'Withdrawal Design Type is Withdrawal Switch to Loan'('Illus WithdrawalDesignType') ; çä     /*Yes - determine the withdrawal amount prior to switch*/ 'ULDisbSolve Switch Withdrawal Amount'(calcType;yearIndex;'ULDisbSolve Level Withdrawal Amount'(calcType;yearIndex)) ; çä     /*No - return the level withdrawal solve amount*/ 'ULDisbSolve Level Withdrawal Amount'(calcType;yearIndex)çä  ) ; çä /*No*/ 0çä)
+F1 1e37e38 1e37d80 1e37f38 0 0 0 2
+ULDisbSolve Level Withdrawal Amount(calcType; yearIndex)
+Funktion
+IF ('Disbursement Option is Solve for Level Amount'('Illus DisbSolveDesignType') ; çä  MAX(0;'ULDisbSolve Vector Withdrawal Amount Solve'('CalcType ILLUS'(calcType);yearIndex;'Constant Stop Iteration')) ; çä  0çä)
+F1 1e37f38 1e37e38 1e38b58 1e38e88 0 0 2
+ULDisbSolve Vector Withdrawal Amount Solve(calcType; yearIndex; stopIteration)
+Funktion
+IF ( /*Is the target duration valid*/ NOT('ULDisbSolve Target Duration Is Valid') ; çä   /*Yes - return error message*/ 'Messages SystemMessage'("ILL1006";'Message Language';v_('ULDisbSolve Model Name';"Vector DisbSolve Total Target Withdrawal Solve")) ; çä   //No - return solved level annual withdrawal amountçäE_('ULDisbSolve Iterative Withdrawal Solve Rec'( // rate assumptionçäcalcType; // initial withdrawal guessçä'ULDisbSolve Initial Withdrawal Guess'(calcType;yearIndex;'Illus DisbTargetDuration'); // initial cash value projection amountâçä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'ULDisbSolve Vector Level Withdrawal Guess'(calcType;'ULDisbSolve Initial Withdrawal Guess'(calcType;yearIndex;'Illus DisbTargetDuration'));'ULDisbSolve Interest Rate'(calcType;yearIndex);'ULDisbSolve Vector CV Addl Info';'Illus DisbTargetDuration';12); // previous withdrawal guessçä0; // previous cash valueçä0; // low boundçä0; // high boundçä'Policy Coverage CurrentAmt'(calcType;0;yearIndex); // iteration numberçä1; // search criteriaçä'ULDisbSolve Vector Withdrawal Solve Search Criteria'(calcType;'Illus DisbTargetCashValue';'Illus DisbTargetDuration';'ULDisbSolve Withdrawal Dur';'ULDisbSolve Interest Rate'(calcType;yearIndex);'ULDisbSolve CV Tolerance'(calcType);'ULDisbSolve Withdrawal Tolerance'(calcType);stopIteration;'ULDisbSolve Vector CV Addl Info'));0)çä)
+F1 1e38b58 1e37f38 0 0 0 0 2
+ULDisbSolve Target Duration Is Valid
+Funktion
+IF ( /*Check target duration*/ 'Illus DisbTargetDuration' >= 1 ; çä   /*Valid duration*/ 1 ; çä   /*Invalid duration - the target duration is greater than or equal to the starting year of the cash value projection*/ 0çä)
+F1 1e38e88 1e37e38 1e39e58 1e3ae68 0 0 2
+ULDisbSolve Iterative Withdrawal Solve Rec(calcType; currWdlGuess; currCashValue; prevWdlGuess; prevCashValue; lowBound; highBound; iteration_num; vectorSearchCriteria)
+Funktion
+IF ( /*Tolerance reached*/ (ABS(currCashValue - 'ULDisbSolve Criteria Target CV'(vectorSearchCriteria)) < 'ULDisbSolve Criteria CV Tolerance'(vectorSearchCriteria)) || (ABS(prevWdlGuess - currWdlGuess) < 'ULDisbSolve Criteria Withdrawal Tolerance'(vectorSearchCriteria)) || (iteration_num >= 'ULDisbSolve Criteria Requested Stop Duration'(vectorSearchCriteria)) ; çä   // Either the withdrawal was successfully found, or the requested stop iteration (used for debugging purposes) was reachedçäv_(currWdlGuess;currCashValue;prevWdlGuess;prevCashValue;lowBound;highBound;iteration_num) ; çä   //  Else give up if we can't get a successful result after 100 iterationsçäIF ( /*Too many iterations?*/ iteration_num > 100 ; çä     /*return error message*/ 'Messages SystemMessage'("CA1044";'Message Language';'GEN Vector Blank') ; çä     // Else call this function recursively againçä'ULDisbSolve Iterative Withdrawal Solve Rec'(calcType; // New current withdrawal guessçä'ULDisbSolve Withdrawal Guess'(currWdlGuess;currCashValue;prevWdlGuess;prevCashValue;'ULDisbSolve Criteria Target CV'(vectorSearchCriteria);'ULDisbSolve Criteria Withdrawal Tolerance'(vectorSearchCriteria);lowBound;highBound;iteration_num); // New current cash valueçä'CVProjection Monthly End Of Month Cash Value Rec'('CalcType ILLUS'(calcType);'ULDisbSolve Vector Level Withdrawal Guess'(calcType;'ULDisbSolve Withdrawal Guess'(currWdlGuess;currCashValue;prevWdlGuess;prevCashValue;'ULDisbSolve Criteria Target CV'(vectorSearchCriteria);'ULDisbSolve Criteria Withdrawal Tolerance'(vectorSearchCriteria);lowBound;highBound;iteration_num));'ULDisbSolve Criteria Interest Rate'(vectorSearchCriteria);'ULDisbSolve Vector CV Addl Info';'ULDisbSolve Criteria Target Duration'(vectorSearchCriteria);12); // New previous withdrawal guess   çäcurrWdlGuess; // New previous cash valueçäcurrCashValue; // lowBoundâçäIF ( /*Withdrawal guess too low*/ currCashValue < 'ULDisbSolve Criteria Target CV'(vectorSearchCriteria) ; çä       // Withdrawal guess was too low, increase lower boundçäMAX(lowBound;currWdlGuess) ; çä       // Else withdrawal guess was too high. Keep lower bound the sameçälowBoundçä    ); // highBoundçäIF ( /*Withdrawal gues too high*/ currCashValue > 'ULDisbSolve Criteria Target CV'(vectorSearchCriteria) ; çä     // Withdrawal guess was too high, lower high boundâçäMIN(highBound;currWdlGuess) ; çä     // Else withdrawal guess was too low. Keep high bound the sameçähighBoundçä  );iteration_num + 1;vectorSearchCriteria)çä)çä)
+F1 1e39e58 1e38e88 0 1e3a1b0 0 0 2
+ULDisbSolve Adjusted Withdrawal Guess(calcType; wdlGuess; yearIndex)
+Funktion
+VECTORX(yr;1;'Policy Coverage RequestedMaturityDur'(calcType;0);wdlGuess * 'ULDisbSolve Disbursement Allowed Ind'(calcType;#yr) * (1 + ('IllustrationTxn IncreasePercent' * 0.01)) + IF ( /*Is level withdrawal amount equal to zero?*/ wdlGuess = 0 ; çä   /*Yes - do not add the additional increase amount to the withdrawal amount*/ 0 ; çä   /*No - add the additional increase amount to the withdrawal amount*/ 'ULDisbSolve Cumulative Increase Amount'(#yr)çä))
+F1 1e3a1b0 1e38e88 1e3aa50 0 0 0 2
+ULDisbSolve Withdrawal Guess(currWdlGuess; currCashValue; prevWdlGuess; prevCashValue; targetCashValue; wdlTolerance; lowBound; highBound; iteration_num)
+Funktion
+IF ( /*starting out*/ iteration_num = 1 ; çä   // Determine the next guess based only on the current guess and current CV for the initial guess sinceçä// the previous guess and previous CV won't be valid for the first iteration.çäIF ( /*Withdrawal guess too low*/ currCashValue > targetCashValue ; çä     // We begin optimistic that the initial guess will get us within a penny nowçäcurrWdlGuess + 0.01 ; çä     /*Try a penny below if the withdrawal guess is too high*/ currWdlGuess - 0.01çä  ) ; çäIF ( /*Use the secant method for iterations 2 through 6*/ iteration_num <= 6 && targetCashValue > 10 ; çä   // Secant method has issues when target cv approaches 0çäIF ( /*Has guess changed the cash value?*/ currCashValue = prevCashValue ; çä     /*No - stick with what we've got*/ currWdlGuess ; çä     /* try again*/ 'ULDisbSolve Bound Withdrawal Guess'(lowBound;highBound;currWdlGuess - ((currCashValue - targetCashValue) * ((currWdlGuess - prevWdlGuess) / (currCashValue - prevCashValue))))çä  ) ; çä // Use the bisection method after iteration 6çäIF ( /*Withdrawal guess too high*/ currCashValue < targetCashValue ; çä   /*Yes - curr wdl guess is the new high bound - try lower*/ (lowBound + MIN(highBound;currWdlGuess)) * 0.5 ; çä   /*No - curr wdl guess is the new low bound - try higher*/ (MAX(lowBound;currWdlGuess) + highBound) * 0.5çä)çä)çä)
+F1 1e3aa50 1e3a1b0 0 1e3ab40 0 0 2
+ULDisbSolve Bound Withdrawal Guess(lowBound; highBound; wdl_guess)
+Funktion
+MAX(MIN(highBound;wdl_guess);lowBound)
+F1 1e3ab40 1e3a1b0 0 0 0 0 2
+ULDisbSolve Vector Withdrawal Solve Search Criteria(calcType; targetCashValue; targetDuration; wdlDuration; int_rate; cashValueTolerance; wdlValueTolerance; stopIteration; vectorAddlInfo)
+Funktion
+V_(calcType;targetCashValue;targetDuration;wdlDuration;int_rate;cashValueTolerance;wdlValueTolerance;stopIteration;vectorAddlInfo)
+F1 1e3ae68 1e37e38 1e3af50 1e3bfe0 0 0 2
+-- Withdrawal Solve Initial Guess --
+Funktion
+
+F1 1e3af50 1e3ae68 1e3b2f0 0 0 0 2
+ULDisbSolve Initial Withdrawal Guess(calcType; yearIndex; targetDuration)
+Funktion
+MAX(0;('ULDisbSolve PV Premiums'(calcType;yearIndex;targetDuration) - ('Illus DisbTargetCashValue' * 'ULDisbSolve Product R Factor'(calcType;targetDuration))) / 'ACT Annuity Certain Due'(calcType;yearIndex;targetDuration - yearIndex;0;'ULDisbSolve Vector ACT'(calcType;yearIndex)))
+F1 1e3b2f0 1e3af50 1e3b3f8 1e3b7e8 0 0 2
+ULDisbSolve PV Premiums(calcType; yearIndex; targetDuration)
+Funktion
+'ULDisbSolve Premium Amount'(calcType;yearIndex) * 'ACT Annuity Certain Due'(calcType;yearIndex;targetDuration - yearIndex + 1;0;'ULDisbSolve Vector ACT'(calcType;yearIndex))
+F1 1e3b3f8 1e3b2f0 0 0 0 0 2
+ULDisbSolve Premium Amount(calcType; yearIndex)
+Funktion
+'ULDocs Annualized Gross Premium'(calcType;yearIndex - 1)
+F1 1e3b7e8 1e3af50 1e3bb88 0 0 0 2
+ULDisbSolve Product R Factor(calcType; targetDuration)
+Funktion
+IF ( /*Are we at start of projection?*/ targetDuration = 1 ; çä   /*Yes - initial value is 1*/ 1 ; çä   /*No - calculate product of R factors recursively*/ 'ULDisbSolve Product R Factor'(calcType;targetDuration - 1) * 'ULDisbSolve R Factor'(calcType;targetDuration - 1)çä)
+F1 1e3bb88 1e3b7e8 0 0 0 0 2
+ULDisbSolve R Factor(calcType; targetDuration)
+Funktion
+1 / ((1 + 'ACT qx'(calcType;targetDuration;0;'ULDisbSolve Vector ACT'(calcType;targetDuration))) * (1 + 'ULDisbSolve Interest Rate'(calcType;targetDuration)))
+F1 1e3bfe0 1e37e38 1e3c0d8 1e3d130 0 0 2
+-- Disbursement Solve Search Criteria Functions --
+Funktion
+
+F1 1e3c0d8 1e3bfe0 0 1e3c468 0 0 2
+ULDisbSolve Withdrawal Dur
+Funktion
+'Illus DisbTargetDuration'
+F1 1e3c468 1e3bfe0 0 1e3c8e8 0 0 2
+ULDisbSolve Interest Rate(calcType; yearIndex)
+Funktion
+CASE( /*Target calculation rule*/ 'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"interest_rule";'Policy EffDate');çä   /*Guaranteed*/ "GUAR";"guar" : 'PI PolicyProduct GuarIntRate'('Policy ProductCode';'INPUT TransEffDate');çä   /*Current*/ "CURR";"curr" : 'STD Curr Interest Rate'(yearIndex);çä   /*Specified interest rate*/ "S";"s" : 'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"initial_interest_rate";'Policy EffDate');çä   // Else assume guaranteedçä : 'PI PolicyProduct GuarIntRate'('Policy ProductCode';'INPUT TransEffDate'))çä
+F1 1e3c8e8 1e3bfe0 0 1e3cc90 0 0 2
+ULDisbSolve CV Tolerance(calcType)
+Funktion
+'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"cashvalueTolerance";'Policy EffDate')
+F1 1e3cc90 1e3bfe0 0 1e3cd80 0 0 2
+ULDisbSolve Withdrawal Tolerance(calcType)
+Funktion
+'ACCS CalcRule Target Dynamic Calc Rules'(calcType;'Policy CarrierCode';'Policy ProductCode';"withdrawalTolerance";'Policy EffDate')
+F1 1e3cd80 1e3bfe0 0 0 0 0 2
+ULDisbSolve Vector CV Addl Info
+Funktion
+v_(0; // Check for lapse (True of False)çä0; // Initial lump sum amountçä0; // Adjust for DEFRA (True or False)çä'GEN Vector Blank'; // Vector of guideline limitsçä0; // Varying premiums (True of False)çä'GEN Vector Blank'; // Vector of periodic premiumsçä'GEN Vector Blank'; // Vector of annual load target premiums by coverage çä1; // Start yearçä1 // Start monthçä)
+F1 1e3d130 1e37e38 1e3d508 0 0 0 2
+-- Withdrawal Search Criteria Vector Extraction Functions --
+Funktion
+çä
+F1 1e3d508 1e3d130 0 1e3d918 0 0 2
+ULDisbSolve Criteria Calc Type(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;0)
+F1 1e3d918 1e3d130 0 1e3da38 0 0 2
+ULDisbSolve Criteria Target CV(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;1)
+F1 1e3da38 1e3d130 0 1e3de50 0 0 2
+ULDisbSolve Criteria Target Duration(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;2)
+F1 1e3de50 1e3d130 0 1e3df78 0 0 2
+ULDisbSolve Criteria Withdrawal Duration(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;3)
+F1 1e3df78 1e3d130 0 1e3e3a0 0 0 2
+ULDisbSolve Criteria Interest Rate(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;4)
+F1 1e3e3a0 1e3d130 0 1e3e4c0 0 0 2
+ULDisbSolve Criteria CV Tolerance(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;5)
+F1 1e3e4c0 1e3d130 0 1e3e8f8 0 0 2
+ULDisbSolve Criteria Withdrawal Tolerance(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;6)
+F1 1e3e8f8 1e3d130 0 1e3ea28 0 0 2
+ULDisbSolve Criteria Requested Stop Duration(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;7)
+F1 1e3ea28 1e3d130 0 0 0 0 2
+ULDisbSolve Criteria Addl Info(vectorSearchCriteria)
+Funktion
+e_(vectorSearchCriteria;8)
+F1 1e45b00 3d24d083 1e45be0 1e40d18 0 0 2
+-- Interest Rate Functions --
+Funktion
+
+F1 1e45be0 1e45b00 0 0 0 0 2
+--ULDisbSolve Curr Interest Rate(yearIndex)
+Funktion
+'Rate'(çä         "BFUND1";çä         "CURRINT";çä         'Policy Effdate';çä         'SharedVector Curr Int Rate Parms'(yearIndex)çä         )çä/100
+F1 1e40d18 3d24d083 1e40e08 0 0 0 2
+-- Withdrawals Switch To Loans Functions --
+Funktion
+
+F1 1e40e08 1e40d18 1e41838 1e41940 0 0 2
+ULDisbSolve Switch Withdrawal Amount(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF ('ULDisbSolve Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt) >= levelWdlAmt ; çä  levelWdlAmt ; çä  IF ('ULDisbSolve Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt) <= 0 ; çä    0 ; çä    IF ('ULDisbSolve Switch Loan Amount'(calcType;yearIndex - 1;levelWdlAmt) > 0 ; çä      0 ; çä      'ULDisbSolve Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt)çä    )çä)çä) /*çäIF(/*Would taking the current withdrawal cause the total cumulative withdrawals from issue to date exceed the cost basis from issue to date, çä       or would it cause the recapture ceiling to be reached?çä     ('ULDisbSolve Cumulative Withdrawals to Date'(calcType; yearIndex) > 'ULDisbSolve Cost Basis'(calcType; yearIndex));çä     ||çä     'ULDisbSolve Recapture Ceiling Reached Ind'(calcType; yearIndex; levelWdlAmt);    çäçä     /*Yes - take a loan instead  çä     MESSAGE('Messages SystemMessage'("1014"; çäâââ                         'Message Language'; çäââââ           V_('ULDisbSolve Model Name';çäââââ                "ULDisbSolve Switch Withdrawal Amount"; çäââââ                 yearIndexââââ                 çäââââ                )çäââââ          );çäâ            0âçä                          );         çäçä     /*No - take a withdrawalçä     'ULDisbSolve Level Withdrawal Amount'(calcType; yearIndex)çä          çä    )çä*/ 
+F1 1e41838 1e40e08 0 0 0 0 2
+ULDisbSolve Cumulative Withdrawals to Date(calcType; yearIndex)
+Funktion
+IF (yearIndex = 1 ; çä  0 ; çä  SUMX(dur;2;yearIndex;'ULDisbSolve Level Withdrawal Amount'(calcType;yearIndex))çä)
+F1 1e41940 1e40d18 0 1e41dd8 0 0 2
+ULDisbSolve Switch Loan Amount(calcType; yearIndex; levelWdlAmt)
+Funktion
+levelWdlAmt - 'ULDisbSolve Switch Withdrawal Amount'(calcType;yearIndex;levelWdlAmt) /*çäIF(/*Would taking the current withdrawal cause the total cumulative withdrawals from issue to date exceed the cost basis from issue to date, çä       or would it cause the recapture ceiling to exceed zero?çä     'ULDisbSolve Cumulative Withdrawals to Date'(calcType; yearIndex) > 'ULDisbSolve Cost Basis'(calcType; yearIndex);çä     ||çä     'ULDisbSolve Recapture Ceiling'(calcType; yearIndex) > 0;çäçä     /*Yes - take a loan insteadçä     'Loan LoanAmt'(calcType;çäââ'Loan NumberofLoans'(calcType; yearIndex; 'ULDisbSolve WLProj Vector'(calcType; yearIndex; 'GEN Vector Blank')) + 1; çäââ'ULDisbSolve WLProj Vector'(calcType; yearIndex; 'GEN Vector Blank')çäââ);ââçäçä     /*No - take a withdrawalçä     0çäçä    )çäçäçäçää*/ 
+F1 1e41dd8 1e40d18 1e41eb8 1e45cd0 0 0 2
+-- Cost Basis Functions --
+Funktion
+
+F1 1e41eb8 1e41dd8 1e42368 1e44130 0 0 2
+ULDisbSolve Cost Basis Available(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF (yearIndex < 1 ; çä  'ULDisbSolve Premium Amount'(calcType;1) ; çä  'ULDisbSolve Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt) - levelWdlAmt + ('ULDisbSolve Premium Amount'(calcType;yearIndex) * ('Number Of Payments Per Year'('Policy PaymentMode') - 1) - 'ULDisbSolve Tax Free Portion of Withdrawal'(calcType;yearIndex;levelWdlAmt) + 'ULDisbSolve Taxable Portion of Loans'(calcType;yearIndex;levelWdlAmt)) + 'ULDisbSolve Premium Amount'(calcType;yearIndex)çä)
+F1 1e42368 1e41eb8 0 1e424c0 0 0 2
+ULDisbSolve Total Premiums Paid(calcType; yearIndex)
+Funktion
+IF (yearIndex < 1 ; çä  0 ; çä  'ULDisbSolve Total Premiums Paid'(calcType;yearIndex - 1) + 'ULDocs Annualized Gross Premium'(calcType;yearIndex)çä)
+F1 1e424c0 1e41eb8 1e42990 1e431a0 0 0 2
+ULDisbSolve Tax Free Portion of Withdrawal(calcType; yearIndex; levelWdlAmt)
+Funktion
+levelWdlAmt - 'ULDisbSolve Withdrawal Taxable Income'(calcType;yearIndex;levelWdlAmt)
+F1 1e42990 1e424c0 0 0 0 0 2
+ULDisbSolve Withdrawal Taxable Income(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF ( /*Is the contract an MEC?*/ 'ULDisbSolve Contract MEC Ind'(calcType;yearIndex) ; çä   /*Yes - calculate the taxable gain amount directly*/ MESSAGE('Messages SystemMessage'("1013";'Message Language';V_('ULDisbSolve Model Name';"ULDisbSolve Withdrawal Taxable Income";yearIndex));MIN('ULDisbSolve Taxable Gain Amount'(calcType;yearIndex;levelWdlAmt))) ; çä   /*No - need to check if recapture ceiling rules applyçä   IF(/*Do Recapture Ceiling Rules apply?çä       yearIndex <= 15çä       &&çä       SUMX(cov; 0; 'Policy Number Of Coverage'(calcType; yearIndex) - 1;çä                 'Policy Coverage FaceAmtDecrease'(#cov; yearIndex)çä                  ) > 0;çäçä       /*Yes - use modified calculation for the withdrawal taxable incomeçä       MIN('ULDisbSolve Recapture Ceiling'(calcType; yearIndex);çä              'ULDisbSolve Taxable Gain Amount'(calcType; yearIndex);çä              levelWdlAmtçä              )çä        + çä       MAX(0;çä               levelWdlAmtçä               -çä               ('ULDisbSolve Taxable Gain Amount'(calcType; yearIndex)çä                +çä                'ULDisbSolve Cost Basis'(calcType; yearIndex)çä                )çä               ); çä*//*No*/ MIN('ULDisbSolve Taxable Gain Amount'(calcType;yearIndex;levelWdlAmt);MAX(levelWdlAmt - 'ULDisbSolve Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt);0))çä)
+F1 1e431a0 1e41eb8 1e43670 0 0 0 2
+ULDisbSolve Taxable Portion of Loans(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF ( /*Is the contract an MEC?*/ 'ULDisbSolve Contract MEC Ind'(calcType;yearIndex) ; çä   /*Yes - calculate the taxable portion of the loans*/ MESSAGE('Messages SystemMessage'("1013";'Message Language';V_('ULDisbSolve Model Name';"ULDisbSolve Taxable Portion of Loans";yearIndex));'ULDisbSolve Loans Taxable Income'(calcType;yearIndex;levelWdlAmt)) ; çä   /*No - for non-MECs loans are not considered a taxable event*/ 0çä)
+F1 1e43670 1e431a0 1e43bf0 0 0 0 2
+ULDisbSolve Loans Taxable Income(calcType; yearIndex; levelWdlAmt)
+Funktion
+MIN('ULDisbSolve Taxable Gain Amount'(calcType;yearIndex;levelWdlAmt);'ULDisbSolve Total Gross Loans Amount'(calcType;yearIndex))
+F1 1e43bf0 1e43670 0 0 0 0 2
+ULDisbSolve Total Gross Loans Amount(calcType; yearIndex)
+Funktion
+'ULLoan Total Projected Balance'(calcType;yearIndex;'ULDisbSolve Vector ULProj'(yearIndex))
+F1 1e44130 1e41dd8 1e44238 1e44730 0 0 2
+ULDisbSolve Taxable Gain Amount(calcType; yearIndex; levelWdlAmt)
+Funktion
+MAX('ULDisbSolve Switch Total Cash Surr Value'(calcType;yearIndex;levelWdlAmt) - 'ULDisbSolve Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt);0)
+F1 1e44238 1e44130 0 0 0 0 2
+ULDisbSolve Switch Total Cash Surr Value(calcType; yearIndex; levelWdlAmt)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'('CalcType ILLUS'(calcType);'ULDisbSolve Vector Level Withdrawal Guess'(calcType;levelWdlAmt);'ULDisbSolve Interest Rate'(calcType;yearIndex);'ULDisbSolve Vector CV Addl Info';'Illus DisbTargetDuration';1) - 'ULSC Projected Full Surrender Charge'(calcType;yearIndex;'GEN Vector Blank')
+F1 1e44730 1e41dd8 1e44940 0 0 0 2
+ULDisbSolve Contract MEC Ind(calcType; yearIndex)
+Funktion
+IF ( /*Is the 7Pay Premium Test Condition met?*/ 'ULDisbSolve Cumulative Net Premium Paid For 7Pay'(calcType;yearIndex) < 'ULDisbSolve Cumulative 7Pay Premium To Date'(calcType;yearIndex) ; çä   /*Yes*/ 0 ; çä   /*No*/ 1çä)
+F1 1e44940 1e44730 0 1e44ef0 0 0 2
+ULDisbSolve Cumulative 7Pay Premium To Date(calcType; yearIndex)
+Funktion
+SUMX(yr;'ULDisbSolve 7Pay Start Year'(calcType;yearIndex;1);yearIndex;'ULDocs Proj 7 Pay Premium'(calcType;#yr))
+F1 1e44ef0 1e44730 0 1e450b8 0 0 2
+ULDisbSolve Cumulative Net Premium Paid For 7Pay(calcType; yearIndex)
+Funktion
+SUMX(yr;'ULDisbSolve 7Pay Start Year'(calcType;yearIndex;1);yearIndex;'ULDocs Annualized Gross Premium'(calcType;#yr))
+F1 1e450b8 1e44730 1e457d8 0 0 0 2
+ULDisbSolve 7Pay Start Year(calcType; yearIndex; counter)
+Funktion
+IF ( /*Does yearIndex have a material change or a decrease in benefits çäâor have we reached the 7 year limit?*/ 'ULDisbSolve Policy Change Indicator'(calcType;yearIndex) = 1 || 'ULDisbSolve Policy Change Indicator'(calcType;yearIndex) = 2 || counter = 7 ; çä   /*Yes - return the yearIndex for the starting policy year for the 7-Pay premium accumulation*/ yearIndex ; çä   /*No - call function recursively for the previous year and increase counter by 1*/ 'ULDisbSolve 7Pay Start Year'(calcType;yearIndex - 1;counter + 1)çä)
+F1 1e457d8 1e450b8 0 0 0 0 2
+ULDisbSolve Policy Change Indicator(calcType; yearIndex)
+Funktion
+IF ( /*Material Change?*/ 'TaxCompliance Policy Changes for 7pay'(calcType;yearIndex) = 1 ; çä   /*Yes*/ 1 ; çä   /*No*/ IF ( /*Policy Decrease?*/ 'TaxCompliance Policy Changes for 7pay'(calcType;yearIndex) = 2 ; çä     /*Yes*/ 2 ; çä     /*No*/ 0çä  )çä)
+F1 1e45cd0 1e40d18 1e451a0 0 0 0 2
+-- Recapture Ceiling Functions --
+Funktion
+
+F1 1e451a0 1e45cd0 1e45310 0 0 0 2
+ULDisbSolve Recapture Ceiling Reached Ind(calcType; yearIndex)
+Funktion
+IF ('ULDisbSolve Recapture Ceiling'(calcType;yearIndex) > 0 ; çä  1 ; çä  0çä)
+F1 1e45310 1e451a0 1e45410 0 0 0 2
+ULDisbSolve Recapture Ceiling(rateAssumption; yearIndex)
+Funktion
+IF ( /*Are we in policy years 1 - 5?*/ yearIndex <= 5 ; çä   /*Yes*/ MAX('ULDisbSolve Recapture Ceiling Guideline Prem Component'(rateAssumption;yearIndex);'ULDisbSolve Recapture Ceiling CV Component'(rateAssumption;yearIndex)) ; çä   /*Are we in policy years 6 - 15?*/ IF (yearIndex <= 15 ; çä     /*Yes*/ MAX(0;'ULDisbSolve Recapture Ceiling CV Component'(rateAssumption;yearIndex)) ; çä     /*No*/ 9999999çä  )çä)
+F1 1e45410 1e45310 0 1e45850 0 0 2
+ULDisbSolve Recapture Ceiling CV Component(calcType; yearIndex)
+Funktion
+'ULDocs Accum Value'(calcType;yearIndex) - 'NAAR Corridor Amount'('CalcType GLP'(calcType);'ULDocs Accum Value'(calcType;yearIndex);'ULDocs Annualized Gross Premium'(calcType;yearIndex);yearIndex; //vectorSolveParms çä'ULDisbSolve Vector Withdrawal Solve Search Criteria'('CalcType GLP'(calctype);'Illus DisbTargetCashValue';'Illus DisbTargetDuration';'ULDisbSolve Withdrawal Dur';'ULDisbSolve Interest Rate'('CalcType ILLUS'(calcType);yearIndex);'ULDisbSolve CV Tolerance'('CalcType ILLUS'(calcType));'ULDisbSolve Withdrawal Tolerance'('CalcType ILLUS'(calcType));100;'ULDisbSolve Vector CV Addl Info'))
+F1 1e45850 1e45310 1e45a00 0 0 0 2
+ULDisbSolve Recapture Ceiling Guideline Prem Component(calcType; yearIndex)
+Funktion
+MAX('ULDisbSolve Total Premiums Paid'(calcType;yearIndex);'ULDisbSolve Guideline Prem Limit After Change'(calcType;yearIndex))
+F1 1e45a00 1e45850 0 0 0 0 2
+ULDisbSolve Guideline Prem Limit After Change(calcType; yearIndex)
+Funktion
+MAX('ULDocs Proj Guideline Single Premium After Calc'(calctype;yearIndex);'ULDocs Proj Guideline Level Premium After Calc'(calcType;yearIndex) * yearIndex)
+A0 3f438c 0 0 0 0 0 0
+
+T0 3f43fc 0 0 0 0 0 0
+
+I0 3f446c 0 d4dc0d6 0 0 0 0
+
+I0 d4dc0d6 3f446c 0 0 0 0 0
+ULContractDocuments.pms
+-
+O0
+E0
+L0
+B0
+P2
+1e37078
+1e37330
+F89
+1e37620
+3d24d083
+1e46208
+1e45da8
+1e377c8
+1e378a0
+1e37ba0
+1e45f18
+1e46ee8
+1e46108
+1e463e0
+1e464d8
+1e46608
+1e46b30
+1e46c20
+1e46d28
+538edf4e
+348bf4f6
+1e47838
+79ebbf90
+1e407b8
+1e408a0
+1e3ee68
+2f0dcff3
+1e3f380
+1e3f490
+1e3f8d8
+1e3fd30
+1e40258
+1e40360
+1e37c98
+1e37d80
+1e37e38
+1e37f38
+1e38b58
+1e38e88
+1e39e58
+1e3a1b0
+1e3aa50
+1e3ab40
+1e3ae68
+1e3af50
+1e3b2f0
+1e3b3f8
+1e3b7e8
+1e3bb88
+1e3bfe0
+1e3c0d8
+1e3c468
+1e3c8e8
+1e3cc90
+1e3cd80
+1e3d130
+1e3d508
+1e3d918
+1e3da38
+1e3de50
+1e3df78
+1e3e3a0
+1e3e4c0
+1e3e8f8
+1e3ea28
+1e45b00
+1e45be0
+1e40d18
+1e40e08
+1e41838
+1e41940
+1e41dd8
+1e41eb8
+1e42368
+1e424c0
+1e42990
+1e431a0
+1e43670
+1e43bf0
+1e44130
+1e44238
+1e44730
+1e44940
+1e44ef0
+1e450b8
+1e457d8
+1e45cd0
+1e451a0
+1e45310
+1e45410
+1e45850
+1e45a00
+A0
+T0
+!83
+1e37330 3 -1
+çäModification Log:çä9/2/2011 pA1975 CMC changed output name to reflect solveçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e37330 4 -1
+çäModification Log:çä9/2/2011 pA1975 CMC changed output name to reflect solveçä08/25/2011 pA Regression CMC fixed error message function referenceçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3d24d083 -2 -2
+Functions provide results to Outputs so that no formulae are needed in the Outputs themselves 
+1e46208 -2 -2
+Description: Functions for testing projection functions that receive a vector as one of the input parameters
+1e45da8 -2 -2
+Description: Test function for testing the Iterative Withdrawal Level Solve Iteration functionçä çä çäModification Logçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - replace "ILLUS" with CalcType ILLUSçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/18/2007 CSC Initial Calculation/Rule
+1e378a0 -2 -2
+Description: Output function for the amount of withdrawal/partial surrenderçä çäModification Log:çä12/29/2011 pA2113 CMC added check for yearIndex in the withdrawal period.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/06/2009 PA1277 CMC fixed rename of ULDisbSolve Max Non-Level Amountçä02/08/2008 CSC Initial Calculation/Rule
+1e37ba0 -2 -2
+Description: Output function for the amount of loançä çäModification Log:çä8/22/2011 pA1975 CMC check to see if disbursement solves have been requested.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/08/2008 CSC Initial Calculation/Rule
+1e46ee8 -2 -2
+Description: Checks whether the withdrawal is allowed in a specific policy year, depending on Disbursement Start and End durationsçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008 CSC Initial Calculation/Rule
+1e46108 -2 -2
+Description: Checks whether the Income Design Type is supported in this phase of Product Accelerator.çä çäModification Log:çä02/18/2008 CSC Initial Calculation/Rule
+1e463e0 -2 -2
+Description: Returns the vector of Withdrawal Guess Amounts to be passed to the Disbursement Solve CV Projection function.çä çäModification Log:çä12/29/2011 pA2113 CMC function used as solve parms vector to restructed to conform to the solve parms vector.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/18/2008 CSC Initial Calculation/Rule
+1e464d8 -2 -2
+Description: Calculates the cumulative running total of the increased amounts where applicableçä çäModification log:çä02/14/2008 CSC Initial Calculation/Rule
+1e46608 -2 -2
+Description: Returns the vector of containing the Guaranteed Cash Value amount that is required for the Loan Amount calculation.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e46b30 -2 -2
+Description: Returns the vector of the prior guaranteed Cash Values before yearIndex.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e46c20 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e46d28 -2 -2
+Description: Creates basis vector to pass to NSP calculationçä çäModification log:çä8/13/2010 - PAC019 Rate Access Var - BT - use STD Curr Interest Rateçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/27/2008 CSC added year index to PI PolicyProduct ReserveIntRate as recent update to ACCESS added itçä02/15/2008 : Initial CSC formula
+538edf4e -2 -2
+Description: Creates basis vector to pass to NSP calculationçä çäModification log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/13/2010 - PAC019 Rate Access Var - BT - use STD Curr Interest Rateçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/27/2008 CSC added year index to PI PolicyProduct ReserveIntRate as recent update to ACCESS added itçä02/15/2008 : Initial CSC formula
+348bf4f6 -2 -2
+Description: Creates basis vector to pass to NSP calculationçä çäModification log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/13/2010 - PAC019 Rate Access Var - BT - use STD Curr Interest Rateçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/27/2008 CSC added year index to PI PolicyProduct ReserveIntRate as recent update to ACCESS added itçä02/15/2008 : Initial CSC formula
+1e47838 -2 -2
+Description: Returns the name of the Universal Life Disbursement Solves modelçä çäModification Log:çä02/14/2008 CSC Initial Calculation/Rule
+79ebbf90 -2 -2
+Description : Function to provide total withdrawal amount. Note that this is duplicated in Standard - to provide backup for cost basis, etc functions a universal function for withdrawals to work withçä çäModification Log :çä12/29/2011 pA2113 CMC added check to see if withdrawals are included in the illustration.çä11/10/2011 pA PAD-817 CMC added check to see if solve is taking place before including.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/14/2009 - TT -  created functionçä
+1e408a0 -2 -2
+Description: Returns the maximum preferred loan amount for the specified policy yearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/14/2008  CSC changed Loan to ULLoan for new modelçä02/12/2008 CSC Initial Calculation/Rule
+2f0dcff3 -2 -2
+Description: Returns the maximum non-level annual withdrawal solve amount.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Renamed function from ULDisbSolve Max Non Level Amountçä02/18/2007 CSC Initial Calculation/Rule
+1e3f380 -2 -2
+Description: Returns the maximum withdrawal solve amount for a specific policy year, adjusted for increase amount or increase percent (if applicable).çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/18/2007 CSC Initial Calculation/Rule
+1e3f490 -2 -2
+Description: Returns the maximum withdrawal solve amount for a specific policy year.çä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parm from 'ULDisbSolve Min Balance Amount'çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/18/2007 CSC Initial Calculation/Rule
+1e3f8d8 -2 -2
+Description: Returns minimum cash value balance at a specified durationçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/21/2008 CSC Initial Calculation/Rule
+1e3fd30 -2 -2
+Description: Returns unloaned cash value amount at a specified durationçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/14/2008 CSC changed Loan to ULLoan for new modelçä02/21/2008 CSC Initial Calculation/Ruleçä
+1e40258 -2 -2
+Description: Returns surrender value amount at a specified durationçä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/21/2008 CSC Initial Calculation/Rule
+1e40360 -2 -2
+çäModification log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - replace "ILLUS" with CalcType ILLUSçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2008 CSC Interest Rate function called with rateAssumption instead of CalcType
+1e37d80 -2 -2
+Description: Returns the final Level Annual Withdrawal Solve Amountçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/17/2008 CSC Initial Calculation/Rule
+1e37e38 -2 -2
+Description: Returns the Solved Level Annual Withdrawal Amountçä çäModification Log:çä12/29/2011 pA2113 CMC changed  solve option check.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - replace "ILLUS" with CalcType ILLUSçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä12/10/2009 - PAC004- TT-returns zero if the option is not solveçä02/17/2008 CSC Initial Calculation/Rule
+1e37f38 -2 -2
+Description: Returns the vector of the withdrawal search results for the total target level withdrawal amount based on the dynamic iterative solve method after "stopIteration" iterations.çä çä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parm from 'ULDisbSolve Vector Initial Withdrawal Guess'çä3/17/2011 - PAC013 calcType - BT - remove duplicate calcType parmçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/17/2008 CSC Initial Calculation/Rule
+1e38b58 -2 -2
+Description: Returns true (i.e. 1) if the target duration for the withdrawal solve is validçä çäModification Log:çä02/17/2008 CSC Initial Calculation/Rule
+1e38e88 -2 -2
+Description:  Performs an iterative search to solve for the level withdrawal that provides a cash value equal to the target cash value at the target duration.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - replace "ILLUS" with CalcType ILLUSçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/17/2008 CSC Initial Calculation/Rule
+1e39e58 -2 -2
+Description:  Returns an adjusted (for increases) withdrawal guess.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/07/2008 CSC Initial Calculation/Rule
+1e3a1b0 -2 -2
+Description:  Returns a withdrawal guess based on either the secant method or bisection method (depending upon the iteration number).çä çäModification Log:çä02/17/2008 CSC Initial Calculation/Rule
+1e3aa50 -2 -2
+Description:  Make sure the withdrawal guess is within the upper and lower bounds.çä çäModification Log:çä02/17/2008 CSC Initial Calculation/Rule
+1e3ab40 -2 -2
+Description: Returns a vector of the criteria necessary for a withdrawal search.çä çäModification Log:çä02/17/2008 CSC Initial Calculation/Rule
+1e3af50 -2 -2
+Description: Initial withdrawal guess for the withdrawal iterative solveçä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parm from 'ULDisbSolve Product R Factor'çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/15/2008 CSC Initial Calculation/Rule
+1e3b2f0 -2 -2
+Description: Expected Present Value of the premiums paid until target durationçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/15/2008 CSC Initial Calculation/Rule
+1e3b3f8 -2 -2
+Description: Returns the premium payments for projection loan calculationsçä çäModification Log:çä12/29/2011 pA2113 CMC changed year being used to yearIndex -1çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/11/2008 CSC Initial Calculation/Rule
+1e3b7e8 -2 -2
+Description: Product of R-Factors from yearIndex to targetDurationçä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parm from here & 'ULDisbSolve R Factor'çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/15/2008 CSC Initial Calculation/Rule
+1e3bb88 -2 -2
+Description: R-Factor = 1/((1+i)*(1+q)) where qx and i are annual ratesçä çäModification Log:çä03/15/2017 - pA1701 - JL - Remove duplicate calcType parmçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/15/2008 CSC Initial Calculation/Rule
+1e3c0d8 -2 -2
+Description: Returns the withdrawal duration to be used in the premium search for the particular target calculation type when the dynamic search is used to determine the target withdrawalçäAssumption: Withdrawal is paid for all yearsçä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3c468 -2 -2
+Description: Returns the interest rate to be used in the withdrawal search when the dynamic search is used to determine the target withdrawal amount.çä çäModification Log: çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä8/13/2010 - PAC019 Rate Access Var - BT - use STD Curr Interest Rateçä02/18/2007 CSC Initial Calculation/Rule
+1e3c8e8 -2 -2
+Description: Returns the cash value tolerance to be used in the withdrawal search when thedynamic search is used to determine the target withdrawal.çäThis is the difference between the cash value at the current withdrawal level and the cash value at the previous withdrawal level. çä çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä02/18/2007 CSC Initial Calculation/Rule
+1e3cc90 -2 -2
+Description: Returns the withdrawal tolerance to be used in the withdraal search when the dynamic search is used to determine the target withdrawal. çäThis is the difference between the cash value at the current withdrawal and the cash value at the previous withdrawal.çä çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä02/18/2007 CSC Initial Calculation/Ruleçä
+1e3cd80 -2 -2
+Description: Returns a vector of the additional information needed for the cash value projections.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Ruleçä
+1e3d130 -2 -2
+The withdrawal search criteria vector
+1e3d508 -2 -2
+Description: Extract the calculation type from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3d918 -2 -2
+Description: Extract the target cash value from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3da38 -2 -2
+Description: Extract the target duration from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3de50 -2 -2
+Description: Extract the withdrawal duration from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3df78 -2 -2
+Description: Extract the interest rate from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3e3a0 -2 -2
+Description: Extract the cash value tolerance from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3e4c0 -2 -2
+Description: Extract the withdrawal tolerance from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3e8f8 -2 -2
+Description: Extract the requested stop duration from the search criteria vector.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e3ea28 -2 -2
+Description: Extract the vector of additional criteria needed for the CV projection.çä çäModification Log:çä02/18/2007 CSC Initial Calculation/Rule
+1e45be0 -2 -2
+Description: Returns the current interest rateçä çäModification Log:çä08/13/2010 - PAC019 - Rate Access Var - BT - remove duplicate rateçä02/20/2008 CSC Initial Calculation/Ruleçä
+1e40e08 -2 -2
+Description: Returns the withdrawal amount before the switch to loans.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/18/2007 CSC Initial Calculation/Rule
+1e41838 -2 -2
+Description: Returns the amount of the total cumulative withdrawals from issue to date including current withdrawal.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Ruleçä
+1e41940 -2 -2
+Description: Returns the loan amount after the switch from withdrawals.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/18/2007 CSC Initial Calculation/Rule
+1e41eb8 -2 -2
+Description: Returns the total cost basis for the contractçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Ruleçä
+1e42368 -2 -2
+Description: Returns the total premiums paidçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/10/2009 - PA1001 - NT - performance enhancements - removing SUMX over yearIndex çä03/07/2008 CSC Initial Calculation/Ruleçä
+1e424c0 -2 -2
+Description: Returns the tax-free portion of a net withdrawalçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Ruleçä
+1e42990 -2 -2
+Description: Returns the taxable income portion of a net withdrawalçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Ruleçä
+1e431a0 -2 -2
+Description: Returns the taxable portion amount of all loans active in policy year yearIndexçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Rule
+1e43670 -2 -2
+Description: Returns the taxable income amount pertaining to loansçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Rule
+1e43bf0 -2 -2
+Description: Returns the total Gross Loans amount for a specific policy yearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/14/2008 CSC changed Loan to ULLoançä03/07/2008 CSC Initial Calculation/Rule
+1e44130 -2 -2
+Description: Returns the total taxable gainçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Ruleçä
+1e44238 -2 -2
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä3/17/2011 - PAC013 calcType - BT - replace "ILLUS" with CalcType ILLUSçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e44730 -2 -2
+Description: Indicator for whether the contract is an MEC contract çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Rule
+1e44940 -2 -2
+Description: Returns the cumulative total of the 7Pay premiums to be used for the 7Pay Testçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/20/2010 pA Performance CMC Changed TaxComplance function name to reflect ULDocsçä03/11/2008 CSC Initial Calculation/Rule
+1e44ef0 -2 -2
+Description: Returns the cumulative total of the net premiums paid during the 7Pay periodçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/11/2008 CSC Initial Calculation/Rule
+1e450b8 -2 -2
+Description: Returns the start year for the specific 7Pay period that is being tested forçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/11/2008 CSC Initial Calculation/Rule
+1e457d8 -2 -2
+Description: Returns 1 if there was a material change in yearIndex, 2 if there was a benefit decrease in yearIndex, 0 otherwiseçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/11/2008 CSC Initial Calculation/Rule
+1e451a0 -2 -2
+Description: Indicator for whether the recapture ceiling has been reached.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/07/2008 CSC Initial Calculation/Rule
+1e45310 -2 -2
+Description: Returns the recapture ceiling amount for the Universal Life productçä çäModification Log:çä03/07/2008 CSC Initial Calculation/Rule
+1e45410 -2 -2
+Description: Returns the Cash Value component used for the calculation of the recapture ceiling.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/17/2008 CSC Initial Calculation/Rule
+1e45850 -2 -2
+Description: Returns the guideline premium component used for the calculation of the recapture ceiling.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/17/2008 CSC Initial Calculation/Rule
+1e45a00 -2 -2
+Description: Returns the Guideline Premium limit after the reduction in benefits has taken place.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä05/20/2010 pA Performance CMC Changed TaxComplance function name to reflect ULDocsçä03/17/2008 CSC Initial Calculation/Rule
+3f4938 -2 -2
+Due to extensive recursion etc., the tests for outputs are too input-heavy & time consuming to run internally.çäPlease see WLDisbursementSolves_Unit_Tests.UTV for all the Output Tests.
+3f4aa0 -2 -2
+Due to extensive recursion etc., the tests for output functions are too input heavy & time consuming to run internally.çäPlease see WLDisbursementSolves_Unit_Tests.UTV for all the Output Function Tests.
+3f4c28 -2 -2
+Due to extensive recursion etc., SOME of the higher level function tests for level disbursement solve functions çäare too input heavy & time consuming to run internally.çäPlease see WLDisbursementSolves_Unit_Tests.UTV for the extensive Level Disbursement Solve Function Tests.
+1e35b48 -2 -2
+Due to extensive recursion etc., the tests for outputs are too input-heavy & time consuming to run internally.çäPlease see WLWithdrawalsSwitchToLoans_Unit_Tests.UTV for all the Output Tests.
+;Offset=00000000

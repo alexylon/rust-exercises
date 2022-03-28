@@ -1,0 +1,471 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 3f3c68 0 3f4570 0 0 0 0
+
+X0 3f4570 3f3c68 3f4610 0 0 0 0
+-- Death Benefit Tests --
+X18 3f4610 3f4570 0 38e6d0b4 0 0 2
+OUTPUT Death benefit list boundary testing
+'OUTPUT Death Benefit'("C";-2)
+1-75
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+25
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductType
+0
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X0 38e6d0b4 3f4570 0 0 0 0 0
+-- Please See Note --
+O0 3f3b24 0 0 0 0 0 0
+
+E0 3f3b90 0 0 0 0 0 0
+
+L0 3f3bfc 0 0 0 0 0 0
+
+B0 3f3dac 0 0 0 0 0 0
+
+P1 3f3cd4 0 1e6daa8 0 0 0 2
+
+--description
+The Variable Universal Life Illustrations model calculates the values necessary to produce new business, supplemental, and/or revised illustrations. This will include premiums, projections of account values and cash surrender values, and determination of projected lapses.çä çäVariable Universal Lifeçä‚Ä¢âProduct detail summary information, including minimum, maximum, minimum no lapse guarantee, and planned premiums, guaranteed and current interest rates, IRC section 7702 testing elected(GPT/CVAT), initial 7-pay premium, guideline single premium, guideline level premium, and assumed tax bracket.çä‚Ä¢âProduct detail summary information by policy year, including attained age, annual premium outlay, total death benefit, and cash surrender value. çä‚Ä¢âGuaranteed, Current, Midpoint, and Assumed basis information.çä‚Ä¢âLapse durations based on Guaranteed, Current, and Midpoint assumptions.çä‚Ä¢âFor the base coverage, benefits and riders, return information including amount of coverage, premiums by frequency, and cease durations.çä‚Ä¢âSurrender and Net Payment cost indices for policy years 10 and 20, for both guaranteed and current assumptions.çä‚Ä¢âPolicy charge details including premium outlay, mortality charges and surrender charges by policy durations.çä‚Ä¢âLedger calculations by policy year and assumption basis(guaranteed, current) including premium outlay, premium expense, policy charges, per unit charges, total earnings, total cash value, net amount at risk, and death benefit.çä‚Ä¢âAnnual premium outlay calculationsçä‚Ä¢âSurrender informationçä‚Ä¢âRates and valuesçä‚Ä¢âFace amount calculationsçä‚Ä¢âCash value calculationsçä‚Ä¢âSurrender value calculationsçä‚Ä¢âDeath Benefit calculationsçä‚Ä¢âShadow account calculationsçä‚Ä¢âSeparate account calculations based on an assumed rate of returnçä çäRELEASE LOG:çäRELEASE 1101 - PAC013 calcTypeçäRELEASE 1101 - PAC018 IRRçäRELEASE 1101 - PAC019 Rate Access via InputsçäRELEASE 1101 - PAC017 FINRA Rule 2211
+P13 1e6daa8 3f3cd4 1e6e8a0 0 0 0 2
+Variable Universal Life Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"VUL Illustrations"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"VULIllustrations.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1e6e8a0 1e6daa8 1e6eb08 1e71080 0 0 2
+Illustrations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P14 1e6eb08 1e6e8a0 0 1e6f388 0 0 2
+Basic Information
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+OUTPUT Policy LifeParticipant ParticipantName(coverageIndex; participantIndex)
+'INPUT Policy LifeParticipant ParticipantName'[coverageIndex; participantIndex]
+OUTPUT Policy Coverage PlanName(coverageIndex)
+'PI CoverageProduct PlanName'('GEN Vector Blank';'Policy Coverage ProductCode'('GEN Vector Blank';coverageIndex);coverageIndex;'Policy EffDate')
+OUTPUT Policy Coverage ShortName(coverageIndex)
+'PI CoverageProduct ShortName'('GEN Vector Blank';'Policy Coverage ProductCode'('GEN Vector Blank';coverageIndex);coverageIndex;'Policy EffDate')
+OUTPUT Policy CovOption PlanName(coverageIndex; coverageOptionIndex)
+'PI CovOptionProduct PlanName'('GEN Vector Blank';'Policy ProductCode';coverageIndex;coverageOptionIndex;'Policy CovOption EffDate'('GEN Vector Blank';coverageIndex;coverageOptionIndex))
+OUTPUT Policy CovOption ShortName(coverageIndex; coverageOptionIndex)
+'PI CovOptionProduct ShortName'('GEN Vector Blank';'Policy ProductCode';coverageIndex;coverageOptionIndex;'Policy CovOption EffDate'('GEN Vector Blank';coverageIndex;coverageOptionIndex))
+OUTPUT LifeParticipant IssueAge(coverageIndex; participantIndex)
+'Policy LifeParticipant IssueAge'('GEN Vector Blank';coverageIndex;participantIndex)
+OUTPUT LifeParticipant IssueGender(coverageIndex; participantIndex)
+'Policy LifeParticipant IssueGender'('GEN Vector Blank';coverageIndex;participantIndex)
+OUTPUT LifeParticipant TobaccoPremiumBasis(coverageIndex; participantIndex)
+'Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';coverageIndex;participantIndex;1)
+OUTPUT LifeParticipant UnderwritingClass(coverageIndex; participantIndex)
+'Policy LifeParticipant UnderwritingClass'('GEN Vector Blank';coverageIndex;participantIndex;1)
+OUTPUT Policy DividendOpt
+'Policy Life DivType'
+OUTPUT Policy LifeUSA DefLifeInsMethod
+'Policy LifeUSA DefLifeInsMethod'
+P6 1e6f388 1e6e8a0 0 1e6f648 0 0 2
+Cost Of Insurance (COI)
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Base COI Rate(rateAssumption; coverageIndex; yearIndex)
+FORMAT('GEN Round'('ULDocs Base COI Rate'('CalcType Initial Vector'(rateAssumption);coverageIndex;yearIndex);5);"5.5")
+OUTPUT Benefit COI Rate(rateAssumption; coverageIndex; coverageOptionIndex; yearIndex)
+'ULDocs Benefit COI Rate'(rateAssumption;coverageIndex;coverageOptionIndex;yearIndex)
+OUTPUT Rider COI Rate(rateAssumption; coverageIndex; yearIndex)
+'ULDocs Rider COI Rate'(rateAssumption;coverageIndex;yearIndex)
+P6 1e6f648 1e6e8a0 0 1e6f8e8 0 0 2
+Compliance
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Guideline Exceeded Year
+'ULDocs Guideline Exceeded Year'('GEN Vector Blank';1)
+OUTPUT Guideline Exceeded Ind
+'ULDocs Guideline Exceeded Ind'('GEN Vector Blank';1)
+OUTPUT Corridor Factor(yearIndex)
+'NAAR Corridor Percent'('NAAR Corridor Attained Age'('GEN Vector Blank';yearIndex);yearIndex)
+P7 1e6f8e8 1e6e8a0 0 1e6fd20 0 0 2
+Cost Index
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Net Payment Cost Index(rateAssumption; yearIndex)
+'ULDocs Net Pmt Cost Index'('CalcType Initial Vector'(rateAssumption);yearIndex)
+OUTPUT Surrender Cost Index(rateAssumption; yearIndex)
+'ULDocs Surr Cost Index'('CalcType Initial Vector'(rateAssumption);yearIndex)
+OUTPUT Rider Payment Cost Index(rateAssumption; coverageIndex; yearIndex)
+'ULDocs Rider Net Payment Cost Index'(coverageIndex;rateAssumption;'ULDocs ProjIntRate'(rateAssumption;yearIndex);'ULDocs Constants'("Cost_Index_Interest_Rate");yearIndex)
+OUTPUT Rider Surrender Cost Index(rateAssumption; coverageIndex; yearIndex)
+'ULDocs Rider Net Payment Cost Index'(coverageIndex;rateAssumption;'ULDocs ProjIntRate'(rateAssumption;yearIndex);'ULDocs Constants'("Cost_Index_Interest_Rate");yearIndex)
+P6 1e6fd20 1e6e8a0 0 1e6ffe0 0 0 2
+Lapse
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Lapse Ind(rateAssumption; max_yearIndex_to_check)
+'ULDocs Lapse Ind'(rateAssumption;max_yearIndex_to_check;1)
+OUTPUT Lapse Year(rateAssumption; max_yearIndex_to_check)
+'ULDocs Lapse Year'(rateAssumption;max_yearIndex_to_check;1)
+OUTPUT Lapse Date(rateAssumption; max_yearIndex_to_check)
+'ULDocs Lapse Date'(rateAssumption;max_yearIndex_to_check;1)
+P15 1e6ffe0 1e6e8a0 0 1e70450 0 0 2
+Values
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Annual Premium(rateAssumption; yearIndex)
+'ULDocs Annualized Gross Premium'('CalcType Initial Vector'(rateAssumption);yearIndex)
+OUTPUT Accum Value(rateAssumption; yearIndex)
+'ULDocs Accum Value'('CalcType Initial Vector'(rateAssumption);yearIndex)
+OUTPUT Cash Surrender Value(rateAssumption; yearIndex)
+'ULDocs Cash Surrender Value'('CalcType Initial Vector'(rateAssumption);'ULDocs ProjIntRate'('CalcType Initial Vector'(rateAssumption);yearIndex);yearIndex)
+OUTPUT Surr Charge(rateAssumption; yearIndex)
+'ULSC Projected Full Surrender Charge'(rateAssumption;yearIndex;'GEN Vector Blank')
+OUTPUT Projected Coverage Surrender Charge(coverageIndex; yearIndex)
+0
+OUTPUT Rider Annual Premium(rateAssumption; coverageIndex; yearIndex)
+'ULDocs Rider Annual Premium'(coverageIndex;rateAssumption;yearIndex)
+OUTPUT Rider Death Benefit(rateAssumption; coverageIndex; yearIndex)
+'ULDocs Rider Death Benefit'(coverageIndex;rateAssumption;yearIndex) //IF(/*Were the list bounds requested?*/'Illus List Bounds'(rateAssumption; yearIndex) NOTEQUAL 'GEN Vector Blank';çä/*Yes-return list bounds*///'Illus List Bounds'(rateAssumption; yearIndex);çä/*No*///IF(/*Was a list requested?*/'Illus List Requested'(yearIndex);çä/*Yes*///'Illus List Rider Death Benefit'('Illus List Lower Bound'(rateAssumption); 'Illus List Upper Bound'(rateAssumption); rateAssumption);çä/*No-specific duration*///'GEN Round'(SUMX(cov; 0; 'Policy Number Of Coverage'(rateAssumption; 'TransEffDur') - 1;'ULDocs Rider Death Benefit'(#cov; rateAssumption; yearIndex));2)çä//)çä//)çä
+OUTPUT Death Benefit(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Death Benefit'('Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption);rateAssumption) ; çä     /*No-specific duration*/ 'ULDocs Death Benefit'('CalcType Initial Vector'(rateAssumption);yearIndex)çä  )çä)
+OUTPUT Fund Accum Value(rateAssumption; fundIndex; yearIndex)
+'ULDocs Fund Accum Value'(rateAssumption;fundIndex;yearIndex)
+OUTPUT Multiple Fund Cash Value(rateAssumption; fundIndex; yearIndex; monthIndex)
+'GEN Round'('SharedVector MultipleFunds Fund Cash Value'('CVProjection Fund End Of Month Cash Value'('CalcType Initial Vector'(rateAssumption);'ULDocs SolveParms Default vectorSolveParms'('CalcType Initial Vector'(rateAssumption);yearIndex);'ULDocs ProjFundIntRate Vector'('CalcType Initial Vector'(rateAssumption);yearIndex);'Vector ULCD CVProj Parms'('CalcType Initial Vector'(rateAssumption);yearIndex);yearIndex;monthIndex);fundIndex);'ACCS Decimal'('CalcType Initial Vector'(rateAssumption)))
+OUTPUT Multiple Fund Average Expense(rateAssumption; yearIndex; monthIndex)
+'GEN Round'('CVProjection Fund Average Charge'('CalcType Initial Vector'(rateAssumption);'CVProjection Fund End Of Month Cash Value'('CalcType Initial Vector'(rateAssumption);'ULDocs SolveParms Default vectorSolveParms'('CalcType Initial Vector'(rateAssumption);yearIndex);'ULDocs ProjFundIntRate Vector'('CalcType Initial Vector'(rateAssumption);yearIndex);'Vector ULCD CVProj Parms'('CalcType Initial Vector'(rateAssumption);yearIndex);yearIndex;monthIndex); /*'CVProjection Fund Previous Month End Of Month Cash Value'(çäââââ'CalcType Initial Vector'(rateAssumption);çäââââ'ULDocs SolveParms Default vectorSolveParms'('CalcType Initial Vector'(rateAssumption); yearIndex); çäââââ'ULDocs ProjFundIntRate Vector'('CalcType Initial Vector'(rateAssumption); yearIndex);çäââââ'Vector ULCD CVProj Parms'('CalcType Initial Vector'(rateAssumption)); çäââââyearIndex; çäââââmonthIndex)â; */ 'ULDocs SolveParms Default vectorSolveParms'('CalcType Initial Vector'(rateAssumption);yearIndex);'ULDocs ProjIntRate'('CalcType Initial Vector'(rateAssumption);yearIndex);'Vector ULCD CVProj Parms'('CalcType Initial Vector'(rateAssumption);yearIndex);yearIndex;monthIndex);'ACCS Decimal'('CalcType Initial Vector'(rateAssumption)))
+OUTPUT Projected Interest Rate(rateAssumption; yearIndex)
+IF ( /*Multiple fund calc*/ 'Calculation is for Multiple Funds' ; çä   /*True*/ 'ULDocs ProjFundIntRate Vector'('CalcType Initial Vector'(rateAssumption);yearIndex) ; çä   /*False*/ 'ULDocs ProjIntRate'('CalcType Initial Vector'(rateAssumption);yearIndex)çä)
+P3 1e70450 1e6e8a0 0 1e706b0 0 50 2
+Guideline Premiums@TaxCompliance
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e706b0 1e6e8a0 0 1e707c8 0 50 2
+CVAT calculations@TaxCompliance
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e707c8 1e6e8a0 0 1e708e0 0 50 2
+Test Properties@TaxCompliance
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e708e0 1e6e8a0 0 1e70a38 0 50 2
+Frasier Blending Test properties@FrasierBlending
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e70a38 1e6e8a0 0 1e70b80 0 50 2
+Admin Expense Charges@ULAdminExpenses
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e70b80 1e6e8a0 0 1e70cc8 0 50 2
+Surrender Charges@ULSurrenderCharges
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e70cc8 1e6e8a0 0 1e70e18 0 50 2
+Shadow Account Properties@ShadowAccounts
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e70e18 1e6e8a0 0 1e70f60 0 50 2
+Premium Load Charges@PremiumLoadCharges
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e70f60 1e6e8a0 0 5e17fe6d 0 50 2
+Target Premiums (Commissionable, MNLP, Surrender, and Load)@TARGETCALCS
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P5 5e17fe6d 1e6e8a0 0 4d3353c4 0 0 2
+Internal Rate of Return
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Illus RequestBasis InternalRateOfReturn CashValue(rateAssumption; yearIndex)
+'ULDocs Proj IRR'(rateAssumption;"CV";yearIndex)
+OUTPUT Illus RequestBasis InternalRateOfReturn DeathBenefit(rateAssumption; yearIndex)
+'ULDocs Proj IRR'(rateAssumption;"DB";yearIndex)
+P3 4d3353c4 1e6e8a0 0 0 0 50 2
+UL Face Amount Solves@ULFaceAmountSolves
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P8 1e71080 1e6daa8 0 0 0 0 2
+Test Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Net Premium(rateAssumption; yearIndex; monthIndex)
+'PREMIUM Projected Net Premium'(rateAssumption;'SharedVector SolveParms MakePremium'('Policy Life PaymentAmt';yearIndex);'Vector ULCD CVProj Parms'(rateAssumption;yearIndex);yearIndex;monthIndex)
+OUTPUT End Of Month Value(rateAssumption; yearIndex; monthIndex)
+'GEN Round'('CVProjection Monthly End Of Month Cash Value Rec'(rateAssumption;'SharedVector SolveParms MakePremium'('Policy Life PaymentAmt';yearIndex); // Assume premium is always paid for nowçä'ULDocs ProjIntRate'(rateAssumption;yearIndex);'Vector ULCD CVProj Parms'(rateAssumption;yearIndex);yearIndex;monthIndex); // Number of places to round toçä'ACCS Decimal'(rateAssumption))
+OUTPUT Policy Lapsed(rateAssumption; yearIndex; monthIndex)
+'CVProjection Policy Lapsed'(rateAssumption;IF (yearIndex = 1 && monthIndex = 1 ; çä  0 ; çä  IF (monthIndex = 1 ; çä    'CVProjection Monthly End Of Month Cash Value Rec'(rateAssumption;'SharedVector SolveParms MakePremium'('Policy Life PaymentAmt';yearIndex);'ULDocs ProjIntRate'(rateAssumption;yearIndex);'Vector ULCD CVProj Parms'(rateAssumption;yearIndex);yearIndex - 1;12) ; çä     // Elseçä'CVProjection Monthly End Of Month Cash Value Rec'(rateAssumption;'SharedVector SolveParms MakePremium'('Policy Life PaymentAmt';yearIndex);'ULDocs ProjIntRate'(rateAssumption;yearIndex);'Vector ULCD CVProj Parms'(rateAssumption;yearIndex);yearIndex;monthIndex - 1)çä  )çä);'SharedVector SolveParms MakePremium'('Policy Life PaymentAmt';yearIndex);'ULDocs ProjIntRate'(rateAssumption;yearIndex);'Vector ULCD CVProj Parms'(rateAssumption;yearIndex);yearIndex;monthIndex)
+OUTPUT Test MinPrem LTD(yearIndex; monthIndex; calcType)
+'CVProjection ITD MinPrem'(calcType;'Vector ULCD CVProj Parms'(calcType);yearIndex;monthIndex)
+OUTPUT Test LTD Prem(yearIndex; monthIndex; calcType; periodicPremium; premiumDuration)
+'PREMIUM Projected LTD Prem Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;premiumDuration);'Vector ULCD CVProj Parms'(calcType);yearIndex;monthIndex)
+F0 3f3d40 0 30385940 0 0 0 0
+
+F1 30385940 3f3d40 191a538a 0 0 0 2
+--Death Benefits--
+Funktion
+
+F1 191a538a 30385940 0 27ee03cb 0 0 2
+Illus List Policy Death Benefit(fromYear; toYear; calcType)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'ULDocs Death Benefit'(calcType;fromYear) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Death Benefit'(fromYear + 1;toYear;calcType) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy Death Benefit'(fromYear + 1;toYear;calcType)çä)
+F1 27ee03cb 30385940 0 0 0 0 2
+Illus List Rider Death Benefit(fromYear; toYear; calcType)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ SUMX(cov;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;'ULDocs Rider Death Benefit'(#cov;calcType;fromYear)) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Rider Death Benefit'(fromYear + 1;toYear;calcType) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Rider Death Benefit'(fromYear + 1;toYear;calcType)çä)
+A0 3f3e18 0 0 0 0 0 0
+
+T0 3f3e84 0 0 0 0 0 0
+
+I0 3f3ef0 0 1c96a37f 0 0 0 0
+
+I0 1c96a37f 3f3ef0 0 2d68e035 0 0 0
+ULDisbursementSolves.pms
+I0 2d68e035 3f3ef0 0 0 0 0 0
+ULFaceAmountSolves.pms
+-
+O0
+E0
+L0
+B0
+P20
+1e6daa8
+1e6e8a0
+1e6eb08
+1e6f388
+1e6f648
+1e6f8e8
+1e6fd20
+1e6ffe0
+1e70450
+1e706b0
+1e707c8
+1e708e0
+1e70a38
+1e70b80
+1e70cc8
+1e70e18
+1e70f60
+5e17fe6d
+4d3353c4
+1e71080
+F3
+30385940
+191a538a
+27ee03cb
+A0
+T0
+!45
+1e6eb08 4 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6eb08 5 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6eb08 6 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6eb08 7 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6eb08 8 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6eb08 9 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6eb08 10 -1
+çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6eb08 11 -1
+çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f388 3 -1
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f388 4 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f388 5 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f648 3 -1
+çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f648 4 -1
+çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f648 5 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/28/2010 - PAC019 Rate Access Var - BT - add yearIndex parm to NAAR Corridor Percentçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f8e8 3 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f8e8 4 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f8e8 5 -1
+çä1/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6f8e8 6 -1
+çä1/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6fd20 3 -1
+çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6fd20 4 -1
+çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6fd20 5 -1
+çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 -2 -2
+Modification Log : çä11/6/2009 - PA1001 - NT - performance - remove yearIndex parm from CVProj Parms
+1e6ffe0 3 -1
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 4 -1
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 5 -1
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä1/27/2011 - PAC017 - VM - reparameterised to include yearIndex for projected rates.çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 6 -1
+çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 7 -1
+çäModification Log:çä11/3/2010 - PA1101 - BT - Refactored Testing - in order to compile, had to re-name output - added "Projected" to output name that had yearIndex parm
+1e6ffe0 8 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 9 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä9/13/2010 - VPMS 4.9.2 - BT - add coverageIndex and update function to us UL rider death benefit function instead of the sum of the ridersçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 10 -1
+Description:çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e6ffe0 11 -1
+Description: Total Fund value at yearIndex.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/22/2010 - PAC009 - JL - Initial calculation; Copy form ULIllustrations
+1e6ffe0 12 -1
+Description: Cash Value indexed by fund.çä çäModification Log:çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçäpA1101 - 9/6/2011 - cleanup - BT - add rounding functionçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/15/2011 - PAC017 - VM - Initial calculation.
+1e6ffe0 13 -1
+Description: Average expense across all funds..çä çäModification Log:çä08/13/2013 PA1401-26 - rm - Added yearIndex parameter for risk classesçäpA1101 - 9/6/2011 - cleanup - BT - add rounding functionçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/15/2011 - PAC017 - VM - Initial calculation.
+1e6ffe0 14 -1
+Description: Project interest rate being usedçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/28/11 - PAC017 - VM - Initial calculation.
+5e17fe6d 3 -1
+Description: Projected IRR on Cash Valueçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä09/15/2010 PAC018 JL Initial Output
+5e17fe6d 4 -1
+Description: Projected IRR on Deaht Benefitçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä09/15/2010 PAC018 JL Initial Output
+1e71080 -2 -2
+Modification Log :çä11/6/2009 - PA1001 - NT - performance - remove yearIndex parm from CVProj Parms
+1e71080 3 -1
+Modification Log : çä11/05/2014 PA1401-26 - rm - Added yearIndex parameter to Vector ULCD CVProj Parmsçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/21/2010 pA Performance CMC removed yearIndex as a parm on the ULCD CVProj Parms vectorçä05/20/2010 pA Performance CMC added yearIndex as a parm on the ULCD CVProj Parms vector
+1e71080 4 -1
+Modification Log : çä11/05/2014 - PA1401-26 - rm - Added parameter yearIndex to 'Vector ULCD CVProj Parms'(rateAssumption)çäpA1101 - 9/6/2011 - cleanup - BT - add rounding functionçä1/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/21/2010 pA Performance CMC removed yearIndex as a parm on the ULCD CVProj Parms vectorçä05/20/2010 pA Performance CMC added yearIndex as a parm on the ULCD CVProj Parms vector
+1e71080 5 -1
+Modification Log : çä11/05/2014 - PA1401-26 - rm - Added parameter yearIndex to 'Vector ULCD CVProj Parms'(rateAssumption)çä1/27/2011 - PAC017 - VM - reparamterised to include yearIndex for projected interest rate.çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/21/2010 pA Performance CMC removed yearIndex as a parm on the ULCD CVProj Parms vectorçä05/20/2010 pA Performance CMC added yearIndex as a parm on the ULCD CVProj Parms vector
+1e71080 6 -1
+Modification Log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/21/2010 pA Performance CMC removed yearIndex as a parm on the ULCD CVProj Parms vectorçä05/20/2010 pA Performance CMC added yearIndex as a parm on the ULCD CVProj Parms vector
+1e71080 7 -1
+Modification Log : çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/21/2010 pA Performance CMC removed yearIndex as a parm on the ULCD CVProj Parms vectorçä05/20/2010 pA Performance CMC added yearIndex as a parm on the ULCD CVProj Parms vector
+191a538a -2 -2
+Description: Builds a delimited string of UL Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+27ee03cb -2 -2
+Description: Builds a delimited string of UL Rider Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+38e6d0b4 -2 -2
+Due to extensive recursion etc., the tests for output functions are too input heavy & time consuming to run internally.çäPlease see Vpa_Calc_Illustrations\UTV_Tests\.. for all the Output Function Tests.
+;Offset=00000000

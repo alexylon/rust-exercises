@@ -1,0 +1,1934 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 19a4174 0 19a5930 0 0 0 0
+
+X1 19a5930 19a4174 0 19a5dd8 0 0 2
+ILLUS test
+ILLUS test
+çä-----------çä Guaranteed too long
+X1 19a5dd8 19a4174 0 19a63f0 0 0 2
+ILLUS Get Output Value(rateAssumption; CoverageIndex; 11; PropertyKey)
+ILLUS Get Output Value("C"; 0; 11; 3;101)
+10986.12
+X1 19a63f0 19a4174 0 1a309c0 0 0 2
+Late Reference Model Located
+Late Reference Model Located
+0
+X1 1a309c0 19a4174 0 1a30ad0 0 0 2
+ILLUS Get Property Header(Report; Column) NSUL
+ILLUS Get Property Header("NSUL";1)
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+X1 1a30ad0 19a4174 0 1a30610 0 0 2
+ILLUS Get Property Header(Report; Column) NSWL
+ILLUS Get Property Header("NSWL"; 2)
+-----------çä Guaranteedçä       Cashçä      Valueçä-----------çä
+X1 1a30610 19a4174 0 1a304f0 0 0 2
+ILLUS Get Output Value(calcType; CoverageIndex; 11; PropertyKey)
+ILLUS Get Output Value("C"; 0; 11; 3;101)
+10986.12
+X1 1a304f0 19a4174 0 0 0 0 2
+ILLUS Header Length Difference(Report)
+ILLUS Header Length Difference("NSUL")
+0
+O0 19a400c 0 0 0 0 0 0
+
+E0 19a4084 0 0 0 0 0 0
+
+L0 19a40fc 0 0 0 0 0 0
+
+B0 19a42dc 0 0 0 0 0 0
+
+P3 19a41ec 0 19a6470 0 0 0 2
+
+--description
+Model specifically designed to allow easier UTV testing of an illustration.  In order to customize an illustration report, copy the calculation node "-- copy to main model for overwriting --" into a higher-level model. çä çäThe custom report is defined in the table 'TABLE Report Structure'. çäIn a UTV test file, compute the function ILLUS Report(Report;calcType;page), egçäâ?ILLUS Report("NSUL";"";0)çä çäThe parameters for 'ILLUS Report' are:çä  * Report: A short name that identifies a specific report in table 'TABLE Report Structure'çä  * calcType: Can also specify rate assumption.  Normally use "", which indicates the calcType specified the table is to be used.  Any other calcType value will be used to override the table value.çä  * page: 0 = Print all years.  1 = print years 1-35.  2 = years 1-70çä çäRELEASE LOG:çäRELEASE 1301 - SCARAB/JIRA issues PAD902çäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.9.0"
+P13 19a6470 19a41ec 19a6be0 0 0 0 2
+DEFAULT OUTPUTS FOR UTV ILLUSTRATION TESTS
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Deafult Outputs for UTV Illustration Tests"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"UTVRep.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P51 19a6be0 19a6470 0 19a7478 0 0 2
+pA Outputs 1
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Accum Value(calcType; yearIndex)
+0
+OUTPUT Annual Premium(calcType; yearIndex)
+0
+OUTPUT Assumed Policy Accum Prem(yearIndex)
+0
+OUTPUT Assumed Policy Annual Premium(yearIndex)
+0
+OUTPUT Assumed Policy DeathBenefitAmt(yearIndex)
+0
+OUTPUT Base COI Rate(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Base SubExtra COI Rate(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Base Unrated COI Rate(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Cash Surrender Value(calcType; yearIndex)
+0
+OUTPUT Corridor Factor(yearIndex)
+0
+OUTPUT Coverage Annual Premium(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Coverage DivCashVal(calcType; coverageIndex;yearIndex)
+0
+OUTPUT Coverage ELA Dividend Index(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Coverage Mode Premium(calcType; coverageIndex;yearIndex)
+0
+OUTPUT Coverage Net Payment Cost Index(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Projected Coverage Surrender Charge(coverageIndex; yearIndex)
+0
+OUTPUT Coverage Surrender Cost Index(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Curr Policy Accum Prem(yearIndex)
+0
+OUTPUT Curr Policy Cash Surr Value(yearIndex)
+0
+OUTPUT Curr Policy DeathBenefitAmt(yearIndex)
+0
+OUTPUT Curr Policy Mode Premium(yearIndex)
+0
+OUTPUT Curr Rider Annual Premium(coverageIndex; yearIndex)
+0
+OUTPUT Death Benefit(calcType; yearIndex)
+0
+OUTPUT Dividend PUA(calcType; yearIndex)
+0
+OUTPUT Grace Fund Accum Value(calcType; yearIndex)
+0
+OUTPUT Guar Policy Accum Prem(yearIndex)
+0
+OUTPUT Guar Policy Annual Premium(yearIndex)
+0
+OUTPUT Guar Policy Cash Surr Value(yearIndex)
+0
+OUTPUT Guar Policy DeathBenefitAmt(yearIndex)
+0
+OUTPUT Guar Policy Illus Accum Prem(yearIndex)
+0
+OUTPUT Guar Policy Mode Premium(yearIndex)
+0
+OUTPUT Guar Policy Summ Illus DB(yearIndex)
+0
+OUTPUT Guar Rider Annual Premium(coverageIndex; yearIndex)
+0
+OUTPUT Illus LoanAmt(calcType; yearIndex)
+0
+OUTPUT Illus WithdrawalAmt(calcType; yearIndex)
+0
+OUTPUT Midpoint Policy Accum Prem(yearIndex)
+0
+OUTPUT Midpoint Policy Annual Premium(yearIndex)
+0
+OUTPUT Midpoint Policy Cash Surr Value(yearIndex)
+0
+OUTPUT Midpoint Policy DeathBenefitAmt(yearIndex)
+0
+OUTPUT Midpoint Policy Mode Premium(yearIndex)
+0
+OUTPUT Midpoint Policy Summ Illus DB(yearIndex)
+0
+OUTPUT Net Payment Cost Index(calcType; yearIndex)
+0
+OUTPUT Policy Accum Premium(calcType; yearIndex)
+0
+OUTPUT Policy Annual Premium(calcType; yearIndex)
+0
+OUTPUT Policy Accumulated non-QAB charges(calcType;yearIndex)
+0
+OUTPUT Policy Annual Net Outlay(calcType; yearIndex)
+0
+OUTPUT Policy Annual Outlay(calcType; yearIndex)
+0
+OUTPUT Policy DivOnDepositAmt(rateAssumption; yearIndex)
+0
+P46 19a7478 19a6470 0 0 0 0 2
+pA Outputs 2
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Annual Surrender(calcType; yearIndex)
+0
+OUTPUT Policy Cash Surr Value(calcType; yearIndex)
+0
+OUTPUT Policy CashSurrValue(calcType; yearIndex)
+0
+OUTPUT Policy CashValueAmt(calcType; yearIndex)
+0
+OUTPUT Policy CashValueIncreaseAmtPriorYr(calcType;yearIndex)
+0
+OUTPUT Policy Cost Basis only QAB(calcType;yearIndex)
+0
+OUTPUT Policy Current QAB Cost Basis(calcType;yearIndex)
+0
+OUTPUT Policy DeathBenefitAmt(calcType; yearIndex)
+0
+OUTPUT Policy DivCashVal(calcType; yearIndex)
+0
+OUTPUT Policy DivPUA CashValueAmt(calcType; yearIndex)
+0
+OUTPUT Policy Life DivPremRed(calcType; yearIndex)
+0
+OUTPUT Policy Mode Premium(calcType; yearIndex)
+0
+OUTPUT Policy OYTPurchaseAmt(calcType; yearIndex)
+0
+OUTPUT Policy Pure Endowment Amount(yearIndex)
+0
+OUTPUT Policy QAB Cost Basis(calcType;yearIndex)
+0
+OUTPUT Policy RPU Amount(yearIndex)
+0
+OUTPUT Policy Summary Illustration Death Benefit(calcType; yearIndex)
+0
+OUTPUT Policy Total Annual Premium(calcType; yearIndex)
+0
+OUTPUT Policy Total Mode Premium(calcType; yearIndex)
+0
+OUTPUT Policy Total Net Outlay(calcType; yearIndex)
+0
+OUTPUT Policy TotalPUA CashValueAmt(calcType; yearIndex)
+0
+OUTPUT Policy TotalPUA(calcType; yearIndex)
+0
+OUTPUT Premium Load FeeAmt(yearIndex)
+0
+OUTPUT Premium Load FeePct(yearIndex)
+0
+OUTPUT Premium PUA(calcType; yearIndex)
+0
+OUTPUT Proj Total Cash Value(calcType; yearIndex)
+0
+OUTPUT Projected Dividend(calcType; yearIndex)
+0
+OUTPUT Projected PUAFaceAmount(calcType; yearIndex)
+0
+OUTPUT Rider Annual Premium(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Rider COI Rate(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Rider Net Payment Cost Index(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Rider Payment Cost Index(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Rider SubExtra COI Rate(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Rider Surrender Cost Index(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Rider Unrated COI Rate(calcType; coverageIndex; yearIndex)
+0
+OUTPUT Surr Charge(calcType; yearIndex)
+0
+OUTPUT Total Rider Death Benefit(calcType; yearIndex)
+0
+OUTPUT Policy DivOnDepositAmt(calcType; yearIndex)
+0
+OUTPUT Policy Accum Value(calcType; yearIndex)
+0
+OUTPUT Policy Surr Charge(rateAssumption; yearIndex)
+0
+OUTPUT Crediting Rate(calcType)
+0
+OUTPUT Policy CashSurrValue Including MVA(rateAssumption; yearIndex)
+0
+OUTPUT Surrender MVA(rateAssumption; yearIndex)
+0
+F0 19a4264 0 19ae480 0 0 0 0
+
+F1 19ae480 19a4264 19aee08 0 0 0 2
+-- Report Functions --
+Funktion
+
+F1 19aee08 19ae480 19aeed8 0 0 0 2
+:ILLUS
+Funktion
+
+F1 19aeed8 19aee08 0 19af1d8 0 0 2
+ILLUS Report(Report;calcType;page)
+Funktion
+'ILLUS Get Report Name'(Report;'ILLUS Amount Indexes') & "  Rate Assumption: " & calcType & 'ILLUS NL' & 'ILLUS Print Header'(Report;1) & IF (NOT(ISNUMBER(page)) || page <= 0 ; çä  'ILLUS Print Numbers'(calcType;Report;'Illus Duration'(calcType);'ILLUS Start Year';1) ; çä   //Report by page every page contains max 35 lines and is limitted at the max durationçä'ILLUS Print Numbers'(calcType;Report;MIN('ILLUS Start Year' + page * 35;'Illus Duration'(calcType));MAX('ILLUS Start Year';MIN(page * 35;'Illus Duration'(calcType)) - 34);1)çä) & 'ILLUS NL'
+F1 19af1d8 19aee08 19af2d0 19afc58 0 0 2
+-- copy to main model for overwriting --
+Funktion
+
+F1 19af2d0 19af1d8 19af390 19af738 0 0 2
+-- late referencing --
+Funktion
+
+F1 19af390 19af2d0 0 19af560 0 0 2
+ILLUS VPM
+Funktion
+IF (CHR(32) EQUAL " " ; çä  "UTVRep.vpm" ; çä   // Use this PMS file's VPM file to be late referenced for table informationçä"UTVREP" //""  // If an empty string is returned the table will be accessed directly instead of Late Referencing itçäçä)
+F1 19af560 19af2d0 0 19af640 0 0 2
+ILLUS LR Function Name
+Funktion
+"CalcRules Report Information"
+F1 19af640 19af2d0 0 0 0 0 2
+CalcRules Report Information(ReportName;Column)
+Funktion
+IF (EXISTS('TABLE Report Structure';ReportName;Column) ; çä  V_STRINGX(V_('TABLE Report Structure'[ReportName; Column].ReportName;'TABLE Report Structure'[ReportName; Column].ReportHeader;'TABLE Report Structure'[ReportName; Column].PropertyKey;'TABLE Report Structure'[ReportName; Column].RateAssumtion;'TABLE Report Structure'[ReportName; Column].CoverageIndex;'TABLE Report Structure'[ReportName; Column].Parameter)) ; çä  V_STRINGX(V_('GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank'))çä)
+F1 19af738 19af1d8 0 19af838 0 0 2
+ILLUS Get Output Value(calcType; coverageIndex; Parameter; yearIndex; PropertyKey)
+Funktion
+ROUND((YearIndex + 7) * LOG(YearIndex) * 1000;2)
+F1 19af838 19af1d8 0 19af940 0 0 2
+ILLUS Duration(calcType)
+Funktion
+80 //'ModePremium Last Premium Duration'ä
+F1 19af940 19af1d8 0 19afa58 0 0 2
+ILLUS Attained Age(yearIndex)
+Funktion
+'ILLUS IssueAge' + yearIndex - 1
+F1 19afa58 19af1d8 0 19afb48 0 0 2
+ILLUS Get Cov Number(coverageName)
+Funktion
+0
+F1 19afb48 19af1d8 0 0 0 0 2
+ILLUS Start Year
+Funktion
+1 //'Illus Start Year'ä
+F1 19afc58 19aee08 19aff20 1a36608 0 0 2
+ILLUS Print Report(calcType; Report)
+Funktion
+ // Print report Name from Table Column Report Name for row AmountIndexesçä'ILLUS Get Report Name'(Report;'ILLUS Amount Indexes') &  //new lineçä'ILLUS NL' &  // the complete header is printedçä'ILLUS Print Header'(Report;1) &  //print all numbers for all columns from yearindex 1 up to max durationçä'ILLUS Print Numbers'("";Report;'Illus Duration'(calcType);'ILLUS Start Year';1) & 'ILLUS NL' //NOTE: use the 'ILLUS Report'(Report;calcType;page) to print only first 35 yearsä
+F1 19aff20 19afc58 1a31148 485172f 0 0 2
+ILLUS Print Header(Report;Line)
+Funktion
+IF ('Is Blank'(TRIM('ILLUS extract line from Column Header'(Report;1;Line))) ; çä  'GEN Vector Blank' ; çä   //If at the end of header stop recursionçä//else print line then a new line and continue with next lineçä'ILLUS extract line from Column Header'(Report;1;Line) & 'ILLUS NL' & 'ILLUS Print Header'(Report;Line + 1)çä)
+F1 1a31148 19aff20 1a316d0 0 0 0 2
+ILLUS extract line from Column Header(Report; Column; Line)
+Funktion
+IF ('Blank is Not Returned'('ILLUS Get Property Header'(Report;Column)) ; çä   //not at last Column yetçäIF (Column = 1 ; çä     //for first or before first column print the YearIndex (and attained age)çäIF ('Equals 1'('ILLUS Get Property Key'(Report;'ILLUS Amount Indexes')) ; çä       //only Yearçä'ILLUS extract Line'('ILLUS Get Property Header'('ILLUS Index Name';1);'ILLUS adjust Line for Header'(Line;Report)) ; çä       //Else take yearIndex and Attained Ageçä'ILLUS extract Line'('ILLUS Get Property Header'('ILLUS Index Name';1);'ILLUS adjust Line for Header'(Line;Report)) & 'ILLUS Column Space' &  //this is the standard function to determine the spacing between columnsçä'ILLUS extract Line'('ILLUS Get Property Header'('ILLUS Index Name';2);'ILLUS adjust Line for Header'(Line;Report))çä    ) & 'ILLUS Column Space' ; çä   //this is the standard function to determine the spacing between columnsçä'GEN Vector Blank'çä) & 'ILLUS Fill'('ILLUS extract Line'('ILLUS Get Property Header'(Report;Column);Line);Line;Report;Column) & 'ILLUS Column Space' & 'ILLUS extract line from Column Header'(Report;Column + 1;Line) ; çä // Else does not exist stop recursionçä'GEN Vector Blank'çä)
+F1 1a316d0 1a31148 0 1a31918 0 0 2
+ILLUS Fill(lineString;lineNumber;Report;Column)
+Funktion
+IF (lineNumber = 1 ; çä  lineString ; çä  LEFT(lineString & "                    ";LENGTH('ILLUS extract Line'('ILLUS Get Property Header'(Report;Column);1)))çä)
+F1 1a31918 1a31148 1a31a60 1a31b50 0 0 2
+ILLUS adjust Line for Header(Line;Report)
+Funktion
+MAX(1;Line - 'ILLUS Header Length Difference'(Report))
+F1 1a31a60 1a31918 0 0 0 0 2
+ILLUS Header Length Difference(Report)
+Funktion
+MAX((LENGTH('ILLUS Get Property Header'(Report;1)) - LENGTH(SUBST('ILLUS Get Property Header'(Report;1);CHR(10);'GEN Vector Blank'))) - (LENGTH('ILLUS Get Property Header'('ILLUS Index Name';1)) - LENGTH(SUBST('ILLUS Get Property Header'('ILLUS Index Name';1);CHR(10);'GEN Vector Blank')));0)
+F1 1a31b50 1a31148 0 0 0 0 2
+ILLUS extract Line(Header;LineNumber)
+Funktion
+IF (LineNumber <= 1 ; çä  MID(Header;1;INSTR(Header;'ILLUS NL') - 2) ; çä  'ILLUS extract Line'(MID(Header;INSTR(Header;'ILLUS NL') + 1);LineNumber - 1)çä)
+F1 485172f 19afc58 13782c7c 1a32c50 0 0 2
+ILLUS Print Numbers(calcType;Report;Lines;LineIndex; rowCounter)
+Funktion
+IF (rowCounter >= Lines || lineIndex > 'ILLUS Max Print Year'(report) ; çä   // Target Duration defined by LinesçäIF ('ILLUS Print Year'(report;lineIndex) ; çä    'ILLUS Print Numbers Line'(calcType;Report;LineIndex) ; çä     //Last Lineçä'ILLUS NL'çä  ) ; çäIF ('ILLUS Print Year'(report;lineIndex) ; çä  'ILLUS Print Numbers Line'(calcType;Report;LineIndex) //current line (lineIndex)çä & 'ILLUS NL' //new lineçä & IF (LineIndex MOD 5 = 0 ; çä    'ILLUS NL' ; çä    'GEN Vector Blank'çä  ) //add additional new line every 5 linesçä & 'ILLUS Print Numbers'(calcType;Report;Lines;LineIndex + 1;rowCounter + 1) ; çä //recursive call and increase LineIndexçä'ILLUS Print Numbers'(calcType;Report;Lines;LineIndex + 1;rowCounter)çä)çä)
+F1 13782c7c 485172f 45e55c13 0 0 0 2
+ILLUS Print Numbers Line(calcType;Report; Line)
+Funktion
+IF ('Equals 1'('ILLUS Get Property Key'(Report;'ILLUS Amount Indexes')) ; çä   //only yearçä'ILLUS Format Number'('ILLUS Index Name';1; //penny adjustment for year index onlyçä'Illus Get Property Number for Grid'(calcType;'ILLUS Index Name';1;10000;Line)) ; çä   //year and attained ageçä'ILLUS Format Number'('ILLUS Index Name';1;'Illus Get Property Number for Grid'(calcType;'ILLUS Index Name';1;10000;Line)) & 'ILLUS Column Space' //standard spacing between columnsçä &  //attained ageçä'ILLUS Format Number'('ILLUS Index Name';2;'Illus Get Property Number for Grid'(calcType;'ILLUS Index Name';2;10001;Line))çä) & 'ILLUS Column Space' &  //now get all resultsçä'ILLUS Print Property Numbers for Columns'(calcType;Report;1;Line)
+F1 45e55c13 13782c7c 6652890a 0 0 0 2
+ILLUS Print Property Numbers for Columns(calcType;Report; Column; Line)
+Funktion
+IF ('Is Blank'('ILLUS Get Property Key'(Report;Column)) ; çä  'GEN Vector Blank' ; çä   //last column reachedçä'ILLUS Format Number'(Report;Column; //penny adjustment print 34.1 as 34.10 to line upçä'Illus Get Property Number for Grid'( //Compute the result forçäcalcType; //this rate assumtion unless blankçäReport; // for this report andçäColumn; //this column or headerçä'ILLUS Get Property Key'(Report;Column); // get the number for the case statement that clacs the according numberçäLine // for this lineçä)) & 'ILLUS Column Space' &  // new line and recursively go down the columnsçä'ILLUS Print Property Numbers for Columns'(calcType;Report;Column + 1;Line)çä)
+F1 6652890a 45e55c13 0 25fa3b79 0 0 2
+ILLUS Format Number(Report; Column; Number)
+Funktion
+LEFT(SUBST('ILLUS extract Line'('ILLUS Get Property Header'(Report;Column);1);"-";" ");LENGTH('ILLUS extract Line'('ILLUS Get Property Header'(Report;Column);1)) - LENGTH('ILLUS Add Pennies'(Report;Number))) & 'ILLUS Add Pennies'(Report;Number)
+F1 25fa3b79 45e55c13 0 5969aa79 0 0 2
+ILLUS Add Pennies(Report; Number)
+Funktion
+IF (Report ALIKE 'ILLUS Index Name' ; çä  Number ; çä  IF (ISNUMBER(Number) ; çä    IF (INSTR(Number;".") = 0 ; çä      Number & ".00" ; çä      IF (INSTR(RIGHT(Number;3);".") = 2 ; çä        Number & 0 ; çä        Numberçä      )çä  ) ; çäNumberçä)çä)
+F1 5969aa79 45e55c13 0 563a2b57 0 0 2
+-- ILLUS Get Property Number for Grid(calcType; Report; Column; PropertyKey; YearIndex)
+Funktion
+CASE(PropertyKey;çäâ10000: YearIndex;çäâ10001: 'ILLUS Attained Age'(YearIndex);çäâ:'ILLUS Get Output Value'(çäâ//only use the report rateassumption if not specified in reportçäâââIF('Is Blank'(calcType); 'ILLUS Get Property RateAssumption'(Report;Column);calcType);çäâââIF(ISNUMBER('ILLUS Get Property CoverageIndex'(Report;Column));çäââââ'ILLUS Get Property CoverageIndex'(Report;Column);çäââââIF('Is Blank'('ILLUS Get Cov Number'('ILLUS Get Property CoverageIndex'(Report;Column)));çäâââââ0;çäâââââ'ILLUS Get Cov Number'('ILLUS Get Property CoverageIndex'(Report;Column))çäââââ)çäâââ);âçäâââ'ILLUS Get Property Parameter'(Report;Column);çäâââYearIndex;çäâââPropertyKey)çä)
+F1 563a2b57 45e55c13 0 0 0 0 2
+ILLUS Get Property Number for Grid(calcType; Report; Column; PropertyKey; YearIndex)
+Funktion
+CASE(PropertyKey;çä  10000 : YearIndex;çä  10001 : 'ILLUS Attained Age'(YearIndex);çä   : 'ILLUS Get Output Value'( //only use the report rateassumption if not specified in reportçäIF ('Is Blank'(calcType) ; çä    'ILLUS Get Property RateAssumption'(Report;Column) ; çä    calcTypeçä  );IF (ISNUMBER('ILLUS Get Property CoverageIndex'(Report;Column)) ; çä  'ILLUS Get Property CoverageIndex'(Report;Column) ; çä  IF ('Is Blank'('ILLUS Get Cov Number'('ILLUS Get Property CoverageIndex'(Report;Column))) ; çä    0 ; çä    'ILLUS Get Cov Number'('ILLUS Get Property CoverageIndex'(Report;Column))çä  )çä);'ILLUS Get Property Parameter'(Report;Column);YearIndex;PropertyKey))çä
+F1 1a32c50 19afc58 1a32ed8 1a34740 0 0 2
+-- Table Access LR Functions --
+Funktion
+
+F1 1a32ed8 1a32c50 0 1a32fc8 0 0 2
+ILLUS Get Report Name(Report; Column)
+Funktion
+'Check Value'(IF ('Late Reference Model Located' ; çä  E_('ILLUS LR Get Report Detail'(Report;Column);0) ; çä  IF ('ILLUS Exists'(Report;Column) ; çä    'TABLE Report Structure'[Report; Column].ReportName ; çä    'GEN Vector Blank'çä  )çä);0)
+F1 1a32fc8 1a32c50 0 1a33360 0 0 2
+ILLUS Get Property Header(Report; Column)
+Funktion
+'Check Value'(IF ('Late Reference Model Located' ; çä  E_('ILLUS LR Get Report Detail'(Report;Column);1) ; çä  IF ('ILLUS Exists'(Report;Column) ; çä    'TABLE Report Structure'[Report; Column].ReportHeader ; çä    'GEN Vector Blank'çä  )çä);1)
+F1 1a33360 1a32c50 0 1a33540 0 0 2
+ILLUS Get Property Key(Report; Column)
+Funktion
+'Check Value'(IF ('Late Reference Model Located' ; çä  E_('ILLUS LR Get Report Detail'(Report;Column);2) ; çä  IF ('ILLUS Exists'(Report;Column) ; çä    'TABLE Report Structure'[Report; Column].PropertyKey ; çä    'GEN Vector Blank'çä  )çä);2)
+F1 1a33540 1a32c50 0 1a338f0 0 0 2
+ILLUS Get Property RateAssumption(Report; Column)
+Funktion
+'Check Value'(IF ('Late Reference Model Located' ; çä  E_('ILLUS LR Get Report Detail'(Report;Column);3) ; çä  IF ('ILLUS Exists'(Report;Column) ; çä    'TABLE Report Structure'[Report; Column].RateAssumtion ; çä    'GEN Vector Blank'çä  )çä);3)
+F1 1a338f0 1a32c50 0 1a33ae0 0 0 2
+ILLUS Get Property CoverageIndex(Report; Column)
+Funktion
+'Check Value'(IF ('Late Reference Model Located' ; çä  E_('ILLUS LR Get Report Detail'(Report;Column);4) ; çä  IF ('ILLUS Exists'(Report;Column) ; çä    'TABLE Report Structure'[Report; Column].CoverageIndex ; çä    'GEN Vector Blank'çä  )çä);4)
+F1 1a33ae0 1a32c50 0 1a33da8 0 0 2
+ILLUS Get Property Parameter(Report; Column)
+Funktion
+'Check Value'(IF ('Late Reference Model Located' ; çä  E_('ILLUS LR Get Report Detail'(Report;Column);5) ; çä  IF ('ILLUS Exists'(Report;Column) ; çä    'TABLE Report Structure'[Report; Column].Parameter ; çä    'GEN Vector Blank'çä  )çä);5)
+F1 1a33da8 1a32c50 1a33e90 1a34150 0 0 2
+Check Value(Value; position)
+Funktion
+IF ('Is Blank'(Value) ; çä   // need a default valueçä'Get Default'(position) ; çä  Valueçä)
+F1 1a33e90 1a33da8 0 0 0 0 2
+Get Default(position)
+Funktion
+E_(V_('GEN Vector Blank'; //Report Nameçä'GEN Vector Blank'; //Report Headerçä'GEN Vector Blank'; //Property keyçä'CalcType Guaranteed'('GEN Vector Blank'); // rateAssumptionçä0; // coverageIndexçä'GEN Vector Blank'; // Parameter Xçä'GEN Vector Blank'; // not yet usedçä'GEN Vector Blank' // not yet usedçä) // default values in case not found in tableçä;position)
+F1 1a34150 1a32c50 0 1a34458 0 0 2
+ILLUS Exists(Report;Column)
+Funktion
+EXISTS('TABLE Report Structure';Report;Column)
+F1 1a34458 1a32c50 0 36a08931 0 0 2
+ILLUS LR Get Report Detail(Report; Column)
+Funktion
+V_CONSTRUCT(VPMCOMPUTE('ILLUS VPM';'ILLUS LR Function Name' & "(" & 'ILLUS Quotes'(Report) & ";" & 'ILLUS Quotes'(Column) & ")"))
+F1 36a08931 1a32c50 0 0 0 0 2
+ILLUS Get Property PrintYears(Report; Column)
+Funktion
+'Check Value'(IF ('Late Reference Model Located' ; çä  E_('ILLUS LR Get Report Detail'(Report;Column);6) ; çä  IF ('ILLUS Exists'(Report;Column) ; çä    'TABLE Report Structure'[Report; Column].PrintYears ; çä    'GEN Vector Blank'çä  )çä);5)
+F1 1a34740 19afc58 1a34820 1a35bc8 0 0 2
+-- utility functions --
+Funktion
+
+F1 1a34820 1a34740 0 1a34af8 0 0 2
+ILLUS NL
+Funktion
+CHR(10)
+F1 1a34af8 1a34740 0 1a34be8 0 0 2
+ILLUS Column Space
+Funktion
+"  "
+F1 1a34be8 1a34740 0 1a34f00 0 0 2
+ILLUS Amount Indexes
+Funktion
+"AmountIndexes"
+F1 1a34f00 1a34740 0 1a34fe0 0 0 2
+ILLUS Index Name
+Funktion
+"All"
+F1 1a34fe0 1a34740 0 1a35310 0 0 2
+ILLUS Quotes(Name)
+Funktion
+QuotationMark & Name & QuotationMark
+F1 1a35310 1a34740 0 1a35418 0 0 2
+Is Blank(string)
+Funktion
+TRIM(string) EQUAL 'GEN Vector Blank'
+F1 1a35418 1a34740 0 1a35760 0 0 2
+Blank is not Returned(string)
+Funktion
+NOT('Is Blank'(string))
+F1 1a35760 1a34740 0 1a35860 0 0 2
+Equals 1(number)
+Funktion
+number EQUAL "1"
+F1 1a35860 1a34740 0 95cf559 0 0 2
+Late Reference Model Located
+Funktion
+VPMEXIST('ILLUS VPM';"2" & 'ILLUS LR Function Name') > 0
+F1 95cf559 1a34740 35565761 9e5d8f6 0 0 2
+ILLUS Max Print Year(report)
+Funktion
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'ILLUS Max Print Year Annuity'(report) ; çä  'ILLUS Max Print Year Life'(report)çä)
+F1 35565761 95cf559 0 631208f4 0 0 2
+ILLUS Max Print Year Annuity(report)
+Funktion
+IF ('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes') ALIKE "ALL" ; çä  'PIDRV AnnuityProduct MaturityDuration'(0) ; çä  'ILLUS Attained Age Limit'(report) - 'Policy Participant IssueAge'(0;0) + 1çä)
+F1 631208f4 95cf559 0 0 0 0 2
+ILLUS Max Print Year Life(report)
+Funktion
+IF ('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes') ALIKE "ALL" ; çä  'PIDRV CoverageProduct MaturityDuration'("C";TransEffDate;0) ; çä  'ILLUS Attained Age Limit'(report) - 'Policy LifeParticipant IssueAge'("C";0;0) + 1çä)
+F1 9e5d8f6 1a34740 40863ccb 0 0 0 2
+ILLUS Print Year(report; line)
+Funktion
+IF ('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes') ALIKE "ALL" ; çä  1 ; çä  IF ('Policy LifeParticipant IssueAge'("C";0;0) + line - 1 = 'ILLUS Attained Age Limit'(report) ; çä    1 ; çä    IF ('Policy LifeParticipant IssueAge'("C";0;0) + line - 1 < 'ILLUS Attained Age Limit'(report) && INSTR('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes');"," & line & ",") > 0 ; çä      1 ; çä      0çä    )çä)çä)
+F1 40863ccb 9e5d8f6 dbb630d 0 0 0 2
+ILLUS Attained Age Limit(report)
+Funktion
+MID('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes');'ILLUS Find A'(report) + 1;'ILLUS Find Comma'(report) - 2)
+F1 dbb630d 40863ccb 0 3e5370b7 0 0 2
+ILLUS Find A(report)
+Funktion
+INSTR('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes');"A")
+F1 3e5370b7 40863ccb 0 0 0 0 2
+ILLUS Find Comma(report)
+Funktion
+INSTR(MID('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes');'ILLUS Find A'(report);LENGTH('ILLUS Get Property PrintYears'(Report;'ILLUS Amount Indexes')) - 'ILLUS Find A'(report) + 1);",")
+F1 1a35bc8 19afc58 1a35ca0 0 0 0 2
+-- Testing --
+Funktion
+
+F1 1a35ca0 1a35bc8 0 1a35fc8 0 0 2
+ILLUS test
+Funktion
+'ILLUS NL' & 'ILLUS extract Line'('TABLE Report Structure'["Test"; 2].ReportHeader;1) & 'ILLUS NL' & 'ILLUS extract Line'('TABLE Report Structure'["Test"; 2].ReportHeader;2)
+F1 1a35fc8 1a35bc8 0 1a360a0 0 0 2
+ILLUS test2
+Funktion
+'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;1) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;2) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;3) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;4) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;5) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;6) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;7) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;8)
+F1 1a360a0 1a35bc8 0 0 0 0 2
+ILLUS test3
+Funktion
+'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;1) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;2) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;3) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;4) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;5) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;6) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;7) & 'ILLUS NL' & 'ILLUS extract line from Column Header'("Test";1;8)
+F1 1a36608 19aee08 1a366e8 0 0 0 2
+--Dummy Functions--
+Funktion
+
+F1 1a366e8 1a36608 0 71ecfcae 0 0 2
+ILLUS IssueAge
+Funktion
+25
+F1 71ecfcae 1a36608 0 0 0 0 2
+GEN Vector Blank
+Funktion
+""
+A0 19a4354 0 0 0 0 0 0
+
+T0 19a43cc 0 1a36cb0 0 0 0 0
+
+T118 1a36cb0 19a43cc 1a3c140 0 0 0 9
+TABLE Report Structure
+ReportShortName
+Key
+ReportName
+ReportHeader
+PropertyKey
+RateAssumtion
+CoverageIndex
+Parameter
+PrintYears
+All
+1
+
+    çä    çä    çäYearçä----çä
+10000
+
+
+
+
+All
+2
+
+    çä Ageçä BegçäYearçä----çä
+10001
+
+
+
+
+--
+
+
+
+
+
+
+
+
+Test
+AmountIndexes
+Test Report
+
+2
+
+
+
+
+Test
+1
+
+-----------çä           çä Currentçä Contractçä Premiumçä-----------çä
+101
+C
+
+
+
+Test
+2
+
+-----------çä Guaranteed too longçä  Contractçä  Premiumçä  End Yearçä-----------çä
+101
+G
+
+
+
+--
+
+
+
+
+
+
+
+
+NSUL
+AmountIndexes
+Universal Life Numeric Summary
+
+2
+
+
+
+,5,10,15,20,A65,
+NSUL
+1
+OUTPUT Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+101
+C
+
+
+
+NSUL
+2
+OUTPUT Accum Value
+-----------çä Guaranteedçä       Cashçä      Valueçä-----------çä
+100
+G
+
+
+
+NSUL
+3
+OUTPUT Death Benefit
+-----------çä Guaranteedçä      Deathçä    Benefitçä-----------çä
+122
+G
+
+
+
+NSUL
+4
+OUTPUT Accum Value
+-----------çä   Midpointçä       Cashçä      Valueçä-----------çä
+100
+M
+
+
+
+NSUL
+5
+OUTPUT Death Benefit
+-----------çä   Midpointçä      Deathçä    Benefitçä-----------çä
+122
+M
+
+
+
+NSUL
+6
+OUTPUT Accum Value
+-----------çä    Currentçä       Cashçä      Valueçä-----------çä
+100
+C
+
+
+
+NSUL
+7
+OUTPUT Death Benefit
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+122
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+NSWL
+AmountIndexes
+Whole Life Numeric Summary
+
+2
+
+
+
+,5,10,15,20,A65,
+NSWL
+1
+OUTPUT Policy Total Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+164
+G
+
+
+
+NSWL
+2
+OUTPUT Policy CashValueAmt
+-----------çä Guaranteedçä       Cashçä      Valueçä-----------çä
+150
+G
+
+
+
+NSWL
+3
+OUTPUT Policy DeathBenefitAmt
+-----------çä Guaranteedçä      Deathçä    Benefitçä-----------çä
+154
+G
+
+
+
+NSWL
+4
+OUTPUT Policy CashValueAmt
+-----------çä   Midpointçä       Cashçä      Valueçä-----------çä
+150
+M
+
+
+
+NSWL
+5
+OUTPUT Policy DeathBenefitAmt
+-----------çä   Midpointçä      Deathçä    Benefitçä-----------çä
+154
+M
+
+
+
+NSWL
+6
+OUTPUT Policy CashValueAmt
+-----------çä    Currentçä       Cashçä      Valueçä-----------çä
+150
+C
+
+
+
+NSWL
+7
+OUTPUT Policy DeathBenefitAmt
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+154
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+TabUL
+AmountIndexes
+Universal Life Tabular Detail
+
+2
+
+
+
+All
+TabUL
+1
+OUTPUT Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+101
+C
+
+
+
+TabUL
+2
+OUTPUT Accum Value
+-----------çä Guaranteedçä       Cashçä      Valueçä-----------çä
+100
+G
+
+
+
+TabUL
+3
+OUTPUT Cash Surrender Value
+-----------çä Guaranteedçä  Cash Surrçä      Valueçä-----------çä
+108
+G
+
+
+
+TabUL
+4
+OUTPUT Death Benefit
+-----------çä Guaranteedçä      Deathçä    Benefitçä-----------çä
+122
+G
+
+
+
+TabUL
+5
+OUTPUT Accum Value
+-----------çä    Currentçä       Cashçä      Valueçä-----------çä
+100
+C
+
+
+
+TabUL
+6
+OUTPUT Cash Surrender Value
+-----------çä    Currentçä  Cash Surrçä      Valueçä-----------çä
+108
+C
+
+
+
+TabUL
+7
+OUTPUT Death Benefit
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+122
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+TabWL
+AmountIndexes
+Whole Life Numeric Summary
+
+2
+
+
+
+All
+TabWL
+1
+OUTPUT Policy Total Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+164
+C
+
+
+
+TabWL
+2
+OUTPUT Policy CashValueAmt
+-----------çä Guaranteedçä Total Cashçä      Valueçä-----------çä
+150
+G
+
+
+
+TabWL
+3
+OUTPUT Policy TotalPUA CashValueAmt
+-----------çä Guaranteedçä   PUA Cashçä      Valueçä-----------çä
+167
+G
+
+
+
+TabWL
+4
+OUTPUT Policy DeathBenefitAmt
+-----------çä Guaranteedçä      Deathçä    Benefitçä-----------çä
+154
+G
+
+
+
+TabWL
+5
+OUTPUT Policy Annual Outlay
+-----------çä      Totalçä     Annualçä     Outlayçä-----------çä
+145
+C
+
+
+
+TabWL
+6
+OUTPUT Projected Dividend
+-----------çä    Currentçä      Valueçä   Dividendçä-----------çä
+173
+C
+
+
+
+TabWL
+7
+OUTPUT Policy TotalPUA CashValueAmt
+-----------çä Cash Valueçä  Dividendsçä      (PUA)çä-----------çä
+167
+C
+
+
+
+TabWL
+8
+OUTPUT Policy DivOnDepositAmt
+-----------çä Cash Valueçä  Dividendsçä      (LOD)çä-----------çä
+184
+C
+
+
+
+TabWL
+9
+OUTPUT Policy CashValueAmt
+-----------çä    Currentçä Total Cashçä      Valueçä-----------çä
+150
+C
+
+
+
+TabWL
+10
+OUTPUT Policy TotalPUA
+-----------çä  Death Bençä Div Optionçä    (PUA)  çä-----------çä
+168
+C
+
+
+
+TabWL
+11
+OUTPUT Policy OYTPurchaseAmt
+-----------çä  Death Bençä Div Optionçä    (OYT)  çä-----------çä
+159
+C
+
+
+
+TabWL
+12
+OUTPUT Total Rider Death Benefit
+-----------çäTotal Riderçä      Deathçä    Benefitçä-----------çä
+183
+C
+
+
+
+TabWL
+13
+OUTPUT Policy DeathBenefitAmt
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+154
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+ULSupp
+AmountIndexes
+UL Supplemental Illustration
+
+2
+
+
+
+All
+ULSupp
+1
+OUTPUT Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+101
+C
+
+
+
+ULSupp
+2
+OUTPUT Illus WithdrawalAmt
+-----------çä    Currentçä Withdrawalçä     Amountçä-----------çä
+134
+C
+
+
+
+ULSupp
+3
+OUTPUT Illus LoanAmt
+-----------çä    Currentçä       Loançä     Amountçä-----------çä
+133
+C
+
+
+
+ULSupp
+4
+OUTPUT Accum Value
+-----------çä    Currentçä       Cashçä      Valueçä-----------çä
+100
+C
+
+
+
+ULSupp
+5
+OUTPUT Base COI Rate
+-----------çä    Currentçä   Base COIçä       Rateçä-----------çä
+105
+C
+
+
+
+ULSupp
+6
+OUTPUT Cash Surrender Value
+-----------çä    Currentçä  Cash Surrçä      Valueçä-----------çä
+108
+C
+
+
+
+ULSupp
+7
+OUTPUT Death Benefit
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+122
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+ULTax
+AmountIndexes
+UL Tax Compliance
+
+1
+
+
+
+All
+ULTax
+1
+ULDocs Proj Guideline Level Premium
+-----------çä  Guidelineçä     Annualçä    Premiumçä-----------çä
+1020
+
+
+
+
+ULTax
+2
+ULDocs Cumulative Proj Guideline level Premium
+-----------çä Cumulativeçä  GuidelineçäAnn Premiumçä-----------çä
+1040
+
+
+
+
+ULTax
+3
+ULDocs Proj Guideline Single Premium
+-----------çä  Guidelineçä     Singleçä    Premiumçä-----------çä
+1030
+
+
+
+
+ULTax
+4
+OUTPUT Accum Value
+-----------çä    Currentçä       Cashçä      Valueçä-----------çä
+100
+C
+
+
+
+ULTax
+5
+OUTPUT Death Benefit
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+122
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+ULTax2
+AmountIndexes
+UL Tax Comp All
+
+2
+
+
+
+All
+ULTax2
+1
+OUTPUT Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+101
+C
+
+
+
+ULTax2
+2
+ULDocs Premium Projected LTD Premium
+-----------çä      TotalçäAccumulatedçä    Premiumçä-----------çä
+1050
+C
+
+
+
+ULTax2
+3
+ULDocs Proj Guideline Level Premium
+-----------çä  Guidelineçä     Annualçä    Premiumçä-----------çä
+1020
+
+
+
+
+ULTax2
+4
+ULDocs Cumulative Proj Guideline level Premium
+-----------çä Cumulativeçä  GuidelineçäAnn Premiumçä-----------çä
+1040
+
+
+
+
+ULTax2
+5
+ULDocs Proj Guideline Single Premium
+-----------çä  Guidelineçä     Singleçä    Premiumçä-----------çä
+1030
+
+
+
+
+ULTax2
+6
+OUTPUT Accum Value
+-----------çä    Currentçä       Cashçä      Valueçä-----------çä
+100
+C
+
+
+
+ULTax2
+7
+OUTPUT Death Benefit
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+122
+C
+
+
+
+ULTax2
+8
+ULDocs Cumulative Net Premium Paid For 7Pay
+-----------çä    Premiumçä   Paid forçä 7-Pay Testçä-----------çä
+1060
+
+
+
+
+ULTax2
+9
+ULDocs Proj 7 Pay Premium
+-----------çä    çä      7-Payçä    Premiumçä-----------çä
+1070
+
+
+
+
+ULTax2
+10
+ULDocs Cumulative 7Pay Premium To Date
+-----------çä Cumulativeçä      7-Payçä    Premiumçä-----------çä
+1080
+
+
+
+
+ULTax2
+11
+ULDocs Contract MEC Ind
+-----------çä    çä       MECçä  Indicatorçä-----------çä
+1090
+
+
+
+
+--
+
+
+
+
+
+
+
+
+ULLoan
+AmountIndexes
+Universal Life Loan Report
+
+1
+
+
+
+All
+ULLoan
+1
+OUTPUT Illus LoanAmt
+-----------çä    CurrentçäLoan Amountçä   Beg Yearçä-----------
+133
+C
+
+
+
+ULLoan
+2
+OUTPUT Illus LoanRepayment
+-----------çä    CurrentçäLoan Repaymentçä   Beg Yearçä-----------
+191
+C
+
+
+
+ULLoan
+3
+OUTPUT Projected Total Capitalized Interest
+-----------çä    Currentçä   InterestçäCapitalizedçä-----------
+190
+C
+
+
+
+ULLoan
+4
+OUTPUT Projected Life RegularLoanBalance
+-----------çä    Currentçä       Loançä    Balanceçä-----------
+189
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+AnnIll
+AmountIndexes
+Annuity Illustration
+
+2
+
+
+
+All
+AnnIll
+1
+OUTPUT Policy Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------
+146
+C
+
+
+
+AnnIll
+2
+OUTPUT Crediting Rate
+-----------çä Guaranteedçä  Creditingçä     Rate  çä-----------
+200
+G
+
+
+
+AnnIll
+3
+OUTPUT Policy Accum Value
+-----------çä Guaranteedçä       Cashçä      Valueçä-----------
+185
+G
+
+
+
+AnnIll
+4
+OUTPUT Policy Surr Charge
+-----------çä Guaranteedçä  Cash Surrçä     Chargeçä-----------
+188
+G
+
+
+
+AnnIll
+5
+OUTPUT Policy CashSurrValue
+-----------çä Guaranteedçä  Cash Surrçä      Valueçä-----------çä
+187
+G
+
+
+
+AnnIll
+6
+OUTPUT Crediting Rate
+-----------çä    Currentçä  Creditingçä      Rate çä-----------
+200
+C
+
+
+
+AnnIll
+7
+OUTPUT Policy Accum Value
+-----------çä    Currentçä       Cashçä      Valueçä-----------
+185
+C
+
+
+
+AnnIll
+8
+OUTPUT Policy Surr Charge
+-----------çä    Currentçä  Cash Surrçä     Chargeçä-----------
+188
+C
+
+
+
+AnnIll
+9
+OUTPUT Policy CashSurrValue
+-----------çä    Currentçä  Cash Surrçä      Valueçä-----------
+187
+C
+
+
+
+--
+
+
+
+
+
+
+
+
+DynDiv
+AmountIndexes
+
+
+3
+
+
+
+All
+DynDiv
+1
+OUTPUT Proj Coverage Dividend Rate
+-----------çä    Currentçä   Unloanedçä   Div Rateçä-----------
+192
+
+
+0
+
+DynDiv
+2
+OUTPUT Proj Coverage Interest Item
+-----------çä    Currentçä     DynDivçä   Int Itemçä-----------
+193
+
+
+0
+
+DynDiv
+3
+OUTPUT Proj Coverage Mortality Item
+-----------çä    Currentçä     DynDivçä  Mort Itemçä-----------
+194
+
+
+0
+
+DynDiv
+4
+OUTPUT Proj Coverage Loading Item
+-----------çä    Currentçä     DynDivçä  Load Itemçä-----------
+195
+
+
+0
+
+DynDiv
+5
+OUTPUT Proj Coverage Tax Item
+-----------çä    Currentçä     DynDivçä   Tax Itemçä-----------
+196
+
+
+0
+
+DynDiv
+6
+OUTPUT Proj Coverage Profit Item
+-----------çä    Currentçä     DynDivçäProfit Itemçä-----------
+197
+
+
+0
+
+--
+
+
+
+
+
+
+
+
+ULTax3
+AmountIndexes
+UL Tax Comp All
+
+2
+
+
+
+All
+ULTax3
+1
+OUTPUT Annual Premium
+-----------çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+101
+C
+
+
+
+ULTax3
+2
+ULDocs Premium Projected LTD Premium
+-----------çä      TotalçäAccumulatedçä    Premiumçä-----------çä
+1050
+C
+
+
+
+ULTax3
+3
+ULDocs Proj Guideline Level Premium
+-----------çä  Guidelineçä     Annualçä    Premiumçä-----------çä
+1020
+
+
+
+
+ULTax3
+4
+ULDocs Cumulative Proj Guideline level Premium
+-----------çä Cumulativeçä  GuidelineçäAnn Premiumçä-----------çä
+1040
+
+
+
+
+ULTax3
+5
+ULDocs Proj Guideline Single Premium
+-----------çä  Guidelineçä     Singleçä    Premiumçä-----------çä
+1030
+
+
+
+
+ULTax3
+6
+OUTPUT Accum Value
+-----------çä    Currentçä       Cashçä      Valueçä-----------çä
+100
+C
+
+
+
+ULTax3
+7
+OUTPUT Death Benefit
+-----------çä    Currentçä      Deathçä    Benefitçä-----------çä
+122
+C
+
+
+
+ULTax3
+8
+ULDocs Cumulative Net Premium Paid For 7Pay
+-----------çä    Premiumçä   Paid forçä 7-Pay Testçä-----------çä
+1060
+
+
+
+
+ULTax3
+9
+ULDocs Proj 7 Pay Premium
+-----------çä    çä      7-Payçä    Premiumçä-----------çä
+1070
+
+
+
+
+ULTax3
+10
+ULDocs Cumulative 7Pay Premium To Date
+-----------çä Cumulativeçä      7-Payçä    Premiumçä-----------çä
+1080
+
+
+
+
+ULTax3
+11
+ULDocs Contract MEC Ind
+-----------çä  çä     MECçä  Indicatorçä-----------çä
+1090
+
+
+
+
+ULTax3
+12
+TaxCompliance Proj Policy Specified Amount
+-----------çä   7 Pay çä Specifiedçä   Amountçä-----------çä
+1130
+
+
+
+
+ULTax3
+13
+TaxCompliance Low Death Benefit
+-----------çä   Low   çä  Death  çä  Benefit çä-----------çä
+1120
+
+
+
+
+T16 1a3c140 1a36cb0 0 0 0 0 8
+--TABLE Report Structure
+ReportShortName
+Key
+ReportName
+ReportHeader
+PropertyKey
+RateAssumtion
+CoverageIndex
+Parameter
+All
+1
+
+    çä    çä    çäYearçä----çä
+10000
+
+
+
+All
+2
+
+    çä Ageçä EndçäYearçä----çä
+10001
+
+
+
+--
+
+
+
+
+
+
+
+Test
+AmountIndexes
+Tabular Values (PRISM Format) (T1b)
+
+2
+
+
+
+Test
+1
+
+-----------çä           çä   Contractçä    Premiumçä   Beg Yearçä-----------çä
+1010
+C
+
+
+Test
+2
+
+-----------çä Guaranteedçä       Cashçä      Valueçä   End Yearçä-----------çä
+1610
+G
+
+
+Test
+3
+
+-----------çä Guaranteedçä      Deathçä    Benefitçä   End Yearçä-----------çä
+1570
+G
+
+
+Test
+4
+
+-----------çä           çä     Annualçä   Dividendçä   End Yearçä-----------çä
+1240
+C
+
+
+Test
+5
+
+-----------çä       Cashçä      Valueçäf Additionsçä   End Yearçä-----------çä
+1640
+C
+
+
+Test
+6
+
+-----------çä      Totalçä       Cashçä      Valueçä   End Yearçä-----------çä
+1610
+C
+
+
+Test
+7
+
+-----------çä           çä    Paid-Upçä  Additionsçä   End Yearçä-----------çä
+1480
+C
+
+
+Test
+8
+
+-----------çä      Totalçä      Deathçä    Benefitçä   End Yearçä-----------çä
+1570
+C
+
+
+Test
+9
+
+-----------çä      Totalçä    Paid-Upçä  Insuranceçä   End Yearçä-----------çä
+1650
+C
+
+
+Test
+10
+
+-----------çä           çä           çä           çäPlaceholderçä-----------çä
+1
+C
+
+
+Test
+11
+
+-----------çä           çä           çä           çäPlaceholderçä-----------çä
+1
+C
+
+
+I0 49c6856d 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P3
+19a6470
+19a6be0
+19a7478
+F47
+19ae480
+19aee08
+19aeed8
+19af1d8
+19af2d0
+19af390
+19af560
+19af640
+19af738
+19af838
+19af940
+19afa58
+19afb48
+19afc58
+19aff20
+1a31148
+1a316d0
+1a31918
+1a31a60
+1a31b50
+485172f
+1a32c50
+1a32ed8
+1a32fc8
+1a33360
+1a33540
+1a338f0
+1a33ae0
+1a33da8
+1a33e90
+1a34150
+1a34458
+36a08931
+1a34740
+1a34820
+1a34af8
+1a34be8
+1a34f00
+1a34fe0
+1a35310
+1a35418
+1a35760
+1a35860
+95cf559
+9e5d8f6
+1a35bc8
+1a36608
+A0
+T2
+1a36cb0
+1a3c140
+!72
+19a6470 -2 -2
+Copied values to allow UTVRep.pms to compile.
+19a6be0 -2 -2
+Sample outputs values
+19a6be0 18 -1
+çäModification Log:çä11/3/2010 - PA1101 - BT - Refactored Testing - in order to compile, had to re-name output - added "Projected" to output name that had yearIndex parm
+19a7478 -2 -2
+Sample outputs values
+19ae480 -2 -2
+çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function tree
+19aeed8 -2 -2
+Description: çäGenerates custom report that is specified by the 'TABLE Report Structure'. The parameters are specified as follows:çäReport: A short string identifying the report to be printed defined by 'TABLE Report Structure'çärateAssumption: This rate assumption will overwrite the one defined by the TABLE - use "" if rateAssumption from TABLE is to be usedçäpage: if page is 0 all years will be printed, if page is 1 then years 1-35 will be printed, etcçä çäModification Log:çä11/11/2010 pA Regression Testing CMC added initial row counter for print years check.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/22/2009 - Utility - RWE - Initial Function
+19af390 -2 -2
+Description: If a VPM file is returned as a string then make sure that the function 'CalcRules Report Information'(Report;Column) exists in that VPM file to return the information from the TABLE Report Structure in that VPM fileçä çä04/22/2009 - Utility - RWE - Initial Function
+19af640 -2 -2
+Description: If using LR then copy this function to the external vpm 
+19af738 -2 -2
+Description: çäDefault list of report outputs with base system outputs.  Should be overwritten in higher model for customized list.  Each property key maps to an output value.  These keys are used in 'TABLE Report Structure' to link a header to a result.çä çäModification Log:çä05/18/2010 - Utility - rm/cmc - Revised to include selected base pA outputsçä04/22/2009 - Utility - RWE - Initial Function
+19af838 -2 -2
+Description: çäNumber of years for displayed values.  Default value 80 can be overwritten for customization.  çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä04/22/2009 - Utility - RWE - Initial Function
+19af940 -2 -2
+Description: çäDefines the attained age.  Default value using  can be overwritten for customization.  Uses 'ILLUS IssueAge', but this should be overwritten in higher-level model.çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+19afa58 -2 -2
+Description:  çäThis function is used to turn a coverage short name into a Coverage Index for readability and easier use.çäFor example, the short name can be 'PUAR' could be linked to a specific coverage index.çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+19afb48 -2 -2
+Description:  çäStart year for Illustrations or Reproposals.  Default value 1 can be overwritten for customization.  çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+19afc58 -2 -2
+Description: Simpler alternative to ILLUS Report. Generates Illustration Report that is specified by the TABLE Report Structure. The parameters are specified as follows:çäReport: A short string identifying the report to be printed (APL like) defined by the TABLE Report StructureçärateAssumption and coverage index is defined by the TABLEçä çäModification Log:çä11/11/2010 pA Regression Testing CMC added initial row counter.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+19aff20 -2 -2
+Description: This recursive function prints all headers as a line at a time (like printer)çä çäModification Log:çä07/01/2009 - cleanup - BT - used the wrong std function beforeçä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+1a31148 -2 -2
+Description: This recursive function retrieves a specific line from a specific headerçä çäModification Log:çä06/26/2009 - cleanup - BT - replace equal with std functionçä04/22/2009 - Utility - RWE - Initial Function
+1a31148 0 2
+Column=14
+1a31918 -2 -2
+Description: The year index header is less tall than the rest of the headers so this function prints the first line which is a blank line as long as necessary to catch up to the other headers. Example year index header is 4 lines tall, all other headers are 8 lines tall, then this function calculates 7-4=3 MAX(1; Line-3) line to be printed. The max will print the first line until line is >3çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a31a60 -2 -2
+Description: This function calcs how tall the yearindex (attained age) hearder is and how tall the remaining headers are and determines the differenceçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a31b50 -2 -2
+Description: This recursive function retrieves the complete header for one column as multiple lines and extracts a specific line from it.çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+485172f -2 -2
+Description: This recursive function prints one line after another with all calculated numbers and adds an extra line every 5 linesçä çäModification Log:çä11/11/2010 pA Regression Testing CMC added ability to limit years to be printed.çä04/22/2009 - Utility - RWE - Initial Function
+13782c7c -2 -2
+Description: This function prints a specific line with all Numbers for all headers in that lineçä çäModification Log:çä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+45e55c13 -2 -2
+Description: Recursive function that retrieves a number at a time for each columnçä çäModification Log:çä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+6652890a -2 -2
+Description: Formats a number that is 2 digits to full 2 digits, like 124.1 to 124.10 and 33 to 33.00.çäEvery other format is ignored, like strings, vectors or numbers with more than 2 digitsçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+25fa3b79 -2 -2
+Description: Just add 0 pennies if neededçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+5969aa79 -2 -2
+Description: This function returns the number for the Property Key retrieved from the TABLE.çäRemember this key ties the Table definition to a calculated number through a case statement inçä'ILLUS Get Output Value'çä çäModification Log:çä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+563a2b57 -2 -2
+Description: This function returns the number for the Property Key retrieved from the TABLE.çäRemember this key ties the Table definition to a calculated number through a case statement inçä'ILLUS Get Output Value'çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+1a32ed8 -2 -2
+Description: returns a specific column form the TABLE Report Structure. IF it does not exist it will try to access late referenced model. If that also does not exist then a default is returned.çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a32fc8 -2 -2
+Description: returns a specific column form the TABLE Report Structure. IF it does not exist it will try to access late referenced model. If that also does not exist then a default is returned.çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a32fc8 0 2
+Column=14
+1a33360 -2 -2
+Description: returns a specific column form the TABLE Report Structure. IF it does not exist it will try to access late referenced model. If that also does not exist then a default is returned.çä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a33540 -2 -2
+Description: returns a specific column form the TABLE Report Structure. IF it does not exist it will try to access late referenced model. If that also does not exist then a default is returned.çä çäModification Log:çä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+1a338f0 -2 -2
+Description: returns a specific column form the TABLE Report Structure. IF it does not exist it will try to access late referenced model. If that also does not exist then a default is returned.çä çäModification Log:çä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+1a33ae0 -2 -2
+Description: returns a specific column form the TABLE Report Structure. IF it does not exist it will try to access late referenced model. If that also does not exist then a default is returned.çä çäModification Log:çä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä04/22/2009 - Utility - RWE - Initial Function
+1a33e90 -2 -2
+Description: This function allows 'TABLE Report Strucuture' to be in a separate VPM file. This function uses late referencing to access the table. All Table access fucitons below are using this function if late referencing is enabledçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä6/23/2009 - CalcType Implementation Work - BT - Add parameter to rateAssumption function and cleanupçä6/22/2009 - CalcType Implementation Work - BT - Removed hard coded rateAssumption and unused codeçä04/22/2009 - Utility - RWE - Initial Function
+1a34458 -2 -2
+Description: This function allows the TABLE Report Strucuture to be in a separate VPM file. This function uses late referencing to access the table. All Table access functions below are using this function if late referencing is enabledçä çäModification Log:çä06/26/2009 - cleanup - BT - replace EQUAL with std functionçä6/23/2009 - CalcType Implementation Work - BT - Add parameter to rateAssumption function and cleanupçä6/22/2009 - CalcType Implementation Work - BT - Removed hard coded rateAssumption and unused codeçä04/22/2009 - Utility - RWE - Initial Function
+36a08931 -2 -2
+Description: Returns the years to be printed.çä çäModification Log:çä11/11/2010 pA Regression Initial function
+1a34820 -2 -2
+Description: represents the new line Characterçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a34af8 -2 -2
+Description: This defines the spacing between report columnsçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a34be8 -2 -2
+Description: This defines the initial definition line in the TABLE Report Structureçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a34f00 -2 -2
+Description: This defines the report name for the year and atttained age headersçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+1a34fe0 -2 -2
+Description: This puts quotes around the parameter passedçä çäModification Log:çä04/22/2009 - Utility - RWE - Initial Function
+95cf559 -2 -2
+Description: Returns the maximum number of years to be printed.çä çäModification Log:çä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä02/25/2011  pA Regression Initial function
+35565761 -2 -2
+Description: Returns the maximum number of years to be printed for Annuities.çä çäModification Log:çä02/25/2011  pA Regression Initial function
+631208f4 -2 -2
+Description: Returns the maximum number of years to be printed for life products.çä çäModification Log:çä11/11/2010 pA Regression Initial function
+9e5d8f6 -2 -2
+Description: Check to see if the current year should be printedçä çäModification Log:çä11/11/2010 pA Regression Initial function
+1a366e8 -2 -2
+Description:  çäDummy function to hold the place of the issue age used to calculate the current attained age.  çä çäModification Log:çä05/18/2010 - Utility - rm - Initial Function
+1a36cb0 1 -1
+First Index is the YearIndex and second optional Index is AGEçäAmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 2 -1
+First Index is the YearIndex and second optional Index is AGEçäAmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 4 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 5 -1
+ReportShortName will identify the report to print and Key is a increasing number for the amount of columns you want to displayçäReport Header has the Report Header with multiple lines, use the Cell Content Field in MM to edit.çä çäThe Report Header can have as many lines as you like just make sure the Headers for a single Report have all the same amountçäThe Report Header chars per line can vary from Column to Column but should be the same for multiple lines of one specific Columnçä çäColumn PropertyKey needs to contain the code for a function value that you can look up in the 'IllustrationMML.pms' Model in function 'ILLUS Get Output Value'(rateAssumption; CoverageIndex; YearIndex; PropertyKey)çä çäEnter the RateAssumption and/or CoverageIndex if it applys to that Output default is ("G";0) if no value is entered
+1a36cb0 8 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 9 -1
+ReportShortName will identify the report to print and Key is a increasing number for the amount of columns you want to displayçäReport Header has the Report Header with multiple lines, use the Cell Content Field in MM to edit.çä çäThe Report Header can have as many lines as you like just make sure the Headers for a single Report have all the same amountçäThe Report Header chars per line can vary from Column to Column but should be the same for multiple lines of one specific Columnçä çäColumn PropertyKey needs to contain the code for a function value that you can look up in the 'IllustrationMML.pms' Model in function 'ILLUS Get Output Value'(rateAssumption; CoverageIndex; YearIndex; PropertyKey)çä çäEnter the RateAssumption and/or CoverageIndex if it applys to that Output default is ("G";0) if no value is entered
+1a36cb0 17 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 26 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 27 -1
+ReportShortName will identify the report to print and Key is a increasing number for the amount of columns you want to displayçäReport Header has the Report Header with multiple lines, use the Cell Content Field in MM to edit.çä çäThe Report Header can have as many lines as you like just make sure the Headers for a single Report have all the same amountçäThe Report Header chars per line can vary from Column to Column but should be the same for multiple lines of one specific Columnçä çäColumn PropertyKey needs to contain the code for a function value that you can look up in the 'IllustrationMML.pms' Model in function 'ILLUS Get Output Value'(rateAssumption; CoverageIndex; YearIndex; PropertyKey)çä çäEnter the RateAssumption and/or CoverageIndex if it applys to that Output default is ("G";0) if no value is entered
+1a36cb0 35 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 50 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 51 -1
+ReportShortName will identify the report to print and Key is a increasing number for the amount of columns you want to displayçäReport Header has the Report Header with multiple lines, use the Cell Content Field in MM to edit.çä çäThe Report Header can have as many lines as you like just make sure the Headers for a single Report have all the same amountçäThe Report Header chars per line can vary from Column to Column but should be the same for multiple lines of one specific Columnçä çäColumn PropertyKey needs to contain the code for a function value that you can look up in the 'IllustrationMML.pms' Model in function 'ILLUS Get Output Value'(rateAssumption; CoverageIndex; YearIndex; PropertyKey)çä çäEnter the RateAssumption and/or CoverageIndex if it applys to that Output default is ("G";0) if no value is entered
+1a36cb0 53 -1
+çä çä
+1a36cb0 59 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 66 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 67 -1
+çäReport Header has the Report Header with multiple lines, use the Cell Content Field in MM to edit.çä çäThe Report Header can have as many lines as you like just make sure the Headers for a single Report have all the same amountçäThe Report Header chars per line can vary from Column to Column but should be the same for multiple lines of one specific Columnçä çäColumn PropertyKey needs to contain the code for a function value that you can look up in the 'IllustrationMML.pms' Model in function 'ILLUS Get Output Value'(rateAssumption; CoverageIndex; YearIndex; PropertyKey)çä çäEnter the RateAssumption and/or CoverageIndex if it applys to that Output default is ("G";0) if no value is entered
+1a36cb0 78 -1
+çäModification Log:çä çä9/2/2011 pA1975 CMC added new Loan Report
+1a36cb0 86 -1
+çäModificatiopn Log:çä9/13/2011 pA Regression / CL true up.  changed to reference output 146 and include the rate assumption parm
+1a36cb0 96 -1
+Description: DynDiv calc report, showing each item of 5 factor dynamic dividend rate calculationçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Entry
+1a36cb0 104 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a36cb0 105 -1
+çäReport Header has the Report Header with multiple lines, use the Cell Content Field in MM to edit.çä çäThe Report Header can have as many lines as you like just make sure the Headers for a single Report have all the same amountçäThe Report Header chars per line can vary from Column to Column but should be the same for multiple lines of one specific Columnçä çäColumn PropertyKey needs to contain the code for a function value that you can look up in the 'IllustrationMML.pms' Model in function 'ILLUS Get Output Value'(rateAssumption; CoverageIndex; YearIndex; PropertyKey)çä çäEnter the RateAssumption and/or CoverageIndex if it applys to that Output default is ("G";0) if no value is entered
+1a3c140 1 -1
+First Index is the YearIndex and second optional Index is AGEçäAmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a3c140 2 -1
+First Index is the YearIndex and second optional Index is AGEçäAmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a3c140 4 -1
+AmountIndexes will identify in the column PropertyKey if you only want YearIndex or YearIndex and Age (1 or 2)
+1a3c140 5 -1
+ReportShortName will identify the report to print and Key is a increasing number for the amount of columns you want to displayçäReport Header has the Report Header with multiple lines, use the Cell Content Field in MM to edit.çä çäThe Report Header can have as many lines as you like just make sure the Headers for a single Report have all the same amountçäThe Report Header chars per line can vary from Column to Column but should be the same for multiple lines of one specific Columnçä çäColumn PropertyKey needs to contain the code for a function value that you can look up in the 'IllustrationMML.pms' Model in function 'ILLUS Get Output Value'(rateAssumption; CoverageIndex; YearIndex; PropertyKey)çä çäEnter the RateAssumption and/or CoverageIndex if it applys to that Output default is ("G";0) if no value is entered
+;Offset=00000000

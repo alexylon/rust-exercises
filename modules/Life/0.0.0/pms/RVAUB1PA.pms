@@ -1,0 +1,301 @@
+;1	08.12.2016 13:35:29	jlawrie2	
+X0 1c43ca0 0 1c445d0 0 0 0 0
+
+X1 1c445d0 1c43ca0 1c44670 0 0 0 2
+-- All Test Cases - VAUB1PA --
+compilerversion
+4.5.4
+X1 1c44670 1c445d0 0 1c44788 0 0 2
+UMEBandBaseRate- IL
+UMEBandBaseRate("(VAUB1PA!UMEBandBaseRate!20070101!35!1!1!2!1!1!17)")
+0.20
+X1 1c44788 1c445d0 0 1c448b0 0 0 2
+UMEBandBaseRate- Not IL
+UMEBandBaseRate("(VAUB1PA!UMEBandBaseRate!20070101!35!1!1!2!1!1!18)")
+0.30
+X1 1c448b0 1c445d0 1c44a00 1c44b60 0 0 2
+UMEBandInhRate
+UMEBandInhRate("(VAUB1PA!UMEBandBaseRate!20070101!35!1!1!2!1!19999!17)")
+0.20
+X1 1c44a00 1c448b0 0 0 0 0 2
+AccountValueBand
+AccountValueBand("(VAUB1PA!UMEBandBaseRate!20070101!35!1!1!2!1!19999!17)")
+B
+X1 1c44b60 1c445d0 0 1c44cb8 0 0 2
+UMEBandRdrRate
+UMEBandRdrRate("(GMWBUB1PA!UMEBandBaseRate!20070101!35!1!1!2!1!1!17)")
+0.10
+X1 1c44cb8 1c445d0 0 1c44e10 0 0 2
+UMEBand
+UMEBand("(VAUB1PA!UMEBandBaseRate!20070101!35!1!1!2!1!1!17!!!!0.60)")
+A2
+X1 1c44e10 1c445d0 0 0 0 0 2
+UMEChgRate
+UMEChgRate("(VAUB1PA!UMEBandBaseRate!20070101!35!1!1!2!1!A0!17)")
+0.45
+O1 1c43b5c 0 0 0 0 0 2
+
+--CACHESIZE
+1000
+E0 1c43bc8 0 0 0 0 0 0
+
+L0 1c43c34 0 0 0 0 0 0
+
+B0 1c43de4 0 0 0 0 0 0
+
+P3 1c43d0c 0 1cd06e0 0 0 0 2
+
+--description
+Main rate model for the Variable Annuity with Unbundled Mortality and Expense product.çä çäModel includes rate models for expenses, full and partial surrender.çä çäRate types include (but not limited to) here, besides those in the included models:çä - base rate used to determine band (UMEBandBaseRate)çä - inherrent factor used to determine band (UMEBandInhRate)çä - rider rate used to determine band (UMEBandRdrRate)çä - unbundled M&E band (UMEBand)çä - unbundled M&E charge rate (UMEChgRate)
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 1cd06e0 1c43d0c 1c44f78 0 0 0 2
+Variable Annuity with Unbundled M&E pA Plan 1
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Rate tables model for Variable Annuity Unbundled M&E pA Plan 1 - base system"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RVAUB1PA.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JCH"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1c44f78 1cd06e0 0 0 0 0 2
+VAUB1PA
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 1c43d78 0 1cd0f48 0 0 0 0
+
+F1 1cd0f48 1c43d78 1c45020 0 0 0 2
+--Rate Access Function--
+Funktion
+
+F1 1c45020 1cd0f48 0 1c452a8 0 0 2
+UMEBandBaseRate(s)
+Funktion
+IF (EXISTS('TABLE ME Base Plan Charge Rate';'State Code Key'(s)) ; çä  'TABLE ME Base Plan Charge Rate'['State Code Key'(s)] ; çä   // Else use wildcard for stateçäIF (EXISTS('TABLE ME Base Plan Charge Rate';"*") ; çä    'TABLE ME Base Plan Charge Rate'["*"] ; çä     // Elseçä"NoRateFound"çä  )çä)
+F1 1c452a8 1cd0f48 1c45728 1c45928 0 0 2
+UMEBandInhRate(s)
+Funktion
+IF ('Parm Validation'(v_("Duration");s) ; çä   // A required parameter was missing or invalidçä"NoRateFound" ; çä   // ElseçäIF (EXISTS('TABLE ME InherenTABLE Factors Charge Rate';'State Code Key'(s);AccountValueBand(s)) ; çä     // Use specific state in lookupçäLOOKUPX('TABLE ME InherenTABLE Factors Charge Rate';'State Code Key'(s);AccountValueBand(s);SetParameter("Duration";s);"MEChargeRate") ; çä     // Else use wildcard for stateçäIF (EXISTS('TABLE ME InherenTABLE Factors Charge Rate';"*";AccountValueBand(s)) ; çä      LOOKUPX('TABLE ME InherenTABLE Factors Charge Rate';"*";AccountValueBand(s);SetParameter("Duration";s);"MEChargeRate") ; çä       // Elseçä"NoRateFound"çä    )çä)çä)
+F1 1c45728 1c452a8 0 0 0 0 2
+AccountValueBand(s)
+Funktion
+LOOKUPX('TABLE ME Account Value Band';SetParameter("Product_Code";s);SetParameter("Band_Code";s);"Band")
+F1 1c45928 1cd0f48 0 1c45c50 0 0 2
+UMEBandRdrRate(s)
+Funktion
+IF (EXISTS('TABLE ME Rider Charge Rate';SetParameter("Product_Code";s);'State Code Key'(s)) ; çä  'TABLE ME Rider Charge Rate'[SetParameter("Product_Code";s); 'State Code Key'(s)] ; çä   // Else use wildcard for stateçäIF (EXISTS('TABLE ME Rider Charge Rate';SetParameter("Product_Code";s);"*") ; çä    'TABLE ME Rider Charge Rate'[SetParameter("Product_Code";s); "*"] ; çä     // Elseçä0çä  )çä)
+F1 1c45c50 1cd0f48 0 1c45f48 0 0 2
+UMEBand(s)
+Funktion
+IF (EXISTS('TABLE ME Charge Band';'State Code Key'(s)) ; çä  LOOKUPX('TABLE ME Charge Band';'State Code Key'(s);SetParameter("LookupValue";s);"Band") ; çä   // Else use wildcard for stateçäIF (EXISTS('TABLE ME Charge Band';"*") ; çä    LOOKUPX('TABLE ME Charge Band';"*";SetParameter("LookupValue";s);"Band") ; çä     // Elseçä"NoRateFound"çä  )çä)
+F1 1c45f48 1cd0f48 0 0 0 0 2
+UMEChgRate(s)
+Funktion
+IF (EXISTS('TABLE ME Charge Rate';SetParameter("Band_Code";s)) ; çä  'TABLE ME Charge Rate'[SetParameter("Band_Code";s)] ; çä   // Elseçä"NoRateFound"çä)
+A0 1c43e50 0 0 0 0 0 0
+
+T0 1c43ebc 0 1c461b8 0 0 0 0
+
+T1 1c461b8 1c43ebc 1c46360 0 0 0 2
+--Rate Tables--
+key
+value
+T1 1c46360 1c461b8 1c46538 1c47850 0 0 2
+-- Tables for Determining M&E Band --
+key
+value
+T3 1c46538 1c46360 0 1c467d8 0 0 2
+TABLE ME Base Plan Charge Rate
+StateCode
+MEChargeRate
+IL
+0.20
+*
+0.30
+T9 1c467d8 1c46360 1c46ca0 1c46f08 0 0 4
+TABLE ME InherenTABLE Factors Charge Rate
+StateCode
+AccountValueBand
+MonthlyDuration
+MEChargeRate
+IL
+A
+1
+0.25
+IL
+A
+13
+0.10
+IL
+B
+1
+0.20
+IL
+B
+13
+0.07
+*
+A
+1
+0.75
+*
+A
+13
+0.50
+*
+B
+1
+0.60
+*
+B
+13
+0.45
+T3 1c46ca0 1c467d8 0 0 0 0 3
+TABLE ME Account Value Band
+ProductCode
+AccountValue
+Band
+VAUB1PA
+-999999
+A
+VAUB1PA
+10000
+B
+T7 1c46f08 1c46360 0 1c473c0 0 0 3
+TABLE ME Rider Charge Rate
+RiderCode
+StateCode
+RiderChargeRate
+GMWBUB1PA
+IL
+0.10
+GMDBUB1PA
+IL
+0.11
+GMIBUB1PA
+IL
+0.12
+GMWBUB1PA
+*
+0.20
+GMDBUB1PA
+*
+0.21
+GMIBUB1PA
+*
+0.22
+T9 1c473c0 1c46360 0 0 0 0 3
+TABLE ME Charge Band
+StateCode
+TotalMEChargeRate
+Band
+IL
+0.00
+A0
+IL
+0.50
+A1
+IL
+0.60
+A2
+IL
+0.70
+A3
+*
+0.00
+B0
+*
+1.00
+B1
+*
+1.25
+B2
+*
+1.45
+B3
+T1 1c47850 1c461b8 1c47a38 0 0 0 2
+-- ME Charge Rate Tables --
+key
+value
+T9 1c47a38 1c47850 0 0 0 0 2
+TABLE ME Charge Rate
+ChargeBand
+MEChargeRate
+A0
+0.45
+A1
+0.50
+A2
+0.55
+A3
+0.60
+B0
+0.30
+B1
+0.35
+B2
+0.40
+B3
+0.45
+I0 1c43f28 0 35ccd909 0 0 0 0
+
+I0 35ccd909 1c43f28 0 649123fc 0 0 0
+RVAUB1PA_PARTSURR.pms
+I0 649123fc 1c43f28 0 3dd30239 0 0 0
+RVAUB1PA_FULLSURR.pms
+I0 3dd30239 1c43f28 0 64a48554 0 0 0
+RVAUB1PA_EXP.pms
+I0 64a48554 1c43f28 0 0 0 0 0
+RVAUB1PA_PRMLOAD.pms
+-
+O0
+E0
+L0
+B0
+P2
+1cd06e0
+1c44f78
+F1
+1cd0f48
+A0
+T1
+1c461b8
+!6
+1c45020 -2 -2
+Description:  Returns the M&E charge rate for the base plan to be included in the total charge rate used to determine the M&E band that is applicable.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c452a8 -2 -2
+Description:  Returns the M&E charge rate for the inherent factors to be included in the total charge rate used to determine the M&E band that is applicable.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c45728 -2 -2
+Description:  Returns the inherent factors band to use in determining the M&E band.  Note that the "Band" parameter is expected to include the total account value.  We need to include Product_Code in the table to have enough columns for a lookup.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c45928 -2 -2
+Description:  Returns the M&E charge rate for the rider to be included in the total charge rate used to determine the M&E band that is applicable.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c45c50 -2 -2
+Description:  Returns the M&E band based on the total M&E charge rate.  The LookupValue passed will be the total M&E charge rate.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c45f48 -2 -2
+Description:  Returns the M&E charge rate based on the M&E band.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

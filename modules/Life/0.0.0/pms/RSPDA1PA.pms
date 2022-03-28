@@ -1,0 +1,466 @@
+;1	08.12.2016 13:35:26	jlawrie2	
+X0 1c43ca0 0 1c445d0 0 0 0 0
+
+X0 1c445d0 1c43ca0 1c44668 0 0 0 0
+-- All Test Cases --
+X1 1c44668 1c445d0 0 1c44780 0 0 2
+PREMBON(s) Table = 01 -- Premium = $5000
+PREMBON("(SPDA1PA!PREMBON!01/01/2006!!!!!!!!01!!!5000)")
+0
+X1 1c44780 1c445d0 0 1c448b0 0 0 2
+PREMBON(s) Table = 01 -- Premium = $15000
+PREMBON("(SPDA1PA!PREMBON!01/01/2006!!!!!!!!01!!!15000)")
+1
+X1 1c448b0 1c445d0 0 1c449f8 0 0 2
+PREMBON(s) Table = 02 -- Premium = $15001
+PREMBON("(SPDA1PA!PREMBON!01/01/2006!!!!!!!!02!!!15001)")
+0.0000666622225184988
+X1 1c449f8 1c445d0 0 0 0 0 2
+PREMBON(s) Table = 02 -- Premium = $30000
+PREMBON("(SPDA1PA!PREMBON!01/01/2006!!!!!!!!02!!!30000)")
+0.666666666666667
+O1 1c43b5c 0 0 0 0 0 2
+
+--CACHESIZE
+1000
+E0 1c43bc8 0 0 0 0 0 0
+
+L0 1c43c34 0 0 0 0 0 0
+
+B0 1c43de4 0 0 0 0 0 0
+
+P3 1c43d0c 0 1c44e20 0 0 0 2
+
+--description
+Main rate model for the Single Premium Deferred Annuity product.çä çäModel includes rate models for expenses, full and partial surrender.çä çäRate types include (but not limited to) here, besides those in the included models:çä - corridor percentage rate (CORRATE)çä - current interest rate (CURRINT)çä - guaranteed interest rate (GUARINT)çä - premium/contribution bonus (PREMBON)
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 1c44e20 1c43d0c 1cd0670 0 0 0 2
+Single Premium Deferred Annuity rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Rate tables model for RSPDA1PA plan"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RSPDA1PA.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"SS"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1cd0670 1c44e20 0 0 0 0 2
+SPDA1PA Plan
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 1c43d78 0 1cd0c58 0 0 0 0
+
+F1 1cd0c58 1c43d78 1cd0be0 0 0 0 2
+-- Single Premium Deferred annuity rate types --
+Funktion
+
+F1 1cd0be0 1cd0c58 0 1cd0e88 0 0 2
+CORRATE(s)
+Funktion
+IF ('Parm Validation'(V_("Issure_Age";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'TABLE CORR RATE'[SetParameter("Issue_Age";s)].Valueçä)
+F1 1cd0e88 1cd0c58 0 1c45008 0 0 2
+CURRINT(s)
+Funktion
+IF (EXISTS('TABLE CURR INT RATE';SetParameter("Effective_Date";s)) ; çä  LOOKUPX('TABLE CURR INT RATE';SetParameter("Effective_Date";s);"value") ; çä  "NoRateFound"çä)
+F1 1c45008 1cd0c58 0 1c45188 0 0 2
+GUARINT(s)
+Funktion
+IF (EXISTS('TABLE GUAR INT RATE';SetParameter("Effective_Date";s)) ; çä  LOOKUPX('TABLE GUAR INT RATE';SetParameter("Effective_Date";s);"value") ; çä  "NoRateFound"çä)
+F1 1c45188 1cd0c58 0 0 0 0 2
+PREMBON(s)
+Funktion
+IF ('Parm Validation'(V_("LookupValue");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä// First check for banding typeçäIF ('TABLE PREM BONUS RATE'[SetParameter("Table_Code";s); 0].Banding_Type = 1 ; çä     // Simple bandingçäLOOKUPX('TABLE PREM BONUS RATE';SetParameter("Table_Code";s); // TableIDçäSetParameter("LookupValue";s); // Premiumçä"Rate") ; çä     // Marginal bandingçä(LOOKUPX('TABLE PREM BONUS RATE';SetParameter("Table_Code";s); // TableIDçäSetParameter("LookupValue";s); // Premiumçä"BandCarry") + (SetParameter("LookupValue";s) - LOOKUPX('TABLE PREM BONUS RATE';SetParameter("Table_Code";s); // TableIDçäSetParameter("LookupValue";s); // Premiumçä"BandFloor")) * LOOKUPX('TABLE PREM BONUS RATE';SetParameter("Table_Code";s); // TableIDçäSetParameter("LookupValue";s); // Premiumçä"Rate") / 100) / IF (SetParameter("LookupValue";s) EQUAL 0 ; çä      1 ; çä      SetParameter("LookupValue";s)çä    ) * 100çä)çä)
+A0 1c43e50 0 0 0 0 0 0
+
+T0 1c43ebc 0 1c45760 0 0 0 0
+
+T1 1c45760 1c43ebc 1c458f0 0 0 0 2
+-- SPDA1PA Rate Tables --
+key
+value
+T97 1c458f0 1c45760 0 1c45c28 0 0 2
+TABLE CORR RATE
+Age
+Value
+0
+2.5375
+1
+2.5375
+2
+2.5375
+3
+2.5375
+4
+2.5375
+5
+2.5375
+6
+2.5375
+7
+2.5375
+8
+2.5375
+9
+2.5375
+10
+2.5375
+11
+2.5375
+12
+2.5375
+13
+2.5375
+14
+2.5375
+15
+2.5375
+16
+2.5375
+17
+2.5375
+18
+2.5375
+19
+2.5375
+20
+2.5375
+21
+2.5375
+22
+2.5375
+23
+2.5375
+24
+2.5375
+25
+2.5375
+26
+2.5375
+27
+2.5375
+28
+2.5375
+29
+2.5375
+30
+2.5375
+31
+2.5375
+32
+2.5375
+33
+2.5375
+34
+2.5375
+35
+2.5375
+36
+2.5375
+37
+2.5375
+38
+2.5375
+39
+2.5375
+40
+2.5375
+41
+2.46645
+42
+2.3954
+43
+2.32435
+44
+2.2533
+45
+2.18225
+46
+2.12135
+47
+2.06045
+48
+1.99955
+49
+1.93865
+50
+1.87775
+51
+1.8067
+52
+1.73565
+53
+1.6646
+54
+1.59355
+55
+1.5225
+56
+1.4819
+57
+1.4413
+58
+1.4007
+59
+1.3602
+60
+1.3195
+61
+1.2992
+62
+1.2789
+63
+1.2586
+64
+1.2383
+65
+1.218
+66
+1.20785
+67
+1.1977
+68
+1.18755
+69
+1.1774
+70
+1.16725
+71
+1.14695
+72
+1.12665
+73
+1.10635
+74
+1.08605
+75
+1.06575
+76
+1.06575
+77
+1.06575
+78
+1.06575
+79
+1.06575
+80
+1.06575
+81
+1.06575
+82
+1.06575
+83
+1.06575
+84
+1.06575
+85
+1.06575
+86
+1.06575
+87
+1.06575
+88
+1.06575
+89
+1.06575
+90
+1.06575
+91
+1.0556
+92
+1.04545
+93
+1.0353
+94
+1.02515
+95
+1.025
+T16 1c45c28 1c45760 0 1cd3c80 0 0 2
+TABLE CURR INT RATE
+effective_date
+value
+19000101
+8
+19900101
+7.665
+19920606
+7.665
+19920706
+7.665
+19930811
+7.25
+19931011
+7
+19940101
+6.85
+19940701
+6.75
+19950101
+6.5
+19980101
+5.75
+19980601
+5.68
+20000101
+4.85
+20020101
+4.6
+20040101
+4
+20060101
+3.25
+T16 1cd3c80 1c45760 0 1cd45a8 0 0 2
+TABLE GUAR INT RATE
+effective_date
+value
+19000101
+6.5
+19900101
+6.5
+19920606
+6.5
+19920706
+6.5
+19930811
+6.5
+19931011
+6.5
+19940101
+6.5
+19940701
+6.5
+19950101
+6.5
+19980101
+6.5
+19980601
+6.5
+20000101
+6.5
+20020101
+6.5
+20040101
+6.5
+20060101
+6.5
+T9 1cd45a8 1c45760 0 0 0 0 6
+TABLE PREM BONUS RATE
+TableID
+Premium
+Banding_Type
+Rate
+BandFloor
+BandCarry
+01
+0
+1
+0
+0
+0
+01
+10000
+1
+1
+0
+0
+02
+0
+2
+0
+0
+0
+02
+15000
+2
+1
+15000
+0
+02
+25000
+2
+2
+25000
+100
+13
+0
+2
+0
+0
+0
+13
+15000
+2
+1
+15000
+0
+13
+25000
+2
+2
+25000
+100
+I0 1c43f28 0 2830a804 0 0 0 0
+
+I0 2830a804 1c43f28 0 41d114b1 0 0 0
+RSPDA1PA_PARTSURR.pms
+I0 41d114b1 1c43f28 0 489f9471 0 0 0
+RSPDA1PA_FULLSURR.pms
+I0 489f9471 1c43f28 0 5463193b 0 0 0
+RSPDA1PA_EXP.pms
+I0 5463193b 1c43f28 0 0 0 0 0
+RSPDA1PA_PRMLOAD.pms
+-
+O0
+E0
+L0
+B0
+P2
+1c44e20
+1cd0670
+F1
+1cd0c58
+A0
+T5
+1c45760
+1c458f0
+1c45c28
+1cd3c80
+1cd45a8
+!6
+1cd0be0 -2 -2
+Description: Returns the corridor rateçä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1cd0e88 -2 -2
+Description: Returns the current interest rateçä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45008 -2 -2
+Description: Returns the guaranteed interest rateçä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45188 -2 -2
+Description: Returns the premium bonus rate.çä çäModification Logçä01/8/2010 - Performance - pA1001 - add IF condition on division portion of function so that division by 0 is not permittedçä10/31/2007 CSC Initial Calculation/Rule
+1c458f0
+select * from CF
+1cd45a8 -2 -2
+This table contains information used to calculate contribution bonus values.çä çäPhase 1 of pA supports two types of contribution bonus calculations:çä 1) Simple banding: where the total premium in the first year is used to lookupçä     the rate in the table, which is applied to the whole amount.çä 2) Normal ratcheted banding: Where the percentage of reward increases as çä     the amount deposited rises.çä çäThe BandCarry column is used only with normal ratcheted banding, and is the çämaximum amount of bonus for the previous band.  This is utilized to enable a çäsingle access to the table.  If multiple bands are present,çäthe BandCarry column contains an accumulated maximum from the lower bands.çä çäThe BandFloor is also only supported for normal ratcheted banding for phase 1 of pA.çä
+;Offset=00000000

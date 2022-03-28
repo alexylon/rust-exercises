@@ -1,0 +1,222 @@
+;1	08.12.2016 13:40:53	jlawrie2	
+X0 1cca84fa 0 25e1d221 0 0 0 0
+
+X1 25e1d221 1cca84fa 0 0 0 0 2
+CCOI(s)
+CCOI("(GULPA!CCO1!20120101!Issue_Age!50)")
+
+O0 5c2a22fb 0 0 0 0 0 0
+
+E0 38cc532 0 0 0 0 0 0
+
+L0 6a30ffa7 0 0 0 0 0 0
+
+B0 1b58091e 0 0 0 0 0 0
+
+P1 10f3ba45 0 50ca0188 0 0 0 2
+
+--description
+Global UL Accidental Death Rider Rates model.çä çäRELEASE LOG:çäRELEASE pA 1401
+P13 50ca0188 10f3ba45 0 0 0 0 2
+Global UL Accidental Death Rider Rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global UL Accidental Death Rider Rates model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RGADPA.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 68595ada 0 3037693e 0 0 0 0
+
+F1 3037693e 68595ada 0 15640bbd 0 0 2
+CCOI(s)
+Funktion
+'TABLE CCOI'['Common RateModel AttainedAge'(s)].CCOI
+F1 15640bbd 68595ada 0 0 0 0 2
+CCOI_Query(s)
+Funktion
+Rate_Query("CCOI")
+A0 2bf5c3b7 0 0 0 0 0 0
+
+T0 2141bf11 0 48e15e71 0 0 0 0
+
+T3 48e15e71 2141bf11 0 2deef79f 0 0 2
+CCOI Query
+dataItem
+null
+Issue_Age
+
+Duration
+
+T66 2deef79f 2141bf11 0 0 0 0 2
+TABLE CCOI
+Attained_Age
+CCOI
+1
+0.053
+2
+0.053
+3
+0.053
+4
+0.053
+5
+0.055
+6
+0.055
+7
+0.055
+8
+0.055
+9
+0.055
+10
+0.055
+11
+0.055
+12
+0.06
+13
+0.06
+14
+0.06
+15
+0.062
+16
+0.062
+17
+0.062
+18
+0.062
+19
+0.062
+20
+0.062
+21
+0.062
+22
+0.062
+23
+0.062
+24
+0.063
+25
+0.063
+26
+0.063
+27
+0.063
+28
+0.057
+29
+0.057
+30
+0.057
+31
+0.056
+32
+0.056
+33
+0.056
+34
+0.056
+35
+0.051
+36
+0.051
+37
+0.051
+38
+0.05
+39
+0.05
+40
+0.051
+41
+0.051
+42
+0.051
+43
+0.051
+44
+0.051
+45
+0.051
+46
+0.051
+47
+0.055
+48
+0.055
+49
+0.055
+50
+0.057
+51
+0.058
+52
+0.058
+53
+0.058
+54
+0.058
+55
+0.058
+56
+0.059
+57
+0.059
+58
+0.06
+59
+0.06
+60
+0.065
+61
+0.065
+62
+0.065
+63
+0.067
+64
+0.067
+65
+0.072
+I0 b62f1cb 0 38ce7778 0 0 0 0
+
+I0 38ce7778 b62f1cb 0 0 0 0 0
+PAGRateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+50ca0188
+F2
+3037693e
+15640bbd
+A0
+T2
+48e15e71
+2deef79f
+;Offset=00000000

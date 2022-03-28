@@ -1,0 +1,375 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 4dc4fdd3 0 0 0 0 0 0
+
+O0 4284d3df 0 0 0 0 0 0
+
+E0 44dc777f 0 0 0 0 0 0
+
+L0 3574d248 0 0 0 0 0 0
+
+B0 311e9a73 0 0 0 0 0 0
+
+P1 1772ac8 0 cd290ee 0 0 0 2
+
+--description
+Global Unit Linked Benefit Surrender Penalty Amount Rates model.çä çäRELEASE LOG:çäRELEASE pA 1401
+P13 cd290ee 1772ac8 0 0 0 0 2
+Global Unit Linked Benefit Surrender Penalty Amount Rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Unit Linked Benefit Surrender Penalty Amount Rates model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RGULPA_SURRAMT.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 d9037fe 0 59bb9615 0 0 0 0
+
+F1 59bb9615 d9037fe 0 2601d87b 0 0 2
+SURR_Amt(s)
+Funktion
+table('SURR_Amt GetTableName'(s))['Surr Select Ultimate Lookup Row'(s)]('Currency Key'(s))
+F1 2601d87b d9037fe 0 5e4e0bc5 0 0 2
+SURR_Amt GetTableName(s)
+Funktion
+'SURR_Amt TableIndex'[SetParameter("SurrType";s)].TableName
+F1 5e4e0bc5 d9037fe 0 9de6f3e 0 0 2
+SURR_Amt_Query(s)
+Funktion
+Rate_Query("SURR_Amt")
+F1 9de6f3e d9037fe 207ec313 0 0 0 2
+--Select period functions--
+Funktion
+
+F1 207ec313 9de6f3e 0 3e703e7c 0 0 2
+Surr Fee Sel Period(s)
+Funktion
+IF (EXISTS('TABLE Surrender Fee Select Period';SetParameter("SurrType";s)) ; çä  'TABLE Surrender Fee Select Period'[SetParameter("SurrType";s)] ; çä  0çä)
+F1 3e703e7c 9de6f3e 0 0 0 0 2
+Surr Select Ultimate Lookup Row(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'Surr Fee Sel Period'(s) ; çä  SetParameter("Duration";s) ; çä  "Ultimate"çä)
+A0 50baed84 0 0 0 0 0 0
+
+T0 1fa5e7c8 0 339c3a7f 0 0 0 0
+
+T3 339c3a7f 1fa5e7c8 0 20c8d0ba 0 0 3
+SURR_Amt TableIndex
+SurrType
+TableName
+ColumnName
+3
+Table_Full_Surrender
+CurrenceyKey
+4
+Table_Partial_Surrender
+CurrenceyKey
+T12 20c8d0ba 1fa5e7c8 0 610c70ae 0 0 10
+Table_Full_Surrender
+Duration
+USD
+HKD
+GBP
+JPY
+EUR
+AUD
+CHF
+SEK
+SGD
+1
+15.00
+116.40
+9.15
+1561.05
+11.10
+17.10
+13.65
+97.20
+19.20
+2
+14.00
+108.64
+8.54
+1456.98
+10.36
+15.96
+12.74
+90.72
+17.92
+3
+13.00
+100.88
+7.93
+1352.91
+9.62
+14.82
+11.83
+84.24
+16.64
+4
+12.00
+93.12
+7.32
+1248.84
+8.88
+13.68
+10.92
+77.76
+15.36
+5
+11.00
+85.36
+6.71
+1144.77
+8.14
+12.54
+10.01
+71.28
+14.08
+6
+10.00
+77.60
+6.1
+1040.70
+7.40
+11.40
+9.10
+64.80
+12.80
+7
+9.00
+69.84
+5.49
+936.63
+6.66
+10.26
+8.19
+58.32
+11.52
+8
+8.00
+62.08
+4.88
+832.56
+5.92
+9.12
+7.28
+51.84
+10.24
+9
+7.00
+54.32
+4.27
+728.49
+5.18
+7.98
+6.37
+45.36
+8.96
+10
+6.00
+46.56
+3.66
+624.42
+4.44
+6.84
+5.46
+38.88
+7.68
+Ultimate
+6.00
+46.56
+3.66
+624.42
+4.44
+6.84
+5.46
+38.88
+7.68
+T12 610c70ae 1fa5e7c8 0 41e712bf 0 0 10
+Table_Partial_Surrender
+Duration
+USD
+HKD
+GBP
+JPY
+EUR
+AUD
+CHF
+SEK
+SGD
+1
+10.00
+77.60
+6.1
+1040.70
+7.40
+11.40
+9.10
+64.80
+12.80
+2
+9.00
+69.84
+5.49
+936.63
+6.66
+10.26
+8.19
+58.32
+11.52
+3
+8.00
+62.08
+4.88
+832.56
+5.92
+9.12
+7.28
+51.84
+10.24
+4
+7.00
+54.32
+4.27
+728.49
+5.18
+7.98
+6.37
+45.36
+8.96
+5
+6.00
+46.56
+3.66
+624.42
+4.44
+6.84
+5.46
+38.88
+7.68
+6
+5.00
+38.80
+3.05
+520.35
+3.70
+5.70
+4.55
+32.40
+6.40
+7
+4.00
+31.04
+2.44
+416.28
+2.96
+4.56
+3.64
+25.92
+5.12
+8
+3.00
+23.28
+1.83
+312.21
+2.22
+3.42
+2.73
+19.44
+3.84
+9
+2.00
+15.52
+1.22
+208.14
+1.48
+2.28
+1.82
+12.96
+2.56
+10
+1.00
+7.76
+0.61
+104.07
+0.74
+1.14
+0.91
+6.48
+1.28
+Ultimate
+1.00
+7.76
+0.61
+104.07
+0.74
+1.14
+0.91
+6.48
+1.28
+T4 41e712bf 1fa5e7c8 0 5318776c 0 0 2
+SURR_Amt Query
+dataItem
+null
+Duration
+
+SurrType
+
+Currency
+
+T3 5318776c 1fa5e7c8 0 0 0 0 2
+TABLE Surrender Fee Select Period
+rate_type
+sel_period
+3
+10
+4
+10
+I0 2eee5042 0 e3e5736 0 0 0 0
+
+I0 e3e5736 2eee5042 0 0 0 0 0
+PAGRateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+cd290ee
+F4
+59bb9615
+2601d87b
+5e4e0bc5
+9de6f3e
+A0
+T5
+339c3a7f
+20c8d0ba
+610c70ae
+41e712bf
+5318776c
+!2
+207ec313 -2 -2
+Description: Returns the select period.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+3e703e7c -2 -2
+Description: Checks to see if the duration is still in the select period or not. Returns the column name to use for rate table lookup.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

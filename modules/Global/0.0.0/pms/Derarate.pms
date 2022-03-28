@@ -1,0 +1,574 @@
+;1	08.12.2016 13:33:06	jlawrie2	
+X0 1081140 0 0 0 0 0 0
+
+O0 1081014 0 0 0 0 0 0
+
+E0 1081078 0 0 0 0 0 0
+
+L0 10810dc 0 0 0 0 0 0
+
+B0 108126c 0 0 0 0 0 0
+
+P2 10811a4 0 b76f50 0 0 0 2
+
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"3.20.001"
+P13 b76f50 10811a4 0 0 0 0 2
+DERA access model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"DERA access model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"Derarate.pms"
+OUTPUT Source Version Number
+0 //'GEN VersionInfo'ä
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 1081208 0 b76b10 0 0 0 0
+
+F1 b76b10 1081208 b76ee0 2a2c38df 0 0 2
+--DERA parameter functions--
+Funktion
+
+F1 b76ee0 b76b10 0 b76960 0 0 2
+DERA ECM DEBUG
+Funktion
+ //For DEBUG-ON set to '1'.çä//For DEBUG-OFF set to '0'çä1
+F1 b76960 b76b10 0 b76530 0 0 2
+DERA COMPANY CODE
+Funktion
+'Policy CarrierCode'
+F1 b76530 b76b10 b767a0 b77330 0 0 2
+--Company Level--
+Funktion
+
+F1 b767a0 b76530 0 b76340 0 0 2
+DERA PLAN CODE
+Funktion
+'Policy Coverage ProductCode'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank'))
+F1 b76340 b76530 0 b761d0 0 0 2
+DERA TRX EFFECTIVE DATE
+Funktion
+'DERA Date'(TransEffDate)
+F1 b761d0 b76530 0 b760e0 0 0 2
+DERA PRODUCT CODE
+Funktion
+IF (EXISTS('TABLE DERA Plan Code';'DERA PLAN CODE') ; çä  'TABLE DERA Plan Code'['DERA PLAN CODE'] ; çä  "U1"çä)
+F1 b760e0 b76530 0 b762d0 0 0 2
+DERA SPECIAL CLASS CODE
+Funktion
+"@"
+F1 b762d0 b76530 0 b77f40 0 0 2
+DERA CALC TYPE IND
+Funktion
+"T"
+F1 b77f40 b76530 0 b77cb0 0 0 2
+DERA LEV VAR IND
+Funktion
+'Illus FaceAmtDBOption'(1)
+F1 b77cb0 b76530 0 b77d80 0 0 2
+DERA PROJ RB IND
+Funktion
+0
+F1 b77d80 b76530 0 b77a90 0 0 2
+DERA VARIATION
+Funktion
+0
+F1 b77a90 b76530 0 b77850 0 0 2
+DERA SEX CODE
+Funktion
+'TABLE DERA Gender'['Policy LifeParticipant IssueGender'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');0)].Vantage1_value
+F1 b77850 b76530 0 b77990 0 0 2
+DERA AGE
+Funktion
+'Policy LifeParticipant IssueAge'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');0)
+F1 b77990 b76530 0 b77610 0 0 2
+DERA DURATION
+Funktion
+'DERA Annual Duration'('Policy Coverage EffDate'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank'));TransEffDate)
+F1 b77610 b76530 0 b77740 0 0 2
+DERA EFFECTIVE DATE
+Funktion
+'DERA Date'('Policy Coverage EffDate'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank')))
+F1 b77740 b76530 0 c4ce20 0 0 2
+-- DERA PREMIUM CLASS CODE
+Funktion
+TABLE("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank'; 'Std BaseCov Index'('GEN Vector Blank'); 0)].Vantage1_value
+F1 c4ce20 b76530 0 b773f0 0 0 2
+DERA PREMIUM CLASS CODE
+Funktion
+table("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');0;1)].Vantage1_value
+F1 b773f0 b76530 0 b771d0 0 0 2
+DERA UNITS
+Funktion
+'Policy Coverage CurrentNumberOfUnits'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');1)
+F1 b771d0 b76530 0 3cfc265b 0 0 2
+-- DERA RATING FACTOR
+Funktion
+'TABLE DERA Table Rating'['Policy LifeParticipant PermTableRating'('GEN Vector Blank'; 'Std BaseCov Index'('GEN Vector Blank'); 0)].Vantage1_value
+F1 3cfc265b b76530 0 b77510 0 0 2
+DERA RATING FACTOR
+Funktion
+'TABLE DERA Table Rating'['Policy LifeParticipant PermTableRating'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank');0)].Vantage1_value
+F1 b77510 b76530 0 0 0 0 2
+DERA AMOUNT AT RISK
+Funktion
+'DERA UNITS' * 'Policy Coverage ValuePerUnit'('GEN Vector Blank';'Std BaseCov Index'('GEN Vector Blank'))
+F1 b77330 b76b10 b78f00 b79c10 0 0 2
+--Coverage Level--
+Funktion
+
+F1 b78f00 b77330 0 b78a30 0 0 2
+DERA AGE COV(cov_index)
+Funktion
+'Policy LifeParticipant IssueAge'('GEN Vector Blank';cov_index;0)
+F1 b78a30 b77330 0 b78b10 0 0 2
+DERA DURATION COV(cov_index)
+Funktion
+'DERA Annual Duration'('Policy Coverage EffDate'('GEN Vector Blank';cov_index);TransEffDate)
+F1 b78b10 b77330 0 b78920 0 0 2
+DERA EFFECTIVE DATE COV(cov_index)
+Funktion
+'DERA Date'('Policy Coverage EffDate'('GEN Vector Blank';cov_index))
+F1 b78920 b77330 0 12e18342 0 0 2
+-- DERA PREMIUM CLASS CODE COV(cov_index)
+Funktion
+TABLE("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank'; cov_index; 0)].Vantage1_value
+F1 12e18342 b77330 0 b787d0 0 0 2
+DERA PREMIUM CLASS CODE COV(cov_index)
+Funktion
+table("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';cov_index;0;1)].Vantage1_value
+F1 b787d0 b77330 0 b6f1e0 0 0 2
+DERA UNITS COV(cov_index)
+Funktion
+'Policy Coverage CurrentNumberOfUnits'('GEN Vector Blank';cov_index;1)
+F1 b6f1e0 b77330 0 3c0e0674 0 0 2
+DERA COVERAGE PLAN CODE(cov_index)
+Funktion
+'Policy Coverage ProductCode'('GEN Vector Blank';IF ('ACCS CalcRule UL COI Rules'('Policy Coverage ProductCode'('GEN Vector Blank';cov_index);IF ( /*child term rider*/ 'Coverage Type is Child Term Rider'('GEN Vector Blank';cov_Index) ; çä   //'LifeCovType is CTR'('PI CoverageProduct LifeCovTypeCode'('GEN Vector Blank'; 'Policy Coverage ProductCode'('GEN Vector Blank'; cov_Index); cov_Index; 'TransEffDate'));çä//true - prem rate typeçä'CalcType PREM Identifier' ; çä   //else - determine rate typeçä'ACCS ULCV Coverage CalcType RateType'('GEN Vector Blank';cov_index;1;1)çä);"PctOfBaseIndicator";TransEffDate) ; çä'Std BaseCov Index'('GEN Vector Blank') ; çäcov_indexçä))
+F1 3c0e0674 b77330 0 b785a0 0 0 2
+DERA PLAN CODE COV(cov_index)
+Funktion
+'Policy Coverage ProductCode'('GEN Vector Blank';IF ('ACCS CalcRule UL COI Rules'('Policy Coverage ProductCode'('GEN Vector Blank';cov_index);IF ( /*child term rider*/ 'Coverage Type is Child Term Rider'('GEN Vector Blank';cov_Index) ; çä   //'LifeCovType is CTR'('PI CoverageProduct LifeCovTypeCode'('GEN Vector Blank'; 'Policy Coverage ProductCode'('GEN Vector Blank'; cov_Index); cov_Index; 'TransEffDate'));çä//true - prem rate typeçä'CalcType PREM Identifier' ; çä   //else - determine rate typeçä'ACCS ULCV Coverage CalcType RateType'('GEN Vector Blank';cov_index;1;1)çä);"PctOfBaseIndicator";TransEffDate) ; çä'Std BaseCov Index'('GEN Vector Blank') ; çäcov_indexçä))
+F1 b785a0 b77330 0 b78360 0 0 2
+DERA AMOUNT AT RISK COV(cov_index)
+Funktion
+'DERA UNITS COV'(cov_index) * 'Policy Coverage ValuePerUnit'('GEN Vector Blank';cov_index)
+F1 b78360 b77330 0 2c3acdf1 0 0 2
+-- DERA RATING FACTOR COV(cov_index)
+Funktion
+'TABLE DERA Table Rating'['Policy LifeParticipant PermTableRating'('GEN Vector Blank'; cov_index; 0)].Vantage1_value
+F1 2c3acdf1 b77330 0 b78c40 0 0 2
+DERA RATING FACTOR COV(cov_index)
+Funktion
+'TABLE DERA Table Rating'['Policy LifeParticipant PermTableRating'('GEN Vector Blank';cov_index;0)].Vantage1_value
+F1 b78c40 b77330 0 0 0 0 2
+DERA SEX CODE COV(cov_index)
+Funktion
+'TABLE DERA Gender'['Policy LifeParticipant IssueGender'('GEN Vector Blank';cov_index;0)].Vantage1_value
+F1 b79c10 b76b10 b79360 b78080 0 0 2
+--Benefit Level--
+Funktion
+
+F1 b79360 b79c10 0 b79250 0 0 2
+DERA AGE BNFT(benefit_index)
+Funktion
+'Policy LifeParticipant IssueAge'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index);0)
+F1 b79250 b79c10 0 b79020 0 0 2
+DERA DURATION BNFT(benefit_index)
+Funktion
+'DERA Annual Duration'('Policy Coverage EffDate'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index));TransEffDate)
+F1 b79020 b79c10 0 b79470 0 0 2
+DERA EFFECTIVE DATE BNFT(benefit_index)
+Funktion
+'DERA Date'('Policy Coverage EffDate'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index)))
+F1 b79470 b79c10 0 2bc9e210 0 0 2
+-- DERA PREMIUM CLASS CODE BNFT(benefit_index)
+Funktion
+TABLE("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank'; 'DERA Coverage from Benefit'(benefit_index); 0)].Vantage1_value
+F1 2bc9e210 b79c10 0 b79570 0 0 2
+DERA PREMIUM CLASS CODE BNFT(benefit_index)
+Funktion
+table("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index);0;1)].Vantage1_value
+F1 b79570 b79c10 0 b7af10 0 0 2
+DERA UNITS BNFT(benefit_index)
+Funktion
+'Policy Coverage CurrentNumberOfUnits'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index);1)
+F1 b7af10 b79c10 0 b797d0 0 0 2
+DERA AMOUNT AT RISK BNFT(benefit_index)
+Funktion
+'DERA UNITS BNFT'(benefit_index) * 'Policy Coverage ValuePerUnit'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index))
+F1 b797d0 b79c10 0 b7ae00 0 0 2
+DERA PLAN CODE BNFT(benefit_index)
+Funktion
+'Policy CovOption ProductCode'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index);'DERA Benefit from Benefit'(benefit_index))
+F1 b7ae00 b79c10 0 1b1c2592 0 0 2
+-- DERA RATING FACTOR BNFT(benefit_index)
+Funktion
+'TABLE DERA Table Rating'['Policy LifeParticipant PermTableRating'('GEN Vector Blank'; 'DERA Coverage from Benefit'(benefit_index); 0)].Vantage1_value
+F1 1b1c2592 b79c10 0 b79120 0 0 2
+DERA RATING FACTOR BNFT(benefit_index)
+Funktion
+'TABLE DERA Table Rating'['Policy LifeParticipant PermTableRating'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index);0)].Vantage1_value
+F1 b79120 b79c10 0 0 0 0 2
+DERA SEX CODE BNT(benefit_index)
+Funktion
+'TABLE DERA Gender'['Policy LifeParticipant IssueGender'('GEN Vector Blank';'DERA Coverage from Benefit'(benefit_index);0)].Vantage1_value
+F1 b78080 b76b10 b782a0 0 0 0 2
+--Rider Level--
+Funktion
+
+F1 b782a0 b78080 0 b79f20 0 0 2
+DERA AGE TR(rider_index)
+Funktion
+'Policy LifeParticipant IssueAge'('GEN Vector Blank';rider_index;0)
+F1 b79f20 b78080 0 b79ba0 0 0 2
+DERA DURATION TR(rider_index)
+Funktion
+'DERA Annual Duration'('Policy Coverage EffDate'('GEN Vector Blank';rider_index);TransEffDate)
+F1 b79ba0 b78080 0 b799b0 0 0 2
+DERA EFFECTIVE DATE TR(rider_index)
+Funktion
+'DERA Date'('Policy Coverage EffDate'('GEN Vector Blank';rider_index))
+F1 b799b0 b78080 0 52a3d392 0 0 2
+-- DERA PREMIUM CLASS CODE TR(rider_index)
+Funktion
+TABLE("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank'; rider_index; 0)].Vantage1_value
+F1 52a3d392 b78080 0 b79ac0 0 0 2
+DERA PREMIUM CLASS CODE TR(rider_index)
+Funktion
+table("TABLE DERA RateClass")['Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';rider_index;0;1)].Vantage1_value
+F1 b79ac0 b78080 0 b798b0 0 0 2
+DERA UNITS TR(rider_index)
+Funktion
+'Policy Coverage CurrentNumberOfUnits'('GEN Vector Blank';rider_index;1)
+F1 b798b0 b78080 0 b78530 0 0 2
+DERA AMOUNT AT RISK TR(rider_index)
+Funktion
+'DERA UNITS TR'(rider_index) * 'Policy Coverage ValuePerUnit'('GEN Vector Blank';rider_index)
+F1 b78530 b78080 0 b79d20 0 0 2
+DERA PLAN CODE TR(rider_index)
+Funktion
+'Policy Coverage ProductCode'('GEN Vector Blank';rider_index)
+F1 b79d20 b78080 0 b781a0 0 0 2
+DERA RATING FACTOR TR(rider_index)
+Funktion
+'TABLE DERA Table Rating'['Policy Participant PermTableRating'(rider_Index;0)].Vantage1_value
+F1 b781a0 b78080 0 0 0 0 2
+DERA SEX CODE TR(rider_index)
+Funktion
+'TABLE DERA Gender'['Policy LifeParticipant IssueGender'('GEN Vector Blank';rider_index;0)].Vantage1_value
+F1 2a2c38df 1081208 0 6116b694 0 0 2
+Attained Age Curr COI Cov(attained_age; cov_index)
+Funktion
+f_attained_age_curr_COI_rate_cov(attained_age;cov_index)
+F1 6116b694 1081208 0 25aaf454 0 0 2
+Attained Age Curr COI Ben(attained_age; benefit_index)
+Funktion
+f_attained_age_curr_COI_rate_bnft(attained_age;benefit_index)
+F1 25aaf454 1081208 0 45326eff 0 0 2
+Attained Age Curr COI TR(attained_age; rider_index)
+Funktion
+f_attained_age_curr_COI_rate_rdr(attained_age;rider_index)
+F1 45326eff 1081208 0 79c3a2b6 0 0 2
+Attained Age Guar COI Cov(attained_age; cov_index)
+Funktion
+f_attained_age_guar_COI_cov(attained_age;cov_index)
+F1 79c3a2b6 1081208 0 5204116 0 0 2
+Attained Age Guar COI Ben(attained_age; benefit_index)
+Funktion
+f_attained_age_guar_COI_bnft(attained_age;benefit_index)
+F1 5204116 1081208 0 0 0 0 2
+Attained Age Guar COI TR(attained_age; rider_index)
+Funktion
+f_attained_age_guar_COI_rdr(attained_age;rider_index)
+A0 10812d0 0 0 0 0 0 0
+
+T0 1081334 0 b7d520 0 0 0 0
+
+T1 b7d520 1081334 65c96a81 0 0 0 2
+--General Tables--
+key
+value
+T4 65c96a81 b7d520 0 b7d070 0 0 3
+TABLE DERA Gender
+key
+value
+Vantage1_value
+1
+Male
+1
+2
+Female
+2
+3
+Unisex
+U
+T4 b7d070 b7d520 0 b7eea0 0 0 3
+TABLE DERA RateClass
+key
+value
+Vantage1_value
+1
+Nonsmoker
+N
+2
+Smoker
+S
+0
+None
+0
+T5 b7eea0 b7d520 0 b7ec60 0 0 3
+TABLE DERA Band
+key
+value
+Vantage1_value
+1
+Band 1
+A
+2
+Band 2
+B
+3
+Band 3
+C
+0
+None
+0
+T16 b7ec60 b7d520 0 b7e9f0 0 0 3
+TABLE DERA Plan Code
+Plan_Code
+Product_Code
+Description
+AIR1PA
+AIR1PA
+AIR1PA
+AIR2PA
+AIR2PA
+AIR2PA
+LTCR1PA
+LTCR1PA
+LTCR1PA
+LTCR2PA
+LTCR2PA
+LTCR2PA
+NHW1PA
+NHW1PA
+NHW1PA
+PITR2PA
+PITR2PA
+PITR2PA
+PITRPA
+PITRPA
+PITRPA
+PITRSPA
+PITRSPA
+PITRSPA
+STR2PA
+STR2PA
+STR2PA
+STRPA
+STRPA
+STRPA
+SVUL1PA
+SVUL1PA
+SVUL1PA
+UL1PA
+UL1PA
+UL1PA
+UL2PA
+UL2PA
+UL2PA
+VUL1PA
+VUL1PA
+VUL1PA
+VUL2PA
+VUL2PA
+VUL2PA
+T4 b7e9f0 b7d520 0 b7e6a0 0 0 2
+--T_Age_Rule
+key
+value
+C
+Age Closest
+L
+Age Last
+N
+Age Next
+T15 b7e6a0 b7d520 0 0 0 0 3
+TABLE DERA Table Rating
+Key
+Value
+Vantage1_value
+1
+1
+0
+2
+1.25
+A
+3
+1.375
+AA
+4
+1.5
+B
+5
+1.675
+BB
+6
+1.75
+C
+7
+2
+D
+8
+2.25
+E
+9
+2.5
+F
+11
+3
+H
+13
+3.5
+J
+15
+4
+L
+19
+5
+P
+20
+9.999
+X
+I0 1081398 0 412797f8 0 0 0 0
+
+I0 412797f8 1081398 0 1d791263 0 0 0
+Deratabl.pms
+I0 1d791263 1081398 0 0 0 0 0
+Standard.pms
+-
+O0
+E0
+L0
+B0
+P1
+b76f50
+F64
+b76b10
+b76ee0
+b76960
+b76530
+b767a0
+b76340
+b761d0
+b760e0
+b762d0
+b77f40
+b77cb0
+b77d80
+b77a90
+b77850
+b77990
+b77610
+b77740
+c4ce20
+b773f0
+b771d0
+3cfc265b
+b77510
+b77330
+b78f00
+b78a30
+b78b10
+b78920
+12e18342
+b787d0
+b6f1e0
+3c0e0674
+b785a0
+b78360
+2c3acdf1
+b78c40
+b79c10
+b79360
+b79250
+b79020
+b79470
+2bc9e210
+b79570
+b7af10
+b797d0
+b7ae00
+1b1c2592
+b79120
+b78080
+b782a0
+b79f20
+b79ba0
+b799b0
+52a3d392
+b79ac0
+b798b0
+b78530
+b79d20
+b781a0
+2a2c38df
+6116b694
+25aaf454
+45326eff
+79c3a2b6
+5204116
+A0
+T7
+b7d520
+65c96a81
+b7d070
+b7eea0
+b7ec60
+b7e9f0
+b7e6a0
+!11
+b6f1e0 -2 -2
+çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/06/2011 wmA merge regresion CMC changed to use coverage is XX function.
+3c0e0674 -2 -2
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/06/2011 wmA merge regresion CMC changed to use coverage is XX function.
+2a2c38df -2 -2
+Description: Attained Age Current COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+6116b694 -2 -2
+Description: Attained Age Current COI by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+25aaf454 -2 -2
+Description: Attained Age Current COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+45326eff -2 -2
+Description: Attained Age Guaranteed COI by Coverage.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+79c3a2b6 -2 -2
+Description: Attained Age Current COI by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+5204116 -2 -2
+Description: Attained Age Guaranteed COI Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+65c96a81 -2 -2
+Description: VP/MS to Vantage1 Translation Table for Gender.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial Table.
+b7d070 -2 -2
+Description: VP/MS to Cyberlife Translation Table for Rate Class (where this is a combination of Underwriting Class & Tobacco Premium Basis).çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial Table.
+b7eea0 -2 -2
+Description: VP/MS to Vantage1 Translation Table for Band.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initail Table.
+;Offset=00000000

@@ -1,0 +1,170 @@
+;1	08.12.2016 13:38:33	jlawrie2	
+X0 3e64a0 0 3e57a8 0 0 0 0
+
+X0 3e57a8 3e64a0 3e5848 0 0 0 0
+-- All Tests - Validation --
+X0 3e5848 3e57a8 3e58d8 1e11500 0 0 0
+-- f_VLD_Check
+X1 3e58d8 3e5848 0 3e5a70 0 0 2
+VLD Check- date true
+'VLD Check'("02/23/2007"; "A_some_attribute"; "date")
+02/23/2007
+X1 3e5a70 3e5848 0 3e5c78 0 0 2
+VLD Check- double true
+'VLD Check'("5.3"; "A_some_attribute"; "double")
+5.3
+X1 3e5c78 3e5848 0 3e5e88 0 0 2
+VLD Check- integer true
+'VLD Check'("5"; "A_some_attribute"; "integer")
+5
+X1 3e5e88 3e5848 0 1e111e0 0 0 2
+VLD Check- nonNegativeInteger true
+'VLD Check'("5"; "A_some_attribute"; "NegativeInteger")
+5
+X1 1e111e0 3e5848 0 0 0 0 2
+VLD Check- year true
+'VLD Check'("2007"; "A_some_attribute"; "year")
+2007
+X0 1e11500 3e57a8 1e116b8 1e11d30 0 0 0
+-- f_VLD_Default --
+X1 1e116b8 1e11500 1e118e0 0 0 0 2
+VLD Default- date
+'VLD Default'("A_some_date")
+11/02/2011
+X1 1e118e0 1e116b8 0 1e11af8 0 0 2
+f_VLD_Default - number
+'VLD Default'("A_some_number")
+0
+X1 1e11af8 1e116b8 0 0 0 0 2
+VLD Default- something else
+'VLD Default'("A_something")
+
+X1 1e11d30 3e57a8 0 0 0 0 2
+Allowed Value Reference
+'Allowed Value Reference'
+ACORD_LOOKUP_ATTRIBUTES_2_15_00.VPM
+O0 3e635c 0 0 0 0 0 0
+
+E0 3e63c8 0 0 0 0 0 0
+
+L0 3e6434 0 0 0 0 0 0
+
+B0 3e65e4 0 0 0 0 0 0
+
+P3 3e650c 0 1e21ec8 0 0 0 2
+
+--description
+Common sub-model containing common validation functions used throughout the models.濠 濠Functions contained here include:濠 - data type checks濠 - allowed value checks濠 - assigning default values to data types
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.2.1"
+P13 1e21ec8 3e650c 0 0 0 0 2
+Validation Model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Validation model.濠 Author:  John Heumann濠 Date:     10/31/2007 濠 Modification Log:濠 Date              Modeler               Change Description濠 10/31/2007     John Heumann     Created model.濠"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_Server"
+OUTPUT Source Version File
+"Common_Validation.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+F0 3e6578 0 ad96b8 0 0 0 0
+
+F1 ad96b8 3e6578 3e7718 0 0 0 2
+:VLD
+Funktion
+
+F1 3e7718 ad96b8 3e77f0 0 0 0 2
+-- Input Functions --
+Funktion
+
+F1 3e77f0 3e7718 1e22030 1e22438 0 0 2
+VLD Check(value; name; datatype)
+Funktion
+CASE( /*Datatype*/ datatype;濠   /*Integer*/ "integer" : IF (ISINTEGER(value) ; 濠    value ; 濠     //演右RROR("Please enter a valid integer for "&name&"!  "&value&" could not be recognized!")濠'Messages SystemMessage'("VLD1000";0;V_("Common_Validation";"'VLD Check'";datatype;name;value))濠  );濠 /*NonNegativeInteger*/ "nonNegativeInteger" : IF (ISINTEGER(value) ; 濠  IF (value < 0 ; 濠     //演演ERROR("Please enter a non negative number for "&name&"!");濠'Messages SystemMessage'("VLD1000";0;V_("Common_Validation";"'VLD Check'";datatype;name;value)) ; 濠    IF ('Check Allowed Value'(name;value) ; 濠      value ; 濠      'Messages SystemMessage'("VLD1000";0;V_("Common_Validation";"'VLD Check'";datatype;name;value))濠    )濠) ; 濠 //演右RROR("Please enter a valid integer for "&name&"!  "&value&" could not be recognized!")濠'Messages SystemMessage'("VLD1000";0;V_("Common_Validation";"'VLD Check'";datatype;name;value))濠);濠 /*Double*/ "double" : IF (ISNUMBER(value) ; 濠value ; 濠 //演右RROR("Please enter a valid number for "&name&"!  "&value&" could not be recognized!")濠'Messages SystemMessage'("VLD1000";0;V_("Common_Validation";"'VLD Check'";datatype;name;value))濠);濠 /*Date*/ "date" : IF (ISDATE(value) ; 濠value ; 濠 //演右RROR("Please enter a valid date for "&name&"!  "&value&" could not be recognized!")濠'Messages SystemMessage'("VLD1000";0;V_("Common_Validation";"'VLD Check'";datatype;name;value))濠);濠 /*Year*/ "year" : IF (ISINTEGER(value) ; 濠value ; 濠 //演右RROR("Please enter a valid year for "&name&"!  "&value&" could not be recoginized!")濠'Messages SystemMessage'("VLD1000";0;V_("Common_Validation";"'VLD Check'";datatype;name;value))濠);濠 /*default - no validation*/  : value)濠
+F1 1e22030 3e77f0 1e221a0 0 0 0 2
+Check Allowed Value(name;value)
+Funktion
+vpmcompute('Allowed Value Reference';'Exist String'(name;value))
+F1 1e221a0 1e22030 0 1e22280 0 0 2
+Exist String(name;value)
+Funktion
+"EXIST(" & QuotationMark & vpmcompute('Allowed Value Reference';name & ".table") & QuotationMark & ";" & value & ")"
+F1 1e22280 1e22030 0 1e22350 0 0 2
+QuotationMark
+Funktion
+"""
+F1 1e22350 1e22030 0 0 0 0 2
+Allowed Value Reference
+Funktion
+'Messages Model Name Access'("*";"VALIDATION";'GEN Vector Blank';"Model_Name_internal")
+F1 1e22438 3e7718 0 23d65c20 0 0 2
+VLD Default(name)
+Funktion
+IF ( /*Is this a date?*/ INSTR(name;"date") > 0 ; 濠   /*Yes - return default date*/ TODAY("M/D/Y") ; 濠   /*No - check for numbers*/ IF ( /*Is this a number*/ 'GEN Instr'(TOLOWER(name);V_("number";"amount";"amt";"code";"age";"value";"premium";"band";"flat";"unit";"ind")) ; 濠     /*Yes - return default of zero*/ 0 ; 濠     /*Assume it's a string - return empty string*/ 'GEN Vector Blank'濠  )濠)
+F1 23d65c20 3e7718 16a6f74 0 0 0 2
+--input type access functions
+Funktion
+
+F1 16a6f74 23d65c20 0 43779f5b 0 0 2
+docheck(datatype, value, minvalue, maxvalue, decimalplaces, tablename, formatstring)
+Funktion
+CASE(datatype;濠  "undefined" : value;濠  "string" : value;濠  "integer" : IF (isinteger(value) ; 濠    IF (value < minvalue || value > maxvalue ; 濠      error("Integer out of range") ; 濠      value濠    ) ; 濠  error("Not an Integer")濠);濠"decimal" : IF (isnumber(value) ; 濠IF (value < minvalue || value > maxvalue ; 濠  error("Decimal out of range") ; 濠  value濠) ; 濠error("Not a Number")濠);濠"boolean" : IF (isbool(value) ; 濠value ; 濠error("Not a Boolean")濠);濠"date" : IF (value ALIKE "today" ; 濠today(formatstring) ; 濠IF (isdate(value) ; 濠value ; 濠error("Not a Date")濠)濠);濠"time" : IF (value ALIKE "now" ; 濠now(formatstring) ; 濠IF (istime(value) ; 濠value ; 濠error("Not a Time")濠)濠);濠"selecteditem" : IF (exists(table(tablename);value) ; 濠value ; 濠error("Not a Table Item")濠);濠"currency" : IF (isnumber(value) ; 濠IF (value < minvalue || value > maxvalue ; 濠error("Currency out of range") ; 濠value濠) ; 濠error("Not a Currency")濠))濠
+F1 43779f5b 23d65c20 0 17c21805 0 0 2
+dodefault(datatype, defaultvalue, formatstring)
+Funktion
+IF ((datatype EQUAL "date") && (defaultValue ALIKE "today") ; 濠  today(formatstring) ; 濠  IF ((datatype EQUAL "time") && (defaultValue ALIKE "now") ; 濠    now(formatstring) ; 濠    defaultvalue濠  )濠)
+F1 17c21805 23d65c20 0 d2af989 0 0 2
+dodisplaytext(datatype, key, text, formatstring)
+Funktion
+CASE(datatype;濠  "undefined" : text;濠  "string" : text;濠  "integer" : IF (formatstring EQUAL 'GEN Vector Blank' ; 濠    text ; 濠    format(text;formatstring)濠  );濠"decimal" : IF (formatstring EQUAL 'GEN Vector Blank' ; 濠  text ; 濠  format(text;formatstring)濠);濠"boolean" : text;濠"date" : IF (text ALIKE "today" ; 濠today(formatstring) ; 濠IF (formatstring EQUAL 'GEN Vector Blank' ; 濠  text ; 濠  daydate(dateday(text);formatstring)濠)濠);濠"time" : IF (text ALIKE "now" ; 濠now(formatstring) ; 濠text濠);濠"selecteditem" : text;濠"currency" : IF (formatstring EQUAL 'GEN Vector Blank' ; 濠text ; 濠format(text;formatstring)濠))濠
+F1 d2af989 23d65c20 0 0 0 0 2
+dotable(datatype, tablename)
+Funktion
+tablename
+A0 3e6650 0 0 0 0 0 0
+
+T0 3e66bc 0 0 0 0 0 0
+
+I0 3e6728 0 2b7c2e3a 0 0 0 0
+
+I0 2b7c2e3a 3e6728 0 0 0 0 0
+ErrorFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+1e21ec8
+F1
+ad96b8
+A0
+T0
+!3
+3e77f0 -2 -2
+Description:濠Perfom type checking濠 濠Modification Log:濠10/31/2007 CSC Initial Calculation/Rule
+1e22438 -2 -2
+Description:濠Assigns a default value based on the datatype name濠 濠Modification Log:濠10/31/2007 CSC Initial Calculation/Rule
+23d65c20 -2 -2
+Automatically generated access functions required for Input items that use enhanced Input editor.  濠See:  Preferences - VP/MS - VP/MS Product Model Editor - Input Code Generation濠 濠2/22/2011 - rm - moved from Standard.pms
+;Offset=00000000

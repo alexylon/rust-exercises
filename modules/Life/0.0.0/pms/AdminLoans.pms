@@ -1,0 +1,753 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 51b0b04f 0 0 0 2
+
+--description
+Loans can be taken against the cash value of Univeral Life or Variable Universal Life contracts. The model will support loans taken at any date after issue of the policy, dependent on the total projected amount of the loans not exceeding the maximum loan amount.çä çäThe model will support additional loan segments on subsequent dates.çä çäThe model will support the following methods of loan reductions:çä‚Ä¢âCash payment reductionçä çäProjection of loan values will include both fixed and variable interest, calculated both in advance and in arrears.çä çäThe model will return the current and projected cash value of the loan. The model will return the maximum loan amount and maximum remaining loan amount, based on the current loan value, cash value of the policy. It will not handle the calculation of the current or projected cash value of the policy ‚Äì this will be obtained from the CashValueProjections model.çä çäRELEASE LOG:çäRELEASE 1501 - PAC039 DIAçäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1101 - PAC019 Rate Access via InputsçäRELEASE 1101 - PAC013 calcType
+P13 51b0b04f de0804 486b4e68 0 0 0 2
+Administrative System Loans
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Loan Administration"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"AdminLoans.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P23 486b4e68 51b0b04f 0 0 0 0 2
+Loans
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Loan Balance
+'AL Total Current Balance'
+OUTPUT Loan LoanBalance(loanIndex)
+'AL Current Balance'(loanIndex)
+OUTPUT Maximum Loan Amount
+'AL Maximum Loan Amount'
+OUTPUT Total Capitalized Interest(loanIndex)
+IF ('Policy Loan LoanIntMethod'(loanIndex) = 1 ; çä  'AL Total Current Interest' ; çä  0çä)
+OUTPUT Loan LoanIntAmountDue(loanIndex)
+IF ('Policy Loan LoanIntMethod'(loanIndex) = 1 ; çä  'AL Current Interest'(loanIndex) ; çä  0çä)
+OUTPUT Maximum Pref Loan Amount
+'AL Maximum Pref Loan Amount'
+OUTPUT Loan Interest Due
+0 //Still to be codedä
+OUTPUT Loan Interest Deferred
+0 //Still to be codedä
+OUTPUT Loan Interest Charged Rate
+0 //Still to be codedä
+OUTPUT Loan Interest Credited Rate
+0 //Still to be codedä
+OUTPUT Loan Payoff
+0 //Still to be codedä
+OUTPUT Loan Initiation Amount
+SUMX(loanIndex;0;'Policy Number of Loan' - 1;'AL Loan Initation Amount'(#loanIndex))
+OUTPUT Loan Initiation Interest(loanIndex; fundIndex; fndTransIndex)
+'GEN Round'('AL Loan Initation Interest'('CalcType Current'('GEN Vector Blank');loanIndex;fundIndex;fndTransIndex);2)
+OUTPUT Loan Initiation Collateral(releaseAmount; specifiedFund; bucketIndex)
+'AL Loan Collateral'('Policy SubAccount WithdrawalOrder';releaseAmount;specifiedFund;bucketIndex;'AL SubAccount CV Vector'('CalcType Current'('GEN Vector Blank'));0)
+OUTPUT Loan Initiation Level Repayment
+'AL Level Repayment Amount'('Policy Loan LoanPaymentMode';0)
+OUTPUT Annuity Loan Interest Due(loanIndex; fundIndex; fndTransIndex)
+'GEN Round'('AL Loan Interest Due'('CalcType Current'('GEN Vector Blank');TransEffdate;loanIndex;fundIndex;fndTransIndex);2)
+OUTPUT Annuity Loan Interest Capitalization Amount(loanIndex; fundIndex; fndTransIndex; specifiedFund; bucketIndex)
+'GEN Round'(CASE('GEN Release Type Coversion'('Policy SubAccount WithdrawalOrder');çä  "ProRata" : 'GEN OrderedReleaseAmt ProRata'('AL Loan Capitalized Interest Amount'('CalcType Current'('GEN Vector Blank');TransEffdate;loanIndex;fundIndex;fndTransIndex);bucketIndex;'AL SubAccount CV Vector'('CalcType Current'('GEN Vector Blank')));çä  "Specified" : 'GEN OrderedReleaseAmt Specified'('AL Loan Capitalized Interest Amount'('CalcType Current'('GEN Vector Blank');TransEffdate;loanIndex;fundIndex;fndTransIndex);bucketIndex;specifiedFund;'AL SubAccount CV Vector'('CalcType Current'('GEN Vector Blank')));çä   : ERROR("ERROR"))çä;2)
+OUTPUT Loan Repayment
+'GEN Round'(SUMX(loanIndex;0;'Policy Number of Loan' - 1;'AL Loan Repayment'(#loanIndex));2)
+OUTPUT WMAJ Loan Balance(loanIndex)
+'ALLoan Balance'('CalcType Current'('GEN Vector Blank');loanIndex;TransEffDate)
+OUTPUT Allocated Loan Initiation Amount(calcType)
+'GEN Vector String Conversion'('GEN Allocated Withdrawals'(calcType;'AV Subaccount Cash Value Vector'(calcType;1;'PIDRV FeatureProduct Withdrawal FeatureCode'('Policy ProductCode';'STD Withdrawal Feature Option Code';'Policy EffDate')); //'AnnSC Net Withdrawal Amt'(calcType; 'Policy Arrangement ArrType');çä'OUTPUT Loan Initiation Amount';'GEN Release Type Coversion'('PI FeatureOptProduct PostingOrder'('Policy ProductCode';'PIDRV FeatureProduct Withdrawal FeatureCode'('Policy ProductCode';'STD Withdrawal Feature Option Code';'Policy EffDate'); //ââââ'Policy Arrangement ArrType'; çä'Policy EffDate'))))
+F0 de0860 0 28b53bce 0 0 0 0
+
+F1 28b53bce de0860 5c254b1d 0 0 0 2
+:AL
+Funktion
+
+F1 5c254b1d 28b53bce 1864fc53 14503efb 0 0 2
+-- Current Loan Balance --
+Funktion
+
+F1 1864fc53 5c254b1d 2627ded 0 0 0 2
+AL Total Current Balance
+Funktion
+SUMX(loanIndex;0;'Policy Number of Loan' - 1;'AL Current Balance'(#loanIndex))
+F1 2627ded 1864fc53 1103eb4e 48adfc40 0 0 2
+AL Current Balance(loanIndex)
+Funktion
+MAX(IF ('Policy Loan LoanIntMethod'(loanIndex) = 2 ; çä  'AL Current Balance at Time'(loanIndex;TransEffDate) ; çä  'AL Base Balance At Time'(loanIndex;TransEffDate) + 'AL Current Interest At Time'(loanIndex;TransEffDate)çä);0)
+F1 1103eb4e 2627ded 77c2e320 0 0 0 2
+AL Current Balance at Time(loanIndex; point_in_time_date)
+Funktion
+'GEN Round'('AL Current Balance Accrual'(point_in_time_date;0;loanIndex) - SUMX(financialActivityIndex;0;'Policy Number of FinancialActivity' - 1;'AL Repayments For Period'(#financialActivityIndex;loanIndex;0;'Policy Loan LoanOriginationDate'(loanIndex);point_in_time_date));10)
+F1 77c2e320 1103eb4e 0 7167936e 0 0 2
+AL Current Balance Accrual(endDate; loanBalance; loanIndex)
+Funktion
+IF ( /*At Issue*/ 'DATE Are Dates Equal'(endDate;'Policy EffDate') ; çä   /* Yes: add loan if on issue */ loanBalance + IF ( /*Loan on issue*/ 'DATE Are Dates Equal'('Policy Loan LoanOriginationDate'(loanIndex);'Policy EffDate') ; çä     /*Yes: add loan amount*/ 'Policy Loan LoanAmt'(loanIndex) ; çä     /*No*/ 0çä  ) ; çä /*No: Accrue loan balance*/ 'AL Current Balance Accrual'('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanBalance;loanIndex) * 'AL Interest Factor For Period'('AL Curr Interest Rate'('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);endDate;'AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex) + IF ( /*Loan in first year*/ 'DATE Date In Range'('Policy Loan LoanOriginationDate'(loanIndex);DATE('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);1;0;0);endDate) ; çä   /*Yes: Add loan amount with interest*/ 'Policy Loan LoanAmt'(loanIndex) * 'AL Interest Factor For Period'('AL Curr Interest Rate'('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);endDate;'Policy Loan LoanOriginationDate'(loanIndex);loanIndex) ; çä   /*No*/ 0çä)çä)
+F1 7167936e 1103eb4e 0 65e864a9 0 0 2
+AL Activity Accrual For Period(activityNetAmt; loanIndex; activityDate; startDate; endDate)
+Funktion
+IF ( /*Activity in date range*/ 'DATE Date In Range'(activityDate;date(startDate;1;0;0);endDate) ; çä   /*Yes: Add amount, with interest*/ IF ( /*Activity Date before prev Anniv*/ 'DATE Is Date1 Greater Than Date2'(activityDate;'AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate)) ; çä     /*Yes: Accumulate till Activity Date*/ activityNetAmt * 'AL Interest Factor For Period'('AL Curr Interest Rate'('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);endDate;activityDate;loanIndex) ; çä     /*No: Continue yearly Accrual*/ 'AL Activity Accrual For Period'(activityNetAmt * 'AL Interest Factor For Period'('AL Curr Interest Rate'('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);endDate;'AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);loanIndex;'AL Calc Strict Last Anniversary Date'('Policy EffDate';activityDate);startDate;'AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate))çä  ) ; çä /*No: Determine if at Issue*/ IF ( /*At Issue*/ 'DATE Are Dates Equal'(startDate;activityDate) ; çä   /*Yes: Add with Interest*/ IF ( /*At Start*/ 'DATE Are Dates Equal'(endDate;activityDate) ; çä     /*End Accrual*/ activityNetAmt ; çä     /*Continue Accrual*/ IF ( /*Activity Date before prev Anniv*/ 'DATE Is Date1 Greater Than Date2'(activityDate;'AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate)) ; çä       /*Yes: Accumulate till anniv*/ activityNetAmt * 'AL Interest Factor For Period'('AL Curr Interest Rate'('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);endDate;activityDate;loanIndex) ; çä       /*No: Continue yearly Accrual*/ 'AL Activity Accrual For Period'(activityNetAmt * 'AL Interest Factor For Period'('AL Curr Interest Rate'('AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);endDate;'AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate);loanIndex);loanIndex;activityDate;startDate;'AL Calc Strict Last Anniversary Date'('Policy EffDate';endDate))çä    )çä) ; çä /*No*/ 0çä)çä)
+F1 65e864a9 1103eb4e 7eb649a2 0 0 0 2
+AL Repayments For Period(financialActivityIndex; loanIndex; loanBalance; startDate; endDate)
+Funktion
+IF ( /*Activity is Loan Payment*/ (('FinActivityType is Loan Payment'('Policy FinancialActivity FinActivityType'(financialActivityIndex)) || 'FinActivityType is Loan Payment From Dividends'('Policy FinancialActivity FinActivityType'(financialActivityIndex))) && 'DATE Date In Range'('Policy FinancialActivity FinEffDate'(financialActivityIndex);DATE(startDate;0;0;0);endDate)) ; çä   /*Yes: Add amount with interest*/ 'AL Activity Accrual For Period'('AL Payment Amount Remaining'(LoanIndex;0;'AL Payment Amount on Day'(0;financialActivityIndex;0);'Policy FinancialActivity FinEffDate'(financialActivityIndex));loanIndex;'Policy FinancialActivity FinEffDate'(financialActivityIndex);startDate;endDate) ; çä   /*No*/ 0çä)
+F1 7eb649a2 65e864a9 0 3b7d07b3 0 0 2
+AL Payment Amount Remaining(endLoanIndex; currentLoanIndex; activityGrossAmnt; financialActivityDate)
+Funktion
+IF ( /*All loans cycled through*/ currentLoanIndex = endLoanIndex ; çä   /*Yes: Use maximum of activity amount possible*/ MIN('AL Current Balance Accrual'(financialActivityDate;0;currentLoanIndex) - SUMX(financialActivityIndex;0;'Policy Number of FinancialActivity' - 1;'AL Repayments For Period'(#financialActivityIndex;currentLoanIndex;0;'Policy EffDate';DATE(financialActivityDate;-1;0;0))) * 'AL Interest Factor For Period'('AL Curr Interest Rate'('AL Calc Strict Last Anniversary Date'('Policy EffDate';financialActivityDate);currentLoanIndex);financialActivityDate;DATE(financialActivityDate;-1;0;0);currentLoanIndex);activityGrossAmnt) ; çä   /*No: Continue to previous loans*/ IF ( /*Loan settled*/ 'AL Current Balance at Time'(currentLoanIndex;financialActivityDate) = 0 ; çä     /*Yes: Pass full activity amount to next loan*/ 'AL Payment Amount Remaining'(endLoanIndex;currentLoanIndex + 1;activityGrossAmnt - 'AL Payment Amount Remaining'(currentLoanIndex;currentLoanIndex;activityGrossAmnt;financialActivityDate);financialActivityDate) ; çä     /*No: Pass reduced amount to next loan*/ 'AL Payment Amount Remaining'(endLoanIndex;currentLoanIndex + 1;MAX(activityGrossAmnt - 'AL Current Balance Accrual'(financialActivityDate;0;currentLoanIndex);0);financialActivityDate)çä  )çä)
+F1 3b7d07b3 65e864a9 0 0 0 0 2
+AL Payment Amount on Day(currentFinancialActivityIndex; selectedFinancialActivityIndex; activityGrossAmount)
+Funktion
+IF ( /*All financial activities cycled through*/ currentFinancialActivityIndex = 'Policy Number of FinancialActivity' ; çä   /*Yes: Use total amount for day*/ activityGrossAmount ; çä   /*No: Continue with summation*/ IF ( /*Lower indexed activity*/ currentFinancialActivityIndex < selectedFinancialActivityIndex ; çä    IF ( /*Yes: Already had activity on this day?*/ 'DATE Are Dates Equal'('Policy FinancialActivity FinEffDate'(currentFinancialActivityIndex);'Policy FinancialActivity FinEffDate'(selectedFinancialActivityIndex)) ; çä       /*Yes: Don't use this activity (previously accounted for*/ 0 ; çä       /*No: Continue with summation*/ 'AL Payment Amount on Day'(currentFinancialActivityIndex + 1;selectedFinancialActivityIndex;0)çä    ) ; çä  IF ( /*No: This (cycled) activity on same date?*/ 'DATE Are Dates Equal'('Policy FinancialActivity FinEffDate'(currentFinancialActivityIndex);'Policy FinancialActivity FinEffDate'(selectedFinancialActivityIndex)) ; çä     /*Yes: Add amount to running total, continue with summation*/ 'AL Payment Amount on Day'(currentFinancialActivityIndex + 1;selectedFinancialActivityIndex;activityGrossAmount + 'Policy FinancialActivity FinActivityNetAmt'(currentFinancialActivityIndex)) ; çä     /*No: Continue with summation, with current amount*/ 'AL Payment Amount on Day'(currentFinancialActivityIndex + 1;selectedFinancialActivityIndex;activityGrossAmount)çä  )çä)çä)
+F1 48adfc40 1864fc53 2928140a c1baa00 0 0 2
+AL Total Current Interest
+Funktion
+SUMX(loanIndex;0;'Policy Number of Loan' - 1;'AL Current Interest'(#loanIndex))
+F1 2928140a 48adfc40 0 3e39ec2c 0 0 2
+AL Current Interest(loanIndex)
+Funktion
+'AL Current Balance at Time'(loanIndex;TransEffDate) - 'AL Base Balance At Time'(loanIndex;TransEffDate)
+F1 3e39ec2c 48adfc40 774854aa 0 0 0 2
+AL Current Interest At Time(loanIndex; pointInTimeDate)
+Funktion
+'AL Current Balance at Time'(loanIndex;pointInTimeDate) - 'AL Base Balance At Time'(loanIndex;pointInTimeDate)
+F1 774854aa 3e39ec2c 0 1dc899a2 0 0 2
+AL Base Balance At Time(loanIndex; pointInTimeDate)
+Funktion
+'AL Base Balance Iteration'(loanIndex;'Policy Number of FinancialActivity' - 1;'Calc Last Monthiversary Date'('Policy Loan LoanOriginationDate'(loanIndex);date(pointInTimeDate;-1;0;0));pointInTimeDate)
+F1 1dc899a2 3e39ec2c 0 0 0 0 2
+AL Base Balance Iteration(loanIndex; financialActivityIndex; startDate; endDate)
+Funktion
+IF ( /*At Loan Origination*/ financialActivityIndex < 0 || 'DATE Are Dates Equal'('Policy Loan LoanOriginationDate'(loanIndex);startDate) ; çä   /*Yes: Use Initial Loan Amoun*/ 'Policy Loan LoanAmt'(loanIndex) ; çä   /*No: Calculate remaining base loan amount*/ IF ( /*Financial Activities in date range*/ 'DATE Date In Range'('Policy FinancialActivity FinEffDate'(MAX(financialActivityIndex;0));startDate;endDate) ; çä     /*Determine whether base loan amount decreases*/ MIN('AL Base Balance Iteration'(loanIndex;financialActivityIndex;startDate;date('Policy FinancialActivity FinEffDate'(MAX(financialActivityIndex;0));-1;0;0));'AL Current Balance at Time'(loanIndex;'Policy FinancialActivity FinEffDate'(MAX(financialActivityIndex;0)))) ; çä     /*Cycle through next period*/ 'AL Base Balance Iteration'(loanIndex;financialActivityIndex - 1;'Calc Last Monthiversary Date'('Policy Loan LoanOriginationDate'(loanIndex);date(startDate;-1;0;0));startDate)çä  )çä)
+F1 c1baa00 1864fc53 0 0 0 0 2
+AL SubAccount Total Loan(fundIndex)
+Funktion
+SUMX(finIndex;0;'Policy Number of SubAccount FinancialActivity'(fundIndex) - 1;'AL Current Balance'(#finIndex))
+F1 14503efb 28b53bce 7a008f69 2c8f39b 0 0 2
+-- Current Maximum Loan Remaining --
+Funktion
+
+F1 7a008f69 14503efb 654c1977 53dae79f 0 0 2
+AL Maximum Loan Amount
+Funktion
+MAX('AL Current Unloaned Cash Value' - 'AL Total Min Balance Amount';0)
+F1 654c1977 7a008f69 55439e1d 76a942be 0 0 2
+AL Total Min Balance Amount
+Funktion
+'AL Primary Min Balance Amount' + 'AL Secondary Min Balance Amount' + 'AL Tertiary Min Balance Amount'
+F1 55439e1d 654c1977 0 6b5ec171 0 0 2
+AL Primary Min Balance Amount
+Funktion
+IF (LEFT('PI LoanProvision MinBalanceCalcRule MinBalanceCalcRuleType'('Policy ProductCode';'Policy EffDate';2;1);5) ALIKE "ERROR" ; çä   /* Yes - No Primary Min Balance Rule*/ 0 ; çä   /*No - Primary Min Balance Rule Exists*/ 'AL Min Balance Amount'('PI LoanProvision MinBalanceCalcRule MinBalanceCalcRuleType'('Policy ProductCode';'Policy EffDate';2;1);2;1)çä)
+F1 6b5ec171 654c1977 0 7e325ea4 0 0 2
+AL Secondary Min Balance Amount
+Funktion
+IF (LEFT('PI LoanProvision MinBalanceCalcRule MinBalanceCalcRuleType'('Policy ProductCode';'Policy EffDate';2;2);5) ALIKE "ERROR" ; çä   /* Yes - No Secondary Min Balance Rule*/ 0 ; çä   /*No - Secondary Min Balance Rule Exists*/ 'AL Min Balance Amount'('PI LoanProvision MinBalanceCalcRule MinBalanceCalcRuleType'('Policy ProductCode';'Policy EffDate';2;2);2;2)çä)
+F1 7e325ea4 654c1977 0 4f5a7e65 0 0 2
+AL Tertiary Min Balance Amount
+Funktion
+IF (LEFT('PI LoanProvision MinBalanceCalcRule MinBalanceCalcRuleType'('Policy ProductCode';'Policy EffDate';2;3);5) ALIKE "ERROR" ; çä   /* Yes - No Tertiary Min Balance Rule*/ 0 ; çä   /*No - Tertiary Min Balance Rule Exists*/ 'AL Min Balance Amount'('PI LoanProvision MinBalanceCalcRule MinBalanceCalcRuleType'('Policy ProductCode';'Policy EffDate';2;3);2;3)çä)
+F1 4f5a7e65 654c1977 69b4173f 0 0 0 2
+AL Min Balance Amount(typeAssumption; balanceType; sequenceKey)
+Funktion
+MAX(CASE( /*Minimum remaining unloaned CV balance calculation type*/ typeAssumption;çä   //flat amountçä1 : 'PI LoanProvision MinBalanceCalcRule FlatAmount'('Policy ProductCode';'Policy EffDate';balanceType;sequenceKey);çä   //number of months of COIçä2 : 'PI LoanProvision MinBalanceCalcRule MinMonthCOI'('Policy ProductCode';'Policy EffDate';balanceType;sequenceKey) * 'StdPolicy ChargeTotalAmt';çä   //monthly deduction to the next anniversaryçä3 : 'AL Deductions to Next Anniversary'(TransEffDate;'AL Calc Strict Next Anniversary Date'('Policy EffDate';TransEffDate));çä   //full surrender chargeçä5 : 'AL Full Surrender Charge';çä   //percent of surrender valueçä6 : (1 - 'PI LoanProvision MinBalanceCalcRule MinPct'('Policy ProductCode';'Policy EffDate';balanceType;sequenceKey) / 100) * 'AL Surrender Value';çä   //percent of unloaned cash valueçä7 : (1 - 'PI LoanProvision MinBalanceCalcRule MinPct'('Policy ProductCode';'Policy EffDate';balanceType;sequenceKey) / 100) * 'AL Current Unloaned Cash Value';çä   //loan Interest to next anniversaryçä8 : 'AL Interest Deduction'(TransEffDate;'AL Calc Strict Next Anniversary Date'('Policy EffDate';TransEffDate));çä   //loan Interest to scheduled repayment dateçä9 : 'AL Interest Deduction'(TransEffDate;'Policy Loan RepayDueDate'(0));çä   //Policy RepayDueDate expects loanIndexçä//noneçä11 : 0;çä   //charges to the next anniversaryçä16 : 'AL Deductions to Next Anniversary'(TransEffDate;'AL Calc Strict Next Anniversary Date'('Policy EffDate';TransEffDate));çä   //else, noneçä : 0)çä;0)
+F1 69b4173f 4f5a7e65 0 72e21122 0 0 2
+AL Full Surrender Charge
+Funktion
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy Annuity SurrenderCharge' ; çä  'Policy Life SurrenderChargeAmt'çä)
+F1 72e21122 4f5a7e65 0 5c2401 0 0 2
+AL Deductions to Next Anniversary(startDate; endDate)
+Funktion
+'StdPolicy ChargeTotalAmt' * 'Number of Months'(startDate;endDate)
+F1 5c2401 4f5a7e65 0 111e268b 0 0 2
+AL Surrender Value
+Funktion
+'Policy Life CashValueAmt' - 'Policy Life SurrenderChargeAmt'
+F1 111e268b 4f5a7e65 770e3ab5 0 0 0 2
+AL Interest Deduction(startDate; endDate)
+Funktion
+SUMX(loanIndex;0;'Policy Number of Loan' - 1;'AL Current Balance'(#loanIndex) * IF ('Policy Loan LoanIntTiming' = 1 ; çä  'AL AdvanceIntFactor'(startDate;#loanIndex) ; çä  'AL ArrearsIntFactor'('Policy Loan LoanOriginationDate'(#loanIndex);startDate;endDate;#loanIndex)çä))
+F1 770e3ab5 111e268b 0 320881f8 0 0 2
+AL ArrearsIntFactor(loanDate; startDate; endDate; loanIndex)
+Funktion
+IF ('Years Between Dates'(loanDate;endDate) > 1 ; çä  'AL Curr Interest Rate'(startDate;loanIndex) ; çä  ((1 + 'AL Curr Interest Rate'(startDate;loanIndex)) ^ ('DATE Days Difference'(endDate;startDate) / 'AL Days in Policy Year'(startDate)) - 1)çä)
+F1 320881f8 111e268b 0 0 0 0 2
+AL AdvanceIntFactor(startDate; loanIndex)
+Funktion
+'AL Curr Interest Rate'(startDate;loanIndex)
+F1 76a942be 7a008f69 0 0 0 0 2
+AL Current Unloaned Cash Value
+Funktion
+'Policy Life CashValueAmt' - 'AL Total Current Balance'
+F1 53dae79f 14503efb 439f48f1 0 0 0 2
+AL Maximum Pref Loan Amount
+Funktion
+IF ( /*Preferred Loan Available*/ 'AL Pref Loan Validation' ; çä   /*Yes: Calculate maximum preferred loan amount*/ CASE( /*Preferred Loan Calculation Type*/ 'PI LoanProvision MaxAvailableCalculation'('Policy ProductCode';'Policy EffDate';'Constant LoanType Preferred');çä     //Not applicable. Preferred loans are not allowed.çä0 : 0;çä     /*The maximum preferred loan amount is equal to a percent of the total cash value. çäâââThis option limits the preferred loan requests to one per policy year and does not support annual reallocation. */ 1 : 'Policy Life CashValueAmt' * 'PI LoanProvision MaxAvailablePercent'('Policy ProductCode';'Policy EffDate';'Constant LoanType Preferred') / 100;çä     /*2 The maximum preferred loan amount is calculated as the gain on the policy.çäâââDo not reallocate on the policy anniversary. */ 2 : 'Policy Life CashValueAmt' - 'AL Premium Payments';çä     : 0)çä   ; çä   /*No: Return 0*/ 0çä)
+F1 439f48f1 53dae79f 3094816c 33ad2c08 0 0 2
+AL Pref Loan Validation
+Funktion
+'AL Pref Loan Duration Exceeds Minimum' = 0 && CASE( /*Preferred Loan Calculation Type*/ 'PI LoanProvision MaxAvailableCalculation'('Policy ProductCode';'Policy EffDate';'Constant LoanType Preferred');çä   //Not applicable. Preferred loans are not allowed.çä0 : 0;çä   /*The maximum preferred loan amount is equal to a percent of the total cash value. çäââThis option limits the preferred loan requests to one per policy year and does not support annual reallocation. */ 1 : 'AL Pref Loan First Of Year' = 0;çä   /*2 The maximum preferred loan amount is calculated as the gain on the policy.çäââDo not reallocate on the policy anniversary. */ 2 : 1;çä   : 0)çä
+F1 3094816c 439f48f1 0 5b084966 0 0 2
+AL Pref Loan First Of Year
+Funktion
+SUMX(loanIndex;0;'Policy Number of Loan' - 1;IF ( /*Loan is preferred & taken in this duration year*/ 'Policy Loan LoanType'(#loanIndex) = 1 && 'DATE Date In Range'('Policy Loan LoanOriginationDate'(#loanIndex);'Calc Last Anniversary Date'('Policy EffDate';TransEffDate);'Calc Next Anniversary Date'('Policy EffDate';TransEffDate)) ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä))
+F1 5b084966 439f48f1 0 0 0 0 2
+AL Pref Loan Duration Exceeds Minimum
+Funktion
+IF ( /*Duration exceeds minimum prescribed*/ 'Duration Year'(TransEffDate;'Policy EffDate') >= 'PI LoanProvision FirstYearAvailable'('Policy ProductCode';'Policy EffDate';'Constant LoanType Preferred') ; çä   /*Yes*/ 0 ; çä   /*No*/ 1çä)
+F1 33ad2c08 53dae79f 0 0 0 0 2
+AL Premium Payments
+Funktion
+'Policy Life PaymentAmt'
+F1 2c8f39b 28b53bce 2886fc4e 75c8dc5c 0 0 2
+-- Date Functions --
+Funktion
+
+F1 2886fc4e 2c8f39b 0 2d6c82e1 0 0 2
+AL Days in Policy Year(date1)
+Funktion
+IF ( /*On anniversary*/ 'DATE Are Dates Equal'(date1;'Calc Next Anniversary Date'('Policy EffDate';date1)) ; çä   /*Yes: use this year*/ 'DATE Days Difference'(DATE(date1;0;0;1);date1) ; çä   /*No: use year that date falls in*/ 'DATE Days Difference'('Calc Next Anniversary Date'('Policy EffDate';date1);DATE('Calc Next Anniversary Date'('Policy EffDate';date1);0;0;-1))çä)
+F1 2d6c82e1 2c8f39b 0 264f8a75 0 0 2
+AL Calc Strict Last Anniversary Date(issueDate; pointInTimeDate)
+Funktion
+IF ( /*If issue date = current date, do not calculate previous anniversary*/ 'DATE Are Dates Equal'(issueDate;pointInTimeDate) ; çä   /*YesUse current (issue) date*/ issueDate ; çä   /*No: Calc strict last anniversary*/ 'Calc Last Anniversary Date'(issueDate;DATE(pointInTimeDate;-1;0;0))çä)
+F1 264f8a75 2c8f39b 0 4132c8e5 0 0 2
+AL Calc Strict Next Anniversary Date(issueDate; pointInTimeDate)
+Funktion
+'Calc Next Anniversary Date'(issueDate;DATE(pointInTimeDate;1;0;0))
+F1 4132c8e5 2c8f39b 0 5c9dde7b 0 0 2
+AL Loan Int Arrear Period(loanIndex; point_in_time_date)
+Funktion
+MIN('DATE Days Difference'('Policy Loan LoanOriginationDate'(loanIndex); //'Policy Loan LoanIntNextCapitalizationDate'(loanIndex)çäpoint_in_time_date);'DATE Days Difference'( //Anniversary Date = last loan interest capitalization dateçä'Calc Last Anniversary Date'('Policy EffDate';'Decrease Date By Days'(point_in_time_date;1)); //'Policy Loan LoanIntNextCapitalizationDate'(loanIndex)çäpoint_in_time_date))
+F1 5c9dde7b 2c8f39b 0 0 0 0 2
+AL LoanIntLastCapitalizationDate(loanIndex)
+Funktion
+'Decrease Date By Years'('Policy Loan LoanIntNextCapitalizationDate'(loanIndex);1)
+F1 75c8dc5c 28b53bce 20f89081 1f3af63b 0 0 2
+-- Interest Rate Functions --
+Funktion
+
+F1 20f89081 75c8dc5c 3821d550 78d550e2 0 0 2
+AL Interest Factor For Period(interestRate; endDate; startDate; loanIndex)
+Funktion
+ // 01/08/2008 - JL - Determines the Interest Factor due for the period from 'startDate' to 'endDate', at given force of interest 'rate'çäIF ( /*Interest is in Advance*/ 'Policy Loan LoanIntTiming' = 1 ; çä   /*Yes*/ 1 / (1 - interestRate) ^ ('DATE Days Difference'(endDate;startDate) / 'AL Days in Policy Year'(startDate)) ; çä   /*No*/ (1 + interestRate) ^ ('DATE Days Difference'(endDate;startDate) / 'AL Days in Policy Year'(startDate))çä)
+F1 3821d550 20f89081 0 0 0 0 2
+AL Curr Interest Rate(startDate; loanIndex)
+Funktion
+IF ('PI Use Attributes'("Policy Loan LoanInterestRate") || 'Std Calling System is wmaJ' ; çä  'Policy Loan LoanInterestRate'(loanIndex) ; çä  Rate('Policy ProductCode';"LOANINT";'Policy Effdate';'AL RateVector'('Duration Year'(startDate;'Policy EffDate');loanIndex))çä)
+F1 78d550e2 75c8dc5c 66414936 0 0 0 2
+AL Discount Factor(calcType; ModeDuration; ModePeriod; startDate; loanIndex)
+Funktion
+IF ('ANNCALC COLA Does Not Apply' ; çä  1 ; çä  'ANNCALC COLA Increase Factor'(ModeDuration;0;ModePeriod)çä) * IF ( //ModeDuration is within bounds of policyçä(ModeDuration = MAX('ANNCALC ModeDuration Start'('ModePeriod to Mode'(ModePeriod));0) || ModeDuration < 'ANNCALC ModeDuration Start'('ModePeriod to Mode'(ModePeriod))) ; çä //True - ReturnçäIF ( //ModeDuration is at StartçäModeDuration = 'ANNCALC ModeDuration Start'('ModePeriod to Mode'(ModePeriod)) ; çä   //True - Return V^(ModeDuration/ModePeriod)çä'ACT V Discount Factor'(IF (calcType ALIKE "RESERVE" ; çä    'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';'Policy EffDate';YEAR('Policy EffDate')) ; çä     /*'ANNCALC Curr Int Rate'(calcType;'ANNCALC Annuity Year Projected'(ModeDuration;ModePeriod)*/ 'AL Curr Interest Rate'(startDate;loanIndex)çä  )) ^ (ModeDuration / ModePeriod) ; çä //False - return 1çä1çä) ; çä //False - Recursionçä'AL Discount Factor'(calcType;ModeDuration - 1;ModePeriod;'Increase Date By Period'(startDate;-1;'ModePeriod to Mode'(ModePeriod));loanIndex) * 'ACT V Discount Factor'(IF (calcType ALIKE "RESERVE" ; çä'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';'Policy EffDate';YEAR('Policy EffDate')) ; çä /*'ANNCALC Curr Int Rate'(calcType;'ANNCALC Annuity Year Projected'(ModeDuration;ModePeriod) )*/ 'AL Curr Interest Rate'(startDate;loanIndex)çä)) ^ (1 / ModePeriod)çä)
+F1 66414936 78d550e2 0 0 0 0 2
+AL RateVector(yearIndex; loanIndex)
+Funktion
+IF ('ProductType is Annuity'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  V_('Policy Participant IssueAge'(0;0);yearIndex;'Policy Participant IssueGender'(0;0);'Policy Participant UnderwritingClass'(0;0);'Policy Participant TobaccoPremiumBasis'(0;0);1; //'Policy Coverage BandCode'(loanIndex; TransEffDur);çä'Policy Jurisdiction';'PI LoanProvision RateVariation TableRef'('Policy ProductCode';TransEffDate;'Policy Loan LoanType'(loanIndex)); //Table codeçä'GEN Vector Blank' //  "AgeCalculationType" Not usedçä) ; çä  V_('Policy LifeParticipant IssueAge'('GEN Vector Blank';0;0);yearIndex;'Policy LifeParticipant IssueGender'('GEN Vector Blank';0;0);'Policy LifeParticipant UnderwritingClass'('GEN Vector Blank';0;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';0;0;yearIndex);1; //'Policy Coverage BandCode'(loanIndex; TransEffDur);çä'Policy Jurisdiction';'PI LoanProvision RateVariation TableRef'('Policy ProductCode';TransEffDate;'Policy Loan LoanType'(loanIndex)); //Table codeçä'GEN Vector Blank' //  "AgeCalculationType" Not usedçä)çä)
+F1 1f3af63b 28b53bce 70ae637b 607b99c7 0 0 2
+-- WMAJ Cash Flow Transformation --
+Funktion
+
+F1 70ae637b 1f3af63b 7428f58b 0 0 0 2
+AL Cash Flow Loan Info
+Funktion
+VECTORX(fundIndex;0;'Policy Number of SubAccount' - 1;VECTORX(fndTransIndex;0;'Policy number of SubAccount FinancialActivity'(#fundIndex) - 1;IF ('FinActivityType is Loan Repayment'('Policy SubAccount FinancialActivity FinActivityType'(#fundIndex;#fndTransIndex)) || 'FinActivityType is Loan Taken'('Policy SubAccount FinancialActivity FinActivityType'(#fundIndex;#fndTransIndex)) ; çä  V_('Policy SubAccount FinancialActivity FinActivityType'(#fundIndex;#fndTransIndex);'Policy SubAccount FinancialActivity FinActivityGrossAmt'(#fundIndex;#fndTransIndex);'Policy SubAccount FinancialActivity FinEffDate'(#fundIndex;#fndTransIndex)) ; çä  0çä)))
+F1 7428f58b 70ae637b 0 3be326a3 0 0 2
+AL Loan Amount Position
+Funktion
+1
+F1 3be326a3 70ae637b 0 19641964 0 0 2
+AL Loan Date Position
+Funktion
+2
+F1 19641964 70ae637b 0 0 0 0 2
+AL Transaction Type Position
+Funktion
+0
+F1 607b99c7 28b53bce 7fb6db3a 69e0f898 0 0 2
+-- WMAJ-1301-188 - Loan Initiation --
+Funktion
+
+F1 7fb6db3a 607b99c7 6f2acf08 64102772 0 0 2
+AL Loan Initation Amount(loanIndex)
+Funktion
+SUMX(fundIndex;0;'Policy number of SubAccount' - 1;SUMX(fndTransIndex;0;'Policy number of SubAccount FinancialActivity'(#fundIndex) - 1;'AL Loan Initation'(loanIndex;#fundIndex;#fndTransIndex)))
+F1 6f2acf08 7fb6db3a 47e5574d 0 0 0 2
+AL Loan Initation(loanIndex; fundIndex; fndTransIndex)
+Funktion
+'GEN Round'(IF ( /*Loan initation*//*'DATE Are Dates Equal'('Policy Loan LoanOriginationDate'(loanIndex); TransEffDate)*//*'FinActivityType is Loan Payment'('Policy FinancialActivity FinActivityType'('Policy Number of FinancialActivity'))çäâ|| ('FinActivityType is Loan Interest Payment'('Policy FinancialActivity FinActivityType'(0)) &&çäââ'Policy Loan LoanIntMethod'(loanIndex))*/ 'FinActivityType is Loan Taken'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;fndTransIndex)) && 'DATE Are Dates Equal'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;fndTransIndex);TransEffDate) ; çä   //YesâçäIF ( /*Loan specified as amount*/ 'AL Loan Specification Type'(loanIndex) ALIKE "Amt" ; çä     //TrueçäIF ('Policy Loan LoanAmt'(loanIndex) <  /*'AL Total Min Balance Amount'*//*'INPUT PolicyProduct LoanProvision MinSingleLoan'*/ 'PI LoanProvision MinSingleLoan'('Policy ProductCode';TransEffDate;'Policy Loan LoanType'(loanIndex)) ; çä       //Requested loan is less than the minimum loan allowedçä//Trueçä0 ; çä       //FalseâçäIF ('Policy Loan LoanAmt'(loanIndex) >  /*'AL Maximum Loan Amount'*/ 'AL Max Available Loan'(loanIndex) ; çä         //Requested loan exceeds the maximum loan allowedçä//True-Return maximum loan amountçä/*'AL Maximum Loan Amount'*/'AL Max Available Loan'(loanIndex) ; çä         /*False-Return requested loan amount*/ 'Policy Loan LoanAmt'(loanIndex)çä      )çä  ) ; çä //FalseçäIF ( /*Loan specified as % of Cash Value*/ 'AL Loan Specification Type'(loanIndex) ALIKE "Pct" ; çä   //TrueçäIF (('Policy Loan LoanPct'(loanIndex) / 100) *  /*'AL Current Unloaned Cash Value'*/ 'AL Current Unloaned Cash ValueWMAJ'(loanIndex) <  /*'AL Total Min Balance Amount'*//*'INPUT PolicyProduct LoanProvision MinSingleLoan'*/ 'PI LoanProvision MinSingleLoan'('Policy ProductCode';TransEffDate;'Policy Loan LoanType'(loanIndex)) ; çä     //Requested loan is less than minimum loan allowedçä/*True*/0 ; çä     //FalseçäIF (('Policy Loan LoanPct'(loanIndex) / 100) *  /*'AL Current Unloaned Cash Value'*/ 'AL Current Unloaned Cash ValueWMAJ'(loanIndex) >  /*'AL Maximum Loan Amount'*/ 'AL Max Available Loan'(loanIndex) ; çä       //Requested loan exceeds the maximum allowed amountçä//True-return maximum loan amountçä/*'AL Maximum Loan Amount'*/'AL Max Available Loan'(loanIndex) ; çä       /*False-Returun the requested amount*/ ('Policy Loan LoanPct'(loanIndex) / 100) *  /*'AL Current Unloaned Cash Value'*/ 'AL Current Unloaned Cash ValueWMAJ'(loanIndex)çä    )çä) ; çä //Falseââçä'Messages SystemMessage'("CA1065";'Message Language';V_('Admin Loan Model Name';"'AL Loan Initation'"))çä)çä) ; çä //Noçä0çä);2)
+F1 47e5574d 6f2acf08 0 63f449b3 0 0 2
+AL Loan Specification Type(loanIndex)
+Funktion
+IF ('Policy Loan LoanAmt'(loanIndex) ALIKE 'GEN Vector Blank' && 'Policy Loan LoanPct'(loanIndex) ALIKE 'GEN Vector Blank' ; çä   //Neither loan amount nor % specifiedçä//True - request inputçä'Messages SystemMessage'("CA1065";'Message Language';V_('Admin Loan Model Name';"'AL Loan Specification Type'")) ; çä   //False -Check if both % of cash value and flat amount requestedçäIF ('Policy Loan LoanAmt'(loanIndex) NOTALIKE 'GEN Vector Blank' && 'Policy Loan LoanPct'(loanIndex) NOTALIKE 'GEN Vector Blank' ; çä     //True - return error messageçä'Messages SystemMessage'("CA1065";'Message Language';V_('Admin Loan Model Name';"'AL Loan Specification Type'")) ; çä     //False - Check if % of cash value requestedçäIF ('Policy Loan LoanAmt'(loanIndex) ALIKE 'GEN Vector Blank' && 'Policy Loan LoanPct'(loanIndex) NOTALIKE 'GEN Vector Blank' ; çä       //True - % of cash value requestedçä"Pct" ; çä       //False - Check if flat amount requestedçäIF ('Policy Loan LoanAmt'(loanIndex) NOTALIKE 'GEN Vector Blank' && 'Policy Loan LoanPct'(loanIndex) ALIKE 'GEN Vector Blank' ; çä         //True - flat amount requestedçä"Amt" ; çä         //False - return error message with location of errorçä'Messages SystemMessage'("CA1065";'Message Language';V_('Admin Loan Model Name';"'AL Loan Specification Type'"))çä      )çä  )çä)çä)
+F1 63f449b3 6f2acf08 0 7583e80a 0 0 2
+AL Current Unloaned Cash ValueWMAJ(loanIndex)
+Funktion
+ //'Policy Life CashValueAmt'// - 'AL Total Current Balance'çä'Policy Investment AccountValue' // - 'PI LoanProvision MinSingleLoan'('Policy ProductCode'; TransEffDate; 'Policy Loan LoanType'(loanIndex))ä
+F1 7583e80a 6f2acf08 0 0 0 0 2
+AL Max Available Loan(loanIndex)
+Funktion
+MAX('AL Current Unloaned Cash ValueWMAJ'(loanIndex) /*- 'AnnSC Partial Surrender Min Remaining Balance'('CalcType Current'('GEN Vector Blank'))*/ ;0)
+F1 64102772 607b99c7 15e32a65 4c8788c5 0 0 2
+AL Loan Repayment(loanIndex)
+Funktion
+IF ('Std Calling System Is wmaJ' && 'QualPlanType is Grouped Qualified Annuity'('Policy Annuity QualPlanType') ; çä  'AL Level Repayment Amount'('AL Loan Payment Mode';loanIndex) ; çä   /*'Policy Loan LoanAmt'(loanIndex)*/ 'AL Loan Initation Amount'(loanIndex) / 'AL Annuity Factor Certain'('CalcType Current'('GEN Vector Blank');0;'ANNCALC Certain Mode Period'('CalcType Current'('GEN Vector Blank');'AL Loan Payment Mode');'AL Loan Payment Mode';loanIndex)çä)
+F1 15e32a65 64102772 0 36ace999 0 0 2
+AL Annuity Factor Certain(calcType;DelayPeriod;endDuration;Mode; loanIndex)
+Funktion
+IF ( //End duration not exceededçäDelayPeriod < endDuration ; çä   //True - Calc next PVçä'AL Discount Factor'(calcType;DelayPeriod;'Number Of Payments Per Year'(mode);TransEffDate;loanIndex) + 'AL Annuity Factor Certain'(calcType;DelayPeriod + 1;endDuration;Mode;loanIndex) ; çä   //True - return PVçä'AL Discount Factor'(calcType;DelayPeriod;'Number Of Payments Per Year'(mode);TransEffDate;loanIndex)çä)
+F1 36ace999 64102772 214e1988 449e9778 0 0 2
+AL Level Repayment Amount(mode; loanIndex)
+Funktion
+( /*'AL Loan Initation Amount'(loanIndex)*/ 'Policy Loan LoanAmt'(loanIndex) * (1 + ('AL Number of Days until Modal Boundary'(mode;loanIndex) * 'AL Curr Interest Rate'(TransEffDate;loanIndex) / 100) / 365)) / ((1 - 'AL v'(loanIndex) ^ 'AL M'(loanIndex)) * (1 + 'AL I Divided By F'(loanIndex))) * 'AL I Divided By F'(loanIndex)
+F1 214e1988 36ace999 0 389d6d50 0 0 2
+AL v(loanIndex)
+Funktion
+1 / (1 + 'AL I Divided By F'(loanIndex))
+F1 389d6d50 36ace999 0 1913d21c 0 0 2
+AL I Divided By F(loanIndex)
+Funktion
+('AL Curr Interest Rate'(TransEffDate;loanIndex) / 100) / 'GEN Payments In Year'('AL Loan Payment Mode')
+F1 1913d21c 36ace999 0 71746454 0 0 2
+AL M(loanIndex)
+Funktion
+IF (NOT('Policy Loan LoanType'(loanIndex) = 5 || 'Policy Loan LoanType'(loanIndex) = 11) && 'Policy Loan LoanRepayNumYear'('GEN Vector Blank') >= 5 ; çä   //Loan not used to acquire a principal residence and specified term exceeds 5 yearsçä//True - Return error messageçä'Messages SystemMessage'("CA1064";'Message Language';V_('Admin Loan Model Name';"'AL M'")) ; çä   //Falseçä'Policy Loan LoanRepayNumYear'(loanIndex) * 'GEN Payments In Year'('AL Loan Payment Mode')çä)
+F1 71746454 36ace999 0 40100299 0 0 2
+AL Number of Days until Modal Boundary(mode; loanIndex)
+Funktion
+DATEDAY('AL Calc Next Versary'('Policy Loan LoanOriginationDate'(loanIndex);TransEffDate;0;mode)) - DATEDAY(TransEffDate)
+F1 40100299 36ace999 11d370f9 0 0 0 2
+AL Next Versary(issue_date; point_in_time; mode)
+Funktion
+'AL Calc Next Versary'(issue_date;point_in_time;0;mode)
+F1 11d370f9 40100299 0 0 0 0 2
+AL Calc Next Versary(issueDate; pointInTime; num_periods; mode)
+Funktion
+IF (MONTH(pointInTime) >= MONTH(issueDate) ; çä   //Month at current point in time is in the same month or a month after the month in which the policy was issuedâçä//True - Check forward recursivelyçäIF ('DATE Date In Range'(pointInTime;'Increase Date By Period'('Build Date'(issueDate;issueDate;pointInTime);num_periods;mode);'Increase Date By Period'('Build Date'(issueDate;issueDate;pointInTime);num_periods + 1;mode)) ; çä     //'pointInTime' date is between the anniversary in the current year and the next modal boundaryçä//True - return the next modal boundary date as the 'versary dateçä'Increase Date By Period'('Build Date'(issueDate;issueDate;pointInTime);num_periods + 1;mode) ; çä     //False - check the next periodçä'AL Calc Next Versary'(issueDate;pointInTime;num_periods + 1;mode)çä  ) ; çä //False - Check backward recursivelyçäIF ('DATE Date In Range'(pointInTime;'Increase Date By Period'('Build Date'(issueDate;issueDate;pointInTime);num_periods - 1;mode);'Increase Date By Period'('Build Date'(issueDate;issueDate;pointInTime);num_periods;mode)) ; çä   //'pointInTime' date is between the anniversary in the current year and the previous modal boundaryââââ çä//True - return the 'versary/modal boundary dateçä'Increase Date By Period'('Build Date'(issueDate;issueDate;pointInTime);num_periods;mode) ; çä   //False - check the previous periodçä'AL Calc Next Versary'(issueDate;pointInTime;num_periods - 1;mode)çä)çä)
+F1 449e9778 64102772 0 0 0 0 2
+AL Loan Payment Mode
+Funktion
+IF ('Policy Loan LoanPaymentMode' = 1 || 'Policy Loan LoanPaymentMode' = 2 ; çä   //Annual or semi-annual paymentsçä//True - Return error messageçä'Messages SystemMessage'("CA1011";'Message Language';V_('Admin Loan Model Name';"'AL Loan Payment Mode'")) ; çä   //Falseçä'Policy Loan LoanPaymentMode'çä)
+F1 4c8788c5 607b99c7 34378460 6865d080 0 0 2
+AL Loan Collateral(releaseType; releaseAmount; specifiedFund; bucketIndex; bucketValueVector; loanIndex)
+Funktion
+ //Initiate, allocate collateral, collateral allocation basisçäIF ('DATE Are Dates Equal'('Policy Loan LoanOriginationDate'(loanIndex);TransEffDate) ; çä   /*Loan initation*///Trueçä CASE('GEN Release Type Coversion'(releaseType);çä    "ProRata" : 'GEN OrderedReleaseAmt ProRata'(releaseAmount;bucketIndex;bucketValueVector);çä    "Specified" : IF (E_(bucketValueVector;specifiedFund) < 'AL Loan Initation Amount'(loanIndex) ; çä       //The fund(s) specified is insufficient to cover the loan initiation amountçä//Transaction rejectedçä0 ; çä       //Funds releasedçä'GEN OrderedReleaseAmt Specified'(releaseAmount;bucketIndex;specifiedFund;bucketValueVector)çä    );çä   : ERROR("ERROR"))çä ; çä //FalseçäERROR("Error: NOT LOAN INITIATION TRANSACTION")çä)
+F1 34378460 4c8788c5 0 0 0 0 2
+AL SubAccount CV Vector(calcType)
+Funktion
+VECTORX(counter;0;'Policy Number of SubAccount' - 1;'AV Subaccount Accumulation Value'(calcType;#counter))
+F1 6865d080 607b99c7 752ebdff 0 0 0 2
+AL Loan Initation Interest(calcType; loanIndex; fundIndex; fndTransIndex)
+Funktion
+ //finacttype,interest in cash,interest in advanceçä//IF('DATE Are Dates Equal'('Policy Loan LoanOriginationDate'(loanIndex); TransEffDate); çä/*Loan initation*///TrueçäIF ('FinActivityType is Loan Interest Payment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;fndTransIndex)) && 'Policy Loan LoanIntMethod'(loanIndex) = 1 ; çä   //Cash interest transactionçä//True-Cash Interest >= Interest dueçäMIN('Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;fndTransIndex); /*'AL Current Interest At Time'(loanIndex; pointInTimeDate)*//*'Policy FinancialActivity LoanActivity LoanIntAmtDue'(financialActivityIndex))*/ 'AL Loan Interest Due'(calcType;TransEffDate;loanIndex;fundIndex;fndTransIndex)) ; çä   //FalseçäERROR("Error: NOT LOAN INTEREST PAID IN CASH TRANSACTION")çä) //;çä//Falseçä//ERROR("Error: NOT LOAN INITIATION TRANSACTION")çä//)çä
+F1 752ebdff 6865d080 0 5747c46e 0 0 2
+--AL Loan Interest Due(calcType; fundIndex; loanIndex)
+Funktion
+//('IntRate Accum Factor'(calcType;fundIndex)-1)çä('AL Interest Factor For Period'(çäâ'AL Curr Interest Rate'(TransEffDate; loanIndex); çäâ'AL Next Versary'(çäâââââ'Policy Loan LoanOriginationDate'(loanIndex); çäâââââTransEffDate; çäâââââ'Policy Loan LoanPaymentMode'çäâââââ); çäâTransEffDate; çäâloanIndex)-1)çä*'AL Outstanding Loan'(calcType; fundIndex; loanIndex)çä
+F1 5747c46e 6865d080 0 0 0 0 2
+--AL Outstanding Loan(calcType; fundIndex; loanIndex)
+Funktion
+'AV Cumulative Loans'(calcType; fundIndex)+'AL Loan Initation Amount'(loanIndex)çä-çä'AV Cumulative Loan Repayment'(calcType; fundIndex)
+F1 69e0f898 28b53bce 32bec7a3 19dfdd72 0 0 2
+-- Annuity Loan Interest Capitalization --
+Funktion
+
+F1 32bec7a3 69e0f898 0 0 0 0 2
+AL Loan Capitalized Interest Amount(calcType; point_in_time_date; loanIndex; fundIndex; fndTransIndex)
+Funktion
+IF ('DATE IS Date1 Greater Than Or Equal Date2'(point_in_time_date;'Policy Loan LoanIntNextCapitalizationDate'(loanIndex)) ; çä  IF ('Policy Loan LoanIntTiming' = 2 ; çä     //Interest in Arrearsçä'AL Loan Interest Due'(calcType;point_in_time_date;loanIndex;fundIndex;fndTransIndex) ; çä     //false: Interest in AdvanceçäIF (('Policy Loan LoanIntAmtPaidITD'(loanIndex) < 'AL Loan Interest Due'(calcType;point_in_time_date;loanIndex;fundIndex;fndTransIndex)) ; çä      'AL Loan Interest Due'(calcType;point_in_time_date;loanIndex;fundIndex;fndTransIndex) - 'Policy Loan LoanIntAmtPaidITD'(loanIndex) ; çä      'AL Loan Interest Due'(calcType;point_in_time_date;loanIndex;fundIndex;fndTransIndex)çä    ) * (1 + ('AL Curr Interest Rate'(point_in_time_date;loanIndex) / (1 - 'AL Curr Interest Rate'(point_in_time_date;loanIndex))))çä) ; çä0çä)
+F1 19dfdd72 28b53bce 7fc25493 12d8da0d 0 0 2
+-- Annuity Loan Interest Billing --
+Funktion
+
+F1 7fc25493 19dfdd72 31ccee91 0 0 0 2
+AL Loan Interest Due(calcType; point_in_time_date; loanIndex; fundIndex; fndTransIndex)
+Funktion
+IF ('QualPlanType is Grouped Qualified Annuity'('Policy Annuity QualPlanType') ; çä  MIN( /*'AL Outstanding Loan'(calcType; loanIndex; fundIndex)*///'Policy Loan LoanAmt'(loanIndex)çä 'ALLoan Balance'(calcType;loanIndex;point_in_time_date) * ('AL Curr Interest Rate'(point_in_time_date;loanIndex) / 100 //*çä//allow for payments only made in monthly or quarterly installmentsçä//'Mode Adj Factor'('Policy Loan LoanPaymentMode')çä) * ('AL Loan Int Arrear Period'(loanIndex;point_in_time_date) / 365); /*'AL Outstanding Loan'(calcType; loanIndex; fundIndex)*///'Policy Loan LoanAmt'(loanIndex)çä 'ALLoan Balance'(calcType;loanIndex;point_in_time_date) * ('AL Curr Interest Rate'(point_in_time_date;loanIndex) / 100 //*çä//'Mode Adj Factor'('Policy Loan LoanPaymentMode')çä) / 'Number Of Payments Per Year'('AL Loan Payment Mode')) ; çä  IF ('Policy Loan LoanIntTiming' = 2 ; çä     //Arrears InterestçäIF ('DATE Are Dates Equal'('Policy Loan LoanOriginationDate'(loanIndex);point_in_time_date) ; çä      0 ; çä      IF ('AL Remittance On Or After Next Cap'(point_in_time_date;loanIndex) ; çä         //Remittance occurs before next capitalizationçä//True - Interest payable on the same outstanding loan balanceâââçä/*'AL Outstanding Loan'(calcType; loanIndex; fundIndex)*///'Policy Loan LoanAmt'(loanIndex)çä'ALLoan Balance'(calcType;loanIndex;point_in_time_date) * ('AL Curr Interest Rate'(point_in_time_date;loanIndex) / 100) //*çä//'Mode Adj Factor'('Policy Loan LoanPaymentMode')çä * ('AL Loan Int Arrear Period'(loanIndex;point_in_time_date) / 365) ; çä         //False - Interest payable on different loan balances, before and after the remittanceçä'AL Non Qualified loan Interest Due'(calcType;point_in_time_date;loanIndex;fundIndex;fndTransIndex)çä      )çä  ) ; çä //Advance Interestçä/*'AL Outstanding Loan'(calcType; loanIndex; fundIndex)*///'Policy Loan LoanAmt'(loanIndex)çä'ALLoan Balance'(calcType;loanIndex;point_in_time_date) * ('AL Curr Interest Rate'(point_in_time_date;loanIndex) / 100) //*çä//'Mode Adj Factor'('Policy Loan LoanPaymentMode')çäçä)çä)
+F1 31ccee91 7fc25493 0 29e14b2b 0 0 2
+AL Non Qualified loan Interest Due(calcType; point_in_time_date; loanIndex; fundIndex; fndTransIndex)
+Funktion
+'ALLoan Balance'(calcType;loanIndex;point_in_time_date) * ('AL Curr Interest Rate'(point_in_time_date;loanIndex) / 100) * ('AL Loan Int Arrear Period'(loanIndex;point_in_time_date) / 365) + ('ALLoan Balance'(calcType;loanIndex;point_in_time_date) - IF ('FinActivityType is Loan Repayment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;fndTransIndex)) && 'DATE Are Dates Equal'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;fndTransIndex);TransEffDate) ; çä   //Loan remittance transactionçä//Trueââââçä'Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;fndTransIndex) ; çä  0çä)) * ('AL Curr Interest Rate'(point_in_time_date;loanIndex) / 100) * ('AL Days Prior To Anniversary'(point_in_time_date) / 365)
+F1 29e14b2b 7fc25493 0 0 0 0 2
+AL Remittance On Or After Next Cap(transactionDate; loanIndex)
+Funktion
+'DATE Is Date1 Greater Than Or Equal Date2'(transactionDate;'Policy Loan LoanIntNextCapitalizationDate'(loanIndex))
+F1 12d8da0d 28b53bce 26748ebd 47227d4a 0 0 2
+-- WMAJ-1301 - Loan Repayment --
+Funktion
+
+F1 26748ebd 12d8da0d 5f27219b 4a422b46 0 0 2
+AL Fund Loan Repayment(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex)
+Funktion
+ /*IF(fundIndex = 'AL Last Fund';çäââçäâ'AL Fund Remaining Loan Repayment'(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex);çäââçäâMIN('AL Fund Remaining Loan Repayment'(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex);çäâââçäââIF('Policy SubAccount AllocPercent'(fundIndex) > 0;çäçäâââ'AL Fund Percentage Allocation'(calcType; fundIndex; loanIndex);çäâââââçäâââ'Policy SubAccount AllocationAmt'(fundIndex)çäâââ)çäâ)çä)*/ 'AL Fund Loan Repayment Allocated'(calcType;point_in_time_date;fundIndex;fndTransIndex;loanIndex)
+F1 5f27219b 26748ebd 0 24ed1b34 0 0 2
+--AL Fund Percentage Allocation(calcType; fundIndex; loanIndex)
+Funktion
+'GEN Round'(çäâ('AL Loan Repayment'(loanIndex)çäâ)çäâ*çäâ0.01 çäâ* çäâ'Policy SubAccount AllocPercent'(fundIndex);çäâ2çä)
+F1 24ed1b34 26748ebd 66710b5d 5d99aabe 0 0 2
+--AL Fund Remaining Loan Repayment(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex)
+Funktion
+MAX(0;çäâ'AL Fund Remaining Loan Repayment Rec'(çäââcalcType; çäââfundIndex;çäââ'Policy SubAccount AllocSequence'(fundIndex);çäââ'AL Loan Principal Repayment'(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex);çäââloanIndexçäââ)çä)
+F1 66710b5d 24ed1b34 0 0 0 0 2
+--AL Fund Remaining Loan Repayment Rec(calcType; fundIndex; sequence; loanRepaymentAmt; loanIndex)
+Funktion
+'GEN Round'(çäâIF(sequence = 0;çäââloanRepaymentAmt;çäââ'AL Fund Remaining Loan Repayment Rec'(calcType; fundIndex; sequence - 1; loanRepaymentAmt; loanIndex)çäââ-çäââ'Policy SubAccount AllocationAmt'('AL Fund Index from Sequence'(sequence-1))çäââ-çäââ'AL Fund Percentage Allocation'(calcType;  'AL Fund Index from Sequence'(sequence-1); loanIndex)çäâ);çäâ2çä)çä
+F1 5d99aabe 26748ebd 0 25515938 0 0 2
+--AL Fund Index from Sequence(sequence)
+Funktion
+'ANNCD Fund Index from Sequence'(sequence)
+F1 25515938 26748ebd 0 2e1ce012 0 0 2
+--AL Last Fund
+Funktion
+'ANNCD Last Fund'
+F1 2e1ce012 26748ebd 2bf5b627 0 0 0 2
+AL Fund Loan Repayment Allocated(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex)
+Funktion
+E_(E_('AL Fund Loan Repayment Allocation'(calcType;point_in_time_date;fundIndex;fndTransIndex;loanIndex);fundIndex);1)
+F1 2bf5b627 2e1ce012 0 0 0 0 2
+AL Fund Loan Repayment Allocation(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex)
+Funktion
+'GEN Allocation'(IF ('TransferType is Amount'('Policy Arrangement ArrDestination TransferAmtType'(0)) ; çä  "AMT" ; çä  "PCT"çä); // Alloc Typeçä'AL Loan Principal Repayment'(calcType;point_in_time_date;fundIndex;fndTransIndex;loanIndex); // Alloc Amtçä2; // Alloc Round decimalsçä'ANNCD Fund Allocation Vector')
+F1 4a422b46 12d8da0d 7cfc7043 2c729714 0 0 2
+AL Loan Interest Repayment(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex)
+Funktion
+IF ('FinActivityType is Loan Repayment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;fndTransIndex)) && 'DATE Are Dates Equal'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;fndTransIndex);TransEffDate) && 'AL Loan Interest Grace Period Indicator'(loanIndex) ; çä   //TrueçäMIN('Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;fndTransIndex);'AL Loan Interest Due'(calcType;point_in_time_date;loanIndex;fundIndex;fndTransIndex)) ; çä   //Falseçä0çä)
+F1 7cfc7043 4a422b46 0 0 0 0 2
+AL Loan Interest Grace Period Indicator(loanIndex)
+Funktion
+'DATE Date In Range'(TransEffDate;'Policy Loan LoanIntNextBillDate'(loanIndex);'Increase Date By Days'( /*'AL Next Versary'('Policy Loan LoanOriginationDate'(loanIndex); çäâââââââââââTransEffDate; çäâââââââââââ'AL Loan Payment Mode')*/ 'AL Calc Strict Next Anniversary Date'('Policy Loan LoanOriginationDate'(loanIndex);TransEffDate);'PolicyProduct LoanProvision LoanCapBillingGracePeriod'(loanIndex)))
+F1 2c729714 12d8da0d 2986b932 0 0 0 2
+AL Loan Principal Repayment(calcType; point_in_time_date; fundIndex; fndTransIndex; loanIndex)
+Funktion
+ /*SUMX(fndTransIndex; 0; 'Policy number of SubAccount FinancialActivity'(fundIndex)-1;*/ IF ('FinActivityType is Loan Repayment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;fndTransIndex)) ; çä   //TrueâââçäIF ('DATE Are Dates Equal'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;fndTransIndex);TransEffDate) && 'AL Loan Interest Grace Period Indicator'(loanIndex) ; çä     //True - Loan remittance transaction within grace periodçäMIN(MAX('Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;fndTransIndex) - 'AL Loan Interest Repayment'(calcType;point_in_time_date;fundIndex;fndTransIndex;loanIndex);0);'AL Maximum Repayment Amount'(calcType;loanIndex)) ; çä     //False - Loan remittance transaction outside grace periodçäIF (NOT('AL Loan Interest Grace Period Indicator'(loanIndex)) && 'Policy Loan LoanIntTiming' = 2 ; çä       //Not in grace period and arrears interestçä//True - Principal paid equals the amount on the remittance transactionçäMIN('Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;fndTransIndex);'AL Maximum Repayment Amount'(calcType;loanIndex)) ; çä       //False - Calculate principle paidçäMIN('AL Principal Paid'(fundIndex;fndTransIndex;loanIndex);'AL Maximum Repayment Amount'(calcType;loanIndex))çä    )çä) ; çä //False - Not loan remittanceâçä0çä)
+F1 2986b932 2c729714 33d7f503 1d1da20a 0 0 2
+AL Principal Paid(fundIndex; fndTransIndex; loanIndex)
+Funktion
+IF ('FinActivityType is Loan Repayment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;fndTransIndex)) ; çä   //Trueçä'Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;fndTransIndex) * (1 + ('AL Days Prior To Anniversary'(TransEffDate) * ('AL Curr Interest Rate'(TransEffDate;loanIndex) / 100) / 'AL Days in Policy Year'(TransEffDate) / (1 - 'AL Days Prior To Anniversary'(TransEffDate) * ('AL Curr Interest Rate'(TransEffDate;loanIndex) / 100) / 'AL Days in Policy Year'(TransEffDate)))) ; çä  0çä)
+F1 33d7f503 2986b932 0 0 0 0 2
+AL Days Prior To Anniversary(point_in_time_date)
+Funktion
+'DATE Days Difference'( /*TransEffDate*/ point_in_time_date;'AL Calc Strict Next Anniversary Date'('Policy EffDate';TransEffDate))
+F1 1d1da20a 2c729714 fc2aa7f 0 0 0 2
+AL Maximum Repayment Amount(calcType; loanIndex)
+Funktion
+'ALLoan Balance'(calcType;loanIndex;TransEffDate) - IF ('Policy Loan LoanIntTiming' = 2 ; çä   //Interest payable in arrearsçä//True - No unearned interestçä0 ; çä   //False - Subtract unearned interest from outstanding loan to get maximum repayment amountçä'AL Unearned Interest'(loanindex)çä)
+F1 fc2aa7f 1d1da20a 0 0 0 0 2
+AL Unearned Interest(loanindex)
+Funktion
+'Policy Loan LoanIntAmtUnearnedATD'(loanindex)
+F1 47227d4a 28b53bce 7bd76e35 6c66cfec 0 0 2
+-- WMAJ-1301 - Loan Balance --
+Funktion
+
+F1 7bd76e35 47227d4a 926314a 343e16aa 0 0 2
+--ALLoan Balance(calcType; loanIndex)
+Funktion
+SUMX(fundIndex; 0; 'Policy Number of SubAccount' - 1; 'AL SubAccount Loan Balance'(calcType; #fundIndex; loanIndex))çä
+F1 926314a 7bd76e35 18428d06 0 0 0 2
+--AL SubAccount Loan Balance(calcType; fundIndex; loanIndex)
+Funktion
+çäââ('AL SubAccount Cumulative Loans'(calcType; fundIndex)çäââ- 'AL SubAccount Cumulative Repayments'(calcType; fundIndex; loanIndex))//*'IntRate Accum Factor'(calcType;fundIndex)çäââ/*'AL Interest Factor For Period'('AL Curr Interest Rate'(TransEffDate; loanIndex)/100; çäââââââââââTransEffDate; çäââââââââââ'Policy Loan LoanOriginationDate'(loanIndex); çäââââââââââloanIndex)*/
+F1 18428d06 926314a 0 a4ce77c 0 0 2
+--AL SubAccount Cumulative Repayments(calcType; fundIndex; loanIndex)
+Funktion
+'AV Cumulative Loan Repayment'(calcType; fundIndex)çä
+F1 a4ce77c 926314a 0 0 0 0 2
+--AL SubAccount Cumulative Loans(calcType; fundIndex)
+Funktion
+'AV Cumulative Loans'(calcType; fundIndex)
+F1 343e16aa 47227d4a 6024bdc6 617b3c6a 0 0 2
+ALLoan Balance(calcType; loanIndex;point_in_time_date)
+Funktion
+CASE('AL Loan Specification Type'(loanIndex);çä  "Amt" : IF ('Policy Loan LoanAmt'(loanIndex) <  /*'AL Total Min Balance Amount'*//*'INPUT PolicyProduct LoanProvision MinSingleLoan'*/ 'PI LoanProvision MinSingleLoan'('Policy ProductCode';TransEffDate;'Policy Loan LoanType'(loanIndex)) ; çä     //Requested loan is less than the minimum loan allowedçä//Trueçä0 ; çä     //FalseâçäIF ('Policy Loan LoanAmt'(loanIndex) >  /*'AL Maximum Loan Amount'*/ 'AL Max Available Loan'(loanIndex) ; çä       //Requested loan exceeds the maximum loan allowedçä//True-Return maximum loan amountçä/*'AL Maximum Loan Amount'*/'AL Max Available Loan'(loanIndex) ; çä       /*False-Return requested loan amount*/ 'Policy Loan LoanAmt'(loanIndex)çä    )çä);çä"Pct" : IF (('Policy Loan LoanPct'(loanIndex) / 100) *  /*'AL Current Unloaned Cash Value'*/ 'AL Current Unloaned Cash ValueWMAJ'(loanIndex) <  /*'AL Total Min Balance Amount'*//*'INPUT PolicyProduct LoanProvision MinSingleLoan'*/ 'PI LoanProvision MinSingleLoan'('Policy ProductCode';TransEffDate;'Policy Loan LoanType'(loanIndex)) ; çä //Requested loan is less than minimum loan allowedçä/*True*/0 ; çä //FalseçäIF (('Policy Loan LoanPct'(loanIndex) / 100) *  /*'AL Current Unloaned Cash Value'*/ 'AL Current Unloaned Cash ValueWMAJ'(loanIndex) >  /*'AL Maximum Loan Amount'*/ 'AL Max Available Loan'(loanIndex) ; çä   //Requested loan exceeds the maximum allowed amountçä//True-return maximum loan amountçä/*'AL Maximum Loan Amount'*/'AL Max Available Loan'(loanIndex) ; çä   /*False-Returun the requested amount*/ ('Policy Loan LoanPct'(loanIndex) / 100) *  /*'AL Current Unloaned Cash Value'*/ 'AL Current Unloaned Cash ValueWMAJ'(loanIndex)çä)çä);çä : 'Messages SystemMessage'("CA1065";'Message Language';V_('Admin Loan Model Name';"'AL Loan Initation'")))çä - SUMX(fundIndex;0;'Policy Number of SubAccount' - 1;'AL Loan Cumulative Repayments'(calcType;loanIndex;#fundIndex;point_in_time_date))
+F1 6024bdc6 343e16aa 0 728316fc 0 0 2
+AL Loan Cumulative Repayments(calcType; loanIndex; fundIndex; point_in_time_date)
+Funktion
+ /*SUMX(fndTransIndex; 0; 'Policy number of SubAccount FinancialActivity'(fundIndex)-1;çäçäâIF('FinActivityType is Loan Repayment'(çäâââ'Policy SubAccount FinancialActivity FinActivityType'(fundIndex; #fndTransIndex))çäââ&&çäââ'DATE Is Date1 Less Than or Equal to Date2'(çäâââ'Policy SubAccount FinancialActivity FinEffDate'(fundIndex; #fndTransIndex);çäâââpoint_in_time_dateçäââ);çäâââçäâââ'Policy SubAccount FinancialActivity LoanPrinicpal'(fundIndex; #fndTransIndex; loanIndex);çäâââçäâââ0çäâ)çäâçä)*/ SUMX(fndTransIndex;0;'Policy number of SubAccount FinancialActivity'(fundIndex) - 1;IF ('FinActivityType is Loan Repayment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;#fndTransIndex)) && 'DATE Is Date1 Less Than Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;#fndTransIndex);point_in_time_date) ; çä  'Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;#fndTransIndex) ; çä  0çä))
+F1 728316fc 343e16aa 0 0 0 0 2
+AL Loan Cumulative Interest Payments(calcType; loanIndex; fundIndex; point_in_time_date)
+Funktion
+SUMX(fndTransIndex;0;'Policy number of SubAccount FinancialActivity'(fundIndex) - 1;IF ('FinActivityType is Loan Interest Payment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;#fndTransIndex)) && 'DATE Is Date1 Less Than or Equal to Date2'('Policy SubAccount FinancialActivity FinEffDate'(fundIndex;#fndTransIndex);point_in_time_date) ; çä  'Policy SubAccount FinancialActivity FinActivityGrossAmt'(fundIndex;#fndTransIndex) ; çä  0çä))
+F1 617b3c6a 47227d4a 0 0 0 0 2
+AL Loan Balance After Repayment(calcType; loanIndex; fundIndex)
+Funktion
+'ALLoan Balance'(calcType;loanIndex;TransEffDate) - SUMX(fndTransIndex;0;'Policy number of SubAccount FinancialActivity'(fundIndex);IF ('FinActivityType is Loan Repayment'('Policy SubAccount FinancialActivity FinActivityType'(fundIndex;#fndTransIndex)) ; çä  'AL Loan Principal Repayment'(calcType;TransEffDate;fundIndex;#fndTransIndex;loanIndex) ; çä  0çä))
+F1 6c66cfec 28b53bce 54341c3d 0 0 0 2
+-- Misc --
+Funktion
+
+F1 54341c3d 6c66cfec 0 0 0 0 2
+Admin Loan Model Name
+Funktion
+"AdminLoans"
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 6c1697e1 0 492b8cb7 0 0 0 0
+
+I0 492b8cb7 6c1697e1 0 0 0 0 0
+AnnuityContractDocuments.pms
+-
+O0
+E0
+L0
+B0
+P2
+51b0b04f
+486b4e68
+F1
+28b53bce
+A0
+T0
+!109
+486b4e68 3 -1
+Description: Returns the total current loan balance at Transaction Effective Dateçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/18/2008 CSC Initial Calculation/Rule
+486b4e68 4 -1
+Description: Returns the current loan balance at Transaction Effective Dateçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/18/2008 CSC Initial Calculation/Rule
+486b4e68 5 -1
+Description: Returns the maximum loan amount available (both standard and preferred loans)çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/18/2008 CSC Initial Calculation/Rule
+486b4e68 6 -1
+Description: Returns the total Capitalized Interestçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added loanIndex parameter to outputçä03/26/2008 CSC Initial Calculation/Rule
+486b4e68 7 -1
+Description: Returns the Capitalized Interest by loanIndexçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 -PA1013 - wdp - Additional loanIndex parameter to Policy Loan LoanIntMethodçä03/26/2008 CSC Initial Calculation/Rule
+486b4e68 8 -1
+Description: Returns the Maximum Preferred Loan Amountçä çäModification Log:çä01/08/2009âVPM028âInitial Calculation/Rule
+486b4e68 14 -1
+Description: Returns the loan initiation amount.çä çäModification Log:çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial rule.
+486b4e68 15 -1
+Description: Returns the Cash Interest after a Loan Initiation transaction.çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC Removed hard coded parametersçä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial rule.
+486b4e68 16 -1
+Description: Returns the loan collateral transferred from the policy fund(s). It may be transferred on a pro-rata or fund specific basisçä çäModification Log:çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial rule.
+486b4e68 17 -1
+Description: Returns the repayment amount for qualified annuity loans.çä çäModification Log:çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+486b4e68 18 -1
+Description:  Returns the loan interest dueçä çäModification Logçä çä09/19/2012 - wmAJ Release 1 Sprint 4 - Initial Calculation Rule
+486b4e68 19 -1
+Description:  Returns the loan interest capitalized amountçä çäModification Logçä çä09/19/2012 - wmAJ Release 1 Sprint 4 - Initial Calculation Rule
+486b4e68 20 -1
+Description: Calculates the model payment. An interest only annuity factor is applied to the amount of the loan.çä çäModification Log:çä10/09/2012 wmA-J Release 2 Sprint 5 MC Initial calculation rule.çä
+486b4e68 21 -1
+Description: Calculates the model payment. An interest only annuity factor is applied to the amount of the loan.çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC Added 'point_in_time' parm to 'ALLoan Balance'çä10/24/2012 wmA-J Release 2 Sprint 5 MC Initial calculation rule.çä
+486b4e68 22 -1
+Description: Returns text delimited data to be used to build wmaJ flow information related loan initiation amounts.çä çäModification Log:çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial rule.
+1864fc53 -2 -2
+Description: Returns the total current loan balance at Transaction Effective Dateçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/24/2008 Allowed for FIFO processing of repaymentsçä01/22/2008 Seperated Proj & Current calculationsçä01/18/2008 CSC Initial Calculation/Rule
+2627ded -2 -2
+Description: Returns the current loan balance at Transaction Effective Dateçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Additional loanIndex parameter to Policy Loan LoanIntMethodçä01/24/2008 Allowed for FIFO processing of repaymentsçä01/22/2008 Seperated Proj & Current calculationsçä01/18/2008 CSC Initial Calculation/Ruleçä
+1103eb4e -2 -2
+Description: Returns the current loan balance at a specific timeçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/24/2008 Allowed for FIFO processing of repaymentsçä01/22/2008 Seperated Proj & Current calculationsçä01/18/2008 CSC Initial Calculation/Rule
+77c2e320 -2 -2
+Description: Returns the loan debit balance accrual till end Dateçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/24/2008 Modified to use per loan processingçä01/22/2008 CSC Initial Calculation/Rule
+7167936e -2 -2
+Description: Returns the loan activity over the periodçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/24/2008 Corrected yearly accraul (for interest rate tat varies by year)çä01/24/2008 Modified to include 'At Issue' functionçä01/22/2008 CSC Initial Calculation/Rule
+65e864a9 -2 -2
+Description: Returns the loan repayments for periodçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/31/2008 Modified to use sum of payments on day, if multiple payment occur on the same dayçä01/24/2008 Modified to include both cash & dividend paymentsçä01/22/2008 CSC Initial Calculation/Rule
+7eb649a2 -2 -2
+Description: Returns the amount of the payment relevant to a specific loan, using FIFO logicçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/31/2008 Modification: Rounding Error Fixedçä01/24/2008 CSC Initial Calculation/Rule
+3b7d07b3 -2 -2
+Description: Returns the total loan repayments on a day (if multiple occur)çä çäModification Log:çä01/31/2008 CSC Initial Calculation/Ruleçä01/24/2008 Modified to include both cash & dividend payments
+48adfc40 -2 -2
+Description: Returns the total capitalized interestçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Initial Calculation/Rule
+2928140a -2 -2
+Description: Returns the capitalized interest per loanIndexçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Initial Calculation/Rule
+3e39ec2c -2 -2
+Description: Returns the capitalized interest at a timeçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Initial Calculation/Rule
+774854aa -2 -2
+Description: Returns the base loan amount (excl capitalized interest) at a timeçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/25/2008 CSC Initial Calculation/Rule
+1dc899a2 -2 -2
+Description: Calculates the base loan amount (excl capitalized interest)çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä12/08/2008 TB: Removed max check and added check at top to determine if transaction < startdateçä12/03/2008 CSC added max check in case no financial activityçä03/25/2008 CSC Initial Calculation/Rule
+1dc899a2 0 2
+
+c1baa00 -2 -2
+Description:  Returns the total loan for a given subaccountçä çäModification Log:çä02/29/2012 wmA-J Initial Calc
+7a008f69 -2 -2
+Description: Returns the maximum loan amount availableçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/18/2008 CSC Initial Calculation/Rule
+654c1977 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+55439e1d -2 -2
+Description: first minimum balance rule used to determine maximum loan calculations.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/14/2008 CMC Initial Calc
+6b5ec171 -2 -2
+Description: Second minimum balance rule used to determine maximum loan calculations.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/14/2008 CMC Initial Calc
+7e325ea4 -2 -2
+Description: Third minimum balance rule used to determine maximum loan calculations.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/14/2008 CMC Initial Calc
+4f5a7e65 -2 -2
+Description: Returns minimum loan balance amount for a specified durationçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/14/2008 CMC Loan Clean upçä02/08/2008 CSC Initial Calculation/Rule
+69b4173f -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+72e21122 -2 -2
+çäModifications log:çä10/14/2008 CSC corrected name of function by adding "Std"
+5c2401 -2 -2
+Description: Returns surrende valueçä çäModification Log:çä01/21/2008 CSC Initial Calculation/Rule
+111e268b -2 -2
+Description: Returns Interest Deductionçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2008 CSC Initial Calculation/Rule
+770e3ab5 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+320881f8 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+76a942be -2 -2
+Description: Returns the total current unloaned cash valueçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/18/2008 CSC Initial Calculation/Rule
+53dae79f -2 -2
+Description: Returns the maximum preferred loan amount availableçä çäModification Log:çä02/29/2012 wmA-J brought in base change for Loan Provision entity recognitionçä01/18/2008 CSC Initial Calculation/Rule
+439f48f1 -2 -2
+Description: Validates whether a Preferred Loan is available. Returns 0 if passed.çä çäModification Log:çä02/29/2012 wmA-J brought in base change for Loan Provision entity recognitionçä02/11/2008 CSC Initial Calculation/Rule
+3094816c -2 -2
+Description: Validates first Preferred Loan of duration year. Returns 0 if passed.çä çäModification Log:çä02/11/2008 CSC Initial Calculation/Rule
+5b084966 -2 -2
+Description: Validates current duration compared with minimum for Preferred Loans. Returns 0 if passed.çä çäModification Log:çä02/29/2012 wmA-J brounght in base change for Loan Provision entity recognitionçä02/11/2008 CSC Initial Calculation/Rule
+5b084966 0 2
+
+33ad2c08 -2 -2
+Description: Returns the premium payments for current loan calculationsçä çäModification Log:çä02/11/2008 CSC Initial Calculation/Rule
+2886fc4e -2 -2
+Description: Returns number of days in a policy yearçä çäModification Log:çä01/18/2008 CSC Initial Calculation/Rule
+2d6c82e1 -2 -2
+Description: Returns previous policy anniversary; if on anniversary, returns the previous anniversary (one year ago).çä çäModification Log:çä01/22/2008 CSC Initial Calculation/Rule
+264f8a75 -2 -2
+Description: Returns next policy anniversary; if on anniversary, returns the next anniversary (one year in time).çä çäModification Log:çä01/22/2008 CSC Initial Calculation/Rule
+4132c8e5 -2 -2
+Description:  Returns the period for which loan interest is capitalized. (this is in days). çä çäModification Log:çä çä09/17/2012 - BP - wmAJ Release 1 Sprint 4 - Use transaction effective date instead of next capitalization date.çä09/11/2012 - BP - wmAJ Release 1 Sprint 4 - Initial Calculation Rule
+5c9dde7b -2 -2
+Description:  Returns the last capitalization dateçä çäModification Log:çä çä09/11/2012 - BP - wmaJ Release 1 Sprint 4 - Initial Calculation Rule
+20f89081 -2 -2
+Description: Returns the loan interest factor over a periodçä çäModification Log:çä01/18/2008 CSC Initial Calculation/Rule
+3821d550 -2 -2
+Description: Returns the loan interest rateçä çäModification Log:çä çä10/24/2012 wma-J 1301 Sprint 5 MC removed division of rate by 100çä9/13/2012 WMA-J-1301-188 (Loan Initiation) - MC - Added functionality to default to input if calc applies to wmaJ (i.e. 'Std Calling System is wmaJ').çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Divided 'Policy Loan LoanInterestRate' by 100 to return the interest rate as a percentage.çä8/24/2010 - PAC019 - Rate Access Var - BT - change inputçä8/13/2010 - PAC019 Rate Access Var - BT - change nameçä8/11/2010 - PAC019 Rate Access Var - BT - add rate inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/31/2008 Modfied LoanIntType to include loanIndexçä01/25/2008 Modified to use RWL1PA rate access for variable rateçä01/18/2008 CSC Initial Calculation/Rule
+78d550e2 -2 -2
+Description: Returns the discount factor for variable interest ratesçä çäModification Log:çä07/01/2014 PA1403 PAC039 DIA JL Add delayPeriod parm to COLA increase factorçä10/12/2012 wmA-J Release 2 Sprint 5 MC Discount factor from AnnuityCalculations model modified to use interest rate applicable to loans.çä12/01/2010 PAC010 rm - Added use of statutory valuation rate for reserve calcsçä11/29/2010 PAC010 rm - Include COLA to apply to any payment increasesçä11/18/2010 PAC010 rm - Removed 'rec' from function nameçä10/19/2010 PAC010 rm - Revisions to move discount factor into separate function.  çä08/30/2010 PAC010 VM - included additional parms for startDate and endDate to accommodate commutation.çä10/26/2009 PAC005 DT added comments and cleaned up readabilityçä10/22/2009 PAC005 DT allowed for interest rates to come from RCURRINTçä09/08/2009 PAC005 DT changed name to rec, for logical follow onçä09/08/2009 PAC005 DT allowed for delay in annuity start dateçä08/19/2009 PAC005 DT added function
+78d550e2 0 1
+
+66414936 -2 -2
+Description: Returns the vector used for rate model lookupsçä çäModification Log:çä11/8/2013 pA 1401-26 CMC removed yearIndex for Annuity rate classesçä10/18/2012 - PAD-902 - rm - Replaced usage of 'Policy ProductType' with 'PI PolicyProduct PolicyProductTypeCode'çä02/29/2012 wmA-J split vector data for life an annuityçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/24/2009 PAC002 DT addedçä02/08/2008 CSC Initial Calculation/Rule
+70ae637b -2 -2
+Description: Creates a vector of loan information for mapping data to loan index parmçä çäModification Log:çä02/29/2012 wmA-J Initial Calc
+7428f58b -2 -2
+Description: Position in vector of the loan amountsçä çäModification Log:çä02/29/2012 wmA-J Initial Calc
+3be326a3 -2 -2
+Description: position in vector of the effective date for loans and loan repaymentsçä çäModification Log:çä02/29/2012 wmA-J Initial Calc
+19641964 -2 -2
+Description: position in vector of the transaction type for loans.çä çäModification Log:çä02/29/2012 wmA-J Initial Calc
+7fb6db3a -2 -2
+Description: Returns the loan initiation amount.çä çäModification Log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC use updated error messageçä
+6f2acf08 -2 -2
+Description: Returns the Loan amount on initiation (Qualfied annuity).çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC Added error messageçä9/14/2012 WMA-J-1301-188 (Loan Initiation) - MC - Added rounding, functionality to calculate loan initiation amount if 'FinActivityType' is Loan interest paid in cash.çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Identify loan initiation by 'Policy FinancialActivity FinActivityType' as opposed to equality of loan orgination and transaction effective dates.çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Replaced 'INPUT PolicyProduct LoanProvision MinSingleLoan' with a function looking up from product information.çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Divided 'Policy Loan LoanPct' by 100 to obtain percentage.çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Replaced 'AL Total Min Balance Amount' with 'INPUT PolicyProduct LoanProvision MinSingleLoan'çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Replaced function 'AL Maximum Loan Amount' with alternative function, not used for point in time calculations.çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+47e5574d -2 -2
+Description: Functionality used to determine whether a flat amount or percentage of cash value was used to request the loan.çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC updated error messageçä10/24/2012 wmA-J Release 2 Sprint 5  MC use updated error messageçä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+63f449b3 -2 -2
+Description: Returns the unloaned cash value.çä çäModification Log:çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Calculate the unloaned cash value using the fund cash value specified in the AdminValuation.pms model.çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+7583e80a -2 -2
+Description: Functionality that returns the maximum available loan.çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC Ensure non negative valueçä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.çä10/11/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+64102772 -2 -2
+Description: Calculates the level loan repayment amount. An interest only annuity factor is applied to the amount of the loançä çäModification Log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC use updated error messageçä
+15e32a65 -2 -2
+Description:  Returns the certain annuity factor allowing for delay period for loan calulations. Modified a function from the AnnuityCalculations.pms model  for loan calculations.çä çäModification Log:çä10/12/2012 wmA-J Release 2 Sprint 5 MC Initial calculation rule.çä11/18/2010 - PAC010 - RM - Use renamed discount factor functionçä10/01/2010 PAC010 rm - eliminated redundant function call to 'ANNCALC Annuity Factor Certain Rec'çä10/26/2009 PAC005 DT added comments and cleaned up readabilityçä09/23/2009 PAC005 DT - added initial check to return 0 if t < durationçä09/11/2009 PAC005 DT && EE - addedçä
+36ace999 -2 -2
+Description: Returns the repayment amount for qualified annuity loans.çä çäModification Log:çä10/24/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+214e1988 -2 -2
+Description: Returns the discount factor (v) used to calculate the repayment amount for qualified annuity loans.çä çäModification Log:çä9/11/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+389d6d50 -2 -2
+Description: Returns the ratio of the interest rate and the frequency of payments (e.g. if mode is quarterly, frequency = 4). The ratio is used to calculate the repayment amount for qualified annuity loans.çä çäModification Log:çä9/11/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+1913d21c -2 -2
+Description: Returns the payoff period used to calculate the repayment amount for qualified annuity loans.çä çäModification Log:çä11/1/2012 WMA-J-1301-188 (Loan Initiation) - MC - loanIndex parm added to 'Policy Loan LoanRepayNumYear'çä9/11/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+71746454 -2 -2
+Description: Returns the number of days until the next modal boundary or until the first loan repayment. Used to calculate the repayment amount for qualified annuity loans.çä çäModification Log:çä9/11/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+40100299 -2 -2
+Description: Returns the date of the next modal boundary.çä çäModification Log:çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+11d370f9 -2 -2
+Description: Returns the date of the next modal boundary/first loan repayment.çä çäModification Log:çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+449e9778 -2 -2
+Description: Returns the payment mode.çä çäModification Log:çä10/22/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+4c8788c5 -2 -2
+Description: Returns the loan collateral transferred from the policy fund(s). It may be transferred on a pro-rata or fund specific basis.çä çäModification Log:çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+34378460 -2 -2
+Description: Returns the a vector of fund accumulated values.çä çäModification Log:çä9/14/2012 WMA-J-1301-188 (Loan Initiation) - MC -
+6865d080 -2 -2
+Description: Returns the Cash Interest after a Loan Initiation transaction (Qualfied annuity).çä çäModification Log:çä çä11/2/2012 wmA-J Release 2 Sprint 5  MC Added 'Policy SubAccount FinancialActivity FinActivityType' in place of 'Policy FinancialActivity FinActivityType'çä9/14/2012 WMA-J-1301-188 (Loan Initiation) - MC - Removed date functions.çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Use function to determine loan interest due, 'Policy FinancialActivity LoanActivity LoanIntAmtDue' input replacedçä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Use 'Policy FinancialActivity LoanActivity LoanIntAmtDue' to determine the amount of interest dueçä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation/rule.
+752ebdff -2 -2
+Description: Returns the loan interest due after a Loan Initiation transaction if interest is payable in advance.çä çäModification Log:çä çä9/14/2012 WMA-J-1301-188 (Loan Initiation) - MC - Replaced 'IntRate Accum Factor' with 'AL Interest Factor For Period' to ensure rate used applies to loans as opposed to cash value accumulation.çä9/6/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation.
+5747c46e -2 -2
+Description: çä çäModification Log:çä10/26/2012 wmA-J Release 2 Sprint 5  MC 'ALLoan Balance' or 'AL SubAccount Loan Balance' function used instead çä9/14/2012 WMA-J-1301-188 (Loan Initiation) - MC - Added loan initiation amount to outstanding loan amount.çä9/12/2012 WMA-J-1301-188 (Loan Initiation) - MC - Initial calculation.
+32bec7a3 -2 -2
+Description:  Returns the capitalized amount for the interest method.  Loan Interest Capitalization is performed on the anniversary date equal to the next Loan Interest Capitalization date.çä çäModification Log:çä çä09/11/2012 - BP - wmAJ Release 1 Sprint 4 - Initial calculation rule.
+7fc25493 -2 -2
+Description:  Returns the loan interest due when loand interest is paid in arrears.  For qualified annuities payments can only be made quarterly or monthly.çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC Added 'point_in_time' parm to 'ALLoan Balance'çä10/25/2012 wmA-J Release 2 Sprint 5  MC consider mode of payment for qualified plans.çä10/25/2012 wmA-J Release 2 Sprint 5  MC functionality to support different interest calc's when the loan remittance date is before the next capitalization date.çä10/24/2012 wmA-J Release 2 Sprint 5  MC use updated loan balance functionçä09/11/2012 - BP - wmAJ Release 1 Sprint 4 - Initial Calculation Rule
+31ccee91 -2 -2
+Description: Returns the loan interest due when loan interest is paid in arrears and the loan remittance date is before the next capitalization date.çä çäModification Log:çä çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+29e14b2b -2 -2
+Description: Returns True IF the transaction effective date is after the next capitalization date. çä çäModification Log:çä çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+26748ebd -2 -2
+Description: Loan repayment amount for the Annuity fund. çä çäModification Log:çä01/28/2013 wmA-J 1301 Sprint 9 using updated allocation rules.çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation/rule
+5f27219b -2 -2
+Description:  Calculation for loan repayments allocated based on percentages.çä çäModification log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation/rule
+24ed1b34 -2 -2
+Description:  Calculation to determine the remaining amount of a loan repayment prior to each fund allocationçä çäModification log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation/rule
+66710b5d -2 -2
+Description:  Recursive function for remaining loan repayment amount  Allows the fund to have a particular sequence other than the order in which passed to pA.çä çäModification log:çä10/18/2012 wmA-J Sprint 5 MC Initial Calcualtion
+5d99aabe -2 -2
+Description:çä çäModification log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation/rule
+25515938 -2 -2
+Description:  Call to recursive function to determine the last fund.çä çäModification log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation/rule
+2e1ce012 -2 -2
+Description: Returns the allocated loan repayment amount for the indicated fundIndexçä çäModification log:çä01/28/2013 wmA-J 1301 Sprint 9 using updated allocation rules.
+2bf5b627 -2 -2
+Description: Allocates loan repayment amount to the fundsçä çäModification log:çä01/28/2013 wmA-J 1301 Sprint 9 using updated allocation rules.
+4a422b46 -2 -2
+Description: Returns the loan interest paid as a result of a loan remittance transaction.çä çäModification Log:çä112/2012 wmA-J Release 2 Sprint 5  MC Added 'point_in_time' parm and removed 'TransEffDate' functionçä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+7cfc7043 -2 -2
+Description: Returns True IF the transaction effective date lies within the loan interest grace period. The grace period extends from the Loan Interest Bill Extract Date to the number of Loan Interest Grace Period days beyond the policy anniversary.çä çäModification Log:çä çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+2c729714 -2 -2
+Description: Returns the prinicpal repaid as a result of a loan remittance transaction.çä çäModification Log:çä çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+2986b932 -2 -2
+Description: Calculates the principal paid when a loan remittance transaction takes place outside the loan interest grace period.çä çäModification Log:çä çä10/22/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+33d7f503 -2 -2
+Description:çä çäModification Log:çä çä10/22/2012 wmA-J Release 2 Sprint 5  MC Added point_in_time_date as parameterçä10/22/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+1d1da20a -2 -2
+Description: Calculates the maximum loan repayment amount.çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC Added 'point_in_time' parm to 'ALLoan Balance'çä10/15/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+fc2aa7f -2 -2
+Description: Loan Interest Amount Unearned To Date Since Last Anniversaryçä çäModification Log:çä çä10/15/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.
+7bd76e35 -2 -2
+Description: Returns the outstanding loan balance.çä çäModification Log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.çä
+926314a -2 -2
+Description:çä çäModification Log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC Added loan Indexçä10/09/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.çä
+18428d06 -2 -2
+Description: Total loan payments for the fund.  This accumulates the discounted amounts.çä çäModification Log:çä çä10/09/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.çä
+a4ce77c -2 -2
+Description: Returns the cumulative loans taken outçä çäModification Log:çä10/09/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.çä
+343e16aa -2 -2
+Description: Returns the outstanding loan balance.çä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5 MC support for loans specified as a percentage of cash valueçä11/2/2012 wmA-J Release 2 Sprint 5  MC Added 'point_in_time' parm to 'ALLoan Balance', do not  include repayments on same date as TransEffDateçä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.çä
+617b3c6a -2 -2
+Descriptionçä çäModification Log:çä11/2/2012 wmA-J Release 2 Sprint 5  MC Added 'point_in_time' parm to 'ALLoan Balance'
+54341c3d -2 -2
+Description: Returns the model name çä çäModification Log:çä10/24/2012 wmA-J Release 2 Sprint 5  MC Initial calculation rule.çä
+;Offset=00000000

@@ -1,0 +1,3905 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 3f4150 0 3f2670 0 0 0 0
+
+X0 3f2670 3f4150 3f2708 0 0 0 0
+-- All Test Cases --
+X0 3f2708 3f2670 3f27c0 3f4ec8 0 0 0
+-- List Bounds -2 --
+X18 3f27c0 3f2708 0 3f4b08 0 0 2
+OUTPUT Policy CashSurrValue
+'OUTPUT Policy CashSurrValue'("C"; -2)
+1-65
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductType
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X18 3f4b08 3f2708 0 3f4cd8 0 0 2
+OUTPUT Policy DivPUA CashValueAmt
+'OUTPUT Policy DivPUA CashValueAmt'("C"; -2)
+1-65
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductType
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X18 3f4cd8 3f2708 0 0 0 0 2
+'Illus List Bounds'(yearIndex)
+'Illus List Bounds'("C";-2)
+1-65
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductType
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X0 3f4ec8 3f2670 3f4f90 1e12008 0 0 0
+-- yearIndex=1 --
+X18 3f4f90 3f4ec8 0 0 0 0 2
+Illus List Bounds
+'Illus List Bounds'("C"; -2)
+1-65
+INPUT Policy Coverage MaturityAge
+95
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductType
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X0 1e12008 3f2670 1e11cc8 1e18140 0 0 0
+-- Policy Type --
+X9 1e11cc8 1e12008 0 0 0 0 2
+'PI PolicyProduct PolicyProductTypeCode'
+'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode'; TransEffDate)
+1
+INPUT Policy ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+45
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+VPMSTEST
+X0 1e18140 3f2670 1e18b80 1e2cc40 0 0 0
+-- Dividends --
+X0 1e18b80 1e18140 1e18c20 1e1d980 0 0 0
+-- Dividend Cash Value --
+X37 1e18c20 1e18b80 0 1e18f40 0 0 2
+Illus List Policy DivCashVal - CURR 1
+Illus List Policy DivCashVal("C"; 1; 1)
+0
+INPUT Policy ProductType
+1
+INPUT Rate Assumption
+C
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+X42 1e18f40 1e18b80 0 1e198e0 0 0 2
+--OUTPUT Policy DivCashVal  - CURR
+0//'OUTPUT Policy DivCashVal'("C"; 1)
+0
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+Input Illus APO Duration
+0
+INPUT Illus LoanAmt[1]
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus DivType[1]
+161
+X42 1e198e0 1e18b80 0 1e1a140 0 0 2
+--OUTPUT Policy DivCashVal  - CURR yr2
+0//'OUTPUT Policy DivCashVal'("C"; 2)
+0
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+Input Illus APO Duration
+0
+INPUT Illus LoanAmt[1]
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus DivType[1]
+161
+X38 1e1a140 1e18b80 0 1e1abd0 0 0 2
+OUTPUT Policy DivCashVal  - CURR -1
+'OUTPUT Policy DivCashVal'("C"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy ProductType
+1
+INPUT Rate Assumption
+C
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+X34 1e1abd0 1e18b80 0 1e1d228 0 0 2
+--OUTPUT Policy DivCashVal  - GUAR
+0//'OUTPUT Policy DivCashVal'("G"; 1)
+0
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Calling Program
+VPMSTEST
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number of ParAccumValues
+0
+Input Illus APO Duration
+0
+INPUT Illus LoanAmt[1]
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X18 1e1d228 1e18b80 0 0 0 0 2
+OUTPUT Policy DivCashVal - CURR -2
+'OUTPUT Policy DivCashVal'("C"; -2)
+1-65
+INPUT Policy Coverage MaturityAge
+95
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductType
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X0 1e1d980 1e18140 0 1e1fc90 0 0 0
+-- Dividend Reduce Prem
+X0 1e1fc90 1e18140 0 1e22508 0 0 0
+-- Dividend On Deposit --
+X0 1e22508 1e18140 0 1e232d8 0 0 0
+-- Dividend Loan Reduction --
+X0 1e232d8 1e18140 0 1e24a78 0 0 0
+-- Dividend OneYearTerm --
+X0 1e24a78 1e18140 0 1e26128 0 0 0
+-- Dividend PUA --
+X0 1e26128 1e18140 1e26780 0 0 0 0
+-- Interest and Charge Assumptons
+X37 1e26780 1e26128 0 1e27640 0 0 2
+Current Dividends
+'OUTPUT Policy DivCashVal'("C"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy ProductType
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4.00
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+X24 1e27640 1e26128 0 1e286f8 0 0 2
+Guaranteed Dividends
+'OUTPUT Policy DivCashVal'("G"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy ProductType
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+1000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X37 1e286f8 1e26128 0 1e29cc8 0 0 2
+Midpoint Dividends
+'OUTPUT Policy DivCashVal'("M"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy ProductType
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4.00
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+X38 1e29cc8 1e26128 0 1e2b458 0 0 2
+Assumed Dividends 50% of Scale
+'OUTPUT Policy DivCashVal'("A"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy ProductType
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+1000
+INPUT RequestBasis DividendAssumptionBlend
+50
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+X38 1e2b458 1e26128 0 0 0 0 2
+Assumed Dividends 80% of Scale
+'OUTPUT Policy DivCashVal'("A"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+36
+INPUT Policy ProductType
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+1000
+INPUT RequestBasis DividendAssumptionBlend
+80
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+X0 1e2cc40 3f2670 0 1e32668 0 0 0
+-- Death Benefits --
+X0 1e32668 3f2670 1e38638 1e3c098 0 0 0
+-- PUA Returns --
+X35 1e38638 1e32668 0 1e390b8 0 0 2
+OUTPUT Premium PUA - Current
+'OUTPUT Premium PUA'("C"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+121
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Life DivType
+3
+INPUT Policy Coverage CurrentNumberOfUnits
+150
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4.00
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy ProductType
+0
+X35 1e390b8 1e32668 0 1e39de8 0 0 2
+OUTPUT Premium PUA - Guaranteed
+'OUTPUT Premium PUA'("C"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+121
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Life DivType
+3
+INPUT Policy Coverage CurrentNumberOfUnits
+150
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4.00
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy ProductType
+0
+X35 1e39de8 1e32668 0 1e3a868 0 0 2
+OUTPUT Premium PUA - Midpoint
+'OUTPUT Premium PUA'("C"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+121
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Life DivType
+3
+INPUT Policy Coverage CurrentNumberOfUnits
+150
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4.00
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy ProductType
+0
+X35 1e3a868 1e32668 0 0 0 0 2
+OUTPUT Premium PUA - Assumed
+'OUTPUT Premium PUA'("C"; -1)
+0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+INPUT Policy Coverage MaturityAge
+121
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Number of ParAccumValues
+0
+INPUT Policy Life DivType
+3
+INPUT Policy Coverage CurrentNumberOfUnits
+150
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Life CurrIntRate
+4.00
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy ProductType
+0
+X0 1e3c098 3f2670 1e3c598 1e3e7d8 0 0 0
+-- Blocking --
+X51 1e3c598 1e3c098 1e3c8e8 1e3e028 0 0 2
+Illus Block Premiums4Modes String - CURR
+Illus Block Premiums4Modes String("C";1)
+7#3.64#1.82#0.61
+INPUT Forced Payment Mode
+0
+INPUT Mode Premium Calc Option
+0
+INPUT Commission Premium Calc Ind
+0
+INPUT Specified Phase
+0
+INPUT Specified Element
+C
+INPUT Specified Element Index
+0
+Input TransEffDate
+01/01/2006
+INPUT Premium Type
+P
+INPUT Premium Subtype
+R
+INPUT Rate Info Passed Ind
+0
+INPUT Calling System
+I1
+INPUT Payment Form
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Calling Program
+CKVPMILL
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+100
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy Coverage RequestedMaturityDur
+65
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Duration
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X51 1e3c8e8 1e3c598 0 0 0 0 2
+Illus Block Premiums4Modes String - GUAR
+Illus Block Premiums4Modes String("G"; 1)
+7#3.64#1.82#0.61
+INPUT Forced Payment Mode
+0
+INPUT Mode Premium Calc Option
+0
+INPUT Commission Premium Calc Ind
+0
+INPUT Specified Phase
+0
+INPUT Specified Element
+C
+INPUT Specified Element Index
+0
+Input TransEffDate
+01/01/2006
+INPUT Premium Type
+P
+INPUT Premium Subtype
+R
+INPUT Rate Info Passed Ind
+0
+INPUT Calling System
+I1
+INPUT Payment Form
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Calling Program
+CKVPMILL
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+100
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Duration
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X1 1e3e028 1e3c098 0 0 0 0 2
+Illus Insert Column Delimiters
+Illus Insert Column Delimiters(v_("1";"3"))
+1*3
+X0 1e3e7d8 3f2670 1e3e868 1e40288 0 0 0
+-- Lapse --
+X18 1e3e868 1e3e7d8 0 1e3f048 0 0 2
+OUTPUT Policy LapseDate("C")
+'OUTPUT Policy LapseDate'("C")
+1/1/2022
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+85
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+X14 1e3f048 1e3e7d8 0 1e3f4e0 0 0 2
+OUTPUT Policy Lapse Ind("C")
+'OUTPUT Policy Lapse Ind'("C")
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+85
+X18 1e3f4e0 1e3e7d8 0 1e3fa28 0 0 2
+OUTPUT Policy Lapse Year("C")
+'OUTPUT Policy Lapse Year'("C")
+32
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+85
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+X14 1e3fa28 1e3e7d8 0 0 0 0 2
+OUTPUT Policy LapseReason("C")
+'OUTPUT Policy LapseReason'("C")
+
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+85
+X0 1e40288 3f2670 1e40318 1e41038 0 0 0
+-- MEC --
+X18 1e40318 1e40288 0 1e40818 0 0 2
+OUTPUT Policy MECDate
+'OUTPUT Policy MECDate'
+1/1/2072
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+X14 1e40818 1e40288 0 0 0 0 2
+OUTPUT Policy MECInd
+'OUTPUT Policy MECInd'
+0
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+X0 1e41038 3f2670 1e410d0 1e41388 0 0 0
+-- Cost Indices --
+X29 1e410d0 1e41038 0 0 0 0 2
+OUTPUT Coverage ELA Dividend Index("C"; 0; 1)
+'OUTPUT Coverage ELA Dividend Index'("C"; 0; 1)
+0
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT BIR Premium Design Type
+Specify
+INPUT Message Language
+English
+INPUT BIR Premium Stream[1]
+100
+INPUT Policy LifeParticipant IssueAge
+65
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtBandCode[1]
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X0 1e41388 3f2670 1e41b30 0 0 0 0
+-- Premiums --
+X0 1e41b30 1e41388 1e41bd8 1e47198 0 0 0
+-- OUTPUT Coverage Mode Premium --
+X52 1e41bd8 1e41b30 0 1e41f38 0 0 2
+OUTPUT Coverage Mode Premium("G"; 0; 1) - Guar Annual
+'OUTPUT Coverage Mode Premium'("G"; 0; 1)
+17057.95
+INPUT Policy PaymentMode
+1
+INPUT Forced Payment Mode
+0
+INPUT Mode Premium Calc Option
+3
+INPUT Commission Premium Calc Ind
+0
+INPUT Specified Phase
+0
+INPUT Specified Element
+C
+INPUT Specified Element Index
+0
+Input TransEffDate
+01/01/2006
+INPUT Premium Type
+P
+INPUT Premium Subtype
+R
+INPUT Rate Info Passed Ind
+0
+INPUT Calling System
+I1
+INPUT Payment Form
+0
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling Program
+CKVPMILL
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage CovNumber
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtBandCode[1]
+0
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy number of Coverage
+1
+INPUT Policy ProductType
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Duration
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X52 1e41f38 1e41b30 0 1e434d0 0 0 2
+OUTPUT Coverage Mode Premium("C"; 0; 1) - Curr Annual
+'OUTPUT Coverage Mode Premium'("C"; 0; 1)
+17057.95
+INPUT Policy PaymentMode
+1
+INPUT Forced Payment Mode
+0
+INPUT Mode Premium Calc Option
+3
+INPUT Commission Premium Calc Ind
+0
+INPUT Specified Phase
+0
+INPUT Specified Element
+C
+INPUT Specified Element Index
+0
+Input TransEffDate
+01/01/2006
+INPUT Premium Type
+P
+INPUT Premium Subtype
+R
+INPUT Rate Info Passed Ind
+0
+INPUT Calling System
+I1
+INPUT Payment Form
+0
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling Program
+CKVPMILL
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage CovNumber
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtBandCode[1]
+0
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy number of Coverage
+1
+INPUT Policy ProductType
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Duration
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X74 1e434d0 1e41b30 0 1e465f8 0 0 2
+OUTPUT Coverage Mode Premium("C"; 0; 1) - Curr Monthly
+'OUTPUT Coverage Mode Premium'("C"; 0; 1)
+1492.57
+INPUT Policy PaymentMode
+4
+INPUT Forced Payment Mode
+0
+INPUT Mode Premium Calc Option
+3
+INPUT Commission Premium Calc Ind
+0
+INPUT Specified Phase
+0
+INPUT Specified Element
+C
+INPUT Specified Element Index
+0
+Input TransEffDate
+01/01/2006
+INPUT Premium Type
+P
+INPUT Premium Subtype
+R
+INPUT Rate Info Passed Ind
+0
+INPUT Calling System
+I1
+INPUT Payment Form
+0
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling Program
+CKVPMILL
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage CovNumber
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtBandCode[1]
+0
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy number of Coverage
+1
+INPUT Policy ProductType
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Duration
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Illus FaceAmt[10]
+1000000
+INPUT Illus FaceAmt[9]
+1000000
+INPUT Illus FaceAmt[8]
+1000000
+INPUT Illus FaceAmt[7]
+1000000
+INPUT Illus FaceAmt[6]
+1000000
+INPUT Illus FaceAmt[5]
+1000000
+INPUT Illus FaceAmt[4]
+1000000
+INPUT Illus FaceAmt[3]
+1000000
+INPUT Illus FaceAmt[2]
+1000000
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Illus FaceAmt[11]
+1000000
+INPUT Illus FaceAmt[12]
+1000000
+INPUT Illus FaceAmt[13]
+1000000
+INPUT Illus FaceAmt[14]
+1000000
+INPUT Illus FaceAmt[15]
+1000000
+INPUT Illus FaceAmt[16]
+1000000
+INPUT Illus FaceAmt[17]
+1000000
+INPUT Illus FaceAmt[18]
+1000000
+INPUT Illus FaceAmt[19]
+1000000
+INPUT Illus FaceAmt[20]
+1000000
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Illus DisbSearchGoalInd
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X47 1e465f8 1e41b30 0 0 0 0 2
+'Illus List Upper Bound'
+'Illus List Upper Bound'("C")
+20
+INPUT Policy PaymentMode
+4
+INPUT Forced Payment Mode
+0
+INPUT Mode Premium Calc Option
+3
+INPUT Commission Premium Calc Ind
+0
+INPUT Specified Phase
+0
+INPUT Specified Element
+C
+INPUT Specified Element Index
+0
+Input TransEffDate
+01/01/2006
+INPUT Premium Type
+P
+INPUT Premium Subtype
+R
+INPUT Rate Info Passed Ind
+0
+INPUT Calling System
+I1
+INPUT Payment Form
+0
+INPUT Policy ProductCode
+WL1PA
+INPUT Calling Program
+CKVPMILL
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage CovNumber
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtBandCode[1]
+0
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy number of Coverage
+1
+INPUT Policy ProductType
+1
+INPUT Policy Coverage MaturityAge
+95
+X0 1e47198 1e41388 1e48408 0 0 0 0
+-- OUTPUT Policy Annual Outlay --
+X39 1e48408 1e47198 0 1e48ad8 0 0 2
+OUTPUT Policy Annual Outlay -- Curr Annual Mode
+'OUTPUT Policy Annual Outlay'("C"; 1)
+17057.95
+INPUT Policy PaymentMode
+1
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+15
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy ProductType
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X39 1e48ad8 1e47198 0 1e498b0 0 0 2
+OUTPUT Policy Annual Outlay -- Guar Annual Mode1
+'OUTPUT Policy Annual Outlay'("G"; 1)
+17057.95
+INPUT Policy PaymentMode
+1
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+15
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy ProductType
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X39 1e498b0 1e47198 0 1e4a798 0 0 2
+OUTPUT Policy Annual Outlay -- Guar Monthly Mode
+'OUTPUT Policy Annual Outlay'("G"; 1)
+17910.84
+INPUT Policy PaymentMode
+4
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+15
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy ProductType
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X41 1e4a798 1e47198 0 0 0 0 2
+OUTPUT Policy Annual Outlay -- Guar Monthly Mode  -1
+'OUTPUT Policy Annual Outlay'("G"; -1)
+17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84#17910.84
+INPUT Policy PaymentMode
+4
+INPUT Calling Program
+CKVPMILL
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+15
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductCode
+WL1PA
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Illus FaceAmt[1]
+100000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy LifeParticipant ParticipantRoleCode
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Message Language
+English
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy Coverage MaturityAge
+95
+INPUT Policy ProductType
+1
+Input Illus APO Duration
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+O0 3f400c 0 0 0 0 0 0
+
+E0 3f4078 0 0 0 0 0 0
+
+L0 3f40e4 0 0 0 0 0 0
+
+B0 3f4294 0 0 0 0 0 0
+
+P3 3f41bc 0 1e4b678 0 0 0 2
+
+--description
+The Traditional Illustrations model calculates the values necessary to produce new business, supplemental, and/or revised illustrations. This will include premiums, projections of account values and cash surrender values, and determination of projected lapses.çä çäTerm with Return of Premium (TermROP)çä‚Ä¢âIllustration premium information, including level amount, frequency, and number of years guaranteed.çä‚Ä¢âPremium payment options by frequency, including modal amount, total premium amount per year, and premium charges      in terms of amount and percentage of total premiums paid.çä‚Ä¢âProduct detail summary information by policy year, including attained age, base premium, costs of benefit and riders, total premium, accumulated premiums to date, and total death benefit. çä‚Ä¢âFor the base coverage, benefits and riders, return information including amount of coverage, premiums by frequency, and cease durations.çä‚Ä¢âSurrender and Net Payment cost indices for policy years 10 and 20çä‚Ä¢âGuaranteed, Current, Midpoint, and Assumed basis informationçä‚Ä¢âNon-forfeiture option information, including paid up additions, reduced paid up, etc.çä‚Ä¢âDividend informationçä‚Ä¢âSurrender informationçä‚Ä¢âRates and valuesçä‚Ä¢âFace amount calculationsçä‚Ä¢âCash value calculationsçä‚Ä¢âSurrender value calculationsçä‚Ä¢âDeath Benefit calculationsçä‚Ä¢âAnnual premium outlay calculationsçä‚Ä¢âModal premium calculationsçä‚Ä¢âAnnual processing, including processing of surrenders, loans, lapses, premiumsçä çäParticipating Whole Lifeçä‚Ä¢âProduct detail summary information.çä‚Ä¢âTabular detail values by policy year, including attained age, premiums, contract value, cash surrender value, death benefit, annual dividends, cash value of additions, paid-up additions, and paid-up insurance.çä‚Ä¢âOutlay values including premiums paid, outlay and net outlay.çä‚Ä¢âCash Value increase values, including net outlay, cash value increase, total cash value, and death benefit. Calculated on a guaranteed and current basis.çä‚Ä¢âInternal rate of return calculations by policy duration on cash value and death benefitçä‚Ä¢âBase coverage informationçä‚Ä¢âSupplementary benefit / coverage option informationçä‚Ä¢âRider/additional coverage informationçä‚Ä¢âDividend option information, including return the default illustrated dividend option.çä‚Ä¢âSurrender and Net Payment Cost indices calculationsçä‚Ä¢âGuaranteed, Current, Midpoint, and Assumed basis informationçä‚Ä¢âNon-forfeiture option information, including paid up additions, reduced paid up, etc.çä‚Ä¢âDividend calculationsçä‚Ä¢âSurrender informationçä‚Ä¢âLoan processing informationçä‚Ä¢âPremium informationçä‚Ä¢âRates and valuesçä‚Ä¢âFace amount calculationsçä‚Ä¢âCash value calculationsçä‚Ä¢âSurrender value calculationsçä‚Ä¢âDeath Benefit calculationsçä‚Ä¢âAnnual premium outlay calculationsçä‚Ä¢âModal premium calculationsçä‚Ä¢âAnnual processing, including processing of surrenders, loans, lapses, premiumsçä‚Ä¢âMonthly processing calculationsçä‚Ä¢âTaxation and tax compliance calculationsçä çäRELEASE LOG:çäRELEASE 1301 - SCARAB/JIRA issues PAD912çäRELEASE 1301 - PAC025 Dynamic DividendsçäRELEASE 1101 - PAC013 calcTypeçäRELEASE 1101 - PAC018 IRR
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.8    "
+P13 1e4b678 3f41bc 1e4d6d0 0 0 0 2
+Traditional Life Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Traditional Life Product Illustrations"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"TRADillustrations.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1e4d6d0 1e4b678 1e4dd10 0 0 0 2
+Illustrations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P14 1e4dd10 1e4d6d0 0 1e4ea40 0 0 2
+Basic Information
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+OUTPUT Policy LifeParticipant ParticipantName(coverageIndex; participantIndex)
+'Policy LifeParticipant ParticipantName'('GEN Vector Blank';coverageIndex;participantIndex)
+OUTPUT Policy Coverage PlanName(coverageIndex)
+'PI CoverageProduct PlanName'('GEN Vector Blank';'Policy Coverage ProductCode'('GEN Vector Blank';coverageIndex);coverageIndex;'Policy EffDate')
+OUTPUT Policy Coverage ShortName(coverageIndex)
+'PI CoverageProduct ShortName'('GEN Vector Blank';'Policy Coverage ProductCode'('GEN Vector Blank';coverageIndex);coverageIndex;'Policy EffDate')
+OUTPUT Policy CovOption PlanName(coverageIndex; coverageOptionIndex)
+'PI CovOptionProduct PlanName'('GEN Vector Blank';'Policy ProductCode';coverageIndex;coverageOptionIndex;'Policy CovOption EffDate'('GEN Vector Blank';coverageIndex;coverageOptionIndex))
+OUTPUT Policy CovOption ShortName(coverageIndex; coverageOptionIndex)
+'PI CovOptionProduct ShortName'('GEN Vector Blank';'Policy ProductCode';coverageIndex;coverageOptionIndex;'Policy CovOption EffDate'('GEN Vector Blank';coverageIndex;coverageOptionIndex))
+OUTPUT LifeParticipant IssueAge(coverageIndex; participantIndex)
+'Policy LifeParticipant IssueAge'('GEN Vector Blank';coverageIndex;participantIndex)
+OUTPUT LifeParticipant IssueGender(coverageIndex; participantIndex)
+'Policy LifeParticipant IssueGender'('GEN Vector Blank';coverageIndex;participantIndex)
+OUTPUT LifeParticipant TobaccoPremiumBasis(coverageIndex; participantIndex)
+'Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';coverageIndex;participantIndex;TransEffDur)
+OUTPUT LifeParticipant UnderwritingClass(coverageIndex; participantIndex)
+'Policy LifeParticipant UnderwritingClass'('GEN Vector Blank';coverageIndex;participantIndex;TransEffDur)
+OUTPUT Policy DividendOpt
+'Policy Life DivType'
+OUTPUT Policy DefLifeInsMethod
+'Policy LifeUSA DefLifeInsMethod'
+P15 1e4ea40 1e4d6d0 0 1e4f358 0 0 2
+Blocking Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Block Premiums4Modes(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Premiums4Modes'('Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Premiums4Modes String'('GEN Vector Blank';yearIndex)çä  )çä)
+OUTPUT Block Curr Cost Indices
+'GEN Round'('TradDocs Surrender Cost Index'('CalcType Current'('GEN Vector Blank');10);3) & 'Illus Insert Column Delimiter' & 'GEN Round'('TradDocs Net Pmt Index'('CalcType Current'('GEN Vector Blank');10);3) & 'Illus Insert EndOfRow Delimiter' & 'GEN Round'('TradDocs Surrender Cost Index'('CalcType Current'('GEN Vector Blank');20);3) & 'Illus Insert Column Delimiter' & 'GEN Round'('TradDocs Net Pmt Index'('CalcType Current'('GEN Vector Blank');20);3) & 'Illus Insert EndOfRow Delimiter'
+OUTPUT Block Guar Cost Indices
+'GEN Round'('TradDocs Surrender Cost Index'('CalcType Guaranteed'('GEN Vector Blank');10);3) & 'Illus Insert Column Delimiter' & 'GEN Round'('TradDocs Net Pmt Index'('CalcType Guaranteed'('GEN Vector Blank');10);3) & 'Illus Insert EndOfRow Delimiter' & 'GEN Round'('TradDocs Surrender Cost Index'('CalcType Guaranteed'('GEN Vector Blank');20);3) & 'Illus Insert Column Delimiter' & 'GEN Round'('TradDocs Net Pmt Index'('CalcType Guaranteed'('GEN Vector Blank');20);3) & 'Illus Insert EndOfRow Delimiter'
+OUTPUT Block Curr Tabular1(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Tabular1'('CalcType Current'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Tabular1 String'('CalcType Current'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Guar Tabular1(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Tabular1'('CalcType Guaranteed'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Tabular1 String'('CalcType Guaranteed'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Mid Tabular1(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Tabular1'('CalcType Midpoint'('GEN Vector Blank');yearIndex;'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Tabular1 String'('CalcType Midpoint'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Curr Tabular2(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Curr Tabular2'('GEN Vector Blank';'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Curr Tabular2 String'('GEN Vector Blank';yearIndex)çä  )çä)
+OUTPUT Block Curr Dividends(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Curr Dividends'('GEN Vector Blank';'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Curr Dividends String'('GEN Vector Blank';yearIndex)çä  )çä)
+OUTPUT Block Curr Cash Value Increase(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Cash Value Increase'('CalcType Current'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Cash Value Increase String'('CalcType Current'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Guar Cash Value Increase(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Cash Value Increase'('CalcType Guaranteed'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Cash Value Increase String'('CalcType Guaranteed'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Curr WL Riders Outlay(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Curr WL Riders Outlay'('GEN Vector Blank';'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Curr WL Riders Outlay String'('GEN Vector Blank';yearIndex)çä  )çä)
+OUTPUT Block Curr UL Charges(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Curr UL Charges'('GEN Vector Blank';'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Curr UL Charges String'('GEN Vector Blank';yearIndex)çä  )çä)
+P8 1e4f358 1e4d6d0 0 1e502c0 0 0 2
+Cash Value
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy CashSurrValue(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy CashSurrValue'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'GEN Round'(SUMX(cov;0;'Policy Number Of Coverage'(rateAssumption;yearIndex) - 1;'TradDocs Cov Surrender Value'(rateAssumption;#cov;yearIndex));2)çä  )çä)
+OUTPUT Policy CashValueAmt(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Total Cash Value'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'GEN Round'('TradDocs Total CV'(rateAssumption;yearIndex);2)çä  )çä)
+OUTPUT Policy CashValueIncreaseAmtPriorYr(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Annual Cash Value Increase'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ IF ( /*First policy year*/ yearIndex = 1 ; çä       /*Yes*/ 'OUTPUT Policy CashValueAmt'(rateAssumption;1) ; çä       /*No*/ 'OUTPUT Policy CashValueAmt'(rateAssumption;yearIndex) - 'OUTPUT Policy CashValueAmt'(rateAssumption;yearIndex - 1)çä    )çä)çä)
+OUTPUT Policy DivPUA CashValueAmt(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Cash Value Addition'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'DivOpt Proj Divs PUA'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)))çä  )çä)
+OUTPUT Policy TotalPUA CashValueAmt(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Cash Value Addition'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ SUMX(coverageIndex;0;'Policy Number Of Coverage'(rateAssumption;yearIndex) - 1;'WLCashValue Proj Coverage PUA CV'(rateAssumption;#coverageIndex;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;IF ( /* BIR coverage exists */ 'Std BIR coverage exists'(rateAssumption) ; çä       /* True */ 'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex)) ; çä       /* False */ 0çä    );'TGTDB WithdrawalVector'(rateAssumption;yearIndex))))çä)çä)
+P16 1e502c0 1e4d6d0 0 1e50b28 0 0 2
+Cost Indices
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Net Payment Cost Index(rateAssumption; yearIndex)
+'GEN Round'('TradDocs Net Pmt Index'(rateAssumption;yearIndex);3)
+OUTPUT Curr Net Payment Cost Index 10
+'GEN Round'('TradDocs Net Pmt Index'('CalcType Current'('GEN Vector Blank');10);3)
+OUTPUT Curr Net Payment Cost Index 20
+'GEN Round'('TradDocs Net Pmt Index'('CalcType Current'('GEN Vector Blank');20);3)
+OUTPUT Guar Net Payment Cost Index 10
+'GEN Round'('TradDocs Net Pmt Index'('CalcType Guaranteed'('GEN Vector Blank');10);3)
+OUTPUT Guar Net Payment Cost Index 20
+'GEN Round'('TradDocs Net Pmt Index'('CalcType Guaranteed'('GEN Vector Blank');20);3)
+OUTPUT Curr Surrender Cost Index 10
+'GEN Round'('TradDocs Surrender Cost Index'('CalcType Current'('GEN Vector Blank');10);3)
+OUTPUT Surrender Cost Index(rateAssumption; yearIndex)
+'TradDocs Surrender Cost Index'(rateAssumption;yearIndex)
+OUTPUT Curr Surrender Cost Index 20
+'GEN Round'('TradDocs Surrender Cost Index'('CalcType Current'('GEN Vector Blank');20);3)
+OUTPUT Guar Surrender Cost Index 10
+'GEN Round'('TradDocs Surrender Cost Index'('CalcType Guaranteed'('GEN Vector Blank');10);3)
+OUTPUT Guar Surrender Cost Index 20
+'GEN Round'('TradDocs Surrender Cost Index'('CalcType Guaranteed'('GEN Vector Blank');20);3)
+OUTPUT Coverage ELA Dividend Index(rateAssumption; coverageIndex; yearIndex)
+'GEN Round'('TradDocs Cov ELA Dividend Index'(rateAssumption;coverageIndex;yearIndex);3)
+OUTPUT Coverage Net Payment Cost Index(rateAssumption; coverageIndex; yearIndex)
+'GEN Round'('TradDocs Cov Net Pmt Index'(rateAssumption;coverageIndex;yearIndex);3)
+OUTPUT Coverage Surrender Cost Index(rateAssumption; coverageIndex; yearIndex)
+'GEN Round'('TradDocs Cov Surrender Cost Index'(rateAssumption;coverageIndex;yearIndex);3)
+P10 1e50b28 1e4d6d0 0 1e51b88 0 0 2
+Death Benefits
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+--OUTPUT Policy DeathBenefitAmt(rateAssumption; yearIndex)
+IF(/*Were the list bounds requested?*/'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank';çäâ/*Yes-return list bounds*/çäâ'Illus List Bounds'(rateAssumption;yearIndex);çäâ/*No*/çäâIF(/*Was a list requested?*/'Illus List Requested'(yearIndex);çäââ/*Yes*/çäââ'Illus List Policy Death Benefit'('Illus List Lower Bound'(rateAssumption); 'Illus List Upper Bound'(rateAssumption);rateAssumption);çäââ/*No-specific duration*/çäââ'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'(rateAssumption; yearIndex;çäâââââ'TRADDOCS Total CV'(rateAssumption; yearIndex-1));2)çäâ)çä)
+OUTPUT Policy TotalPUA(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Total PUA Amounts'('Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption);rateAssumption) ; çä     /*No-specific duration*/ 'GEN Round'('TRADDOCS Proj PUA from Dividends'(rateAssumption;yearIndex) + 'TRADDOCS Proj PUA from Premiums'(rateAssumption;yearIndex);2)çä  )çä)
+OUTPUT Dividend PUA(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List PUA from Dividends'('Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption);rateAssumption) ; çä     /*No-specific duration*/ 'GEN Round'('TRADDOCS Proj PUA from Dividends'(rateAssumption;yearIndex);2)çä  )çä)
+OUTPUT Premium PUA(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List PUA from Premiums'('Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption);rateAssumption) ; çä     /*No-specific duration*/ 'GEN Round'('TRADDOCS Proj PUA from Premiums'(rateAssumption;yearIndex);2)çä  )çä)
+OUTPUT Policy OYTPurchaseAmt(rateAssumption; yearIndex)
+'GEN Round'('DivOpt OYTPurchaseAmt'(rateAssumption);2)
+OUTPUT Policy Summary Illustration Death Benefit(rateAssumption; yearIndex)
+CASE( /*Rate assumption*/ rateAssumption;çä   /*Current*/ "C" : 'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'('CalcType Current'(rateAssumption);yearIndex;'TradDocs Total CV'('CalcType Current'(rateAssumption);yearIndex - 1));0);çä   /*Guaranteed*/ "G" : 'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'('CalcType Guaranteed'(rateAssumption);yearIndex;'TradDocs Total CV'('CalcType Guaranteed'(rateAssumption);yearIndex - 1));0);çä   /*Midpoint*/ "M" : 'GEN Round'(('GEN Round'('DEATH BENEFIT Projected Total Death Benefit'('CalcType Guaranteed'(rateAssumption);yearIndex;'TradDocs Total CV'('CalcType Guaranteed'(rateAssumption);yearIndex - 1));0) + 'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'('CalcType Current'(rateAssumption);yearIndex;'TradDocs Total CV'('CalcType Current'(rateAssumption);yearIndex - 1));0)) / 2;2);çä   /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';v_('TradDocs Model Name';"'OUTPUT Policy Summary Illustration Death Benefit1'")))çä
+OUTPUT Rider Death Benefit(rateAssumption; coverageIndex; yearIndex)
+CASE( /*Rate assumption*/ rateAssumption;çä   /*Current*/ "C" : 'GEN Round'('DEATH BENEFIT Projected Coverage Death Benefit'('CalcType Current'(rateAssumption);coverageIndex;yearIndex;'TradDocs Total CV'('CalcType Current'(rateAssumption);yearIndex - 1));0);çä   /*Guaranteed*/ "G" : 'GEN Round'('DEATH BENEFIT Projected Coverage Death Benefit'('CalcType Guaranteed'(rateAssumption);coverageIndex;yearIndex;'TradDocs Total CV'('CalcType Guaranteed'(rateAssumption);yearIndex - 1));0);çä   /*Midpoint*/ "M" : ('GEN Round'('DEATH BENEFIT Projected Coverage Death Benefit'('CalcType Current'(rateAssumption);coverageIndex;yearIndex;'TradDocs Total CV'('CalcType Current'(rateAssumption);yearIndex - 1));0) + 'GEN Round'('DEATH BENEFIT Projected Coverage Death Benefit'('CalcType Guaranteed'(rateAssumption);coverageIndex;yearIndex;'TradDocs Total CV'('CalcType Guaranteed'(rateAssumption);yearIndex - 1));0)) * .5;çä   /*Assumed*/ "A" : 'GEN Round'('DEATH BENEFIT Projected Coverage Death Benefit'(rateAssumption;coverageIndex;yearIndex;'TradDocs Total CV'('CalcType Assumed'(rateAssumption);yearIndex));0);çä   /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';v_('TradDocs Model Name';"OUTPUT Coverage DeathBenefitAmt")))çä
+P3 1e51b88 1e4d6d0 54e8b9ed 1e52410 0 0 2
+Dividends
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P7 54e8b9ed 1e51b88 0 1e510d0 0 0 2
+Dividend Earned Amount
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Projected Dividend(rateAssumption; yearIndex)
+'GEN Round'('DivAmount Proj Policy Dividend'(rateAssumption;yearIndex; //'TGTDB Vector WLProj'(çä'TGTDB Vector WLProj BOY'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));3)
+OUTPUT Projected Primary Dividend Option Amt(rateAssumption; yearIndex)
+'GEN Round'('DivOpt Proj Primary Dividend Option Amount'(rateAssumption;yearIndex; //'TGTDB Vector WLProj'(çä'TGTDB Vector WLProj BOY'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));3)
+OUTPUT Projected Secondary Dividend Option Amt(rateAssumption; yearIndex)
+'GEN Round'('DivOpt Proj Secondary Dividend Option Amount'(rateAssumption;yearIndex; //'TGTDB Vector WLProj'(çä'TGTDB Vector WLProj BOY'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));3)
+OUTPUT Projected Tertiary Dividend Option Amt(rateAssumption; yearIndex)
+'GEN Round'('DivOpt Proj Tertiary Dividend Option Amount'(rateAssumption;yearIndex; //'TGTDB Vector WLProj'(çä'TGTDB Vector WLProj BOY'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));3)
+P5 1e510d0 1e51b88 0 1e52090 0 0 2
+Paid As Cash
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy DivCashVal(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy DivCashVal'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*///'GEN Round'('TradDocs Proj Policy Dividend'(rateAssumption; yearIndex);2)çä 'GEN Round'('DivOpt Proj Divs InCash'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));2)çä  )çä)
+OUTPUT Coverage DivCashVal(rateAssumption; coverageIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Coverage DivCashVal'(rateAssumption;coverageIndex;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'GEN Round'('DivAmount Proj Total Coverage Dividend'(rateAssumption;coverageIndex;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));2)çä  )çä)
+P4 1e52090 1e51b88 0 1e51ce0 0 0 2
+Reduce Premiums
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Life DivPremRed(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy DivRedPrem'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'GEN Round'('DivOpt Proj Divs ReducePrem'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));2)çä  )çä)
+P5 1e51ce0 1e51b88 0 1e51f38 0 0 2
+Dividend On Deposit / Accum At Interest
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy DivOnDepositAmt(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy DivOnDepositAmt'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'GEN Round'('DivOpt Proj Divs AccumAtInt'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));2)çä  )çä)
+OUTPUT Policy DivOnDepositInterest(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy DivOnDepositInterest'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*///0//'GEN Round'('DivOpt Proj Divs ReduceLoan(rateAssumption; yearIndex; loanBalance; PremPUAUnits; DivPUAUnits);2)çä IF (yearIndex = 1 ; çä      'GEN Round'('DivOpt Proj Divs AccumAtInt'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));2) ; çä      'GEN Round'('DivOpt Proj Divs AccumAtInt'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex))) - 'DivOpt Proj Divs AccumAtInt'(rateAssumption;yearIndex - 1;'TGTDB Vector WLProj'(rateAssumption;yearIndex - 1;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex - 1;'TGTDB WithdrawalVector'(rateAssumption;yearIndex - 1));'TGTDB WithdrawalVector'(rateAssumption;yearIndex - 1)));2)çä    )çä)çä)
+P4 1e51f38 1e51b88 0 1e521a0 0 0 2
+Loan Reduction
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy DivLoanReduceAmt(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy DivLoanReduceAmt'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'DivOpt Proj Divs ReduceLoan'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)))çä  )çä)
+P4 1e521a0 1e51b88 0 1e52e58 0 0 2
+Purchase One Year Term
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Divs OneYearTerm(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Divs OneYearTerm'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'GEN Round'('DivOpt Proj Divs OneYearTerm'(rateAssumption;yearIndex;'TGTDB Vector WLProj BOY'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));2)çä  )çä)
+P4 1e52e58 1e51b88 0 0 0 0 2
+Purchase Paid Up Additions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy DivPUA(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Divs PUA'(rateAssumption;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'GEN Round'('DivOpt Proj Divs PUA'(rateAssumption;yearIndex;'TGTDB Vector WLProj'(rateAssumption;yearIndex;'TGTDB Vector BIRInputVector'(rateAssumption;yearIndex;'TGTDB WithdrawalVector'(rateAssumption;yearIndex));'TGTDB WithdrawalVector'(rateAssumption;yearIndex)));2)çä  )çä)
+P3 1e52410 1e4d6d0 0 349cdfae 0 50 2
+Dividend Earned Amount@DividendEarnedAmount
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 349cdfae 1e4d6d0 0 1e52a18 0 50 2
+Dynamic Dividend Rate@DynamicDividends
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e52a18 1e4d6d0 0 1e52b50 0 50 2
+Contract Documents@TradContractDocuments
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e52b50 1e4d6d0 0 1e533f8 0 50 2
+Dividend Option Calculations@DividendOptions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e533f8 1e4d6d0 0 1e530d8 0 50 2
+Loans@Loans
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P7 1e530d8 1e4d6d0 0 1e53a60 0 0 2
+Lapse
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+OUTPUT Policy LapseDate(rateAssumption)
+'Projection Eff Date'('Policy EffDate';('PIDRV CoverageProduct MaturityDuration'(rateAssumption;TransEffDate;'Std BaseCov Index'(rateAssumption)) + 1) + 1;1)
+OUTPUT Policy Lapse Ind(rateAssumption)
+0
+OUTPUT Policy Lapse Year(rateAssumption)
+('PIDRV CoverageProduct MaturityDuration'(rateAssumption;TransEffDate;'Std BaseCov Index'(rateAssumption)) + 1) + 1
+OUTPUT Policy LapseReason(rateAssumption)
+'GEN Vector Blank'
+P5 1e53a60 1e4d6d0 0 1e534b8 0 0 2
+MEC
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy MECDate
+'Projection Eff Date'('Policy EffDate';('PIDRV CoverageProduct MaturityDuration'('GEN Vector Blank';TransEffDate;'Std BaseCov Index'('GEN Vector Blank')) + 1) + 1;1)
+OUTPUT Policy MECInd
+0
+P16 1e534b8 1e4d6d0 0 1e53760 0 0 2
+TaxCompliance
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT TaxWithheldPct
+0
+OUTPUT Guideline Exceeded Year
+0
+OUTPUT Guideline Exceeded Ind
+0
+OUTPUT Corridor Factor(yearIndex)
+0
+OUTPUT Policy Guideline Level Premium
+0
+OUTPUT Policy Guideline Single Premium
+0
+OUTPUT Policy 7Pay Premium
+0
+OUTPUT Policy 7Pay NSP
+0
+OUTPUT Policy NSP Base
+0
+OUTPUT Policy NSP Rider
+0
+OUTPUT Policy NSP Base Array(age)
+0
+OUTPUT Policy NSP Rider Array(age)
+0
+OUTPUT Policy Cost Basis only QAB(rateAssumption;yearIndex)
+'GEN Round'('TradDocs TaxCalc Cost Basis Available only QAB'(rateAssumption;yearIndex);2)
+P14 1e53760 1e4d6d0 0 1e54958 0 0 2
+Premium
+IncType
+mandatory
+IncRule
+
+IncValue
+
+--OUTPUT Policy Annual Premium(rateAssumption; yearIndex)
+IF(/*Were the list bounds requested?*/'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank';çäâ/*Yes-return list bounds*/çäâ'Illus List Bounds'(rateAssumption;yearIndex);çäâ/*No*/çäâIF(/*Was a list requested?*/'Illus List Requested'(yearIndex);çäââ/*Yes*/çäââ'Illus List Policy Annual Premium'(rateAssumption; yearIndex; 'Illus List Lower Bound'(rateAssumption); 'Illus List Upper Bound'(rateAssumption) );çäââ/*No-specific duration*/çäââ'GEN Round'('TradDocs Policy Mode Premium'(rateAssumption; yearIndex) * 'Number Of Payments Per Year'('Policy PaymentMode'); 2)çäâ)çä)
+--OUTPUT Policy Accum Premium(rateAssumption; yearIndex)
+'GEN Round'(çäcase(/*Rate Assumption*/ârateAssumption;çäâ/*Current*/ââ"C": sumx (a; 1; yearIndex ; 'GEN Round'('TradDocs Policy Mode Premium'('CalcType Current'(calcType); #a) * 'Number Of Payments Per Year'('Policy PaymentMode'); 2));çäâ/*Assumed*/ââ"A": sumx (a; 1; yearIndex ; 'GEN Round'('TradDocs Policy Mode Premium'('CalcType Current'(calcType); #a) * 'Number Of Payments Per Year'('Policy PaymentMode'); 2));çäâ/*Guaranteed*/â"G": sumx (a; 1; yearIndex ; 'GEN Round'(çäâââââââââââââââ'TradDocs Policy Mode Premium'('CalcType Guaranteed'(calcType); #a) çäâââââââââââââââ* çäâââââââââââââââ'Number Of Payments Per Year'('Policy PaymentMode');çäâââââââââââââââ2çäâââââââââââââ));çäâ/*Midpoint*/â"M": 'GEN Round'( (sumx (a; 1; yearIndex ; 'GEN Round'('TradDocs Policy Mode Premium'('CalcType Current'(calcType); #a)çäâââââââââââââââââââ* çäââââââââ ââââââââââ   'Number Of Payments Per Year'('Policy PaymentMode');çäââââââââââââââââ2)çäâââââââââ   )çäââââââ âââ+ çäâââââââââsumx (a; 1; yearIndex ; 'GEN Round'(çäââââââââââââââââââ'TradDocs Policy Mode Premium'('CalcType Guaranteed'(calcType); #a) çäââââââââââââââââââ* çäââââââââââââââââââ'Number Of Payments Per Year'('Policy PaymentMode');çäââââââââââââââââââ2çäââââââââââââââââââ)çäâââââââââ) çäâââââââââ) / 2; çäââââââ 2);çäâ/*Else return error message*/çäââ     : 'Messages Error String'(çäââ  â        'Messages ProdCode MsgType'; çäââ  â        "CA1000"; çäââ â        'Message Language'; çäââ â        v_('TradDocs Model Name'; "'OUTPUT Policy Accum Premium1'")çäââ  â        )âçä        );çä        2)çä
+OUTPUT Policy Mode Premium(rateAssumption; yearIndex)
+'TradDocs Policy Mode Premium'(rateAssumption;yearIndex)
+OUTPUT Coverage Annual Premium(rateAssumption; coverageIndex; yearIndex)
+'GEN Round'('TradDocs Coverage Annual Premium'('CalcType Current'(rateAssumption);coverageIndex;yearIndex) - SUMX(coverageOptionIndex;0;'Policy Number of CovOption'(rateAssumption;coverageIndex) - 1;'TradDocs CovOption Premium'('CalcType Current'(rateAssumption);coverageIndex;#coverageOptionIndex;yearIndex));2)
+OUTPUT Coverage Mode Premium(rateAssumption; coverageIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Coverage Mode Premium'(rateAssumption;coverageIndex;yearIndex;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'ModePremium Coverage Mode Premium'(rateAssumption;coverageIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Policy PaymentMode';'Policy Duration';yearIndex;rateAssumption))çä  )çä)
+OUTPUT CovOption Premium(rateAssumption; covIndex; covOptIndex; yearIndex)
+'ModePremium Coverage CovOption'(rateAssumption;covIndex;covOptIndex;'ACCS CalcRule Mode Factor'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate';'Policy PaymentMode';'INPUT Payment Form');'Vector ModePremium Create Parms Vector From Inputs')
+OUTPUT Policy Annual Outlay(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Annual Outlay'(rateAssumption;yearIndex;'Illus List Lower Bound'(rateAssumption);'Illus List Upper Bound'(rateAssumption)) ; çä     /*No-specific duration*/ 'Illus Policy Annual Outlay'(rateAssumption;yearIndex)çä  )çä)
+OUTPUT Policy Annual Net Outlay(rateAssumption; yearIndex)
+'Illus OutlayCalc Before Tax Outlay'(rateAssumption;yearIndex) //'Illus OutlayCalc Policy Annual Net Outlay'(rateAssumption; yearIndex)ä
+OUTPUT Policy Total Net Outlay(rateAssumption; yearIndex)
+'Illus OutlayCalc Policy Annual Net Outlay'(rateAssumption;yearIndex)
+OUTPUT Premium Load FeeAmt(yearIndex)
+0
+OUTPUT Premium Load FeePct(yearIndex)
+0
+P7 1e54958 1e4d6d0 0 1e542c0 0 0 2
+Surrenders
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Annual Surrender(rateAssumption; yearIndex)
+IF (V_LENGTH('TGTDB WithdrawalVector'(rateAssumption;yearIndex)) = 0 ; çä  0 ; çä  E_('TGTDB WithdrawalVector'(rateAssumption;yearIndex);yearIndex - 1)çä)
+OUTPUT Policy SurrenderChargeAmt(rateAssumption; yearIndex)
+0
+OUTPUT Coverage SurrCharge(coverageIndex; yearIndex)
+0
+OUTPUT ChargePctSchedule Percentage (yearIndex)
+0
+P17 1e542c0 1e4d6d0 0 1e55b48 0 0 2
+Rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Base COI Rate(rateAssumption; coverageIndex; yearIndex)
+0
+OUTPUT Benefit COI Rate(rateAssumption; coverageIndex; coverageOptionIndex; yearIndex)
+0
+OUTPUT Rider COI Rate(rateAssumption; coverageIndex; yearIndex)
+0
+OUTPUT Policy Joint Survivor Annual Mortality Rate(yearIndex)
+'FRASIER Joint Survivor Annual Rate'("COI";'Std BaseCov Index'("COI");"GCOI";yearIndex;1;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcä
+OUTPUT Policy Joint Survivor Curr Monthly COI(yearIndex)
+'FRASIER Joint Survivor Monthly COI'("CurrCV";'Std BaseCov Index'("CurrCV");yearIndex;1;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcä
+OUTPUT Policy Joint Survivor Guar Monthly COI(yearIndex)
+'FRASIER Joint Survivor Monthly COI'("GuarCV";'Std BaseCov Index'("GuarCV");yearIndex;1;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcä
+OUTPUT Policy Joint Survivor COI Rate(yearIndex; rateAssumption; mode)
+CASE( /*Mode*/ mode;çä   /*Annual*/ 1 : 'FRASIER Joint Survivor Monthly COI'(rateAssumption & "CV";'Std BaseCov Index'(rateAssumption & "CV");yearIndex;1;'GEN Vector Blank') * 12;çä   // Annuallyçä/*Semi-annual*/2 : 'FRASIER Joint Survivor Monthly COI'(rateAssumption & "CV";'Std BaseCov Index'(rateAssumption & "CV");yearIndex;1;'GEN Vector Blank') * 6;çä   // Semi-Annually çä/*Quarterly*/3 : 'FRASIER Joint Survivor Monthly COI'(rateAssumption & "CV";'Std BaseCov Index'(rateAssumption & "CV");yearIndex;1;'GEN Vector Blank') * 4;çä   // Quarterlyçä/*Monthly*/4 : 'FRASIER Joint Survivor Monthly COI'(rateAssumption & "CV";'Std BaseCov Index'(rateAssumption & "CV");yearIndex;1;'GEN Vector Blank');çä   // Monthlyçä/*else return error message*/ : "mode not compatible")çä //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcä
+OUTPUT Primary Insured Annual Qx Rate(calculationType; coverageIndex; yearIndex; monthIndex; rateAssumption)
+'FRASIER Primary Insured Annual Qx Rate'(calculationType;coverageIndex;rateAssumption;yearIndex;monthIndex;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcä
+OUTPUT Joint Insured Annual Qx Rate(calculationType; coverageIndex; yearIndex; monthIndex; rateAssumption)
+'FRASIER Joint Insured Annual Qx Rate'(calculationType;coverageIndex;rateAssumption;yearIndex;monthIndex;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcçä
+OUTPUT Primary Insured Annual Px Rate(calculationType; coverageIndex; yearIndex; monthIndex; rateAssumption)
+'FRASIER Primary Insured Annual Px Rate'(calculationType;coverageIndex;rateAssumption;yearIndex;monthIndex;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcä
+OUTPUT Joint Insured Annual Px Rate(calculationType; coverageIndex; yearIndex; monthIndex; rateAssumption)
+'FRASIER Joint Insured Annual Px Rate'(calculationType;coverageIndex;rateAssumption;yearIndex;monthIndex;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calä
+OUTPUT Primary Insured Product Annual Px Rate(calculationType; coverageIndex; yearIndex; monthIndex; rateAssumption)
+'FRASIER Primary Insured Product Annual Px Rate'(calculationType;coverageIndex;rateAssumption;yearIndex;monthIndex;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcçä
+OUTPUT Joint Insured Product Annual Px Rate(calculationType; coverageIndex; yearIndex; monthIndex; rateAssumption)
+'FRASIER Joint Insured Product Annual Px rate'(calculationType;coverageIndex;rateAssumption;yearIndex;monthIndex;'GEN Vector Blank') //The blank is a blank vector for the vectorSolveParms it is not neededçä//for this calcçä
+OUTPUT Policy SubAccount InterestRate(yearIndex)
+0
+P5 1e55b48 1e4d6d0 0 1e54ec8 0 0 2
+WLFaceAmount Solves
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Illus Face Amt Solve Mix Face
+'WLFaceSolves Face Amount Solve Mix Dollars'('GEN Vector Blank')
+OUTPUT Illus Face Amt Solve Mix Percent
+'WLFaceSolves Face Amount Solve Mix Percent'('GEN Vector Blank')
+P5 1e54ec8 1e4d6d0 0 32e72341 0 0 2
+Disbursement Solve
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Illus WithdrawalAmt(rateAssumption; yearIndex)
+IF ( /*Calling system is Illustrations Based*/ 'Std Calling System Is Illustration Based' ; çä   /*Yes - Return Withdrawal Amount*/ 'GEN Round'('WLDisbSolve Withdrawal Amount'(rateAssumption;yearIndex);2) ; çä   /*Else return error message*/ 'Messages SystemMessage'("ILL1010";'Message Language';V_('WLDisbSolve Model Name';"OUTPUT Illus WithdrawalAmt"))çä)
+OUTPUT Illus LoanAmt(rateAssumption; yearIndex)
+IF ( /*Calling system is Illustrations Based*/ 'Std Calling System Is Illustration Based' ; çä   /*Yes - Return Loan Amount*/ 'GEN Round'('WLDisbSolve Loan Amount'(rateAssumption;yearIndex);2) ; çä   /*Else return error message*/ 'Messages SystemMessage'("ILL1010";'Message Language';V_('WLDisbSolve Model Name';"OUTPUT Illus WithdrawalAmt"))çä)
+P5 32e72341 1e4d6d0 0 5ed09db3 0 0 2
+Internal Rate of Return
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Illus RequestBasis InternalRateOfReturn CashValue(rateAssumption; yearIndex)
+'TradDocs Proj IRR'(rateAssumption;"CV";yearIndex)
+OUTPUT Illus RequestBasis InternalRateOfReturn DeathBenefit(rateAssumption; yearIndex)
+'TradDocs Proj IRR'(rateAssumption;"DB";yearIndex)
+P3 5ed09db3 1e4d6d0 0 5de5187e 0 50 2
+Values@LongTermCareCalcs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 5de5187e 1e4d6d0 0 4a3b81e2 0 50 2
+PaidUpAddition Properties@PaidUpAdditions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 4a3b81e2 1e4d6d0 0 0 0 50 2
+TGTDB Properties@TargetDeathBenefit
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 3f4228 0 1e55098 0 0 0 0
+
+F1 1e55098 3f4228 1e55160 0 0 0 2
+:Illus
+Funktion
+
+F1 1e55160 1e55098 1e566c0 1e574c0 0 0 2
+:Block
+Funktion
+
+F1 1e566c0 1e55160 0 1e56c60 0 0 2
+Illus Block Data(vectorDataString; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'(vectorDataString) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Data'(vectorDataString;yearFrom + 1;yearTo)çä)
+F1 1e56c60 1e55160 1e56390 1e56490 0 0 2
+Illus Block Premiums4Modes(yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Premiums4Modes String'(yearFrom;yearFrom)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Premiums4Modes'(yearFrom + 1;yearTo)çä)
+F1 1e56390 1e56c60 0 0 0 0 2
+Illus Block Premiums4Modes String(calcType; yearFrom)
+Funktion
+v_string(v_('ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'("1";'Policy Duration';yearFrom;calcType));'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'("2";'Policy Duration';yearFrom;calcType));'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'("3";'Policy Duration';yearFrom;calcType));'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'("4";'Policy Duration';yearFrom;calcType)));'Illus Delimiter'('Illus EndOfRow Delimiter Constant'))
+F1 1e56490 1e55160 1e56738 1e56818 0 0 2
+Illus Block Tabular1(calcType; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Tabular1 String'(yearFrom;calcType)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Tabular1'(calcType;yearFrom + 1;yearTo)çä)
+F1 1e56738 1e56490 0 0 0 0 2
+Illus Block Tabular1 String(calcType; yearFrom)
+Funktion
+v_string(v_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //premiumçä'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'("1";'Policy Duration';yearFrom;calcType)); //cash valueçä'GEN Round'('TradDocs Total CV'(calcType;yearFrom);2); //cash surrender valueçä'GEN Round'(SUMX(cov;0;'Policy Number Of Coverage'(calcType;yearFrom) - 1;'TradDocs Cov Surrender Value'(calcType;#cov;yearFrom));2); //death benefitçä'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'(calcType;yearFrom;'TRADDOCS Total CV'(calcType;yearFrom));2));'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 1e56818 1e55160 1e56908 1e569f8 0 0 2
+Illus Block Curr Tabular2(calcType;yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Curr Tabular2 String'(calcType;yearFrom)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Curr Tabular2'(calcType;yearFrom + 1;yearTo)çä)
+F1 1e56908 1e56818 0 0 0 0 2
+Illus Block Curr Tabular2 String(calcType; yearFrom)
+Funktion
+v_string(v_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //premiumçä'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs and Parms'("1";'Policy Duration';yearFrom;'CalcType Current'(calcType))); //cash valueçä'GEN Round'('TradDocs Total CV'('CalcType Current'(calcType);yearFrom);2); //cash surrender valueçä'GEN Round'(SUMX(cov;0;'Policy Number Of Coverage'(calcType;yearFrom) - 1;'TradDocs Cov Surrender Value'('CalcType Current'(calcType);#cov;yearFrom));2); //death benefitçä'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'('CalcType Current'(calcType);yearFrom;'TRADDOCS Total CV'('CalcType Current'(calcType);yearFrom));2); //annual surrenderçä0; //annual net outlayçä0; //annual dividendçäCASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'TradDocs Proj Policy Dividend'('CalcType Current'(calcType);yearFrom);çä   /*Term with Cash Value*/ 26 : 0;çä   /*All Others*/  : 0)çä);'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 1e569f8 1e55160 1e56ae8 1e571d8 0 0 2
+Illus Block Curr Dividends(calcType;yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Curr Dividends String'(calcType;yearFrom)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Curr Dividends'(calcType;yearFrom + 1;yearTo)çä)
+F1 1e56ae8 1e569f8 0 0 0 0 2
+Illus Block Curr Dividends String(calcType;yearFrom)
+Funktion
+v_string(v_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //annual dividendçäCASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'TradDocs Proj Policy Dividend'('CalcType Current'(calcType);yearFrom);çä   /*Term with Cash Value*/ 26 : 0;çä   /*All Others*/  : 0)çä; //cash value of each dividend optionçä0; //paid up additionsçä'GEN Round'('DivOpt Proj Divs PUA'('CalcType Current'(calcType);yearFrom;'TGTDB Vector WLProj'('CalcType Current'(calcType);yearFrom;'TGTDB Vector BIRInputVector'('CalcType Current'(calcType);yearFrom;'TGTDB WithdrawalVector'('CalcType Current'(calcType);yearFrom));'TGTDB WithdrawalVector'('CalcType Current'(calcType);yearFrom)));2); //one year term amountçä'GEN Round'('DivOpt Proj Divs OneYearTerm'('CalcType Current'(calcType);yearFrom;'TGTDB Vector WLProj'('CalcType Current'(calcType);yearFrom;'TGTDB Vector BIRInputVector'('CalcType Current'(calcType);yearFrom;'TGTDB WithdrawalVector'('CalcType Current'(calcType);yearFrom));'TGTDB WithdrawalVector'('CalcType Current'(calcType);yearFrom)));2));'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 1e571d8 1e55160 1e56d50 1e56e58 0 0 2
+Illus Block Cash Value Increase(calcType; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Cash Value Increase String'(calcType;yearFrom)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Cash Value Increase'(calcType;yearFrom + 1;yearTo)çä)
+F1 1e56d50 1e571d8 0 0 0 0 2
+Illus Block Cash Value Increase String(calcType; yearFrom)
+Funktion
+v_string(v_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //total net outlayçä0; //total annual cash value increaseçäIF ( /*First policy year*/ yearFrom = 1 ; çä   /*Yes*/ 'GEN Round'('TradDocs Total CV'(calcType;yearFrom);2) ; çä   //'OUTPUT Policy CashValueAmt'(calcType; 1);çä/*No*/'GEN Round'('TradDocs Total CV'(calcType;yearFrom);2) - 'GEN Round'('TradDocs Total CV'(calcType;yearFrom - 1);2) //'OUTPUT Policy CashValueAmt'(calcType; polyear_from) - 'OUTPUT Policy CashValueAmt'(calcType; polyear_from - 1)çäçä); //total cash valueçä'GEN Round'('TradDocs Total CV'(calcType;yearFrom);2); //total death benefitçä'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'(calcType;yearFrom;'TRADDOCS Total CV'(calcType;yearFrom));2));'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 1e56e58 1e55160 1e57060 1e57158 0 0 2
+Illus Block Curr WL Riders Outlay(calcType; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Curr WL Riders Outlay String'(calcType;yearFrom)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Curr WL Riders Outlay'(calcType;yearFrom + 1;yearTo)çä)
+F1 1e57060 1e56e58 0 0 0 0 2
+Illus Block Curr WL Riders Outlay String(calcType; yearFrom)
+Funktion
+v_string(v_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //PUAR premiumçä'GEN Round'(SUMX(covIndex;0;'Policy Number Of Coverage'(calcType;yearFrom);IF ('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#covIndex);#covIndex;TransEffDate)) ; çä  'TGTDB PUAR Premium'('CalcType Current'(calcType);#covIndex;yearFrom) ; çä  0çä));2); /*code for above section (for later reference):çäâ'GEN Round'('TGTDB PUAR Premium'('CalcType Current'(calcType); 'Std PUAR coverageIndex'; yearFrom; 'TGTDB Empty BIR Vector');2);*///BIR premiumçä 'GEN Round'('TGTDB BIR Premium'('CalcType Current'(calcType);yearFrom);2); //term chargeçä0);'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 1e57158 1e55160 1e573d0 0 0 0 2
+Illus Block Curr UL Charges(calcType; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Curr UL Charges String'(calcType;yearFrom)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Curr UL Charges'(calcType;yearFrom + 1;yearTo)çä)
+F1 1e573d0 1e57158 0 0 0 0 2
+Illus Block Curr UL Charges String(calcType; yearFrom)
+Funktion
+v_string(v_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //base face amountçä0; //annual premium outlayçä0; //base mortality chargesçä0; //annual surrender chargesçä0);'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 1e574c0 1e55098 1e57588 1e5ee38 0 0 2
+:List
+Funktion
+
+F1 1e57588 1e574c0 1e57640 1e59298 0 0 2
+-- Cash Value --
+Funktion
+
+F1 1e57640 1e57588 1e58038 1e57fb0 0 0 2
+Illus List Policy CashSurrValue(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy CashSurrValue'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Term Policy CashSurrValue'(calcType;fromYear;toYear);çä   : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e58038 1e57640 0 1e57d08 0 0 2
+Illus List Term Policy CashSurrValue(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'(SUMX(cov;0;'Policy Number Of Coverage'(calcType;fromYear) - 1;'TradDocs Coverage CSV'(calcType;#cov;fromYear));2) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Term Policy CashSurrValue'(calcType;fromYear + 1;toYear)çä)
+F1 1e57d08 1e57640 0 0 0 0 2
+Illus List WL Policy CashSurrValue(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'(SUMX(cov;0;'Policy Number Of Coverage'(calcType;fromYear) - 1;'TradDocs Coverage CSV'(calcType;#cov;fromYear));2) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Policy CashSurrValue'(calcType;fromYear + 1;toYear)çä)
+F1 1e57fb0 1e57588 1e58690 1e582b0 0 0 2
+Illus List Policy Total Cash Value(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy Total Cash Value'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Term Policy Total Cash Value'(calcType;fromYear;toYear);çä   : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e58690 1e57fb0 0 1e58e20 0 0 2
+Illus List Term Policy Total Cash Value(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('TradDocs Total CV'(calcType;fromYear);2) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Term Policy Total Cash Value'(calcType;fromYear + 1;toYear)çä)
+F1 1e58e20 1e57fb0 0 0 0 0 2
+Illus List WL Policy Total Cash Value(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('TradDocs Total CV'(calcType;fromYear);2) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Policy Total Cash Value'(calcType;fromYear + 1;toYear)çä)
+F1 1e582b0 1e57588 1e583c0 1e58590 0 0 2
+Illus List Policy Annual Cash Value Increase(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy Annual Cash Value Increase'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Term Policy Annual Cash Value Increase'(calcType;fromYear;toYear);çä   : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e583c0 1e582b0 0 1e58478 0 0 2
+Illus List Term Policy Annual Cash Value Increase(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ IF ( /*First Policy Year?*/ fromYear = 1 ; çä     /*Yes*/ 'GEN Round'('TradDocs Total CV'(calcType;fromYear);2) ; çä     /*No*/ 'GEN Round'('TradDocs Total CV'(calcType;fromYear) - 'TradDocs Total CV'(calcType;fromYear - 1);2)çä  ) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Term Policy Annual Cash Value Increase'(calcType;fromYear + 1;toYear)çä)
+F1 1e58478 1e582b0 0 0 0 0 2
+Illus List WL Policy Annual Cash Value Increase(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ IF ( /*First Policy Year?*/ fromYear = 1 ; çä     /*Yes*/ 'GEN Round'('TradDocs Total CV'(calcType;fromYear);2) ; çä     /*No*/ 'GEN Round'('TradDocs Total CV'(calcType;fromYear) - 'TradDocs Total CV'(calcType;fromYear - 1);2)çä  ) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Policy Annual Cash Value Increase'(calcType;fromYear + 1;toYear)çä)
+F1 1e58590 1e57588 1e58898 1e59430 0 0 2
+Illus List Policy Cash Value Addition(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy Cash Value Addition'(calcType;fromYear;toYear);çä   : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e58898 1e58590 0 0 0 0 2
+Illus List WL Policy Cash Value Addition(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*///'TradDocs Proj PUA from Dividends'(fromYear) + 'TradDocs Proj PUA from PUARider'(fromYear)çä 'DivOpt Proj Divs PUA'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear))) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Policy Cash Value Addition'(calcType;fromYear + 1;toYear)çä)
+F1 1e59430 1e57588 1e58ed8 0 0 0 2
+Illus List Policy PUA Cash Value(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy PUA Cash Value'(calcType;fromYear;toYear);çä   : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e58ed8 1e59430 0 0 0 0 2
+Illus List WL Policy PUA Cash Value(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*///'TradDocs Proj PUA from Dividends'(fromYear) + 'TradDocs Proj PUA from PUARider'(fromYear)çä 'TGTDB Proj Policy PUA FaceAmount'(calcType;fromYear;IF ( /* BIR coverage exists */ 'Std BIR coverage exists'(calcType) ; çä     /* True */ 'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear)) ; çä     /* False */ 0çä  );'TGTDB WithdrawalVector'(calcType;fromYear)) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Policy Cash Value Addition'(calcType;fromYear + 1;toYear)çä)
+F1 1e59298 1e574c0 1e59350 1e5a118 0 0 2
+-- Death Benefits --
+Funktion
+
+F1 1e59350 1e59298 1e59c30 1e598f8 0 0 2
+Illus List Total PUA Amounts(fromYear; toYear; calcType)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'TRADDOCS Proj PUA from Dividends'(calcType;fromYear) + 'TRADDOCS Proj PUA from Premiums'(calcType;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Total PUA Amounts'(fromYear + 1;toYear;calcType)çä)
+F1 1e59c30 1e59350 0 1e59698 0 0 2
+Illus List PUA from Dividends(fromYear; toYear; calcType)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'TRADDOCS Proj PUA from Dividends'(calcType;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List PUA from Dividends'(fromYear + 1;toYear;calcType)çä)
+F1 1e59698 1e59350 0 0 0 0 2
+Illus List PUA from Premiums(fromYear; toYear; calcType)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'TRADDOCS Proj PUA from Premiums'(calcType;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List PUA from Premiums'(fromYear + 1;toYear;calcType)çä)
+F1 1e598f8 1e59298 1e5a398 0 0 0 2
+Illus List Policy Death Benefit(fromYear; toYear; calcType)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Death Benefit'(fromYear;toYear;calcType);çä   /*Term*/ 2 : 'Illus List Term Death Benefit'(fromYear;toYear;calcType);çä   : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5a398 1e598f8 0 1e59e70 0 0 2
+Illus List WL Death Benefit(fromYear; toYear; calcType)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DEATH BENEFIT Projected Total Death Benefit'(calcType;fromYear;'TRADDOCS Total CV'(calcType;fromYear - 1)) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Death Benefit'(fromYear + 1;toYear;calcType)çä)
+F1 1e59e70 1e598f8 0 0 0 0 2
+Illus List Term Death Benefit(fromYear; toYear; calcType)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DEATH BENEFIT Projected Total Death Benefit'(calcType;fromYear;'TRADDOCS Total CV'(calcType;fromYear - 1)) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Term Death Benefit'(fromYear + 1;toYear;calcType)çä)
+F1 1e5a118 1e574c0 1e5a1e8 1e5d8b8 0 0 2
+-- Dividends --
+Funktion
+
+F1 1e5a1e8 1e5a118 1e5aa28 1e5ab18 0 0 2
+-- Div Cash Value --
+Funktion
+
+F1 1e5aa28 1e5a1e8 1e5a5e8 1e5a850 0 0 2
+Illus List Policy DivCashVal(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy DivCashVal'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5a5e8 1e5aa28 0 0 0 0 2
+Illus List WL Policy DivCashVal(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'TradDocs Proj Policy Dividend'(calcType;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Policy DivCashVal'(calcType;fromYear + 1;toYear)çä)
+F1 1e5a850 1e5a1e8 1e5a960 0 0 0 2
+Illus List Coverage DivCashVal(calcType; coverageIndex; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Coverage DivCashVal'(calcType;coverageIndex;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5a960 1e5a850 0 0 0 0 2
+Illus List WL Coverage DivCashVal(calcType; coverageIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DivAmount Proj Total Coverage Dividend'(calcType;coverageIndex;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear))) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Coverage DivCashVal'(calcType;coverageIndex;fromYear + 1;toYear)çä)
+F1 1e5ab18 1e5a118 1e5abf0 1e5af48 0 0 2
+-- Div Reduce Prem --
+Funktion
+
+F1 1e5abf0 1e5ab18 1e5ae40 0 0 0 2
+Illus List Policy DivRedPrem(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy DivRedPrem'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5ae40 1e5abf0 0 0 0 0 2
+Illus List WL Policy DivRedPrem(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DivOpt Proj Divs ReducePrem'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear))) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Policy DivRedPrem'(calcType;fromYear + 1;toYear)çä)
+F1 1e5af48 1e5a118 1e5b208 1e5bf30 0 0 2
+-- Div On Deposit / Accum At Interest --
+Funktion
+
+F1 1e5b208 1e5af48 1e5b3f8 1e5b730 0 0 2
+Illus List Policy DivOnDepositAmt(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy DivOnDepositAmt'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5b3f8 1e5b208 0 0 0 0 2
+Illus List WL Policy DivOnDepositAmt(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('DivOpt Proj Divs AccumAtInt'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear)));2) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Policy DivOnDepositAmt'(calcType;fromYear + 1;toYear)çä)
+F1 1e5b730 1e5af48 1e5c1f8 0 0 0 2
+Illus List Policy DivOnDepositInterest(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy DivOnDepositInterest'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5c1f8 1e5b730 0 0 0 0 2
+Illus List WL Policy DivOnDepositInterest(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ IF (fromYear = 1 ; çä    'GEN Round'('DivOpt Proj Divs AccumAtInt'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear)));2) ; çä    'GEN Round'('DivOpt Proj Divs AccumAtInt'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear))) - 'DivOpt Proj Divs AccumAtInt'(calcType;fromYear - 1;'TGTDB Vector WLProj'(calcType;fromYear - 1;'TGTDB Vector BIRInputVector'(calcType;fromYear - 1;'TGTDB WithdrawalVector'(calcType;fromYear - 1));'TGTDB WithdrawalVector'(calcType;fromYear - 1)));2)çä  ) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Policy DivOnDepositInterest'(calcType;fromYear + 1;toYear)çä)
+F1 1e5bf30 1e5a118 1e5c008 1e5c538 0 0 2
+-- Div Loan Reduce --
+Funktion
+
+F1 1e5c008 1e5bf30 1e5caa8 0 0 0 2
+Illus List Policy DivLoanReduceAmt(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy DivLoanReduceAmt'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5caa8 1e5c008 0 0 0 0 2
+Illus List WL Policy DivLoanReduceAmt(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DivOpt Proj Divs ReduceLoan'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear))) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Policy DivLoanReduceAmt'(calcType;fromYear + 1;toYear)çä)
+F1 1e5c538 1e5a118 1e5c610 1e5cd80 0 0 2
+-- Purchase OYT --
+Funktion
+
+F1 1e5c610 1e5c538 1e5d198 0 0 0 2
+Illus List Policy Divs OneYearTerm(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy Divs OneYearTerm'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5d198 1e5c610 0 0 0 0 2
+Illus List WL Policy Divs OneYearTerm(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('DivOpt Proj Divs OneYearTerm'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;fromYear)));2) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Policy Divs OneYearTerm'(calcType;fromYear + 1;toYear)çä)
+F1 1e5cd80 1e5a118 1e5ce58 0 0 0 2
+-- Purchase PUA --
+Funktion
+
+F1 1e5ce58 1e5cd80 1e5d0a8 0 0 0 2
+Illus List Policy Divs PUA(calcType; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ 1 : 'Illus List WL Policy Divs PUA'(calcType;fromYear;toYear);çä   /*Term with Cash Value*/ 26 : 'Illus List Zero All Returns Delimited'(fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5d0a8 1e5ce58 0 0 0 0 2
+Illus List WL Policy Divs PUA(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DivOpt Proj Divs PUA'(calcType;fromYear;'TGTDB Vector WLProj'(calcType;fromYear;'TGTDB Vector BIRInputVector'(calcType;fromYear;'TGTDB WithdrawalVector'(calcType;fromYear));'TGTDB WithdrawalVector'(calcType;'TGTDB WithdrawalVector'(calcType;fromYear)))) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Policy Divs PUA'(calcType;fromYear + 1;toYear)çä)
+F1 1e5d8b8 1e574c0 1e5d238 0 0 0 2
+-- Premiums --
+Funktion
+
+F1 1e5d238 1e5d8b8 1e5d2f0 1e5dbf0 0 0 2
+Illus List Coverage Mode Premium(calcType; coverageIndex; yearIndex; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ "1" : 'Illus List WL Coverage Mode Premium'(calcType;coverageIndex;yearIndex;fromYear;toYear);çä   /*Term with Cash Value*/ "26" : 'Illus List Term Coverage Mode Premium'(calcType;coverageIndex;fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5d2f0 1e5d238 0 1e5d930 0 0 2
+Illus List WL Coverage Mode Premium(calcType; coverageIndex; yearIndex; fromYear; toYear)
+Funktion
+ //9/16/2008 -vj- TEMP commented out coverage index in PUAR Premium AdjustmentçäIF ('APO is Active'(calcType;yearIndex) ; çä  0 ; çä  IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä     /*Yes-return null*/ 'GEN Vector Blank' ; çä     /*Continue with delimited list*/ 'ModePremium Coverage Mode Premium'(calcType;coverageIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Policy PaymentMode';'Policy Duration';"1";calcType)) + IF ( /*Coverage is PUAR*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä       /*Yes*/ 'TradDocs PUAR Premium Adjustment'(calcType;1;fromYear) ; çä       /*No*/ 0çä    ) + IF ( /*Coverage is BIR*/ 'Coverage Type is BIR'(calcType;coverageIndex) ; çä     /*Yes*/ 'TradDocs BIR Premium Adjustment'(calcType;1;fromYear) ; çä     /*No*/ 0çä  ) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Coverage Mode Premium'(calcType;coverageIndex;yearIndex;fromYear + 1;toYear)çä)çä)
+F1 1e5d930 1e5d238 0 0 0 0 2
+Illus List Term Coverage Mode Premium(calcType; coverageIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'ModePremium Coverage Mode Premium'(calcType;coverageIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Policy PaymentMode';'Policy Duration';fromYear;calcType)) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Term Coverage Mode Premium'(calcType;coverageIndex;fromYear + 1;toYear)çä)
+F1 1e5dbf0 1e5d8b8 1e5de70 1e5e2e8 0 0 2
+Illus List Policy Annual Outlay(calcType; yearIndex; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ "1" : 'Illus List WL Policy Annual Outlay'(calcType;yearIndex;fromYear;toYear);çä   /*Term with Cash Value*/ "26" : 'Illus List Term Policy Annual Outlay'(calcType;fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5de70 1e5dbf0 0 1e5e870 0 0 2
+Illus List WL Policy Annual Outlay(calcType; yearIndex; fromYear; toYear)
+Funktion
+IF ('APO is Active'(calcType;yearIndex) ; çä  0 ; çä  IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä     /*Yes-return null*/ 'GEN Vector Blank' ; çä     /*Continue with delimited list*/ 'Illus Policy Annual Outlay'(calcType;1) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Policy Annual Outlay'(calcType;yearIndex;fromYear + 1;toYear)çä  )çä)
+F1 1e5e870 1e5dbf0 0 1e5e170 0 0 2
+Illus List Term Policy Annual Outlay(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'Illus Policy Annual Outlay'(calcType;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Term Policy Annual Outlay'(calcType;fromYear + 1;toYear)çä)
+F1 1e5e170 1e5dbf0 0 0 0 0 2
+Illus Policy Annual Outlay(calcType; yearIndex)
+Funktion
+'GEN Round'('TradDocs Policy Mode Premium'(calcType;yearIndex) * 'Number Of Payments Per Year'('Policy PaymentMode');2)
+F1 1e5e2e8 1e5d8b8 1e5e570 0 0 0 2
+Illus List Policy Annual Premium(calcType; yearIndex; fromYear; toYear)
+Funktion
+CASE( /*Product Type*/ 'PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate);çä   /*Whole Life*/ "1" : 'Illus List WL Policy Annual Premium'(calcType;yearIndex;fromYear;toYear);çä   /*Term with Cash Value*/ "26" : 'Illus List Term Policy Annual Premium'(calcType;fromYear;toYear);çä   /*All Others*/  : 'Illus List Zero All Returns Delimited'(fromYear;toYear))çä
+F1 1e5e570 1e5e2e8 0 1e5ea50 0 0 2
+Illus List Term Policy Annual Premium(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'Illus Policy Annual Premium'(calcType;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List Term Policy Annual Premium'(calcType;fromYear + 1;toYear)çä)
+F1 1e5ea50 1e5e2e8 0 1e5ecc8 0 0 2
+Illus List WL Policy Annual Premium(calcType; yearIndex; fromYear; toYear)
+Funktion
+IF ('APO is Active'(calcType;yearIndex) ; çä  0 ; çä  IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä     /*Yes-return null*/ 'GEN Vector Blank' ; çä     /*Continue with delimited list*/ 'Illus Policy Annual Premium'(calcType;1) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'Illus List WL Policy Annual Premium'(calcType;yearIndex;fromYear + 1;toYear)çä  )çä)
+F1 1e5ecc8 1e5e2e8 0 0 0 0 2
+Illus Policy Annual Premium(calcType; yearIndex)
+Funktion
+'GEN Round'('TradDocs Policy Mode Premium'(calcType;yearIndex) * 'Number Of Payments Per Year'('Policy PaymentMode');2)
+F1 1e5ee38 1e55098 1e5ef08 0 0 0 2
+:OutlayCalc
+Funktion
+
+F1 1e5ef08 1e5ee38 1e5f918 1e5f3e8 0 0 2
+--Illus OutlayCalc After Tax Outlay(calcType; yearIndex)
+Funktion
+IF('APO is Active'(calcType;yearIndex); çäâ0;çäâ'TGTDB Proj APO Base Cost'(calcType; yearIndex)çäâ   + â'Illus OutlayCalc BIR premium'(yearIndex)çäâ   + â'Illus OutlayCalc PUAR premium'(yearIndex)çäâ   - â'Illus OutlayCalc Dividend Cash or Premium'(calcType; yearIndex)âçä  â   - â'Illus OutlayCalc Taxable Income'(calcType; yearIndex)çäâ   - âvWithdrwl('TGTDB WithdrawalVector'(yearIndex); yearIndex)çä   )
+F1 1e5f918 1e5ef08 0 1e5f1c0 0 0 2
+Illus OutlayCalc BIR premium(calcType;yearIndex)
+Funktion
+IF ('Std BIR coverage exists'(calcType) ; çä  'TGTDB BIR Premium Stream'(yearIndex) ; çä  0çä)
+F1 1e5f1c0 1e5ef08 0 730697ba 0 0 2
+Illus OutlayCalc Dividend Cash or Premium(calcType; yearIndex)
+Funktion
+IF ('DivOpt Option Is ReducePrem'('DivOpt Proj Primary Option'(calcType;yearIndex)) || 'DivOpt Option Is Cash'('DivOpt Proj Primary Option'(calcType;yearIndex)) ; çä  'DivOpt Proj Primary Dividend Option Amount'(calcType;yearIndex;'TGTDB Inital Vector WLProj'(calcType;yearIndex)) ; çä  0çä)
+F1 730697ba 1e5ef08 0 0 0 0 2
+Illus OutlayCalc PUAR premium(calcType; yearIndex)
+Funktion
+SUMX(covIdx;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#covIdx);#covIdx;TransEffDate)) ; çä  'TGTDB PUAR Premium Stream'(calcType;#covIdx;yearIndex) ; çä  0çä))
+F1 1e5f3e8 1e5ee38 1e5f590 1e5f690 0 0 2
+Illus OutlayCalc Policy Annual Net Outlay(calcType; yearIndex)
+Funktion
+'Illus OutlayCalc Before Tax Outlay'(calcType;yearIndex) + 'Illus OutlayCalc Taxable Income'(calcType;yearIndex) * 'INPUT Tax Rate'
+F1 1e5f590 1e5f3e8 0 0 0 0 2
+Illus OutlayCalc Taxable Income(calcType; yearIndex)
+Funktion
+'Illus TaxCalc Withdrawal Taxable Income'(calcType;yearIndex;vWithdrwl('TGTDB WithdrawalVector'(calcType;yearIndex);yearIndex)) + 'WLDisbSolve Loans Taxable Income'(calcType;yearIndex;vWithdrwl('TGTDB WithdrawalVector'(calcType;yearIndex);yearIndex)) + 'Illus TaxCalc Dividend Taxable Income'(calcType;yearIndex;vWithdrwl('TGTDB WithdrawalVector'(calcType;yearIndex);yearIndex)) /*çäTaxable Portion of:çäSurrenders; çäLoans;çäDividends;çäDividend Accumulations;çä*/ 
+F1 1e5f690 1e5ee38 1e60150 1e5fbf0 0 0 2
+Illus OutlayCalc Before Tax Outlay(calcType; yearIndex)
+Funktion
+'ModePremium Mode Premium'(calcType;'Vector ModePremium Create Parms Vector From Inputs') + 'Illus OutlayCalc Total Loan Repayment'(calcType;yearIndex;'TGTDB Inital Vector WLProj'(calcType;yearIndex)) + 0 //loan interest payments part of loan repaymentçä - 'Illus OutlayCalc Dividend Cash or Premium'(calcType;yearIndex) - 'Illus OutlayCalc Surrenders'(calcType;yearIndex;'TGTDB Inital Vector WLProj'(calcType;yearIndex)) - 'Illus OutlayCalc Loan Amount'(calcType;yearIndex;'TGTDB Inital Vector WLProj'(calcType;yearIndex)) /*çäBefore Tax Outlay:çäçäAnnualized Policy Premium +çäLoan Repayments Made Out Of Pocket + çäLoan Interest Payments Made Out Of Pocket ‚Äì çäAny Dividend used to offset the Annualized Policy Premium ‚Äì çäAny Loan used to offset the Annualized Policy Premium ‚Äì çäAny Surrender used to offset the Annualized Policy Premium ‚Äì çäAny Surrender taken in cash ‚Äì çäAny Loan taken in cash ‚Äì çäAny Dividend paid in cashçä*/ 
+F1 1e60150 1e5f690 0 1e60ac0 0 0 2
+Illus OutlayCalc Total Loan Repayment(calcType; yearIndex; vectorWLProj)
+Funktion
+ //9/29/2008 -vj- TEMP added minus one presuming number of loans is set to 2 for 2 loans, first loan index is zeroçäSUMX(loanIndex;0;'Loan NumberofLoans'(calcType;yearIndex;vectorWLProj) - 1;'Loan RepaymentAmt'(calcType;yearIndex;#loanIndex;vectorWLProj))
+F1 1e60ac0 1e5f690 0 0 0 0 2
+Illus OutlayCalc Loan Amount(calcType; yearIndex; vectorWLProj)
+Funktion
+ //VJ 9/11/2008 TEMP added -1 çäIF ( /*no loans for year*/ 'Loan NumberofLoans'(calcType;yearIndex;vectorWLProj) = 0 ; çä   /*then return zero */ 0 ; çä   /*else sum loan amounts*/ SUMX(loanIndex;0;'Loan NumberofLoans'(calcType;yearIndex;vectorWLProj) - 1;IF ('Loan Illus Loan YearIndex'(calcType;0;#loanIndex;vectorWLProj) = yearIndex ; çä    'Loan LoanAmt'(calcType;#loanIndex;vectorWLProj) ; çä    0çä  ))çä) /*endif */ 
+F1 1e5fbf0 1e5ee38 1e5fcc0 1e60858 0 0 2
+:TaxCalc
+Funktion
+
+F1 1e5fcc0 1e5fbf0 1e5fde0 1e60748 0 0 2
+Illus TaxCalc Cost Basis Available(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF (yearIndex < 1 ; çä  'TradDocs Policy Mode Premium'(calcType;1) ; çä  'Illus TaxCalc Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt) - levelWdlAmt + ('TradDocs Policy Mode Premium'(calcType;yearIndex) * ('Number Of Payments Per Year'('Policy PaymentMode') - 1) - 'Illus TaxCalc Tax Free Portion of Dividend'(calcType;yearIndex;levelWdlAmt) - 'Illus TaxCalc Tax Free Portion of Withdrawal'(calcType;yearIndex;levelWdlAmt) + 'Illus TaxCalc Taxable Portion of Loans'(calcType;yearIndex;levelWdlAmt)) + 'TradDocs Policy Mode Premium'(calcType;yearIndex)çä)
+F1 1e5fde0 1e5fcc0 1e5fef8 1e60008 0 0 2
+Illus TaxCalc Tax Free Portion of Dividend(calcType; yearIndex; levelWdlAmt)
+Funktion
+'WLDisbSolve Portion of Dividend Applied'(calcType;yearIndex;levelWdlAmt) - 'Illus TaxCalc Dividend Taxable Income'(calcType;yearIndex;levelWdlAmt)
+F1 1e5fef8 1e5fde0 0 0 0 0 2
+Illus TaxCalc Dividend Taxable Income(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF ( /*Is the contract an MEC?*/ 'WLDisbSolve Contract MEC Ind'(calcType;yearIndex) ; çä   /*Yes*/ MIN('WLDisbSolve Taxable Gain Amount'(calcType;yearIndex;levelWdlAmt);'WLDisbSolve Portion of Dividend Applied'(calcType;yearIndex;levelWdlAmt)) ; çä   /*No*/ MIN('WLDisbSolve Taxable Gain Amount'(calcType;yearIndex;levelWdlAmt);MAX('WLDisbSolve Portion of Dividend Applied'(calcType;yearIndex;levelWdlAmt) - 'Illus TaxCalc Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt);0))çä)
+F1 1e60008 1e5fcc0 1e60528 1e60638 0 0 2
+Illus TaxCalc Tax Free Portion of Withdrawal(calcType; yearIndex; levelWdlAmt)
+Funktion
+levelWdlAmt - 'Illus TaxCalc Withdrawal Taxable Income'(calcType;yearIndex;levelWdlAmt)
+F1 1e60528 1e60008 0 0 0 0 2
+Illus TaxCalc Withdrawal Taxable Income(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF ( /*Is the contract an MEC?*/ 'WLDisbSolve Contract MEC Ind'(calcType;yearIndex) ; çä   /*Yes - calculate the taxable gain amount directly*/ MIN('Illus TaxCalc Taxable Gain Amount'(calcType;yearIndex;levelWdlAmt);levelWdlAmt) ; çä   /*No*/ MIN('Illus TaxCalc Taxable Gain Amount'(calcType;yearIndex;levelWdlAmt);MAX(levelWdlAmt - 'Illus TaxCalc Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt);0))çä) /*No - need to check if recapture ceiling rules applyçä   IF(/*Do Recapture Ceiling Rules apply?çä       yearIndex <= 15çä       &&çä       SUMX(cov; 0; 'Policy Number Of Coverage'(calcType;yearIndex) - 1;çä                 'Policy Coverage FaceAmtDecrease'(#cov; yearIndex)çä                  ) > 0;çäçä       /*Yes - use modified calculation for the withdrawal taxable incomeçä       MIN('WLDisbSolve Recapture Ceiling'(calcType; yearIndex);çä              'WLDisbSolve Taxable Gain Amount'(calcType; yearIndex);çä              'WLDisbSolve Net Withdrawal Amount'(calcType; yearIndex)çä              )çä        + çä       MAX(0;çä               'WLDisbSolve Net Withdrawal Amount'(calcType; yearIndex)çä               -çä               ('WLDisbSolve Taxable Gain Amount'(calcType; yearIndex)çä                +çä                'WLDisbSolve Cost Basis'(calcType; yearIndex)çä                )çä               ); çä*/ 
+F1 1e60638 1e5fcc0 0 0 0 0 2
+Illus TaxCalc Taxable Portion of Loans(calcType; yearIndex; levelWdlAmt)
+Funktion
+IF ( /*Is the contract an MEC?*/ 'WLDisbSolve Contract MEC Ind'(calcType;yearIndex) ; çä   /*Yes - calculate the taxable portion of the loans*/ 'WLDisbSolve Loans Taxable Income'(calcType;yearIndex;levelWdlAmt) ; çä   /*No - for non-MECs loans are not considered a taxable event*/ 0çä)
+F1 1e60748 1e5fbf0 0 5ded7f35 0 0 2
+Illus TaxCalc Taxable Gain Amount(calcType; yearIndex; levelWdlAmt)
+Funktion
+MAX('WLDisbSolve Switch Total Cash Value'(calcType;yearIndex;levelWdlAmt) - 'WLDisbSolve Accum At Interest Dividend Option Reduction'(calcType;yearIndex) - 'Illus TaxCalc Cost Basis Available'(calcType;yearIndex - 1;levelWdlAmt);0)
+F1 5ded7f35 1e5fbf0 0 0 0 0 2
+--Cost Basis calculations for PAC004 -- Exclude nonQAB premiums --
+Funktion
+
+F1 1e60858 1e5ee38 1e60ec0 0 0 0 2
+Illus OutlayCalc Surrenders(calcType; yearIndex; vectorWLProj)
+Funktion
+IF ('Illus OutlayCalc BIR excess premium'(calcType;yearIndex) ; çä   /*No Surrender*/ 0 ; çä   /*Surrender needed*/ 'Illus OutlayCalc BIR excess premium'(calcType;yearIndex) - 'TGTDB Proj Release'(calcType;'Policy Number Of Coverage'(calcType;yearIndex) - 1;yearIndex;12;'GEN Vector Blank';'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));vectorWLProj;'TGTDB WithdrawalVector'(calcType;yearIndex))çä)
+F1 1e60ec0 1e60858 0 0 0 0 2
+Illus OutlayCalc BIR excess premium(calcType; yearIndex)
+Funktion
+'TGTDB Proj excess BIR premium'(calcType;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));'TGTDB WithdrawalVector'(calcType;yearIndex))
+A0 3f4300 0 0 0 0 0 0
+
+T0 3f436c 0 0 0 0 0 0
+
+I0 3f43d8 0 6c5b55dd 0 0 0 0
+
+I0 6c5b55dd 3f43d8 0 7fe107de 0 0 0
+WLDisbursementSolves.pms
+I0 7fe107de 3f43d8 0 0 0 0 0
+WLFaceAmountSolves.pms
+-
+O0
+E0
+L0
+B0
+P32
+1e4b678
+1e4d6d0
+1e4dd10
+1e4ea40
+1e4f358
+1e502c0
+1e50b28
+1e51b88
+54e8b9ed
+1e510d0
+1e52090
+1e51ce0
+1e51f38
+1e521a0
+1e52e58
+1e52410
+349cdfae
+1e52a18
+1e52b50
+1e533f8
+1e530d8
+1e53a60
+1e534b8
+1e53760
+1e54958
+1e542c0
+1e55b48
+1e54ec8
+32e72341
+5ed09db3
+5de5187e
+4a3b81e2
+F37
+1e55098
+1e55160
+1e574c0
+1e57588
+1e59298
+1e5a118
+1e5d8b8
+1e5d238
+1e5d2f0
+1e5d930
+1e5dbf0
+1e5de70
+1e5e870
+1e5e170
+1e5e2e8
+1e5e570
+1e5ea50
+1e5ecc8
+1e5ee38
+1e5ef08
+1e5f918
+1e5f1c0
+730697ba
+1e5f3e8
+1e5f590
+1e5f690
+1e60150
+1e60ac0
+1e5fbf0
+1e5fcc0
+1e5fde0
+1e60008
+1e60528
+1e60638
+1e60748
+5ded7f35
+1e60858
+A0
+T0
+!179
+1e4d6d0 -2 -2
+Modification Log:çä09/17/2012 PAC025 DynDivs JL - Link Dynamic Dividend Rate Outputsçä11/02/2009 - CSC - JL - Remove linked outputs to WLCVProj - these flow through TradConDocs
+1e4dd10 3 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 4 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 5 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 6 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 7 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 8 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 9 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 10 -1
+çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4dd10 11 -1
+çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 3 -1
+Description: Returns a block of properties by year.çä                   yr_t= -2 will return the lower and upper bounds of the yr_t valuesçä                   yr_t= -1 will return a double delimited block string of all values for all years within boundsçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/27/2008   CSC   Illustration   ILLUS001
+1e4ea40 4 -1
+Description: Returns a block of cost indices properties by year.çä                    Surrender and net payment cost indices for years 10 and 20çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/10/2008   CSC   Illustration   ILLUS001
+1e4ea40 5 -1
+Description: Returns a block of cost indices properties by year.çä                    Surrender and net payment cost indices for years 10 and 20çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/10/2008   CSC   Illustration   ILLUS001
+1e4ea40 6 -1
+Blocked output consisting of attained age, premium, cash value, cash surrender value, death benefit on a current basisçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 7 -1
+Blocked output consisting of attained age, premium, cash value, cash surrender value, death benefit on a guaranteed basisçä çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 8 -1
+Blocked output consisting of attained age, premium, cash value, cash surrender value, death benefit on a midpoint basisçä çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 9 -1
+Blocked output consisting of attained age, premium, cash value, cash surrender value, death benefit, annual surrender, annual net outlay, annual dividend on a current basisçä çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 10 -1
+Blocked output consisting of attained age, annual dividend, cash value of each dividend option, paid up additions, one year term amounts on a current basis.çä çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 11 -1
+Blocked output consisting of attained age, total net outlay, total annual cash value increase, total cash value, total death benefit on a current basis.çä çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 12 -1
+Blocked output consisting of attained age, total net outlay, total annual cash value increase, total cash value, total death benefit on a guaranteed basis.çä çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 13 -1
+Blocked output consisting of attained age, PUAR premium. BIR Premium, Term Charge on a current basisçä çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4ea40 14 -1
+Blocked output consisting of attained age, base face amount, annual premium outlay, base mortality charges, annual surrender charges on a current basis.çä çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e4f358 3 -1
+Description: Policy Cash Surrender Value based on rate assumption - sum across CSV's for all coverages. çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations      ILLUS001
+1e4f358 4 -1
+Description: The total cash value at the end of the year.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008 -CSC- Illustrations - ILLUS001
+1e4f358 5 -1
+Description: The total of the increase in cash value for the policy and any dividends with cash valueçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations      ILLUS001
+1e4f358 6 -1
+Description: The total cash value at the end of the year of dividends used to purchase additional paid-up insurance.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations     ILLUS001çä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVector
+1e4f358 7 -1
+Description: The total cash value at the end of the year of the additional paid-up insurance.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPA1013 CSC 07/03/2009 Added rateAssumption to withdrawal vectorçä01/13/2008          CSC                   Illustrations      ILLUS001
+1e502c0 3 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 4 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 5 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 6 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 7 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 8 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 9 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 10 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 11 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 12 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 13 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e502c0 14 -1
+Description: Coverage Net Payment Cost Index. çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/25/2008 -CSC  llustrations  -ILLUS001
+1e502c0 15 -1
+Description: Coverage Surrender Cost Index. çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/25/2008   - CSC -Illustrations - ILLUS001
+1e50b28 3 -1
+Description: Total Policy death benefit. çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/22/2008          CSC                   Illustrations      ILLUS001çä çä03/24/2008 PA852 Updated CV function to use previous year end.çäPerformance pA1001 - 10/27/2009 - BT - Commented out since also in TradContractDocuments
+1e50b28 4 -1
+Description: Paid up adds from both dividends and premiums. çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/22/2008          CSC                   Illustrations      ILLUS001
+1e50b28 5 -1
+Description: Paid up adds from dividends. çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/22/2008          CSC                   Illustrations      ILLUS001
+1e50b28 6 -1
+Description: Paid up adds from premiums. çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/22/2008 -CSC-  Illustrations- ILLUS001
+1e50b28 8 -1
+Description: Return appropriate Policy summary/illustration death benefit based on rate assumption, rounded to nearest dollar.çä çäModification Log:çä09/28/2012 - PAD-912 - rm - Replaced standard function ROUND with 'GEN Round'çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/21/2010 - PAC013 calcType - BT - changed back to "G"çä7/16/2010 - PAC013 calcType - BT - changed guar to midpont for "M"çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/22/2008 -CSC-  Illustrations- ILLUS001
+1e50b28 9 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/04/2009 - PAC006 - wdp - Added Property for use with riders
+54e8b9ed 3 -1
+Description: Total projected dividend earned amount for year.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/27/2009 - BT - Moved from TradContractDocuments to this model because deleted the TradContractDocs link from TradIllustrations, but WL products needed to be able to access this outputçä11/10/2009 - JL - Moved from DivEarnedAmount model, to ensure compiling of WLCashValueProjçä01/21/2010 - pA1001 - DT - Changed for WLProj to BOY
+54e8b9ed 4 -1
+Description: Total projected dividend earned amount for year.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2010 - pA1001 - DT - Changed for WLProj to BOYçä10/27/2009 -Performance pA1001 - BT - Moved from TradContractDocuments to this model because deleted the TradContractDocs link from TradIllustrations, but WL products needed to be able to access this outputçä11/10/2009 - JL - Moved from DivEarnedAmount model, to ensure compiling of WLCashValueProjçä
+54e8b9ed 5 -1
+Description: Total projected dividend earned amount for year.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2010 - pA1001 - DT - Changed for WLProj to BOYçä10/27/2009 -Performance pA1001 -  -BT - Moved from TradContractDocuments to this model because deleted the TradContractDocs link from TradIllustrations, but WL products needed to be able to access this outputçä11/10/2009 - JL - Moved from DivEarnedAmount model, to ensure compiling of WLCashValueProjçä
+54e8b9ed 6 -1
+Description: Total projected dividend earned amount for year.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/21/2010 - pA1001 - DT - Changed for WLProj to BOYçä 10/27/2009 -Performance pA1001- BT - Moved from TradContractDocuments to this model because deleted the TradContractDocs link from TradIllustrations, but WL products needed to be able to access this outputçä11/10/2009 - JL - Moved from DivEarnedAmount model, to ensure compiling of WLCashValueProjçä
+1e510d0 3 -1
+Description: Annual policy dividend, indexed by policy yearçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä 06/19/2009-PA1277  - JL - Only return divs paid in cashçä01/13/2008         CSC          Illustrations          ILLUS001
+1e510d0 4 -1
+Description: Annual coverage dividend, indexed by rate assumption, policy year and coverage indexçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä 07/03/2009-PA1013 CSC- Added rateAssumption to withdrawal vectorçä01/13/2008         CSC          Illustrations          ILLUS001
+1e52090 3 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/03/2009 - PA1013 CSC -  Added rateAssumption to withdrawal vector
+1e51ce0 3 -1
+çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/03/2009 - PA1013 CSC-Added rateAssumption to withdrawal vectorçäPA1277 - 06/19/2009 - JL - Round final outputçä
+1e51ce0 4 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/03/2009-PA1013 CSC- Added rateAssumption to withdrawal vector
+1e51f38 3 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/03/2009 -PA1013CSC- Added rateAssumption to withdrawal vector
+1e521a0 3 -1
+çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/12/09 - PA1277 -JL - Use BOY WLProj vector, to correct divPUA units when calcultaing divs
+1e52e58 3 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/03/2009 -PA1013 CSC -Added rateAssumption to withdrawal vector
+1e530d8 3 -1
+Description: If policy lapses, returns the lapse date, otherwise the maturity date + 1 yearçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/13/2008 CSC Illustration ILLUS001
+1e530d8 4 -1
+Description: If policy lapses, returns 1(yes), otherwise 0(no)çä çäModification Log:çä02/13/2008 CSC Illustration ILLUS001
+1e530d8 5 -1
+Description: If policy lapses, returns the policy year of lapse, otherwise the policy year of maturity + 1çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/13/2008 CSC Illustration ILLUS001
+1e530d8 6 -1
+Description: If policy lapses, returns the lapse reason.çä çäModification Log:çä02/13/2008 CSC Illustration ILLUS001
+1e53a60 3 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e534b8 15 -1
+Description: Returns the total cost basis for the contract, excluding the non-QAB premiums, at the end of yearIndexçä çäModification log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä1/20/2010-PAC004_tt- modified so it calls function from tradDocs to when Std Calling System Is Illustration Based-0çä11/25/2009 - PAC004 - MO - initial calculations.
+1e53760 3 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/27/2009 - Performance pA1001 -BT - Commented out since also in TradContractDocuments
+1e53760 4 -1
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/27/2009 - BT -Performance pA1001 -  Commented out since also in TradContractDocumentsçä06/12/09 -PA1277 -  JL - Add Assumed (div assumption blend & charge multiplier) "A" rateAssumptionçä 06/10/09-PA1277  - JL - Added rounding (to 2 decimals)
+1e53760 5 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e53760 6 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e53760 7 -1
+çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 -PA1277 - JL - Added Policy Duration parm to Vector ModePremium Create Parms Vector From Inputs and Parms, such that the model compiles
+1e53760 8 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e53760 9 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e53760 10 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e53760 11 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/03/2009PA1013 CSC  Added rateAssumption to withdrawal vector
+1e54958 3 -1
+Description: Annual Surrender amount, indexed by rateAssumption and yearIndex.çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC006 - wdp - Added check to see if withdrawal vector actually is a vectorçä07/03/2009 -PA1013 CSC-Added rateAssumption to withdrawal vectorçä02/25/2008    CSC                   Illustrations     ILLUS001
+1e54958 4 -1
+Description: The total amount of surrender charges for a specified yearIndex.çäModification Log:çä02/25/2008          CSC                   Illustrations     ILLUS001
+1e54958 5 -1
+Description: The amount of surrender charges for a specified coverage and yearIndex.çä çäModification Log:çä02/25/2008          CSC                   Illustrations     ILLUS001
+1e54958 6 -1
+Description: Surrender Charge percentage by policy year.çä çäModification Log:çä02/25/2008          CSC                   Illustrations     ILLUS001
+1e542c0 3 -1
+Description: Returns the COI Rate for the base coverage (and base increase coverage, where applicable) from the Coverage and Option Charges model, based on rate assumptionçä çäModification Log:çä02/25/2008          CSC                   Illustrations     ILLUS001
+1e542c0 4 -1
+Description: Returns the COI Rate for the benefit/coverage option from the Coverage and Option Charges model, based on rate assumptionçä çäModification Log:çä02/25/2008          CSC                   Illustrations     ILLUS001
+1e542c0 5 -1
+Description: Returns the Rider COI Rate from the Coverage and Option Charges model, based on rate assumptionçä çäModification Log:çä02/25/2008          CSC                   Illustrations     ILLUS001
+1e542c0 6 -1
+Description: Joint Survivor Annual Mortality Rate (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä02/25/2008          CSC                   Illustrations     ILLUS001çä çä03/18/2008  Illus001 added blank vector
+1e542c0 7 -1
+Description: Joint Survivor Current Monthly Mortality Rate (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä02/25/2008          CSC                   Illustrations     ILLUS001çä çä03/18/2008  Illus001 added blank vector
+1e542c0 8 -1
+Description: Joint Survivor Guaranteed Monthly Mortality Rate (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä02/25/2008          CSC                   Illustrations     ILLUS001çä çä03/18/2008  Illus001 added blank vector
+1e542c0 9 -1
+Description: Monthly Joint Insured Blended COI Rate (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä02/25/2008          CSC                   Illustrations     ILLUS001çä çä03/18/2008  Illus001 added blank vector
+1e542c0 10 -1
+Description: Annual Mortality Rate For Primary Insured (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/25/2008          CSC                   Illustrations     ILLUS001çä çä03/18/2008  Illus001 added blank vector
+1e542c0 11 -1
+Description: Annual Mortality Rate For Joint Insured (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/18/2008  Illus001 added blank vectorçä02/25/2008          CSC                   Illustrations     ILLUS001çä çä
+1e542c0 12 -1
+Description: Annual Probability Of Survival Rate for Primary Insured (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/18/2008  Illus001 added blank vectorçä02/25/2008          CSC                   Illustrations     ILLUS001çä
+1e542c0 13 -1
+Description: Annual Probability Of Survival Rate for Joint Insured (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/18/2008  Illus001 added blank vectorçä02/25/2008          CSC                   Illustrations     ILLUS001çä çä
+1e542c0 14 -1
+Description: Probability Of Survival To Duration year for Primary Insured (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/25/2008          CSC                   Illustrations     ILLUS001çä çä03/18/2008  Illus001 added blank vector
+1e542c0 15 -1
+Description: Probability Of Survival To Duration year for Joint Insured (obtained from the Frasier Blending model)çä çäModification Log:çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/18/2008  Illus001 added blank vectorçä02/25/2008          CSC                   Illustrations     ILLUS001çä
+1e542c0 16 -1
+Description: Interest rate, indexed by yearIndexçä çäModification Log:çä02/25/2008          CSC                   Illustrations     ILLUS001
+1e55b48 3 -1
+Description: çäWill return a string consisting of BIR face Amount çäBase Face Amount, BIR premium, Base premium,çätotal calculated premium, iteration number çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008   CSC Illustrations  ILLUS001
+1e55b48 4 -1
+Description: çäWill return a string consisting of BIR face Percent of total, çäBase Face Percent of total, BIR premium, Base premium,çätotal calculated premium, iteration number çä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/06/2008   CSC Illustrations  ILLUS001
+1e54ec8 3 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e54ec8 4 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+32e72341 3 -1
+Description: Projected IRR on Cash Valueçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä09/15/2010 PAC018 JL Initial Output
+32e72341 4 -1
+Description: Projected IRR on Deaht Benefitçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä09/15/2010 PAC018 JL Initial Output
+5de5187e -2 -2
+Peformance - 02/24/2010 - BT - Add link so UTVs no longer error out when 8 char vpm is added
+4a3b81e2 -2 -2
+Peformance - 02/24/2010 - BT - Add link so UTVs no longer error out when 8 char vpm is added
+1e56390 -2 -2
+çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 -PA1277 -  JL - Added Policy Duration parm to Vector ModePremium Create Parms Vector From Inputs and Parms, such that the model compiles
+1e56490 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e56738 -2 -2
+çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - PA1277 - JL - Added Policy Duration parm to Vector ModePremium Create Parms Vector From Inputs and Parms, such that the model compiles
+1e56818 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e56908 -2 -2
+çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - PA1277 - JL - Added Policy Duration parm to Vector ModePremium Create Parms Vector From Inputs and Parms, such that the model compiles
+1e569f8 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e56ae8 -2 -2
+Modification log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä
+1e571d8 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e56d50 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e56e58 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e57060 -2 -2
+Modification log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - inserted commented out code for possible future referenceçä
+1e57158 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e573d0 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e57640 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e58038 -2 -2
+Description: Builds a delimited string of WL Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations     ILLUS001
+1e57d08 -2 -2
+Description: Builds a delimited string of WL Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations       ILLUS001
+1e57fb0 -2 -2
+Description: Builds a delimited string of Total Cash Values FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e58690 -2 -2
+Description: Builds a delimited string of WL Total Cash Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e58e20 -2 -2
+Description: Builds a delimited string of WL Total Cash Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e582b0 -2 -2
+Description: Builds a delimited string of Annual Cash Value Increases FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e583c0 -2 -2
+Description: Builds a delimited string of WL Annual Cash Value Increases FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e58478 -2 -2
+Description: Builds a delimited string of WL Annual Cash Value Increases FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e58590 -2 -2
+Description: Builds a delimited string of Cash Value Additions FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e58898 -2 -2
+Description: Builds a delimited string of WL Cash Value Additions FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e59430 -2 -2
+Description: Builds a delimited string of PUA values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e58ed8 -2 -2
+Description: Builds a delimited string of WL PUA Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e59350 -2 -2
+Description: Builds a delimited string of Paid up Adds amounts FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e59c30 -2 -2
+Description: Builds a delimited string of Paid up Adds amounts from dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e59698 -2 -2
+Description: Builds a delimited string of Paid up Adds amounts from PUAR FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e598f8 -2 -2
+Description: Builds a delimited string of Death Benefits FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5a398 -2 -2
+Description: Builds a delimited string of WL Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001çä çä03/24/2008 PA852 Updated CV function to use previous year end.
+1e59e70 -2 -2
+Description: Builds a delimited string of Term Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001çä03/24/2008 PA852 Updated CV function to use previous year end.
+1e5aa28 -2 -2
+Description: Builds a delimited string of policy dividend FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5a5e8 -2 -2
+Description: Builds a delimited string of policy dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5a850 -2 -2
+Description: Builds a delimited string of coverage dividend FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5a960 -2 -2
+Description: Builds a delimited string of coverage dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5abf0 -2 -2
+Description: Builds a delimited string of policy dividend FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5ae40 -2 -2
+Description: Builds a delimited string of policy dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5b208 -2 -2
+Description: Builds a delimited string of policy dividends on deposit FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5b3f8 -2 -2
+Description: Builds a delimited string of policy dividends on deposit FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5b730 -2 -2
+Description: Builds a delimited string of policy dividend FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5c1f8 -2 -2
+Description: Builds a delimited string of policy dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5c008 -2 -2
+Description: Builds a delimited string of policy dividend FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5caa8 -2 -2
+Description: Builds a delimited string of policy dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5c610 -2 -2
+Description: Builds a delimited string of policy dividend FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5d198 -2 -2
+Description: Builds a delimited string of policy dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5ce58 -2 -2
+Description: Builds a delimited string of policy dividend FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5d0a8 -2 -2
+Description: Builds a delimited string of policy dividends FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä01/13/2008          CSC                   Illustrations    ILLUS001
+1e5d238 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e5d2f0 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIRçä06/03/2009 -PA1277 - JL - Added Policy Duration parm to Vector ModePremium Create Parms Vector From Inputs and Parms, such that the model compilesçä9/30/2008 -vj- commented out coverage index from puar adjustmentçä06/5/2008 CMCâUpdates for PUAR Premium function change.çä01/13/2008          CSC                   Illustrations 
+1e5d930 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - PA1277 - JL - Added Policy Duration parm to Vector ModePremium Create Parms Vector From Inputs and Parms, such that the model compilesçä01/13/2008          CSC                   Illustrations 
+1e5dbf0 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e5de70 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e5e870 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e5e170 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e5e2e8 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä07/15/2010 CMC wmA Integration Update Policy Product Type to PI PolicyProduct PolicyProductTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e5e570 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e5ea50 -2 -2
+Description: Builds a delimited string of Cash Surrender Values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/13/2008          CSC                   Illustrations 
+1e5ecc8 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e5ef08 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e5f918 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e5f1c0 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+730697ba -2 -2
+Description:çä çäModification Log:çä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/09 - PA1277 - JL - Add rateAssumption such that the model compilesçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to functionçä4/26/08 - rlc - add coverageIndex parameter to TGTDB PUAR Premiumçä
+1e5f3e8 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e5f590 -2 -2
+Modification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 -PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä
+1e5f690 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e60150 -2 -2
+Description:  return total loan repayment from INPUTçä çäModification log:  çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä9/30/2008 -vj- subtract one from number of loans as first loan is index 0
+1e60ac0 -2 -2
+Description:  calculate loan amount for Outlayçä çäModification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä9/30/2008 -vj- initial function making sure to subtract 1 from number of loans
+1e5fcc0 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e5fde0 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e5fef8 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e60008 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e60528 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e60638 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e60748 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e60858 -2 -2
+Modification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - v - wdp - Added rateAssumption parameter to WithdrawalVectorçä
+1e60ec0 -2 -2
+Modification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä
+1e18f40 -2 -2
+Commented out, runs successfully when the following inputs are added:çä!INPUT Policy Life DivType=2
+1e198e0 -2 -2
+Commented out, runs successfully when the following inputs are added:çä!INPUT Illus LoanAmt[2]=0çä!INPUT Illus DivType[2]=161çä!INPUT Policy Life DivType=3
+1e1abd0 -2 -2
+Commented out, runs successfully when the following inputs are added:çä!INPUT Policy Number Of CoverageOption=0çä!INPUT Policy Coverage CurrentAmt=0çä!INPUT Illus DivType[1]=161çä!INPUT Illus Face Amt Solve DesignType=1000500001çä!INPUT Policy Life DivType=2
+;Offset=00000000

@@ -1,0 +1,4639 @@
+;1	08.12.2016 13:25:53	jlawrie2	
+X0 3f4150 0 3f4750 0 0 0 0
+
+X0 3f4750 3f4150 3f47e8 0 0 0 0
+-- All Test Cases --
+X0 3f47e8 3f4750 3f48a8 19c5610 0 0 0
+-- Function Test Cases --
+X0 3f48a8 3f47e8 3f4970 19a9648 0 0 0
+-- f_GMDB_Benefit_Amount --
+X0 3f4970 3f48a8 3f4a18 3fa5c0 0 0 0
+-- Step-Up --
+X27 3f4a18 3f4970 0 3f4dd0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - No Activity - Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+4000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy Investment AccountValue
+3000
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo TaxBasis[0;1]
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy ProductVersionCode
+1
+X30 3f4dd0 3f4970 0 3f5a30 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - Premium - Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2007
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo TaxBasis[0;1]
+300
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X33 3f5a30 3f4970 0 3f6810 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - $-$ Withdrawal - Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+3200
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2007
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2007
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy Investment AccountValue
+2000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy FinancialActivity CashValueAmt
+5000
+X34 3f6810 3f4970 0 3f7910 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - Prop Withdrawal - Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+3200
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2007
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy FinancialActivity FinActivityGrossAmount
+300
+INPUT Policy FinancialActivity CashValueAmount
+1500
+INPUT Policy Investment AccountValue
+2000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+INPUT Policy ValuesInfo TaxBasis[0;1]
+300
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+300
+INPUT Policy FinancialActivity CashValueAmt
+1500
+INPUT Policy ProductVersionCode
+1
+X25 3f7910 3f4970 0 3f88b0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - No Activity - Not Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+03/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo TaxBasis[0;1]
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy ProductVersionCode
+1
+X29 3f88b0 3f4970 0 3f90a0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - Premium - Not Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2007
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2006
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo TaxBasis[0;1]
+300
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy ProductVersionCode
+1
+X30 3f90a0 3f4970 0 3f9ae8 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - $-$ Withdrawal - Not Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+03/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2007
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+2
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500003
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy ValuesInfo TaxBasis[0;1]
+300
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy ProductVersionCode
+1
+X30 3f9ae8 3f4970 0 0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Step_Up - Prop Withdrawal - Not Step-Up Duration
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+03/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2007
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy FinancialActivity FinActivityGrossAmount
+600
+INPUT Policy FinancialActivity CashValueAmount
+1500
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500003
+INPUT Policy ValuesInfo TaxBasis[0;1]
+300
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+1500
+INPUT Policy ProductVersionCode
+1
+X0 3fa5c0 3f48a8 3faf58 19a1730 0 0 0
+-- Growth --
+X27 3faf58 3fa5c0 0 3faec8 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - No Activity
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA2PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2007
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+6000
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+6000
+INPUT Policy ProductVersionCode
+1
+X31 3faec8 3fa5c0 0 3fba90 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - Premium
+'GMDB Benefit Amount'(0;0)
+5460
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+4000
+INPUT Policy FinancialActivity FinEffDate
+01/01/2007
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2007
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X32 3fba90 3fa5c0 0 3fc6c0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - $-$ Withdrawal
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+01/01/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+1000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy FinancialActivity CashValueAmt
+5000
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X33 3fc6c0 3fa5c0 0 3fcfb0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - Prop Withdrawal
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+01/01/2006
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount
+300
+INPUT Policy FinancialActivity CashValueAmount
+1500
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+300
+INPUT Policy FinancialActivity CashValueAmt
+1500
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X37 3fcfb0 3fa5c0 0 3fda08 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - Prop Withdrawal Multiple Activities - pymt, wdwl
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+2
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate[1]
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FinancialActivity FinEffDate
+12/10/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity FinActivityType[1]
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+100
+INPUT Policy FinancialActivity CashValueAmount[1]
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+100
+INPUT Policy FinancialActivity CashValueAmt[1]
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X37 3fda08 3fa5c0 0 3fe7b0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - Prop Withdrawal Multiple Activities - wdwl, pymt
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+2
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate[1]
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FinancialActivity FinEffDate
+12/10/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+100
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+100
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X42 3fe7b0 3fa5c0 0 3ff128 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - Prop Withdrawal Multiple Activities - pymt, wdwl, pymt
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+3
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate[1]
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FinancialActivity FinEffDate
+12/10/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity FinActivityType[1]
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+100
+INPUT Policy FinancialActivity CashValueAmount[1]
+1000
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy FinancialActivity FinEffDate[2]
+12/25/2005
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[2]
+100
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+100
+INPUT Policy FinancialActivity CashValueAmt[1]
+5000
+INPUT Policy FinancialActivity FinActivityGrossAmt[2]
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X43 3ff128 3fa5c0 0 0 0 0 2
+GMDB Benefit Amount(riderIndex) -- Growth - Prop Withdrawal Multiple Activities - wdwl, pymt, wdwl
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+3
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate[2]
+12/25/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FinancialActivity FinEffDate[1]
+12/20/2005
+INPUT Policy FinancialActivity FinEffDate
+12/10/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinActivityType[2]
+6
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+100
+INPUT Policy FinancialActivity FinActivityGrossAmount[2]
+100
+INPUT Policy FinancialActivity CashValueAmount[2]
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+100
+INPUT Policy FinancialActivity FinActivityGrossAmt[2]
+100
+INPUT Policy FinancialActivity CashValueAmt[2]
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+0
+X0 19a1730 3f48a8 19a2568 0 0 0 0
+-- Greater of --
+X29 19a2568 19a1730 0 19a2868 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up Date - Growth < Step-Up < Account Value
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X31 19a2868 19a1730 0 19a3198 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up Date - Growth < Account Value < Step-Up
+'GMDB Benefit Amount'(0;0)
+4016.6096786592
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3000
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy Investment AccountValue
+3995
+INPUT Policy ValuesInfo TaxBasis[0;1]
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500003
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+5000
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+5000
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X31 19a3198 19a1730 0 19a3c68 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up Date - Account Value < Step-Up < Growth
+'GMDB Benefit Amount'(0;0)
+4016.6096786592
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3500
+INPUT Policy Investment AccountValue
+3000
+INPUT Message Language
+English
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+5000
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+5000
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+3500
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+X29 19a3c68 19a1730 0 19a47c8 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up Date - Account Value < Growth < Step-Up
+'GMDB Benefit Amount'(0;0)
+4000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+3500
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy Investment AccountValue
+3000
+INPUT Policy ValuesInfo TaxBasis
+3500
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X29 19a47c8 19a1730 0 19a5068 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up Date - Step-Up < Account Value < Growth
+'GMDB Benefit Amount'(0;0)
+3514.5334688268
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3000
+INPUT Policy Investment AccountValue
+3500
+INPUT Policy ValuesInfo TaxBasis
+3500
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+3000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X29 19a5068 19a1730 0 19a59b0 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up Date - Step-Up < Growth < Account Value
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Message Language
+English
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+3500
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+3500
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+3000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+X31 19a59b0 19a1730 0 19a6450 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Growth < Step-Up < Account Value
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/02/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+3000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3500
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+3500
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+5000
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+5000
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+3500
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X29 19a6450 19a1730 0 19a6e68 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Growth < Account Value < Step-Up
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/02/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+3000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+3000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X31 19a6e68 19a1730 0 19a75c8 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Account Value < Step-Up < Growthi
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/02/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3500
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+4500
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+4500
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+3500
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X29 19a75c8 19a1730 0 19a81e8 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Account Value < Growth < Step-Up
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/02/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+3500
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+4000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+3500
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X31 19a81e8 19a1730 0 19a8b30 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up < Account Value < Growth
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/02/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+5000
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+5000
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+3000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X29 19a8b30 19a1730 0 0 0 0 2
+GMDB Benefit Amount(riderIndex) //-- Greater Of - No Activities - Step-Up < Growth < Account Value
+'GMDB Benefit Amount'(0;0)
+5000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/02/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+3500
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate[0;1]
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAmount[0;1]
+3000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo TaxBasis
+3500
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode[0;1]
+1000500004
+INPUT Policy FeatureOptProduct CapPct
+150
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt[0;1]
+3000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X0 19a9648 3f47e8 19a9e60 19ad618 0 0 0
+-- f_GMDB_Step_Up_Benefit(riderIndex;valuesInfoIndex) -- Test Cases
+X20 19a9e60 19a9648 0 19aa328 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex) //-- Step-Up - No Activity - Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+5000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X24 19aa328 19a9648 0 19aa7c8 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex) //-- Step-Up - Premium - Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+5200
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1200
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1200
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X26 19aa7c8 19a9648 0 19ab080 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex) //-- Step_Up - $-$ Withdrawal - Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+5000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount
+500
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+500
+INPUT Policy ProductVersionCode
+1
+INPUT Policy FinancialActivity CashValueAmt
+5000
+X28 19ab080 19a9648 0 19ab8d0 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex) //-- Step_Up - Prop Withdrawal - Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+5000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy FinancialActivity FinActivityGrossAmount
+500
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Message Language
+9
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+500
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+X19 19ab8d0 19a9648 0 19ac568 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex)) //-- Step_Up - No Activity - Not Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+4000
+INPUT TransEffDate
+01/02/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X22 19ac568 19a9648 0 19ac898 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex) //-- Step-Up - Premium - Not Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+4000
+INPUT TransEffDate
+01/02/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1200
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X23 19ac898 19a9648 0 19acfa0 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex) //-- Step-Up - $-$ Withdrawal - Not Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+4000
+INPUT TransEffDate
+01/02/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount
+500
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X25 19acfa0 19a9648 0 0 0 0 2
+GMDB Step Up Benefit(riderIndex;valuesInfoIndex) //-- Step-Up - Prop Withdrawal - Not Step-Up Duration
+'GMDB Step Up Benefit'(0;0;0)
+4000
+INPUT TransEffDate
+01/02/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy FinancialActivity FinActivityGrossAmount
+500
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X0 19ad618 3f47e8 19ad9c0 19aefa8 0 0 0
+-- f_GMDB_Step_Up_High_Value_Date(riderIndex;valuesInfoIndex) -- Test Cases
+X20 19ad9c0 19ad618 0 19ade50 0 0 2
+GMDB Step Up High Value Date(riderIndex;valuesInfoIndex) //-- Step-Up Duration - Benefit greater than Account Value
+'GMDB Step Up High Value Date'(0;0;0)
+01/01/2004
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+5100
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo CashValueAsOfDate
+01/01/2004
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+5100
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X20 19ade50 19ad618 0 19ae3f0 0 0 2
+GMDB Step Up High Value Date(riderIndex;valuesInfoIndex) //-- Step-Up Duration - Benefit less than Account Value
+'GMDB Step Up High Value Date'(0;0;0)
+01/01/2006
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo CashValueAsOfDate
+12/01/2005
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X16 19ae3f0 19ad618 0 19ae9f8 0 0 2
+GMDB Step Up High Value Date(riderIndex;valuesInfoIndex) //-- Not Step-Up Duration - Benefit greater than Account Value
+'GMDB Step Up High Value Date'(0;0;0)
+01/01/2004
+INPUT TransEffDate
+01/02/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAsOfDate
+01/01/2004
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X16 19ae9f8 19ad618 0 0 0 0 2
+GMDB Step Up High Value Date(riderIndex;valuesInfoIndex) //-- Not Step-Up Duration - Benefit less than Account Value
+'GMDB Step Up High Value Date'(0;0;0)
+01/01/2004
+INPUT TransEffDate
+01/02/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy ValuesInfo CashValueAsOfDate
+01/01/2004
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X0 19aefa8 3f47e8 19af1c8 19afa48 0 0 0
+-- f_GMDB_Step_Up_Date(riderIndex;valuesInfoIndex) -- Test Cases
+X15 19af1c8 19aefa8 0 19af568 0 0 2
+GMDB Step Up Date(riderIndex;valuesInfoIndex)) //-- Step-Up Duration
+'GMDB Step Up Date'(0;0)
+01/01/2006
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X15 19af568 19aefa8 0 0 0 0 2
+GMDB Step Up Date(riderIndex;valuesInfoIndex) //-- Not Step-Up Duration
+'GMDB Step Up Date'(0;0)
+01/01/2005
+INPUT TransEffDate
+01/02/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X0 19afa48 3f47e8 19afbe0 19b2540 0 0 0
+-- f_GMDB_Step_Up_Indicator(riderIndex;valuesInfoIndex) -- Test Cases
+X15 19afbe0 19afa48 0 19b00f8 0 0 2
+GMDB Step Up Indicator(riderIndex;valuesInfoIndex) //-- Step-Up Duration - Annual basis - Frequency Every Year
+'GMDB Step Up Indicator'(0;0)
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X15 19b00f8 19afa48 0 19b06f0 0 0 2
+GMDB Step Up Indicator(riderIndex;valuesInfoIndex) //-- Step-Up Duration - Annual basis - Frequency Every  2 Years
+'GMDB Step Up Indicator'(0;0)
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+2
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X15 19b06f0 19afa48 0 19b0cf0 0 0 2
+GMDB Step Up Indicator(riderIndex;valuesInfoIndex) //-- Not Step-Up Duration - Annual basis - Frequency Every  2 Years
+'GMDB Step Up Indicator'(0;0)
+1
+INPUT TransEffDate
+01/01/2005
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+2
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X15 19b0cf0 19afa48 0 19b12f8 0 0 2
+GMDB Step Up Indicator(riderIndex;valuesInfoIndex) //-- Step-Up Duration - Monthly basis - Frequency Every 2 Months
+'GMDB Step Up Indicator'(0;0)
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+4
+INPUT Policy ValuesInfo LastEvaluationDate
+07/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+2
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X15 19b12f8 19afa48 0 19b1908 0 0 2
+GMDB Step Up Indicator(riderIndex;valuesInfoIndex) //-- Not Step-Up Duration - Monthly basis - Frequency Every 2 Months
+'GMDB Step Up Indicator'(0;0)
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+4
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+2
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X15 19b1908 19afa48 0 19b1f20 0 0 2
+GMDB Step Up Indicator(riderIndex;valuesInfoIndex) //-- Step-Up Duration - Daily basis - Frequency Every 90 Days
+'GMDB Step Up Indicator'(0;0)
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+8
+INPUT Policy ValuesInfo LastEvaluationDate
+10/03/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+90
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X15 19b1f20 19afa48 0 0 0 0 2
+GMDB Step Up Indicator(riderIndex;valuesInfoIndex) //-- Not Step-Up Duration - Daily basis - Frequency Every 90 Days
+'GMDB Step Up Indicator'(0;0)
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+8
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+90
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X0 19b2540 3f47e8 19b28c8 19b7ce0 0 0 0
+-- f_GMDB_Growth_Benefit(riderIndex;valuesInfoIndex) -- Test Cases
+X30 19b28c8 19b2540 0 19b2e30 0 0 2
+GMDB Growth Benefit(riderIndex;valuesInfoIndex) //-- No Activity
+'GMDB Growth Benefit'(0;0;0)
+2008.3048393296
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT TransEffDate
+01/01/2008
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2007
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+12/15/2007
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount
+500
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Investment AccountValue
+5000
+INPUT Message Language
+9
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+500
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy ProductVersionCode
+1
+X27 19b2e30 19b2540 0 19b3bb0 0 0 2
+GMDB Growth Benefit(riderIndex;valuesInfoIndex) //-- Premium
+'GMDB Growth Benefit'(0;0;0)
+1302.85107328401
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+X29 19b3bb0 19b2540 0 19b44c8 0 0 2
+GMDB Growth Benefit(riderIndex;valuesInfoIndex) //-- $ -$ Withdrawal
+'GMDB Growth Benefit'(0;0;0)
+3614.94871079325
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount
+500
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+500
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+INPUT Policy FinancialActivity CashValueAmt
+5000
+X31 19b44c8 19b2540 0 19b4ee0 0 0 2
+GMDB Growth Benefit(riderIndex;valuesInfoIndex) //-- Prop Withdrawal
+'GMDB Growth Benefit'(0;0;0)
+3614.94871079325
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy FinancialActivity FinEffDate[-1]
+0
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+X27 19b4ee0 19b2540 0 19b58e0 0 0 2
+GMDB Growth Benefit(riderIndex;valuesInfoIndex)
+'GMDB Growth Benefit'(0;0;0)
+200
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+01/01/2008
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2007
+INPUT Policy ValuesInfo TaxBasis
+300
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity FinEffDate[1]
+01/01/2008
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+0
+X38 19b58e0 19b2540 0 19b61c0 0 0 2
+GMDB Growth Benefit(riderIndex;valuesInfoIndex)
+'GMDB Growth Benefit'(0;0;0)
+196.669266582038
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+4
+INPUT Policy ValuesInfo TaxBasis
+100
+INPUT TransEffDate
+07/01/2008
+INPUT Policy ValuesInfo LastEvaluationDate
+06/01/2008
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+05/01/2008
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100000000000
+INPUT Policy FinancialActivity FinEffDate[1]
+06/01/2008
+INPUT Policy FinancialActivity FinActivityType[1]
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+100000000000
+INPUT Policy FinancialActivity FinEffDate[2]
+06/10/2008
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[2]
+100
+INPUT Policy FinancialActivity FinEffDate[3]
+06/15/2008
+INPUT Policy FinancialActivity FinActivityType[3]
+6
+INPUT Policy FinancialActivity FinActivityGrossAmount[3]
+100
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt[2]
+100
+INPUT Policy FinancialActivity FinActivityGrossAmt[3]
+100
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+INPUT Policy FinancialActivity CashValueAmt[3]
+5000
+X35 19b61c0 19b2540 0 19b7090 0 0 2
+GMDB Growth Benefit(riderIndex;valuesInfoIndex)
+'GMDB Growth Benefit'(0;0;0)
+55.125
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+3
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct CapBasis
+200
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo TaxBasis
+0
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2008
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity FinEffDate[1]
+12/25/2005
+INPUT Policy FinancialActivity FinActivityType[1]
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+50
+INPUT Policy FinancialActivity CashValueAmount[1]
+100
+INPUT Policy FinancialActivity FinEffDate[2]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[2]
+50
+INPUT Calling Program
+
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+100
+INPUT Policy FinancialActivity CashValueAmt[1]
+100
+INPUT Policy FinancialActivity FinActivityGrossAmt[2]
+50
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X33 19b7090 19b2540 0 0 0 0 2
+GMDB Growth Benefit(0;0)
+'GMDB Growth Benefit'(0;0;0)
+2316.02422279405
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+2
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+06/12/2007
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+250
+INPUT Policy EffDate
+06/12/2006
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+5000
+INPUT Policy FinancialActivity FinEffDate[1]
+06/08/2007
+INPUT Policy ValuesInfo LastEvaluationDate
+05/01/2006
+INPUT Policy FinancialActivity FinEffDate
+06/05/2007
+INPUT Policy ValuesInfo TaxBasis
+200
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FinancialActivity FinActivityGrossAmount
+118
+INPUT Policy FinancialActivity CashValueAmount
+165
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+2255
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+5000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+118
+INPUT Policy FinancialActivity CashValueAmt
+165
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+2255
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+X0 19b7ce0 3f47e8 19b84f8 19ba9f0 0 0 0
+-- f_GMDB_Growth_Benefit_Base(riderIndex;valuesInfoIndex; financialActivityIndex) -- Test Cases
+X27 19b84f8 19b7ce0 0 19b8aa8 0 0 2
+GMDB Growth Benefit Base(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Premium
+'GMDB Growth Benefit Base'(0;0;0;0)
+4110.17195959216
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+X29 19b8aa8 19b7ce0 0 19b93d8 0 0 2
+GMDB Growth Benefit Base(riderIndex;valuesInfoIndex; financialActivityIndex) //-- $ - $ Withdrawal
+'GMDB Growth Benefit Base'(0;0;0;0)
+3929.96852040032
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+INPUT Policy FinancialActivity CashValueAmt
+5000
+X30 19b93d8 19b7ce0 0 19b9e98 0 0 2
+GMDB Growth Benefit Base(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Prop Withdrawal
+'GMDB Growth Benefit Base'(0;0;0;0)
+3609.15476363294
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy number of FinancialActivity
+1
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+X31 19b9e98 19b7ce0 0 0 0 0 2
+GMDB Growth Benefit Base(riderIndex;valuesInfoIndex; financialActivityIndex)
+'GMDB Growth Benefit Base'(0;0;2;0)
+200.682925083712
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+07/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy FinancialActivity FinEffDate
+05/01/2008
+INPUT Policy ValuesInfo LastEvaluationDate
+06/01/2008
+INPUT Policy ValuesInfo TaxBasis
+100
+INPUT Policy FinancialActivity FinEffDate[1]
+06/10/2008
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+100
+INPUT Policy FinancialActivity FinEffDate[2]
+07/1/2008
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[2]
+0
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+100
+INPUT Policy FinancialActivity FinActivityGrossAmt[2]
+0
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Investment AccountValue
+4000
+X0 19ba9f0 3f47e8 19bb1d8 19bb718 0 0 0
+-- f_GMDB_Growth_Accumulation_Factor(date1; date2; riderIndex) -- Test Cases
+X13 19bb1d8 19ba9f0 0 0 0 0 2
+GMDB Growth Accumulation Factor(date1; date2; riderIndex)
+'GMDB Growth Accumulation Factor'("01/01/2006";"12/01/2005";0)
+1.0041524196648
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy EffDate
+01/01/2005
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 19bb718 3f47e8 19bba58 19bc6e0 0 0 0
+-- f_GMDB_Growth_Benefit_Cap(riderIndex; riderSubtypeIndex) -- Test Case
+X17 19bba58 19bb718 0 19bbfc8 0 0 2
+GMDB Growth Benefit Cap(riderIndex; riderSubtypeIndex; financialActivityIndex) //-- Purchases
+'GMDB Growth Benefit Cap'(0; 0; 0;0)
+18000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+125
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+10000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Investment AccountValue
+9000
+INPUT Calling Program
+
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X15 19bbfc8 19bb718 0 0 0 0 2
+GMDB Growth Benefit Cap(riderIndex; riderSubtypeIndex; financialActivityIndex) //-- Account Value
+'GMDB Growth Benefit Cap'(0; 0; 0; 0)
+10000
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+200
+INPUT Policy FeatureOptProduct CapBasis
+2
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 19bc6e0 3f47e8 19bc9e0 19bd5c8 0 0 0
+-- GMDB Gross Contribution(financialActivityIndex) -- Test Cases
+X10 19bc9e0 19bc6e0 0 19bcf68 0 0 2
+GMDB Gross Contribution(financialActivityIndex) //-- Single Deposit activity
+'GMDB Gross Contribution'(0;0;0)
+100
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity FinEffDate
+01/10/2006
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2006
+INPUT TransEffDate
+02/01/2006
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Calling Program
+
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+X8 19bcf68 19bc6e0 0 0 0 0 2
+GMDB Gross Contribution(financialActivityIndex) //-- Single Withdrawal activity
+'GMDB Gross Contribution'(0;0;0)
+0
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy FinancialActivity FinEffDate
+01/01/2008
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2007
+INPUT TransEffDate
+01/01/2008
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Calling Program
+
+X0 19bd5c8 3f47e8 19bd948 19c02e0 0 0 0
+-- f_GMDB_Gross_Withdrawal(riderIndex;valuesInfoIndex; financialActivityIndex) -- Test Cases
+X8 19bd948 19bd5c8 0 19bdf98 0 0 2
+GMDB Gross Withdrawal(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Single Deposit Activity
+'GMDB Gross Withdrawal'(0;0;0;0)
+0
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2008
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2007
+INPUT TransEffDate
+01/01/2008
+INPUT Policy EffDate
+01/01/2004
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Calling Program
+
+X21 19bdf98 19bd5c8 0 19be618 0 0 2
+GMDB Gross Withdrawal(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Single $ - $ Withdrawal Activity
+'GMDB Gross Withdrawal'(0;0;0;0)
+80
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2008
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500002
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy FinancialActivity FinEffDate
+01/01/2008
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2007
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Calling Program
+
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity CashValueAmt
+5000
+X24 19be618 19bd5c8 0 19bee80 0 0 2
+GMDB Gross Withdrawal(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Growth - Single Prop Withdrawal Activity
+'GMDB Gross Withdrawal'(0;0;0;0)
+401.017195959216
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X24 19bee80 19bd5c8 0 19bf970 0 0 2
+GMDB Gross Withdrawal(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Step-Up - Single Prop Withdrawal Activity
+'GMDB Gross Withdrawal'(0;0;0;0)
+100
+INPUT Policy FinancialActivity FinActivityType
+6
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy FinancialActivity FinEffDate
+01/01/2006
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+1000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X31 19bf970 19bd5c8 0 0 0 0 2
+GMDB Gross Withdrawal(riderIndex;valuesInfoIndex; financialActivityIndex)
+'GMDB Gross Withdrawal'(0;0;0;0)
+150.041358511863
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+2
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+06/5/2007
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CapPct
+250
+INPUT Policy EffDate
+06/12/2006
+INPUT Policy FeatureOptProduct CapBasis
+1
+INPUT Policy Annuity TotalDepositIssue to date
+5000
+INPUT Policy FinancialActivity FinEffDate[1]
+06/08/2007
+INPUT Policy ValuesInfo LastEvaluationDate
+05/01/2006
+INPUT Policy FinancialActivity FinEffDate
+06/05/2007
+INPUT Policy ValuesInfo TaxBasis
+200
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityType
+11
+INPUT Policy FeatureOptProduct WithdrawalRule
+1000500001
+INPUT Policy FinancialActivity FinActivityGrossAmount
+118
+INPUT Policy FinancialActivity CashValueAmount
+165
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+2255
+INPUT Policy FinancialActivity FinEffDate[-1]
+0
+INPUT Calling Program
+
+INPUT Policy FinancialActivity FinActivityGrossAmt
+118
+INPUT Policy FinancialActivity CashValueAmt
+165
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 19c02e0 3f47e8 19c0d50 19c1be0 0 0 0
+-- f_GMDB_Wdl_Adjustment(riderIndex;valuesInfoIndex; financialActivityIndex) -- Test Cases
+X14 19c0d50 19c02e0 0 19c1590 0 0 2
+GMDB Withdrawal Adjustment(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Step-Up
+'GMDB Withdrawal Adjustment'(0;0;0;0)
+400
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy FinancialActivity FinEffDate
+01/01/2006
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+X22 19c1590 19c02e0 0 0 0 0 2
+GMDB Withdrawal Adjustment(riderIndex;valuesInfoIndex; financialActivityIndex) //-- Growth
+'GMDB Withdrawal Adjustment'(0;0;0;0)
+401.017195959216
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy FinancialActivity FinEffDate
+12/20/2005
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct CompoundGrowthRateFactor
+5
+INPUT Policy FinancialActivity FinActivityGrossAmount
+100
+INPUT Policy FinancialActivity CashValueAmount
+1000
+INPUT Policy ValuesInfo TaxBasis
+4000
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy FinancialActivity CashValueAmt
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 19c1be0 3f47e8 19c21a8 19c2998 0 0 0
+-- f_GMDB_Annual_Benefit_Charge(riderIndex; fee_type) -- Test Cases
+X20 19c21a8 19c1be0 0 0 0 0 2
+GMDB Annual Benefit Charge(riderIndex; fee_type) //-- Fee type 6
+'GMDB Annual Benefit Charge'(0;6;0)
+17.5
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct number of Fee
+1
+INPUT Policy FeatureOptProduct Fee Type
+6
+INPUT Policy FeatureOptProduct Fee Mode
+1
+A_PD_FeatureOpt_Fee_EndDate
+01/01/2099
+INPUT Policy FeatureOptProduct Fee Pct
+7
+INPUT Policy FeatureOptProduct Fee ChargeBasedOn
+2
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy FeatureOptProduct Fee EndDate
+12/31/2099
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 19c2998 3f47e8 19c2d08 19c3568 0 0 0
+-- f_GMDB_Modal_Benefit_Charge(riderIndex; fee_type) -- Test Cases
+X20 19c2d08 19c2998 0 0 0 0 2
+GMDB Modal Benefit Charge(riderIndex; fee_type) //-- Fee Type 6
+'GMDB Modal Benefit Charge'(0;6;0)
+17.5
+INPUT Policy ProductCode
+VA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct number of Fee
+1
+INPUT Policy FeatureOptProduct Fee Type
+6
+INPUT Policy FeatureOptProduct Fee Mode
+4
+A_PD_FeatureOpt_Fee_EndDate
+01/01/2099
+INPUT Policy FeatureOptProduct Fee Pct
+7
+INPUT Policy FeatureOptProduct Fee ChargeBasedOn
+2
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy FeatureOptProduct Fee EndDate
+12/31/2099
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 19c3568 3f47e8 19c38e8 0 0 0 0
+-- f_GMDB_LastEvaluationDate(riderIndex;valuesInfoIndex) -- Test Cases
+X11 19c38e8 19c3568 0 19c3f78 0 0 2
+GMDB LastEvaluationDate(riderIndex;valuesInfoIndex) //-- Growth - No Activity
+'GMDB LastEvaluationDate'(0;0)
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Calling Program
+VPMSTEST
+X14 19c3f78 19c3568 0 19c4698 0 0 2
+GMDB LastEvaluationDate(riderIndex;valuesInfoIndex) //-- Growth - Activity
+'GMDB LastEvaluationDate'(0;0)
+0
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinEffDate[1]
+12/20/2005
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+12/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy FinancialActivity FinEffDate
+0
+X17 19c4698 19c3568 0 19c4e98 0 0 2
+GMDB LastEvaluationDate(riderIndex;valuesInfoIndex) //-- Step-Up - Step-Up Option Date
+'GMDB LastEvaluationDate'(0;0)
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2005
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X17 19c4e98 19c3568 0 0 0 0 2
+GMDB LastEvaluationDate(riderIndex;valuesInfoIndex) //-- Step-Up - Not Step-Up Option Date
+'GMDB LastEvaluationDate'(0;0)
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+3
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy EffDate
+01/01/2004
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Message Language
+English
+X0 19c5610 3f4750 19c5b70 19ec9d8 0 0 0
+-- Property Test Cases --
+X0 19c5b70 19c5610 0 19e0e88 0 0 0
+-- P_PD_Rider_TotAmt(riderIndex;valuesInfoIndex) -- Test Cases
+X0 19e0e88 19c5610 19e2e20 0 0 0 0
+-- P_PD_ValuesInfo_CashValueAsOfDate(riderIndex;valuesInfoIndex) -- Test Cases
+X24 19e2e20 19e0e88 0 0 0 0 2
+OUTPUT Policy ValuesInfo CashValueAsOfDate(riderIndex;valuesInfoIndex) //-- Step-Up Date - Account Value > Benefit
+'OUTPUT GMDB Policy ValuesInfo CashValueAsOfDate'(0;0)
+01/01/2004
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Rider EffDate
+01/01/2004
+INPUT Policy ProductCode
+VA1PA
+INPUT Calling System
+CL
+INPUT Policy FeatureOptProduct StepUpIntervalQualifier
+1
+INPUT Policy ValuesInfo LastEvaluationDate
+01/01/2004
+INPUT Policy FeatureOptProduct StepUpInterval
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy ValuesInfo CashValueAmount
+4000
+INPUT Policy Investment AccountValue
+5000
+INPUT Policy ValuesInfo CashValueAsOfDate
+01/01/2004
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Policy FeatureProduct RiderTypeCode
+206
+INPUT Policy Rider TermDate
+01/01/2005
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500004
+INPUT Calling Program
+
+INPUT Policy ValuesInfo CashValueAmt
+4000
+INPUT Policy ProductVersionCode
+1
+X0 19ec9d8 3f4750 19ed068 0 0 0 0
+-- Misc Test Cases --
+X12 19ed068 19ec9d8 0 19ed388 0 0 2
+GMDB Step Up Is Allowed(riderIndex;valuesInfoIndex)
+'GMDB Step Up Is Allowed'(0;0)
+1
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500004
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+English
+X12 19ed388 19ec9d8 0 19ee1c0 0 0 2
+GMDB Growth Is Allowed(riderIndex;valuesInfoIndex)
+'GMDB Growth Is Allowed'(0;0)
+1
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+CL
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Rider RiderCode
+GMDB2PA
+INPUT Policy Rider EffDate
+01/01/2006
+INPUT Policy ValuesInfo RiderSubTypeCode
+1000500003
+INPUT Policy FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode
+1000500028
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+X1 19ee1c0 19ec9d8 0 19edae8 0 0 2
+GMDB Last Int Accrual Date(financialActivityIndex;evaluationdate;transdate)
+'GMDB Last Int Accrual Date'(-1;"06/01/2008";"07/01/2008")
+06/01/2008
+X2 19edae8 19ec9d8 0 19edcb0 0 0 2
+GMDB Last Int Accrual Date(financialActivityIndex;evaluationdate;transdate)
+'GMDB Last Int Accrual Date'(0;"06/01/2008";"07/01/2008")
+06/10/2008
+INPUT Policy FinancialActivity FinEffDate
+06/10/2008
+X3 19edcb0 19ec9d8 0 0 0 0 2
+GMDB Last Int Accrual Date(financialActivityIndex;evaluationdate;transdate)
+'GMDB Last Int Accrual Date'(1;"06/01/2008";"07/01/2008")
+06/01/2008
+INPUT Policy FinancialActivity FinEffDate
+05/10/2008
+INPUT Policy FinancialActivity FinEffDate[1]
+07/20/2008
+O0 3f400c 0 0 0 0 0 0
+
+E0 3f4078 0 0 0 0 0 0
+
+L0 3f40e4 0 0 0 0 0 0
+
+B0 3f4294 0 0 0 0 0 0
+
+P3 3f41bc 0 19edf88 0 0 0 2
+
+--description
+Variable annuities sometimes offer an optional feature called the Guaranteed Minimum Death Benefit (GMDB) which guarantees a minimum value, even if the contract value is less. The protects against stock market downturns.çä çäAnnuity support includes:çä- Guaranteed Minimum Death Benefit (GMDB) benefit base and reductions to the benefit base for partial withdrawals. çä- Adjustments to the benefit base for partial withdrawals include options for dollar-for-dollar adjustments and pro-rata adjustments.çä- Determining charge amounts, if any, associated with the GMDB benefit.  çä- GMDB benefit base utilizing a premium refund feature, roll-up approach (premiums at interest), step-up approach, or combinations of these features.çä çäRELEASE LOG:çä çäRELEASE 1301 - SCARAB/JIRA issues PAD-912
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.4.1"
+P13 19edf88 3f41bc 19eeb68 0 0 0 2
+Variable Annuities
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Guaranteed Minimum Death Benefit for Variable Annuity"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"GuarMinDeathBenefit.pms"
+OUTPUT Source Version Number
+"1"
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P12 19eeb68 19edf88 70decbc6 0 0 0 2
+GMDB
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GMDB Policy Rider TotAmt(riderIndex)
+'GMDB Policy Rider TotAmt'(riderIndex;'Policy Investment AccountValue')
+OUTPUT GMDB Policy Rider Fee FeeAmt(riderIndex)
+'GMDB Policy Rider Fee FeeAmt'(riderIndex;'Policy Investment AccountValue')
+OUTPUT GMDB Policy ValuesInfo CashValueAmt(riderIndex;riderSubtypeIndex)
+'GMDB Policy ValuesInfo CashValueAmt'(riderIndex;riderSubtypeIndex;'Policy Investment AccountValue')
+OUTPUT GMDB Policy ValuesInfo CashValueAsOfDate(riderIndex;riderSubtypeIndex)
+'GMDB Policy ValuesInfo CashValueAsOfDate'(riderIndex;riderSubtypeIndex;'Policy Investment AccountValue')
+OUTPUT GMDB Policy ValuesInfo LastEvaluationDate(riderIndex;riderSubtypeIndex)
+IF ( /*GMDB is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then return last evaluation date*/ 'GMDB LastEvaluationDate'(riderIndex;riderSubtypeIndex) ; çä     /*Else rider type invalid*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy ValuesInfo LastEvaluationDate1'")çä  ) ; çä /*Else not active*/ 'Policy ValuesInfo LastEvaluationDate'(riderIndex;riderSubTypeIndex)çä)
+OUTPUT GMDB Policy ValuesInfo TaxBasis(riderIndex;riderSubtypeIndex)
+'GMDB Policy ValuesInfo TaxBasis'(riderIndex;riderSubtypeIndex;'Policy Investment AccountValue')
+OUTPUT GMDB Policy ValuesInfo TotDepositAmtAsOfCVDate(riderIndex;riderSubtypeIndex)
+IF ( /*GMDB is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then return total deposit*/ 'GEN Round'('GMDB Total Deposit Since CV Date'(riderIndex;riderSubtypeIndex);2) ; çä     /*Else invalid rider type*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy ValuesInfo TotDepositAmtAsOfCVDate1'")çä  ) ; çä /*Else not active*/ 0çä)
+OUTPUT GMDB Policy ValuesInfo TotWthdrwlAmtAsOfCVDate(riderIndex;riderSubtypeIndex)
+IF ( /*GMDB rider is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then return withdrawals*/ 'GEN Round'('GMDB Total Withdrawals Since CV Date'(riderIndex;riderSubtypeIndex);2) ; çä     /*Else invalid rider type*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy ValuesInfo TotWthdrwlAmtAsOfCVDate1'")çä  ) ; çä /*Else not active*/ 0çä)
+OUTPUT GMDB Policy ValuesInfo PropWithdrwlAmtAsOfCVDate(riderIndex;riderSubtypeIndex)
+'GMDB Policy ValuesInfo PropWithdrwlAmtAsOfCVDate'(riderIndex;riderSubtypeIndex;'Policy Investment AccountValue')
+P4 70decbc6 19eeb68 0 0 0 0 2
+
+IncType
+mutual exclusive
+IncRule
+'Std Calling System Is V1 or WMA'
+IncValue
+1
+OUTPUT GMDB TransRefGUID
+TransRefGUID
+F0 3f4228 0 5bc6e9ab 0 0 0 0
+
+F1 5bc6e9ab 3f4228 342e6fc9 19ee5c0 0 0 2
+-- Output Functions --
+Funktion
+
+F1 342e6fc9 5bc6e9ab 0 62e81905 0 0 2
+GMDB Policy Rider TotAmt(riderIndex; accountValue)
+Funktion
+IF ( /*GMDB rider active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then return the benefit amount*/ 'GEN Round'('GMDB Benefit Amount'(riderIndex;accountValue);2) ; çä     /*Else return error*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy Rider TotAmt1'")çä  ) ; çä /*Else not active*/ 0çä)
+F1 62e81905 5bc6e9ab 0 31531a98 0 0 2
+GMDB Policy Rider Fee FeeAmt(riderIndex; accountValue)
+Funktion
+IF ( /*GMDB is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then check if fee allowed*/ IF ( /*fee allowed*/ 'ProductCode GMDB Fee Allowed'('Policy ProductCode') ; çä       /*Then return fee*/ MAX('GEN Round'('GMDB Modal Benefit Charge'(riderIndex;'Constant Other Asset Based Charges';accountValue);2);0) ; çä       /*Else no fee*/ 0çä    ) ; çä   /*Else rider type not GMDB*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy Rider Fee FeeAmt1'")çä) ; çä /*Else not active*/ 0çä)
+F1 31531a98 5bc6e9ab 0 459d2183 0 0 2
+GMDB Policy ValuesInfo CashValueAmt(riderIndex;riderSubtypeIndex; accountValue)
+Funktion
+IF ( /*GMDB rider is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type is GMDB*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then check if step up allowed*/ IF ( /*step up allowed*/ 'GMDB Step Up Is Allowed'(riderIndex;riderSubtypeIndex) ; çä       /*Then calculate step up benefit*/ MAX('GEN Round'('GMDB Step Up Benefit'(riderIndex;riderSubtypeIndex;accountValue);2);0) ; çä       /*Else check the values info*/ 0çä    ) ; çä   /*Else not GMDB*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy ValuesInfo CashValueAmt1'")çä) ; çä /*Else not active*/ 0çä)
+F1 459d2183 5bc6e9ab 0 66d5c1fb 0 0 2
+GMDB Policy ValuesInfo CashValueAsOfDate(riderIndex;riderSubtypeIndex; accountValue)
+Funktion
+IF ( /*GMDB rider is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then check step up*/ IF ( /*step up is allowed*/ 'GMDB Step Up Is Allowed'(riderIndex;riderSubtypeIndex) ; çä       /*Then return step up date*/ 'GMDB Step Up High Value Date'(riderIndex;riderSubtypeIndex;accountValue) ; çä       /*Else check values info*/ 'Policy ValuesInfo CashValueAsOfDate'(riderIndex;riderSubTypeIndex) //âââIF(/*values info is step up*/'ValuesInfo is Step up'('Policy ValuesInfo RiderSubTypeCode'(riderIndex; riderSubtypeIndex));çä//ââââ/*Then conflict error*/çä//ââââ'GMDB RiderSubTypeCode Conflict Error'(riderIndex;riderSubtypeIndex;"'OUTPUT Policy ValuesInfo CashValueAsOfDate1'");çä//ââââ/*Else check additional rider classification*/çä//ââââIF(/*additional rider classification is step up*/'AdditionalRiderClassIFication RiderSubTypeCode is Step up'('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';çä//âââââââââââââriderIndex;çä//âââââââââââââ'Policy EffDate'));çä//âââââ/*Then conflict error*/çä//âââââ'GMDB RiderSubTypeCode Conflict Error'(riderIndex;riderSubtypeIndex;"'OUTPUT Policy ValuesInfo CashValueAsOfDate1'");çä//âââââ/*Else inconsistent error*/çä//âââââ'GMDB RiderSubTypeCode Inconsistent Error'(riderIndex;riderSubtypeIndex;"'OUTPUT Policy ValuesInfo CashValueAsOfDate1'")çä//ââââ)çä//âââââçä//âââ)çäçä    ) ; çä   /*Else not GMDB rider type*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy ValuesInfo CashValueAsOfDate1'")çä) ; çä /*Else not active echo back original date*/ 'Policy ValuesInfo CashValueAsOfDate'(riderIndex;riderSubTypeIndex)çä)
+F1 66d5c1fb 5bc6e9ab 0 6d35a871 0 0 2
+GMDB Policy ValuesInfo TaxBasis(riderIndex;riderSubtypeIndex; accountValue)
+Funktion
+IF ( /*GMDB is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then check if growth allowed*/ IF ( /*growth allowed*/ 'GMDB Growth Is Allowed'(riderIndex;riderSubtypeIndex) ; çä       /*Then return growth benefit*/ 'GEN Round'('GMDB Growth Benefit'(riderIndex;riderSubtypeIndex;accountValue);2) ; çä       /*Else check values info*/ 0çä    ) ; çä   /*Else not GMDB rider type*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy ValuesInfo TaxBasis1'")çä) ; çä /*Else not active*/ 0çä)
+F1 6d35a871 5bc6e9ab 0 0 0 0 2
+GMDB Policy ValuesInfo PropWithdrwlAmtAsOfCVDate(riderIndex;riderSubtypeIndex; accountValue)
+Funktion
+IF ( /*GMDB rider is active*/ 'GMDB Rider Active'(riderIndex) ; çä   /*Then verify rider type*/ IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä     /*Then return proportional withdrawals*/ 'GEN Round'('GMDB Total Prop Withdrawals Since CV Date'(riderIndex;riderSubtypeIndex;accountValue);2) ; çä     /*Else invalid rider type*/ 'GMDB Product Type Invalid Error'("'OUTPUT Policy ValuesInfo PropWithdrwlAmtAsOfCVDate1'")çä  ) ; çä /*Else not active*/ 0çä)
+F1 19ee5c0 3f4228 19ee788 19f1f70 0 0 2
+-- Benefit Calculation Functions --
+Funktion
+ 
+F1 19ee788 19ee5c0 19ee850 0 0 0 2
+GMDB Benefit Amount(riderIndex; accountValue)
+Funktion
+IF ( /*rider type is GMDB*/ 'RiderType is GMDB'('PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä   //GMDB riderçä/*Then calculate benefit amount*/MAX(CASE( /*rider sub type code*/ 'PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate');çä     //growthçä1000500003 : MAX('GMDB Growth Benefit'(riderIndex;0;accountValue);'Std Account Value'(accountValue);0);çä     //step-upçä1000500004 : MAX('GMDB Step Up Benefit'(riderIndex;0;accountValue);'Std Account Value'(accountValue);0);çä     //max of growth and step-upçä1000500028 : IF ( /*values info is growth*/ 'ValuesInfo is Growth'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;0)) ; çä       //then - growth sub type index 0çäMAX('GMDB Growth Benefit'(riderIndex;0;accountValue);'GMDB Step Up Benefit'(riderIndex;1;accountValue);'Std Account Value'(accountValue);0) ; çä       //else - growth sub type index 1çäMAX('GMDB Growth Benefit'(riderIndex;1;accountValue);'GMDB Step Up Benefit'(riderIndex;0;accountValue);'Std Account Value'(accountValue);0)çä    );çä   //else errorçä : 'GMDB Benefit Not Supported Error'(riderIndex;"'GMDB Benefit Amount'"))çä;0) ; çä /*Else error*/ 'GMDB Rider Type Not Supported Error'(riderIndex;"'GMDB Benefit Amount'")çä)
+F1 19ee850 19ee788 19f0ce8 19f13e8 0 0 2
+GMDB Step Up Benefit(riderIndex;riderSubTypeIndex; accountValue)
+Funktion
+IF ( /*values info is step up*/ 'ValuesInfo is Step up'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)) ; çä   /*Then step up*/ IF ( /*step up indicator*/ 'GMDB Step Up Indicator'(riderIndex;riderSubTypeIndex) ; çä     /*Then calculate step up*/ MAX('GMDB Step Up Benefit Base'(riderIndex;riderSubTypeIndex;'Policy number of FinancialActivity' - 1;accountValue);'Std Account Value'(accountValue); //current account value  â âçä0) ; çä     /*Else cash value amount*/ IF ('Std Calling System Is V1 or WMA' ; çä      'GMDB Step Up Benefit Base'(riderIndex;riderSubTypeIndex;'Policy number of FinancialActivity' - 1;accountValue) ; çä      'Policy ValuesInfo CashValueAmt'(riderIndex;riderSubTypeIndex)çä    )çä) ; çä /*Else not step up*///â'GMDB RiderSubTypeCode Inconsistent Error'(riderIndex;riderSubTypeIndex;"'GMDB Step Up Benefit'")çä 0çä)
+F1 19f0ce8 19ee850 19f0be0 0 0 0 2
+GMDB Step Up Benefit Base(riderIndex;riderSubTypeIndex; financialActivityIndex; accountValue)
+Funktion
+IF ( /*negative activity index*/ financialActivityIndex < 0 ; çä   /*Then cash value amount*/ 'Policy ValuesInfo CashValueAmt'(riderIndex;riderSubTypeIndex) ; çä   /*Else process activity*/ IF ( /*not GMDB activity*/ NOT('GMDB Activity To Be Processed'(riderIndex;riderSubTypeIndex;financialActivityIndex)) ; çä     /*Then recurse*/ 'GMDB Step Up Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) ; çä     /*Else GMDB activity to process*/ IF ( /*not last financial activity*/ financialActivityIndex > 0 ; çä       /*Then add contribution and deduct withdrawal to recursed function*/ 'GMDB Step Up Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) + 'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;financialActivityIndex) - 'GMDB Gross Withdrawal'(riderIndex;riderSubTypeIndex;financialActivityIndex;accountValue) ; çä       /*Else add contribution and deduct withdrawal to cash value amount*/ 'Policy ValuesInfo CashValueAmt'(riderIndex;riderSubTypeIndex) + 'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;financialActivityIndex) - 'GMDB Gross Withdrawal'(riderIndex;riderSubTypeIndex;financialActivityIndex;accountValue)çä    )çä)çä)
+F1 19f0be0 19f0ce8 0 19f1370 0 0 2
+GMDB Step Up High Value Date(riderIndex;riderSubTypeIndex; accountValue)
+Funktion
+IF ( /*equal dates*/ 'DATE Are Dates Equal'(TransEffDate;'Policy Rider EffDate'(riderIndex)) ; çä   /*Then return rider effective date*/ 'Policy Rider EffDate'(riderIndex) ; çä   /*Else not equal dates*/ IF ( /*step up and greater account value*/ 'GMDB Step Up Indicator'(riderIndex;riderSubTypeIndex) && ('Std Account Value'(accountValue) > 'GMDB Step Up Benefit Base'(riderIndex;riderSubTypeIndex;'Policy number of FinancialActivity' - 1;accountValue)) ; çä     /*Then transaction date*/ TransEffDate ; çä     /*Else cash value as of date*/ 'Policy ValuesInfo CashValueAsOfDate'(riderIndex;riderSubTypeIndex)çä  )çä)
+F1 19f1370 19f0ce8 0 19f1a00 0 0 2
+GMDB Step Up Date(riderIndex;riderSubTypeIndex)
+Funktion
+IF ( /*step up*/ 'GMDB Step Up Indicator'(riderIndex;riderSubTypeIndex) ; çä   //then - transaction effective dateçäTransEffDate ; çä   //else last evaluation dateââ   âçä'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)çä)
+F1 19f1a00 19f0ce8 4443f410 0 0 0 2
+GMDB Step Up Indicator(riderIndex;riderSubTypeIndex)
+Funktion
+IF ('Std Calling System Is V1 or WMA' ; çä  'GMDB WMA Step up Indicator' ; çä  IF ( /*equal dates*/ 'DATE Are Dates Equal'(TransEffDate;'Policy Rider EffDate'(riderIndex)) ; çä     /*Then 1*/ 1 ; çä     /*Else*/ CASE( /*step up interval*/ 'PI FeatureOptProduct StepUpIntervalQualifier'('Policy ProductCode';riderIndex;'Policy EffDate');çä       //multiple of annual step-upçä1 : IF ( /*annual step-up*/ ('Years Between Dates'(TransEffDate;'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)) MOD 'PI FeatureOptProduct StepUpInterval'('Policy ProductCode';riderIndex;'Policy EffDate')) = 0 && 'Month Day Equal'(TransEffDate;'Policy Rider EffDate'(riderIndex)) ; çä         //then - 1çä1 ; çä         //else - 0çä0çä      );çä     //multiple of month step-upçä4 : IF ( /*month step-up*/ 'Number Of Months'(TransEffDate;'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)) MOD 'PI FeatureOptProduct StepUpInterval'('Policy ProductCode';riderIndex;'Policy EffDate') = 0 && 'DATE Are Days Equal'(TransEffDate;'Policy Rider EffDate'(riderIndex)) ; çä       //then - 1çä1 ; çä       //else - 0çä0çä    );çä   //multiple of day step-upçä8 : IF ( /*day step-up*/ 'DATE Days Difference'(TransEffDate;'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)) MOD 'PI FeatureOptProduct StepUpInterval'('Policy ProductCode';riderIndex;TransEffDate) = 0 ; çä     //then - 1çä1 ; çä     //else - 0çä0çä  );çä //else 0âââçä : 0)çäçä)çä)
+F1 4443f410 19f1a00 0 0 0 0 2
+GMDB WMA Step up Indicator
+Funktion
+'Policy number of FinancialActivity' = 0
+F1 19f13e8 19ee788 19f14a0 19f1738 0 0 2
+GMDB Growth Benefit(riderIndex;riderSubTypeIndex; accountValue)
+Funktion
+IF ( /*values info is growth*/ 'ValuesInfo is Growth'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)) ; çä   /*Then calculate growth benefit*/ IF ('Std Calling System Is V1 or WMA' && ('PI FeatureOptProduct CapBasis'('Policy ProductCode';riderIndex;'Policy EffDate') = 0 || 'Policy ValuesInfo CashValueAmt'(riderIndex;riderSubTypeIndex) = 0) ; çä    'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;'Policy number of FinancialActivity' - 1;accountValue) * 'GMDB Growth Accumulation Factor'(TransEffDate;'GMDB Last Int Accrual Date'('Policy number of FinancialActivity' - 1;'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);TransEffDate);riderIndex) ; çä    MIN('GMDB Growth Benefit Cap'(riderIndex;riderSubTypeIndex;'Policy number of FinancialActivity' - 1;accountValue);('GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;'Policy number of FinancialActivity' - 1;accountValue) * 'GMDB Growth Accumulation Factor'(TransEffDate;'GMDB Last Int Accrual Date'('Policy number of FinancialActivity' - 1;'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);TransEffDate);riderIndex)))çä  ) ; çä /*Else inconsistent error*///â'GMDB RiderSubTypeCode Inconsistent Error'(riderIndex;riderSubTypeIndex;"'GMDB Growth Benefit'")çä 0çä)
+F1 19f14a0 19f13e8 19f15b0 0 0 0 2
+GMDB Growth Benefit Base(riderIndex;riderSubTypeIndex; financialActivityIndex; accountValue)
+Funktion
+IF ( /*negative activity index*/ financialActivityIndex < 0 ; çä   /*Then values info tax basis*/ 'Policy ValuesInfo TaxBasis'(riderIndex;riderSubTypeIndex) ; çä   /*Else calculate benefit*/ IF ('Std Calling System Is V1 or WMA' && ('PI FeatureOptProduct CapBasis'('Policy ProductCode';riderIndex;'Policy EffDate') = 0 || 'Policy ValuesInfo CashValueAmt'(riderIndex;riderSubTypeIndex) = 0) ; çä    IF ( /*not GMDB activity*/ NOT('GMDB Activity To Be Processed'(riderIndex;riderSubTypeIndex;financialActivityIndex)) ; çä       /*Then recurse*/ 'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) ; çä       /*Else GMDB activity to process*/ IF ( /*not last activity to process*/ financialActivityIndex > 0 ; çä         /*Then accumulation factor depend on dates*/ 'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) * IF ( /*financial effective date is greater*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(financialActivityIndex - 1);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)) ; çä           /*Then use previous financial activity effective date*/ 'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'Policy FinancialActivity FinEffDate'(financialActivityIndex - 1);riderIndex) ; çä           /*Else use last evaluation date*/ 'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);riderIndex)çä        ) + 'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;financialActivityIndex) - 'GMDB Gross Withdrawal'(riderIndex;riderSubTypeIndex;financialActivityIndex;accountValue) ; çä       /*Else factor based on financial effective date*/ 'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) * 'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);riderIndex) + 'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;financialActivityIndex) - 'GMDB Gross Withdrawal'(riderIndex;riderSubTypeIndex;financialActivityIndex;accountValue)çä    )çä) ; çäMIN('GMDB Growth Benefit Cap'(riderIndex;riderSubTypeIndex;'Policy number of FinancialActivity' - 1;accountValue);IF ( /*not GMDB activity*/ NOT('GMDB Activity To Be Processed'(riderIndex;riderSubTypeIndex;financialActivityIndex)) ; çä /*Then recurse*/ 'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) ; çä /*Else GMDB activity to process*/ IF ( /*not last activity to process*/ financialActivityIndex > 0 ; çä   /*Then accumulation factor depend on dates*/ 'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) * IF ( /*financial effective date is greater*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(financialActivityIndex - 1);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)) ; çä     /*Then use previous financial activity effective date*/ 'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'Policy FinancialActivity FinEffDate'(financialActivityIndex - 1);riderIndex) ; çä     /*Else use last evaluation date*/ 'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);riderIndex)çä  ) + 'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;financialActivityIndex) - 'GMDB Gross Withdrawal'(riderIndex;riderSubTypeIndex;financialActivityIndex;accountValue) ; çä /*Else factor based on financial effective date*/ 'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) * 'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);riderIndex) + 'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;financialActivityIndex) - 'GMDB Gross Withdrawal'(riderIndex;riderSubTypeIndex;financialActivityIndex;accountValue)çä)çä))çä)çä)
+F1 19f15b0 19f14a0 0 19f1628 0 0 2
+GMDB Growth Accumulation Factor(date1; date2; riderIndex)
+Funktion
+IF ( /*one date before policy effective date*/ 'DATE Is Date1 Less Than Date2'(date1;'Policy EffDate') || 'DATE Is Date1 Less Than Date2'(date2;'Policy EffDate') ; çä   /*Then 1*/ 1 ; çä   /*Else calculate factor*/ ((1 + 'PI FeatureOptProduct CompoundGrowthRateFactor'('Policy ProductCode';riderIndex;TransEffDate) / 100) ^ ((1 / 365) * ('DATE Days Difference'(date1;date2))))çä)
+F1 19f1628 19f14a0 0 0 0 0 2
+GMDB Growth Benefit Cap(riderIndex; riderSubTypeIndex; financialActivityIndex; accountValue)
+Funktion
+'PI FeatureOptProduct CapPct'('Policy ProductCode';riderIndex;'Policy EffDate') / 100 * IF ( /*cap basis*/ 'PI FeatureOptProduct CapBasis'('Policy ProductCode';riderIndex;'Policy EffDate') = 1 ; çä   //sum of all gross purchase payments since issueçäIF (financialActivityIndex = 0 && 'Policy Annuity TotalDepositITD' = 0 ; çä    'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;0) ; çä    'Policy Annuity TotalDepositITD'çä  ) ; çä //current account valueçäIF (financialActivityIndex = 0 && 'Std Account Value'(accountValue) = 0 ; çä  'GMDB Gross Contribution'(riderIndex;riderSubTypeIndex;0) ; çä  'Std Account Value'(accountValue)çä)çä)
+F1 19f1738 19ee788 0 19f1848 0 0 2
+GMDB Gross Contribution(riderIndex;riderSubTypeIndex;financialActivityIndex)
+Funktion
+IF ( /*activity to process*/ 'GMDB Activity To Be Processed'(riderIndex;riderSubTypeIndex;financialActivityIndex) ; çä   //then - process activityçäIF ( /*gross premium payment*/ 'FinActivityType is Grouped Premium Payment'('Policy FinancialActivity FinActivityType'(financialActivityIndex)) ; çä     //then - gross amountçä'Policy FinancialActivity FinActivityGrossAmt'(financialActivityIndex) ; çä     //else 0çä0çä  ) ; çä //else 0çä0çä)
+F1 19f1848 19ee788 19f1958 0 0 0 2
+GMDB Gross Withdrawal(riderIndex;riderSubTypeIndex; financialActivityIndex; accountValue)
+Funktion
+IF ( /*activity to process*/ 'GMDB Activity To Be Processed'(riderIndex;riderSubTypeIndex;financialActivityIndex) ; çä   /*Then process activity*/ IF ( /*grouped partial surrender*/ 'FinActivityType is Grouped Partial Surrender'('Policy FinancialActivity FinActivityType'(financialActivityIndex)) ; çä     /*Then process surrender*/ IF ( /*proportional*/ 'WithdrawalRule is Proportional'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä       /*Then proportional partial withdrawal*/ 'GMDB Withdrawal Adjustment'(riderIndex;riderSubTypeIndex;financialActivityIndex;accountValue) ; çä       /*else: partial withdrawal is on dollar-for-dollar basis*/ IF ( /*dollar for dollar*/ 'WithdrawalRule is Dollar For Dollar'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä         /*Then return gross amount*/ 'Policy FinancialActivity FinActivityGrossAmt'(financialActivityIndex) ; çä         /*Else invalid withdrawal rule error*/ 'GMDB WithdrawalRule Invalid Error'(riderIndex;"'GMDB Gross Withdrawal'")çä      )çä  ) ; çä /*Else not surrender*/ 0çä) ; çä /*Else not process activity*/ 0çä)
+F1 19f1958 19f1848 0 0 0 0 2
+GMDB Withdrawal Adjustment(riderIndex;riderSubTypeIndex; financialActivityIndex; accountValue)
+Funktion
+(CASE( /*rider sub type code*/ IF ('Std Calling System Is V1 or WMA' ; çä  'STD wmA GMX StepUpIndex'('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate');riderSubTypeIndex) ; çä  'Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)çä);çä //growthçä1000500003 : 'GMDB Growth Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue) * IF ( /*financial activity date after policy effective date*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'Policy EffDate') ; çä   //then - financial activityçäIF ( /*first indexed activity*/ financialActivityIndex = 0 ; çä     //then - accumulation factor using last evaluation dateçä'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);riderIndex) ; çä     /*Else use determine date*/ 'GMDB Growth Accumulation Factor'('Policy FinancialActivity FinEffDate'(financialActivityIndex);IF ( /*financial activity date after last evaluation date*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(financialActivityIndex - 1);'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)) ; çä       //then - financial activity effective dateçä'Policy FinancialActivity FinEffDate'(financialActivityIndex - 1) ; çä       //else last evaluation dateçä'GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex)çä    );riderIndex)çä) ; çä //else 1çä1çä);çä //step-upçä1000500004 : 'GMDB Step Up Benefit Base'(riderIndex;riderSubTypeIndex;financialActivityIndex - 1;accountValue);çä //else 0çä : 0)çä * ('Policy FinancialActivity FinActivityGrossAmt'(financialActivityIndex) / 'Policy FinancialActivity CashValueAmt'(financialActivityIndex)))
+F1 19f1f70 3f4228 19f2920 19f3448 0 0 2
+-- Accumulation Functions --
+Funktion
+ 
+F1 19f2920 19f1f70 0 19f29d8 0 0 2
+GMDB Total Deposit Since CV Date(riderIndex;riderSubTypeIndex)
+Funktion
+SUMX(finact;0;'Policy number of FinancialActivity' - 1;IF ( /*financial activity date after cash value asof date*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(#finact);'Policy ValuesInfo CashValueAsOfDate'(riderIndex;riderSubTypeIndex)) ; çä   /*Then determine amount*/ IF ( /*grouped premium payment*/ 'FinActivityType is Grouped Premium Payment'('Policy FinancialActivity FinActivityType'(#finact)) ; çä     //then - return amountçä'Policy FinancialActivity FinActivityGrossAmt'(#finact) ; çä     //else 0çä0çä  ) ; çä /*Else not since cash value date*/ 0çä))
+F1 19f29d8 19f1f70 0 19f2ea8 0 0 2
+GMDB Total Withdrawals Since CV Date(riderIndex;riderSubTypeIndex)
+Funktion
+IF ('WithdrawalRule is Proportional'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä  0 ; çä  SUMX(finact;0;'Policy number of FinancialActivity' - 1;IF ( /*financial activity date after cash value asof date*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(#finact);'Policy ValuesInfo CashValueAsOfDate'(riderIndex;riderSubTypeIndex)) ; çä     /*Then include financial activity*/ IF ( /*grouped partial surrender*/ 'FinActivityType is Grouped Partial Surrender'('Policy FinancialActivity FinActivityType'(#finact)) ; çä       /*Then - partial withdrawal is on dollar-for-dollar basis*/ IF ( /*dollar for dollar*/ 'WithdrawalRule is Dollar For Dollar'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä         /*Then return the gross amount*/ 'Policy FinancialActivity FinActivityGrossAmt'(#finact) ; çä         /*Else invalid withdrawal rule error*/ 'GMDB WithdrawalRule Invalid Error'(riderIndex;"'GMDB Total Withdrawals Since CV Date'")çä      ) ; çä     /*Else not grouped partial surrender*/ 0çä  ) ; çä /*Else not since cash value date*/ 0çä))çä)
+F1 19f2ea8 19f1f70 0 0 0 0 2
+GMDB Total Prop Withdrawals Since CV Date(riderIndex;riderSubTypeIndex; accountValue)
+Funktion
+IF ('WithdrawalRule is Dollar For Dollar'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä  0 ; çä  SUMX(finact;0;'Policy number of FinancialActivity' - 1;IF ( /*financial activity date after cash value asof date*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(#finact);'Policy ValuesInfo CashValueAsOfDate'(riderIndex;riderSubTypeIndex)) ; çä     /*Then include financial activity*/ IF ( /*grouped partial surrender*/ 'FinActivityType is Grouped Partial Surrender'('Policy FinancialActivity FinActivityType'(#finact)) ; çä       /*Then proportional partial withdrawal*/ IF ( /*proportional*/ 'WithdrawalRule is Proportional'('PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate')) ; çä         /*Then return adjustment*/ 'GMDB Withdrawal Adjustment'(riderIndex;riderSubTypeIndex;#finact;accountValue) ; çä         /*Else invalid withdrawal rule error*/ 'GMDB WithdrawalRule Invalid Error'(riderIndex;"'GMDB Total Prop Withdrawals Since CV Date'")çä      ) ; çä     /*Else not grouped partial surrender*/ 0çä  ) ; çä /*Else not since cash value date*/ 0çä))çä)
+F1 19f3448 3f4228 19f3528 19f3cf8 0 0 2
+-- Benefit Charge Functions --
+Funktion
+ 
+F1 19f3528 19f3448 0 19f4380 0 0 2
+GMDB Annual Benefit Charge(riderIndex; feeType; accountValue)
+Funktion
+IF ( /*other asset based charge*/ 'FeeType is OtherAssetBasedCharge'(feeType) ; çä   /*Then calculate the charge*/ 'Number Of Payments Per Year'('PI FeatureOptProduct Fee FeeMode'('Policy ProductCode';riderIndex;feeType;'Policy EffDate')) * 'GMDB Modal Benefit Charge'(riderIndex;feeType;accountValue) ; çä   /*Else rule not supported error*/ 'GMDB Fee Rule Not Supported Error'("'GMDB Annual Benefit Charge'";feeType)çä)
+F1 19f4380 19f3448 0 0 0 0 2
+GMDB Modal Benefit Charge(riderIndex; feeType; accountValue)
+Funktion
+IF ( /*other asset based charge*/ 'FeeType is OtherAssetBasedCharge'(feeType) ; çä   /*Then calculate the charge*/ 'Mode Adj Factor'('PI FeatureOptProduct Fee FeeMode'('Policy ProductCode';riderIndex;feeType;'Policy EffDate')) * IF ( /*transaction effective date after fee end date*/ 'DATE Is Date1 Greater Than Date2'(TransEffDate;'PI FeatureOptProduct Fee EndDate'('Policy ProductCode';riderIndex;feeType;'Policy EffDate')) ; çä     /*Then 0*/ 0 ; çä     /*Else*/ IF ( /*fee percentage*/ 'PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;feeType;'Policy EffDate') EQUAL 'GEN Vector Blank' ; çä       /*Then - No explicit charge*/ 0 ; çä       /*else: obtain the charge percentage*/ 'PI FeatureOptProduct Fee FeePct'('Policy ProductCode';riderIndex;feeType;'Policy EffDate') * 0.01çä    ) * CASE( /*fee charge based on*/ 'PI FeatureOptProduct Fee ChargeBasedOn'('Policy ProductCode';riderIndex;feeType;'Policy EffDate');çä     //account valueâââââçä2 : 'Std Account Value'(accountValue);çä     //GMDB benefit amountçä7 : 'GMDB Benefit Amount'(riderIndex;accountValue);çä     /*Default*/  : 0)çäçä) ; çä /*Else rule not supported error*/ 'GMDB Fee Rule Not Supported Error'("'GMDB Modal Benefit Charge'";feeType)çä)
+F1 19f3cf8 3f4228 19f3db0 19f3fc8 0 0 2
+-- Date Functions --
+Funktion
+ 
+F1 19f3db0 19f3cf8 0 19f3eb8 0 0 2
+GMDB LastEvaluationDate(riderIndex;riderSubTypeIndex)
+Funktion
+IF ( /*values info is growth*/ 'ValuesInfo is Growth'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)) ; çä   //then - determine last evaluation dateçäIF ( /*policy number of financial activity*/ 'Policy number of FinancialActivity' = 0 ; çä     //then - transaction effective dateçäTransEffDate ; çä     //growthçä'Policy FinancialActivity FinEffDate'('Policy number of FinancialActivity' - 1)çä  ) ; çä //step-upçä'GMDB Step Up Date'(riderIndex;riderSubTypeIndex)çä)
+F1 19f3eb8 19f3cf8 0 0 0 0 2
+GMDB Last Int Accrual Date(financialActivityIndex;evaluationdate;transdate)
+Funktion
+IF ( /*negative activity index*/ financialActivityIndex < 0 ; çä   //then - evaluation dateçäevaluationdate ; çä   //else determine last accrual dateçäIF ( /*date in range*/ 'DATE Date In Range'('Policy FinancialActivity FinEffDate'(financialActivityIndex);evaluationdate;transdate) ; çä     //then - financial activity effective dateçä'Policy FinancialActivity FinEffDate'(financialActivityIndex) ; çä     //else last accrual dateçä'GMDB Last Int Accrual Date'(financialActivityIndex - 1;evaluationdate;transdate)çä  )çä)
+F1 19f3fc8 3f4228 19f40a8 19f5980 0 0 2
+-- Validation Functions --
+Funktion
+
+F1 19f40a8 19f3fc8 0 19f4188 0 0 2
+GMDB Rider Active(riderIndex)
+Funktion
+IF ( /*no termination date or termination date after transaction effective date*/ STRICMP('Policy Rider TermDate'(riderIndex);'GEN Vector Blank') = 0 || 'DATE Is Date1 Greater Than Date2'('Policy Rider TermDate'(riderIndex);TransEffDate) ; çä   /*Then active*/ 1 ; çä   /*Else not active*/ 0çä)
+F1 19f4188 19f3fc8 0 19f4280 0 0 2
+GMDB Step Up Is Allowed(riderIndex;riderSubTypeIndex)
+Funktion
+IF ( /*step up allowed*/ ('AdditionalRiderClassIFication RiderSubTypeCode is Greater Of'('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) || 'AdditionalRiderClassIFication RiderSubTypeCode is Step up'('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate'))) && 'ValuesInfo is Step up'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)) ; çä   //then - 1çä1 ; çä   //else - 0çä0çä)
+F1 19f4280 19f3fc8 0 19f48c8 0 0 2
+GMDB Growth Is Allowed(riderIndex;riderSubTypeIndex)
+Funktion
+IF ( /*growth is allowed*/ ('AdditionalRiderClassIFication RiderSubTypeCode is Greater Of'('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')) || 'AdditionalRiderClassIFication RiderSubTypeCode is Growth'('PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate'))) && 'ValuesInfo is Growth'('Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)) ; çä   //then - 1çä1 ; çä   //else - 0çä0çä)
+F1 19f48c8 19f3fc8 0 19f49c8 0 0 2
+GMDB Set LastEvaluationDate(riderIndex;riderSubTypeIndex)
+Funktion
+IF ( /*no last evaluation date or last evaluation date before policy effective date*/ STRICMP('Policy ValuesInfo LastEvaluationDate'(riderIndex;riderSubTypeIndex);'GEN Vector Blank') = 0 || 'DATE Is Date1 Less Than Date2'('Policy ValuesInfo LastEvaluationDate'(riderIndex;riderSubTypeIndex);'Policy EffDate') ; çä   /*Then policy effective date*/ 'Policy EffDate' ; çä   /*Else last evaluation date*/ 'Policy ValuesInfo LastEvaluationDate'(riderIndex;riderSubTypeIndex)çä)
+F1 19f49c8 19f3fc8 0 0 0 0 2
+GMDB Activity To Be Processed(riderIndex;riderSubTypeIndex; financialActivityIndex)
+Funktion
+IF ( /*equal dates*/ 'DATE Are Dates Equal'(TransEffDate;'Policy EffDate') ; çä   /*Then check activity date*/ IF ( /*financial activity after transaction date*/ 'DATE Is Date1 Greater Than Date2'('Policy FinancialActivity FinEffDate'(financialActivityIndex);TransEffDate) ; çä     //then - 0çä0 ; çä     //else - 1çä1çä  ) ; çä /*Else date in range*/ IF ( /*date in range*/ 'DATE Date In Range'('Policy FinancialActivity FinEffDate'(financialActivityIndex);'Increase Date By Days'('GMDB Set LastEvaluationDate'(riderIndex;riderSubTypeIndex);1);TransEffDate) ; çä   //then - 1çä1 ; çä   //else - 0çä0çä)çä)
+F1 19f5980 3f4228 19f5020 19f6a70 0 0 2
+-- Error Functions --
+Funktion
+
+F1 19f5020 19f5980 0 19f5138 0 0 2
+GMDB RiderSubTypeCode Inconsistent Error(riderIndex;riderSubTypeIndex;function_name)
+Funktion
+'Messages SystemMessage'("CA1041";'Message Language';V_('GMDB Model Name';function_name;'Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)))
+F1 19f5138 19f5980 0 19f5318 0 0 2
+GMDB WithdrawalRule Invalid Error(riderIndex;function_name)
+Funktion
+'Messages SystemMessage'("CA1042";'Message Language';V_('GMDB Model Name';function_name;'PI FeatureOptProduct WithdrawalRule'('Policy ProductCode';riderIndex;'Policy EffDate');"GMDB"))
+F1 19f5318 19f5980 0 19f5430 0 0 2
+GMDB RiderSubTypeCode Conflict Error(riderIndex;riderSubTypeIndex;function_name)
+Funktion
+'Messages SystemMessage'("CA1043";'Message Language';V_('GMDB Model Name';function_name;'PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate');'Policy ValuesInfo RiderSubTypeCode'(riderIndex;riderSubTypeIndex)))
+F1 19f5430 19f5980 0 19f5520 0 0 2
+GMDB Product Type Invalid Error(function_name)
+Funktion
+'Messages SystemMessage'("CA1040";'Message Language';V_('GMDB Model Name';function_name;'Policy ProductCode'))
+F1 19f5520 19f5980 0 19f5620 0 0 2
+GMDB Benefit Not Supported Error(riderIndex;function_name)
+Funktion
+'Messages SystemMessage'("CA1030";'Message Language';V_('GMDB Model Name';function_name;'PI FeatureOptProduct AdditionalRiderClassification RiderSubTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')))
+F1 19f5620 19f5980 0 19f6258 0 0 2
+GMDB Rider Type Not Supported Error(riderIndex;function_name)
+Funktion
+'Messages SystemMessage'("CA1031";'Message Language';V_('GMDB Model Name';function_name;'PI FeatureProduct RiderTypeCode'('Policy ProductCode';riderIndex;'Policy EffDate')))
+F1 19f6258 19f5980 0 0 0 0 2
+GMDB Fee Rule Not Supported Error(function_name;feeType)
+Funktion
+'Messages SystemMessage'("CA1003";'Message Language';V_('GMDB Model Name';function_name;feeType))
+F1 19f6a70 3f4228 19f5a60 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+ 
+F1 19f5a60 19f6a70 0 0 0 0 2
+GMDB Model Name
+Funktion
+"GuarMinDeathBenefit"
+A0 3f4300 0 0 0 0 0 0
+
+T0 3f436c 0 0 0 0 0 0
+
+I0 3f43d8 0 19f5b60 0 0 0 0
+
+I0 19f5b60 3f43d8 0 0 0 0 0
+ACCESS.pms
+-
+O0
+E0
+L0
+B0
+P2
+19edf88
+19eeb68
+F41
+5bc6e9ab
+19ee5c0
+19ee788
+19ee850
+19f0ce8
+19f0be0
+19f1370
+19f1a00
+19f13e8
+19f14a0
+19f15b0
+19f1628
+19f1738
+19f1848
+19f1958
+19f1f70
+19f2920
+19f29d8
+19f2ea8
+19f3448
+19f3528
+19f4380
+19f3cf8
+19f3db0
+19f3eb8
+19f3fc8
+19f40a8
+19f4188
+19f4280
+19f48c8
+19f49c8
+19f5980
+19f5020
+19f5138
+19f5318
+19f5430
+19f5520
+19f5620
+19f6258
+19f6a70
+19f5a60
+A0
+T0
+!42
+19eeb68 3 -1
+Modification Log:çä05/16/2011 - VM : transferred the code to a separate function the output to be referenced in AnnuityContractDocs after reparameterization.çä05/11/2011 - VM : replaced accountValue parm with input function "Policy Investment AccountValue"çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä
+19eeb68 4 -1
+Modification Log:çäCSC Illustrations ILLUS001 Changed CONST to Constantçä05/16/2011 - VM : transferred the code to a separate function the output to be referenced in AnnuityContractDocs after reparameterization.çä05/11/2011 - VM : replaced accountValue parm with input function "Policy Investment AccountValue"çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä çä çä
+19eeb68 5 -1
+Modification Log:çä05/16/2011 - VM : transferred the code to a separate function the output to be referenced in AnnuityContractDocs after reparameterization.çä05/11/2011 - VM : replaced accountValue parm with input function "Policy Investment AccountValue"çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä
+19eeb68 6 -1
+Modification Log:çä05/16/2011 - VM : transferred the code to a separate function the output to be referenced in AnnuityContractDocs after reparameterization.çä05/11/2011 - VM : replaced accountValue parm with input function "Policy Investment AccountValue"çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä
+19eeb68 8 -1
+Modification Log:çä05/16/2011 - VM : transferred the code to a separate function the output to be referenced in AnnuityContractDocs after reparameterization.çä05/11/2011 - VM : replaced accountValue parm with input function "Policy Investment AccountValue"çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä
+19eeb68 9 -1
+09/28/2012 - PAD-912 - rm - Replaced standard function ROUND with 'GEN Round'çä
+19eeb68 10 -1
+09/28/2012 - PAD-912 - rm - Replaced standard function ROUND with 'GEN Round'çä
+19eeb68 11 -1
+Modification Log:çä05/16/2011 - VM : transferred the code to a separate function the output to be referenced in AnnuityContractDocs after reparameterization.çä05/11/2011 - VM : replaced accountValue parm with input function "Policy Investment AccountValue"çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä çä
+70decbc6 3 -1
+Description:  Returns GUID for wmA/V1 so that transactions can be alignedçä çäModification Log:çä05/30/2013 pA 1401 wmA 1060 CMC Initial Calculations
+342e6fc9 -2 -2
+Description: Transferred the code for "OUTPUT GMDB Policy Rider TotAmt" into this separate function.çä çäModification Log:çä10/18/2012 - PAD-912 - rm - Replaced standard function ROUND with 'GEN Round'çä05/16/2011 CSC Initial Calculation/Rule
+62e81905 -2 -2
+Description: Transferred the code for "OUTPUT GMDB Policy Rider Fee FeeAmt" into this separate function.çä çäModification Log:çä05/16/2011 CSC Initial Calculation/Rule
+31531a98 -2 -2
+Description: Transferred the code for "OUTPUT GMDB Policy ValuesInfo CashValueAmt" into this separate function.çä çäModification Log:çä10/18/2012 - PAD-912 - rm - Replaced standard function ROUND with 'GEN Round'çä05/16/2011 CSC Initial Calculation/Rule
+459d2183 -2 -2
+Description: Transferred the code for "OUTPUT GMDB Policy ValuesInfo CashValueAsOfDate" into this separate function.çä çäModification Log:çä05/16/2011 CSC Initial Calculation/Rule
+66d5c1fb -2 -2
+Description: Transferred the code for "OUTPUT GMDB Policy ValuesInfo TaxBasis" into this separate function.çä çäModification Log:çä10/18/2012 - PAD-912 - rm - Replaced standard function ROUND with 'GEN Round'çä05/16/2011 CSC Initial Calculation/Rule
+6d35a871 -2 -2
+Description: Transferred the code for "OUTPUT GMDB Policy ValuesInfo PropWithdrwlAmtAsOfCVDate" into this separate function.çä çäModification Log:çä10/18/2012 - PAD-912 - rm - Replaced standard function ROUND with 'GEN Round'çä05/16/2011 CSC Initial Calculation/Rule
+19ee788 -2 -2
+Description: Current amount of the GMDB benefit çä çäModification Log:çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä04/12/2010 - VM : replaced "Policy Investment Value" with "Std Account Value".çä10/31/2007 CSC Initial Calculation/Ruleçä
+19ee850 -2 -2
+Description: Current GMDB Step-up benefit (at last financial transaction date)çä çäModification Log:çä11/8/2013 pA1401-ENH1060 CMC added logic to skip update for non wma/v1 systemsçä07/15/2013 pA 1401 wmA 1060 CMC added logic for wmA to only send one values info segment.çä05/30/2013 pA 1401 wmA 1060 CMC Initial Calculationsçä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä04/12/2010 - VM : replaced "Policy Investment Value" with "Std Account Value".çä10/31/2007 CSC Initial Calculation/Ruleçä çä
+19f0ce8 -2 -2
+Description: GMDB Step-up benefit base =   base at previous transaction date + contributions made since previous transaction date AND - withdrawals made since previous transaction dateçäTranslating into Benefit(financialActivityIndex) = Benefit(financialActivityIndex - 1) +/- current financial transaction (depending on transaction type)çä çäModification Log:çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä10/31/2007 CSC Initial Calculation/Rule
+19f0be0 -2 -2
+Description: The last date on which the benefit was stepped-up.çäIf issue, then the high value date is issue.çäIf calculation date falls on a Step-Up option date and the account value is greater than the current benefit value, then the calculation date is the new high cash value date.çäIf the account value is not greater than the current benefit value, then the last high cv date remains the water mark.  çäIf the calculation date does not fall on a Step_Up option date, then the last high cv date remains the water mark.çä çäModification Log:çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä04/12/2010 - VM : replaced "Policy Investment Value" with "Std Account Value".çä10/31/2007 CSC Initial Calculation/Ruleçä
+19f1370 -2 -2
+Description: If the current transaction date is an allowed step-up date then return current transaction date; otherwise return previous step-up dateçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f1a00 -2 -2
+Description: Return 1 if the current transaction date is an allowed step-up date, otherwise 0çä çäModification Log:çä07/15/2013 pA 1401 wmA 1060 CMC updated for wmA setup up indicator logicçä10/31/2007 CSC Initial Calculation/Rule
+4443f410 -2 -2
+Description: Return 1 there are no financial activities at th time of the request which would indicate a step up request.çä çäModification Log:çä07/15/2013 pA 1401 wmA 1060 CMC added logic for wmA to make determination on step up timing
+19f13e8 -2 -2
+Description: Current GMDB Growth benefit (at transaction effective date). If there are no FinancialActivities to be processed, just improve the previous balance to the transaction effective date.çä çäModification Log:çä08/16/2013 pA 1401 wmA 1060 CMC added wmA specific logic to ignore cap when incoming balance is 0çä07/18/2013 pA 1401 wmA 1060 CMC added wmA specific logic to ignore capçä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä10/31/2007 CSC Initial Calculation/Rule
+19f14a0 -2 -2
+Description: GMDB Growth benefit base = base at previous transaction date, accumulated to current date + contributions made since previous transaction date AND - withdrawals made since previous transaction dateçä çäModification Log:çä10/29/2013 pA 1401 wmA 1060 CMC removed logic for using CashValueAmt off of step up periods.çä08/16/2013 pA 1401 wmA 1060 CMC added wmA specific logic to ignore cap when incoming balance is 0çä07/18/2013 pA 1401 wmA 1060 CMC added wmA specific logic to ignore capçä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä10/31/2007 CSC Initial Calculation/Rule
+19f15b0 -2 -2
+Description: Daily growth accumulation factorçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f1628 -2 -2
+Description: Function determines the value of the cap on the benefit growth base <CapBasis> defines the growth benefit cap basis relative to <CapPct> is defined as lookup data type using OLIEXT_LU_CAPBASIS.OLIEXT_LU_CAPBASIS contains two private type codes:çä1000500001 Based on total cumulative gross premiums since issue andçä1000500002 Based on current account or contract valueçä çäModification Log:çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä04/12/2010 - VM : replaced "Policy Investment Value" with "Std Account Value".çä10/31/2007 CSC Initial Calculation/Ruleçä
+19f1738 -2 -2
+Description: Gross contribution made at current financial activity effective date. Insure that the financial activity effective date is within the window of processing.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f1848 -2 -2
+Description: Gross withdrawal made at current transaction dateçä çäModification Log:çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä10/31/2007 CSC Initial Calculation/Rule
+19f1958 -2 -2
+Description: GMDB proportional/pro-rata partial withdrawal amountçä çäModification Log:çä07/15/2013 pA 1401 wmA 1060 CMC added logic for wmA to only send one values info segment.çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä10/31/2007 CSC Initial Calculation/Rule
+19f2920 -2 -2
+Description: Total premiums paid since last high value dateçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f29d8 -2 -2
+Description: Total (dollar-for-dollar) withdrawals made since last high value dateçä çäModification Log:çä4/30/2014 - rm - CL1401 - Return 0's if withdrawal rule is for proportional, rather than return errorçä10/31/2007 CSC Initial Calculation/Rule
+19f29d8 0 2
+
+19f2ea8 -2 -2
+Description: Total proportional withdrawals made since last high value dateçä çäModification Log:çä04/30/2014 - rm - CL1401 - Return 0's if withdrawal rule is for dollar-for-dollar, rather than return errorçä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä10/31/2007 CSC Initial Calculation/Ruleçä
+19f3528 -2 -2
+Description: Annual charge amount for GMDB riderçä çäModification Log:çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä10/31/2007 CSC Initial Calculation/Rule
+19f4380 -2 -2
+Description: Modal charge amount for GMDB riderçä çäModification Log:çä04/12/2010 - VM : included the accountValue parameter to accommodate projected values.çä04/12/2010 - VM : replaced "Policy Investment Value" with "Std Account Value".çä10/31/2007 CSC Initial Calculation/Rule
+19f3db0 -2 -2
+Description: For the Step-up benefit, this is the last date on which a step-up was allowed. For the Growth benefit, this is the last date on which the benefit was evaluatedçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f3eb8 -2 -2
+Description: Return the most recent financial activity effective date within the current processing window.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f40a8 -2 -2
+Description: Determine if the transaction date is within the rider active range. If the rider termination date is null, assume active.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f4188 -2 -2
+Description: Determine if the step-up option is available on the contract, and whether the current ValuesInfo object is indeed identified as step-up.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f4280 -2 -2
+Description: Determine if the growth option is available on the contract, and whether the current ValuesInfo object is indeed identified as growth.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f48c8 -2 -2
+Description: Establish last evaluation date. If the last evaluation date is null or less than the contract issue date set to the contract issue date.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+19f49c8 -2 -2
+Description: Determine if the current financial activity falls within the range of the last evaluation date and the transaction effective date.  If the transaction effective date is equal to the contract issue date, allow financial activities prior to the  issue date to be considered.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

@@ -1,0 +1,710 @@
+;1	08.12.2016 13:40:51	jlawrie2	
+X0 78be13fb 0 268188b0 0 0 0 0
+
+X5 268188b0 78be13fb 0 7757dbab 0 0 2
+Test_Rate
+Test_Rate("LFA"; "Indemnity"; 1)
+1.505
+INPUT Policy ProductCode
+ZPROTECT
+Input TransEffDate
+01/01/2006
+INPUT Commission commissionType
+COMMUPL
+INPUT Policy Term
+5
+X5 7757dbab 78be13fb 0 216d48ae 0 0 2
+Comm Rate
+Comm Rate("LFA"; "Indemnity"; 1)
+0.22
+INPUT Policy ProductCode
+ZPROTECT
+INPUT Commission commissionType
+COMMUPL
+Input TransEffDate
+01/01/2006
+INPUT Policy Term
+5
+X4 216d48ae 78be13fb 0 50e6f36a 0 0 2
+CommUpliftment Rate(channelCode; commissionCode; yearIndex)
+CommUpliftment Rate("BA"; "Agency"; 1)
+2.022
+INPUT Policy ProductCode
+ZPROTECT
+Input TransEffDate
+01/01/2006
+INPUT Policy Term
+5
+X6 50e6f36a 78be13fb 0 6d686931 0 0 2
+Comm Calc ZProtec(channelCode; commissionCode; yearIndex)
+Comm Calc ZProtec("LFA"; "Indemnity"; 1)
+
+INPUT PaymentMethod Mode
+1
+INPUT Policy Life InitialPremAmt
+10000
+INPUT Policy ProductCode
+ZPROTECT
+Input TransEffDate
+01/01/2006
+INPUT Policy Term
+25
+X2 6d686931 78be13fb 0 c1b529b 0 0 2
+Comm Renewal rate
+Comm Renewal rate
+
+INPUT Policy Term
+2
+X5 c1b529b 78be13fb 0 de81b86 0 0 2
+Comm Calc Renewal ITASP
+Comm Calc Renewal ITASP
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy Term
+5
+X3 de81b86 78be13fb 0 b742ea5 0 0 2
+Comm Renewal Calc YearsZprod(yearIndex)
+Comm Renewal Calc YearsZprod(1)
+
+INPUT Product ProductCode
+1
+INPUT Policy ProductCode
+ZPROTECT
+X6 b742ea5 78be13fb 0 100bf31f 0 0 2
+Comm Renewal Calc YearsZprod(yearIndex)
+Comm Renewal Calc YearsZprod(3)
+10
+INPUT Policy ProductCode
+ZCARE
+INPUT Intial Commission EP
+2
+INPUT PaymentMethod Mode
+1
+INPUT Policy Life InitialPremAmt
+100
+INPUT Renewal Commission Rate
+10
+X16 100bf31f 78be13fb 0 46cdf7b 0 0 2
+Comm Intial Com Cal(CommType;calcType;commissionCode;benefitIndex)
+Comm Intial Com Cal(0;"C";"Indemnity";1)
+
+INPUT Policy ProductCode
+ZPROTECT
+INPUT PaymentMethod Mode
+1
+INPUT Policy Life InitialPremAmt
+500
+INPUT Commission Basic Rate
+110
+INPUT Policy Term
+6
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2013
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Benefit indicatorCode[1]
+1
+INPUT Benefit benefitCode[1]
+1
+INPUT Benefit productVersionCode[1]
+1
+INPUT Product Jurisdiction
+1
+INPUT Product channelCode
+LFA
+X5 46cdf7b 78be13fb 0 5172a0f6 0 0 2
+CommDate
+CommDate
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I2
+Input TransEffDate
+01/01/2013
+INPUT Policy EffDate
+01/01/2006
+X4 5172a0f6 78be13fb 0 66274b6 0 0 2
+CommDate
+CommDate
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+X5 66274b6 78be13fb 0 2b61dc7e 0 0 2
+Comm Renewal Calc(yearIndex)
+Comm Renewal Calc(1)
+50
+INPUT Policy ProductCode
+ZPROTECT
+INPUT PaymentMethod Mode
+1
+INPUT Policy Life InitialPremAmt
+1000
+INPUT Renewal Commission Rate
+5
+X6 2b61dc7e 78be13fb 0 3ad16f0 0 0 2
+Comm Renewal Calc YearsZprod(yearIndex)
+Comm Renewal Calc YearsZprod(1)
+0
+INPUT Policy ProductCode
+ZPROTECT
+INPUT PaymentMethod Mode
+1
+INPUT Policy Life InitialPremAmt
+1000
+INPUT Renewal Commission Rate
+5
+INPUT Intial Commission EP
+4
+X2 3ad16f0 78be13fb 0 4748269a 0 0 2
+Comm EP
+Comm EP
+5
+INPUT Intial Commission EP
+5
+X4 4748269a 78be13fb 0 57913884 0 0 2
+Comm Intial EP
+Comm Intial EP
+500
+INPUT Payment Mode
+1
+INPUT Policy Life InitialPremAmt
+10000
+INPUT Commission Basic Rate
+5
+X8 57913884 78be13fb 0 22ba7787 0 0 2
+Comm Intial  Calc Zprod (channelCode; commissionCode; yearIndex;benefitIndex)
+Comm Intial  Calc Zprod ("LFA"; "Indemnity"; 1;1)
+331.1
+INPUT Payment Mode
+1
+INPUT Policy Life InitialPremAmt
+1000
+INPUT Product ProductCode
+ZPROTECT
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT TransEffDate
+01/01/2006
+INPUT Benefit TermDur[1]
+5
+X1 22ba7787 78be13fb 0 6ff1b7e3 0 0 2
+ Intial Calc ITASP(CommType;calcType;commissionCode;benefitIndex)
+ Intial Calc ITASP(1;"C"; "Indemnity"; 1)
+
+X11 6ff1b7e3 78be13fb 0 6056ee16 0 0 2
+Comm Intial Calc(CommType;calcType;channelCode;commissionCode;yearIndex;benefitIndex)
+Comm Intial Calc(1;"C";"LFA"; "Indemnity"; 1;1)
+5000
+INPUT Product ProductCode
+ITAB2
+INPUT Payment Mode
+1
+INPUT Policy Life InitialPremAmt
+10000
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+INPUT TransEffDate
+01/01/2006
+INPUT Benefit TermDur[1]
+15
+INPUT Intial Commission Term
+10
+INPUT Commission Basic Rate
+5
+INPUT Commission SacrificePercentage[1;1]
+0
+X5 6056ee16 78be13fb 0 6b515459 0 0 2
+Comm Rate Vector(commissionCode; yearIndex;benefitIndex)
+Comm Rate Vector("Agency";1;1)
+
+INPUT Product channelCode
+LFA
+INPUT Benefit TermDur[1]
+5
+INPUT Product Channel
+
+INPUT Commission CommissionType[1;1]
+
+X10 6b515459 78be13fb 0 3597275f 0 0 2
+Comm Rate(commissionCode; yearIndex;benefitIndex)
+Comm Rate("Agency"; 1;1)
+0.16
+INPUT Product ProductCode
+ZPROTECT
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2012
+INPUT Product channelCode
+AG
+INPUT Product Channel
+AG
+INPUT Benefit TermDur[1]
+8
+INPUT Benefit TermDur[8]
+
+INPUT Benefit TermDur[4]
+
+X9 3597275f 78be13fb 0 7b74f9e9 0 0 2
+Comm Rate(channelCode;commissionCode; yearIndex;benefitIndex;commissionIndex)
+Comm Rate("LFA";"Indemnity"; 1;1;1)
+0.22
+INPUT Product ProductCode
+ZPROTECT
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2012
+INPUT Benefit TermDur[1]
+5
+INPUT Product channelCode
+1
+INPUT Product Channel
+2
+INPUT Commission commissionType[1;1]
+COMM
+X12 7b74f9e9 78be13fb 0 65dbe7fb 0 0 2
+Comm Intial Term Max(calcType;commissionCode;benefitIndex)
+Comm Intial Term Max("C";0;1)
+12
+INPUT Product ProductCode
+ITAB2
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2012
+INPUT Product CarrierCode
+00
+INPUT Product ProductVersion
+
+INPUT Benefit indicatorCode[1]
+1
+INPUT Benefit benefitCode[1]
+ITAB2
+INPUT Benefit productVersionCode[1]
+
+INPUT Product Jurisdiction
+9
+INPUT Product channelCode
+
+X18 65dbe7fb 78be13fb 0 3fb06ad4 0 0 2
+Intial Calc ITASP(calcType;commissionCode;benefitIndex;commissionIndex)
+Intial Calc ITASP("C";0;1;1)
+6000
+INPUT Payment Mode
+1
+INPUT Policy Life InitialPremAmt
+10000
+INPUT Benefit TermDur[1]
+25
+INPUT Product ProductCode
+ITAB2
+INPUT Product EffDate
+1/1/2012
+INPUT Calling System
+Global
+INPUT Product CarrierCode
+00
+INPUT Product ProductVersion
+
+INPUT Benefit indicatorCode[1]
+1
+INPUT Benefit benefitCode[1]
+ITAB2
+INPUT Benefit productVersionCode[1]
+
+INPUT Product Jurisdiction
+9
+INPUT Product channelCode
+
+INPUT Calling Program
+VPMSTEST
+INPUT TransEffDate
+01/01/2014
+INPUT Commission Basic Rate
+5
+INPUT Commission SacrificePercentage[1;1]
+0
+X8 3fb06ad4 78be13fb 0 4ee810a4 0 0 2
+Comm Rate(commissionCode; yearIndex;benefitIndex; commissionIndex)
+Comm Rate("Indemnity";1;1; 1)
+0.44
+INPUT Product ProductCode
+ZPROTECT
+INPUT Commission commissionType[1;1]
+COMM
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2014
+INPUT Product Channel
+LFA
+INPUT Benefit TermDur[1]
+10
+X1 4ee810a4 78be13fb 0 e99c103 0 0 2
+INPUT Commission commissionType
+INPUT Commission commissionType
+
+X9 e99c103 78be13fb 0 3f9cac3 0 0 2
+Comm Calc Renewal ITASP(benefitIndex)
+Comm Calc Renewal ITASP(1)
+50
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2017
+INPUT Benefit TermDur[1]
+12
+INPUT Product EffDate
+01/01/2012
+INPUT Policy Life InitialPremAmt
+1000
+INPUT Payment Mode
+1
+INPUT Renewal Commission Rate
+5
+X9 3f9cac3 78be13fb 0 767baba9 0 0 2
+
+CommUpliftment Rate(1; 1;1)
+
+INPUT Product ProductCode
+ZPROTECT
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2006
+INPUT Product Channel
+BA
+INPUT Benefit TermDur[1]
+1
+INPUT Commission CommissionType[1;1]
+32
+INPUT Commission CommissionType[1;32]
+
+X9 767baba9 78be13fb 0 6bb09343 0 0 2
+CommUpliftment Rate( commissionIndex; yearIndex;benefitIndex)
+CommUpliftment Rate( 1; 1;1)
+2.022
+INPUT Product ProductCode
+ZPROTECT
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2006
+INPUT Commission CommissionType[1;1]
+Agency
+INPUT Product Channel
+BA
+INPUT Commission CommissionType[1;6]
+32
+INPUT Benefit TermDur[1]
+4
+X8 6bb09343 78be13fb 0 1f8fd11c 0 0 2
+Comm Rate(yearIndex;benefitIndex;commissionIndex)
+Comm Rate(1;1;1)
+0.22
+INPUT Product ProductCode
+ZPROTECT
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+Global
+INPUT TransEffDate
+01/01/2006
+INPUT Product Channel
+LFA
+INPUT Commission CommissionType[1;1]
+Indemnity
+INPUT Benefit TermDur[1]
+5
+X13 1f8fd11c 78be13fb 0 4bf4e7c6 0 0 2
+Comm CalcRateRule(CalcType;commissionCode;benefitIndex)
+Comm CalcRateRule("C";"";1)
+ERROR: CA1017 - In Model: 'PPAGTERM.VPM' and Function: 'P B Commission' -> Product definition field / table not found with Product type : 'ZPROTECT', Field name : 'commissionRateRule', Object name : 'Commission', qualifier : 'Benefit' and keys: '(00!ZPROTECT!!01//01//2012!!!00!01//01//2012!9!!)'
+INPUT Product ProductCode
+ZPROTECT
+INPUT Product EffDate
+01/01/2012
+INPUT Calling System
+Global
+INPUT Product CarrierCode
+00
+INPUT Product ProductVersion
+
+INPUT Benefit indicatorCode[1]
+
+INPUT Benefit benefitCode[1]
+
+INPUT Benefit productVersionCode[1]
+00
+INPUT Product Jurisdiction
+9
+INPUT Product channelCode
+
+INPUT Calling Program
+
+INPUT TransEffDate
+
+X1 4bf4e7c6 78be13fb 0 0 0 0 2
+Comm Intial Calc(calcType;yearIndex;benefitIndex)
+Comm Intial Calc("C";1;1)
+
+O0 5edfe976 0 0 0 0 0 0
+
+E0 5b96c0ca 0 0 0 0 0 0
+
+L0 448581e0 0 0 0 0 0 0
+
+B0 c1076ad 0 0 0 0 0 0
+
+P1 6e51ffac 0 7eb1d142 0 0 0 2
+
+--description
+Global Commission model.çä çäRELEASE LOG:çäRELEASE pA 1403 - PAC038:Global Whole LifeçäRELEASE pA 1401çäRELEASE Global pA 1301
+P13 7eb1d142 6e51ffac 0 0 0 0 2
+Global Commission
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Commission model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGCommission.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 da8fc1b 0 5ebaa561 0 0 0 0
+
+F1 5ebaa561 da8fc1b 5d95f4a9 0 0 0 2
+:Comm
+Funktion
+
+F1 5d95f4a9 5ebaa561 0 2f0fede0 0 0 2
+Comm Total Intial(calcType;yearIndex)
+Funktion
+'GEN Round'(SUMX(benefitIndex;0;'Product number of Benefit' - 1;'Comm Intial Calc'(calcType;yearIndex;#benefitIndex));2)
+F1 2f0fede0 5ebaa561 0 10d02a20 0 0 2
+Comm Cummulative Basic(calcType;yearIndex)
+Funktion
+'GEN Round'(SUMX(benefitIndex;0;'Product number of Benefit' - 1;'Comm Basic Rec'(calcType;yearIndex;#benefitIndex));2)
+F1 10d02a20 5ebaa561 0 10f72f3c 0 0 2
+Comm Basic Annual (calcType; yearIndex)
+Funktion
+'GEN Round'(SUMX(benefitIndex;0;'Product number of Benefit' - 1;'Comm Basic'(calcType;yearIndex;#benefitIndex));2)
+F1 10f72f3c 5ebaa561 1ff93bb5 53ad6296 0 0 2
+--Comm Intial
+Funktion
+
+F1 1ff93bb5 10f72f3c 0 7bbd3cb9 0 0 2
+Comm Intial Calc(calcType;yearIndex;benefitIndex)
+Funktion
+IF (yearIndex = 1 ; çä  'Comm Benefit Premium'(calcType;yearIndex;benefitIndex) * CASE('Comm CalcRateRule'(calcType;benefitIndex);çä    1 : MIN('Product TermDur';'Comm Intial Term Max'(calcType;benefitIndex)) * 'Commission BasicPercentage'(benefitIndex) / 100 * IF ('Commission SacrificePercentage'(benefitIndex) > 0 ; çä      (1 - 'Commission SacrificePercentage'(benefitIndex) * 0.01 / 5) ; çä      1çä    );çä  2 : 'Commission BasicPercentage'(benefitIndex) / 100;çä  3 : 'Comm Rate'(calcType;yearIndex) * 'CommUpliftment Rate'(yearIndex;benefitIndex);çä   : 0)çä ; çä0çä)
+F1 7bbd3cb9 10f72f3c 0 4e12cc82 0 0 2
+Comm Renewal Calc(calcType;yearIndex;benefitIndex)
+Funktion
+('ModePremium Coverage Mode Premium'(calcType;benefitIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'(1;'Policy Duration';yearIndex;calcType))) * CASE('Comm CalcRateRule'(calcType;benefitIndex);çä  1 : IF ('Total Duration Month'(TransEffDate;'Product EffDate') > 'Comm EP Months'(benefitIndex) ; çä    'Commission RenewalPercentage'(benefitIndex) / 100 ; çä    0çä  );çä3 : IF (yearIndex > 'INPUT Intial Commission EP' ; çä  'Commission RenewalPercentage'(benefitIndex) / 100 ; çä  0çä);çä : 0)çä
+F1 4e12cc82 10f72f3c 0 4a1fadbc 0 0 2
+Comm Basic Rec(calcType; yearIndex; benefitIndex)
+Funktion
+'Comm Basic'(calcType;yearIndex;benefitIndex) + IF (YearIndex = 1 ; çä  0 ; çä  'Comm Basic Rec'(calcType;yearIndex - 1;benefitIndex)çä)
+F1 4a1fadbc 10f72f3c 0 7fc8c3a0 0 0 2
+Comm Basic(calcType; yearIndex; benefitIndex)
+Funktion
+IF ('Comm CalcRateRule'(calcType;benefitIndex) = 3 ; çä  'Comm Rate'(calcType;yearIndex) * 'Comm Benefit Premium'(calcType;yearIndex;benefitIndex) ; çä  0çä)
+F1 7fc8c3a0 10f72f3c 0 76d72a42 0 0 2
+Comm Intial Term Max(calcType;benefitIndex)
+Funktion
+'PI Benefit Commission maxCommTerm'(calcType;'Policy Coverage ProductCode'(calcType;benefitIndex);benefitIndex;'Commission CommissionCode'(benefitIndex);'INPUT Product EffDate')
+F1 76d72a42 10f72f3c 0 2c8650d 0 0 2
+Comm CalcRateRule(calcType;benefitIndex)
+Funktion
+'PI Benefit Commission commissionRateRule'(calcType;'Policy Coverage ProductCode'(calcType;benefitIndex);benefitIndex;'Commission CommissionCode'(benefitIndex);'INPUT Product EffDate')
+F1 2c8650d 10f72f3c 0 0 0 0 2
+Comm Benefit Premium(calcType; yearIndex; benefitIndex)
+Funktion
+IF ('BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;benefitIndex);benefitIndex;'Policy EffDate')) ; çä  'ModePremium Coverage Base Premium'(calcType;benefitIndex;1;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Policy PaymentMode';'Policy Duration';yearIndex;calcType)) ; çä  'ModePremium Coverage Mode Premium'(calcType;benefitIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'(1;'Policy Duration';yearIndex;calcType))çä) //'ModePremium Coverage Mode Premium'(calcType;benefitIndex; çä//ââââââ    'Vector ModePremium Create Parms Vector From Inputs and Parms'('Policy PaymentMode'; 'Policy Duration'; yearIndex; calcType))ä
+F1 53ad6296 5ebaa561 42d98510 2cf835dc 0 0 2
+Comm Rate(calcType;yearIndex)
+Funktion
+Rate('Policy ProductCode';"Comm_Rate";TransEffDate;'Comm Rate Vector Parms'(calcType;yearIndex;"Comm_Rate")) * 0.01
+F1 42d98510 53ad6296 0 5c6fe1d 0 0 2
+CommUpliftment Rate( yearIndex;benefitIndex)
+Funktion
+Rate('Policy ProductCode';"COMMUPL";TransEffDate;'Comm Rate Vector'(yearIndex;benefitIndex))
+F1 5c6fe1d 53ad6296 0 bfc042b 0 0 2
+Comm Rate Vector( yearIndex;benefitIndex)
+Funktion
+V_("";yearIndex;'Product Channel';'Commission CommissionType'(benefitIndex);"";"";"";'Benefit TermDur'(benefitIndex))
+F1 bfc042b 53ad6296 0 0 0 0 2
+Comm EP Months(benefitIndex)
+Funktion
+ //'Table EP'['Benefit TermDur'(benefitIndex)]çälookupx('Table EP';'Benefit TermDur'(benefitIndex);"EP (mths)")
+F1 2cf835dc 5ebaa561 0 1fc8de77 0 0 2
+Comm PremTest
+Funktion
+SUMX(benefitIndex;0;'Product number of Benefit' - 1;'ModePremium Coverage Mode Premium'("C";#benefitIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Payment Mode';'Benefit TermDur'(#benefitIndex);1;"C")))
+F1 1fc8de77 5ebaa561 0 5f2062ae 0 0 2
+Comm Rounding Adj(yearIndex; benefitIndex; calcType)
+Funktion
+IF (benefitIndex ALIKE 0 ; çä  'GEN Round'(SUMX(benefitIndex;0;'Product number of Benefit' - 1;'ModePremium Coverage Mode Premium'(calcType;#benefitIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Payment Mode';'Benefit TermDur'(#benefitIndex);yearIndex;calcType)));2) * 'GEN Payments In Year'('Payment Mode') - SUMX(benefitIndex;0;'Product number of Benefit' - 1;'ModePremium Coverage Mode Premium'(calcType;#benefitIndex;'Vector ModePremium Create Parms Vector From Inputs and Parms'('Payment Mode';'Benefit TermDur'(#benefitIndex);yearIndex;calcType))) * 'GEN Payments In Year'('Payment Mode') ; çä  0çä)
+F1 5f2062ae 5ebaa561 10c9044e 0 0 0 2
+--Miscellaneous Functions--
+Funktion
+
+F1 10c9044e 5f2062ae 0 5d114016 0 0 2
+Comm Vector Parms Build(yearIndex;vectorRateQuery)
+Funktion
+vectorx(dataItem;0;v_length(vectorRateQuery) - 1;'Comm Vector GetDataItemPair'(yearIndex;e_(vectorRateQuery;#dataItem)))
+F1 5d114016 5f2062ae 0 47c5355e 0 0 2
+Comm Vector Parms GetQuery(calcType; rateType)
+Funktion
+v_construct(Rate('Policy ProductCode';rateType & "_Query";TransEffDate;'Gen Vector Blank'))
+F1 47c5355e 5f2062ae 0 13da2606 0 0 2
+Comm Vector GetDataItemPair (yearIndex;dataItem)
+Funktion
+v_(dataItem;CASE(toupper(dataItem);çä  "DURATION" : yearIndex;çä   : ERROR("Data Item not defined in 'Bonus Rate Vector GetDataItemPair': ";dataItem))çä)
+F1 13da2606 5f2062ae 0 0 0 0 2
+Comm Rate Vector Parms(calcType; yearIndex;rateType)
+Funktion
+'Comm Vector Parms Build'(yearIndex;'Comm Vector Parms GetQuery'(calcType;rateType))
+A0 2664d048 0 21fbf456 0 0 0 0
+
+A0 21fbf456 2664d048 0 0 0 0 0
+INPUT Intial Commission EP
+T0 75507310 0 72a477bd 0 0 0 0
+
+T13 72a477bd 75507310 0 0 0 0 2
+Table EP
+Term
+EP (mths)
+1
+12
+2
+20
+3
+20
+4
+20
+5
+20
+6
+24
+7
+28
+8
+32
+9
+36
+10
+40
+11
+44
+12
+48
+I0 4136c55a 0 4a92c39 0 0 0 0
+
+I0 4a92c39 4136c55a 0 0 0 0 0
+PAGAccess.pms
+-
+O0
+E0
+L0
+B0
+P1
+7eb1d142
+F1
+5ebaa561
+A1
+21fbf456
+T1
+72a477bd
+!19
+5d95f4a9 -2 -2
+Description:  Returns Total Intial Commssion on the ProductçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+2f0fede0 -2 -2
+Description:  Returns Total Basic Commssion on the Product to dateçäModification Log:çä08/25/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+10d02a20 -2 -2
+Description:  Returns Annual  Basic Commssion on the Product çäModification Log:çä08/25/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+1ff93bb5 -2 -2
+Description:  Returns Intial  Commission per BenefitçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+7bbd3cb9 -2 -2
+Description:  Returns Renewal commission Calculation çäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+4e12cc82 -2 -2
+Modification LogçäDescription: Sums up Projected  Commission çä çä08/25/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+4a1fadbc -2 -2
+Modification LogçäDescription: Calculates  Commission çä çä08/25/2014 PA1403 PAC038: Global Whole Life JC Initial Function
+7fc8c3a0 -2 -2
+Description:  Returns Commission Maximum intial Term from   PIçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+76d72a42 -2 -2
+Description:  Returns Commission Rate Rule Calc From PIçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+2c8650d -2 -2
+Description:  Returns Commission Rate Rule Calc From PIçäModification Log:çä çä10/03/2014 PA1403 PAC038: Global Whole Life JC Initial Added Payment Mode  Functionçä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+53ad6296 -2 -2
+Description:  Returns Commission Rate   from the Rate ModelsçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+42d98510 -2 -2
+Description:  Returns Uplifment Factor   from the Rate ModelsçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+5c6fe1d -2 -2
+Description:  Rate Vector for Commission RateçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+bfc042b -2 -2
+Description:  Returns Earning Perid (EP) from a table in months for ITA and Simplife çäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+10c9044e -2 -2
+Description: Build rate access vectorçä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Modified for Bonus Rate  çä11152013 pA-G1401 JL Initial Rule
+5d114016 -2 -2
+Description: Query the rate model to ascertain which data items are required for a rates call.çä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Modified for Bonus Rate  çä11152013 pA-G1401 JL Initial Rule
+47c5355e -2 -2
+Description: Build vector for dataitem call.çä çäModification Log:çä07/9/2014 PA1403 PAC038: Global Whole Life JC Modified for Bonus Rate  çä11152013 pA-G1401 JL Initial Rule
+13da2606 -2 -2
+Description: Build vector for rate model call.çä çäModification Log:çä çä11152013 pA-G1401 JL Initial Rule
+72a477bd 0 -1
+Description:  Earning Period for Intial Commission Table  Calculation for ITA and   Simple Lifet based in MonthsçäModification Log:çä7/29/2013-PAC027 -  pA-G1401 GPF-25 - JC-Added Function.
+;Offset=00000000

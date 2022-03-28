@@ -1,0 +1,232 @@
+;1	18.08.2016 17:14:17	null	null
+X0 003f40d0 0 0 0 0 0 0
+
+O0 003f3f8c 0 0 0 0 0 0
+
+E0 003f3ff8 0 0 0 0 0 0
+
+L0 003f4064 0 0 0 0 0 0
+
+B0 003f4214 0 0 0 0 0 0
+
+P0 003f413c 0 0 0 0 0 0
+
+F0 003f41a8 0 003f2928 0 0 0 0
+
+F1 003f2928 003f41a8 003f46f0 003f5008 0 0 2
+-- Utility Functions --
+Funktion
+
+F1 003f46f0 003f2928 0 003f4870 0 0 2
+Table Effective Date(effectiveDate)
+Funktion
+DATE(effectiveDate;0;0;0;"YMD") //(year(effective_date) * 10000) + (month(effective_date) * 100) + day(effective_date)ä
+F1 003f4870 003f2928 003f49a8 0 0 0 2
+-- Wildcard Lookup Functions --
+Funktion
+
+F1 003f49a8 003f4870 0 003f4b98 0 0 2
+key2 lookup(tablename; key1; key2)
+Funktion
+IF (EXISTS(table(tablename);key1;key2) ; çä  key2 ; çä  IF (EXISTS(table(tablename);key1;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & " not found in " & tablename)çä    )çä)çä)
+F1 003f4b98 003f4870 0 003f4e18 0 0 2
+key3 lookup(tablename; key1; key2; key3)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3) ; çä  key3 ; çä  IF (EXISTS(table(tablename);key1;key2;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;key2;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & " not found in " & tablename)çä    )çä)çä)
+F1 003f4e18 003f4870 0 003f4f78 0 0 2
+key4 lookup(tablename; key1; key2; key3; key4)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3;key4) ; çä  key4 ; çä  IF (EXISTS(table(tablename);key1;key2;key3;1000) ; çä    1000 ; çä    IF (EXISTS(table(tablename);key1;key2;key3;0) ; çä      0 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & " not found in " & tablename)çä    )çä)çä)
+F1 003f4f78 003f4870 0 01e607b0 0 0 2
+key5 lookup(tablename; key1; key2; key3; key4; key5)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3;key4;key5) ; çä  key5 ; çä  IF (EXISTS(table(tablename);key1;key2;key3;key4;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;key2;key3;key4;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & "/" & key5 & " not found in " & tablename)çä    )çä)çä)
+F1 01e607b0 003f4870 0 01e605a8 0 0 2
+key6 lookup(tablename; key1; key2; key3; key4; key5; key6)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6) ; çä  key6 ; çä  IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & "/" & key5 & "/" & key6 & " not found in " & tablename)çä    )çä)çä)
+F1 01e605a8 003f4870 0 01e60cf0 0 0 2
+key7 lookup(tablename; key1; key2; key3; key4; key5; key6; key7)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7) ; çä  key7 ; çä  IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 & " not found in " & tablename)çä    )çä)çä)
+F1 01e60cf0 003f4870 0 01e60cf1 0 0 2
+key8 lookup(tablename; key1; key2; key3; key4; key5; key6; key7; key8)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;key8) ; çä  key8 ; çä  IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 & key8 & " not found in " & tablename)çä    )çä)çä)
+F1 01e60cf1 003f4870 0 01e60cf2 0 0 2
+key9 lookup(tablename; key1; key2; key3; key4; key5; key6; key7; key8, key9)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;key8;key9) ; çä  key9 ; çä  IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;key8;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;key8;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 & "/" & key8 & "/" & key9 & " not found in " & tablename)çä    )çä)çä)
+F1 01e60cf2 003f4870 0 0 0 0 2
+key10 lookup(tablename; key1; key2; key3; key4; key5; key6; key7; key8, key9, key10)
+Funktion
+IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;key8;key9;key10) ; çä  key10 ; çä  IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;key8;key9;0) ; çä    0 ; çä    IF (EXISTS(table(tablename);key1;key2;key3;key4;key5;key6;key7;key8;key9;1000) ; çä      1000 ; çä      ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 & "/" & key8 & "/" & key9 & "/" & key10 & " not found in " & tablename)çä    )çä)çä)
+F1 003f5008 003f41a8 003f5fe0 0 0 0 2
+-- NEW Table Access Functions --
+Funktion
+
+F1 003f5fe0 003f5008 003f61a0 0 0 0 2
+-- Table Access functions --
+Funktion
+
+F1 003f61a0 003f5fe0 003f6350 0 0 0 2
+--
+Funktion
+
+F1 003f6350 003f61a0 0 5b835007 0 0 2
+--
+Funktion
+
+F1 5b835007 003f61a0 0 5346c96d 0 0 2
+PP(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProductçäIF (EXISTS('Table PolicyProduct';e_(v_construct(s_keys);0); //carrierCodeçäe_(v_construct(s_keys);1); //productCodeçäe_(v_construct(s_keys);2) //productVersionCodeçä) ; çä   // then read from the table çäLOOKUPX('Table PolicyProduct';e_(v_construct(s_keys);0); //carrierCodeçäe_(v_construct(s_keys);1); //productCodeçäe_(v_construct(s_keys);2); //productVersionCodeçä'table effective date'(e_(v_construct(s_keys);3)); //saleEffectiveDateçäfield_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 5346c96d 003f61a0 0 62c65ecf 0 0 2
+PP DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodAccOption(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodAccOptionçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodAccOption';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodAccOption'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 62c65ecf 003f61a0 0 54a67e75 0 0 2
+SourceInfo(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table SourceInfoçäIF (EXISTS('Table SourceInfo';e_(v_construct(s_keys);0) //sequenceNumberçä) ; çä   // then read from the table çä'Table SourceInfo'[e_(v_construct(s_keys);0) //sequenceNumberçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 54a67e75 003f61a0 0 20578770 0 0 2
+PP DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension ParticipantProduct(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension ParticipantProductçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension ParticipantProduct';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension ParticipantProduct'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 20578770 003f61a0 0 7959d3ef 0 0 2
+PPExt PaymentAssembly(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct OLifEExtension PolicyProductExtension PaymentAssemblyçäIF (EXISTS('Table PolicyProduct OLifEExtension PolicyProductExtension PaymentAssembly';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct OLifEExtension PolicyProductExtension PaymentAssembly'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 7959d3ef 003f61a0 0 992bb58 0 0 2
+PP DisabilityHealthProduct(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProductçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 992bb58 003f61a0 0 577bbf2e 0 0 2
+PP DisabilityHealthProduct RiderProduct(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct RiderProductçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct RiderProduct';PP(s_keys;"Policy_Key"); //Policy_Keyçäe_(v_construct(s_keys);4) //riderCodeçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct RiderProduct'[PP(s_keys;"Policy_Key");  //Policy_Keyçäe_(v_construct(s_keys);4) //riderCodeçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 577bbf2e 003f61a0 0 648e1ac 0 0 2
+PP DisabilityHealthProduct DisabilityHealthProvisions BenePeriodAccOption(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions BenePeriodAccOptionçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions BenePeriodAccOption';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions BenePeriodAccOption'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 648e1ac 003f61a0 0 4e787a53 0 0 2
+PP DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodSickOption(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodSickOptionçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodSickOption';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions ElimPeriodSickOption'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 4e787a53 003f61a0 0 2c625972 0 0 2
+PP Fee(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct FeeçäIF (EXISTS('Table PolicyProduct Fee';PP(s_keys;"Policy_Key"); //Policy_Keyçäe_(v_construct(s_keys);4) //feeTypeçä) ; çä   // then read from the table çä'Table PolicyProduct Fee'[PP(s_keys;"Policy_Key");  //Policy_Keyçäe_(v_construct(s_keys);4) //feeTypeçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 2c625972 003f61a0 0 52635446 0 0 2
+PP DisabilityHealthProduct DisabilityHealthProvisions(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisionsçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 52635446 003f61a0 0 7823c98a 0 0 2
+PP JurisdictionApproval(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct JurisdictionApprovalçäIF (EXISTS('Table PolicyProduct JurisdictionApproval';PP(s_keys;"Policy_Key"); //Policy_Keyçä'key2 lookup'("Table PolicyProduct JurisdictionApproval";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4)) //jurisdictionçä) ; çä   // then read from the table çä'Table PolicyProduct JurisdictionApproval'[PP(s_keys;"Policy_Key");  //Policy_Keyçä'key2 lookup'("Table PolicyProduct JurisdictionApproval";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4)) //jurisdictionçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 7823c98a 003f61a0 0 ec82812 0 0 2
+PP DisabilityHealthProduct DisabilityHealthProvisions NatureSubCategoryOption(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions NatureSubCategoryOptionçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions NatureSubCategoryOption';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions NatureSubCategoryOption'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 ec82812 003f61a0 0 3113ff64 0 0 2
+PP PaymentModeMethProduct(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct PaymentModeMethProductçäIF (EXISTS('Table PolicyProduct PaymentModeMethProduct';PP(s_keys;"Policy_Key"); //Policy_Keyçäe_(v_construct(s_keys);4); //paymentModeçäe_(v_construct(s_keys);5) //paymentMethodçä) ; çä   // then read from the table çä'Table PolicyProduct PaymentModeMethProduct'[PP(s_keys;"Policy_Key");  //Policy_Keyçäe_(v_construct(s_keys);4);  //paymentModeçäe_(v_construct(s_keys);5) //paymentMethodçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 3113ff64 003f61a0 0 31c53898 0 0 2
+PP DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProductçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct';PP(s_keys;"Policy_Key"); //Policy_Keyçä'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4)); //underwritingClassçäe_(v_construct(s_keys);5); //underwritingSubClassçä'key4 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4));e_(v_construct(s_keys);5);e_(v_construct(s_keys);6)); //tobaccoPremiumBasisçä'key5 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4));e_(v_construct(s_keys);5);'key4 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4));e_(v_construct(s_keys);5);e_(v_construct(s_keys);6));e_(v_construct(s_keys);7)) //issueGenderçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct'[PP(s_keys;"Policy_Key");  //Policy_Keyçä'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4));  //underwritingClassçäe_(v_construct(s_keys);5);  //underwritingSubClassçä'key4 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4));e_(v_construct(s_keys);5);e_(v_construct(s_keys);6));  //tobaccoPremiumBasisçä'key5 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4));e_(v_construct(s_keys);5);'key4 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");'key2 lookup'("Table PolicyProduct DisabilityHealthProduct OLifEExtension DisabilityHealthProductExtension UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4));e_(v_construct(s_keys);5);e_(v_construct(s_keys);6));e_(v_construct(s_keys);7)) //issueGenderçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 31c53898 003f61a0 0 1f101596 0 0 2
+PP DisabilityHealthProduct RiderProduct OLifEExtension RiderProductExtension ParticipantProduct(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct RiderProduct OLifEExtension RiderProductExtension ParticipantProductçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct RiderProduct OLifEExtension RiderProductExtension ParticipantProduct';PP(s_keys;"Policy_Key"); //Policy_Keyçäe_(v_construct(s_keys);4) //riderCodeçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct RiderProduct OLifEExtension RiderProductExtension ParticipantProduct'[PP(s_keys;"Policy_Key");  //Policy_Keyçäe_(v_construct(s_keys);4) //riderCodeçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 1f101596 003f61a0 0 4a8726d3 0 0 2
+PP PPInfo(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct PolicyProductInfoçäIF (EXISTS('Table PolicyProduct PolicyProductInfo';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct PolicyProductInfo'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 4a8726d3 003f61a0 0 3d343520 0 0 2
+PP DisabilityHealthProduct RiderProduct UnderwritingClassProduct(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProductçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct';PP(s_keys;"Policy_Key"); //Policy_Keyçäe_(v_construct(s_keys);4); //riderCodeçä'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5)); //underwritingClassçäe_(v_construct(s_keys);6); //underwritingSubClassçä'key5 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5));e_(v_construct(s_keys);6);e_(v_construct(s_keys);7)); //tobaccoPremiumBasisçä'key6 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5));e_(v_construct(s_keys);6);'key5 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5));e_(v_construct(s_keys);6);e_(v_construct(s_keys);7));e_(v_construct(s_keys);8)) //issueGenderçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct'[PP(s_keys;"Policy_Key");  //Policy_Keyçäe_(v_construct(s_keys);4);  //riderCodeçä'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5));  //underwritingClassçäe_(v_construct(s_keys);6);  //underwritingSubClassçä'key5 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5));e_(v_construct(s_keys);6);e_(v_construct(s_keys);7));  //tobaccoPremiumBasisçä'key6 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5));e_(v_construct(s_keys);6);'key5 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);'key3 lookup'("Table PolicyProduct DisabilityHealthProduct RiderProduct UnderwritingClassProduct";PP(s_keys;"Policy_Key");e_(v_construct(s_keys);4);e_(v_construct(s_keys);5));e_(v_construct(s_keys);6);e_(v_construct(s_keys);7));e_(v_construct(s_keys);8)) //issueGenderçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 3d343520 003f61a0 0 773e2887 0 0 2
+IssueGenderCC(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table IssueGenderCCçäIF (EXISTS('Table IssueGenderCC';e_(v_construct(s_keys);0) //IssueGenderCC_id_extçä) ; çä   // then read from the table çä'Table IssueGenderCC'[e_(v_construct(s_keys);0) //IssueGenderCC_id_extçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+F1 773e2887 003f61a0 0 0 0 0 2
+PP DisabilityHealthProduct DisabilityHealthProvisions BenePeriodSickOption(s_keys; field_name)
+Funktion
+ // Looks up the plan info for field_name from table Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions BenePeriodSickOptionçäIF (EXISTS('Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions BenePeriodSickOption';PP(s_keys;"Policy_Key") //Policy_Keyçä) ; çä   // then read from the table çä'Table PolicyProduct DisabilityHealthProduct DisabilityHealthProvisions BenePeriodSickOption'[PP(s_keys;"Policy_Key") //Policy_Keyçä](field_name) ; çä   // Else return error messageçä"NoProdInfoFound"çä)
+A0 003f4280 0 0 0 0 0 0
+
+T0 003f42ec 0 0 0 0 0 0
+
+I0 003f4358 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P0
+F36
+003f2928
+003f46f0
+003f4870
+003f49a8
+003f4b98
+003f4e18
+003f4f78
+01e607b0
+01e605a8
+01e60cf0
+01e60cf1
+01e60cf2
+003f5008
+003f5fe0
+003f61a0
+003f6350
+5b835007
+5346c96d
+62c65ecf
+54a67e75
+20578770
+7959d3ef
+992bb58
+577bbf2e
+648e1ac
+4e787a53
+2c625972
+52635446
+7823c98a
+ec82812
+3113ff64
+31c53898
+1f101596
+4a8726d3
+3d343520
+773e2887
+A0
+T0
+!10
+003f46f0 -2 -2
+Description: Converts the date to format YYYYMMDD.çä çäModification Log:çä03/07/2007 CSC Illustrations ILLUS001  Modified function for performanceçä10/31/2007 CSC Initial Calculation/Ruleçä
+003f49a8 -2 -2
+Description: Checks that Key2 exists in table lookup
+003f4b98 -2 -2
+Description: Checks that Key3 exists in table lookup
+003f4e18 -2 -2
+Description: Checks that Key4 exists in table lookup
+003f4f78 -2 -2
+Description: Checks that Key5 exists in table lookup
+01e607b0 -2 -2
+Description: Checks that Key6 exists in table lookup
+01e605a8 -2 -2
+Description: Checks that Key7 exists in table lookup
+01e60cf0 -2 -2
+Description: Checks that Key8 exists in table lookup
+01e60cf1 -2 -2
+Description: Checks that Key9 exists in table lookup
+01e60cf2 -2 -2
+Description: Checks that Key10 exists in table lookup
+;Offset=00000000

@@ -1,0 +1,92 @@
+;1	08.12.2016 13:29:33	jlawrie2	
+X0 19a417c 0 0 0 0 0 0
+
+O0 19a402c 0 0 0 0 0 0
+
+E0 19a409c 0 0 0 0 0 0
+
+L0 19a410c 0 0 0 0 0 0
+
+B0 19a42cc 0 0 0 0 0 0
+
+P3 19a41ec 0 19a6118 0 0 0 2
+
+--description
+Advanced marketing illustrations for Equity Indexed Universal Life products.
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.7.1    "
+P13 19a6118 19a41ec 553fd607 0 0 0 2
+Cash Value UL Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Advanced Marketing Illustrations"
+OUTPUT Runtime Version
+"2.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"EIULAdvMarketingIllus.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 553fd607 19a6118 5176ec96 0 0 0 2
+EIUL Illustrations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 5176ec96 553fd607 0 d794115 0 50 2
+Illustrations@EIULillustrations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 d794115 553fd607 0 0 0 50 2
+Advanced Illustrations@AdvMarketingIllus
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 19a425c 0 0 0 0 0 0
+
+A0 19a433c 0 0 0 0 0 0
+
+T0 19a43ac 0 0 0 0 0 0
+
+I0 19a441c 0 503fcd03 0 0 0 0
+
+I0 503fcd03 19a441c 0 0 0 0 0
+ULAdvMarketingIllus.pms
+-
+O0
+E0
+L0
+B0
+P1
+19a6118
+F0
+A0
+T0
+;Offset=00000000

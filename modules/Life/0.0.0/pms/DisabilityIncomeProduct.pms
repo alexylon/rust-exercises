@@ -1,0 +1,5008 @@
+;1	08.12.2016 13:38:33	jlawrie2	
+X0 de07a8 0 4902f76c 0 0 0 0
+
+X0 4902f76c de07a8 69346161 0 0 0 2
+-- DI008.utv --
+X48 69346161 4902f76c 0 64cd6730 0 0 2
+OUTPUT Policy Total Annual Premium("C")
+OUTPUT Policy Total Annual Premium("C")
+523.5
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X48 64cd6730 4902f76c 0 5909360c 0 0 2
+OUTPUT Policy Mode Premium("C")
+OUTPUT Policy Mode Premium("C")
+523.5
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X46 5909360c 4902f76c 0 5f089fa3 0 0 2
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+46.35
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+X46 5f089fa3 4902f76c 0 33cc5581 0 0 2
+OUPUT Policy BenefitAmt("C")
+OUPUT Policy BenefitAmt("C")
+0
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+X46 33cc5581 4902f76c 0 46a3efce 0 0 2
+OUTPUT Policy BenefitAmtAcc("C")
+OUTPUT Policy BenefitAmtAcc("C")
+1000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+X46 46a3efce 4902f76c 0 1e3e3a2a 0 0 2
+OUTPUT Policy BenefitAmtSick("C")
+OUTPUT Policy BenefitAmtSick("C")
+1000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+X46 1e3e3a2a 4902f76c 0 63a5346 0 0 2
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+500
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+X46 63a5346 4902f76c 0 47c1ca07 0 0 2
+OUTPUT Policy BenefitAmtDeath("C")
+OUTPUT Policy BenefitAmtDeath("C")
+3000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+0
+X58 47c1ca07 4902f76c 0 6108ea9b 0 0 2
+OUTPUT Policy Total Annual Premium("C")
+OUTPUT Policy Total Annual Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 6108ea9b 4902f76c 0 176bfb24 0 0 2
+OUTPUT Policy Mode Premium("C")
+OUTPUT Policy Mode Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X56 176bfb24 4902f76c 0 bf36b75 0 0 2
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+46.35
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 bf36b75 4902f76c 0 62a3ceb2 0 0 2
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+3.01
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 62a3ceb2 4902f76c 2f5ce9df 2d427d9d 0 0 2
+OUPUT Policy BenefitAmt("C")
+OUPUT Policy BenefitAmt("C")
+0
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 2f5ce9df 62a3ceb2 0 319335cc 0 0 2
+OUTPUT Policy BenefitAmtAcc("C")
+OUTPUT Policy BenefitAmtAcc("C")
+1000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 319335cc 62a3ceb2 0 2e9cfa1c 0 0 2
+OUTPUT Policy BenefitAmtSick("C")
+OUTPUT Policy BenefitAmtSick("C")
+1000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 2e9cfa1c 62a3ceb2 0 7118d234 0 0 2
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+500
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 7118d234 62a3ceb2 0 0 0 0 2
+OUTPUT Policy BenefitAmtDeath("C")
+OUTPUT Policy BenefitAmtDeath("C")
+3000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2007
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X58 2d427d9d 4902f76c 0 7d7bdab3 0 0 2
+OUTPUT Policy Total Annual Premium("C")
+OUTPUT Policy Total Annual Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 7d7bdab3 4902f76c 0 60ec2391 0 0 2
+OUTPUT Policy Mode Premium("C")
+OUTPUT Policy Mode Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X56 60ec2391 4902f76c 0 7d7cfb15 0 0 2
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+46.35
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 7d7cfb15 4902f76c 0 6f916f1 0 0 2
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+3.01
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X58 6f916f1 4902f76c 0 31488f09 0 0 2
+OUPUT Policy BenefitAmt("C")
+OUPUT Policy BenefitAmt("C")
+5536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 31488f09 4902f76c 0 204f53e5 0 0 2
+OUTPUT Policy BenefitAmtAcc("C")
+OUTPUT Policy BenefitAmtAcc("C")
+6536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 204f53e5 4902f76c 0 678b4b47 0 0 2
+OUTPUT Policy BenefitAmtSick("C")
+OUTPUT Policy BenefitAmtSick("C")
+6536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 678b4b47 4902f76c 0 100e2b11 0 0 2
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+6036
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 100e2b11 4902f76c 0 27850c13 0 0 2
+OUTPUT Policy BenefitAmtDeath("C")
+OUTPUT Policy BenefitAmtDeath("C")
+8536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+0
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 27850c13 4902f76c 0 10970a84 0 0 2
+OUTPUT Policy Total Annual Premium("C")
+OUTPUT Policy Total Annual Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 10970a84 4902f76c 0 7030eb05 0 0 2
+OUTPUT Policy Mode Premium("C")
+OUTPUT Policy Mode Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X56 7030eb05 4902f76c 0 dab4ca5 0 0 2
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+46.35
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 dab4ca5 4902f76c 0 5d5d7078 0 0 2
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+3.01
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X58 5d5d7078 4902f76c 0 2f667ce0 0 0 2
+OUPUT Policy BenefitAmt("C")
+OUPUT Policy BenefitAmt("C")
+536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 2f667ce0 4902f76c 0 2664dd94 0 0 2
+OUTPUT Policy BenefitAmtAcc("C")
+OUTPUT Policy BenefitAmtAcc("C")
+1536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 2664dd94 4902f76c 0 5cc4f497 0 0 2
+OUTPUT Policy BenefitAmtSick("C")
+OUTPUT Policy BenefitAmtSick("C")
+1536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 5cc4f497 4902f76c 0 69267789 0 0 2
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+1036
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 69267789 4902f76c 0 709bddd1 0 0 2
+OUTPUT Policy BenefitAmtDeath("C")
+OUTPUT Policy BenefitAmtDeath("C")
+3536
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+01/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 709bddd1 4902f76c 0 41258b59 0 0 2
+OUTPUT Policy Total Annual Premium("C")
+OUTPUT Policy Total Annual Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X58 41258b59 4902f76c 0 49f523d9 0 0 2
+OUTPUT Policy Mode Premium("C")
+OUTPUT Policy Mode Premium("C")
+553.6
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+X56 49f523d9 4902f76c 0 47eae67 0 0 2
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+OUPTUT Coverage PremiumPerUnit("C"; 0)
+46.35
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 47eae67 4902f76c 0 17474260 0 0 2
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+OUPTUT CovOption PremiumPerUnit("C"; 0; 0)
+3.01
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 17474260 4902f76c 0 422adc16 0 0 2
+OUPUT Policy BenefitAmt("C")
+OUPUT Policy BenefitAmt("C")
+0
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 422adc16 4902f76c 0 3fcc6a27 0 0 2
+OUTPUT Policy BenefitAmtAcc("C")
+OUTPUT Policy BenefitAmtAcc("C")
+1000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 3fcc6a27 4902f76c 0 416fe6bf 0 0 2
+OUTPUT Policy BenefitAmtSick("C")
+OUTPUT Policy BenefitAmtSick("C")
+1000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 416fe6bf 4902f76c 0 43920944 0 0 2
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+OUTPUT Policy BenefitAmtPartialRecovery("C")
+500
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+X56 43920944 4902f76c 0 0 0 0 2
+OUTPUT Policy BenefitAmtDeath("C")
+OUTPUT Policy BenefitAmtDeath("C")
+3000
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+Input TransEffDate
+02/01/2016
+INPUT Payment Form
+1
+INPUT Message Language
+1
+INPUT Policy ProductCode
+DI1PA
+INPUT Policy ProductVersionCode
+A
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2074
+INPUT Policy Coverage ProductCode
+DI1PA
+INPUT Policy Coverage ProductVersionCode
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy DisabilityHealth Participant TempTableRatingEndDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate
+01/01/2006
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+21
+INPUT Policy DisabilityHealth BenefitAmt
+1000
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy DisabilityHealth ElimPeriodAcc
+9
+INPUT Policy DisabilityHealth ElimPeriodSick
+9
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus DisabledStatus
+1
+INPUT Policy DisabilityHealth Participant ParticipantStatus EffDate
+01/01/2006
+INPUT Policy DisabilityHealth BenefitAmtMaximum
+10000
+INPUT Policy DisabilityHealth AnnualMaxAmt
+50000
+INPUT Policy DisabilityHealth LifetimeMaxAmt
+1000000
+INPUT Policy DisabilityHealth BenefitAmt ReceivedATD
+0
+INPUT Policy DisabilityHealth BenefitAmt ReceivedLifetime
+5000
+INPUT Policy Number Of CoverageOption
+1
+INPUT Policy DisabilityHealth Rider RiderCode
+DIROPPA
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+69
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Rider EffDate
+01/01/2060
+INPUT Policy CoverageOption TermDate
+01/01/2060
+INPUT Policy CoverageOption PermTableRating
+0
+INPUT Policy CoverageOption PermFlatExtraAmt
+0
+INPUT Policy CoverageOption TempFlatExtraAmt
+0
+INPUT Policy CoverageOption number of SubstandardRating
+0
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P0 de0804 0 36a62fea 0 0 0 0
+
+P13 36a62fea de0804 56a45ea3 0 0 0 2
+Disability Income Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Main Integration Model for Disability Income Products"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"DisabilityIncomeProduct.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P3 56a45ea3 36a62fea 0 0 0 50 2
+Contract Documents@DisabilityContractDocs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 de0860 0 0 0 0 0 0
+
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 5503946d 0 6764a9a7 0 0 0 0
+
+I0 6764a9a7 5503946d 0 0 0 0 0
+DisabilityContractDocs.pms
+-
+O0
+E0
+L0
+B0
+P1
+36a62fea
+F0
+A0
+T0
+;Offset=00000000

@@ -1,0 +1,967 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 23d02a8 0 23c7500 0 0 0 0
+
+X0 23c7500 23d02a8 23c7598 226027da 0 0 0
+-- Unit Test Cases --
+X0 23c7598 23c7500 23c7630 23d4220 0 0 0
+-- VA1PA --
+X11 23c7630 23c7598 23c79d0 0 0 0 2
+BON Contribution Bonus Rate
+'BON Contribution Bonus Rate'(30000)
+0.005
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+5000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+9
+X11 23c79d0 23c7630 0 23d19a0 0 0 2
+f_BON_Contribution_Bonus_Rate1
+'BON Contribution Bonus Rate'(30000)
+0.005
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+10000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+English
+X11 23d19a0 23c7630 0 23d1cc0 0 0 2
+f_BON_Contribution_Bonus_Rate2
+'BON Contribution Bonus Rate'(30000)
+0.005
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+15000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+English
+X36 23d1cc0 23c7630 0 23d2010 0 0 2
+BON Contribution Bonus- VA1PA
+'BON Contribution Bonus'
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+50000
+INPUT Message Language
+9
+INPUT PolicyProduct ReserveFunction
+0
+INPUT Policy Annuity TotalDepositIssue to date
+25000000
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount
+25000000
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinEffDate[1]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+2000
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinEffDate[2]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[2]
+2000
+INPUT Policy FinancialActivity FinActivityType[3]
+1
+INPUT Policy FinancialActivity FinEffDate[3]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[3]
+1000
+INPUT Policy FinancialActivity FinActivityType[4]
+1
+INPUT Policy FinancialActivity FinEffDate[4]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[4]
+5000
+INPUT Policy FinancialActivity FinActivityType[5]
+6
+INPUT Policy FinancialActivity FinEffDate[5]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[5]
+8000
+INPUT Policy FinancialActivity FinActivityType[6]
+1
+INPUT Policy FinancialActivity FinEffDate[6]
+02/01/2007
+INPUT Policy Annuity TotalDepositITD
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt
+0
+X20 23d2010 23c7630 0 0 0 0 2
+OUTPUT Projected Contribution Bonus
+'OUTPUT Projected Contribution Bonus'
+0
+INPUT Policy Annuity TotalDepositIssue to date
+30000
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy FinancialActivity FinEffDate
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount
+1000
+INPUT Policy PaymentMode
+4
+INPUT Policy PaymentAmount
+1000
+INPUT Policy Annuity InitDepositAmount
+10000
+INPUT Calling Program
+
+INPUT Policy PaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+English
+X0 23d4220 23c7500 23d43f8 23d4d48 0 0 0
+-- VA2PA --
+X11 23d43f8 23d4220 23d46e8 0 0 0 2
+f_BON_Contribution_Bonus_Rate3 - VA2
+'BON Contribution Bonus Rate'(10000)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+10000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+English
+X11 23d46e8 23d43f8 0 23d4a00 0 0 2
+f_BON_Contribution_Bonus_Rate4
+'BON Contribution Bonus Rate'(16000)
+0.000625
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+16000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+English
+X11 23d4a00 23d43f8 0 0 0 0 2
+f_BON_Contribution_Bonus_Rate5
+'BON Contribution Bonus Rate'(26000)
+0.00461538461538462
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+26000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Message Language
+English
+X0 23d4d48 23c7500 23d4dd8 23d5108 0 0 0
+-- VAUB1 --
+X12 23d4dd8 23d4d48 0 0 0 0 2
+f_BON_Contribution_Bonus_Rate6 - VAUB1
+'BON Contribution Bonus Rate'(26000)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VAUB1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+26000
+INPUT Message Language
+9
+INPUT PolicyProduct ReserveFunction
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+X0 23d5108 23c7500 23d4e50 23d5e18 0 0 0
+-- SPDA1PA --
+X12 23d4e50 23d5108 0 23d5500 0 0 2
+BON Contribution Bonus Rate- SPDA1PA
+'BON Contribution Bonus Rate'(50000)
+0.012
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+50000
+INPUT Message Language
+9
+INPUT PolicyProduct ReserveFunction
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+X16 23d5500 23d5108 0 23d5b38 0 0 2
+BON Contribution Amount- SPDA1PA
+'BON Contribution Amount'
+50000
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+50000
+INPUT Message Language
+9
+INPUT PolicyProduct ReserveFunction
+0
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinEffDate
+1/1/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount
+50000
+INPUT Calling Program
+
+INPUT Policy FinancialActivity FinActivityGrossAmt
+50000
+X34 23d5b38 23d5108 0 0 0 0 2
+BON Contribution Bonus- SPDA1PA
+'BON Contribution Bonus'
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+50000
+INPUT Message Language
+9
+INPUT PolicyProduct ReserveFunction
+0
+INPUT Policy Annuity TotalDepositIssue to date
+30000
+INPUT Policy number of FinancialActivity
+6
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy FinancialActivity FinEffDate
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount
+7000
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinEffDate[1]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+2000
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinEffDate[2]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[2]
+2000
+INPUT Policy FinancialActivity FinActivityType[3]
+1
+INPUT Policy FinancialActivity FinEffDate[3]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[3]
+1000
+INPUT Policy FinancialActivity FinActivityType[4]
+1
+INPUT Policy FinancialActivity FinEffDate[4]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[4]
+10000
+INPUT Policy FinancialActivity FinActivityType[5]
+1
+INPUT Policy FinancialActivity FinEffDate[5]
+01/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[5]
+8000
+INPUT Policy Annuity TotalDepositITD
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt[5]
+0
+X0 23d5e18 23c7500 23d67b8 23d7078 0 0 0
+-- Off-issue calcs
+X21 23d67b8 23d5e18 0 23d6ae0 0 0 2
+BON Contribution Bonus- SPDA2PA
+'BON Contribution Bonus'
+0
+INPUT TransEffDate
+07/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+50000
+INPUT Message Language
+9
+INPUT PolicyProduct ReserveFunction
+0
+INPUT Policy number of FinancialActivity
+2
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinEffDate[2]
+0
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinEffDate[1]
+07/01/2006
+INPUT Policy Annuity TotalDepositIssue to date
+20000
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+10000
+INPUT Policy Annuity TotalDepositITD
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt[1]
+0
+X24 23d6ae0 23d5e18 0 0 0 0 2
+BON Contribution Bonus- VA2PA
+'BON Contribution Bonus'
+0
+INPUT TransEffDate
+12/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VA2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Annuity InitDepositAmount
+50000
+INPUT Message Language
+9
+INPUT PolicyProduct ReserveFunction
+0
+INPUT Policy number of FinancialActivity
+4
+INPUT Policy FinancialActivity FinActivityType[2]
+1
+INPUT Policy FinancialActivity FinEffDate[2]
+0
+INPUT Policy FinancialActivity FinActivityType[1]
+1
+INPUT Policy FinancialActivity FinEffDate[1]
+07/01/2006
+INPUT Policy Annuity TotalDepositIssue to date
+30000
+INPUT Policy FinancialActivity FinActivityGrossAmount[1]
+10000
+INPUT Policy FinancialActivity FinActivityType[3]
+1
+INPUT Policy FinancialActivity FinEffDate[3]
+12/1/2006
+INPUT Policy FinancialActivity FinActivityGrossAmount[3]
+25000
+INPUT Policy Annuity TotalDepositITD
+50000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+1
+INPUT Policy FinancialActivity FinActivityGrossAmt[3]
+0
+X23 23d7078 23c7500 0 0 0 0 2
+BON Projected Contribution Bonus
+'BON Projected Contribution Bonus'("C")
+350
+INPUT Policy PaymentMode
+4
+INPUT Policy ProductCode
+VA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy PaymentAmount
+5000
+INPUT Policy Annuity InitDepositAmount
+5000
+INPUT Calling Program
+VPMSTEST
+INPUT Illus PremiumDesignType
+1000500002
+INPUT PolicyProduct Ownership MaxPremiumInitialAmt
+10000
+INPUT PolicyProduct Ownership MaxPremiumAddOnAmt
+10000
+INPUT PolicyProduct Ownership MinPremiumInitialAmt
+50
+INPUT PolicyProduct Ownership MinPremiumAddOnAmt
+50
+INPUT Message Language
+9
+Input TransEffDate
+01/01/2006
+INPUT Illus PremiumStreamAmt
+9000
+INPUT PolicyProduct ReserveFunction
+0.01
+INPUT Policy ProductVersionCode
+1
+INPUT Policy ProductType
+10
+INPUT Illus PremiumStreamAmt[1]
+70000
+INPUT Policy LifeParticipant IssueGender
+1
+X43 226027da 23d02a8 1915cc88 0 0 0 2
+BON Contribution Bonus Rate(cont_amt)
+BON Contribution Bonus Rate(15001)
+0.01
+INPUT Policy Annuity QualPlanType
+1
+INPUT Policy Jurisdiction
+51
+INPUT Calling Program
+VPMSTEST
+INPUT TransEffDate
+04/01/2006
+INPUT Premium Payment
+2605.34
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy Participant IssueGender
+1
+INPUT Policy SubAccount AllocSequence
+
+INPUT Policy SubAccount AllocPercent[4]
+15
+INPUT Calling System
+V1
+INPUT Policy QualifiedCode
+1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy SubAccount AllocPercent[2]
+30
+INPUT Policy SubAccount AllocationAmt[2]
+0
+INPUT Policy number of FinancialActivity
+1
+INPUT Policy EffDate
+02/01/2006
+INPUT Policy SubAccount AllocationAmt[4]
+0
+INPUT Policy CarrierCode
+00
+INPUT Policy SubAccount AllocSequence[2]
+
+INPUT Policy Participant IssueAge
+35
+INPUT Policy SubAccount AllocSequence[4]
+
+INPUT Policy FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount AllocPercent
+20
+INPUT Policy Annuity initPaymentAmt
+1000
+INPUT Policy number of SubAccount
+5
+INPUT Policy TaxLocality
+78572
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy SubAccount AllocPercent[3]
+25
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy FinancialActivity FinEffDate
+04/01/2006
+INPUT Policy FinancialActivity FinActivityGrossAmt
+2605.34
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy SubAccount AllocationAmt[3]
+0
+INPUT Policy SubAccount AllocSequence[1]
+
+INPUT Policy SubAccount AllocPercent[1]
+10
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy PaymentAmt
+2605.34
+INPUT Policy SubAccount AllocationAmt
+0
+INPUT Policy SubAccount AllocSequence[3]
+
+INPUT Policy PaymentMode
+1
+INPUT Policy SubAccount AllocationAmt[1]
+0
+INPUT Message Language
+9
+X51 1915cc88 226027da 0 0 0 0 2
+BON Contribution Bonus Rate
+BON Contribution Bonus Rate(11000)
+0.01
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Annuity InitPaymentAmt
+500
+INPUT Policy Participant IssueAge
+21
+INPUT Policy Annuity AccumValueIntRateCurrent
+11.25
+INPUT Policy PaymentAmt
+750
+INPUT Policy Annuity InitDepositAmt
+8000
+INPUT Policy Investment AccountValue
+0
+INPUT Policy SubAccount TotValue
+0
+INPUT Message Language
+9
+INPUT Policy Payout IncomeOption
+1
+INPUT Policy Payout AnnuityStartingDate
+01/01/2055
+INPUT Policy number of Rider
+0
+INPUT Policy Annuity CumWthdrwlAmtYTD
+0
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+2
+INPUT Policy Participant TobaccoPremiumBasis
+2
+INPUT Policy Payout PeriodCertainPeriods
+0
+INPUT Policy Annuity BandPremInd
+8
+INPUT Policy Payout AssumedInterestRate
+4
+INPUT Policy Payout PayoutAge
+70
+INPUT Policy Payout PayoutMode
+12
+INPUT Policy LapseProvision GracePeriodEntryType
+6
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Jurisdiction
+1000
+INPUT Policy TermDate
+12/31/2054
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+3
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy ProductType
+11
+INPUT Policy Annuity CumWthdrwlAmtITD
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Annuity SurrenderFreeAmtUsedATD
+0
+INPUT Policy Annuity GuarMinCashSurrValue
+0
+INPUT Policy Annuity GuarMinCashSurrDate
+05/04/2006
+INPUT Policy Annuity NetWthdrwlAmtITD
+0
+INPUT Policy Annuity GuarIntRate
+4
+INPUT PolicyProduct GuarIntRate
+4
+INPUT PolicyProduct UnbundledMortExpInd
+0
+INPUT PolicyProduct PolicyProductTypeCode
+0
+INPUT PolicyProduct MortalityOrMorbidityTable
+185
+INPUT PolicyProduct ReserveFunction
+4
+INPUT Policy Payout LivesType
+1
+INPUT Policy number of FinancialActivity
+0
+INPUT Policy number of SubAccount
+1
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT PolicyProduct number of Fee
+0
+O0 23d0164 0 0 0 0 0 0
+
+E0 23d01d0 0 0 0 0 0 0
+
+L0 23d023c 0 0 0 0 0 0
+
+B0 23d03ec 0 0 0 0 0 0
+
+P3 23d0314 0 23d7918 0 0 0 2
+
+--description
+Annuity Products often provide for a contribution bonus on the initial premium. This additional amount is added to the policy value immediately. It is usually expressed as a percentage of the initial premium, and can vary by the amount of the premium.çä çäThis model supports determination of the contribution bonus amounts for contributions to annuity contracts. The ability to vary the bonus amount based on qualifying criteria and premium commitment threshold amounts is included. Multiple banding types are supported.çä çäRELEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1301 - SCARAB/JIRA issues pA2118çäRELEASE WMA1001 - ENH1061çäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"csc us internal use only - workbench"
+COMPILERVERSION
+"4.5.4"
+P13 23d7918 23d0314 23d7ed8 0 0 0 2
+Annuity Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Annuity Contribution Bonus"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PremiumBonus.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P6 23d7ed8 23d7918 0 0 0 0 2
+Contribution Bonus
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Contribution Bonus
+'GEN Round'('BON Contribution Bonus';2)
+OUTPUT Projected Contribution Bonus
+'GEN Round'('BON Projected Contribution Bonus'('GEN Vector Blank');2)
+OUTPUT Contribution Bonus Percent
+IF ('OUTPUT Contribution Bonus' = 0 ; çä  FORMAT(0;"2.3") ; çä  FORMAT(('OUTPUT Contribution Bonus' / 'BON Contribution Amount') * 100;"2.3")çä)
+F0 23d0380 0 1c2799a3 0 0 0 0
+
+F1 1c2799a3 23d0380 23d83e0 0 0 0 2
+:BON
+Funktion
+
+F1 23d83e0 1c2799a3 23d8480 23d9210 0 0 2
+BON Contribution Bonus
+Funktion
+'BON Intermediate Amount'('Policy Annuity TotalDepositITD') - IF ( /*Any additional contribution?*/ 'Policy Annuity TotalDepositITD' - 'BON Contribution Amount' = 0 ; çä   /*No - Then no more bonus*/ 0 ; çä   /*Yes - calculated additional contribution bonus*/ 'BON Intermediate Amount'('Policy Annuity TotalDepositITD' - 'BON Contribution Amount')çä)
+F1 23d8480 23d83e0 23d8750 23d8c28 0 0 2
+BON Contribution Amount
+Funktion
+IF ('Std Calling System Is wmaJ' ; çä  'Policy PaymentAmt' ; çä  IF ( /*Has a contribution been made?*/ 'BON Contribution index' >= 0 ; çä     /*Yes - then return contribution bonus*/ IF ( /*Is contribution made in first year?*/ 'Duration Year'('Policy FinancialActivity FinEffDate'('BON Contribution index');'Policy EffDate') = 1 ; çä       // only pay bonus for contributions in first yearçä/*Yes - return bonus amount*/'Policy FinancialActivity FinActivityGrossAmt'('BON Contribution index') ; çä       /*No - return zero*/ 0çä    ) ; çä   /*No - zero bonus*/ 0çä)çä)
+F1 23d8750 23d8480 23d8828 0 0 0 2
+BON Contribution index
+Funktion
+'BON Contribution index rec'('Policy Number of FinancialActivity' - 1)
+F1 23d8828 23d8750 0 0 0 0 2
+BON Contribution index rec(financialActivityIndex)
+Funktion
+IF ( /*reached the end of recursion through txn's?*/ financialActivityIndex < 0 ; çä   /*Yes - return stopping code*/ -1 ; çä   /*no - carry on looking for contribution*/ IF ('FinActivityType is Grouped Premium Payment'('Policy FinancialActivity FinActivityType'(financialActivityIndex)) && 'DATE Are Dates Equal'(TransEffDate;'Policy FinancialActivity FinEffDate'(financialActivityIndex)) ; çä    financialActivityIndex ; çä    'BON Contribution index rec'(financialActivityIndex - 1)çä  )çä)
+F1 23d8c28 23d83e0 23d8d50 0 0 0 2
+BON Intermediate Amount(cont_amt)
+Funktion
+cont_amt * 'BON Contribution Bonus Rate'(cont_amt)
+F1 23d8d50 23d8c28 23d90a0 0 0 0 2
+BON Contribution Bonus Rate(cont_amt)
+Funktion
+IF (cont_amt = 0 ; çä  0 ; çä  IF ( /*does this product pay contribution bonuses?*/ 'PI Reward RewardResultType'('Policy ProductCode';'Constant RewardType PremiumBonus';'Policy EffDate') EQUAL 'GEN Vector Blank' && NOT('BON Fee Based Bonus Exists') ; çä     // no bonus rate for this productçä0 ; çä     /*Yes*/ IF ( /*Is bonus percent defined in product definition?*/ 'BON Bonus Rate In Prod Info' ; çä       /*yes - get it from there*/ 'BON Bonus Contribution Prod Def Rate'(cont_amt) / 100 ; çä       /*No - need to get rate from rate access*/ Rate('Policy ProductCode';"PREMBON";'Policy EffDate';V_('GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'BON Bonus Rate Table ID'('RewardResultType PremiumBonus'); //âââââ'BON Bonus Rate Table ID'(7);çä'GEN Vector Blank';'GEN Vector Blank';cont_amt)) / 100çä    )çä)çä)
+F1 23d90a0 23d8d50 10c4a6ec 23d9158 0 0 2
+BON Bonus Rate In Prod Info
+Funktion
+IF (('PI Reward RewardResultType'('Policy ProductCode';'Constant RewardType PremiumBonus';'Policy EffDate') EQUAL 'GEN Vector Blank') ; çä  0 ; çä  IF ('BON Bonus Rate Table ID'('RewardResultType PremiumBonus') ALIKE 'GEN Vector Blank' ; çä    1 ; çä    0çä  )çä) || 'BON Fee ChargeBasedOn Exists'
+F1 10c4a6ec 23d90a0 0 12aef38a 0 0 2
+--BON Fee ChargeBasedOn Exists
+Funktion
+//IF(/*does this product pay contribution bonuses as Reward Percent?*/çä('PI PolicyProduct Fee FeeType'('Policy ProductCode'; 'FeeType PremiumLoad'; 'Policy EffDate') NOTEQUAL 'GEN Vector Blank'çä&&çäâ('Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee ChargeBasedOn'('Policy ProductCode'; 'FeeType PremiumLoad'; 'Policy EffDate'))çäâ||çäâ'Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee SecondaryChargeBasedOn'('Policy ProductCode'; 'FeeType PremiumLoad'; 'Policy EffDate'))çäâ||çäâ'Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee TertiaryChargeBasedOn'('Policy ProductCode'; 'FeeType PremiumLoad'; 'Policy EffDate'))çäâ)çä)//;çäâ/*Yes*/çäâ//1;//'PI Reward RewardPercent'('Policy ProductCode'; 7; 'Policy EffDate')/100;çäâçäâ//Otherwise, no bonus rate for this product from fee objectçä//â0çä//)
+F1 12aef38a 23d90a0 3c6645b7 0 0 0 2
+BON Fee ChargeBasedOn Exists
+Funktion
+ //IF(/*does this product pay contribution bonuses as Reward Percent?*/çä('BON Fee Based Bonus Exists' && 'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate') EQUAL 'GEN Vector Blank') //;çä/*Yes*///1;//'PI Reward RewardPercent'('Policy ProductCode'; 7; 'Policy EffDate')/100;çä//Otherwise, no bonus rate for this product from fee objectçä//â0çä//)ä
+F1 3c6645b7 12aef38a 0 75d97ce8 0 0 2
+BON Fee ChargeBasedOn is ContributionBonus(ChargeBasedOn)
+Funktion
+ChargeBasedOn EQUAL "1000500029"
+F1 75d97ce8 12aef38a 0 0 0 0 2
+BON Fee Based Bonus Exists
+Funktion
+'PI PolicyProduct Fee FeeType'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate') NOTEQUAL 'GEN Vector Blank' && ('BON Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee ChargeBasedOn'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate')) || 'BON Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee SecondaryChargeBasedOn'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate')) || 'BON Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee TertiaryChargeBasedOn'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate')))
+F1 23d9158 23d8d50 0 2207de0a 0 0 2
+BON Bonus Rate Table ID(RewardResultType)
+Funktion
+IF ('PI Reward RewardResultType'('Policy ProductCode';'RewardResultType PremiumBonus';'Policy EffDate') EQUAL 'GEN Vector Blank' ; çä  'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate') ; çä  'PI Reward TableRef TableRefKey'('Policy ProductCode';RewardResultType;'Policy EffDate')çä)
+F1 2207de0a 23d8d50 1f381f9c 2242e4a 0 0 2
+BON Bonus Contribution Prod Def Rate(cont_amt)
+Funktion
+'BON PremiumLoad Bonus Contribution'(cont_amt) + 'BON Reward Bonus Percent'(cont_amt) //'BON Reward Percent'ä
+F1 1f381f9c 2207de0a 0 0 0 0 2
+BON Reward Percent
+Funktion
+IF ( /*does this product pay contribution bonuses as Reward Percent?*/ 'PI Reward RewardResultType'('Policy ProductCode';'RewardResultType PremiumBonus';'Policy EffDate') EQUAL 'GEN Vector Blank' ; çä   // no bonus rate for this product as reward percentçä0 ; çä   /*Yes*/ 'PI Reward RewardPercent'('Policy ProductCode';'RewardResultType PremiumBonus';'Policy EffDate') / 100çä)
+F1 2242e4a 23d8d50 0 6759cfe9 0 0 2
+BON Reward Bonus Percent(cont_amt)
+Funktion
+IF ( /* Bonus percent specified in product definition */ ('PI Reward RewardPercent'('Policy ProductCode';'Constant RewardType PremiumBonus';'Policy EffDate') NOTEQUAL 'GEN Vector Blank') ; çä   /* Yes, then use */ 'PI Reward RewardPercent'('Policy ProductCode';'Constant RewardType PremiumBonus';'Policy EffDate') ; çä   /* No, then look up directly using Reward bonus Table ID */ Rate('Policy ProductCode';"PREMBON";'Policy EffDate';V_('GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'PI Reward TableRef TableRefKey'('Policy ProductCode';'Constant RewardType PremiumBonus';'Policy EffDate');'GEN Vector Blank';'GEN Vector Blank';cont_amt))çä)
+F1 6759cfe9 23d8d50 3134d70e 0 0 0 2
+BON PremiumLoad Bonus Contribution(cont_amt)
+Funktion
+ //Add Primary, Secondary, and Tertiary Contribution Bonus from Fee ObjectçäIF ('Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee ChargeBasedOn'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate')) ; çä  'BON Premium Load Bonus Rate'(cont_amt) ; çä  0çä) + IF ('Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee SecondaryChargeBasedOn'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate')) ; çä'BON Premium Load Bonus Rate'(cont_amt) ; çä0çä) + IF ('Fee ChargeBasedOn is ContributionBonus'('PI PolicyProduct Fee TertiaryChargeBasedOn'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate')) ; çä'BON Premium Load Bonus Rate'(cont_amt) ; çä0çä)
+F1 3134d70e 6759cfe9 0 0 0 0 2
+BON Premium Load Bonus Rate(cont_amt)
+Funktion
+Rate('Policy ProductCode';"PREMBON";'Policy EffDate';V_('GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'GEN Vector Blank';'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';'FeeType PremiumLoad';'Policy EffDate');'GEN Vector Blank';'GEN Vector Blank';cont_amt))
+F1 23d9210 1c2799a3 0 0 0 0 2
+BON Projected Contribution Bonus(calcType)
+Funktion
+'BON Intermediate Amount'(IF ('Std Calling System Is Illustration Based' ; çä  CASE('Std PremiumDesign';çä    "Specify" : 'Number Of Payments Per Year'('Policy PaymentMode') * 'Std Illustration Premium'(calcType;1;1);çä    "None" : 'Number Of Payments Per Year'('Policy PaymentMode') * 'Policy PaymentAmt' + 'Policy Annuity InitDepositAmt')çä   ; çä  'Number Of Payments Per Year'('Policy PaymentMode') * 'Policy PaymentAmt' + 'Policy Annuity InitDepositAmt'çä))
+A0 23d0458 0 0 0 0 0 0
+
+T0 23d04c4 0 0 0 0 0 0
+
+I0 23d0530 0 1dba2492 0 0 0 0
+
+I0 1dba2492 23d0530 0 0 0 0 0
+PremiumLoadCharges.pms
+-
+O0
+E0
+L0
+B0
+P2
+23d7918
+23d7ed8
+F1
+1c2799a3
+A0
+T0
+!22
+23d7ed8 4 -1
+çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+23d7ed8 5 -1
+Description:âReturns the "effective" Bonus rate in a PIC S9(2)V9(3) COMP-3 format.çä çäModification Log:çä12/22/2010 ENH1061 CMC updated to calculate an effective rate instead of looking up a bonus rateçä10/19/2010 ENH1061 CMC Initial funciton
+23d83e0 -2 -2
+Description: Returns the contribution bonus amount.  The bonus amount is difference between the amount of the last contribution & this one. çäAssumption:  The TotalDepositITD includes the amount of the contribution being considered. çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+23d8480 -2 -2
+Description  : first year's contribution çä çäModification Log:çä06/15/2011 - wmA-J - Added usage of 'Policy PaymentAmt' for wmA-J, instead of financial activityçä10/31/2007 CSC Initial Calculation/Rule
+23d8750 -2 -2
+Description : returns index of most recent contribution transactionçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+23d8828 -2 -2
+Description : Recursively returns index of relevant contribution transaction. Might be more than one transaction on TransEffDate, and this returns index of the contribution. çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+23d8c28 -2 -2
+Description : Calculates the contribution bonus based on cont_amtçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+23d8d50 -2 -2
+Description: gets contribution rate from Product Information / Rate modelsçä çäModification Log:çä09/30/2013 - WMAJ1301-545 - Replaced '7' with readability functionçä02/10/2012 - wmA-J - rm - Added cont_amt parm to BON Bonus Contribution Prod Def Rate after merger with wma-Jçä11/01/2011 pA 1101 Regressions CMC  updated to return zero bonus when both reward and fee bonus do not exist.çä12/14/2010 CMC ENH1061 return 0 if contribution amount = 0çä12/1/2009 pA1001 Performance - BT - changed bonus logicçä10/31/2007 CSC Initial Calculation/Rule
+23d90a0 -2 -2
+Description - returns true if a check for Reward Percentage doesn't come back falseçäNote:  When this function is called, the presence of a line in the table with key 7 has already been ascertained.çä çäModification Log:çä11/01/2011 - pA 1101 Regressions CMC - updated to check for blank reward objectçä07/13/2011 - pA 1101 Regressions CMC - changed to reference reward tableidçä12/01/2009 - pA1001 Performance - BT - added OR statementçä10/31/2007 CSC Initial Calculation/Rule
+10c4a6ec -2 -2
+05/31/2011 - wma-J - Sprint8 - rm -  - Replaced constant value 22 for feeType-PremiumLoad with constant functionçä12/01/2009 - BT - pA1001 Performance - added bonus logic
+12aef38a -2 -2
+çä06/20/2012 - pA2118 CMC Change TableIdentity to TableRefKeyçä11/01/2011 - pA Regrssion CMC updated to reflect new function to check for fee based bonuses.çä07/13/2011 - pA 1101 Regressions CMC changed to reference fee tableidçä12/01/2009 - pA1001 Performance - BT - added bonus logic
+12aef38a 0 1
+
+3c6645b7 -2 -2
+12/01/2009 - BT - pA1001 Performance - added bonus logic
+75d97ce8 -2 -2
+Description:âCheck to see if a contribution bonus exists in the fee object.çä çäModification Log:çä çä11/01/2011 pA Regression CMC Initial Calculation
+75d97ce8 0 1
+
+23d9158 -2 -2
+Description - gets the TableID of the table in rate access which we need to get the bonus rate fromçä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä11/01/2011 pA 1101 Regressions CMC  updated to get table ID from reward or feeçä10/31/2007 CSC Initial Calculation/Rule
+2207de0a -2 -2
+12/01/2009 - pA1001 Performance - BT - added bonus logic
+1f381f9c -2 -2
+12/01/2009 - pA1001 Performance - BT - added bonus logic
+2242e4a -2 -2
+Description: gets contribution rate from Product Information / Rate modelsçä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä05/31/2011 wma-J - Sprint8 - - rm - Moved out of 'Contribution Bonus Rate' to separate Reward bonus rate calcçä
+6759cfe9 -2 -2
+05/31/2011 - wma-J - Sprint8 - rm - Eliminated validation that chargeBasedOn is bonus, since already known when function is called.çä05/27/2011 wma-J - Sprint8 - rm - added logic to get reward from Fee Premium Loadçä5/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä12/01/2009 - pA1001 Performance - BT - added bonus logic
+3134d70e -2 -2
+çä05/27/2077 - rm wma-J - Sprint8 - New function to get reward from Fee Premium Loadçä06/20/2012 - pA2118 CMC Change TableIdentity to TableRefKeyçä
+23d9210 -2 -2
+Description : returns the contribution bonus amount using at-issue projected assumed contribution.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/25/2008 - CSC Illustrations - Premium Streams - ILLUS001(VM)çä10/31/2007 - CSC Initial Calculation/Ruleçä
+;Offset=00000000

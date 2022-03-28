@@ -1,0 +1,597 @@
+;1	08.12.2016 13:25:53	jlawrie2	
+X0 5c15a3b5 0 0 0 0 0 0
+
+O0 678e1831 0 0 0 0 0 0
+
+E0 6bb90e49 0 0 0 0 0 0
+
+L0 18c58f02 0 0 0 0 0 0
+
+B0 6df68187 0 0 0 0 0 0
+
+P1 10c3939a 0 3409e9f7 0 0 0 2
+
+--description
+The Dynamic Dividends model calculates the dividend rate for a participating policy in accordance with the contribution principle. The dividend given to a particular contract is illustrated using the formula:çäâUnit dividendâ= Interest Item + Mortality Item + Loading Item - Tax Item - Profit Item çä çäFor policies upon which a portion of the cash value stands as collateral for a loan, the Portfolio Direct Recognition method of calculating dividends will apply. çä çäThe actual dividend amount paid may be arbitrarily increased, at the discretion of the Life Company, at times when a lower dividend scale than that experienced in the near past emerges.çä çäRELEASE LOG:çäRELEASE 1301 - PAC025 Dynamic Dividends
+P13 3409e9f7 10c3939a 5e019f76 0 0 0 2
+Participating Whole Life Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Dynamic Dividend Rate calculation model.çäAuthor:  Jakojan LawrieçäDate:     03/05/2012çäModification Log:çäâDateâââModelerââââChange Descriptionçäâ03/05/2012ââJakojan LawrieââCreated model.çä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"DYNAMICDIVIDENDS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P9 5e019f76 3409e9f7 0 0 0 0 2
+Dynamic Dividend Rate
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Proj Coverage Dividend Rate(calcType; coverageIndex; loanInd; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(calcType;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(calcType;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'DynDiv List Coverage Dividend Rate'(calcType;coverageIndex;loanInd;'Illus List Lower Bound'(calcType);'Illus List Upper Bound'(calcType)) ; çä     /*No-specific duration*/ 'DynDiv Proj Coverage Dividend Rate'(calcType;coverageIndex;loanInd;yearIndex)çä  )çä)
+OUTPUT Proj Coverage Interest Item(calcType; coverageIndex; loanInd; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(calcType;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(calcType;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'DynDiv List Coverage Interest Item'(calcType;coverageIndex;loanInd;'Illus List Lower Bound'(calcType);'Illus List Upper Bound'(calcType)) ; çä     /*No-specific duration*/ 'DynDiv Proj Coverage Interest Item'(calcType;coverageIndex;loanInd;yearIndex)çä  )çä)
+OUTPUT Proj Coverage Mortality Item(calcType; coverageIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(calcType;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(calcType;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'DynDiv List Coverage Mortality Item'(calcType;coverageIndex;'Illus List Lower Bound'(calcType);'Illus List Upper Bound'(calcType)) ; çä     /*No-specific duration*/ 'DynDiv Proj Coverage Mortality Item'(calcType;coverageIndex;yearIndex)çä  )çä)
+OUTPUT Proj Coverage Loading Item(calcType; coverageIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(calcType;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(calcType;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'DynDiv List Coverage Loading Item'(calcType;coverageIndex;'Illus List Lower Bound'(calcType);'Illus List Upper Bound'(calcType)) ; çä     /*No-specific duration*/ 'DynDiv Proj Coverage Loading Charge Item'(calcType;coverageIndex;yearIndex)çä  )çä)
+OUTPUT Proj Coverage Tax Item(calcType; coverageIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(calcType;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(calcType;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'DynDiv List Coverage Tax Item'(calcType;coverageIndex;'Illus List Lower Bound'(calcType);'Illus List Upper Bound'(calcType)) ; çä     /*No-specific duration*/ 'DynDiv Proj Coverage Tax Item'(calcType;coverageIndex;yearIndex)çä  )çä)
+OUTPUT Proj Coverage Profit Item(calcType; coverageIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(calcType;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(calcType;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'DynDiv List Coverage Profit Item'(calcType;coverageIndex;'Illus List Lower Bound'(calcType);'Illus List Upper Bound'(calcType)) ; çä     /*No-specific duration*/ 'DynDiv Proj Coverage Profit Item'(calcType;coverageIndex;yearIndex)çä  )çä)
+F0 bb69665 0 2b49c4d6 0 0 0 0
+
+F1 2b49c4d6 bb69665 1f243b48 74ebe76b 0 0 2
+:DynDiv
+Funktion
+
+F1 1f243b48 2b49c4d6 6656278 512b8587 0 0 2
+DynDiv Proj Coverage Dividend Rate(calcType; coverageIndex; loanInd; yearIndex)
+Funktion
+'DynDiv Adjusted Dividend Rate'(calcType;coverageIndex;yearIndex;IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'DynDiv Proj Base Cov Dividend Rate'(calcType;coverageIndex;loanInd;yearIndex) ; çä  IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) || 'DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä    'DynDiv Proj PUA Cov Dividend Rate'(calcType;coverageIndex;loanInd;yearIndex) ; çä    0çä  )çä))
+F1 6656278 1f243b48 0 1b7e803c 0 0 2
+DynDiv Proj Coverage Interest Item(calcType; coverageIndex; loanInd; yearIndex)
+Funktion
+IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'DynDiv Proj Base Cov Interest Item'(calcType;coverageIndex;loanInd;yearIndex) ; çä  IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) || 'DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä    'DynDiv Proj PUA Cov Interest Item'(calcType;coverageIndex;loanInd;yearIndex) ; çä    0çä  )çä)
+F1 1b7e803c 1f243b48 0 7b24e2b 0 0 2
+DynDiv Proj Coverage Mortality Item(calcType; coverageIndex; yearIndex)
+Funktion
+IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'DynDiv Proj Base Cov Mortality Item'(calcType;coverageIndex;yearIndex) ; çä  IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) || 'DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä    'DynDiv Proj PUA Cov Mortality Item'(calcType;coverageIndex;yearIndex) ; çä    0çä  )çä)
+F1 7b24e2b 1f243b48 0 24fab357 0 0 2
+DynDiv Proj Coverage Loading Charge Item(calcType; coverageIndex; yearIndex)
+Funktion
+IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'DynDiv Proj Base Cov Loading Item'(calcType;coverageIndex;yearIndex) ; çä  IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) || 'DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä    'DynDiv Proj PUA Cov Expense Charge Item'(calcType;coverageIndex;yearIndex) ; çä    0çä  )çä)
+F1 24fab357 1f243b48 0 1e79639b 0 0 2
+DynDiv Proj Coverage Tax Item(calcType; coverageIndex; yearIndex)
+Funktion
+IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'DynDiv Proj Base Cov Tax Item'(calcType;coverageIndex;yearIndex) ; çä  IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) || 'DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä    'DynDiv Proj PUA Cov Tax Item'(calcType;coverageIndex;yearIndex) ; çä    0çä  )çä)
+F1 1e79639b 1f243b48 0 0 0 0 2
+DynDiv Proj Coverage Profit Item(calcType; coverageIndex; yearIndex)
+Funktion
+IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'DynDiv Proj Base Cov Profit Item'(calcType;coverageIndex;yearIndex) ; çä  IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) || 'DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä    'DynDiv Proj PUA Cov Profit Item'(calcType;coverageIndex;yearIndex) ; çä    0çä  )çä)
+F1 512b8587 2b49c4d6 735a5ae 72fc6b0e 0 0 2
+--Premium Paying Coverages--
+Funktion
+
+F1 735a5ae 512b8587 5b4b84d4 0 0 0 2
+DynDiv Proj Base Cov Dividend Rate(calcType; coverageIndex; loanInd; yearIndex)
+Funktion
+'GEN Round'('DynDiv Proj Base Cov Interest Item'(calcType;coverageIndex;loanInd;yearIndex) + 'DynDiv Proj Base Cov Mortality Item'(calcType;coverageIndex;yearIndex) + 'DynDiv Proj Base Cov Loading Item'(calcType;coverageIndex;yearIndex) - 'DynDiv Proj Base Cov Tax Item'(calcType;coverageIndex;yearIndex) - 'DynDiv Proj Base Cov Profit Item'(calcType;coverageIndex;yearIndex);'DynDiv RoundingRule'("COVERAGE";calcType;coverageIndex;yearIndex))
+F1 5b4b84d4 735a5ae 33f4b2bc 7a638617 0 0 2
+DynDiv Proj Base Cov Interest Item(calcType; coverageIndex; loanInd; yearIndex)
+Funktion
+ /*çäInterest Itemâ = EXINT ‚Ä¢ tIRxçäçäâ1.âFor non-borrowers (DIVU):çäââEXINTâ =âDIR ‚Äì VRçäââwhere:âDIRâââ: the non-loaned dividend interest rateçäââââVRâââ: the valuation interest rateçäçäâ2.âFor fully borrowed; Fixed Loan Rate (DIVB):çäââEXINTâ =âFLR - VR - DLSçäââwhere:âFLRâââ: the Fixed Loan RateçäââââVRâââ: the non-loaned dividend interest rateçäââââDLSâââ: the dividend loan spread (the Direct Recognition adjustment to the dividend on loaned amounts)çäçäâ3.âtIRxâ: Initial Reserve as defined in Section Reserves.çä*/ 'GEN Round'('DynDiv Proj Cov Excess Interest Rate'(calcType;coverageIndex;loanInd;yearIndex) * 0.01 * 'DynDiv Initial Reserves'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv ValuationPremium ExpAllow'(calcType;coverageIndex;yearIndex);'ACCS CalcRule DynDiv GradedPremStartDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'ACCS CalcRule DynDiv GradedPremStopDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 33f4b2bc 5b4b84d4 31738512 0 0 0 2
+DynDiv Proj Cov Excess Interest Rate(calcType; coverageIndex; loanInd; yearIndex)
+Funktion
+IF ('DynDiv loanInd is Borrowers'(loanInd) ; çä  'DynDiv Proj Cov Excess Interest Rate Borrowers'(calcType;coverageIndex;yearIndex) ; çä  'DynDiv Proj Cov Excess Interest Rate non-Borrowers'(calcType;coverageIndex;yearIndex)çä)
+F1 31738512 33f4b2bc 0 fa50e48 0 0 2
+DynDiv Proj Cov Excess Interest Rate non-Borrowers(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çä1.âFor non-borrowers (DIVU):çäâEXINTâ =âDIR ‚Äì VRçäâwhere:âDIRâââ: the non-loaned dividend interest rateçäâââVRâââ: the valuation interest rateçä*/ MAX('DynDiv Proj Div Interest Rate'(calcType;yearIndex) - 'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';TransEffDate;yearIndex);0)
+F1 fa50e48 33f4b2bc 5fcd595b 0 0 0 2
+DynDiv Proj Cov Excess Interest Rate Borrowers(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çä2.âFor fully borrowed; Fixed Loan Rate (DIVB):çäâEXINTâ =â(DIR - DLS) - VR çäâwhere:âDIRâââ: the non-loaned dividend interest rateçäâââDLSâââ: the dividend loan spread (the Direct Recognition adjustment to the dividend on loaned amounts)çäâââVRâââ: the valuation interest rateçä*/ MAX('DynDiv Proj Div Interest Rate'(calcType;yearIndex) - 'ACCS CalcRule DynDiv DivLoanSpread'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) - 'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';TransEffDate;yearIndex);0)
+F1 5fcd595b fa50e48 0 0 0 0 2
+DynDiv Proj Div Interest Rate(calcType; yearIndex)
+Funktion
+Rate('Policy ProductCode';"DIVINTRATE";'Policy Effdate';'DynDiv Proj DivInt RateVector'(calcType;yearIndex))
+F1 7a638617 735a5ae 188dd968 10c02c3f 0 0 2
+DynDiv Proj Base Cov Mortality Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäMortality Itemâ = [QV(x+t) - Q(x,t)] ‚Ä¢ NAR(x,t)çäçäâ1.âQV(x+t)â: Valuation mortality rate, as used during pricing, for attained age x+t.çäçäâ2.âQ(x,t)â: Experience mortality rate for issue age x at duration t.çäâââQ(x,t)ââ: Tabular experience mortality rate;çäâââORçäâââQ(x,t) ââ = Q‚Äô(x,t) ‚Ä¢ FACTOR(x,t)çäââââQ‚Äôâââ: Mortality rate from an industry experience mortality table. âçäââââFACTOR(x,t)â: Mortality Underwriting Adjustment Factor (Tabular).çäçäâ3.âNAR(x,t)â: Net Amount at Risk for issue age x at duration t.çäâââNAR(x,t)â = 1,000 - tVxçäââââtVx ââ: Year End Reserve as defined in Section Reserves.çä*/ 'GEN Round'(MAX('DynDiv qx'(calcType;yearIndex;coverageIndex;"VALUATION") - ('DynDiv qx'(calcType;yearIndex;coverageIndex;IF ('DynDiv ExpMortBasis'(calcType;coverageIndex;yearIndex) NOTALIKE "IND" ; çä  "EXPERIENCE" ; çä  "INDUSTRY"çä)) + 'DynDiv MortalitySpread'(calcType;coverageIndex;yearIndex));0) * 0.001 * MAX('DynDiv NAR'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv ValuationPremium ExpAllow'(calcType;coverageIndex;yearIndex);'ACCS CalcRule DynDiv GradedPremStartDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'ACCS CalcRule DynDiv GradedPremStopDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));0);'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 188dd968 7a638617 50a3dd8 0 0 0 2
+DynDiv qx(calcType; yearIndex; coverageIndex; actType)
+Funktion
+'DynDiv Mort'(calcType;coverageIndex;yearIndex;actType) * CASE(TOUPPER(actType);çä  "EXPERIENCE" : 'DynDiv ExpMortAdj'(calcType;coverageIndex;yearIndex);çä  "INDUSTRY" : 'DynDiv IndustryMortAdj'(calcType;coverageIndex;yearIndex);çä   : 1)çä
+F1 50a3dd8 188dd968 0 179ab131 0 0 2
+DynDiv ExpMortBasis(calcType; coverageIndex; yearIndex)
+Funktion
+'DynDiv MortalityOrMorbidityTable'(calcType;coverageIndex;yearIndex;"EXPERIENCE")
+F1 179ab131 188dd968 0 25e725b4 0 0 2
+DynDiv MortalityOrMorbidityTable(calcType; coverageIndex; yearIndex; actType)
+Funktion
+CASE(TOUPPER(actType);çä  "VALUATION" : 'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode';'Policy EffDate');çä  "EXPERIENCE" : IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä    'ACCS CalcRule DynDiv ExpMortBasis'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä    'ACCS CalcRule DynDiv ExpPUAMortBasis'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex))çä  );çä"INDUSTRY" : IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'ACCS CalcRule DynDiv IndMortBasis'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä  'ACCS CalcRule DynDiv IndPUAMortBasis'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex))çä);çä : 'PI PolicyProduct MortalityOrMorbidityTable'('Policy ProductCode';TransEffDate))çä
+F1 25e725b4 188dd968 1c0fa8c8 1531c9c7 0 0 2
+DynDiv Mort(calcType; coverageIndex; yearIndex; actType)
+Funktion
+'ACT qx'(calcType;yearIndex;coverageIndex;'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;actType)) * 1000
+F1 1c0fa8c8 25e725b4 0 1ecd34d1 0 0 2
+DynDiv ExpMortAdj(calcType; coverageIndex; yearIndex)
+Funktion
+IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'ACCS CalcRule DynDiv ExpMortAdj'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex);'Policy LifeParticipant IssueAge'(calctype;coverageIndex;0) + yearIndex - 1) ; çä  'ACCS CalcRule DynDiv ExpPUAMortAdj'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex);'Policy LifeParticipant IssueAge'(calctype;coverageIndex;0) + yearIndex - 1)çä)
+F1 1ecd34d1 25e725b4 0 0 0 0 2
+DynDiv IndustryMortAdj(calcType; coverageIndex; yearIndex)
+Funktion
+IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä  'ACCS CalcRule DynDiv IndustryMortAdj'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex);'Policy LifeParticipant IssueAge'(calctype;coverageIndex;0) + yearIndex - 1) ; çä  'ACCS CalcRule DynDiv IndustryPUAMortAdj'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex);'Policy LifeParticipant IssueAge'(calctype;coverageIndex;0) + yearIndex - 1)çä)
+F1 1531c9c7 188dd968 0 0 0 0 2
+DynDiv MortalitySpread(calcType; coverageIndex; yearIndex)
+Funktion
+'ACCS CalcRule DynDiv MortalitySpread'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex))
+F1 10c02c3f 735a5ae 1d53f698 281376b1 0 0 2
+DynDiv Proj Base Cov Loading Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäLoadingâââ= (GPREM - NAPBx) ‚Ä¢ ExpFact + ExpFlat çäçäâ1. GPREMââ: Gross Premium.çäâ2. NAPBxââ: Discounted Renewal Premium as defined in Section Net Premiums.çäâ3. ExpFactorâ: Factor applied to the difference in Premiums.çäâ4. ExpFlatââ: Flat addition applied to the Loading Item.çä*/ 'GEN Round'(MAX(Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"GPRM";TransEffDate;'Vector DynDiv Coverage Rate Vector Parms'(calcType;coverageIndex;yearIndex)) - 'DynDiv ValuationPremium'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv ValuationPremium ExpAllow'(calcType;coverageIndex;yearIndex);'ACCS CalcRule DynDiv GradedPremStartDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'ACCS CalcRule DynDiv GradedPremStopDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION")) * 1000;0) * 'ACCS CalcRule DynDiv ExpFactor'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) + 'ACCS CalcRule DynDiv ExpFlat'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 1d53f698 10c02c3f 0 0 0 0 2
+Vector DynDiv Coverage Rate Vector Parms(calcType; coverageIndex; yearIndex)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0); // issue ageçäyearIndex;'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0); // gender codeâçä'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;yearIndex); // underwriting classçä'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;yearIndex); // smoke codeâçä'Policy Coverage BandCode'(calcType;coverageIndex;yearIndex) // bandâââââââââçä)
+F1 281376b1 735a5ae 0 64d19aa 0 0 2
+DynDiv Proj Base Cov Tax Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäTax Item â= [DACTAX ‚Ä¢ GPREM] + [STF ‚Ä¢ tIRx ]çäçäâ1.âDACTAXââ : Deferred Acquisition Cost Taxçäâ2.âGPREMââ : Gross Premium used in the dividend calculation. As defined in Loading Item Section, above.çäâ3.âSTFâââ : Additional State Tax Factorçäâ4.âtIRxââ : Initial Reserve as defined in Section Reserves.çä*/ 'GEN Round'('ACCS CalcRule DynDiv DefAcquisitionCost'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) * Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"GPRM";TransEffDate;'Vector DynDiv Coverage Rate Vector Parms'(calcType;coverageIndex;yearIndex)) + 'ACCS CalcRule DynDiv StateTaxFactor'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex);'Policy Jurisdiction') * 'DynDiv Initial Reserves'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv ValuationPremium ExpAllow'(calcType;coverageIndex;yearIndex);'ACCS CalcRule DynDiv GradedPremStartDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'ACCS CalcRule DynDiv GradedPremStopDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 64d19aa 735a5ae 0 0 0 0 2
+DynDiv Proj Base Cov Profit Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäProfit Item â= SCLI + SCLPçäçäâ1.âSCLIâ= SCINT ‚Ä¢ tIRxçäâââSCINTââ : Surplus Contribution Interest FactorçäâââtIRxââ : Initial Reserve as defined in Section Reserves.çäçäâ2.âSCLPâ= SCPPREM ‚Ä¢ GPREMçäâââSCPPREMââ : Surplus Contribution Premium Factor çäâââGPREMââ : Gross Premium used in the dividend calculation as defined in Loading Item Section, above.çä*/ 'GEN Round'('ACCS CalcRule DynDiv SCIntFactor'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) * 'DynDiv Initial Reserves'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv ValuationPremium ExpAllow'(calcType;coverageIndex;yearIndex);'ACCS CalcRule DynDiv GradedPremStartDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'ACCS CalcRule DynDiv GradedPremStopDur'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION")) + 'ACCS CalcRule DynDiv SCPremFactor'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) * Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"GPRM";TransEffDate;'Vector DynDiv Coverage Rate Vector Parms'(calcType;coverageIndex;yearIndex));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 72fc6b0e 2b49c4d6 4fa71bd4 1ce29ace 0 0 2
+--PUA, PUAR & RPU Coverages--
+Funktion
+
+F1 4fa71bd4 72fc6b0e 17659ee7 0 0 0 2
+DynDiv Proj PUA Cov Dividend Rate(calcType; coverageIndex; loanInd; yearIndex)
+Funktion
+'GEN Round'('DynDiv Proj PUA Cov Interest Item'(calcType;coverageIndex;loanInd;yearIndex) + 'DynDiv Proj PUA Cov Mortality Item'(calcType;coverageIndex;yearIndex) + 'DynDiv Proj PUA Cov Expense Charge Item'(calcType;coverageIndex;yearIndex) - 'DynDiv Proj PUA Cov Tax Item'(calcType;coverageIndex;yearIndex) - 'DynDiv Proj PUA Cov Profit Item'(calcType;coverageIndex;yearIndex);'DynDiv RoundingRule'("COVERAGE";calcType;coverageIndex;yearIndex))
+F1 17659ee7 4fa71bd4 0 6c2d207a 0 0 2
+DynDiv Proj PUA Cov Interest Item(calcType; coverageIndex; loanInd; yearIndex)
+Funktion
+ /*çäInterest Item â= EXINT ‚Ä¢ 1000 ‚Ä¢ NSPx+t-1çäçäâ1.âEXINT ââ: Same as for "Dividends Under Premium Paying Policies".çäçäâ2.âNSPx+t-1â: Net Single Premium as defined in Section Net Premiums.çä*/ 'GEN Round'('DynDiv Proj Cov Excess Interest Rate'(calcType;coverageIndex;loanInd;yearIndex) * 0.01 * 'DynDiv NSP'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 6c2d207a 4fa71bd4 0 5a63b1fc 0 0 2
+DynDiv Proj PUA Cov Mortality Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäMortality Item â= [QV(x+t) - QPUA(x,t)] ‚Ä¢ 1000 ‚Ä¢ [1 - NSPx+t ]çäçäâ1.âQV(x+t)ââ: Valuation mortality rate, as used during pricing, for attained age x+t.çäçäâ2.âQPUA(x,t)â: Experience mortality rate for issue age x at duration t.çäâââQPUA(x,t)â: Tabular PUA experience mortality rate;çäâââORçäâââQPUA(x,t) â= Q‚Äô(x,t) ‚Ä¢ FACTOR(x,t)çäââââQ‚Äôââ: Mortality rate from an industry experience mortality table. âçäââââFACTOR(x,t)â: Mortality Underwriting Adjustment Factor (Tabular).çäçäâ3.âNSPx+tâ: Net Single Premium as defined in Section Net Premiums.çä*/ 'GEN Round'(MAX('DynDiv qx'(calcType;yearIndex;coverageIndex;"VALUATION") - ('DynDiv qx'(calcType;yearIndex;coverageIndex;IF ('DynDiv ExpMortBasis'(calcType;coverageIndex;yearIndex) NOTALIKE "IND" ; çä  "EXPERIENCE" ; çä  "INDUSTRY"çä)) + 'DynDiv MortalitySpread'(calcType;coverageIndex;yearIndex));0) * (1 - 'DynDiv NSP'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION")));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 5a63b1fc 4fa71bd4 0 2d5215b1 0 0 2
+DynDiv Proj PUA Cov Expense Charge Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäExpense Charge Itemâ= (PUEXP ‚Ä¢ 1000 ‚Ä¢ NSPx+t-1)çäçäâ1.âPUEXPââ: differing for Paid-up Additions and Paid-up Additions Riders, and for Reduced Paid-upçäâçäâ2.âNSPx+t-1ââ: Net Single Premium as defined in Section Net Premiums.çä*/ 'GEN Round'(IF ('DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä  'ACCS CalcRule DynDiv PUAExp'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä  IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) ; çä    'ACCS CalcRule DynDiv RPUExp'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä    0çä  )çä) * 'DynDiv NSP'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 2d5215b1 4fa71bd4 0 c7ff1df 0 0 2
+DynDiv Proj PUA Cov Tax Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäTax Item â= STF ‚Ä¢ 1000 ‚Ä¢ NSPx+t-1çäçäâ1âSTFââ: State Tax Factorçäâ2âNSPx+t-1ââ: Net Single Premium as defined in Section Net Premiums.çä*/ 'GEN Round'('ACCS CalcRule DynDiv StateTaxFactor'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex);'Policy Jurisdiction') * 'DynDiv NSP'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 c7ff1df 4fa71bd4 0 0 0 0 2
+DynDiv Proj PUA Cov Profit Item(calcType; coverageIndex; yearIndex)
+Funktion
+ /*çäProfit Item â= SCINT ‚Ä¢ 1000 ‚Ä¢ NSPx+t-1çäçäâ1âSCINTââ: Surplus Contribution Interest Factorçäâ2âNSPx+t-1ââ: Net Single Premium as defined in Section Net Premiums.çä*/ 'GEN Round'('ACCS CalcRule DynDiv SCIntFactor'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) * 'DynDiv NSP'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));'DynDiv RoundingRule'("INTERMEDIATE";calcType;coverageIndex;yearIndex))
+F1 1ce29ace 2b49c4d6 42aa258c 3ed89a51 0 0 2
+--Net Premiums--
+Funktion
+
+F1 42aa258c 1ce29ace 1b533920 41a4c0e8 0 0 2
+DynDiv ValuationPremium(calcType; coverageIndex; yearIndex;commTiming; expTiming; gradeStart; gradeStop; v_ACT_Info)
+Funktion
+CASE('DynDiv ValuationPremium ReserveFunction'(calcType;coverageIndex;yearIndex);çä  "NL" : 'DynDiv NLP'(calcType;coverageIndex;yearIndex;commTiming;v_ACT_Info);çä  "CRVM" : 'DynDiv CRVM'(calcType;coverageIndex;yearIndex;commTiming;expTiming;v_ACT_Info);çä  "GRADED" : 'DynDiv GradedPrem'(calcType;coverageIndex;yearIndex;commTiming;expTiming;gradeStart;gradeStop;v_ACT_Info))çä
+F1 1b533920 42aa258c 0 6fb1f397 0 0 2
+DynDiv NLP(calcType; coverageIndex; yearIndex; commTiming; v_ACT_Info)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(commTiming) ; çä  ('ACT Mx bar'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Mx bar'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / ('ACT Nx bar'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) ; çä  ('ACT Mx'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Mx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / ('ACT Nx'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Nx'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info))çä)
+F1 6fb1f397 42aa258c 0 5005451 0 0 2
+DynDiv NSP(calcType; coverageIndex; yearIndex; commTiming; v_ACT_Info)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(commTiming) ; çä  ('ACT Mx bar'(calcType;yearIndex - 1;coverageIndex;v_ACT_Info) - 'ACT Mx bar'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;yearIndex - 1;coverageIndex;v_ACT_Info) ; çä  ('ACT Mx'(calcType;yearIndex - 1;coverageIndex;v_ACT_Info) - 'ACT Mx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;yearIndex - 1;coverageIndex;v_ACT_Info)çä)
+F1 5005451 42aa258c 0 63c2f52a 0 0 2
+DynDiv GradedPrem(calcType; coverageIndex; yearIndex; commTiming; expTiming; gradeStart; gradeStop; v_ACT_Info)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(commTiming) ; çä  ('DynDiv CRVM Beta'(calcType;coverageIndex;yearIndex;commTiming;expTiming;v_ACT_Info) * ('ACT Nx bar'(calcType;gradeStart;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) - 'DynDiv NLP'(calcType;coverageIndex;yearIndex;commTiming;v_ACT_Info) * ('ACT Nx bar'(calcType;gradeStop;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info))) / ('ACT Nx bar'(calcType;gradeStart;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;gradeStop;coverageIndex;v_ACT_Info)) ; çä  ('DynDiv CRVM Beta'(calcType;coverageIndex;yearIndex;commTiming;expTiming;v_ACT_Info) * ('ACT Nx'(calcType;gradeStart;coverageIndex;v_ACT_Info) - 'ACT Nx'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) - 'DynDiv NLP'(calcType;coverageIndex;yearIndex;commTiming;v_ACT_Info) * ('ACT Nx'(calcType;gradeStop;coverageIndex;v_ACT_Info) - 'ACT Nx'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info))) / ('ACT Nx'(calcType;gradeStart;coverageIndex;v_ACT_Info) - 'ACT Nx'(calcType;gradeStop;coverageIndex;v_ACT_Info))çä)
+F1 63c2f52a 42aa258c 3723e066 0 0 0 2
+DynDiv CRVM(calcType; coverageIndex; yearIndex; commTiming; expTiming; v_ACT_Info)
+Funktion
+IF (yearIndex = 1 ; çä  'DynDiv CRVM Alpha'(calcType;coverageIndex;yearIndex;commTiming;expTiming;v_ACT_Info) ; çä  'DynDiv CRVM Beta'(calcType;coverageIndex;yearIndex;commTiming;expTiming;v_ACT_Info)çä)
+F1 3723e066 63c2f52a 4ea10db2 3ae19d2c 0 0 2
+DynDiv CRVM Alpha(calcType; coverageIndex; yearIndex; commTiming; expTiming; v_ACT_Info)
+Funktion
+'DynDiv CRVM Beta'(calcType;coverageIndex;yearIndex;commTiming;expTiming;v_ACT_Info) - ('DynDiv CRVM Expense Allowance'(calcType;coverageIndex;yearIndex;expTiming;v_ACT_Info) * 'DynDiv CRVM Alpha Expense Timing Adjustment'(calcType;commTiming;expTiming;'SharedVector ACTInfo InterestRate'(v_ACT_Info)))
+F1 4ea10db2 3723e066 0 0 0 0 2
+DynDiv CRVM Alpha Expense Timing Adjustment(calcType; commTiming; expTiming; intRate)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(commTiming) && 'DynDiv TimingFunction is Curtate'(expTiming) ; çä  'ACT Delta Int Factor'(intRate) / 'ACT D Discount Factor'(intRate) ; çä  1çä)
+F1 3ae19d2c 63c2f52a 5e81a0e1 170a7f8b 0 0 2
+DynDiv CRVM Beta(calcType; coverageIndex; yearIndex; commTiming; expTiming; v_ACT_Info)
+Funktion
+'DynDiv NLP'(calcType;coverageIndex;yearIndex;commTiming;v_ACT_Info) + IF ('DynDiv TimingFunction is Continuous'(commTiming) && 'DynDiv TimingFunction is Curtate'(expTiming) ; çä  'DynDiv CRVM Expense Allowance'(calcType;coverageIndex;yearIndex;'Constant Timing Curtate';v_ACT_Info) ; çä  'DynDiv CRVM Expense Allowance'(calcType;coverageIndex;yearIndex;'Constant Timing Continuous';v_ACT_Info)çä) / 'DynDiv CRVM Beta Expense Timing Adjustment'(calcType;coverageIndex;yearIndex;commTiming;expTiming;v_ACT_Info)
+F1 5e81a0e1 3ae19d2c 0 0 0 0 2
+DynDiv CRVM Beta Expense Timing Adjustment(calcType; coverageIndex; yearIndex; commTiming; expTiming; v_ACT_Info)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(commTiming) && 'DynDiv TimingFunction is Curtate'(expTiming) ; çä  ('ACT Nx'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Nx'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;0;coverageIndex;v_ACT_Info) ; çä  IF ('DynDiv TimingFunction is Curtate'(commTiming) && 'DynDiv TimingFunction is Curtate'(expTiming) ; çä    ('ACT Nx bar'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;0;coverageIndex;v_ACT_Info) ; çä    ('ACT Nx bar'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx bar'(calcType;0;coverageIndex;v_ACT_Info)çä  )çä)
+F1 170a7f8b 63c2f52a 57b87bb0 0 0 0 2
+DynDiv CRVM Expense Allowance(calcType; coverageIndex; yearIndex; expTiming; v_ACT_Info)
+Funktion
+MAX(MIN('DynDiv FPT Beta'(calcType;coverageIndex;yearIndex;v_ACT_Info);'DynDiv 19 Pay WL'(calcType;coverageIndex;yearIndex;v_ACT_Info)) - 'DynDiv FPT cx'(calcType;coverageIndex;yearIndex;expTiming;v_ACT_Info);0)
+F1 57b87bb0 170a7f8b 0 26dfe5ff 0 0 2
+DynDiv 19 Pay WL(calcType; coverageIndex; yearIndex; v_ACT_Info)
+Funktion
+('ACT Mx bar'(calcType;1;coverageIndex;v_ACT_Info) - 'ACT Mx bar'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / ('ACT Nx bar'(calcType;1;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;20;coverageIndex;v_ACT_Info))
+F1 26dfe5ff 170a7f8b 0 372673cf 0 0 2
+DynDiv FPT Alpha(calcType; coverageIndex; yearIndex; commTiming; v_ACT_Info)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(commTiming) ; çä  ('ACT Mx bar'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'ACT Mx bar'(calcType;yearIndex + 1;coverageIndex;v_ACT_Info)) / ('ACT Dx bar'(calcType;yearIndex;coverageIndex;v_ACT_Info)) ; çä  ('ACT Mx'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'ACT Mx'(calcType;yearIndex + 1;coverageIndex;v_ACT_Info)) / ('ACT Dx'(calcType;yearIndex;coverageIndex;v_ACT_Info))çä)
+F1 372673cf 170a7f8b 0 10fe2af7 0 0 2
+DynDiv FPT Beta(calcType; coverageIndex; yearIndex; v_ACT_Info)
+Funktion
+('ACT Mx bar'(calcType;1;coverageIndex;v_ACT_Info) - 'ACT Mx bar'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / ('ACT Nx bar'(calcType;1;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info))
+F1 10fe2af7 170a7f8b 0 0 0 0 2
+DynDiv FPT cx(calcType; coverageIndex; yearIndex; expTiming; v_ACT_Info)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(expTiming) ; çä  ('ACT Mx bar'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Mx bar'(calcType;1;coverageIndex;v_ACT_Info)) / 'ACT Dx bar'(calcType;0;coverageIndex;v_ACT_Info) ; çä  ('ACT Mx'(calcType;0;coverageIndex;v_ACT_Info) - 'ACT Mx'(calcType;1;coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;0;coverageIndex;v_ACT_Info)çä)
+F1 41a4c0e8 1ce29ace 0 5d25a3a6 0 0 2
+DynDiv ValuationPremium ReserveFunction(calcType; coverageIndex; yearIndex)
+Funktion
+TOUPPER('ACCS CalcRule DynDiv ReserveFunction'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)))
+F1 5d25a3a6 1ce29ace 0 5282559b 0 0 2
+DynDiv ValuationPremium ExpAllow(calcType; coverageIndex; yearIndex)
+Funktion
+TOUPPER('ACCS CalcRule DynDiv ExpAllow'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)))
+F1 5282559b 1ce29ace 0 0 0 0 2
+DynDiv ValuationPremium CommFunc(calcType; coverageIndex; yearIndex)
+Funktion
+TOUPPER('ACCS CalcRule DynDiv CommFunc'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)))
+F1 3ed89a51 2b49c4d6 76a43043 5348d5ea 0 0 2
+-- Reserves --
+Funktion
+
+F1 76a43043 3ed89a51 0 65476f5d 0 0 2
+DynDiv Year End Reserves(calcType; coverageIndex; yearIndex; commTiming; expTiming; gradeStart; gradeStop; v_ACT_Info)
+Funktion
+IF ('DynDiv TimingFunction is Continuous'(commTiming) ; çä  ('ACT Mx bar'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'ACT Mx bar'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'DynDiv ValuationPremium'(calcType;coverageIndex;yearIndex + 1;commTiming;expTiming;gradeStart;gradeStop;v_ACT_Info) * ('ACT Nx bar'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'ACT Nx bar'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;yearIndex;coverageIndex;v_ACT_Info) ; çä  ('ACT Mx'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'ACT Mx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info) + 'ACT Dx'(calcType;'SharedVector ACTInfo MaturityDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'DynDiv ValuationPremium'(calcType;coverageIndex;yearIndex + 1;commTiming;expTiming;gradeStart;gradeStop;v_ACT_Info) * ('ACT Nx'(calcType;yearIndex;coverageIndex;v_ACT_Info) - 'ACT Nx'(calcType;'SharedVector ACTInfo PayToDuration'(v_ACT_Info);coverageIndex;v_ACT_Info)) / 'ACT Dx'(calcType;yearIndex;coverageIndex;v_ACT_Info)çä) * 1000
+F1 65476f5d 3ed89a51 0 1bfbed3d 0 0 2
+DynDiv Initial Reserves(calcType; coverageIndex; yearIndex; commTiming; expTiming; gradeStart; gradeStop; v_ACT_Info)
+Funktion
+IF (YearIndex <= 1 ; çä  0 ; çä  'DynDiv Year End Reserves'(calcType;coverageIndex;yearIndex - 1;commTiming;expTiming;gradeStart;gradeStop;v_ACT_Info)çä) + 'DynDiv ValuationPremium'(calcType;coverageIndex;yearIndex;commTiming;expTiming;gradeStart;gradeStop;v_ACT_Info) * 1000
+F1 1bfbed3d 3ed89a51 0 0 0 0 2
+DynDiv NAR(calcType; coverageIndex; yearIndex; commTiming; expTiming; gradeStart; gradeStop; v_ACT_Info)
+Funktion
+IF (yearIndex >= 1 ; çä  1000 - 'DynDiv Year End Reserves'(calcType;coverageIndex;yearIndex;commTiming;expTiming;gradeStart;gradeStop;v_ACT_Info) ; çä  0çä)
+F1 5348d5ea 2b49c4d6 8c34b61 154c938c 0 0 2
+--Overrides--
+Funktion
+
+F1 8c34b61 5348d5ea 0 37f1b409 0 0 2
+DynDiv Adjusted Dividend Rate(calcType; coverageIndex; yearIndex; unadjDiv)
+Funktion
+'DynDiv ZeroYear Dividend Rate'(calcType;coverageIndex;yearIndex;'DynDiv Min Dividend Rate'(calcType;coverageIndex;yearIndex;unadjDiv))
+F1 37f1b409 5348d5ea 0 6512d3ac 0 0 2
+DynDiv Min Dividend Rate(calcType; coverageIndex; yearIndex; unadjDiv)
+Funktion
+IF (yearIndex <= 1 ; çä  unadjDiv ; çä  MAX(unadjDiv;IF ('DynDiv Cov is PremPaying'(calcType;coverageIndex;yearIndex) ; çä    'ACCS CalcRule DynDiv MinBaseDiv'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä    IF ('DynDiv Cov is RPU'(calcType;coverageIndex;yearIndex) ; çä      'ACCS CalcRule DynDiv MinRPUDiv'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä      IF ('DynDiv Cov is PUA'(calcType;coverageIndex;yearIndex) ; çä        'ACCS CalcRule DynDiv MinPUADiv'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä        0çä      )çä  )çä))çä)
+F1 6512d3ac 5348d5ea 0 f49c834 0 0 2
+DynDiv ZeroYear Dividend Rate(calcType; coverageIndex; yearIndex; unadjDiv)
+Funktion
+IF (yearIndex <= 'ACCS CalcRule DynDiv ZeroYears'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ; çä  0 ; çä  unadjDivçä)
+F1 f49c834 5348d5ea 0 0 0 0 2
+DynDiv Smoothed Dividend Amount(pUnits_pScale_Div; cUnits_pScaleDiv; cUnits_cScale; calcType)
+Funktion
+MAX(MIN(pUnits_pScale_Div;cUnits_pScaleDiv);cUnits_cScale)
+F1 154c938c 2b49c4d6 79631a32 124d09ac 0 0 2
+--Supporting Functions--
+Funktion
+
+F1 79631a32 154c938c 0 3d940b99 0 0 2
+DynDiv Vector ACT Info(calcType; coverageIndex; yearIndex; actType)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);'PIDRV CoverageProduct MaturityDuration'(calcType;TransEffDate;coverageIndex);'PI PolicyProduct ReserveIntRate'(calcType;'Policy ProductCode';TransEffDate;TransEffDur);'DynDiv MortalityOrMorbidityTable'(calcType;coverageIndex;yearIndex;actType);'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;yearIndex);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;yearIndex);'Policy ProductCode';'Policy EffDate';'Policy Jurisdiction';'PI PolicyProduct AgeCalculationType'('Policy ProductCode';'Policy EffDate');1; // Include Table Ratingsçä1; // Include Flat Extrasçä'PIDRV PolicyProduct PayToDuration'(calcType;TransEffDate))
+F1 3d940b99 154c938c 0 72ef75a5 0 0 2
+--DynDiv Proj Loan RateVector(calcType; yearIndex)
+Funktion
+V_(çäâ'Policy LifeParticipant IssueAge'(calcType; 0; 0);âçäâyearIndex;çäâ'Policy LifeParticipant IssueGender'(calcType; 0; 0);âçäâ'Policy LifeParticipant UnderwritingClass'(calcType; 0; 0);çäâ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; 0; 0); çäâ1;çäâ'Policy Jurisdiction';çäâ'PI LoanProvision RateVariation TableRef'('Policy ProductCode'; 'TransEffDate'; 1);çäâ'GEN Vector Blank'çä)çä
+F1 72ef75a5 154c938c 0 31041d4f 0 0 2
+DynDiv Proj DivInt RateVector(calcType; yearIndex)
+Funktion
+V_("";"";'Policy CarrierCode')
+F1 31041d4f 154c938c 0 10d53c59 0 0 2
+DynDiv RoundingRule(ruleType; calcType; coverageIndex; yearIndex)
+Funktion
+CASE(TOUPPER(ruleType);çä  "INTERMEDIATE" : 'ACCS CalcRule DynDiv IntermediateRoundingRule'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));çä  "COVERAGE" : 'ACCS CalcRule DynDiv CoverageRoundingRule'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex));çä   : 'ACCS CalcRule DynDiv PolicyRoundingRule'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)))çä
+F1 10d53c59 154c938c 4eace35e 0 0 0 2
+DynDiv List Coverage Dividend Rate(calcType; coverageIndex; loanInd; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DynDiv Proj Coverage Dividend Rate'(calcType;coverageIndex;loanInd;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'DynDiv List Coverage Dividend Rate'(calcType;coverageIndex;loanInd;fromYear + 1;toYear)çä)
+F1 4eace35e 10d53c59 0 113f54ae 0 0 2
+DynDiv List Coverage Interest Item(calcType; coverageIndex; loanInd; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DynDiv Proj Coverage Interest Item'(calcType;coverageIndex;loanInd;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'DynDiv List Coverage Interest Item'(calcType;coverageIndex;loanInd;fromYear + 1;toYear)çä)
+F1 113f54ae 10d53c59 0 51c053aa 0 0 2
+DynDiv List Coverage Mortality Item(calcType; coverageIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DynDiv Proj Coverage Mortality Item'(calcType;coverageIndex;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'DynDiv List Coverage Mortality Item'(calcType;coverageIndex;fromYear + 1;toYear)çä)
+F1 51c053aa 10d53c59 0 338918ab 0 0 2
+DynDiv List Coverage Loading Item(calcType; coverageIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DynDiv Proj Coverage Loading Charge Item'(calcType;coverageIndex;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'DynDiv List Coverage Loading Item'(calcType;coverageIndex;fromYear + 1;toYear)çä)
+F1 338918ab 10d53c59 0 312a336d 0 0 2
+DynDiv List Coverage Tax Item(calcType; coverageIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DynDiv Proj Coverage Tax Item'(calcType;coverageIndex;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'DynDiv List Coverage Tax Item'(calcType;coverageIndex;fromYear + 1;toYear)çä)
+F1 312a336d 10d53c59 0 0 0 0 2
+DynDiv List Coverage Profit Item(calcType; coverageIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'DynDiv Proj Coverage Profit Item'(calcType;coverageIndex;fromYear) & 'Illus List Insert EndOfRow Delimiter Or End'(fromYear;toYear) &  /*Continue to next year*/ 'DynDiv List Coverage Profit Item'(calcType;coverageIndex;fromYear + 1;toYear)çä)
+F1 124d09ac 2b49c4d6 49d347cc 0 0 0 2
+--Readability--
+Funktion
+
+F1 49d347cc 124d09ac 32b21b6d 62e74ec3 0 0 2
+DynDiv Cov is PremPaying(calcType; coverageIndex; yearIndex)
+Funktion
+'DynDiv Cov is Base'(calcType;coverageIndex) && 'Std Coverage Is InForce'(calcType;coverageIndex;TransEffDate;yearIndex)
+F1 32b21b6d 49d347cc 0 0 0 0 2
+DynDiv Cov is Base(calcType; coverageIndex)
+Funktion
+'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex))
+F1 62e74ec3 124d09ac 0 32e9d9f7 0 0 2
+DynDiv Cov is PUA(calcType; coverageIndex; yearIndex)
+Funktion
+'LifeCovType is PUA'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy ProductCode';coverageIndex;'Policy EffDate')) || 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy ProductCode';coverageIndex;'Policy EffDate')) || 'LifeCovType is BIR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy ProductCode';coverageIndex;'Policy EffDate')) || ('DynDiv Cov is Base'(calcType;coverageIndex) && 'Policy Has Gone to RPU'(calcType;yearIndex))
+F1 32e9d9f7 124d09ac 0 1ff75e26 0 0 2
+DynDiv Cov is RPU(calcType; coverageIndex; yearIndex)
+Funktion
+'DynDiv Cov is Base'(calcType;coverageIndex) && 'Policy Has Gone to RPU'(calcType;yearIndex)
+F1 1ff75e26 124d09ac 0 51bcc634 0 0 2
+DynDiv TimingFunction is Continuous(timingBasis)
+Funktion
+(timingBasis ALIKE 1) || (timingBasis ALIKE "CONT")
+F1 51bcc634 124d09ac 0 dc2a2f7 0 0 2
+DynDiv TimingFunction is Curtate(timingBasis)
+Funktion
+(timingBasis ALIKE 4) || (timingBasis ALIKE "CURT")
+F1 dc2a2f7 124d09ac 0 1c3d812c 0 0 2
+Constant Timing Curtate
+Funktion
+4
+F1 1c3d812c 124d09ac 0 72ac3fb3 0 0 2
+Constant Timing Continuous
+Funktion
+1
+F1 72ac3fb3 124d09ac 0 672d1ddf 0 0 2
+DynDiv loanInd is Borrowers(loanInd)
+Funktion
+loanInd ALIKE 1
+F1 672d1ddf 124d09ac 0 78a00777 0 0 2
+DynDiv Use DynDiv(calcType; coverageIndex; yearIndex)
+Funktion
+'ACCS CalcRule DynDiv DynDivCalc'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'DynDiv EffectiveDate'(yearIndex)) ALIKE 1
+F1 78a00777 124d09ac 0 0 0 0 2
+DynDiv EffectiveDate(yearIndex)
+Funktion
+date(TransEffDate;0;0;yearIndex - TransEffDur)
+F1 74ebe76b bb69665 34c461b5 0 0 0 2
+-- TESTING FUNCTIONS --
+Funktion
+
+F1 34c461b5 74ebe76b 0 22d4e1a2 0 0 2
+DynDiv TEST Valuation Prem(calcType; coverageIndex; yearIndex)
+Funktion
+CASE('DynDiv ValuationPremium ReserveFunction'(calcType;coverageIndex;yearIndex);çä  "NL" : 'DynDiv NLP'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));çä  "CRVM" : 'DynDiv CRVM'(calcType;coverageIndex;yearIndex;'DynDiv ValuationPremium CommFunc'(calcType;coverageIndex;yearIndex);'DynDiv ValuationPremium ExpAllow'(calcType;coverageIndex;yearIndex);'DynDiv Vector ACT Info'(calcType;coverageIndex;yearIndex;"VALUATION"));çä   : ERROR("Unsupported Reserving Method"))çä
+F1 22d4e1a2 74ebe76b 0 0 0 0 2
+--DynDiv UseAttributes
+Funktion
+1
+A0 6a6f424d 0 0 0 0 0 0
+
+T0 503f86be 0 0 0 0 0 0
+
+I0 59892603 0 1ca3c969 0 0 0 0
+
+I0 1ca3c969 59892603 0 0 0 0 0
+ActuarialFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+3409e9f7
+F2
+2b49c4d6
+74ebe76b
+A0
+T0
+!83
+5e019f76 3 -1
+Description: Dynamic Calculated Dividend Rate for CoverageIndex.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Output
+5e019f76 4 -1
+Description: Dynamic Calculated Dividend Rate Interest Item for CoverageIndex.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Output
+5e019f76 5 -1
+Description: Dynamic Calculated Dividend Rate Mortality Item for CoverageIndex.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Output
+5e019f76 6 -1
+Description: Dynamic Calculated Dividend Rate Loading / Expense Item for CoverageIndex.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Output
+5e019f76 7 -1
+Description: Dynamic Calculated Dividend Rate Tax Item for CoverageIndex.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Output
+5e019f76 8 -1
+Description: Dynamic Calculated Dividend Rate Profit Item for CoverageIndex.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Output
+1f243b48 -2 -2
+Description: Dynamic Calculated Dividend Rate for CoverageIndex. Decides between Base and RPU / PUA.çä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add loanInd for Interest Item, to distinguish between Borrower and non-Borrower interest rates used.çä08/02/2012 PAC025 DynDivs JL - Adjust Div Rateçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+6656278 -2 -2
+Description: DynDivs Interest Item for Outputsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+1b7e803c -2 -2
+Description: DynDivs Mortality Item for Outputsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+7b24e2b -2 -2
+Description: DynDivs Loading / Expense Item for Outputsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+24fab357 -2 -2
+Description: DynDivs Tax Item for Outputsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+1e79639b -2 -2
+Description: DynDivs Profit Item for Outputsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+735a5ae -2 -2
+Description: Projected Unit Dividednd Rate for Base (Premium Paying) coverages. Div(x,t) = Interest Item + Mortality Item + Loading Item - Tax Item - Profit Itemçä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Add loanInd for Interest Item, to distinguish between Borrower and non-Borrower interest rates used.çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+5b4b84d4 -2 -2
+Description: The non-loaned dividend interest rate reflects a contribution from other lines of business. The excess of the non-loaned dividend interest rate over the interest rate underlying the dividend is applied to the policy‚Äôs reserves at the beginning of the year. The difference between a policy‚Äôs loan interest rate and the interest rate credited to loaned dividends is the loan spread.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Add loanInd for Interest Item, to distinguish between Borrower and non-Borrower interest rates used.çä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop for Graded Valuation Premium method.çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+33f4b2bc -2 -2
+Description: Excess Interest Rate to be used.çä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add loanInd for Interest Item, to distinguish between Borrower and non-Borrower interest rates used.çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+31738512 -2 -2
+Description: Excess Interest Rate to be used for non-Borrowers.çä çäModification Log:çä08/06/2012 PAC025 DynDivs JL - Use Reserve Interest Rate from PI; Use Div Int Rate from Rate modelçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+fa50e48 -2 -2
+Description: Excess Interest Rate to be used for Borrowers.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/06/2012 PAC025 DynDivs JL - Use Reserve Int Rate from PI; Use Div Int Rate from Rate model; Use DLS from CalcRulesçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+5fcd595b -2 -2
+Description: Returns the loan interest rate.çä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Remove *0.01; use all interest rates as *100%, then *0.01 once, in a higher functionçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+7a638617 -2 -2
+Description: Actual Mortality experience differs from the guaranteed mortality. Excess mortality charges are returned to the policy holder through the dividend. The mortality return is the excess of the guaranteed mortality rate over the dividend mortality rate multiplied by the net amount at risk, which is the policy‚Äôs face amount less the end-of-year reserve.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Formattingçä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop for Graded Valuation Premium method.çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+188dd968 -2 -2
+Description: qxçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Formattingçä08/16/2012 PAC025 DynDivs JL - Use one qx rate lookup, then apply factors for Experience or Industryçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+50a3dd8 -2 -2
+Description: Mortality Basis.çä çäModification Log:çä08/16/2012 PAC025 DynDivs JL - Ref Exp Mortality Table entry in ClacRules directly. If this is "IND" (e.g. not a table), use industry values.çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+179ab131 -2 -2
+Description: Mortality table to use.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Formattingçä08/16/2012 PAC025 DynDivs JL - Both Val & Exp MortBasis references CalcRules for mortality table to use, then gets rates from rate models.çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+25e725b4 -2 -2
+Description: Experience Mortality.çä çäModification Log:çä08/16/2012 PAC025 DynDivs JL - References CalcRules for mortality table to use, then get rates from rate models. Add yearIndex to 'DynDiv Vector ACT Info'. çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+1c0fa8c8 -2 -2
+Description: Adjustment to Experience Mortality.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+1ecd34d1 -2 -2
+Description: Industry Mortality Adjustment factor.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+1531c9c7 -2 -2
+Description: Mortality Spread.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+10c02c3f -2 -2
+Description: The Loading Component recovers the Company‚Äôs expenses, excluding taxes.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop parms for Graded Valuation Premium method.çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'; Add Factor & Flatçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+1d53f698 -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call a Coverage.çä çäModification Log:çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+281376b1 -2 -2
+Description: The Tax Component recovers the Company‚Äôs expenses due to taxes.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop for Graded Valuation Premium method.çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+64d19aa -2 -2
+Description: The Profit Component assesses a contribution to the policy owner‚Äôs surplus through a profit charge.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Formattingçä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop for Graded Valuation Premium method.çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+4fa71bd4 -2 -2
+Description: Projected Unit Dividednd Rate for PUA, RPU & PUAR coverages. Div(x,t) = Interest Item + Mortality Item + Expense Charge Item - Tax Item - Profit Itemçä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä09/10/2012 PAC025 DynDivs JL - Add Roundingçä08/28/2012 PAC025 DynDivs JL - Add loanInd for Interest Item, to distinguish between Borrower and non-Borrower interest rates used.çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+17659ee7 -2 -2
+Description: The non-loaned dividend interest rate reflects a contribution from other lines of business. The excess of the non-loaned dividend interest rate over the interest rate underlying the dividend is applied to the policy‚Äôs reserves at the beginning of the year. The difference between a policy‚Äôs loan interest rate and the interest rate credited to loaned dividends is the loan spread.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Correct Roundingçä08/28/2012 PAC025 DynDivs JL - Add loanInd for Interest Item, to distinguish between Borrower and non-Borrower interest rates used.çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'. Replace "CV7PAY" with "VALUATION".çä08/16/2012 PAC025 DynDivs JL - Add missing NSP Factorçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+6c2d207a -2 -2
+Description: Actual Mortality experience differs from the guaranteed mortality. Excess mortality charges are returned to the policy holder through the dividend. The mortality return is the excess of the guaranteed mortality rate over the dividend mortality rate multiplied by the net amount at risk, which is the policy‚Äôs face amount less the end-of-year reserve.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Formattingçä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+5a63b1fc -2 -2
+Description: The Expense Charge Component recovers the Company‚Äôs expenses, excluding taxes.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Formattingçä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'. Replace "CV7PAY" with "VALUATION".çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+2d5215b1 -2 -2
+Description: The Tax Component recovers the Company‚Äôs expenses due to taxes.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'. Replace "CV7PAY" with "VALUATION".çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+c7ff1df -2 -2
+Description: The Profit Component assesses a contribution to the policy owner‚Äôs surplus through a profit charge.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'. Replace "CV7PAY" with "VALUATION".çä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+42aa258c -2 -2
+Description: Valuation Premium to be used.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä08/16/2012 PAC025 DynDivs JL - Add Graded Optionçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+1b533920 -2 -2
+Description: Net Level Premium.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+6fb1f397 -2 -2
+Description: Net Single Premium.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+5005451 -2 -2
+Description: Graded Premium, between CRVM Beta & NLP.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä08/16/2012 PAC025 DynDivs JL - Initial Rule
+63c2f52a -2 -2
+Description: Commissioners Reserve Valuation Method premium.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+3723e066 -2 -2
+Description: CRVM alpha.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+4ea10db2 -2 -2
+Description: Expense timing adjustment for CRVM alpha.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+3ae19d2c -2 -2
+Description: CRVM Beta.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+5e81a0e1 -2 -2
+Description: Expense timing adjustment for CRVM beta.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+170a7f8b -2 -2
+Description: CRVM Expense Allowance.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+57b87bb0 -2 -2
+Description: 19 year factor.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+26dfe5ff -2 -2
+Description: Full Preliminary Term Alpha. çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+372673cf -2 -2
+Description: Full Preliminary Term Beta.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+10fe2af7 -2 -2
+Description: Full Preliminary Term cx.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+41a4c0e8 -2 -2
+Description: Reserve method for Valuation Premium.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+5d25a3a6 -2 -2
+Description: Expense Allowance method for Valuation Premium.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+5282559b -2 -2
+Description: Commutation Function method for Valuation Premium.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Add parms for CalcRules lookupçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+76a43043 -2 -2
+Description: Year end Reserves.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop parms for Graded Valuation Premium method.çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+65476f5d -2 -2
+Description: Initial Reserves.çä çäModification Log:çä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop parms for Graded Valuation Premium method.çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+1bfbed3d -2 -2
+Description: Net Amount at risk for Reserving.çä çäModification Log:çä08/16/2012 PAC025 DynDivs JL - Add gradeStart & gradeStop parms for Graded Valuation Premium method.çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+8c34b61 -2 -2
+Description: Adjusts the Coverage calculated dividend rate for (1) potential "zero dividend rate" initial period, and (2) minimum dividend.çä çäModification Log:çä08/02/2012 PAC025 DynDivs JL - Initial Rule
+37f1b409 -2 -2
+Description: A minimum per thousand unit dividend in all years except the first may be applied, regardless of the dividend computed by the formulae. This is specified in the calculation rules.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/02/2012 PAC025 DynDivs JL - Initial Rule
+6512d3ac -2 -2
+Description: Regardless of the dividend computed by the formulae, for an initial period the dividend may be set to 0. This term is specified in the calculation rules.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä09/10/2012 PAC025 DynDivs JL - Correct ACCS Callçä08/02/2012 PAC025 DynDivs JL - Initial Rule
+f49c834 -2 -2
+Description: Compares  the following: (a) The smaller of the dividend amount actually paid in the prior policy year (pUnits_pScale_Div) and the prior year's dividend schedule payable in the current policy year (cUnits_pScaleDiv), and (b) The current policy year's formula payment under the current year's schedule (cUnits_cScale).çä çäModification Log:çä08/02/2012 PAC025 DynDivs JL - Initial Rule
+79631a32 -2 -2
+Description:  Returns the vector to be passed to the common actuarial functions.çä çäModification Log:çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä08/16/2012 PAC025 DynDivs JL - Add yearIndex parm. Needed to determine whether cov is Prem Paying or NFO.çä08/06/2012 PAC025 DynDivs JL - Use Reserbe Int Rate from PIçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+3d940b99 -2 -2
+Description: Returns the vector used for rate model lookups for Loans.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+72ef75a5 -2 -2
+Description: Returns the vector used for rate model lookups for Dividend Interest Rate.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+31041d4f -2 -2
+Description: Rounding Rule to be used in calculating the reserves.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Formattingçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+10d53c59 -2 -2
+Description: Builds a delimited string of DynDiv Dividend Rates FROM fromYear TO toYearçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Ruleçä
+4eace35e -2 -2
+Description: Builds a delimited string of DynDiv Dividend Rates' Interest Items FROM fromYear TO toYearçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+113f54ae -2 -2
+Description: Builds a delimited string of DynDiv Dividend Rates' Mortality Items FROM fromYear TO toYearçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+51c053aa -2 -2
+Description: Builds a delimited string of DynDiv Dividend Rates' Loading / Expense Items FROM fromYear TO toYearçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+338918ab -2 -2
+Description: Builds a delimited string of DynDiv Dividend Rates' Tax Items FROM fromYear TO toYearçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+312a336d -2 -2
+Description: Builds a delimited string of DynDiv Dividend Rates' Profit Items FROM fromYear TO toYearçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+49d347cc -2 -2
+Description: Returns TRUE if the coverage is Premium Paying.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+32b21b6d -2 -2
+Description: Returns TRUE if the Coverage is Base opr Base Increase.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+62e74ec3 -2 -2
+Description: Returns TRUE if the coverage is PUA.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Include BIR PUAsçä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+32e9d9f7 -2 -2
+Description: Returns TRUE if the coverage is RPU.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+1ff75e26 -2 -2
+Description: Returns TRUE if the timing function is Continuous.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+51bcc634 -2 -2
+Description: Returns TRUE the timing function is Curtate.çä çäModification Log:çä08/17/2012 PAC025 DynDivs JL - Correct spelling: "TimingFunction"çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+dc2a2f7 -2 -2
+Description: Constant value for Curtate Timing Function.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+1c3d812c -2 -2
+Description: Constant value for Continuous Timing Function.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+72ac3fb3 -2 -2
+Description: Returns TRUE of the loanInd parm is such that the calculation should be for Borrowers.çä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Inital Rule
+672d1ddf -2 -2
+Description: Returns TRUE of the loanInd parm is such that the calculation should be for Borrowers.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/28/2012 PAC025 DynDivs JL - Inital Rule
+78a00777 -2 -2
+Description: 11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Initial Rule
+34c461b5 -2 -2
+Description: Test Function.çä çäModification Log:çä11/29/2012 PAC025 DynDivs JL - Adjust Effective Date to TransEffDate + (yearIndex - TransEffDur years), so that date versioned CalcRules are used; add yearIndex to parms where needed.çä09/17/2012 PAC025 DynDivs JL - Use Coverage Product Code for CalcRules lookupçä08/16/2012 PAC025 DynDivs JL - Add yearIndex to 'DynDiv Vector ACT Info'çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+22d4e1a2 -2 -2
+Description: çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Ruleçä
+;Offset=00000000

@@ -1,0 +1,195 @@
+;1	08.12.2016 13:38:33	jlawrie2	
+X0 de07a8 0 1d972ff2 0 0 0 0
+
+X39 1d972ff2 de07a8 0 7e4e8fa9 0 0 2
+LTC Premium
+AHDocs Mode Premium("C")
+
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Number Of CoverageOption
+0
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Payment Form
+0
+INPUT Policy DisabilityHealth BenefitAmt
+5
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy ProductCode
+LTC1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy DisabilityHealth Participant IssueAge
+40
+INPUT Policy Coverage ProductCode
+LTC1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy DisabilityHealth Participant IssueGender
+1
+INPUT Policy DisabilityHealth Participant EmploymentClass
+1
+INPUT Policy DisabilityHealth Participant TobaccoPremiumBasis
+1
+INPUT Policy DisabilityHealth BenefitPeriodAcc
+10
+INPUT Policy DisabilityHealth BenefitPeriodSick
+10
+INPUT Policy Jurisdiction
+1
+INPUT Policy DisabilityHealth ElimPeriodAcc
+4
+INPUT Policy DisabilityHealth ElimPeriodSick
+4
+INPUT Policy DisabilityHealth Participant TempTableRating
+0
+INPUT Policy DisabilityHealth Participant PermTableRating
+0
+INPUT Policy LifeParticipant PermPercentageLoading
+0
+INPUT Policy LifeParticipant TempPercentageLoading
+0
+INPUT Policy DisabilityHealth Participant PermFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant TempFlatExtraAmt
+0
+INPUT Policy DisabilityHealth Participant number of SubstandardRating
+0
+INPUT Policy number of Rider
+0
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+0
+INPUT Policy DisabilityHealth Participant ParticipantStatus
+0
+INPUT Policy LifeParticipant IssueAge
+35
+X24 7e4e8fa9 de07a8 0 0 0 0 2
+OUTPUT Policy Mode Premium
+OUTPUT Policy Mode Premium("C")
+
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy DisabilityHealth Rider RiderTypeCode
+1
+INPUT Policy DisabilityHealth ContribMode
+1
+INPUT Payment Form
+0
+INPUT Policy DisabilityHealth BenefitAmt
+100
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy ProductCode
+LTC1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+LTC1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis
+0
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 87edc2a 0 0 0 2
+
+--description
+Main Integration Model for Long Term Care Insurance productçä çäRELEASE LOG:çäRELEASE 1602 - PAC024 LTC Product
+P10 87edc2a de0804 3d60870c 0 0 0 2
+LTC Insurance Product
+OUTPUT Comment
+"Main Integration Model for Disability Income Products"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"DisabilityIncomeProduct.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P0 3d60870c 87edc2a 0 5322200 0 50 0
+Contract Documents@HealthContractDocs
+P0 5322200 87edc2a 0 0 0 50 0
+Values@LongTermCareCalcs
+F0 de0860 0 0 0 0 0 0
+
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 56107f64 0 2b1ed38c 0 0 0 0
+
+I0 2b1ed38c 56107f64 0 3e81732b 0 0 0
+LongTermCareCalcs.pms
+I0 3e81732b 56107f64 0 0 0 0 0
+HealthContractDocs.pms
+-
+X0
+O0
+E0
+L0
+B0
+P1
+87edc2a
+F0
+A0
+T0
+;Offset=00000000

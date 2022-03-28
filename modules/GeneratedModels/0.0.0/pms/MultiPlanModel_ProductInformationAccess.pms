@@ -1,0 +1,252 @@
+;1			
+X0 3e6c7597 0 0 0 0 0 0
+
+O0 1242f795 0 0 0 0 0 0
+
+E0 4d41676b 0 0 0 0 0 0
+
+L0 57d23a83 0 0 0 0 0 0
+
+B0 1865f11a 0 0 0 0 0 0
+
+P0 d7651bc 0 0 0 0 0 0
+
+F0 6dfb2bd1 0 7c36527e 0 0 0 0
+
+F1 7c36527e 6dfb2bd1 0 76194143 0 0 2
+Table Effective Date(effectiveDate)
+Funktion
+DATE(effectiveDate; 0; 0; 0; "YMD")Š//(year(effective_date) * 10000) + (month(effective_date) * 100) + day(effective_date)
+F1 76194143 6dfb2bd1 0 71b628f1 0 0 2
+key1 lookup(tablename; key1)
+Funktion
+IF(EXISTS(table(tablename); key1);Š‰key1;Š‰Š‰IF(EXISTS(table(tablename); 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); 1000);Š‰‰‰1000;ŠŠ           ‰‰‰ERROR("Key fields " & key1 &" not found in " & tablename)Š‰‰)Š‰)Š)Š
+F1 71b628f1 6dfb2bd1 0 3b9c15c9 0 0 2
+key2 lookup(tablename; key1; key2)
+Funktion
+IF(EXISTS(table(tablename); key1; key2);Š‰key2;Š‰Š‰IF(EXISTS(table(tablename); key1; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; 1000);Š‰‰‰1000;ŠŠ           ‰‰‰ERROR("Key fields " & key1 & "/" & key2 &" not found in " & tablename)Š‰‰)Š‰)Š)Š
+F1 3b9c15c9 6dfb2bd1 0 6c4716c4 0 0 2
+key3 lookup(tablename; key1; key2; key3)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3);Š‰key3;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; key2; 1000);Š‰‰‰1000;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 &" not found in " & tablename)Š‰‰)Š‰)Š)Š
+F1 6c4716c4 6dfb2bd1 0 36768d05 0 0 2
+key4 lookup(tablename; key1; key2; key3; key4)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3; key4);Š‰key4;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; key3; 1000);Š‰‰1000;Š‰‰IF(EXISTS(table(tablename); key1; key2; key3; 0);Š‰‰‰0;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 &" not found in " & tablename)Š‰‰)Š‰)Š)Š
+F1 36768d05 6dfb2bd1 0 1096a735 0 0 2
+key5 lookup(tablename; key1; key2; key3; key4; key5)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3; key4; key5);Š‰key5;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; key3; key4; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; key2; key3; key4; 1000);Š‰‰‰1000;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & "/" & key4 & "/" & key5 &" not found in " & tablename)Š‰‰)Š‰)Š)Š
+F1 1096a735 6dfb2bd1 0 a422a75 0 0 2
+key6 lookup(tablename; key1; key2; key3; key4; key5; key6)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6);Š‰key6;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; 1000);Š‰‰‰1000;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & Š‰‰‰‰"/" & key4 & "/" & key5 & "/" & key6 &" not found in " & tablenameŠ‰‰‰)Š‰‰)Š‰)Š)Š
+F1 a422a75 6dfb2bd1 0 7f6b94c 0 0 2
+key7 lookup(tablename; key1; key2; key3; key4; key5; key6; key7)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7);Š‰key7;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; 1000);Š‰‰‰1000;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & Š‰‰‰‰"/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 &" not found in " & tablenameŠ‰‰‰)Š‰‰)Š‰)Š)
+F1 7f6b94c 6dfb2bd1 0 207f3098 0 0 2
+key8 lookup(tablename; key1; key2; key3; key4; key5; key6; key7; key8)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; key8);Š‰key8;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; 1000);Š‰‰‰1000;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & Š‰‰‰‰"/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 & key8 & " not found in " & tablenameŠ‰‰‰)Š‰‰)Š‰)Š)Š
+F1 207f3098 6dfb2bd1 0 50fdc0eb 0 0 2
+key9 lookup(tablename; key1; key2; key3; key4; key5; key6; key7; key8, key9)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; key8; key9);Š‰key9;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; key8; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; key8; 1000);Š‰‰‰1000;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & Š‰‰‰‰"/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 & "/" & key8 & "/" & key9 & " not found in " & tablenameŠ‰‰‰)Š‰‰)Š‰)Š)Š
+F1 50fdc0eb 6dfb2bd1 0 54f6c5c5 0 0 2
+key10 lookup(tablename; key1; key2; key3; key4; key5; key6; key7; key8, key9, key10)
+Funktion
+IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; key8; key9; key10);Š‰key10;Š‰Š‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; key8; key9; 0);Š‰‰0;Š‰‰IF(EXISTS(table(tablename); key1; key2; key3; key4; key5; key6; key7; key8; key9; 1000);Š‰‰‰1000;Š‰           ‰‰ERROR("Key fields " & key1 & "/" & key2 & "/" & key3 & Š‰‰‰‰"/" & key4 & "/" & key5 & "/" & key6 & "/" & key7 & "/" & key8 & "/" & key9 & "/" & key10 & " not found in " & tablenameŠ‰‰‰)Š‰‰)Š‰)Š)Š
+F1 54f6c5c5 6dfb2bd1 0 59e5b712 0 0 2
+PP LP CP PremiumRate(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProduct PremiumRateŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct PremiumRate';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠe_(v_construct(s_keys); 8);  //mortalityAssumptionTypeŠe_(v_construct(s_keys); 9)  //premiumRateTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct CoverageProduct PremiumRate'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠe_(v_construct(s_keys); 8);  //mortalityAssumptionTypeŠe_(v_construct(s_keys); 9)  //premiumRateTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 59e5b712 6dfb2bd1 0 6b119478 0 0 2
+PP(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProductŠIF(EXISTS('Table PolicyProduct';ŠŠe_(v_construct(s_keys); 0);  //carrierCodeŠe_(v_construct(s_keys); 1);  //productCodeŠe_(v_construct(s_keys); 2)  //productVersionCodeŠŠ);ŠŠŠ// then read from the table ŠLOOKUPX( 'Table PolicyProduct';Še_(v_construct(s_keys); 0);  //carrierCodeŠe_(v_construct(s_keys); 1);  //productCodeŠe_(v_construct(s_keys); 2);  //productVersionCodeŠ'table effective date'(e_(v_construct(s_keys); 3));  //saleEffectiveDateŠ field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 6b119478 6dfb2bd1 0 1369384 0 0 2
+PP LoanProvision MinBalanceCalcRule(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LoanProvision MinBalanceCalcRuleŠIF(EXISTS('Table PolicyProduct LoanProvision MinBalanceCalcRule';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //loanTypeŠe_(v_construct(s_keys); 5);  //balanceTypeŠe_(v_construct(s_keys); 6)  //sequenceNumberŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LoanProvision MinBalanceCalcRule'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //loanTypeŠe_(v_construct(s_keys); 5);  //balanceTypeŠe_(v_construct(s_keys); 6)  //sequenceNumberŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 1369384 6dfb2bd1 0 637a144c 0 0 2
+PP LapseProvision(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LapseProvisionŠIF(EXISTS('Table PolicyProduct LapseProvision';ŠŠ'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LapseProvision'[Š'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 637a144c 6dfb2bd1 0 2f902a84 0 0 2
+SourceInfo(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table SourceInfoŠIF(EXISTS('Table SourceInfo';ŠŠe_(v_construct(s_keys); 0)  //sequenceNumberŠŠ);ŠŠŠ// then read from the table Š 'Table SourceInfo'[Še_(v_construct(s_keys); 0)  //sequenceNumberŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 2f902a84 6dfb2bd1 0 10c15f7d 0 0 2
+PPExt PaymentAssembly(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct OLifEExtension PolicyProductExtension PaymentAssemblyŠIF(EXISTS('Table PolicyProduct OLifEExtension PolicyProductExtension PaymentAssembly';ŠŠ'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct OLifEExtension PolicyProductExtension PaymentAssembly'[Š'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 10c15f7d 6dfb2bd1 0 5acb7abc 0 0 2
+PP IPInfoExt RV(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension RateVariationŠIF(EXISTS('Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension RateVariation';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //rateVariationCodeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension RateVariation'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //rateVariationCodeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 5acb7abc 6dfb2bd1 0 7a71f8c7 0 0 2
+PPExt FS(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct OLifEExtension PolicyProductExtension FinancialStatementŠIF(EXISTS('Table PolicyProduct OLifEExtension PolicyProductExtension FinancialStatement';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //statementTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct OLifEExtension PolicyProductExtension FinancialStatement'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //statementTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 7a71f8c7 6dfb2bd1 0 4205343 0 0 2
+PP LP CP(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProductŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //indicatorCodeŠe_(v_construct(s_keys); 5);  //productCodeŠe_(v_construct(s_keys); 6)  //productVersionCodeŠŠ);ŠŠŠ// then read from the table ŠLOOKUPX( 'Table PolicyProduct LifeProduct CoverageProduct';Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //indicatorCodeŠe_(v_construct(s_keys); 5);  //productCodeŠe_(v_construct(s_keys); 6);  //productVersionCodeŠ'table effective date'(e_(v_construct(s_keys); 7));  //saleEffectiveDateŠ field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 4205343 6dfb2bd1 0 50635a84 0 0 2
+PP LPExt ArrangementProduct ArrangementOptProduct Fee(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct FeeŠIF(EXISTS('Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct Fee';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //arrTypeŠe_(v_construct(s_keys); 5)  //feeTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct Fee'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //arrTypeŠe_(v_construct(s_keys); 5)  //feeTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 50635a84 6dfb2bd1 0 3b5abdac 0 0 2
+PP LP CP COP UnderwritingClassProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProductŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'PP LP CP COP'(s_keys; "CovOpt_Key");  //CovOpt_KeyŠ'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));  //underwritingClassŠe_(v_construct(s_keys); 11);  //underwritingSubClassŠ'key6 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11);e_(v_construct(s_keys); 12));  //tobaccoPremiumBasisŠ'key7 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11);'key6 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11);e_(v_construct(s_keys); 12));e_(v_construct(s_keys); 13))  //issueGenderŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'PP LP CP COP'(s_keys; "CovOpt_Key");  //CovOpt_KeyŠ'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));  //underwritingClassŠe_(v_construct(s_keys); 11);  //underwritingSubClassŠ'key6 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11);e_(v_construct(s_keys); 12));  //tobaccoPremiumBasisŠ'key7 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11);'key6 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");'key4 lookup'("Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'PP LP CP COP'(s_keys; "CovOpt_Key");e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11);e_(v_construct(s_keys); 12));e_(v_construct(s_keys); 13))  //issueGenderŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 3b5abdac 6dfb2bd1 0 2b3ca131 0 0 2
+PP LP LifeUSAProduct IRSPremCalcMethod(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct LifeUSAProduct IRSPremCalcMethodŠIF(EXISTS('Table PolicyProduct LifeProduct LifeUSAProduct IRSPremCalcMethod';ŠŠ'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct LifeUSAProduct IRSPremCalcMethod'[Š'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 2b3ca131 6dfb2bd1 0 5d5f0f25 0 0 2
+PP LPExt ArrangementProduct ArrangementOptProduct Fee TableRef(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct Fee TableRefŠIF(EXISTS('Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct Fee TableRef';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //arrTypeŠe_(v_construct(s_keys); 5)  //feeTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct Fee TableRef'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //arrTypeŠe_(v_construct(s_keys); 5)  //feeTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 5d5f0f25 6dfb2bd1 0 1f15b466 0 0 2
+PP LP(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProductŠIF(EXISTS('Table PolicyProduct LifeProduct';ŠŠ'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct'[Š'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 1f15b466 6dfb2bd1 0 76da2a8d 0 0 2
+PP LoanProvision(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LoanProvisionŠIF(EXISTS('Table PolicyProduct LoanProvision';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //loanTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LoanProvision'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //loanTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 76da2a8d 6dfb2bd1 0 59f94f2f 0 0 2
+IssueGenderCC(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table IssueGenderCCŠIF(EXISTS('Table IssueGenderCC';ŠŠe_(v_construct(s_keys); 0)  //IssueGenderCC_id_extŠŠ);ŠŠŠ// then read from the table Š 'Table IssueGenderCC'[Še_(v_construct(s_keys); 0)  //IssueGenderCC_id_extŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 59f94f2f 6dfb2bd1 0 67c5b210 0 0 2
+PP IPInfoExt RV RVByDuration(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension RateVariation RateVariationByDurationŠIF(EXISTS('Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension RateVariation RateVariationByDuration';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //rateVariationCodeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension RateVariation RateVariationByDuration'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //rateVariationCodeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 67c5b210 6dfb2bd1 0 713e1057 0 0 2
+PP Fee TableRef(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct Fee TableRefŠIF(EXISTS('Table PolicyProduct Fee TableRef';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //feeTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct Fee TableRef'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //feeTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 713e1057 6dfb2bd1 0 23e6899a 0 0 2
+PP LPExt ArrangementProduct ArrangementOptProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProductŠIF(EXISTS('Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //arrTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //arrTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 23e6899a 6dfb2bd1 0 6c97c0e6 0 0 2
+PP LP CP COP(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProduct CovOptionProductŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠe_(v_construct(s_keys); 8)  //productCodeŠŠ);ŠŠŠ// then read from the table ŠLOOKUPX( 'Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct';Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠe_(v_construct(s_keys); 8);  //productCodeŠ'table effective date'(e_(v_construct(s_keys); 9));  //saleEffectiveDateŠ field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 6c97c0e6 6dfb2bd1 0 4e96fa84 0 0 2
+PP LP CP COPExt ParticipantProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct OLifEExtension CovOptionProductExtension ParticipantProductŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct OLifEExtension CovOptionProductExtension ParticipantProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'PP LP CP COP'(s_keys; "CovOpt_Key")  //CovOpt_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct OLifEExtension CovOptionProductExtension ParticipantProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'PP LP CP COP'(s_keys; "CovOpt_Key")  //CovOpt_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 4e96fa84 6dfb2bd1 0 31b0b27a 0 0 2
+PP IPInfoExt AllowedArrangementProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension AllowedArrangementProductŠIF(EXISTS('Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension AllowedArrangementProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //arrTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension AllowedArrangementProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //arrTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 31b0b27a 6dfb2bd1 0 4c205e71 0 0 2
+PP LP CPExt ParticipantProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProduct OLifEExtension CoverageProductExtension ParticipantProductŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct OLifEExtension CoverageProductExtension ParticipantProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key")  //Coverage_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct CoverageProduct OLifEExtension CoverageProductExtension ParticipantProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key")  //Coverage_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 4c205e71 6dfb2bd1 0 603bd02c 0 0 2
+PP IPInfo(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct InvestProductInfoŠIF(EXISTS('Table PolicyProduct InvestProductInfo';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //productCodeŠŠ);ŠŠŠ// then read from the table ŠLOOKUPX( 'Table PolicyProduct InvestProductInfo';Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //productCodeŠ'table effective date'(e_(v_construct(s_keys); 5));  //saleEffectiveDateŠ field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 603bd02c 6dfb2bd1 0 3f8a747a 0 0 2
+PP Fee(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct FeeŠIF(EXISTS('Table PolicyProduct Fee';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //feeTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct Fee'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //feeTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 3f8a747a 6dfb2bd1 0 529fe255 0 0 2
+PP FeeExt MinBalanceCalcRule(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct Fee OLifEExtension FeeExtension MinBalanceCalcRuleŠIF(EXISTS('Table PolicyProduct Fee OLifEExtension FeeExtension MinBalanceCalcRule';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //feeTypeŠe_(v_construct(s_keys); 5);  //balanceTypeŠe_(v_construct(s_keys); 6)  //sequenceNumberŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct Fee OLifEExtension FeeExtension MinBalanceCalcRule'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //feeTypeŠe_(v_construct(s_keys); 5);  //balanceTypeŠe_(v_construct(s_keys); 6)  //sequenceNumberŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 529fe255 6dfb2bd1 0 5bbe87e3 0 0 2
+PP JurisdictionApproval(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct JurisdictionApprovalŠIF(EXISTS('Table PolicyProduct JurisdictionApproval';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'key2 lookup'("Table PolicyProduct JurisdictionApproval"; 'PP'(s_keys; "Policy_Key");e_(v_construct(s_keys); 4))  //jurisdictionŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct JurisdictionApproval'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'key2 lookup'("Table PolicyProduct JurisdictionApproval"; 'PP'(s_keys; "Policy_Key");e_(v_construct(s_keys); 4))  //jurisdictionŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 5bbe87e3 6dfb2bd1 0 73be9612 0 0 2
+PP NonForProvision AllowedSubstandard(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct NonForProvision AllowedSubstandardŠIF(EXISTS('Table PolicyProduct NonForProvision AllowedSubstandard';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //nonFortProvŠe_(v_construct(s_keys); 5);  //nonForProvisionKeyŠe_(v_construct(s_keys); 6)  //substandardTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct NonForProvision AllowedSubstandard'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //nonFortProvŠe_(v_construct(s_keys); 5);  //nonForProvisionKeyŠe_(v_construct(s_keys); 6)  //substandardTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 73be9612 6dfb2bd1 0 62b929b1 0 0 2
+PP LoanProvision RV(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LoanProvision RateVariationŠIF(EXISTS('Table PolicyProduct LoanProvision RateVariation';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //loanTypeŠe_(v_construct(s_keys); 5)  //rateVariationCodeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LoanProvision RateVariation'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //loanTypeŠe_(v_construct(s_keys); 5)  //rateVariationCodeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 62b929b1 6dfb2bd1 0 67f0b186 0 0 2
+PP NonForProvision(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct NonForProvisionŠIF(EXISTS('Table PolicyProduct NonForProvision';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //nonFortProvŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct NonForProvision'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //nonFortProvŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 67f0b186 6dfb2bd1 0 406738c6 0 0 2
+DefLifeInsMethodCC(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table DefLifeInsMethodCCŠIF(EXISTS('Table DefLifeInsMethodCC';ŠŠe_(v_construct(s_keys); 0)  //DefLifeInsMethodCC_id_extŠŠ);ŠŠŠ// then read from the table Š 'Table DefLifeInsMethodCC'[Še_(v_construct(s_keys); 0)  //DefLifeInsMethodCC_id_extŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 406738c6 6dfb2bd1 0 7d6d7735 0 0 2
+PP PaymentModeMethProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct PaymentModeMethProductŠIF(EXISTS('Table PolicyProduct PaymentModeMethProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //paymentModeŠe_(v_construct(s_keys); 5)  //paymentMethodŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct PaymentModeMethProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //paymentModeŠe_(v_construct(s_keys); 5)  //paymentMethodŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 7d6d7735 6dfb2bd1 0 6c07aaf4 0 0 2
+JurisdictionCC(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table JurisdictionCCŠIF(EXISTS('Table JurisdictionCC';ŠŠe_(v_construct(s_keys); 0)  //JurisdictionCC_id_extŠŠ);ŠŠŠ// then read from the table Š 'Table JurisdictionCC'[Še_(v_construct(s_keys); 0)  //JurisdictionCC_id_extŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 6c07aaf4 6dfb2bd1 0 31d9eaf1 0 0 2
+PP LPExt ArrangementProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProductŠIF(EXISTS('Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //arrTypeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //arrTypeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 31d9eaf1 6dfb2bd1 0 d35cd27 0 0 2
+DeathBenefitOptCC(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table DeathBenefitOptCCŠIF(EXISTS('Table DeathBenefitOptCC';ŠŠe_(v_construct(s_keys); 0)  //DeathBenefitOptCC_id_extŠŠ);ŠŠŠ// then read from the table Š 'Table DeathBenefitOptCC'[Še_(v_construct(s_keys); 0)  //DeathBenefitOptCC_id_extŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 d35cd27 6dfb2bd1 0 317e1c38 0 0 2
+PP IPInfoExt IndexCalc(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension IndexCalcŠIF(EXISTS('Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension IndexCalc';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //periodModeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension IndexCalc'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6)  //periodModeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 317e1c38 6dfb2bd1 0 6d84d58c 0 0 2
+PP PPInfo CommOptionAvailable(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct PolicyProductInfo CommOptionAvailableŠIF(EXISTS('Table PolicyProduct PolicyProductInfo CommOptionAvailable';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //commOptionŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct PolicyProductInfo CommOptionAvailable'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4)  //commOptionŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 6d84d58c 6dfb2bd1 0 4709af15 0 0 2
+PP LP CP UnderwritingClassProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProductŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));  //underwritingClassŠe_(v_construct(s_keys); 9);  //underwritingSubClassŠ'key5 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));e_(v_construct(s_keys); 9);e_(v_construct(s_keys); 10));  //tobaccoPremiumBasisŠ'key6 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));e_(v_construct(s_keys); 9);'key5 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));e_(v_construct(s_keys); 9);e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11))  //issueGenderŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));  //underwritingClassŠe_(v_construct(s_keys); 9);  //underwritingSubClassŠ'key5 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));e_(v_construct(s_keys); 9);e_(v_construct(s_keys); 10));  //tobaccoPremiumBasisŠ'key6 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));e_(v_construct(s_keys); 9);'key5 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");'key3 lookup'("Table PolicyProduct LifeProduct CoverageProduct UnderwritingClassProduct"; 'PP'(s_keys; "Policy_Key");'PP LP CP'(s_keys; "Coverage_Key");e_(v_construct(s_keys); 8));e_(v_construct(s_keys); 9);e_(v_construct(s_keys); 10));e_(v_construct(s_keys); 11))  //issueGenderŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 4709af15 6dfb2bd1 0 4f3a92b0 0 0 2
+PP LPExt ArrangementProduct ArrangementOptProduct SourceIP(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct SourceInvestProductŠIF(EXISTS('Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct SourceInvestProduct';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //arrTypeŠe_(v_construct(s_keys); 5);  //arrTypeŠe_(v_construct(s_keys); 6)  //productCodeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct OLifEExtension LifeProductExtension ArrangementProduct ArrangementOptProduct SourceInvestProduct'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠe_(v_construct(s_keys); 4);  //arrTypeŠe_(v_construct(s_keys); 5);  //arrTypeŠe_(v_construct(s_keys); 6)  //productCodeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 4f3a92b0 6dfb2bd1 0 53630e6f 0 0 2
+IP(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table InvestProductŠIF(EXISTS('Table InvestProduct';ŠŠe_(v_construct(s_keys); 0)  //productCodeŠŠ);ŠŠŠ// then read from the table ŠLOOKUPX( 'Table InvestProduct';Še_(v_construct(s_keys); 0);  //productCodeŠ'table effective date'(e_(v_construct(s_keys); 1));  //saleEffectiveDateŠ field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 53630e6f 6dfb2bd1 0 75114703 0 0 2
+PP PPInfo(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct PolicyProductInfoŠIF(EXISTS('Table PolicyProduct PolicyProductInfo';ŠŠ'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct PolicyProductInfo'[Š'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 75114703 6dfb2bd1 0 4ea24f0d 0 0 2
+PP LP CP COPExt RV(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct OLifEExtension CovOptionProductExtension RateVariationŠIF(EXISTS('Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct OLifEExtension CovOptionProductExtension RateVariation';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'PP LP CP COP'(s_keys; "CovOpt_Key");  //CovOpt_KeyŠe_(v_construct(s_keys); 10)  //rateVariationCodeŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct CoverageProduct CovOptionProduct OLifEExtension CovOptionProductExtension RateVariation'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP LP CP'(s_keys; "Coverage_Key");  //Coverage_KeyŠ'PP LP CP COP'(s_keys; "CovOpt_Key");  //CovOpt_KeyŠe_(v_construct(s_keys); 10)  //rateVariationCodeŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 4ea24f0d 6dfb2bd1 0 5c5715f8 0 0 2
+PP LP LifeUSAProduct(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct LifeProduct LifeUSAProductŠIF(EXISTS('Table PolicyProduct LifeProduct LifeUSAProduct';ŠŠ'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct LifeProduct LifeUSAProduct'[Š'PP'(s_keys; "Policy_Key")  //Policy_KeyŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+F1 5c5715f8 6dfb2bd1 0 0 0 0 2
+PP IPInfoExt MinBalanceCalcRule(s_keys; field_name)
+Funktion
+// Looks up the plan info for field_name from table Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension MinBalanceCalcRuleŠIF(EXISTS('Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension MinBalanceCalcRule';ŠŠ'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6);  //balanceTypeŠe_(v_construct(s_keys); 7)  //sequenceNumberŠŠ);ŠŠŠ// then read from the table Š 'Table PolicyProduct InvestProductInfo OLifEExtension InvestProductInfoExtension MinBalanceCalcRule'[Š'PP'(s_keys; "Policy_Key");  //Policy_KeyŠ'PP IPInfo'(s_keys; "Invest_Key");  //Invest_KeyŠe_(v_construct(s_keys); 6);  //balanceTypeŠe_(v_construct(s_keys); 7)  //sequenceNumberŠŠ] (field_name);ŠŠ// Else return error messageŠ"NoProdInfoFound"Š)
+A0 2f100e88 0 0 0 0 0 0
+
+T0 4f00e21e 0 0 0 0 0 0
+
+I0 6d1e1855 0 0 0 0 0 0
+
+-
+X0
+O0
+E0
+L0
+B0
+P0
+F0
+A0
+T0
+;Offset=00000000

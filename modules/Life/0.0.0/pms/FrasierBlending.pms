@@ -1,0 +1,4236 @@
+;1	08.12.2016 13:25:54	jlawrie2	
+X0 22bbaa4 0 22cb030 0 0 0 0
+
+X0 22cb030 22bbaa4 22cb0e0 0 0 0 0
+-- Unit Test Cases - Frasier Blending --
+X0 22cb0e0 22cb030 22cb198 22c9be8 0 0 0
+-- Property tests --
+X44 22cb198 22cb0e0 0 23f2798 0 0 2
+OUTPUT Joint Insured Annual Px Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Joint Insured Annual Px Rate'("GSP"; 0; 10;1; "GCOI")
+0.994324390996
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X44 23f2798 22cb0e0 0 22be290 0 0 2
+OUTPUT Joint Insured Annual Qx Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Joint Insured Annual Qx Rate'("GSP"; 0; 10;1; "GCOI")
+0.005675609004
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X44 22be290 22cb0e0 0 22bf430 0 0 2
+OUTPUT Joint Insured Product Annual Px Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Joint Insured Product Annual Px Rate'("GSP"; 0; 10;1; "GCOI")
+0.959159383844054
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 22bf430 22cb0e0 0 22c04e8 0 0 2
+OUTPUT Joint Survivor Annual Px Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Joint Survivor Annual Px Rate'("GSP"; 0; 10;1; "GCOI")
+0.996943733033784
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 22c04e8 22cb0e0 0 22c1768 0 0 2
+OUTPUT Joint Survivor Annual Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Joint Survivor Annual Rate'("GSP"; 0; 10;1; "GCOI")
+0.00079109433267599
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 22c1768 22cb0e0 0 22c2848 0 0 2
+OUTPUT Joint Survivor Monthly COI(calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Joint Survivor Monthly COI'("GSP"; 0; 10;1; "GCOI")
+0.0659245277229992
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X44 22c2848 22cb0e0 0 22c3a00 0 0 2
+OUTPUT Policy Joint Survivor Annual Mortality Rate(yr_t)
+'OUTPUT Policy Joint Survivor Annual Mortality Rate'(1)
+0.0000037088000040
+INPUT Policy LifeParticipant IssueAge
+40
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy LifeParticipant PermTableRating
+6
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+6
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Message Language
+English
+INPUT Policy LifeParticipant TempFlatExtraAmount
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+1
+INPUT Policy number of LifeParticipant
+2
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 22c3a00 22cb0e0 0 22c4670 0 0 2
+OUTPUT Policy Joint Survivor COI Rate(yr_t; curr_guar; mode)
+'OUTPUT Policy Joint Survivor COI Rate'(1; "CURR"; 1)
+0.00370880000399866
+INPUT Policy LifeParticipant IssueAge
+40
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy LifeParticipant PermTableRating
+6
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+6
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Message Language
+English
+INPUT Policy LifeParticipant TempFlatExtraAmount
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/1900
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+01/01/1900
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 22c4670 22cb0e0 0 22c5c28 0 0 2
+OUTPUT Policy Joint Survivor Curr Monthly COI(yr_t)
+'OUTPUT Policy Joint Survivor Curr Monthly COI'(1)
+0.00023662947401526
+INPUT Policy LifeParticipant IssueAge
+40
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy LifeParticipant PermTableRating
+6
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+6
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Message Language
+English
+INPUT Policy LifeParticipant TempFlatExtraAmount
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/1900
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+01/01/1900
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X46 22c5c28 22cb0e0 0 22c6d10 0 0 2
+OUTPUT Policy Joint Survivor Guar Monthly COI(yr_t)
+'OUTPUT Policy Joint Survivor Guar Monthly COI'(1)
+0.000309066666999888
+INPUT Policy LifeParticipant IssueAge
+40
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy LifeParticipant PermTableRating
+6
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+6
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+01/01/2066
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Message Language
+English
+INPUT Policy LifeParticipant TempFlatExtraAmount
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/1900
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+01/01/1900
+INPUT Policy number of LifeParticipant
+2
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X44 22c6d10 22cb0e0 0 22c7ef0 0 0 2
+OUTPUT Primary Insured Annual Px Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Primary Insured Annual Px Rate'("GSP"; 0; 10;1; "GCOI")
+0.988531498396
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X45 22c7ef0 22cb0e0 0 22c7bf0 0 0 2
+OUTPUT Primary Insured Annual Qx Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Primary Insured Annual Qx Rate'("GSP"; 0; 1;1; "GCOI")
+0.004906680396
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Message Language
+English
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X44 22c7bf0 22cb0e0 0 0 0 0 2
+OUTPUT Primary Insured Product Annual Px Rate( calc_type; cov_ix; yr_t; month_m; rate_type)
+'OUTPUT Primary Insured Product Annual Px Rate'("GSP"; 0; 10;1; "GCOI")
+0.925165992732593
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+45
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+2
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 22c9be8 22cb030 22ca5d0 241a798 0 0 0
+-- Rate Test Cases
+X0 22ca5d0 22c9be8 22ca648 22cabb8 0 0 0
+-- Primary (Male) and Joint (Female), Table rating 1.25 and Flat Extra 24 per year
+X46 22ca648 22ca5d0 0 0 0 0 2
+FRASIER Joint Survivor Monthly COI(calcType; coverageIndex; yearIndex; monthIndex; vectorSolveParms)
+'FRASIER Joint Survivor Monthly COI'("C";0;1;5;1)
+0.0000335416729946303
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+2
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant TempFlatExtraAmount
+24
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+2
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+24
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Coverage BandCode
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Message Language
+9
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 22cabb8 22c9be8 24094e8 24170b0 0 0 0
+-- Primary (Male) and Joint (Female), no extra rating factors - 10 years duration
+X46 24094e8 22cabb8 2409a50 0 0 0 2
+FRASIER Joint Survivor Monthly COI
+'FRASIER Joint Survivor Monthly COI'("C";0;1;10;1)
+0.0000654134719724198
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2004
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling System
+CL
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Message Language
+9
+INPUT Policy ProductCode
+UL1PA
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Calling Program
+
+INPUT PolicyProduct PolicyProductTypeCode
+3
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X44 2409a50 24094e8 240ab48 240c6a0 0 0 2
+FRASIER Joint Survivor Guar Conv Monthly COI
+'FRASIER Joint Survivor Guar Conv Monthly COI'("C";0;"CCOI";1;10;1)
+0.0000515555970877676
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling System
+CL
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy ProductCode
+UL1PA
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Calling Program
+
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X41 240ab48 2409a50 240b728 0 0 0 2
+FRASIER Joint Survivor Annual Px Rate
+'FRASIER Joint Survivor Annual Px Rate'("C";0; "CCOI";1;10;1)
+0.999999381332835
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Calling System
+NBA
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X29 240b728 240ab48 0 0 0 0 2
+FRASIER Primary Insured Product Annual Px Rate
+'FRASIER Primary Insured Product Annual Px Rate'("C";0;"CCOI";1;10;1)
+0.999155786452
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Calling System
+NBA
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X70 240c6a0 24094e8 240f518 0 0 0 2
+FRASIER Joint Survivor Curr Conv Monthly COI
+'FRASIER Joint Survivor Curr Conv Monthly COI'("C";1;"CCOI";1;10;1)
+0.0000654134719724198
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+2
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5Y
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy Coverage EffDate[1]
+01/01/2004
+INPUT Policy Coverage ProductCode[1]
+UL1PA
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+A_PD_Ext_Coverage_BandPremInd[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant IssueAge[1;1]
+35
+INPUT Policy LifeParticipant PermTableRating[1;1]
+0
+INPUT Policy LifeParticipant TempTableRating[1;1]
+0
+INPUT Policy LifeParticipant IssueGender[1;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[1;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[1;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[1;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[1;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[1;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1;1]
+0
+INPUT Calling System
+NBA
+INPUT Policy CoverageProduct MaturityAge[1]
+100
+INPUT Policy Coverage BandCode[1]
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Message Language
+9
+INPUT Policy ProductCode
+UL1PA
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy number of LifeParticipant[1]
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[1;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[1;1]
+0
+INPUT Policy Coverage IndicatorCode[1]
+1
+X41 240f518 240c6a0 240fae0 0 0 0 2
+FRASIER Joint Survivor Annual Px Rate
+'FRASIER Joint Survivor Annual Px Rate'("C";0;"CCOI";1;10;1)
+0.999999381332835
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Calling System
+NBA
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Calling Program
+VPMSTEST
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X29 240fae0 240f518 0 24108d8 0 0 2
+FRASIER Primary Insured Product Annual Px Rate
+'FRASIER Primary Insured Product Annual Px Rate'("C";0;"CCOI";1;10;1)
+0.999155786452
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Calling System
+NBA
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X31 24108d8 240f518 2410f90 2413960 0 0 2
+FRASIER Joint Insured Annual Px Rate
+'FRASIER Joint Insured Annual Px Rate'("C";0;"GCOI";1;1;1)
+0.998534334904
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Calling System
+NBA
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X35 2410f90 24108d8 2411950 0 0 0 2
+FRASIER Joint Insured Annual Qx Rate
+'FRASIER Joint Insured Annual Qx Rate'("C";0; "CCOI";25;1; "")
+0.005734250796
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X40 2411950 2410f90 2412150 0 0 0 2
+FRASIER Joint Insured Annual Qx Rate Pre Uninsured Check
+'FRASIER Joint Insured Annual Qx Rate Pre Uninsured Check'("C"; 0; "CCOI";1;1;"")
+0.000916040685
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+01/01/2010
+INPUT Policy LifeParticipant PermTableRating[0;1]
+2
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy Coverage BandCode
+1
+INPUT Calling System
+NBA
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Message Language
+9
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;1]
+01/01/2099
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;1]
+01/01/2099
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;1;1]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;1;1]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;1;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy CoverageProduct MaturityAge
+121
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy Coverage IndicatorCode
+1
+X33 2412150 2411950 0 2413108 0 0 2
+FRASIER Joint Insured Standard Annual COI
+'FRASIER Joint Insured Standard Annual COI'("C";0;"GCOI";1;"")
+1.465665096
+f_Joint_Insured_standard_annual_COI("MORT";1;1;1)
+1.4656651
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy Coverage ProductCode[1]
+INDP5Y
+INPUT Policy LifeParticipant IssueAge[1;1]
+35
+INPUT Policy LifeParticipant IssueGender[1;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[1;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1;1]
+1
+A_PD_Ext_Coverage_BandPremInd[1]
+0
+INPUT Policy Coverage BandCode
+1
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X25 2413108 2411950 0 0 0 0 2
+FRASIER Joint Insured Standard Annual COI
+'FRASIER Joint Insured Standard Annual COI'("C";0;"GCOI";1;"")
+1000
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy Coverage ProductCode[1]
+UL1PA
+INPUT Policy LifeParticipant IssueAge[1;1]
+35
+INPUT Policy LifeParticipant IssueGender[1;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[1;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1;1]
+1
+A_PD_Ext_Coverage_BandPremInd[1]
+0
+INPUT Policy Coverage BandCode[1]
+1
+INPUT Calling System
+NBA
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy Coverage BandCode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy CoverageProduct MaturityAge[1]
+121
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductCode
+SPIA1PA
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy CoverageProduct MaturityAge
+0
+X31 2413960 240f518 0 24140d8 0 0 2
+FRASIER Joint Insured Annual Px Rate
+'FRASIER Joint Insured Annual Px Rate'("C";0;"CCOI";1;1;"")
+0.999267167452
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Calling System
+NBA
+INPUT Policy CoverageProduct MaturityAge
+100
+INPUT Policy Coverage BandCode
+1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT PolicyProduct AgeCalculationType
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+X52 24140d8 240f518 0 2414ba0 0 0 2
+FRASIER Joint Survivor Monthly COI- Male 35, Female 30
+'FRASIER Joint Survivor Monthly COI'("C";0; 1; 1; "")
+0.0000154000010521571
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueAge[0;1]
+30
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Message Language
+9
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X52 2414ba0 240f518 0 2416058 0 0 2
+FRASIER Joint Survivor Monthly COI- Male 35, Female 31
+'FRASIER Joint Survivor Annual Px Rate'("C"; 0;"CCOI"; 1;1;"")
+0.999999815199999
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueAge[0;1]
+30
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Message Language
+9
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X52 2416058 240f518 0 0 0 0 2
+f_FRASIER_BroH_Primary_Addl_Mort("CCOI"; 0; "CurrCV"; 1; 1)
+'FRASIER BrokenHeart Primary Addl Mort'("C"; 0; "CCOI"; 1; 1;"")
+0
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueAge[0;1]
+30
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Message Language
+9
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+0
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X0 24170b0 22c9be8 2417e80 2418ca8 0 0 0
+-- Tests for older age adjustment --
+X35 2417e80 24170b0 0 2418268 0 0 2
+FRASIER Primary Insured Standard Annual COI(rate_type; cov_ix; calc_type; duration)
+'FRASIER Primary Insured Standard Annual COI'("GCOI";0;"GLP";45;"")
+1000
+INPUT Policy LifeParticipant IssueAge
+79
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy CoverageOption ProductCode
+0
+INPUT Policy Coverage MaturityAge
+121
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+X46 2418268 24170b0 0 0 0 0 2
+FRASIER Joint Survivor Monthly COI(rate_type; cov_ix; calc_type; yr_t;month_m)
+'FRASIER Joint Survivor Monthly COI'("C"; 0;45;1;"")
+83.3333333333333
+INPUT Policy LifeParticipant IssueAge
+79
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+79
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy CoverageOption ProductCode
+0
+INPUT Policy Coverage MaturityAge
+121
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Message Language
+9
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X0 2418ca8 22c9be8 2419518 0 0 0 0
+-- Shadow Account COI --
+X22 2419518 2418ca8 0 2419808 0 0 2
+FRASIER Joint Insured Standard Annual COI- Base
+'FRASIER Joint Insured Standard Annual COI'("M"; 0; "CCOI"; 1;"")
+0.33
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy CoverageOption ProductCode
+PPA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[0;1]
+30
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X39 2419808 2418ca8 0 2419d60 0 0 2
+FRASIER Joint Insured Standard Annual COI- Rider
+'FRASIER Joint Insured Standard Annual COI'("M"; 0; "CCOI"; 5;"")
+0.705
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage ProductCode[1]
+WL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[1;1]
+30
+INPUT Policy LifeParticipant IssueGender[1;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[1;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1;1]
+1
+INPUT Policy Coverage BandCode[1]
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode[1]
+
+INPUT Message Language
+9
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentAmt
+1000
+INPUT Policy LifeParticipant IssueAge[5;1]
+35
+INPUT Policy Coverage ProductCode[5]
+EIUL2PA
+INPUT Policy Coverage EffDate[5]
+01/01/2006
+INPUT Policy Coverage IndicatorCode[5]
+1
+INPUT Policy Coverage ProductVersionCode[5]
+
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage RequestedMaturityDur
+65
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy Coverage BandCode
+0
+X27 2419d60 2418ca8 0 241a1f8 0 0 2
+FRASIER Primary Insured Standard Annual COI- Base
+'FRASIER Primary Insured Standard Annual COI'("M"; 0; "CCOI"; 5;"")
+0.705
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy CoverageOption ProductCode
+PPA1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X28 241a1f8 2418ca8 0 0 0 0 2
+FRASIER Primary Insured Standard Annual COI- Rider
+'FRASIER Primary Insured Standard Annual COI'("C"; 0; "CCOI"; 5;"")
+0.705
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Policy CoverageOption ProductCode
+PPA1PA
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Policy number of Coverage
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X0 241a798 22cb030 241ac48 241b680 0 0 0
+-- Broken Heart Syndrome Tests --
+X5 241ac48 241a798 0 241ae38 0 0 2
+FRASIER BrokenHeart Calc(Product_code; Rate_Type)
+'FRASIER BrokenHeart Calc'("JSUL1PA"; "C")
+1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+X5 241ae38 241a798 0 241b008 0 0 2
+FRASIER BrokenHeart Duration(Product_code; Rate_Type)
+'FRASIER BrokenHeart Duration'("JSUL1PA";"C")
+3
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+X5 241b008 241a798 0 241b1d0 0 0 2
+FRASIER BrokenHeart Factor(Product_code; Rate_Type)
+'FRASIER BrokenHeart Factor'("JSUL1PA";"C")
+0.1
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+X55 241b1d0 241a798 0 0 0 0 2
+FRASIER BrokenHeart Primary Addl Mort(Rate_Type; index
+'FRASIER BrokenHeart Primary Addl Mort'("C";0;"CCOI";10;1;"")
+0.000000271188098177541
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT TransEffDate
+1/1/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Ext_Coverage_BandPremInd
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Calling System
+I1
+INPUT PolicyProduct MortalityOrMorbidityTable
+138
+INPUT Policy Coverage BandCode
+1
+INPUT Policy CoverageProduct LivesType
+2
+INPUT Policy CoverageProduct MaturityAge
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X0 241b680 22cb030 241c360 0 0 0 0
+--Illustration testing--
+X48 241c360 241b680 0 241c6f8 0 0 2
+FRASIER Joint Survivor Monthly COI(rate_type; coverageIndex; calcType; yearIndex; monthIndex)
+FRASIER Joint Survivor Monthly COI("C"; 0; 1; 1; 1)
+0.0000515556120017635
+INPUT Policy ProductType
+4
+INPUT Message Language
+9
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X48 241c6f8 241b680 0 241d0a0 0 0 2
+FRASIER Joint Survivor Monthly COI(rate_type; coverageIndex; calcType; yearIndex; monthIndex)
+FRASIER Joint Survivor Monthly COI("G"; 0; 1; 1;"")
+0.0002062223884991
+INPUT Policy ProductType
+4
+INPUT Message Language
+9
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X49 241d0a0 241b680 0 241ddf8 0 0 2
+FRASIER Joint Survivor Monthly COI(rate_type; coverageIndex; calcType; yearIndex; monthIndex)
+FRASIER Joint Survivor Monthly COI("M"; 0; 1; 1;"")
+0.000128889000250432
+INPUT Policy ProductType
+3
+INPUT Message Language
+9
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT RequestBasis ChargeAssumptionMult
+120
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X49 241ddf8 241b680 0 241eaa8 0 0 2
+FRASIER Joint Survivor Monthly COI(rate_type; coverageIndex; calcType; yearIndex; monthIndex)
+FRASIER Joint Survivor Monthly COI("C"; 0; 1; 1;"")
+0.0000515556120017635
+INPUT Policy ProductType
+4
+INPUT Message Language
+9
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT RequestBasis ChargeAssumptionMult
+120
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X49 241eaa8 241b680 0 241f958 0 0 2
+FRASIER Joint Survivor Monthly COI(rate_type; coverageIndex; calcType; yearIndex; monthIndex)
+FRASIER Joint Survivor Monthly COI("C"; 0; 1; 1;"")
+0.0000515556120017635
+INPUT Policy ProductType
+3
+INPUT Message Language
+9
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT RequestBasis ChargeAssumptionMult
+120
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X49 241f958 241b680 0 0 0 0 2
+FRASIER Joint Survivor Monthly COI(rate_type; coverageIndex; calcType; yearIndex; monthIndex)
+FRASIER Joint Survivor Monthly COI("C"; 0; 1; 1;"")
+0.0000515556120017635
+INPUT Policy ProductType
+4
+INPUT Message Language
+9
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+18
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+Input TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant IssueAge[0;1]
+35
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;1]
+12/31/2999
+INPUT RequestBasis ChargeAssumptionMult
+120
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration
+20
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDuration[0;1]
+20
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+O0 22bb954 0 0 0 0 0 0
+
+E0 22bb9c4 0 0 0 0 0 0
+
+L0 22bba34 0 0 0 0 0 0
+
+B0 22bbbf4 0 0 0 0 0 0
+
+P3 22bbb14 0 2420670 0 0 0 2
+
+--description
+Cost of Insurance (COI) rate calculations are required for Universal Life policies with two lives. Where Joint Survivor coverage is provided on a policy, the individual mortality rates for the two lives assured need to be combined using Frasier blending.çä çäProperties available for return include:çä - annual mortality rateçä - monthly COI on a current and guaranteed basisçä - Qx and Px values by individual insuredçä çäThe Joint COI rates are calculated by "frasierizing" the individual mortality rates:çä çä1)âTake the stream of individual q‚Äôs for each individual, insured 1 with an issue age of A, and insured 2 with an issue age of B. çä çäIt is necessary that each stream of q‚Äôs has a length equal to (Maturity age - younger individual‚Äôs issue age).  So it will be necessary to extend the stream of q‚Äôs for the older insured if the tables provide values only to maturity age).  Individual rates beyond the table are calculated by interpolating between the value at the table maximum age, and a value of 1 at maturity age, and using 1 beyond maturity age. çä çä2) âCalculate pA = (1 - qA), and pB = (1 - qB)çäâNote that qA and qB include table ratings and flat extras as appropriate.çäpA+1 = (1 - qA+1) and pB+1 = (1 - qB+1)çä çä3) âCalculate  tpA = (pA)( pA+1)...( pA+ t -1)çäâtpB = (pB)( pB+1)...( pB+ t -1)çä çäâfor t = 1,2,...,(100 - youngest individual‚Äôs issue age) çä çä4) âCalculate jpt = tpA  +  tpB  -  (tpA)(tpB)çä çä5) âThen,  jqt = 1 - (jpt)/(jpt-1) for t>1,çäâand jq1 = (qA)(qB)çä çäThe joint COI rate will be output as an annual rate for valuation purposes, as well as a monthly COI rate (for both current and guaranteed rates). A further property will be provided with parameters for mode and current / guaranteed rates.çä çäOther considerationsçä çäBroken heart syndrome (where the surviving spouse exhibits higher than expected mortality shortly after the death of the first to die) will be supported. These formulas can be incorporated into the calculations by using a calculation rule, which is stored in the calculation rules table of the Product Definition model. çä çäSupport is also provided for annual/monthly conversion rules, as well as, additive and multiplicative adjustment factors. çä çäSupport is provided for one of the joint lives to be uninsurable. In this case, a table rating will be added to the standard mortality rate for that life, and this can be adjusted as required.çä çäRELEASE LOG:çäRELEASE 1301 - PAC028 Shadow Account Catch Up PremiumçäRELEASE 1101 - PAC019 Rate Access via InputsçäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.3"
+P13 2420670 22bbb14 2421ee8 0 0 0 2
+Frasier Blending
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   COI charges - Frasier Blending Model.çä Author:  Nick Ticknerçä Date:     10/10/2006 çä Modification Log:çä Date              âModeler               âChange Descriptionçä 10/10/2006âNick TicknerâCreated Model.çä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"FrasierBlending.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P13 2421ee8 2420670 0 2422930 0 0 2
+Frasier Blending Test properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Joint Survivor Annual Mortality Rate(yearIndex)
+FORMAT('FRASIER Joint Survivor Annual Rate'("COI";0;"GCOI";yearIndex;1;'GEN Vector Blank');"1.16")
+OUTPUT Policy Joint Survivor Curr Monthly COI(yearIndex)
+'FRASIER Joint Survivor Monthly COI'('CalcType Current'("C");0;yearIndex;1;'GEN Vector Blank')
+OUTPUT Policy Joint Survivor Guar Monthly COI(yearIndex)
+'FRASIER Joint Survivor Monthly COI'('CalcType Guaranteed'("G");0;yearIndex;1;'GEN Vector Blank')
+OUTPUT Policy Joint Survivor COI Rate(yearIndex; curr_guar; mode)
+CASE( /*Mode*/ mode;çä   /*Annual*/ 1 : 'FRASIER Joint Survivor Monthly COI'(curr_guar;0;yearIndex;1;'GEN Vector Blank') * 12;çä   // Annuallyçä/*Semi-annual*/2 : 'FRASIER Joint Survivor Monthly COI'(curr_guar;0;yearIndex;1;'GEN Vector Blank') * 6;çä   // Semi-Annually çä/*Quarterly*/3 : 'FRASIER Joint Survivor Monthly COI'(curr_guar;0;yearIndex;1;'GEN Vector Blank') * 4;çä   // Quarterlyçä/*Monthly*/4 : 'FRASIER Joint Survivor Monthly COI'(curr_guar;0;yearIndex;1;'GEN Vector Blank');çä   // Monthlyçä/*else return error message*/ : "mode not compatible")çä
+OUTPUT Primary Insured Annual Qx Rate(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Primary Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Joint Insured Annual Qx Rate( calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Joint Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Primary Insured Annual Px Rate(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Primary Insured Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Joint Insured Annual Px Rate(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Joint Insured Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Primary Insured Product Annual Px Rate(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Primary Insured Product Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Joint Insured Product Annual Px Rate(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Joint Insured Product Annual Px rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+P6 2422930 2420670 0 0 0 0 2
+// Test Properties //
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Joint Survivor Annual Rate(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Joint Survivor Annual Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Joint Survivor Monthly COI(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Joint Survivor Monthly COI'(calcType;coverageIndex;yearIndex;monthIndex;'GEN Vector Blank')
+OUTPUT Joint Survivor Annual Px Rate(calcType; coverageIndex; yearIndex; monthIndex; rate_type)
+'FRASIER Joint Survivor Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;'GEN Vector Blank')
+F0 22bbb84 0 7c893534 0 0 0 0
+
+F1 7c893534 22bbb84 2422f08 0 0 0 2
+:FRASIER
+Funktion
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+F1 2422f08 7c893534 24231d8 2428fa0 0 0 2
+--Frasier Blending Functions--
+Funktion
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+F1 24231d8 2422f08 542877f1 0 0 0 2
+FRASIER Joint Survivor Monthly COI(calcType; coverageIndex; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ('CalcType Curr or Guar Is Active'(calcType) || 'CalcType 7702 Is Active'(calcType) || 'CalcType Target Is Active'(calcType) ; çä  'FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;'ACCS ULCV Coverage CalcType RateType'(calcType;coverageIndex;yearIndex;12);yearIndex;monthIndex;vectorSolveParms) ; çä  IF ('CalcType Midpoint Is Active'(calcType) ; çä    'FRASIER Midpoint Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;yearIndex;monthIndex;vectorSolveParms) ; çä    IF ( /*Is Product Universal Life*/ 'ProductType is Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) && 'CalcType Assumed Is Active'(calcType) ; çä      'FRASIER Assumed Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;yearIndex;monthIndex;vectorSolveParms) ; çä      IF ( /*Is Product Variable Universal Life or Is Product Indexed Universal Life*/ 'ProductType is Variable Universal LIFe'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) || 'ProductType is Indexed Universal LIFe'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) ; çä        'FRASIER Variable Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;yearIndex;monthIndex;vectorSolveParms) ; çä        IF ('ProductType is Universal Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) ; çä          'FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;'ACCS ULCV Coverage CalcType RateType'(calcType;coverageIndex;yearIndex;12);yearIndex;monthIndex;vectorSolveParms) ; çä           /*No*/ 'Messages SystemMessage'("CA1000";'Message Language';V_("FrasierBlending";"'FRASIER Joint Survivor Monthly COI'"))çä        )çä    )çä)çä)çä)
+F1 542877f1 24231d8 0 77c8467c 0 0 2
+FRASIER Variable Joint Survivor Monthly COI Preage Chk(calcType; coverageIndex; yearIndex;monthIndex; vectorSolveParms)
+Funktion
+IF ('CalcType ILLUS Is Active'(calcType) && 'CalcType Variable Is Active'(calcType) ; çä  IF ('CalcType Guaranteed Is Active'(calcType) ; çä     //"VARILLGUARZEROCV","VARILLGUARASSUMEDCV":çä'FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;"GCOI";yearIndex;monthIndex;vectorSolveParms) ; çä    IF ('CalcType Current Is Active'(calcType) ; çä       //"VARILLCURRZEROCV","VARILLCURRASSUMEDCV":çä'FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;"CCOI";yearIndex;monthIndex;vectorSolveParms) ; çä      'Messages SystemMessage'("CA1000";'Message Language';V_("FrasierBlending";"'FRASIER Variable Joint Survivor Monthly COI Preage Chk'"))çä    )çä) ; çä'Messages SystemMessage'("CA1000";'Message Language';V_("FrasierBlending";"'FRASIER Variable Joint Survivor Monthly COI Preage Chk'"))çä)
+F1 77c8467c 24231d8 0 2423ee8 0 0 2
+FRASIER Assumed Joint Survivor Monthly COI Preage Chk(calcType; coverageIndex; yearIndex;monthIndex; vectorSolveParms)
+Funktion
+MIN('FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;"CCOI";yearIndex;monthIndex;vectorSolveParms) * 'Std ChargeMult' * .01;'FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;"GCOI";yearIndex;monthIndex;vectorSolveParms))
+F1 2423ee8 24231d8 2423fa0 457b5202 0 0 2
+FRASIER Joint Survivor Monthly COI Preage Chk(calcType; coverageIndex; rate_type; yearIndex;monthIndex; vectorSolveParms)
+Funktion
+IF ( /*If Rate assumption is current*/ 'Rate Type is Curr'(calcType;rate_type) ; çä   /*Return current COI rate*/ 'FRASIER Joint Survivor Curr Conv Monthly COI'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) ; çä   /*Return guaranteed COI rate*/ 'FRASIER Joint Survivor Guar Conv Monthly COI'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) //guaranteed ratesâçäçä)
+F1 2423fa0 2423ee8 0 2424058 0 0 2
+FRASIER Joint Survivor Curr Conv Monthly COI(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*qx rate is 1*/ 'FRASIER Joint Survivor Annual Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) = 1 ; çä   /*Return maximum rate*/ 'Constant Max Monthly COI' ; çä   /*Calculate actual monthly rate*/ MIN('GEN Round'((1 - ((1 - 'FRASIER Joint Survivor Annual Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms)) ^ (1 / 12)));20) * 1000;'Constant Max Monthly COI')çä)
+F1 2424058 2423ee8 0 2424110 0 0 2
+FRASIER Joint Survivor Guar Conv Monthly COI(calcType; coverageIndex; rate_type; yearIndex;monthIndex; vectorSolveParms)
+Funktion
+MIN('GEN Floor'('FRASIER Joint Survivor Annual Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) / 12 * 1000;20);'Constant Max Monthly COI')
+F1 2424110 2423ee8 2424240 2427930 0 0 2
+FRASIER Joint Survivor Annual Rate(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+MIN(1;'FRASIER Joint Survivor Annual Rate Pre Age Check'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms))
+F1 2424240 2424110 0 24242f8 0 0 2
+FRASIER Joint Survivor Annual Rate Pre Age Check(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*first policy year*/ yearIndex = 1 ; çä   /*Calculate Qx from Px*/ (1 - 'FRASIER Joint Survivor Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms)) ; çä   /*Calculate Qx from product Px rates*/ IF ('FRASIER Joint Survivor Annual Rate Pre Age Check'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms) = 1 || 'FRASIER Joint Survivor Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms) = 0 ; çä     // probability of living is zeroçä1 ; çä    (1 - 'FRASIER Joint Survivor Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) / 'FRASIER Joint Survivor Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms))çä  )çä)
+F1 24242f8 2424110 2424430 0 0 0 2
+FRASIER Joint Survivor Annual Px Rate(calcType; coverageIndex; rate_type; yearIndex;monthIndex; vectorSolveParms)
+Funktion
+'FRASIER Primary Insured Product Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) + 'FRASIER Joint Insured Product Annual Px rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) - 'FRASIER Primary Insured Product Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) * 'FRASIER Joint Insured Product Annual Px rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms)
+F1 2424430 24242f8 24244e8 0 0 0 2
+FRASIER Primary Insured Product Annual Px Rate(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*first policy year*/ yearIndex = 1 ; çä   /*Return year 1 Px rate*/ 'FRASIER Primary Insured Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) ; çä   /*Calculate Px rate from product Px rate*/ 'FRASIER Primary Insured Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) * 'FRASIER Primary Insured Product Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms)çä)
+F1 24244e8 2424430 2424620 0 0 0 2
+FRASIER Primary Insured Annual Px Rate(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*Life has passed maturity age*/ 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0) + yearIndex - 1 >= 'PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') ; çä   /*Zero rate of survival assumed*/ 0 ; çä   /*Else calculate survival rate*/ 1 - 'FRASIER Primary Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) // Subtract the additional mortality from BHS if applicableçä - IF ('FRASIER BrokenHeart Calc'('Policy ProductCode';rate_type) ; çä    'FRASIER BrokenHeart Primary Addl Mort'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) ; çä    0çä  )çä)
+F1 2424620 24244e8 2424758 0 0 0 2
+FRASIER Primary Insured Annual Qx Rate(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*Life is uninsurable?*/ 'FRASIER Uninsurable'(calcType;coverageIndex;0) ; çä   /*Get uninsurable rate*/ 'FRASIER Uninsurable Rate'(rate_type;coverageIndex;yearIndex;monthIndex;calcType) ; çä   /*get ordinary rate*/ 'FRASIER Primary Insured Annual Qx Rate Pre Uninsured Check'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms)çä)
+F1 2424758 2424620 2424810 24272f8 0 0 2
+FRASIER Primary Insured Annual Qx Rate Pre Uninsured Check(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+MIN(1;'FRASIER Primary Insured Standard Annual COI'(calcType;coverageIndex;rate_type;'Coverage duration yr t'(calcType;coverageIndex;yearIndex;monthIndex);vectorSolveParms) / 1000 * IF ( /*Include table rating?*/ 'ACCS CalcRule UL COI Rules'('Policy ProductCode';rate_type;"Incl_table_rating";TransEffDate) ; çä   /*Yes*/ 'FRASIER Coverage Table Rating Factor'(calcType;coverageIndex;'Coverage duration yr t'(calcType;coverageIndex;yearIndex;monthIndex);0) ; çä   /*No*/ 1çä) + IF ( /*Include flat extra?*/ 'ACCS CalcRule UL COI Rules'('Policy ProductCode';rate_type;"Incl_flat_extras";TransEffDate) ; çä /*Yes*/ 'Std Coverage Total Flat Extra'(calcType;coverageIndex;'Coverage duration yr t'(calcType;coverageIndex;yearIndex;monthIndex);0) * 12 / 1000 ; çä /*No*/ 0çä))
+F1 2424810 2424758 0 2cecf4af 0 0 2
+-- FRASIER Primary Insured Standard Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF (/*Shadow Account calculation*/ 'CalcType Shadow Is Active'(calcType)||'CalcType SHGT Is Active'(calcType);çäâ/*Use shadow account rates*/'FRASIER Primary Insured ShadowAccount Annual COI'(calcType; coverageIndex; rate_type; duration; vectorSolveParms);çäâ// ElseçäâçäâIF('PI Use Attributes'("Primary Insured Standard Annual COI");çäââ'STD Primary Insured Standard Annual COI'(coverageIndex; duration);çäââçäâIF(/*Life past maturity age*/'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0) + duration - 1 > 'PI CoverageProduct MaturityAge'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate');çäââ/*Use max COI rate*/çäââ'Constant Max Monthly COI';çäââ/*Otherwise get rate from rate model*/çäââ Rate(â'Policy Coverage ProductCode'(calcType; coverageIndex); çäâââârate_type;çäââââTransEffDate;çäââââV_('Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);çäâââââduration;çäâââââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0); çäâââââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0); çäâââââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); çäâââââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur) ;çäâââââ"**";çäâââââ"00";çäâââââ"1";çäâââââ'CalcType Assumed'(calcType);çäâââââ'PI PolicyProduct MortalityOrMorbidityTable'(çäââââââ'Policy Coverage ProductCode'(calcType; coverageIndex); çäââââââ'Policy EffDate'çäââââââââ);çäâââââ'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')âââââçäâââçäââââ        )çäâââ)çäâ)çä)  âçä) * 12çä çä çä çä çä çä çä çä çä çä çä çä
+F1 2cecf4af 2424758 0 759966bc 0 0 2
+-- FRASIER Primary Insured Standard Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF (/*Shadow Account calculation*/ 'CalcType Shadow Is Active'(calcType)||'CalcType SHGT Is Active'(calcType);çäâ/*Use shadow account rates*/'FRASIER Primary Insured ShadowAccount Annual COI'(calcType; coverageIndex; rate_type; duration; vectorSolveParms);çäâ// ElseçäâçäâIF('PI Use Attributes'("Primary Insured Standard Annual COI");çäââ'STD Primary Insured Standard Annual COI'(coverageIndex; duration);çäââçäâIF(/*Life past maturity age*/'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0) + duration - 1 > 'PI CoverageProduct MaturityAge'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate');çäââ/*Use max COI rate*/çäââ'Constant Max Monthly COI';çäââ/*Otherwise get rate from rate model*/çäââ Rate(â'Policy Coverage ProductCode'(calcType; coverageIndex); çäâââârate_type;çäââââTransEffDate;çäââââV_('Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);çäâââââduration;çäâââââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0); çäâââââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0; duration); çäâââââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); çäâââââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur) ;çäâââââ"**";çäâââââ"00";çäâââââ"1";çäâââââ'CalcType Assumed'(calcType);çäâââââ'PI PolicyProduct MortalityOrMorbidityTable'(çäââââââ'Policy Coverage ProductCode'(calcType; coverageIndex); çäââââââ'Policy EffDate'çäââââââââ);çäâââââ'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')âââââçäâââçäââââ        )çäâââ)çäâ)çä)  âçä) * 12çä çä çä çä çä çä çä çä çä çä çä çä
+F1 759966bc 2424758 2424e90 2425868 0 0 2
+FRASIER Primary Insured Standard Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF ( /*Shadow Account calculation*/ 'CalcType Shadow Is Active'(calcType) || 'CalcType SHGT Is Active'(calcType) ; çä   /*Use shadow account rates*/ 'FRASIER Primary Insured ShadowAccount Annual COI'(calcType;coverageIndex;rate_type;duration;vectorSolveParms) ; çä   // ElseçäIF ('PI Use Attributes'("Primary Insured Standard Annual COI") ; çä    'STD Primary Insured Standard Annual COI'(coverageIndex;duration) ; çä    IF ( /*Life past maturity age*/ 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0) + duration - 1 > 'PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') ; çä       /*Use max COI rate*/ 'Constant Max Monthly COI' ; çä       /*Otherwise get rate from rate model*/ Rate('Policy Coverage ProductCode'(calcType;coverageIndex);rate_type;TransEffDate;V_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);duration;'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;duration);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;duration);'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur);"**";"00";"1";'CalcType Assumed'(calcType);'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate');'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate')))çä    )çä)çä) * 12
+F1 2424e90 759966bc 0 538f32db 0 0 2
+-- FRASIER Primary Insured ShadowAccount Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF('PI Use Attributes'("Primary Insured ShadowAccount Annual COI");çäâ'STD Primary Insured ShadowAccount Annual COI'(coverageIndex; duration);çä çäIF (/*Base coverage*/'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType; coverageIndex) )çä     || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType; coverageIndex) );çäâ// Get shadow account COI rates from shadow account rate modelçäâRate(â'Policy Coverage ProductCode'(calcType; coverageIndex) & "_" & çäââ'Policy CovOption ProductCode'(çäâââcalcType; çäâââ'STD Shadow coverageIndex'(calcType); çäâââ'STD Shadow coverageOptionIndex'(calcType)çäââ); çäââIF('CalcType ShadowCatchUp Is Active'(calcType);çäâââ'ACCS CalcRule ShadowCatchUp COIRateType'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäâââ"SCOI"çäââ);çäââTransEffDate;çäââV_(â'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);çäâââduration;çäâââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0); çäâââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0); çäâââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); çäâââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur) ;çäâââ'Policy Jurisdiction';çäâââ'GEN Vector Blank';   // Table - Not Usedçäâââ'GEN Vector Blank';   // Rule - Not UsedçäâââIF(/*Death Benefit option is passed or Use the policy record*/çäâ    â 'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms);çäâ   ââ  /*Yes*/çäââââ'SharedVector SolveParms DthBenOpt'(vectorSolveParms; duration);çäâ  ââ  /*No*/çäââââ'Policy Coverage DeathBenefitOptType'(calcType; 0; duration)çäâââ);çäâââ'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')âââçäââ)çäâ)çäâ*çäâIF('CalcType ShadowCatchUp Is Active'(calcType);çäââ1+0.01*'ACCS CalcRule ShadowCatchUp COIIncPct'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäââ1çäâ);çäâ// Use guaranteed rider rates from rider rate model for ridersçäâ'FRASIER Primary Insured Standard Annual COI'('CalcType Guaranteed'(calcType); coverageIndex; "GCOI";  duration; vectorSolveParms)çä)çä)
+F1 538f32db 759966bc 0 3017648c 0 0 2
+-- FRASIER Primary Insured ShadowAccount Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF('PI Use Attributes'("Primary Insured ShadowAccount Annual COI");çäâ'STD Primary Insured ShadowAccount Annual COI'(coverageIndex; duration);çä çäIF (/*Base coverage*/'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType; coverageIndex) )çä     || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType; coverageIndex) );çäâ// Get shadow account COI rates from shadow account rate modelçäâRate(â'Policy Coverage ProductCode'(calcType; coverageIndex) & "_" & çäââ'Policy CovOption ProductCode'(çäâââcalcType; çäâââ'STD Shadow coverageIndex'(calcType); çäâââ'STD Shadow coverageOptionIndex'(calcType)çäââ); çäââIF('CalcType ShadowCatchUp Is Active'(calcType);çäâââ'ACCS CalcRule ShadowCatchUp COIRateType'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäâââ"SCOI"çäââ);çäââTransEffDate;çäââV_(â'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);çäâââduration;çäâââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0); çäâââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0; duration); çäâââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); çäâââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur) ;çäâââ'Policy Jurisdiction';çäâââ'GEN Vector Blank';   // Table - Not Usedçäâââ'GEN Vector Blank';   // Rule - Not UsedçäâââIF(/*Death Benefit option is passed or Use the policy record*/çäâ    â 'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms);çäâ   ââ  /*Yes*/çäââââ'SharedVector SolveParms DthBenOpt'(vectorSolveParms; duration);çäâ  ââ  /*No*/çäââââ'Policy Coverage DeathBenefitOptType'(calcType; 0; duration)çäâââ);çäâââ'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')âââçäââ)çäâ)çäâ*çäâIF('CalcType ShadowCatchUp Is Active'(calcType);çäââ1+0.01*'ACCS CalcRule ShadowCatchUp COIIncPct'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäââ1çäâ);çäâ// Use guaranteed rider rates from rider rate model for ridersçäâ'FRASIER Primary Insured Standard Annual COI'('CalcType Guaranteed'(calcType); coverageIndex; "GCOI";  duration; vectorSolveParms)çä)çä)
+F1 3017648c 759966bc 0 0 0 0 2
+FRASIER Primary Insured ShadowAccount Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF ('PI Use Attributes'("Primary Insured ShadowAccount Annual COI") ; çä  'STD Primary Insured ShadowAccount Annual COI'(coverageIndex;duration) ; çä  IF ( /*Base coverage*/ 'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) ; çä     // Get shadow account COI rates from shadow account rate modelçäRate('Policy Coverage ProductCode'(calcType;coverageIndex) & "_" & 'Policy CovOption ProductCode'(calcType;'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType));IF ('CalcType ShadowCatchUp Is Active'(calcType) ; çä      'ACCS CalcRule ShadowCatchUp COIRateType'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);TransEffDate) ; çä      "SCOI"çä    );TransEffDate;V_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);duration;'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;duration);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;duration);'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur);'Policy Jurisdiction';'GEN Vector Blank'; // Table - Not Usedçä'GEN Vector Blank'; // Rule - Not UsedçäIF ( /*Death Benefit option is passed or Use the policy record*/ 'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms) ; çä     /*Yes*/ 'SharedVector SolveParms DthBenOpt'(vectorSolveParms;duration) ; çä     /*No*/ 'Policy Coverage DeathBenefitOptType'(calcType;0;duration)çä  );'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate'))) * IF ('CalcType ShadowCatchUp Is Active'(calcType) ; çä  1 + 0.01 * 'ACCS CalcRule ShadowCatchUp COIIncPct'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);TransEffDate) ; çä  1çä) ; çä // Use guaranteed rider rates from rider rate model for ridersçä'FRASIER Primary Insured Standard Annual COI'('CalcType Guaranteed'(calcType);coverageIndex;"GCOI";duration;vectorSolveParms)çä)çä)
+F1 2425868 2424758 2425b18 0 0 0 2
+FRASIER Joint Insured Product Annual Px rate(calcType; coverageIndex; rate_type;yearIndex;monthIndex; vectorSolveParms)
+Funktion
+IF ( /*first policy year*/ yearIndex = 1 ; çä   /*Use year one Px rate*/ 'FRASIER Joint Insured Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) ; çä   /*Calculate annual rate from product Px rate*/ 'FRASIER Joint Insured Annual Px Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) * 'FRASIER Joint Insured Product Annual Px rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms)çä)
+F1 2425b18 2425868 2425c50 0 0 0 2
+FRASIER Joint Insured Annual Px Rate(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*Life past maturity age*/ 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;1) + yearIndex - 1 >= 'PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') ; çä   /*Assume survival rate of zero*/ 0 ; çä   /*Else return Px rate*/ 1 - 'FRASIER Joint Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) // Subtract the additional mortality from BHS if applicableçä - IF ('FRASIER BrokenHeart Calc'('Policy ProductCode';rate_type) ; çä    'FRASIER BrokenHeart Joint Addl Mort'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) ; çä    0çä  )çä)
+F1 2425c50 2425b18 0 13b75f55 0 0 2
+-- FRASIER Joint Insured Annual Qx Rate(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF(/*Uninsurable life?*/'FRASIER Uninsurable'(calcType; coverageIndex; 1);çäâ/*Return uninsurable rate*/çäâ'FRASIER Uninsurable Rate'(rate_type; coverageIndex; yearIndex; monthIndex; calcType);çäâ/*Return standard rate*/çäâ'FRASIER Joint Insured Annual Qx Rate Pre Uninsured Check'(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)çä)
+F1 13b75f55 2425b18 2426188 0 0 0 2
+FRASIER Joint Insured Annual Qx Rate(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+IF ( /*Uninsurable life?*/ 'FRASIER Uninsurable'(calcType;coverageIndex;1) ; çä   /*Return uninsurable rate*/ 'FRASIER Uninsurable Rate'(rate_type;coverageIndex;yearIndex;monthIndex;calcType) ; çä   /*Return standard rate*/ 'FRASIER Joint Insured Annual Qx Rate Pre Uninsured Check'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms)çä)
+F1 2426188 13b75f55 24262d0 0 0 0 2
+FRASIER Joint Insured Annual Qx Rate Pre Uninsured Check(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+MIN(1;'FRASIER Joint Insured Standard Annual COI'(calcType;coverageIndex;rate_type;'Coverage duration yr t'(calcType;coverageIndex;yearIndex;monthIndex);vectorSolveParms) / 1000 * IF ( /*Include table rating?*/ 'ACCS CalcRule UL COI Rules'('Policy ProductCode';rate_type;"Incl_table_rating";TransEffDate) ; çä   /*Yes*/ 'FRASIER Coverage Table Rating Factor'(calcType;coverageIndex;'Coverage duration yr t'(calcType;coverageIndex;yearIndex;monthIndex);1) ; çä   /*No*/ 1çä) + IF ( /*Include flat extras?*/ 'ACCS CalcRule UL COI Rules'('Policy ProductCode';rate_type;"Incl_flat_extras";TransEffDate) ; çä /*Yes*/ 'Std Coverage Total Flat Extra'(calcType;coverageIndex;'Coverage duration yr t'(calcType;coverageIndex;yearIndex;monthIndex);1) * 12 / 1000 ; çä /*No*/ 0çä))
+F1 24262d0 2426188 0 5f1e2bba 0 0 2
+-- FRASIER Joint Insured Standard Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF (/*Shadow account calculation*/'CalcType Shadow Is Active'(calcType)||'CalcType SHGT Is Active'(calcType);çäâ/*Use shadow account COI rates*/çäâ'FRASIER Joint Insured ShadowAccount Annual COI'(calcType; coverageIndex; rate_type; duration; vectorSolveParms);çäâ/* Else use standard rates*/çäâIF('Policy LifeParticipant IssueAge'(calcType; coverageIndex; 1) + duration - 1 > 'PI CoverageProduct MaturityAge'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate');çäââ'Constant Max Monthly COI';çä çäââRate(â'Policy Coverage ProductCode'(calcType; coverageIndex); çäââârate_type;çäâââTransEffDate;çäâââV_(â'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 1);çäââââduration;çäââââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 1); çäââââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 1); çäââââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 1); çäââââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur);çäââââ"**";çäââââ"00";çäââââ"1";çäââââ'CalcType Assumed'(calcType);çäââââ'PI PolicyProduct MortalityOrMorbidityTable'(çäâââââ'Policy Coverage ProductCode'(calcType; coverageIndex); çäâââââ'Policy EffDate'çäâââââââ  );çäââââ'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')ââçäâââ      )çäâ          )çä  âçäâ)çä) * 12
+F1 5f1e2bba 2426188 0 782c3c85 0 0 2
+-- FRASIER Joint Insured Standard Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF (/*Shadow account calculation*/'CalcType Shadow Is Active'(calcType)||'CalcType SHGT Is Active'(calcType);çäâ/*Use shadow account COI rates*/çäâ'FRASIER Joint Insured ShadowAccount Annual COI'(calcType; coverageIndex; rate_type; duration; vectorSolveParms);çäâ/* Else use standard rates*/çäâIF('Policy LifeParticipant IssueAge'(calcType; coverageIndex; 1) + duration - 1 > 'PI CoverageProduct MaturityAge'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate');çäââ'Constant Max Monthly COI';çä çäââRate(â'Policy Coverage ProductCode'(calcType; coverageIndex); çäââârate_type;çäâââTransEffDate;çäâââV_(â'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 1);çäââââduration;çäââââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 1); çäââââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 1; duration); çäââââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 1); çäââââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur);çäââââ"**";çäââââ"00";çäââââ"1";çäââââ'CalcType Assumed'(calcType);çäââââ'PI PolicyProduct MortalityOrMorbidityTable'(çäâââââ'Policy Coverage ProductCode'(calcType; coverageIndex); çäâââââ'Policy EffDate'çäâââââââ  );çäââââ'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')ââçäâââ      )çäâ          )çä  âçäâ)çä) * 12
+F1 782c3c85 2426188 24268e0 0 0 0 2
+FRASIER Joint Insured Standard Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF ( /*Shadow account calculation*/ 'CalcType Shadow Is Active'(calcType) || 'CalcType SHGT Is Active'(calcType) ; çä   /*Use shadow account COI rates*/ 'FRASIER Joint Insured ShadowAccount Annual COI'(calcType;coverageIndex;rate_type;duration;vectorSolveParms) ; çä   /* Else use standard rates*/ IF ('Policy LifeParticipant IssueAge'(calcType;coverageIndex;1) + duration - 1 > 'PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') ; çä    'Constant Max Monthly COI' ; çä    Rate('Policy Coverage ProductCode'(calcType;coverageIndex);rate_type;TransEffDate;V_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;1);duration;'Policy LifeParticipant IssueGender'(calcType;coverageIndex;1);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;1;duration);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;1;duration);'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur);"**";"00";"1";'CalcType Assumed'(calcType);'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate');'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate')))çä  )çä) * 12
+F1 24268e0 782c3c85 0 60a56210 0 0 2
+-- FRASIER Joint Insured ShadowAccount Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF (/*Base coverage*/'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType; coverageIndex) )çä     || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType; coverageIndex) );çäâ// Get shadow account COI rates from shadow account rate modelçäâ'Rate'(â'Policy Coverage ProductCode'(calcType; coverageIndex) & "_" & çäââ'Policy CovOption ProductCode'(çäâââcalcType; çäâââ'STD Shadow coverageIndex'(calcType); çäâââ'STD Shadow coverageOptionIndex'(calcType)çäââ); çäââIF('CalcType ShadowCatchUp Is Active'(calcType);çäâââ'ACCS CalcRule ShadowCatchUp COIRateType'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäâââ"SCOI"çäââ);çäââTransEffDate;çäââV_(â'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 1);çäâââduration;çäâââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 1); çäâââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 1); çäâââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 1); çäâââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur) ;çäâââ'Policy Jurisdiction';çäâââ'GEN Vector Blank';   // Table - Not Usedçäâââ'GEN Vector Blank';   // Rule - Not UsedçäâââIF(/*Death Benefit option is passed or Use the policy record*/çäâ   ââ  'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms);çäâ  ââ   /*Yes*/çäââââ'SharedVector SolveParms DthBenOpt'(vectorSolveParms; duration);çäâ ââ   /*No*/çäââââ'Policy Coverage DeathBenefitOptType'(calcType; 0; duration)çäâââ);çäâââ'PI PolicyProduct MortalityOrMorbidityTable'(çäââââ'Policy Coverage ProductCode'(calcType; coverageIndex); çäââââ'Policy EffDate'çäâââ)âââçäââ)çäâ)çäâ*çäâIF('CalcType ShadowCatchUp Is Active'(calcType);çäââ1+0.01*'ACCS CalcRule ShadowCatchUp COIIncPct'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäââ1çäâ);çäâ// Use guaranteed rider rates from rider rate model for ridersçäâ'FRASIER Joint Insured Standard Annual COI'('CalcType Guaranteed'(calcType); coverageIndex; "GCOI";  duration; vectorSolveParms)çä)
+F1 60a56210 782c3c85 0 7da18370 0 0 2
+-- FRASIER Joint Insured ShadowAccount Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF (/*Base coverage*/'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType; coverageIndex) )çä     || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType; coverageIndex) );çäâ// Get shadow account COI rates from shadow account rate modelçäâ'Rate'(â'Policy Coverage ProductCode'(calcType; coverageIndex) & "_" & çäââ'Policy CovOption ProductCode'(çäâââcalcType; çäâââ'STD Shadow coverageIndex'(calcType); çäâââ'STD Shadow coverageOptionIndex'(calcType)çäââ); çäââIF('CalcType ShadowCatchUp Is Active'(calcType);çäâââ'ACCS CalcRule ShadowCatchUp COIRateType'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäâââ"SCOI"çäââ);çäââTransEffDate;çäââV_(â'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 1);çäâââduration;çäâââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 1); çäâââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 1; duration); çäâââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 1); çäâââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur) ;çäâââ'Policy Jurisdiction';çäâââ'GEN Vector Blank';   // Table - Not Usedçäâââ'GEN Vector Blank';   // Rule - Not UsedçäâââIF(/*Death Benefit option is passed or Use the policy record*/çäâ   ââ  'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms);çäâ  ââ   /*Yes*/çäââââ'SharedVector SolveParms DthBenOpt'(vectorSolveParms; duration);çäâ ââ   /*No*/çäââââ'Policy Coverage DeathBenefitOptType'(calcType; 0; duration)çäâââ);çäâââ'PI PolicyProduct MortalityOrMorbidityTable'(çäââââ'Policy Coverage ProductCode'(calcType; coverageIndex); çäââââ'Policy EffDate'çäâââ)âââçäââ)çäâ)çäâ*çäâIF('CalcType ShadowCatchUp Is Active'(calcType);çäââ1+0.01*'ACCS CalcRule ShadowCatchUp COIIncPct'('Policy CarrierCode'; 'Policy Coverage ProductCode'(calcType; coverageIndex); TransEffDate); çäââ1çäâ);çäâ// Use guaranteed rider rates from rider rate model for ridersçäâ'FRASIER Joint Insured Standard Annual COI'('CalcType Guaranteed'(calcType); coverageIndex; "GCOI";  duration; vectorSolveParms)çä)
+F1 7da18370 782c3c85 0 0 0 0 2
+FRASIER Joint Insured ShadowAccount Annual COI(calcType; coverageIndex; rate_type; duration; vectorSolveParms)
+Funktion
+IF ( /*Base coverage*/ 'IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) ; çä   // Get shadow account COI rates from shadow account rate modelçäRate('Policy Coverage ProductCode'(calcType;coverageIndex) & "_" & 'Policy CovOption ProductCode'(calcType;'STD Shadow coverageIndex'(calcType);'STD Shadow coverageOptionIndex'(calcType));IF ('CalcType ShadowCatchUp Is Active'(calcType) ; çä    'ACCS CalcRule ShadowCatchUp COIRateType'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);TransEffDate) ; çä    "SCOI"çä  );TransEffDate;V_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;1);duration;'Policy LifeParticipant IssueGender'(calcType;coverageIndex;1);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;1;duration);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;1;duration);'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur);'Policy Jurisdiction';'GEN Vector Blank'; // Table - Not Usedçä'GEN Vector Blank'; // Rule - Not UsedçäIF ( /*Death Benefit option is passed or Use the policy record*/ 'SharedVector SolveParms DthBenOpt passed'(vectorSolveParms) ; çä   /*Yes*/ 'SharedVector SolveParms DthBenOpt'(vectorSolveParms;duration) ; çä   /*No*/ 'Policy Coverage DeathBenefitOptType'(calcType;0;duration)çä);'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate'))) * IF ('CalcType ShadowCatchUp Is Active'(calcType) ; çä1 + 0.01 * 'ACCS CalcRule ShadowCatchUp COIIncPct'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);TransEffDate) ; çä1çä) ; çä // Use guaranteed rider rates from rider rate model for ridersçä'FRASIER Joint Insured Standard Annual COI'('CalcType Guaranteed'(calcType);coverageIndex;"GCOI";duration;vectorSolveParms)çä)
+F1 24272f8 2424620 0 24273b0 0 0 2
+FRASIER Uninsurable Rate(rate_type; coverageIndex; yearIndex;monthIndex; calcType)
+Funktion
+IF (yearIndex = 1 ; çä  0.8 ; çä  1çä)
+F1 24273b0 2424620 0 1757749f 0 0 2
+-- FRASIER Uninsurable(calcType; coverageIndex; life_ix)
+Funktion
+IF(/*Substandard ratings at uninsurable levels*/MAX('Policy LifeParticipant PermTableRating'(calcType; coverageIndex; life_ix);çä            'Policy LifeParticipant TempTableRating'(calcType; coverageIndex; life_ix)) > 19;çäâ/*Life is uninsurable*/â1;çäâ/*Life is standard*/â0çä)
+F1 1757749f 2424620 0 24275b0 0 0 2
+FRASIER Uninsurable(calcType; coverageIndex; life_ix)
+Funktion
+IF ( /*Substandard ratings at uninsurable levels*/ MAX('Policy LifeParticipant PermTableRating'(calcType;coverageIndex;life_ix);'Policy LifeParticipant TempTableRating'(calcType;coverageIndex;life_ix)) > 19 ; çä   /*Life is uninsurable*/ 1 ; çä   /*Life is standard*/ 0çä)
+F1 24275b0 2424620 0 0 0 0 2
+FRASIER Rate Type Guar Rate Translation(calcType; rate_type)
+Funktion
+'CalcType Guaranteed'(calcType) & MID(rate_type;2)
+F1 2427930 2423ee8 2427a10 0 0 0 2
+--Broken Heart Functions--
+Funktion
+
+F1 2427a10 2427930 2427ac8 2428a88 0 0 2
+-- Additional mortality functions --
+Funktion
+
+F1 2427ac8 2427a10 2427c00 2427fb0 0 0 2
+FRASIER BrokenHeart Primary Addl Mort(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'FRASIER BrokenHeart Primary Survival'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) * 'FRASIER Primary Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) * 'FRASIER BrokenHeart Factor'('Policy ProductCode';rate_type)
+F1 2427c00 2427ac8 2427ef8 0 0 0 2
+FRASIER BrokenHeart Primary Survival(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+SUMX(yr_a;1;'FRASIER BrokenHeart Duration'('Policy ProductCode';rate_type);IF ( /*BHS projection year not at maturity yet*/ yearIndex + #yr_a <= 'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';0) ; çä   /*Return BHS survival rate*/ 'FRASIER BrokenHeart Primary Survival Yr'(calcType;coverageIndex;rate_type;yearIndex + #yr_a;monthIndex;#yr_a;vectorSolveParms) ; çä   /*Zero if at maturity*/ 0çä))
+F1 2427ef8 2427c00 0 0 0 0 2
+FRASIER BrokenHeart Primary Survival Yr(calcType; coverageIndex; rate_type; yearIndex; monthIndex; yr_a; vectorSolveParms)
+Funktion
+IF ( /*First year of BHS projection*/ yr_a = 1 ; çä   /*Life 2 dies, life 1 survives*/ 'FRASIER Joint Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms) * (1 - 'FRASIER Primary Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms)) ; çä   /*Life 2 dies, life 1 survives up to current projection year*/ 'FRASIER BrokenHeart Primary Survival Yr'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;yr_a - 1;vectorSolveParms) * (1 - 'FRASIER Primary Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms))çä)
+F1 2427fb0 2427a10 24283e0 0 0 0 2
+FRASIER BrokenHeart Joint Addl Mort(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'FRASIER BrokenHeart Joint Survival'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) * 'FRASIER Joint Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex;monthIndex;vectorSolveParms) * 'FRASIER BrokenHeart Factor'('Policy ProductCode';rate_type)
+F1 24283e0 2427fb0 24289d0 0 0 0 2
+FRASIER BrokenHeart Joint Survival(calcType; coverageIndex; rate_type; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+SUMX(yr_a;1;'FRASIER BrokenHeart Duration'('Policy ProductCode';rate_type);IF ( /*BHS projection year not at maturity yet*/ yearIndex + #yr_a <= 'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';0) ; çä   /*Return BHS survival rate*/ 'FRASIER BrokenHeart Joint Survival Yr'(calcType;coverageIndex;rate_type;yearIndex + #yr_a;monthIndex;#yr_a;vectorSolveParms) ; çä   /*Zero if at maturity*/ 0çä))
+F1 24289d0 24283e0 0 0 0 0 2
+FRASIER BrokenHeart Joint Survival Yr(calcType; coverageIndex; rate_type; yearIndex; monthIndex; yr_a; vectorSolveParms)
+Funktion
+IF ( /*First year of BHS projection*/ yr_a = 1 ; çä   /*Life 1 dies, life 2 survives*/ 'FRASIER Primary Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms) * (1 - 'FRASIER Joint Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms)) ; çä   /*Life 1 dies, life 2 survives up to current projection year*/ 'FRASIER BrokenHeart Joint Survival Yr'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;yr_a - 1;vectorSolveParms) * (1 - 'FRASIER Joint Insured Annual Qx Rate'(calcType;coverageIndex;rate_type;yearIndex - 1;monthIndex;vectorSolveParms))çä)
+F1 2428a88 2427930 2428b70 0 0 0 2
+-- Product info access functions --
+Funktion
+
+F1 2428b70 2428a88 0 2428c60 0 0 2
+FRASIER BrokenHeart Calc(productcode; ratetype)
+Funktion
+'ACCS CalcRule Frasier BrokenHeart Calc'(productCode;rateType) //'Addl Product Info'(product_code; 'Policy EffDate'; v_("BHS_Calc"; "COI"; rate_type))çä
+F1 2428c60 2428a88 0 2428e00 0 0 2
+FRASIER BrokenHeart Duration(productcode; ratetype)
+Funktion
+'ACCS CalcRule Frasier BrokenHeart Duration'(productCode;rateType) //'Addl Product Info'(product_code; 'Policy EffDate'; v_("BHS_Dur"; "COI"; rate_type))ä
+F1 2428e00 2428a88 0 0 0 0 2
+FRASIER BrokenHeart Factor(productcode; ratetype)
+Funktion
+'ACCS CalcRule Frasier BrokenHeart Factor'(productCode;rateType) //'Addl Product Info'(productcode; 'Policy EffDate'; v_("BHS_Factor"; "COI"; ratetype))ä
+F1 457b5202 24231d8 0 0 0 0 2
+FRASIER Midpoint Joint Survivor Monthly COI Preage Chk(calcType; coverageIndex; yearIndex;monthIndex; vectorSolveParms)
+Funktion
+0.5 * ('FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;"CCOI";yearIndex;monthIndex;vectorSolveParms) + 'FRASIER Joint Survivor Monthly COI Preage Chk'(calcType;coverageIndex;"GCOI";yearIndex;monthIndex;vectorSolveParms))
+F1 2428fa0 7c893534 0 3660767c 0 0 2
+-- FRASIER Coverage Table Rating Factor(calcType; coverageIndex; yearIndex; life_ix)
+Funktion
+1 +çä(çä'FRASIER Table Rating Factor'(â'Policy Coverage ProductCode'(calcType; coverageIndex);çäââââTransEffDate;çäââââ// Lookup valueçäââââIF(/*Temp table rating still active*/'Duration Year'('Policy LifeParticipant TempTableRatingEndDate'(calcType; coverageIndex; life_ix);'Policy Coverage EffDate'(calcType; coverageIndex)) >= yearIndex;çäâââââ/*Yes*/'Policy LifeParticipant TempTableRating'(calcType; coverageIndex; life_ix) ; çäâââââ/*No*/1çäââââ) çä)çä +çä'FRASIER Table Rating Factor'(â'Policy Coverage ProductCode'(calcType; coverageIndex);çäââââTransEffDate;çäââââ'Policy LifeParticipant PermTableRating'(calcType; coverageIndex; life_ix)çä çä)çä)
+F1 3660767c 7c893534 0 2429058 0 0 2
+FRASIER Coverage Table Rating Factor(calcType; coverageIndex; yearIndex; life_ix)
+Funktion
+1 + ('FRASIER Table Rating Factor'('Policy Coverage ProductCode'(calcType;coverageIndex);TransEffDate; // Lookup valueçäIF ( /*Temp table rating still active*/ 'Duration Year'('Policy LifeParticipant TempTableRatingEndDate'(calcType;coverageIndex;life_ix);'Policy Coverage EffDate'(calcType;coverageIndex)) >= yearIndex ; çä   /*Yes*/ 'Policy LifeParticipant TempTableRating'(calcType;coverageIndex;life_ix) ; çä   /*No*/ 1çä)) + 'FRASIER Table Rating Factor'('Policy Coverage ProductCode'(calcType;coverageIndex);TransEffDate;'Policy LifeParticipant PermTableRating'(calcType;coverageIndex;life_ix)))
+F1 2429058 7c893534 0 2d54d937 0 0 2
+-- FRASIER CovOption Table Rating Factor(calcType; coverageIndex; coverageOptionIndex; yearIndex)
+Funktion
+1 +çä('FRASIER Table Rating Factor'(â'Policy CovOption ProductCode'(calcType; coverageIndex; coverageOptionIndex);çäââââTransEffDate;çäââââ// Lookup ValueçäââââIF(/*Temp table rating still active*/'Duration Year'('Policy CovOption TempTableRatingEndDate'(calcType; coverageIndex; coverageOptionIndex);'Policy Coverage EffDate'(calcType;coverageIndex)) >= yearIndex;çäâââââ/*Yes*/'Policy CovOption TempTableRating'(calcType; coverageIndex; coverageOptionIndex);çäâââââ/*No*/1çäââââ) çäâââ     )çä +çä'FRASIER Table Rating Factor'(â'Policy CovOption ProductCode'(calcType; coverageIndex; coverageOptionIndex);çäââââTransEffDate;çäââââ'Policy CovOption PermTableRating'(calcType; coverageIndex; coverageOptionIndex)çäâââ    )çä)
+F1 2d54d937 7c893534 0 2429170 0 0 2
+FRASIER CovOption Table Rating Factor(calcType; coverageIndex; coverageOptionIndex; yearIndex)
+Funktion
+1 + ('FRASIER Table Rating Factor'('Policy CovOption ProductCode'(calcType;coverageIndex;coverageOptionIndex);TransEffDate; // Lookup ValueçäIF ( /*Temp table rating still active*/ 'Duration Year'('Policy CovOption TempTableRatingEndDate'(calcType;coverageIndex;coverageOptionIndex);'Policy Coverage EffDate'(calcType;coverageIndex)) >= yearIndex ; çä   /*Yes*/ 'Policy CovOption TempTableRating'(calcType;coverageIndex;coverageOptionIndex) ; çä   /*No*/ 1çä)) + 'FRASIER Table Rating Factor'('Policy CovOption ProductCode'(calcType;coverageIndex;coverageOptionIndex);TransEffDate;'Policy CovOption PermTableRating'(calcType;coverageIndex;coverageOptionIndex)))
+F1 2429170 7c893534 0 0 0 0 2
+FRASIER Table Rating Factor(product_code; effectiveDate; table_rating_lookup_value)
+Funktion
+Rate(product_code;'CalcType Substandard Identifier';effectiveDate;V_(table_rating_lookup_value)) - 1
+A0 22bbc64 0 0 0 0 0 0
+
+T0 22bbcd4 0 0 0 0 0 0
+
+I0 22bbd44 0 2429630 0 0 0 0
+
+I0 2429630 22bbd44 0 0 0 0 0
+ACCESS.pms
+-
+O0
+E0
+L0
+B0
+P3
+2420670
+2421ee8
+2422930
+F1
+7c893534
+A0
+T0
+!62
+2421ee8 3 -1
+çä02/18/2011 A11429 Modified to use the FORMAT function to limit the number of positions returned to the mainframe which has an 18 position maximum.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 4 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 5 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 6 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 7 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 8 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 9 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 10 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 11 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2421ee8 12 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2422930 3 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2422930 4 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2422930 5 -1
+çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+24231d8 -2 -2
+Description: Monthly joint survivor blended COI rateçä çäModification log: çä7/5/2011 - PAC013 calcType - BT - added in UL scenarioçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/14/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/04/2008 CSC Added check 'Is Product Indexed Universal Life' with 'Is Product Variable Universal Life'çä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä01/03/2008 CMC ILLUS001 pA Phase 2  updated to allow for assumed illustrations for fixed products and 4 options for variable products.çä10/31/2007 CSC Initial Calculation/Rule
+542877f1 -2 -2
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+77c8467c -2 -2
+çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+2423ee8 -2 -2
+Description:  current / guaranteed rate switchçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2423fa0 -2 -2
+Description :  Returns the current rates annual to monthly conversionçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2424058 -2 -2
+Description:  Returns the guaranteed rates annual to monthly conversionçä çäModification log:çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option index çä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2424110 -2 -2
+Description:  Returns the annual rate, limited to 1çä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2424240 -2 -2
+Description:  Returns the annual joint survivor rateçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+24242f8 -2 -2
+Description: Main Frasier blending functionçä çäModification log:çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option index çä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2424430 -2 -2
+Description:  Recursive formula to get annual Px rateçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+24244e8 -2 -2
+Description:   px = 1-qxçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2424620 -2 -2
+Description: Checks for uninsurable, and adjusts ratesçä çäModification log: çä11/8/2013 pA1401-26 CMC removed yearIndex uninsurable checkçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2424758 -2 -2
+Description :  Annual conversion - multiplying by 12, limits  probability rate to 1çä çäModification log:çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option index çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2424810 -2 -2
+Description:   Returns the annual COI rate from rate modelçä çäModification log: çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+2cecf4af -2 -2
+Description:   Returns the annual COI rate from rate modelçä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+759966bc -2 -2
+Description:   Returns the annual COI rate from rate modelçä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+2424e90 -2 -2
+Description:  Returns the primary insured annual shadow account COI rate from rate model.çä çäModification log: çä10/03/2012 PAC028 Shadow Catch Up JL - Shadow catch up may use a seperate COI rate table. Also, increase COI under Shadow Catch Up calcType by a pct.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+538f32db -2 -2
+Description:  Returns the primary insured annual shadow account COI rate from rate model.çä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/03/2012 PAC028 Shadow Catch Up JL - Shadow catch up may use a seperate COI rate table. Also, increase COI under Shadow Catch Up calcType by a pct.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+3017648c -2 -2
+Description:  Returns the primary insured annual shadow account COI rate from rate model.çä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/03/2012 PAC028 Shadow Catch Up JL - Shadow catch up may use a seperate COI rate table. Also, increase COI under Shadow Catch Up calcType by a pct.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+2425868 -2 -2
+Description :  joint insured Px rateçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2425b18 -2 -2
+Description :  px = 1-qxçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2425c50 -2 -2
+Description:  Chooses uninsurable rate if applicableçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+13b75f55 -2 -2
+Description:  Chooses uninsurable rate if applicableçä çäModification log: çä11/8/2013 pA1401-26 CMC removed yearIndex uninsurable checkçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2426188 -2 -2
+Description : Annual qx rate for the second life, plus table ratings and monthly flat extrasçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+24262d0 -2 -2
+Description:  Rate access function çä çäModification log: çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+5f1e2bba -2 -2
+Description:  Rate access function çä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+782c3c85 -2 -2
+Description:  Rate access function çä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+24268e0 -2 -2
+Description:  Returns joint insured annual shadow account COI rate from rate model.çä çäModification log: çä10/03/2012 PAC028 Shadow Catch Up JL - Shadow catch up may use a seperate COI rate table. Also, increase COI under Shadow Catch Up calcType by a pct.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+60a56210 -2 -2
+Description:  Returns joint insured annual shadow account COI rate from rate model.çä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/03/2012 PAC028 Shadow Catch Up JL - Shadow catch up may use a seperate COI rate table. Also, increase COI under Shadow Catch Up calcType by a pct.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+7da18370 -2 -2
+Description:  Returns joint insured annual shadow account COI rate from rate model.çä çäModification log: çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/03/2012 PAC028 Shadow Catch Up JL - Shadow catch up may use a seperate COI rate table. Also, increase COI under Shadow Catch Up calcType by a pct.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä03/07/2008 CSC Illustrations ILLUS001 Renamed CONST to Constantçä10/31/2007 CSC Initial Calculation/Rule
+24272f8 -2 -2
+Description :  Uninsurable rateçä çäModification log: çä10/31/2007 CSC Initial Calculation/Rule
+24273b0 -2 -2
+Description:  Returns true(1) if life is uninsurable if table rating is over P, otherwise false(0)çä çäModification log: çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1757749f -2 -2
+Description:  Returns true(1) if life is uninsurable if table rating is over P, otherwise false(0)çä çäModification log: çä11/8/2013 pA1401-26 CMC removed yearIndex from Perm table and Perm Flatsçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+24275b0 -2 -2
+Description :  Converts rate type from current to Guaranteedçä çäModification log: çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+2427ac8 -2 -2
+Description : Multiplies the probability of first life being alive with additional mortality due to BHSçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2427c00 -2 -2
+Description : adds up the probability that the primary life will survive n years after the death of the joint life.çä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2427ef8 -2 -2
+Description :  Returns the probability that the primary life will survive n years after the death of the joint life.çä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2427fb0 -2 -2
+Description : Multiplies the probability of first life being alive with additional mortality due to BHSçä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+24283e0 -2 -2
+Description : adds up the probability that the primary life will survive n years after the death of the joint life.çä çäModification log: çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+24289d0 -2 -2
+Description :  Returns the probability that the primary life will survive n years after the death of the joint life.çä çäModification log:çä1/26/2011 - PAC013 calctype CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to all vectorSolveParms as a parameter used to pass death benefit option to the coi rate functions.çä10/31/2007 CSC Initial Calculation/Rule
+2428b70 -2 -2
+Description : Returns 'true' if broken heart syndrome calculations are to be used; 'false' othewise.çä çäModification log: çä10/31/2007 CSC Initial Calculation/Rule
+2428c60 -2 -2
+Description : Period that broken heart syndrome is assumed to apply after death of first assuredçä çäModification log: çä10/31/2007 CSC Initial Calculation/Rule
+2428e00 -2 -2
+Description : Factor added to mortality rate for broken heart syndromeçä çäModification log: çä10/31/2007 CSC Initial Calculation/Rule
+457b5202 -2 -2
+çä1/12/2011 - PAC013 calcType - BT - Restructure
+2428fa0 -2 -2
+Description : Derive Coverage combined table rating factorçä çäModification log: çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3660767c -2 -2
+Description : Derive Coverage combined table rating factorçä çäModification log: çä11/8/2013 pA1401-26 CMC removed yearIndex from Perm table and Perm Flatsçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+2429058 -2 -2
+Description : Derive CovOption combined table rating factorçä çäModification log: çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+2d54d937 -2 -2
+Description : Derive CovOption combined table rating factorçä çäModification log: çä11/8/2013 pA1401-26 CMC removed yearIndex from Perm table and Perm Flatsçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+2429170 -2 -2
+Description : Locate rating factor via late referencing less standard (1)çä çäModification log: çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

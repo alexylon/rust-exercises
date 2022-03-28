@@ -1,0 +1,6124 @@
+;1	08.12.2016 13:29:32	jlawrie2	
+X0 3f3e58 0 53504e8 0 0 0 0
+
+X0 53504e8 3f3e58 5350590 0 0 0 0
+-- All Tests - FAillustrations --
+X0 5350590 53504e8 5350650 3f9788 0 0 0
+-- Death Benefit Returns --
+X29 5350650 5350590 0 5350b80 0 0 2
+OUTPUT Policy Death Benefit - Midpoint output
+'OUTPUT Policy Death Benefit'("M"; -1)
+0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
+INPUT Policy Coverage MaturityAge
+115
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy PaymentMode
+0
+INPUT Policy Annuity InitPaymentAmount
+100000
+INPUT Policy Annuity InitDepositAmount
+10000
+INPUT Policy PaymentAmount
+0
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+Input TransEffDate
+01/01/2006
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+10000
+INPUT Policy Annuity InitDepositAmt
+10000
+INPUT Policy PaymentAmt
+0
+INPUT Policy ProductVersionCode
+1
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Message Language
+0
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy number of SubAccount
+0
+X30 5350b80 5350590 0 3f66d8 0 0 2
+OUTPUT Policy Death Benefit - Current output
+'OUTPUT Policy Death Benefit'("C"; -1)
+0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
+INPUT Policy Coverage MaturityAge
+115
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy PaymentMode
+0
+INPUT Policy Annuity InitPaymentAmount
+100000
+INPUT Policy Annuity InitDepositAmount
+0
+INPUT Policy PaymentAmount
+0
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+Input TransEffDate
+01/01/2006
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+10000
+INPUT Policy Annuity InitDepositAmt
+10000
+INPUT Policy PaymentAmt
+100
+INPUT Policy ProductVersionCode
+1
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Message Language
+0
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy number of SubAccount
+0
+
+
+X31 3f66d8 5350590 0 3f7188 0 0 2
+OUTPUT Policy Death Benefit - Assumed output
+'OUTPUT Policy Death Benefit'("A"; -1)
+0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
+INPUT Policy Coverage MaturityAge
+115
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy PaymentMode
+0
+INPUT Policy Annuity InitPaymentAmount
+100000
+INPUT Policy Annuity InitDepositAmount
+0
+INPUT Policy PaymentAmount
+0
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+Input TransEffDate
+01/01/2006
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+10000
+INPUT Policy Annuity InitDepositAmt
+10000
+INPUT Policy PaymentAmt
+0
+INPUT Policy ProductVersionCode
+1
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Message Language
+0
+INPUT RequestBasis ChargeAssumptionMult
+115
+INPUT RequestBasis InterestAssumptionRate
+9
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy number of SubAccount
+0
+X30 3f7188 5350590 0 3f8818 0 0 2
+OUTPUT Policy Death Benefit - Assumed output1
+'ANNCD Fixed Assumed Accum Factor'
+11.25
+INPUT Policy Coverage MaturityAge
+115
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy PaymentMode
+1
+INPUT Policy Annuity InitPaymentAmount
+100000
+INPUT Policy Annuity InitDepositAmount
+0
+INPUT Policy PaymentAmount
+0
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+Input TransEffDate
+01/01/2006
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+10000
+INPUT Policy Annuity InitDepositAmt
+10000
+INPUT Policy PaymentAmt
+0
+INPUT Policy ProductVersionCode
+1
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Message Language
+0
+INPUT RequestBasis ChargeAssumptionMult
+115
+INPUT RequestBasis InterestAssumptionRate
+11.25
+INPUT Policy number of SubAccount
+0
+X29 3f8818 5350590 0 3f8b10 0 0 2
+OUTPUT Policy Death Benefit - Current year 20
+'OUTPUT Policy Death Benefit'("C"; 20)
+0
+INPUT Policy Coverage MaturityAge
+115
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy PaymentMode
+0
+INPUT Policy Annuity InitPaymentAmount
+100000
+INPUT Policy Annuity InitDepositAmount
+0
+INPUT Policy PaymentAmount
+0
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+Input TransEffDate
+01/01/2006
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Calling Program
+
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+10000
+INPUT Policy PaymentAmt
+0
+INPUT Policy ProductVersionCode
+1
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Message Language
+English
+INPUT Policy Annuity TotalDepositITD
+10000
+INPUT Policy number of SubAccount
+0
+X12 3f8b10 5350590 0 3f9328 0 0 2
+ANNCD Fixed Assumed Accum Factor
+ANNCD Fixed Assumed Accum Factor
+8
+INPUT RequestBasis InterestAssumptionRate
+8
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy number of SubAccount
+0
+X9 3f9328 5350590 0 0 0 0 2
+'PI PolicyProduct GuarIntRate'('Policy ProductCode'; 'Policy EffDate')
+'PI PolicyProduct GuarIntRate'('Policy ProductCode'; 'Policy EffDate')
+7.0
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+X0 3f9788 53504e8 3f9818 3f9b48 0 0 0
+-- Lapse --
+X29 3f9818 3f9788 0 0 0 0 2
+OUTPUT Policy Lapse Year(rateAssumption)
+'OUTPUT Policy Lapse Year'("C")
+5
+INPUT Policy TermDate
+01/01/2010
+INPUT Calling Program
+
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+0
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Policy Annuity InitPaymentAmt
+1000
+INPUT Policy Annuity InitDepositAmt
+100
+INPUT Policy PaymentAmt
+100
+INPUT Policy ProductType
+9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+85
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+0
+X0 3f9b48 53504e8 3f9890 1294df54 0 0 0
+-- Values --
+X10 3f9890 3f9b48 0 3fa318 0 0 2
+--OUTPUT Policy LastAnniversaryDate(yearIndex)
+'OUTPUT Policy LastAnniversaryDate'(-1)
+
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Calling Program
+
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+X17 3fa318 3f9b48 0 3fa5f0 0 0 2
+OUTPUT ChargePctSchedule Percentage(yearIndex)
+'OUTPUT ChargePctSchedule Percentage'(-1)
+9*9*9*9*7*6*5*5*4*3*0*0*0*0*0*0*0*0*0*0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Policy ProductCode
+FPA1PA
+INPUT Calling Program
+
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Participant IssueAge
+80
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT Policy ProductType
+0
+INPUT Policy Coverage IndicatorCode
+1
+X19 3fa5f0 3f9b48 0 0 0 0 2
+OUTPUT Policy Contribution Bonus(yearIndex)
+'OUTPUT Policy Contribution Bonus'(-1)
+0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy LifeParticipant IssueAge
+80
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy PaymentMode
+1
+INPUT Policy PaymentAmt
+1000
+INPUT Policy Annuity InitDepositAmt
+2000
+INPUT Policy ProductCode
+FPA1PA
+Input TransEffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy ProductType
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Participant IssueAge
+35
+X0 1294df54 53504e8 51eac8b 0 0 0 2
+-- FA_Int_and_Charge.UTV --
+X46 51eac8b 1294df54 31712a62 43cb0d4b 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+598934.71
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+0
+X43 31712a62 51eac8b 0 56fbd0fe 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.08
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 56fbd0fe 51eac8b 0 13ebf449 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 13ebf449 51eac8b 0 2dac1b27 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 2dac1b27 51eac8b 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X46 43cb0d4b 1294df54 e5012f3 3fbf1e6b 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+571763.25
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+7.5
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+0
+X43 e5012f3 43cb0d4b 0 44ecc0e2 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.075
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+7.5
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 44ecc0e2 43cb0d4b 0 534a9c2a 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+7.5
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 534a9c2a 43cb0d4b 0 8805fce 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+7.5
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 8805fce 43cb0d4b 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+275000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+7.5
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 3fbf1e6b 1294df54 7cd0882a 6443f5be 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+1025305.21
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+9
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 7cd0882a 3fbf1e6b 0 39144e3d 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.09
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+9
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 39144e3d 3fbf1e6b 0 3ed713a0 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+9
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 3ed713a0 3fbf1e6b 0 39868e4e 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+9
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 39868e4e 3fbf1e6b 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+9
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 6443f5be 1294df54 6019a55f 33959b66 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+1229753.23
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+11
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 6019a55f 6443f5be 0 5746ff34 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.11
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+11
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 5746ff34 6443f5be 0 24518be5 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+11
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 24518be5 6443f5be 0 3a7aad4 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+11
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 3a7aad4 6443f5be 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+11
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 33959b66 1294df54 21266c03 78a0ba4d 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+13
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 21266c03 33959b66 0 4e98ae70 0 0 2
+ANNCD Contribution Bonus("CALCTYPE")
+ANNCD Contribution Bonus("CALCTYPE")
+8100.00000000002
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+13
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 4e98ae70 33959b66 0 425e177f 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+13
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 425e177f 33959b66 0 30093d06 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+13
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 30093d06 33959b66 0 764ad8e1 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+13
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 764ad8e1 33959b66 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+425000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+100
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+13
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X46 78a0ba4d 1294df54 32472430 783da592 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+21098.43
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.5
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+0
+X43 32472430 78a0ba4d 0 420690c0 0 0 2
+ANNCD Contribution Bonus("CALCTYPE")
+ANNCD Contribution Bonus("CALCTYPE")
+100
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.5
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 420690c0 78a0ba4d 0 61471e00 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.08
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.5
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 61471e00 78a0ba4d 0 4c62227e 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.5
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 4c62227e 78a0ba4d 0 758e6f80 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.5
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 758e6f80 78a0ba4d 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.5
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X46 783da592 1294df54 2dc22d28 626e51f1 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+21098.43
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.8
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Annuity QualPlanType
+0
+X43 2dc22d28 783da592 0 1195b147 0 0 2
+ANNCD Contribution Bonus("CALCTYPE")
+ANNCD Contribution Bonus("CALCTYPE")
+100
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.8
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 1195b147 783da592 0 43f9242c 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.08
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.8
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 43f9242c 783da592 0 63c060e7 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.8
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 63c060e7 783da592 0 332a75ea 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.8
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 332a75ea 783da592 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+FPA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT RequestBasis ChargeAssumptionMult
+101.8
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+28
+INPUT Policy Participant IssueGender
+2
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 626e51f1 1294df54 4c2cab5f 51deef87 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+20577.76
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 4c2cab5f 626e51f1 0 4646f7c5 0 0 2
+ANNCD Contribution Bonus("CALCTYPE")
+ANNCD Contribution Bonus("CALCTYPE")
+0
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 4646f7c5 626e51f1 0 7f5a562 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.08
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 7f5a562 626e51f1 0 4d711f2b 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 4d711f2b 626e51f1 0 2537bf37 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 2537bf37 626e51f1 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.9
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 51deef87 1294df54 4c4e6963 4959e43a 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+20577.76
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.7
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 4c4e6963 51deef87 0 7767093 0 0 2
+ANNCD Contribution Bonus("CALCTYPE")
+ANNCD Contribution Bonus("CALCTYPE")
+0
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.7
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 7767093 51deef87 0 413ba181 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.08
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.7
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 413ba181 51deef87 0 3fe6f56d 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.7
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 3fe6f56d 51deef87 0 7019c1e6 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.7
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 7019c1e6 51deef87 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+101.7
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 4959e43a 1294df54 5bab7ac7 0 0 0 2
+OUTPUT Policy Accum Value("A"; 10)
+OUTPUT Policy Accum Value("A"; 10)
+20577.76
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+500
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 5bab7ac7 4959e43a 0 277d0b94 0 0 2
+ANNCD Contribution Bonus("CALCTYPE")
+ANNCD Contribution Bonus("CALCTYPE")
+0
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+500
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 277d0b94 4959e43a 0 7a7448b4 0 0 2
+ANNCD Accum Factor("A")
+ANNCD Accum Factor("A")
+1.08
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+500
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 7a7448b4 4959e43a 0 26d36d5c 0 0 2
+ANNCD Accum Factor("G")
+ANNCD Accum Factor("G")
+1.07
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+500
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 26d36d5c 4959e43a 0 7f8bda73 0 0 2
+ANNCD Accum Factor("C")
+ANNCD Accum Factor("C")
+1.1125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+500
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+X43 7f8bda73 4959e43a 0 0 0 0 2
+ANNCD Accum Factor("M")
+ANNCD Accum Factor("M")
+1.09125
+INPUT Policy LifeParticipant IssueAge
+0
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy TermDate
+01/01/2016
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INput TransEffDate
+01/01/2006
+INPUT Policy ProductCode
+SPDA1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+1
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy PaymentMode
+1
+INPUT Illus PremiumDesignType
+1000500002
+INPUT Policy ProductType
+9
+INPUT Illus PremiumStreamAmt[1]
+10000
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT RequestBasis ChargeAssumptionMult
+500
+INPUT Policy number of Rider
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Investment AccountValue
+0
+INPUT Policy Annuity TotalDepositITD
+0
+INPUT Policy Participant IssueAge
+34
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Participant UnderwritingClass
+1
+INPUT Policy Participant TobaccoPremiumBasis
+1
+INPUT RequestBasis InterestAssumptionRate
+8
+INPUT Illus PremiumStreamAmt[2]
+0
+INPUT Illus PremiumStreamAmt[3]
+0
+INPUT Illus PremiumStreamAmt[4]
+0
+INPUT Illus PremiumStreamAmt[5]
+0
+INPUT Illus PremiumStreamAmt[6]
+0
+INPUT Illus PremiumStreamAmt[7]
+0
+INPUT Illus PremiumStreamAmt[8]
+0
+INPUT Illus PremiumStreamAmt[9]
+0
+INPUT Illus PremiumStreamAmt[10]
+0
+INPUT Illus PremiumStreamAmt[11]
+0
+INPUT Policy Annuity InitPaymentAmt
+0
+INPUT Policy Annuity InitDepositAmt
+0
+INPUT Policy PaymentAmt
+0
+INPUT Message Language
+9
+INPUT Policy number of SubAccount
+0
+O0 3f3d14 0 0 0 0 0 0
+
+E0 3f3d80 0 0 0 0 0 0
+
+L0 3f3dec 0 0 0 0 0 0
+
+B0 3f3f9c 0 0 0 0 0 0
+
+P3 3f3ec4 0 3faad8 0 0 0 2
+
+--description
+The Fixed Annuity Illustrations Model calculates the values necessary to produce new business, supplemental, and/or revised illustrations. This will include premiums, projections of account values and cash surrender values, and determination of projected lapses.çä çäFixed Annuity (FA)çä‚Ä¢âProduct detail summary information.çä‚Ä¢âTabular detail values by policy year, including attained age, premiums, contract value, and surrender valueçä‚Ä¢âGuaranteed, Current, Midpoint, and Assumed basis informationçä‚Ä¢âInterest Rates for guaranteed, current, and illustratedçä‚Ä¢âHypothetical Distribution Illustration by policy duration including premiums, contract value, surrender value, withdrawals, accumulated withdrawalsçä‚Ä¢âPayment Frequency and Withdrawal Frequencyçä‚Ä¢âSurrender charge scheduleçä çäRELEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1101 - PAC026 Annuity NAICçäRELEASE 1101 - PAC013 calcTypeçäRELEASE 1101 - PAC018 IRR
+LICENSENAME
+"csc us internal use only - workbench"
+COMPILERVERSION
+"4.5.4"
+P13 3faad8 3f3ec4 3fb580 0 0 0 2
+Fixed Annuity Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Fixed Annuity Product Illustrations"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"FixedAnnuityIllustrations.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 3fb580 3faad8 3fb7c8 0 0 0 2
+Illustrations
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+P14 3fb7c8 3fb580 0 3fc088 0 0 2
+Basic Information
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+OUTPUT Policy Party FullName(coverageIndex; participantIndex)
+'INPUT Policy LifeParticipant ParticipantName'[coverageIndex; participantIndex]
+OUTPUT Policy Coverage PlanName(coverageIndex)
+'PI CoverageProduct PlanName'('GEN Vector Blank';'Policy Coverage ProductCode'('GEN Vector Blank';coverageIndex);coverageIndex;'Policy EffDate')
+OUTPUT Policy Coverage ShortName(coverageIndex)
+'PI CoverageProduct ShortName'('GEN Vector Blank';'Policy Coverage ProductCode'('GEN Vector Blank';coverageIndex);coverageIndex;'Policy EffDate')
+OUTPUT Policy CovOption PlanName(coverageIndex; coverageOptionIndex)
+'PI CovOptionProduct PlanName'('GEN Vector Blank';'Policy ProductCode';coverageIndex;coverageOptionIndex;'Policy CovOption EffDate'('GEN Vector Blank';coverageIndex;coverageOptionIndex))
+OUTPUT Policy CovOption ShortName(coverageIndex; coverageOptionIndex)
+'PI CovOptionProduct ShortName'('GEN Vector Blank';'Policy ProductCode';coverageIndex;coverageOptionIndex;'Policy CovOption EffDate'('GEN Vector Blank';coverageIndex;coverageOptionIndex))
+OUTPUT LifeParticipant IssueAge(coverageIndex; participantIndex)
+'Policy LifeParticipant IssueAge'('GEN Vector Blank';coverageIndex;participantIndex)
+OUTPUT LifeParticipant IssueGender(coverageIndex; participantIndex)
+'Policy LifeParticipant IssueGender'('GEN Vector Blank';coverageIndex;participantIndex)
+OUTPUT LifeParticipant TobaccoPremiumBasis(coverageIndex; participantIndex)
+'Policy LifeParticipant TobaccoPremiumBasis'('GEN Vector Blank';coverageIndex;participantIndex;transEffDur)
+OUTPUT LifeParticipant UnderwritingClass(coverageIndex; participantIndex)
+'Policy LifeParticipant UnderwritingClass'('GEN Vector Blank';coverageIndex;participantIndex;TransEffDur)
+OUTPUT Policy DividendOpt
+'Policy Life DivType'
+OUTPUT Policy LifeUSA DefLifeInsMethod
+'Policy LifeUSA DefLifeInsMethod'
+P9 3fc088 3fb580 0 3fcb30 0 0 2
+Blocking Outputs
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Block Curr Tabular1(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Tabular1'('CalcType Current'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Tabular1 String'('CalcType Current'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Guar Tabular1(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Tabular1'('CalcType Guaranteed'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Tabular1 String'('CalcType Guaranteed'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Mid Tabular1(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Tabular1'('CalcType Midpoint'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Tabular1 String'('CalcType Midpoint'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Curr Cash Value Increase(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Cash Value Increase'('CalcType Current'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Cash Value Increase String'('CalcType Current'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Guar Cash Value Increase(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Cash Value Increase'('CalcType Guaranteed'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Cash Value Increase String'('CalcType Guaranteed'('GEN Vector Blank');yearIndex)çä  )çä)
+OUTPUT Block Mid Cash Value Increase(yearIndex)
+IF ( /*List Bounds?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä  'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä  IF ( /*List Requested?*/ 'Illus List Requested'(yearIndex) ; çä     // If Concatenated Listçä'Illus Block Cash Value Increase'('CalcType Midpoint'('GEN Vector Blank');'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä    'Illus Block Cash Value Increase String'('CalcType Midpoint'('GEN Vector Blank');yearIndex)çä  )çä)
+P4 3fcb30 3fb580 0 3fcf68 0 0 2
+Death Benefits
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+OUTPUT Policy Death Benefit(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Death Benefit'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ 'GEN Round'('ANNCD Policy Accum Value'(rateAssumption;yearIndex);2)çä  )çä)
+P5 3fcf68 3fb580 0 3fd108 0 0 2
+Effective Yield
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Effective Yield(rateAssumption; yearIndex)
+'ANNCD Effective Yield'(rateAssumption;yearIndex * 12;'ANNCD Policy CSV'(rateAssumption;yearIndex;12);'Current Interest Rate'(TransEffDate))
+OUTPUT Effective Yield Maturity(rateAssumption)
+'ANNCD Effective Yield'(rateAssumption;'Years To Maturity' * 12;'ANNCD Policy CSV'(rateAssumption;'Years To Maturity';12);"CCOI")
+P9 3fd108 3fb580 0 3fd5f0 0 0 2
+Index Funds
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Investment SubAccount IndexStart(fundIndex; yearIndex)
+0
+OUTPUT Policy Investment SubAccount IndexMaturity(fundIndex; yearIndex)
+0
+OUTPUT Policy Investment SubAccount IndexStartAvg(fundIndex; yearIndex)
+0
+OUTPUT Policy Investment SubAccount IndexEndAvg(fundIndex; yearIndex)
+0
+OUTPUT Policy Investment SubAccount MaturityValue(fundIndex; yearIndex)
+0
+OUTPUT Policy Investment SubAccount EquityCredit(fundIndex; yearIndex)
+0
+P7 3fd5f0 3fb580 0 3fddf8 0 0 2
+Lapse
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+OUTPUT Policy Lapse Year(rateAssumption)
+CASE( /*Rate assumption*/ rateAssumption;çä   /*Current*/ "C"; /*Guaranteed*/ "G"; /*Midpoint*/ "M"; /*Assumed*/ "A" : 'ANNCD Policy Lapse Year'(rateAssumption;1);çä   /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("FA Illustrations";"'OUTPUT Policy Lapse Year'")))çä
+OUTPUT Policy Lapse Ind(rateAssumption)
+CASE( /*Rate Assumption*/ rateAssumption;çä   /*Current*/ "C"; /*Guaranteed*/ "G"; /*Midpoint*/ "M"; /*Assumed*/ "A" : 'Illus Curr Policy Lapse Ind'(rateAssumption);çä   /*else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("FA Illustrations";"'OUTPUT Policy Lapse Ind'")))çä
+OUTPUT Policy LapseDate(rateAssumption)
+CASE( /*Rate Assumption*/ rateAssumption;çä   /*Current*/ "C"; /*Guaranteed*/ "G"; /*Midpoint*/ "M"; /*Assuemd*/ "A" : 'ANNCD Policy Lapse Date'(rateAssumption;'ANNCD Policy Lapse Year'(rateAssumption;1);1);çä   /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Policy Lapse Date'")))çä
+OUTPUT Policy LapseReason(rateAssumption)
+'GEN Vector Blank'
+P7 3fddf8 3fb580 0 3fe820 0 0 2
+Surrenders
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Annual Surrender(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Annual Surrender'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ 'GEN Round'('ANNCD Withdrawal'(rateAssumption;yearIndex);2)çä  )çä)
+OUTPUT Policy SurrenderChargeAmt(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy SurrenderChargeAmt'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ 'GEN Round'('ANNCD Surrender Charge Amount'(rateAssumption;'ArrType Full Surrender';yearIndex;'ANNCD Policy Accum Value'(rateAssumption;yearIndex);'ANNCD Free Withdrawal Basis Amount'(rateAssumption;yearIndex;12;'FeeType FullSurrenderCharge'));2)çä  )çä)
+OUTPUT Coverage SurrCharge(covIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Coverage SurrCharge'('GEN Vector Blank';covIndex;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ 'GEN Round'(IF (covIndex = 0 ; çä      'ANNCD Surrender Charge Amount'('CalcType Current'('GEN Vector Blank');'ArrType Full Surrender';yearIndex;'ANNCD Policy Accum Value'('CalcType Current'('GEN Vector Blank');yearIndex);'ANNCD Free Withdrawal Basis Amount'('CalcType Current'('GEN Vector Blank');yearIndex;12;'FeeType FullSurrenderCharge')) ; çä       // only supporting base coverageçä0çä    );2)çä)çä)
+OUTPUT ChargePctSchedule Percentage(yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List ChargePctSchedule Percentage'('Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ 'GEN Round'('AnnSC Surrender Charge FeePct'(yearIndex;'FeeType FullSurrenderCharge';0);2)çä  )çä)
+P27 3fe820 3fb580 0 1c1ad758 0 0 2
+Values
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy LastAnniversaryDate(yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy LastAnniversaryDate'('Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ 'Calc Last Anniversary Date'('Policy EffDate';DATE('Policy EffDate';0;0;yearIndex - 1))çä  )çä)
+OUTPUT Policy CashValueAmt(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy CashValueAmt'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ CASE( /*Rate Assumption*/ rateAssumption;çä       /*Current*/ "C"; /*Guaranteed*/ "G"; /*Assumed*/ "A"; /*MVA High/Low interest*/ "mvaillhighint";"mvailllowint" : MAX(0;'GEN Round'('ANNCD Policy Accum Value'(rateAssumption;yearIndex);2));çä       /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Policy CashValueAmt'")))çä  çä  )çä)
+OUTPUT Rider Accum Value(rateAssumption; riderIndex; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Rider Accum Value'(rateAssumption;riderIndex;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ CASE( /*Rate Assumption*/ rateAssumption;çä       /*Current*/ "C"; /*Guaranteed*/ "G"; /*Assumed*/ "A" : MAX(0;'GEN Round'('ANNCD Rider Accum Value'(rateAssumption;riderIndex;yearIndex);2));çä       /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Rider Accum Value'")))çä  çä  )çä)
+OUTPUT Rider Death Benefit(rateAssumption; riderIndex; yearIndex)
+CASE( /*Rate assumption*/ rateAssumption;çä   /*Current*/ "C"; /*Guaranteed*/ "G" : 'GEN Round'('ANNCD Rider Accum Value'(rateAssumption;riderIndex;yearIndex);2);çä   /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Rider Rider Death Benefit'")))çä
+OUTPUT Rider Charge(rateAssumption; riderIndex; yearIndex; monthIndex)
+'ANNCD Rider Charge'(rateAssumption;riderIndex;yearIndex;monthIndex)
+OUTPUT Policy Contribution Bonus(yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Contribution Bonus'('GEN Vector Blank';'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ 'ANNCD Contribution Bonus'('GEN Vector Blank')çä  )çä)
+OUTPUT Policy Accum Value(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Accum Value'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ CASE( /*Rate Assumption*/ rateAssumption;çä       /*Current, Guaranteed, or Assumed*/ "C";"G";"A";"mvaillhighint";"mvailllowint" : MAX(0;'GEN Round'('ANNCD Policy Accum Value'(rateAssumption;yearIndex);2));çä       /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Policy Accum Value'")))çä  çä  )çä)
+OUTPUT Policy Annual Premium(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'('GEN Vector Blank';yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Annual Premium'('GEN Vector Blank';'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ IF ( /*Policy has not lapsed yet*/ yearIndex < 'ANNCD Policy Lapse Year'('CalcType Current'('GEN Vector Blank');1) ; çä       /*Return annual premium*/ 'GEN Round'('ANNCD Policy Annual Premium'('GEN Vector Blank';yearIndex);2) ; çä       /*Return zero for lapsed policy*/ 0çä    )çä)çä)
+OUTPUT Policy CashSurrValue(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy CashSurrValue'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ CASE( /*Rate Assumption*/ rateAssumption;çä       /*Current*/ "C"; /*Guaranteed*/ "G"; /*Assumed*/ "A"; /*MVA High/Low Illustration */ "mvaillhighint";"mvailllowint" : MAX(0;'GEN Round'('ANNCD Policy CSV'(rateAssumption;yearIndex;12);2));çä       /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Policy CashSurrValue'")))çä  çä  )çä)
+OUTPUT Policy Surr Charge(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Surr Charge'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ CASE( /*Rate Assumption*/ rateAssumption;çä       /*Current*/ "C"; /*Guaranteed*/ "G"; /*Assumed*/ "A" : MAX(0;'GEN Round'('OUTPUT Policy Accum Value'(rateAssumption;yearIndex) - 'OUTPUT Policy CashSurrValue'(rateAssumption;yearIndex);2));çä       /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Policy Surr Charge'")))çä  çä  )çä)
+OUTPUT Policy Monthly Annuity Payout(rateAssumption)
+CASE( /*Rate assumption*/ rateAssumption;çä   /*Current, Guaranteed, or Assumed*/ "C";"G";"A" : 'ANNCD Annuity Payout Amount'('ANNCD Policy Accum Value'(rateAssumption;'ANNCD Years To Payout');12);çä   /*else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Policy Monthly Annuity Payout'")))çä
+OUTPUT Policy Expense Charge(rateAssumption; yearIndex)
+IF ( /*Were the list bounds requested?*/ 'Illus List Bounds'(rateAssumption;yearIndex) NOTEQUAL 'GEN Vector Blank' ; çä   /*Yes-return list bounds*/ 'Illus List Bounds'(rateAssumption;yearIndex) ; çä   /*No*/ IF ( /*Was a list requested?*/ 'Illus List Requested'(yearIndex) ; çä     /*Yes*/ 'Illus List Policy Expense Charge'(rateAssumption;'Illus List Lower Bound'('GEN Vector Blank');'Illus List Upper Bound'('GEN Vector Blank')) ; çä     /*No-specific duration*/ CASE( /*Rate Assumption*/ rateAssumption;çä       /*Current*/ "C"; /*Guaranteed*/ "G"; /*Assumed*/ "A" : SUMX(mth;1;12;'ANNCD Expense Charges'(rateAssumption;yearIndex;#mth));çä       /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_("Annuity Illustrations";"'OUTPUT Policy Rxpense Charge'")))çä  çä  )çä)
+OUTPUT Policy Accum Premium(rateAssumption; yearIndex)
+CASE( /*Rate assumption*/ rateAssumption;çä   /*Current*/ "C" : 'OUTPUT Curr Policy Accum Prem'(yearIndex);çä   /*Guaranteed*/ "G" : 'OUTPUT Guar Policy Accum Prem'(yearIndex);çä   /*Assumed*/ "A" : 'OUTPUT Assumed Policy Accum Prem'(yearIndex);çä   /*Else return error message*/  : 'Messages Error String'('Messages ProdCode MsgType';"CA1000";'Message Language';V_('ANNCD Model Name';"'OUTPUT Policy Accum Premium11'")))çä
+OUTPUT Curr Policy Accum Prem(yearIndex)
+IF ( /*Policy has not lapsed yet*/ yearIndex < 'OUTPUT Curr Policy Lapse Year' ; çä   /*Return accumulated premium paid*/ 'ANNCD Accum Prem Paid'('GEN Vector Blank';yearIndex) ; çä   /*return zero for lapsed policy*/ 0çä)
+OUTPUT Assumed Policy Accum Prem(yearIndex)
+IF ( /*Policy has not lapsed yet*/ yearIndex < 'OUTPUT Assumed Policy Lapse Year' ; çä   /*return accumulated premium paid*/ 'ANNCD Accum Prem Paid'('GEN Vector Blank';yearIndex) ; çä   /*Return zero for lapsed policy*/ 0çä)
+OUTPUT Guar Policy Accum Prem(yearIndex)
+IF ( /*Policy has not lapsed yet*/ yearIndex < 'OUTPUT Guar Policy Lapse Year' ; çä   /*return accumulated premium paid*/ 'ANNCD Accum Prem Paid'('GEN Vector Blank';yearIndex) ; çä   /*Return zero for lapsed policy*/ 0çä)
+OUTPUT SubAccount Accum Value(rateAssumption; fundIndex; yearIndex)
+'GEN Round'('ANNCD Policy Fund Accum Value'(rateAssumption;fundIndex;yearIndex);2)
+OUTPUT GraceFund Accum Value(rateAssumption; yearIndex)
+'GEN Round'('ANNCD Policy Fund Accum Value'(rateAssumption;'Std Grace fundIndex';yearIndex);2)
+OUTPUT Curr Policy Lapse Year
+'ANNCD Policy Lapse Year'('CalcType Current'('GEN Vector Blank');1)
+OUTPUT Guar Policy Lapse Year
+'ANNCD Policy Lapse Year'('CalcType Guaranteed'('GEN Vector Blank');1)
+OUTPUT Midpoint Policy Lapse Year
+'ANNCD Policy Lapse Year'('CalcType Midpoint'('GEN Vector Blank');1)
+OUTPUT Assumed Policy Lapse Year
+'ANNCD Policy Lapse Year'('CalcType Assumed'('GEN Vector Blank');1)
+OUTPUT Policy CashSurrValue Including MVA(rateAssumption; yearIndex)
+'OUTPUT Policy CashSurrValue'(rateAssumption;yearIndex) + 'OUTPUT Surrender MVA'(rateAssumption;yearIndex)
+OUTPUT Surrender MVA(rateAssumption; yearIndex)
+IF ('AnnSC MVA Contract' ; çä  'GEN Round'('ANNCD MVA Amount on Full Surrender'(rateAssumption;yearIndex;'ANNCD Free Withdrawal Basis Amount'(rateAssumption;yearIndex;12;'FeeType FullSurrenderCharge'));2) ; çä  0çä)
+P5 1c1ad758 3fb580 0 2acb80c7 0 0 2
+Internal Rate of Return
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Illus RequestBasis InternalRateOfReturn CashValue(rateAssumption; yearIndex)
+'ANNCD Proj IRR'(rateAssumption;"CV";yearIndex)
+OUTPUT Illus RequestBasis InternalRateOfReturn DeathBenefit(rateAssumption; yearIndex)
+'ANNCD Proj IRR'(rateAssumption;"DB";yearIndex)
+P3 2acb80c7 3fb580 0 6d9167 0 50 2
+SPIA Contract Documents@AnnuityCalculations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 6d9167 3fb580 0 78b46463 0 50 2
+Annuity Disclosure@AnnuityContractDocuments
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 78b46463 3fb580 0 1d0e968a 0 50 2
+Annuity Payout Factors@AnnuityCalculations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1d0e968a 3fb580 0 0 0 50 2
+DEFAULT OUTPUTS FOR UTV ILLUSTRATION TESTS@UTVRep
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 3f3f30 0 53518a8 0 0 0 0
+
+F1 53518a8 3f3f30 5351970 0 0 0 2
+:Illus
+Funktion
+
+F1 5351970 53518a8 5351b68 5352128 0 0 2
+-- Lapse --
+Funktion
+
+F1 5351b68 5351970 0 5351e00 0 0 2
+Illus Curr Policy Lapse Ind(calcType)
+Funktion
+IF ( /*Policy has lapsed*/ 'ANNCD Policy Lapse Year'(calcType;1) > 0 ; çä   /*True*/ 1 ; çä   /*False*/ 0çä)
+F1 5351e00 5351970 0 5351ef0 0 0 2
+Illus Curr Policy Lapse Date(calcType)
+Funktion
+'ANNCD Policy Lapse Date'(calcType;'ANNCD Policy Lapse Year'(calcType;1);1)
+F1 5351ef0 5351970 0 0 0 0 2
+Illus Policy Accum Value(calcType; yearIndex)
+Funktion
+IF ( /*Policy has not lapsed yet*/ yearIndex < 'ANNCD Policy Lapse Year'(calcType;1) ; çä   /*Return policy value*/ 'GEN Round'('ANNCD Policy Accum Value'('CalcType Current'(calcType);yearIndex);0) ; çä   /*Return zero for lapsed policy*/ 0çä)
+F1 5352128 53518a8 5352338 5355e80 0 0 2
+:List
+Funktion
+
+F1 5352338 5352128 53523f0 5352680 0 0 2
+--Death Benefits--
+Funktion
+
+F1 53523f0 5352338 0 0 0 0 2
+Illus List Policy Death Benefit(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*///â'GEN Round'('ANNCD Policy Death Benefit'(calcType; fromYear;12);2)çä 'GEN Round'('ANNCD Policy Accum Value'(calcType;fromYear);2) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Death Benefit'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy Death Benefit'(calcType;fromYear + 1;toYear)çä)
+F1 5352680 5352128 5352898 53539a8 0 0 2
+-- Surrenders --
+Funktion
+
+F1 5352898 5352680 0 5352cd0 0 0 2
+Illus List Policy Annual Surrender(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('ANNCD Withdrawal'(calcType;fromYear);2) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Annual Surrender'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy Annual Surrender'(calcType;fromYear + 1;toYear)çä)
+F1 5352cd0 5352680 0 5353120 0 0 2
+Illus List Policy SurrenderChargeAmt(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('ANNCD Surrender Charge Amount'(calcType;'ArrType Full Surrender';fromYear;'ANNCD Policy Accum Value'(calcType;fromYear);'ANNCD Free Withdrawal Basis Amount'(calcType;fromYear;12;'FeeType FullSurrenderCharge'));2) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy SurrenderChargeAmt'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy SurrenderChargeAmt'(calcType;fromYear + 1;toYear)çä)
+F1 5353120 5352680 0 5353548 0 0 2
+Illus List Coverage SurrCharge(calcType; covIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ IF (covIndex = 0 ; çä    'GEN Round'('ANNCD Surrender Charge Amount'(calcType;'ArrType Full Surrender';fromYear;'ANNCD Policy Accum Value'('CalcType Current'(calcType);fromYear);'ANNCD Free Withdrawal Basis Amount'('CalcType Current'(calcType);fromYear;12;'FeeType FullSurrenderCharge'));2) ; çä    0çä  ) // only supporting base coverageçä & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Coverage SurrCharge'(calcType;covIndex;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä   /*Yes*/ 'GEN Vector Blank' ; çä   /*No*/ 'Illus Delimiter'(1)çä) &  /*Continue to next year*/ 'Illus List Coverage SurrCharge'(calcType;covIndex;fromYear + 1;toYear)çä)
+F1 5353548 5352680 0 0 0 0 2
+Illus List ChargePctSchedule Percentage(fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('AnnSC Surrender Charge FeePct'(fromYear;'FeeType FullSurrenderCharge';0);2) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List ChargePctSchedule Percentage'(fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List ChargePctSchedule Percentage'(fromYear + 1;toYear)çä)
+F1 53539a8 5352128 5353c00 0 0 0 2
+-- Values --
+Funktion
+
+F1 5353c00 53539a8 0 5354060 0 0 2
+Illus List Policy LastAnniversaryDate(fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'Calc Last Anniversary Date'('Policy EffDate';DATE('Policy EffDate';0;0;fromYear - 1)) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy LastAnniversaryDate'(fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy LastAnniversaryDate'(fromYear + 1;toYear)çä)
+F1 5354060 53539a8 0 53544d0 0 0 2
+Illus List Policy CashValueAmt(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ MAX(0;'GEN Round'('ANNCD Policy Accum Value'(calcType;fromYear);2)) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy CashValueAmt'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy CashValueAmt'(calcType;fromYear + 1;toYear)çä)
+F1 53544d0 53539a8 0 5354918 0 0 2
+Illus List Rider Accum Value(calcType; riderIndex; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ MAX(0;'GEN Round'('ANNCD Rider Accum Value'(calcType;riderIndex;fromYear);2)) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Rider Accum Value'(calcType;riderIndex;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Rider Accum Value'(calcType;riderIndex;fromYear + 1;toYear)çä)
+F1 5354918 53539a8 0 5354bb8 0 0 2
+Illus List Policy Contribution Bonus(calcType;fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'('ANNCD Contribution Bonus'(calcType);2) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Contribution Bonus'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy Contribution Bonus'(calcType;fromYear + 1;toYear)çä)
+F1 5354bb8 53539a8 0 5355038 0 0 2
+Illus List Policy Accum Value(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ MAX(0;'GEN Round'('ANNCD Policy Accum Value'(calcType;fromYear);2)) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Accum Value'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy Accum Value'(calcType;fromYear + 1;toYear)çä)
+F1 5355038 53539a8 0 5355540 0 0 2
+Illus List Policy Annual Premium(calcType;fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ IF ( /*Policy has not lapsed yet*/ fromYear < 'ANNCD Policy Lapse Year'('CalcType Current'(calcType);1) ; çä     /*Return annual premium*/ 'GEN Round'('ANNCD Policy Annual Premium'(calcType;fromYear);2) ; çä     /*Return zero for lapsed policy*/ 0çä  ) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Annual Premium'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä   /*Yes*/ 'GEN Vector Blank' ; çä   /*No*/ 'Illus Delimiter'(1)çä) &  /*Continue to next year*/ 'Illus List Policy Annual Premium'(calcType;fromYear + 1;toYear)çä)
+F1 5355540 53539a8 0 697fceee 0 0 2
+Illus List Policy CashSurrValue(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ MAX(0;'GEN Round'('ANNCD Policy CSV'(calcType;fromYear;12);2)) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy CashSurrValue'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy CashSurrValue'(calcType;fromYear + 1;toYear)çä)
+F1 697fceee 53539a8 0 53559d0 0 0 2
+Illus List Policy Surr Charge(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ MAX(0;'ANNCD Surrender Charge Amount'(calcType;'ArrType Full Surrender';fromYear;'ANNCD Policy CSV'(calcType;fromYear;12);'ANNCD Free Withdrawal Basis Amount'(calcType;fromyear;12;'FeeType FullSurrenderCharge'))) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Surr Charge'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy Surr Charge'(calcType;fromYear + 1;toYear)çä)
+F1 53559d0 53539a8 0 0 0 0 2
+Illus List Policy Expense Charge(calcType; fromYear; toYear)
+Funktion
+IF ( /*Is fromYear > toYear*/ fromYear > toYear ; çä   /*Yes-return null*/ 'GEN Vector Blank' ; çä   /*Continue with delimited list*/ 'GEN Round'(SUMX(mth;1;12;'ANNCD Expense Charges'(calcType;fromYear;#mth));2) & IF ( /*Is fromYear+1 > toYear*/ 'Illus List Policy Expense Charge'(calcType;fromYear + 1;toYear) EQUAL 'GEN Vector Blank' ; çä     /*Yes*/ 'GEN Vector Blank' ; çä     /*No*/ 'Illus Delimiter'(1)çä  ) &  /*Continue to next year*/ 'Illus List Policy Expense Charge'(calcType;fromYear + 1;toYear)çä)
+F1 5355e80 53518a8 5356120 4ac702e0 0 0 2
+-- Blocking --
+Funktion
+
+F1 5356120 5355e80 53563c0 0 0 0 2
+:Block
+Funktion
+
+F1 53563c0 5356120 0 5356788 0 0 2
+Illus Block Data(vectorDataString; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'(vectorDataString) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Data'(vectorDataString;yearFrom + 1;yearTo)çä)
+F1 5356788 5356120 5356a68 5356d50 0 0 2
+Illus Block Tabular1(calcType; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Tabular1 String'(yearFrom;calcType)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Tabular1'(calcType;yearFrom + 1;yearTo)çä)
+F1 5356a68 5356788 0 0 0 0 2
+Illus Block Tabular1 String(calcType; yearFrom)
+Funktion
+V_STRING(V_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //premiumçä'ANNCD Policy Annual Premium'(calcType;yearFrom); //cash valueçä'GEN Round'('ANNCD Policy Accum Value'(calcType;yearFrom);2); //cash surrender valueçä'GEN Round'('ANNCD Policy CSV'(calcType;yearFrom;12);2); //death benefitçä'GEN Round'('ANNCD Policy Accum Value'(calcType;yearFrom);2));'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 5356d50 5356120 5357050 0 0 0 2
+Illus Block Cash Value Increase(calcType; yearFrom; yearTo)
+Funktion
+IF (yearFrom > yearTo ; çä  'GEN Vector Blank' ; çä  'Illus Insert Column Delimiters'('Illus Block Cash Value Increase String'(calcType;yearFrom)) & IF (yearFrom + 1 > yearTo ; çä    'GEN Vector Blank' ; çä    'Illus Insert EndOfRow Delimiter'çä  ) & 'Illus Block Cash Value Increase'(calcType;yearFrom + 1;yearTo)çä)
+F1 5357050 5356d50 0 0 0 0 2
+Illus Block Cash Value Increase String(calcType; yearFrom)
+Funktion
+V_STRING(V_( //attained ageçä'Policy LifeParticipant IssueAge'(calcType;0;0) - 1 + yearFrom; //total net outlayçä0; //total annual cash value increaseçäIF ( /*First policy year*/ yearFrom = 1 ; çä   /*Yes*/ 'GEN Round'('ANNCD Policy Accum Value'(calcType;yearFrom);2) ; çä   /*No*/ 'GEN Round'('ANNCD Policy Accum Value'(calcType;yearFrom);2) - 'GEN Round'('ANNCD Policy Accum Value'(calcType;yearFrom - 1);2)çä); //total cash valueçä'GEN Round'('ANNCD Policy Accum Value'(calcType;yearFrom);2); //total death benefitçä'GEN Round'('ANNCD Policy Accum Value'(calcType;yearFrom);2));'Illus Delimiter'('Illus Column Delimiter Constant'))
+F1 4ac702e0 53518a8 5b8ee58f 0 0 0 2
+--UTVRep.pms overwrites for UTV Illustration Report
+Funktion
+
+F1 5b8ee58f 4ac702e0 5f30ef27 61f03e5c 0 0 2
+ILLUS Get Output Value(calcType; coverageIndex; Parameter; yearIndex; PropertyKey)
+Funktion
+CASE(PropertyKey;çä  100 : 'OUTPUT Accum Value'(calcType;yearIndex);çä  101 : 'OUTPUT Annual Premium'(calcType;yearIndex);çä  102 : 'OUTPUT Assumed Policy Accum Prem'(yearIndex);çä  103 : 'OUTPUT Assumed Policy Annual Premium'(yearIndex);çä  104 : 'OUTPUT Assumed Policy DeathBenefitAmt'(yearIndex);çä  105 : 'OUTPUT Base COI Rate'(calcType;coverageIndex;yearIndex);çä  106 : 'OUTPUT Base SubExtra COI Rate'(calcType;coverageIndex;yearIndex);çä  107 : 'OUTPUT Base Unrated COI Rate'(calcType;coverageIndex;yearIndex);çä  108 : 'OUTPUT Cash Surrender Value'(calcType;yearIndex);çä  109 : 'OUTPUT Corridor Factor'(yearIndex);çä  110 : 'OUTPUT Coverage Annual Premium'(calcType;coverageIndex;yearIndex);çä  111 : 'OUTPUT Coverage DivCashVal'(calcType;coverageIndex;yearIndex);çä  112 : 'OUTPUT Coverage ELA Dividend Index'(calcType;coverageIndex;yearIndex);çä  113 : 'OUTPUT Coverage Mode Premium'(calcType;coverageIndex;yearIndex);çä  114 : 'OUTPUT Coverage Net Payment Cost Index'(calcType;coverageIndex;yearIndex);çä  115 : 'OUTPUT Projected Coverage Surrender Charge'(coverageIndex;yearIndex);çä  116 : 'OUTPUT Coverage Surrender Cost Index'(calcType;coverageIndex;yearIndex);çä  117 : 'OUTPUT Curr Policy Accum Prem'(yearIndex);çä  118 : 'OUTPUT Curr Policy Cash Surr Value'(yearIndex);çä  119 : 'OUTPUT Curr Policy DeathBenefitAmt'(yearIndex);çä  120 : 'OUTPUT Curr Policy Mode Premium'(yearIndex);çä  121 : 'OUTPUT Curr Rider Annual Premium'(coverageIndex;yearIndex);çä  122 : 'OUTPUT Death Benefit'(calcType;yearIndex);çä  123 : 'OUTPUT Dividend PUA'(calcType;yearIndex);çä  124 : 'OUTPUT Grace Fund Accum Value'(calcType;yearIndex);çä  125 : 'OUTPUT Guar Policy Accum Prem'(yearIndex);çä  126 : 'OUTPUT Guar Policy Annual Premium'(yearIndex);çä  127 : 'OUTPUT Guar Policy Cash Surr Value'(yearIndex);çä  128 : 'OUTPUT Guar Policy DeathBenefitAmt'(yearIndex);çä  129 : 'OUTPUT Guar Policy Illus Accum Prem'(yearIndex);çä  130 : 'OUTPUT Guar Policy Mode Premium'(yearIndex);çä  131 : 'OUTPUT Guar Policy Summ Illus DB'(yearIndex);çä  132 : 'OUTPUT Guar Rider Annual Premium'(coverageIndex;yearIndex);çä  133 : 'OUTPUT Illus LoanAmt'(calcType;yearIndex);çä  134 : 'OUTPUT Illus WithdrawalAmt'(calcType;yearIndex);çä  135 : 'OUTPUT Midpoint Policy Accum Prem'(yearIndex);çä  136 : 'OUTPUT Midpoint Policy Annual Premium'(yearIndex);çä  137 : 'OUTPUT Midpoint Policy Cash Surr Value'(yearIndex);çä  138 : 'OUTPUT Midpoint Policy DeathBenefitAmt'(yearIndex);çä  139 : 'OUTPUT Midpoint Policy Mode Premium'(yearIndex);çä  140 : 'OUTPUT Midpoint Policy Summ Illus DB'(yearIndex);çä  141 : 'OUTPUT Net Payment Cost Index'(calcType;yearIndex);çä  142 : 'OUTPUT Policy Accum Premium'(calcType;yearIndex);çä  143 : 'OUTPUT Policy Accumulated non-QAB charges'(calcType;yearIndex);çä  144 : 'OUTPUT Policy Annual Net Outlay'(calcType;yearIndex);çä  145 : 'OUTPUT Policy Annual Outlay'(calcType;yearIndex);çä  146 : 'OUTPUT Policy Annual Premium'(calcType;yearIndex);çä  147 : 'OUTPUT Policy Annual Surrender'(calcType;yearIndex);çä  148 : 'OUTPUT Policy Cash Surr Value'(calcType;yearIndex);çä  149 : 'OUTPUT Policy CashSurrValue'(calcType;yearIndex);çä  150 : 'OUTPUT Policy CashValueAmt'(calcType;yearIndex);çä  151 : 'OUTPUT Policy CashValueIncreaseAmtPriorYr'(calcType;yearIndex);çä  152 : 'OUTPUT Policy Cost Basis only QAB'(calcType;yearIndex);çä  153 : 'OUTPUT Policy Current QAB Cost Basis'(calcType;yearIndex);çä  154 : 'OUTPUT Policy DeathBenefitAmt'(calcType;yearIndex);çä  155 : 'OUTPUT Policy DivCashVal'(calcType;yearIndex);çä  156 : 'OUTPUT Policy DivPUA CashValueAmt'(calcType;yearIndex);çä  157 : 'OUTPUT Policy Life DivPremRed'(calcType;yearIndex);çä  158 : 'OUTPUT Policy Mode Premium'(calcType;yearIndex);çä  159 : 'OUTPUT Policy OYTPurchaseAmt'(calcType;yearIndex);çä  160 : 'OUTPUT Policy Pure Endowment Amount'(yearIndex);çä  161 : 'OUTPUT Policy QAB Cost Basis'(calcType;yearIndex);çä  162 : 'OUTPUT Policy RPU Amount'(yearIndex);çä  163 : 'OUTPUT Policy Summary Illustration Death Benefit'(calcType;yearIndex);çä  164 : 'OUTPUT Policy Total Annual Premium'(calcType;yearIndex);çä  165 : 'OUTPUT Policy Total Mode Premium'(calcType;yearIndex);çä  166 : 'OUTPUT Policy Total Net Outlay'(calcType;yearIndex);çä  167 : 'OUTPUT Policy TotalPUA CashValueAmt'(calcType;yearIndex);çä  168 : 'OUTPUT Policy TotalPUA'(calcType;yearIndex);çä  169 : 'OUTPUT Premium Load FeeAmt'(yearIndex);çä  170 : 'OUTPUT Premium Load FeePct'(yearIndex);çä  171 : 'OUTPUT Premium PUA'(calcType;yearIndex);çä  172 : 'OUTPUT Proj Total Cash Value'(calcType;yearIndex);çä  173 : 'OUTPUT Projected Dividend'(calcType;yearIndex);çä  174 : 'OUTPUT Projected PUAFaceAmount'(calcType;yearIndex);çä  175 : 'OUTPUT Rider Annual Premium'(calcType;coverageIndex;yearIndex);çä  176 : 'OUTPUT Rider COI Rate'(calcType;coverageIndex;yearIndex);çä  177 : 'OUTPUT Rider Net Payment Cost Index'(calcType;coverageIndex;yearIndex);çä  178 : 'OUTPUT Rider Payment Cost Index'(calcType;coverageIndex;yearIndex);çä  179 : 'OUTPUT Rider SubExtra COI Rate'(calcType;coverageIndex;yearIndex);çä  180 : 'OUTPUT Rider Surrender Cost Index'(calcType;coverageIndex;yearIndex);çä  181 : 'OUTPUT Rider Unrated COI Rate'(calcType;coverageIndex;yearIndex);çä  182 : 'OUTPUT Surr Charge'(calcType;yearIndex);çä  183 : 'OUTPUT Total Rider Death Benefit'(calcType;yearIndex);çä  184 : 'OUTPUT Policy DivOnDepositAmt'(calcType;yearIndex);çä  185 : 'OUTPUT Policy Accum Value'(calcType;yearIndex);çä  186 : 0;çä  187 : 'OUTPUT Policy CashSurrValue'(calcType;yearIndex);çä  188 : 'OUTPUT Policy Surr Charge'(calcType;yearIndex);çä   //    189: â'OUTPUT Projected Life RegularLoanBalance'(calcType; yearIndex);çä//    190:â'OUTPUT Projected Total Capitalized Interest'(calcType; yearIndex);çä//    191:â'OUTPUT Illus LoanRepayment'(calcType; yearIndex);çä200 : 'OUTPUT Crediting Rate'(calcType);çä  201 : 'OUTPUT Policy CashSurrValue Including MVA'(calcType;yearIndex);çä  202 : 'OUTPUT Surrender MVA'(calcType;yearIndex);çä   : 'ILLUS Get Function Value'(calcType;CoverageIndex;Parameter;YearIndex;PropertyKey))çä
+F1 5f30ef27 5b8ee58f 0 0 0 0 2
+ILLUS Get Function Value(calcType; coverageIndex; Parameter; yearIndex; PropertyKey)
+Funktion
+0 /*çäCASE(PropertyKey;çäâ1000:  'AAC Admin Charge FeeAmt'(feeType; calcType; polYear)çäâ:0//expand this case statement to create function codes for report columnsçä)çä*/ 
+F1 61f03e5c 4ac702e0 0 53b6db36 0 0 2
+ILLUS Duration(calcType)
+Funktion
+'Illus List Upper Bound'(calcType)
+F1 53b6db36 4ac702e0 0 1f8b512f 0 0 2
+ILLUS Attained Age(yearIndex)
+Funktion
+'INPUT Policy LifeParticipant IssueAge' + yearIndex - 1
+F1 1f8b512f 4ac702e0 0 0 0 0 2
+ILLUS Start Year
+Funktion
+1
+A0 3f4008 0 0 0 0 0 0
+
+T0 3f4074 0 0 0 0 0 0
+
+I0 3f40e0 0 4ba16788 0 0 0 0
+
+I0 4ba16788 3f40e0 0 4f3e412b 0 0 0
+AnnuityDisbursementSolves.pms
+I0 4f3e412b 3f40e0 0 0 0 0 0
+UTVRep.pms
+-
+O0
+E0
+L0
+B0
+P15
+3faad8
+3fb580
+3fb7c8
+3fc088
+3fcb30
+3fcf68
+3fd108
+3fd5f0
+3fddf8
+3fe820
+1c1ad758
+2acb80c7
+6d9167
+78b46463
+1d0e968a
+F31
+53518a8
+5351970
+5351b68
+5351e00
+5351ef0
+5352128
+5352338
+53523f0
+5352680
+5352898
+5352cd0
+5353120
+5353548
+53539a8
+5353c00
+5354060
+53544d0
+5354918
+5354bb8
+5355038
+5355540
+697fceee
+53559d0
+5355e80
+5356120
+53563c0
+5356788
+5356a68
+5356d50
+5357050
+4ac702e0
+A0
+T0
+!79
+3fb7c8 4 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fb7c8 5 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fb7c8 6 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fb7c8 7 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fb7c8 8 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fb7c8 9 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fb7c8 10 -1
+çä08/13/2013 PA1401-26 CMC added transeffdur to call to tobaccoPremiumBasisçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fb7c8 11 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fc088 3 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fc088 4 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fc088 5 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fc088 6 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fc088 7 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fc088 8 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fcb30 3 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fcf68 -2 -2
+Modification Log:çä05/07/2010 DT pA1101 assume end of year
+3fcf68 3 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä9/13/2010 - VPMS 4.9.2 - BT - remove coverageIndex parmçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume CSV at end of year
+3fcf68 4 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume CSV at end of year
+3fddf8 -2 -2
+ Modification Log:çä9/23/2011 PA2019 CMC Update to add AnnSC vector to pass data for surrender charge calcs.çä05/07/2010 DT pA1101 added amount withdrawn and free withdrawn basis to surr charge amount, assume end of year and full surr
+3fddf8 3 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fddf8 4 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume free withdrawal basis at end of year and full surrender charge
+3fddf8 5 -1
+Modification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume free withdrawal basis at end of year and full surrender chargeçä05/07/2010 DT pA1101 assume current rateAssumption
+3fddf8 6 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 -2 -2
+Modification Log:çä05/07/2010 DT pA1101  assume end of years
+3fe820 3 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 4 -1
+çä11/29/2012 - PAC026 - rm - Added calcTypes for interest rate changes for illustrating impact on MVA for fixed annuity illustrationçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 5 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 7 -1
+çäModification Log:çäpA1001 - Performance - BT - 12/15/2009 - added monthIndex parm in order to compile
+3fe820 8 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 9 -1
+çä9/13/2011 pA Regression / CL true up.  CMC added rateAssumption as a parm to keep consistent across products types.çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 10 -1
+çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 11 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume CSV at end of yearçä05/12/2010 DT pA1101 correct List function, was pointing to accum values
+3fe820 12 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/12/2010 DT pA1101 added
+3fe820 14 -1
+çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3fe820 15 -1
+çäModification Log:çäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 16 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 17 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 18 -1
+Modification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 19 -1
+Description: Account Accum Valueçä çäModification Log:çä01/11/10 - PAC009 - JL - Initial Function
+3fe820 20 -1
+Description: Grace Account Accum Valueçä çäModification Log:çä01/11/10 - PAC009 - JL - Initial Function
+3fe820 21 -1
+Modification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 22 -1
+Modification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 23 -1
+Modification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 24 -1
+Modification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance pA1001 - 10/26/2009 - BT - Added this output to FA Illustrations node (copied from Annuity Contract Documents - needs illustration adjustments)
+3fe820 25 -1
+08/23/2012 - PAC026 - rm - Initial calculation.
+3fe820 26 -1
+08/23/2012 - PAC026 - rm - Initial calculation.
+1c1ad758 3 -1
+Description: Projected IRR on Cash Valueçä çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä09/15/2010 PAC018 JL Initial Output
+1c1ad758 4 -1
+Description: Projected IRR on Death Benefitçä çäModification Log:çä09/15/2010 PAC018 JL Initial Output
+2acb80c7 -2 -2
+Regression Testing - 02/23/2010 - BT - Added link for SPIA regression cases
+5351b68 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+5351e00 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+5351ef0 -2 -2
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+53523f0 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä09/28/2012 - rm - Used annuity DB calculation instead of annuity policy valueçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+5352898 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+5352cd0 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä9/23/2011 PA2019 CMC Update to add AnnSC vector to pass data for surrender charge calcs.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume free withdrawal basis at end of year and full surrender chargeçä03/31/2008          CSC                   Illustrations 
+5353120 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä9/23/2011 PA2019 CMC Update to add AnnSC vector to pass data for surrender charge calcs.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/07/2010 DT pA1101 assume current rateAssumptionçä05/06/2010 DT pA1101 assume free withdrawal basis at end of year and full surrender chargeçä03/31/2008          CSC                   Illustrations 
+5353548 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä10/11/2012 wmA-J 1301 Release 2 Sprint 5 Modified for surrender charge rule 6çä03/31/2008          CSC                   Illustrations 
+5353c00 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä03/31/2008          CSC                   Illustrations 
+5354060 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+53544d0 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+5354918 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+5354bb8 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+5355038 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+5355540 -2 -2
+Description: Builds a delimited string of Annuity cash surr values FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume CSV at end of yearçä03/31/2008          CSC                   Illustrations
+697fceee -2 -2
+Description: Builds a delimited string of Annuity Surr Charges FROM fromYear TO toYearçä çäModification Log:çä9/23/2011 PA2019 CMC Update to add AnnSC vector to pass data for surrender charge calcs.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/12/2010 DT pA1101 addedçä03/31/2008          CSC                   Illustrations
+53559d0 -2 -2
+Description: Builds a delimited string of Annuity Death Benefits FROM fromYear TO toYearçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/31/2008          CSC                   Illustrations 
+5356788 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+5356a68 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/06/2010 DT pA1101 assume CSV at end of year
+5356d50 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+5357050 -2 -2
+çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+5b8ee58f -2 -2
+Description: çäDefault list of report outputs with base system outputs.  Should be overwritten in higher model for customized list.  Each property key maps to an output value.  These keys are used in 'TABLE Report Structure' to link a header to a result.çä çäModification Log:çä9/13/2011 pA Regression / CL true up.  removed OUTPUT Policy Annual Premium without rateAssumption/calcType parmçä9/2/2011 pA1975 CMC added loan outputsçä11/3/2010 - PA1101 - BT - Refactored Testing - in order to compile, had to re-name output - added "Projected" to output name that had yearIndex parmçäUtility - 04/22/2009 - RWE - Initial FunctionçäUtility - 05/18/2010 - rm/cmc - Revised to include selected base pA outputs
+5f30ef27 -2 -2
+Description: Returns a function based on a code in table definition 'TABLE Report Structure' for calculations, rather than outputs.  Can be overwritten for customization.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäDefects - 04/14/2009 - RWE - additional function
+61f03e5c -2 -2
+Description: çäNumber of years for displayed values.  Default value can be overwritten for customization.  çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçäUtility - 04/22/2009 - RWE - Initial FunctionçäUtility - 05/19/2010 - rm - Changed to use illustration upper bound function.
+53b6db36 -2 -2
+Description: çäDefines the attained age.  Default value can be overwritten for customization. çä çäModification Log:çäUtility - 04/22/2009 - RWE - Initial FunctionçäUtility - 05/19/2010 - rm - Changed to use calculation based on issue age INPUT value.
+1f8b512f -2 -2
+Description:  çäStart year for Illustrations or Reproposals.  Default value 1 can be overwritten for customization.  çä çäModification Log:çäUtility - 04/22/2009 - RWE - Initial Function
+3f9890 -2 -2
+Commented out, takes long.  Runs successfully externally.
+33959b66 -2 -2
+Error expected - INPUT RequestBasis InterestAssumptionRate is higher than current rate
+21266c03 -2 -2
+
+4e98ae70 -2 -2
+Error expected - INPUT RequestBasis InterestAssumptionRate is higher than current rate
+;Offset=00000000

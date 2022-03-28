@@ -1,0 +1,536 @@
+;1	08.12.2016 13:33:06	jlawrie2	
+X0 bb52a0 0 0 0 0 0 0
+
+O0 bb5174 0 0 0 0 0 0
+
+E0 bb51d8 0 0 0 0 0 0
+
+L0 bb523c 0 0 0 0 0 0
+
+B0 bb53cc 0 0 0 0 0 0
+
+P3 bb5304 0 3eabf28a 0 0 0 2
+
+--description
+VERA submodel that simulates external module interface.çä çäRELEASE LOG:çäRELEASE 1101 - PAC011 DERA&VERA
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"3.60.005"
+P13 3eabf28a bb5304 0 0 0 0 2
+VERA simulation access model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"VERA simulation access model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"VERA_simulation_access.pms"
+OUTPUT Source Version Number
+0 //'GEN VersionInfo'ä
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 bb5368 0 bc1a20 0 0 0 0
+
+F1 bc1a20 bb5368 33d38291 bc2460 0 0 2
+--VERA dll calls
+Funktion
+// The following functions are included in VERA for VPM004
+F1 33d38291 bc1a20 bc17a0 bc1960 0 0 2
+--Guaranteed COIs--
+Funktion
+
+F1 bc17a0 33d38291 0 bc10b0 0 0 2
+f_T_select_and_ult_guar_COI(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;ISSUEAGE;PDFSEARCHKEY;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_guar_COI");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_select_and_ult_guar_COI");f_quote(SEXCODE);f_quote(RATECLASS);f_quote(ISSUEAGE);f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARCOV[col - 2];ISSUEAGECOV[col - 2];PDFSEARCHKEYCOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_guar_COI");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_select_and_ult_guar_COI");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);ISSUEAGECOV[col - 2];f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc10b0 33d38291 0 6845832e 0 0 2
+f_T_attained_age_guar_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;PDFSEARCHKEY;RENEWALCLASS;PERSONCODE;PERSONSEQ;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_guar_COI");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_attained_age_guar_COI");f_quote(SEXCODE);f_quote(RATECLASS);0;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARCOV[col - 2];PDFSEARCHKEYCOV[col - 2];RENEWALCLASSCOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_guar_COI");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_attained_age_guar_COI");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);0;f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 6845832e 33d38291 0 0 0 0 2
+f_T_attained_age_guar_COI_joint(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;PDFSEARCHKEY;GENERICCSOCODE;JOINTSEXCODE;JOINTRATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_guar_COI_joint");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_attained_age_guar_COI_joint");f_quote(JOINTSEXCODE);f_quote(JOINTRATECLASS);0;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;PDFSEARCHKEYCOV[col - 2];GENERICCSOCODECOV[col - 2];JOINTSEXCODECOV[col - 2];JOINTRATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_guar_COI_joint");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_attained_age_guar_COI_joint");f_quote(JOINTSEXCODECOV[col - 2]);f_quote(JOINTRATECLASSCOV[col - 2]);0;f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc1960 bc1a20 bc1880 bc2bc0 0 0 2
+--Current COIs--
+Funktion
+
+F1 bc1880 bc1960 0 bc16a0 0 0 2
+f_T_select_and_ult_curr_COI(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGE;PDFSEARCHKEY;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_curr_COI");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_select_and_ult_curr_COI");f_quote(SEXCODE);f_quote(RATECLASS);f_quote(ISSUEAGE);f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGECOV[col - 2];PDFSEARCHKEYCOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_curr_COI");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_select_and_ult_curr_COI");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);ISSUEAGECOV[col - 2];f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc16a0 bc1960 0 bc2dc0 0 0 2
+f_T_select_and_ult_curr_COI_joint(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;JOINTISSUEAGE;PDFSEARCHKEY;GENERICCSOCODE;JOINTSEXCODE;JOINTRATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_curr_COI_joint");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_select_and_ult_curr_COI_joint");f_quote(JOINTSEXCODE);f_quote(JOINTRATECLASS);f_quote(JOINTISSUEAGE);f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;JOINTISSUEAGECOV[col - 2];PDFSEARCHKEYCOV[col - 2];GENERICCSOCODECOV[col - 2];JOINTSEXCODECOV[col - 2];JOINTRATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_curr_COI_joint");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_select_and_ult_curr_COI_joint");f_quote(JOINTSEXCODECOV[col - 2]);f_quote(JOINTRATECLASSCOV[col - 2]);JOINTISSUEAGECOV[col - 2];f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc2dc0 bc1960 0 bc15a0 0 0 2
+f_T_select_and_ult_supp_ben_curr_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for supp benefits with specific named benefitsçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâISSUEAGEBEN;çäâPDFSEARCHKEYBEN;çäâGENERICCSOCODEBEN;çäâSEXCODEBEN;çäâRATECLASSBEN;çäâBANDBEN;âçäâBENEFITTYPE;çäâBENEFITSUBTYPEçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_select_and_ult_supp_ben_curr_COI");çäâv_(f_quote(PDFSEARCHKEY); f_quote("f_T_select_and_ult_supp_ben_curr_COI"); f_quote(SEXCODEBEN); f_quote(RATECLASSBEN); f_quote(ISSUEAGEBEN); f_quote(BANDBEN); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGEBEN[col - 2];PDFSEARCHKEYBEN[col - 2];GENERICCSOCODEBEN[col - 2];SEXCODEBEN[col - 2];RATECLASSBEN[col - 2];BANDBEN[col - 2];BENEFITTYPE[col - 2];BENEFITSUBTYPE[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_supp_ben_curr_COI");v_(f_quote(PDFSEARCHKEYBEN[col - 2]);f_quote("f_T_select_and_ult_supp_ben_curr_COI");f_quote(SEXCODEBEN[col - 2]);f_quote(RATECLASSBEN[col - 2]);ISSUEAGEBEN[col - 2];f_quote(BANDBEN[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc15a0 bc1960 0 bc2f90 0 0 2
+f_T_attained_age_curr_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEY;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_COI");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_attained_age_curr_COI");f_quote(SEXCODE);f_quote(RATECLASS);0;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYCOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_COI");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_attained_age_curr_COI");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);0;f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc2f90 bc1960 0 bc2ca0 0 0 2
+f_T_attained_age_curr_COI_joint(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEY;GENERICCSOCODE;JOINTSEXCODE;JOINTRATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_COI_joint");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_attained_age_curr_COI_joint");f_quote(JOINTSEXCODE);f_quote(JOINTRATECLASS);0;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYCOV[col - 2];GENERICCSOCODECOV[col - 2];JOINTSEXCODECOV[col - 2];JOINTRATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_COI_joint");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_attained_age_curr_COI_joint");f_quote(JOINTSEXCODECOV[col - 2]);f_quote(JOINTRATECLASSCOV[col - 2]);0;f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc2ca0 bc1960 0 0 0 0 2
+f_T_supp_ben_curr_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for supp benefits with specific named benefitsçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâPDFSEARCHKEYBEN;çäâGENERICCSOCODEBEN;çäâSEXCODEBEN;çäâRATECLASSBEN;çäâBANDBEN;âçäâBENEFITTYPE;çäâBENEFITSUBTYPEçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_supp_ben_curr_COI");çäâv_(f_quote(PDFSEARCHKEY); f_quote("f_T_supp_ben_curr_COI"); f_quote(SEXCODEBEN); f_quote(RATECLASSBEN); f_quote(ISSUEAGEBEN); f_quote(BANDBEN); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYBEN[col - 2];GENERICCSOCODEBEN[col - 2];SEXCODEBEN[col - 2];RATECLASSBEN[col - 2];BANDBEN[col - 2];BENEFITTYPE[col - 2];BENEFITSUBTYPE[col - 2];BENRENEWALIND[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_supp_ben_curr_COI");v_(f_quote(PDFSEARCHKEYBEN[col - 2]);f_quote("f_T_supp_ben_curr_COI");f_quote(SEXCODEBEN[col - 2]);f_quote(RATECLASSBEN[col - 2]);0;f_quote(BANDBEN[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc2bc0 bc1a20 bc2a90 1ad05aeb 0 0 2
+--Term Rider COIs--
+Funktion
+
+F1 bc2a90 bc2bc0 0 bc29d0 0 0 2
+f_T_TR_select_and_ult_curr_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâISSUEAGETR;çäâPDFSEARCHKEYTR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_select_and_ult_curr_COI");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_select_and_ult_curr_COI"); f_quote(SEXCODETR); f_quote(RATECLASSTR); f_quote(ISSUEAGETR); f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGETR[col - 2];PDFSEARCHKEYTR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_select_and_ult_curr_COI");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_select_and_ult_curr_COI");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);ISSUEAGETR[col - 2];f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc29d0 bc2bc0 0 bc2890 0 0 2
+f_T_TR_select_and_ult_curr_COI_joint(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâJOINTISSUEAGETR;çäâPDFSEARCHKEYTR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_select_and_ult_curr_COI_joint");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_select_and_ult_curr_COI_joint"); f_quote(SEXCODETR); f_quote(RATECLASSTR); f_quote(JOINTISSUEAGETR); f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;JOINTISSUEAGETR[col - 2];PDFSEARCHKEYTR[col - 2];GENERICCSOCODETR[col - 2];JOINTSEXCODETR[col - 2];JOINTRATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_select_and_ult_curr_COI_joint");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_select_and_ult_curr_COI_joint");f_quote(JOINTSEXCODETR[col - 2]);f_quote(JOINTRATECLASSTR[col - 2]);JOINTISSUEAGETR[col - 2];f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc2890 bc2bc0 0 bc27c0 0 0 2
+f_T_TR_select_and_ult_guar_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâISSUEAGETR;çäâPDFSEARCHKEYTR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_select_and_ult_guar_COI");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_select_and_ult_guar_COI"); f_quote(SEXCODETR); f_quote(RATECLASSTR); f_quote(ISSUEAGETR); f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARTR[col - 2];ISSUEAGETR[col - 2];PDFSEARCHKEYTR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_select_and_ult_guar_COI");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_select_and_ult_guar_COI");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);ISSUEAGETR[col - 2];f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc27c0 bc2bc0 0 bc2670 0 0 2
+f_T_TR_attained_age_curr_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâPDFSEARCHKEYTR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_attained_age_curr_COI");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_attained_age_curr_COI"); f_quote(SEXCODETR); f_quote(RATECLASSTR); 0; f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYTR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_attained_age_curr_COI");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_attained_age_curr_COI");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);0;f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc2670 bc2bc0 0 bc25c0 0 0 2
+f_T_TR_attained_age_curr_COI_joint(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâPDFSEARCHKEYTR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_attained_age_curr_COI_joint");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_attained_age_curr_COI_joint"); f_quote(SEXCODETR); f_quote(RATECLASSTR); 0; f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYTR[col - 2];GENERICCSOCODETR[col - 2];JOINTSEXCODETR[col - 2];JOINTRATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_attained_age_curr_COI_joint");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_attained_age_curr_COI_joint");f_quote(JOINTSEXCODETR[col - 2]);f_quote(JOINTRATECLASSTR[col - 2]);0;f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc25c0 bc2bc0 0 0 0 0 2
+f_T_TR_attained_age_guar_COI(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâPDFSEARCHKEYTR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_attained_age_guar_COI");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_attained_age_guar_COI"); f_quote(SEXCODETR); f_quote(RATECLASSTR); 0; f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARTR[col - 2];PDFSEARCHKEYTR[col - 2];RENEWALCLASSTR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_attained_age_guar_COI");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_attained_age_guar_COI");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);0;f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 1ad05aeb bc1a20 1402826e 761862e0 0 0 2
+--Policy Protection Account COIs--
+Funktion
+
+F1 1402826e 1ad05aeb 0 60f7c430 0 0 2
+f_T_select_and_ult_PPA_COI(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;ISSUEAGE;PDFSEARCHKEYPPA;PDFEFFDATE;PDFVERSION;IAFVERSION;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_PPA_COI");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_select_and_ult_PPA_COI");f_quote(SEXCODE);f_quote(RATECLASS);ISSUEAGE;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;ISSUEAGECOV[col - 2];PDFSEARCHKEYPPACOV[col - 2];PDFEFFDATECOV[col - 2];PDFVERSIONCOV[col - 2];IAFVERSIONCOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_PPA_COI");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_select_and_ult_PPA_COI");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);ISSUEAGECOV[col - 2];f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 60f7c430 1ad05aeb 0 0 0 0 2
+f_T_attained_age_PPA_COI(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;PDFSEARCHKEYPPA;PDFEFFDATE;PDFVERSION;IAFVERSION;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_PPA_COI");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_attained_age_PPA_COI");f_quote(SEXCODE);f_quote(RATECLASS);0;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;PDFSEARCHKEYPPACOV[col - 2];PDFEFFDATECOV[col - 2];PDFVERSIONCOV[col - 2];IAFVERSIONCOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_PPA_COI");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_attained_age_PPA_COI");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);0;f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 761862e0 bc1a20 6f41bc83 3ff13548 0 0 2
+--Current Premiums--
+Funktion
+
+F1 6f41bc83 761862e0 0 76e9eac0 0 0 2
+f_T_select_and_ult_curr_PRM(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGE;PDFSEARCHKEY;PRODLINECODE;GENERICCSOCODE;SEXCODE;RATECLASS;BAND;INITRENEWPRD;SUBRENEWDUR;SUBRENEWPRD)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_curr_PRM");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_select_and_ult_curr_PRM");f_quote(SEXCODE);f_quote(RATECLASS);ISSUEAGE;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGECOV[col - 2];PDFSEARCHKEYCOV[col - 2];PRODLINECODECOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2];INITRENEWPRDCOV[col - 2];SUBRENEWDURCOV[col - 2];SUBRENEWPRDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_curr_PRM");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_select_and_ult_curr_PRM");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);ISSUEAGECOV[col - 2];f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 76e9eac0 761862e0 0 4605d93f 0 0 2
+f_T_select_and_ult_supp_ben_curr_PRM(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for supp benefits with specific named benefitsçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâISSUEAGEBEN;çäâPDFSEARCHKEYBEN;çäâPRODLINECODEBEN;çäâGENERICCSOCODEBEN;çäâSEXCODEBEN;çäâRATECLASSBEN;çäâBANDBEN;âçäâBENEFITTYPE;çäâBENEFITSUBTYPEçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_select_and_ult_supp_ben_curr_PRM");çäâv_(f_quote(PDFSEARCHKEY); f_quote("f_T_select_and_ult_supp_ben_curr_PRM"); f_quote(SEXCODEBEN); f_quote(RATECLASSBEN); ISSUEAGEBEN; f_quote(BANDBEN); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGEBEN[col - 2];PDFSEARCHKEYBEN[col - 2];PRODLINECODEBEN[col - 2];GENERICCSOCODEBEN[col - 2];SEXCODEBEN[col - 2];RATECLASSBEN[col - 2];BANDBEN[col - 2];BENEFITTYPE[col - 2];BENEFITSUBTYPE[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_supp_ben_curr_PRM");v_(f_quote(PDFSEARCHKEYBEN[col - 2]);f_quote("f_T_select_and_ult_supp_ben_curr_PRM");f_quote(SEXCODEBEN[col - 2]);f_quote(RATECLASSBEN[col - 2]);ISSUEAGEBEN[col - 2];f_quote(BANDBEN[col - 2]);f_quote("optional parm not used");row))çä)
+F1 4605d93f 761862e0 0 3ba3bdf3 0 0 2
+f_T_attained_age_curr_PRM(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEY;PRODLINECODE;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_PRM");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_attained_age_curr_PRM");f_quote(SEXCODE);f_quote(RATECLASS);0;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYCOV[col - 2];PRODLINECODECOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_PRM");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_attained_age_curr_PRM");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);0;f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 3ba3bdf3 761862e0 0 0 0 0 2
+f_T_supp_ben_curr_PRM(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for supp benefits with specific named benefitsçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâPDFSEARCHKEYBEN;çäâPRODLINECODEBEN;çäâGENERICCSOCODEBEN;çäâSEXCODEBEN;çäâRATECLASSBEN;çäâBANDBEN;âçäâBENEFITTYPE;çäâBENEFITSUBTYPE;çäâBENRENEWALIND;çä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_supp_ben_curr_PRM");çäâv_(f_quote(PDFSEARCHKEY); f_quote("f_T_supp_ben_curr_PRM"); f_quote(SEXCODEBEN); f_quote(RATECLASSBEN); 0; f_quote(BANDBEN); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYBEN[col - 2];PRODLINECODEBEN[col - 2];GENERICCSOCODEBEN[col - 2];SEXCODEBEN[col - 2];RATECLASSBEN[col - 2];BANDBEN[col - 2];BENEFITTYPE[col - 2];BENEFITSUBTYPE[col - 2];BENRENEWALIND[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_supp_ben_curr_PRM");v_(f_quote(PDFSEARCHKEYBEN[col - 2]);f_quote("f_T_supp_ben_curr_PRM");f_quote(SEXCODEBEN[col - 2]);f_quote(RATECLASSBEN[col - 2]);0;f_quote(BANDBEN[col - 2]);f_quote("optional parm not used");row))çä)
+F1 3ff13548 bc1a20 6c4bccdd 5c0811e8 0 0 2
+--Guaranteed Premiums--
+Funktion
+
+F1 6c4bccdd 3ff13548 0 fbc2849 0 0 2
+f_T_select_and_ult_guar_PRM(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;ISSUEAGE;PDFSEARCHKEY;PRODLINECODE;GENERICCSOCODE;SEXCODE;RATECLASS;BAND;INITRENEWPRD;SUBGRENEWDUR;SUBGRENEWPRD)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_guar_PRM");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_select_and_ult_guar_PRM");f_quote(SEXCODE);f_quote(RATECLASS);ISSUEAGE;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARCOV[col - 2];ISSUEAGECOV[col - 2];PDFSEARCHKEYCOV[col - 2];PRODLINECODECOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2];INITRENEWPRDCOV[col - 2];SUBRENEWDURCOV[col - 2];SUBRENEWPRDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_select_and_ult_guar_PRM");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_select_and_ult_guar_PRM");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);ISSUEAGECOV[col - 2];f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 fbc2849 3ff13548 0 0 0 0 2
+f_T_attained_age_guar_PRM(row;col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  f_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUAR;PDFSEARCHKEY;PRODLINECODE;RENEWALCLASS;PERSONCODE;PERSONSEQ;GENERICCSOCODE;SEXCODE;RATECLASS;BAND)) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_PRM");v_(f_quote(PDFSEARCHKEY);f_quote("f_T_attained_age_curr_PRM");f_quote(SEXCODE);f_quote(RATECLASS);0;f_quote(BAND);f_quote("optional parm");row)) ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARCOV[col - 2];PDFSEARCHKEYCOV[col - 2];PRODLINECODECOV[col - 2];RENEWALCLASSCOV[col - 2];GENERICCSOCODECOV[col - 2];SEXCODECOV[col - 2];RATECLASSCOV[col - 2];BANDCOV[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_attained_age_curr_PRM");v_(f_quote(PDFSEARCHKEYCOV[col - 2]);f_quote("f_T_attained_age_curr_PRM");f_quote(SEXCODECOV[col - 2]);f_quote(RATECLASSCOV[col - 2]);0;f_quote(BANDCOV[col - 2]);f_quote("optional parm not used");row))çä)
+F1 5c0811e8 bc1a20 a36b6f 0 0 0 2
+--Term Rider Premiums--
+Funktion
+
+F1 a36b6f 5c0811e8 0 1bf7ab78 0 0 2
+f_T_TR_select_and_ult_curr_PRM(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâISSUEAGETR;çäâPDFSEARCHKEYTR;çäâPRODLINECODETR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTR;çäâINITRENEWPRDTR;çäâSUBRENEWDURTR;çäâSUBRENEWPRDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_select_and_ult_curr_PRM");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_select_and_ult_curr_PRM"); f_quote(SEXCODETR); f_quote(RATECLASSTR); ISSUEAGETR; f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;ISSUEAGETR[col - 2];PDFSEARCHKEYTR[col - 2];PRODLINECODETR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2];INITRENEWPRDTR[col - 2];SUBRENEWDURTR[col - 2];SUBRENEWPRDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_select_and_ult_curr_PRM");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_select_and_ult_curr_PRM");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);ISSUEAGETR[col - 2];f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 1bf7ab78 5c0811e8 0 d7f0ebf 0 0 2
+f_T_TR_attained_age_curr_PRM(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATE;çäâPDFSEARCHKEYTR;çäâPRODLINECODETR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_attained_age_curr_PRM");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_attained_age_curr_PRM"); f_quote(SEXCODETR); f_quote(RATECLASSTR); 0; f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATE;PDFSEARCHKEYTR[col - 2];PRODLINECODETR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_attained_age_curr_PRM");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_attained_age_curr_PRM");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);0;f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 d7f0ebf 5c0811e8 0 11d0f1fd 0 0 2
+f_T_TR_select_and_ult_guar_PRM(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATEGUARTR;çäâISSUEAGETR;çäâPDFSEARCHKEYTR;çäâPRODLINECODETR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTR;çäâINITRENEWPRDTR;çäâSUBRENEWDURTR;çäâSUBRENEWPRDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_select_and_ult_guar_PRM");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_select_and_ult_guar_PRM"); f_quote(SEXCODETR); f_quote(RATECLASSTR); ISSUEAGETR; f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARTR[col - 2];ISSUEAGETR[col - 2];PDFSEARCHKEYTR[col - 2];PRODLINECODETR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2];INITRENEWPRDTR[col - 2];SUBRENEWDURTR[col - 2];SUBRENEWPRDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_select_and_ult_guar_PRM");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_select_and_ult_guar_PRM");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);ISSUEAGETR[col - 2];f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 11d0f1fd 5c0811e8 0 0 0 0 2
+f_T_TR_attained_age_guar_PRM(row; col)
+Funktion
+ //row is durationçä// col = 1 is single node approachçäIF (col = 1 ; çä  0 /*The single node approach for Riders with specific named ridersçäwill not be supported in this initial release of VERA, and will be deferred to a later projectçäçäf_request(v_(çäâPOLNUM;çäâECM_DEBUG;çäâDCBADDRESS;çäâUSERID;çäâEFFECTIVEDATEGUARTR;çäâPDFSEARCHKEYTR;çäâPRODLINECODETR;çäâGENERICCSOCODETR;çäâSEXCODETR;çäâRATECLASSTR;çäâBANDTRâçä))çä+çäf_build_LR_call(çäâf_LR("model_name");çäâf_LR("f_T_TR_attained_age_guar_PRM");çäâv_(f_quote(PDFSEARCHKEYTR); f_quote("f_T_TR_attained_age_guar_PRM"); f_quote(SEXCODETR); f_quote(RATECLASSTR); 0; f_quote(BANDTR); f_quote("optional parm"); row)çä)*/  ; çä   //  cols 2 - 21 multi node approachçäf_request(v_(POLNUM;ECM_DEBUG;DCBADDRESS;USERID;EFFECTIVEDATEGUARTR[col - 2];PDFSEARCHKEYTR[col - 2];PRODLINECODETR[col - 2];GENERICCSOCODETR[col - 2];SEXCODETR[col - 2];RATECLASSTR[col - 2];BANDTR[col - 2])) + f_build_LR_call(f_LR("model_name");f_LR("f_T_TR_attained_age_guar_PRM");v_(f_quote(PDFSEARCHKEYTR[col - 2]);f_quote("f_T_TR_attained_age_guar_PRM");f_quote(SEXCODETR[col - 2]);f_quote(RATECLASSTR[col - 2]);0;f_quote(BANDTR[col - 2]);f_quote("optional parm not used");row))çä)
+F1 bc2460 bb5368 bc23e0 bc2350 0 0 2
+--General functions--
+Funktion
+
+F1 bc23e0 bc2460 0 bc2170 0 0 2
+f_LR(LR_parm)
+Funktion
+CASE(tolower(LR_parm);çä  "model_name" : "VERA_Simulation_Tables.vpm";çä   : subst(tolower(LR_parm);"_t_";"_"))çä
+F1 bc2170 bc2460 0 0 0 0 2
+f_request(v)
+Funktion
+ // This simulates host VERA requesting the right parameters for the right ratesçä// This function is called with parameters that are needed by VERA.çä// Even though the function is not doing anything the passed parameters will be needed by VPMSçä// The Attributes that are refferred to by the VERA PARAMETERS will be needed in VPMS çä// and requested from the main modelçä0 & left(vectorx(i;0;v_length(v) - 1;e_(v;#i));0)
+F1 bc2350 bb5368 bc3dd0 0 0 0 2
+--Late Reference call functions--
+Funktion
+
+F1 bc3dd0 bc2350 0 bc3c40 0 0 2
+f_build_LR_call(model_name;function_name;parm_vector)
+Funktion
+vpmcompute(model_name;function_name & "(" & v_string(parm_vector;";") & ")")
+F1 bc3c40 bc2350 0 0 0 0 2
+f_quote(str1)
+Funktion
+ // This function receives a string parameterçä// and surrounds that string within quotesçä// use 3 double quotes to add quote character in a stringçä""" &  // next comes the parameter you want to surround with quotesçästr1 // use a & to concatonate the parameterçä &  // use 3 double quotes to add quote character in a stringçä"""
+A0 bb5430 0 bc5f00 0 0 0 0
+
+A0 bc5f00 bb5430 bc5e70 0 0 0 0
+--VERA Parameters--
+A0 bc5e70 bc5f00 0 bc5bc0 0 0 0
+POLNUM
+A0 bc5bc0 bc5f00 0 bc5b50 0 0 0
+ECM_DEBUG
+A0 bc5b50 bc5f00 0 bc5ac0 0 0 0
+DCBADDRESS
+A0 bc5ac0 bc5f00 0 bc5a30 0 0 0
+RENEWALCLASS
+A0 bc5a30 bc5f00 0 bc5dc0 0 0 0
+RENEWALCLASSCOV
+A0 bc5dc0 bc5f00 0 bc5d30 0 0 0
+EFFECTIVEDATE
+A0 bc5d30 bc5f00 0 bc5ca0 0 0 0
+EFFECTIVEDATEGUAR
+A0 bc5ca0 bc5f00 0 bc59c0 0 0 0
+EFFECTIVEDATEGUARCOV
+A0 bc59c0 bc5f00 0 bc5950 0 0 0
+EFFECTIVEDATEGUARTR
+A0 bc5950 bc5f00 0 bc58e0 0 0 0
+USERID
+A0 bc58e0 bc5f00 0 bc5870 0 0 0
+ISSUEAGE
+A0 bc5870 bc5f00 0 bc5550 0 0 0
+JOINTISSUEAGE
+A0 bc5550 bc5f00 0 bc54e0 0 0 0
+ISSUEAGECOV
+A0 bc54e0 bc5f00 0 bc5450 0 0 0
+JOINTISSUEAGECOV
+A0 bc5450 bc5f00 0 bc5140 0 0 0
+ISSUEAGEBEN
+A0 bc5140 bc5f00 0 bc50b0 0 0 0
+ISSUEAGETR
+A0 bc50b0 bc5f00 0 bc5020 0 0 0
+JOINTISSUEAGETR
+A0 bc5020 bc5f00 0 bc57a0 0 0 0
+PDFSEARCHKEY
+A0 bc57a0 bc5f00 0 bc5710 0 0 0
+PDFSEARCHKEYCOV
+A0 bc5710 bc5f00 0 bc5680 0 0 0
+PDFSEARCHKEYBEN
+A0 bc5680 bc5f00 0 7e499b70 0 0 0
+PDFSEARCHKEYTR
+A0 7e499b70 bc5f00 0 6012888 0 0 0
+PDFSEARCHKEYPPA
+A0 6012888 bc5f00 0 e05749 0 0 0
+PDFSEARCHKEYPPACOV
+A0 e05749 bc5f00 0 47654714 0 0 0
+PDFEFFDATE
+A0 47654714 bc5f00 0 426a1c66 0 0 0
+PDFEFFDATECOV
+A0 426a1c66 bc5f00 0 6536a47f 0 0 0
+PDFVERSION
+A0 6536a47f bc5f00 0 bc55f0 0 0 0
+PDFVERSIONCOV
+A0 bc55f0 bc5f00 0 bc6f90 0 0 0
+PERSONCODE
+A0 bc6f90 bc5f00 0 2c9521e3 0 0 0
+PERSONSEQ
+A0 2c9521e3 bc5f00 0 7696a864 0 0 0
+PRODLINECODE
+A0 7696a864 bc5f00 0 38a361e0 0 0 0
+PRODLINECODECOV
+A0 38a361e0 bc5f00 0 4814fb3e 0 0 0
+PRODLINECODEBEN
+A0 4814fb3e bc5f00 0 bc6f00 0 0 0
+PRODLINECODETR
+A0 bc6f00 bc5f00 0 bc6e70 0 0 0
+GENERICCSOCODE
+A0 bc6e70 bc5f00 0 bc6de0 0 0 0
+GENERICCSOCODECOV
+A0 bc6de0 bc5f00 0 bc53e0 0 0 0
+GENERICCSOCODEBEN
+A0 bc53e0 bc5f00 0 bc5350 0 0 0
+GENERICCSOCODETR
+A0 bc5350 bc5f00 0 bc52e0 0 0 0
+SEXCODE
+A0 bc52e0 bc5f00 0 bc5250 0 0 0
+JOINTSEXCODE
+A0 bc5250 bc5f00 0 bc6d40 0 0 0
+SEXCODECOV
+A0 bc6d40 bc5f00 0 bc6cd0 0 0 0
+JOINTSEXCODECOV
+A0 bc6cd0 bc5f00 0 bc6c60 0 0 0
+SEXCODEBEN
+A0 bc6c60 bc5f00 0 bc6bf0 0 0 0
+SEXCODETR
+A0 bc6bf0 bc5f00 0 bc6b60 0 0 0
+JOINTSEXCODETR
+A0 bc6b60 bc5f00 0 bc6770 0 0 0
+RATECLASS
+A0 bc6770 bc5f00 0 bc6700 0 0 0
+JOINTRATECLASS
+A0 bc6700 bc5f00 0 bc6670 0 0 0
+RATECLASSCOV
+A0 bc6670 bc5f00 0 bc65e0 0 0 0
+JOINTRATECLASSCOV
+A0 bc65e0 bc5f00 0 bc6550 0 0 0
+RATECLASSBEN
+A0 bc6550 bc5f00 0 bc64c0 0 0 0
+RATECLASSTR
+A0 bc64c0 bc5f00 0 bc60e0 0 0 0
+JOINTRATECLASSTR
+A0 bc60e0 bc5f00 0 bc6070 0 0 0
+BAND
+A0 bc6070 bc5f00 0 bc6ab0 0 0 0
+BANDCOV
+A0 bc6ab0 bc5f00 0 bc6a40 0 0 0
+BANDBEN
+A0 bc6a40 bc5f00 0 bc69d0 0 0 0
+BANDTR
+A0 bc69d0 bc5f00 0 bc6960 0 0 0
+BENEFITTYPE
+A0 bc6960 bc5f00 0 bc68f0 0 0 0
+BENEFITSUBTYPE
+A0 bc68f0 bc5f00 0 bc6860 0 0 0
+BENRENEWALIND
+A0 bc6860 bc5f00 0 46de791e 0 0 0
+RENEWALCLASSTR
+A0 46de791e bc5f00 0 3ad68f8c 0 0 0
+INITRENEWPRD
+A0 3ad68f8c bc5f00 0 63734758 0 0 0
+INITRENEWPRDCOV
+A0 63734758 bc5f00 0 2f0c38 0 0 0
+INITRENEWPRDTR
+A0 2f0c38 bc5f00 0 37d590d2 0 0 0
+SUBRENEWDUR
+A0 37d590d2 bc5f00 0 6eb7b0b9 0 0 0
+SUBRENEWDURCOV
+A0 6eb7b0b9 bc5f00 0 1ab49b8 0 0 0
+SUBGRENEWDUR
+A0 1ab49b8 bc5f00 0 6800b728 0 0 0
+SUBRENEWDURTR
+A0 6800b728 bc5f00 0 705bdda6 0 0 0
+SUBRENEWPRD
+A0 705bdda6 bc5f00 0 2d5e80fb 0 0 0
+SUBRENEWPRDCOV
+A0 2d5e80fb bc5f00 0 12c528c1 0 0 0
+SUBGRENEWPRD
+A0 12c528c1 bc5f00 0 52cbc38e 0 0 0
+SUBRENEWPRDTR
+A0 52cbc38e bc5f00 0 10dada49 0 0 0
+IAFVERSION
+A0 10dada49 bc5f00 0 0 0 0 0
+IAFVERSIONCOV
+T0 bb5494 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P1
+3eabf28a
+F26
+bc1a20
+33d38291
+bc1960
+bc1880
+bc16a0
+bc2dc0
+bc15a0
+bc2f90
+bc2ca0
+bc2bc0
+bc2a90
+bc29d0
+bc2890
+bc27c0
+bc2670
+bc25c0
+1ad05aeb
+761862e0
+3ff13548
+5c0811e8
+bc2460
+bc23e0
+bc2170
+bc2350
+bc3dd0
+bc3c40
+A73
+bc5f00
+bc5e70
+bc5bc0
+bc5b50
+bc5ac0
+bc5a30
+bc5dc0
+bc5d30
+bc5ca0
+bc59c0
+bc5950
+bc58e0
+bc5870
+bc5550
+bc54e0
+bc5450
+bc5140
+bc50b0
+bc5020
+bc57a0
+bc5710
+bc5680
+7e499b70
+6012888
+e05749
+47654714
+426a1c66
+6536a47f
+bc55f0
+bc6f90
+2c9521e3
+7696a864
+38a361e0
+4814fb3e
+bc6f00
+bc6e70
+bc6de0
+bc53e0
+bc5350
+bc52e0
+bc5250
+bc6d40
+bc6cd0
+bc6c60
+bc6bf0
+bc6b60
+bc6770
+bc6700
+bc6670
+bc65e0
+bc6550
+bc64c0
+bc60e0
+bc6070
+bc6ab0
+bc6a40
+bc69d0
+bc6960
+bc68f0
+bc6860
+46de791e
+3ad68f8c
+63734758
+2f0c38
+37d590d2
+6eb7b0b9
+1ab49b8
+6800b728
+705bdda6
+2d5e80fb
+12c528c1
+52cbc38e
+10dada49
+T0
+!31
+bc17a0 -2 -2
+Description: Select and Ultimate Guaranteed COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc10b0 -2 -2
+Description: Attained Age Guaranteed COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+6845832e -2 -2
+Description: Attained Age Guaranteed Joint COI.çä çäModification Log:çä09/11/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc1880 -2 -2
+Description: Select and Ultimate Current COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc16a0 -2 -2
+Description: Select and Ultimate Current Joint COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2dc0 -2 -2
+Description: Select and Ultimate Current COI by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc15a0 -2 -2
+Description: Attained Age Current COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2f90 -2 -2
+Description: Attained Age Current Joint COI.çä çäModification Log:çä09/11/2010 PAC011 DERA&VERA JL Correct "f_T_attained_age_guar_COI_joint" to "f_T_attained_age_curr_COI_joint"çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2ca0 -2 -2
+Description: Attained Age Current COI by Benefit.çä çäModification Log:çä09/11/2010 PAC011 DERA&VERA JL This is Attained Age based; do not pass Issue Age.çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2a90 -2 -2
+Description: Select and Ultimate Current COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc29d0 -2 -2
+Description: Select and Ultimate Current Joint COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2890 -2 -2
+Description: Select and Ultimate Guaranteed COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc27c0 -2 -2
+Description: Attained Age Current COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc2670 -2 -2
+Description: Attained Age Current Joint COI by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc25c0 -2 -2
+Description: Attained Age Guaranteed COI Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1402826e -2 -2
+Description: Select and Ultimate Current Policy Protection Account COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+60f7c430 -2 -2
+Description: Attained Age Current Policy Protection Account COI.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+6f41bc83 -2 -2
+Description:  Select and Ultimate Current Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+76e9eac0 -2 -2
+Description: Select and Ultimate Current Premium Rate by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+4605d93f -2 -2
+Description: Attained Age Current Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+3ba3bdf3 -2 -2
+Description: Attained Age Current Premium Rate by Benefit.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+6c4bccdd -2 -2
+Description: Select and Ultimate Guaranteed Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+fbc2849 -2 -2
+Description: Attained Age Guaranteed Premium Rate.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+a36b6f -2 -2
+Description: Select and Ultimate Current Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+1bf7ab78 -2 -2
+Description: Attained Age Current Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+d7f0ebf -2 -2
+Description: Select and Ultimate Guaranteed Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+11d0f1fd -2 -2
+Description: Attained Age Guaranteed Premium Rate by Term Rider.çä çäModification Log:çä07/12/2010 PAC011 DERA&VERA JL Initial calculation/function.
+bc23e0 -2 -2
+Description: This vector is used to build the parameter list for Late Referencing calls.çä çäModification Logçä07/12/2010 PAC011 DERA&VERA JL Initial Calculation/Rule
+bc2170 -2 -2
+Description: This simulates host VERA requesting the right parameters for the right rates.çä çäModification Logçä07/12/2010 PAC011 DERA&VERA JL Initial Calculation/Rule
+bc3dd0 -2 -2
+Description: Builds the late reference callçä çäModification Logçä07/12/2010 PAC011 DERA&VERA JL Initial Calculation/Rule
+bc3c40 -2 -2
+Description: This function receives a string parameter and surrounds that string within quotes. Use 3 double quotes to add quote character in a stringçä çäModification Logçä07/12/2010 PAC011 DERA&VERA JL Initial Calculation/Rule
+;Offset=00000000

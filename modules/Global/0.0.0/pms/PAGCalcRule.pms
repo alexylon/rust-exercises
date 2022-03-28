@@ -1,0 +1,5962 @@
+;1	08.12.2016 13:40:53	jlawrie2	
+X0 512f5c85 0 0 0 0 0 0
+
+O0 24e5bab9 0 0 0 0 0 0
+
+E0 2b669a22 0 0 0 0 0 0
+
+L0 18baa9c2 0 0 0 0 0 0
+
+B0 5559a1b6 0 0 0 0 0 0
+
+P1 39ace24 0 26728e7c 0 0 0 2
+
+--description
+Global Calculation Rules model.çä çäRELEASE LOG:çäRELEASE pA 1501 - PAC038:Global Whole LifeçäRELEASE pA 1401çäRELEASE Global pA 1301
+P13 26728e7c 39ace24 0 0 0 0 2
+Global Calculation Rules
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Calculation Rules model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGCalcRule.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 38729fe8 0 1befc039 0 0 0 0
+
+F1 1befc039 38729fe8 240b6469 5e9b9a3b 0 0 2
+-- Mortality Caculation Rule --
+Funktion
+
+F1 240b6469 1befc039 0 58765b5a 0 0 2
+CalcRule Mortality Rounding Rule(carriercode; productcode)
+Funktion
+IF (EXISTS('TABLE Mortality Rounding Rule';CarrierCode;ProductCode) ; çä  V_STRINGX(V_('TABLE Mortality Rounding Rule'[CarrierCode; ProductCode].Mort_qx;'TABLE Mortality Rounding Rule'[CarrierCode; ProductCode].Mort_tpx)) ; çä  V_STRINGX(V_('TABLE Mortality Rounding Rule'["*"; "*"].Mort_qx;'TABLE Mortality Rounding Rule'["*"; "*"].Mort_tpx))çä)
+F1 58765b5a 1befc039 0 40967427 0 0 2
+CalcRule MortAssumption Rule(carriercode; productcode)
+Funktion
+IF (EXISTS('TABLE MortAssumption Rule';CarrierCode;ProductCode) ; çä  V_STRINGX(V_('TABLE MortAssumption Rule'[CarrierCode; ProductCode].Mort_Assumption)) ; çä  V_STRINGX(V_('TABLE MortAssumption Rule'["*"; "*"].Mort_Assumption))çä)
+F1 40967427 1befc039 0 0 0 0 2
+CalcRule MortImprove Rules(carriercode; productcode)
+Funktion
+IF (EXISTS('TABLE MortImprove Rules';CarrierCode;ProductCode) ; çä  V_STRINGX(V_('TABLE MortImprove Rules'[CarrierCode; ProductCode].Mort_Method;'TABLE MortImprove Rules'[CarrierCode; ProductCode].Mort_Proj_Years)) ; çä  V_STRINGX(V_('TABLE MortImprove Rules'["*"; "*"].Mort_Method;'TABLE MortImprove Rules'["*"; "*"].Mort_Proj_Years))çä)
+F1 5e9b9a3b 38729fe8 0 63b129b5 0 0 2
+CalcRules Band Code(productCode; currencyCode; faceAmount)
+Funktion
+IF (EXISTS('TABLE Illus BandCode';productCode;currencyCode) ; çä  IF (faceAmount < 0 ; çä    0 ; çä    LOOKUPX('TABLE Illus BandCode';productCode;currencyCode;faceAmount;"BandCode")çä  ) ; çä1çä)
+F1 63b129b5 38729fe8 0 673372f1 0 0 2
+CalcRules Country Group(productCode; jurisdiction)
+Funktion
+IF (EXISTS('TABLE Country Groups';productCode;jurisdiction) ; çä  'TABLE Country Groups'[productCode; jurisdiction].countryGroup ; çä  IF (EXISTS('TABLE Country Groups';"*";jurisdiction) ; çä    'TABLE Country Groups'["*"; jurisdiction].countryGroup ; çä    1çä  )çä)
+F1 673372f1 38729fe8 0 1f1907c1 0 0 2
+CalcRules Occupation Class(productCode; occupation)
+Funktion
+IF (EXISTS('TABLE Occupation Classes';productCode;occupation) ; çä  'TABLE Occupation Classes'[productCode; occupation].occupationClass ; çä  IF (EXISTS('TABLE Occupation Classes';"*";occupation) ; çä    'TABLE Occupation Classes'["*"; occupation].occupationClass ; çä    1çä  )çä)
+F1 1f1907c1 38729fe8 12f9e084 7f078a42 0 0 2
+-- Mode Premium Rules Access Functions --
+Funktion
+
+F1 12f9e084 1f1907c1 0 1faa637d 0 0 2
+CalcRules Mode Factor(carrier_code; product_code; payment_mode; payment_form)
+Funktion
+IF (EXISTS('TABLE Mode Factors';carrier_code;product_code;payment_mode;payment_form) ; çä  'TABLE Mode Factors'[carrier_code; product_code; payment_mode; payment_form] ; çä   // Else use wildcard for payment formçäIF (EXISTS('TABLE Mode Factors';carrier_code;product_code;payment_mode;"*") ; çä    'TABLE Mode Factors'[carrier_code; product_code; payment_mode; "*"] ; çä     // Else modal factor not foundçä"NoRateFound"çä  )çä)
+F1 1faa637d 1f1907c1 0 0 0 0 2
+CalcRules Rounding Application(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE Mode Premium Rules';carrier_code;product_code) ; çä  'TABLE Mode Premium Rules'[carrier_code; product_code].rounding_application_rule ; çä   // Elseçä"NoRateFound"çä)
+F1 7f078a42 38729fe8 50273e13 26b91f12 0 0 2
+-- CalcType Rule Access Functions
+Funktion
+
+F1 50273e13 7f078a42 0 0 0 0 2
+CalcRules CalcType Position(Identifier)
+Funktion
+IF (EXISTS('TABLE CalcType Vector Position';Identifier) ; çä  V_STRINGX('TABLE CalcType Vector Position'[Identifier].Position) ; çä   // Elseçä-1çä)
+F1 26b91f12 38729fe8 58d39ef6 17c8ee73 0 0 2
+-- Accumulated Value Rounding --
+Funktion
+
+F1 58d39ef6 26b91f12 0 721cbb5c 0 0 2
+CalcRules CV Projection Final Decimals(carrier_code; product_code; calc_type)
+Funktion
+IF ( /*Check exact product code*/ EXISTS('TABLE CV Projection Rounding Rules';carrier_code;product_code;calc_type) ; çä  IF ( /*Use Rounding*/ 'TABLE CV Projection Rounding Rules'[carrier_code; product_code; calc_type].round_final_calc ; çä     /*Yes*/ 'TABLE CV Projection Rounding Rules'[carrier_code; product_code; calc_type].final_calc_round_places ; çä     /*No*/ 15çä  ) ; çä // ElseçäIF ( /*Check wildcard product code*/ EXISTS('TABLE CV Projection Rounding Rules';carrier_code;"*";calc_type) ; çä  IF ( /*Use Rounding*/ 'TABLE CV Projection Rounding Rules'[carrier_code; "*"; calc_type].round_final_calc ; çä     /*Yes*/ 'TABLE CV Projection Rounding Rules'[carrier_code; "*"; calc_type].final_calc_round_places ; çä     /*No*/ 15çä  ) ; çä15çä)çä)
+F1 721cbb5c 26b91f12 0 0 0 0 2
+CalcRules CV Projection Intermediate Decimals(carrier_code; product_code; calc_type)
+Funktion
+IF ( /*Check exact product code*/ EXISTS('TABLE CV Projection Rounding Rules';carrier_code;product_code;calc_type) ; çä  IF ( /*Use Rounding*/ 'TABLE CV Projection Rounding Rules'[carrier_code; product_code; calc_type].round_intermediate_calcs ; çä     /*Yes*/ 'TABLE CV Projection Rounding Rules'[carrier_code; product_code; calc_type].intermediate_calcs_round_places ; çä     /*No*/ 15çä  ) ; çä // ElseçäIF ( /*Check wildcard product code*/ EXISTS('TABLE CV Projection Rounding Rules';carrier_code;"*";calc_type) ; çä  IF ( /*Use Rounding*/ 'TABLE CV Projection Rounding Rules'[carrier_code; "*"; calc_type].round_intermediate_calcs ; çä     /*Yes*/ 'TABLE CV Projection Rounding Rules'[carrier_code; "*"; calc_type].intermediate_calcs_round_places ; çä     /*No*/ 15çä  ) ; çä15çä)çä)
+F1 17c8ee73 38729fe8 29245e3b cd73444 0 0 2
+-- UL/VUL Calculation Rules Access Functions --
+Funktion
+
+F1 29245e3b 17c8ee73 0 6670e2d3 0 0 2
+CalcRules COI Rules(product_code; calc_type; rule_type)
+Funktion
+IF (EXISTS('TABLE COI Rules';product_code;calc_type) ; çä  'TABLE COI Rules'[product_code; calc_type](rule_type) ; çä   // Else try wildcard for product_codeçäIF (EXISTS('TABLE COI Rules';"*";calc_type) ; çä    'TABLE COI Rules'["*"; calc_type](rule_type) ; çä     // Else try product code with calc type wildcardçäIF (EXISTS('TABLE COI Rules';product_code;"*") ; çä      'TABLE COI Rules'[product_code; "*"](rule_type) ; çä       // Else try product code and calc type with wildcardçäIF (EXISTS('TABLE COI Rules';"*";"*") ; çä        'TABLE COI Rules'["*"; "*"](rule_type) ; çä         // Else not foundçä"NoRateFound"çä      )çä  )çä)çä)
+F1 6670e2d3 17c8ee73 0 7f06e0c8 0 0 2
+CalcRules UL CalcType Is Level DB Assumption(carrier_code; product_code; calc_type)
+Funktion
+IF (EXISTS('TABLE UL CalcType Level DB Assumption';carrier_code;product_code;calc_type) ; çä   // Specific row foundçä'TABLE UL CalcType Level DB Assumption'[carrier_code; product_code; calc_type].assume_level_db_option ; çä   // Else try wildcard for product codeçäIF (EXISTS('TABLE UL CalcType Level DB Assumption';carrier_code;"*";calc_type) ; çä    'TABLE UL CalcType Level DB Assumption'[carrier_code; "*"; calc_type].assume_level_db_option ; çä     // Else try wildcard for carrier code and product codeçäIF (EXISTS('TABLE UL CalcType Level DB Assumption';"*";"*";calc_type) ; çä      'TABLE UL CalcType Level DB Assumption'["*"; "*"; calc_type].assume_level_db_option ; çä       // Else assume no level db assumption is madeçä0çä    )çä)çä)
+F1 7f06e0c8 17c8ee73 0 414fbbb6 0 0 2
+CalcRules ULCV Projection Constants(carrier_code; product_code; calc_type; constant_type)
+Funktion
+IF (EXISTS('TABLE ULCV Projection Constants';carrier_code;product_code;calc_type;constant_type) ; çä   // Specific row foundçä'TABLE ULCV Projection Constants'[carrier_code; product_code; calc_type; constant_type].value ; çä   // Else try wildcard for calc_typeçäIF (EXISTS('TABLE ULCV Projection Constants';carrier_code;product_code;"*";constant_type) ; çä    'TABLE ULCV Projection Constants'[carrier_code; product_code; "*"; constant_type].value ; çä     // Else try wildcard for product_code and calc_typeçäIF (EXISTS('TABLE ULCV Projection Constants';carrier_code;"*";"*";constant_type) ; çä      'TABLE ULCV Projection Constants'[carrier_code; "*"; "*"; constant_type].value ; çä       // Else try wildcard for carrier_code; product_code; and calc_typeçäIF (EXISTS('TABLE ULCV Projection Constants';"*";"*";"*";constant_type) ; çä        'TABLE ULCV Projection Constants'["*"; "*"; "*"; constant_type].value ; çä         // Else default to 0çä0çä      )çä  )çä)çä)
+F1 414fbbb6 17c8ee73 0 0 0 0 2
+CalcRules ULCV Projection Rules(carrier_code; product_code; calc_type; rule)
+Funktion
+IF (EXISTS('TABLE ULCV Projection Rules';carrier_code;product_code;calc_type;rule) ; çä   // Specific row foundçä'TABLE ULCV Projection Rules'[carrier_code; product_code; calc_type; rule].value ; çä   // Else try wildcard for calc_typeçäIF (EXISTS('TABLE ULCV Projection Rules';"*";product_code;calc_type;rule) ; çä    'TABLE ULCV Projection Rules'["*"; product_code; calc_type; rule].value ; çä     // Else try wildcard for product_code and calc_typeçäIF (EXISTS('TABLE ULCV Projection Rules';"*";"*";calc_type;rule) ; çä      'TABLE ULCV Projection Rules'["*"; "*"; calc_type; rule].value ; çä       // Else try wildcard for carrier_code; product_code; and calc_typeçäIF (EXISTS('TABLE ULCV Projection Rules';"*";"*";"*";rule) ; çä        'TABLE ULCV Projection Rules'["*"; "*"; "*"; rule].value ; çä         // Else default to 0çä0çä      )çä  )çä)çä)
+F1 cd73444 38729fe8 445f4889 21804f28 0 0 2
+-- Act function rounding rules --
+Funktion
+
+F1 445f4889 cd73444 0 52376f4 0 0 2
+CalcRules Act Function Rounding rules(carriercode; productcode)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';CarrierCode;ProductCode) ; çä  V_STRINGX(V_('TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].int_functions;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].lives;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].deaths;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].Dx;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].Cx;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].Mx;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].Nx;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].NSP;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].annuity;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].premium;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].reserve;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].cashvalue;'TABLE ACT Function Rounding Rules'[CarrierCode; ProductCode].expallow)) ; çä  V_STRINGX(V_('TABLE ACT Function Rounding Rules'["*"; "*"].int_functions;'TABLE ACT Function Rounding Rules'["*"; "*"].lives;'TABLE ACT Function Rounding Rules'["*"; "*"].deaths;'TABLE ACT Function Rounding Rules'["*"; "*"].Dx;'TABLE ACT Function Rounding Rules'["*"; "*"].Cx;'TABLE ACT Function Rounding Rules'["*"; "*"].Mx;'TABLE ACT Function Rounding Rules'["*"; "*"].Nx;'TABLE ACT Function Rounding Rules'["*"; "*"].NSP;'TABLE ACT Function Rounding Rules'["*"; "*"].annuity;'TABLE ACT Function Rounding Rules'["*"; "*"].premium;'TABLE ACT Function Rounding Rules'["*"; "*"].reserve;'TABLE ACT Function Rounding Rules'["*"; "*"].cashvalue;'TABLE ACT Function Rounding Rules'["*"; "*"].expallow))çä)
+F1 52376f4 cd73444 0 4010cd7c 0 0 2
+CalcRules Act Function Int functions rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].int_functions ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].int_functions ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].int_functions ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 4010cd7c cd73444 0 58ac1081 0 0 2
+CalcRules Act Function lives rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].lives ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].lives ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].lives ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 58ac1081 cd73444 0 6dcb55ac 0 0 2
+CalcRules Act Function deaths rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].deaths ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].deaths ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].deaths ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 6dcb55ac cd73444 0 1a4bcb6 0 0 2
+CalcRules Act Function Cx rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].Cx ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].Cx ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].Cx ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 1a4bcb6 cd73444 0 7b6c536c 0 0 2
+CalcRules Act Function Mx rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].Mx ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].Mx ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].Mx ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 7b6c536c cd73444 0 7c9751f8 0 0 2
+CalcRules Act Function Dx rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].Dx ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].Dx ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].Dx ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 7c9751f8 cd73444 0 22478caa 0 0 2
+CalcRules Act Function Nx rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].Nx ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].Nx ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].Nx ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 22478caa cd73444 0 2e558303 0 0 2
+CalcRules Act Function NSP rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].NSP ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].NSP ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].NSP ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 2e558303 cd73444 0 1fcd4d4c 0 0 2
+CalcRules Act Function annuity rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].annuity ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].annuity ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].annuity ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 1fcd4d4c cd73444 0 608e51f 0 0 2
+CalcRules Act Function premium rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].premium ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].premium ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].premium ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 608e51f cd73444 0 5f8ae7d3 0 0 2
+CalcRules Act Function reserve rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].reserve ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].reserve ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].reserve ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 5f8ae7d3 cd73444 0 7a0255de 0 0 2
+CalcRules Act Function cashvalue rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].cashvalue ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].cashvalue ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].cashvalue ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 7a0255de cd73444 0 0 0 0 2
+CalcRules Act Function expallow rounding(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code;product_code) ; çä   // Specific row foundçä'TABLE ACT Function Rounding Rules'[carrier_code; product_code].expallow ; çä   // Else try wild card for product codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';carrier_code) ; çä    'TABLE ACT Function Rounding Rules'[carrier_code; "*"].expallow ; çä     // Else try wildcard for carrier_code and product_codeçäIF (EXISTS('TABLE ACT Function Rounding Rules';"*";"*") ; çä      'TABLE ACT Function Rounding Rules'["*"; "*"].expallow ; çä       // Else default to 0çä0çä    )çä)çä)
+F1 21804f28 38729fe8 46ef1890 104a63e2 0 0 2
+-- Dynamic Dividend Rate Caculation Rules --
+Funktion
+
+F1 46ef1890 21804f28 3cc1fe3a 7cb6fe67 0 0 2
+CalcRules DynDiv UseAttributes(carrierCode; productCode; callingSystem; InputName)
+Funktion
+NOT('CalcRules DynDiv Access Inputs from CalcRule'(callingSystem;InputName))
+F1 3cc1fe3a 46ef1890 0 0 0 0 2
+CalcRules DynDiv Access Inputs from CalcRule(callingSystem; InputName)
+Funktion
+EXISTS('TABLE Dynamic Dividend Accessed from ProductInfo or RateTable';callingSystem;TOUPPER(InputName)) || EXISTS('TABLE Dynamic Dividend Accessed from ProductInfo or RateTable';"*";TOUPPER(InputName))
+F1 7cb6fe67 21804f28 0 2b91da57 0 0 2
+CalcRules DynDiv ExpMortBasis(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"ExpMortBasis") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ExpMortBasis;çä// Else rule not foundçä"NoRateFound"çä)
+F1 2b91da57 21804f28 0 77022a30 0 0 2
+CalcRules DynDiv ExpPUAMortBasis(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"ExpPUAMortBasis") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ExpPUAMortBasis;çä// Else rule not foundçä"NoRateFound"çä)
+F1 77022a30 21804f28 0 33715e35 0 0 2
+CalcRules DynDiv IndMortBasis(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"IndMortBasis") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].IndMortBasis;çä// Else rule not foundçä"NoRateFound"çä)
+F1 33715e35 21804f28 0 7b7faecc 0 0 2
+CalcRules DynDiv IndPUAMortBasis(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"IndPUAMortBasis") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].IndPUAMortBasis;çä// Else rule not foundçä"NoRateFound"çä)
+F1 7b7faecc 21804f28 0 77417d0e 0 0 2
+--CalcRules DynDiv ExpMort(attainedAge; gender; tobBasis)
+Funktion
+'TABLE Dynamic Dividend ExpMort'[attainedAge](çäâIF(gender=1;"M";"F")&"_"&IF(tobBasis=1;"NS";"S")çäâ)
+F1 77417d0e 21804f28 0 1bf7bf75 0 0 2
+--CalcRules DynDiv ExpPUAMort(attainedAge)
+Funktion
+'TABLE Dynamic Dividend ExpPUAMort'[attainedAge].mort_rateçä
+F1 1bf7bf75 21804f28 0 9e0cca5 0 0 2
+CalcRules DynDiv IndustryMortAdj(attainedAge)
+Funktion
+'TABLE Dynamic Dividend IndustryMortAdj'[attainedAge].MortAdjRate
+F1 9e0cca5 21804f28 0 4aa2b501 0 0 2
+CalcRules DynDiv IndustryPUAMortAdj(attainedAge)
+Funktion
+'TABLE Dynamic Dividend IndustryPUAMortAdj'[attainedAge].MortAdjRate
+F1 4aa2b501 21804f28 0 52808698 0 0 2
+CalcRules DynDiv ExpMortAdj(attainedAge)
+Funktion
+'TABLE Dynamic Dividend ExpMortAdj'[attainedAge].MortAdjRate
+F1 52808698 21804f28 0 1bfd00b7 0 0 2
+CalcRules DynDiv ExpPUAMortAdj(attainedAge)
+Funktion
+'TABLE Dynamic Dividend ExpPUAMortAdj'[attainedAge].MortAdjRate
+F1 1bfd00b7 21804f28 0 6f1d2769 0 0 2
+CalcRules DynDiv DefAcquisitionCost(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"DefAcquisitionCost") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].DefAcquisitionCost;çä// Else rule not foundçä"NoRateFound"çä)
+F1 6f1d2769 21804f28 0 4514cac2 0 0 2
+CalcRules DynDiv DivLoanSpread(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"DivLoanSpread") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].DivLoanSpread;çä// Else rule not foundçä"NoRateFound"çä)
+F1 4514cac2 21804f28 0 45d44d6f 0 0 2
+CalcRules DynDiv StateTaxFactor(jurisdiction)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend StateTaxFactor';jurisdiction) ; çä  'TABLE Dynamic Dividend StateTaxFactor'[jurisdiction].StateTaxFactor ; çä  IF (EXISTS('TABLE Dynamic Dividend StateTaxFactor';"*") ; çä    'TABLE Dynamic Dividend StateTaxFactor'["*"].StateTaxFactor ; çä     // Else rule not foundçä"NoRateFound"çä  )çä)
+F1 45d44d6f 21804f28 0 3486c120 0 0 2
+CalcRules DynDiv SCIntFactor(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"SCIntFactor") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].SCIntFactor;çä// Else rule not foundçä"NoRateFound"çä)
+F1 3486c120 21804f28 0 507de4cb 0 0 2
+CalcRules DynDiv SCPremFactor(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"SCPremFactor") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].SCPremFactor;çä// Else rule not foundçä"NoRateFound"çä)
+F1 507de4cb 21804f28 0 67779f74 0 0 2
+CalcRules DynDiv ExpFactor(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"ExpFactor") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ExpFactor;çä// Else rule not foundçä"NoRateFound"çä)
+F1 67779f74 21804f28 0 1e1904d9 0 0 2
+CalcRules DynDiv ExpFlat(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"ExpFlat") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ExpFlat;çä// Else rule not foundçä"NoRateFound"çä)
+F1 1e1904d9 21804f28 0 4ad6af06 0 0 2
+CalcRules DynDiv PUAExp(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"PUAExp") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].PUAExp;çä// Else rule not foundçä"NoRateFound"çä)
+F1 4ad6af06 21804f28 0 21795439 0 0 2
+CalcRules DynDiv RPUExp(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"RPUExp") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].RPUExp;çä// Else rule not foundçä"NoRateFound"çä)
+F1 21795439 21804f28 0 4594b7ae 0 0 2
+CalcRules DynDiv MortalitySpread(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"MortalitySpread") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].MortalitySpread;çä// Else rule not foundçä"NoRateFound"çä)
+F1 4594b7ae 21804f28 0 3caa4e74 0 0 2
+CalcRules DynDiv ReserveFunction(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"ReserveFunction") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ReserveFunction;çä// Else rule not foundçä"NoRateFound"çä)
+F1 3caa4e74 21804f28 0 5bbe288c 0 0 2
+CalcRules DynDiv CommFunc(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"CommFunc") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].CommFunc;çä// Else rule not foundçä"NoRateFound"çä)
+F1 5bbe288c 21804f28 0 4ae6598a 0 0 2
+CalcRules DynDiv GradedPremStartDur(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"GradedPremStart") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].GradedPremStart;çä// Else rule not foundçä"NoRateFound"çä)
+F1 4ae6598a 21804f28 0 66386faf 0 0 2
+CalcRules DynDiv GradedPremStopDur(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"GradedPremStop") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].GradedPremStop;çä// Else rule not foundçä"NoRateFound"çä)
+F1 66386faf 21804f28 0 64ee644d 0 0 2
+CalcRules DynDiv ExpAllow(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"ExpAllow") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ExpAllow;çä// Else rule not foundçä"NoRateFound"çä)
+F1 64ee644d 21804f28 0 23d6819e 0 0 2
+CalcRules DynDiv ZeroYears(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"ZeroYears") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ZeroYears;çä// Else rule not foundçä"NoRateFound"çä)
+F1 23d6819e 21804f28 0 1264e36 0 0 2
+CalcRules DynDiv MinBaseDiv(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"MinBaseDiv") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].MinBaseDiv;çä// Else rule not foundçä"NoRateFound"çä)
+F1 1264e36 21804f28 0 24a7e77c 0 0 2
+CalcRules DynDiv MinRPUDiv(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"MinRPUDiv") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].MinRPUDiv;çä// Else rule not foundçä"NoRateFound"çä)
+F1 24a7e77c 21804f28 0 c9caa3e 0 0 2
+CalcRules DynDiv MinPUADiv(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"MinPUADiv") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].MinPUADiv;çä// Else rule not foundçä"NoRateFound"çä)
+F1 c9caa3e 21804f28 0 258c4b8a 0 0 2
+CalcRules DynDiv IntermediateRoundingRule(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"IntermediateRoundingRule") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].IntermediateRoundingRule;çä// Else rule not foundçä"NoRateFound"çä)
+F1 258c4b8a 21804f28 0 12ddd069 0 0 2
+CalcRules DynDiv CoverageRoundingRule(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"CoverageRoundingRule") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].CoverageRoundingRule;çä// Else rule not foundçä"NoRateFound"çä)
+F1 12ddd069 21804f28 0 40585fd5 0 0 2
+CalcRules DynDiv PolicyRoundingRule(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"PolicyRoundingRule") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].PolicyRoundingRule;çä// Else rule not foundçä"NoRateFound"çä)
+F1 40585fd5 21804f28 0 0 0 0 2
+CalcRules DynDiv DynDivCalc(carrierCode; productCode; effectiveDate)
+Funktion
+IF (EXISTS('TABLE Dynamic Dividend Rules';carrierCode;productCode) ; çä  LOOKUPX('TABLE Dynamic Dividend Rules';carrierCode;productCode;effectiveDate;"DynDivCalc") ; çä   //'TABLE Dynamic Dividend Rules'[carrierCode; productCode].ExpMortBasis;çä// Else rule not foundçä"NoRateFound"çä)
+F1 104a63e2 38729fe8 5ec7438b 7b73ad6a 0 0 2
+-- ROP Eligibility Rules Access Functions --
+Funktion
+
+F1 5ec7438b 104a63e2 0 55bc488a 0 0 2
+CalcRules Coverage Is ROP Eligible(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE ROP Coverage Eligibility';carrier_code;product_code) ; çä  'TABLE ROP Coverage Eligibility'[carrier_code; product_code] ; çä   // Elseçä0çä)
+F1 55bc488a 104a63e2 0 44cecbb0 0 0 2
+CalcRules CovOption Is ROP Eligible(carrier_code; cov_ProductCode; covOption_ProductCode)
+Funktion
+IF (EXISTS('TABLE ROP CovOption Eligibility';carrier_code;cov_ProductCode;covOption_ProductCode) ; çä  'TABLE ROP CovOption Eligibility'[carrier_code; cov_ProductCode; covOption_ProductCode] ; çä   // Elseçä0çä)
+F1 44cecbb0 104a63e2 0 0 0 0 2
+CalcRules Element Is ROP Eligible(carrier_code; product_code; column_name)
+Funktion
+IF (EXISTS('TABLE ROP Element Eligibility';carrier_code;product_code) ; çä  'TABLE ROP Element Eligibility'[carrier_code; product_code](column_name) ; çä   // Elseçä0çä)
+F1 7b73ad6a 38729fe8 578815a9 0 0 0 2
+-- WP Rules --
+Funktion
+
+F1 578815a9 7b73ad6a 0 0 0 0 2
+CalcRules WP RateAdjType(carrier_code; product_code)
+Funktion
+IF (EXISTS('TABLE WP Rules';carrier_code;product_code) ; çä  'TABLE WP Rules'[carrier_code; product_code].RateAdjType ; çä   // Elseçä"NoRateFound"çä)
+A0 8121723 0 0 0 0 0 0
+
+T0 7c8c7c08 0 7a7b22fd 0 0 0 0
+
+T1 7a7b22fd 7c8c7c08 423902b4 485d181a 0 0 2
+-- Banding Tables --
+key
+value
+T17 423902b4 7a7b22fd 0 0 0 0 20
+TABLE Illus BandCode
+ProductCode
+CurrencyCode
+FaceAmt
+BandCode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+1
+0
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+1
+200000.001
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+1
+450000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+1
+700000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+149
+0
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+149
+60000.001
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+149
+120000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GTERMPA
+149
+200000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+1
+0
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+1
+200000.001
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+1
+450000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+1
+700000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+149
+0
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+149
+60000.001
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+149
+120000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GWLPA
+149
+200000.001
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T1 485d181a 7c8c7c08 55fe6e89 68099c57 0 0 2
+-- Mode Premium Rule Tables --
+key
+value
+T13 55fe6e89 485d181a 0 581c1c1b 0 0 5
+TABLE Mode Factors
+CarierCode
+ProductCode
+PaymentMode
+PaymentForm
+ModalFactor
+00
+GTERMPA
+1
+*
+1
+00
+GTERMPA
+2
+*
+0.52
+00
+GTERMPA
+3
+*
+0.265
+00
+GTERMPA
+4
+*
+0.0875
+00
+GULPA
+1
+*
+1
+00
+GULPA
+2
+*
+0.52
+00
+GULPA
+3
+*
+0.265
+00
+GULPA
+4
+*
+0.09
+00
+GWLPA
+1
+*
+1
+00
+GWLPA
+2
+*
+0.52
+00
+GWLPA
+3
+*
+0.265
+00
+GWLPA
+4
+*
+0.0875
+T4 581c1c1b 485d181a 0 0 0 0 3
+TABLE Mode Premium Rules
+carrier_code
+product_code
+rounding_application_rule
+00
+GTERMPA
+0
+00
+GULPA
+0
+00
+GWLPA
+0
+T1 68099c57 7c8c7c08 2cb3d653 3b0970f7 0 0 2
+--Country Groupings --
+key
+value
+T202 2cb3d653 68099c57 0 5608fe77 0 0 4
+TABLE Country Groups
+productCode
+nationality
+countryGroup
+description
+*
+4
+2
+AFG
+*
+8
+2
+ALB
+*
+12
+3
+DZA
+*
+20
+1
+AND
+*
+24
+2
+AGO
+*
+28
+2
+ATG
+*
+31
+2
+AZE
+*
+32
+2
+ARG
+*
+36
+1
+AUS
+*
+40
+1
+AUT
+*
+44
+2
+BHS
+*
+48
+3
+BHR
+*
+50
+2
+BGD
+*
+51
+2
+ARM
+*
+52
+2
+BRB
+*
+56
+1
+BEL
+*
+60
+2
+BMU
+*
+64
+2
+BTN
+*
+68
+2
+BOL
+*
+70
+1
+BIH
+*
+72
+2
+BWA
+*
+76
+2
+BRA
+*
+84
+2
+BLZ
+*
+92
+2
+VGB
+*
+96
+2
+BRN
+*
+100
+1
+BGR
+*
+104
+2
+MMR
+*
+108
+2
+BDI
+*
+112
+2
+BLR
+*
+116
+2
+KHM
+*
+120
+2
+CMR
+*
+124
+1
+CAN
+*
+132
+2
+CPV
+*
+136
+2
+CYM
+*
+139
+2
+MAF
+*
+140
+2
+CAF
+*
+144
+2
+LKA
+*
+148
+2
+TCD
+*
+152
+2
+CHL
+*
+156
+2
+CHN
+*
+158
+2
+TWN
+*
+170
+2
+COL
+*
+174
+2
+COM
+*
+180
+2
+COD
+*
+188
+2
+CRI
+*
+191
+1
+HRV
+*
+192
+2
+CUB
+*
+196
+1
+CYP
+*
+203
+1
+CZE
+*
+204
+2
+BEN
+*
+208
+1
+DNK
+*
+212
+2
+DMA
+*
+214
+2
+DOM
+*
+218
+2
+ECU
+*
+222
+2
+SLV
+*
+226
+2
+GNQ
+*
+231
+2
+ETH
+*
+232
+2
+ERI
+*
+233
+1
+EST
+*
+238
+1
+FLK
+*
+242
+2
+FJI
+*
+246
+1
+FIN
+*
+250
+1
+FRA
+*
+254
+2
+GUF
+*
+258
+2
+PYF
+*
+262
+2
+DJI
+*
+266
+2
+GAB
+*
+268
+2
+GEO
+*
+270
+2
+GMB
+*
+275
+3
+PSE
+*
+276
+1
+DEU
+*
+288
+2
+GHA
+*
+292
+1
+GIB
+*
+300
+1
+GRC
+*
+304
+2
+GRL
+*
+308
+2
+GRD
+*
+312
+2
+GLP
+*
+316
+2
+GUM
+*
+320
+2
+GTM
+*
+324
+2
+GIN
+*
+328
+2
+GUY
+*
+332
+2
+HTI
+*
+336
+1
+VAT
+*
+340
+2
+HND
+*
+344
+1
+HKG
+*
+348
+1
+HUN
+*
+352
+1
+ISL
+*
+356
+2
+IND
+*
+360
+2
+IDN
+*
+364
+3
+IRN
+*
+368
+3
+IRQ
+*
+372
+1
+IRL
+*
+376
+3
+ISR
+*
+380
+1
+ITA
+*
+384
+2
+CIV
+*
+388
+2
+JAM
+*
+392
+1
+JPN
+*
+398
+2
+KAZ
+*
+400
+3
+JOR
+*
+404
+2
+KEN
+*
+408
+1
+PRK
+*
+410
+2
+KOR
+*
+414
+3
+KWT
+*
+417
+2
+KGZ
+*
+418
+2
+LAO
+*
+422
+3
+LBN
+*
+426
+2
+LSO
+*
+428
+1
+LVA
+*
+430
+2
+LBR
+*
+434
+3
+LBY
+*
+438
+1
+LIE
+*
+440
+1
+LTU
+*
+442
+1
+LUX
+*
+446
+2
+MAC
+*
+450
+2
+MDG
+*
+454
+2
+MWI
+*
+458
+2
+MYS
+*
+462
+2
+MDV
+*
+466
+2
+MLI
+*
+470
+1
+MLT
+*
+478
+2
+MRT
+*
+480
+2
+MUS
+*
+484
+2
+MEX
+*
+492
+1
+MCO
+*
+496
+2
+MNG
+*
+498
+2
+MDA
+*
+500
+2
+MSR
+*
+504
+3
+MAR
+*
+508
+2
+MOZ
+*
+512
+3
+OMN
+*
+516
+2
+NAM
+*
+524
+2
+NPL
+*
+528
+1
+NLD
+*
+533
+2
+ABW
+*
+554
+1
+NZL
+*
+558
+2
+NIC
+*
+562
+2
+NER
+*
+566
+2
+NGA
+*
+578
+1
+NOR
+*
+583
+2
+FSM
+*
+586
+2
+PAK
+*
+591
+2
+PAN
+*
+598
+2
+PNG
+*
+600
+2
+PRY
+*
+604
+2
+PER
+*
+608
+2
+PHL
+*
+616
+1
+POL
+*
+620
+1
+PRT
+*
+624
+2
+GNB
+*
+630
+2
+PRI
+*
+634
+3
+QAT
+*
+642
+2
+ROU
+*
+643
+2
+RUS
+*
+646
+2
+RWA
+*
+659
+2
+KNA
+*
+660
+2
+AIA
+*
+662
+2
+LCA
+*
+670
+2
+VCT
+*
+674
+1
+SMR
+*
+678
+2
+STP
+*
+682
+3
+SAU
+*
+686
+2
+SEN
+*
+690
+2
+SYC
+*
+694
+2
+SLE
+*
+702
+1
+SGP
+*
+703
+2
+SVK
+*
+704
+2
+VNM
+*
+705
+2
+SVN
+*
+706
+2
+SOM
+*
+710
+1
+ZAF
+*
+716
+2
+ZWE
+*
+724
+1
+ESP
+*
+736
+3
+SDN
+*
+740
+2
+SUR
+*
+748
+2
+SWZ
+*
+752
+1
+SWE
+*
+756
+1
+CHE
+*
+760
+3
+SYR
+*
+762
+2
+TJK
+*
+764
+2
+THA
+*
+768
+2
+TGO
+*
+780
+2
+TTO
+*
+784
+3
+ARE
+*
+788
+2
+TUN
+*
+792
+3
+TUR
+*
+795
+2
+TKM
+*
+796
+2
+TCA
+*
+800
+2
+UGA
+*
+804
+2
+UKR
+*
+807
+2
+MKD
+*
+818
+3
+EGY
+*
+826
+1
+GBR
+*
+834
+2
+TZA
+*
+840
+1
+USA
+*
+854
+2
+BFA
+*
+858
+2
+URY
+*
+860
+2
+UZB
+*
+862
+2
+VEN
+*
+887
+3
+YEM
+*
+894
+2
+ZMB
+*
+*
+1
+Default
+T203 5608fe77 68099c57 0 0 0 0 4
+TABLE Underwriting Region
+productCode
+CountryCode
+UnderwitingRegion
+description
+*
+1
+6
+ABW
+*
+2
+9
+AFG
+*
+4
+1
+AIA
+*
+6
+3
+ALB
+*
+66
+4
+DZA
+*
+7
+1
+AND
+*
+3
+7
+AGO
+*
+8
+6
+ANT
+*
+10
+6
+ARG
+*
+11
+8
+ARM
+*
+16
+1
+AUS
+*
+17
+1
+AUT
+*
+18
+3
+AZE
+*
+35
+6
+BRB
+*
+26
+4
+BHR
+*
+27
+1
+BHS
+*
+24
+9
+BGD
+*
+20
+1
+BEL
+*
+21
+7
+BEN
+*
+32
+1
+BMU
+*
+37
+9
+BTN
+*
+31
+6
+BLZ
+*
+33
+6
+BOL
+*
+28
+3
+BIH
+*
+39
+7
+BWA
+*
+34
+6
+BRA
+*
+30
+3
+BLR
+*
+36
+5
+BRN
+*
+23
+7
+BFA
+*
+25
+3
+BGR
+*
+150
+8
+MMR
+*
+19
+7
+BDI
+*
+242
+1
+VGB
+*
+122
+8
+KHM
+*
+47
+7
+CMR
+*
+41
+1
+CAN
+*
+53
+7
+CPV
+*
+40
+7
+CAF
+*
+58
+1
+CYM
+*
+219
+7
+TCD
+*
+45
+5
+CHN
+*
+44
+6
+CHL
+*
+51
+6
+COL
+*
+52
+7
+COM
+*
+49
+7
+COG
+*
+54
+6
+CRI
+*
+102
+3
+HRV
+*
+55
+6
+CUB
+*
+59
+1
+CYP
+*
+60
+2
+CZE
+*
+64
+1
+DNK
+*
+62
+7
+DJI
+*
+65
+6
+DOM
+*
+63
+6
+DMA
+*
+68
+4
+EGY
+*
+91
+7
+GNQ
+*
+67
+6
+ECU
+*
+69
+7
+ERI
+*
+72
+2
+EST
+*
+73
+7
+ETH
+*
+96
+6
+GUF
+*
+75
+8
+FJI
+*
+74
+1
+FIN
+*
+76
+1
+FLK
+*
+77
+1
+FRA
+*
+80
+7
+GAB
+*
+89
+7
+GMB
+*
+83
+8
+GEO
+*
+61
+1
+DEU
+*
+85
+7
+GHA
+*
+86
+1
+GIB
+*
+88
+6
+GLP
+*
+92
+1
+GRC
+*
+94
+1
+GRL
+*
+93
+6
+GRD
+*
+95
+6
+GTM
+*
+90
+7
+GNB
+*
+84
+1
+GGY
+*
+87
+7
+GIN
+*
+97
+5
+GUM
+*
+98
+6
+GUY
+*
+103
+6
+HTI
+*
+99
+5
+HKG
+*
+101
+6
+HND
+*
+104
+2
+HUN
+*
+112
+1
+ISL
+*
+107
+9
+IND
+*
+107
+5
+IND
+*
+109
+1
+IRL
+*
+110
+4
+IRN
+*
+111
+4
+IRQ
+*
+113
+4
+ISR
+*
+114
+1
+ITA
+*
+46
+7
+CIV
+*
+115
+6
+JAM
+*
+118
+5
+JPN
+*
+117
+4
+JOR
+*
+119
+8
+KAZ
+*
+120
+7
+KEN
+*
+123
+8
+KIR
+*
+124
+6
+KNA
+*
+126
+4
+KWT
+*
+127
+8
+LAO
+*
+137
+2
+LVA
+*
+129
+7
+LBR
+*
+128
+4
+LBN
+*
+134
+7
+LSO
+*
+130
+4
+LBY
+*
+132
+1
+LIE
+*
+135
+2
+LTU
+*
+131
+6
+LCA
+*
+136
+1
+LUX
+*
+138
+5
+MAC
+*
+143
+7
+MDG
+*
+148
+1
+MLI
+*
+140
+7
+MAR
+*
+155
+7
+MRT
+*
+147
+3
+MKD
+*
+145
+6
+MEX
+*
+152
+8
+MNG
+*
+79
+5
+FSM
+*
+148
+7
+MLI
+*
+151
+3
+MNE
+*
+141
+1
+MCO
+*
+140
+4
+MAR
+*
+154
+7
+MOZ
+*
+160
+5
+MYS
+*
+156
+6
+MSR
+*
+139
+6
+MAF
+*
+143
+5
+MDG
+*
+159
+7
+MWI
+*
+162
+7
+NAM
+*
+171
+9
+NPL
+*
+169
+1
+NLD
+*
+164
+7
+NER
+*
+167
+6
+NIC
+*
+166
+7
+NGA
+*
+184
+8
+PRK
+*
+170
+1
+NOR
+*
+173
+1
+NZL
+*
+174
+4
+OMN
+*
+175
+9
+PAK
+*
+187
+4
+PSE
+*
+176
+6
+PAN
+*
+181
+5
+PNG
+*
+186
+6
+PRY
+*
+178
+6
+PER
+*
+179
+5
+PHL
+*
+182
+2
+POL
+*
+188
+5
+PYF
+*
+185
+1
+PRT
+*
+183
+6
+PRI
+*
+189
+4
+QAT
+*
+191
+3
+ROU
+*
+192
+3
+RUS
+*
+193
+7
+RWA
+*
+249
+7
+ZAF
+*
+203
+6
+SLV
+*
+204
+1
+SMR
+*
+209
+7
+STP
+*
+194
+4
+SAU
+*
+196
+7
+SEN
+*
+207
+3
+SRB
+*
+216
+7
+SYC
+*
+202
+7
+SLE
+*
+197
+5
+SGP
+*
+244
+3
+VNM
+*
+203
+2
+SLV
+*
+205
+7
+SOM
+*
+125
+5
+KOR
+*
+71
+1
+ESP
+*
+133
+9
+LKA
+*
+195
+4
+SDN
+*
+210
+6
+SUR
+*
+214
+7
+SWZ
+*
+213
+1
+SWE
+*
+43
+1
+CHE
+*
+217
+4
+SYR
+*
+218
+6
+TCA
+*
+231
+5
+TWN
+*
+232
+7
+TZA
+*
+227
+6
+TTO
+*
+220
+7
+TGO
+*
+221
+5
+THA
+*
+220
+7
+TGO
+*
+224
+8
+TKM
+*
+228
+4
+TUN
+*
+229
+4
+TUR
+*
+9
+4
+AED
+*
+233
+7
+UGA
+*
+81
+1
+GBR
+*
+234
+3
+UKR
+*
+236
+6
+URY
+*
+237
+1
+USA
+*
+238
+8
+UZB
+*
+239
+1
+VAT
+*
+241
+6
+VEN
+*
+244
+5
+VNM
+*
+240
+6
+VCT
+*
+248
+4
+YEM
+*
+250
+7
+ZMB
+*
+251
+7
+ZWE
+T1 3b0970f7 7c8c7c08 6a5ffc9c 7902a068 0 0 2
+-- Occupation Mappings --
+key
+value
+T188 6a5ffc9c 3b0970f7 0 0 0 0 4
+TABLE Occupation Classes
+productCode
+occupation
+occupationClass
+description
+*
+1
+1
+Accountant
+*
+2
+1
+Accounts Assistant
+*
+3
+3
+Actor/Actress (no stunt)
+*
+4
+1
+Actuary
+*
+5
+1
+Admin Assistant
+*
+6
+1
+Administrator (Office-based)
+*
+7
+2
+Advertiser / Advertising Agent
+*
+8
+2
+Agent (estate/travel/insurance)
+*
+9
+4
+Aircraft Engineer
+*
+10
+4
+Airport Security (unarmed)
+*
+11
+1
+Architect
+*
+12
+2
+Artist
+*
+13
+4
+Athlete (track & field only)
+*
+14
+1
+Auctioneer
+*
+15
+1
+Auditor
+*
+16
+1
+Author
+*
+17
+3
+Baggage Porter
+*
+18
+3
+Baker
+*
+19
+1
+Bank Teller
+*
+20
+1
+Banker/Bank Officer
+*
+21
+2
+Barber
+*
+22
+3
+Bartender
+*
+23
+2
+Beautician
+*
+24
+3
+Blacksmith
+*
+25
+4
+Boat Man / Ferryman
+*
+26
+1
+Book Keeper
+*
+27
+2
+Broker (Insurance/Money/Stock)
+*
+28
+2
+Bus Inspector
+*
+29
+4
+Butcher
+*
+30
+4
+Cable splicer/ Lineman
+*
+31
+3
+Cabin Crew (Airlines)
+*
+32
+3
+Canteen Assistant / Operator
+*
+33
+3
+Car Park Attendant
+*
+34
+4
+Carpenter
+*
+35
+1
+Cashier
+*
+36
+3
+Chambermaid
+*
+37
+3
+Chauffeur
+*
+38
+3
+Chef / Cook
+*
+39
+2
+Chemist
+*
+40
+1
+Chief Executive Officer
+*
+41
+2
+Civil Engineer
+*
+42
+3
+Cleaner
+*
+43
+1
+Clerk / Clerical Officer
+*
+44
+1
+Clinic Assistant (non nursing staff)
+*
+45
+3
+Coach (Sports)
+*
+46
+1
+Computer Analyst / Programmer
+*
+47
+4
+Construction Foreman
+*
+48
+4
+Construction Site Worker
+*
+49
+1
+Consultant
+*
+50
+3
+Craftsman
+*
+51
+4
+Crane Driver/Tower Crane Operator
+*
+52
+3
+Cruise Crew (all crew members working onboard of cruise ship ‚Äì in customer services only)
+*
+53
+2
+Curator (museum)
+*
+54
+1
+Customer Service Officer
+*
+55
+4
+Dancer (Professional)
+*
+56
+1
+Dental Assistant / Nurse
+*
+57
+1
+Dentist
+*
+58
+1
+Designer (Interior)
+*
+59
+4
+Despatch / Delivery Man
+*
+60
+4
+Detective
+*
+61
+1
+Diplomat
+*
+62
+3
+Disc Jockey
+*
+63
+4
+Diving Instructor
+*
+64
+4
+Dock Worker
+*
+65
+1
+Doctor
+*
+66
+3
+Dog Trainer
+*
+67
+1
+Draughtsman
+*
+68
+3
+Driver (Bus / Taxi / van / coach / private car / ambulance)
+*
+69
+4
+Driver (Heavy Vehicle ‚Äì Truck / Lorry / Container )
+*
+70
+3
+Driving Instructor
+*
+71
+1
+Economist
+*
+72
+1
+Editor
+*
+73
+3
+Electrician (without Height involvement)
+*
+74
+2
+Engineer
+*
+75
+1
+Engineer (Admin / Office Based)
+*
+76
+3
+Entertainer
+*
+77
+1
+Executive (Office Based)
+*
+78
+3
+Factor Worker
+*
+79
+1
+Fashion Designer
+*
+80
+2
+Fashion Model
+*
+81
+1
+Financial Controller
+*
+82
+2
+Financial Planner / Adviser
+*
+83
+4
+Fireman
+*
+84
+4
+Fisherman (River / Lake / Coastal)
+*
+85
+4
+Fishmonger
+*
+86
+2
+Fitness Instructor
+*
+87
+2
+Florist
+*
+88
+4
+Forklift Driver
+*
+89
+4
+Garage Worker
+*
+90
+3
+Gardener
+*
+91
+1
+General Manager
+*
+92
+4
+General Worker
+*
+93
+3
+Goldsmith
+*
+94
+2
+Hairstylist
+*
+95
+3
+Hawker
+*
+96
+1
+Hotel (Public Relations Officer)
+*
+97
+2
+Housewife
+*
+98
+2
+Jeweller
+*
+99
+2
+Journalist (local & no war zone)
+*
+100
+1
+Judge
+*
+101
+2
+Juvenile
+*
+102
+4
+Labourer
+*
+103
+2
+Landscape Artist
+*
+104
+1
+Lawyer
+*
+105
+1
+Lecturer
+*
+106
+1
+Legal Adviser/Officer/Consultant
+*
+107
+1
+Librarian
+*
+108
+3
+Life Guard
+*
+109
+3
+Locksmith
+*
+110
+2
+Loss Adjustor
+*
+111
+4
+Machine Operator
+*
+112
+4
+Machinist
+*
+113
+1
+Manager (Office Based)
+*
+114
+1
+Managing Director
+*
+115
+1
+Marketing Staff (Office Based)
+*
+116
+3
+Masseur / Masseuse (International Hotel /Health Spa)
+*
+117
+4
+Mechanic (without Height Involvement)
+*
+118
+1
+Military ‚Äì Administrative/Clerical Functions (Not Combat)
+*
+119
+2
+Military ‚Äì Air Force
+*
+120
+2
+Minister of Religion
+*
+121
+4
+Motor Cycle Delivery Rider
+*
+122
+2
+Motor Vehicle Dealer
+*
+123
+3
+Musician (Entertainer)
+*
+124
+2
+National Serviceman
+*
+125
+1
+News Broadcaster
+*
+126
+2
+Nurse
+*
+127
+4
+Odd Job Labourer
+*
+128
+1
+Oil Refinery Admin Personnel
+*
+129
+4
+Oil Refinery Worker (Inland)
+*
+130
+1
+Optician
+*
+131
+1
+Optometrist
+*
+132
+3
+Packer
+*
+133
+2
+Painter (Indoor)
+*
+134
+2
+Pastor
+*
+135
+1
+Pharmacist
+*
+136
+2
+Photographer (Studio/Indoor)
+*
+137
+3
+Photographer (Outdoor)
+*
+138
+2
+Pilot (Commercial ‚Äì Passenger)
+*
+139
+4
+Plumber
+*
+140
+2
+Policeman (Officer, Gurkha Officer, excl  Traffic Police and Mobile Squad)
+*
+141
+4
+Police ‚Äì Mobile Squad
+*
+142
+1
+Politician
+*
+143
+3
+Postman
+*
+144
+1
+President (Company)
+*
+145
+1
+Principal (School)
+*
+146
+4
+Prison Officer / Warden
+*
+147
+2
+Promoter (Sales)
+*
+148
+1
+Receptionist
+*
+149
+2
+Remisier
+*
+150
+3
+Renovation Contractor
+*
+151
+2
+Reporter (local, no flying, no war zone)
+*
+152
+1
+Research & Development Engineer
+*
+153
+2
+Retiree
+*
+154
+2
+Sales Personnel (Outdoor)
+*
+155
+2
+Seamstress
+*
+156
+1
+Secretary
+*
+157
+3
+Security Guard (Armed)
+*
+158
+3
+Security Guard (Unarmed)
+*
+159
+2
+Self-employed (non-manual intensive)
+*
+160
+1
+Shipping Admin Personnel
+*
+161
+1
+Shop Assistant / Manager (Administrative)
+*
+162
+3
+Singer (in reputable hotels, lounge)
+*
+163
+3
+Social Worker
+*
+164
+2
+Sole Proprietor
+*
+165
+1
+Statistician
+*
+166
+3
+Store Keeper
+*
+167
+1
+Student
+*
+168
+3
+Supervisor
+*
+169
+1
+Surgeon
+*
+170
+2
+Surveyor
+*
+171
+2
+Tailor
+*
+172
+1
+Teacher (Academic)
+*
+173
+1
+Teacher (PE full time)
+*
+174
+1
+Technical Officer (Admin)
+*
+175
+3
+Technician (Qualified)
+*
+176
+1
+Telephone Operator
+*
+177
+1
+Tele-marketeer
+*
+178
+2
+Tour Guide
+*
+179
+4
+Traffic Police
+*
+180
+2
+Tutor (Private)
+*
+181
+1
+Typist
+*
+182
+1
+Underwriter
+*
+183
+2
+Veterinary Surgeon
+*
+184
+3
+Waiter / Waitress
+*
+185
+4
+Welder (Not underwater/oil/gas / no height involvement)
+*
+186
+4
+Window Cleaner (above 20 ft)
+*
+187
+4
+Zoo Keeper
+T1 7902a068 7c8c7c08 5675aa36 432413f2 0 0 2
+-- Act Function Rounding Rules --
+key
+value
+T3 5675aa36 7902a068 0 0 0 0 15
+TABLE ACT Function Rounding Rules
+carrier_code
+product_code
+int_functions
+lives
+deaths
+Dx
+Cx
+Mx
+Nx
+nsp
+annuity
+premium
+reserve
+cashvalue
+expallow
+0
+GWLPA
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+*
+*
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+15
+T1 432413f2 7c8c7c08 33a7ef2b 77131d40 0 0 2
+-- Mortality Improvement Calculation Rule --
+key
+value
+T4 33a7ef2b 432413f2 0 ecb0260 0 0 4
+TABLE Mortality Rounding Rule
+carrier_code
+product_code
+Mort_qx
+Mort_tpx
+00
+GPUARPA
+14
+14
+00
+GWLPA
+14
+14
+*
+*
+15
+15
+T4 ecb0260 432413f2 0 21b1b54e 0 0 3
+TABLE MortAssumption Rule
+carrier_code
+product_code
+Mort_Assumption
+00
+GWLPA
+0
+00
+GPUARPA
+0
+*
+*
+0
+T3 21b1b54e 432413f2 0 0 0 0 4
+TABLE MortImprove Rules
+carrier_code
+product_code
+Mort_Method
+Mort_Proj_Years
+00
+SPIA1PA
+0
+2
+*
+*
+2
+5
+T1 77131d40 7c8c7c08 69867df8 8e29978 0 0 2
+-- UL/VUL Target Rules --
+key
+value
+T1 69867df8 77131d40 62f2c781 0 0 0 2
+-- LTGT, STGT, CTGT Rules --
+key
+value
+T4 62f2c781 69867df8 0 61c33911 0 0 13
+TABLE Target Dynamic Calc Rules
+carrier_code
+product_code
+calc_type
+coi_rule
+interest_rule
+initial_interest_rate
+subsequent_interest_rate
+interest_change_duration
+targetCashValueRule
+targetCashValue
+cashvalueTolerance
+premiumvalueTolerance
+withdrawalTolerance
+00
+GULPA
+LTGT
+guar
+guar
+0
+0
+0
+S
+0.01
+0.01
+0.001
+0.001
+00
+GULPA
+CTGT
+guar
+guar
+0
+0
+0
+S
+0.01
+0.01
+0.001
+0.001
+00
+GULPA
+SHGT
+guar
+shadow
+0
+0
+0
+
+0.01
+0.01
+0.001
+0.001
+T2 61c33911 69867df8 0 24a3366c 0 0 4
+TABLE Target Premium Mode
+carrier_code
+product_code
+calc_type
+premium_mode
+00
+GULPA
+SHGT
+1
+T5 24a3366c 69867df8 0 55a4af5c 0 0 8
+TABLE Target Coverage Inclusion
+CarrierCode
+Policy_ProductCode
+Coverage_ProductCode
+Calc_Type
+Include_Coverage
+Include_TableRatings
+Include_FlatExtras
+Include_PercentageLoading
+00
+GULPA
+GULPA
+LTGT
+1
+1
+1
+1
+00
+GULPA
+GULPA
+CTGT
+1
+1
+1
+1
+00
+GULPA
+GULPA
+STGT
+1
+0
+0
+0
+00
+GULPA
+GULPA
+SHGT
+1
+0
+1
+1
+T4 55a4af5c 69867df8 0 5afa206b 0 0 6
+TABLE Target CovOption Inclusion
+CarrierCode
+Policy_ProductCode
+Coverage_ProductCode
+CovOption_ProductCode
+Calc_Type
+Included
+00
+UL1PA
+UL1PA
+ADBPA
+LTGT
+1
+00
+UL1PA
+UL1PA
+ADBPA
+CTGT
+1
+00
+UL1PA
+UL1PA
+ADBPA
+STGT
+0
+T4 5afa206b 69867df8 0 0 0 0 5
+TABLE Target Calc Method
+carrier_code
+product_code
+calc_type
+target_calc_method
+description
+00
+GULPA
+CTGT
+2
+Commissionable - Rate File
+00
+GULPA
+STGT
+2
+Surrender - Rate File
+00
+GULPA
+LTGT
+2
+Load - Rate File
+T1 8e29978 7c8c7c08 77cfcfd9 6a227959 0 0 2
+-- UL/VUL Calculation Rules --
+key
+value
+T6 77cfcfd9 8e29978 0 45206e94 0 0 6
+TABLE COI Rules
+ProductCode
+Calc_type
+Incl_Table_rating
+Incl_flat_extras
+PctOfBaseIndicator
+PctOfBase
+JSUL1PA
+GCOI
+0
+1
+0
+
+JSVUL1PA
+GCOI
+0
+1
+0
+
+AIR3PA
+GCOI
+1
+1
+1
+5
+AIR3PA
+CCOI
+1
+1
+1
+5
+*
+*
+1
+1
+0
+
+T8 45206e94 8e29978 0 64687232 0 0 4
+TABLE UL CalcType Level DB Assumption
+carrier_code
+product_code
+calc_type
+assume_level_db_option
+*
+*
+GSP
+1
+*
+*
+7PP
+1
+*
+*
+7PN
+1
+00
+UL1PA
+LTGT
+1
+00
+UL1PA
+CTGT
+1
+00
+JSUL1PA
+LTGT
+1
+00
+JSUL1PA
+CTGT
+1
+T2 64687232 8e29978 0 ef7bc4b 0 0 5
+TABLE ULCV Projection Constants
+carrier_code
+product_code
+calc_type
+constant_type
+value
+*
+*
+*
+negative_balance_int_rate
+0.00
+T5 ef7bc4b 8e29978 0 0 0 0 5
+TABLE ULCV Projection Rules
+carrier_code
+product_code
+calc_type
+rule
+value
+*
+*
+C
+UseNegCVIntRate
+1
+*
+*
+G
+UseNegCVIntRate
+1
+*
+*
+SHADOW
+UseNegCVIntRate
+1
+*
+*
+*
+UseNegCVIntRate
+0
+T1 6a227959 7c8c7c08 8611392 64f19987 0 0 2
+-- CalcType Rule Tables
+key
+value
+T53 8611392 6a227959 0 0 0 0 3
+TABLE CalcType Vector Position
+Identifier
+Position
+Description
+C
+0
+Position for Primary Rate Assumption C, G, M, and A
+G
+0
+Position for Primary Rate Assumption C, G, M, and A
+M
+0
+Position for Primary Rate Assumption C, G, M, and A
+A
+0
+Position for Primary Rate Assumption C, G, M, and A
+FLEX
+1
+Position for Flex in calctype vector, mutually exclusive with APO, RPU
+APO
+1
+Position for APO in calctype vector, mutually exclusive with Flex, RPU
+RPU
+1
+Position for RPU in calctype vector, mutually exclusive with Flex, APO
+SOLVE_1
+2
+Position for BIR Face Solve 1 - Solve for base face and total premium 
+SOLVE_2
+2
+Position for BIR Solves 2 - Solve for base face amount
+SOLVE_3
+2
+Position for BIR Solves 3 - Solve for base face amount
+SOLVE_4
+2
+Position for BIR Solves 4 - Solve for base and total face amount
+SOLVE_5
+2
+Position for BIR Solves 5 - Solve for total face amount
+SOLVE_MP
+2
+Position for MoneyPurchase Solves
+DISB
+3
+Position for Disbursement solve indicators in calcType vector
+INC
+4
+Position for Supplement (with Income) and Tabular (without Income)
+GSP
+5
+Position for Guideline Level Premium (GLP), Guideline Single Premium (GSP), 7 Pay Premium (7PP), & Targets
+7PP
+5
+Position for Guideline Level Premium (GLP), Guideline Single Premium (GSP), 7 Pay Premium (7PP), & Targets
+GLP
+5
+Position for Guideline Level Premium (GLP), Guideline Single Premium (GSP), 7 Pay Premium (7PP), & Targets
+7PN
+5
+
+LTGT
+5
+Position for LTGT, MTGT, CTGT, STGT
+MTGT
+5
+Position for LTGT, MTGT, CTGT, STGT
+CTGT
+5
+Position for LTGT, MTGT, CTGT, STGT
+STGT
+5
+Position for LTGT, MTGT, CTGT, STGT
+SHGT
+5
+Position for LTGT, MTGT, CTGT, STGT
+ILLUS
+5
+Position for Illustration
+SHADOW
+6
+Position for Shadow Account indicator
+SHADOWCatchUp
+6
+Position for Shadow Account Catch Up Premium indicator
+CVAT
+7
+Position for Accumulation Test
+GMDB
+8
+Position for Guaranteed Minimum Death Benefit
+GMIB
+8
+Position for Guaranteed Minimum Income Benefit
+GMWB
+8
+Position for Guaranteed Minimum Withdrawal Benefit
+C2
+9
+Position for Secondary Rate Assumption C, G, M, and A
+G2
+9
+Position for Secondary Rate Assumption C, G, M, and A
+M2
+9
+Position for Secondary Rate Assumption C, G, M, and A
+A2
+9
+Position for Secondary Rate Assumption C, G, M, and A
+ANULL
+9
+Position for Secondary Rate Assumption ANULL.
+AMID
+9
+Position for Secondary Rate Assumption AMID.
+IRSPREM
+10
+Position for IRS Premium
+FIXED
+11
+Position for Fixed Products
+VARIABLE
+11
+Position for Variable Products
+GLLOAD
+12
+Position for Guideline Load
+PLANPRM
+13
+Annual Statement - Planned Premium
+NOPRM
+13
+Annual Statement - No Premium
+ALTPRM
+13
+Annual Statement - Alternative Premium
+SHADOWPRM
+13
+Annual Statement - Shadow Account Premium
+NXTANNIV
+14
+Annual Statement - Next Anniversary
+MATURITY
+14
+Annual Statement - Maturity
+LastAnn
+15
+Date - Start of current policy year
+LastCalYear
+15
+Date - Start of current calendar year
+FirstPSurrCalYear
+15
+Date - First partial surrender in calendar year
+FirstPSurrPolYear
+15
+Date - First partial surrender in policy year
+TransYear
+15
+Date - Transaction Year
+T1 64f19987 7c8c7c08 3630fc07 671aa779 0 0 2
+-- Projection Rounding Rules --
+key
+value
+T82 3630fc07 64f19987 0 0 0 0 7
+TABLE CV Projection Rounding Rules
+carrier_code
+product_code
+calc_type
+round_intermediate_calcs
+intermediate_calcs_round_places
+round_final_calc
+final_calc_round_places
+00
+UL1PA
+C
+1
+2
+1
+2
+00
+UL1PA
+G
+1
+2
+1
+2
+00
+UL1PA
+M
+1
+2
+1
+2
+00
+UL1PA
+A
+1
+2
+1
+2
+00
+UL1PA
+GLLOAD
+1
+15
+1
+15
+00
+UL1PA
+SHADOW
+1
+2
+1
+2
+00
+UL1PA
+SHADOWCatchUp
+1
+2
+1
+2
+00
+UL1PA
+SHGT
+1
+15
+1
+15
+00
+UL2PA
+C
+1
+2
+1
+2
+00
+UL2PA
+G
+1
+2
+1
+2
+00
+UL2PA
+M
+1
+2
+1
+2
+00
+UL2PA
+A
+1
+2
+1
+2
+00
+UL2PA
+GLLOAD
+1
+15
+1
+15
+00
+UL2PA
+SHADOW
+1
+2
+1
+2
+00
+UL2PA
+SHADOWCatchUp
+1
+2
+1
+2
+00
+UL2PA
+SHGT
+1
+15
+1
+15
+00
+JSUL1PA
+C
+1
+2
+1
+2
+00
+JSUL1PA
+G
+1
+2
+1
+2
+00
+JSUL1PA
+M
+1
+2
+1
+2
+00
+JSUL1PA
+A
+1
+2
+1
+2
+00
+JSUL1PA
+GLLOAD
+1
+15
+1
+15
+00
+JSUL1PA
+SHADOW
+1
+2
+1
+2
+00
+JSUL1PA
+SHADOWCatchUp
+1
+2
+1
+2
+00
+JSUL1PA
+SHGT
+1
+15
+1
+15
+00
+VUL1PA
+C
+1
+2
+1
+2
+00
+VUL1PA
+G
+1
+2
+1
+2
+00
+VUL1PA
+M
+1
+2
+1
+2
+00
+VUL1PA
+VarIllGuarZero
+1
+2
+1
+2
+00
+VUL1PA
+VarIllGuarAssumed
+1
+2
+1
+2
+00
+VUL1PA
+VarIllCurrZero
+1
+2
+1
+2
+00
+VUL1PA
+VarIllCurrAssumed
+1
+2
+1
+2
+00
+VUL1PA
+GLLOAD
+1
+15
+1
+15
+00
+VUL1PA
+SHADOW
+1
+2
+1
+2
+00
+VUL1PA
+SHADOWCatchUp
+1
+2
+1
+2
+00
+VUL1PA
+SHGT
+1
+15
+1
+15
+00
+VUL2PA
+C
+1
+2
+1
+2
+00
+VUL2PA
+G
+1
+2
+1
+2
+00
+VUL2PA
+M
+1
+2
+1
+2
+00
+VUL2PA
+SHADOW
+1
+2
+1
+2
+00
+VUL2PA
+SHADOWCatchUp
+1
+2
+1
+2
+00
+VUL2PA
+SHGT
+1
+15
+1
+15
+00
+VUL2PA
+VarIllGuarZero
+1
+2
+1
+2
+00
+VUL2PA
+VarIllGuarAssumed
+1
+2
+1
+2
+00
+VUL2PA
+VarIllCurrZero
+1
+2
+1
+2
+00
+VUL2PA
+VarIllCurrAssumed
+1
+2
+1
+2
+00
+VUL2PA
+GLLOAD
+1
+15
+1
+15
+00
+JSVUL1PA
+C
+1
+2
+1
+2
+00
+JSVUL1PA
+G
+1
+2
+1
+2
+00
+JSVUL1PA
+M
+1
+2
+1
+2
+00
+JSVUL1PA
+VarIllGuarZero
+1
+2
+1
+2
+00
+JSVUL1PA
+VarIllGuarAssumed
+1
+2
+1
+2
+00
+JSVUL1PA
+VarIllCurrZero
+1
+2
+1
+2
+00
+JSVUL1PA
+VarIllCurrAssumed
+1
+2
+1
+2
+00
+JSVUL1PA
+GLLOAD
+1
+15
+1
+15
+00
+JSVUL1PA
+SHADOW
+1
+2
+1
+2
+00
+JSVUL1PA
+SHADOWCatchUp
+1
+2
+1
+2
+00
+JSVUL1PA
+SHGT
+1
+15
+1
+15
+00
+WL1PA
+C
+1
+2
+1
+2
+00
+WL1PA
+G
+1
+2
+1
+2
+00
+WL1PA
+M
+1
+2
+1
+2
+00
+WL1PA
+A
+1
+2
+1
+2
+00
+WL2PA
+C
+1
+2
+1
+2
+00
+WL2PA
+G
+1
+2
+1
+2
+00
+WL2PA
+M
+1
+2
+1
+2
+00
+WL2PA
+A
+1
+2
+1
+2
+00
+*
+C
+1
+2
+1
+15
+00
+*
+G
+1
+2
+1
+15
+00
+*
+M
+1
+2
+1
+15
+00
+*
+A
+1
+2
+1
+15
+00
+*
+GLLOAD
+1
+15
+1
+15
+00
+*
+SHADOW
+1
+2
+1
+2
+00
+*
+SHADOWCatchUp
+1
+2
+1
+2
+00
+*
+SHGT
+1
+15
+1
+15
+00
+*
+AMICV
+1
+15
+1
+2
+00
+*
+AMIDB
+1
+15
+1
+2
+00
+*
+AMIPREM
+1
+15
+1
+2
+00
+*
+AMIPCT
+1
+15
+1
+5
+00
+GWLPA
+C
+1
+2
+1
+2
+00
+GWLPA
+G
+1
+2
+1
+2
+00
+GWLPA
+M
+1
+2
+1
+2
+00
+GWLPA
+A
+1
+2
+1
+2
+T1 671aa779 7c8c7c08 7a360764 de3d658 0 0 2
+-- Dynamic Dividends Calc Tables --
+key
+value
+T14 7a360764 671aa779 0 3f276dd8 0 0 3
+TABLE Dynamic Dividend Accessed from ProductInfo or RateTable
+CallingSystem
+InputName
+Source
+*
+Illus DynDiv MortalitySpread
+CalcRules
+*
+Illus DynDiv ReserveFunction
+CalcRules
+*
+Illus DynDiv CommFunc
+CalcRules
+*
+Illus DynDiv ExpAllow
+CalcRules
+*
+Illus DynDiv DefAcquisitionCost
+CalcRules
+*
+Illus DynDiv StateTaxFactor
+CalcRules
+*
+Illus DynDiv SCIntFactor
+CalcRules
+*
+Illus DynDiv SCPremFactor
+CalcRules
+*
+Illus DynDiv ExpFactor
+CalcRules
+*
+Illus DynDiv ExpFlat
+CalcRules
+*
+Illus DynDiv GradedPremStartDur
+CalcRules
+*
+Illus DynDiv GradedPremStopDur
+CalcRules
+*
+Illus DynDiv PUAExp
+CalcRules
+T6 3f276dd8 671aa779 0 3fd75e32 0 0 29
+TABLE Dynamic Dividend Rules
+carrierCode
+productCode
+effectiveDate
+DynDivCalc
+ExpMortBasis
+ExpPUAMortBasis
+IndMortBasis
+IndPUAMortBasis
+DefAcquisitionCost
+DivLoanSpread
+SCIntFactor
+SCPremFactor
+ExpFactor
+ExpFlat
+PUAExp
+RPUExp
+MortalitySpread
+ReserveFunction
+ExpAllow
+CommFunc
+GradedPremStart
+GradedPremStop
+ZeroYears
+MinBaseDiv
+MinRPUDiv
+MinPUADiv
+IntermediateRoundingRule
+CoverageRoundingRule
+PolicyRoundingRule
+00
+GWLPA
+19000101
+0
+213
+213
+1000500006
+1000500006
+0.01
+1
+0.0001
+0.001
+0.8
+2
+0.12
+0.15
+0.05
+GRADED
+cont
+cont
+0
+5
+1
+0.1
+0
+0
+15
+4
+2
+00
+GWLPA
+19000101
+0
+213
+213
+1000500006
+1000500006
+0.01
+1
+0.0001
+0.001
+0.8
+2
+0.14
+0.2
+0.07
+CRVM
+cont
+curt
+
+
+1
+0.1
+0
+0
+15
+4
+2
+00
+GWLPA
+20060101
+0
+213
+213
+1000500006
+1000500006
+0.01
+1
+0.0001
+0.001
+0.8
+2
+0.14
+0.2
+0.07
+CRVM
+cont
+curt
+
+
+1
+0.1
+0
+0
+15
+4
+2
+00
+GPUARPA
+19000101
+0
+
+213
+1000500006
+1000500006
+
+1
+0.0001
+
+
+
+0.1
+
+0.05
+NL
+curt
+curt
+
+
+1
+
+
+0
+15
+4
+2
+00
+GPUARPA
+19000101
+0
+
+213
+1000500006
+1000500006
+
+1
+0.0001
+
+
+
+0.1
+
+0.05
+NL
+cont
+cont
+
+
+1
+
+
+0
+15
+4
+2
+T133 3fd75e32 671aa779 0 7e890ed0 0 0 2
+TABLE Dynamic Dividend IndustryMortAdj
+attained_age
+MortAdjRate
+0
+0
+1
+0
+2
+0
+3
+0
+4
+0
+5
+0
+6
+0
+7
+0
+8
+0
+9
+0
+10
+0
+11
+0
+12
+0
+13
+0
+14
+0
+15
+0
+16
+0
+17
+0
+18
+0
+19
+0.0256
+20
+0.0438
+21
+0.077
+22
+0.1628
+23
+0.2034
+24
+0.244
+25
+0.2848
+26
+0.3254
+27
+0.366
+28
+0.4066
+29
+0.4475
+30
+0.4881
+31
+0.5288
+32
+0.5694
+33
+0.6576
+34
+0.7434
+35
+0.8193
+36
+0.857
+37
+0.9006
+38
+0.9278
+39
+0.9583
+40
+0.9826
+41
+0.9975
+42
+0.9993
+43
+0.9959
+44
+0.981
+45
+0.9271
+46
+0.8969
+47
+0.8611
+48
+0.9096
+49
+0.9703
+50
+1.0126
+51
+1.0596
+52
+1.0921
+53
+1.109
+54
+1.1061
+55
+1.0555
+56
+1.029
+57
+1.0165
+58
+1.0491
+59
+1.0951
+60
+1.1405
+61
+1.1783
+62
+1.1769
+63
+1.1611
+64
+1.1459
+65
+1.1271
+66
+1.1163
+67
+1.1378
+68
+1.1468
+69
+1.1845
+70
+1.2059
+71
+1.2159
+72
+1.2003
+73
+1.1955
+74
+1.1994
+75
+1.2108
+76
+1.2275
+77
+1.2455
+78
+1.2534
+79
+1.2583
+80
+1.262
+81
+1.2583
+82
+1.2586
+83
+1.2633
+84
+1.2698
+85
+1.2755
+86
+1.2803
+87
+1.2845
+88
+1.313
+89
+1.3375
+90
+1.395
+91
+1.397
+92
+1.4011
+93
+1.397
+94
+1.3981
+95
+1.4009
+96
+1.4181
+97
+1.4455
+98
+1.4655
+99
+1.4789
+100
+1
+101
+1
+102
+1
+103
+1
+104
+1
+105
+1
+106
+1
+107
+1
+108
+1
+109
+1
+110
+1
+111
+1
+112
+1
+113
+1
+114
+1
+115
+1
+116
+1
+117
+1
+118
+1
+119
+1
+120
+1
+121
+1
+122
+1
+123
+1
+124
+1
+125
+1
+126
+1
+127
+1
+128
+1
+129
+1
+130
+1
+131
+1
+T133 7e890ed0 671aa779 0 3abc9a35 0 0 2
+TABLE Dynamic Dividend IndustryPUAMortAdj
+attained_age
+MortAdjRate
+0
+0
+1
+0
+2
+0
+3
+0
+4
+0
+5
+0
+6
+0
+7
+0
+8
+0
+9
+0
+10
+0
+11
+0
+12
+0
+13
+0
+14
+0
+15
+0
+16
+0
+17
+0
+18
+0
+19
+0.0307
+20
+0.0526
+21
+0.0924
+22
+0.1954
+23
+0.2441
+24
+0.2928
+25
+0.3418
+26
+0.3905
+27
+0.4392
+28
+0.4879
+29
+0.537
+30
+0.5857
+31
+0.6346
+32
+0.6833
+33
+0.7891
+34
+0.8921
+35
+0.9832
+36
+1.0284
+37
+1.0807
+38
+1.1134
+39
+1.15
+40
+1.1791
+41
+1.197
+42
+1.1992
+43
+1.1951
+44
+1.1772
+45
+1.1125
+46
+1.0763
+47
+1.0333
+48
+1.0915
+49
+1.1644
+50
+1.2151
+51
+1.2715
+52
+1.3105
+53
+1.3308
+54
+1.3273
+55
+1.2666
+56
+1.2348
+57
+1.2198
+58
+1.2589
+59
+1.3141
+60
+1.3686
+61
+1.414
+62
+1.4123
+63
+1.3933
+64
+1.3751
+65
+1.3525
+66
+1.3396
+67
+1.3654
+68
+1.3762
+69
+1.4214
+70
+1.4471
+71
+1.4591
+72
+1.4404
+73
+1.4346
+74
+1.4393
+75
+1.453
+76
+1.473
+77
+1.4946
+78
+1.5041
+79
+1.51
+80
+1.5144
+81
+1.51
+82
+1.5103
+83
+1.516
+84
+1.5238
+85
+1.5306
+86
+1.5364
+87
+1.5414
+88
+1.5756
+89
+1.605
+90
+1.674
+91
+1.6764
+92
+1.6813
+93
+1.6764
+94
+1.6777
+95
+1.6811
+96
+1.7017
+97
+1.7346
+98
+1.7586
+99
+1.7747
+100
+1
+101
+1
+102
+1
+103
+1
+104
+1
+105
+1
+106
+1
+107
+1
+108
+1
+109
+1
+110
+1
+111
+1
+112
+1
+113
+1
+114
+1
+115
+1
+116
+1
+117
+1
+118
+1
+119
+1
+120
+1
+121
+1
+122
+1
+123
+1
+124
+1
+125
+1
+126
+1
+127
+1
+128
+1
+129
+1
+130
+1
+131
+1
+T133 3abc9a35 671aa779 0 6bf4786 0 0 2
+TABLE Dynamic Dividend ExpMortAdj
+attained_age
+MortAdjRate
+0
+0
+1
+0
+2
+0
+3
+0
+4
+0
+5
+0
+6
+0
+7
+0
+8
+0
+9
+0
+10
+0
+11
+0
+12
+0
+13
+0
+14
+0
+15
+0
+16
+0
+17
+0
+18
+0
+19
+0.0171
+20
+0.0292
+21
+0.0513
+22
+0.1085
+23
+0.1356
+24
+0.1627
+25
+0.1898
+26
+0.2169
+27
+0.244
+28
+0.2711
+29
+0.2983
+30
+0.3254
+31
+0.3525
+32
+0.3796
+33
+0.4384
+34
+0.4956
+35
+0.5462
+36
+0.5713
+37
+0.6004
+38
+0.6185
+39
+0.6388
+40
+0.6551
+41
+0.665
+42
+0.6662
+43
+0.6639
+44
+0.654
+45
+0.6181
+46
+0.5979
+47
+0.5741
+48
+0.6064
+49
+0.6468
+50
+0.6751
+51
+0.7064
+52
+0.7281
+53
+0.7393
+54
+0.7374
+55
+0.7037
+56
+0.686
+57
+0.6777
+58
+0.6994
+59
+0.7301
+60
+0.7603
+61
+0.7855
+62
+0.7846
+63
+0.7741
+64
+0.7639
+65
+0.7514
+66
+0.7442
+67
+0.7585
+68
+0.7645
+69
+0.7897
+70
+0.8039
+71
+0.8106
+72
+0.8002
+73
+0.797
+74
+0.7996
+75
+0.8072
+76
+0.8183
+77
+0.8303
+78
+0.8356
+79
+0.8388
+80
+0.8413
+81
+0.8388
+82
+0.8391
+83
+0.8422
+84
+0.8465
+85
+0.8503
+86
+0.8535
+87
+0.8563
+88
+0.8753
+89
+0.8917
+90
+0.93
+91
+0.9313
+92
+0.9341
+93
+0.9313
+94
+0.9321
+95
+0.9339
+96
+0.9454
+97
+0.9637
+98
+0.977
+99
+0.9859
+100
+1
+101
+1
+102
+1
+103
+1
+104
+1
+105
+1
+106
+1
+107
+1
+108
+1
+109
+1
+110
+1
+111
+1
+112
+1
+113
+1
+114
+1
+115
+1
+116
+1
+117
+1
+118
+1
+119
+1
+120
+1
+121
+1
+122
+1
+123
+1
+124
+1
+125
+1
+126
+1
+127
+1
+128
+1
+129
+1
+130
+1
+131
+1
+T133 6bf4786 671aa779 0 229b7d16 0 0 2
+TABLE Dynamic Dividend ExpPUAMortAdj
+attained_age
+MortAdjRate
+0
+0
+1
+0
+2
+0
+3
+0
+4
+0
+5
+0
+6
+0
+7
+0
+8
+0
+9
+0
+10
+0
+11
+0
+12
+0
+13
+0
+14
+0
+15
+0
+16
+0
+17
+0
+18
+0
+19
+0.0205
+20
+0.035
+21
+0.0616
+22
+0.1302
+23
+0.1627
+24
+0.1952
+25
+0.2278
+26
+0.2603
+27
+0.2928
+28
+0.3253
+29
+0.358
+30
+0.3905
+31
+0.423
+32
+0.4555
+33
+0.5261
+34
+0.5947
+35
+0.6554
+36
+0.6856
+37
+0.7205
+38
+0.7422
+39
+0.7666
+40
+0.7861
+41
+0.798
+42
+0.7994
+43
+0.7967
+44
+0.7848
+45
+0.7417
+46
+0.7175
+47
+0.6889
+48
+0.7277
+49
+0.7762
+50
+0.8101
+51
+0.8477
+52
+0.8737
+53
+0.8872
+54
+0.8849
+55
+0.8444
+56
+0.8232
+57
+0.8132
+58
+0.8393
+59
+0.8761
+60
+0.9124
+61
+0.9426
+62
+0.9415
+63
+0.9289
+64
+0.9167
+65
+0.9017
+66
+0.893
+67
+0.9102
+68
+0.9174
+69
+0.9476
+70
+0.9647
+71
+0.9727
+72
+0.9602
+73
+0.9564
+74
+0.9595
+75
+0.9686
+76
+0.982
+77
+0.9964
+78
+1.0027
+79
+1.0066
+80
+1.0096
+81
+1.0066
+82
+1.0069
+83
+1.0106
+84
+1.0158
+85
+1.0204
+86
+1.0242
+87
+1.0276
+88
+1.0504
+89
+1.07
+90
+1.116
+91
+1.1176
+92
+1.1209
+93
+1.1176
+94
+1.1185
+95
+1.1207
+96
+1.1345
+97
+1.1564
+98
+1.1724
+99
+1.1831
+100
+1
+101
+1
+102
+1
+103
+1
+104
+1
+105
+1
+106
+1
+107
+1
+108
+1
+109
+1
+110
+1
+111
+1
+112
+1
+113
+1
+114
+1
+115
+1
+116
+1
+117
+1
+118
+1
+119
+1
+120
+1
+121
+1
+122
+1
+123
+1
+124
+1
+125
+1
+126
+1
+127
+1
+128
+1
+129
+1
+130
+1
+131
+1
+T3 229b7d16 671aa779 0 0 0 0 2
+TABLE Dynamic Dividend StateTaxFactor
+Jurisdiction
+StateTaxFactor
+*
+0.0005
+37
+0.001
+T1 de3d658 7c8c7c08 c9f05af 7f606734 0 0 2
+-- ROP Eligibility Tables --
+key
+value
+T7 c9f05af de3d658 0 12429ec5 0 0 3
+TABLE ROP Coverage Eligibility
+CarrierCode
+ProductCode
+ROPEligible
+00
+INDP5YPA
+1
+00
+INDP10YPA
+1
+00
+INDP20YPA
+1
+00
+ROP5PA
+1
+00
+ROP10PA
+1
+00
+ROP20PA
+1
+T7 12429ec5 de3d658 0 697a3474 0 0 4
+TABLE ROP CovOption Eligibility
+CarrierCode
+Coverage_ProductCode
+CovOption_ProductCode
+ROPEligible
+00
+INDP5YPA
+WSPPA
+1
+00
+ROP5PA
+WSPPA
+1
+00
+INDP10YPA
+WSPPA
+1
+00
+ROP10PA
+WSPPA
+1
+00
+INDP20YPA
+WSPPA
+1
+00
+ROP20PA
+WSPPA
+1
+T7 697a3474 de3d658 0 0 0 0 7
+TABLE ROP Element Eligibility
+CarrierCode
+Cov_ProductCode
+CoveragePremium
+CollectionFee
+PolicyFee
+TableRating
+FlatExtras
+00
+INDP5YPA
+1
+1
+1
+1
+1
+00
+INDP10YPA
+1
+0
+1
+1
+1
+00
+INDP20YPA
+1
+1
+1
+1
+1
+00
+ROP5PA
+1
+0
+0
+0
+0
+00
+ROP10PA
+1
+0
+0
+0
+0
+00
+ROP20PA
+1
+0
+0
+0
+0
+T1 7f606734 7c8c7c08 4e64cd4c 0 0 0 2
+-- WP Rate Rules --
+key
+value
+T4 4e64cd4c 7f606734 0 0 0 0 3
+TABLE WP Rules
+CarierCode
+ProductCode
+RateAdjType
+00
+GTERMPA
+JL
+00
+GWLPA
+NONE
+00
+GULPA
+NONE
+I0 22a18d41 0 655f7a26 0 0 0 0
+
+I0 655f7a26 22a18d41 0 0 0 0 0
+GeneralFunctions.pms
+-
+O0
+E0
+L0
+B0
+P1
+26728e7c
+F12
+1befc039
+5e9b9a3b
+63b129b5
+673372f1
+1f1907c1
+7f078a42
+26b91f12
+17c8ee73
+cd73444
+21804f28
+104a63e2
+7b73ad6a
+A0
+T19
+7a7b22fd
+485d181a
+68099c57
+3b0970f7
+7902a068
+432413f2
+77131d40
+69867df8
+62f2c781
+61c33911
+24a3366c
+55a4af5c
+5afa206b
+8e29978
+6a227959
+64f19987
+671aa779
+de3d658
+7f606734
+!94
+240b6469 -2 -2
+Description: Calc rule for mortality roundingçä çäModification log:çä21/08/2009 PAC005 DT added functionçä
+58765b5a -2 -2
+Description: Calc rule for mortality assumption.  Mortality assumption can be çä0 Uniformçä1 Balducciçä çäModification log:çä10/14/2009 PAC005 DT added function
+40967427 -2 -2
+Description: Calc rule for mortality imporvement method and mortality projection year.  Mortality improvement can be çä0 Noneçä1 Years Onlyçä2 Attained Age and yearsçä çäModification log:çä21/08/2009 PAC005 DT added function
+5e9b9a3b -2 -2
+
+63b129b5 -2 -2
+Description: Returns the "Country Group" for a specific Countryçä çäModification Log:çä08132013 pA-G1401 JL Initail Rule
+673372f1 -2 -2
+Description: Returns the "Occupation Class" for a specific Occupationçä çäModification Log:çä08192013 pA-G1401 JL Initail Rule
+12f9e084 -2 -2
+Description:  Returns the modal factor based on the payment mode and payment form.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1faa637d -2 -2
+Description:  Returns the rounding application rule to use for the mode premium.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+50273e13 -2 -2
+Description: Returns the specified position of specified policy option, e.g. Flex, APO, RPUçä çäModification Log:çä07/21/2010 - PAC013 - calcType - BT - add initial function
+58d39ef6 -2 -2
+Description: Returns the number of decimals to round to in the final UL cash value projection.çä çäModification Log:çä02/15/2009 CSC modified to allow for wildcard product codeçä10/31/2007 CSC Initial Calculation/Rule
+721cbb5c -2 -2
+Description: Returns the number of decimals to round to in the intermediate UL cash value projection.çä çäModification Log:çä02/15/2009 CSC modified to allow for wildcard product codeçä10/31/2007 CSC Initial Calculation/Rule
+29245e3b -2 -2
+Description: Returns the specified rule from the T_COI_Rules table.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+6670e2d3 -2 -2
+Description: Returns True (i.e. 1) if the calculation type should assume a level death benefit option.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+7f06e0c8 -2 -2
+Description: Returns the UL cash value projection constant value.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+414fbbb6 -2 -2
+Description: Returns the UL cash value projection rule value.çä çäModification Log:çä02/18/2011 A11429  CMC initial Calc
+46ef1890 -2 -2
+Description: Use Attributes for Dyn Divs calcs.çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+3cc1fe3a -2 -2
+Description:  Returns çä                    1(True): if Calling System and InputName are foundçä                                 in TABLE Access ProductInfo or Input. çä                    0 (False): not found.çä                    Used in PI functions to determine which inputs will actually come from ProdInfo instead of Input(default)çä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+7cb6fe67 -2 -2
+Description: Mortality Basis, Experienceçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Rename to ExpMortBasisçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+2b91da57 -2 -2
+Description: PUA Mortality Basis, Experienceçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Rename to ExpPUAMortBasisçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+77022a30 -2 -2
+Description: Mortality Basis, Industryçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Initial Rule
+33715e35 -2 -2
+Description: PUA Mortality Basis, Industryçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Initial Rule
+7b7faecc -2 -2
+Description: Experience Mortalityçä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+77417d0e -2 -2
+Description: PUA Experience Mortalityçä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+1bf7bf75 -2 -2
+Description: Industry Mortality Adjustmentçä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+9e0cca5 -2 -2
+Description: PUA Industry Mortality Adjustmentçä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+4aa2b501 -2 -2
+Description: Experience Mortality Adjustmentçä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+52808698 -2 -2
+Description: PUA Experience Mortality Adjustmentçä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+1bfd00b7 -2 -2
+Description: Deferred Acquisition Costçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+6f1d2769 -2 -2
+Description: Dividend Loan Spreadçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/06/2012 PAC025 DynDivs JL - Initial Rule
+4514cac2 -2 -2
+Description: State Tax Factorçä çäModification Log:çä07/27/2012 PAC025 DynDivs JL - Initial Rule
+45d44d6f -2 -2
+Description: SC Interest Factorçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+3486c120 -2 -2
+Description: SC Premium Factorçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+507de4cb -2 -2
+Description: Premium Paying Expense Factor, appplied to difference in GPREM & NAPBxçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Initial Rule
+67779f74 -2 -2
+Description: Premium Paying Expense Flat addition, appplied to difference in GPREM & NAPBxçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Initial Rule
+1e1904d9 -2 -2
+Description: PUA Expense Factorçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+4ad6af06 -2 -2
+Description: RPU Expense Factorçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+21795439 -2 -2
+Description: Mortality Spreadçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+4594b7ae -2 -2
+Description: Reserving Functionçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+3caa4e74 -2 -2
+Description: Commutation Functionçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+5bbe288c -2 -2
+Description: Graded Premium Start Durçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Initial Rule
+4ae6598a -2 -2
+Description: Graded Premium Stop Durçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/16/2012 PAC025 DynDivs JL - Initial Rule
+66386faf -2 -2
+Description: Expense Allowanceçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+64ee644d -2 -2
+Description: Initial years for which the dividend should be forced to zeroçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/02/2012 PAC025 DynDivs JL - Initial Rule
+23d6819e -2 -2
+Description: Minimum per unit div rate for Base (Premium Paying) coveragesçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/02/2012 PAC025 DynDivs JL - Initial Rule
+1264e36 -2 -2
+Description: Minimum per unit div rate for RPU coveragesçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/02/2012 PAC025 DynDivs JL - Initial Rule
+24a7e77c -2 -2
+Description: Minimum per unit div rate for PUA coveragesçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä08/02/2012 PAC025 DynDivs JL - Initial Rule
+c9caa3e -2 -2
+Description: Intermediate Rounding Ruleçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+258c4b8a -2 -2
+Description: Coverage Level Rounding Ruleçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+12ddd069 -2 -2
+Description: Policy Level Rounding Ruleçä çäModification Log:çä08/28/2012 PAC025 DynDivs JL - Add effDate lookup to Rules tableçä07/27/2012 PAC025 DynDivs JL - Initial Rule
+40585fd5 -2 -2
+Description: Determines whether or not to use Dynamic DIvidend Rate calcsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Initial Rule
+5ec7438b -2 -2
+Description:  Returns True (i.e. 1) if the coverage is ROP eligible.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+55bc488a -2 -2
+Description:  Returns True (i.e. 1) if the CovOption is ROP eligible.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+44cecbb0 -2 -2
+Description:  Returns True (i.e. 1) if the element of the Coverage is ROP eligible.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+578815a9 -2 -2
+Description:  Returns rules relating the Waiver of Premium Calcs.çä çäModification Log:çä09/29/2014 CSC Initial Calculation/Rule
+423902b4 -2 -2
+Modification Log:çä08212013 pA-G1401 JL Initial Entry for GTERMPA
+55fe6e89 -2 -2
+Modification Log:çä11/05/2013 pA-G1401-JC-Entry for GULPAçä08/21/2013 pA-G1401 JL Initial Entry for GTERMPAçä04/23/2014 PA1501 PAC038: Global Whole Life JC JL Initial Entry for GWLPA
+581c1c1b -2 -2
+Modification Log:çä11/05/2013 pA-G1401-JC-Entry for GULPAçä08212013 pA-G1401 JL Initial Entry for GTERMPAçä04/23/2014 PA1501 PAC038: Global Whole Life JC JL Initial Entry for GWLPA
+2cb3d653 -2 -2
+Description: Country Grouping per countryçä çäModification Log:çä08212013 pA-G1401 JL Initial Entry for pA-G
+5608fe77 -2 -2
+Description: Country Underwiting Regionçä çäModification Log:çä11/05/2013 pA-G1401 JC  Entry for pA-G-PAGUL
+6a5ffc9c -2 -2
+Description: Occupation Class per occupationçä çäModification Log:çä08212013 pA-G1401 JL Initial Entry for pA-G
+33a7ef2b -2 -2
+Modification Log:çä04/23/2014 PA1501 PAC038: Global Whole Life JC Added Global Whole Moved from pA Base Modelçä08/21/2009 PAC005 DT added table
+ecb0260 -2 -2
+Description: Mortality assumption calc rule tableçä0 Uniformçä1 Balducciçä çäModification Log:çä04/23/2014 PA1501 PAC038: Global Whole Life JC Added Global Whole Moved from pA Base Modelçä04/23/2014 PA1501 PAC038: Global Whole Life JC Added Global Whole added GWLPAçä10/14/2009 PAC005 DT added table
+21b1b54e -2 -2
+Description: Mortality improvement calc rule tableçä0 - no mort improvementçä1 - years onlyçä2 - age and yearsçä çäModification Log:çä04/23/2014 PA1501 PAC038: Global Whole Life JC Added Global Whole Moved from pA Base Modelçä08/21/2009 PAC005 DT added table
+62f2c781 -2 -2
+Modification Log:çä11132013 pA-G1401 JL Initial Table Entry
+61c33911 -2 -2
+Modification Log:çä11132013 pA-G1401 JL Initial Table Entry
+24a3366c -2 -2
+Modification Log:çä11132013 pA-G1401 JL Initial Table Entry
+55a4af5c -2 -2
+Modification Log:çä11132013 pA-G1401 JL Initial Table Entry
+5afa206b -2 -2
+Modification Log:çä11132013 pA-G1401 JL Initial Table Entry
+77cfcfd9 -2 -2
+Modification Log:çä07/31/2009 - PAC006 - wdp - Added PctOfBase columns to accomodate AIR3PA
+8611392 -2 -2
+Description:  Defines table to use for the position of the individual elements of the calctype vectorçä çäModification Log:çä10/03/2012 PAC028 Shadow Catch Up JL - Add ShadowCatchUpçä7/25/2011 - PAC024 Annual Statement - BT - add new annual statement end date calcTypes in position 14çä7/12/2011 - PAC024 Annual Statement - BT - add new annual statement premium calcTypes in position 13çä1/18/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä12/9/2010 - BT - PAC013 - calcType - Change Target to TGT and "Policy Option" to Identifierçä07/28/2010 - PAC013 - calcType - add premium positionsçä07/21/2010 - PAC013 - calcType - add initial table
+3630fc07 -2 -2
+Modification Log:çä09/12/2014 PA1501 PAC038: Global Whole Life JC Added Global Whole Life Product (GWLPA)çä10/03/2012 PAC028 Shadow Catch Up JL - Add ShadowCatchUpçä1/18/2011 - PAC013 calcType - BT - Restructureçä1/12/2011 - PAC013 calcType - BT - Restructureçä01/20/10 - PAC02 - JL - Add Rounding Rule for AMIçä11/09/09 JL Added WL1PA & WL2PA, return CarrierCode to 00 (not 0)
+3630fc07 6 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 7 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 8 -1
+Modification Log:çä05/02/2010 ENH992 JL Add Shadow Target Premium ("SHGT") calctype
+3630fc07 16 -1
+Modification Log:çä05/02/2010 ENH992 JL Add Shadow Target Premium ("SHGT") calctype
+3630fc07 22 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 23 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 24 -1
+Modification Log:çä05/02/2010 ENH992 JL Add Shadow Target Premium ("SHGT") calctype
+3630fc07 33 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 34 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 35 -1
+Modification Log:çä05/02/2010 ENH992 JL Add Shadow Target Premium ("SHGT") calctype
+3630fc07 41 -1
+Modification Log:çä05/02/2010 ENH992 JL Add Shadow Target Premium ("SHGT") calctype
+3630fc07 55 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 56 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 57 -1
+Modification Log:çä05/02/2010 ENH992 JL Add Shadow Target Premium ("SHGT") calctype
+3630fc07 71 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 72 -1
+Modification Log:çä05/11/2010 ENH992 JL Add Shadow CV ("ShadowCV") calctype
+3630fc07 73 -1
+Modification Log:çä05/02/2010 ENH992 JL Add Shadow Target Premium ("SHGT") calctype
+3f276dd8 -2 -2
+Description: Dynamic Dividend Calculation Rulesçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Add WL1, WL2, PUAR1, PUAR2, BIR1, BIR2. Update values to test various calculation methods.çä09/10/2012 PAC025 DynDivs JL - Add WL1PA for testing
+3fd75e32 -2 -2
+Description: Industry Mortality Adjustmentsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Update valuesçä09/10/2012 PAC025 DynDivs JL - Initial Values
+7e890ed0 -2 -2
+Description: Industry PUA Mortality Adjustmentsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Update valuesçä09/10/2012 PAC025 DynDivs JL - Initial Values
+3abc9a35 -2 -2
+Description: Experience Mortality Adjustmentsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Update valuesçä09/10/2012 PAC025 DynDivs JL - Extend attained ages
+6bf4786 -2 -2
+Description: Experience PUA Mortality Adjustmentsçä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Update valuesçä09/10/2012 PAC025 DynDivs JL - Initial Values
+229b7d16 -2 -2
+Description: State Tax Factors.çä çäModification Log:çä09/17/2012 PAC025 DynDivs JL - Add NY specific case, for testing.çä09/10/2012 PAC025 DynDivs JL - Initial Values
+;Offset=00000000

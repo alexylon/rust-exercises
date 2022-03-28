@@ -1,0 +1,890 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 5e5eef12 0 0 0 0 0 0
+
+O0 26801d1f 0 0 0 0 0 0
+
+E0 39c8f7b1 0 0 0 0 0 0
+
+L0 1233bece 0 0 0 0 0 0
+
+B0 500df06a 0 0 0 0 0 0
+
+P1 77c2c8e0 0 2a845354 0 0 0 2
+
+--description
+Global Modal Premium model.çä çäRELEASE LOG:çäRELEASE pA 1403çäRELEASE pA 1401çäRELEASE Global pA 1301
+P13 2a845354 77c2c8e0 0 0 0 0 2
+Global Mode Premium
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Modal Premium model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGModePremium.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 d5e56cf 0 3a85d04 0 0 0 0
+
+F1 3a85d04 d5e56cf 2bfe93d6 4b27e228 0 0 2
+ModePremium Coverage Base Premium(calcType; coverageIndex; modalFactor; vectorParms)
+Funktion
+IF ('SharedVector ModePremium yearIndex'(vectorParms) <= 'Benefit TermDur'(coverageIndex) ; çä  SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;coverageIndex) - 1;'ModePremium Coverage Life Base Premium'(calcType;coverageIndex;#lifeparticipantIndex;modalFactor;vectorParms)) ; çä  0çä)
+F1 2bfe93d6 3a85d04 0 447e700d 0 0 2
+ModePremium Coverage Life Base Premium(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Is base premium included?*/ 'ModePremium Coverage Base Premium Is Included'(calcType;coverageIndex;vectorParms) && 'Life IssueAge'(coverageIndex;0) + 'SharedVector ModePremium yearIndex'(vectorParms) - 1 <= 'PI Benefit Maturity matureYr'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;1;TransEffDate) ; çä   /*Yes - return premium*/ IF ( /*Does coverage have endowment benefit?*/ 'ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'LifeCovType is Endowment'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä     /*Yes - return ROP premium*/ 'ModePremium Round Intermediate Calculation'('ModePremium Coverage ROP PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);'ModePremium ROP Annual Eligible Premium Exclude Coverage'(calcType;coverageIndex;lifeparticipantIndex;IF ('ModePremium Parameters Passed'(vectorParms) ; çä      vectorParms ; çä       // Elseçä'Vector ModePremium Create Parms Vector From Inputs'çä    ));modalFactor;1) ; çä  IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä    'ModePremium Round Intermediate Calculation'('ModePremium Coverage WOP PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);'ModePremium WP Eligible Premium'(calcType;lifeparticipantIndex;vectorParms);modalFactor;1) ; çä     //else check for PUA riderçäIF ( /*Is coverage a PUA rider?*/ 'ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä       /*yes - return premium from attribute*///'ModePremium Round Intermediate Calculation'('Policy Coverage ModalPremAmt'(coverageIndex);1;modalFactor;1) ; çä 'TGTDB Proj Coverage PUAPremium'(calcType;coverageIndex;'ModePremium Policy Duration'(vectorParms)) / 'Number Of Payments Per Year'('Policy PaymentMode') / 'ACCS CalcRule Mode Factor'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate';'ModePremium Payment Mode'(vectorParms);'ModePremium Payment Form'(vectorParms)) ; çä      IF ('Premium Rule is Flat Amount Premium'('PI Benefit Premium premRule'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Payment Currency';modalFactor;TransEffDate)) ; çä        'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms) ; çä         // Else return standard premium çä'ModePremium Round Intermediate Calculation'('ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);'ModePremium Policy Coverage number of Units'(calcType;'ModePremium Policy Duration'(vectorParms);coverageIndex;vectorParms);modalFactor;1)çä      )çä  )çä)çä) ; çä // Else no - return zeroçä0çä)
+F1 447e700d 3a85d04 0 0 0 0 2
+ModePremium Coverage WOP PremiumPerUnit(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+CASE('ACCS CalcRule WP RateAdjType'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate');çä  "NONE" : 'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);çä  "JL" : 'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms) / (1 - SUMX(lifeIndex;0;'Policy Number of LifeParticipant'(calcType;coverageIndex) - 1;'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;#lifeIndex;vectorParms)));çä   : 'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms))çä
+F1 4b27e228 d5e56cf 4218c55a d6b57db 0 0 2
+ModePremium Coverage Flat Extras(calcType; coverageIndex; modalFactor; vectorParms)
+Funktion
+SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;coverageIndex) - 1;'ModePremium Coverage Life Flat Extras'(calcType;coverageIndex;#lifeparticipantIndex;modalFactor;vectorParms))
+F1 4218c55a 4b27e228 60803597 0 0 0 2
+ModePremium Coverage Life Flat Extras(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Coverage is included*/ 'ModePremium Coverage Is Included'(calcType;coverageIndex;lifeparticipantIndex;vectorParms;'SharedVector ModePremium yearIndex'(vectorParms)) ; çä   /*True*/ 'ModePremium Coverage Perm Flat Extra'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) + 'ModePremium Coverage 1stTemp Flat Extra'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) + 'ModePremium Coverage Subsequent Flat Extras'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) + 'ModePremium Coverage Country Flat Extra'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) + 'ModePremium Coverage Occupation Flat Extra'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) ; çä   /*False*/ 0çä)
+F1 60803597 4218c55a 1a04af67 5cf48771 0 0 2
+ModePremium Coverage Country Flat Extra(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Is flat extra included in premium?*/ 'ModePremium Coverage Flat Extra Is Included'(calcType;coverageIndex;0;vectorParms) && 'PI Benefit Premium countryFlatExtasInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Payment Currency';modalFactor;TransEffDate) ; çä   /*Yes - include flat extra*/ 'ModePremium Round Intermediate Calculation'('ModePremium Coverage CountryFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);'ModePremium Policy Coverage number of Units'(calcType;'ModePremium Policy Duration'(vectorParms);coverageIndex;vectorParms);modalFactor;1) ; çä   /*No - return zero*/ 0çä)
+F1 1a04af67 60803597 0 0 0 0 2
+ModePremium Coverage CountryFlatExtraAmt(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"CNTYLOAD";'ModePremium TransEffDate'(vectorParms);'Vector ModePremium Life Coverage Rate Vector Parms'(calcType;"CNTYLOAD";coverageIndex;lifeparticipantIndex;vectorParms))
+F1 5cf48771 4218c55a 1fa5595d 6439626d 0 0 2
+ModePremium Coverage Occupation Flat Extra(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Is flat extra included in premium?*/ 'ModePremium Coverage Flat Extra Is Included'(calcType;coverageIndex;0;vectorParms) && 'PI Benefit Premium occupationFlatExtraInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Payment Currency';modalFactor;TransEffDate) ; çä   /*Yes - include flat extra*/ 'ModePremium Round Intermediate Calculation'('ModePremium Coverage OccupationFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);'ModePremium Policy Coverage number of Units'(calcType;'ModePremium Policy Duration'(vectorParms);coverageIndex;vectorParms);modalFactor;1) ; çä   /*No - return zero*/ 0çä)
+F1 1fa5595d 5cf48771 0 0 0 0 2
+ModePremium Coverage OccupationFlatExtraAmt(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"OCCLOAD";'ModePremium TransEffDate'(vectorParms);'Vector ModePremium Life Coverage Rate Vector Parms'(calcType;"OCCLOAD";coverageIndex;lifeparticipantIndex;vectorParms))
+F1 6439626d 4218c55a 7b7ac53f 0 0 0 2
+ModePremium Coverage Table Rating Factor(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Is table rating included?*/ 'ModePremium Coverage Table Rating Is Included'(calcType;coverageIndex;vectorParms) ; çä   /*Yes - include it*/ 'Std Coverage Table Rating factor'(calcType;coverageIndex;'SharedVector ModePremium yearIndex'(vectorParms);lifeparticipantIndex) * 'ModePremium Coverage PercentageLoading'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) * IF ('PI Benefit Premium countryPercentageLoadingInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Payment Currency';modalFactor;TransEffDate) ; çä    'ModePremium Coverage CountryPercentageLoading'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) ; çä    1çä  ) * IF ('PI Benefit Premium occupationPercentageLoadingInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Payment Currency';modalFactor;TransEffDate) ; çä  'ModePremium Coverage OccupationPercentageLoading'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) ; çä  1çä) ; çä // else table rating not includedçä1çä)
+F1 7b7ac53f 6439626d 0 57028a33 0 0 2
+ModePremium Coverage PercentageLoading(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+(1 +  // Permanent percentage loadingçä'Policy LifeParticipant PermPercentageLoading'(calcType;coverageIndex;lifeparticipantIndex) * 0.01 +  // Temporary percentage loadingçäIF ( /*tempory percentage loading is active*/ 'Policy LifeParticipant TempPercentageLoading'(calcType;coverageIndex;lifeparticipantIndex) > 0 && 'Duration Year'('Policy LifeParticipant TempPercentageLoadingStartDate'(calcType;coverageIndex;lifeparticipantIndex);'Policy EffDate') <= 'SharedVector ModePremium yearIndex'(vectorParms) && 'Duration Year'('Policy LifeParticipant TempPercentageLoadingEndDate'(calcType;coverageIndex;lifeparticipantIndex);'Policy EffDate') >= 'SharedVector ModePremium yearIndex'(vectorParms) ; çä   //temporary percentage loadingçä'Policy LifeParticipant TempPercentageLoading'(calcType;coverageIndex;lifeparticipantIndex) * 0.01 ; çä   // Else no active temporary percentage loadingçä0çä))
+F1 57028a33 6439626d 0 84027a9 0 0 2
+ModePremium Coverage CountryPercentageLoading(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"CNTYLOAD";'ModePremium TransEffDate'(vectorParms);'Vector ModePremium Life Coverage Rate Vector Parms'(calcType;"CNTYLOAD";coverageIndex;lifeparticipantIndex;vectorParms))
+F1 84027a9 6439626d 0 0 0 0 2
+ModePremium Coverage OccupationPercentageLoading(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"OCCLOAD";'ModePremium TransEffDate'(vectorParms);'Vector ModePremium Life Coverage Rate Vector Parms'(calcType;"OCCLOAD";coverageIndex;lifeparticipantIndex;vectorParms))
+F1 d6b57db d5e56cf 46974f99 5d820077 0 0 2
+Vector ModePremium Life Coverage Rate Vector Parms(calcType; rateType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+'Vector ModePremium Life Coverage Rate Vector Parms Build'(calcType;rateType;coverageIndex;lifeparticipantIndex;vectorParms;'Vector ModePremium Life Coverage Rate Vector Parms GetQuery'(calcType;rateType;coverageIndex;lifeparticipantIndex;vectorParms))
+F1 46974f99 d6b57db 0 4e21fcd7 0 0 2
+Vector ModePremium Life Coverage Rate Vector Parms GetQuery(calcType; rateType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+v_construct(Rate('Policy Coverage ProductCode'(calcType;coverageIndex);rateType & "_Query";'ModePremium TransEffDate'(vectorParms);'Gen Vector Blank'))
+F1 4e21fcd7 d6b57db 0 efc3cb7 0 0 2
+Vector ModePremium Life Coverage Rate Vector Parms Build(calcType; rateType; coverageIndex; lifeparticipantIndex; vectorParms; vectorRateQuery)
+Funktion
+vectorx(dataItem;0;v_length(vectorRateQuery) - 1;'Vector ModePremium Life Coverage Rate Vector Parms GetDataItemPair'(calcType;coverageIndex;lifeparticipantIndex;vectorParms;e_(vectorRateQuery;#dataItem)))
+F1 efc3cb7 d6b57db 0 0 0 0 2
+Vector ModePremium Life Coverage Rate Vector Parms GetDataItemPair(calcType; coverageIndex; lifeparticipantIndex; vectorParms; dataItem)
+Funktion
+v_(dataItem;CASE(toupper(dataItem);çä  "ISSUE_AGE" : 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;lifeparticipantIndex);çä  "DURATION" : IF ('ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä     // Not a projectionçä'Duration Year'('ModePremium TransEffDate'(vectorParms);'Policy Coverage EffDate'(calcType;coverageIndex)) ; çä     // Else projectionçä'ModePremium Policy Duration'(vectorParms) + 'SharedVector ModePremium yearIndex'(vectorParms) - 1çä  );çä"GENDER" : 'Policy LifeParticipant IssueGender'(calcType;coverageIndex;lifeparticipantIndex);çä"UNDERWRITING_CLASS" : 'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;lifeparticipantIndex;TransEffDur);çä"SMOKERSTATUS" : 'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;lifeparticipantIndex;TransEffDur);çä"BAND" : IF ('SharedVector ModePremium PolicyUnits'(vectorParms) > 0 ; çä  'Policy Coverage BandCode given FA'(calcType;coverageIndex;'SharedVector ModePremium yearIndex'(vectorParms);'SharedVector ModePremium PolicyUnits'(vectorParms) * 1000) ; çä  'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur) // bandâââââââââçäçä);çä"MODE" : 'Policy PaymentMode';çä"CURRENCY" : 'Payment Currency';çä"PRODUCTVERSION" : 'Policy ProductVersionCode';çä"TERM" : 'Benefit TermDur'(coverageIndex);çä"COUNTRYGROUP" : 'ACCS CalcRule CountryGroup'('Policy ProductCode';'ModePremium TransEffDate'(vectorParms);'Life Nationality'(coverageIndex;lifeparticipantIndex));çä"OCCUPATIONCLASS" : 'ACCS CalcRule OccupationClass'('Policy ProductCode';'ModePremium TransEffDate'(vectorParms);'Life Occupation'(coverageIndex;lifeparticipantIndex));çä"PCLOADDUR" : 'ModePremium Coverage PCLoad Dur'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);çä : ERROR("Data Item not defined in 'Vector ModePremium Life Coverage Rate Vector Parms GetDataItemPair': ";dataItem))çä)
+F1 5d820077 d5e56cf 75ea4d78 2e71fc5f 0 0 2
+-- Mode Premium Calculation Functions --
+Funktion
+
+F1 75ea4d78 5d820077 51bb2240 f46f411 0 0 2
+ModePremium ROP Eligible Premium(calcType;vectorParms)
+Funktion
+'ModePremium Mode Premium'(calcType;V_REPLACE(vectorParms;"R";2))
+F1 51bb2240 75ea4d78 0 44b21663 0 0 2
+ModePremium ROP Annual Eligible Premium(calcType; vectorParms)
+Funktion
+'ModePremium ROP Eligible Premium'(calcType;V_REPLACE(vectorParms;"1";0))
+F1 44b21663 75ea4d78 0 0 0 0 2
+ModePremium ROP Annual Eligible Premium Exclude Coverage(calcType;coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+SUMX(cov;0;'Policy Number Of Coverage'(calcType;'ModePremium Policy Duration'(vectorParms)) - 1;IF ( /*Is this the ROP coverage?*/ #cov <> coverageIndex ; çä   /*No - then include premium in eligible premium if required*/ 'ModePremium Coverage Life Mode Premium'(calcType;#cov;lifeparticipantIndex; // Change the parameters to make sure the mode is annual and the calc optionçä// is ROP eligibleçäV_REPLACE(V_REPLACE(vectorParms;"1";0);"R";2)) ; çä   // Else exclude the coverageçä0çä))
+F1 f46f411 5d820077 36216d7e 3077d105 0 0 2
+ModePremium WP Eligible Premium(calcType; lifeparticipantIndex; vectorParms)
+Funktion
+SUMX(life;0;'Policy Number of LifeParticipant'(calcType;0) - 1;SUMX(cov;0;'Policy Number Of Coverage'(calcType;'ModePremium Policy Duration'(vectorParms)) - 1;IF ('Policy Number of LifeParticipant'(calcType;#cov) - 1 >= #life ; çä  'ModePremium Coverage WP Eligible Premium'(calcType;#cov;#life;vectorParms) ; çä  0çä)))
+F1 36216d7e f46f411 0 0 0 0 2
+ModePremium Coverage WP Eligible Premium(calcType;coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+'ModePremium Capped Coverage Life Mode Premium'(calcType;coverageIndex;lifeparticipantIndex;V_REPLACE(V_REPLACE(vectorParms;1;0);"W";2)) / IF ('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä  'ACCS CalcRule Mode Factor'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate';'ModePremium Payment Mode'(vectorParms);'ModePremium Payment Form'(vectorParms)) ; çä  1çä)
+F1 3077d105 5d820077 fcc00ca 0 0 0 2
+ModePremium Mode Premium(calcType;vectorParms)
+Funktion
+'GEN Round'(SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;'ModePremium Policy Duration'(vectorParms)) - 1;IF ( /*Is coverage in force*/ 'Std Coverage Is Inforce'(calcType;#coverageIndex;'ModePremium TransEffDate'(vectorParms);'ModePremium Policy Duration'(vectorParms)) || 'Std Coverage Is Pending'(calcType;#coverageIndex;'ModePremium TransEffDate'(vectorParms);'ModePremium Policy Duration'(vectorParms)) ; çä   /*yes - return premium*/ 'ModePremium Coverage Mode Premium'(calcType;#coverageIndex;vectorParms) ; çä   // Unadjusted mode premiumçä/*No - return zero*/0çä)) * CASE( /*mode premium calculation option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä // Apply unearned factor to unearned ROP eligible premiumçä"U" : 'ModePremium Unearned Factor'(vectorParms);çä // ROP Eligible premium çä"R" : 1;çä // Apply forced payment adjustment to non ROP mode premiums, if applicableçä : 'ModePremium Forced Payment Adjustment'(vectorParms))çä;2)
+F1 fcc00ca 3077d105 1d80b237 10c0f185 0 0 2
+ModePremium Coverage Mode Premium(calcType; coverageIndex; vectorParms)
+Funktion
+SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;coverageIndex) - 1;'ModePremium Capped Coverage Life Mode Premium'(calcType;coverageIndex;#lifeparticipantIndex;vectorParms))
+F1 1d80b237 fcc00ca 0 1781096 0 0 2
+ModePremium Capped Coverage Life Mode Premium(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+'ModePremium Coverage Life Mode Premium'(calcType;coverageIndex;lifeparticipantIndex;vectorParms) * IF (e_(vectorParms;2) ALIKE "NC" || 'Policy Number of LifeParticipant'(calcType;coverageIndex) < 2 || 'BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) || lifeparticipantIndex <> 'GEN Vector Minimum Element'(vectorx(lifeIdx;0;'Policy Number of LifeParticipant'(calcType;coverageIndex) - 1;sumx(covIdx;0;'Policy Number Of Coverage'(calcType;'ModePremium Policy Duration'(vectorParms)) - 1;IF ('BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#covIdx);#covIdx;'Policy EffDate')) ; çä  0 ; çä  'ModePremium Coverage Life Mode Premium'(calcType;#covIdx;#lifeIdx;v_replace(vectorParms;"NC";2))çä)))) ; çä1 ; çä0.01 * 'PI Benefit Premium multipleLifesPremCapPercentage'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Payment Currency';'ModePremium Payment Mode'(vectorParms);'Policy EffDate')çä) + 'ModePremium Coverage Fees'(calcType;coverageIndex;lifeparticipantIndex;1;vectorParms) * 'ACCS CalcRule Mode Factor'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate';'ModePremium Payment Mode'(vectorParms);'ModePremium Payment Form'(vectorParms)) /*çä'ModePremium Coverage Life Mode Premium'(calcType; coverageIndex; lifeparticipantIndex; vectorParms) *çäIF('ModePremium Coverage Life Mode Premium'(calcType; coverageIndex; lifeparticipantIndex; vectorParms) = çäâv_min(vectorx(lifeIndex; 0; 'Policy Number of LifeParticipant'(calcType; coverageIndex) - 1; çäââ'ModePremium Coverage Life Mode Premium'(calcType; coverageIndex; #lifeIndex; vectorParms)çäâ));çäâ0.9; çäâ1çä)ä*/ 
+F1 1781096 fcc00ca 20f3c1f1 0 0 0 2
+ModePremium Coverage Life Mode Premium(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+IF ('SharedVector ModePremium yearIndex'(vectorParms) <= 'Benefit TermDur'(coverageIndex) && 'Life IssueAge'(coverageIndex;lifeparticipantIndex) + 'SharedVector ModePremium yearIndex'(vectorParms) - 1 <= 'PI Benefit Maturity matureYr'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;1;TransEffDate) ; çä  CASE( /*Payment rate category*/ 'PI PaymentAssembly PaymentRateCategory'('Policy ProductCode';'Policy EffDate');çä     /*Modalize after extra*/ "1000500004" : 'ModePremium Coverage Mode Premium Modalize After Extra'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);çä     /*Modalize before extra*/ "1000500005" : 'ModePremium Coverage Mode Premium Modalize Before Extra'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);çä     : 'ModePremium Coverage Mode Premium Modalize After Extra'(calcType;coverageIndex;lifeparticipantIndex;vectorParms))çä   ; çä  0çä)
+F1 20f3c1f1 1781096 0 427fb60a 0 0 2
+ModePremium Coverage Mode Premium Modalize After Extra(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+ //'ModePremium Round'(çä('ModePremium Coverage Premium'(calcType;coverageIndex;lifeparticipantIndex;1;vectorParms) + 'ModePremium Coverage Life Flat Extras'(calcType;coverageIndex;lifeparticipantIndex;1;vectorParms)) * 'ACCS CalcRule Mode Factor'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate';'ModePremium Payment Mode'(vectorParms);'ModePremium Payment Form'(vectorParms)) //)çä
+F1 427fb60a 1781096 0 ce71863 0 0 2
+ModePremium Coverage Mode Premium Modalize Before Extra(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+'ModePremium Coverage Premium'(calcType;coverageIndex;lifeparticipantIndex;'ACCS CalcRule Mode Factor'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate';'ModePremium Payment Mode'(vectorParms);'ModePremium Payment Form'(vectorParms));vectorParms) + 'ModePremium Coverage Life Flat Extras'(calcType;coverageIndex;lifeparticipantIndex;'ACCS CalcRule Mode Factor'('Policy CarrierCode';'Policy ProductCode';'Policy EffDate';'ModePremium Payment Mode'(vectorParms);'ModePremium Payment Form'(vectorParms));vectorParms)
+F1 ce71863 1781096 35fdea77 0 0 0 2
+ModePremium Coverage Premium(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Is coverage included?*/ 'ModePremium Coverage Is Included'(calcType;coverageIndex;lifeparticipantIndex;vectorParms;'SharedVector ModePremium yearIndex'(vectorParms)) ; çä   /*yes - return premium*/ 'ModePremium Coverage Life Base Premium'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) + 'ModePremium Coverage Life Table Rating'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) //+ çä//'ModePremium Coverage Fees'(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms) çä//+ 'ModePremium Coverage Life Flat Extras'(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)   // Flat extras added in laterçä + 'ModePremium Coverage CovOptions'(calcType;coverageIndex;modalFactor;vectorParms) ; çä   // Else no - return zeroçä0çä)
+F1 35fdea77 ce71863 4a30234b 15b4e473 0 0 2
+--ModePremium Coverage Base Premium(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF (/*Is base premium included?*/çäâ'ModePremium Coverage Base Premium Is Included'(calcType;coverageIndex; vectorParms);çäâ/*Yes - return premium*/çäâIF (/*Does coverage have endowment benefit?*/çäââ'ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode'; TransEffDate))çäââ&&'LifeCovType is Endowment'('PI CoverageProduct LifeCovTypeCode'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'TransEffDate'));çäââ/*Yes - return ROP premium*/çäââ'ModePremium Round Intermediate Calculation'(çäâââ'ModePremium Coverage ROP PremiumPerUnit'(calcType;coverageIndex; lifeparticipantIndex; vectorParms);çäâââ'ModePremium ROP Annual Eligible Premium Exclude Coverage'(calcType;çäââââcoverageIndex;çäââââlifeparticipantIndex; çäââââIF ('ModePremium Parameters Passed'(vectorParms);çäâââââvectorParms;çäâââââ// Elseçäâââââ'Vector ModePremium Create Parms Vector From Inputs'çäââââ)çäâââ);çäâââmodalFactor;çäâââ1çäââ);çäââ//else check for PUA riderçäââIF(/*Is coverage a PUA rider?*/'ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode'; TransEffDate))çäââ&&'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'TransEffDate'));çäâââ/*yes - return premium from attribute*/ çäâââ'ModePremium Round Intermediate Calculation'('Policy Coverage ModalPremAmt'(coverageIndex); 1; modalFactor; 1);çäââââçäâââ// Else return standard premium çäâââ'ModePremium Round Intermediate Calculation'(çäââââ'ModePremium Coverage PremiumPerUnit'(calcType; coverageIndex; lifeparticipantIndex; vectorParms);çäââââ'ModePremium Policy Coverage number of Units'(calcType; 'ModePremium Policy Duration'(vectorParms); coverageIndex; vectorParms);çäââââmodalFactor;çäââââ1çäâââ)çäââ)çäâ);çäâ// Else no - return zeroçäâ0çä)çä
+F1 4a30234b 35fdea77 0 0 0 0 2
+--ModePremium Coverage Table Rating Factor(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF (/*Is table rating included?*/çäâ'ModePremium Coverage Table Rating Is Included'(calcType;coverageIndex; vectorParms);çäâ/*Yes - include it*/çäââ'Std Coverage Table Rating factor'(calcType; çäâââcoverageIndex; çäâââ'SharedVector ModePremium yearIndex'(vectorParms); çäâââ0çäââ)çäââ*çäââ(1+çäâââ// Permanent percentage loadingçäâââ'Policy LifeParticipant PermPercentageLoading'(calcType; coverageIndex; lifeparticipantIndex) * 0.01çäâââ+ çäâââ// Temporary percentage loadingçäâââIF (/*tempory percentage loading is active*/'Policy LifeParticipant TempPercentageLoading'(calcType; coverageIndex; lifeparticipantIndex) > 0çäââââ&& 'Duration Year'('Policy LifeParticipant TempPercentageLoadingStartDate'(calcType; coverageIndex; lifeparticipantIndex); 'Policy EffDate') çäâââââ<= 'SharedVector ModePremium yearIndex'(vectorParms)çäâââ    && 'Duration Year'('Policy LifeParticipant TempPercentageLoadingEndDate'(calcType; coverageIndex; lifeparticipantIndex); 'Policy EffDate') çäâââ    â>= 'SharedVector ModePremium yearIndex'(vectorParms);çäââââ//temporary percentage loadingçäââââ'Policy LifeParticipant TempPercentageLoading'(calcType; coverageIndex; lifeparticipantIndex) * 0.01;çäââââ// Else no active temporary percentage loadingçäââââ0çäâââ)çäââ);çäââ// else table rating not includedçäââ1çä)
+F1 15b4e473 ce71863 76d164b1 2e1da092 0 0 2
+ModePremium Coverage Table Rating(calcType; coverageIndex; modalFactor; vectorParms)
+Funktion
+SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;#coverageIndex) - 1;'ModePremium Coverage Life Table Rating'(calcType;coverageIndex;#lifeparticipantIndex;modalFactor;vectorParms))
+F1 76d164b1 15b4e473 0 0 0 0 2
+ModePremium Coverage Life Table Rating(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Is table rating included?*/ 'ModePremium Coverage Table Rating Is Included'(calcType;coverageIndex;vectorParms) ; çä   /*Yes - include it*/ 'ModePremium Round Intermediate Calculation'(IF ('PI Benefit Premium PCLoadInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Payment Currency';modalFactor;TransEffDate) ; çä    'GEN Ceil'(('ModePremium Coverage Table Rating Factor'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) - 1) * 'ModePremium Coverage PCLoad Rate'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);3) ; çä    ('ModePremium Coverage Table Rating Factor'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;vectorParms) - 1) * 'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms)çä  );IF ( /*Does coverage have endowment benefit?*/ 'ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'LifeCovType is Endowment'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä   /*yes - return ROP premium*/ 'ModePremium ROP Annual Eligible Premium Exclude Coverage'(calcType;coverageIndex;lifeparticipantIndex;IF ('ModePremium Parameters Passed'(vectorParms) ; çä    vectorParms ; çä     // Elseçä'Vector ModePremium Create Parms Vector From Inputs'çä  )) ; çäIF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä  'ModePremium WP Eligible Premium'(calcType;lifeparticipantIndex;vectorParms) ; çä   // Else return number of unitsçäIF ('SharedVector ModePremium PolicyUnits'(vectorParms) > 0 ; çä    'SharedVector ModePremium PolicyUnits'(vectorParms) ; çä    'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;TransEffDur)çä  )çä)çä);modalFactor;1) ; çä // Elseâreturn zeroçä0çä)
+F1 2e1da092 ce71863 71969a65 7b18647c 0 0 2
+ModePremium Coverage Fees(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Initial coverage?*/ coverageIndex = 0 && lifeparticipantIndex = 0 ; çä   // Assume policy fees and collection fees only apply to the base coverageçä'ModePremium Policy Fee'(calcType;coverageIndex;modalFactor;vectorParms) + 'ModePremium Collection Fee'(calcType;coverageIndex;modalFactor;vectorParms) ; çä   /*Return zero for other coverages*/ 0çä)
+F1 71969a65 2e1da092 5e4e4cdf e0e713b 0 0 2
+ModePremium Policy Fee(calcType; coverageIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*If policy fee is included*/ 'ModePremium Policy Fee Is Included'(coverageIndex;vectorParms) ; çä   /*Return policy fee*/ 'ModePremium Round Intermediate Calculation'('ModePremium Annual Policy Fee'(calcType;coverageIndex;vectorParms);1;modalFactor;1) ; çä   /*else return zero*/ 0çä)
+F1 5e4e4cdf 71969a65 6d306120 0 0 0 2
+ModePremium Annual Policy Fee(calcType; coverageIndex; vectorParms)
+Funktion
+IF ( /*Fee is included in premium */ 'ModePremium Fee Active For Mode'('PI PolicyProduct Fee FeeAddRule'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate');vectorParms) && (coverageIndex = 0) ; çä   // Assume only base coverage has fees for now, and these come from the PolicyProduct.çäCASE( /*Fee calc rule*/ 'PI PolicyProduct Fee FeeCalcRule'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate');çä     // Fee is always the same amountçä"1000500001" : 'ModePremium Policy Fee Fixed Amt';çä     // Flat fee if the face amount is above a minimumçä"1000500002" : 'ModePremium Policy Fee Rule Minimum Face Amt'(calcType;coverageIndex);çä     // Flat fee which varies based upon the specified amountçä"1000500003" : 'ModePremium Policy Fee Rule Face Based With Min Amt'(calcType;coverageIndex);çä     // Fee is an amount per thousand with minimum and maximumçä"1000500004" : 'ModePremium Policy Fee Rule PerK Amt'(calcType;coverageIndex);çä     //Else return error messageçä//Fee is rate basedçä"1" : 'ModePremium Policy Fee Rate Based'(calcType;coverageIndex;vectorParms);çä     : 'Messages SystemMessage'("CA1003";'Message Language';v_('ModePremium Model Name';"'ModePremium Annual Policy Fee'";'PI PolicyProduct Fee FeeCalcRule'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate'))))çä   ; çä   // Else return zeroçä0çä) * 'GEN Payments In Year'(IF ('PI PolicyProduct Fee FeeMode'('Policy Coverage ProductCode'(calcType;coverageIndex);'FeeType PolicyFee';'Policy EffDate') ALIKE "" ; çä'Input Payment Mode' ; çä'PI PolicyProduct Fee FeeMode'('Policy Coverage ProductCode'(calcType;coverageIndex);'FeeType PolicyFee';'Policy EffDate')çä))
+F1 6d306120 5e4e4cdf 0 7c6bad17 0 0 2
+ModePremium Policy Fee Rate Based(calcType; coverageIndex; vectorParms)
+Funktion
+Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"POLFEE";'ModePremium TransEffDate'(vectorParms);'Vector ModePremium Coverage Rate Vector Parms'(calcType;"POLFEE";coverageIndex;0;vectorParms))
+F1 7c6bad17 5e4e4cdf 0 2e679a79 0 0 2
+ModePremium Policy Fee Fixed Amt
+Funktion
+'ModePremium Policy Fee Pct Or Amt Rulebased'
+F1 2e679a79 5e4e4cdf 0 4cce9e53 0 0 2
+ModePremium Policy Fee Rule Minimum Face Amt(calcType; coverageIndex)
+Funktion
+IF ( /*Is face amount above minimum?*/ 'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;TransEffDur) >= 'ModePremium Policy Fee Min Issue Units' ; çä   /*return fee amount*/ 'ModePremium Policy Fee Pct Or Amt Rulebased' ; çä   // Else return zeroçä0çä)
+F1 4cce9e53 5e4e4cdf 0 6d3935d5 0 0 2
+ModePremium Policy Fee Rule Face Based With Min Amt(calcType; coverageIndex)
+Funktion
+IF ( /*Is face amount above minimum?*/ 'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;TransEffDur) >= 'ModePremium Policy Fee Min Issue Units' ; çä   /*Return fee amount*/ 'ModePremium Policy Fee Pct Or Amt Rulebased' ; çä   // Else return minimum fee amountçä'ModePremium Policy Fee Min Amt'çä)
+F1 6d3935d5 5e4e4cdf 0 3358a2bc 0 0 2
+ModePremium Policy Fee Rule PerK Amt(calcType; coverageIndex)
+Funktion
+MIN(MAX('ModePremium Policy Fee Pct Or Amt Rulebased' * 'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;TransEffDur);'ModePremium Policy Fee Min Amt');'ModePremium Policy Fee Cap Amt')
+F1 3358a2bc 5e4e4cdf 0 34c58d67 0 0 2
+ModePremium Policy Fee Min Issue Units
+Funktion
+'PI PolicyProduct Fee MinIssueUnits'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate')
+F1 34c58d67 5e4e4cdf 7e9d3018 0 0 0 2
+-- Policy Fee Amounts --
+Funktion
+
+F1 7e9d3018 34c58d67 0 5652f606 0 0 2
+ModePremium Policy Fee Cap Amt
+Funktion
+'PI PolicyProduct Fee FeeCapAmt'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate')
+F1 5652f606 34c58d67 0 19ca0f30 0 0 2
+ModePremium Policy Fee Min Amt
+Funktion
+'PI PolicyProduct Fee MinAmt'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate')
+F1 19ca0f30 34c58d67 2936f6c3 0 0 0 2
+-- Rules --
+Funktion
+
+F1 2936f6c3 19ca0f30 31cf20d1 0 0 0 2
+ModePremium Policy Fee Pct Or Amt Rulebased
+Funktion
+IF ( /*Fee is calculated by percent?*/ 'ModePremium Is FeeCalcRule Pct' ; çä   /*Yes - return percent*/ 'PI PolicyProduct Fee FeePct'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate') ; çä   // Else return amountçä'PI PolicyProduct Fee FeeAmt'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate')çä)
+F1 31cf20d1 2936f6c3 0 0 0 0 2
+ModePremium Is FeeCalcRule Pct
+Funktion
+IF ('PI PolicyProduct Fee FeeCalcRule'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate') ALIKE "1000500004" ; çä  1 ; çä  0çä)
+F1 e0e713b 2e1da092 3f4e74f7 788c771 0 0 2
+ModePremium Collection Fee(calcType;coverageIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Include collection fee?*/ 'ModePremium Collection Fee Is Included'('Std BaseCov Index'(calcType);vectorParms) ; çä   /*Yes - return fee*/ 'ModePremium Round Intermediate Calculation'('ModePremium Annual Collection Fee'(calcType;coverageIndex;vectorParms);1;modalFactor;1) ; çä   //No- don't include collection feeçä0çä)
+F1 3f4e74f7 e0e713b 0 0 0 0 2
+ModePremium Annual Collection Fee(calcType;coverageIndex; vectorParms)
+Funktion
+IF ( /*Is collection fee included in premium?*/ 'ModePremium Fee Active For Mode'('PI PolicyProduct Fee FeeAddRule'('Policy Coverage ProductCode'(calcType;coverageIndex);'FeeType PolicyFee';'Policy EffDate');vectorParms) && (coverageIndex = 0) ; çä   // Assume only base coverage has policy fees for nowçä/*Yes- return fee*/'PI PolicyProduct Fee FeeAmt'('Policy Coverage ProductCode'(calcType;coverageIndex);'FeeType CollectionFee';'Policy EffDate') ; çä   // Else return zeroçä0çä)
+F1 788c771 2e1da092 0 0 0 0 2
+ModePremium Fee Active For Mode(fee_addition_rule; vectorParms)
+Funktion
+CASE( /*Fee rule*/ fee_addition_rule;çä  "";0 : 1;çä  1 : 'PaymentMode is Annual'('ModePremium Payment Mode'(vectorParms));çä  2 : 'PaymentMode is BiAnnual'('ModePremium Payment Mode'(vectorParms));çä  3 : 'PaymentMode is Quarterly'('ModePremium Payment Mode'(vectorParms));çä  4 : 'PaymentMode is Monthly'('ModePremium Payment Mode'(vectorParms));çä   // else return error messageçä : 'Messages SystemMessage'("CA1004";'Message Language';v_('ModePremium Model Name';"'ModePremium Fee Active For Mode'";fee_addition_rule)))çä
+F1 7b18647c ce71863 38fffc86 74e0b9d2 0 0 2
+--ModePremium Coverage Flat Extras(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF(/*Coverage is included*/çäâ'ModePremium Coverage Is Included'(calcType;coverageIndex; lifeparticipantIndex; vectorParms; 'SharedVector ModePremium yearIndex'(vectorParms));çä çä/*True*/â'ModePremium Coverage Perm Flat Extra'(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)çäâ+çäâ'ModePremium Coverage 1stTemp Flat Extra'(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)çäâ+çäâ'ModePremium Coverage Subsequent Flat Extras'(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms);çäâçä/*False*/â0)çä
+F1 38fffc86 7b18647c 6898a549 3f881209 0 0 2
+ModePremium Coverage Perm Flat Extra(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Is flat extra included in premium?*/ 'ModePremium Coverage Flat Extra Is Included'(calcType;coverageIndex;0;vectorParms) ; çä   /*Yes - include flat extra*/ 'ModePremium Round Intermediate Calculation'('ModePremium PermFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex);IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä    'ModePremium WP Eligible Premium'(calcType;lifeparticipantIndex;vectorParms) / 1000 ; çä    'ModePremium Policy Coverage number of Units'(calcType;'ModePremium Policy Duration'(vectorParms);coverageIndex;vectorParms)çä  );modalFactor;1) ; çä /*No - return zero*/ 0çä)
+F1 6898a549 38fffc86 0 0 0 0 2
+ModePremium PermFlatExtraAmt(calcType; coverageIndex; lifeparticipantIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant PermFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant PermFlatExtraAmt'(calcType;coverageIndex) ; çä    'Policy LifeParticipant PermFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex)çä  )çä)
+F1 3f881209 7b18647c 40a41810 559db03b 0 0 2
+ModePremium Coverage 1stTemp Flat Extra(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*include flat extras in premium?*/ 'ModePremium Coverage Flat Extra Is Included'(calcType;coverageIndex;1;vectorParms) && 'ModePremium TempFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex) > 0 && 'DATE Date In Range'(IF ('ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'ModePremium TransEffDate'(vectorParms) ; çä   // Elseçä'Increase Date By Years'('Policy EffDate';'SharedVector ModePremium yearIndex'(vectorParms) - 1) //'ModePremium Policy Duration'(vectorParms))çäçä);'Policy LifeParticipant TempFlatStartDate'(calcType;coverageIndex;lifeparticipantIndex);'Policy LifeParticipant TempFlatEndDate'(calcType;coverageIndex;lifeparticipantIndex)) ; çä //Yes - return flat extra premiumçä'ModePremium Round Intermediate Calculation'('ModePremium TempFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex);IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä  'ModePremium WP Eligible Premium'(calcType;lifeparticipantIndex;vectorParms) / 1000 ; çä  'ModePremium Policy Coverage number of Units'(calcType;TransEffDur;coverageIndex;vectorParms)çä);modalFactor;1) ; çä // ELSE return zeroââââçä0çä)
+F1 40a41810 3f881209 0 0 0 0 2
+ModePremium TempFlatExtraAmt(calcType; coverageIndex; lifeparticipantIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant TempFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant TempFlatExtraAmt'(calcType;coverageIndex) ; çä    'Policy LifeParticipant TempFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex)çä  )çä)
+F1 559db03b 7b18647c 98051b1 0 0 0 2
+ModePremium Coverage Subsequent Flat Extras(calcType; coverageIndex; lifeparticipantIndex; modalFactor; vectorParms)
+Funktion
+SUMX(flatExtraIndex;0;'ModePremium number of SubstandardRating'(calcType;coverageIndex;lifeparticipantIndex) - 1;IF ( /*include flat extras in premium?*/ 'ModePremium Coverage Flat Extra Is Included'(calcType;coverageIndex;2 + #flatExtraIndex;vectorParms) && 'ModePremium SubstandardRating TempFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex;#flatExtraIndex) > 0 && 'DATE Date In Range'(IF ('ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'ModePremium TransEffDate'(vectorParms) ; çä   // Elseçä'Increase Date By Years'('Policy EffDate';'SharedVector ModePremium yearIndex'(vectorParms) - 1) //'ModePremium Policy Duration'(vectorParms))çäçä);'ModePremium SubstandardRating TempFlatStartDate'(calcType;coverageIndex;lifeparticipantIndex;#flatExtraIndex);'ModePremium SubstandardRating TempFlatEndDate'(calcType;coverageIndex;lifeparticipantIndex;#flatExtraIndex)) ; çä /*Yes - return flat extra*/ 'ModePremium Coverage Subsequent Flat Extra Indexed'(calcType;coverageIndex;lifeparticipantIndex;modalFactor;#flatExtraIndex;vectorParms) ; çä // elseâreturn zeroçä0çä))
+F1 98051b1 559db03b 0 73c114a3 0 0 2
+ModePremium Coverage Subsequent Flat Extra Indexed(calcType; coverageIndex; lifeparticipantIndex; modalFactor; flatExtraIndex; vectorParms)
+Funktion
+'ModePremium Round Intermediate Calculation'('ModePremium SubstandardRating TempFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex;flatExtraIndex);IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä  'ModePremium WP Eligible Premium'(calcType;lifeparticipantIndex;vectorParms) / 1000 ; çä  'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;TransEffDur)çä);modalFactor;1)
+F1 73c114a3 559db03b 0 1010aa36 0 0 2
+ModePremium number of SubstandardRating(calcType; coverageIndex; participantIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant number of SubstandardRating'(calcType;coverageIndex;participantIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant number of SubstandardRating'(calcType;coverageIndex) ; çä    'Policy LifeParticipant number of SubstandardRating'(calcType;coverageIndex;participantIndex)çä  )çä)
+F1 1010aa36 559db03b 0 3d88f243 0 0 2
+ModePremium SubstandardRating TempFlatExtraAmt(calcType; coverageIndex; participantIndex; flatExtraIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant SubstandardRating TempFlatExtraAmt'(calcType;coverageIndex;participantIndex;flatExtraIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant SubstandardRating TempFlatExtraAmt'(calcType;coverageIndex;flatExtraIndex) ; çä    'Policy LifeParticipant SubstandardRating TempFlatExtraAmt'(calcType;coverageIndex;participantIndex;flatExtraIndex)çä  )çä)
+F1 3d88f243 559db03b 0 71f3c72b 0 0 2
+ModePremium SubstandardRating TempFlatStartDate(calcType; coverageIndex; participantIndex; flatExtraIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant SubstandardRating TempFlatStartDate'(calcType;coverageIndex;participantIndex;flatExtraIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant SubstandardRating TempFlatStartDate'(calcType;coverageIndex;flatExtraIndex) ; çä    'Policy LifeParticipant SubstandardRating TempFlatStartDate'(calcType;coverageIndex;participantIndex;flatExtraIndex)çä  )çä)
+F1 71f3c72b 559db03b 0 0 0 0 2
+ModePremium SubstandardRating TempFlatEndDate(calcType; coverageIndex; participantIndex; flatExtraIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant SubstandardRating TempFlatEndDate'(calcType;coverageIndex;participantIndex;flatExtraIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant SubstandardRating TempFlatEndDate'(calcType;coverageIndex;flatExtraIndex) ; çä    'Policy LifeParticipant SubstandardRating TempFlatEndDate'(calcType;coverageIndex;participantIndex;flatExtraIndex)çä  )çä)
+F1 74e0b9d2 ce71863 e5eb74 0 0 0 2
+ModePremium Coverage CovOptions(calcType; coverageIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*Are there any covoptions on this coverage?*/ 'Policy Number of CovOption'(calcType;coverageIndex) > 0 ; çä   /*Yes - return covoption premium*/ SUMX(coverageOptionIndex;0;'Policy Number of CovOption'(calcType;coverageIndex) - 1;IF ('Std CovOption Is Inforce'(calcType;coverageIndex;#coverageOptionIndex;'ModePremium TransEffDate'(vectorParms);'ModePremium Policy Duration'(vectorParms)) || 'Std CovOption Is Pending'(calcType;coverageIndex;#coverageOptionIndex;'ModePremium TransEffDate'(vectorParms)) ; çä    'ModePremium Coverage CovOption'(calcType;coverageIndex;#coverageOptionIndex;modalFactor;vectorParms) ; çä     // Elseçä0çä  )) ; çä // Else return zeroçä0çä)
+F1 e5eb74 74e0b9d2 0 3712197c 0 0 2
+ModePremium CovOption Table Rating Factor(calcType; coverageIndex; coverageOptionIndex;modalFactor; vectorParms)
+Funktion
+IF ( /*Is table rating included?*/ 'ModePremium CovOption Table Rating Is Included'(calcType;coverageIndex;coverageOptionIndex;vectorParms) ; çä   /*Yes - include it*/ Rate('Policy CovOption ProductCode'(calcType;coverageIndex;coverageOptionIndex);"SSTD";'ModePremium TransEffDate'(vectorParms);'Policy CovOption PermTableRating'(calcType;coverageIndex;coverageOptionIndex)) ; çä   // else table rating not includedçä1çä)
+F1 3712197c 74e0b9d2 4f362fb9 0 0 0 2
+ModePremium Coverage CovOption(calcType; coverageIndex; coverageOptionIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*include Covoption in premium?*/ 'ModePremium CovOption Is Included'(calcType;coverageIndex;coverageOptionIndex;vectorParms) ; çä   /*Return covoption premium (with fees and flat extras*/ 'ModePremium CovOption Premium'(calcType;coverageIndex;coverageOptionIndex;modalFactor;vectorParms) + 'ModePremium CovOption Fees'(coverageIndex;coverageOptionIndex;modalFactor;vectorParms) + 'ModePremium CovOption Flat Extras'(calcType;coverageIndex;coverageOptionIndex;modalFactor;vectorParms) ; çä   // else return zeroçä0çä)
+F1 4f362fb9 3712197c 292d326b 3ac66949 0 0 2
+ModePremium CovOption Premium(calcType; coverageIndex; coverageOptionIndex; modalFactor; vectorParms)
+Funktion
+'ModePremium Round Intermediate Calculation'('ModePremium CovOption PremiumPerUnit'(calcType;coverageIndex;coverageOptionIndex;vectorParms);'ModePremium CovOption NumberOfUnits'(calcType;coverageIndex;coverageOptionIndex;vectorParms);modalFactor; // Table Rating FactorçäRate('Policy Coverage ProductCode'(calcType;coverageIndex);"SSTD";'ModePremium TransEffDate'(vectorParms);v_('Policy CovOption PermTableRating'(calcType;coverageIndex;coverageOptionIndex))))
+F1 292d326b 4f362fb9 0 0 0 0 2
+ModePremium CovOption NumberOfUnits(calcType; coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'ModePremium Policy Coverage number of Units'(calcType;'ModePremium Policy Duration'(vectorParms);coverageIndex;vectorParms) ; çä  IF (('STD Policy Coverage Is Variable Non-Base'(calcType;coverageIndex) && 'LifeCovOptType is WPR'('Policy CovOption LifeCovOptTypeCode'(calcType;coverageIndex;coverageOptionIndex))) ; çä    'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;'ModePremium Policy Duration'(vectorParms)) ; çä    'Policy CovOption OptionNumberOfUnits'(calcType;coverageIndex;coverageOptionIndex)çä  )çä)
+F1 3ac66949 3712197c 0 7a6e30e5 0 0 2
+ModePremium CovOption Fees(coverageIndex; coverageOptionIndex; modalFactor; vectorParms)
+Funktion
+0
+F1 7a6e30e5 3712197c 56be1e10 0 0 0 2
+ModePremium CovOption Flat Extras(calcType; coverageIndex; coverageOptionIndex; modalFactor; vectorParms)
+Funktion
+'ModePremium CovOption Perm Flat Extra'(calcType;coverageIndex;coverageOptionIndex;modalFactor;vectorParms) + 'ModePremium CovOption 1stTemp Flat Extra'(calcType;coverageIndex;coverageOptionIndex;modalFactor;vectorParms) + 'ModePremium CovOption Subsequent Flat Extras'(calcType;coverageIndex;coverageOptionIndex;modalFactor;vectorParms)
+F1 56be1e10 7a6e30e5 0 194c20d9 0 0 2
+ModePremium CovOption Perm Flat Extra(calcType; coverageIndex; coverageOptionIndex; modalFactor; vectorParms)
+Funktion
+'ModePremium Round Intermediate Calculation'('Policy CovOption PermFlatExtraAmt'(calcType;coverageIndex;coverageOptionIndex); //'Policy CovOption OptionNumberOfUnits'(calcType; coverageIndex; coverageOptionIndex);çä'ModePremium CovOption NumberOfUnits'(calcType;coverageIndex;coverageOptionIndex;vectorParms);modalFactor;1)
+F1 194c20d9 7a6e30e5 0 1952ead8 0 0 2
+ModePremium CovOption 1stTemp Flat Extra(calcType; coverageIndex; coverageOptionIndex; modalFactor; vectorParms)
+Funktion
+IF ( /*does covOption have flat extra?*/ 'Policy CovOption TempFlatExtraAmt'(calcType;coverageIndex;coverageOptionIndex) > 0 && 'DATE Date In Range'(IF ('ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'ModePremium TransEffDate'(vectorParms) ; çä   // Elseçä'Increase Date By Years'('Policy EffDate';'ModePremium Policy Duration'(vectorParms))çä);'Policy CovOption TempFlatStartDate'(calcType;coverageIndex;coverageOptionIndex);'Policy CovOption TempFlatEndDate'(calcType;coverageIndex;coverageOptionIndex)) ; çä /*Yes - return premium for flat extra*/ 'ModePremium Round Intermediate Calculation'('Policy CovOption TempFlatExtraAmt'(calcType;coverageIndex;coverageOptionIndex); //'Policy CovOption OptionNumberOfUnits'(calcType; coverageIndex; coverageOptionIndex);çä'ModePremium CovOption NumberOfUnits'(calcType;coverageIndex;coverageOptionIndex;vectorParms);modalFactor;1) ; çä /*No - return zero*/ 0çä)
+F1 1952ead8 7a6e30e5 5d943804 0 0 0 2
+ModePremium CovOption Subsequent Flat Extras(calcType; coverageIndex; coverageOptionIndex; modalFactor; vectorParms)
+Funktion
+SUMX(flatExtraIndex;0;'Policy CovOption number of SubstandardRating'(coverageIndex;coverageOptionIndex) - 1;IF ( /*Is there additional flat extras on this covOption?*/ 'Policy CovOption SubstandardRating TempFlatExtraAmt'(coverageIndex;coverageOptionIndex;#flatExtraIndex) > 0 && 'DATE Date In Range'(IF ('ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'ModePremium TransEffDate'(vectorParms) ; çä   // Elseçä'Increase Date By Years'('Policy EffDate';'ModePremium Policy Duration'(vectorParms))çä);'Policy CovOption SubstandardRating TempFlatStartDate'(coverageIndex;coverageOptionIndex;#flatExtraIndex);'Policy CovOption SubstandardRating TempFlatEndDate'(coverageIndex;coverageOptionIndex;#flatExtraIndex)) ; çä /*Yes - return flat extra premium amount*/ 'ModePremium CovOption Subsequent Flat Extra Indexed'(calcType;coverageIndex;coverageOptionIndex;modalFactor;#flatExtraIndex;vectorParms) ; çä // else return zeroçä0çä))
+F1 5d943804 1952ead8 0 0 0 0 2
+ModePremium CovOption Subsequent Flat Extra Indexed(calcType; coverageIndex; coverageOptionIndex; modalFactor; flatExtraIndex; vectorParms)
+Funktion
+'ModePremium Round Intermediate Calculation'('Policy CovOption SubstandardRating TempFlatExtraAmt'(coverageIndex;coverageOptionIndex;flatExtraIndex); //'Policy CovOption OptionNumberOfUnits'(calcType; coverageIndex; coverageOptionIndex);çä'ModePremium CovOption NumberOfUnits'(calcType;coverageIndex;coverageOptionIndex;vectorParms);modalFactor;1)
+F1 10c0f185 3077d105 7ace36ca 0 0 0 2
+-- Inclusion Functions --
+Funktion
+
+F1 7ace36ca 10c0f185 20702646 0 0 0 2
+ModePremium Coverage Is Included(calcType;coverageIndex; lifeparticipantIndex; vectorParms; yearIndex)
+Funktion
+IF ( /*Are conditions satisfied for coverage inclusion in premium?*/ ('Std Coverage Is InForce'(calcType;coverageIndex;'ModePremium TransEffDate'(vectorParms);'ModePremium Policy Duration'(vectorParms)) || 'Std Coverage Is Pending'(calcType;coverageIndex;'ModePremium TransEffDate'(vectorParms);yearIndex)) && 'ModePremium Attained Age Is Less Than PaytoAge'(calcType;coverageIndex;lifeparticipantIndex;vectorParms) && 'ModePremium Coverage Included For Calc Option'(calcType;coverageIndex;vectorParms) && 'ModePremium Coverage Included For Comm Ind'(calcType;coverageIndex;vectorParms) ; çä   /*Yes*/ 1 ; çä   /* No*/ 0çä)
+F1 20702646 7ace36ca 14a9596c 79d94e89 0 0 2
+ModePremium Attained Age Is Less Than PaytoAge(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+'ModePremium Attained Age'(calcType;coverageIndex;lifeparticipantIndex;vectorParms) < 'PI Benefit payToAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy Coverage EffDate'(calcType;coverageIndex))
+F1 14a9596c 20702646 0 0 0 0 2
+ModePremium Attained Age(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant IssueAge'(calcType;coverageIndex;lifeparticipantIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant IssueAge'(calcType;coverageIndex) ; çä    'Policy LifeParticipant IssueAge'(calcType;coverageIndex;lifeparticipantIndex)çä  )çä) + 'ModePremium Policy Duration'(vectorParms) - 1
+F1 79d94e89 7ace36ca 0 20f3352e 0 0 2
+ModePremium Coverage Included For Calc Option(calcType;coverageIndex; vectorParms)
+Funktion
+CASE( /*Mode premium calc option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä   // Omit specified phase (i.e. Coverage)çä"2" : IF ('ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) ; çä    0 ; çä    1çä  );çä // Include only the Specified phase or specified phase (no fees)çä"3";"7" : IF ('ModePremium Specified CovNumber'(vectorParms) NOTALIKE 'Policy Coverage CovNumber'(coverageIndex) ; çä  0 ; çä  1çä);çä // ROP eligible or unearned ROP eligibleçä"R";"U" : IF (NOT('ModePremium Coverage ROP Eligible Ind'(calcType;coverageIndex;vectorParms)) ; çä0 ; çä1çä);çä"W" : IF ('BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä0 ; çä1çä);çä // Else include coverage in premiumçä : 1)çä
+F1 20f3352e 7ace36ca 0 34718e82 0 0 2
+ModePremium Coverage Included For Comm Ind(calcType;coverageIndex; vectorParms)
+Funktion
+IF ( /*Is commissionable premium being calculated*/ 'ModePremium Comm Premium Calc Ind'(vectorParms) ; çä   /*yes - get indicator of whether coverage is commissionable*/ 'PI CoverageProduct CommissionablePremCalcInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') ; çä   // else not calculating commissionable premium, no need to exclude for commissionable indicatorçä1çä)
+F1 34718e82 7ace36ca 2bc4a3c0 310ab017 0 0 2
+ModePremium Coverage Base Premium Is Included(calcType;coverageIndex; vectorParms)
+Funktion
+IF ( /*coverage included in premium?*/ 'ModePremium Coverage Base Premium Included For Calc Option'(calcType;coverageIndex;vectorParms) && 'ModePremium Coverage Base Premium Included For Comm Option'(coverageIndex;vectorParms) ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä)
+F1 2bc4a3c0 34718e82 0 7119611f 0 0 2
+ModePremium Coverage Base Premium Included For Calc Option(calcType;coverageIndex; vectorParms)
+Funktion
+CASE( /*mode premium calc option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä   // Omit specified element - Omit if phase = specified phase and element to omit is Coverageçä"1" : IF ('ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) && 'ModePremium Specified Element'(vectorParms) ALIKE 'CalcType Current'(calcType) ; çä     // Coverageçä0 ; çä    1çä  );çä // Specified element - Include only if phase = specified phase and element to include is Coverageçä"6" : IF ('ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) && 'ModePremium Specified Element'(vectorParms) ALIKE 'CalcType Current'(calcType) ; çä  1 ; çä  0çä);çä // ROP eligible premium or unearned eligible premiumçä"R";"U" : IF (NOT('ModePremium Coverage Premium ROP Eligible Ind'(calcType;coverageIndex)) ; çä0 ; çä1çä);çä // Else includeçä : 1)çä
+F1 7119611f 34718e82 0 0 0 0 2
+ModePremium Coverage Base Premium Included For Comm Option(coverageIndex; vectorParms)
+Funktion
+IF ('ModePremium Comm Premium Calc Ind'(vectorParms) ; çä  1 ; çä  1çä)
+F1 310ab017 7ace36ca 1469cb57 a1a7838 0 0 2
+ModePremium Coverage Table Rating Is Included(calcType;coverageIndex; vectorParms)
+Funktion
+IF ( /*Is table rating included in premium?*/ 'ModePremium Coverage Table Rating Included For Calc Option'(calcType;coverageIndex;vectorParms) && 'MP Coverage Table Rating Included For Comm Option'(calcType;coverageIndex;vectorParms) && NOT('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && ('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) || 'Coverage Type is BIR'(calcType;coverageIndex))) //&& NOT ('BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType; 'Policy Coverage ProductCode'(calcType;coverageIndex); coverageIndex; 'TransEffDate')))çä ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä)
+F1 1469cb57 310ab017 0 4f4fc7c5 0 0 2
+ModePremium Coverage Table Rating Included For Calc Option(calcType;coverageIndex; vectorParms)
+Funktion
+CASE( /*Mode premium calc option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä   // Omit specified element çä"1" : IF (('ModePremium Specified Element'(vectorParms) ALIKE "E" // i.e. Extraçä && 'ModePremium Specified Element Index'(vectorParms) ALIKE "0" // i.e. Table Ratingçä && 'ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex)) ; çä    0 ; çä     // Omitting this element of this phaseçä1çä  );çä // Net premiumçä"4" : 0;çä // Specified elementçä"6" : IF (NOT(('ModePremium Specified Element'(vectorParms) ALIKE "E" && 'ModePremium Specified Element Index'(vectorParms) ALIKE "0" && 'ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex))) ; çä  0 ; çä   // Omit unless it is the specified element of the specified phaseçä1çä);çä // ROP Eligible or Unearned Eligible ROPçä"R";"U" : IF ('ModePremium Table Rating ROP Eligible Ind'(calcType;coverageIndex) ; çä1 ; çä0çä);çä //else includeçä : 1)çä
+F1 4f4fc7c5 310ab017 0 0 0 0 2
+MP Coverage Table Rating Included For Comm Option(calcType;coverageIndex; vectorParms)
+Funktion
+IF ( /*Table rating included in commissionable premium?*/ 'ModePremium Comm Premium Calc Ind'(vectorParms) ; çä  IF ( /*Coverage included in commissionable premium?*/ 'PI CoverageProduct CommissionablePremCalcInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate') ; çä     /*Yes*/ 1 ; çä     /*No*/ 0çä  ) ; çä // else not calculating commissionable premium, no need to exclude for commissionable indicatorçä1çä)
+F1 a1a7838 7ace36ca 64a6a548 553b2099 0 0 2
+ModePremium CovOption Is Included(calcType;coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+IF ( /*Are conditions for CovOption inclusion met?*/ ('Std CovOption Is Inforce'(calcType;coverageIndex;coverageOptionIndex;'ModePremium TransEffDate'(vectorParms);'ModePremium Policy Duration'(vectorParms)) || 'Std CovOption Is Pending'(calcType;coverageIndex;coverageOptionIndex;'ModePremium TransEffDate'(vectorParms))) && 'ModePremium CovOption Included For Calc Option'(calcType;coverageIndex;coverageOptionIndex;vectorParms) && 'ModePremium CovOption Included For Comm Option'(calcType;coverageIndex;coverageOptionIndex;vectorParms) && 'Std Attained Age'(IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Policy DisabilityHealth Participant IssueAge'(calcType;coverageIndex) ; çä    'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0)çä  )çä);'Policy CovOption EffDate'(calcType;coverageIndex;coverageOptionIndex);'Increase Date By Years'('Policy CovOption EffDate'(calcType;coverageIndex;coverageOptionIndex);'ModePremium Policy Duration'(vectorParms))) <= 'ModePremium CovOption PayToAge'(calcType;coverageIndex;coverageOptionIndex) ; çä /*Yes*/ 1 ; çä /*No*/ 0çä)
+F1 64a6a548 a1a7838 0 5d654b79 0 0 2
+ModePremium CovOption PayToAge(calcType; coverageIndex; coverageOptionIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'PI CovOptionProduct PayToAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;coverageOptionIndex;'Policy Coverage EffDate'(calcType;coverageIndex)) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'PI DisabilityHealthProduct RiderProduct PayToAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;coverageOptionIndex;'Policy Coverage EffDate'(calcType;coverageIndex)) ; çä    'PI CovOptionProduct PayToAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;coverageOptionIndex;'Policy Coverage EffDate'(calcType;coverageIndex))çä  )çä)
+F1 5d654b79 a1a7838 0 4c4cc601 0 0 2
+ModePremium CovOption Table Rating Is Included(calcType;coverageIndex; coverageOptionIndex;vectorParms)
+Funktion
+IF ( /*Is table rating included in premium?*/ 'ModePremium CovOption Included For Calc Option'(calcType;coverageIndex;coverageOptionIndex;vectorParms) && 'ModePremium CovOption Included For Comm Option'(calcType;coverageIndex;coverageOptionIndex;vectorParms) && NOT('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) || 'Coverage Type is BIR'(calcType;coverageIndex)) ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä)
+F1 4c4cc601 a1a7838 0 416198c6 0 0 2
+ModePremium CovOption Included For Calc Option(calcType;coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+CASE( /*Mode premium calc option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä   // Omit specified elementçä"1" : IF (('ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) && 'ModePremium Specified Element'(vectorParms) ALIKE "B" // i.e. Benefitçä && 'ModePremium Specified Element Index'(vectorParms) = coverageOptionIndex) ; çä    0 ; çä     // Omit if it is the specified benefit within the specified coverageçä1çä  );çä // Net premiumçä"4" : 0;çä // Specified elementçä"6" : IF (NOT('ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) && 'ModePremium Specified Element'(vectorParms) ALIKE "B" && 'ModePremium Specified Element Index'(vectorParms) = coverageOptionIndex) ; çä  0 ; çä   // Omit unless it is the specified benefit within the specified coverageçä1çä);çä // ROP eligible, unearned ROP eligibleçä"R";"U" : IF (NOT('ACCS CalcRule CovOption Is ROP Eligible'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'Policy CovOption ProductCode'(calcType;coverageIndex;coverageOptionIndex);'Policy CovOption EffDate'(calcType;coverageIndex;coverageOptionIndex))) ; çä0 ; çä1çä);çä //Else includeçä : 1)çä
+F1 416198c6 a1a7838 0 0 0 0 2
+ModePremium CovOption Included For Comm Option(calcType;coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+IF ( /*Commissionable premium?*/ 'ModePremium Comm Premium Calc Ind'(vectorParms) ; çä  'PI CovOptionProduct CommissionablePremCalcInd'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;coverageOptionIndex;'Policy EffDate') ; çä   // else not calculating commissionable premium, no need to exclude for commissionable indicatorçä1çä)
+F1 553b2099 7ace36ca 5890980f 0 0 0 2
+-- Fee Inclusion Functions --
+Funktion
+
+F1 5890980f 553b2099 ba6f7a9 4ca282bb 0 0 2
+ModePremium Policy Fee Is Included(coverageIndex; vectorParms)
+Funktion
+IF ( /*Include fee?*/ 'ModePremium Policy Fee Included For Calc Option'(coverageIndex;vectorParms) && 'ModePremium Policy Fee Included For Comm Option'(coverageIndex;vectorParms) && 'ModePremium Policy Fee Exists on Policy' ; çä   /*yes*/ 1 ; çä   /*No*/ 0çä)
+F1 ba6f7a9 5890980f 0 4fc7acea 0 0 2
+ModePremium Policy Fee Exists on Policy
+Funktion
+IF ( /*does Policy fee exist on product definition?*/ 'PI PolicyProduct Fee FeeType'('Policy productCode';'FeeType PolicyFee';TransEffDate) ALIKE 'GEN Vector Blank' ; çä  0 ; çä  1çä)
+F1 4fc7acea 5890980f 0 385fa7f5 0 0 2
+ModePremium Policy Fee Included For Calc Option(coverageIndex; vectorParms)
+Funktion
+CASE( /*mode premium calc option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä   // Omit specified element - Include policy fee is a specified element is omittedçä"1" : 1;çä   // Specified element - Don't include policy fee if a specified element is being calculatedçä"6" : 0;çä   // Net premium or specified phase (no fees)çä"4";"7" : 0;çä   // ROP eligible or unearned ROP eligibleçä"R";"U" : IF (NOT('ModePremium Policy Fee ROP Eligible Ind') ; çä    0 ; çä    1çä  );çä // Else includeçä : 1)çä
+F1 385fa7f5 5890980f 0 0 0 0 2
+ModePremium Policy Fee Included For Comm Option(coverageIndex; vectorParms)
+Funktion
+IF ( /*Commissionable premium?*/ 'ModePremium Comm Premium Calc Ind'(vectorParms) ; çä  IF ( /*Fee defined?*/ 'PI PolicyProduct Fee CommissionablePremCalcInd'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä     // Fee not definedçä0 ; çä     // Else check if it's included in commissionable premiumçä'PI PolicyProduct Fee CommissionablePremCalcInd'('Policy ProductCode';'FeeType PolicyFee';'Policy EffDate')çä  ) ; çä // else not calculating commissionable premium, no need to exclude for commissionable indicatorçä1çä)
+F1 4ca282bb 553b2099 1bab1a09 0 0 0 2
+ModePremium Collection Fee Is Included(coverageIndex; vectorParms)
+Funktion
+IF ( /*Collectoin fee included?*/ 'ModePremium Collection Fee Included For Calc Option'(coverageIndex;vectorParms) && 'ModePremium Collection Fee Included For Comm Option'(coverageIndex;vectorParms) && 'ModePremium Collection Fee Exists on Policy' ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä)
+F1 1bab1a09 4ca282bb 0 7816761d 0 0 2
+ModePremium Collection Fee Exists on Policy
+Funktion
+IF ( /*does Collection fee exist on product definition?*/ 'PI PolicyProduct Fee FeeType'('Policy productCode';'FeeType CollectionFee';TransEffDate) ALIKE 'GEN Vector Blank' ; çä  0 ; çä  1çä)
+F1 7816761d 4ca282bb 0 551009f0 0 0 2
+ModePremium Collection Fee Included For Calc Option(coverageIndex; vectorParms)
+Funktion
+CASE( /*Mode premium calc Option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä   // Omit specified element - Include policy fee is a specified element is omittedçä"1" : 1;çä   // Specified element - Don't include policy fee if a specified element is being calculatedçä"6" : 0;çä   // Net premium or specified phase (no fees)çä"4";"7" : 0;çä   // ROP eligible or unearned ROP eligible çä"R";"U" : IF (NOT('ModePremium Collection Fee ROP Eligible Ind') ; çä    0 ; çä    1çä  );çä // Else includeçä : 1)çä
+F1 551009f0 4ca282bb 0 0 0 0 2
+ModePremium Collection Fee Included For Comm Option(coverageIndex; vectorParms)
+Funktion
+IF ( /*Calculating commissionable premium?*/ 'ModePremium Comm Premium Calc Ind'(vectorParms) ; çä  IF ( /*Is fee commissionable status defined?*/ 'PI PolicyProduct Fee CommissionablePremCalcInd'('Policy ProductCode';'FeeType CollectionFee';'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä     // Fee not defined - excludeçä0 ; çä     // Else çä'PI PolicyProduct Fee CommissionablePremCalcInd'('Policy ProductCode';'FeeType CollectionFee';'Policy EffDate')çä  ) ; çä // else not calculating commissionable premium, no need to exclude for commissionable indicatorçä1çä)
+F1 2e71fc5f d5e56cf 5efb9b43 2229228e 0 0 2
+ModePremium Coverage Flat Extra Is Included(calcType;coverageIndex; flatIndex; vectorParms)
+Funktion
+IF ('ModePremium Coverage Flat Extra Included For Calc Option'(calcType;coverageIndex;flatIndex;vectorParms) && 'ModePremium Coverage Flat Extra Included For Comm Option'(calcType;coverageIndex;vectorParms) && NOT('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && ('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) || 'Coverage Type is BIR'(calcType;coverageIndex))) ; çä   //&& NOT('BenefitType is Waiver of Premium'('PI Benefit benefitTypeCode'(calcType; 'Policy Coverage ProductCode'(calcType;coverageIndex); coverageIndex; 'Policy EffDate')));çä1 ; çä  0çä)
+F1 5efb9b43 2e71fc5f 0 3ba3d55f 0 0 2
+ModePremium Coverage Flat Extra Included For Calc Option(calcType;coverageIndex; flatIndex; vectorParms)
+Funktion
+CASE( /*Mode premium calc option*/ 'ModePremium Mode Premium Calc Option'(vectorParms);çä   // Omit specified elementçä"1" : IF (('ModePremium Specified Element'(vectorParms) ALIKE "E" // i.e. Extraçä && 'ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) && 'ModePremium Specified Element Index'(vectorParms) = flatIndex + 1) ; çä     // Element index 1 = 1st flat, 2 = 2nd flat, etc.  çä0 ; çä    1çä  );çä // Omit Specified Phaseçä"2" : IF ('ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) ; çä  0 ; çä  1çä);çä // Specified Phaseçä"3" : IF ('ModePremium Specified CovNumber'(vectorParms) ALIKE 'Policy Coverage CovNumber'(coverageIndex) ; çä1 ; çä0çä);çä // Net premiumçä"4" : 0;çä // Specified elementçä"6" : IF (('ModePremium Specified Element'(vectorParms) ALIKE "E" && 'ModePremium Specified Element Index'(vectorParms) = flatIndex + 1) ; çä1 ; çä // Include if it's the specific flat extra for the specific coverageçä0çä);çä // ROP eligible or Unearned ROP eligible çä"R";"U" : IF ('ModePremium Flat Extra ROP Eligible Ind'(calcType;coverageIndex) ; çä1 ; çä0çä);çä // Else includeçä : 1)çä
+F1 3ba3d55f 2e71fc5f 0 0 0 0 2
+ModePremium Coverage Flat Extra Included For Comm Option(calcType;coverageIndex; vectorParms)
+Funktion
+IF ( /*Calculating commissionable premium?*/ 'ModePremium Comm Premium Calc Ind'(vectorParms) ; çä  IF ( /*Rating commission rule*/ 'RatCommRul Is CommissionsNotPaid'('PI CoverageProduct RatingCommissionRule'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) ; çä     /*Exclude*/ 0 ; çä     /*Include*/ 1çä  ) ; çä // else not calculating commissionable premium, no need to exclude for commissionable indicatorçä1çä)
+F1 2229228e d5e56cf 5e5ec9ae 4f03ef61 0 0 2
+-- Premium Rate Functions --
+Funktion
+
+F1 5e5ec9ae 2229228e 0 313a0d58 0 0 2
+ModePremium Coverage ROP PremiumPerUnit(calcType;coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+IF ( /*Coverage has endowment?*/ 'LifeCovType is Endowment'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä   /*Yes*///IF (/*coverage is eligible for ROP?*/çä//'ModePremium Coverage ROP Eligible Ind'(calcType;coverageIndex; vectorParms);çä// ROP coverage is refunded - Assume the ROP premium factor is already the gross factor.çä// Otherwise, we would need to "gross up" here.çä 'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;lifeparticipantIndex;vectorParms) ; çä   //'ModePremium Coverage PremiumPerUnit'(calcType; coverageIndex; vectorParms) / (1 - 'ModePremium Coverage PremiumPerUnit'(calcType; coverageIndex; vectorParms) );çä// Else ROP coverage is not refundedçä//'ModePremium Coverage PremiumPerUnit'(calcType; coverageIndex; vectorParms)çä//);çä/*No*/0çä)
+F1 313a0d58 2229228e 63845479 5f798fe0 0 0 2
+ModePremium Coverage PremiumPerUnit(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+IF ( /*Is rate information passed in vector?*/ 'ModePremium Rate Info Passed Ind'(vectorParms) ; çä   /*Yes - get it from vector*/ 'Policy Coverage PremiumPerUnit'(calcType;coverageIndex) ; çä   /*No - get it from rate model*/ Rate('Policy Coverage ProductCode'(calcType;coverageIndex);'ModePremium Coverage PremiumPerUnit RateType'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);'ModePremium TransEffDate'(vectorParms);'Vector ModePremium Coverage Rate Vector Parms'(calcType;'ModePremium Coverage PremiumPerUnit RateType'(calcType;coverageIndex;lifeparticipantIndex;vectorParms);coverageIndex;lifeparticipantIndex;vectorParms))çä)
+F1 63845479 313a0d58 0 7b9f93f 0 0 2
+ModePremium Coverage PremiumPerUnit RateType(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+IF ( /*Is coverage ROP?*/ 'ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) && 'LifeCovType is Endowment'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä   /*Yes*/ "ROPPREM" ; çä   // Else çäIF ( /*Are current rates guaranteed?*/ 'ModePremium Is Current Rate Guaranteed'(calcType;coverageIndex;vectorParms) ; çä     // The policy is in a period in which the current rate is guaranteedçä'CalcType PREM Identifier' ; çä     // ElseçäIF ('ModePremium Rate Assumption'(vectorParms) ALIKE 'CalcType Guaranteed'(calcType) ; çä      "GPRM" ; çä      'ModePremium Current RateType'(coverageIndex;vectorParms)çä    )çä)çä)
+F1 7b9f93f 313a0d58 0 2944216c 0 0 2
+ModePremium Is Current Rate Guaranteed(calcType; coverageIndex; vectorParms)
+Funktion
+'PIDRV Coverage Curr Rate Is Guaranteed'(calcType;coverageIndex;IF ('ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'ModePremium TransEffDate'(vectorParms) ; çä   // Elseçä'Increase Date By Years'('Policy EffDate';'ModePremium Policy Duration'(vectorParms))çä);'ModePremium TransEffDate'(vectorParms))
+F1 2944216c 313a0d58 0 3c092b3e 0 0 2
+ModePremium Current RateType(coverageIndex; vectorParms)
+Funktion
+IF (( /*For term products past initial term period, use PREMART */ 'ProductType Is Indeterminate Premium'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'ModePremium TransEffDate'(vectorParms)))) ; çä   /* use Indeterminate Premium rateType=PREMART */ "PREMART" ; çä   /* else */ 'CalcType PREM Identifier'çä)
+F1 3c092b3e 313a0d58 6a50916a 0 0 0 2
+Vector ModePremium Coverage Rate Vector Parms(calcType;rateType;coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Vector ModePremium Life Coverage Rate Vector Parms'(calcType;rateType;coverageIndex;lifeparticipantIndex;vectorParms) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Vector ModePremium DisabilityHealth Coverage Rate Vector Parms'(calcType;coverageIndex;vectorParms) ; çä    'Vector ModePremium Life Coverage Rate Vector Parms'(calcType;rateType;coverageIndex;lifeparticipantIndex;vectorParms)çä  )çä)
+F1 6a50916a 3c092b3e 0 fe53ddd 0 0 2
+--Vector ModePremium Life Coverage Rate Vector Parms(calcType;coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+v_(çäâ'Policy LifeParticipant IssueAge'(calcType; coverageIndex; lifeparticipantIndex);   âââââ// issue ageçäâIF (/*Is this calculation a projection*/'ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank';   çäââ// Not a projectionçäââ'Duration Year'('ModePremium TransEffDate'(vectorParms); 'Policy Coverage EffDate'(calcType;coverageIndex) );çäââ// Else projectionçäââ'ModePremium Policy Duration'(vectorParms)çäâ);çäâ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; lifeparticipantIndex);âââââ// gender codeâçäâ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; lifeparticipantIndex);ââââ// underwriting classçäâ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; lifeparticipantIndex);ââââ// smoke codeâçäâIF('SharedVector ModePremium PolicyUnits'(vectorParms) > 0;çäââ'Policy Coverage BandCode given FA'(calcType; çäâââcoverageIndex; çäâââ'SharedVector ModePremium yearIndex'(vectorParms); çäâââ'SharedVector ModePremium PolicyUnits'(vectorParms) * 1000çäââ);çäââ'Policy Coverage BandCode'(calcType; coverageIndex; TransEffDur)ââââââ// bandâââââââââçäâ)çä)
+F1 fe53ddd 3c092b3e 0 0 0 0 2
+Vector ModePremium DisabilityHealth Coverage Rate Vector Parms(calcType;coverageIndex; vectorParms)
+Funktion
+v_('Policy DisabilityHealth Participant IssueAge'(calcType;coverageIndex); // issue ageçäIF ( /*Is this calculation a projection*/ 'ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'Duration Year'('ModePremium TransEffDate'(vectorParms);'Policy Coverage EffDate'(calcType;coverageIndex)) ; çä   // Else projectionçä'ModePremium Policy Duration'(vectorParms)çä);'Policy DisabilityHealth Participant IssueGender'(calcType;coverageIndex); // gender codeâçä'Policy DisabilityHealth Participant EmploymentClass'(calcType;coverageIndex); // employment classçä'Policy DisabilityHealth Participant TobaccoPremiumBasis'(calcType;coverageIndex); // smoke codeâçäMAX('Policy DisabilityHealth BenefitPeriodAcc'(calcType;coverageIndex);'Policy DisabilityHealth BenefitPeriodSick'(calcType;coverageIndex));'Policy Jurisdiction'; //state codeçäMAX('Policy DisabilityHealth ElimPeriodAcc'(calcType;coverageIndex);'Policy DisabilityHealth ElimPeriodSick'(calcType;coverageIndex)))
+F1 5f798fe0 2229228e 54c34bf8 45c62d38 0 0 2
+ModePremium CovOption PremiumPerUnit(calcType; coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+IF ( /*Is rate info passed in vector*/ 'ModePremium Rate Info Passed Ind'(vectorParms) ; çä   /*Yes - get it from vector*/ 'Policy CovOption PremiumPerUnit'(calcType;coverageIndex;coverageOptionIndex) ; çä   /*No - get it from rate model*/ Rate('Policy Coverage ProductCode'(calcType;coverageIndex);'ModePremium CovOption COI RateType'(IF ( /*Rate assumption*/ 'ModePremium Rate Assumption'(vectorParms) ALIKE 'CalcType Guaranteed'(calcType) ; çä     /*Guaranteed*/ 'CalcType Guaranteed Identifier' ; çä     /*Current*/ 'CalcType Current Identifier'çä  );coverageIndex;coverageOptionIndex);'ModePremium TransEffDate'(vectorParms);'Vector ModePremium CovOption Rate Vector Parms'(calcType;coverageIndex;coverageOptionIndex;vectorParms))çä)
+F1 54c34bf8 5f798fe0 0 67798299 0 0 2
+ModePremium CovOption COI RateType(calcType; coverageIndex; coverageOptionIndex)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'CovOption COI RateType'(calcType;coverageIndex;coverageOptionIndex) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'DH Rider COI RateType'(calcType;coverageIndex;coverageOptionIndex) ; çä    'CovOption COI RateType'(calcType;coverageIndex;coverageOptionIndex)çä  )çä)
+F1 67798299 5f798fe0 13871453 0 0 0 2
+Vector ModePremium CovOption Rate Vector Parms(calcType;coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+IF ('ProductType is Life Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä  'Vector ModePremium Life CovOption Rate Vector Parms'(calcType;coverageIndex;coverageOptionIndex;vectorParms) ; çä  IF ('ProductType is Disability Health'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä    'Vector ModePremium DisabilityHealth CovOption Rate Vector Parms'(calcType;coverageIndex;coverageOptionIndex;vectorParms) ; çä    'Vector ModePremium Life CovOption Rate Vector Parms'(calcType;coverageIndex;coverageOptionIndex;vectorParms)çä  )çä)
+F1 13871453 67798299 0 a5ff44c 0 0 2
+Vector ModePremium Life CovOption Rate Vector Parms(calcType;coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0); // issue ageçäIF ( /*Projection calculation?*/ 'ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'Duration Year'('ModePremium TransEffDate'(vectorParms);'Policy CovOption EffDate'(calcType;coverageIndex;coverageOptionIndex)) ; çä   // Elseçä'ModePremium Policy Duration'(vectorParms)çä);'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0); // issue genderçä'Policy CovOption UnderwritingClass'(calcType;coverageIndex;coverageOptionIndex;TransEffDur); // underwriting classçä'Policy CovOption TobaccoPremiumBasis'(calcType;coverageIndex;coverageOptionIndex;TransEffDur); // smoke codeçä'Policy Coverage BandCode'(calcType;coverageIndex;TransEffDur); // band codeçä'GEN Vector Blank'; // Jurisdiction - Not Usedçä'GEN Vector Blank'; // Table - Not usedçä'Policy CovOption ProductCode'(calcType;coverageIndex;coverageOptionIndex))
+F1 a5ff44c 67798299 0 0 0 0 2
+Vector ModePremium DisabilityHealth CovOption Rate Vector Parms(calcType;coverageIndex; coverageOptionIndex; vectorParms)
+Funktion
+v_('Policy DisabilityHealth Participant IssueAge'(calcType;coverageIndex); // issue ageçäIF ( /*Projection calculation?*/ 'ModePremium Policy Duration'(vectorParms) ALIKE 'GEN Vector Blank' ; çä   // Not a projectionçä'Duration Year'('ModePremium TransEffDate'(vectorParms);'Policy CovOption EffDate'(calcType;coverageIndex;coverageOptionIndex)) ; çä   // Elseçä'ModePremium Policy Duration'(vectorParms)çä);'Policy DisabilityHealth Participant IssueGender'(calcType;coverageIndex); // issue genderçä'Policy DisabilityHealth Participant EmploymentClass'(calcType;coverageIndex); // underwriting classçä'Policy DisabilityHealth Participant TobaccoPremiumBasis'(calcType;coverageIndex); // smoke codeçäMAX('Policy DisabilityHealth BenefitPeriodAcc'(calcType;coverageIndex);'Policy DisabilityHealth BenefitPeriodSick'(calcType;coverageIndex));'GEN Vector Blank'; // Jurisdiction - Not UsedçäMAX('Policy DisabilityHealth ElimPeriodAcc'(calcType;coverageIndex);'Policy DisabilityHealth ElimPeriodSick'(calcType;coverageIndex));'Policy DisabilityHealth Rider RiderCode'(calcType;coverageIndex;coverageOptionIndex))
+F1 45c62d38 2229228e 75075e4b 0 0 0 2
+ModePremium Coverage Flat Extra Count(calcType; coverageIndex; lifeparticipantIndex)
+Funktion
+IF ( /*Permanent flat extra on LifeParticipant object?*/ 'ModePremium PermFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex) > 0 ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä) // Temporary flat extra on LifeParticipant objectçä + IF ( /*Temp flat extra on LifeParticipant object?*/ 'ModePremium TempFlatExtraAmt'(calcType;coverageIndex;lifeparticipantIndex) > 0 ; çä /*Yes*/ 1 ; çä /*No*/ 0çä) // Flat extras from the SubstandardRating object under LifeParticipantçä + 'ModePremium Coverage Substd Flat Extra Count'(calcType;coverageIndex;lifeparticipantIndex)
+F1 75075e4b 45c62d38 0 0 0 0 2
+ModePremium Coverage Substd Flat Extra Count(calcType; coverageIndex; participantIndex)
+Funktion
+SUMX(substd_ix;0;'ModePremium number of SubstandardRating'(calcType;coverageIndex;participantIndex) - 1;IF ( /*Addl Temp flat extras on coverage?*/ 'ModePremium SubstandardRating TempFlatExtraAmt'(calcType;coverageIndex;participantIndex;#substd_ix) > 0 ; çä   /*Yes*/ 1 ; çä   /*No*/ 0çä))
+F1 4f03ef61 d5e56cf 1183305b 65b9b00 0 0 2
+--Misc Overrides--
+Funktion
+
+F1 1183305b 4f03ef61 0 3b729f14 0 0 2
+TaxCompliance Present Value Coverage QAB Premiums(calcType; yearIndex; coverageIndex)
+Funktion
+IF ( /*Coverage is included using the PV of Death Benefits*//*Yes*/ 'TaxCompliance Coverage Included in SevenPay'(calcType;coverageIndex) = 1 && 'TaxCompliance Coverage SevenPay Inclusion Type'(calcType;coverageIndex) ALIKE "RCH" ; çä  IF (yearIndex >= 'Policy Coverage RequestedEffDur'(calcType;coverageIndex) ; çä    SUMX(yrIndex;yearIndex;'PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';coverageIndex) - 1;IF ('Std Coverage Is InForce'(calcType;coverageIndex;'Increase Date By Years'('Policy EffDate';#yrIndex);#yrIndex) = 1 ; çä      'ACT Dx'(calcType;#yrIndex;'Std BaseCov Index'(calcType);'vector TCOM ACTL Info'('Std BaseCov Index'(calcType);'CalcType 7PP'(calcType);yearIndex)) * (('Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;#yrIndex) * ('ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;0;'Vector TCOM ModePremium Coverage Rate Vector Parms'(calcType;coverageIndex;#yrIndex)) * 'ModePremium Coverage Table Rating Factor'(calcType;coverageIndex;0;1;'Vector TCOM ModePremium Coverage Rate Vector Parms'(calcType;coverageIndex;yearIndex))) + 'ModePremium Coverage Flat Extras'(calcType;coverageIndex;1;'Vector TCOM ModePremium Coverage Rate Vector Parms'(calcType;coverageIndex;yearIndex)))) ; çä       //Table ratings and flat extras still to be added.çä0çä    )) ///çä / 'ACT Dx'(calcType;yearIndex - 1;'Std BaseCov Index'(calcType);'vector TCOM ACTL Info'('Std BaseCov Index'(calcType);'CalcType 7PP'(calcType);yearIndex)) /*No*/  ; çä  0çä) ; çä0çä)
+F1 3b729f14 4f03ef61 0 403afa16 0 0 2
+TGTDB Present Value Coverage QAB Premiums(calcType; coverageIndex; yearIndex)
+Funktion
+IF ( /*Coverage is included using the PV of Death Benefits*//*Yes*/ 'TGTDB Coverage Included in SevenPay'(calcType;coverageIndex) = 1 && 'TGTDB Coverage SevenPay Inclusion Type'(calcType;coverageIndex) ALIKE "RCH" && ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;coverageIndex))) && 'Std Coverage Is InForce'(calcType;coverageIndex;'GEN Vector Blank';yearIndex) ; çä  'ACT Dx'(calcType;yearIndex;'Std BaseCov Index'(calcType);'vector TGTDB ACTL Info'(calcType;'Std BaseCov Index'(calcType))) / 'ACT Dx'(calcType;0;'Std BaseCov Index'(calcType);'vector TGTDB ACTL Info'(calcType;'Std BaseCov Index'(calcType))) * 'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;yearIndex) * 'ModePremium Coverage PremiumPerUnit'(calcType;coverageIndex;0;'Vector TGTDB ModePremium Coverage Rate Vector Parms'(calcType;coverageIndex;yearIndex)) ; çä   /*No*/ 0çä)
+F1 403afa16 4f03ef61 0 45169080 0 0 2
+WLFaceSolves Fixed Coverage Premium(calcType)
+Funktion
+SUMX(coverageIndex;0;'Policy Number of Coverage'(calcType;1) - 1; // mode premium, including flat extras and covoptionsçäIF ( /*Coverage is PUAR*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate)) ; çä   // Yes - ignore ALIR for Money purchase solveçä0 ; çä  SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;#coverageIndex) - 1;'ModePremium Coverage Premium'(calcType;#coverageIndex;#lifeparticipantIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector ModePremium Create Parms Vector for FaceSolve'('CalcType Current'(calcType);'Policy PaymentMode';1))) + 'WLFaceSolves ModePremium Coverage CovOptions'(calcType;#coverageIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector ModePremium Create Parms Vector for FaceSolve'('CalcType Current'(calcType);'Policy PaymentMode';1);'Policy Coverage CurrentNumberofUnits'(calcType;#coverageIndex;1))çä))
+F1 45169080 4f03ef61 0 4eb8fcfe 0 0 2
+WLFaceSolves ModePremium Coverage Mode Premium Units(calcType; coverageIndex; vectorParms;units)
+Funktion
+'ModePremium Round'(SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;#coverageIndex) - 1;'ModePremium Coverage Premium'(calcType;coverageIndex;#lifeparticipantIndex;1;'Vector WLFaceSolves Units Adjusted'(vectorParms;units)) + 'ModePremium Coverage Life Flat Extras'(calcType;coverageIndex;#lifeparticipantIndex;1;'Vector WLFaceSolves Units Adjusted'(vectorParms;units))))
+F1 4eb8fcfe 4f03ef61 0 5da3b1d1 0 0 2
+TradDocs QAB Coverage Premium(calcType; coverageIndex; modalFactor; vectorParms)
+Funktion
+SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;#coverageIndex) - 1;IF ( /*Is coverage included?*/ 'ModePremium Coverage Is Included'(calcType;coverageIndex;#lifeparticipantIndex;vectorParms;'SharedVector ModePremium yearIndex'(vectorParms)) ; çä   /*yes - return premium*/ 'ModePremium Coverage Life Base Premium'(calcType;coverageIndex;#lifeparticipantIndex;modalFactor;vectorParms) + 'ModePremium Coverage Life Table Rating'(calcType;coverageIndex;#lifeparticipantIndex;modalFactor;vectorParms) + 'ModePremium Coverage Fees'(calcType;coverageIndex;#lifeparticipantIndex;modalFactor;vectorParms) +  //only QAB coverage optionsçä'TradDocs QAB ModePremium Coverage CovOptions'(calcType;coverageIndex;modalFactor;vectorParms) ; çä   // Else no - return zeroçä0çä))
+F1 5da3b1d1 4f03ef61 0 458da628 0 0 2
+WLFaceSolves ModePremium Coverage Modal Premium Units(calcType; coverageIndex; vectorParms; units)
+Funktion
+ // Mode premium, using actual mode premium factorçäIF ( /*Coverage is PUAR*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä   // Yes - ignore ALIR for Money purchase solveçä0 ; çä   /*'ALIR Total Unscheduled Payments'(1) +  'ALIR Modal Payment'('CalcType Current'(calcType); 1);*///'ALIR Premium Stream'('CalcType Guaranteed'(calcType); coverageIndex; 'ModePremium Policy Duration'(vectorParms));çä// No - normal calculation for other coveragesçä 'ModePremium Round'(SUMX(lifeparticipantIndex;0;'Policy Number of LifeParticipant'(calcType;#coverageIndex) - 1;'ModePremium Coverage Premium'(calcType;coverageIndex;#lifeparticipantIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector WLFaceSolves Units Adjusted'(vectorParms;units)) + 'ModePremium Coverage Life Flat Extras'(calcType;coverageIndex;#lifeparticipantIndex;'ModePremium Modal Factor'('Policy PaymentMode');'Vector WLFaceSolves Units Adjusted'(vectorParms;units))))çä)
+F1 458da628 4f03ef61 0 0 0 0 2
+TGTDB PUAR 7pay Premium(calcType; yearIndex)
+Funktion
+ //This needs to be completed once the premium solvesçä//are completedçä'GEN Round'(MAX(('TGTDB Present Value Death Benefits'(calcType;yearIndex) + 'TGTDB Present Value QAB Premiums'(calcType;yearIndex) - SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;'WLCashValue Proj Coverage CV'('CalcType Current'(calcType);#coverageIndex;yearIndex;0)) //Empty WLProjVectorçä - SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF (NOT('Coverage Type is BIR'(calcType;#coverageIndex)) && NOT('LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate))) ; çä  'ModePremium Coverage PremiumPerUnit'(calcType;#coverageIndex;0;'Vector TGTDB ModePremium Cov with CovOpt Rate Vector Parms'(calcType;#coverageIndex;yearIndex)) ; çä  0çä)) * 'ACT 7yr Annuity Due'(calcType;yearIndex - 1;0;'vector TGTDB ACTL Info'(calcType;0))) / ('ACT 7yr Annuity Due'(calcType;yearIndex - 1;0;'vector TGTDB ACTL Info'(calcType;0)) - 1 + 'PUACalc PremiumLoad'(calcType;'Std PUAR coverageIndex'(calcType);yearIndex) * .01);0);2)
+F1 65b9b00 d5e56cf 0 76d5efd4 0 0 2
+ModePremium Coverage PCLoad Rate(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+IF ('ModePremium Coverage PCLoad Dur'(calcType;coverageIndex;lifeparticipantIndex;vectorParms) > 0 ; çä  Rate('Policy Coverage ProductCode'(calcType;coverageIndex);"PCLOAD";'ModePremium TransEffDate'(vectorParms);'Vector ModePremium Life Coverage Rate Vector Parms'(calcType;"PCLOAD";coverageIndex;lifeparticipantIndex;vectorParms)) ; çä  0çä)
+F1 76d5efd4 d5e56cf 0 0 0 0 2
+ModePremium Coverage PCLoad Dur(calcType; coverageIndex; lifeparticipantIndex; vectorParms)
+Funktion
+'Duration Year'('Policy LifeParticipant TempPercentageLoadingEndDate'(calcType;coverageIndex;lifeparticipantIndex);'Policy EffDate') - 'Duration Year'('Policy LifeParticipant TempPercentageLoadingStartDate'(calcType;coverageIndex;lifeparticipantIndex);'Policy EffDate')
+A0 94faf5a 0 0 0 0 0 0
+
+T0 a63237 0 0 0 0 0 0
+
+I0 40df3cb8 0 e961d94 0 0 0 0
+
+I0 e961d94 40df3cb8 0 0 0 0 0
+PAGBenefitAmount.pms
+-
+O0
+E0
+L0
+B0
+P1
+2a845354
+F53
+3a85d04
+4b27e228
+d6b57db
+5d820077
+75ea4d78
+51bb2240
+44b21663
+f46f411
+3077d105
+fcc00ca
+10c0f185
+7ace36ca
+20702646
+79d94e89
+20f3352e
+34718e82
+2bc4a3c0
+7119611f
+310ab017
+1469cb57
+4f4fc7c5
+a1a7838
+64a6a548
+5d654b79
+4c4cc601
+416198c6
+553b2099
+5890980f
+ba6f7a9
+4fc7acea
+385fa7f5
+4ca282bb
+1bab1a09
+7816761d
+551009f0
+2e71fc5f
+5efb9b43
+3ba3d55f
+2229228e
+5e5ec9ae
+313a0d58
+63845479
+7b9f93f
+2944216c
+3c092b3e
+5f798fe0
+54c34bf8
+67798299
+45c62d38
+75075e4b
+4f03ef61
+65b9b00
+76d5efd4
+A0
+T0
+!128
+3a85d04 -2 -2
+Description: If the base premium for the Coverage is to be included, return the base premium amount.  The base premium amount will be equal to the coverage premium per unit multiplied by the number of coverage units.çä çäModification Log:çä07302013 pA-G1401 JL Override function. Supports different PremRules (specificaly Flat Amount Premium)
+2bfe93d6 -2 -2
+Description: If the base premium for the Coverage is to be included, return the base premium amount.  The base premium amount will be equal to the coverage premium per unit multiplied by the number of coverage units.çä çäModification Log:çä29/09/2014 PA1403 PAC038 JL Modify PUARçä08142013 pA-G1401 Add waiverçä08132013 pA-G1401 JL Add lifeparticipantIndexçä07302013 pA-G1401 JL Override function. Supports different PremRules (specificaly Flat Amount Premium)
+447e700d -2 -2
+Description: WOP Premium Rateçä çäModification Log:çä29/09/2014 PA1403 PAC038 JL Add CalcRule callçä08212013 pA-G1401 Standardiseçä08142013 pA-G1401 Initial Rule
+4b27e228 -2 -2
+Description: Returns premium to be added due to the flat extras for the particular coverage.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipant sumçä08022013 pA-G1401 JL Override function. Add support for Country and Occupation Flat Extras
+4218c55a -2 -2
+Description: Returns premium to be added due to the flat extras for the particular coverage.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Override function. Add support for Country and Occupation Flat Extras
+60803597 -2 -2
+Description: Returns premium to be added due to the country flat extras for the particular coverage.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Initial Rule
+1a04af67 -2 -2
+Description: CountryFlatExtraAmt, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Initial Rule
+5cf48771 -2 -2
+Description: Returns premium to be added due to the occupation flat extras for the particular coverage.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Initial Rule
+1fa5595d -2 -2
+Description: OccupationFlatExtraAmt, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Initial Rule
+6439626d -2 -2
+Description: Returns premium to be added due to the table rating for the particular coverage.  çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Override function. Add support for Country and Occupation Loads
+7b7ac53f -2 -2
+Description: Percetage Loading, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Initial Rule
+57028a33 -2 -2
+Description: Country Percetage Loading, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Initial Rule
+84027a9 -2 -2
+Description: Occupation Percetage Loading, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä08022013 pA-G1401 JL Initial Rule
+d6b57db -2 -2
+Description: Build vector for rate model call.çä çäModification Log:çä08132013 pA-G1401 JL Initial Rule
+46974f99 -2 -2
+Description: Query the rate model to ascertain which data items are required for a rates call.çä çäModification Log:çä08132013 pA-G1401 JL Initial Rule
+4e21fcd7 -2 -2
+Description: Build rate access vectorçä çäModification Log:çä08132013 pA-G1401 JL Initial Rule
+efc3cb7 -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call a Coverage.çä çäModification Log:çä10/06/2014 - PAC038- GWL - JL - Adjust duration to take yearIndex into account.çä08132013 pA-G1401 JL Add PCLOADDURçä08132013 pA-G1401 JL Initial Rule
+75ea4d78 -2 -2
+Description:  Returns the modal ROP eligible premiumçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+51bb2240 -2 -2
+Description:  Returns the annual ROP eligible premiumçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+44b21663 -2 -2
+Description:  Returns the annual ROP eligible premium excluding the particular coverage.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+f46f411 -2 -2
+Description: Premium basis for WP premium calculationçä çäModification Log:çä08142013 pA-G1401 JL Initial Rule
+36216d7e -2 -2
+Description: Total premium to be used for a WOP premium calculationçä çäModification Log:çä08142013 pA-G1401 Initail Premium
+3077d105 -2 -2
+Description: Sum the mode premiums for each of the active coveragesçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/06/2009 PA1013 CMC added policy duration to Std Coverage Is Pending.çä10/31/2007 CSC Initial Calculation/Ruleçä
+fcc00ca -2 -2
+çäModification Log:çä08142013 pA-G1401 Use capped premçä08132013 pA-G1401 JL Initial Rule. Add lifeparticipant sum.
+1d80b237 -2 -2
+Description: Capped modal lifepraticipant premium for a given benefit. Capping may be applied to premiums for benefits where there are multiple lifes.çä çäModification Log:çä08142013 pA-G1401 Initial Rule
+1781096 -2 -2
+Description: Return the mode premiums for the particular Coverageçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+20f3c1f1 -2 -2
+Description: Return the mode premiums. Adds the extra life premium before modalizing for the particular Coverageçä çäModification Log:çä08142013 pA-G1401 Remove Roundçä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+427fb60a -2 -2
+Description: Return the mode premiums. Modalizes the particular Coverage before adding the extra life premium çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+ce71863 -2 -2
+Description: Return the total annual premium for the particular coverage.çä çäModification Log:çä08142013 pA-G1401 Remove Fees, add the higher up, as fees are not part of the capped premium consideration.çä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/09 - PA1277 - JL - Remove "YearIndex from ModePremium Vector" function; replace with SharedVector Functionçä06/02/2009 - PA1013 - added 'SharedVector ModePremium yearIndex'(vectorParms) to the third parm of 'ModePremium Coverage Is Included'çä10/31/2007 CSC Initial Calculation/Rule
+35fdea77 -2 -2
+Description: If the base premium for the Coverage is to be included, return the base premium amount.  The base premium amount will be equal to the coverage premium per unit multiplied by the number of coverage units.çä çäModification Log:çä06/08/2011 PAC022 DI JL Check that policy type is Life before checking PUA / BIRçä04/06/2011 CMC wmA Integration merge regression Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.21.09 - PA1277 - vm - replaced the 'Policy Coverage CurrentNumberOfUnits to allow variability for WLFace Solves.çä10/31/2007 CSC Initial Calculation/Rule
+4a30234b -2 -2
+Description: Returns premium to be added due to the table rating for the particular coverage.  çä çäModification Log:çä12/22/2011 wmA integration CMC added percentage loading option.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä2/15/2010 DT pA1001 allowed for TempFlat Extrasçä10/21/2009 NBA Integration CMC removed primary insured check and set to participant index 0.çä10/31/2007 CSC Initial Calculation/Rule
+15b4e473 -2 -2
+Description: If the table rating premium for the Coverage is to be included, return the table rating premium amount.  çä çäModification Log:çä06/08/2011 PAC022 DI JL Check that policy type is Life before checking PUA / BIRçä04/06/2011 CMC wmA Integration merge regression Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - If FA passed in vector, use thatçä10/31/2007 CSC Initial Calculation/Rule
+76d164b1 -2 -2
+Description: If the table rating premium for the Coverage is to be included, return the table rating premium amount.  çä çäModification Log:çä08132013 pA-G1401 JL Add PCLoadçä08132013 pA-G1401 JL Add lifeparticipantIndexçä06/08/2011 PAC022 DI JL Check that policy type is Life before checking PUA / BIRçä04/06/2011 CMC wmA Integration merge regression Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - If FA passed in vector, use thatçä10/31/2007 CSC Initial Calculation/Rule
+2e1da092 -2 -2
+Description: Return the total of the policy fee and collection fee that are included in the mode premium calculation.  The assumption is that only policy and collection fees will exist, they will be stored on an annual basis, and they will only pertain to the base coverage.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+71969a65 -2 -2
+Description: Returns the policy fee amount to be included in the mode premium calculation.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+5e4e4cdf -2 -2
+Description: Returns the annual policy fee amount.  Note that the policy fee stored is assumed to be the annual policy fee.çä çäModification Log:çä08142013 pA-G1401 Add case 6 for Rate Tableçä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+6d306120 -2 -2
+Description: Fee amount from rate table.çä çäModification Log:çä08142013 pA-G1401 Initial Rule
+7c6bad17 -2 -2
+Description: Rule is for a flat policy fee amount.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+2e679a79 -2 -2
+Description: Rule is for a flat policy fee amount if the face amount is greater or equal to a specified number.  Otherwise, there will be no policy fee.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+4cce9e53 -2 -2
+Description:  Returns a policy fee amount. If the number of coverage units is greater or equal to a specified number, then the amount is based on the number of units. Otherwise, it will be equal minimum policy fee amount.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+6d3935d5 -2 -2
+Description: Rule for a policy fee amount subject to minimum and maximum limits.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3358a2bc -2 -2
+Description: Returns the minimum issue units.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+7e9d3018 -2 -2
+Description: Returns the fee cap amount.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+5652f606 -2 -2
+Description: Returns the minimum fee amount.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+2936f6c3 -2 -2
+Description: Returns either a fee percent or a fee amount depending on the FeeCalcRule.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+31cf20d1 -2 -2
+Description: Returns TRUE if FeeCalcRule is a percentage, the minimum fee amount.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+e0e713b -2 -2
+Description: Returns the collection fee.  Note this function only pertains if plan information is passed as attributes.çä çäModification Log:çä9/7/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3f4e74f7 -2 -2
+Description: Returns the annual collection fee if the fee is to be included in the calculation based on the mode.  çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+788c771 -2 -2
+Description: Returns the true (i.e. 1) if the policy fee is to be included, based on the payment mode and the policy fee addition rule.çä çäModification Log:çä08142013 pA-G1401 Global caseçä10/31/2007 CSC Initial Calculation/Rule
+7b18647c -2 -2
+Description: Returns premium to be added due to the flat extras for the particular coverage.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/09 - PA1277 - JL - Remove "YearIndex from ModePremium Vector" function; replace with SharedVector Functionçä06/02/2009 - PA1013 - added 'SharedVector ModePremium yearIndex'(vectorParms) to third parm of 'ModePremium Coverage Is Included'çä10/31/2007 CSC Initial Calculation/Rule
+38fffc86 -2 -2
+Description: Returns perminent flat extra premiums for the particular coverage associated with the primary insured.çä çäModification Log:çä08132013 pA-G1401 JL Allow for WP caseçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.21.09 - PA1277 - vm - replaced the 'Policy Coverage CurrentNumberOfUnits to allow variability for WLFace Solves.çä04/25/2008 Replaced TransEffDur with 'ModePremium Policy Duration'(vectorParms)çä10/31/2007 CSC Initial Calculation/Ruleçä
+6898a549 -2 -2
+Description: PermFlatExtraAmt, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Initial Calculation
+3f881209 -2 -2
+Description: Returns first temporary flat extra premiums for the particular coverage associated with the primary insured.çä çäModification Log:çä08132013 pA-G1401 JL Allow for WP caseçä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Use ModePrem TempFlatExtra instead of Lifeparticipant ...çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.21.09 - PA1277 - vm - replaced the 'Policy Coverage CurrentNumberOfUnits to allow variability for WLFace Solves.çä10/31/2007 CSC Initial Calculation/Rule
+40a41810 -2 -2
+Description: TempFlatExtraAmt, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Initial Calculation
+559db03b -2 -2
+Description: Returns the sum of temp flat extras, which are contained in SubstandardRating off of LifeParticipant) associated with the primary insured.çäââçäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Use ModePremium specific Subst function calls (instead of from Lifeparticipant)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+98051b1 -2 -2
+Description: Returns the individual temp flat extra, based on the index, which is contained in LifeParticipant_SubstandardRating) associated with the primary insured.çäââçäModification Log:çä08132013 pA-G1401 JL Allow for WP caseçä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Use ModePremium specific Substd Functions instead of Lifeparticipantçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+73c114a3 -2 -2
+Description: Number of Substandard Ratings, dependent on the policy product typeçä çäModification Log:çä07/20/2011 PAC022 DI JL Initial Calculation
+1010aa36 -2 -2
+Description: Substandard Rating Temp Flat Amount, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Initial Calculation
+3d88f243 -2 -2
+Description: Substandard Rating Temp Flat Start Date, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Initial Calculation
+71f3c72b -2 -2
+Description: Substandard Rating Temp Flat End Date, dependent on the policy product typeçä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Initial Calculation
+74e0b9d2 -2 -2
+Description: Sum the premium amount for all the active CovOptions associated with a particular coverage.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä12/21/2009 nbA Integration CMC updated the inforce check to pull the duration from the vector.çä10/31/2007 CSC Initial Calculation/Rule
+74e0b9d2 0 2
+
+e5eb74 -2 -2
+Function created on 3/13/08 to alllow table ratings to be recognized and included for coverage options in the calculation of QAB premiums for 7 pay calculations.  SMLçä çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3712197c -2 -2
+Description: Returns the total premium associated with a particular CovOption for a particular Coverage.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3712197c 0 2
+
+4f362fb9 -2 -2
+Description: Returns the base premium for a particular CovOption within a particular Coverage.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/10/2010 - nbA merge to Staging - BT - Replace logic with function to testçä11/19/2009 - PAC006 - wdp - Added check for variable non-base coverages with WPR coverage options. In this case the coverageAmt can vary and thus that of the number of units for the waiver of premium option as well. This is supported by using the number of units for the coverage instead.çä10/31/2007 CSC Initial Calculation/Rule
+4f362fb9 0 2
+
+292d326b -2 -2
+çä08/26/2011 PAC023 DI JL For DI use Cov number of units from vectorçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä5/10/2010 - Merge nba into Staging - BT - move this logic into separate function to test
+3ac66949 -2 -2
+Description: Returns the fees associated with a CovOption for a particular Coverage.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+7a6e30e5 -2 -2
+Description: Returns the premium added due to the flat extras for a particular CovOption within a particular Coverage.çä çäModification Log:çä08/26/2011 PAC023 DI JL Add vectorParms to CovOpt Perm Flat Extra calcçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+56be1e10 -2 -2
+Description: Returns perminent flat extra premiums for the particular coverage option within a particular coverage associated with the primary insured.çä çäModification Log:çä08/26/2011 PAC023 DI JL Use ModePrem CovOpt number of units (not direc Policy value)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+194c20d9 -2 -2
+Description: Returns first temporary flat extra premiums for the particular coverage option within a particular coverage associated with the primary insured.çä çäModification Log:çä08/26/2011 PAC023 DI JL Use ModePrem CovOpt number of units (not direc Policy value)çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1952ead8 -2 -2
+Description: Returns sum of temp flat extras, which are contained in SubstandardRating off of LifeParticipant for the particular coverage option within a particular coverage associated with the primary insured.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+5d943804 -2 -2
+Description: Returns individual indexed temp flat extra, which is contained in SubstandardRating off of LifeParticipant for the particular coverage option within a particular coverage associated with the primary insured.çä çäModification Log:çä08/26/2011 PAC023 DI JL Use ModePrem CovOpt number of units (not direc Policy value); add vectorparmsçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+7ace36ca -2 -2
+Description: Returns true (i.e. 1) if the coverage is to be included based on both the calc option and the commissionable option.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä12/8/2010 - PAC013 - calcyType - BT - added ModePremium Attained Age Is Less Than PaytoAge to help testçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä12/30/2009 - pA1001 - Performance - BT - Use an adjusted PaytoAge function that handles coverages that use PayToYearçä11/16/2009 - PAC001 - changed to CoverageProductCode for PayToAge instead of PolicyProductCodeçä02/06/2009 - PA1013 - added yearIndex as a parmçä10/31/2007 CSC Initial Calculation/Rule
+20702646 -2 -2
+Description:çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä12/8/2010 - PAC013 - calcType - BT - added initial function to help test
+14a9596c -2 -2
+Description:çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä20/8/2011 PAC022 DI JL Use DI Participant IssueAge if applicableçä12/8/2010 - PAC013 - calcType - BT - added initial function to help test
+79d94e89 -2 -2
+Description:  Returns true (i.e. 1) if the particular Coverage is to be included in the mode premium calculation.çä çäIf the calc option is either to:çä1)  Omit a specified CovNumber and the CovNumber to omit is not equal to the CovNumber being calculated, orçä2)  Calculate a specified CovNumber and the CovNumber currently being calculated is not that specified CovNumber,çä3)  Calculate ROP eligible premium and the phase currently being calculated is not ROP eligible, then it will return false.  Otherwise, it will return true (i.e 1).çä çäModification Log:çä08142013 pA-G1401 Add Waiver "W"çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+20f3352e -2 -2
+Description: Returns true (i.e. 1) if the coverage is to be included based on both the commissionable option.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+34718e82 -2 -2
+Description: Returns true (i.e. 1) if the coverage base premium is to be included based on both the calc option and the commissionable option.çä  çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+2bc4a3c0 -2 -2
+Description: Returns true (i.e. 1) if the coverage base premium is to be included based on the calc option.çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+7119611f -2 -2
+Description: Returns true (i.e. 1) if the coverage base premium is to be included based on the commissionable option.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+310ab017 -2 -2
+Description: Returns true (i.e. 1) if the table rating is to be included in the mode premium calculation for the particular coverage.çä çäModification Log:çä08132013 pA-G1401 JL Allow for WP caseçä08142013 pA-G1401 Add Waiverçä06/08/2011 PAC022 DI JL Check that policy type is Life before checking PUA / BIRçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIRçä10/31/2007 CSC Initial Calculation/Rule
+1469cb57 -2 -2
+Description: Returns true (i.e. 1) if the table rating is to be included in the mode premium calculation for the particular coverage based on the calculation option.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+4f4fc7c5 -2 -2
+ Description: Returns true (i.e. 1) if the table rating is to be included in the mode premium calculation for the particular coverage based on whether the calculation is for the commissionable premium and the commissionable indicator.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+a1a7838 -2 -2
+Description: Returns true (i.e. 1) if the CovOption is to be included in the mode premium calculation.çä çäModification Log:çä07/20/2011 PAC022 DI JL Use ModePremium CovOpt PayToAge instead of LPçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä2/16/2010 - pA1001 - DT undid minus 1 changeçä2/15/2010 - pA1001 - DT minus one to durationçä2/15/2010 - pA1001 - DT changed TransEffDur in InForce check to look at durationçä11/19/2009 - wdp - Added check for pay to ageçä10/31/2007 CSC Initial Calculation/Rule
+a1a7838 0 2
+
+64a6a548 -2 -2
+Description: CovOption pay to age, dependent on policy product typeçä çäModification Log:çä07/20/2011 PAC022 DI JL Initial Calculation
+5d654b79 -2 -2
+Function created on 3/13/08 to alllow table ratings to be recognized and included for coverage options in the calculation of QAB premiums for 7 pay calculations.  SMLçä çäModification log:çä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIR
+4c4cc601 -2 -2
+Description: Returns true (i.e. 1) if the CovOption is to be included in the mode premium calculation based on the calculation option.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+4c4cc601 0 2
+
+416198c6 -2 -2
+Description: Returns true (i.e. 1) if the CovOption is to be included in the mode premium calculation based on whether the calculation is for the commissionable premium and the CovOption commissionable indicator.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+5890980f -2 -2
+Description: Returns true (i.e. 1) if the policy fee is to be included in the mode premium calculation.çä çäModification Log:çä01/18/2008 Added logic to exclude policy fee calcs if not defined on productçä10/31/2007 CSC Initial Calculation/Rule
+ba6f7a9 -2 -2
+Description : Returns 0 if no Policy fee is defined on product definitionçä çäModification log:çä2/1/2008 : CSC initial function - Phase IIçä
+4fc7acea -2 -2
+Description: Returns true (i.e. 1) if the policy fee is to be included in the mode premium calculation based on the calculation option.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+385fa7f5 -2 -2
+Description: Returns true (i.e. 1) if the policy fee is to be included in the mode premium based on whether the calculation is for the commissionable premium and the policy fee commissionable indicator.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+4ca282bb -2 -2
+Description: Returns true (i.e. 1) if the collection fee is to be included in the mode premium calculation.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1bab1a09 -2 -2
+Description : Returns 0 if no Collection fee is defined on product definitionçä çäModification log:çä2/1/2008 : CSC initial function - Phase IIçä
+7816761d -2 -2
+Description: Returns true (i.e. 1) if the collection fee is to be included in the mode premium calculation based on the calculation option.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+551009f0 -2 -2
+Description: Returns true (i.e. 1) if the collection fee is to be included in the mode premium calculation based on whether the calculation is for the commissionable premium and the collection fee commissionable indicator.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+2e71fc5f -2 -2
+Description: Returns true (i.e. 1) if the flat extra is to be included in the mode premium calculation for the particular coverage.çä çäModification Log:çä08132013 pA-G1401 JL Allow for WP caseçä06/08/2011 PAC022 DI JL Check that policy type is Life before checking PUA / BIRçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIRçä10/31/2007 CSC Initial Calculation/Rule
+5efb9b43 -2 -2
+Description: Returns true (i.e. 1) if the flat extra is to be included in the mode premium calculation based on the calculation option.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3ba3d55f -2 -2
+Description: Returns true (i.e. 1) if the flat extra is to be included in the mode premium calculation based on whether the calculation is for the commissionable premium and the commissionable indicator for the coverage flat extra.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+5e5ec9ae -2 -2
+Description:  The ROP premium needs to be "grossed up" if the ROP premium is included in the premium eligible for refund. çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä12/8/2010 - PAC013 - calcType - BT - removing unused codeçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+313a0d58 -2 -2
+Description: Returns the Coverage premium per unit.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä06/08/2011 PAC022 DI JL Check that policy type is Life before checking PUA / BIRçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/22/2010 - pA1001 - rm - Moved decision for determining current rate in initial term to separateçä function 'ModePremium Is Current Rate Guaranteed'.  Added rateType decision assignment to newçä function 'ModePremium Current RateType'çä10/31/2007 CSC Initial Calculation/Rule
+313a0d58 0 2
+
+63845479 -2 -2
+çäModification Log:çä08132013 pA-G1401 JL Seperate out function for readibility and re-use.
+7b9f93f -2 -2
+Description: Determines whether current rates are guaranteed - within initial premium term periodçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/22/2010 - pA1001 - rm - Moved out of 'ModePremium Coverage PremiumPerUnit' for reusability
+2944216c -2 -2
+Description: For indeterminate premium current rates, determine rateType by checking initial term periodçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/22/2010 - pA1001 - rm - initial function
+3c092b3e -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call a Coverage, depending on the type (Life or DI).çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/12/2011 PAC022 DI JL Initial Calculationçä
+6a50916a -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call a Coverage.çä çäModification Log:çä07/12/2011 PAC022 DI JL Rename to Life Specificçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/17/2009 - PAC002 - JL - If FA passed in vector, use that to calc band codeçä10/31/2007 CSC Initial Calculation/Rule
+fe53ddd -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call for a DI Coverage.çä çäModification Log:çä08/23/2011 PAC022 DI JL Include state code; correct rate parm position table in RateModelFunctions.çä08/16/2011 PAC022 DI JL Add BenefitPeriod in vectorçä07/12/2011 PAC022 DI JL Initial Calculation
+5f798fe0 -2 -2
+Description: Returns the CovOption premium per unit. çä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+54c34bf8 -2 -2
+Description: Cov or Rider COI Rate Type, dependent on policy product type.çä çäModification Log:çä07/20/2011 PAC022 DI JL Initial Calculation
+67798299 -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call a CovOption.çä çäModification Log:çä07/20/2011 PAC022 DI JL Diverge for Life & DI Policiesçä11/09/2010 - PAC011 External Rate Access - JL - Flesh out vector to be consistent with UL parms vector, adding CovOption ProductCode.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+13871453 -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call a CovOption.çä çäModification Log:çä07/20/2011 PAC022 DI JL Renamed (incl Life)çä11/09/2010 - PAC011 External Rate Access - JL - Flesh out vector to be consistent with UL parms vector, adding CovOption ProductCode.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+a5ff44c -2 -2
+Description: Returns the vector for the parameters needed for a premium rate access call a CovOption.çä çäModification Log:çä09/06/2011 PAC022 DI JL Add BenPeriod & ElimCodeçä11/09/2010 - PAC011 External Rate Access - JL - Flesh out vector to be consistent with UL parms vector, adding CovOption ProductCode.çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+45c62d38 -2 -2
+Description: Returns the number of active flat extras associated with the particular Coverage.  Note that the initial permanent and temporary flat extra for Coverage will come from LifeParticipant.  Additional substandard flat extras will from from the SubstandardRating object under LifeParticipant.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipantIndexçä07/20/2011 PAC022 DI JL Use ModePremium Specific PermFlatExtraAmt & TempFlatExtraAmtçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+75075e4b -2 -2
+Description: Returns the number of flat extras from the SubstandardRating object within LIfeParticipant.çä çäModification Log:çä08132013 pA-G1401 JL Add lifeparticipant sumçä07/22/2011 PAC022 DI JL Use ModePrem specific Substd Rating instead of Lifeparticipantçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1183305b -2 -2
+çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/26/2011 - PAC013 CMC update for sevenpay calctypeçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+3b729f14 -2 -2
+çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+403afa16 -2 -2
+Description : Returns the total premium for all coverages which are not çä  linked to base coverage unitsçä çäModification log : çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/12/2008 - NT - reversed quick fix for delivery, and used quicker direct method for face solveçä08/26/2008 - Phase 3 - RPU - BMS - Add mode to coverage premiumçä07/07/08 - Initial CSC function
+45169080 -2 -2
+Description:çäCalculate mode premium for specified coverage and unitsçä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - PA1277 - vm - modified to allow for variability in unit for WLFace Solves.çä03/06/2008 CSC Illustrations ILLUS001
+4eb8fcfe -2 -2
+Description: Return the total annual premium for the particular coverage, excluding nonQAB coverage options at this level.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/27/2009 - PAC004 - MO - this is the function 'ModePremium Coverage Premium' with only QAB coverage option premiums.çä06/03/09 - PA1277 - JL - Remove "YearIndex from ModePremium Vector" function; replace with SharedVector Functionçä06/02/2009 - PA1013 - added 'SharedVector ModePremium yearIndex'(vectorParms) to the third parm of 'ModePremium Coverage Is Included'çä10/31/2007 CSC Initial Calculation/Rule
+5da3b1d1 -2 -2
+Description:çäCalculate mode premium for specified coverage and unitsçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä07/15/2010 CMC wmA Integration ENH1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05.22.09 - PA1277 - vm - Mode Premium fucntionality is now used as opposed to the WLFace Solve duplicates.çä7/17/2008 - NT - fixed mode premium factor being passed downçä03/06/2008 CSC Illustrations ILLUS001
+458da628 -2 -2
+Description: Returns the PUAR premium the requested year such that the policy does not become a MEC.çä çäModification Log:çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä04/06/2011 CMC wmA Integration merge regression Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/16/2009 - PAC002 - JL - Add empty WLProjVector parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIRçä06/12/2009 - PA1277 - JL - Round premiumçä04/26/2008 - rlc - remove paramter from Std PUAR coverageIndexçä01/23/2008 CSC Initial Calculation/Ruleçä
+65b9b00 -2 -2
+Description: PCLoad rateçä çäModification Log:çä08132013 pA-G1401 JL Initial Rule
+76d5efd4 -2 -2
+Description: PCLoad durationçä çäModification Log:çä08132013 pA-G1401 JL Initial Rule
+;Offset=00000000

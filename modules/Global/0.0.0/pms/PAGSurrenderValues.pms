@@ -1,0 +1,130 @@
+;1	08.12.2016 13:40:53	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 4cc9767e 0 0 0 2
+
+--description
+Global Surrender Values model.çä çäRELEASE LOG:çäRELEASE pA 1401
+P13 4cc9767e de0804 0 0 0 0 2
+Global Surrender Values
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Surrender Values model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGSurrenderValues.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 de0860 0 4f098f88 0 0 0 0
+
+F1 4f098f88 de0860 1c1c8b9d 0 0 0 2
+:SURR
+Funktion
+
+F1 1c1c8b9d 4f098f88 0 471cb167 0 0 2
+SURR Vector Parms Build(SurrType;yearIndex;vectorRateQuery)
+Funktion
+vectorx(dataItem;0;v_length(vectorRateQuery) - 1;'SURR Vector GetDataItemPair'(SurrType;yearIndex;e_(vectorRateQuery;#dataItem)))
+F1 471cb167 4f098f88 0 70c49b77 0 0 2
+SURR Vector Parms GetQuery(calcType; rateType)
+Funktion
+v_construct(Rate('Policy ProductCode';rateType & "_Query";TransEffDate;'Gen Vector Blank'))
+F1 70c49b77 4f098f88 0 643ecf30 0 0 2
+SURR Vector GetDataItemPair (SurrType;yearIndex;dataItem)
+Funktion
+v_(dataItem;CASE(toupper(dataItem);çä  "SURRTYPE" : SurrType;çä  "CURRENCY" : 'Payment Currency';çä  "DURATION" : yearIndex;çä   : ERROR("Data Item not defined in 'SURR Rate Vector GetDataItemPair': ";dataItem))çä)
+F1 643ecf30 4f098f88 0 50a16a36 0 0 2
+SURR Rate Vector Parms(calcType; SurrType; yearIndex;rateType)
+Funktion
+'SURR Vector Parms Build'(SurrType;yearIndex;'SURR Vector Parms GetQuery'(calcType;rateType))
+F1 50a16a36 4f098f88 6b53ad73 4069118c 0 0 2
+SCRule Full Surrender Rule Amount(calcType; surrChargeRule; yearIndex; coverageIndex; cov_prev_surr_charges)
+Funktion
+'SCRule Surrender Charge Rule Amount'(calcType;surrChargeRule; // Primary surrender charge ruleçäcoverageIndex; // Coverage indexçä'FeeType FullSurrenderCharge'; // Full surrender charge typeçäyearIndex; // Policy yearâçä0; // Withdrawal amount (not needed for full surrenders)çä0; //'SCRule Surrender Target Premium'(coverageIndex);â// Calculate surrender target premiumçäcov_prev_surr_charges // Surrender charges previously applied to the coverageçä)
+F1 6b53ad73 50a16a36 1dbb5ca2 4ebf3e51 0 0 2
+SCRule Surrender Charge FeePct(calcType; yearIndex; fee_type)
+Funktion
+IF ( /*Is rate tabnle defined in product def?*/ 'PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä   // TableRef not defined.  Get surrender charge percent from FeePct in plan info.  çä'PI PolicyProduct Fee FeePct'('Policy ProductCode';fee_type;'Policy EffDate') ; çä   // TableRef defined.  Get surrender charge percent from rate access.çä'SURR Rate'(calcType;IF (fee_type = 'FeeType PartialSurrenderCharge' ; çä    4 ; çä    3çä  );yearIndex)çä)
+F1 1dbb5ca2 6b53ad73 0 0 0 0 2
+SURR Rate(calcType;SurrType;yearIndex)
+Funktion
+Rate('Policy ProductCode';"SURR_Rate";TransEffDate;'SURR Rate Vector Parms'(calcType;SurrType;yearIndex;"SURR_Rate"))
+F1 4ebf3e51 50a16a36 22c3ade7 0 0 0 2
+SCRule Surrender Charge FeeAmt(calcType; yearIndex; fee_type)
+Funktion
+IF ('PI PolicyProduct Fee TableRef TableRefKey'('Policy ProductCode';fee_type;'Policy EffDate') ALIKE 'GEN Vector Blank' ; çä   // Rate Table not defined.  Get premium load flat amount from FeeAmt in plan info.  çä'PI PolicyProduct Fee FeeAmt'('Policy ProductCode';fee_type;'Policy EffDate') ; çä   // Rate Table defined.  Get premium load flat amount from rate access.çä'SURR Amount'(calcType;IF (fee_type = 'FeeType PartialSurrenderCharge' ; çä    4 ; çä    3çä  );yearIndex)çä)
+F1 22c3ade7 4ebf3e51 0 0 0 0 2
+SURR Amount(calcType;SurrType;yearIndex)
+Funktion
+Rate('Policy ProductCode';"SURR_Amt";TransEffDate;'SURR Rate Vector Parms'(calcType;SurrType;yearIndex;"SURR_Amt"))
+F1 4069118c 4f098f88 0 0 0 0 2
+SCRule Surrender Charge Rule Amount(calcType; rule_num; coverageIndex; fee_type; yearIndex; wdrwl_amt; surr_target_prem; prev_surr_charges)
+Funktion
+CASE( /*Surrender charge rule*/ 'SCRule Surrender Charge Rule'(rule_num;fee_type);çä   // No charge applicableçä"" : 0;çä   // Flat amount per transactionçä"1" : 'SCRule Surrender Charge Rule Flat Charge'(calcType;coverageIndex;fee_type;yearIndex);çä   : 'Messages SystemMessage'("CA1001";'Message Language';v_('SCRule Model Name';"'PAGSCRule Surrender Charge Rule Amount'";'SCRule Surrender Charge Rule'(rule_num;fee_type))))çä
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 1ea918a3 0 71b4358e 0 0 0 0
+
+I0 71b4358e 1ea918a3 0 0 0 0 0
+PAGCashValueProjections.pms
+-
+O0
+E0
+L0
+B0
+P1
+4cc9767e
+F1
+4f098f88
+A0
+T0
+!10
+1c1c8b9d -2 -2
+Description: Build rate access vectorçä çäModification Log:çä12/19/2013 pA-G1401 JC  Modified Function for Policy Fees Caculationsçä11152013 pA-G1401 JL Initial Rule
+471cb167 -2 -2
+Description: Query the rate model to ascertain which data items are required for a rates call.çä çäModification Log:çä11152013 pA-G1401 JL Initial Rule
+70c49b77 -2 -2
+Description:  Rate Vector for Commission RateçäModification Log:çä12/19/2013 pA-G1401 JC  Modified Function for Policy Fees Caculationsçä11152013 pA-G1401 JL Initial Rule
+643ecf30 -2 -2
+Description: Build vector for rate model call.çä çäModification Log:çä01/21/2013 pA-G1401 JC  Modified Function for Policy Surrender Calculationsçä11152013 pA-G1401 JL Initial Rule
+50a16a36 -2 -2
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+6b53ad73 -2 -2
+Description: Returns the surrender charge percent.çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä9/7/2010 - PAC019 - Rate Access Var - BT - remove since input exists in PIçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1dbb5ca2 -2 -2
+11152013 pA-G1401 JL Initial Rule
+4ebf3e51 -2 -2
+Description: Surrender charge flat amount.  çä çäModification Log:çä06/20/2012 pA2118 CMC Change TableIdentity to TableRefKeyçä9/7/2010 - PAC019 - Rate Access Var - BT - remove since input exists in PIçä08/13/2010 - PAC019 - Rate Access Var - BT - added inputçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+22c3ade7 -2 -2
+11152013 pA-G1401 JL Initial Rule
+4069118c -2 -2
+Description: Returns the surrender charge for a particular rule defined in the product definition.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/30/2009 wmA Integration ENH1011 CMC added percent of surrender rule ("2")çä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

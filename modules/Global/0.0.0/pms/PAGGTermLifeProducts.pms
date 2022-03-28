@@ -1,0 +1,142 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 de07a8 0 6d0f415e 0 0 0 0
+
+X24 6d0f415e de07a8 0 0 0 0 2
+OUTPUT GroupPremium Annual Premium
+OUTPUT GroupPremium Annual Premium
+
+Input Group Plan Premium Method
+14
+Input Group Config Prod Suminsured Allowed
+Y
+Input Group Headcount Indicator
+M
+Input Group RI Suminsured
+0
+Input Group Policy Status Code
+
+Input Group Member Suminsured
+100000
+Input TransEffDate
+20140101
+Input Policy ProductCode
+GGTRMPA
+Input Policy Region
+
+Input Policy Locale
+
+Input Group Member Age
+21
+Input Group Member Occupation Class
+01
+Input Group Member Gender
+M
+Input Group Product Discount Rate
+0
+Input Group Plan Discount Rate
+0
+Input Group Plan Loading
+0
+Input Group Plan Premium Adj Factor
+0
+Input Group Policy Company
+3
+Input Group Policy Bill Currency
+GBP
+Input Group Config Prod UnitOfRating
+1000
+Input Group Member Bill Frequency
+01
+Input Group Config Pol EndDateLevel
+20150101
+Input Group Policy Bill Frequency
+01
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 2898860d 0 0 0 2
+
+--description
+Global Group Term Life Products Modelçä çäRELEASE LOG:çäRELEASE pA 1601
+P13 2898860d de0804 115a54d6 0 0 0 2
+--Global Group Term Life Products--
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Group Term Life Products Display model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGGTermLifeProducts.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 115a54d6 2898860d 0 428b6e72 0 50 2
+--Global Group Period--@PAGGPeriod
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 428b6e72 2898860d 0 5793fa65 0 50 2
+--Global Group Premiums--@PAGGPremium
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 5793fa65 2898860d 0 0 0 50 2
+--Global Group Suminsured--@PAGGSuminsured
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 de0860 0 0 0 0 0 0
+
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 573f263a 0 17668b36 0 0 0 0
+
+I0 17668b36 573f263a 0 573074cd 0 0 0
+PAGGSuminsured.pms
+I0 573074cd 573f263a 0 751a208c 0 0 0
+PAGGPremium.pms
+I0 751a208c 573f263a 0 0 0 0 0
+PAGGPeriod.pms
+-
+O0
+E0
+L0
+B0
+P1
+2898860d
+F0
+A0
+T0
+;Offset=00000000

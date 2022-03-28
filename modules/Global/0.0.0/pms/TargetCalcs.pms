@@ -1,0 +1,5118 @@
+;1	08.12.2016 13:29:34	jlawrie2	
+X0 3f41b4 0 3f47f0 0 0 0 0
+
+X0 3f47f0 3f41b4 3f4888 1e28c50 0 0 0
+-- Unit Test Cases --
+X0 3f4888 3f47f0 3f4950 3f6e88 0 0 0
+-- Target Calc Method Used Tests --
+X0 3f4950 3f4888 3f49f0 1e20460 0 0 0
+-- UL1PA --
+X16 3f49f0 3f4950 0 3f4c68 0 0 2
+Commissionable
+'ACCS TARGET CalcMethod Used'("LTGT")
+3
+INPUT Policy ProductCode
+UL1PA
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+X16 3f4c68 3f4950 0 3f4de8 0 0 2
+Surrender
+'ACCS TARGET CalcMethod Used'("STGT")
+4
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X16 3f4de8 3f4950 0 0 0 0 2
+Load
+'ACCS TARGET CalcMethod Used'("LTGT")
+3
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 1e20460 3f4888 1e20520 1e20b90 0 0 0
+-- UL2PA --
+X16 1e20520 1e20460 0 1e207e0 0 0 2
+Commissionable
+'ACCS TARGET CalcMethod Used'("CTGT")
+2
+INPUT Policy ProductCode
+UL2PA
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+X16 1e207e0 1e20460 0 1e209b0 0 0 2
+Surrender
+'ACCS TARGET CalcMethod Used'("STGT")
+2
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X16 1e209b0 1e20460 0 0 0 0 2
+Load
+'ACCS TARGET CalcMethod Used'("LTGT")
+2
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 1e20b90 3f4888 1e20c70 3f5008 0 0 0
+-- JSUL1PA --
+X16 1e20c70 1e20b90 0 1e20f40 0 0 2
+Commissionable
+'ACCS TARGET CalcMethod Used'("CTGT")
+3
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+X16 1e20f40 1e20b90 0 3f5118 0 0 2
+Surrender
+'ACCS TARGET CalcMethod Used'("STGT")
+4
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X16 3f5118 1e20b90 0 0 0 0 2
+Load
+'ACCS TARGET CalcMethod Used'("LTGT")
+3
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 3f5008 3f4888 3f5418 3f5b58 0 0 0
+-- VUL1PA --
+X16 3f5418 3f5008 0 3f5760 0 0 2
+Commissionable
+'ACCS TARGET CalcMethod Used'("CTGT")
+3
+INPUT Policy ProductCode
+VUL1PA
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+X16 3f5760 3f5008 0 3f58d8 0 0 2
+Surrender
+'ACCS TARGET CalcMethod Used'("STGT")
+4
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X16 3f58d8 3f5008 0 0 0 0 2
+Load
+'ACCS TARGET CalcMethod Used'("LTGT")
+3
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 3f5b58 3f4888 3f5c78 3f64b0 0 0 0
+-- VUL2PA --
+X16 3f5c78 3f5b58 0 3f5fe0 0 0 2
+Commissionable
+'ACCS TARGET CalcMethod Used'("CTGT")
+2
+INPUT Policy ProductCode
+VUL2PA
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+X16 3f5fe0 3f5b58 0 3f6210 0 0 2
+Surrender
+'ACCS TARGET CalcMethod Used'("STGT")
+2
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X16 3f6210 3f5b58 0 0 0 0 2
+Load
+'ACCS TARGET CalcMethod Used'("LTGT")
+2
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 3f64b0 3f4888 3f65f0 0 0 0 0
+-- JSVUL1PA --
+X16 3f65f0 3f64b0 0 3f6968 0 0 2
+Commissionable
+'ACCS TARGET CalcMethod Used'("CTGT")
+3
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Message Language
+9
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+X16 3f6968 3f64b0 0 3f6bc0 0 0 2
+Surrender
+'ACCS TARGET CalcMethod Used'("STGT")
+4
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X16 3f6bc0 3f64b0 0 0 0 0 2
+Load
+'ACCS TARGET CalcMethod Used'("LTGT")
+3
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X0 3f6e88 3f47f0 3f7008 0 0 0 0
+-- Target Test Cases --
+X0 3f7008 3f6e88 3f7188 3f8fb8 0 0 0
+-- UL1PA --
+X32 3f7188 3f7008 0 3f7560 0 0 2
+OUTPUT Total Surrender Target - Iterative
+'OUTPUT Total Surrender Target'
+35483.27
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy number of LifeParticipant
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X50 3f7560 3f7008 0 0 0 0 2
+OUTPUT Total MNLP Target - Sum of Charges
+'OUTPUT Total MNLP Target'
+6686.64
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy number of CoverageOption
+1
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Message Language
+9
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+INPUT Policy CoverageOption ProductCode
+MNLPPA
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+100000
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Number of LifeParticipant
+1
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy Coverage TargetPremAmt
+1000
+INPUT Policy ProductType
+0
+INPUT Policy LifeParticipant SpecialClassCode
+0
+INPUT Policy TaxLocality
+
+INPUT Policy QualifiedCode
+1
+INPUT Policy Life QualPlanType
+0
+X0 3f8fb8 3f6e88 3fa7c0 1e263c8 0 0 0
+-- UL2PA --
+X0 3fa7c0 3f8fb8 3fa868 1e25930 0 0 0
+-- Commissionable - Rate File --
+X72 3fa868 3fa7c0 0 3fae58 0 0 2
+OUTPUT Total Commissionable Target
+'OUTPUT Total Commissionable Target'
+3174.32
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant PermTableRating
+3
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+3
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+3
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+500
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy CoverageOption ProductCode
+WSPPA
+INPUT Policy CoverageOption LifeCovOptTypeCode
+17
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption UnderwritingClass
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Policy CoverageOption OptionNumberOfUnits
+10
+INPUT Policy CoverageOption ProductCode[0;1]
+ADBPA
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+2
+INPUT Policy CoverageOption EffDate[0;1]
+01/01/2006
+INPUT Policy CoverageOption UnderwritingClass[0;1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;1]
+1
+INPUT Policy CoverageOption OptionNumberOfUnits[0;1]
+300
+INPUT Policy CoverageOption ProductCode[0;2]
+GIOPA
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+66
+INPUT Policy CoverageOption EffDate[0;2]
+01/01/2006
+INPUT Policy CoverageOption UnderwritingClass[0;2]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;2]
+1
+INPUT Policy CoverageOption OptionNumberOfUnits[0;2]
+100
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Calling Program
+
+INPUT Calling System
+I1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy Coverage IndicatorCode[1]
+1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode[1]
+1
+INPUT Policy Coverage TermDate[1]
+12/31/2999
+INPUT Message Language
+English
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+X54 3fae58 3fa7c0 0 1e21be8 0 0 2
+OUTPUT Coverage Commissionable Target - Base
+'OUTPUT Coverage Commissionable Target'(0)
+2329.32
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant PermTableRating
+3
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+3
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+3
+INPUT Policy CoverageOption ProductCode
+WSPPA
+INPUT Policy CoverageOption LifeCovOptTypeCode
+17
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption UnderwritingClass
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Policy CoverageOption OptionNumberOfUnits
+10
+INPUT Policy CoverageOption ProductCode[0;1]
+ADBPA
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+2
+INPUT Policy CoverageOption EffDate[0;1]
+01/01/2006
+INPUT Policy CoverageOption UnderwritingClass[0;1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;1]
+1
+INPUT Policy CoverageOption OptionNumberOfUnits[0;1]
+300
+INPUT Policy CoverageOption ProductCode[0;2]
+GIOPA
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+66
+INPUT Policy CoverageOption EffDate[0;2]
+01/01/2006
+INPUT Policy CoverageOption UnderwritingClass[0;2]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;2]
+1
+INPUT Policy CoverageOption OptionNumberOfUnits[0;2]
+100
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X33 1e21be8 3fa7c0 0 1e22ba8 0 0 2
+OUTPUT Coverage Commissionable Target - PITR
+'OUTPUT Coverage Commissionable Target'(1)
+845
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+500
+INPUT Policy LifeParticipant PermTableRating[1]
+1
+INPUT Policy LifeParticipant TempTableRating[1]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[1]
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Coverage IndicatorCode[1]
+1
+X22 1e22ba8 3fa7c0 0 1e232f8 0 0 2
+OUTPUT Coverage Commissionable Base Target - Base
+'OUTPUT Coverage Commissionable Base Target'(0)
+1690
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X25 1e232f8 3fa7c0 0 1e23808 0 0 2
+OUTPUT Coverage Commissionable Base Target - PITR
+'OUTPUT Coverage Commissionable Base Target'(1)
+845
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode[1]
+PITRPA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[1]
+500
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+INPUT Policy Coverage IndicatorCode[1]
+1
+X23 1e23808 3fa7c0 0 1e240f0 0 0 2
+OUTPUT Coverage Commissionable TableRating Target - Base
+'OUTPUT Coverage Commissionable TableRating Target'(0)
+633.75
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy LifeParticipant PermTableRating
+3
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X22 1e240f0 3fa7c0 0 1e24438 0 0 2
+OUTPUT Coverage Commissionable FlatExtra Target
+'OUTPUT Coverage Commissionable FlatExtra Target'(0)
+0
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy LifeParticipant PermFlatExtraAmount
+3
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X27 1e24438 3fa7c0 0 1e24a70 0 0 2
+OUTPUT Coverage Commissionable CovOption Target - WP
+'OUTPUT Coverage Commissionable CovOption Target'(0; 0)
+0.7
+INPUT Policy number of CoverageOption
+3
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy CoverageOption ProductCode
+WSPPA
+INPUT Policy CoverageOption LifeCovOptTypeCode
+17
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy CoverageOption UnderwritingClass
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Policy CoverageOption OptionNumberOfUnits
+10
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X28 1e24a70 3fa7c0 0 1e25108 0 0 2
+OUTPUT Coverage Commissionable CovOption Target - ADB
+'OUTPUT Coverage Commissionable CovOption Target'(0; 1)
+3.09
+INPUT Policy number of CoverageOption
+3
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy CoverageOption ProductCode[0;1]
+ADBPA
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;1]
+2
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy CoverageOption EffDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy CoverageOption UnderwritingClass[0;1]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;1]
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Policy CoverageOption OptionNumberOfUnits[0;1]
+300
+INPUT Policy CoverageOption CoverageOptionStatus[0;1]
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CoverageOption PermTableRating[0;1]
+1
+INPUT Calling Program
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X28 1e25108 3fa7c0 0 0 0 0 2
+OUTPUT Coverage Commissionable CovOption Target - GIO
+'OUTPUT Coverage Commissionable CovOption Target'(0; 2)
+1.78
+INPUT Policy number of CoverageOption
+3
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy CoverageOption ProductCode[0;2]
+GIOPA
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;2]
+66
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy CoverageOption EffDate[0;2]
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy CoverageOption UnderwritingClass[0;2]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;2]
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Policy CoverageOption OptionNumberOfUnits[0;2]
+100
+INPUT Policy CoverageOption CoverageOptionStatus[0;2]
+1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CoverageOption PermTableRating[0;2]
+1
+INPUT Calling Program
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Message Language
+English
+X24 1e25930 3f8fb8 0 1e25e88 0 0 2
+OUTPUT Total Surrender Target - Rate File
+'OUTPUT Total Surrender Target'
+4190
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+0
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X35 1e25e88 3f8fb8 0 0 0 0 2
+OUTPUT Total MNLP Target - Rate File
+'OUTPUT Total MNLP Target'
+2470
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+1
+INPUT Message Language
+English
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CoverageOption ProductCode
+MNLPPA
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Calling Program
+
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1e263c8 3f6e88 1e26b70 1e26ec0 0 0 0
+-- JSUL1PA --
+X49 1e26b70 1e263c8 0 0 0 0 2
+OUTPUT Total Surrender Target - PV
+'OUTPUT Total Surrender Target'
+12717.96
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+JSUL1PA
+INPUT Policy LifeParticipant IssueAge
+40
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0;1]
+6
+INPUT Policy LifeParticipant IssueAge[0;1]
+50
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT TransEffDate
+1/1/2006
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+X0 1e26ec0 3f6e88 1e27a48 1e27d90 0 0 0
+-- VUL1PA --
+X32 1e27a48 1e26ec0 0 0 0 0 2
+OUTPUT Total Surrender Target - PV
+'OUTPUT Total Surrender Target'
+29298
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+VUL1PA
+INPUT Policy LifeParticipant IssueAge
+40
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy number of LifeParticipant
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X0 1e27d90 3f6e88 1e283e8 1e28728 0 0 0
+-- VUL2PA --
+X24 1e283e8 1e27d90 0 0 0 0 2
+OUTPUT Total Surrender Target - Rate File
+'OUTPUT Total Surrender Target'
+4910
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+VUL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy number of CoverageOption
+0
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Calling System
+I1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X0 1e28728 3f6e88 1e28968 0 0 0 0
+-- JSVUL1PA --
+X49 1e28968 1e28728 0 0 0 0 2
+OUTPUT Total Surrender Target - PV
+'OUTPUT Total Surrender Target'
+13919.95
+INPUT Policy ProductCode
+JSVUL1PA
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage ProductCode
+JSVUL1PA
+INPUT Policy LifeParticipant IssueAge
+50
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0;1]
+6
+INPUT Policy LifeParticipant IssueAge[0;1]
+50
+INPUT Policy LifeParticipant IssueGender
+2
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+A_PD_Coverage_InitialNumberOfUnits
+1000
+INPUT Policy LifeParticipant PermTableRating
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT TransEffDate
+1/1/2006
+INPUT Policy Coverage BandCode
+0
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermTableRating[0;1]
+0
+INPUT Policy LifeParticipant TempTableRating[0;1]
+0
+INPUT Policy LifeParticipant IssueGender[0;1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+X0 1e28c50 3f41b4 1e29bc8 1ec6d58 0 0 0
+-- UL MNLP Regression Test Cases --
+X0 1e29bc8 1e28c50 1e29c58 0 0 0 0
+-- MNL000001 --
+X0 1e29c58 1e29bc8 1e29cf0 1e36660 0 0 0
+-- Scenario 1 --
+X80 1e29cf0 1e29c58 0 1e2a200 0 0 2
+-- MNL000001 -- Scenario 1 -- A_TransEffDate
+'INPUT TransEffDate'
+06/30/2014
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+06/30/2014
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X80 1e2a200 1e29c58 0 1e2f6e8 0 0 2
+-- MNL000001 -- Scenario 1 -- f_TransEffDate
+TransEffDate
+06/30/2014
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+06/30/2014
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X80 1e2f6e8 1e29c58 0 1e32598 0 0 2
+-- MNL000001 -- Scenario 1 -- f_PD_Policy_EffDate
+'Policy EffDate'
+06/30/2014
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+06/30/2014
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X80 1e32598 1e29c58 0 0 0 0 2
+- MNL000001 -1- f_Duration_Year("06/30/2014";"12/31/2008")
+'Duration Year'("06/30/2014";"12/31/2008")
+6
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+06/30/2014
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X0 1e36660 1e29bc8 1e37ce8 1e3e930 0 0 0
+-- Scenario 2 --
+X80 1e37ce8 1e36660 0 1e38758 0 0 2
+-- MNL000001 -- Scenario 2 -- f_TransEffDate
+TransEffDate
+6/30/2013
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+6/30/2013
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X80 1e38758 1e36660 0 1e3a7d8 0 0 2
+-- MNL000001 -- Scenario 2 -- f_PD_Policy_EffDate
+'Policy EffDate'
+6/30/2013
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+6/30/2013
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X80 1e3a7d8 1e36660 0 0 0 0 2
+- MNL000001 -2- f_Duration_Year("06/30/2013";"12/31/2008")
+'Duration Year'("06/30/2013";"12/31/2008")
+5
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+6/30/2013
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X0 1e3e930 1e29bc8 1e3fff0 0 0 0 0
+-- Scenario 3 --
+X80 1e3fff0 1e3e930 0 1e409f0 0 0 2
+-- MNL000001 -- Scenario 3 -- f_TransEffDate
+TransEffDate
+6/30/2034
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+6/30/2034
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X80 1e409f0 1e3e930 0 1e44020 0 0 2
+-- MNL000001 -- Scenario 3 -- f_PD_Policy_EffDate
+'Policy EffDate'
+6/30/2034
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+6/30/2034
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X80 1e44020 1e3e930 0 0 0 0 2
+- MNL000001 -3- f_Duration_Year("06/30/2034";"12/31/2008")
+'Duration Year'("06/30/2034";"12/31/2008")
+26
+!$MINCACHESIZE
+300000
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmount
+6444.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+12/31/2013
+INPUT Policy LifeUSA GuidelineAnnPrem
+7938.18
+INPUT Policy LifeUSA GuidelineSinglePrem
+89269.85
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmount
+6240.36
+INPUT Policy Life InitialDepositAmount
+0
+INPUT Policy Life PaymentAmount
+20000
+INPUT Calling Program
+""
+INPUT Calling System
+I1
+INPUT TransEffDate
+6/30/2034
+A_User_Id
+Anything
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+12/31/2008
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductVersionCode
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+12/31/2108
+INPUT Policy PaymentAmount
+20000
+INPUT Policy ProductType
+3
+INPUT Policy PolicyStatus
+1
+A_PD_Policy_IssueState
+51
+INPUT Message Language
+English
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode[0]
+1
+INPUT Policy Coverage DeathBenefitOptType[0]
+1
+INPUT Policy Coverage CurrentAmount[0]
+1000000
+INPUT Policy Coverage ValuePerUnit[0]
+1000
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+12/31/2008
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage TermDate[0]
+12/31/2108
+INPUT Policy Coverage LifeCovTypeCode[0]
+9
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage IntialNumberOfUnits[0]
+1000
+INPUT Policy Coverage TargetPremAmount[0]
+6444.4
+INPUT Policy Coverage SurrTargetPrem[0]
+18970.41
+INPUT Policy Coverage SurrChargeIssue to date[0]
+0
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage PaymentMode[0]
+1
+INPUT Policy Coverage PaidToDate[0]
+01/00/1900
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0;0]
+20
+INPUT Policy LifeParticipant IssueGender[0;0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0;0]
+1
+A_PD_LifeParticipant_UnderwritingSubClass[0;0]
+0
+INPUT Policy LifeParticipant ParticipantRoleCode[0;0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatEndDate[0;0]
+12/30/2088
+INPUT Policy LifeParticipant TempFlatExtraAmount[0;0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0;0]
+12/31/2008
+INPUT Policy LifeParticipant TempTableRating[0;0]
+0
+INPUT Policy LifeParticipant PermTableRating[0;0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate[0;0]
+01/01/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis[0;0]
+1
+INPUT Policy LifeParticipant number of SubstandardRating[0;0]
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis[0;0;0]
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate[0;0;0]
+01/01/1900
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount[0;0;0]
+0
+INPUT Policy number of CoverageOption[0]
+1
+INPUT Policy CoverageOption EffDate[0;0]
+12/31/2008
+INPUT Policy CoverageOption LifeCovOptTypeCode[0;0]
+9
+INPUT Policy CoverageOption OptionNumberOfUnits[0;0]
+0
+INPUT Policy CoverageOption ProductCode[0;0]
+MNLPPA
+INPUT Policy CoverageOption TermDate[0;0]
+12/31/2013
+INPUT Policy CoverageOption UnderwritingClass[0;0]
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis[0;0]
+1
+INPUT Policy CoverageOption PermTableRating[0;0]
+1
+INPUT Policy CoverageOption CoverageOptionStatus[0;0]
+1
+X0 1ec6d58 3f41b4 1ec81f0 1ed3dd0 0 0 0
+-- UL GMDB Regression Test Cases --
+X0 1ec81f0 1ec6d58 1ec8280 1ecb278 0 0 0
+-- GM000001 --
+X0 1ec8280 1ec81f0 1ec8318 1ecaa88 0 0 0
+-- Scenario 1 --
+X41 1ec8318 1ec8280 0 1ecae40 0 0 2
+-- GM000001 -- Scenario 1 -- P_Total_MNLP_Target(0;0)
+0//'OUTPUT Total MNLP Target'(0;0)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT Policy PolNumber
+GM0000001
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUl2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy PaymentMode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2091
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage TargetPremAmount
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUl2PA
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption LifeCovOptTypeCode
+17
+INPUT Policy CoverageOption ProductCode
+WSPPA
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+X41 1ecae40 1ec8280 0 0 0 0 2
+-- GM000001 - Scenario 1 - P_Total_MNLP_Monthly_Target(0;0)
+0//'Output Total MNLP Monthly Target'(0;0)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT Policy PolNumber
+GM0000001
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUl2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy PaymentMode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2091
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage TargetPremAmount
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUl2PA
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption LifeCovOptTypeCode
+17
+INPUT Policy CoverageOption ProductCode
+WSPPA
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+X0 1ecaa88 1ec81f0 1ec9240 0 0 0 0
+-- Scenario 2 --
+X42 1ec9240 1ecaa88 0 1ec94f0 0 0 2
+-- GM000001 -- Scenario 2 -- P_Total_MNLP_Target(0;0)
+0//'OUTPUT Total MNLP Target'(0;0)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT Policy PolNumber
+GM0000001
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUl2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy PaymentMode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2091
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage TargetPremAmount
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUl2PA
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption ProductCode
+GMDB1PA
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+INPUT Calling Program
+
+X42 1ec94f0 1ecaa88 0 0 0 0 2
+-- GM000001 - Scenario 2 - P_Total_MNLP_Monthly_Target(0;0)
+0//'Output Total MNLP Monthly Target'(0;0)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT Policy PolNumber
+GM0000001
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+VUl2PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy PaymentMode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2091
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage TargetPremAmount
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+VUl2PA
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption ProductCode
+GMDB1PA
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+INPUT Calling Program
+
+X0 1ecb278 1ec6d58 1ecbfa8 0 0 0 0
+-- GM000002 --
+X52 1ecbfa8 1ecb278 0 1ecc270 0 0 2
+-- GM000002 -- P_Total_MNLP_Target(0;0)
+0//'OUTPUT Total MNLP Target'(0;0)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT Policy PolNumber
+GM0000002
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy PaymentMode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2091
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage TargetPremAmount
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+JSUl1PA
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption ProductCode
+GMDB1PA
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge[0;1]
+30
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Calling Program
+
+X52 1ecc270 1ecb278 0 0 0 0 2
+-- GM000002 -- P_Total_MNLP_Monthly_Target(0;0)
+0//'Output Total MNLP Monthly Target'(0;0)
+0
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT Policy PolNumber
+GM0000002
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy Jurisdiction
+51
+INPUT Policy PaymentMode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovTypeCode
+1
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage CurrentAmount
+1000000
+INPUT Policy Coverage InitCovAmount
+1000000
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2091
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage TargetPremAmount
+1000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+JSUl1PA
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2006
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy number of CoverageOption
+1
+INPUT Policy CoverageOption CoverageOptionStatus
+1
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption ProductCode
+GMDB1PA
+INPUT Policy CoverageOption EffDate
+01/01/2006
+INPUT Policy CoverageOption TermDate
+12/31/2999
+INPUT Policy LifeParticipant IssueAge[0;1]
+30
+INPUT Policy LifeParticipant IssueGender[0;1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0;1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0;1]
+1
+INPUT Policy LifeParticipant PermTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempTableRating[0;1]
+1
+INPUT Policy LifeParticipant TempFlatStartDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0;1]
+01/01/2006
+INPUT Policy LifeParticipant PermFlatExtraAmount[0;1]
+0
+INPUT Policy LifeParticipant number of SubstandardRating[0;1]
+0
+INPUT Calling Program
+
+X0 1ed3dd0 3f41b4 1ed4b20 0 0 0 0
+-- UL Surrender Charge Regression Test Cases --
+X1 1ed4b20 1ed3dd0 1ed4bd8 1ed4eb8 0 0 1
+-- SC000003 --
+
+X32 1ed4bd8 1ed4b20 0 0 0 0 2
+-- SC000003 -- P_Total_Surrender_Target
+'OUTPUT Total Surrender Target'
+2062.09
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2011
+A_Policy_PolNumber
+SC000003
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL1PA
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy Coverage IntialNumberOfUnits[0]
+100
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of LifeParticipant
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X0 1ed4eb8 1ed3dd0 1ed5e30 1ed66b8 0 0 0
+-- SC000005 --
+X32 1ed5e30 1ed4eb8 0 0 0 0 2
+-- SC000005 -- P_Total_Surrender_Target
+'OUTPUT Total Surrender Target'
+152
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+A_Policy_PolNumber
+SC000005
+INPUT Policy ProductCode
+UL2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage ProductCode[0]
+UL2PA
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy Coverage IntialNumberOfUnits[0]
+100
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of CoverageOption
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X0 1ed66b8 1ed3dd0 1ed5fe0 1ed62b0 0 0 0
+-- SC000007 --
+X58 1ed5fe0 1ed66b8 0 0 0 0 2
+-- SC000007 -- P_Total_Surrender_Target
+'OUTPUT Total Surrender Target'
+1131.89
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+A_Policy_PolNumber
+SC000007
+INPUT Policy ProductCode
+JSUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage ProductCode[0]
+JSUL1PA
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy Coverage IntialNumberOfUnits[0]
+100
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of CoverageOption
+0
+INPUT Policy Coverage BandCode[0]
+0
+INPUT Policy number of LifeParticipant
+2
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0,0]
+1
+INPUT Policy LifeParticipant PermTableRating[0,0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0,0]
+0
+INPUT Policy LifeParticipant TempTableRating[0,0]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0,0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0,0]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[0,0]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[0,0]
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0,1]
+6
+INPUT Policy LifeParticipant IssueAge[0,1]
+20
+INPUT Policy LifeParticipant IssueGender[0,1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0,1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,1]
+1
+INPUT Policy LifeParticipant PermTableRating[0,1]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0,1]
+0
+INPUT Policy LifeParticipant TempTableRating[0,1]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0,1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0,1]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[0,1]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[0,1]
+0
+INPUT Message Language
+English
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant PermFlatExtraAmt[0;1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt[0;1]
+0
+X0 1ed62b0 1ed3dd0 1ed6ed8 1ed71b8 0 0 0
+-- SC000013 --
+X56 1ed6ed8 1ed62b0 0 0 0 0 2
+-- SC000013 -- P_Total_Surrender_Target
+'OUTPUT Total Surrender Target'
+2062.09
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+A_Policy_PolNumber
+SC000013
+INPUT Policy ProductCode
+VUL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage ProductCode[0]
+VUL1PA
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy Coverage IntialNumberOfUnits[0]
+100
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of CoverageOption
+0
+INPUT Policy Coverage BandCode[0]
+0
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0,0]
+1
+INPUT Policy LifeParticipant PermTableRating[0,0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0,0]
+0
+INPUT Policy LifeParticipant TempTableRating[0,0]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0,0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0,0]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[0,0]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[0,0]
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0,1]
+6
+INPUT Policy LifeParticipant IssueAge[0,1]
+20
+INPUT Policy LifeParticipant IssueGender[0,1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0,1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,1]
+1
+INPUT Policy LifeParticipant PermTableRating[0,1]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0,1]
+0
+INPUT Policy LifeParticipant TempTableRating[0,1]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0,1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0,1]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[0,1]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[0,1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+X0 1ed71b8 1ed3dd0 1ed9b78 0 0 0 0
+-- SC000015 --
+X96 1ed9b78 1ed71b8 0 0 0 0 2
+-- SC000015 -- P_Coverage_Surrender_Target(0)
+'OUTPUT Coverage Surrender Target'(0)
+152
+INPUT Calling System
+I1
+INPUT TransEffDate
+01/01/2006
+A_Policy_PolNumber
+SC000015
+INPUT Policy ProductCode
+VUL2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy number of Coverage
+3
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage ProductCode[0]
+VUL2PA
+INPUT Policy Coverage EffDate[0]
+01/01/2006
+INPUT Policy Coverage IntialNumberOfUnits[0]
+100
+INPUT Policy LifeParticipant IssueAge[0,0]
+25
+INPUT Policy LifeParticipant IssueGender[0,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,0]
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+01/01/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+01/01/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of CoverageOption
+0
+INPUT Policy Coverage BandCode[0]
+0
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0,0]
+1
+INPUT Policy LifeParticipant PermTableRating[0,0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0,0]
+0
+INPUT Policy LifeParticipant TempTableRating[0,0]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0,0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0,0]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[0,0]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[0,0]
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0,1]
+6
+INPUT Policy LifeParticipant IssueAge[0,1]
+20
+INPUT Policy LifeParticipant IssueGender[0,1]
+2
+INPUT Policy LifeParticipant UnderwritingClass[0,1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0,1]
+1
+INPUT Policy LifeParticipant PermTableRating[0,1]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[0,1]
+0
+INPUT Policy LifeParticipant TempTableRating[0,1]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[0,1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0,1]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[0,1]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[0,1]
+0
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage ProductCode[1]
+VUL2PA
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage IntialNumberOfUnits[1]
+10
+INPUT Policy Coverage BandCode[1]
+0
+INPUT Policy Coverage IndicatorCode[2]
+2
+INPUT Policy Coverage LifeCovStatus[2]
+1
+INPUT Policy Coverage ProductCode[2]
+VUL2PA
+INPUT Policy Coverage EffDate[2]
+01/01/2006
+INPUT Policy Coverage IntialNumberOfUnits[2]
+5
+INPUT Policy Coverage BandCode[2]
+0
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy number of LifeParticipant[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1,0]
+2
+INPUT Policy LifeParticipant IssueAge[1,0]
+20
+INPUT Policy LifeParticipant IssueGender[1,0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1,0]
+1
+INPUT Policy LifeParticipant PermTableRating[1,0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[1,0]
+.10
+INPUT Policy LifeParticipant TempTableRating[1,0]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[1,0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1,0]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[1,0]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[1,0]
+0
+INPUT Policy number of LifeParticipant[2]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[2,0]
+5
+INPUT Policy LifeParticipant IssueAge[2,0]
+30
+INPUT Policy LifeParticipant IssueGender[2,0]
+2
+INPUT Policy LifeParticipant UnderwritingClass[2,0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[2,0]
+2
+INPUT Policy LifeParticipant PermTableRating[2,0]
+1
+INPUT Policy LifeParticipant PermFlatExtraAmount[2,0]
+0
+INPUT Policy LifeParticipant TempTableRating[2,0]
+1
+INPUT Policy LifeParticipant TempFlatExtraAmount[2,0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[2,0]
+01/01/1900
+INPUT Policy LifeParticipant TempFlatEndDate[2,0]
+01/01/1900
+INPUT Policy LifeParticipant number of SubstandardRating[2,0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy number of CoverageOption[2]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Message Language
+English
+O0 3f4064 0 0 0 0 0 0
+
+E0 3f40d4 0 0 0 0 0 0
+
+L0 3f4144 0 0 0 0 0 0
+
+B0 3f4304 0 0 0 0 0 0
+
+P3 3f4224 0 1edde38 0 0 0 2
+
+--description
+The Target Calculations model is the main target model, which includes properties and associated functions which can be called to return the specified target calculation using one of the supported calculation methods:çä- dynamic iterative solveçä- sum of chargesçä- present valueçä- rate fileçä çäThe target provisions are defined in the product definition and/or product calculation rules.çä çäRELEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE WMA 9.2.0 - ENH1011çäRELEASE WMA 1001 - ENH922çäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 1edde38 3f4224 1ee2738 0 0 0 2
+Universal Life / Variable Universal Life
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Target premium calculations for Universal Life or Variable Universal Life products.  The targetçä                premium calculation types are commissionable, surrender, and load.  The solve can be eitherçä                utilizing a rate table lookup, or a dynamic solve.çä Author:  John Heumannçä Date:     11/13/2006 çä Modification Log:çä Date              Modeler               Change Descriptionçä 11/13/2006     John Heumann    Created model.çä"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"TargetCalcs"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P30 1ee2738 1edde38 1ee1020 0 0 0 2
+Target Premiums (Commissionable, MNLP, Surrender, and Load)
+IncType
+mandatory
+IncRule
+
+IncValue
+
+-- Commissionable Target Premium Properties --
+
+OUTPUT Total Commissionable Target
+'TARGET Total Target Premium'('CalcType CTGT'('GEN Vector Blank');TransEffDur)
+OUTPUT Coverage Commissionable Target(coverageIndex)
+'TARGET Coverage Target Premium'('CalcType CTGT'('GEN Vector Blank');coverageIndex;TransEffDur)
+OUTPUT Coverage Commissionable Base Target(coverageIndex)
+'TARGET Coverage Base Target Premium'('CalcType CTGT'('GEN Vector Blank');coverageIndex;TransEffDur)
+OUTPUT Coverage Commissionable TableRating Target(coverageIndex)
+'TARGET Coverage TableRating Target Premium'('CalcType CTGT'('GEN Vector Blank');coverageIndex;'GEN Vector Blank';TransEffDur)
+OUTPUT Coverage Commissionable FlatExtra Target(coverageIndex)
+'TARGET Coverage FlatExtra Target Premium'('CalcType CTGT'('GEN Vector Blank');coverageIndex;TransEffDur;'GEN Vector Blank')
+OUTPUT Coverage Commissionable CovOption Target(coverageIndex; coverageOptionIndex)
+IF ( /*Does coverage index parameter apply to this coverage?*/ 'Policy number of CovOption'('GEN Vector Blank';coverageIndex) >= 1 ; çä   /*Then return target premium for this ocverage*/ 'TARGET Coverage CovOption Target Premium'('CalcType CTGT'('GEN Vector Blank');coverageIndex;coverageOptionIndex;TransEffDur) ; çä   /*else zero*/ 0çä)
+OUTPUT Total Surrender Target
+'TARGET Total Target Premium'('CalcType STGT'('GEN Vector Blank');TransEffDur)
+-- Surrender Target Premium Properties --
+
+OUTPUT Coverage Surrender Target(coverageIndex)
+'TARGET Coverage Target Premium'('CalcType STGT'('GEN Vector Blank');coverageIndex;TransEffDur)
+-- Load Target Premium Properties --
+
+OUTPUT Total Load Target
+'TARGET Total Target Premium'('CalcType LTGT'('GEN Vector Blank');TransEffDur)
+OUTPUT Coverage Load Target(coverageIndex)
+'TARGET Coverage Target Premium'('CalcType LTGT'('GEN Vector Blank');coverageIndex;TransEffDur)
+OUTPUT Coverage Load Base Target(coverageIndex)
+'TARGET Coverage Base Target Premium'('CalcType LTGT'('GEN Vector Blank');coverageIndex;TransEffDur)
+OUTPUT Coverage Load TableRating Target(coverageIndex)
+'TARGET Coverage TableRating Target Premium'('CalcType LTGT'('GEN Vector Blank');coverageIndex;'GEN Vector Blank';TransEffDur)
+OUTPUT Coverage Load FlatExtra Target(coverageIndex)
+'TARGET Coverage FlatExtra Target Premium'('CalcType LTGT'('GEN Vector Blank');coverageIndex;TransEffDur;'GEN Vector Blank')
+OUTPUT Coverage Load CovOption Target(coverageIndex; coverageOptionIndex)
+IF ( /*Does coverage index parameter apply to this coverage?*/ 'Policy number of CovOption'('GEN Vector Blank';coverageIndex) >= 1 ; çä   /*Then return target premium for this ocverage*/ 'TARGET Coverage CovOption Target Premium'('CalcType LTGT'('GEN Vector Blank');coverageIndex;coverageOptionIndex;TransEffDur) ; çä   /*else zero*/ 0çä)
+-- Minimum No Lapse Target Premium Properties --
+
+OUTPUT Total MNLP Target
+IF ( /*Policy has No lapse guarantee*/ 'Std Policy Has MNLP'('GEN Vector Blank') ; çä   /*Then calculate minimum target premium*/ 'TARGET Total Target Premium'('CalcType MTGT'('GEN Vector Blank');TransEffDur) ; çä   // Else return error messageçä'Messages SystemMessage'("CA1045";'Message Language';v_('TARGET Model Name';"'OUTPUT Total MNLP Target'";'Policy CovOption ProductCode'('GEN Vector Blank';'Std MNLP coverageIndex'('GEN Vector Blank');'Std MNLP coverageOptionIndex'('GEN Vector Blank'))))çä)
+OUTPUT Total MNLP Target CovOpt
+IF ( /*Policy has No lapse guarantee*/ 'Std Policy Has MNLP covOpt'('GEN Vector Blank') ; çä   /*Then calculate minimum target premium*/ 'TARGET Total Target Premium'('CalcType MTGT'('GEN Vector Blank');TransEffDur) ; çä   // Else return error messageçä'Messages SystemMessage'("CA1045";'Message Language';v_('TARGET Model Name';"'OUTPUT Total MNLP Target'";'Policy CovOption ProductCode'(('GEN Vector Blank');'Std MNLP coverageIndex'('GEN Vector Blank');'Std MNLP coverageOptionIndex'('GEN Vector Blank'))))çä)
+OUTPUT Total MNLP Target PremRate
+IF ( /*Policy has No lapse guarantee*/ 'STD Policy Has MNLP PremRate'('GEN Vector Blank') ; çä   /*Then calculate minimum target premium*/ 'TARGET Total Target Premium'('CalcType MTGT'('GEN Vector Blank');TransEffDur) ; çä   // Else return error messageçä'Messages SystemMessage'("CA1045";'Message Language';v_('TARGET Model Name';"'OUTPUT Total MNLP Target PremRate'"))çä)
+OUTPUT MNLP End Date
+IF ( /*Policy has No lapse guarantee*/ 'Std Policy Has MNLP'('GEN Vector Blank') ; çä   /*Then retrieve no lapse period*/ 'TARGET NLP End Date'('GEN Vector Blank';'Std MNLP coverageIndex'('GEN Vector Blank');'Std MNLP coverageOptionIndex'('GEN Vector Blank')) ; çä   // Else return error messageçä'Messages SystemMessage'("CA1045";'Message Language';v_('TARGET Model Name';"'OUTPUT Total MNLP Target Period'";'Policy CovOption ProductCode'('GEN Vector Blank';'Std MNLP coverageIndex'('GEN Vector Blank');'Std MNLP coverageOptionIndex'('GEN Vector Blank'))))çä)
+Output Total MNLP Monthly Target
+'GEN Round'('OUTPUT Total MNLP Target' / 12; // Round 2 placesçä2)
+Output Total MNLP Monthly Target CovOpt
+'GEN Round'('OUTPUT Total MNLP Target CovOpt' / 12; // Round 2 placesçä2)
+Output Total MNLP Monthly Target PremRate
+'GEN Round'('OUTPUT Total MNLP Target PremRate' / 12; // Round 2 placesçä2)
+-- Shadow Target Premium Properties --
+
+OUTPUT Total Shadow Target
+'TARGET Total Target Premium'('CalcType SHGT'('GEN Vector Blank');TransEffDur)
+P8 1ee1020 1ee2738 0 0 0 0 2
+Test Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+Output Test Target Premium Solve(calcType; periodicPremium)
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'DynTarget Premium Dur'(calcType));'DynTarget Interest Rate'(calcType);'Vector TDYN CV Addl Info'(calcType;TransEffDur);'DynTarget Target Dur'(calcType);12)
+Output Test MNLP Target Premium Solve(periodicPremium; MNLPcoverageIndex; MNLPcoverageOptionIndex)
+'CVProjection Monthly End Of Month Cash Value Rec'('CalcType MTGT'('GEN Vector Blank');'SharedVector SolveParms MakePremium'(periodicPremium;'DynTarget Premium Dur'('CalcType MTGT'('GEN Vector Blank')));'DynTarget Interest Rate'('CalcType MTGT'('GEN Vector Blank'));'Vector TDYN CV Addl Info'('CalcType MTGT'('GEN Vector Blank');TransEffDur);'DynTarget Target Dur'('CalcType MTGT'('GEN Vector Blank'));12)
+Output Test MNLP Target Dur(MNLPcoverageIndex; MNLPcoverageOptionIndex)
+'DynTarget Target Dur'('CalcType MTGT'('GEN Vector Blank'))
+Output Test MNLP Interest Rate(MNLPcoverageIndex; MNLPcoverageOptionIndex)
+'DynTarget Interest Rate'('GEN Vector Blank')
+OUTPUT Test Shadow Target Cash Value(yearIndex)
+'Solve CashValueSolve'('TARGET Total Target Premium'('CalcType SHGT'('GEN Vector Blank');TransEffDur);V_("SHGT";'Solve Criteria Premium Duration'('Vector TDYN CV Search Criteria'('CalcType SHGT'('GEN Vector Blank');999;'SharedVector SolveParms MakeFaceAmount'('CalcType SHGT'('GEN Vector Blank');'DynTarget Face Solve Amount'('CalcType SHGT'('GEN Vector Blank')));TransEffDur));'SharedVector SolveParms MakeFaceAmount'('CalcType SHGT'('GEN Vector Blank');'DynTarget Face Solve Amount'('CalcType SHGT'('GEN Vector Blank')));'Solve Criteria Interest Rate'('Vector TDYN CV Search Criteria'('CalcType SHGT'('GEN Vector Blank');999;'SharedVector SolveParms MakeFaceAmount'('CalcType SHGT'('GEN Vector Blank');'DynTarget Face Solve Amount'('CalcType SHGT'('GEN Vector Blank')));TransEffDur);0 /*duration*/ );'Solve Criteria Addl Info'('Vector TDYN CV Search Criteria'('CalcType SHGT'('GEN Vector Blank');999;'SharedVector SolveParms MakeFaceAmount'('CalcType SHGT'('GEN Vector Blank');'DynTarget Face Solve Amount'('CalcType SHGT'('GEN Vector Blank')));TransEffDur));yearIndex;12;'Vector TDYN CV Search Criteria'('CalcType SHGT'('GEN Vector Blank');999;'SharedVector SolveParms MakeFaceAmount'('CalcType SHGT'('GEN Vector Blank');'DynTarget Face Solve Amount'('CalcType SHGT'('GEN Vector Blank')));TransEffDur)))
+F0 3f4294 0 1ee3688 0 0 0 0
+
+F1 1ee3688 3f4294 1ee3740 0 0 0 2
+:TARGET
+Funktion
+
+F1 1ee3740 1ee3688 1ee37f8 1ee4778 0 0 2
+-- Property Functions --
+Funktion
+
+F1 1ee37f8 1ee3740 31940ca4 1ee3b70 0 0 2
+:Total Target Premium
+Funktion
+
+F1 31940ca4 1ee37f8 0 223f56d0 0 0 2
+TARGET Total Target Premium(calcType; yearIndex)
+Funktion
+CASE('READ Premium CalcMethod'('ACCS TARGET CalcMethod Used'(calcType));çä  "SUM_OF_CHARGES" : 'GEN Round'('SumOfCharge Monthly Target'(calcType;'GEN Vector Blank';yearIndex) * 12;2);çä  "RATE_FILE" : 'RateFile RateLookup Total Target'(calcType;'GEN Vector Blank';yearIndex);çä  "ITERATIVE_SOLVE" : 'DynTarget Total Annual Target Premium'(calcType;'GEN Vector Blank';yearIndex);çä  "PRESENT_VALUE_SOLVE" : 'TARGET PV Method'(calcType;'GEN Vector Blank';yearIndex);çä   : 'Messages SystemMessage'("CA1009";'Message Language';v_('TARGET Model Name';"'TARGET Total Target Premium'";calcType)))çä //CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1; 1000500001:'GEN Round'( 'SumOfCharge Monthly Target'(calcType; 'GEN Vector Blank'; yearIndex) * 12; 2);çä//â// Rate Fileçä//â2; 1000500002: 'RateFile RateLookup Total Target'(calcType; 'GEN Vector Blank'; yearIndex);çä//â// Iterativeçä//â3; 1000500003: 'DynTarget Total Annual Target Premium'(calcType; 'GEN Vector Blank'; yearIndex);çä//â// Present Value çä//â4; 1000500004:  'TARGET PV Method'(calcType; 'GEN Vector Blank'; yearIndex);çä//â// Else return error messageçä// â  : 'Messages SystemMessage'(âçä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "'TARGET Total Target Premium'"; calcType)çä//â    )çä//)ä
+F1 223f56d0 1ee37f8 0 309c684b 0 0 2
+TARGET Total Target Premium FaceSolve(faceAmount; calcType)
+Funktion
+CASE('READ Premium CalcMethod'('ACCS TARGET CalcMethod Used'(calcType));çä  "SUM_OF_CHARGES" : ('SumOfCharge Monthly Target'(calcType;'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount);TransEffDur) * 12);çä  "RATE_FILE" : 'RateFile RateLookup Total Target'(calcType;'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount);TransEffDur);çä  "ITERATIVE_SOLVE" : 'DynTarget Total Annual Target Premium'(calcType;'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount);TransEffDur);çä  "PRESENT_VALUE_SOLVE" : 'TARGET PV Method'(calcType;'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount);TransEffDur);çä   : 'Messages SystemMessage'("CA1009";'Message Language';v_('TARGET Model Name';"'TARGET Total Target Premium FaceSolve'";calcType)))çä //CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1, 1000500001: 'SumOfCharge Monthly Target'(calcType; 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); TransEffDur) * 12;çä//â// Rate Fileçä//â2, 1000500002: 'RateFile RateLookup Total Target'(calcType; 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); TransEffDur);çä//â// Iterativeçä//â3, 1000500003: 'DynTarget Total Annual Target Premium'(calcType; 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); TransEffDur);çä//â// Present Value çä//â4, 1000500004:  'TARGET PV Method'(calcType; 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); TransEffDur);çä//â// Else return error messageçä// â  : 'Messages SystemMessage'(âçä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "'TARGET Total Target Premium FaceSolve'"; calcType)çä//â    )çä//)ä
+F1 309c684b 1ee37f8 0 0 0 0 2
+TARGET Premium(calcType; yearIndex)
+Funktion
+IF ('Std Calling System Is Illustration Based' ; çä   /*Solve for Illustration?*/ IF ('CalcType LTGT Is Active'(calcType) && 'ACCS TARGET CalcMethod Used'(calcType) = 1 ; çä    V_(1) ; çä    v_('TARGET Total Target Premium'('CalcType Rate Assumption Off'('CalcType LTGT'(calcType));yearIndex))çä  ) ; çä /*else use target from INPUT*/ VECTORX(cov;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;V_('Policy Coverage TargetPremAmt'(#cov);#cov + 1))çä)
+F1 1ee3b70 1ee3740 1647fafa 0 0 0 2
+:Coverage
+Funktion
+
+F1 1647fafa 1ee3b70 0 278dd3a 0 0 2
+TARGET Coverage Target Premium(calcType; coverageIndex; yearIndex)
+Funktion
+CASE('READ Premium CalcMethod'('ACCS TARGET CalcMethod Used'(calcType));çä  "SUM_OF_CHARGES" : IF (coverageIndex = 'Std BaseCov Index'(calcType) ; çä     /*coverage is the base coverage*/ 'TARGET Total Target Premium'(calcType;yearIndex) ; çä    0çä  );çä"RATE_FILE" : 'RateFile RateLookup Coverage Target'(calcType;coverageIndex;yearIndex;1;'GEN Vector Blank');çä //1 is indicator for include_WMD parmçä"ITERATIVE_SOLVE" : IF (coverageIndex = 'Std BaseCov Index'(calcType) ; çä   /*coverage is the base coverage*/ 'TARGET Total Target Premium'(calcType;yearIndex) ; çä  0çä);çä"PRESENT_VALUE_SOLVE" : 'TARGET Coverage PV Method'(calcType;coverageIndex;'GEN Vector Blank';yearIndex);çä : 'Messages SystemMessage'("CA1009";'Message Language';v_('TARGET Model Name';"TARGET Coverage Target Premium";calcType)))çä //CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1: IF(/*coverage is the base coverage*/coverageIndex = 'Std BaseCov Index'(calcType);çä//ââ  /*Yes*/çä//âââ'TARGET Total Target Premium'(calcType; yearIndex);çä//ââ  /*No*/çä//âââ0çä//ââ);çä//â// Rate Fileçä//â2: 'RateFile RateLookup Coverage Target'(calcType; coverageIndex; yearIndex; 1; 'GEN Vector Blank');çä//â// Dynamicçä//â3: IF(/*coverage is the base coverage*/coverageIndex = 'Std BaseCov Index'(calcType);çä//ââ  /*Yes*/çä//âââ'TARGET Total Target Premium'(calcType; yearIndex);çä//ââ  /*No*/çä//âââ0çä//ââ);çä//â// Present Valueçä//â4: 'TARGET Coverage PV Method'(calcType; coverageIndex; 'GEN Vector Blank'; yearIndex);çä//â// Else return error messageçä//â  : 'Messages SystemMessage'(çä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "TARGET Coverage Target Premium"; calcType)çä//â    )çä//)çä
+F1 278dd3a 1ee3b70 0 4090b99a 0 0 2
+TARGET Coverage Base Target Premium(calcType; coverageIndex; yearIndex)
+Funktion
+CASE('READ Premium CalcMethod'('ACCS TARGET CalcMethod Used'(calcType));çä  "SUM_OF_CHARGES";"ITERATIVE_SOLVE";"PRESENT_VALUE_SOLVE" : 0;çä  "RATE_FILE" : 'RateFile RateLookup Coverage Basic Target'(calcType;coverageIndex;yearIndex;'GEN Vector Blank');çä   // Else return error messageçä : 'Messages SystemMessage'("CA1009";'Message Language';v_('TARGET Model Name';"'TARGET Coverage Base Target Premium'";calcType)))çä //CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1: 0;çä//â// Rate Fileçä//â2: 'RateFile RateLookup Coverage Basic Target'(calcType; coverageIndex; yearIndex; 'GEN Vector Blank');çä//â// Dynamicçä//â3: 0; çä//â// Present Valueçä//â4: 0;çä//â// Else return error messageçä//â: 'Messages SystemMessage'(çä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "'TARGET Coverage Base Target Premium'"; calcType)çä//â    )çä//)ä
+F1 4090b99a 1ee3b70 0 2ebde333 0 0 2
+TARGET Coverage TableRating Target Premium(calcType; coverageIndex; vectorSolveparms; yearIndex)
+Funktion
+CASE('READ Premium CalcMethod'('ACCS TARGET CalcMethod Used'(calcType));çä  "SUM_OF_CHARGES";"ITERATIVE_SOLVE";"PRESENT_VALUE_SOLVE" : 0;çä  "RATE_FILE" : 'RateFile RateLookup Coverage TableRating Target'(calcType;coverageIndex;yearIndex;vectorSolveParms);çä   : 'Messages SystemMessage'("CA1009";'Message Language';v_('TARGET Model Name';"'TARGET Coverage TableRating Target Premium'";calcType)))çä //CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1: 0;çä//â// Rate Fileçä//â2: 'RateFile RateLookup Coverage TableRating Target'(calcType; coverageIndex; yearIndex; vectorSolveParms);çä//â// Dynamicçä//â3: 0;çä//â// Present Valueçä//â4: 0;çä//â// Else return error messageçä//â  : 'Messages SystemMessage'(çä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "'TARGET Coverage TableRating Target Premium'"; calcType)çä//â    )çä//)ä
+F1 2ebde333 1ee3b70 0 69a522a2 0 0 2
+TARGET Coverage FlatExtra Target Premium(calcType; coverageIndex; yearIndex; vectorSolveParms)
+Funktion
+CASE('READ Premium CalcMethod'('ACCS TARGET CalcMethod Used'(calcType));çä  "SUM_OF_CHARGES";"ITERATIVE_SOLVE";"PRESENT_VALUE_SOLVE" : 0;çä  "RATE_FILE" : 'RateFile RateLookup Coverage FlatExtra Target'(calcType;coverageIndex;yearIndex;vectorSolveParms);çä   : 'Messages SystemMessage'("CA1009";'Message Language';v_('TARGET Model Name';"'TARGET Coverage FlatExtra Target Premium'";calcType)))çä //CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1: 0;çä//â// Rate Fileçä//â2: 'RateFile RateLookup Coverage FlatExtra Target'(calcType; coverageIndex; yearIndex; vectorSolveParms);çä//â// Dynamicçä//â3: 0;çä//â// Present Valueçä//â4: 0;çä//â// Else return error messageçä//â  : 'Messages SystemMessage'(çä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "'TARGET Coverage FlatExtra Target Premium'"; calcType)çä//â    )çä//)çä//CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1: 0;çä//â// Rate Fileçä//â2: 'RateFile RateLookup Coverage FlatExtra Target'(calcType; coverageIndex; yearIndex; vectorSolveParms);çä//â// Dynamicçä//â3: 0;çä//â// Present Valueçä//â4: 0;çä//â// Else return error messageçä//â  : 'Messages SystemMessage'(çä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "'TARGET Coverage FlatExtra Target Premium'"; calcType)çä//â    )çä//)ä
+F1 69a522a2 1ee3b70 0 0 0 0 2
+TARGET Coverage CovOption Target Premium(calcType; coverageIndex; coverageOptionIndex; yearIndex)
+Funktion
+CASE('READ Premium CalcMethod'('ACCS TARGET CalcMethod Used'(calcType));çä  "SUM_OF_CHARGES";"ITERATIVE_SOLVE";"PRESENT_VALUE_SOLVE" : 0;çä  "RATE_FILE" : 'RateFile RateLookup CovOption Target'(calcType;coverageIndex;coverageOptionIndex;yearIndex;1;'GEN Vector Blank');çä   //1 is indicator for include_WMD parmçä : 'Messages SystemMessage'("CA1009";'Message Language';v_('TARGET Model Name';"'TARGET Coverage CovOption Target Premium'";calcType)))çä //CASE (/*Target calculation method*/'ACCS TARGET CalcMethod Used'(calcType);çä//â// Sum of Chargesçä//â1: 0;çä//â// Rate Fileçä//â2: 'RateFile RateLookup CovOption Target'(calcType;coverageIndex; coverageOptionIndex; yearIndex; 1; 'GEN Vector Blank');çä//â// Dynamicçä//â3: 0;çä//â// Present Valueçä//â4: 0;çä//â// Else return error messageçä//â  : 'Messages SystemMessage'(çä//ââ"CA1009"; çä//ââ'Message Language'; çä//ââv_('TARGET Model Name'; "'TARGET Coverage CovOption Target Premium'"; calcType)çä//â    )çä//)ä
+F1 1ee4778 1ee3688 1ee4e70 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 1ee4e70 1ee4778 0 6a547bc0 0 0 2
+Target Model Name
+Funktion
+"TargetCalcs"
+F1 6a547bc0 1ee4778 0 2f814612 0 0 2
+TARGET NLP End Date(calcType; coverageIndex; coverageOptionIndex)
+Funktion
+IF ('Std Policy Has MNLP covOpt'(calcType) ; çä  'PIDRV CovOptionProduct NLG ExpirationDate'(calcType;coverageIndex;coverageOptionIndex) ; çä  'PIDRV PremiumRate NLG ExpirationDate'(calcType)çä)
+F1 2f814612 1ee4778 f9d797b 0 0 0 2
+-- Testing function for wmA Compare --
+Funktion
+
+F1 f9d797b 2f814612 2407a853 22bf5f9b 0 0 2
+-- CALCULATED ANNUAL VALUES --
+Funktion
+
+F1 2407a853 f9d797b 0 75c90794 0 0 2
+WMA TEST Annual Pre Ded Amt(yearIndex)
+Funktion
+ROUND('WMA TEST Pre Ded Amt Parms'('CalcType SHGT'("");'Std MNLP coverageIndex'('CalcType SHGT'(""));'Std MNLP coverageOptionIndex'('CalcType SHGT'(""));'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);yearIndex); // Assume the premium is paid each yearçä'Vector ULSHD Addl Info'('CalcType SHGT'("");"";yearIndex);yearIndex;1);2)
+F1 75c90794 f9d797b 0 0 0 0 2
+WMA TEST Annual Post Ded Amt(yearIndex)
+Funktion
+ROUND('SHADOW Projected Shadow Account Balance'('CalcType SHGT'("");'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);yearIndex); // Assume the premium is paid each yearçä'Vector ULSHD Addl Info'('CalcType SHGT'("");"";yearIndex);yearIndex;12);2)
+F1 22bf5f9b 2f814612 71e6c578 5ba04de5 0 0 2
+-- CALCULATED MONTHLY VALUES --
+Funktion
+
+F1 71e6c578 22bf5f9b 0 6748dd2f 0 0 2
+WMA TEST Monthly Pre Ded Amt(monthIndex; yearIndex)
+Funktion
+ROUND('WMA TEST Pre Ded Amt Parms'('CalcType SHGT'("");'Std MNLP coverageIndex'('CalcType SHGT'(""));'Std MNLP coverageOptionIndex'('CalcType SHGT'(""));'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);'Year Number'(monthIndex)); // Assume the premium is paid each yearçä'Vector ULSHD Addl Info'('CalcType SHGT'("");"";yearIndex);'Year Number'(monthIndex);(monthIndex - 1) MOD 12 + 1);2)
+F1 6748dd2f 22bf5f9b 0 0 0 0 2
+WMA TEST Monthly Post Ded Amt(monthIndex; yearIndex)
+Funktion
+ROUND('SHADOW Projected Shadow Account Balance'('CalcType SHGT'("");'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);'Year Number'(monthIndex)); // Assume the premium is paid each yearçä'Vector ULSHD Addl Info'('CalcType SHGT'("");"";yearIndex);'Year Number'(monthIndex);(monthIndex - 1) MOD 12 + 1);2)
+F1 5ba04de5 2f814612 1b00a34b 522f4497 0 0 2
+-- BASE COI RATES --
+Funktion
+
+F1 1b00a34b 5ba04de5 0 0 0 0 2
+WMA TEST Monthly COI(monthIndex; yearIndex)
+Funktion
+'COV COI Rate'('Std MNLP coverageIndex'('CalcType SHGT'(""));'CalcType SHGT'("");'Year Number'(monthIndex);'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);'Year Number'(monthIndex)))
+F1 522f4497 2f814612 681e2548 f81f48c 0 0 2
+-- RIDER BENES RATES
+Funktion
+
+F1 681e2548 522f4497 0 0 0 0 2
+WMA Monthly Loads(monthIndex; yearIndex)
+Funktion
+'WMA Monthly Loads Parms'('CalcType SHGT'("");'SHADOW Projected BOM Shadow Account Balance'('CalcType SHGT'("");'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);'Year Number'(monthIndex));'Vector ULSHD Addl Info'('CalcType SHGT'("");"";yearIndex);'Year Number'(monthIndex);(monthIndex - 1) MOD 12 + 1);'Year Number'(monthIndex);(monthIndex - 1) MOD 12 + 1;'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);'Year Number'(monthIndex)))
+F1 f81f48c 2f814612 2734bb1a 33630e0d 0 0 2
+-- INTEREST RATES --
+Funktion
+
+F1 2734bb1a f81f48c 0 0 0 0 2
+WMA Monthly IntFactor(monthIndex)
+Funktion
+'GEN Future Value Factor'('SHADOW Shadow Interest Rate'('CalcType SHGT'("");'Year Number'(monthIndex));1 / 12)
+F1 33630e0d 2f814612 158abd96 43f926f3 0 0 2
+-- PREMIUM AMOUNTS --
+Funktion
+
+F1 158abd96 33630e0d 0 3b8f3e4e 0 0 2
+WMA Monthly Gross Prem(monthIndex; yearIndex)
+Funktion
+'PREMIUM Projected GrossPremium'('CalcType SHGT'("");'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);'Year Number'(monthIndex));'Vector ULSHD Addl Info'('CalcType SHGT'("");"";yearIndex);'Year Number'(monthIndex);(monthIndex - 1) MOD 12 + 1)
+F1 3b8f3e4e 33630e0d 0 56ba3dd7 0 0 2
+WMA Monthly Trx Fee(monthIndex)
+Funktion
+'PLC Premium Load FeeAmt Total'('CalcType SHGT'("");'FeeType PremiumLoad';'Year Number'(monthIndex))
+F1 56ba3dd7 33630e0d 0 23aa1fd1 0 0 2
+WMA Monthly Load Pct(monthIndex)
+Funktion
+'PLC Premium Load Primary Rate'('CalcType SHGT'("");'FeeType PremiumLoad';'Std MNLP coverageIndex'('CalcType SHGT'(""));'Year Number'(monthIndex))
+F1 23aa1fd1 33630e0d 0 0 0 0 2
+WMA Monthly Net Prem(monthIndex; yearIndex)
+Funktion
+'PREMIUM Projected Net Premium'('CalcType SHGT'("");'SharedVector SolveParms MakePremium'('WMA TEST SHGT Premium Amount'(yearIndex);'Year Number'(monthIndex));'Vector ULSHD Addl Info'('CalcType SHGT'("");"";yearIndex);'Year Number'(monthIndex);(monthIndex - 1) MOD 12 + 1)
+F1 43f926f3 2f814612 49185e9b 0 0 0 2
+-- Supporting Functions --
+Funktion
+
+F1 49185e9b 43f926f3 0 792e743b 0 0 2
+WMA TEST Pre Ded Amt Parms(calcType; coverageIndex; coverageOptionIndex; vectorSolveParms; vectorAddlInfo; yearIndex; monthIndex)
+Funktion
+'GEN Round'('SHADOW Projected BOM Shadow Account Balance'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex) - 'CHG Projected Monthly Total Charges'(calcType;'SHADOW Projected BOM Shadow Account Balance'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);'PREMIUM Projected LTD Prem Rec'(calcType;vectorSolveParms;vectorAddlInfo;yearIndex;monthIndex);yearIndex;monthIndex;vectorSolveParms); // Round 2 placesçä'ACCS Decimal'(calcType))
+F1 792e743b 43f926f3 0 13f45ca0 0 0 2
+WMA Monthly Loads Parms(calcType; bom_cv; yearIndex; monthIndex; vectorSolveParms)
+Funktion
+'CHG Projected Admin Charges'(calcType;bom_cv;yearIndex;monthIndex;vectorSolveParms) - 'COV Projected Monthly Total NonNAR Charges'(calcType;yearIndex;monthIndex;vectorSolveParms) - 'COV Projected Monthly Total NonWMD Benefit Charges'(calcType;yearIndex;monthIndex;vectorSolveParms)
+F1 13f45ca0 43f926f3 0 0 0 0 2
+WMA TEST SHGT Premium Amount(yearIndex)
+Funktion
+'DynTarget Total Annual Target Premium'('CalcType SHGT'("");"";yearIndex)
+A0 3f4374 0 0 0 0 0 0
+
+T0 3f43e4 0 0 0 0 0 0
+
+I0 3f4454 0 1ee4590 0 0 0 0
+
+I0 1ee4590 3f4454 0 1ee4648 0 0 0
+TargetDynamic.pms
+I0 1ee4648 3f4454 0 0 0 0 0
+TargetSumOfCharges.pms
+-
+O0
+E0
+L0
+B0
+P3
+1edde38
+1ee2738
+1ee1020
+F8
+1ee3688
+1ee3740
+1ee37f8
+1ee3b70
+1ee4778
+1ee4e70
+6a547bc0
+2f814612
+A0
+T0
+!54
+1ee2738 4 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee2738 5 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1ee2738 5 2
+
+1ee2738 6 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee2738 7 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee2738 8 -1
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1ee2738 9 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1ee2738 10 -1
+çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee2738 12 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1ee2738 14 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee2738 15 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1ee2738 16 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee2738 17 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee2738 18 -1
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1ee2738 19 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1ee2738 21 -1
+Description: Returns the target premium for the NL Lapse Provision.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/2009 CMC removed parameters from the output (MNLPcoverageIndex; MNLPcoverageOptionIndex) and new MNLP provision checking.
+1ee2738 22 -1
+Description: Returns the target premium for the NL Lapse Provision for the coverage option.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/08/2010 CL Integration CMC added output
+1ee2738 23 -1
+Description: Returns the target premium for the NL Lapse Provision using product definition.çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/08/2010 CL Integration CMC added output
+1ee2738 24 -1
+Description: Returns the end date for the NL Lapse Provision for the selected coverage and coverage option.çä çäModification Logçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/10/2009 CMC removed parameters from the output.çä08/21/2009 CSC nbA Integration
+1ee2738 25 -1
+Description: Returns the monthly target premium for the NL Lapse Provision.çä çäModification Logçä11/23/2009 CMC removed parameters from the output (MNLPcoverageIndex; MNLPcoverageOptionIndex) and new MNLP provision checking.
+1ee2738 26 -1
+Description: Returns the monthly target premium for the NL Lapse Provision using a coverage option.çä çäModification Logçä01/08/2010 CL Integration CMC added output
+1ee2738 27 -1
+Description: Returns the monthly target premium for the NL Lapse Provision from product definition.çä çäModification Logçä01/08/2010 CL Integration CMC added output
+1ee2738 29 -1
+Description: Shadow Target (SHGT) Annual Premiumçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä03/06/2010 ENH922 JL Initial Calculation
+1ee1020 3 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee1020 4 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee1020 5 -1
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee1020 6 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructure
+1ee1020 7 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä11/19/2010 ENH922 CMC added OUTPUT to facilitate debug report
+31940ca4 -2 -2
+Description: Returns the total target premium amount for the particular target calculation type.çä çäModification Log:çä10/03/2014 - PA1501 - rm -replace usage of fixed ACORD values with mapped readable string values to allow for greater usabilityçä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä11/23/2009 nbA Integration CMC updated to use the private type codes identified for the premium rate type object.çä10/31/2007 CSC Initial Calculation/Rule
+31940ca4 0 2
+
+223f56d0 -2 -2
+Description: Returns the total target premium amount for the particular target calculation type.çä çäModification Log:çä10/03/2014 - PA1501 - rm -replace usage of fixed ACORD values with mapped string values to allow for greater usabilityçä11/8/2013pA 1401 - 26 CMC removed yearIndex as a parm and substitued with TransEffDur in calls to other functions.çä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä04/26/2011 CL Merge CMC regression update following mergeçä1/31/2011 - PAC013 calcType CMC reversed parms due to Solve function usage.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+309c684b -2 -2
+çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/09/2011 pA Regression CMC If the target method is Sum of Charges use a $1 target premiumçä2/2/2011 - PAC013 - calcType - BT - created function since it is reused several times; may need to be moved to lower level function
+309c684b 0 2
+
+1647fafa -2 -2
+Description: Returns the total annual target premium amount for the specified coverage and target calculation type.çä                    çäModification Log:çä10/03/2014 - PA1501 - rm -replace usage of fixed ACORD values with mapped readable string values to allow for greater usabilityçä04/30/2014 - CL1401 - Corrected parm order for yearIndex parm in 'RateFile RateLookup Coverage Target'çä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä12/10/2009 nbA Integation CMC updated coverage level to provide the policy level target for the base coverage under Sum of Charges and Dynamic targets.çä10/31/2007 CSC Initial Calculation/Rule
+1647fafa 0 2
+
+278dd3a -2 -2
+Description: Returns the total annual base target premium amount for the specified coverage and target calculation type.çä çäModification Log:çä10/03/2014 - PA1501 - rm -replace usage of fixed ACORD values with mapped readable string values to allow for greater usabilityçä04/30/2014 - CL1401 - Corrected parm order for yearIndex parm in 'RateFile RateLookup Coverage Basic Target'çä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+4090b99a -2 -2
+Description: Returns the total annual table rating target premium amount for the specified coverage and target calculation type.çä çäModification Log:çä10/03/2014 - PA1501 - rm -replace usage of fixed ACORD values with mapped readable string values to allow for greater usabilityçä04/30/2014 - CL1401 - Corrected parm order for yearIndex parm in 'RateFile RateLookup Coverage TableRating Target'çä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+2ebde333 -2 -2
+Description: Returns the total annual flat extra target premium amount for the specified coverage and target calculation type.çä çäModification Log:çä10/03/2014 - PA1501 - rm -replace usage of fixed ACORD values with mapped readable string values to allow for greater usabilityçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+69a522a2 -2 -2
+Description: Returns the total annual CovOption target premium amount for the specified Coverage, CovOption,  and target calculation type.çä çäModification Log:çä10/03/2014 - PA1501 - rm -replace usage of fixed ACORD values with mapped readable string values to allow for greater usabilityçä07/10/2013 PA1401-26 KC added yearIndex parmçä11/01/2012 wmA-J 1301 Release 2 Sprint 6 CMC moved target calc method function to access model.çä1/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä1/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+6a547bc0 -2 -2
+Description: Returns the end date for the no lapse provision.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/23/2009 nba Integration CMC modified to check for coverage option MNLP protection first then default to product definition.çä08/24/2009 CSC Added for nbA Integration
+2407a853 -2 -2
+Description: Annual Pre-Deduction Amountçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+75c90794 -2 -2
+Description: Annual Post-Deduction Amountçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+71e6c578 -2 -2
+Description: Monthly Pre-Deduction Amountçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+6748dd2f -2 -2
+Description: Monthly Post-Deduction Amountçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+1b00a34b -2 -2
+Description: Monthly COI Rateçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+681e2548 -2 -2
+Description: Monthly Rider Loadsçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+2734bb1a -2 -2
+Description: Monthly Interest Factorçä çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+158abd96 -2 -2
+Description: Monthly Gross Premiumçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+3b8f3e4e -2 -2
+Description: Monthly Transaction Feeçä çäModification Log:çä5/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+56ba3dd7 -2 -2
+Description: Monthly Premium Load Percentageçä çäModification Log:çä5/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+23aa1fd1 -2 -2
+Description: Monthly Net Premiumçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+49185e9b -2 -2
+Description: Pre-Deduction Amount, with parmsçä çäModification Log:çä9/6/2011 - pA1101 - cleanup - BT - add rounding functionçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+792e743b -2 -2
+Description: Monthly Rider Loads, with parmsçä çäModification Log:çä07/30/2010 ENH922 JL Initial Function for WMA Testing
+13f45ca0 -2 -2
+Description: Annual SHGT Premiumçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä07/30/2010 ENH922 JL Initial Function for WMA Testing
+;Offset=00000000

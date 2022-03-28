@@ -1,0 +1,999 @@
+;1	08.12.2016 13:35:27	jlawrie2	
+X0 1c43cb0 0 1c445e0 0 0 0 0
+
+X0 1c445e0 1c43cb0 1c44688 0 0 0 0
+-- All Test Cases - VAUB1PA FULLSURR --
+X1 1c44688 1c445e0 0 1c44770 0 0 2
+FGRPDXIN(s)
+FGRPDXIN("(VA1PA!FGRPDXIN!19000101!35!1!1!1!1!1!**!01!2!A!1!1)")
+36
+X1 1c44770 1c445e0 0 1c44880 0 0 2
+FCHGAMT(s)
+FCHGAMT("(VAPA!FCHGAMT!19000101!35!10!1!1!1!1!**!01!2!A!1!1)")
+32
+X1 1c44880 1c445e0 0 1c449c0 0 0 2
+FCHGAMT(s)1
+FCHGAMT("(VAPA!FCHGAMT!20020101!35!5!1!1!1!0!51!06!2!1!0!)")
+32
+X1 1c449c0 1c445e0 0 1c44b08 0 0 2
+FCHGPCT(s)
+FCHGPCT("(VA1PA!FCHGPCT!20060101!35!2!1!1!1!1!51!06!1)")
+25.6
+X1 1c44b08 1c445e0 0 1c44c58 0 0 2
+FALLOW(s)
+FALLOW("(VA1PA!FALLOW!19000101!35!10!1!1!1!1!**!01!2!A!1!1)")
+M
+X1 1c44c58 1c445e0 0 1c44db8 0 0 2
+FFREEPCT(s)
+FFREEPCT("(VA1PA!FFREEPCT!19000101!35!10!1!1!1!1!**!06!2!A!1!1)")
+32
+X1 1c44db8 1c445e0 0 0 0 0 2
+FFREEMO(s)
+FFREEMO("(VA1PA!FFREEMO!19000101!35!10!1!1!1!1!**!06!2!A!1!1)")
+40
+O0 1c43b6c 0 0 0 0 0 0
+
+E0 1c43bd8 0 0 0 0 0 0
+
+L0 1c43c44 0 0 0 0 0 0
+
+B0 1c43df4 0 0 0 0 0 0
+
+P1 1c43d1c 0 1cd0640 0 0 0 2
+
+--description
+Variable Annuity with Unbundled Mortality and Expense product's full surrender rates model.çä çäRate types include (but not limited to):çä - surrender grace period after crossing anniv (FGRPDXIN)çä - full surrender charge amount (FCHGAMT)çä - full surrender charge percentage (FCHGPCT)çä - frequency of charge free withdrawal amounts allowed (FALLOW)çä - percentage of cash value which is charge free (FFREEPCT)çä - number of months of interest penalty free (FFREEMO)
+P13 1cd0640 1c43d1c 1c44ed0 0 0 0 2
+Variable Annuity with Unbundled M&E pA - Full Surrender Charge rates
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Rate tables model for RVAUB1PA plan"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"RVAUB1PA_FULLSURR.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"SS"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1c44ed0 1cd0640 0 0 0 0 2
+VAUB1PA Plan
+IncType
+mandatory
+IncRule
+
+IncValue
+
+F0 1c43d88 0 1cd0d68 0 0 0 0
+
+F1 1cd0d68 1c43d88 1cd0e20 0 0 0 2
+--Rate Types--
+Funktion
+
+F1 1cd0e20 1cd0d68 1c45058 1c45fc8 0 0 2
+--Full Surrender Rate Types--
+Funktion
+
+F1 1c45058 1cd0e20 0 1c45178 0 0 2
+FGRPDXIN(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Grace Period Xin Lookup'(s)çä)
+F1 1c45178 1cd0e20 0 1c45388 0 0 2
+FCHGAMT(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Charge Amount Lookup'(s)çä)
+F1 1c45388 1cd0e20 0 1c455b0 0 0 2
+FCHGPCT(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Charge Percent Lookup'(s)çä)
+F1 1c455b0 1cd0e20 0 1c45740 0 0 2
+FALLOW(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Allow Lookup'(s)çä)
+F1 1c45740 1cd0e20 0 1c45978 0 0 2
+FFREEPCT(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Free Percent Lookup'(s)çä)
+F1 1c45978 1cd0e20 0 1c45bb8 0 0 2
+FFREEMO(s)
+Funktion
+IF ('Parm Validation'(V_("Band_Code";"Duration");s) ; çä  "NoRateFound" ; çä   // Validation for existing Rates...çä'FULLSURR Free Months Lookup'(s)çä)
+F1 1c45bb8 1cd0e20 1c45d70 0 0 0 2
+--Select period functions--
+Funktion
+
+F1 1c45d70 1c45bb8 0 0 0 0 2
+FULLSURR Select Period(s)
+Funktion
+IF (EXISTS('TABLE fsurr Select period';SetParameter("Rate_Type";s)) ; çä  'TABLE fsurr Select period'[SetParameter("Rate_Type";s)] ; çä  0çä)
+F1 1c45fc8 1cd0d68 1c46190 0 0 0 2
+--Table access functions--
+Funktion
+
+F1 1c46190 1c45fc8 0 1c466b8 0 0 2
+FULLSURR Grace Period Xin Lookup(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä  LOOKUPX('TABLE FGRPDXIN';'Fsurr Access Table ID Key'(s); // select periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Year_" & SetParameter("Duration";s)) ; çä  LOOKUPX('TABLE FGRPDXIN';'Fsurr Access Table ID Key'(s); // Ultimate periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Ultimate")çä)
+F1 1c466b8 1c45fc8 0 1c46be8 0 0 2
+FULLSURR Charge Amount Lookup(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä  LOOKUPX('TABLE FCHGAMT';'Fsurr Access Table ID Key'(s); // select periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Year_" & SetParameter("Duration";s)) ; çä  LOOKUPX('TABLE FCHGAMT';'Fsurr Access Table ID Key'(s); // Ultimate periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Ultimate")çä)
+F1 1c46be8 1c45fc8 0 1c47120 0 0 2
+FULLSURR Charge Percent Lookup(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä  LOOKUPX('TABLE FCHGPCT';'Fsurr Access Table ID Key'(s); // select periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Year_" & SetParameter("Duration";s)) ; çä  LOOKUPX('TABLE FCHGPCT';'Fsurr Access Table ID Key'(s); // Ultimate periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Ultimate")çä)
+F1 1c47120 1c45fc8 0 1c47658 0 0 2
+FULLSURR Allow Lookup(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä  LOOKUPX('TABLE FALLOW';'Fsurr Access Table ID Key'(s); // select periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Year_" & SetParameter("Duration";s)) ; çä  LOOKUPX('TABLE FALLOW';'Fsurr Access Table ID Key'(s); // Ultimate periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Ultimate")çä)
+F1 1c47658 1c45fc8 0 1c47a88 0 0 2
+FULLSURR Free Percent Lookup(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä  LOOKUPX('TABLE FFREEPCT';'Fsurr Access Table ID Key'(s); // select periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Year_" & SetParameter("Duration";s)) ; çä  LOOKUPX('TABLE FFREEPCT';'Fsurr Access Table ID Key'(s); // Ultimate periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Ultimate")çä)
+F1 1c47a88 1c45fc8 0 1c47fd0 0 0 2
+FULLSURR Free Months Lookup(s)
+Funktion
+IF (SetParameter("Duration";s) <= 'FULLSURR Select Period'(s) ; çä  LOOKUPX('TABLE FFREEMO';'Fsurr Access Table ID Key'(s); // select periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Year_" & SetParameter("Duration";s)) ; çä  LOOKUPX('TABLE FFREEMO';'Fsurr Access Table ID Key'(s); // Ultimate periodçä'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);'Fsurr Access Band Code Key'(s);SetParameter("Issue_Age";s);"Ultimate")çä)
+F1 1c47fd0 1c45fc8 1c481a8 0 0 0 2
+--Build access keys--
+Funktion
+
+F1 1c481a8 1c47fd0 0 1c483e0 0 0 2
+Fsurr Access Table ID Key(s)
+Funktion
+SetParameter("Table_Code";s)
+F1 1c483e0 1c47fd0 0 1c487e0 0 0 2
+Fsurr Access ChargeBasedOn Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);SetParameter("Rule_Code";s)) ; çä   // Table exists, use ChargeBasedOn value in searchçäSetParameter("Rule_Code";s) ; çä   // Else table does not exist, use wildcardçäIF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);"*") ; çä     // Return the wildcard as the search parameterçä"*" ; çä     // Else no matchçä"nomatch"çä  )çä)
+F1 1c487e0 1c47fd0 0 1c48b80 0 0 2
+Fsurr Access Jurisdiction Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);SetParameter("State_Code";s)) ; çä  SetParameter("State_Code";s) ; çä  IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);"*") ; çä    "*" ; çä    "nomatch"çä  )çä)
+F1 1c48b80 1c47fd0 0 1c48f68 0 0 2
+Fsurr Access Gender Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Gender Code Key'(s)) ; çä  'Gender Code Key'(s) ; çä  IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);"*") ; çä    "*" ; çä    "nomatch"çä  )çä)
+F1 1c48f68 1c47fd0 0 1c49400 0 0 2
+Fsurr Access Smoke Code Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Smoke Code Key'(s)) ; çä  'Smoke Code Key'(s) ; çä  IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);"*") ; çä    "*" ; çä    "nomatch"çä  )çä)
+F1 1c49400 1c47fd0 0 1c49900 0 0 2
+Fsurr Access Band Code Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);SetParameter("Band_Code";s)) ; çä  SetParameter("Band_Code";s) ; çä  IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Fsurr Access Underwriting Class Key'(s);'Fsurr Access Smoke Code Key'(s);"*") ; çä    "*" ; çä    "nomatch"çä  )çä)
+F1 1c49900 1c47fd0 0 0 0 0 2
+Fsurr Access Underwriting Class Key(s)
+Funktion
+IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);'Underwriting Class Key'(s)) ; çä  'Underwriting Class Key'(s) ; çä  IF (EXISTS(table("TABLE " & SetParameter("Rate_Type";s));'Fsurr Access Table ID Key'(s);'Fsurr Access ChargeBasedOn Key'(s);'Fsurr Access Jurisdiction Key'(s);'Fsurr Access Gender Key'(s);"*") ; çä    "*" ; çä    "nomatch"çä  )çä)
+A0 1c43e60 0 0 0 0 0 0
+
+T0 1c43ecc 0 1c49ec8 0 0 0 0
+
+T1 1c49ec8 1c43ecc 1c4a100 0 0 0 2
+--Tables--
+key
+value
+T7 1c4a100 1c49ec8 0 1c4ac00 0 0 17
+TABLE FGRPDXIN
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Ultimate
+01
+*
+*
+*
+*
+*
+*
+18
+36
+36
+36
+36
+36
+36
+36
+36
+36
+01
+*
+*
+*
+*
+*
+*
+66
+36
+36
+36
+36
+36
+36
+36
+36
+36
+06
+*
+*
+*
+*
+*
+*
+18
+36
+36
+36
+36
+36
+36
+36
+36
+36
+06
+*
+*
+*
+*
+*
+*
+66
+36
+36
+36
+36
+36
+36
+36
+36
+36
+13
+*
+*
+*
+*
+*
+*
+18
+36
+36
+36
+36
+36
+36
+36
+36
+36
+13
+*
+*
+*
+*
+*
+*
+66
+36
+36
+36
+36
+36
+36
+36
+36
+36
+T7 1c4ac00 1c49ec8 0 1c4b558 0 0 17
+TABLE FCHGAMT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Ultimate
+01
+*
+*
+*
+*
+*
+*
+18
+32
+32
+32
+32
+32
+32
+32
+32
+32
+01
+*
+*
+*
+*
+*
+*
+66
+32
+32
+32
+32
+32
+32
+32
+32
+32
+06
+*
+*
+*
+*
+*
+*
+18
+32
+32
+32
+32
+32
+32
+32
+32
+32
+06
+*
+*
+*
+*
+*
+*
+66
+32
+32
+32
+32
+32
+32
+32
+32
+32
+13
+*
+*
+*
+*
+*
+*
+18
+32
+32
+32
+32
+32
+32
+32
+32
+32
+13
+*
+*
+*
+*
+*
+*
+66
+32
+32
+32
+32
+32
+32
+32
+32
+32
+T7 1c4b558 1c49ec8 0 1c4bd00 0 0 16
+TABLE FCHGPCT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Ultimate
+01
+*
+*
+*
+*
+*
+*
+0
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+18
+01
+*
+*
+*
+*
+*
+*
+35
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+21
+06
+*
+*
+*
+*
+*
+*
+0
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+18
+06
+*
+*
+*
+*
+*
+*
+35
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+21
+13
+*
+*
+*
+*
+*
+*
+0
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+18
+13
+*
+*
+*
+*
+*
+*
+35
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+25.6
+21
+T7 1c4bd00 1c49ec8 0 1c4c668 0 0 17
+TABLE FFREEPCT
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Ultimate
+01
+*
+*
+*
+*
+*
+*
+18
+32
+32
+32
+32
+32
+32
+32
+32
+32
+01
+*
+*
+*
+*
+*
+*
+66
+32
+32
+32
+32
+32
+32
+32
+32
+32
+06
+*
+*
+*
+*
+*
+*
+18
+32
+32
+32
+32
+32
+32
+32
+32
+32
+06
+*
+*
+*
+*
+*
+*
+66
+32
+32
+32
+32
+32
+32
+32
+32
+32
+13
+*
+*
+*
+*
+*
+*
+18
+32
+32
+32
+32
+32
+32
+32
+32
+32
+13
+*
+*
+*
+*
+*
+*
+66
+32
+32
+32
+32
+32
+32
+32
+32
+32
+T7 1c4c668 1c49ec8 0 1c4cfd0 0 0 17
+TABLE FFREEMO
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Ultimate
+01
+*
+*
+*
+*
+*
+*
+18
+30
+30
+30
+30
+30
+30
+30
+30
+30
+01
+*
+*
+*
+*
+*
+*
+66
+30
+30
+30
+30
+30
+30
+30
+30
+30
+06
+*
+*
+*
+*
+*
+*
+18
+40
+40
+40
+40
+40
+40
+40
+40
+40
+06
+*
+*
+*
+*
+*
+*
+66
+40
+40
+40
+40
+40
+40
+40
+40
+40
+13
+*
+*
+*
+*
+*
+*
+18
+40
+40
+40
+40
+40
+40
+40
+40
+40
+13
+*
+*
+*
+*
+*
+*
+66
+40
+40
+40
+40
+40
+40
+40
+40
+40
+T7 1c4cfd0 1c49ec8 0 1c4d940 0 0 17
+TABLE FALLOW
+TableIdentity
+ChargeBasedOn
+Jurisdiction
+Gender_Code
+Underwriting_Class
+Smoke_Code
+Band_Code
+low_age
+Year_1
+Year_2
+Year_3
+Year_4
+Year_5
+Year_6
+Year_7
+Year_8
+Ultimate
+01
+*
+*
+*
+*
+*
+*
+18
+M
+M
+M
+M
+M
+M
+M
+M
+M
+01
+*
+*
+*
+*
+*
+*
+66
+M
+M
+M
+M
+M
+M
+M
+M
+M
+06
+*
+*
+*
+*
+*
+*
+18
+M
+M
+M
+M
+M
+M
+M
+M
+M
+06
+*
+*
+*
+*
+*
+*
+66
+M
+M
+M
+M
+M
+M
+M
+M
+M
+13
+*
+*
+*
+*
+*
+*
+18
+M
+M
+M
+M
+M
+M
+M
+M
+M
+13
+*
+*
+*
+*
+*
+*
+66
+M
+M
+M
+M
+M
+M
+M
+M
+M
+T7 1c4d940 1c49ec8 0 0 0 0 2
+TABLE fsurr Select period
+rate_type
+sel_period
+FGRPDXIN
+8
+FCHGAMT
+8
+FCHGPCT
+7
+FALLOW
+8
+FFREEPCT
+8
+FFREEMO
+8
+I0 1c43f38 0 70b894b6 0 0 0 0
+
+I0 70b894b6 1c43f38 0 0 0 0 0
+RateModelFunctions.pms
+-
+O0
+E0
+L0
+B0
+P2
+1cd0640
+1c44ed0
+F17
+1cd0d68
+1cd0e20
+1c45fc8
+1c46190
+1c466b8
+1c46be8
+1c47120
+1c47658
+1c47a88
+1c47fd0
+1c481a8
+1c483e0
+1c487e0
+1c48b80
+1c48f68
+1c49400
+1c49900
+A0
+T1
+1c49ec8
+!19
+1c45058 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the number of days following the policy anniversary that the surrender grace period is applicable, from internal table T_FGRPDXIN..çäValidation is performed on the Band_Code and Duration.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45178 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the full surrender flat amount, from internal table T_FCHGPCT.çäValidation is performed on the Band_Code and Duration.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45388 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the full surrender percentage, from internal table T_FCHGPCT.çäValidation is performed on the Band_Code and Duration.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c455b0 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the full surrender frequency of charge free withdrawal amounts allowed, from internal table T_FALLOW.çäValidation is performed on the Band_Code and Duration.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45740 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the full surrender percentage of cash value that is charge free, from internal table T_FFREEPCT.çäValidation is performed on the Band_Code and Duration.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45978 -2 -2
+Description: This function is called by late referencing from the Access Model and returns, the full surrender number of months of interest penalty free, from internal table T_FFREEMO.çäValidation is performed on the Band_Code and Duration.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c45d70 -2 -2
+Description: This function returns, the full surrender select period by rate type, from internal table T_fsurr_sel_period.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c46190 -2 -2
+Description: This function performs a look up in internal table T_FGRPDXIN and returns the number of days following the policy anniversary that the surrender grace period is applicable. The look up is based on a select and ultimate basis and any or all of the key information between the charge based on rule and issue age can contain wildcards (*).  Each of the wildcardable parms will check for a match on the input value, but if that exact match is not found, then that parm will be overridden with the wildcard value (*).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c466b8 -2 -2
+Description: This function performs a look up in internal table T_FCHGAMT and returns the full surrender flat amount. The look up is based on a select and ultimate basis and any or all of the key information between the charge based on rule and issue age can contain wildcards (*).  Each of the wildcardable parms will check for a match on the input value, but if that exact match is not found, then that parm will be overridden with the wildcard value (*).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c46be8 -2 -2
+Description: This function performs a look up in internal table T_FCHGPCT and returns the full surrender percentage. The look up is based on a select and ultimate basis and any or all of the key information between the charge based on rule and issue age can contain wildcards (*).  Each of the wildcardable parms will check for a match on the input value, but if that exact match is not found, then that parm will be overridden with the wildcard value (*).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c47120 -2 -2
+Description: This function performs a look up in internal table T_FALLOW and returns the full surrender frequency of charge free withdrawal amounts allowed. The look up is based on a select and ultimate basis and any or all of the key information between the charge based on rule and issue age can contain wildcards (*).  Each of the wildcardable parms will check for a match on the input value, but if that exact match is not found, then that parm will be overridden with the wildcard value (*).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c47a88 -2 -2
+Description: This function performs a look up in internal table T_FFREEMO and returns the full surrender number of months of interest penalty free. The look up is based on a select and ultimate basis and any or all of the key information between the charge based on rule and issue age can contain wildcards (*).  Each of the wildcardable parms will check for a match on the input value, but if that exact match is not found, then that parm will be overridden with the wildcard value (*).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c481a8 -2 -2
+Description: This function parses and returns the table identity code from the passed serialized vector string (s).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c483e0 -2 -2
+Description: This function parses and returns the charge based on rule code from the passed serialized vector string (s).çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c487e0 -2 -2
+Description: This function parses and validates the jurisdiction code from the passed serialized vector string (s). A test is performed, using all established parms to this position, to insure the existence of the parm value, and if present, returns the original parm value.  If the exact parm value is not within the table, an attempt is made using the wildcard value (*).  If the wildcard entry is located the wildcard value (*) is returned.  If neither test is successful, a no match value is returned.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c48b80 -2 -2
+Description:  This function parses and validates the gender code from the passed serialized vector string (s). A test is performed, using all established parms to this position, to insure the existence of the parm value, and if present, returns the original parm value.  If the exact parm value is not within the table, an attempt is made using the wildcard value (*).  If the wildcard entry is located the wildcard value (*) is returned.  If neither test is successful, a no match value is returned.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+1c48f68 -2 -2
+Description: This function parses and validates the smoke code from the passed serialized vector string (s). A test is performed, using all established parms to this position, to insure the existence of the parm value, and if present, returns the original parm value.  If the exact parm value is not within the table, an attempt is made using the wildcard value (*).  If the wildcard entry is located the wildcard value (*) is returned.  If neither test is successful, a no match value is returned.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c49400 -2 -2
+Description: This function parses and validates the band code from the passed serialized vector string (s). A test is performed, using all established parms to this position, to insure the existence of the parm value, and if present, returns the original parm value.  If the exact parm value is not within the table, an attempt is made using the wildcard value (*).  If the wildcard entry is located the wildcard value (*) is returned.  If neither test is successful, a no match value is returned.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1c49900 -2 -2
+Description: This function parses and validates the underwriting class code from the passed serialized vector string (s). A test is performed, using all established parms to this position, to insure the existence of the parm value, and if present, returns the original parm value.  If the exact parm value is not within the table, an attempt is made using the wildcard value (*).  If the wildcard entry is located the wildcard value (*) is returned.  If neither test is successful, a no match value is returned.çä çäModification Logçä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

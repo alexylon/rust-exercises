@@ -1,0 +1,126 @@
+;1	30.03.2017 09:41:42	rbelfer	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 7301bbfd 0 0 0 2
+
+--description
+Global Error Functions model.çä çäRELEASE LOG:çäRELEASE pA 1401çäRELEASE Global pA 1301
+P13 7301bbfd de0804 0 0 0 0 2
+Global Error Functions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Error Functions model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGErrorFunctions.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JC/JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+F0 de0860 0 49e00336 0 0 0 0
+
+F1 49e00336 de0860 0 6a6c4ba1 0 0 2
+Messages SystemMessage Description(s; msg_code; language)
+Funktion
+'Messages Build LR Language Call'('Messages Model Name'(s);"SystemMessage";msg_code;language)
+F1 6a6c4ba1 de0860 0 654851ec 0 0 2
+Messages Build LR Language Call(modelName; functionName; msg_code; language)
+Funktion
+VPMCOMPUTE(modelName;functionName & "(" & 'Messages Quote'(msg_code) & "; " & 'Messages Quote'(language) & ")")
+F1 654851ec de0860 0 20136eff 0 0 2
+Messages SystemMessage Severity(s; msg_code)
+Funktion
+ // Description: çä// Returns the severity levelçä//çä// Modification Log:çä// 01/25/2007   Perry Myers  Created functionçä'Messages SystemMessage Description'(s;msg_code;"MessageSeverityCode")
+F1 20136eff de0860 0 0 0 0 2
+Messages SystemMessage Vector(s; msg_code)
+Funktion
+Error("Obsolete: Messages SystemMessage Vector(s; msg_code)")
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 6ed5dd7d 0 0 0 0
+
+T4 6ed5dd7d de0974 0 0 0 0 8
+TABLE MSG Model Name
+Product_Code
+'Msg Type'
+Effective_Date
+Access_Method
+Model_Name_internal
+Model_Name_host
+Model_Name_external_rates
+Comment
+*
+ERROR
+
+
+PAGMessages.vpm
+MESSAGES
+EXTDB
+Common Messages
+*
+MESSAGE
+
+
+PAGMessages.vpm
+MESSAGES
+EXTDB
+Common Messages
+*
+VALIDATION
+
+
+ACORD_LOOKUP_ATTRIBUTES_2_15_00.vpm
+LOOKUP
+EXTDB
+Vaidation Allowed Values
+I0 6a17720f 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P1
+7301bbfd
+F4
+49e00336
+6a6c4ba1
+654851ec
+20136eff
+A0
+T1
+6ed5dd7d
+!4
+49e00336 -2 -2
+Description: çäReturns the message in the desired language.çä çäModification Log:çä08/01/2013   Robert Boehmer  Overwritten function
+6a6c4ba1 -2 -2
+
+20136eff -2 -2
+
+6ed5dd7d -2 -2
+çäModification Log:çä08132013 pA-G1401 JL Point ot Global Messages model
+;Offset=00000000

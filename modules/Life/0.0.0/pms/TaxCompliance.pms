@@ -1,0 +1,3546 @@
+;1	08.12.2016 13:29:32	jlawrie2	
+X0 3f41b4 0 3f4d30 0 0 0 0
+
+X0 3f4d30 3f41b4 3f6998 0 0 0 0
+-- Unit Test Cases - TaxCompliance --
+X0 3f6998 3f4d30 3f6a48 0 0 0 0
+-- Calculation Functions --
+X24 3f6a48 3f6998 0 3f6f18 0 0 2
+TaxCompliance Policy Specified Amount
+'TaxCompliance Policy Specified Amount'("C")
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ValuePerUnit
+1000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+UL1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Number Of CoverageOption
+0
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X18 3f6f18 3f6998 0 3f72d8 0 0 2
+TaxCompliance Policy Maturity Duration
+'TaxCompliance Policy Maturity Duration'("C")
+65
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+9
+X18 3f72d8 3f6998 0 3f7610 0 0 2
+TaxCompliance Policy Maturity Duration
+'TaxCompliance Policy Maturity Duration'("C")
+65
+INPUT Policy ProductCode
+UL2PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL2PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage LifeCovTypeCode
+9
+X15 3f7610 3f6998 0 3f7948 0 0 2
+TaxCompliance Policy Premium Duration
+'TaxCompliance Policy Premium Duration'("7PP"; 1)
+65
+INPUT Policy ProductCode
+UL1PA
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+Input TransEffDate
+01/01/2006
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant IssueAge
+35
+X9 3f7948 3f6998 0 3f7f08 0 0 2
+TaxCompliance Policy Interest Rate
+'TaxCompliance Policy Interest Rate'("7PP")
+4
+INPUT Policy ProductCode
+UL1PA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Policy ProductVersionCode
+
+X1 3f7f08 3f6998 0 3f8790 0 0 2
+TaxCompliance Tolerance(type)
+'TaxCompliance Tolerance'("CV")
+0.01
+X9 3f8790 3f6998 0 2cf0d3bf 0 0 2
+Vector TCOM Target Prem AddlInfo
+'Vector TCOM Target Prem AddlInfo'("GSP")
+
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TargetPremAmount
+10000
+INPUT TransEffDate
+01/01/2006
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+I1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage TargetPremAmt
+1000
+X1039 2cf0d3bf 3f6998 0 0 0 0 2
+TaxCompliance Guideline Level Premium
+TaxCompliance Guideline Level Premium
+13327.16
+INPUT Calling System
+I1
+INPUT Calling Program
+VPMSTEST
+INPUT Policy Life CurrIntRate
+3.5
+INPUT Policy Life TargetPremAmt
+14465.4
+INPUT Policy LifeUSA DefLifeInsMethod
+1
+INPUT Policy LapseProvision GracePeriodEntryType
+1
+INPUT Policy Life MapTargetEndDate
+1/1/2011
+INPUT Policy LifeUSA GuidelineAnnPrem
+13327.16
+INPUT Policy LifeUSA GuidelineSinglePrem
+149954.8
+INPUT Policy LifeUSA AccumValue1035
+0
+INPUT Policy Life MinPremAmt
+7649.16
+INPUT Policy Life InitialPremAmt
+0
+INPUT Policy Life PaymentAmt
+3000
+INPUT Policy Life CashValueAmt
+0
+INPUT TransEffDate
+1/1/2006
+INPUT User ID
+user1
+INPUT Policy CarrierCode
+00
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy Jurisdiction
+51
+INPUT Policy ProductVersionCode
+
+INPUT Policy PaymentMode
+1
+INPUT Policy PolNumber
+1
+INPUT Policy ProductCode
+UL1PA
+INPUT Policy TermDate
+1/1/2106
+INPUT Policy PaymentAmt
+3000
+INPUT Premium Payment
+3000
+INPUT Policy ProductType
+3
+INPUT PolicyStatus
+1
+INPUT Policy Jurisdiction
+51
+INPUT Message Language
+9
+INPUT Policy Arrangement ArrType
+31
+INPUT Policy Arrangement TotalAmt
+0
+INPUT Policy Life GrossPremAmtATD
+0
+INPUT Policy Life GrossPremAmountAnniversary to Date
+0
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage BandCode
+1
+INPUT Policy Coverage DeathBenefitOptType
+1
+INPUT Policy Coverage CurrentAmt
+1000000
+INPUT Policy Coverage ValuePerUnit
+1000
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage EffDate
+1/1/2006
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage RequestedMaturityDur
+66
+INPUT Policy Coverage MaturityAge
+100
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+UL1PA
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage TermDate
+1/1/2072
+INPUT Policy Coverage LifeCovTypeCode
+9
+INPUT Policy Coverage InitCovAmt
+1000000
+INPUT Policy Coverage IntialNumberOfUnits
+1000
+INPUT Policy Coverage TargetPremAmt
+14465.4
+INPUT Policy Coverage SurrTargetPrem
+25626.9
+INPUT Policy Coverage SurrChargeITD
+0
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage LivesType
+1
+INPUT Policy Coverage PaymentMode
+1
+INPUT Policy Coverage EffDate
+1/1/2006
+INPUT Policy Coverage PaidToDate
+1/1/1900
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LIfeParticipant UnderwritingSubClass
+0
+INPUT Policy LifeParticipant LifeParticipantRoleCode
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2005
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatStartDate
+1/1/2006
+INPUT Policy LifeParticipant TempFlatEndDuration
+0
+INPUT Policy LifeParticipant TempTableRating
+0
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+1/1/1900
+INPUT Policy LifeParticipant FlatExtraPremBasis
+1
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant SubstandardRating FlatExtraPremBasis
+1
+INPUT Policy LifeParticipant SubstandardRating TempFlatStartDate
+1/1/2006
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDate
+12/31/2005
+INPUT Policy LifeParticipant SubstandardRating TempFlatEndDuration
+0
+INPUT Policy LifeParticipant SubstandardRating TempFlatExtraAmount
+0
+INPUT Policy number of CoverageOption
+0
+INPUT Policy CoverageOption EffDate
+1/1/2006
+INPUT Policy CoverageOption RequestedEffDur
+1
+INPUT Policy CoverageOption RequestedMaturityDur
+66
+INPUT Policy CoverageOption LifeCovOptTypeCode
+9
+INPUT Policy CoverageOption OptionNumberOfUnits
+0
+INPUT Policy CoverageOption ProductCode
+MNLPPA
+INPUT Policy CoverageOption TermDate
+1/1/2011
+INPUT Policy CoverageOption UnderwritingClass
+1
+INPUT Policy CoverageOption TobaccoPremiumBasis
+1
+INPUT Policy CoverageOption PermTableRating
+1
+INPUT Illus DisbSearchGoalInd
+0
+INPUT Illus PremSuppSolveType
+1
+INPUT Illus PremTargetCashValue
+1000000
+INPUT Illus PremTargetDuration
+66
+INPUT Rate Assumption
+C
+INPUT Policy PayToYear
+66
+INPUT Current Interest Rate
+0.035
+INPUT Illus Face Amt Solve DesignType
+1000500001
+INPUT Policy number of PremiumRate
+0
+INPUT Illus Something
+1
+INPUT Policy number of SubAccount
+0
+INPUT Illus PremiumDesignType
+1000500001
+INPUT Illus PremiumStreamAmt[1]
+3000
+INPUT Illus PremiumStreamAmt[2]
+3000
+INPUT Illus PremiumStreamAmt[3]
+3000
+INPUT Illus PremiumStreamAmt[4]
+3000
+INPUT Illus PremiumStreamAmt[5]
+3000
+INPUT Illus PremiumStreamAmt[6]
+3000
+INPUT Illus PremiumStreamAmt[7]
+3000
+INPUT Illus PremiumStreamAmt[8]
+3000
+INPUT Illus PremiumStreamAmt[9]
+3000
+INPUT Illus PremiumStreamAmt[10]
+3000
+INPUT Illus PremiumStreamAmt[11]
+3000
+INPUT Illus PremiumStreamAmt[12]
+3000
+INPUT Illus PremiumStreamAmt[13]
+3000
+INPUT Illus PremiumStreamAmt[14]
+3000
+INPUT Illus PremiumStreamAmt[15]
+3000
+INPUT Illus PremiumStreamAmt[16]
+3000
+INPUT Illus PremiumStreamAmt[17]
+3000
+INPUT Illus PremiumStreamAmt[18]
+3000
+INPUT Illus PremiumStreamAmt[19]
+3000
+INPUT Illus PremiumStreamAmt[20]
+3000
+INPUT Illus PremiumStreamAmt[21]
+3000
+INPUT Illus PremiumStreamAmt[22]
+3000
+INPUT Illus PremiumStreamAmt[23]
+3000
+INPUT Illus PremiumStreamAmt[24]
+3000
+INPUT Illus PremiumStreamAmt[25]
+3000
+INPUT Illus PremiumStreamAmt[26]
+3000
+INPUT Illus PremiumStreamAmt[27]
+3000
+INPUT Illus PremiumStreamAmt[28]
+3000
+INPUT Illus PremiumStreamAmt[29]
+3000
+INPUT Illus PremiumStreamAmt[30]
+3000
+INPUT Illus PremiumStreamAmt[31]
+3000
+INPUT Illus PremiumStreamAmt[32]
+3000
+INPUT Illus PremiumStreamAmt[33]
+3000
+INPUT Illus PremiumStreamAmt[34]
+3000
+INPUT Illus PremiumStreamAmt[35]
+3000
+INPUT Illus PremiumStreamAmt[36]
+3000
+INPUT Illus PremiumStreamAmt[37]
+3000
+INPUT Illus PremiumStreamAmt[38]
+3000
+INPUT Illus PremiumStreamAmt[39]
+3000
+INPUT Illus PremiumStreamAmt[40]
+3000
+INPUT Illus PremiumStreamAmt[41]
+3000
+INPUT Illus PremiumStreamAmt[42]
+3000
+INPUT Illus PremiumStreamAmt[43]
+3000
+INPUT Illus PremiumStreamAmt[44]
+3000
+INPUT Illus PremiumStreamAmt[45]
+3000
+INPUT Illus PremiumStreamAmt[46]
+3000
+INPUT Illus PremiumStreamAmt[47]
+3000
+INPUT Illus PremiumStreamAmt[48]
+3000
+INPUT Illus PremiumStreamAmt[49]
+3000
+INPUT Illus PremiumStreamAmt[50]
+3000
+INPUT Illus PremiumStreamAmt[51]
+3000
+INPUT Illus PremiumStreamAmt[52]
+3000
+INPUT Illus PremiumStreamAmt[53]
+3000
+INPUT Illus PremiumStreamAmt[54]
+3000
+INPUT Illus PremiumStreamAmt[55]
+3000
+INPUT Illus PremiumStreamAmt[56]
+3000
+INPUT Illus PremiumStreamAmt[57]
+3000
+INPUT Illus PremiumStreamAmt[58]
+3000
+INPUT Illus PremiumStreamAmt[59]
+3000
+INPUT Illus PremiumStreamAmt[60]
+3000
+INPUT Illus PremiumStreamAmt[61]
+3000
+INPUT Illus PremiumStreamAmt[62]
+3000
+INPUT Illus PremiumStreamAmt[63]
+3000
+INPUT Illus PremiumStreamAmt[64]
+3000
+INPUT Illus PremiumStreamAmt[65]
+3000
+INPUT Illus PremiumStreamAmt[66]
+3000
+INPUT Illus PremiumStreamAmt[67]
+3000
+INPUT Illus PremiumStreamAmt[68]
+3000
+INPUT Illus PremiumStreamAmt[69]
+3000
+INPUT Illus PremiumStreamAmt[70]
+3000
+INPUT Illus PremiumStreamAmt[71]
+3000
+INPUT Illus PremiumStreamAmt[72]
+3000
+INPUT Illus PremiumStreamAmt[73]
+3000
+INPUT Illus PremiumStreamAmt[74]
+3000
+INPUT Illus PremiumStreamAmt[75]
+3000
+INPUT Illus PremiumStreamAmt[76]
+3000
+INPUT Illus PremiumStreamAmt[77]
+3000
+INPUT Illus PremiumStreamAmt[78]
+3000
+INPUT Illus PremiumStreamAmt[79]
+3000
+INPUT Illus PremiumStreamAmt[80]
+3000
+INPUT Illus PremiumStreamAmt[81]
+3000
+INPUT Illus PremiumStreamAmt[82]
+3000
+INPUT Illus PremiumStreamAmt[83]
+3000
+INPUT Illus PremiumStreamAmt[84]
+3000
+INPUT Illus PremiumStreamAmt[85]
+3000
+INPUT Illus PremiumStreamAmt[86]
+3000
+INPUT Illus PremiumStreamAmt[87]
+3000
+INPUT Illus PremiumStreamAmt[88]
+3000
+INPUT Illus PremiumStreamAmt[89]
+3000
+INPUT Illus PremiumStreamAmt[90]
+3000
+INPUT Illus PremiumStreamAmt[91]
+3000
+INPUT Illus PremiumStreamAmt[92]
+3000
+INPUT Illus PremiumStreamAmt[93]
+3000
+INPUT Illus PremiumStreamAmt[94]
+3000
+INPUT Illus PremiumStreamAmt[95]
+3000
+INPUT Illus PremiumStreamAmt[96]
+3000
+INPUT Illus PremiumStreamAmt[97]
+3000
+INPUT Illus PremiumStreamAmt[98]
+3000
+INPUT Illus PremiumStreamAmt[99]
+3000
+INPUT Illus PremiumStreamAmt[100]
+3000
+INPUT Illus WithdrawalType
+1
+INPUT Illus WithdrawalDesignType
+1000500002
+INPUT Illus WithdrawalAmt[1]
+0
+INPUT Illus WithdrawalAmt[2]
+0
+INPUT Illus WithdrawalAmt[3]
+0
+INPUT Illus WithdrawalAmt[4]
+0
+INPUT Illus WithdrawalAmt[5]
+0
+INPUT Illus WithdrawalAmt[6]
+0
+INPUT Illus WithdrawalAmt[7]
+0
+INPUT Illus WithdrawalAmt[8]
+0
+INPUT Illus WithdrawalAmt[9]
+0
+INPUT Illus WithdrawalAmt[10]
+0
+INPUT Illus WithdrawalAmt[11]
+0
+INPUT Illus WithdrawalAmt[12]
+0
+INPUT Illus WithdrawalAmt[13]
+0
+INPUT Illus WithdrawalAmt[14]
+0
+INPUT Illus WithdrawalAmt[15]
+0
+INPUT Illus WithdrawalAmt[16]
+0
+INPUT Illus WithdrawalAmt[17]
+0
+INPUT Illus WithdrawalAmt[18]
+0
+INPUT Illus WithdrawalAmt[19]
+0
+INPUT Illus WithdrawalAmt[20]
+0
+INPUT Illus WithdrawalAmt[21]
+0
+INPUT Illus WithdrawalAmt[22]
+0
+INPUT Illus WithdrawalAmt[23]
+0
+INPUT Illus WithdrawalAmt[24]
+0
+INPUT Illus WithdrawalAmt[25]
+0
+INPUT Illus WithdrawalAmt[26]
+0
+INPUT Illus WithdrawalAmt[27]
+0
+INPUT Illus WithdrawalAmt[28]
+0
+INPUT Illus WithdrawalAmt[29]
+0
+INPUT Illus WithdrawalAmt[30]
+0
+INPUT Illus WithdrawalAmt[31]
+0
+INPUT Illus WithdrawalAmt[32]
+0
+INPUT Illus WithdrawalAmt[33]
+0
+INPUT Illus WithdrawalAmt[34]
+0
+INPUT Illus WithdrawalAmt[35]
+0
+INPUT Illus WithdrawalAmt[36]
+0
+INPUT Illus WithdrawalAmt[37]
+0
+INPUT Illus WithdrawalAmt[38]
+0
+INPUT Illus WithdrawalAmt[39]
+0
+INPUT Illus WithdrawalAmt[40]
+0
+INPUT Illus WithdrawalAmt[41]
+0
+INPUT Illus WithdrawalAmt[42]
+0
+INPUT Illus WithdrawalAmt[43]
+0
+INPUT Illus WithdrawalAmt[44]
+0
+INPUT Illus WithdrawalAmt[45]
+0
+INPUT Illus WithdrawalAmt[46]
+0
+INPUT Illus WithdrawalAmt[47]
+0
+INPUT Illus WithdrawalAmt[48]
+0
+INPUT Illus WithdrawalAmt[49]
+0
+INPUT Illus WithdrawalAmt[50]
+0
+INPUT Illus WithdrawalAmt[51]
+0
+INPUT Illus WithdrawalAmt[52]
+0
+INPUT Illus WithdrawalAmt[53]
+0
+INPUT Illus WithdrawalAmt[54]
+0
+INPUT Illus WithdrawalAmt[55]
+0
+INPUT Illus WithdrawalAmt[56]
+0
+INPUT Illus WithdrawalAmt[57]
+0
+INPUT Illus WithdrawalAmt[58]
+0
+INPUT Illus WithdrawalAmt[59]
+0
+INPUT Illus WithdrawalAmt[60]
+0
+INPUT Illus WithdrawalAmt[61]
+0
+INPUT Illus WithdrawalAmt[62]
+0
+INPUT Illus WithdrawalAmt[63]
+0
+INPUT Illus WithdrawalAmt[64]
+0
+INPUT Illus WithdrawalAmt[65]
+0
+INPUT Illus WithdrawalAmt[66]
+0
+INPUT Illus WithdrawalAmt[67]
+0
+INPUT Illus WithdrawalAmt[68]
+0
+INPUT Illus WithdrawalAmt[69]
+0
+INPUT Illus WithdrawalAmt[70]
+0
+INPUT Illus WithdrawalAmt[71]
+0
+INPUT Illus WithdrawalAmt[72]
+0
+INPUT Illus WithdrawalAmt[73]
+0
+INPUT Illus WithdrawalAmt[74]
+0
+INPUT Illus WithdrawalAmt[75]
+0
+INPUT Illus WithdrawalAmt[76]
+0
+INPUT Illus WithdrawalAmt[77]
+0
+INPUT Illus WithdrawalAmt[78]
+0
+INPUT Illus WithdrawalAmt[79]
+0
+INPUT Illus WithdrawalAmt[80]
+0
+INPUT Illus WithdrawalAmt[81]
+0
+INPUT Illus WithdrawalAmt[82]
+0
+INPUT Illus WithdrawalAmt[83]
+0
+INPUT Illus WithdrawalAmt[84]
+0
+INPUT Illus WithdrawalAmt[85]
+0
+INPUT Illus WithdrawalAmt[86]
+0
+INPUT Illus WithdrawalAmt[87]
+0
+INPUT Illus WithdrawalAmt[88]
+0
+INPUT Illus WithdrawalAmt[89]
+0
+INPUT Illus WithdrawalAmt[90]
+0
+INPUT Illus WithdrawalAmt[91]
+0
+INPUT Illus WithdrawalAmt[92]
+0
+INPUT Illus WithdrawalAmt[93]
+0
+INPUT Illus WithdrawalAmt[94]
+0
+INPUT Illus WithdrawalAmt[95]
+0
+INPUT Illus WithdrawalAmt[96]
+0
+INPUT Illus WithdrawalAmt[97]
+0
+INPUT Illus WithdrawalAmt[98]
+0
+INPUT Illus WithdrawalAmt[99]
+0
+INPUT Illus WithdrawalAmt[100]
+0
+INPUT Illus LoanAmt[1]
+0
+INPUT Illus LoanAmt[2]
+0
+INPUT Illus LoanAmt[3]
+0
+INPUT Illus LoanAmt[4]
+0
+INPUT Illus LoanAmt[5]
+0
+INPUT Illus LoanAmt[6]
+0
+INPUT Illus LoanAmt[7]
+0
+INPUT Illus LoanAmt[8]
+0
+INPUT Illus LoanAmt[9]
+0
+INPUT Illus LoanAmt[10]
+0
+INPUT Illus LoanAmt[11]
+0
+INPUT Illus LoanAmt[12]
+0
+INPUT Illus LoanAmt[13]
+0
+INPUT Illus LoanAmt[14]
+0
+INPUT Illus LoanAmt[15]
+0
+INPUT Illus LoanAmt[16]
+0
+INPUT Illus LoanAmt[17]
+0
+INPUT Illus LoanAmt[18]
+0
+INPUT Illus LoanAmt[19]
+0
+INPUT Illus LoanAmt[20]
+0
+INPUT Illus LoanAmt[21]
+0
+INPUT Illus LoanAmt[22]
+0
+INPUT Illus LoanAmt[23]
+0
+INPUT Illus LoanAmt[24]
+0
+INPUT Illus LoanAmt[25]
+0
+INPUT Illus LoanAmt[26]
+0
+INPUT Illus LoanAmt[27]
+0
+INPUT Illus LoanAmt[28]
+0
+INPUT Illus LoanAmt[29]
+0
+INPUT Illus LoanAmt[30]
+0
+INPUT Illus LoanAmt[31]
+0
+INPUT Illus LoanAmt[32]
+0
+INPUT Illus LoanAmt[33]
+0
+INPUT Illus LoanAmt[34]
+0
+INPUT Illus LoanAmt[35]
+0
+INPUT Illus LoanAmt[36]
+0
+INPUT Illus LoanAmt[37]
+0
+INPUT Illus LoanAmt[38]
+0
+INPUT Illus LoanAmt[39]
+0
+INPUT Illus LoanAmt[40]
+0
+INPUT Illus LoanAmt[41]
+0
+INPUT Illus LoanAmt[42]
+0
+INPUT Illus LoanAmt[43]
+0
+INPUT Illus LoanAmt[44]
+0
+INPUT Illus LoanAmt[45]
+0
+INPUT Illus LoanAmt[46]
+0
+INPUT Illus LoanAmt[47]
+0
+INPUT Illus LoanAmt[48]
+0
+INPUT Illus LoanAmt[49]
+0
+INPUT Illus LoanAmt[50]
+0
+INPUT Illus LoanAmt[51]
+0
+INPUT Illus LoanAmt[52]
+0
+INPUT Illus LoanAmt[53]
+0
+INPUT Illus LoanAmt[54]
+0
+INPUT Illus LoanAmt[55]
+0
+INPUT Illus LoanAmt[56]
+0
+INPUT Illus LoanAmt[57]
+0
+INPUT Illus LoanAmt[58]
+0
+INPUT Illus LoanAmt[59]
+0
+INPUT Illus LoanAmt[60]
+0
+INPUT Illus LoanAmt[61]
+0
+INPUT Illus LoanAmt[62]
+0
+INPUT Illus LoanAmt[63]
+0
+INPUT Illus LoanAmt[64]
+0
+INPUT Illus LoanAmt[65]
+0
+INPUT Illus LoanAmt[66]
+0
+INPUT Illus LoanAmt[67]
+0
+INPUT Illus LoanAmt[68]
+0
+INPUT Illus LoanAmt[69]
+0
+INPUT Illus LoanAmt[70]
+0
+INPUT Illus LoanAmt[71]
+0
+INPUT Illus LoanAmt[72]
+0
+INPUT Illus LoanAmt[73]
+0
+INPUT Illus LoanAmt[74]
+0
+INPUT Illus LoanAmt[75]
+0
+INPUT Illus LoanAmt[76]
+0
+INPUT Illus LoanAmt[77]
+0
+INPUT Illus LoanAmt[78]
+0
+INPUT Illus LoanAmt[79]
+0
+INPUT Illus LoanAmt[80]
+0
+INPUT Illus LoanAmt[81]
+0
+INPUT Illus LoanAmt[82]
+0
+INPUT Illus LoanAmt[83]
+0
+INPUT Illus LoanAmt[84]
+0
+INPUT Illus LoanAmt[85]
+0
+INPUT Illus LoanAmt[86]
+0
+INPUT Illus LoanAmt[87]
+0
+INPUT Illus LoanAmt[88]
+0
+INPUT Illus LoanAmt[89]
+0
+INPUT Illus LoanAmt[90]
+0
+INPUT Illus LoanAmt[91]
+0
+INPUT Illus LoanAmt[92]
+0
+INPUT Illus LoanAmt[93]
+0
+INPUT Illus LoanAmt[94]
+0
+INPUT Illus LoanAmt[95]
+0
+INPUT Illus LoanAmt[96]
+0
+INPUT Illus LoanAmt[97]
+0
+INPUT Illus LoanAmt[98]
+0
+INPUT Illus LoanAmt[99]
+0
+INPUT Illus LoanAmt[100]
+0
+INPUT Illus LoanRepaymentAmt[0; 1]
+0
+INPUT Illus LoanRepaymentAmt[0; 2]
+0
+INPUT Illus LoanRepaymentAmt[0; 3]
+0
+INPUT Illus LoanRepaymentAmt[0; 4]
+0
+INPUT Illus LoanRepaymentAmt[0; 5]
+0
+INPUT Illus LoanRepaymentAmt[0; 6]
+0
+INPUT Illus LoanRepaymentAmt[0; 7]
+0
+INPUT Illus LoanRepaymentAmt[0; 8]
+0
+INPUT Illus LoanRepaymentAmt[0; 9]
+0
+INPUT Illus LoanRepaymentAmt[0; 10]
+0
+INPUT Illus LoanRepaymentAmt[0; 11]
+0
+INPUT Illus LoanRepaymentAmt[0; 12]
+0
+INPUT Illus LoanRepaymentAmt[0; 13]
+0
+INPUT Illus LoanRepaymentAmt[0; 14]
+0
+INPUT Illus LoanRepaymentAmt[0; 15]
+0
+INPUT Illus LoanRepaymentAmt[0; 16]
+0
+INPUT Illus LoanRepaymentAmt[0; 17]
+0
+INPUT Illus LoanRepaymentAmt[0; 18]
+0
+INPUT Illus LoanRepaymentAmt[0; 19]
+0
+INPUT Illus LoanRepaymentAmt[0; 20]
+0
+INPUT Illus LoanRepaymentAmt[0; 21]
+0
+INPUT Illus LoanRepaymentAmt[0; 22]
+0
+INPUT Illus LoanRepaymentAmt[0; 23]
+0
+INPUT Illus LoanRepaymentAmt[0; 24]
+0
+INPUT Illus LoanRepaymentAmt[0; 25]
+0
+INPUT Illus LoanRepaymentAmt[0; 26]
+0
+INPUT Illus LoanRepaymentAmt[0; 27]
+0
+INPUT Illus LoanRepaymentAmt[0; 28]
+0
+INPUT Illus LoanRepaymentAmt[0; 29]
+0
+INPUT Illus LoanRepaymentAmt[0; 30]
+0
+INPUT Illus LoanRepaymentAmt[0; 31]
+0
+INPUT Illus LoanRepaymentAmt[0; 32]
+0
+INPUT Illus LoanRepaymentAmt[0; 33]
+0
+INPUT Illus LoanRepaymentAmt[0; 34]
+0
+INPUT Illus LoanRepaymentAmt[0; 35]
+0
+INPUT Illus LoanRepaymentAmt[0; 36]
+0
+INPUT Illus LoanRepaymentAmt[0; 37]
+0
+INPUT Illus LoanRepaymentAmt[0; 38]
+0
+INPUT Illus LoanRepaymentAmt[0; 39]
+0
+INPUT Illus LoanRepaymentAmt[0; 40]
+0
+INPUT Illus LoanRepaymentAmt[0; 41]
+0
+INPUT Illus LoanRepaymentAmt[0; 42]
+0
+INPUT Illus LoanRepaymentAmt[0; 43]
+0
+INPUT Illus LoanRepaymentAmt[0; 44]
+0
+INPUT Illus LoanRepaymentAmt[0; 45]
+0
+INPUT Illus LoanRepaymentAmt[0; 46]
+0
+INPUT Illus LoanRepaymentAmt[0; 47]
+0
+INPUT Illus LoanRepaymentAmt[0; 48]
+0
+INPUT Illus LoanRepaymentAmt[0; 49]
+0
+INPUT Illus LoanRepaymentAmt[0; 50]
+0
+INPUT Illus LoanRepaymentAmt[0; 51]
+0
+INPUT Illus LoanRepaymentAmt[0; 52]
+0
+INPUT Illus LoanRepaymentAmt[0; 53]
+0
+INPUT Illus LoanRepaymentAmt[0; 54]
+0
+INPUT Illus LoanRepaymentAmt[0; 55]
+0
+INPUT Illus LoanRepaymentAmt[0; 56]
+0
+INPUT Illus LoanRepaymentAmt[0; 57]
+0
+INPUT Illus LoanRepaymentAmt[0; 58]
+0
+INPUT Illus LoanRepaymentAmt[0; 59]
+0
+INPUT Illus LoanRepaymentAmt[0; 60]
+0
+INPUT Illus LoanRepaymentAmt[0; 61]
+0
+INPUT Illus LoanRepaymentAmt[0; 62]
+0
+INPUT Illus LoanRepaymentAmt[0; 63]
+0
+INPUT Illus LoanRepaymentAmt[0; 64]
+0
+INPUT Illus LoanRepaymentAmt[0; 65]
+0
+INPUT Illus LoanRepaymentAmt[0; 66]
+0
+INPUT Illus LoanRepaymentAmt[0; 67]
+0
+INPUT Illus LoanRepaymentAmt[0; 68]
+0
+INPUT Illus LoanRepaymentAmt[0; 69]
+0
+INPUT Illus LoanRepaymentAmt[0; 70]
+0
+INPUT Illus LoanRepaymentAmt[0; 71]
+0
+INPUT Illus LoanRepaymentAmt[0; 72]
+0
+INPUT Illus LoanRepaymentAmt[0; 73]
+0
+INPUT Illus LoanRepaymentAmt[0; 74]
+0
+INPUT Illus LoanRepaymentAmt[0; 75]
+0
+INPUT Illus LoanRepaymentAmt[0; 76]
+0
+INPUT Illus LoanRepaymentAmt[0; 77]
+0
+INPUT Illus LoanRepaymentAmt[0; 78]
+0
+INPUT Illus LoanRepaymentAmt[0; 79]
+0
+INPUT Illus LoanRepaymentAmt[0; 80]
+0
+INPUT Illus LoanRepaymentAmt[0; 81]
+0
+INPUT Illus LoanRepaymentAmt[0; 82]
+0
+INPUT Illus LoanRepaymentAmt[0; 83]
+0
+INPUT Illus LoanRepaymentAmt[0; 84]
+0
+INPUT Illus LoanRepaymentAmt[0; 85]
+0
+INPUT Illus LoanRepaymentAmt[0; 86]
+0
+INPUT Illus LoanRepaymentAmt[0; 87]
+0
+INPUT Illus LoanRepaymentAmt[0; 88]
+0
+INPUT Illus LoanRepaymentAmt[0; 89]
+0
+INPUT Illus LoanRepaymentAmt[0; 90]
+0
+INPUT Illus LoanRepaymentAmt[0; 91]
+0
+INPUT Illus LoanRepaymentAmt[0; 92]
+0
+INPUT Illus LoanRepaymentAmt[0; 93]
+0
+INPUT Illus LoanRepaymentAmt[0; 94]
+0
+INPUT Illus LoanRepaymentAmt[0; 95]
+0
+INPUT Illus LoanRepaymentAmt[0; 96]
+0
+INPUT Illus LoanRepaymentAmt[0; 97]
+0
+INPUT Illus LoanRepaymentAmt[0; 98]
+0
+INPUT Illus LoanRepaymentAmt[0; 99]
+0
+INPUT Illus LoanRepaymentAmt[0; 100]
+0
+INPUT Illus LoanRepaymentAmt[1; 1]
+0
+INPUT Illus LoanRepaymentAmt[1; 2]
+0
+INPUT Illus LoanRepaymentAmt[1; 3]
+0
+INPUT Illus LoanRepaymentAmt[1; 4]
+0
+INPUT Illus LoanRepaymentAmt[1; 5]
+0
+INPUT Illus LoanRepaymentAmt[1; 6]
+0
+INPUT Illus LoanRepaymentAmt[1; 7]
+0
+INPUT Illus LoanRepaymentAmt[1; 8]
+0
+INPUT Illus LoanRepaymentAmt[1; 9]
+0
+INPUT Illus LoanRepaymentAmt[1; 10]
+0
+INPUT Illus LoanRepaymentAmt[1; 11]
+0
+INPUT Illus LoanRepaymentAmt[1; 12]
+0
+INPUT Illus LoanRepaymentAmt[1; 13]
+0
+INPUT Illus LoanRepaymentAmt[1; 14]
+0
+INPUT Illus LoanRepaymentAmt[1; 15]
+0
+INPUT Illus LoanRepaymentAmt[1; 16]
+0
+INPUT Illus LoanRepaymentAmt[1; 17]
+0
+INPUT Illus LoanRepaymentAmt[1; 18]
+0
+INPUT Illus LoanRepaymentAmt[1; 19]
+0
+INPUT Illus LoanRepaymentAmt[1; 20]
+0
+INPUT Illus LoanRepaymentAmt[1; 21]
+0
+INPUT Illus LoanRepaymentAmt[1; 22]
+0
+INPUT Illus LoanRepaymentAmt[1; 23]
+0
+INPUT Illus LoanRepaymentAmt[1; 24]
+0
+INPUT Illus LoanRepaymentAmt[1; 25]
+0
+INPUT Illus LoanRepaymentAmt[1; 26]
+0
+INPUT Illus LoanRepaymentAmt[1; 27]
+0
+INPUT Illus LoanRepaymentAmt[1; 28]
+0
+INPUT Illus LoanRepaymentAmt[1; 29]
+0
+INPUT Illus LoanRepaymentAmt[1; 30]
+0
+INPUT Illus LoanRepaymentAmt[1; 31]
+0
+INPUT Illus LoanRepaymentAmt[1; 32]
+0
+INPUT Illus LoanRepaymentAmt[1; 33]
+0
+INPUT Illus LoanRepaymentAmt[1; 34]
+0
+INPUT Illus LoanRepaymentAmt[1; 35]
+0
+INPUT Illus LoanRepaymentAmt[1; 36]
+0
+INPUT Illus LoanRepaymentAmt[1; 37]
+0
+INPUT Illus LoanRepaymentAmt[1; 38]
+0
+INPUT Illus LoanRepaymentAmt[1; 39]
+0
+INPUT Illus LoanRepaymentAmt[1; 40]
+0
+INPUT Illus LoanRepaymentAmt[1; 41]
+0
+INPUT Illus LoanRepaymentAmt[1; 42]
+0
+INPUT Illus LoanRepaymentAmt[1; 43]
+0
+INPUT Illus LoanRepaymentAmt[1; 44]
+0
+INPUT Illus LoanRepaymentAmt[1; 45]
+0
+INPUT Illus LoanRepaymentAmt[1; 46]
+0
+INPUT Illus LoanRepaymentAmt[1; 47]
+0
+INPUT Illus LoanRepaymentAmt[1; 48]
+0
+INPUT Illus LoanRepaymentAmt[1; 49]
+0
+INPUT Illus LoanRepaymentAmt[1; 50]
+0
+INPUT Illus LoanRepaymentAmt[1; 51]
+0
+INPUT Illus LoanRepaymentAmt[1; 52]
+0
+INPUT Illus LoanRepaymentAmt[1; 53]
+0
+INPUT Illus LoanRepaymentAmt[1; 54]
+0
+INPUT Illus LoanRepaymentAmt[1; 55]
+0
+INPUT Illus LoanRepaymentAmt[1; 56]
+0
+INPUT Illus LoanRepaymentAmt[1; 57]
+0
+INPUT Illus LoanRepaymentAmt[1; 58]
+0
+INPUT Illus LoanRepaymentAmt[1; 59]
+0
+INPUT Illus LoanRepaymentAmt[1; 60]
+0
+INPUT Illus LoanRepaymentAmt[1; 61]
+0
+INPUT Illus LoanRepaymentAmt[1; 62]
+0
+INPUT Illus LoanRepaymentAmt[1; 63]
+0
+INPUT Illus LoanRepaymentAmt[1; 64]
+0
+INPUT Illus LoanRepaymentAmt[1; 65]
+0
+INPUT Illus LoanRepaymentAmt[1; 66]
+0
+INPUT Illus LoanRepaymentAmt[1; 67]
+0
+INPUT Illus LoanRepaymentAmt[1; 68]
+0
+INPUT Illus LoanRepaymentAmt[1; 69]
+0
+INPUT Illus LoanRepaymentAmt[1; 70]
+0
+INPUT Illus LoanRepaymentAmt[1; 71]
+0
+INPUT Illus LoanRepaymentAmt[1; 72]
+0
+INPUT Illus LoanRepaymentAmt[1; 73]
+0
+INPUT Illus LoanRepaymentAmt[1; 74]
+0
+INPUT Illus LoanRepaymentAmt[1; 75]
+0
+INPUT Illus LoanRepaymentAmt[1; 76]
+0
+INPUT Illus LoanRepaymentAmt[1; 77]
+0
+INPUT Illus LoanRepaymentAmt[1; 78]
+0
+INPUT Illus LoanRepaymentAmt[1; 79]
+0
+INPUT Illus LoanRepaymentAmt[1; 80]
+0
+INPUT Illus LoanRepaymentAmt[1; 81]
+0
+INPUT Illus LoanRepaymentAmt[1; 82]
+0
+INPUT Illus LoanRepaymentAmt[1; 83]
+0
+INPUT Illus LoanRepaymentAmt[1; 84]
+0
+INPUT Illus LoanRepaymentAmt[1; 85]
+0
+INPUT Illus LoanRepaymentAmt[1; 86]
+0
+INPUT Illus LoanRepaymentAmt[1; 87]
+0
+INPUT Illus LoanRepaymentAmt[1; 88]
+0
+INPUT Illus LoanRepaymentAmt[1; 89]
+0
+INPUT Illus LoanRepaymentAmt[1; 90]
+0
+INPUT Illus LoanRepaymentAmt[1; 91]
+0
+INPUT Illus LoanRepaymentAmt[1; 92]
+0
+INPUT Illus LoanRepaymentAmt[1; 93]
+0
+INPUT Illus LoanRepaymentAmt[1; 94]
+0
+INPUT Illus LoanRepaymentAmt[1; 95]
+0
+INPUT Illus LoanRepaymentAmt[1; 96]
+0
+INPUT Illus LoanRepaymentAmt[1; 97]
+0
+INPUT Illus LoanRepaymentAmt[1; 98]
+0
+INPUT Illus LoanRepaymentAmt[1; 99]
+0
+INPUT Illus LoanRepaymentAmt[1; 100]
+0
+INPUT Illus LoanRepaymentAmt[2; 1]
+0
+INPUT Illus LoanRepaymentAmt[2; 2]
+0
+INPUT Illus LoanRepaymentAmt[2; 3]
+0
+INPUT Illus LoanRepaymentAmt[2; 4]
+0
+INPUT Illus LoanRepaymentAmt[2; 5]
+0
+INPUT Illus LoanRepaymentAmt[2; 6]
+0
+INPUT Illus LoanRepaymentAmt[2; 7]
+0
+INPUT Illus LoanRepaymentAmt[2; 8]
+0
+INPUT Illus LoanRepaymentAmt[2; 9]
+0
+INPUT Illus LoanRepaymentAmt[2; 10]
+0
+INPUT Illus LoanRepaymentAmt[2; 11]
+0
+INPUT Illus LoanRepaymentAmt[2; 12]
+0
+INPUT Illus LoanRepaymentAmt[2; 13]
+0
+INPUT Illus LoanRepaymentAmt[2; 14]
+0
+INPUT Illus LoanRepaymentAmt[2; 15]
+0
+INPUT Illus LoanRepaymentAmt[2; 16]
+0
+INPUT Illus LoanRepaymentAmt[2; 17]
+0
+INPUT Illus LoanRepaymentAmt[2; 18]
+0
+INPUT Illus LoanRepaymentAmt[2; 19]
+0
+INPUT Illus LoanRepaymentAmt[2; 20]
+0
+INPUT Illus LoanRepaymentAmt[2; 21]
+0
+INPUT Illus LoanRepaymentAmt[2; 22]
+0
+INPUT Illus LoanRepaymentAmt[2; 23]
+0
+INPUT Illus LoanRepaymentAmt[2; 24]
+0
+INPUT Illus LoanRepaymentAmt[2; 25]
+0
+INPUT Illus LoanRepaymentAmt[2; 26]
+0
+INPUT Illus LoanRepaymentAmt[2; 27]
+0
+INPUT Illus LoanRepaymentAmt[2; 28]
+0
+INPUT Illus LoanRepaymentAmt[2; 29]
+0
+INPUT Illus LoanRepaymentAmt[2; 30]
+0
+INPUT Illus LoanRepaymentAmt[2; 31]
+0
+INPUT Illus LoanRepaymentAmt[2; 32]
+0
+INPUT Illus LoanRepaymentAmt[2; 33]
+0
+INPUT Illus LoanRepaymentAmt[2; 34]
+0
+INPUT Illus LoanRepaymentAmt[2; 35]
+0
+INPUT Illus LoanRepaymentAmt[2; 36]
+0
+INPUT Illus LoanRepaymentAmt[2; 37]
+0
+INPUT Illus LoanRepaymentAmt[2; 38]
+0
+INPUT Illus LoanRepaymentAmt[2; 39]
+0
+INPUT Illus LoanRepaymentAmt[2; 40]
+0
+INPUT Illus LoanRepaymentAmt[2; 41]
+0
+INPUT Illus LoanRepaymentAmt[2; 42]
+0
+INPUT Illus LoanRepaymentAmt[2; 43]
+0
+INPUT Illus LoanRepaymentAmt[2; 44]
+0
+INPUT Illus LoanRepaymentAmt[2; 45]
+0
+INPUT Illus LoanRepaymentAmt[2; 46]
+0
+INPUT Illus LoanRepaymentAmt[2; 47]
+0
+INPUT Illus LoanRepaymentAmt[2; 48]
+0
+INPUT Illus LoanRepaymentAmt[2; 49]
+0
+INPUT Illus LoanRepaymentAmt[2; 50]
+0
+INPUT Illus LoanRepaymentAmt[2; 51]
+0
+INPUT Illus LoanRepaymentAmt[2; 52]
+0
+INPUT Illus LoanRepaymentAmt[2; 53]
+0
+INPUT Illus LoanRepaymentAmt[2; 54]
+0
+INPUT Illus LoanRepaymentAmt[2; 55]
+0
+INPUT Illus LoanRepaymentAmt[2; 56]
+0
+INPUT Illus LoanRepaymentAmt[2; 57]
+0
+INPUT Illus LoanRepaymentAmt[2; 58]
+0
+INPUT Illus LoanRepaymentAmt[2; 59]
+0
+INPUT Illus LoanRepaymentAmt[2; 60]
+0
+INPUT Illus LoanRepaymentAmt[2; 61]
+0
+INPUT Illus LoanRepaymentAmt[2; 62]
+0
+INPUT Illus LoanRepaymentAmt[2; 63]
+0
+INPUT Illus LoanRepaymentAmt[2; 64]
+0
+INPUT Illus LoanRepaymentAmt[2; 65]
+0
+INPUT Illus LoanRepaymentAmt[2; 66]
+0
+INPUT Illus LoanRepaymentAmt[2; 67]
+0
+INPUT Illus LoanRepaymentAmt[2; 68]
+0
+INPUT Illus LoanRepaymentAmt[2; 69]
+0
+INPUT Illus LoanRepaymentAmt[2; 70]
+0
+INPUT Illus LoanRepaymentAmt[2; 71]
+0
+INPUT Illus LoanRepaymentAmt[2; 72]
+0
+INPUT Illus LoanRepaymentAmt[2; 73]
+0
+INPUT Illus LoanRepaymentAmt[2; 74]
+0
+INPUT Illus LoanRepaymentAmt[2; 75]
+0
+INPUT Illus LoanRepaymentAmt[2; 76]
+0
+INPUT Illus LoanRepaymentAmt[2; 77]
+0
+INPUT Illus LoanRepaymentAmt[2; 78]
+0
+INPUT Illus LoanRepaymentAmt[2; 79]
+0
+INPUT Illus LoanRepaymentAmt[2; 80]
+0
+INPUT Illus LoanRepaymentAmt[2; 81]
+0
+INPUT Illus LoanRepaymentAmt[2; 82]
+0
+INPUT Illus LoanRepaymentAmt[2; 83]
+0
+INPUT Illus LoanRepaymentAmt[2; 84]
+0
+INPUT Illus LoanRepaymentAmt[2; 85]
+0
+INPUT Illus LoanRepaymentAmt[2; 86]
+0
+INPUT Illus LoanRepaymentAmt[2; 87]
+0
+INPUT Illus LoanRepaymentAmt[2; 88]
+0
+INPUT Illus LoanRepaymentAmt[2; 89]
+0
+INPUT Illus LoanRepaymentAmt[2; 90]
+0
+INPUT Illus LoanRepaymentAmt[2; 91]
+0
+INPUT Illus LoanRepaymentAmt[2; 92]
+0
+INPUT Illus LoanRepaymentAmt[2; 93]
+0
+INPUT Illus LoanRepaymentAmt[2; 94]
+0
+INPUT Illus LoanRepaymentAmt[2; 95]
+0
+INPUT Illus LoanRepaymentAmt[2; 96]
+0
+INPUT Illus LoanRepaymentAmt[2; 97]
+0
+INPUT Illus LoanRepaymentAmt[2; 98]
+0
+INPUT Illus LoanRepaymentAmt[2; 99]
+0
+INPUT Illus LoanRepaymentAmt[2; 100]
+0
+INPUT Illus LoanRepaymentAmt[3; 1]
+0
+INPUT Illus LoanRepaymentAmt[3; 2]
+0
+INPUT Illus LoanRepaymentAmt[3; 3]
+0
+INPUT Illus LoanRepaymentAmt[3; 4]
+0
+INPUT Illus LoanRepaymentAmt[3; 5]
+0
+INPUT Illus LoanRepaymentAmt[3; 6]
+0
+INPUT Illus LoanRepaymentAmt[3; 7]
+0
+INPUT Illus LoanRepaymentAmt[3; 8]
+0
+INPUT Illus LoanRepaymentAmt[3; 9]
+0
+INPUT Illus LoanRepaymentAmt[3; 10]
+0
+INPUT Illus LoanRepaymentAmt[3; 11]
+0
+INPUT Illus LoanRepaymentAmt[3; 12]
+0
+INPUT Illus LoanRepaymentAmt[3; 13]
+0
+INPUT Illus LoanRepaymentAmt[3; 14]
+0
+INPUT Illus LoanRepaymentAmt[3; 15]
+0
+INPUT Illus LoanRepaymentAmt[3; 16]
+0
+INPUT Illus LoanRepaymentAmt[3; 17]
+0
+INPUT Illus LoanRepaymentAmt[3; 18]
+0
+INPUT Illus LoanRepaymentAmt[3; 19]
+0
+INPUT Illus LoanRepaymentAmt[3; 20]
+0
+INPUT Illus LoanRepaymentAmt[3; 21]
+0
+INPUT Illus LoanRepaymentAmt[3; 22]
+0
+INPUT Illus LoanRepaymentAmt[3; 23]
+0
+INPUT Illus LoanRepaymentAmt[3; 24]
+0
+INPUT Illus LoanRepaymentAmt[3; 25]
+0
+INPUT Illus LoanRepaymentAmt[3; 26]
+0
+INPUT Illus LoanRepaymentAmt[3; 27]
+0
+INPUT Illus LoanRepaymentAmt[3; 28]
+0
+INPUT Illus LoanRepaymentAmt[3; 29]
+0
+INPUT Illus LoanRepaymentAmt[3; 30]
+0
+INPUT Illus LoanRepaymentAmt[3; 31]
+0
+INPUT Illus LoanRepaymentAmt[3; 32]
+0
+INPUT Illus LoanRepaymentAmt[3; 33]
+0
+INPUT Illus LoanRepaymentAmt[3; 34]
+0
+INPUT Illus LoanRepaymentAmt[3; 35]
+0
+INPUT Illus LoanRepaymentAmt[3; 36]
+0
+INPUT Illus LoanRepaymentAmt[3; 37]
+0
+INPUT Illus LoanRepaymentAmt[3; 38]
+0
+INPUT Illus LoanRepaymentAmt[3; 39]
+0
+INPUT Illus LoanRepaymentAmt[3; 40]
+0
+INPUT Illus LoanRepaymentAmt[3; 41]
+0
+INPUT Illus LoanRepaymentAmt[3; 42]
+0
+INPUT Illus LoanRepaymentAmt[3; 43]
+0
+INPUT Illus LoanRepaymentAmt[3; 44]
+0
+INPUT Illus LoanRepaymentAmt[3; 45]
+0
+INPUT Illus LoanRepaymentAmt[3; 46]
+0
+INPUT Illus LoanRepaymentAmt[3; 47]
+0
+INPUT Illus LoanRepaymentAmt[3; 48]
+0
+INPUT Illus LoanRepaymentAmt[3; 49]
+0
+INPUT Illus LoanRepaymentAmt[3; 50]
+0
+INPUT Illus LoanRepaymentAmt[3; 51]
+0
+INPUT Illus LoanRepaymentAmt[3; 52]
+0
+INPUT Illus LoanRepaymentAmt[3; 53]
+0
+INPUT Illus LoanRepaymentAmt[3; 54]
+0
+INPUT Illus LoanRepaymentAmt[3; 55]
+0
+INPUT Illus LoanRepaymentAmt[3; 56]
+0
+INPUT Illus LoanRepaymentAmt[3; 57]
+0
+INPUT Illus LoanRepaymentAmt[3; 58]
+0
+INPUT Illus LoanRepaymentAmt[3; 59]
+0
+INPUT Illus LoanRepaymentAmt[3; 60]
+0
+INPUT Illus LoanRepaymentAmt[3; 61]
+0
+INPUT Illus LoanRepaymentAmt[3; 62]
+0
+INPUT Illus LoanRepaymentAmt[3; 63]
+0
+INPUT Illus LoanRepaymentAmt[3; 64]
+0
+INPUT Illus LoanRepaymentAmt[3; 65]
+0
+INPUT Illus LoanRepaymentAmt[3; 66]
+0
+INPUT Illus LoanRepaymentAmt[3; 67]
+0
+INPUT Illus LoanRepaymentAmt[3; 68]
+0
+INPUT Illus LoanRepaymentAmt[3; 69]
+0
+INPUT Illus LoanRepaymentAmt[3; 70]
+0
+INPUT Illus LoanRepaymentAmt[3; 71]
+0
+INPUT Illus LoanRepaymentAmt[3; 72]
+0
+INPUT Illus LoanRepaymentAmt[3; 73]
+0
+INPUT Illus LoanRepaymentAmt[3; 74]
+0
+INPUT Illus LoanRepaymentAmt[3; 75]
+0
+INPUT Illus LoanRepaymentAmt[3; 76]
+0
+INPUT Illus LoanRepaymentAmt[3; 77]
+0
+INPUT Illus LoanRepaymentAmt[3; 78]
+0
+INPUT Illus LoanRepaymentAmt[3; 79]
+0
+INPUT Illus LoanRepaymentAmt[3; 80]
+0
+INPUT Illus LoanRepaymentAmt[3; 81]
+0
+INPUT Illus LoanRepaymentAmt[3; 82]
+0
+INPUT Illus LoanRepaymentAmt[3; 83]
+0
+INPUT Illus LoanRepaymentAmt[3; 84]
+0
+INPUT Illus LoanRepaymentAmt[3; 85]
+0
+INPUT Illus LoanRepaymentAmt[3; 86]
+0
+INPUT Illus LoanRepaymentAmt[3; 87]
+0
+INPUT Illus LoanRepaymentAmt[3; 88]
+0
+INPUT Illus LoanRepaymentAmt[3; 89]
+0
+INPUT Illus LoanRepaymentAmt[3; 90]
+0
+INPUT Illus LoanRepaymentAmt[3; 91]
+0
+INPUT Illus LoanRepaymentAmt[3; 92]
+0
+INPUT Illus LoanRepaymentAmt[3; 93]
+0
+INPUT Illus LoanRepaymentAmt[3; 94]
+0
+INPUT Illus LoanRepaymentAmt[3; 95]
+0
+INPUT Illus LoanRepaymentAmt[3; 96]
+0
+INPUT Illus LoanRepaymentAmt[3; 97]
+0
+INPUT Illus LoanRepaymentAmt[3; 98]
+0
+INPUT Illus LoanRepaymentAmt[3; 99]
+0
+INPUT Illus LoanRepaymentAmt[3; 100]
+0
+INPUT Illus FaceAmtDesignType
+1000500003
+INPUT Illus FaceAmt[1]
+1000000
+INPUT Illus FaceAmt[2]
+1000000
+INPUT Illus FaceAmt[3]
+1000000
+INPUT Illus FaceAmt[4]
+1000000
+INPUT Illus FaceAmt[5]
+1000000
+INPUT Illus FaceAmt[6]
+1000000
+INPUT Illus FaceAmt[7]
+1000000
+INPUT Illus FaceAmt[8]
+1000000
+INPUT Illus FaceAmt[9]
+1000000
+INPUT Illus FaceAmt[10]
+1000000
+INPUT Illus FaceAmt[11]
+1000000
+INPUT Illus FaceAmt[12]
+1000000
+INPUT Illus FaceAmt[13]
+1000000
+INPUT Illus FaceAmt[14]
+1000000
+INPUT Illus FaceAmt[15]
+1000000
+INPUT Illus FaceAmt[16]
+1000000
+INPUT Illus FaceAmt[17]
+1000000
+INPUT Illus FaceAmt[18]
+1000000
+INPUT Illus FaceAmt[19]
+1000000
+INPUT Illus FaceAmt[20]
+1000000
+INPUT Illus FaceAmt[21]
+1000000
+INPUT Illus FaceAmt[22]
+1000000
+INPUT Illus FaceAmt[23]
+1000000
+INPUT Illus FaceAmt[24]
+1000000
+INPUT Illus FaceAmt[25]
+1000000
+INPUT Illus FaceAmt[26]
+1000000
+INPUT Illus FaceAmt[27]
+1000000
+INPUT Illus FaceAmt[28]
+1000000
+INPUT Illus FaceAmt[29]
+1000000
+INPUT Illus FaceAmt[30]
+1000000
+INPUT Illus FaceAmt[31]
+1000000
+INPUT Illus FaceAmt[32]
+1000000
+INPUT Illus FaceAmt[33]
+1000000
+INPUT Illus FaceAmt[34]
+1000000
+INPUT Illus FaceAmt[35]
+1000000
+INPUT Illus FaceAmt[36]
+1000000
+INPUT Illus FaceAmt[37]
+1000000
+INPUT Illus FaceAmt[38]
+1000000
+INPUT Illus FaceAmt[39]
+1000000
+INPUT Illus FaceAmt[40]
+1000000
+INPUT Illus FaceAmt[41]
+1000000
+INPUT Illus FaceAmt[42]
+1000000
+INPUT Illus FaceAmt[43]
+1000000
+INPUT Illus FaceAmt[44]
+1000000
+INPUT Illus FaceAmt[45]
+1000000
+INPUT Illus FaceAmt[46]
+1000000
+INPUT Illus FaceAmt[47]
+1000000
+INPUT Illus FaceAmt[48]
+1000000
+INPUT Illus FaceAmt[49]
+1000000
+INPUT Illus FaceAmt[50]
+1000000
+INPUT Illus FaceAmt[51]
+1000000
+INPUT Illus FaceAmt[52]
+1000000
+INPUT Illus FaceAmt[53]
+1000000
+INPUT Illus FaceAmt[54]
+1000000
+INPUT Illus FaceAmt[55]
+1000000
+INPUT Illus FaceAmt[56]
+1000000
+INPUT Illus FaceAmt[57]
+1000000
+INPUT Illus FaceAmt[58]
+1000000
+INPUT Illus FaceAmt[59]
+1000000
+INPUT Illus FaceAmt[60]
+1000000
+INPUT Illus FaceAmt[61]
+1000000
+INPUT Illus FaceAmt[62]
+1000000
+INPUT Illus FaceAmt[63]
+1000000
+INPUT Illus FaceAmt[64]
+1000000
+INPUT Illus FaceAmt[65]
+1000000
+INPUT Illus FaceAmt[66]
+1000000
+INPUT Illus FaceAmt[67]
+1000000
+INPUT Illus FaceAmt[68]
+1000000
+INPUT Illus FaceAmt[69]
+1000000
+INPUT Illus FaceAmt[70]
+1000000
+INPUT Illus FaceAmt[71]
+1000000
+INPUT Illus FaceAmt[72]
+1000000
+INPUT Illus FaceAmt[73]
+1000000
+INPUT Illus FaceAmt[74]
+1000000
+INPUT Illus FaceAmt[75]
+1000000
+INPUT Illus FaceAmt[76]
+1000000
+INPUT Illus FaceAmt[77]
+1000000
+INPUT Illus FaceAmt[78]
+1000000
+INPUT Illus FaceAmt[79]
+1000000
+INPUT Illus FaceAmt[80]
+1000000
+INPUT Illus FaceAmt[81]
+1000000
+INPUT Illus FaceAmt[82]
+1000000
+INPUT Illus FaceAmt[83]
+1000000
+INPUT Illus FaceAmt[84]
+1000000
+INPUT Illus FaceAmt[85]
+1000000
+INPUT Illus FaceAmt[86]
+1000000
+INPUT Illus FaceAmt[87]
+1000000
+INPUT Illus FaceAmt[88]
+1000000
+INPUT Illus FaceAmt[89]
+1000000
+INPUT Illus FaceAmt[90]
+1000000
+INPUT Illus FaceAmt[91]
+1000000
+INPUT Illus FaceAmt[92]
+1000000
+INPUT Illus FaceAmt[93]
+1000000
+INPUT Illus FaceAmt[94]
+1000000
+INPUT Illus FaceAmt[95]
+1000000
+INPUT Illus FaceAmt[96]
+1000000
+INPUT Illus FaceAmt[97]
+1000000
+INPUT Illus FaceAmt[98]
+1000000
+INPUT Illus FaceAmt[99]
+1000000
+INPUT Illus FaceAmt[100]
+1000000
+INPUT Illus FaceAmtDBOption[1]
+1
+INPUT Illus FaceAmtDBOption[2]
+1
+INPUT Illus FaceAmtDBOption[3]
+1
+INPUT Illus FaceAmtDBOption[4]
+1
+INPUT Illus FaceAmtDBOption[5]
+1
+INPUT Illus FaceAmtDBOption[6]
+1
+INPUT Illus FaceAmtDBOption[7]
+1
+INPUT Illus FaceAmtDBOption[8]
+1
+INPUT Illus FaceAmtDBOption[9]
+1
+INPUT Illus FaceAmtDBOption[10]
+1
+INPUT Illus FaceAmtDBOption[11]
+1
+INPUT Illus FaceAmtDBOption[12]
+1
+INPUT Illus FaceAmtDBOption[13]
+1
+INPUT Illus FaceAmtDBOption[14]
+1
+INPUT Illus FaceAmtDBOption[15]
+1
+INPUT Illus FaceAmtDBOption[16]
+1
+INPUT Illus FaceAmtDBOption[17]
+1
+INPUT Illus FaceAmtDBOption[18]
+1
+INPUT Illus FaceAmtDBOption[19]
+1
+INPUT Illus FaceAmtDBOption[20]
+1
+INPUT Illus FaceAmtDBOption[21]
+1
+INPUT Illus FaceAmtDBOption[22]
+1
+INPUT Illus FaceAmtDBOption[23]
+1
+INPUT Illus FaceAmtDBOption[24]
+1
+INPUT Illus FaceAmtDBOption[25]
+1
+INPUT Illus FaceAmtDBOption[26]
+1
+INPUT Illus FaceAmtDBOption[27]
+1
+INPUT Illus FaceAmtDBOption[28]
+1
+INPUT Illus FaceAmtDBOption[29]
+1
+INPUT Illus FaceAmtDBOption[30]
+1
+INPUT Illus FaceAmtDBOption[31]
+1
+INPUT Illus FaceAmtDBOption[32]
+1
+INPUT Illus FaceAmtDBOption[33]
+1
+INPUT Illus FaceAmtDBOption[34]
+1
+INPUT Illus FaceAmtDBOption[35]
+1
+INPUT Illus FaceAmtDBOption[36]
+1
+INPUT Illus FaceAmtDBOption[37]
+1
+INPUT Illus FaceAmtDBOption[38]
+1
+INPUT Illus FaceAmtDBOption[39]
+1
+INPUT Illus FaceAmtDBOption[40]
+1
+INPUT Illus FaceAmtDBOption[41]
+1
+INPUT Illus FaceAmtDBOption[42]
+1
+INPUT Illus FaceAmtDBOption[43]
+1
+INPUT Illus FaceAmtDBOption[44]
+1
+INPUT Illus FaceAmtDBOption[45]
+1
+INPUT Illus FaceAmtDBOption[46]
+1
+INPUT Illus FaceAmtDBOption[47]
+1
+INPUT Illus FaceAmtDBOption[48]
+1
+INPUT Illus FaceAmtDBOption[49]
+1
+INPUT Illus FaceAmtDBOption[50]
+1
+INPUT Illus FaceAmtDBOption[51]
+1
+INPUT Illus FaceAmtDBOption[52]
+1
+INPUT Illus FaceAmtDBOption[53]
+1
+INPUT Illus FaceAmtDBOption[54]
+1
+INPUT Illus FaceAmtDBOption[55]
+1
+INPUT Illus FaceAmtDBOption[56]
+1
+INPUT Illus FaceAmtDBOption[57]
+1
+INPUT Illus FaceAmtDBOption[58]
+1
+INPUT Illus FaceAmtDBOption[59]
+1
+INPUT Illus FaceAmtDBOption[60]
+1
+INPUT Illus FaceAmtDBOption[61]
+1
+INPUT Illus FaceAmtDBOption[62]
+1
+INPUT Illus FaceAmtDBOption[63]
+1
+INPUT Illus FaceAmtDBOption[64]
+1
+INPUT Illus FaceAmtDBOption[65]
+1
+INPUT Illus FaceAmtDBOption[66]
+1
+INPUT Illus FaceAmtDBOption[67]
+1
+INPUT Illus FaceAmtDBOption[68]
+1
+INPUT Illus FaceAmtDBOption[69]
+1
+INPUT Illus FaceAmtDBOption[70]
+1
+INPUT Illus FaceAmtDBOption[71]
+1
+INPUT Illus FaceAmtDBOption[72]
+1
+INPUT Illus FaceAmtDBOption[73]
+1
+INPUT Illus FaceAmtDBOption[74]
+1
+INPUT Illus FaceAmtDBOption[75]
+1
+INPUT Illus FaceAmtDBOption[76]
+1
+INPUT Illus FaceAmtDBOption[77]
+1
+INPUT Illus FaceAmtDBOption[78]
+1
+INPUT Illus FaceAmtDBOption[79]
+1
+INPUT Illus FaceAmtDBOption[80]
+1
+INPUT Illus FaceAmtDBOption[81]
+1
+INPUT Illus FaceAmtDBOption[82]
+1
+INPUT Illus FaceAmtDBOption[83]
+1
+INPUT Illus FaceAmtDBOption[84]
+1
+INPUT Illus FaceAmtDBOption[85]
+1
+INPUT Illus FaceAmtDBOption[86]
+1
+INPUT Illus FaceAmtDBOption[87]
+1
+INPUT Illus FaceAmtDBOption[88]
+1
+INPUT Illus FaceAmtDBOption[89]
+1
+INPUT Illus FaceAmtDBOption[90]
+1
+INPUT Illus FaceAmtDBOption[91]
+1
+INPUT Illus FaceAmtDBOption[92]
+1
+INPUT Illus FaceAmtDBOption[93]
+1
+INPUT Illus FaceAmtDBOption[94]
+1
+INPUT Illus FaceAmtDBOption[95]
+1
+INPUT Illus FaceAmtDBOption[96]
+1
+INPUT Illus FaceAmtDBOption[97]
+1
+INPUT Illus FaceAmtDBOption[98]
+1
+INPUT Illus FaceAmtDBOption[99]
+1
+INPUT Illus FaceAmtDBOption[100]
+1
+INPUT Policy Number of Loan
+0
+INPUT Policy Loan LoanOriginationDate[0]
+1/1/2005
+INPUT Policy Loan LoanType[0]
+2
+INPUT Policy Loan LoanIntType[0]
+1
+INPUT Policy Loan LoanIntMethod
+2
+INPUT Policy Loan LoanIntTiming
+1
+INPUT PolicyProduct LoanProvision CreditingIntAdjRateRule
+2
+INPUT PolicyProduct LoanProvision CreditingIntAdjRate
+2
+INPUT PolicyProduct LoanProvision RateVariation TableRef
+4
+INPUT Policy Number of FinancialActivity
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis[0;0]
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis[0;1]
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis[1]
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis[2]
+0
+INPUT IllustrationTxn Schedule Coverage TobaccoPremiumBasis[3]
+0
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass[0;0]
+0
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass[0;1]
+0
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass[1]
+0
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass[2]
+0
+INPUT IllustrationTxn Schedule Coverage UnderwritingClass[3]
+0
+INPUT IllustrationTxn Schedule CovOpt TobaccoPremiumBasis[0;0]
+0
+INPUT IllustrationTxn Schedule CovOpt TobaccoPremiumBasis[0;1]
+0
+INPUT IllustrationTxn Schedule CovOpt UnderwritingClass[0;0]
+0
+INPUT IllustrationTxn Schedule CovOpt UnderwritingClass[0;1]
+0
+INPUT Policy LifeParticipant SpecialClassCode[0]
+1
+INPUT Policy LifeParticipant SpecialClassCode[1]
+1
+INPUT Policy LifeParticipant SpecialClassCode[2]
+1
+INPUT Policy LifeParticipant SpecialClassCode[3]
+1
+INPUT Policy QualifiedCode
+1
+INPUT Policy Life QualPlanType
+1
+INPUT Policy TaxLocality
+75063
+O0 3f4064 0 0 0 0 0 0
+
+E0 3f40d4 0 0 0 0 0 0
+
+L0 3f4144 0 0 0 0 0 0
+
+B0 3f4304 0 0 0 0 0 0
+
+P3 3f4224 0 1e23bf8 0 0 0 2
+
+--description
+The Tax Compliance model supports calculations such as:çä- guideline annual premiums (GLP)çä- guideline single premiums (GSP)çä- cash value accumulation test net single premiums (7NP)çä- 7-pay premium calculations (7PP)çä çäPremiums are computed using an iterative solve method, implemented in a single iterative solve function, which is used for the above regulatory premiums.çäThe cash value function used by the iterative solve function uses varying assumptions for each premium solve type.çä çä7-pay calculations support an iterative solve methodology for 7-pay premiums.  This includes support for calculation of 7-pay premiums at a contract level for a newly issued contract.  The model also includes support for adjustments to the 7-pay premium limits for inforce contract changes that trigger material change calculations, and decreases to the 7-pay limits for 'reductions in benefits'.çäSupport for adjustments to the 7-pay premium limits for 1035 exchanges that trigger material change calculations are also included. çä çäCalculations support DEFRA Cash Value Accumulation Test (CVAT) Net Single Premiums (NSP), and the implied corridor factors under the CVAT test.  A present value method for determining the CVAT NSPs for the base product and optionally for Qualified Additional Benefits (QABs) are utilized.çä çäNote: Support for testing 7-pay premiums paid toward the limits for purposes of determining if the contract has passed or failed the 7-pay test are outside of the scope of the product calculation models, and would be included in the appropriate consuming admin system.çä çäRELEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1301 - SCARAB/JIRA issues PAD820, PAD821, PAD1213çäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P14 1e23bf8 3f4224 1e24c58 0 0 0 2
+Tax Compliance
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"TaxComplianceçä Guideline calculations (single=GSP, level=GLP)çä 7-pay calculations (7-pay=7PP, 7-pay NSP=7PN)çä CVAT NSP calculations"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"PA"
+OUTPUT Source Version File
+"TaxCompliance.pms"
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+Output Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Time Stamp
+now("M/D/Y  H:M")
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P10 1e24c58 1e23bf8 0 1e256d8 0 0 2
+Guideline Premiums
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy Guideline Level Premium
+IF ( /*Is product UL/VUL*/ 'ProductType Is ULType Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Return GLP*/ 'GEN Round'('TaxCompliance Guideline Level Premium';2) ; çä   /*Else return error message*/ 'Messages SystemMessage'("CA1036";'Message Language';v_('TaxCompliance Model Name';"'OUTPUT Policy Guideline Level Premium'"))çä)
+OUTPUT Policy Guideline Single Premium
+IF ( /*Product is UL/VUL*/ 'ProductType Is ULType Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Return GSP*/ 'GEN Round'('TaxCompliance Guideline Single Premium';2) ; çä   /*Else return error message*/ 'Messages SystemMessage'("CA1036";'Message Language';v_('TaxCompliance Model Name';"'OUTPUT Policy Guideline Single Premium'"))çä)
+OUTPUT Policy 7Pay Premium
+IF ( /*Product is UL/VUL*/ 'ProductType Is ULType Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Return 7-pay premium*/ 'GEN Round'('TaxCompliance 7 Pay Premium';2) ; çä   /*Else return error message*/ 'Messages SystemMessage'("CA1036";'Message Language';v_('TaxCompliance Model Name';"'OUTPUT Policy 7pay Premium'"))çä)
+OUTPUT Policy 7Pay NSP
+IF ( /*Product is UL/VUL*/ 'ProductType Is ULType Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Return 7-pay net single premium*/ 'GEN Round'('TaxCompliance 7 Pay NSP';2) ; çä   /*Else return error message*/ 'Messages SystemMessage'("CA1036";'Message Language';v_('TaxCompliance Model Name';"'OUTPUT Policy 7Pay NSP'"))çä)
+OUTPUT Policy 7pay Current Interest Rate
+IF ( /*Product is UL/VUL*/ 'ProductType Is ULType Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Return Current Interest Rate*/ 'Policy Life CurrIntRate' ; çä   /*Else return error message*/ 'Messages SystemMessage'("CA1036";'Message Language';v_('TaxCompliance Model Name';"'OUTPUT Policy 7pay Current Interest Rate'"))çä)
+OUTPUT Policy 7pay Current Interest Guarantee Period
+IF ( /*Product is UL/VUL*/ 'ProductType Is ULType Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Return Current Interest Rate*/ 'TaxCompliance Current Interest Guarantee Period' ; çä   /*Else return error message*/ 'Messages SystemMessage'("CA1036";'Message Language';v_('TaxCompliance Model Name';"'OUTPUT Policy 7pay Current Interest Guarantee Period'"))çä)
+OUTPUT Policy 7pay Specified Amt
+IF ( /*Product is UL/VUL*/ 'ProductType Is ULType Product'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';TransEffDate)) ; çä   /*Return Current Interest Rate*/ 'TaxCompliance Policy Specified Amount'('GEN Vector Blank') ; çä   /*Else return error message*/ 'Messages SystemMessage'("CA1036";'Message Language';v_('TaxCompliance Model Name';"'OUTPUT Polciy 7pay Specified Amt'"))çä)
+P7 1e256d8 1e23bf8 0 1e25948 0 0 2
+CVAT calculations
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Policy NSP Base
+SUMX(cov;0;'Policy Number Of Coverage'('GEN Vector Blank';TransEffDur) - 1;'NAAR Cov NSP'('GEN Vector Blank';'Duration Year'(TransEffDate;'Policy EffDate');#cov) * 'Policy Coverage CurrentNumberOfUnits'('GEN Vector Blank';#cov;TransEffDur)) //â/*'TaxCompliance Cov NSP'*/'NAAR Cov NSP'( /*'TaxCompliance Attained Age'*/'Std Attained Age'( 'Policy LifeParticipant IssueAge'(#cov; 0); çä//âââ       âââ     'Policy Coverage EffDate'(#cov); çä//ââââââ     TransEffDate ); çä// âââ       'Duration Year'(TransEffDate; 'Policy EffDate'); çä//âââ       #covçä//â) çä//â* 'Policy Coverage CurrentNumberOfUnits'(#cov; TransEffDur)             çä//)ä
+OUTPUT Policy NSP Rider
+0
+OUTPUT Policy NSP Base Array(age)
+SUMX(cov;0;'Policy Number Of Coverage'('GEN Vector Blank';TransEffDur) - 1;'NAAR Cov NSP'('GEN Vector Blank';'NAAR Year Based on Age'('GEN Vector Blank';age);#cov) * 'Policy Coverage CurrentNumberOfUnits'('GEN Vector Blank';#cov;'NAAR Year Based on Age'('GEN Vector Blank';age)))
+OUTPUT Policy NSP Rider Array(age)
+0
+P6 1e25948 1e23bf8 0 0 0 0 2
+Test Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Test Guideline Premium Solve(calcType; periodicPremium)
+'GEN Round'('CVProjection Monthly End Of Month Cash Value Rec'('CalcType 7702'(calcType);'SharedVector SolveParms ReplaceStartYear'(TransEffDur;'SharedVector SolveParms MakePremium'(periodicPremium;MIN(TransEffDur + 'TaxCompliance Policy Premium Duration'('CalcType 7702'(calcType);TransEffDur) - 1;'TaxCompliance Policy Maturity Duration'('CalcType 7702'(calcType)))));'TaxCompliance Policy Interest Rate'('CalcType 7702'(calcType));'Vector TCOM Target Prem AddlInfo'('CalcType 7702'(calcType);TransEffDur);'TaxCompliance Policy Maturity Duration'('CalcType 7702'(calcType));12);2)
+OUTPUT Net Premium(calcType; periodicPremium; premiumDuration; yearIndex; monthIndex)
+'PREMIUM Projected Net Premium'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;premiumDuration);V_(0;0;0;0;0;0;VECTORX(cov;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;V_('Policy Coverage TargetPremAmt'(#cov);#cov + 1));1;1);yearIndex;monthIndex)
+OUTPUT Test Cov NSP(yearIndex; covIndex)
+'NAAR Cov NSP'('GEN Vector Blank';yearIndex;covIndex) * 'Policy Coverage CurrentNumberOfUnits'('GEN Vector Blank';covIndex;yearIndex)
+F0 3f4294 0 1e25d38 0 0 0 0
+
+F1 1e25d38 3f4294 1e25f78 1e37968 0 0 2
+:TaxCompliance
+Funktion
+
+F1 1e25f78 1e25d38 14bc7ffb 1e27480 0 0 2
+-- Guideline premiums --
+Funktion
+
+F1 14bc7ffb 1e25f78 0 43160be3 0 0 2
+TaxCompliance Guideline Level Premium
+Funktion
+'TaxCompliance Regulatory Premium Solve Call'('CalcType Rate Assumption Off'('CalcType GLP'('GEN Vector Blank'));TransEffDur;0)
+F1 43160be3 1e25f78 0 1e26a28 0 0 2
+TaxCompliance Guideline Single Premium
+Funktion
+'TaxCompliance Regulatory Premium Solve Call'('CalcType Rate Assumption Off'('CalcType GSP'('GEN Vector Blank'));TransEffDur;0)
+F1 1e26a28 1e25f78 1e26c70 0 0 0 2
+-- Guidelines when solving for Face Amounts --
+Funktion
+
+F1 1e26c70 1e26a28 0 1e26fa8 0 0 2
+TaxCompliance Guideline Level Premium FaceSolve(calcType; faceAmount)
+Funktion
+'TaxCompliance Regulatory Premium Solve Call FaceSolve'('CalcType GLP'(calcType);TransEffDur;0;faceAmount)
+F1 1e26fa8 1e26a28 0 0 0 0 2
+TaxCompliance Guideline Single Premium FaceSolve(calcType; faceAmount)
+Funktion
+'TaxCompliance Regulatory Premium Solve Call FaceSolve'('CalcType GSP'(calcType);TransEffDur;0;faceAmount)
+F1 1e27480 1e25d38 248f93b7 1e2a468 0 0 2
+-- 7-Pay premiums --
+Funktion
+
+F1 248f93b7 1e27480 0 5c5725bd 0 0 2
+TaxCompliance 7 Pay Premium
+Funktion
+'TaxCompliance Regulatory Premium Solve Call'('CalcType Rate Assumption Off'('CalcType 7PP'('GEN Vector Blank'));TransEffDur;0) *  // adjustment for 1035 rollover amount and material change calculationçäIF ( /*Adjustment required for 1035 amount*/ 'Policy LifeUSA AccumValue1035' > 0 ; çä   /*Return adjustment for 1035*/ (1 - ('Policy Life CashValueAmt' + 'Policy LifeUSA AccumValue1035') / 'TaxCompliance 7 Pay NSP') ; çä   /*No adjustment*/ 1çä)
+F1 5c5725bd 1e27480 0 1e281f8 0 0 2
+TaxCompliance 7 Pay NSP
+Funktion
+'TaxCompliance Regulatory Premium Solve Call'('CalcType Rate Assumption Off'('CalcType 7PN'('GEN Vector Blank'));TransEffDur;0)
+F1 1e281f8 1e27480 1e284b0 1e28f30 0 0 2
+-- 7 Pay premiums when solving for Face Amounts --
+Funktion
+
+F1 1e284b0 1e281f8 0 1e289f0 0 0 2
+TaxCompliance 7 Pay Premium FaceSolve(calcType; faceAmount)
+Funktion
+'TaxCompliance Regulatory Premium Solve Call FaceSolve'('CalcType 7PP'(calcType);TransEffDur;0;faceAmount) /*E_('Solve Iterative Premium Solve Rec'(çäââ'Solve Initial Premium Guess'( 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); 'Vector TCOM Search Criteria FaceAmount'('CalcType 7PP'(calcType); faceAmount)); â//currPremGuess; çäââ'TaxCompliance Initial Premium CV'('CalcType 7PP'(calcType); 'Vector TCOM SolveParms'('CalcType 7PP'(calcType); faceAmount));âââ// current CVçäââ0; â//prevPremiumGuess; çäââ0; â//prevCashValue; çäââ0;â//lowBound; çäââfaceAmount;â//highBound; çäââ1; â//iteration_num; çäââ'Vector TCOM Search Criteria FaceAmount'('CalcType 7PP'(calcType); faceAmount);çäââ'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount)çäâ);çäâ0â// premium is the 0th element in the return vectorçä)*/ 
+F1 1e289f0 1e281f8 0 0 0 0 2
+TaxCompliance 7 Pay NSP FaceSolve(calcType; faceAmount)
+Funktion
+'TaxCompliance Regulatory Premium Solve Call FaceSolve'('CalcType 7PN'(calcType);TransEffDur;0;faceAmount) /*E_('Solve Iterative Premium Solve Rec'(çäââ'Solve Initial Premium Guess'( 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); 'Vector TCOM Search Criteria FaceAmount'('CalcType 7PN'(calcType); faceAmount)); â//currPremGuess; çäââ'TaxCompliance Initial Premium CV'('CalcType 7PN'(calcType); 'Vector TCOM SolveParms'('CalcType 7PN'(calcType); faceAmount));âââ// current CVçäââ0; â//prevPremiumGuess; çäââ0; â//prevCashValue; çäââ0;â//lowBound; çäââfaceAmount;â//highBound; çäââ1; â//iteration_num; çäââ'Vector TCOM Search Criteria FaceAmount'('CalcType 7PN'(calcType); faceAmount);çäââ'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount)çäâ);çäâ0â// premium is the 0th element in the return vectorçä)*/ 
+F1 1e28f30 1e27480 1e28fe8 6033c153 0 0 2
+-- Inclusion Functions --
+Funktion
+
+F1 1e28fe8 1e28f30 0 1e29280 0 0 2
+TaxCompliance Coverage FlatExtras Included in SevenPay(calcType; coverageIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'GEN Vector Blank';'Policy EffDate');5)
+F1 1e29280 1e28f30 0 1e29380 0 0 2
+TaxCompliance Coverage Included in SevenPay(calcType; coverageIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'GEN Vector Blank';'Policy EffDate');0)
+F1 1e29380 1e28f30 0 1e29740 0 0 2
+TaxCompliance Coverage Ratings Included in SevenPay(calcType; coverageIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'GEN Vector Blank';'Policy EffDate');4)
+F1 1e29740 1e28f30 0 1e29908 0 0 2
+TaxCompliance Coverage SevenPay Inclusion Type(calcType; coverageIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'GEN Vector Blank';'Policy EffDate');3)
+F1 1e29908 1e28f30 0 1e29c20 0 0 2
+TaxCompliance CovOption FlatExtras Included in SevenPay(calcType; coverageIndex; covOptIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'Policy CovOption ProductCode'(calcType;coverageIndex;covOptIndex);'Policy EffDate');5)
+F1 1e29c20 1e28f30 0 1e29e30 0 0 2
+TaxCompliance CovOption Included in SevenPay(calcType; coverageIndex; covOptIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'Policy CovOption ProductCode'(calcType;coverageIndex;covOptIndex);'Policy EffDate');0)
+F1 1e29e30 1e28f30 0 1e2a258 0 0 2
+TaxCompliance CovOption Ratings Included in SevenPay(calcType; coverageIndex; covOptIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'Policy CovOption ProductCode'(calcType;coverageIndex;covOptIndex);'Policy EffDate');4)
+F1 1e2a258 1e28f30 0 0 0 0 2
+TaxCompliance CovOption SevenPay Inclusion Type(calcType; coverageIndex; covOptIndex)
+Funktion
+e_('ACCS CalcRule Traditional Tax Compliance Inclusions'('Policy CarrierCode';'Policy ProductCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'Policy CovOption ProductCode'(calcType;coverageIndex;covOptIndex);'Policy EffDate');3)
+F1 6033c153 1e27480 426db99b 0 0 0 2
+---Ul inclusion functions
+Funktion
+
+F1 426db99b 6033c153 0 4a145737 0 0 2
+TaxCompliance UL Coverage Included in SevenPay(calcType; coverageIndex)
+Funktion
+'ACCS CalcRule 7702 QAB Rules'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);"*"; //use wildcard for 'Policy CovOption ProductCode'(calcType; coverageIndex; coverageOptionIndex)çäcalcType;0; //use wildcard for 'Policy LifeParticipant LifeParticipantRoleCode'(calcType; coverageIndex; participantIndex)çä'Policy Coverage EffDate'(calcType;coverageIndex);"is_qab")
+F1 4a145737 6033c153 0 0 0 0 2
+TaxCompliance UL CovOption Included in SevenPay(calcType;coverageIndex; covOptIndex)
+Funktion
+'ACCS CalcRule 7702 QAB Rules'('Policy CarrierCode';'Policy Coverage ProductCode'(calcType;coverageIndex);'Policy CovOption ProductCode'(calcType;coverageIndex;covOptIndex);calcType;"0"; //use wildcard for 'Policy LifeParticipant LifeParticipantRoleCode'(calcType; coverageIndex; participantIndex)çä'Policy Coverage EffDate'(calcType;coverageIndex);"is_qab")
+F1 1e2a468 1e25d38 1e2a760 1e2c1f0 0 0 2
+-- Policy Functions --
+Funktion
+
+F1 1e2a760 1e2a468 0 1e2a848 0 0 2
+TaxCompliance Policy Specified Amount(calcType)
+Funktion
+SUMX(cov;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;IF ( /*Coverage in force, and not a rider*/ 'Std Coverage Is Inforce'(calcType;#cov;TransEffDate;TransEffDur) && ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;#cov)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;#cov))) ; çä   /*Include specified amount in total for policy*/ 'Policy Coverage CurrentNumberOfUnits'(calcType;#cov;TransEffDur) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;#cov);#cov;'Policy EffDate') ; çä   // Else return zero for coverageçä0çä))
+F1 1e2a848 1e2a468 0 1e2ab60 0 0 2
+TaxCompliance Policy Maturity Duration(calcType)
+Funktion
+MAX(95;MIN(100;'PI CoverageProduct MaturityAge'(calcType;'Policy ProductCode';0;'Policy EffDate'))) - 'Policy LifeParticipant IssueAge'(calcType;0;0)
+F1 1e2ab60 1e2a468 3499a677 1e2ac50 0 0 2
+TaxCompliance Policy Premium Duration(calcType; yearIndex)
+Funktion
+IF ('CalcType GSP Is Active'(calcType) || 'CalcType 7PN Is Active'(calcType) ; çä  1 ; çä  IF ('CalcType 7PP Is Active'(calcType) ; çä    'TaxCompliance Policy 7pay Premium Duration'(calcType;yearIndex) ; çä    'TaxCompliance Policy Maturity Duration'(calcType)çä  )çä)
+F1 3499a677 1e2ab60 0 0 0 0 2
+TaxCompliance Policy 7pay Premium Duration(calcType; yearIndex)
+Funktion
+MIN(7;100 - 'Coverage Attained Age'(calctype;0;yearIndex))
+F1 1e2ac50 1e2a468 0 51d7ab10 0 0 2
+TaxCompliance Policy Interest Rate(calcType)
+Funktion
+MAX('ACCS CalcRule Interest Rate'(calcType;TransEffDate);'PI PolicyProduct GuarIntRate'('Policy ProductCode';'Policy EffDate'))
+F1 51d7ab10 1e2a468 33b12ff7 4917781d 0 0 2
+Vector TCOM Search Criteria(calcType; yearIndex)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; // calculation typeçä'TaxCompliance Policy Specified Amount'(calcType); // target Cash valueçä'TaxCompliance Policy Maturity Duration'(calcType); // target durationçä'TaxCompliance Policy Premium Duration'(calcType;yearIndex); // premium duration çä'TaxCompliance Policy Interest Rate'(calcType); // Interest rateçä'TaxCompliance Tolerance'("CV"); // CV toleranceçä'TaxCompliance Tolerance'("P"); // premium toleranceçä999; // requested stop iterationçä'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex) // vectorAddlInfo (only uses Target Premiums)çä)
+F1 33b12ff7 51d7ab10 0 5a19f277 0 0 2
+Vector TCOM Target Prem AddlInfo(calcType; yearIndex)
+Funktion
+IF ('Std Calling System Is Illustration Based' ; çä  'Vector TCOM Proj Target Prem AddlInfo'(calcType;yearIndex;0) ; çä  'Vector TCOM Proj Target Prem AddlInfo'(calcType;TransEffDur;0)çä) //'Vector TCOM Proj Target Prem AddlInfo'(calcType; TransEffDur; 0; yearIndex)çä
+F1 5a19f277 51d7ab10 0 0 0 0 2
+-- Vector TCOM Target Prem AddlInfo(calcType)
+Funktion
+'Vector TCOM Proj Target Prem AddlInfo'(calcType; TransEffDur;0)çä çä/*çäV_(0;0;0;'GEN Vector Blank';0;'GEN Vector Blank';çäâVECTORX(cov; 0; 'Policy Number Of Coverage'(calcType; TransEffDur)-1; V_('Policy Coverage TargetPremAmt'(#cov); #cov+1));çäâ'Duration Year'(TransEffDate; 'Policy EffDate');çäâ1çä)*/çä
+F1 4917781d 1e2a468 0 4493eb08 0 0 2
+Vector TCOM Search Criteria FaceAmount(calcType; faceAmount; yearIndex)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; // calculation typeçäfaceAmount; // target Cash valueçä'TaxCompliance Policy Maturity Duration'(calcType); // target durationçä'TaxCompliance Policy Premium Duration'(calcType;TransEffDur); // premium duration çä'TaxCompliance Policy Interest Rate'(calcType); // Interest rateçä'TaxCompliance Tolerance'("CV"); // CV toleranceçä'TaxCompliance Tolerance'("P"); // premium toleranceçä999; // requested stop iterationçä'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex) // vectorAddlInfo (only uses Target Premiums)çä)
+F1 4493eb08 1e2a468 0 1e2be60 0 0 2
+Vector TCOM SolveParms(calcType; faceAmount; yearIndex)
+Funktion
+'SharedVector SolveParms ReplacePremium'('Solve Initial Premium Guess'('SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount);'Vector TCOM Search Criteria FaceAmount'(calcType;faceAmount;yearIndex));'TaxCompliance Policy Premium Duration'(calcType;TransEffDur);'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount))
+F1 1e2be60 1e2a468 0 221811a0 0 0 2
+TaxCompliance Total Coverage Amount(calcType)
+Funktion
+'TaxCompliance Policy Specified Amount'(calcType) + SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;IF ( /*Coverage is in force, and is rider*///'Coverage Is InForce'(calcType; #coverageIndex; TransEffDate; TransEffDur) çä 'Std Coverage Is InForce'(calcType;#coverageIndex;TransEffDate;TransEffDur) && ('IndicatorCode is Integrated'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) || 'IndicatorCode is Rider'('Policy Coverage IndicatorCode'(calcType;#coverageIndex))) ; çä   /*Rider face amount*/ 'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;TransEffDur) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;'Policy EffDate') ; çä   // Else zeroçä0çä))
+F1 221811a0 1e2a468 0 5270ded2 0 0 2
+-- Vector TCOM Search Criteria FaceAmount(calcType; faceAmount)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; ââââ// calculation typeçäââfaceAmount;ââ// target Cash valueçäââ'TaxCompliance Policy Maturity Duration'(calcType);ââ// target durationçäââ'TaxCompliance Policy Premium Duration'(calcType; TransEffDur);ââ// premium duration çäââ'TaxCompliance Policy Interest Rate'(calcType);â// Interest rateçäââ'TaxCompliance Tolerance'("CV");ââ// CV toleranceçäââ'TaxCompliance Tolerance'("P");ââ// premium toleranceçäââ999;âââ// requested stop iterationçäââ'Vector TCOM Target Prem AddlInfo'(calcType)â// vectorAddlInfo (only uses Target Premiums)çäâ)
+F1 5270ded2 1e2a468 0 25288899 0 0 2
+-- Vector TCOM Search Criteria(calcType; yearIndex)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; ââââ// calculation typeçäââ'TaxCompliance Policy Specified Amount'(calcType);ââ// target Cash valueçäââ'TaxCompliance Policy Maturity Duration'(calcType);ââ// target durationçäââ'TaxCompliance Policy Premium Duration'(calcType; yearIndex);ââ// premium duration çäââ'TaxCompliance Policy Interest Rate'(calcType);â// Interest rateçäââ'TaxCompliance Tolerance'("CV");ââ// CV toleranceçäââ'TaxCompliance Tolerance'("P");ââ// premium toleranceçäââ999;âââ// requested stop iterationçäââ'Vector TCOM Target Prem AddlInfo'(calcType)â// vectorAddlInfo (only uses Target Premiums)çäâ)
+F1 25288899 1e2a468 0 0 0 0 2
+-- Vector TCOM SolveParms(calcType; faceAmount)
+Funktion
+'SharedVector SolveParms ReplacePremium'('Solve Initial Premium Guess'( 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); 'Vector TCOM Search Criteria FaceAmount'(calcType; faceAmount)); çäâââ'TaxCompliance Policy Premium Duration'(calcType; TransEffDur);çäâââ'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount)çäââ)
+F1 1e2c1f0 1e25d38 1e2c548 1e2dfb0 0 0 2
+-- Policy Projection Functions --
+Funktion
+
+F1 1e2c548 1e2c1f0 0 1e2c8b8 0 0 2
+TaxCompliance Proj Policy Specified Amount(calcType; yearIndex)
+Funktion
+sumx(cov;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ( /*Coverage in force or pending , and not a rider*/ ('Std Coverage Is InForce'(calcType;#cov;TransEffDate;yearIndex) || 'Std Coverage Is Pending'(calcType;#cov;TransEffDate;yearIndex)) && ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;#cov)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;#cov))) ; çä   /*Include specified amount in total for policy*/ 'Policy Coverage CurrentNumberOfUnits'(calcType;#cov;yearIndex) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;#cov);#cov;'Policy EffDate') ; çä   // Else return zero for coverageçä0çä))
+F1 1e2c8b8 1e2c1f0 0 1e2cef0 0 0 2
+TaxCompliance Proj Total Coverage Amount(calcType; yearIndex)
+Funktion
+'TaxCompliance Proj Policy Specified Amount'(calcType;yearIndex) + SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ('Std Coverage Is InForce'(calcType;#coverageIndex;TransEffDate;yearIndex) /*Coverage is in force, and is rider*/  && ('IndicatorCode is Integrated'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) || 'IndicatorCode is Rider'('Policy Coverage IndicatorCode'(calcType;#coverageIndex))) ; çä   /*Rider face amount*/ 'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;TransEffDur) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;'Policy EffDate') ; çä   // Else zeroçä0çä))
+F1 1e2cef0 1e2c1f0 2d58fa2d 75cde590 0 0 2
+--Vector Projection Functions
+Funktion
+
+F1 2d58fa2d 1e2cef0 662c9a47 1e2dc20 0 0 2
+Vector TCOM Proj Search Criteria(calcType; yearIndex; beforeCalc)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; // calculation typeçä'TaxCompliance Proj Policy Specified Amount'(calcType;yearIndex); // target Cash valueçä'TaxCompliance Policy Maturity Duration'(calcType); // target durationçäMIN(yearIndex + beforeCalc + 'TaxCompliance Policy Premium Duration'(calcType;yearIndex) - 1; // premium duration çä'TaxCompliance Policy Maturity Duration'(calcType));'TaxCompliance Policy Interest Rate'(calcType); // Interest rateçä'TaxCompliance Tolerance'("CV"); // CV toleranceçä'TaxCompliance Tolerance'("P"); // premium toleranceçä999; // requested stop iterationçä'Vector TCOM Proj Target Prem AddlInfo'(calcType;yearIndex;beforeCalc) // vectorAddlInfo (only uses Target Premiums)çä//ââ'Vector TCOM Proj Target Prem AddlInfo'(calcType; yearIndex; beforeCalc; yearIndex)çä)
+F1 662c9a47 2d58fa2d 0 a6af3d8 0 0 2
+Vector TCOM Proj Target Prem AddlInfo(calcType; yearIndex; beforeCalc)
+Funktion
+V_(0;0;0;'GEN Vector Blank';0;'GEN Vector Blank';'TARGET Premium'(calcType;yearIndex);yearIndex + beforeCalc;1)
+F1 a6af3d8 2d58fa2d 0 0 0 0 2
+-- Vector TCOM Proj Target Prem AddlInfo(calcType; yearIndex; beforeCalc)
+Funktion
+V_(â0;çäâ0;çäâ0;çäâ'GEN Vector Blank';çäâ0;çäâ'GEN Vector Blank';çäâ'TARGET Premium'(calcType);çäâyearIndex + beforeCalc;çäâ1çä)çä
+F1 1e2dc20 1e2cef0 0 7b62e955 0 0 2
+Vector TCOM Proj MakeSolveParms(calcType; yearIndex)
+Funktion
+'SharedVector SolveParms MakeFaceAmtandDBOptandStartYear'(calcType;'TaxCompliance Proj Total Coverage Amount'(calcType;yearIndex);'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex);yearIndex)
+F1 7b62e955 1e2cef0 31f22c33 5fdd38f8 0 0 2
+Vector TCOM Proj Search Criteria FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; // calculation typeçäfaceAmount; // target Cash valueçä'TaxCompliance Policy Maturity Duration'(calcType); // target durationçäMIN(yearIndex + beforeCalc + 'TaxCompliance Policy Premium Duration'(calcType;yearIndex) - 1; // premium duration çä'TaxCompliance Policy Maturity Duration'(calcType));'TaxCompliance Policy Interest Rate'(calcType); // Interest rateçä'TaxCompliance Tolerance'("CV"); // CV toleranceçä'TaxCompliance Tolerance'("P"); // premium toleranceçä999; // requested stop iterationçä'Vector TCOM Proj Target Prem AddlInfo FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount) // vectorAddlInfo (only uses Target Premiums)çä)
+F1 31f22c33 7b62e955 0 332a6513 0 0 2
+Vector TCOM Proj Target Prem AddlInfo FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+V_(0;0;0;'GEN Vector Blank';0;'GEN Vector Blank';IF ('Std Calling System Is Illustration Based' ; çä   /*Solve for Illustration?*/ 'TARGET Total Target Premium FaceSolve'(faceAmount;'CalcType LTGT'(calcType)) ; çä   /*else use target from INPUT*/ VECTORX(cov;0;'Policy Number Of Coverage'(calcType;TransEffDur) - 1;V_('Policy Coverage TargetPremAmt'(#cov);#cov + 1))çä);yearIndex + beforeCalc;1)
+F1 332a6513 7b62e955 0 0 0 0 2
+-- Vector TCOM Proj Target Prem AddlInfo FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+çäV_(0;0;0;'GEN Vector Blank';0;'GEN Vector Blank';çäâIF('Std Calling System Is Illustration Based' ;çäââ/*Solve for Illustration?*/çäââ//'TARGET Total Target Premium'('CalcType LTGT'(calcType))çäââ'TARGET Total Target Premium FaceSolve'(faceAmount; 'CalcType LTGT'(calcType));çäâââ/*else use target from INPUT*/çäâââVECTORX(cov; 0; 'Policy Number Of Coverage'(calcType; TransEffDur)-1; çäââââV_('Policy Coverage TargetPremAmt'(#cov); #cov+1)çäâââ)çäâ);çäâyearIndex + beforeCalc;çäâ1çä)çä
+F1 5fdd38f8 1e2cef0 0 0 0 0 2
+-- Vector TCOM Proj Search Criteria(calcType; yearIndex; beforeCalc)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; ââââ// calculation typeçäââ'TaxCompliance Proj Policy Specified Amount'(calcType; yearIndex);ââ// target Cash valueçäââ'TaxCompliance Policy Maturity Duration'(calcType);ââ// target durationçäââMIN(çäââyearIndex + beforeCalc + çäââ'TaxCompliance Policy Premium Duration'(calcType; yearIndex) - 1;ââ// premium duration çäââ'TaxCompliance Policy Maturity Duration'(calcType)çäââ);çäââ'TaxCompliance Policy Interest Rate'(calcType);â// Interest rateçäââ'TaxCompliance Tolerance'("CV");ââ// CV toleranceçäââ'TaxCompliance Tolerance'("P");ââ// premium toleranceçäââ999;âââ// requested stop iterationçäââ'Vector TCOM Proj Target Prem AddlInfo'(calcType; yearIndex; beforeCalc)â// vectorAddlInfo (only uses Target Premiums)çäâ)
+F1 75cde590 1e2c1f0 0 0 0 0 2
+TaxCompliance Proj BaseCov Specified Amount(calcType; yearIndex)
+Funktion
+IF ('Std Coverage Is InForce'(calcType;'Std BaseCov Index'(calcType);TransEffDate;yearIndex) ; çä   /*Coverage in force, and not a rider*//*Include specified amount in total for policy*/ 'Policy Coverage CurrentNumberOfUnits'(calcType;'Std BaseCov Index'(calcType);yearIndex) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;'Std BaseCov Index'(calcType));'Std BaseCov Index'(calcType);'Policy EffDate') ; çä   // Else return zero for coverageçä0çä)
+F1 1e2dfb0 1e25d38 1edcdb9d 1e2ea80 0 0 2
+-- Iteration functions --
+Funktion
+
+F1 1edcdb9d 1e2dfb0 0 6532ba29 0 0 2
+--TaxCompliance Initial Premium CV2(calcType; prem; vectorSolveParms)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;çäââ'SharedVector SolveParms ReplacePremium'(çäâââprem; çäâââ'TaxCompliance Policy Premium Duration'(calcType);çäâââvectorSolveParmsçäââ); çäââ'TaxCompliance Policy Interest Rate'(calcType);çäââ'Vector TCOM Target Prem AddlInfo'(calcType);çäââ'TaxCompliance Policy Maturity Duration'(calcType);çäââ12çä)çä çä
+F1 6532ba29 1e2dfb0 0 24e7aa75 0 0 2
+TaxCompliance Low Bound(calcType; yearIndex; beforeCalc)
+Funktion
+IF ('Solve CashValueSolve'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc));'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc))) < 'Solve Criteria Target CV'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä  'Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä  'Solve Initial Premium Guess4'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc))çä)
+F1 24e7aa75 1e2dfb0 0 18c04d03 0 0 2
+TaxCompliance High Bound(calcType; yearIndex; beforeCalc)
+Funktion
+IF ('Solve CashValueSolve'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc));'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc))) > 'Solve Criteria Target CV'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä  'Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä  'Solve Initial Premium Guess3'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc))çä)
+F1 18c04d03 1e2dfb0 0 78e1c7ac 0 0 2
+TaxCompliance Prev Prem(calcType; yearIndex; beforeCalc)
+Funktion
+IF ('Solve CashValueSolve'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc));'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc))) < 'Solve Criteria Target CV'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä  'Solve Initial Premium Guess3'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä  'Solve Initial Premium Guess4'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc))çä)
+F1 78e1c7ac 1e2dfb0 0 1119d412 0 0 2
+TaxCompliance SolveParms Vector(calcType; yearIndex; beforeCalc)
+Funktion
+'SharedVector SolveParms MakeFaceAmtandDBOptandStartYear'(calcType;'TaxCompliance Proj Policy Specified Amount'(calcType;yearIndex); //'TaxCompliance Proj BaseCov Specified Amount'(calcType; yearIndex);çä'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex);yearIndex // + beforeCalcçä)
+F1 1119d412 1e2dfb0 0 37030951 0 0 2
+TaxCompliance High Bound FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+IF ('Solve CashValueSolve'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount));'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) > 'Solve Criteria Target CV'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä  'Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä  'Solve Initial Premium Guess3'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))çä)
+F1 37030951 1e2dfb0 0 38fc133c 0 0 2
+TaxCompliance Low Bound FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+IF ('Solve CashValueSolve'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount));'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) < 'Solve Criteria Target CV'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä  'Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä  'Solve Initial Premium Guess4'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))çä)
+F1 38fc133c 1e2dfb0 0 2c10858 0 0 2
+TaxCompliance Prev Prem FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+IF ('Solve CashValueSolve'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount));'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) < 'Solve Criteria Target CV'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä  'Solve Initial Premium Guess3'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä  'Solve Initial Premium Guess4'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))çä)
+F1 2c10858 1e2dfb0 0 0 0 0 2
+TaxCompliance SolveParms Vector FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+'SharedVector SolveParms MakeFaceAmtandDBOptandStartYear'(calcType;faceAmount; //'TaxCompliance Proj BaseCov Specified Amount'(calcType; yearIndex);çä'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex);yearIndex + beforeCalc)
+F1 1e2ea80 1e25d38 1e2ee18 1e31178 0 0 2
+-- CVAT Functions --
+Funktion
+
+F1 1e2ee18 1e2ea80 0 1e2f228 0 0 2
+--TaxCompliance CVAT Corridor Percent(attained_age; yearIndex)
+Funktion
+TaxCompliance Cov NSP(age; yearIndex; 0 /*coverageIndex*/)
+F1 1e2f228 1e2ea80 1e2fa10 0 0 0 2
+--TaxCompliance Cov NSP(age; yearIndex; coverageIndex)
+Funktion
+IF (/*Projection past maturity age?*/age >= 'PI CoverageProduct MaturityAge'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate'); çäâ/*Return Specified amount for coverage*/çäâ'PI CoverageProduct ValuePerUnit'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate');çäâçäâ/*Discount specified amount for a year*/çäâ'PI CoverageProduct ValuePerUnit'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate') çäâ* 'Vector TCOM Interest Function' çä      â* 'TaxCompliance Mort Rate'(age; yearIndex; coverageIndex) çäâ/ 'PI CoverageProduct ValuePerUnit'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate') çä çä      â+ 'Vector TCOM Interest Function' çä      â* ( 1 - 'TaxCompliance Mort Rate'(age; yearIndex; coverageIndex) çäâ    / 'PI CoverageProduct ValuePerUnit'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate')çä                 ) çä      â   * 'TaxCompliance Cov NSP'( age + 1; yearIndex + 1; coverageIndex ) çä)
+F1 1e2fa10 1e2f228 0 1e2fde8 0 0 2
+--TaxCompliance Mort Rate(age; yearIndex; coverageIndex)
+Funktion
+IF(/*More than one life on policy*/'Policy Number of LifeParticipant'(calcType; coverageIndex) > 1;çäâ// joint life çäâ'FRASIER Joint Survivor Annual Rate'("MORT"; coverageIndex; "CVAT"; yearIndex; 1; 'GEN Vector Blank');çäâ/*Single life*/çäâMIN('TaxCompliance qx'(age; coverageIndex)çäâ       * 'Std Coverage Table Rating factor'(calcType; coverageIndex; yearIndex; 0)çäâ       + 'Std Coverage Total Flat Extra'(calcType; coverageIndex; yearIndex; 0);çä         âçäâ       999.9999999 çäâ)çä)
+F1 1e2fde8 1e2f228 0 1e30530 0 0 2
+--TaxCompliance qx(age; coverageIndex)
+Funktion
+Rate(â'Policy Coverage ProductCode'(calcType; coverageIndex); çäâââ"MORT";çäâââTransEffDate;çäâââV_('Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0);çäââââage - 'Policy LifeParticipant IssueAge'(calcType; coverageIndex; 0) + 1;çäââââ'Policy LifeParticipant IssueGender'(calcType; coverageIndex; 0); çäââââ'Policy LifeParticipant UnderwritingClass'(calcType; coverageIndex; 0); çäââââ'Policy LifeParticipant TobaccoPremiumBasis'(calcType; coverageIndex; 0); çäââââ'Policy Coverage BandCode'(coverageIndex; TransEffDur);çäââââ'GEN Vector Blank'; 'GEN Vector Blank'; 'GEN Vector Blank'; 'GEN Vector Blank';â// parameters not used for mortality ratesçäââââ'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate');çäââââ'PI PolicyProduct AgeCalculationType'('Policy Coverage ProductCode'(calcType; coverageIndex); 'Policy EffDate')çäâââ)çä) çä/ 'PI CoverageProduct ValuePerUnit'(calcType; 'Policy Coverage ProductCode'(calcType; coverageIndex); coverageIndex; 'Policy EffDate')
+F1 1e30530 1e2f228 0 1e30990 0 0 2
+--TaxCompliance Attained Age(iss_age; iss_date; effectiveDate)
+Funktion
+iss_age çä+ 'Duration Year'(effectiveDate; 'Policy EffDate') çä- 'Duration Year'(iss_date; 'Policy EffDate')
+F1 1e30990 1e2f228 1e30da0 0 0 0 2
+--Vector TCOM Interest Function
+Funktion
+1 / ( 1 + ( 'TaxCompliance InterestRate' * 0.01) )
+F1 1e30da0 1e30990 0 0 0 0 2
+--TaxCompliance InterestRate
+Funktion
+MAX('ACCS CalcRule Interest Rate'("CVAT"; TransEffDate); //'Addl Product Info'('Policy ProductCode'; TransEffDate; v_("IntRate"; "CVAT"));çä        'PI PolicyProduct GuarIntRate'('Policy ProductCode'; 'Policy EffDate') * 0.01çä)
+F1 1e31178 1e25d38 5ea38166 1e34540 0 0 2
+-- Illustration Premium Streams --
+Funktion
+
+F1 5ea38166 1e31178 7bedd47e 0 0 0 2
+--TaxCompliance Illustration Premium(calcType; premAmt; premType; adjustment; yearIndex; monthIndex)
+Funktion
+Case (premType;çä çäâ"Specify",çäâ"Shadow",çäâ"Premium Solve",çäâ"Duration Solve",çäâ"MinPrem",âçäâ"Target"ââ: 'TaxCompliance Illustration Scheduled Premium'(calcType; premAmt; premType; adjustment; yearIndex; monthIndex);çäââââçäâ"7-Pay"ââ: 'GEN Round'('ULDocs Proj 7 Pay Premium'(calcType;yearIndex); 2);çäâ"GLP"ââ: 'GEN Round'('ULDocs Proj Guideline Level Premium'(calcType; yearIndex); 2);çäâ"GSP"ââ: 'GEN Round'('ULDocs Proj Guideline Single Premium'(calcType; yearIndex); 2)çä çä)
+F1 7bedd47e 5ea38166 60943b12 0 0 0 2
+--TaxCompliance Illustration Scheduled Premium(calcType; premAmt; premType; adjustment; yearIndex; monthIndex)
+Funktion
+if(adjustment = 1 ;çä çäâif('TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex) = 'Std Unadjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex);çäââ'TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex);çäââMessage("Due to guideline limitations the premium reduced from "&çäâââ'Std Unadjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex)&çäâââ" to "&çäâââ'TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex)&çäâââ" in year "&çäâââyearIndex;çäâââ'TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex)çäââ)çäâ);çä çä çä/*çäâif('TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex) = 'Std Unadjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex);çäââ'TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex);çäââMessage("Due to guideline limitations the premium reduced from "&çäâââ'Std Unadjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex)&çäâââ" to "&çäâââ'TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex)&çäâââ" in year "&çäâââyearIndex;çäâââ'TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex)çäââ)çäâ);çä*/çä çä çäâ'Std Unadjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex)çä)çä çä/çä çäif( (premType alike "Premium Solve") || (premType alike 'CalcType SHADOW Identifier');çä çäâ1;çä çäâcase ('TaxCompliance Illustration Premium Mode'(calcType);çäââ1:â1;çäââ2:â2;çäââ3:â4;çäââ4:â12;çäââ:âerror("Calculations do not accomodate the payment mode used.")çäâ)çä)çä çä*çäcase ('TaxCompliance Illustration Premium Mode'(calcType);çäâ1:â(monthIndex=1);çäâ2:â(monthIndex=1) || (monthIndex=7);çäâ3:â(monthIndex=1) || (monthIndex=4) || (monthIndex=7) || (monthIndex=10);çäâ4:â1;çäâ:âerror("Calculations do not accomodate the payment mode used.")çä)çä çä çä çä çä çä çä
+F1 60943b12 7bedd47e 6d7f80f6 0 0 0 2
+--TaxCompliance Illustration Premium Mode(calcType)
+Funktion
+Case( 'Std PremiumDesign';çäâ"GSP","GLP","7-Pay"â:1;çäâ"MinPrem"ââ: 'ACCS CalcRule Target Premium Mode'('CalcType MTGT'(calcType); 'Policy CarrierCode'; 'Policy ProductCode'; 'Policy EffDate');çäâ"Target"ââ: 'ACCS CalcRule Target Premium Mode'('CalcType CTGT'(calcType); 'Policy CarrierCode'; 'Policy ProductCode';  'Policy EffDate');çäââââ: 'Policy PaymentMode'çä)çä çä
+F1 6d7f80f6 60943b12 379a1da 0 0 0 2
+--TaxCompliance Adjusted Scheduled Premium(calcType; premAmt; premType; yearIndex)
+Funktion
+if( âyearIndex = 1;çä// if it is the first policy yearçäâmin('Std Unadjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex); çä çäââmax(â'GEN Round'('TaxCompliance Guideline Level Premium'; 2); çäâââ'GEN Round'('TaxCompliance Guideline Single Premium'; 2);çäâââ'GEN Round'('TaxCompliance 7 Pay Premium'; 2)çäââ)çäâ);çäâ//compare the first premium to the guidelines and 7 pay premiumçäâmin(â'Std Unadjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex);çä çäââmax(â'GEN Round'('TaxCompliance Guideline Level Premium'; 2) * yearIndex;çäâââ'GEN Round'('TaxCompliance Guideline Single Premium'; 2);çäâââif (âyearIndex <= 7;çäââââ'GEN Round'('TaxCompliance 7 Pay Premium'; 2) * yearIndex;çäââââ0çäâââ)çäââ)çä çäâ â-çä çäââçäââ'TaxCompliance Accum Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex-1)çäââçä çäâ)çäâ// compare the cumulative premiums to the cumulative guidelines and 7 pay premiumsçä)âçä çä
+F1 379a1da 6d7f80f6 0 1ee81684 0 0 2
+--TaxCompliance Accum Adjusted Scheduled Premium(calcType; premAmt; premType; yearIndex)
+Funktion
+IF(yearIndex <=0;çäâ0;çäâ'TaxCompliance Accum Adjusted Scheduled Premium'(calcType; premAmt; premType; yearIndex-1)çäâ+çäâ'TaxCompliance Adjusted Scheduled Premium'(calcType; premAmt;premType;yearIndex)çä)
+F1 1ee81684 6d7f80f6 68ca97a2 0 0 0 2
+--TaxCompliance Unadjusted Scheduled Premium(calcType; premAmt; premType; yearIndex)
+Funktion
+if( â('TaxCompliance Accum Scheduled Premium'(yearIndex) <= 'TaxCompliance Accum Maximum Premium'(calcType; yearIndex)) &&çäâ('TaxCompliance Accum Scheduled Premium'(yearIndex) >= 'TaxCompliance Accum Minimum Premium'(calcType; yearIndex));çäâ// checks whether the transaction amount is within the maximum and minimum limits setçäâ'TaxCompliance Applicable Premium'(premAmt; premType; yearIndex);çäâ// returns the transaction amountçäâ'Messages SystemMessage'(çäâââââ"1001"; çäâââââ'Message Language'; çäâââââv_('TaxCompliance Model Name'; "TaxCompliance Unadjusted Scheduled Premium")çä    ââââ)çäâ// else returns error messageçä)çä çä
+F1 68ca97a2 1ee81684 0 21a8770 0 0 2
+--TaxCompliance Applicable Premium(premAmt; premType; yearIndex)
+Funktion
+case (premType; çäâ"MinPrem","Target":premAmt;âçäâ"Specify"ââ:'Illus PremiumStreamAmt'(yearIndex - 1)çä)çä
+F1 21a8770 1ee81684 0 32432b80 0 0 2
+--TaxCompliance Accum Scheduled Premium(yearIndex)
+Funktion
+IF(yearIndex <= 1;çäâ0;çäâ'TaxCompliance Accum Scheduled Premium'(yearIndex-1)çäâ+çäâ 'Illus PremiumStreamAmt'(yearIndex - 1)çä)çä çä
+F1 32432b80 1ee81684 0 bd3209b 0 0 2
+--TaxCompliance Accum Minimum Premium(calcType; yearIndex)
+Funktion
+'PI PolicyProduct Ownership MinPremiumInitialAmt'(calcType; 'Policy ProductCode'; 'Policy EffDate')çä+çä((yearIndex - 1) * 'PI PolicyProduct Ownership MinPremiumAddOnAmt'(calcType; 'Policy ProductCode'; 'Policy EffDate'))çä çä
+F1 bd3209b 1ee81684 0 0 0 0 2
+--TaxCompliance Accum Maximum Premium(calcType; yearIndex)
+Funktion
+'PI PolicyProduct Ownership MaxPremiumInitialAmt'(calcType; 'Policy ProductCode'; 'Policy EffDate')çä+çä((yearIndex - 1) * 'PI PolicyProduct Ownership MaxPremiumAddOnAmt'(calcType; 'Policy ProductCode'; 'Policy EffDate'))çä çä çä çä çä çä çä
+F1 1e34540 1e25d38 1e34980 1e37068 0 0 2
+-- Illustration Policy Change Functions --
+Funktion
+
+F1 1e34980 1e34540 1e34eb8 1e36770 0 0 2
+TaxCompliance Policy Changes for Guidelines(calcType; yearIndex)
+Funktion
+IF ('Std Attained Age'('Policy LifeParticipant IssueAge'(calcType;0;0);'Policy EffDate';'Increase Date By Years'('Policy EffDate';yearIndex - 1)) < 100 ; çä  'TaxCompliance Specified Amount Changes'(calcType;yearIndex) + 'TaxCompliance Death Benefit Option Changes'(calcType;yearIndex) + 'TaxCompliance Rider Add or Terminate'(calcType;yearIndex) + 'TaxCompliance Benefit Add or Terminate'(calcType;yearIndex) ; çä  0çä)
+F1 1e34eb8 1e34980 0 1e356b8 0 0 2
+TaxCompliance Specified Amount Changes(calcType; yearIndex)
+Funktion
+ //return a 1 for each year where the total policy specified amount increases,çä//a 2 for each year where the total policy specified amount decreases,çä//and a 0 for each year with no activity.  Policy year 1 will always be a 1.çäIF (yearIndex = 1 ; çä  1 ; çä  IF (SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex - 1) - 1;'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;yearIndex - 1)) < SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;yearIndex)) ; çä    1 ; çä    IF (SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex - 1) - 1;'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;yearIndex - 1)) > SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;yearIndex)) ; çä      2 ; çä      0çä    )çä)çä)
+F1 1e356b8 1e34980 0 1e35b18 0 0 2
+TaxCompliance Death Benefit Option Changes(calcType; yearIndex)
+Funktion
+ //return a 1 for each year where the policy death benefit option does not,çä//equal previous years' death benefit option, and a 0 for each year there is noçä//change.  Policy year 1 will always be a 1.çäIF (yearIndex = 1 ; çä  1 ; çä  IF ('Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex - 1) <> 'Policy Coverage DeathBenefitOptType'(calcType;0;yearIndex) ; çä    1 ; çä    0çä  )çä)
+F1 1e35b18 1e34980 0 1e35f78 0 0 2
+TaxCompliance Rider Add or Terminate(calcType; yearIndex)
+Funktion
+ //return a 1 for each year where the a rider is added, a 2 for each year whereçä//a rider is terminated, and 0 if there are no changes.çäIF (yearIndex = 1 ; çä  1 ; çä  IF (SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ('Policy Coverage RequestedEffDur'(calcType;#coverageIndex) = yearIndex ; çä    1 ; çä    0çä  )) > 0 ; çä  1 ; çä  IF (SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ('PIDRV CoverageProduct MaturityDuration'(calcType;'Policy EffDate';#coverageIndex) > yearIndex &&  //'TaxCompliance Policy Maturity Duration'(calcType) = yearIndex;çä'Policy Coverage RequestedMaturityDur'(calcType;#coverageIndex) = yearIndex ; çä    1 ; çä    0çä  )) > 0 ; çä  2 ; çä  0çä)çä)çä)
+F1 1e35f78 1e34980 0 7983bdbd 0 0 2
+TaxCompliance Benefit Add or Terminate(calcType; yearIndex)
+Funktion
+ //return a 1 for each year where the a Benefit is added, a 2 for each year whereçä//a Benefit is terminated, and 0 if there are no changes.çäIF (yearIndex = 1 ; çä  1 ; çä  IF (SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;SUMX(covOptIndex;0;'Policy Number of CovOption'(calcType;#coverageIndex) - 1;IF ('Policy CovOption RequestedEffDur'(calcType;#coverageIndex;#covOptIndex) = yearIndex ; çä    1 ; çä    0çä  ))) > 0 ; çä  1 ; çä  IF (SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;SUMX(covOptIndex;0;'Policy Number of CovOption'(calcType;#coverageIndex) - 1;IF ('PIDRV CovOptionProduct MaturityDuration'(calcType;'Policy EffDate';#coverageIndex;#covOptIndex) > yearIndex && 'Policy CovOption RequestedMaturityDur'(calcType;#coverageIndex;#covOptIndex) = yearIndex ; çä    1 ; çä    0çä  ))) > 0 ; çä  2 ; çä  0çä)çä)çä)
+F1 7983bdbd 1e34980 0 0 0 0 2
+--TaxCompliance RiskClass Change(calcType; yearIndex)
+Funktion
+//return a 1 for each year where the risk class changes and 0 if there are no changes.çäIF(yearIndex = 1;çäâçäâ1;çäâçäâIF(âSUMX(coverageIndex; 0; 'Policy Number Of Coverage'(calcType; yearIndex) - 1;çäâââ'Policy CovOption UnderwritingClass'(calcType; #coverageIndex; 0; yearIndex-1)çäâââ= 'Policy CovOption UnderwritingClass'(calcType; #coverageIndex; 0; yearIndex)çäâââ//'Policy Coverage IndicatorCode'(calcType; coverageIndex)çäââ) > 0;çäââçäââ1;çäâçäââ0çäâ)çä)çä çä//Policy CovOption UnderwritingClass(calcType; coverageIndex; coverageOptionIndex; yearIndex)çä//Policy CovOption TobaccoPremiumBasis(calcType; coverageIndex; coverageOptionIndex; yearIndex)çä//Policy CovOption PermTableRating(calcType; coverageIndex; coverageOptionIndex; yearIndex)çä//Policy CovOption PermFlatExtraAmt(calcType; coverageIndex; coverageOptionIndex; yearIndex)çä çä çä çä//ââIF(yearIndex = 1;çä//âââ1;çä//âââIF(SUMX(coverageIndex; 0; 'Policy Number Of Coverage'(calcType; yearIndex) - 1;çä//âââââSUMX(covOptIndex; 0; 'Policy Number of CovOption'(calcType; #coverageIndex)-1;çä//ââââââIF('Policy CovOption RequestedEffDur'(calcType; #coverageIndex; #covOptIndex) = yearIndex;çä//âââââââ1;çä//âââââââ0)çä//ââââââ))>0;çä//ââââ1;çä//ââââIF(SUMX(coverageIndex; 0; 'Policy Number Of Coverage'(calcType; yearIndex) - 1;çä//âââââSUMX(covOptIndex; 0; 'Policy Number of CovOption'(calcType; #coverageIndex)-1;çä//ââââââIF('PIDRV CovOptionProduct MaturityDuration'(calcType; 'Policy EffDate'; #coverageIndex; #covOptIndex)> yearIndexçä//âââââââ&&çä//âââââââ'Policy CovOption RequestedMaturityDur'(calcType; #coverageIndex; #covOptIndex) = yearIndex; çä//âââââââ1;çä//âââââââ0)çä//ââââââ))>0;çä//ââââ2;çä//ââââ0)çä//âââ)çä//ââ)âââ
+F1 1e36770 1e34540 0 405f91ce 0 0 2
+TaxCompliance Policy LastMaterialChangeYear(calcType; yearIndex)
+Funktion
+IF ( /*At beginning of the Projection and not year 1*/ yearIndex = TransEffDur && yearIndex <> 1 ; çä   /*Yes*/ 'Duration Year'('Policy LifeUSA MaterialChangeDate';'Policy EffDate') ; çä   /*No*/ IF ( /*At issue*/ yearIndex = 1 ; çä     /*Yes*/ 1 ; çä     /*No*/ IF ( /*Material Change*/ 'TaxCompliance Policy Changes for 7pay'(calcType;yearIndex) = 1 ; çä       /*Yes*/ yearIndex ; çä       /*No*/ 'TaxCompliance Policy LastMaterialChangeYear'(calcType;yearIndex - 1)çä    )çä)çä)
+F1 405f91ce 1e34540 61a7e56b 0 0 0 2
+TaxCompliance Policy Changes for 7pay rec(calcType; yearIndex)
+Funktion
+IF ( /*At issue*/ yearIndex = 1 ; çä   /*Yes*/ 1 ; çä   /*No*/ IF ( /*Material Change*/ 'TaxCompliance Policy Changes for 7pay'(calcType;yearIndex) = 1 ; çä     /*Yes*/ yearIndex ; çä     /*No*/ IF ( /*Policy Decrease*/ 'TaxCompliance Policy Changes for 7pay'(calcType;yearIndex) = 2 ; çä       /*Yes*/ 'TaxCompliance Policy Changes for 7pay rec'(calcType;yearIndex - 1) ; çä       /*Otherwise no Changes*/ 'TaxCompliance Policy Changes for 7pay rec'(calcType;yearIndex - 1)çä    )çä)çä)
+F1 61a7e56b 405f91ce 0 0 0 0 2
+TaxCompliance Policy Changes for 7pay(calcType; yearIndex)
+Funktion
+IF ( /*Check for first policy year*/ yearIndex = 1 ; çä  1 ; çä  IF ( /*Check for Material Changes*/ 'TaxCompliance Specified Amount Changes'(calcType;yearIndex) = 1 || 'TaxCompliance Rider Add or Terminate'(calcType;yearIndex) = 1 || 'TaxCompliance Benefit Add or Terminate'(calcType;yearIndex) = 1 ; çä     /*Yes*/ 1 ; çä     /*No*/ IF ( /*Check for decreases*/ 'TaxCompliance Specified Amount Changes'(calcType;yearIndex) = 2 || 'TaxCompliance Rider Add or Terminate'(calcType;yearIndex) = 2 || 'TaxCompliance Benefit Add or Terminate'(calcType;yearIndex) = 2 ; çä       /*Yes*/ 2 ; çä      0çä    )çä)çä)
+F1 1e37068 1e25d38 1e374d8 3cf28d9e 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 1e374d8 1e37068 0 683e9d53 0 0 2
+TaxCompliance Model Name
+Funktion
+"TaxCompliance"
+F1 683e9d53 1e37068 0 0 0 0 2
+TaxCompliance Current Interest Guarantee Period
+Funktion
+'Number Of Months'('Policy Life CurrIntEndDate';TransEffDate)
+F1 3cf28d9e 1e25d38 1e2e338 0 0 0 2
+-- Solve Iteration functions --
+Funktion
+
+F1 1e2e338 3cf28d9e 0 6d4534f8 0 0 2
+-- TaxCompliance Initial Premium CV(calcType; vectorSolveParms)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;çäââ'SharedVector SolveParms ReplacePremium'(çäâââ'Solve Initial Premium Guess'( vectorSolveParms; çäââââ'Vector TCOM Search Criteria faceAmount'(calcType; çäâââââ'SharedVector SolveParms FaceAmount'('Std BaseCov Index'(calcType); vectorSolveParms; 1))); çäâââ'TaxCompliance Policy Premium Duration'(calcType; TransEffDur);çäâââvectorSolveParmsçäââ); çäââ'TaxCompliance Policy Interest Rate'(calcType);çäââ'Vector TCOM Target Prem AddlInfo'(calcType);çäââ'TaxCompliance Policy Maturity Duration'(calcType);çäââ12çä)çä çä
+F1 6d4534f8 3cf28d9e 0 1c3724b9 0 0 2
+TaxCompliance Initial Premium CV(calcType; vectorSolveParms; yearIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms ReplacePremium'('Solve Initial Premium Guess'(vectorSolveParms;'Vector TCOM Search Criteria faceAmount'(calcType;'SharedVector SolveParms FaceAmount'('Std BaseCov Index'(calcType);vectorSolveParms;1);yearIndex));'TaxCompliance Policy Premium Duration'(calcType;TransEffDur);vectorSolveParms);'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);'TaxCompliance Policy Maturity Duration'(calcType);12)
+F1 1c3724b9 3cf28d9e 3a3d7077 7b80c482 0 0 2
+TaxCompliance Call New Solve(calctype; yearIndex; beforeCalc; vectorSearchCriteria)
+Funktion
+SOLVE( // solve methodçä'VPMS Solve Debug Switch'(0); //solve functionçäFUNCREF('Solve CashValueSolve'); //funcref for derivertiveçä0; //targetçä'Solve Criteria Target CV'(vectorSearchCriteria); // negative tolerance for guess toleranceçä//initial guess guess only if using Newton Raphson.çä0; //'TaxCompliance initial Solve guess'(vectorSearchCriteria);çä//Guess toleranceçä-0.01; // negative tolerance is for guess or premium toleranceçä//lowboundçä'TaxCompliance Low Bound'(calcType;yearIndex;beforeCalc); //'TaxCompliance initial Solve guess'(vectorSearchCriteria) + 0.01*'TaxCompliance initial Solve guess'(vectorSearchCriteria);çä//highboundçä'TaxCompliance High Bound'(calcType;yearIndex;beforeCalc); //'TaxCompliance initial Solve guess'(vectorSearchCriteria) - 0.01*'TaxCompliance initial Solve guess'(vectorSearchCriteria);çä//Stop Iterationçä'Solve Criteria Requested Stop Duration'(vectorSearchCriteria); //vConstantsçä'Solve CashValueSolve Constants Vector'(vectorSearchCriteria;'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc)))
+F1 3a3d7077 1c3724b9 6e3f600f 7c10c4d 0 0 2
+TaxCompliance Penny Check(calcType; premiumGuess; target; numberOfTries; yearIndex; beforeCalc)
+Funktion
+IF (numberOfTries <= 0 || NOT(ISNUMBER(premiumGuess)) ; çä  "#NORES" ; çä  IF (premiumGuess = 0 ; çä    0 ; çä    IF ('Solve CashValueSolve'('GEN ROUND'(premiumGuess;2) - 0.01;'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc))) < target // if CV is smaller than target for a premium a penny higher and (this means the CV is not sufficient)çä && 'Solve CashValueSolve'('GEN ROUND'(premiumGuess;2);'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc))) >= target ; çä       // and if CV is bigger or equal target for this guess this means the CV right on return the current guessçä//return current cuess - the current guess is the lowest to return positive CVçä'GEN ROUND'(premiumGuess;2) ; çä       // keep going there must be a better oneçäIF ('Solve CashValueSolve'('GEN ROUND'(premiumGuess;2) - 0.01;'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc))) < target ; çä         // if CV is smaller than target for a premium a penny lower (this means the CV is way not sufficient)çä// means after aboves test that both are smaller just increase by a penny and call recursively to test againçä'TaxCompliance Penny Check'(calcType;'GEN ROUND'(premiumGuess;2) + 0.01;target;numberOfTries - 1;yearIndex;beforeCalc) ; çä         // means after aboves test that both are bigger just decrease by a penny and call recursively to test againçä'TaxCompliance Penny Check'(calcType;'GEN ROUND'(premiumGuess;2) - 0.01;target;numberOfTries - 1;yearIndex;beforeCalc)çä      )çä  )çä) //end 0 payment is not penny checkedââçäçä) //end number triesä
+F1 6e3f600f 3a3d7077 0 e8fe5f4 0 0 2
+--TaxCompliance new CV Vector(calctype)
+Funktion
+'Solve CashValueSolve Constants Vector'(çäââ'Vector TCOM Proj Search Criteria'(calcType; TransEffDur; 0); çäââ'SharedVector SolveParms MakeFaceAmtandDBOptandStartYear'(calcType; çäâââ'TaxCompliance Policy Specified Amount'(calcType);çäâââ'Policy Coverage DeathBenefitOptType'(calcType; 0; TransEffDur );çäâââTransEffDurçäââ)çä)
+F1 e8fe5f4 3a3d7077 0 0 0 0 2
+TaxCompliance Penny Tries
+Funktion
+3
+F1 7c10c4d 1c3724b9 0 0 0 0 2
+TaxCompliance initial Solve guess(vectorSearchCriteria)
+Funktion
+'Solve Initial Premium Guess'('SharedVector SolveParms MakeFaceAmount'('CalcType SolveCriteria'(vectorSearchCriteria);'TaxCompliance Policy Specified Amount'('CalcType SolveCriteria'(vectorSearchCriteria)));vectorSearchCriteria)
+F1 7b80c482 3cf28d9e 58cfa323 1e2e6e8 0 0 2
+TaxCompliance New Solve Successful(calctype; yearIndex; beforeCalc; vectorSearchCriteria)
+Funktion
+ //  since solve for target value will not be successful. Go straight to "with boundary condition" solve.çä// If initial solve returns #NOTVALID (low and high bounds results are same sign and do not bound the result)çä//  or #NORES (no result, no convergence), initial solve was not successful.çäIF (STRCMP('VPMS Runtime Version';"4.6.1") <= 0 ; çä   //temporary bypass until upgradeçä0 ; çä   //bypass solve function for versions 4.6.1 and earlierçäIF (NOT(ISNUMBER('TaxCompliance Penny Check'(calcType;'TaxCompliance Call New Solve'(calctype;yearIndex;beforeCalc;vectorSearchCriteria);'Solve Criteria Target CV'(vectorSearchCriteria);'TaxCompliance Penny Tries';yearIndex;beforeCalc))) ; çä    0 ; çä     // initial solve not successful, returned #NOTVALID or #NORESçä1 // initial solve successful (can add in extra checks here for range, etc)çäçä  )çä)
+F1 58cfa323 7b80c482 0 0 0 0 2
+TaxCompliance Initial Guess Successful(vectorSolveParms; vectorSearchCriteria)
+Funktion
+'Solve CashValueSolve'('GEN Ceil'('Solve Initial Premium Guess2'(vectorSolveParms;vectorSearchCriteria);2);'Solve CashValueSolve Constants Vector'(vectorSearchCriteria;vectorSolveParms)) - 'Solve Criteria Target CV'(vectorSearchCriteria) > 0 && 'Solve CashValueSolve'('GEN Floor'('Solve Initial Premium Guess2'(vectorSolveParms;vectorSearchCriteria);2);'Solve CashValueSolve Constants Vector'(vectorSearchCriteria;vectorSolveParms)) - 'Solve Criteria Target CV'(vectorSearchCriteria) < 0
+F1 1e2e6e8 3cf28d9e 0 39db6aeb 0 0 2
+TaxCompliance Tolerance(type)
+Funktion
+CASE( /*Tolerance type*/ toupper(type);çä   /*Cash value*/ "CV" : 0.01;çä   /*Premium*/ "P" : 0.001;çä   : 0)çä
+F1 39db6aeb 3cf28d9e 50ade643 569f014d 0 0 2
+TaxCompliance Regulatory Premium Solve Call(calcType; yearIndex; beforeCalc)
+Funktion
+'GEN Round'( // First check if initial guess is on targetçäIF ('TaxCompliance Initial Guess Is Successful'(calcType;yearIndex;beforeCalc) ; çä   // return initial guessçä'TaxCompliance Return Solve Initial Premium Guess2'(calcType;yearIndex;beforeCalc) ; çä   // else Check if new solve works first : çäIF ('TaxCompliance New Solve Successful'(calcType;yearIndex;beforeCalc;'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä    'TaxCompliance Call New Solve'(calcType;yearIndex;beforeCalc;'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc)) ; çä     // Else go back to old solveçä'TaxCompliance Old Solve Iterative Premium Solve Rec2'(calcType;yearIndex;beforeCalc)çä  )çä);2)
+F1 50ade643 39db6aeb 0 43d7dc25 0 0 2
+TaxCompliance Return Solve Initial Premium Guess2(calcType; yearIndex; beforeCalc)
+Funktion
+'Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc))
+F1 43d7dc25 39db6aeb 0 e8e9ab 0 0 2
+TaxCompliance Initial Guess Is Successful(calcType; yearIndex; beforeCalc)
+Funktion
+'TaxCompliance Initial Guess Successful'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc))
+F1 e8e9ab 39db6aeb 3fde69ec 0 0 0 2
+TaxCompliance Old Solve Iterative Premium Solve Rec2(calcType; yearIndex; beforeCalc)
+Funktion
+E_('Solve Iterative Premium Solve Rec2'('TaxCompliance Solve Initial Premium Guess2'(calcType;yearIndex;beforeCalc); //currPremGuessçä'TaxCompliance Solve CashValueSolve for Initial Premium Minus Policy Specified Amount'(calcType;yearIndex;beforeCalc); //prevPremiumGuess;çä'TaxCompliance Prev Prem'(calcType;yearIndex;beforeCalc);'TaxCompliance Solve CashValueSolve for Prev Prem Minus Proj Policy Specified Amount'(calcType;yearIndex;beforeCalc); //prevCashValueçä'TaxCompliance Low Bound'(calcType;yearIndex;beforeCalc); //lowBoundçä'TaxCompliance High Bound'(calcType;yearIndex;beforeCalc); //highBound;çä1; //iteration_num; çä'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc));0 // premium is the 0th element in the return vectorçä)
+F1 3fde69ec e8e9ab 0 6947c37a 0 0 2
+TaxCompliance Solve CashValueSolve for Initial Premium Minus Policy Specified Amount(calcType; yearIndex; beforeCalc)
+Funktion
+'TaxCompliance Solve CashValueSolve for Initial Premium'(calcType;yearIndex;beforeCalc) - 'TaxCompliance Policy Specified Amount'(calcType)
+F1 6947c37a e8e9ab 0 4295f9ce 0 0 2
+TaxCompliance Solve CashValueSolve for Prev Prem Minus Proj Policy Specified Amount(calcType; yearIndex; beforeCalc)
+Funktion
+'TaxCompliance Solve CashValueSolve for Prev Prem'(calcType;yearIndex;beforeCalc) //prevPremiumGuess Cash Value;çä - 'TaxCompliance Proj Policy Specified Amount'(calcType;yearIndex)
+F1 4295f9ce e8e9ab 0 4d7f97b3 0 0 2
+TaxCompliance Solve CashValueSolve for Initial Premium(calcType; yearIndex; beforeCalc)
+Funktion
+'Solve CashValueSolve'('TaxCompliance Solve Initial Premium Guess2'(calcType;yearIndex;beforeCalc);'TaxCompliance Solve CashValueSolve Constants Vector'(calcType;yearIndex;beforeCalc))
+F1 4d7f97b3 e8e9ab 0 5099c9d8 0 0 2
+TaxCompliance Solve CashValueSolve for Prev Prem(calcType; yearIndex; beforeCalc)
+Funktion
+'Solve CashValueSolve'('TaxCompliance Prev Prem'(calcType;yearIndex;beforeCalc);'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc)))
+F1 5099c9d8 e8e9ab 0 3c1f4921 0 0 2
+TaxCompliance Solve CashValueSolve Constants Vector(calcType; yearIndex; beforeCalc)
+Funktion
+'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc);'TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc))
+F1 3c1f4921 e8e9ab 0 0 0 0 2
+TaxCompliance Solve Initial Premium Guess2(calcType; yearIndex; beforeCalc)
+Funktion
+'Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector'(calcType;yearIndex;beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex;beforeCalc))
+F1 569f014d 3cf28d9e 6074ad0 1a76dc4f 0 0 2
+TaxCompliance Call New Solve FaceSolve(calctype; yearIndex; beforeCalc; vectorSearchCriteria; faceAmount)
+Funktion
+SOLVE( // solve methodçä'VPMS Solve Debug Switch'(0); //solve functionçäFUNCREF('Solve CashValueSolve'); //funcref for derivertiveçä0; //targetçä'Solve Criteria Target CV'(vectorSearchCriteria); // negative tolerance for guess toleranceçä//initial guess guess only if using Newton Raphson.çä0; //'TaxCompliance initial Solve guess'(vectorSearchCriteria);çä//Guess toleranceçä-0.01; // negative tolerance is for guess or premium toleranceçä//lowboundçä'TaxCompliance Low Bound FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount); //'TaxCompliance initial Solve guess'(vectorSearchCriteria) + 0.01*'TaxCompliance initial Solve guess'(vectorSearchCriteria);çä//highboundçä'TaxCompliance High Bound FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount); //'TaxCompliance initial Solve guess'(vectorSearchCriteria) - 0.01*'TaxCompliance initial Solve guess'(vectorSearchCriteria);çä//Stop Iterationçä'Solve Criteria Requested Stop Duration'(vectorSearchCriteria); //vConstantsçä'Solve CashValueSolve Constants Vector'(vectorSearchCriteria;'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)))
+F1 6074ad0 569f014d 969de10 0 0 0 2
+TaxCompliance Penny Check FaceSolve(calcType; premiumGuess; target; numberOfTries; yearIndex; beforeCalc; faceAmount)
+Funktion
+IF (numberOfTries <= 0 || NOT(ISNUMBER(premiumGuess)) ; çä  "#NORES" ; çä  IF (premiumGuess = 0 ; çä    0 ; çä    IF ('Solve CashValueSolve'('GEN ROUND'(premiumGuess;2) - 0.01;'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) < target // if CV is smaller than target for a premium a penny higher and (this means the CV is not sufficient)çä && 'Solve CashValueSolve'('GEN ROUND'(premiumGuess;2);'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) >= target ; çä       // and if CV is bigger or equal target for this guess this means the CV right on return the current guessçä//return current cuess - the current guess is the lowest to return positive CVçä'GEN ROUND'(premiumGuess;2) ; çä       // keep going there must be a better oneçäIF ('Solve CashValueSolve'('GEN ROUND'(premiumGuess;2) - 0.01;'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) < target ; çä         // if CV is smaller than target for a premium a penny lower (this means the CV is way not sufficient)çä// means after aboves test that both are smaller just increase by a penny and call recursively to test againçä'TaxCompliance Penny Check FaceSolve'(calcType;'GEN ROUND'(premiumGuess;2) + 0.01;target;numberOfTries - 1;yearIndex;beforeCalc;faceAmount) ; çä         // means after aboves test that both are bigger just decrease by a penny and call recursively to test againçä'TaxCompliance Penny Check FaceSolve'(calcType;'GEN ROUND'(premiumGuess;2) - 0.01;target;numberOfTries - 1;yearIndex;beforeCalc;faceAmount)çä      )çä  )çä) //end 0 payment is not penny checkedââçäçä) //end number triesä
+F1 969de10 6074ad0 0 0 0 0 2
+--TaxCompliance new CV Vector(calctype)
+Funktion
+'Solve CashValueSolve Constants Vector'(çäââ'Vector TCOM Proj Search Criteria'(calcType; TransEffDur; 0); çäââ'SharedVector SolveParms MakeFaceAmtandDBOptandStartYear'(calcType; çäâââ'TaxCompliance Policy Specified Amount'(calcType);çäâââ'Policy Coverage DeathBenefitOptType'(calcType; 0; TransEffDur );çäâââTransEffDurçäââ)çä)
+F1 1a76dc4f 3cf28d9e 0 14d3f241 0 0 2
+TaxCompliance New Solve Successful FaceSolve(calctype; yearIndex; beforeCalc; vectorSearchCriteria; faceAmount)
+Funktion
+ //  since solve for target value will not be successful. Go straight to "with boundary condition" solve.çä// If initial solve returns #NOTVALID (low and high bounds results are same sign and do not bound the result)çä//  or #NORES (no result, no convergence), initial solve was not successful.çäIF (STRCMP('VPMS Runtime Version';"4.6.1") <= 0 ; çä   //temporary bypass until upgradeçä0 ; çä   //bypass solve function for versions 4.6.1 and earlierçäIF (NOT(ISNUMBER('TaxCompliance Penny Check FaceSolve'(calcType;'TaxCompliance Call New Solve FaceSolve'(calctype;yearIndex;beforeCalc;vectorSearchCriteria;faceAmount);'Solve Criteria Target CV'(vectorSearchCriteria);'TaxCompliance Penny Tries';yearIndex;beforeCalc;faceAmount))) ; çä    0 ; çä     // initial solve not successful, returned #NOTVALID or #NORESçä1 // initial solve successful (can add in extra checks here for range, etc)çäçä  )çä)
+F1 14d3f241 3cf28d9e 0 0 0 0 2
+TaxCompliance Regulatory Premium Solve Call FaceSolve(calcType; yearIndex; beforeCalc; faceAmount)
+Funktion
+'GEN Round'( // First check if initial guess is on targetçäIF ('TaxCompliance Initial Guess Successful'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä   // return initial guessçä'Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)) ; çä   // else Check if new solve works first : çäIF ('TaxCompliance New Solve Successful FaceSolve'(calcType;yearIndex;beforeCalc;'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);faceAmount) ; çä    'TaxCompliance Call New Solve FaceSolve'(calcType;yearIndex;beforeCalc;'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);faceAmount) ; çä     // Else go back to old solveçäE_('Solve Iterative Premium Solve Rec2'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount)); //currPremGuess; çä'Solve CashValueSolve'('Solve Initial Premium Guess2'('TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount));'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) - faceAmount; //'TaxCompliance Initial Premium CV'("GLP"; 'Vector TCOM SolveParms'("GLP"; 'TaxCompliance Policy Specified Amount'(calcType)) );âââ// current CVçä//prevPremiumGuess;çä'TaxCompliance Prev Prem FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount); //prevPremiumGuess Cash Value;çä'Solve CashValueSolve'('TaxCompliance Prev Prem FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'Solve CashValueSolve Constants Vector'('Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount))) - faceAmount; //prevCashValue; çä//lowBound;çä'TaxCompliance Low Bound FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount); //highBound; çä'TaxCompliance High Bound FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);1; //iteration_num; çä'Vector TCOM Proj Search Criteria FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount);'TaxCompliance SolveParms Vector FaceSolve'(calcType;yearIndex;beforeCalc;faceAmount) //'GEN Vector Blank'âçä);0 // premium is the 0th element in the return vectorçä)çä  )çä);2)
+F1 1e37968 3f4294 1e37dd0 0 0 0 2
+:Test
+Funktion
+
+F1 1e37dd0 1e37968 1e38250 0 0 0 2
+-- Test functions --
+Funktion
+
+F1 1e38250 1e37dd0 0 1e386e8 0 0 2
+Test Initial Premium Guess(calcType)
+Funktion
+'Solve Initial Premium Guess'('SharedVector SolveParms MakeFaceAmount'(calcType;'TaxCompliance Policy Specified Amount'(calcType));'Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0))
+F1 1e386e8 1e37dd0 0 1e38ba8 0 0 2
+Test Proj Solve Initial Premium Guess(calcType; yearIndex; beforeCalc)
+Funktion
+'Solve Initial Premium Guess'('Vector TCOM Proj MakeSolveParms'(calcType;yearIndex - beforeCalc);'Vector TCOM Proj Search Criteria'(calcType;yearIndex - beforeCalc;beforeCalc))
+F1 1e38ba8 1e37dd0 0 25c7cff5 0 0 2
+-- Test Initial Premium Guess FaceSolve(calcType; faceAmount)
+Funktion
+'Solve Initial Premium Guess'(çäâ'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount);çäâ'Vector TCOM Search Criteria faceAmount'(calcType; faceAmount)çä)çä
+F1 25c7cff5 1e37dd0 0 1e39068 0 0 2
+Test Initial Premium Guess FaceSolve(calcType; faceAmount; yearIndex)
+Funktion
+'Solve Initial Premium Guess'('SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount);'Vector TCOM Search Criteria faceAmount'(calcType;faceAmount;yearIndex))
+F1 1e39068 1e37dd0 0 18161fc8 0 0 2
+-- Test Initial Premium CV faceamount(calctype; faceAmount)
+Funktion
+'TaxCompliance Initial Premium CV'(calctype; 'Vector TCOM SolveParms'(calctype; faceAmount))
+F1 18161fc8 1e37dd0 0 1e39598 0 0 2
+Test Initial Premium CV faceamount(calctype; faceAmount; yearIndex)
+Funktion
+'TaxCompliance Initial Premium CV'(calctype;'Vector TCOM SolveParms'(calctype;faceAmount;yearIndex);yearIndex)
+F1 1e39598 1e37dd0 0 71e4135f 0 0 2
+-- Test Solve Element(calcType; stopDuration; elemNum)
+Funktion
+E_('Solve Iterative Premium Solve Rec'(çäââ'Solve Initial Premium Guess'( 'TaxCompliance Policy Specified Amount'(calcType); 'Vector TCOM Proj Search Criteria'(calcType; TransEffDur; 0) ); â//currPremGuess; çäââ'TaxCompliance Initial Premium CV'(calcType; 'Vector TCOM SolveParms'(calcType; 'TaxCompliance Policy Specified Amount'(calcType) ) );âââ// current CVçäââ0; â//prevPremiumGuess; çäââ0; â//prevCashValue; çäââ0;â//lowBound; çäââ'TaxCompliance Policy Specified Amount'(calcType);â//highBound; çäââ1; â//iteration_num; çäââV_REPLACE('Vector TCOM Proj Search Criteria'(calcType; TransEffDur; 0); stopDuration; 7);çäââ'GEN Vector Blank'çäâ);çäâelemNumçä)çä
+F1 71e4135f 1e37dd0 0 1e39ca8 0 0 2
+Test Solve Element(calcType; stopDuration; elemNum; yearIndex)
+Funktion
+E_('Solve Iterative Premium Solve Rec'('Solve Initial Premium Guess'('TaxCompliance Policy Specified Amount'(calcType);'Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0)); //currPremGuess; çä'TaxCompliance Initial Premium CV'(calcType;'Vector TCOM SolveParms'(calcType;'TaxCompliance Policy Specified Amount'(calcType);yearIndex);yearIndex); // current CVçä0; //prevPremiumGuess; çä0; //prevCashValue; çä0; //lowBound; çä'TaxCompliance Policy Specified Amount'(calcType); //highBound; çä1; //iteration_num; çäV_REPLACE('Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0);stopDuration;7);'GEN Vector Blank');elemNum)
+F1 1e39ca8 1e37dd0 0 2243d3d0 0 0 2
+-- Test IG PV chg(calcType)
+Funktion
+'Solve Init Guess Annualize PV Charges'(çäâ'Vector TCOM SolveParms'(calcType; 'TaxCompliance Policy Specified Amount'(calcType)); çäâ'Vector TCOM Proj Search Criteria'(calcType; TransEffDur; 0)çä)
+F1 2243d3d0 1e37dd0 0 1e3a160 0 0 2
+Test IG PV chg(calcType; yearIndex)
+Funktion
+'Solve Init Guess Annualize PV Charges'('Vector TCOM SolveParms'(calcType;'TaxCompliance Policy Specified Amount'(calcType);yearIndex);'Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0))
+F1 1e3a160 1e37dd0 0 227b1b5 0 0 2
+-- Test IG PV chg FaceAMount(calcType; faceAmount)
+Funktion
+'Solve Init Guess Annualize PV Charges'( 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount); 'Vector TCOM Search Criteria faceAmount'(calcType; faceAmount))
+F1 227b1b5 1e37dd0 0 1e3a6d8 0 0 2
+Test IG PV chg FaceAMount(calcType; faceAmount; yearIndex)
+Funktion
+'Solve Init Guess Annualize PV Charges'('SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount);'Vector TCOM Search Criteria faceAmount'(calcType;faceAmount;yearIndex))
+F1 1e3a6d8 1e37dd0 0 1e3aba0 0 0 2
+Test IG chg yr PV(calcType; yr)
+Funktion
+'Solve Init Guess Annualize PV Yearly Charges'('TaxCompliance Policy Specified Amount'(calcType);'Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0);yr)
+F1 1e3aba0 1e37dd0 0 1e3b0f0 0 0 2
+Test IG chg yr(calcType; yr)
+Funktion
+'Solve Init Guess Total Charges'('TaxCompliance Policy Specified Amount'(calcType);'Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0);yr)
+F1 1e3b0f0 1e37dd0 0 1e3b620 0 0 2
+Test IG PLC(calcType; periodicPremium)
+Funktion
+'Solve Init Guess Premium Load Rate'(calcType;periodicPremium;1)
+F1 1e3b620 1e37dd0 0 1e3bb68 0 0 2
+Test IG R factor(calcType)
+Funktion
+'Solve Init Guess Annualize PV Payment Factor'('Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0);'GEN Vector Blank')
+F1 1e3bb68 1e37dd0 0 4185bee9 0 0 2
+-- Test Total Charges(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+'CHG Projected Monthly Total Charges'(calcType;çäâ'CVProjection Monthly End Of Month Cash Value Rec'(çäââcalcType; çäââ'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex)); çäââ'TaxCompliance Policy Interest Rate'(calcType); çäââ'Vector TCOM Target Prem AddlInfo'(calcType); çäââ'prev mth yr'(yearIndex; monthIndex); çäââ'prev mth'(monthIndex)çäâ);çäâ//'Beginning Of Month Cash Value'(calcType; periodicPremium; pastPremium; yearIndex; monthIndex);çäâ'PREMIUM Projected LTD Prem Rec'(calcType; 'SharedVector SolveParms MakePremium'(periodicPremium; yearIndex); 'GEN Vector Blank'; yearIndex; monthIndex);çäâyearIndex; monthIndex; 'SharedVector SolveParms MakePremium'(periodicPremium; yearIndex))
+F1 4185bee9 1e37dd0 0 1e3b720 0 0 2
+Test Total Charges(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+'CHG Projected Monthly Total Charges'(calcType;'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);'prev mth yr'(yearIndex;monthIndex);'prev mth'(monthIndex)); //'Beginning Of Month Cash Value'(calcType; periodicPremium; pastPremium; yearIndex; monthIndex);çä'PREMIUM Projected LTD Prem Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;yearIndex);'GEN Vector Blank';yearIndex;monthIndex);yearIndex;monthIndex;'SharedVector SolveParms MakePremium'(periodicPremium;yearIndex))
+F1 1e3b720 1e37dd0 0 1e3b838 0 0 2
+Test PLC(calcType)
+Funktion
+'PLC Premium Load Primary Rate'(calcType;'FeeType PremiumLoad';0;1) * 0.01
+F1 1e3b838 1e37dd0 0 1e3b950 0 0 2
+Test Admin Charge(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+'AC Proj Mthly Total AdminFee Charge'(calcType;8;'Test End Of Month cv'(calcType;periodicPremium;pastPremium;'prev mth yr'(yearIndex;monthIndex);'prev mth'(monthIndex));yearIndex;monthIndex;'SharedVector SolveParms MakePremium'(periodicPremium;yearIndex))
+F1 1e3b950 1e37dd0 0 f703cf4 0 0 2
+-- Test Premium Charge(calcType; periodicPremium)
+Funktion
+'PLC Projected Total Premium Load Charge'(çäâââcalcType;çäâââ'FeeType PremiumLoad'; çäâââ1; çäâââ'PREMIUM Projected GrossPremium'(çäââââcalcType; çäââââ'SharedVector SolveParms MakePremium'(çäâââââperiodicPremium; çäâââââ'TaxCompliance Policy Premium Duration'(calcType; TransEffDur)çäâââââ); çäââââ'Vector TCOM Target Prem AddlInfo'(calcType); çäââââ1;1); çäâââ// Vector of the coverage load target premiumsçäâââ'SharedVector CVPROJAddlInfo LoadTargetPremium'('Vector TCOM Target Prem AddlInfo'(calcType));âçäâââ// Year to date premium paid çäâââ0çäâââçäââ)
+F1 f703cf4 1e37dd0 0 1e3bbe0 0 0 2
+Test Premium Charge(calcType; periodicPremium; yearIndex)
+Funktion
+'PLC Projected Total Premium Load Charge'(calcType;'FeeType PremiumLoad';1;'PREMIUM Projected GrossPremium'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;TransEffDur));'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);1;1); // Vector of the coverage load target premiumsçä'SharedVector CVPROJAddlInfo LoadTargetPremium'('Vector TCOM Target Prem AddlInfo'(calcType;yearIndex)); // Year to date premium paid çä0)
+F1 1e3bbe0 1e37dd0 0 1e3bcd8 0 0 2
+Test Net Premium Factor(calcType; yearIndex)
+Funktion
+'Solve Net Premium Factor'('Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0);yearIndex;0)
+F1 1e3bcd8 1e37dd0 0 60cb389e 0 0 2
+-- Test Gross Premium(calcType; periodicPremium)
+Funktion
+'PREMIUM Projected GrossPremium'(calcType; 'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; TransEffDur)); 'Vector TCOM Target Prem AddlInfo'(calcType);1;1)çä
+F1 60cb389e 1e37dd0 0 1e3bea0 0 0 2
+Test Gross Premium(calcType; periodicPremium; yearIndex)
+Funktion
+'PREMIUM Projected GrossPremium'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;TransEffDur));'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);1;1)
+F1 1e3bea0 1e37dd0 0 17a4a012 0 0 2
+-- Test Net Premium(calcType; periodicPremium; yearIndex; monthIndex)
+Funktion
+'GEN Round'(çä çä'PREMIUM Projected Net Premium'(calcType; 'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex)); 'Vector TCOM Target Prem AddlInfo'(calcType);yearIndex; monthIndex);çä çä2çä)
+F1 17a4a012 1e37dd0 0 1e3c528 0 0 2
+Test Net Premium(calcType; periodicPremium; yearIndex; monthIndex)
+Funktion
+'GEN Round'('PREMIUM Projected Net Premium'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);yearIndex;monthIndex);2)
+F1 1e3c528 1e37dd0 0 1e3c058 0 0 2
+Test NAR(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+sumx(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;'NAAR Coverage NetAmountAtRisk'(calcType;#coverageIndex;'Beginning Of Month Cash Value'(calcType;periodicPremium;pastPremium;yearIndex;monthIndex) - 'CHG Projected Admin Charges'(calcType;'Beginning Of Month Cash Value'(calcType;periodicPremium;pastPremium;yearIndex;monthIndex);yearIndex;monthIndex;'SharedVector SolveParms MakePremium'(periodicPremium;yearIndex)) - 'COV Projected Monthly Total NonNAR Charges'(calcType;yearIndex;monthIndex;'GEN Vector Blank') - 'COV Projected Monthly Total NonWMD Benefit Charges'(calcType;yearIndex;monthIndex;'SharedVector SolveParms MakeStartYear'(999));pastPremium;yearIndex;'GEN Vector Blank'))
+F1 1e3c058 1e37dd0 0 6f2ff9b3 0 0 2
+-- Beginning Of Month Cash Value(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly BOM Cash Value'(calcType; çäâ'CVProjection Monthly End Of Month Cash Value Rec'(calcType; çäâââ'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex)); çäâââ'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType) ; 'prev mth yr'(yearIndex;monthIndex); 'prev mth'(monthIndex)); çäâ'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex)); çäâ'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType) ; yearIndex; monthIndexçä)çä
+F1 6f2ff9b3 1e37dd0 1e3c178 1e3c3b0 0 0 2
+Beginning Of Month Cash Value(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly BOM Cash Value'(calcType;'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);'prev mth yr'(yearIndex;monthIndex);'prev mth'(monthIndex));'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);yearIndex;monthIndex)
+F1 1e3c178 6f2ff9b3 0 1e3c2a0 0 0 2
+prev mth yr(yearIndex; monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  yearIndex - 1 ; çä  yearIndexçä)
+F1 1e3c2a0 6f2ff9b3 0 0 0 0 2
+prev mth(monthIndex)
+Funktion
+IF (monthIndex = 1 ; çä  12 ; çä  monthIndex - 1çä)
+F1 1e3c3b0 1e37dd0 0 5c66e60f 0 0 2
+-- Test End Of Month cv(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType; çäâââ'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex));çäâââ'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType) ; yearIndex; monthIndex)çä
+F1 5c66e60f 1e37dd0 0 1e3ca88 0 0 2
+Test End Of Month cv(calcType; periodicPremium; pastPremium; yearIndex; monthIndex)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);yearIndex;monthIndex)
+F1 1e3ca88 1e37dd0 0 491d22a7 0 0 2
+-- Test End Of Month cv faceamount(calcType; periodicPremium; pastPremium; yearIndex; monthIndex; faceAmount)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType; çäâââ'SharedVector solveparms ReplacePremium'(periodicpremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex); 'SharedVector SolveParms MakeFaceAmount'(calcType; faceAmount));çäâââ'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType) ; yearIndex; monthIndex)çä
+F1 491d22a7 1e37dd0 0 1e3c5b8 0 0 2
+Test End Of Month cv faceamount(calcType; periodicPremium; pastPremium; yearIndex; monthIndex; faceAmount)
+Funktion
+'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector solveparms ReplacePremium'(periodicpremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex);'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);yearIndex;monthIndex)
+F1 1e3c5b8 1e37dd0 0 139e8bbc 0 0 2
+-- Test Policy Lapsed(calcType; periodicPremium; yearIndex; monthIndex)
+Funktion
+'CVProjection Policy Lapsed'(çäâââcalcType; çäâââIF (monthIndex > 1;çäââââ// Reduce month index by 1çäââââ'CVProjection Monthly End Of Month Cash Value Rec'(calcType; 'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex)); 'TaxCompliance Policy Interest Rate'(calcType);  'Vector TCOM Target Prem AddlInfo'(calcType); yearIndex; monthIndex - 1);çäââââ// Reduce year index by 1 and set month index to 12çäââââ'CVProjection Monthly End Of Month Cash Value Rec'(calcType; 'SharedVector SolveParms MakePremium'(periodicPremium; 'TaxCompliance Policy Premium Duration'(calcType; yearIndex)); 'TaxCompliance Policy Interest Rate'(calcType); 'Vector TCOM Target Prem AddlInfo'(calcType); yearIndex - 1; 12)çäâââ);çäâââ'SharedVector SolveParms MakePremium'(periodicPremium; çäââââ'TaxCompliance Policy Premium Duration'(calcType; yearIndex)); çäâââ'TaxCompliance Policy Interest Rate'(calcType); çäâââ'Vector TCOM Target Prem AddlInfo'(calcType); çäâââyearIndex; çäâââmonthIndexçäââ      )
+F1 139e8bbc 1e37dd0 0 1e3c6c0 0 0 2
+Test Policy Lapsed(calcType; periodicPremium; yearIndex; monthIndex)
+Funktion
+'CVProjection Policy Lapsed'(calcType;IF (monthIndex > 1 ; çä   // Reduce month index by 1çä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);yearIndex;monthIndex - 1) ; çä   // Reduce year index by 1 and set month index to 12çä'CVProjection Monthly End Of Month Cash Value Rec'(calcType;'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);yearIndex - 1;12)çä);'SharedVector SolveParms MakePremium'(periodicPremium;'TaxCompliance Policy Premium Duration'(calcType;yearIndex));'TaxCompliance Policy Interest Rate'(calcType);'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex);yearIndex;monthIndex)
+F1 1e3c6c0 1e37dd0 0 1e3c7c8 0 0 2
+Test FaceAmount passed(calcType; coverageIndex; faceAmount)
+Funktion
+IF ('SharedVector SolveParms FaceAmount Passed'(coverageIndex;'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount)) ; çä  1 ; çä  0çä)
+F1 1e3c7c8 1e37dd0 0 1e3c8b8 0 0 2
+Test FaceAmount Replace(calcType; coverageIndex; faceAmount; prem)
+Funktion
+IF ('SharedVector SolveParms FaceAmount Passed'(coverageIndex;'SharedVector solveparms replacepremium'(prem;10;'SharedVector SolveParms MakeFaceAmount'(calcType;faceAmount))) ; çä  1 ; çä  0çä)
+F1 1e3c8b8 1e37dd0 0 49483a80 0 0 2
+-- Test Premium Solve iteration(calcType; iteration_stop)
+Funktion
+E_('Solve Iterative Premium Solve Rec'(çäââ'Solve Initial Premium Guess'( 'SharedVector SolveParms MakeFaceAmount'(calcType; 'TaxCompliance Policy Specified Amount'(calcType)); 'Vector TCOM Proj Search Criteria'(calcType; TransEffDur; 0)); â//currPremGuess; çäââ'TaxCompliance Initial Premium CV'(calctype; 'Vector TCOM SolveParms'(calctype; 'TaxCompliance Policy Specified Amount'(calcType) ) );âââ// current CVçäââ0; â//prevPremiumGuess; çäââ0; â//prevCashValue; çäââ0;â//lowBound; çäââ'TaxCompliance Policy Specified Amount'(calcType);â//highBound; çäââ1; â//iteration_num; çäââ'Test Vector TCOM Search Criteria stop'(calctype; iteration_stop);çäââ'SharedVector SolveParms MakeFaceAmtandDBOptandStartYear'(calcType; çäâââ'TaxCompliance Policy Specified Amount'(calcType);çäâââ'Policy Coverage DeathBenefitOptType'(calcType; 0; TransEffDur );çäâââTransEffDur)çäâ);çäâ0â// premium is the 0th element in the return vectorçä)çä
+F1 49483a80 1e37dd0 0 1e3d7e0 0 0 2
+Test Premium Solve iteration(calcType; iteration_stop; yearIndex)
+Funktion
+E_('Solve Iterative Premium Solve Rec'('Solve Initial Premium Guess'('SharedVector SolveParms MakeFaceAmount'(calcType;'TaxCompliance Policy Specified Amount'(calcType));'Vector TCOM Proj Search Criteria'(calcType;TransEffDur;0)); //currPremGuess; çä'TaxCompliance Initial Premium CV'(calctype;'Vector TCOM SolveParms'(calctype;'TaxCompliance Policy Specified Amount'(calcType);yearIndex);yearIndex); // current CVçä0; //prevPremiumGuess; çä0; //prevCashValue; çä0; //lowBound; çä'TaxCompliance Policy Specified Amount'(calcType); //highBound; çä1; //iteration_num; çä'Test Vector TCOM Search Criteria stop'(calctype;iteration_stop;yearIndex);'SharedVector SolveParms MakeFaceAmtandDBOptandStartYear'(calcType;'TaxCompliance Policy Specified Amount'(calcType);'Policy Coverage DeathBenefitOptType'(calcType;0;TransEffDur);TransEffDur));0 // premium is the 0th element in the return vectorçä)
+F1 1e3d7e0 1e37dd0 0 14e09c5a 0 0 2
+-- Test Vector TCOM Search Criteria stop(calcType; stop_iteration)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; ââââ// calculation typeçäââ'TaxCompliance Policy Specified Amount'(calcType);ââ// target Cash valueçäââ'TaxCompliance Policy Maturity Duration'(calcType);ââ// target durationçäââ'TaxCompliance Policy Premium Duration'(calcType; TransEffDur);ââ// premium duration çäââ'TaxCompliance Policy Interest Rate'(calcType);â// Interest rateçäââ'TaxCompliance Tolerance'("CV");ââ// CV toleranceçäââ'TaxCompliance Tolerance'("P");ââ// premium toleranceçäââStop_iteration;âââ// requested stop iterationçäââ'Vector TCOM Target Prem AddlInfo'(calcType)â// vectorAddlInfo (only uses Target Premiums)çäâ)
+F1 14e09c5a 1e37dd0 0 0 0 0 2
+Test Vector TCOM Search Criteria stop(calcType; stop_iteration; yearIndex)
+Funktion
+'Vector SLV Premium Solve Search Criteria'(calcType; // calculation typeçä'TaxCompliance Policy Specified Amount'(calcType); // target Cash valueçä'TaxCompliance Policy Maturity Duration'(calcType); // target durationçä'TaxCompliance Policy Premium Duration'(calcType;TransEffDur); // premium duration çä'TaxCompliance Policy Interest Rate'(calcType); // Interest rateçä'TaxCompliance Tolerance'("CV"); // CV toleranceçä'TaxCompliance Tolerance'("P"); // premium toleranceçäStop_iteration; // requested stop iterationçä'Vector TCOM Target Prem AddlInfo'(calcType;yearIndex) // vectorAddlInfo (only uses Target Premiums)çä)
+A0 3f4374 0 0 0 0 0 0
+
+T0 3f43e4 0 1e3d008 0 0 0 0
+
+T1 1e3d008 3f43e4 1e3d0d0 0 0 0 2
+--List Tables--
+key
+value
+T5 1e3d0d0 1e3d008 0 0 0 0 2
+List_calc_type
+key
+value
+GLP
+Guideline Level Premium
+GSP
+Guideline Single Premium
+7PP
+7 Pay Premium
+7PN
+7 Pay Net Single Premium
+I0 3f4454 0 1e3d388 0 0 0 0
+
+I0 1e3d388 3f4454 0 0 0 0 0
+Solve.pms
+-
+O0
+E0
+L0
+B0
+P4
+1e23bf8
+1e24c58
+1e256d8
+1e25948
+F130
+1e25d38
+1e25f78
+14bc7ffb
+43160be3
+1e26a28
+1e26c70
+1e26fa8
+1e27480
+248f93b7
+5c5725bd
+1e281f8
+1e284b0
+1e289f0
+1e28f30
+1e28fe8
+1e29280
+1e29380
+1e29740
+1e29908
+1e29c20
+1e29e30
+1e2a258
+6033c153
+1e2a468
+1e2a760
+1e2a848
+1e2ab60
+1e2ac50
+51d7ab10
+4917781d
+4493eb08
+1e2be60
+221811a0
+5270ded2
+25288899
+1e2c1f0
+1e2c548
+1e2c8b8
+1e2cef0
+2d58fa2d
+1e2dc20
+7b62e955
+5fdd38f8
+75cde590
+1e2dfb0
+1edcdb9d
+6532ba29
+24e7aa75
+18c04d03
+78e1c7ac
+1119d412
+37030951
+38fc133c
+2c10858
+1e2ea80
+1e2ee18
+1e2f228
+1e2fa10
+1e2fde8
+1e30530
+1e30990
+1e30da0
+1e31178
+5ea38166
+1e34540
+1e34980
+1e34eb8
+1e356b8
+1e35b18
+1e35f78
+7983bdbd
+1e36770
+405f91ce
+1e37068
+1e374d8
+683e9d53
+3cf28d9e
+1e2e338
+6d4534f8
+1c3724b9
+7b80c482
+1e2e6e8
+39db6aeb
+569f014d
+1a76dc4f
+14d3f241
+1e37968
+1e37dd0
+1e38250
+1e386e8
+1e38ba8
+25c7cff5
+1e39068
+18161fc8
+1e39598
+71e4135f
+1e39ca8
+2243d3d0
+1e3a160
+227b1b5
+1e3a6d8
+1e3aba0
+1e3b0f0
+1e3b620
+1e3bb68
+4185bee9
+1e3b720
+1e3b838
+1e3b950
+f703cf4
+1e3bbe0
+1e3bcd8
+60cb389e
+1e3bea0
+17a4a012
+1e3c528
+1e3c058
+6f2ff9b3
+1e3c3b0
+5c66e60f
+1e3ca88
+491d22a7
+1e3c5b8
+139e8bbc
+1e3c6c0
+1e3c7c8
+1e3c8b8
+49483a80
+1e3d7e0
+14e09c5a
+A0
+T2
+1e3d008
+1e3d0d0
+!159
+1e24c58 3 -1
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+1e24c58 3 2
+
+1e24c58 4 -1
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+1e24c58 7 -1
+Description:âReturns the current interest rateçä çäModification Log:çä08/12/2009 CMC nbA Integration
+1e24c58 8 -1
+Description:âReturns the current interest rate guarantee periodçä çäModification Log:çä08/12/2009 CMC nbA Integration
+1e24c58 9 -1
+Description:âReturns the 7 pay specified amount as of the trans action effective date.çä çäModification Log:çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä08/12/2009 CMC nbA Integration
+1e256d8 3 -1
+Modifications log:çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/02/2010 - rm - Removed çä10/27/2008 CSC changed name of TaxCompliance functions to NAAR and Attained Age to Standard modelçä
+1e256d8 5 -1
+Modifications log:çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/02/2010 - rm - Removed "age" parameter from 'NAAR Cov NSP' and used calculated value for "yearIndex".çä10/27/2008 CSC changed name of TaxCompliance to NAAR as moved modelsçä
+1e25948 3 -1
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/18/2011 - PAC013 calcType - BT - Restructureçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/15/2010 RegTest JL - Reapply 05/27 changeçä05/27/2010 pA RegTest JL - Apply correct prem dur: TransEffDur + PaymentPeriod -1çä05/27/2010 - BT - Removing the above change - JJ, the above change causes many compute/compare errors in the regression test bed - can you please review? çä
+1e25948 4 -1
+çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e25948 5 -1
+çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+14bc7ffb -2 -2
+Description : Solves for level guideline premium using new solve method.çä çäModification logçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/01/2011 - PAC013 calcType - BT - Restructureçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/04/2010 pA Performance Initial Calculationçä çä03/17/2008 Illus001 Phase 2 Added Solve Parms vector to pass face amount, death benefit option and calculation start year as fixed amount regardless of future illustrated elements.
+14bc7ffb 0 2
+
+43160be3 -2 -2
+Description: Solves for level guideline premium using new solve methodçä çäModification logçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/01/2011 - PAC013 calcType - BT - Restructureçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/04/2010 pA Performance Initial Calculationçä çä03/17/2008 Illus001 Phase 2 Added Solve Parms vector to pass face amount, death benefit option and calculation start year as fixed amount regardless of future illustrated elements.
+1e26c70 -2 -2
+Description : Solves for level guideline premium, taking face amount vector stream as an inputçä çäModification logçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e26fa8 -2 -2
+Description : Solves for level guideline premium, taking face amount vector stream as an inputçä çä çä çäModification logçä çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä01/31/2011 - PAC013 calcType CMC reversed parms due to Solve function usage.çä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+248f93b7 -2 -2
+Description : Solves for  UL/VUL 7-pay premium using new solve methodçä çäModification logçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/01/2011 - PAC013 calcType - BT - Restructureçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/17/2008 Illus001 Phase 2 Added Solve Parms vector to pass face amount, death benefit option and calculation start year as fixed amount regardless of future illustrated elements.çä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit option.  This holds the death benefit option level for the guideline calculation.çä10/31/2007 CSC Initial Calculation/Ruleçä çä çä çä03/04/2010 pA Performance updated to new solve methodl
+5c5725bd -2 -2
+Description : Solves for 7-pay Net single premium using new solve methodçä çäModification logçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/01/2011 - PAC013 calcType - BT - Restructureçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/17/2008 Illus001 Phase 2 Added Solve Parms vector to pass face amount, death benefit option and calculation start year as fixed amount regardless of future illustrated elements.çä03/14/2008 CMC ILLUS001 pA Phase 2  Updated to add vectorSolveParms as a parameter used to pass death benefit option.  This holds the death benefit option level for the guideline calculation.çä10/31/2007 CSC Initial Calculation/Ruleçä çä çä çä çä03/04/2010 pA Performance updated to new solve method.
+1e284b0 -2 -2
+Description : Solves for level guideline premium, taking face amount vector stream as an inputçä çäModification logçä10/12/2012 pA1301 PAD-820 CMC changed facesolve 7 pay functions to use the new premiums solve methodçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä çä10/31/2007 CSC Initial Calculation/Rule
+1e289f0 -2 -2
+Description : Solves for level guideline premium, taking face amount vector stream as an inputçä çäModification logçä10/12/2012 pA1301 PAD-820 CMC changed facesolve 7 pay functions to use the new premiums solve methodçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä çä10/31/2007 CSC Initial Calculation/Rule
+1e28fe8 -2 -2
+Description : Determines if flat extras for the specified coverage are included in the seven pay calculation.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 Phase 2 Illus001
+1e29280 -2 -2
+Description : Determines if specified coverage is included in the seven pay calculation.çä çäModification logçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä2/1/2008 Phase 2 Illus001
+1e29380 -2 -2
+Description : Determines if ratings for the specified coverage are included in the seven pay calculation.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 Phase 2 Illus001
+1e29740 -2 -2
+Description : Determines whether the coverage is included using the death benefit or the premium.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 Phase 2 Illus001
+1e29908 -2 -2
+Description : Determines if flat extras for the specified coverage option are included in the seven pay calculation.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 Phase 2 Illus001
+1e29c20 -2 -2
+Description : Determines if specified coverage option is included in the seven pay calculation.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 Phase 2 Illus001
+1e29e30 -2 -2
+Description : Determines if ratings for the specified coverage option are included in the seven pay calculation.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 Phase 2 Illus001
+1e2a258 -2 -2
+Description : Determines whether the coverage option is included using the death benefit or the premium.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 Phase 2 Illus001
+426db99b -2 -2
+Description : Determines if specified coverage is included in the seven pay calculation for ULçä çä çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/10/2009 -TT - Phase 3 PAC004 (QAB Support) - calls universal tables using 7702 rules
+4a145737 -2 -2
+Description : Determines if specified coverage is included in the seven pay calculation for ULçä çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/10/2009 -TT - Phase 3 PAC004 (QAB Support) - calls universal tables using 7702 rules
+1e2a760 -2 -2
+Description: Total specified amount for policyçä çäModification logçä02/14/2013 - PAD1213 - JL - Use "Std Coverage is Inforce" instead of "Coverage is Inforce"çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - PA1277 - JL - Add TransEffDur in Coverage Is InForce, such that the model compilesçä10/31/2007 CSC Initial Calculation/Rule
+1e2a848 -2 -2
+Description - duration at which policy reaches maturityçä çäModification logçä01/14/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e2ab60 -2 -2
+Description : Premium duration (up to which premium is paid under the policy)çä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä04/11/2012 pA1301 PAD-820 CMC updated to reflect 7pay premium durationçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+3499a677 -2 -2
+Description - Number of Years of premium payments for the 7 pay calculation.çä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm referenceçä04/11/2012 pA1301 PAD-820 CMC Initial Calc
+1e2ac50 -2 -2
+Description : Interest rate used for calculationçä çäModification logçä01/14/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Ruleçä02/01/2008 Additional product information moved to Calc Rules model
+51d7ab10 -2 -2
+Description : returns a vector of search criteria for the iteration functionsçä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+33b12ff7 -2 -2
+Description : Returns an AddlInfo vector which includes only the target premium informationçä çäModification logçä05/18/2014 PA1401-26 - rm - If illustration, use yearIndex.  Otherwise use duration.çä09/03/2013 PA1401-26 - rm - Removed duplicate yearIndex parm from 'Vector TCOM Proj Target Prem AddlInfo'çä07/10/2013 PA1401-26 KC added yearIndex parmçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+5a19f277 -2 -2
+Description : Returns an AddlInfo vector which includes only the target premium informationçä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+4917781d -2 -2
+Description : returns a vector of search criteria for the iteration functionsçä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+4493eb08 -2 -2
+çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/10/2013 PA1401-26 KC added yearIndex parmçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e2be60 -2 -2
+Description:  Returns the total  amount of all the active coverages.çä çäModification logçä02/14/2013 - PAD1213 - JL - Use "Std Coverage is Inforce" instead of "Coverage is Inforce"çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/03/2009 - PA1277 - JL - Add TransEffDur in Coverage Is InForce, such that the model compilesçä10/31/2007 CSC Initial Calculation/Rule
+221811a0 -2 -2
+Description : returns a vector of search criteria for the iteration functionsçä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+5270ded2 -2 -2
+Description : returns a vector of search criteria for the iteration functionsçä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+25288899 -2 -2
+çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e2c548 -2 -2
+çä04/27/2011 CL Merge Regression Testing CMC added pending check.çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e2c8b8 -2 -2
+çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+2d58fa2d -2 -2
+Modification Log:çä09/03/2013 PA1401-26 - rm - Removed duplicate yearIndex parm from 'Vector TCOM Proj Target Prem AddlInfo'çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA RegTest JL Set Prem Pay Dur to MIN(premPayDur; maturityDur)
+662c9a47 -2 -2
+Description : Returns an AddlInfo vector which includes only the target premium informationçä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä02/02/2011 - PAC013 calctype - BT - add TARGET Premiumçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/25/2008 CSC Updated to calc target when run for Illustrationsçä10/31/2007 CSC Initial Calculation/Ruleçä çä
+a6af3d8 -2 -2
+Description : Returns an AddlInfo vector which includes only the target premium informationçä çä çäModification logçä02/02/2011 - PAC013 calctype - BT - add TARGET Premiumçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/25/2008 CSC Updated to calc target when run for Illustrationsçä10/31/2007 CSC Initial Calculation/Ruleçä çä
+1e2dc20 -2 -2
+Description : Returns a vector containing Death Benefit, Death Benefit Option and the start year of the calculation.  These are the items necessary in the vectorSolveParms vector for calculation guideline and seven pay premiums.çä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä03/17/2008 CSC Illus001 Phase 2
+7b62e955 -2 -2
+Description:âProvides Search Criteria vector for face solves.çä çäModification Log:çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä02/09/2011 pA Regression CMC Corrected to caculate the target premium based on the passed in face amount.çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solves
+31f22c33 -2 -2
+Description : Returns an AddlInfo vector which includes only the target premium informationçä çäModification logçä11/8/2013pA 1401 - 26 CMC removed yearIndex from Target Premium face solve function callçä07/10/2013 PA1401-26 KC added yearIndex parmçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/09/2011 pA Regression CMC Corrected to caculate the target premium based on the passed in face amount.çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/25/2008 CSC Updated to calc target when run for Illustrationsçä10/31/2007 CSC Initial Calculation/Rule
+332a6513 -2 -2
+Description : Returns an AddlInfo vector which includes only the target premium informationçä çäModification logçä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/09/2011 pA Regression CMC Corrected to caculate the target premium based on the passed in face amount.çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/25/2008 CSC Updated to calc target when run for Illustrationsçä10/31/2007 CSC Initial Calculation/Rule
+5fdd38f8 -2 -2
+Modification Log:çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA RegTest JL Set Prem Pay Dur to MIN(premPayDur; maturityDur)
+75cde590 -2 -2
+Description: Base Coverage Specified Amount for TaxComplianceçä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/15/2010 pA RegTest JL Initial Function
+1edcdb9d -2 -2
+Description : Initial maturity duration cash value using initial premium guessçä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+6532ba29 -2 -2
+çä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+24e7aa75 -2 -2
+çä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+18c04d03 -2 -2
+çä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+78e1c7ac -2 -2
+çäModification Log:çä12/29/2011 pA2113 CMC removed addition of beforeCalc parmçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä06/15/2010 pA RegTest JL "SharedVector SolveParms MakeFaceAmtandDBOptandStartYear" builds cov FA for ALL (incl base increase) covs other than the initial base FA passed; using "TaxCompliance Proj Policy Specified Amount" duplicates the effect of subsequent base incr FAs (as they are included in the FA passed, and added on in the vector in SharedVectors.
+1119d412 -2 -2
+Description:âProvides High bound for face solves.çä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä
+37030951 -2 -2
+Description:âProvides low bound for face solves.çä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solves
+38fc133c -2 -2
+Description:âProvides previous guess for face solves.çä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solves
+2c10858 -2 -2
+Description:âProvides solve parms vector for face solvesçä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solves
+1e2ee18 -2 -2
+Description:  get NSP as corridor rate for CVAT db calcçä çäModifications log:çä10/20/2008 CSC initial function
+1e2f228 -2 -2
+Description : Net single premium per unitçä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e2fa10 -2 -2
+Description: mortality rate including table ratings and flat extrasçä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e2fde8 -2 -2
+Description: mortality rate excluding table ratings and flat extras for single livesçä çäModification logçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e30530 -2 -2
+Description: attained age çä çäModification logçä10/31/2007 CSC Initial Calculation/Rule
+1e30990 -2 -2
+Description:  v interest discount factorçä çäModification logçä10/31/2007 CSC Initial Calculation/Rule
+1e30da0 -2 -2
+Description: Interest rate for CVAT calculationçä çäModification logçä02/01/2008 Additional Product Information moved to CalcRulesçä10/31/2007 CSC Initial Calculation/Ruleçä
+5ea38166 -2 -2
+Modification Log:çä01/12/2011 - PAC013 calcType - BT - Restructureçä09/01/2010 - PAC014 MAS - Replaced guidelines/7-pay with ULDocs functions to pick up policy changesçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/29/2009 - PA1277 - wdp - Added  premAmt parameterçä
+7bedd47e -2 -2
+Description: the illustartion premium after the min/ max/ guidelines/ mode adjustments.çä çäModification Log:çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/12/2011 - PAC013 calcType - BT - Restructureçä09/01/2010 PAC014 MAS - replaced TC logic with PREMIUM logic to remove duplicate Premium Adjustment functionsçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/29/2009 - PA1277 - wdp - Added  premAmt parameter to TaxCompliance illustration Premiumçä02/01/2008 CSC Initial Calculation/Ruleçä
+60943b12 -2 -2
+Description: calculates the mode that is applicable for the illustration premiums.çä çäModification Log:çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 CSC Initial Calculation/Rule
+6d7f80f6 -2 -2
+Description: performs the guideline and 7 pay tests.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/10/2009 - PA1001 - NT - performance enhancementsçä07/29/2009 - PA1277 - wdp - Added  premAmt parameter to TaxCompliance illustration Premiumçä02/01/2008 CSC Initial Calculation/Ruleçä
+379a1da -2 -2
+Description : returns accumulated adjusted scheduled premium as at end of yearIndexçä çäModification Log :çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/10/2009 - PA1001 - NT - performance enhancements - removing SUMX over yearIndex 
+1ee81684 -2 -2
+Description: comparison of the cumulative illustration premiums with the cumulative maximums and minimums. Returns an error the illustration premium is not within bounds.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä07/29/2009 - PA1277 - wdp - Added  premAmt parameter to TaxCompliance illustration Premiumçä02/01/2008 CSC Initial Calculation/Ruleçä
+68ca97a2 -2 -2
+Description: retrieves the premium associated with the premium design type.çä çäModification Log:çä07/29/2009 - PA1277 - wdp - Added  premAmt parameter to TaxCompliance illustration Premiumçä02/01/2008 CSC Initial Calculation/Rule
+21a8770 -2 -2
+Description: calculates the cumulative illustration premiums.çä çäModification Log:çä11/10/2009 - PA1001 - NT - performance enhancements - removing SUMX over yearIndex çä02/01/2008 CSC Initial Calculation/Rule
+32432b80 -2 -2
+Description: calculates the cumulative minimum premiums to compare to the cumulative illustration premiums.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 CSC Initial Calculation/Rule
+bd3209b -2 -2
+Description: calculates the cumulative maximum premiums to compare to the cumulative illustration premiums.çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/01/2008 CSC Initial Calculation/Rule
+1e34980 -2 -2
+Description:  Determines if a change in the policy has occurred that would trigger a recalc in the guideline premiums.çä çäModification Log:çä06/22/2012 PAC014 CMC added age 100 check for guideline recalc determination.çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e34eb8 -2 -2
+Description:  Determines if there has been a change in the face amount of the coverages.çä çäModification Log:çä12/07/2010 pA Regression MAS updated to use number of coverage from the prevoius year when summing previous year units, per CMCçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e356b8 -2 -2
+Modification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/27/2010 pA 1001 Regression Testing CMC removed summation across coverages and only look at the base coverage for death benefit option changes.
+1e35b18 -2 -2
+Description:âDetermines if a Benefit has been added or terminated to trigger Guideline or 7 pay recalcs.çä çäModificaiton Logçä02/27/2012 pA regression CMC changed >= in maturity check to >çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA Performance CMC changed order on checking maturity duration
+1e35f78 -2 -2
+Description:âDetermines if a Benefit has been added or terminated to trigger Guideline or 7 pay recalcs.çä çäModificaiton Logçä02/27/2012 pA PAD-821 CMC changed >= in maturity check to >çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/24/2010 pA Performance CMC changed order on checking maturity duration
+7983bdbd -2 -2
+Description:âDetermines if the insured's risk class is changed to trigger Guideline or 7 pay recalcs.çäReturns 1 for each year where the risk class changes, 0 otherwiseçä çäModification Logçä08/27/2013 - PA1401- rm - Initial function
+1e36770 -2 -2
+10/26/2010 MAS cleaned up the first ifçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+405f91ce -2 -2
+çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+61a7e56b -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+683e9d53 -2 -2
+Description:âReturns the number of months between the transaction effective date and the interest guarantee period end date.  This is not to be less than 0.çä çäModification Log:çä08/12/2009 CMC nbA Integration
+1e2e338 -2 -2
+Description : Initial maturity duration cash value using initial premium guessçä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä09/07/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä10/31/2007 CSC Initial Calculation/Ruleçä
+6d4534f8 -2 -2
+Description : Initial maturity duration cash value using initial premium guessçä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä09/07/2010 - PAC021 - rm - Replaced coverageIndex=0 with standard function 'Std BaseCov Index'(calcType)çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functionsçä10/31/2007 CSC Initial Calculation/Ruleçä
+1c3724b9 -2 -2
+Description:çä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/11/2009 RWE tolerance changed to premium toleranceçä çäAdditional Description:çäNew functions for solving and interest rate determinationçä çäYou call the new solve function with parameters  çä çäsolve(iMethod,ref_F,ref_F_dx,r_Target,rGuess,rTolerance,rLow,rHigh,iIterLimit,vConstant)çä çäreturns x such that |F(x,vConstant)-rTarget|<=rTolerance (idealy F(x,vConstant)==rTarget)çä çäiMethodâspecifies which solver method to use:çä- 0: Regula Falsi with Illinois modification (a good choice if no guess and derivative are known and the intervall is large. may have slow convergence once near the solution)çä- 1: Bisection (good if the interval is small to start with, predictable guaranteed convergence (log(2)))çä- 2: Newton-Ralphson (best choice if a derivative and good initial guess is known or no sufficiently small interval can be determined beforehand, fastest convergence)çä- 3: Regula Falsi switch to Bisection in iterations step 7çäAdditional methods (or mixtures of the above) may be added in the futureçä çäref_F is a function reference (obtained by eg. fref(F) to a function with 2 parameters, the first (x) being the actual argument (a real number), the second (vConstant) can be any value(including vectors) to bundle additional informations that function may need.çä çäref_F_dx is only used by method 2 and should be the derivative(ableitung) of iFref.çä çärTarget is the target value for which an x is searched such that F(x)=rTarget +- rToleranceçä çärGuess is an initial guess for x (only used by method 2)çä çärTolerance is the max. tolerance allowed for |F(x)-rTarget|,çäâA negative tolerance is applied to the guess!çä çärLow and rHigh specify the interval in which a solution is sought (only for method 0 and 1). If sign(F(rLow))==sign(F(rhigh)) (or F(rLow)*F(rHigh)>0), there possibly is no solution and the string "#NOTVALID" is returned.çä çäiIterlimit is the maximum number of iterations performed. If the criterium |F(x)-rTarget|<=rTolerance is not met before iIterlimit iterations are executed the string "#NORES" is returned.çä çävConstant is the additional parameter passed to F and F_dx, can be of any type(vector!) understood by F and F_dx.çä çäAdd 100 to the method to get verbose debug output during development (values in each iteration, iteration count)çä çä çäIRR(vCashflow; rReturnAmount; iPeriods, rInitialGuess; rToleranceAmount; iRoundDecimals)çä(to be implemented, subject to subtle changes)çä çäDescription of parametersçävCashflows  - vector of cash flow amounts by period (normaly years), assumed to occur at the beginning of each periodçä              a positive cash flow represents an investment into the contract, a negative cash flow represents a withdrawalçä              from the investmentçärReturnAmount  - amount returned by the investment, assumed to occur at the end of the investment periodçäiPeriods - Number of periodsçärInitialGuess  - initial guess to seed the iteration process çärToleranceAmount - çäiRoundDecimals - number of decimal places for final resultçä çäDetermins the internal rate of return of an investment (as a factor, i.e. 0.07 for 7%).çäThe solution stops when either the return amount for that rate is nearer to rReturnAmount than rToleranceAmount or will not get nearer with the specified decimal places -thus rReturnAmount can be set to 0 or iRoundDecimals to eg. 10 to have just one termination criterium.çäThere is an internal limit (40)  on the number of iterations which will catch impossible situations (eg. 0 cash flow with positive return amount).çäIf this is reached, the string '#NORES' will be returned.çä
+3a3d7077 -2 -2
+Description: Penny Check recursive to find the premium where a penny less exactly (rounded) will produce just enough CVçä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/20/2010 pA Performance CMC updated to use the Solve CashValueSolve Constants vector.çä11/11/2009 - Performance - RWE
+6e3f600f -2 -2
+çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+e8fe5f4 -2 -2
+Description: Internal Solve returns a not rounded number to find the correct penny amount we try several pennys up and down to find the optimum.
+7c10c4d -2 -2
+çä05/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä02/01/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+7b80c482 -2 -2
+Description : returns 1 if new internal solve function returns valid answer, else 0çä çäModification Log :çä05/20/2010 pA Performance CMC updated for additional parms in Penny check Function.çä11/09/2009 - PA1001 - NT - added functionçä
+58cfa323 -2 -2
+Description : Checks if the initial guess is good enough to work with, so that the solve can be skipped. If initial guess is slightly too high, and one penny less  is slightly too low, we've hit the jackpot. çä çäModification Log :çä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä05/18/2010 - PA1101 - MAS - change from "guess" to "guess2", added Ceil and Floor instead of -.01çä11/09/2009 - PA1001 - NT - added functionçä
+1e2e6e8 -2 -2
+Description: Tolerance levelsçä çäModification logçä10/31/2007 CSC Initial Calculation/Rule
+39db6aeb -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructureçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+50ade643 -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+43d7dc25 -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+e8e9ab -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+3fde69ec -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+6947c37a -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+4295f9ce -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+4d7f97b3 -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+5099c9d8 -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+3c1f4921 -2 -2
+çä01/12/2011 - PAC013 calcType - BT - Restructure
+569f014d -2 -2
+Description:âSolve routine using the internal solve functionçä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solvesçä çä
+6074ad0 -2 -2
+Description: Penny Check recursive to find the premium where a penny less exactly (rounded) will produce just enough CVçä çäModification Log:çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçäPerformance - RWE - 11/11/2009çä05/20/2010 pA Performance CMC updated to use the Solve CashValueSolve Constants vector.
+969de10 -2 -2
+çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1a76dc4f -2 -2
+Description : returns 1 if new internal solve function returns valid answer, else 0çä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solves
+14d3f241 -2 -2
+Description:âCall to the solve routine for face amount solves.çä çäModification Log:çä02/07/2011 - pA Regression CMC updates for Face Solves and corridor usage in solves
+1e38250 -2 -2
+Description: Test function for Commonsolve initial guess function.  Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e386e8 -2 -2
+çä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e38ba8 -2 -2
+Description: Test function for Commonsolve initial guess function.  Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+25c7cff5 -2 -2
+Description: Test function for Commonsolve initial guess function.  Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+18161fc8 -2 -2
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä
+1e39598 -2 -2
+Description: Test function for Commonsolve function.  Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+71e4135f -2 -2
+Description: Test function for Commonsolve function.  Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e39ca8 -2 -2
+Description : Test function for present value of annualized charges for initial guess. Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/12/2010 - PA1001 - wdp - Changed to use correct vectorsçä10/31/2007 CSC Initial Calculation/Ruleçä
+2243d3d0 -2 -2
+Description : Test function for present value of annualized charges for initial guess. Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä02/12/2010 - PA1001 - wdp - Changed to use correct vectorsçä10/31/2007 CSC Initial Calculation/Ruleçä
+1e3a160 -2 -2
+Description : Test function for present value of annualized charges for initial guess. Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+227b1b5 -2 -2
+Description : Test function for present value of annualized charges for initial guess. Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e3a6d8 -2 -2
+Description: Test function for initial guess present value of one year's charge. Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e3aba0 -2 -2
+Description: Test function for initial guess total charges. Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e3b0f0 -2 -2
+Description: Test function for premium load charge. Test functions required as vectors can't be passed from UTV'çä çäModification logçä10/31/2007 CSC Initial Calculation/Rule
+1e3b620 -2 -2
+Description: Test function for R factor. Test functions required as vectors can't be passed from UTV'çä çäModification logçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e3bb68 -2 -2
+Description: Test function for total monthly charges. Test functions required as vectors can't be passed from UTV'çä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä02/12/2010 - PA1001 - wdp - Changed Test function to use BOM CV before charges.çä10/31/2007 CSC Initial Calculation/Ruleçä
+4185bee9 -2 -2
+Description: Test function for total monthly charges. Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä02/12/2010 - PA1001 - wdp - Changed Test function to use BOM CV before charges.çä10/31/2007 CSC Initial Calculation/Ruleçä
+1e3b720 -2 -2
+Description: Test function for premium load charge. Test functions required as vectors can't be passed from UTV'çä çäModification logçä05/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3b838 -2 -2
+Description: Test function for Admin charge. Test functions required as vectors can't be passed from UTV'çä çäModification logçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3b950 -2 -2
+Description: Test function for premium load charge. Test functions required as vectors can't be passed from UTV'çä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä05/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+f703cf4 -2 -2
+Description: Test function for premium load charge. Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä05/20/2011 wmA-J CMC Premium Load Charges enhancement for Premium Taxes (added feeType parm to higher level functions)çä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä10/31/2007 CSC Initial Calculation/Rule
+1e3bbe0 -2 -2
+Description : Test function for Net premium factor. Test functions required as vectors can't be passed from UTV'çä çäModification logçä10/31/2007 CSC Initial Calculation/Rule
+1e3bcd8 -2 -2
+Description: Test function for projected gross premium. Test functions required as vectors can't be passed from UTV'çä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+60cb389e -2 -2
+Description: Test function for projected gross premium. Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+1e3bea0 -2 -2
+Description: Test function for projected net premium. Test functions required as vectors can't be passed from UTV'çä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä02/12/2010 - PA1001 - wdp - Added roundingçä10/31/2007 CSC Initial Calculation/Ruleçä
+17a4a012 -2 -2
+Description: Test function for projected net premium. Test functions required as vectors can't be passed from UTV'çä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä02/12/2010 - PA1001 - wdp - Added roundingçä10/31/2007 CSC Initial Calculation/Ruleçä
+1e3c528 -2 -2
+Description: test function for Net amount at Riskçä çäModification logçä01/26/2011 - PAC013 CMC removed extra coverage and coverage option indexçä01/12/2011 - PAC013 calcType - BT - Restructureçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e3c058 -2 -2
+Description: Test function for beginning of month cash value. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+6f2ff9b3 -2 -2
+Description: Test function for beginning of month cash value. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+1e3c178 -2 -2
+Description: returns year index for one month earlierçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1e3c2a0 -2 -2
+Description: returns month index for one month previouslyçä çäModification Log:çä10/31/2007 CSC Initial Calculation/Rule
+1e3c3b0 -2 -2
+Description: Test function for end of month cash value. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+5c66e60f -2 -2
+Description: Test function for end of month cash value. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+1e3ca88 -2 -2
+Description: Test function for end of month cash value. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+491d22a7 -2 -2
+Description: Test function for end of month cash value. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+1e3c5b8 -2 -2
+Description: Test function for testing whether policy has lapsed or not. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+139e8bbc -2 -2
+Description: Test function for testing whether policy has lapsed or not. Test functions required as vectors can't be passed from UTV'çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä10/31/2007 CSC Initial Calculation/Rule
+1e3c6c0 -2 -2
+çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functions
+1e3c7c8 -2 -2
+çä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä11/27/2009 - PAC006 - wdp - Added coverageIndex parameter to SharedVector SolveParms FaceAmount functions
+1e3c8b8 -2 -2
+çä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+49483a80 -2 -2
+Modification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä09/16/2010 - PAC013 calcType - BT - Remove calcType where SearchCriteria is usedçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1e3d7e0 -2 -2
+Description : returns a vector of search criteria for the iteration functionsçä çäModification logçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+14e09c5a -2 -2
+Description : returns a vector of search criteria for the iteration functionsçä çäModification logçä07/10/2013 PA1401-26 KC added yearIndex parmçä10/12/2012 pA1301 PAD-820 CMC Added yearIndex Parm reference to TaxCompliance Policy Premium Durationçä07/02/2010 - PAC013 calcType - BT - Initially adding calcType parmçä10/31/2007 CSC Initial Calculation/Rule
+;Offset=00000000

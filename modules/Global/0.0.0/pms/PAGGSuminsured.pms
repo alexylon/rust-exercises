@@ -1,0 +1,372 @@
+;1	08.12.2016 13:40:52	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P1 de0804 0 7df34767 0 0 0 2
+
+--description
+Gobal Group Sum Insured Calculationsçä çäRELEASE LOG:çäRELEASE pA 1601
+P13 7df34767 de0804 1ee5949e 0 0 0 2
+--Global Group Suminsured--
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Global Group Sum Insured model"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"PAGGSuminsured.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"JL"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P3 1ee5949e 7df34767 7028eaf5 0 0 0 2
+:OUTPUT
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P4 7028eaf5 1ee5949e 0 0 0 0 2
+OUTPUT GroupSuminsured Suminsured
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT GroupSuminsured Suminsured
+'GroupSuminsured Suminsured'
+F0 de0860 0 2c9df429 0 0 0 0
+
+F1 2c9df429 de0860 41b535d2 0 0 0 2
+--Suminsured Calculation
+Funktion
+
+F1 41b535d2 2c9df429 6e728838 2a09e5d3 0 0 2
+:GroupSuminsured
+Funktion
+
+F1 6e728838 41b535d2 0 557a6713 0 0 2
+GroupSuminsured Suminsured
+Funktion
+IF ('Input Group Config Prod Suminsured Allowed' NOTEQUAL "Y" && 'Input Group Config Prod Health SI Allowed' NOTEQUAL "Y" ; çä  0 ; çä  'GroupSuminsured Validate BenefitPrograms'çä)
+F1 557a6713 41b535d2 0 17a131a6 0 0 2
+GroupSuminsured Validate BenefitPrograms
+Funktion
+IF ('Input Group Config Prod Benefit Program' NOTEQUAL 'Const Medical Benefit' && 'Input Group Config Prod Benefit Program' NOTEQUAL 'Const TermLife Benefit' && 'Input Group Config Prod Benefit Program' NOTEQUAL 'Const Disability Benefit' && 'Input Group Config Prod Benefit Program' NOTEQUAL 'Const Health Benefit' ; çä  error("Invalid Benefit Program " & 'Input Group Config Prod Benefit Program') ; çä  IF ('Input Group Config Pol Standard Policy' EQUAL "Y" && 'Input Group Config Prod Premium Table' NOTEQUAL 'Const Std Pol Dfn' && 'Input Group Config Prod Premium Table' NOTEQUAL 'Const Age Based Std Prm Rts' ; çä    error("Invalid Premium Rate Table " & 'Input Group Config Prod Premium Table') ; çä    'GroupSuminsured Calculate Suminsured'çä  )çä)
+F1 17a131a6 41b535d2 27fa7246 6c2df060 0 0 2
+GroupSuminsured Calculate Suminsured
+Funktion
+IF ('Input Group Config Pol Standard Policy' EQUAL "Y" ; çä  'GroupSuminsured Get Std Pol Sumins' ; çä  'GroupSuminsured Get Non Std Pol Sumins'çä)
+F1 27fa7246 17a131a6 6b4dfe19 2a70943c 0 0 2
+GroupSuminsured Get Std Pol Sumins
+Funktion
+IF ('Input Group Config Prod Premium Table' EQUAL 'Const Std Pol Dfn' ; çä  'GroupSuminsured Get Suminsured frm Pol Dfn' ; çä  0çä)
+F1 6b4dfe19 27fa7246 18be21c1 0 0 0 2
+GroupSuminsured Get Suminsured frm Pol Dfn
+Funktion
+'GroupSuminsured Get SumInsured from PM02c Loop'('Input Group Policy Company';'Input Group Policy Type' & 'Input Group Product Type';'Input TransEffDate';1;'Input Group Plan Number')
+F1 18be21c1 6b4dfe19 16edb4a4 0 0 0 2
+GroupSuminsured Get SumInsured from PM02c Loop(coy;itemitem;Effdate;counter;planno)
+Funktion
+IF ('GroupSuminsured PM02c Loop'(coy;itemitem;Effdate;'GEN Counter'(counter)) = planno ; çä  'GroupSuminsured Get PM02c Item Genarea'(coy;itemitem;Effdate;counter;planno) ; çä  IF (counter >= 7 ; çä    IF ('Access Lookup'("Rate";"PM02c";v_(coy;"PM02c";itemitem;"";Effdate);"CONTITEM") EQUAL " " ; çä      error("Rate not defined in PM02c") ; çä      'GroupSuminsured Get SumInsured from PM02c Loop'(coy;'Access Lookup'("Rate";"PM02c";v_(coy;"PM02c";itemitem;"";Effdate);"CONTITEM");Effdate;1;planno)çä    ) ; çä  'GroupSuminsured Get SumInsured from PM02c Loop'(coy;itemitem;Effdate;counter + 1;planno)çä)çä)
+F1 16edb4a4 18be21c1 0 6472f6be 0 0 2
+GroupSuminsured PM02c Loop(coy;itemitem;Effdate;counter)
+Funktion
+'Access Lookup'("Rate";"PM02c";v_(coy;"PM02c";itemitem;"";Effdate);"PLANNO" & counter)
+F1 6472f6be 18be21c1 0 0 0 0 2
+GroupSuminsured Get PM02c Item Genarea(coy;itemitem;Effdate;counter;planno)
+Funktion
+'Access Lookup'("Rate";"PM02c";v_(coy;"PM02c";itemitem;"";Effdate);"SUMIN" & 'GEN Counter'(counter))
+F1 2a70943c 17a131a6 421de330 0 0 0 2
+GroupSuminsured Get Non Std Pol Sumins
+Funktion
+IF ('GroupSuminsured Get SumInsured Based on BenefitPgm' < 'Input Group Plan Minimum Suminsured' && 'Input Group Plan Minimum Suminsured' <> 0 ; çä  'Input Group Plan Minimum Suminsured' ; çä  IF ('GroupSuminsured Get SumInsured Based On BenefitPgm' > 'Input Group Plan Maximum Suminsured' && 'Input Group Plan Maximum Suminsured' <> 0 ; çä    'Input Group Plan Maximum Suminsured' ; çä    'GroupSuminsured Get SumInsured Based on BenefitPgm'çä  )çä)
+F1 421de330 2a70943c 621dd838 0 0 0 2
+GroupSuminsured Get SumInsured Based on BenefitPgm
+Funktion
+CASE('Input Group Config Prod Benefit Program';çä  "P9119" : 'GroupSuminsured Get Disability Suminsured';çä  "P9118";"PR9B3" : 'GroupSuminsured Get TermLifeHealth Suminsured';çä   : error("Invalid Benefit Program " & 'Input Group Config Prod Benefit Program'))çä
+F1 621dd838 421de330 0 45c4ea56 0 0 2
+GroupSuminsured Get Disability Suminsured
+Funktion
+IF ('Input Group Plan Benefit Basis' NOTEQUAL 'Const Prcnt of Yearly Salary' ; çä  0 ; çä  IF ('Input Group SumInsured Calc Freq' EQUAL 'Const Monthly' ; çä    'Input Group SumInsured Salary' * 12 ; çä    'Input Group SumInsured Salary'çä  ) * 'Input Group Plan Benefit Percent' * 0.01 DIV 1çä)
+F1 45c4ea56 421de330 7e26d00a 0 0 0 2
+GroupSuminsured Get TermLifeHealth Suminsured
+Funktion
+IF ('Input Group Plan Relative Product' EQUAL "" && 'Input Group SumInsured Dependent Number' EQUAL "00" ; çä  'GroupSuminsured Get Suminsured Based on Covrg Basis'('Const Main Product') ; çä  'GroupSuminsured Get Suminsured Based on Rel Prod'çä)
+F1 7e26d00a 45c4ea56 3072e619 1b9a5675 0 0 2
+GroupSuminsured Get Suminsured Based on Rel Prod
+Funktion
+IF ('Input Group Plan Coverage Basis' EQUAL 'Const Prcnt of Base Product' || 'Input Group Plan Dpnt Covrg Basis' EQUAL 'Const Prcnt of SI of Member' ; çä  'GroupSuminsured Get Prcnt of Base or Member' ; çä  'GroupSuminsured Get Suminsured Based on Covrg Basis'('Const Main Product')çä)
+F1 3072e619 7e26d00a 7c070b6d 0 0 0 2
+GroupSuminsured Get Prcnt of Base or Member
+Funktion
+IF ('Input Group Plan Relative Product' EQUAL "" ; çä  'GroupSuminsured Get Prcnt of Base' ; çä  'GroupSUminsured Get Prcnt of Rider'çä)
+F1 7c070b6d 3072e619 0 1ffadbad 0 0 2
+GroupSuminsured Get Prcnt of Base
+Funktion
+IF ('Input Group SumInsured Dependent Number' NOTEQUAL "00" && 'Input Group Plan Dpnt Covrg Basis' EQUAL 'Const Prcnt of SI of Member' ; çä  (('Input Group SumInsured MainMember Suminsured' + 'Input Group SumInsured MainMember Excess Suminsured') * 'Input Group Plan Percent of Member SI' * 0.01) DIV 1 ; çä  0çä)
+F1 1ffadbad 3072e619 658def30 0 0 0 2
+GroupSUminsured Get Prcnt of Rider
+Funktion
+IF ('Input Group Plan Coverage Basis' EQUAL 'Const Prcnt of Base Product' ; çä  'GroupSuminsured Get SumInsured of Rider' ; çä  0çä)
+F1 658def30 1ffadbad 3567332a 0 0 0 2
+GroupSuminsured Get SumInsured of Rider
+Funktion
+IF ('Input Group SumInsured Dependent Number' EQUAL "00" ; çä  ('GroupSuminsured GetBaseSumins') * 'Input Group Plan Percent of Base Mbr SI' * 0.01 ; çä  IF ('Input Group Plan Dpnt Covrg Basis' EQUAL 'Const Prcnt of SI of Member' ; çä    (('Input Group SumInsured Base MainMember Suminsured' + 'Input Group SumInsured Base MainMember Excess Suminsured') * 'Input Group Plan Percent of Base Mbr SI' * 'Input Group Plan BaseProd Percent of Member SI' * 0.01 * 0.01) DIV 1 ; çä    (('Input Group SumInsured Base Suminsured' + 'Input Group SumInsured Base Excess Suminsured') * 'Input Group Plan Percent of Base Mbr SI' * 0.01) DIV 1çä  )çä)
+F1 3567332a 658def30 0 0 0 0 2
+GroupSuminsured GetBaseSumins
+Funktion
+IF ('GroupSuminsured Get Suminsured Based on Covrg Basis'('Const Base Product') < 'Input Group SumInsured BaseProd Minimum Suminsured' && 'Input Group SumInsured BaseProd Minimum Suminsured' <> 0 ; çä  'Input Group SumInsured BaseProd Minimum Suminsured' ; çä  IF ('GroupSuminsured Get Suminsured Based on Covrg Basis'('Const Base Product') > 'Input Group SumInsured BaseProd Maximum Suminsured' && 'Input Group SumInsured BaseProd Maximum Suminsured' <> 0 ; çä    'Input Group SumInsured BaseProd Maximum Suminsured' ; çä    'GroupSuminsured Get Suminsured Based on Covrg Basis'('Const Base Product')çä  )çä)
+F1 1b9a5675 45c4ea56 24fd2a14 0 0 0 2
+GroupSuminsured Get Suminsured Based on Covrg Basis(type)
+Funktion
+CASE('GroupSuminsured Get CoverageBasis'(type);çä  "01" : 'GroupSuminsured Get Monthly Suminsured'(type);çä  "02" : 'GroupSuminsured Get Yrly Suminsured'(type);çä  "03" : 'GroupSuminsured Get FixedSuminsured'(type);çä  "04" : 'GroupSuminsured Get Monthly Suminsured'(type) + 'GroupSuminsured Get FixedSuminsured'(type);çä  "05" : 'GroupSuminsured Get Diff Amount and years';çä  "06" : 'GroupSuminsured Get Diff Amount and years';çä  "07" : 'GroupSuminsured Get National Provident Fund'(1);çä  "08" : 'GroupSuminsured Get Future Service';çä  "11" : 'Input Group SumInsured UserSI';çä  "12" : 'GroupSuminsured Get CtbFact Suminsured';çä  "13" : 'GroupSuminsured Get FixedSuminsured'(type);çä   : error("Invalid Coverage Basis"))çä
+F1 24fd2a14 1b9a5675 20df612 5ef37531 0 0 2
+GroupSuminsured Get Monthly Suminsured(type)
+Funktion
+('GroupSuminsured Get Monthly Salary' * IF (type EQUAL 'Const Main Product' ; çä  'Input Group Plan Number of Months Sal' ; çä  IF (type EQUAL 'Const Base Product' ; çä    'Input Group SumInsured BaseProd Number of Months Sal' ; çä    error("Invalid Type " & type)çä  )çä)) DIV 1
+F1 20df612 24fd2a14 0 0 0 0 2
+GroupSuminsured Get Monthly Salary
+Funktion
+IF ('Input Group SumInsured Calc Freq' EQUAL 'Const Annual' ; çä  'Input Group SumInsured Salary' / 12 ; çä  'Input Group SumInsured Salary'çä)
+F1 5ef37531 1b9a5675 60325d07 5be5fc9c 0 0 2
+GroupSuminsured Get Yrly Suminsured(type)
+Funktion
+('GroupSuminsured Get Yearly Salary' * IF (type EQUAL 'Const Main Product' ; çä  'Input Group Plan Number of Years Sal' ; çä  IF (type EQUAL 'Const Base Product' ; çä    'Input Group SumInsured BaseProd Number of Years Sal' ; çä    error("Invalid Type " & type)çä  )çä)) DIV 1
+F1 60325d07 5ef37531 0 0 0 0 2
+GroupSuminsured Get Yearly Salary
+Funktion
+IF ('Input Group SumInsured Calc Freq' EQUAL 'Const Monthly' ; çä  'Input Group SumInsured Salary' * 12 ; çä  'Input Group SumInsured Salary'çä)
+F1 5be5fc9c 1b9a5675 2cdb6f6f 376c6bcf 0 0 2
+GroupSuminsured Get Diff Amount and years
+Funktion
+IF ('GroupSuminsured Get MemberExperience' >= 'GroupSuminsured Get MaximumExp' ; çä  0 ; çä  IF ('Input Group SumInsured PensBenf FormulaCode' EQUAL 'Const BnftFrmula Code' ; çä    ('Input Group SumInsured PensBenf BenfFact' * 'GroupSuminsured Get Monthly Salary') * ('GroupSuminsured Get MaximumExp' - 'GroupSuminsured Get MemberExperience') ; çä    'GroupSuminsured Get PensBenfAmount'çä  )çä)
+F1 2cdb6f6f 5be5fc9c 0 541de4b0 0 0 2
+GroupSuminsured Get Retirement Age
+Funktion
+IF ('Input Group Plan Coverage Basis' EQUAL 'Const Diff Amount and years' ; çä  'GroupSuminsured PeriodCalc'('Input Group Policy Calculation Method';0) + 'Input Group Plan No of Years' ; çä  'Input Group Plan Maximum Age'çä)
+F1 541de4b0 5be5fc9c 0 24f15f36 0 0 2
+GroupSuminsured Get MaximumExp
+Funktion
+IF ('Input Group Plan Coverage Basis' EQUAL 'Const Diff Amount and years' ; çä  'Input Group Plan No of Years' ; çä  'GroupSuminsured Get Retirement Age' - 'GroupSuminsured PeriodCalc'("ELI1";0)çä)
+F1 24f15f36 5be5fc9c 0 1fa6c49b 0 0 2
+GroupSuminsured Get Retirement Date
+Funktion
+'Gen Datcon2'('Input Group SumInsured Appointment Date';01;'GroupSuminsured Get MaximumExp';"")
+F1 1fa6c49b 5be5fc9c 5a2ab88a 5f3d8469 0 0 2
+GroupSuminsured Get PensBenfAmount
+Funktion
+'GroupSuminsured Get Total Service Gratuity' - 'GroupSuminsured Get Past Service Gratuity'
+F1 5a2ab88a 1fa6c49b 0 6c41fe5f 0 0 2
+GroupSuminsured Get Past Service Gratuity
+Funktion
+IF ('GEN Group Access Tables'("TR9PH";'Input Group SumInsured PensBenf BenfRule';"STTMINCHK") EQUAL "Y" ; çä  IF ('GroupSuminsured GetBenefitAmount'('Input Group SumInsured EffDate';'GEN Group Access Tables'("TR9PH";'Input Group SumInsured PensBenf BenfRule';"STTRULE")) > 'GroupSuminsured GetBenefitAmount'('Input Group SumInsured EffDate';'Input Group SumInsured PensBenf BenfRule') ; çä    'GroupSuminsured GetBenefitAmount'('Input Group SumInsured EffDate';'GEN Group Access Tables'("TR9PH";'Input Group SumInsured PensBenf BenfRule';"STTRULE")) ; çä    'GroupSuminsured GetBenefitAmount'('Input Group SumInsured EffDate';'Input Group SumInsured PensBenf BenfRule')çä  ) ; çä'GroupSuminsured GetBenefitAmount'('Input Group SumInsured EffDate';'Input Group SumInsured PensBenf BenfRule')çä)
+F1 6c41fe5f 1fa6c49b 0 0 0 0 2
+GroupSuminsured Get Total Service Gratuity
+Funktion
+IF ('GEN Group Access Tables'("TR9PH";'Input Group SumInsured PensBenf BenfRule';"STTMINCHK") EQUAL "Y" ; çä  IF ('GroupSuminsured GetBenefitAmount'('GroupSuminsured Get Retirement Date';'GEN Group Access Tables'("TR9PH";'Input Group SumInsured PensBenf BenfRule';"STTRULE")) > 'GroupSuminsured GetBenefitAmount'('GroupSuminsured Get Retirement Date';'Input Group SumInsured PensBenf BenfRule') ; çä    'GroupSuminsured GetBenefitAmount'('GroupSuminsured Get Retirement Date';'GEN Group Access Tables'("TR9PH";'Input Group SumInsured PensBenf BenfRule';"STTRULE")) ; çä    'GroupSuminsured GetBenefitAmount'('GroupSuminsured Get Retirement Date';'Input Group SumInsured PensBenf BenfRule')çä  ) ; çä'GroupSuminsured GetBenefitAmount'('GroupSuminsured Get Retirement Date';'Input Group SumInsured PensBenf BenfRule')çä)
+F1 5f3d8469 5be5fc9c 0 0 0 0 2
+GroupSuminsured GetBenefitAmount(effdate;rule)
+Funktion
+'GEN Group Benefit Amount'("MAXOK";effdate;'Input Group SumInsured Appointment Date';'Input Group SumInsured DateOfBirth';'GroupSuminsured Get Monthly Salary';rule)
+F1 376c6bcf 1b9a5675 0 574fcfde 0 0 2
+GroupSuminsured Get MemberExperience
+Funktion
+IF ('Input Group SumInsured PensBenf Exists' EQUAL "Y" ; çä  'GroupSuminsured PeriodCalc'("DEM";'Input Group SumInsured EffDate') ; çä  error("Invalid Coverage Basis Selected")çä)
+F1 574fcfde 1b9a5675 0 75f09422 0 0 2
+GroupSuminsured Get CtbFact Suminsured
+Funktion
+('Input Group SumInsured Contribution Amount' * 'Input Group SumInsured Factor') DIV 1
+F1 75f09422 1b9a5675 0 7b19bc6 0 0 2
+GroupSuminsured Get FixedSuminsured(type)
+Funktion
+IF (type EQUAL "MainProd" ; çä  'Input Group Plan Fixed Suminsured' ; çä  IF (type EQUAL "BaseProd" ; çä    'Input Group SumInsured BaseProd Fixed Suminsured' ; çä    error("Invalid Type " & type)çä  )çä)
+F1 7b19bc6 1b9a5675 49336f67 4b8ddc3a 0 0 2
+GroupSuminsured Get National Provident Fund(counter)
+Funktion
+IF ('GroupSuminsured Get NP FundBalance'("NOFYEAR" & 'Gen Counter'(counter)) >= 'GroupSuminsured Get Yearsof Service' ; çä  ('GroupSuminsured Get NP FundBalance'("NPFACTOR" & 'Gen Counter'(counter)) * 'GroupSuminsured Get Monthly Salary') + 'GroupSuminsured Get NP FundBalance'("CONSTANT") ; çä  IF (counter >= 45 ; çä    0 ; çä    'GroupSuminsured Get National Provident Fund'(counter + 1)çä  )çä)
+F1 49336f67 7b19bc6 0 43e66c74 0 0 2
+GroupSuminsured Get Yearsof Service
+Funktion
+'Gen Datcon3'('Input Group SumInsured Appointment Date';'Input Group Today';01)
+F1 43e66c74 7b19bc6 0 0 0 0 2
+GroupSuminsured Get NP FundBalance(column)
+Funktion
+'Access Lookup'("Rate";"TR98T";v_('Input Group Policy Company';"TR98T";'Input Group Plan NP Fund';"";'Input Group Policy CCDate');column)
+F1 4b8ddc3a 1b9a5675 0 68c435cc 0 0 2
+GroupSuminsured Get CoverageBasis(type)
+Funktion
+IF (type EQUAL "MainProd" ; çä  'Input Group Plan Coverage Basis' ; çä  IF (type EQUAL "BaseProd" ; çä    'Input Group Plan Base Prod Coverage Basis' ; çä    error("Invalid Type" & Type)çä  )çä)
+F1 68c435cc 1b9a5675 0 0 0 0 2
+GroupSuminsured Get Future Service
+Funktion
+IF ('Input Group Config Prod Maximum Limit' < 'GroupSuminsured Get Diff Amount and years' ; çä  'Input Group Config Prod Maximum Limit' ; çä  'GroupSuminsured Get Diff Amount and years'çä)
+F1 6c2df060 41b535d2 0 0 0 0 2
+GroupSuminsured PeriodCalc(calcMthd;EndDate)
+Funktion
+'GEN Group Get Member Age Calc'(calcMthd;EndDate;"Sumins")
+F1 2a09e5d3 2c9df429 25a1e967 0 0 0 2
+-- Constants
+Funktion
+
+F1 25a1e967 2a09e5d3 705efb89 0 0 0 2
+:Const
+Funktion
+
+F1 705efb89 25a1e967 0 55c414e3 0 0 2
+Const Medical Benefit
+Funktion
+"P9111"
+F1 55c414e3 25a1e967 0 447b2247 0 0 2
+Const TermLife Benefit
+Funktion
+"P9118"
+F1 447b2247 25a1e967 0 2fbc1a46 0 0 2
+Const Disability Benefit
+Funktion
+"P9119"
+F1 2fbc1a46 25a1e967 0 27958397 0 0 2
+Const Health Benefit
+Funktion
+"PR9B3"
+F1 27958397 25a1e967 0 6ca2d827 0 0 2
+Const Std Pol Dfn
+Funktion
+"PM02c"
+F1 6ca2d827 25a1e967 0 252cc3be 0 0 2
+Const Age Based Std Prm Rts
+Funktion
+"PM02b"
+F1 252cc3be 25a1e967 0 662ab559 0 0 2
+Const TermLife Temp and Tot Disabl
+Funktion
+"A103"
+F1 662ab559 25a1e967 0 3ecbc055 0 0 2
+Const TermLife Temp and Partial Disabl
+Funktion
+"A104"
+F1 3ecbc055 25a1e967 0 21a9bbc5 0 0 2
+Const Health Temp and Tot Disabl
+Funktion
+"B103"
+F1 21a9bbc5 25a1e967 0 51f4f9ed 0 0 2
+Const Health Temp and Partial Disabl
+Funktion
+"B104"
+F1 51f4f9ed 25a1e967 0 37c7fa66 0 0 2
+Const Monthly
+Funktion
+"M"
+F1 37c7fa66 25a1e967 0 261cc8a7 0 0 2
+Const Annual
+Funktion
+"A"
+F1 261cc8a7 25a1e967 0 7bd3746e 0 0 2
+Const Prcnt of Yearly Salary
+Funktion
+"PEYS"
+F1 7bd3746e 25a1e967 0 25107d12 0 0 2
+Const Prcnt of Weekly Salary
+Funktion
+"PEWS"
+F1 25107d12 25a1e967 0 7a4fb8f5 0 0 2
+Const Prcnt of Base Product
+Funktion
+"10"
+F1 7a4fb8f5 25a1e967 0 2c253080 0 0 2
+Const Prcnt of SI of Member
+Funktion
+"09"
+F1 2c253080 25a1e967 0 3df83d7d 0 0 2
+Const Fixed Suminsured
+Funktion
+"03"
+F1 3df83d7d 25a1e967 0 267e30cd 0 0 2
+Const Health Suminsured
+Funktion
+"13"
+F1 267e30cd 25a1e967 0 730a700e 0 0 2
+Const Informed Suminsured
+Funktion
+"11"
+F1 730a700e 25a1e967 0 4eba5134 0 0 2
+Const Nooftimes Mnthly Sal
+Funktion
+"01"
+F1 4eba5134 25a1e967 0 28f9e792 0 0 2
+Const Nooftimes Yrly Sal
+Funktion
+"02"
+F1 28f9e792 25a1e967 0 43a02c74 0 0 2
+Const Nooftmes Mnthly and Fixed
+Funktion
+"04"
+F1 43a02c74 25a1e967 0 4e4c3e4f 0 0 2
+Const Diff Amount and years
+Funktion
+"05"
+F1 4e4c3e4f 25a1e967 0 7d5f4331 0 0 2
+Const BnftFrmula Code
+Funktion
+"02"
+F1 7d5f4331 25a1e967 0 2835b67d 0 0 2
+Const Main Product
+Funktion
+"MainProd"
+F1 2835b67d 25a1e967 0 0 0 0 2
+Const Base Product
+Funktion
+"BaseProd"
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 3c6d271c 0 13dff8c6 0 0 0 0
+
+I0 13dff8c6 3c6d271c 0 0 0 0 0
+PAGGStandard.pms
+-
+O0
+E0
+L0
+B0
+P1
+7df34767
+F1
+2c9df429
+A0
+T0
+!4
+18be21c1 0 2
+
+16edb4a4 -2 -2
+ 
+45c4ea56 0 2
+
+1fa6c49b -2 -2
+To be Defined
+;Offset=00000000

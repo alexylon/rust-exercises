@@ -1,0 +1,4724 @@
+;1	08.12.2016 13:25:54	jlawrie2	
+X0 1e0019c 0 1e1f0c0 0 0 0 0
+
+X16 1e1f0c0 1e0019c 0 1efc2c8 0 0 2
+DEATH BENEFIT CVAT Maturity Duration(coverageIndex)
+DEATH BENEFIT CVAT Maturity Duration("C"; 0)
+65
+INPUT Policy Coverage ProductCode
+WL1PA
+Input TransEffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Jurisdiction
+1000
+INPUT Calling Program
+
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+WL1PA
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+X0 1efc2c8 1e0019c 1efc380 1e1e640 0 0 0
+-- Unit Test Cases --
+X0 1efc380 1efc2c8 1f2c738 1e16850 0 0 0
+-- Properties --
+X46 1f2c738 1efc380 0 0 0 0 2
+OUTPUT DeathBenefit
+'OUTPUT DeathBenefit'
+1000000
+INPUT Policy ProductCode
+INDP5YPA
+INPUT TransEffDate
+01/01/2010
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage CashValue[1]
+100000
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy Coverage BandCode[1]
+0
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X0 1e16850 1efc2c8 1e172f0 1e1a418 0 0 0
+-- Point in Time Death Benefit Functions --
+X46 1e172f0 1e16850 1e175f0 0 0 0 2
+DEATH BENEFIT Total Death Benefit
+'DEATH BENEFIT Total Death Benefit'("C")
+1000000
+INPUT Policy ProductCode
+INDP5YPA
+INPUT TransEffDate
+01/01/2010
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy Coverage BandCode[1]
+0
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage CashValue[1]
+99999
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X47 1e175f0 1e172f0 1e18738 1e19910 0 0 2
+DEATH BENEFIT Total Death Benefit With CVAT
+'DEATH BENEFIT Total Death Benefit With CVAT'("C")
+1000000
+INPUT Policy number of Coverage
+2
+INPUT TransEffDate
+01/01/2010
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage CashValue[1]
+150000
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy Coverage BandCode[1]
+0
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Policy Coverage ProductVersionCode[1]
+1
+X34 1e18738 1e175f0 0 0 0 0 2
+DEATH BENEFIT NSP
+'DEATH BENEFIT NSP'("C")
+154108.301698878
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT TransEffDate
+01/01/2010
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X18 1e19910 1e172f0 0 0 0 0 2
+DEATH BENEFIT Total Death Benefit Unadjusted
+'DEATH BENEFIT Total Death Benefit Unadjusted'("C")
+1000000
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage IndicatorCode
+1
+INPUT TransEffDate
+01/01/2010
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+01/01/2071
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X0 1e1a418 1efc2c8 1e1a8a0 0 0 0 0
+-- Projection Functions --
+X36 1e1a8a0 1e1a418 0 1e1ab40 0 0 2
+DEATH BENEFIT Projected Total Death Benefit
+'DEATH BENEFIT Projected Total Death Benefit'("C";1; 150000)
+1000000
+INPUT Policy ProductCode
+INDP5YPA
+INPUT TransEffDate
+01/01/2006
+INPUT Calling System
+I2
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Coverage LifeCovTypeCode
+6
+X36 1e1ab40 1e1a418 0 1e1b950 0 0 2
+DEATH BENEFIT Projected Total Death Benefit With CVAT- No Corridor
+'DEATH BENEFIT Projected Total Death Benefit With CVAT'("C"; 1; 0)
+1000000
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+INDP5YPA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Coverage LifeCovTypeCode
+6
+X36 1e1b950 1e1a418 0 1e1b6b0 0 0 2
+DEATH BENEFIT Projected Total Death Benefit With CVAT- Corridor
+'DEATH BENEFIT Projected Total Death Benefit With CVAT'("C"; 1; 150000)
+1174871.29012002
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Policy EffDate
+01/01/2006
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy ProductCode
+INDP5YPA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Coverage LifeCovTypeCode
+6
+X20 1e1b6b0 1e1a418 0 1e1d388 0 0 2
+DEATH BENEFIT Projected Total Death Benefit Unadjusted
+'DEATH BENEFIT Projected Total Death Benefit Unadjusted'("C"; 1)
+1000000
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+Input TransEffDate
+01/01/2006
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Illus WithdrawalDesignType
+1000500001
+INPUT Policy Coverage LifeCovTypeCode
+6
+X33 1e1d388 1e1a418 0 1e1d9b0 0 0 2
+DEATH BENEFIT Projected Coverage Death Benefit- Base Coverage
+'DEATH BENEFIT Projected Coverage Death Benefit'("C"; 1; 0; 150000)
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus
+1
+INPUT Policy Coverage EffDate
+01/01/2006
+INPUT Policy Coverage TermDate
+12/31/2999
+INPUT Policy Coverage IndicatorCode
+1
+INPUT Policy Coverage CurrentNumberOfUnits
+1000
+INPUT Policy Coverage ProductCode
+INDP5YPA
+INPUT Calling System
+I1
+INPUT Policy CarrierCode
+00
+INPUT Policy Jurisdiction
+1000
+INPUT Policy ProductCode
+INDP5YPA
+INPUT TransEffDate
+01/01/2006
+INPUT Policy LifeParticipant IssueAge
+35
+INPUT Policy number of LifeParticipant
+1
+INPUT Policy LifeParticipant IssueGender
+1
+INPUT Policy LifeParticipant UnderwritingClass
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis
+1
+INPUT Policy Coverage BandCode
+3
+INPUT Policy LifeParticipant TempTableRatingEndDate
+12/31/2999
+INPUT Policy LifeParticipant PermTableRating
+1
+INPUT Policy LifeParticipant TempFlatEndDate
+12/31/2999
+INPUT Policy LifeParticipant TempFlatStartDate
+01/01/2004
+INPUT Policy LifeParticipant number of SubstandardRating
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount
+0
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy LifeParticipant TempFlatExtraAmount
+0
+INPUT Policy LifeParticipant TempTableRating
+1
+INPUT Calling Program
+
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage TermDate[1]
+12/31/2999
+X7 1e1d9b0 1e1a418 0 0 0 0 2
+DEATH BENEFIT Projected Coverage Death Benefit- ROP Coverage
+'DEATH BENEFIT Projected Coverage Death Benefit'("C"; 1; 1; 150000)
+0
+INPUT Policy EffDate
+01/01/2006
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+01/01/2006
+INPUT Policy Coverage TermDate[1]
+12/31/2999
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Calling Program
+
+X0 1e1e640 1e0019c 1e1e6b8 0 0 0 0
+-- Regression Test Cases --
+X0 1e1e6b8 1e1e640 1e1e748 1f2ed70 0 0 0
+-- DB000001 --
+X44 1e1e748 1e1e6b8 0 1e1e990 0 0 2
+OUTPUT DeathBenefit
+'OUTPUT DeathBenefit'
+0
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2072
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000001
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+X44 1e1e990 1e1e6b8 0 1f2dc38 0 0 2
+OUTPUT Projected DeathBenefit(80;"C")
+'OUTPUT Projected DeathBenefit'(80;"C")
+0
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2072
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000001
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X44 1f2dc38 1e1e6b8 0 0 0 0 2
+OUTPUT Projected DeathBenefit(80;"G")
+'OUTPUT Projected DeathBenefit'(80;"G")
+0
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2072
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000001
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+X0 1f2ed70 1e1e640 1f2fc58 1f46d40 0 0 0
+-- DB000002 --
+X47 1f2fc58 1f2ed70 0 1f2ff20 0 0 2
+OUTPUT DeathBenefit
+'OUTPUT DeathBenefit'
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X47 1f2ff20 1f2ed70 0 1f31418 0 0 2
+OUTPUT Projected DeathBenefit(1;"C")
+'OUTPUT Projected DeathBenefit'(1;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f31418 1f2ed70 0 1f321d0 0 0 2
+OUTPUT Projected DeathBenefit(2;"C")
+'OUTPUT Projected DeathBenefit'(2;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f321d0 1f2ed70 0 1f333f0 0 0 2
+OUTPUT Projected DeathBenefit(3;"C")
+'OUTPUT Projected DeathBenefit'(3;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f333f0 1f2ed70 0 1f34618 0 0 2
+OUTPUT Projected DeathBenefit(4;"C")
+'OUTPUT Projected DeathBenefit'(4;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f34618 1f2ed70 0 1f35848 0 0 2
+OUTPUT Projected DeathBenefit(5;"C")
+'OUTPUT Projected DeathBenefit'(5;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f35848 1f2ed70 0 1f36a80 0 0 2
+OUTPUT Projected DeathBenefit(6;"C")
+'OUTPUT Projected DeathBenefit'(6;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f36a80 1f2ed70 0 1f37e40 0 0 2
+OUTPUT Projected DeathBenefit(7;"C")
+'OUTPUT Projected DeathBenefit'(7;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f37e40 1f2ed70 0 1f39088 0 0 2
+OUTPUT Projected DeathBenefit(8;"C")
+'OUTPUT Projected DeathBenefit'(8;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f39088 1f2ed70 0 1f3a2d8 0 0 2
+OUTPUT Projected DeathBenefit(9;"C")
+'OUTPUT Projected DeathBenefit'(9;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f3a2d8 1f2ed70 0 1f3b530 0 0 2
+OUTPUT Projected DeathBenefit(10;"C")
+'OUTPUT Projected DeathBenefit'(10;"C")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f3b530 1f2ed70 0 1f3c788 0 0 2
+OUTPUT Projected DeathBenefit(1;"G")
+'OUTPUT Projected DeathBenefit'(1;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f3c788 1f2ed70 0 1f3d9f0 0 0 2
+OUTPUT Projected DeathBenefit(2;"G")
+'OUTPUT Projected DeathBenefit'(2;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f3d9f0 1f2ed70 0 1f3ec60 0 0 2
+OUTPUT Projected DeathBenefit(3;"G")
+'OUTPUT Projected DeathBenefit'(3;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X48 1f3ec60 1f2ed70 0 1f3fed8 0 0 2
+OUTPUT Projected DeathBenefit(4;"G")
+'OUTPUT Projected DeathBenefit'(4;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f3fed8 1f2ed70 0 1f41490 0 0 2
+OUTPUT Projected DeathBenefit(5;"G")
+'OUTPUT Projected DeathBenefit'(5;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f41490 1f2ed70 0 1f422c0 0 0 2
+OUTPUT Projected DeathBenefit(6;"G")
+'OUTPUT Projected DeathBenefit'(6;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f422c0 1f2ed70 0 1f43550 0 0 2
+OUTPUT Projected DeathBenefit(7;"G")
+'OUTPUT Projected DeathBenefit'(7;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f43550 1f2ed70 0 1f447e8 0 0 2
+OUTPUT Projected DeathBenefit(8;"G")
+'OUTPUT Projected DeathBenefit'(8;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f447e8 1f2ed70 0 1f45a90 0 0 2
+OUTPUT Projected DeathBenefit(9;"G")
+'OUTPUT Projected DeathBenefit'(9;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X47 1f45a90 1f2ed70 0 0 0 0 2
+OUTPUT Projected DeathBenefit(10;"G")
+'OUTPUT Projected DeathBenefit'(10;"G")
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2011
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000002
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+INPUT Illus WithdrawalDesignType
+1000500001
+X0 1f46d40 1e1e640 1f47f10 1f4ef48 0 0 0
+-- DB000003 --
+X85 1f47f10 1f46d40 0 1f48358 0 0 2
+ROPCSV Total CSV(calcType)
+'ROPCSV Total CSV'("C")
+10000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000001
+INPUT TransEffDate
+1/1/2072
+INPUT Policy PolNumber
+DB000002
+INPUT TransEffDate
+1/1/2011
+INPUT Policy PolNumber
+DB000003
+INPUT TransEffDate
+01/01/2010
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+10000
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Calling Program
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode[1]
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT Policy Coverage RequestedMaturityDur[1]
+20
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X79 1f48358 1f46d40 0 1f4ce10 0 0 2
+DEATH BENEFIT NSP
+'DEATH BENEFIT NSP'("C")
+154108.301698878
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000001
+INPUT TransEffDate
+1/1/2072
+INPUT Policy PolNumber
+DB000002
+INPUT TransEffDate
+1/1/2011
+INPUT Policy PolNumber
+DB000003
+INPUT TransEffDate
+01/01/2010
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+10000
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X72 1f4ce10 1f46d40 0 0 0 0 2
+OUTPUT DeathBenefit
+'OUTPUT DeathBenefit'
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000003
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+10000
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X0 1f4ef48 1e1e640 1f50a50 1f54598 0 0 0
+-- DB000004 --
+X78 1f50a50 1f4ef48 0 1f51200 0 0 2
+ROPCSV Total CSV(calcType)
+'ROPCSV Total CSV'("C")
+160000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000004
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+160000
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Calling Program
+00
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode[1]
+1
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT Policy Coverage RequestedMaturityDur[1]
+20
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X81 1f51200 1f4ef48 0 1f52d18 0 0 2
+DEATH BENEFIT NSP
+'DEATH BENEFIT NSP'("C")
+154108.301698878
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000001
+INPUT TransEffDate
+1/1/2072
+INPUT Policy PolNumber
+DB000002
+INPUT TransEffDate
+1/1/2011
+INPUT Policy PolNumber
+DB000003
+INPUT TransEffDate
+01/01/2010
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+10000
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy PolNumber
+DB000004
+INPUT Policy Coverage CashValue[1]
+150000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X73 1f52d18 1f4ef48 0 0 0 0 2
+OUTPUT DeathBenefit
+'OUTPUT DeathBenefit'
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000004
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+160000
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X0 1f54598 1e1e640 1f55f70 0 0 0 0
+-- DB000005 --
+X78 1f55f70 1f54598 0 1f56728 0 0 2
+ROPCSV Total CSV(calcType)
+'ROPCSV Total CSV'("C")
+90000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000005
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+90000
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Calling Program
+00
+INPUT Illus FaceAmtDesignType
+1000500001
+INPUT Policy Coverage RequestedMaturityDur
+20
+INPUT Policy Coverage RequestedEffDur
+1
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy Coverage CurrentAmt
+0
+INPUT Policy Coverage RequestedEffDur[1]
+1
+INPUT Policy Coverage RequestedMaturityDur[1]
+20
+INPUT Policy Coverage ProductVersionCode[1]
+1
+INPUT Illus Face Amt Solve DesignType
+1000500001
+X83 1f56728 1f54598 0 1f58260 0 0 2
+DEATH BENEFIT NSP
+'DEATH BENEFIT NSP'("C")
+154108.301698878
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+1/1/2006
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+1
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000001
+INPUT TransEffDate
+1/1/2072
+INPUT Policy PolNumber
+DB000002
+INPUT TransEffDate
+1/1/2011
+INPUT Policy PolNumber
+DB000003
+INPUT TransEffDate
+01/01/2010
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+10000
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy PolNumber
+DB000004
+INPUT Policy Coverage CashValue[1]
+150000
+INPUT Policy PolNumber
+DB000005
+INPUT Policy Coverage CashValue[1]
+90000
+INPUT Calling Program
+
+INPUT Policy ProductVersionCode
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+X72 1f58260 1f54598 0 0 0 0 2
+OUTPUT DeathBenefit
+'OUTPUT DeathBenefit'
+1000000
+INPUT Calling System
+I1
+INPUT Message Language
+9
+INPUT TransEffDate
+01/01/2010
+INPUT Policy CarrierCode
+00
+INPUT Policy ProductCode
+INDP5YPA
+INPUT Policy Jurisdiction
+51
+INPUT Policy EffDate
+1/1/2006
+INPUT Policy PolicyStatus
+1
+INPUT Policy PaymentMode
+1
+INPUT Policy TermDate
+01/01/2036
+INPUT Policy number of Coverage
+2
+INPUT Policy Coverage ProductCode[0]
+INDP5YPA
+INPUT Policy Coverage IndicatorCode[0]
+1
+INPUT Policy Coverage InitCovAmount[0]
+1000000
+INPUT Policy Coverage LifeCovTypeCode[0]
+6
+INPUT Policy Coverage LifeCovStatus[0]
+1
+INPUT Policy Coverage CurrentNumberOfUnits[0]
+1000
+INPUT Policy Coverage EffDate[0]
+1/1/2006
+INPUT Policy Coverage TermDate[0]
+01/01/2036
+INPUT Policy Coverage LivesType[0]
+1
+INPUT Policy Coverage BandCode[0]
+3
+INPUT Policy Coverage CovNumber[0]
+1
+INPUT Policy number of LifeParticipant[0]
+1
+INPUT Policy LifeParticipant IssueAge[0]
+35
+INPUT Policy LifeParticipant IssueGender[0]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[0]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[0]
+1
+INPUT Policy LifeParticipant UnderwritingClass[0]
+1
+INPUT Policy LifeParticipant PermTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRating[0]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[0]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[0]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[0]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[0]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[0]
+0
+INPUT Policy number of CoverageOption[0]
+0
+INPUT Policy PolNumber
+DB000005
+INPUT Policy PaidToDate
+01/01/2010
+INPUT Policy Coverage ProductCode[1]
+ROP5PA
+INPUT Policy Coverage IndicatorCode[1]
+2
+INPUT Policy Coverage LifeCovTypeCode[1]
+100
+INPUT Policy Coverage LifeCovStatus[1]
+1
+INPUT Policy Coverage EffDate[1]
+1/1/2006
+INPUT Policy Coverage TermDate[1]
+01/01/2011
+INPUT Policy Coverage LivesType[1]
+1
+INPUT Policy Coverage BandCode[1]
+3
+INPUT Policy Coverage CashValue[1]
+90000
+INPUT Policy LifeParticipant IssueAge[1]
+35
+INPUT Policy LifeParticipant IssueGender[1]
+1
+INPUT Policy LifeParticipant LifeParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant ParticipantRoleCode[1]
+1
+INPUT Policy LifeParticipant TobaccoPremiumBasis[1]
+1
+INPUT Policy LifeParticipant UnderwritingClass[1]
+1
+INPUT Policy LifeParticipant PermTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRating[1]
+0
+INPUT Policy LifeParticipant TempTableRatingEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant FlatExtraPremBasis[1]
+0
+INPUT Policy LifeParticipant PermFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatExtraAmount[1]
+0
+INPUT Policy LifeParticipant TempFlatStartDate[1]
+01/01/2006
+INPUT Policy LifeParticipant TempFlatEndDate[1]
+01/01/2006
+INPUT Policy LifeParticipant number of SubstandardRating[1]
+0
+INPUT Policy number of CoverageOption[1]
+0
+INPUT Policy ProductVersionCode
+
+INPUT Calling Program
+
+INPUT Policy Coverage ProductVersionCode
+1
+INPUT Policy LifeParticipant PermFlatExtraAmt
+0
+INPUT Policy LifeParticipant TempFlatExtraAmt
+0
+O0 1e0004c 0 0 0 0 0 0
+
+E0 1e000bc 0 0 0 0 0 0
+
+L0 1e0012c 0 1f59e10 0 0 0 0
+
+L0 1f59e10 1e0012c 0 0 0 0 0
+Death Benefit Amount
+B0 1e002ec 0 0 0 0 0 0
+
+P3 1e0020c 0 1f5ba18 0 0 0 2
+
+--description
+Calculates a point-in-time total death benefit, as well as, projected death benefit by policy duration. çä çäSupport for cash value accumulation test (CVAT) is included. çäReturn of premium cash value calculations are included.çä çäRELEASE LOG:çäRELEASE wmA 9.2.0 - ENH1011çäRELEASE 1101 - PAC013 calcType
+LICENSENAME
+"CSC US internal use only - Workbench"
+COMPILERVERSION
+"4.5.4"
+P13 1f5ba18 1e0020c 1f5bce8 0 0 0 2
+Death Benefit
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Death Benefit calculation model for Term with ROP (including DEFRA CVAT)çä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"DeathBenefit.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P5 1f5bce8 1f5ba18 0 0 0 0 2
+Death Benefit Properties
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Projected DeathBenefit(yearIndex; rateAssumption)
+'GEN Round'('DEATH BENEFIT Projected Total Death Benefit'(rateAssumption;yearIndex;'ROPCSV Projected Total CSV'(rateAssumption;yearIndex - 1;'ROPCSV Accum ROP Eligible Premium'(rateAssumption;yearIndex)));0)
+OUTPUT DeathBenefit
+'GEN Round'('DEATH BENEFIT Total Death Benefit'('CalcType Guaranteed'('GEN Vector Blank'));2)
+F0 1e0027c 0 1f5c520 0 0 0 0
+
+F1 1f5c520 1e0027c 1f5c5f0 0 0 0 2
+:DEATH BENEFIT
+Funktion
+
+F1 1f5c5f0 1f5c520 1f5c6d0 1f5ec08 0 0 2
+-- Death Benefit functions --
+Funktion
+
+F1 1f5c6d0 1f5c5f0 1f5c7c0 1f5d570 0 0 2
+-- Point in Time Death Benefit Functions --
+Funktion
+
+F1 1f5c7c0 1f5c6d0 1f5c878 0 0 0 2
+DEATH BENEFIT Total Death Benefit(calcType)
+Funktion
+IF ( /*check definition of life insurance method*/ 'PI LifeUSAProduct DefLifeInsMethodCC In List'('Policy ProductCode';TransEffDate;2) ; çä   //True - Increase death benefit based on the CVAT test, if applicable.çä'DEATH BENEFIT Total Death Benefit With CVAT'(calcType) ; çä   //Falseçä'DEATH BENEFIT Total Death Benefit Unadjusted'(calcType)çä)
+F1 1f5c878 1f5c7c0 1f5c978 1f5cd60 0 0 2
+DEATH BENEFIT Total Death Benefit With CVAT(calcType)
+Funktion
+IF ( /*increase death benefit*/ 'DEATH BENEFIT Total CSV'(calcType) > 'DEATH BENEFIT NSP'(calcType) ; çä   //True - Death benefit must be increasedçä('DEATH BENEFIT Total Death Benefit Unadjusted'(calcType) * ('DEATH BENEFIT Total CSV'(calcType) / 'DEATH BENEFIT NSP'(calcType))) ; çä   //Falseçä'DEATH BENEFIT Total Death Benefit Unadjusted'(calcType)çä)
+F1 1f5c978 1f5c878 0 1f5cc78 0 0 2
+DEATH BENEFIT NSP(calcType)
+Funktion
+'ACT NSP Rec'(calcType;'Duration Year'(TransEffDate;'Policy EffDate');0;'Vector DB Act Info'(calcType;0)) * ('DEATH BENEFIT Total Death Benefit Unadjusted'(calcType) * 0.001)
+F1 1f5cc78 1f5c878 0 0 0 0 2
+DEATH BENEFIT Total CSV(calcType)
+Funktion
+IF ( //Product is whole lifeçä'ProductType is Whole Life'('PI PolicyProduct PolicyProductTypeCode'('Policy ProductCode';'Policy EffDate')) ; çä   //Trueçä'WLCashValue Total Cash Value'(calcType) ; çä   //Falseçä'ROPCSV Total CSV'(calcType)çä)
+F1 1f5cd60 1f5c7c0 0 0 0 0 2
+DEATH BENEFIT Total Death Benefit Unadjusted(calcType)
+Funktion
+SUMX(coverageIndex;0;'Policy Number of Coverage'(calcType;TransEffDur) - 1;IF ( /*base or base increase and inforce*/ ('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;#coverageIndex))) && 'Std Coverage Is InForce'(calcType;#coverageIndex;TransEffDate;TransEffDur) ; çä   //True - calculate the death benefitçä'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;TransEffDur) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;'Policy EffDate') ; çä   //False - rider benefitsçäIF ( /*is the rider integrated?*/ 'IndicatorCode is Integrated'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) ; çä     //True - calculate the death benefitçäIF ( /*Coverage is BIR?*/ 'Coverage Type is BIR'(calcType;#coverageIndex) ; çä       //Trueçä'TGTDB Proj BIR Adjusted VPU end year'(calcType;TransEffDur;'TGTDB Vector BIRInputVector'(calcType;TransEffDur;'GEN Vector Blank');'GEN Vector Blank') * 'TGTDB Proj BIR Adjusted NumberofUnits'(calcType;TransEffDur;'TGTDB Vector BIRInputVector'(calcType;TransEffDur;'GEN Vector Blank');'GEN Vector Blank') +  // plus PUA faceAmountçä'TGTDB Proj Coverage PUA FaceAmount'(calcType;#coverageIndex;transEffDur;'TGTDB Vector BIRInputVector'(calcType;TransEffDur;'GEN Vector Blank');'GEN Vector Blank') ; çä       //False - Is it PUAR ? çäIF ( /*Coverage is PUAR?*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate)) ; çä         //Trueçä'TGTDB Proj Coverage PUA FaceAmount'(calcType;#coverageIndex;transEffDur;'TGTDB Vector BIRInputVector'(calcType;TransEffDur;'GEN Vector Blank');'GEN Vector Blank') ; çä         //False - return 0çä0çä      )çä  ) ; çä //False - no defined riders have death benefit at this pointçä0çä)çä))
+F1 1f5d570 1f5c5f0 1f5d658 0 0 0 2
+-- Projected Death Benefit Functions --
+Funktion
+
+F1 1f5d658 1f5d570 1f5d710 0 0 0 2
+DEATH BENEFIT Projected Total Death Benefit(calcType; yearIndex; projCashValue)
+Funktion
+IF ( /*check definition of life insurance method*/ 'PI LifeUSAProduct DefLifeInsMethodCC In List'('Policy ProductCode';TransEffDate;2) ; çä   //True - Increase death benefit based on the CVAT test, if applicable.çä'DEATH BENEFIT Projected Total Death Benefit With CVAT'(calcType;yearIndex;projCashValue) ; çä   //Falseçä'DEATH BENEFIT Projected Total Death Benefit Unadjusted'(calcType;yearIndex)çä)
+F1 1f5d710 1f5d658 1f5d7c8 1f5d8c0 0 0 2
+DEATH BENEFIT Projected Total Death Benefit With CVAT(calcType; yearIndex; projCashValue)
+Funktion
+IF ( /*projected cash value greater than projected net single premium*/ projCashValue > 'DEATH BENEFIT Projected NSP'(calcType;yearIndex) ; çä   //True - Death benefit must be increasedçä('DEATH BENEFIT Projected Total Death Benefit Unadjusted'(calcType;yearIndex) * (projCashValue / 'DEATH BENEFIT Projected NSP'(calcType;yearIndex))) ; çä   //Falseçä'DEATH BENEFIT Projected Total Death Benefit Unadjusted'(calcType;yearIndex)çä)
+F1 1f5d7c8 1f5d710 0 0 0 0 2
+DEATH BENEFIT Projected NSP(calcType; yearIndex)
+Funktion
+'ACT NSP Rec'(calcType;yearIndex;0;'Vector DB Act Info'(calcType;0)) * ('DEATH BENEFIT Projected Total Death Benefit Unadjusted'(calcType;yearIndex) * 0.001)
+F1 1f5d8c0 1f5d658 0 1f5e2e8 0 0 2
+DEATH BENEFIT Projected Total Death Benefit Unadjusted(calcType; yearIndex)
+Funktion
+SUMX(coverageIndex;0;'Policy Number Of Coverage'(calcType;yearIndex) - 1;IF ( /*base or increase and inforce*/ (('IndicatorCode is Base'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) || 'IndicatorCode is BaseIncrease'('Policy Coverage IndicatorCode'(calcType;#coverageIndex))) && 'Std Coverage Is InForce'(calcType;#coverageIndex;'Increase Date By Years'('Policy EffDate';yearIndex);yearIndex)) ; çä   //True - calculate death benefitçä'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;yearIndex) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;'Policy EffDate') + 'TGTDB Proj Coverage PUA FaceAmount'(calcType;#coverageIndex;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));'TGTDB WithdrawalVector'(calcType;yearIndex)) ; çä   //False - rider benefitsçäIF ( /*Is coverage an integrated rider*/ 'IndicatorCode is Integrated'('Policy Coverage IndicatorCode'(calcType;#coverageIndex)) ; çä     //TrueçäIF ( /*Coverage is BIR?*/ 'Coverage Type is BIR'(calcType;#coverageIndex) ; çä       //Trueçä'TGTDB Proj BIR Adjusted VPU end year'(calcType;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));'TGTDB WithdrawalVector'(calcType;yearIndex)) * 'TGTDB Proj BIR Adjusted NumberofUnits'(calcType;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));'TGTDB WithdrawalVector'(calcType;yearIndex)) + 'TGTDB Proj Coverage PUA FaceAmount'(calcType;#coverageIndex;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));'TGTDB WithdrawalVector'(calcType;yearIndex)) ; çä       //FalseçäIF ( /*Coverage is PUAR?*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;TransEffDate)) ; çä         //Trueçä'TGTDB Proj Coverage PUA FaceAmount'(calcType;#coverageIndex;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));'TGTDB WithdrawalVector'(calcType;yearIndex)) ; çä         //False - standard coverageçä'Policy Coverage CurrentNumberOfUnits'(calcType;#coverageIndex;yearIndex) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;#coverageIndex);#coverageIndex;'Policy EffDate') + 'TGTDB Proj Coverage PUA FaceAmount'(calcType;#coverageIndex;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'TGTDB WithdrawalVector'(calcType;yearIndex));'TGTDB WithdrawalVector'(calcType;yearIndex))çä      )çä  ) ; çä //False - return 0çä0çä)çä))
+F1 1f5e2e8 1f5d658 0 1f5e400 0 0 2
+DEATH BENEFIT Projected Corridor Amount(calcType; yearIndex; projCashValue)
+Funktion
+'DEATH BENEFIT Projected Total Death Benefit'(calcType;yearIndex;projCashValue) - 'DEATH BENEFIT Projected Total Death Benefit Unadjusted'(calcType;yearIndex)
+F1 1f5e400 1f5d658 0 0 0 0 2
+DEATH BENEFIT Projected Coverage Death Benefit(calcType; coverageIndex; yearIndex; projCashValue)
+Funktion
+IF ( /*coverage is inforce*/ 'Std Coverage Is InForce'(calcType;coverageIndex;'Increase Date By Years'('Policy EffDate';yearIndex);yearIndex) ; çä   //TrueçäCASE( /*coverage indicator code*/ 'Policy Coverage IndicatorCode'(calcType;coverageIndex);çä     // Base Coverage - Include the corridor amountçä1 : ('Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;yearIndex) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate')) + 'DEATH BENEFIT Projected Corridor Amount'(calcType;yearIndex;projCashValue);çä     // Base Increaseçä3 : 'Policy Coverage CurrentNumberOfUnits'(calcType;coverageIndex;yearIndex) * 'PI CoverageProduct ValuePerUnit'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate');çä     // Inside Riderçä4 : IF ( /*Coverage is BIR/PUAR?*/ 'Coverage Type is BIR'(calcType;coverageIndex) ; çä       //Trueçä('TGTDB Proj BIR Adjusted VPU end year'(calcType;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'GEN Vector Blank');'GEN Vector Blank') * 'TGTDB Proj BIR Adjusted NumberofUnits'(calcType;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'GEN Vector Blank');'GEN Vector Blank')) +  //PUA faceAmount çä'TGTDB Proj Coverage PUA FaceAmount'(calcType;coverageIndex;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'GEN Vector Blank');'GEN Vector Blank') ; çä       //FalseçäIF ( /*Coverage is PUAR?*/ 'LifeCovType is PUAR'('PI CoverageProduct LifeCovTypeCode'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;TransEffDate)) ; çä         //Trueçä'TGTDB Proj Coverage PUA FaceAmount'(calcType;coverageIndex;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'GEN Vector Blank');'GEN Vector Blank') ; çä         //False - then excludeçä0çä      )çä  );çä //Default - ROP assumed not to have death benefit.  Add other DB's here if riders with DB's are addedçä : 0)çä ; çä //False - not inforceçä0çä)
+F1 1f5ec08 1f5c520 1f5ece8 0 0 0 2
+-- Miscellaneous Functions --
+Funktion
+
+F1 1f5ece8 1f5ec08 0 1f5f3d8 0 0 2
+Vector DB Act Info(calcType; coverageIndex)
+Funktion
+v_('Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);'DEATH BENEFIT CVAT Maturity Duration'(calcType;coverageIndex);MAX('ACCS CalcRule Interest Rate'('CalcType CVAT'(calcType);TransEffDate);'PI PolicyProduct GuarIntRate'('Policy ProductCode';'Policy EffDate'));'PI PolicyProduct MortalityOrMorbidityTable'('Policy Coverage ProductCode'(calcType;coverageIndex);'Policy EffDate');'Policy LifeParticipant IssueGender'(calcType;coverageIndex;0);'Policy LifeParticipant UnderwritingClass'(calcType;coverageIndex;0;TransEffDur);'Policy LifeParticipant TobaccoPremiumBasis'(calcType;coverageIndex;0;TransEffDur);'Policy ProductCode';'Policy EffDate';'Policy Jurisdiction';'PI PolicyProduct AgeCalculationType'('Policy ProductCode';'Policy EffDate');1; // Include Table Ratingsçä1 // Include Flat Extrasçä)
+F1 1f5f3d8 1f5ec08 0 1f5f4d8 0 0 2
+DEATH BENEFIT Model Name
+Funktion
+"DeathBenefit"
+F1 1f5f4d8 1f5ec08 0 1f5f5d0 0 0 2
+DEATH BENEFIT CVAT Maturity Duration(calcType; coverageIndex)
+Funktion
+MIN(MAX('PI CoverageProduct MaturityAge'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate');95);100) - CASE( /*Lives type*/ 'PI CoverageProduct LivesType'(calcType;'Policy Coverage ProductCode'(calcType;coverageIndex);coverageIndex;'Policy EffDate');çä   // Single Lifeçä1 : 'Policy LifeParticipant IssueAge'(calcType;coverageIndex;0);çä   // Joint - First to Dieçä2 : 'Oldest Joint Issue Age'(calcType;coverageIndex) + 1;çä   // Joint - Last to Dieçä3 : 'Youngest Joint Issue Age'(calcType;coverageIndex) + 1;çä   // Elseçä : 'Messages SystemMessage'("CA1022";'Message Language';v_('DEATH BENEFIT Model Name';"CVAT Maturity Duration")))çä
+F1 1f5f5d0 1f5ec08 0 1f5f688 0 0 2
+Test TGTDB Proj BIR Adjusted NumberofUnits(calcType; yearIndex)
+Funktion
+'TGTDB Proj BIR Adjusted NumberofUnits'(calcType;TransEffDur;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'GEN Vector Blank');'GEN Vector Blank')
+F1 1f5f688 1f5ec08 0 0 0 0 2
+Test TGTDB Proj BIR Adjusted VPU(calcType; yearIndex)
+Funktion
+'TGTDB Proj BIR Adjusted VPU'(calcType;yearIndex;'TGTDB Vector BIRInputVector'(calcType;yearIndex;'GEN Vector Blank');'GEN Vector Blank')
+A0 1e0035c 0 0 0 0 0 0
+
+T0 1e003cc 0 0 0 0 0 0
+
+I0 1e0043c 0 32f04148 0 0 0 0
+
+I0 32f04148 1e0043c 0 729cb31f 0 0 0
+CashSurrenderValue.pms
+I0 729cb31f 1e0043c 0 0 0 0 0
+TargetDeathBenefit.pms
+-
+O0
+E0
+L1
+1f59e10
+B0
+P2
+1f5ba18
+1f5bce8
+F15
+1f5c520
+1f5c5f0
+1f5c6d0
+1f5c7c0
+1f5c878
+1f5c978
+1f5cc78
+1f5cd60
+1f5d570
+1f5d658
+1f5d710
+1f5d8c0
+1f5e2e8
+1f5e400
+1f5ec08
+A0
+T0
+!18
+1f5bce8 -2 -2
+Description: Returns the death benefit adjusted for CVAT.çä çäModification Log:çä10/31/2007 CSC Initial Calculation/Ruleçä çä03/24/2008 PA852 Updated CV function to use previous year end.
+1f5bce8 3 -1
+çäModification Log:çä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1f5bce8 4 -1
+çäModification Log:çä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/12/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1f5c7c0 -2 -2
+Description:  Total death benefit at the transaction effective date.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5c878 -2 -2
+Description:  Total death benefit as of the transaction effective date adjusted for based on the CVAT test, if applicable.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5c978 -2 -2
+Description:  NSP of the base coverage as of the transaction effective date.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5cc78 -2 -2
+Modification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up function
+1f5cd60 -2 -2
+Description:  Total death benefit as of the transaction effective date unadjusted for definition of life insurance laws.çä çäModification Log:çä07/15/2010 CMC wmA Integration EHN1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIRçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5d658 -2 -2
+Description:  Total projected death benefit at year "yearIndex".çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5d710 -2 -2
+Description:  Total projected death benefit at year "yearIndex" adjusted for based on the CVAT test, if applicable.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5d7c8 -2 -2
+Description:  Projected NSP of the base coverage as of yearIndex.çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5d8c0 -2 -2
+Description:  Total projected death benefit at year "yearIndex" unadjusted for definition of life insurance laws.çä çäModification Log:çä07/15/2010 CMC wmA Integration EHN1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIRçä06/10/09 - PA1277 - JL - Added PUA DB to Base Policy; Cleanup Modification  Logçä5/14/2009 - PA1013 - wdp - Added rateAssumption parameter to WithdrawalVectorçä02/12/2009 DT pA1001 changed TransEffDur to yearIndex to allow for face decrease amountsçä01/12/2009 DT pA1001 cleaned up functionçä3/1/2008 Added PUAs to the base policyçä10/31/2007 CSC Initial Calculation/Rule
+1f5e2e8 -2 -2
+çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parm
+1f5e400 -2 -2
+Description:  Total projected death benefit at year "yearIndex" for the particular coverage.çä çäModification Log:çä10/17/2011 RegTest JL Remove # in #coverageIndex in section "Coverage is PUAR?" 'LifeCovType is PUAR' equateçä07/15/2010 CMC wmA Integration EHN1011 Update Policy Coverage LifeCovTypeCode to PI CoverageProduct LifeCovTypeCodeçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä09/17/2009 - PAC006 - wdp - Changed BIR check to 'Coverage Type is BIR'(coverageIndex) to avoid confusion with AIRçä01/12/2009 DT pA1001 cleaned up functionçä10/31/2007 CSC Initial Calculation/Rule
+1f5ece8 -2 -2
+Description:  Vector needed to pass to common actuarial functions.çä çäModification Log:çä08/13/2013 PA1401-26 - rm - added yearIndex parm for UnderwritingClass and TobaccoPremiumBasisçä5/12/2011 - PAC013 calcType - BT - Moved calcType functions into CalcType modelçä1/18/2011 - PAC013 calcType - BT - Restructureçä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä2/1/2008 moved additional product information to CalcRulesçä10/31/2007 CSC Initial Calculation/Rule
+1f5f4d8 -2 -2
+Description:  limits actual maturity age to between 95 and 100 for CVATçä çä çäModification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up functionçä2/25/2008 New function
+1f5f5d0 -2 -2
+Modification log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up function
+1f5f688 -2 -2
+Modification Log:çä7/2/2010 - PAC013 calcType - BT - Initially adding calcType parmçä01/12/2009 DT pA1001 cleaned up function
+;Offset=00000000

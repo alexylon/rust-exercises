@@ -1,0 +1,1650 @@
+;1	20.03.2017 10:18:16	jtomlienovic	
+X0 3f4150 0 6233934f 0 0 0 0
+
+X0 6233934f 3f4150 2466ca94 7c88a18b 0 0 2
+-- WMAJ1301-1400 --
+X50 2466ca94 6233934f 0 29517650 0 0 2
+OUTPUT Adjusted Duration
+OUTPUT Adjusted Duration
+1
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 29517650 6233934f 0 1c036456 0 0 2
+OUTPUT Duration Year
+OUTPUT Duration Year
+1
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 1c036456 6233934f 0 7eae4bc 0 0 2
+OUTPUT Transfer Allocated Source Amount(0)
+OUTPUT Transfer Allocated Source Amount(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 7eae4bc 6233934f 0 2c4941f0 0 0 2
+OUTPUT Transfer Allocated Source Gross Amount(0)
+OUTPUT Transfer Allocated Source Gross Amount(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 2c4941f0 6233934f 0 650bf36a 0 0 2
+OUTPUT Transfer Allocated Source Number of SubAccounts(0)
+OUTPUT Transfer Allocated Source Number of SubAccounts(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 650bf36a 6233934f 0 33589281 0 0 2
+OUTPUT Transfer Allocated Source SubAccount ID(0)
+OUTPUT Transfer Allocated Source SubAccount ID(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 33589281 6233934f 0 49896317 0 0 2
+OUTPUT Transfer Allocated Source SubAccount ProductCode(0)
+OUTPUT Transfer Allocated Source SubAccount ProductCode(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 49896317 6233934f 0 78b165e7 0 0 2
+OUTPUT Transfer Destination Amount(0)
+OUTPUT Transfer Destination Amount(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 78b165e7 6233934f 0 27ef0b46 0 0 2
+OUTPUT Transfer Destination Gross Amount(0)
+OUTPUT Transfer Destination Gross Amount(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 27ef0b46 6233934f 0 302eccbd 0 0 2
+OUTPUT Transfer Destination ProductCode(0)
+OUTPUT Transfer Destination ProductCode(0)
+INDEXP
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 302eccbd 6233934f 0 3ccc3f0f 0 0 2
+OUTPUT Transfer Fee
+OUTPUT Transfer Fee
+15
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 3ccc3f0f 6233934f 0 7fdd865f 0 0 2
+OUTPUT Transfer Source Amount(0)
+OUTPUT Transfer Source Amount(0)
+
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 7fdd865f 6233934f 0 3e8a444b 0 0 2
+OUTPUT Transfer Source Fee(0)
+OUTPUT Transfer Source Fee(0)
+15
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X50 3e8a444b 6233934f 0 0 0 0 2
+OUTPUT Transfer Source ProductCode(0)
+OUTPUT Transfer Source ProductCode(0)
+EIA1PA
+$DEBUG
+1
+INPUT Calling Program
+CommonTransferServiceImpl
+INPUT Calling System
+1000500001
+INPUT Message Language
+9
+INPUT TransEffDate
+06/18/2010
+INPUT Policy CarrierCode
+VCS
+INPUT Policy EffDate
+06/16/2010
+INPUT Policy PaymentMode
+4
+INPUT Policy PolicyStatus
+1
+INPUT Policy PolNumber
+EIANN4
+INPUT Policy ProductCode
+EIAPWMAJ
+INPUT Policy ProductType
+11
+INPUT Policy ProductVersionCode
+1
+INPUT Policy QualifiedCode
+2
+INPUT Policy TaxLocality
+78572
+INPUT Policy IssueDate
+06/16/2010
+INPUT Policy Jurisdiction
+51
+INPUT Policy Number Of FinancialActivity
+1
+INPUT Policy FinancialActivity Number Of Fee[0]
+0
+INPUT Policy Number of Loan
+0
+INPUT Policy Arrangement ArrType
+1
+INPUT Policy Arrangement ArrSubType
+
+INPUT Policy Arrangement TotalAmt
+0.00
+INPUT Policy Arrangement SourceTransferAmtType
+3
+INPUT Policy Arrangement DestTransferAmtType
+3
+INPUT Policy Arrangement Number of arrsource
+1
+INPUT Policy Arrangement Arrsource Subaccount productCode[0]
+EIA1PA
+INPUT Policy Arrangement Arrsource Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrsource Transferamt[0]
+0
+INPUT Policy Arrangement Arrsource Transferamttype[0]
+3
+INPUT Policy Arrangement Arrsource TransferPct[0]
+100
+INPUT Policy Arrangement Number of arrdestination
+1
+INPUT Policy Arrangement Arrdestination Subaccount productCode[0]
+INDEXP
+INPUT Policy Arrangement Arrdestination Subaccount sequence[0]
+1
+INPUT Policy Arrangement Arrdestination Transferamt[0]
+0
+INPUT Policy Arrangement Arrdestination Transferamttype[0]
+3
+INPUT Policy Arrangement Arrdestination TransferPct[0]
+100
+INPUT Policy Number of SubAccount
+1
+INPUT Policy SubAccount Id[0]
+3
+INPUT Policy SubAccount IntRates[0]
+0
+INPUT Policy SubAccount OpenDate[0]
+06/16/2010
+INPUT Policy SubAccount ProductCode[0]
+EIA1PA
+INPUT Policy SubAccount SubAccountId[0]
+5
+INPUT Policy SubAccount ValuationAsOfDate[0]
+06/16/2010
+INPUT Policy SubAccount Number Of FinancialActivity[0]
+1
+INPUT Policy SubAccount FinancialActivity FinActivityDiscAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt[0;0]
+44784.25
+INPUT Policy SubAccount FinancialActivity FinActivityType[0;0]
+1
+INPUT Policy SubAccount FinancialActivity FinEffDate[0;0]
+06/16/2010
+X13 7c88a18b 3f4150 0 66aff7c2 0 0 2
+MinSurrenderValue SubAccount FinAct Accumulation(fundIndex; fndTransIndex)
+MinSurrenderValue SubAccount Duration("6/15/2006")
+0.0821917808219178
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+Input TransEffDate
+7/15/2006
+INPUT Policy SubAccount FinancialActivity FinEffDate
+6/15/2006
+INPUT Policy ProductCode
+EIA1WMAJ
+INPUT Policy EffDate
+6/15/2006
+INPUT Policy CarrierCode
+VCS
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+X20 66aff7c2 3f4150 0 0 0 0 2
+OUTPUT Premium State Tax
+OUTPUT Premium State Tax
+23.75
+INPUT Calling Program
+VPMSTEST
+INPUT Calling System
+WMAJ
+Input TransEffDate
+7/15/2006
+INPUT Policy SubAccount FinancialActivity FinEffDate
+7/15/2006
+INPUT Policy ProductCode
+FP2WMAJ
+INPUT Policy EffDate
+7/15/2006
+INPUT Policy CarrierCode
+VCS
+INPUT Policy SubAccount FinancialActivity FinActivityType
+1
+INPUT Policy SubAccount FinancialActivity FinActivityGrossAmt
+100
+INPUT Policy ProductVersionCode
+1
+INPUT Policy number of SubAccount
+1
+INPUT Policy number of SubAccount FinancialActivity
+1
+INPUT Policy PaymentAmt
+1000
+INPUT Policy Participant IssueAge
+35
+INPUT Policy Participant IssueGender
+1
+INPUT Policy Jurisdiction
+51
+INPUT Policy TaxLocality
+78572
+INPUT Policy QualifiedCode
+2
+INPUT Policy Annuity QualPlanType
+5
+O1 3f400c 0 0 0 0 0 2
+
+--CACHESIZE
+350000
+E0 3f4078 0 0 0 0 0 0
+
+L0 3f40e4 0 0 0 0 0 0
+
+B0 3f4294 0 0 0 0 0 0
+
+P3 3f41bc 0 3f27a8 0 0 0 2
+
+--description
+Main Integration Model for the Equity Indexed Annuity Product
+LICENSENAME
+"csc us internal use only - workbench"
+COMPILERVERSION
+"4.4.3"
+P13 3f27a8 3f41bc 3f4970 0 0 0 2
+Equity Indexed Annuity Product
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+" Main Integration Model for Equity Indexed Annuity Products"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"EquityIndexedAnnuityProducts.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+P3 3f4970 3f27a8 3f4f08 1e10848 0 0 2
+Admin System
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+0
+P3 3f4f08 3f4970 0 2c5b76dd 0 50 2
+Contract Documents@AnnuityContractDocuments
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 2c5b76dd 3f4970 0 39c2834c 0 50 2
+AV Cash Value Calculations@AdminValuation
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 39c2834c 3f4970 0 2ab1c220 0 50 2
+Loans@AdminLoans
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 2ab1c220 3f4970 0 345899e8 0 50 2
+Withholding@TaxWithholding
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 345899e8 3f4970 0 0 0 50 2
+Standard Date Functions@DateFunctions
+IncType
+mandatory
+IncRule
+
+IncValue
+
+P3 1e10848 3f27a8 1e10a40 0 0 0 2
+Illustrations
+Einschlussart
+gegenseitig ausschliessend
+Einschlussregel
+'Std Calling System Is Illustration Based'
+Einschlusswert
+1
+P3 1e10a40 1e10848 0 0 0 50 2
+Illustrations@EIAillustrations
+Einschlussart
+obligat
+Einschlussregel
+
+Einschlusswert
+
+F0 3f4228 0 0 0 0 0 0
+
+A0 3f4300 0 0 0 0 0 0
+
+T0 3f436c 0 0 0 0 0 0
+
+I0 3f43d8 0 20370fad 0 0 0 0
+
+I0 20370fad 3f43d8 0 12146efd 0 0 0
+EIAillustrations.pms
+I0 12146efd 3f43d8 0 650927f 0 0 0
+TaxWithholding.pms
+I0 650927f 3f43d8 0 f75516c 0 0 0
+AdminLoans.pms
+I0 f75516c 3f43d8 0 1af5591b 0 0 0
+AnnuityContractDocuments.pms
+I0 1af5591b 3f43d8 0 10375715 0 0 0
+DateFunctions.pms
+I0 10375715 3f43d8 0 4f8b9024 0 0 0
+EquityIndexedFunds.pms
+I0 4f8b9024 3f43d8 0 2ee490a3 0 0 0
+EIAillustrations.pms
+I0 2ee490a3 3f43d8 0 0 0 0 0
+AdminValuation.pms
+-
+O0
+E0
+L0
+B0
+P3
+3f27a8
+3f4970
+1e10848
+F0
+A0
+T0
+;Offset=00000000

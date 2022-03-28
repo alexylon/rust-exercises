@@ -1,0 +1,452 @@
+;1	08.12.2016 13:38:33	jlawrie2	
+X0 6602a7ca 0 0 0 0 0 0
+
+O0 791eeb2e 0 0 0 0 0 0
+
+E0 d661b01 0 0 0 0 0 0
+
+L0 38c5ed20 0 0 0 0 0 0
+
+B0 440b1b54 0 0 0 0 0 0
+
+P1 82ad811 0 74cc8ade 0 0 0 2
+
+--description
+RELEASE LOG:çäRELEASE 1301 - wmA-J DevelopmentçäRELEASE 1301 - Initial Module
+P13 74cc8ade 82ad811 0 0 0 0 2
+Default Functions Model
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Default Functions Model"
+OUTPUT Runtime Version
+"1.0.0"
+OUTPUT Runtime Date
+"04/22/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"ReadabilityFunctions.pms"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"04/22/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"04/22/2016 PA1601 Delivery"
+F0 74a3527b 0 3b32128c 0 0 0 0
+
+F1 3b32128c 74a3527b 6b907683 5d2ac7f1 0 0 2
+-- Interest Rates --
+Funktion
+
+F1 6b907683 3b32128c 0 215fe3eb 0 0 2
+IntRate Calc Transaction Year(fundIndex; transIndex; point_in_time_date)
+Funktion
+ERROR("Default Function Called 'IntRate Calc Transaction Year'")
+F1 215fe3eb 3b32128c 0 36bca747 0 0 2
+IndexFund Equity Amount(fundIndex)
+Funktion
+ERROR("Default Function Called 'IndexFund Equity Amount'")
+F1 36bca747 3b32128c 0 dde69b6 0 0 2
+IndexFund Total Equity Rate(fundIndex)
+Funktion
+ERROR("Default Function Called 'IndexFund Total Equity Rate'")
+F1 dde69b6 3b32128c 0 73c4dc6e 0 0 2
+IndexFund Unit Value(calcType; fundIndex)
+Funktion
+ERROR("Default Function Called 'IndexFund Unit Value'")
+F1 73c4dc6e 3b32128c 0 0 0 0 2
+IndexFund EquityUnitValue(fundIndex; date)
+Funktion
+ERROR("Default Function Called 'EquityUnitValue'")
+F1 5d2ac7f1 74a3527b 22b9c63a 7381a33b 0 0 2
+-- Annuity Surrender Charge --
+Funktion
+
+F1 22b9c63a 5d2ac7f1 0 6aeb3a7f 0 0 2
+AnnSC Annuity Surrender Charge(yearIndex; disburseAmt)
+Funktion
+ERROR("Default Function Called 'AnnSC Annuity Surrender Charge'")
+F1 6aeb3a7f 5d2ac7f1 0 0 0 0 2
+AnnSC Gross Withdrawal Amt(calcType; activity_type)
+Funktion
+ERROR("Default Function Called 'AnnSC Gross Withdrawal Amt'")
+F1 7381a33b 74a3527b 6e15dfb a2d08ce 0 0 2
+-- ULLoans  --
+Funktion
+
+F1 6e15dfb 7381a33b 0 c422638 0 0 2
+ULDisbSolve Loan Amount(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDisbSolve Loan Amount'")
+F1 c422638 7381a33b 0 334457a9 0 0 2
+Vector ULCD CVProj Parms(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'Vector ULCD CVProj Parms' Illustration output called from lower level compile")
+F1 334457a9 7381a33b 0 3c8662d9 0 0 2
+ULDocs ProjIntRate(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs ProjIntRate' Illustration output called from lower level compile")
+F1 3c8662d9 7381a33b 0 0 0 0 2
+CVProjection Build ULloan Vector(calcType; vectorSolveParms; projInterestRate; vectorAddlInfo; yearIndex)
+Funktion
+ERROR("Default Function Called 'CVProjection Build ULloan Vector' Illustration output called from lower level compile")
+F1 a2d08ce 74a3527b 12a45c37 3954bd0a 0 0 2
+-- Standard --
+Funktion
+
+F1 12a45c37 a2d08ce 0 537bdfc2 0 0 2
+AV Cash Accumulation Value(calcType)
+Funktion
+ERROR("Default Function Called 'AV Cash Accumulation Value'")
+F1 537bdfc2 a2d08ce 0 5cdb4986 0 0 2
+LTC CurrentAmt(calcType; coverageIndex; yearIndex)
+Funktion
+ERROR("Default Function Called 'LTC CurrentAmt'")
+F1 5cdb4986 a2d08ce 0 49a9bfb3 0 0 2
+LTCProj CurrentAmt for FaceDesignNone(calcType; coverageIndex; yearIndex)
+Funktion
+ERROR("Default Function Called 'LTCProj CurrentAmt for FaceDesignNone'")
+F1 49a9bfb3 a2d08ce 0 6204748c 0 0 2
+LTCProj Total Yearly Accum ClaimAmt(calcType; coverageIndex; yearIndex)
+Funktion
+ERROR("Default Function Called 'LTCProj Total Yearly Accum ClaimAmt'")
+F1 6204748c a2d08ce 0 7ebc9a38 0 0 2
+ULDocs Accum Value(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs Accum Value'")
+F1 7ebc9a38 a2d08ce 0 731fe5ea 0 0 2
+ULDocs Cumulative Annualized Gross Premium(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs Cumulative Annualized Gross Premium'")
+F1 731fe5ea a2d08ce 0 208ed09e 0 0 2
+ULDocs QAB Cost Basis Available(calcType;  yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs QAB Cost Basis Available'")
+F1 208ed09e a2d08ce 0 3099b834 0 0 2
+TradDocs TaxCalc Cost Basis Available only QAB(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TradDocs TaxCalc Cost Basis Available only QAB'")
+F1 3099b834 a2d08ce 0 583a8c00 0 0 2
+FaceSolve Face Amount(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'FaceSolve Face Amount'")
+F1 583a8c00 a2d08ce 0 2a6d7ec9 0 0 2
+Policy FinancialActivity OverrideDur(financialActivityIndex)
+Funktion
+ERROR("Default Function Called 'Policy FinancialActivity OverrideDur'")
+F1 2a6d7ec9 a2d08ce 0 6e56b01c 0 0 2
+Policy Load Duration Adjust
+Funktion
+ERROR("Default Function Called 'Policy Load Duration Adjust'")
+F1 6e56b01c a2d08ce 0 6ce17240 0 0 2
+Std Calling System Is wmaJ
+Funktion
+ERROR("Default Function Called 'Std Calling System is wmaJ'")
+F1 6ce17240 a2d08ce 0 0 0 0 2
+-- FaceSolve Face Amount(calcType)
+Funktion
+ERROR("Default Function Called 'FaceSolve Face Amount'")
+F1 3954bd0a 74a3527b 23a2deba 7b500652 0 0 2
+-- Premiums  --
+Funktion
+
+F1 23a2deba 3954bd0a 0 7daa3d96 0 0 2
+ULDocs Proj Guideline Premium Limit(calcType; yearIndex; vectorAddlInfo)
+Funktion
+ERROR("Default Function Called 'ULDocs Proj Guideline Premium Limit'")
+F1 7daa3d96 3954bd0a 0 7e0d89e3 0 0 2
+ULDocs Premium Duration(calcType)
+Funktion
+ERROR("Default Function Called 'ULDocs Premium Duration'")
+F1 7e0d89e3 3954bd0a 0 0 0 0 2
+ULDocs Policy Life PaymentAmt(calcType; yearIndex; monthIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs Policy Life PaymentAmt'")
+F1 7b500652 74a3527b 3b27587 7c3b06f4 0 0 2
+-- NetAmountAtRisk  --
+Funktion
+
+F1 3b27587 7b500652 0 0 0 0 2
+DynTarget Interest Rate(calcType)
+Funktion
+ERROR("Default Function Called 'DynTarget Interest Rate'")
+F1 7c3b06f4 74a3527b 48dd3a2c 5ff027cb 0 0 2
+--  ShadowAccounts  --
+Funktion
+
+F1 48dd3a2c 7c3b06f4 0 2521c489 0 0 2
+TARGET Premium(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TARGET Premium'")
+F1 2521c489 7c3b06f4 0 0 0 0 2
+-- TARGET Premium(calcType)
+Funktion
+ERROR("Default Function Called 'TARGET Premium'")
+F1 5ff027cb 74a3527b 2cdd6606 67ad0e9f 0 0 2
+--  Solve  --
+Funktion
+
+F1 2cdd6606 5ff027cb 0 6695a150 0 0 2
+TARGET Total Target Premium(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TARGET Total Target Premium'")
+F1 6695a150 5ff027cb 0 3031d9e4 0 0 2
+TARGET Total Target Premium FaceSolve(faceAmount; calcType)
+Funktion
+ERROR("Default Function Called 'TARGET Total Target Premium FaceSolve'")
+F1 3031d9e4 5ff027cb 0 43b7f556 0 0 2
+TaxCompliance Guideline Level Premium FaceSolve(calcType; faceAmount)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Guideline Level Premium FaceSolve'")
+F1 43b7f556 5ff027cb 0 1f462913 0 0 2
+TaxCompliance Guideline Single Premium FaceSolve(calcType; faceAmount)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Guideline Single Premium FaceSolve'")
+F1 1f462913 5ff027cb 0 71fb86ec 0 0 2
+-- TARGET Total Target Premium FaceSolve(faceAmount; calcType)
+Funktion
+ERROR("Default Function Called 'TARGET Total Target Premium FaceSolve'")
+F1 71fb86ec 5ff027cb 0 0 0 0 2
+-- TARGET Total Target Premium(calcType)
+Funktion
+ERROR("Default Function Called 'TARGET Total Target Premium'")
+F1 67ad0e9f 74a3527b 133da140 148c9297 0 0 2
+--  CashVAlueProjections  --
+Funktion
+
+F1 133da140 67ad0e9f 0 2feef134 0 0 2
+AS Premium Amount(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'AS Premium Amount'")
+F1 2feef134 67ad0e9f 0 791ef773 0 0 2
+ULDocs ProjFundIntRate Vector(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs ProjFundIntRate Vector'")
+F1 791ef773 67ad0e9f 0 0 0 0 2
+ULDocs ProjFundIntRate(calcType; fundIndex; yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs ProjFundIntRate'")
+F1 148c9297 74a3527b 15454665 428dc201 0 0 2
+--  TaxCompliance  --
+Funktion
+
+F1 15454665 148c9297 0 775f9426 0 0 2
+ULDocs Proj 7 Pay Premium(calcType;yearIndex)
+Funktion
+ERROR("Default Function Called 'ULDocs Proj 7 Pay Premium'")
+F1 775f9426 148c9297 0 2f3e6c2 0 0 2
+TaxCompliance Low Death Benefit(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Low Death Benefit'")
+F1 2f3e6c2 148c9297 0 6a8bee16 0 0 2
+TaxCompliance Necessary GLP(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Necessary GLP(calcType; yearIndex)'")
+F1 6a8bee16 148c9297 0 4b5c8009 0 0 2
+TaxCompliance Necessary GSP(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Necessary GSP(calcType; yearIndex)'")
+F1 4b5c8009 148c9297 0 62020815 0 0 2
+TaxCompliance Necessary Accum GLP(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Necessary GSP(calcType; yearIndex)'")
+F1 62020815 148c9297 0 1a455fb7 0 0 2
+TaxCompliance Policy Changes for 7pay Immediate Recog MC(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Necessary GSP(calcType; yearIndex)'")
+F1 1a455fb7 148c9297 0 3bd138b0 0 0 2
+TaxCompliance Policy LastMaterialChangeYear(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Necessary GSP(calcType; yearIndex)'")
+F1 3bd138b0 148c9297 0 118b9625 0 0 2
+TaxCompliance Policy Changes for Guidelines(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Necessary GSP(calcType; yearIndex)'") //TaxCompliance Necessary Premium Limit GLPä
+F1 118b9625 148c9297 0 0 0 0 2
+TaxCompliance Necessary Premium Limit GLP(calcType; yearIndex)
+Funktion
+ERROR("Default Function Called 'TaxCompliance Necessary GSP(calcType; yearIndex)'")
+F1 428dc201 74a3527b 7d8392bd 4ff3646e 0 0 2
+--  ULContractDocuments  --
+Funktion
+
+F1 7d8392bd 428dc201 0 0 0 0 2
+AS Initial Guar CalcType(calcType)
+Funktion
+ERROR("Default Function Called 'AS Initial Guar CalcType'")
+F1 4ff3646e 74a3527b 10b614 4105dee8 0 0 2
+--  Loans  --
+Funktion
+
+F1 10b614 4ff3646e 0 0 0 0 2
+DivOpt Proj Divs ReduceLoan(calcType; yearIndex; vectorWLProj)
+Funktion
+ERROR("Default Function Called 'DivOpt Proj Divs ReduceLoan'")
+F1 4105dee8 74a3527b 3dd6511b 33d7c4d0 0 0 2
+-- TaxWithholding --
+Funktion
+
+F1 3dd6511b 4105dee8 0 164c17a3 0 0 2
+Annuity TWH Federal Withholding OR Indicator
+Funktion
+ERROR("Default Function Called 'Annuity TWH Federal Withholding OR Indicator'")
+F1 164c17a3 4105dee8 0 9a6c4ff 0 0 2
+Annuity TWH QualifiedDistInd
+Funktion
+ERROR("Default Function Called 'Annuity TWH QualifiedDistInd'")
+F1 9a6c4ff 4105dee8 0 48ce37a1 0 0 2
+Annuity TWH FiveYrQualPrdInd
+Funktion
+ERROR("Default Function Called 'Annuity TWH FiveYrQualPrdInd'")
+F1 48ce37a1 4105dee8 0 b2ee08d 0 0 2
+Annuity TWH MandTwentyPctIndicator
+Funktion
+ERROR("Default Function Called 'Annuity TWH MandTwentyPctIndicator'")
+F1 b2ee08d 4105dee8 0 901ed68 0 0 2
+Annuity TWH State Withholding OR Indicator
+Funktion
+ERROR("Default Function Called 'Annuity TWH State Withholding OR Indicator'")
+F1 901ed68 4105dee8 0 0 0 0 2
+AnnSC Transaction Fee(calcType)
+Funktion
+ERROR("Default Function Called 'AnnSC Transaction Fee'")
+F1 33d7c4d0 74a3527b 46493818 64726133 0 0 2
+--  Premium Load Charges --
+Funktion
+
+F1 46493818 33d7c4d0 0 293f031f 0 0 2
+PLC Projected Total Premium Load Charge(calcType; feeType; yearIndex; prem_pmt; v_target_prem; ytd_prem)
+Funktion
+ERROR("Default Function Called 'PLC Projected Total Premium Load Charge'")
+F1 293f031f 33d7c4d0 0 65b1278 0 0 2
+AAC Total Transaction Fee(calcType)
+Funktion
+ERROR("Default Function Called 'AAC Total Transaction Fee'")
+F1 65b1278 33d7c4d0 0 79d4a79d 0 0 2
+AAC Total Set Up Fee(calcType)
+Funktion
+ERROR("Default Function Called 'AAC Total Set Up Fee'")
+F1 79d4a79d 33d7c4d0 0 68df1506 0 0 2
+AAC Total Sales Fee(calcType)
+Funktion
+ERROR("Default Function Called 'AAC Total Sales Fee'")
+F1 68df1506 33d7c4d0 0 59b70b1 0 0 2
+PLC Fee OverrideInd(feeType)
+Funktion
+ERROR("PLC Fee OverrideInd")
+F1 59b70b1 33d7c4d0 0 1f94c36a 0 0 2
+PLC Fee Override Rule(feeType;  prem_load_rule_num)
+Funktion
+ERROR("PLC Fee Override Rule")
+F1 1f94c36a 33d7c4d0 0 0 0 0 2
+PLC Fee OverrideIndex(feeType)
+Funktion
+ERROR("PLC Fee OverrideIndex")
+F1 64726133 74a3527b 31d0827e 0 0 0 2
+-- Admin Valuation --
+Funktion
+
+F1 31d0827e 64726133 0 22e264be 0 0 2
+AV Subaccount Cash Value Vector(calcType; discInd; arrType)
+Funktion
+ERROR("Default Function Called 'AV Subaccount Cash Value Vector'")
+F1 22e264be 64726133 0 443a997a 0 0 2
+AV Subaccount Accumulation Value(calcType;fundIndex)
+Funktion
+ERROR("Default Function Called 'AV Subaccount Accumulation Value'")
+F1 443a997a 64726133 0 4ebbb93 0 0 2
+AV Fund Subaccount Cash Value Vector(calcType; discInd; fundName)
+Funktion
+ERROR("Default Function Called 'AV Fund Subaccount Cash Value Vector'")
+F1 4ebbb93 64726133 0 1dfe1ade 0 0 2
+AV Specified Fund Cash Value Vector(calcType; discInd; arrType; fundName)
+Funktion
+ERROR("Default Function Called 'AV Specified Fund Cash Value Vector'")
+F1 1dfe1ade 64726133 0 0 0 0 2
+AV Fund Accumulation Value(calcType; fundName)
+Funktion
+ERROR("Default Function Called 'AV Fund Accumulation Value'")
+A0 65e7ca25 0 0 0 0 0 0
+
+T0 b357fe8 0 0 0 0 0 0
+
+-
+O0
+E0
+L0
+B0
+P1
+74cc8ade
+F15
+3b32128c
+5d2ac7f1
+7381a33b
+a2d08ce
+3954bd0a
+7b500652
+7c3b06f4
+5ff027cb
+67ad0e9f
+148c9297
+428dc201
+4ff3646e
+4105dee8
+33d7c4d0
+64726133
+A0
+T0
+!22
+215fe3eb -2 -2
+Description:  Default function for fixed annuity product compileçä çäModification Log:çä08/26/201 - rm - wmA-J 1401 Release 1 Sprint 4
+36bca747 -2 -2
+Description:  Default function for fixed annuity product compileçä çäModification Log:çä08/26/201 - rm - wmA-J 1401 Release 1 Sprint 4
+dde69b6 -2 -2
+05/26/2014 wmA-J 1501 Release 1 Sprint 2 JvdM Initial Calc
+73c4dc6e -2 -2
+05/26/2014 wmA-J 1501 Release 1 Sprint 2 JvdM Initial Calc
+22b9c63a -2 -2
+Description:  Default function for life product compileçä çäModification Log:çä08/24/2012 wmA-J Release 2 Sprint 3 Tax Withholding CMC initial function
+6aeb3a7f -2 -2
+Description:  Default function for life & disability product compileçä çäModification Log:çä10/04/2013 - wmA-J - rm - Initial function
+c422638 -2 -2
+Modifications log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä
+3099b834 -2 -2
+Modification Logçä07/10/2013 PA1401-26 KC added yearIndex parmçä
+583a8c00 -2 -2
+
+48dd3a2c -2 -2
+Modification Logçä07/10/2013 PA1401-26 KC added yearIndex parmçä
+2cdd6606 -2 -2
+Modification Logçä07/10/2013 PA1401-26 KC added yearIndex parmçä
+6695a150 -2 -2
+Modification Logçä07/10/2013 PA1401-26 KC added yearIndex parmçä
+901ed68 -2 -2
+07/30/2013 wmA-J 1401 Release 1 Sprint 3 JvdM For Taxwitholding model.
+46493818 -2 -2
+Description:  Default function for whole life product compileçä çäModification Log:çä08/24/2012 wmA-J Release 2 Sprint 3 Tax Withholding CMC initial function
+293f031f -2 -2
+06/18/2013 wmA-J 1401 Release 1 Sprint 1 JvdM
+65b1278 -2 -2
+06/18/2013 wmA-J 1401 Release 1 Sprint 1 JvdM
+79d4a79d -2 -2
+06/18/2013 wmA-J 1401 Release 1 Sprint 1 JvdM 
+68df1506 -2 -2
+Description: Default function for premium load fee overridesçä çäModification Log:çä08/29/2013 - WMAJ - rm - Initial function
+59b70b1 -2 -2
+Description: Default function for fee overridesçä çäModification Log:çä08/29/2013 - WMAJ - rm - Initial function
+1f94c36a -2 -2
+Description: Default function for fee overridesçä çäModification Log:çä08/29/2013 - WMAJ - rm - Initial function
+31d0827e -2 -2
+Description:  Default function for whole life product compileçä çäModification Log:çä10/31/2012 pA1301 CMC Delivery Compile Prep
+1dfe1ade -2 -2
+
+;Offset=00000000

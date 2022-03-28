@@ -1,0 +1,408 @@
+;1	08.12.2016 13:25:52	jlawrie2	
+X0 de07a8 0 0 0 0 0 0
+
+O0 de0694 0 0 0 0 0 0
+
+E0 de06f0 0 0 0 0 0 0
+
+L0 de074c 0 0 0 0 0 0
+
+B0 de08bc 0 0 0 0 0 0
+
+P2 de0804 0 1f7ee44b 0 0 0 2
+
+--Einschluss
+0
+--description
+Calculations will support policy owner annual statement projections for UL, VUL, & EIUL.çä çäRELEASE LOG:çäRELEASE 1101 - PAC024 Policy Owner Annual Statement Projections
+P13 1f7ee44b de0804 23ddc8ba 0 0 0 2
+UL VUL and EIUL Products
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT Comment
+"Model:   Policy Owner Annual Statement Projections Calculation Modelçä Author:   Brandy Tongoonaçä Date:     06/30/2011çä Modification Log:çä 06/30/2011 - Brandy Tongoona - Created modelçä"
+OUTPUT Runtime Version
+"1.0.00"
+OUTPUT Runtime Date
+"12/12/2016"
+OUTPUT Source Version Computer
+"VPMS_SERVER"
+OUTPUT Source Version File
+"AnnualStatement.PMS"
+OUTPUT Source Version Number
+'GEN VersionInfo'
+OUTPUT Source Version Date
+"12/12/2016"
+OUTPUT Source Version Author
+"CSC"
+OUTPUT Source Version Comment
+"PA1603 Delivery"
+OUTPUT Audit History Block
+"12/12/2016 PA1603 Delivery"
+P10 23ddc8ba 1f7ee44b 0 0 0 0 2
+Annual Statement Projections
+IncType
+mandatory
+IncRule
+
+IncValue
+
+OUTPUT AS Projected Lapse Date(rateAssumption; calcType)
+IF ('AS Shadow Prem Selected but Shadow Account Does Not Exist'(calcType) ; çä  'Messages SystemMessage'("CA1016";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Lapse Date")) ; çä  IF ('CalcType Guaranteed Is Active'(rateAssumption) ; çä    'AS Lapse Date'('AS Initial Guar CalcType'(calcType);TransEffDur) ; çä    IF ('CalcType Current Is Active'(rateAssumption) ; çä      'AS Lapse Date'('AS Initial Curr CalcType'(calcType);TransEffDur) ; çä      'Messages SystemMessage'("CA1000";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Lapse Date"))çä    )çä)çä)
+OUTPUT AS Projected Lapse Ind Next Anniversary(rateAssumption; calcType)
+IF ('AS Shadow Prem Selected but Shadow Account Does Not Exist'(calcType) ; çä  'Messages SystemMessage'("CA1016";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Lapse Ind Next Anniversary")) ; çä  IF ('CalcType Guaranteed Is Active'(rateAssumption) ; çä    'AS Lapse Ind'('AS Initial Guar CalcType'(calcType);TransEffDur) ; çä    IF ('CalcType Current Is Active'(rateAssumption) ; çä      'AS Lapse Ind'('AS Initial Curr CalcType'(calcType);TransEffDur) ; çä      'Messages SystemMessage'("CA1000";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Lapse Ind Next Anniversary"))çä    )çä)çä)
+OUTPUT AS Projected Lapse Ind Maturity(rateAssumption; calcType)
+IF ('AS Shadow Prem Selected but Shadow Account Does Not Exist'(calcType) ; çä  'Messages SystemMessage'("CA1016";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Lapse Ind Maturity")) ; çä  IF ('CalcType Guaranteed Is Active'(rateAssumption) ; çä    'AS Lapse Ind'('AS Initial Guar CalcType'(calcType);TransEffDur) ; çä    IF ('CalcType Current Is Active'(rateAssumption) ; çä      'AS Lapse Ind'('AS Initial Curr CalcType'(calcType);TransEffDur) ; çä      'Messages SystemMessage'("CA1000";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Lapse Ind Maturity"))çä    )çä)çä)
+OUTPUT AS Projected Cash Value Next Anniversary(rateAssumption; calcType)
+IF ('AS Shadow Prem Selected but Shadow Account Does Not Exist'(calcType) ; çä  'Messages SystemMessage'("CA1016";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Cash Value Next Anniversary")) ; çä  IF ('CalcType Guaranteed Is Active'(rateAssumption) ; çä    'AS EOM CV'('AS Initial Guar and Next Anniv CalcType'(calcType);TransEffDur) ; çä    IF ('CalcType Current Is Active'(rateAssumption) ; çä      'AS EOM CV'('AS Initial Curr and Next Anniv CalcType'(calcType);TransEffDur) ; çä      'Messages SystemMessage'("CA1000";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Cash Value Next Anniversary"))çä    )çä)çä)
+OUTPUT AS Projected Cash Value Maturity(rateAssumption; calcType)
+IF ('AS Shadow Prem Selected but Shadow Account Does Not Exist'(calcType) ; çä  'Messages SystemMessage'("CA1016";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Cash Value Maturity")) ; çä  IF ('CalcType Guaranteed Is Active'(rateAssumption) ; çä    'AS EOM CV'('AS Initial Guar and Maturity CalcType'(calcType);TransEffDur) ; çä    IF ('CalcType Current Is Active'(rateAssumption) ; çä      'AS EOM CV'('AS Initial Curr and Maturity CalcType'(calcType);TransEffDur) ; çä      'Messages SystemMessage'("CA1000";'Message Language';v_('AS Model Name';"OUTPUT AS Projected Cash Value Maturity"))çä    )çä)çä)
+OUTPUT AS Exceeds Guidelines Ind(calcType)
+IF ('AS Shadow Prem Selected but Shadow Account Does Not Exist'(calcType) ; çä  'Messages SystemMessage'("CA1016";'Message Language';v_('AS Model Name';"OUTPUT AS Exceeds Guidelines Ind")) ; çä  'ULDocs Guideline Exceeded Ind'('CalcType Initial Vector'(calcType);TransEffDur)çä)
+OUTPUT AS Shadow Account Lapse Date
+IF ('STD Does Not Have Shadow Account'('CalcType Shadow'('GEN Vector Blank')) ; çä  'Messages SystemMessage'("CA1016";'Message Language';v_('AS Model Name';"OUTPUT AS Shadow Account Lapse Date")) ; çä  'ULDocs Lapse Date'('CalcType Shadow'('GEN Vector Blank');'AS Shadow Account End Year';TransEffDur)çä)
+F0 de0860 0 390b672a 0 0 0 0
+
+F1 390b672a de0860 ae21e09 0 0 0 2
+:AS
+Funktion
+
+F1 ae21e09 390b672a 79571bb8 16ea050b 0 0 2
+AS Premium Amount(calcType; yearIndex)
+Funktion
+IF ('AS Premium InActive'(calcType;yearIndex) || 'CalcType AS Planned Premium Is Active'(calcType) ; çä  'Policy Life PaymentAmt' ; çä  IF ('CalcType AS No Premium Is Active'(calcType) ; çä    0 ; çä    IF ('CalcType AS Alternative Premium Is Active'(calcType) ; çä      'AS Alternative Premium Amount' ; çä      IF ('CalcType AS Shadow Account Premium Is Active'(calcType) ; çä        'SHADOW Min Iterative Prem Solve and GLP'('CalcType Shadow'('GEN Vector Blank');yearIndex) ; çä         //Need to fill this inçä'Policy Life PaymentAmt'çä      )çä  )çä)çä)
+F1 79571bb8 ae21e09 0 74be488d 0 0 2
+-- AS Premium InActive(calcType; yearIndex)
+Funktion
+'CalcType Annual Statement Projections are Active'(calcType)çä&&çä('AS Year Less than AS Start Dur'(yearIndex)çä||çä'AS Current Date Greater Than or Equal to Premium End Date'(yearIndex)çä)
+F1 74be488d ae21e09 5f02b079 0 0 0 2
+AS Premium InActive(calcType; yearIndex)
+Funktion
+'CalcType Annual Statement Projections are Active'(calcType) && ('AS Year Less than AS Start Dur'(yearIndex) || 'AS Current Date Greater Than or Equal to Premium End Date'(yearIndex))
+F1 5f02b079 74be488d 0 16ef4cea 0 0 2
+-- AS Year Less than AS Start Dur(yearIndex)
+Funktion
+yearIndex < 'Duration Year'('AS Projection Start Date'; 'Policy EffDate')
+F1 16ef4cea 74be488d 0 708b66e7 0 0 2
+AS Year Less than AS Start Dur(yearIndex)
+Funktion
+yearIndex < 'Duration Year'('AS Projection Start Date';'Policy EffDate')
+F1 708b66e7 74be488d 0 47679454 0 0 2
+-- AS Current Date Greater Than or Equal to Premium End Date(yearIndex)
+Funktion
+'DATE Is Date1 Greater Than Or Equal Date2'(çäâ'AS Increase Eff Date by Years'(yearIndex); //Current Dateçäâ'AS Premium End Date' //AS Premium End Dateçä)
+F1 47679454 74be488d 0 0 0 0 2
+AS Current Date Greater Than or Equal to Premium End Date(yearIndex)
+Funktion
+'DATE Is Date1 Greater Than Or Equal Date2'('AS Increase Eff Date by Years'(yearIndex); //Current Dateçä'AS Premium End Date' //AS Premium End Dateçä)
+F1 16ea050b 390b672a 3e0f5e74 6c39ba3 0 0 2
+AS EOM CV(calcType; yearIndex)
+Funktion
+IF ('AS Projection Does Not Lapse'(calcType;yearIndex) ; çä  'AS CVProjection End Of Month Cash Value'(calcType;yearIndex) ; çä   //Lapse CVçä'AS CVProjection End Of Month Lapse Cash Value'(calcType;yearIndex)çä)
+F1 3e0f5e74 16ea050b 0 1f1e045e 0 0 2
+AS CVProjection End Of Month Lapse Cash Value(calcType; yearIndex)
+Funktion
+IF ('AS Lapse Date Equals Eff Date'(calcType;yearIndex) ; çä  0 ; çä  'AS CVProjection End Of Month Cash Value'(calcType;yearIndex)çä)
+F1 1f1e045e 16ea050b 13dd9c96 328ea088 0 0 2
+AS CVProjection End Of Month Cash Value(calcType; yearIndex)
+Funktion
+IF ('CalcType AS Maturity Is Active'(calcType) ; çä  'AS Maturity Final EOM CV'(calcType;yearIndex) ; çä   //Next Anniversaryçä'AS Next Anniv Final EOM CV'(calcType;yearIndex)çä)
+F1 13dd9c96 1f1e045e 58c86064 2efdaca1 0 0 2
+AS Maturity Final EOM CV(calcType; yearIndex)
+Funktion
+'AS Round Actual EOM CV'(calcType;'AS Maturity EOM CV'(calcType;yearIndex))
+F1 58c86064 13dd9c96 0 0 0 0 2
+AS Maturity EOM CV(calcType; yearIndex)
+Funktion
+'CVProjection Monthly EOM CV'(calcType;'CVProjection SolveParms MakePremium'(calcType;'AS Lapse Year or End Dur'(calcType;yearIndex));'ULDocs ProjIntRate'(calcType;'AS Projection Next Anniversary End Duration');'Vector ULCD CVProj Parms'(calcType;yearIndex);'AS Lapse Year or End Dur'(calcType;yearIndex);'AS Lapse Month or End Month Dur'(calcType;yearIndex))
+F1 2efdaca1 1f1e045e 133acfd8 357ce063 0 0 2
+AS Next Anniv Final EOM CV(calcType; yearIndex)
+Funktion
+'AS Round Actual EOM CV'(calcType;'AS Next Anniv EOM CV'(calcType;yearIndex))
+F1 133acfd8 2efdaca1 0 0 0 0 2
+AS Next Anniv EOM CV(calcType; yearIndex)
+Funktion
+'CVProjection Monthly EOM CV'(calcType;'CVProjection SolveParms MakePremium'(calcType;'AS Lapse Year or End Dur'(calcType;yearIndex));'ULDocs ProjIntRate'(calcType;'AS Projection Next Anniversary End Duration');'Vector ULCD CVProj Parms'(calcType;yearIndex);'AS Projection Next Anniversary End Duration';'AS Next Anniversary Month')
+F1 357ce063 1f1e045e 0 45d57616 0 0 2
+AS Round Actual EOM CV(calcType; EOMCV)
+Funktion
+'GEN Round'('AS Add Back Constant Lapse'(EOMCV);'ACCS Decimal'(calcType))
+F1 45d57616 1f1e045e 0 405c7817 0 0 2
+AS Add Back Constant Lapse(EOMCV)
+Funktion
+IF (EOMCV < 0 ; çä  EOMCV - 'Constant Lapsed CV' ; çä  EOMCVçä)
+F1 405c7817 1f1e045e 55af3ac9 0 0 0 2
+AS Lapse Month or End Month Dur(calcType; yearIndex)
+Funktion
+IF ('AS Projection Does Not Lapse'(calcType;yearIndex) ; çä  1 ; çä  'AS End Month Dur'(calcType;yearIndex) //-1çäçä)
+F1 55af3ac9 405c7817 0 8f1420b 0 0 2
+-- AS Projection Does Not Lapse(calcType)
+Funktion
+'AS Lapse Date'(calcType) EQUAL 'Constant Not Lapsed Date'
+F1 8f1420b 405c7817 0 64d7b8d4 0 0 2
+AS Projection Does Not Lapse(calcType; yearIndex)
+Funktion
+'AS Lapse Date'(calcType;yearIndex) EQUAL 'Constant Not Lapsed Date'
+F1 64d7b8d4 405c7817 0 6f72625a 0 0 2
+-- AS Lapse Date(calcType)
+Funktion
+'ULDocs Lapse Date'(çäâcalcType; çäâ'PIDRV CoverageProduct MaturityDuration for Coverage Rec'(calcType)çä)
+F1 6f72625a 405c7817 0 17db3691 0 0 2
+AS Lapse Date(calcType; yearIndex)
+Funktion
+'ULDocs Lapse Date'(calcType;'PIDRV CoverageProduct MaturityDuration for Coverage Rec'(calcType);yearIndex)
+F1 17db3691 405c7817 0 60b20931 0 0 2
+-- AS End Month Dur(calcType)
+Funktion
+'Yearly Duration Month'(çäâ'AS Lapse Date'(calcType); çäâ'Policy EffDate'çä)
+F1 60b20931 405c7817 0 0 0 0 2
+AS End Month Dur(calcType; yearIndex)
+Funktion
+'Yearly Duration Month'('AS Lapse Date'(calcType;yearIndex);'Policy EffDate')
+F1 328ea088 16ea050b 0 2c54535 0 0 2
+AS Lapse Date Equals Eff Date(calcType; yearIndex)
+Funktion
+'DATE Are Dates Equal'('Policy EffDate';'AS Lapse Date'(calcType;yearIndex))
+F1 2c54535 16ea050b 597ba691 5a43f721 0 0 2
+AS Lapse Ind(calcType; yearIndex)
+Funktion
+IF ('AS Projection Does Not Lapse'(calcType;yearIndex) ; çä  0 ; çä  IF ( /*Policy ever lapses*/ 'AS Lapse Duration Between 0 and 122'(calcType;yearIndex) ; çä     //Next AnniversaryçäIF ('AS Policy Lapses on the Next Anniv'(calcType;yearIndex) ; çä      1 ; çä      0çä    ) ; çä  1çä)çä)
+F1 597ba691 2c54535 0 353363e 0 0 2
+-- AS Lapse Duration Between 0 and 122(calcType)
+Funktion
+'AS Lapse Duration'(calcType) > 0çä&& çä'AS Lapse Duration'(calcType) < 122
+F1 353363e 2c54535 0 555c9e01 0 0 2
+AS Lapse Duration Between 0 and 122(calcType; yearIndex)
+Funktion
+'AS Lapse Duration'(calcType;yearIndex) > 0 && 'AS Lapse Duration'(calcType;yearIndex) < 122
+F1 555c9e01 2c54535 0 3ae84c7e 0 0 2
+-- AS Policy Lapses on the Next Anniv(calcType)
+Funktion
+'CalcType AS Next Anniversary Is Active'(calcType)çä&&çä'AS Lapse Dur Equal to Next Anniv Dur'(calcType)
+F1 3ae84c7e 2c54535 59476d5 0 0 0 2
+AS Policy Lapses on the Next Anniv(calcType; yearIndex)
+Funktion
+'CalcType AS Next Anniversary Is Active'(calcType) && 'AS Lapse Dur Equal to Next Anniv Dur'(calcType;yearIndex)
+F1 59476d5 3ae84c7e 0 1d011111 0 0 2
+-- AS Lapse Dur Equal to Next Anniv Dur(calcType)
+Funktion
+'AS Lapse Duration'(calcType) EQUAL 'AS Projection Next Anniversary End Duration'
+F1 1d011111 3ae84c7e 0 0 0 0 2
+AS Lapse Dur Equal to Next Anniv Dur(calcType; yearIndex)
+Funktion
+'AS Lapse Duration'(calcType;yearIndex) EQUAL 'AS Projection Next Anniversary End Duration'
+F1 5a43f721 16ea050b 14c10619 0 0 0 2
+AS Lapse Year or End Dur(calcType; yearIndex)
+Funktion
+IF ('AS Projection Does Not Lapse'(calcType;yearIndex) ; çä   //policy never lapsesçä'AS Projection End Duration'(calcType) ; çä   //Annual Statement End Durationçä'AS Lapse Duration'(calcType;yearIndex) //Lapse Durationçäçä)
+F1 14c10619 5a43f721 11d926eb 0 0 0 2
+AS Lapse Duration(calcType; yearIndex)
+Funktion
+IF ('AS Lapse Date Minus Eff Date'(calcType;yearIndex) EQUAL 0 ; çä  1 ; çä  'AS Lapse Date Minus Eff Date'(calcType;yearIndex)çä)
+F1 11d926eb 14c10619 d7b3c8e 0 0 0 2
+AS Lapse Date Minus Eff Date(calcType; yearIndex)
+Funktion
+'AS Lapse Date Year'(calcType;yearIndex) - 'AS Policy EffDate Year'
+F1 d7b3c8e 11d926eb 0 fafb01b 0 0 2
+-- AS Lapse Date Year(calcType)
+Funktion
+YEAR('AS Lapse Date'(calcType))
+F1 fafb01b 11d926eb 0 77949edc 0 0 2
+AS Lapse Date Year(calcType; yearIndex)
+Funktion
+YEAR('AS Lapse Date'(calcType;yearIndex))
+F1 77949edc 11d926eb 0 0 0 0 2
+AS Policy EffDate Year
+Funktion
+YEAR('Policy EffDate')
+F1 6c39ba3 390b672a 0 70d55bed 0 0 2
+AS Shadow Account End Year
+Funktion
+'Years Between Dates'('SHADOW CPG PlanExpirationDate'('CalcType Shadow'('GEN Vector Blank'));'AS Projection Start Date')
+F1 70d55bed 390b672a 0 1ce4da25 0 0 2
+AS Model Name
+Funktion
+"AnnualStatement"
+F1 1ce4da25 390b672a 1a062338 0 0 0 2
+-- CalcType Initialization --
+Funktion
+
+F1 1a062338 1ce4da25 0 38426e32 0 0 2
+AS Shadow Prem Selected but Shadow Account Does Not Exist(calcType)
+Funktion
+'CalcType AS Shadow Account Premium Is Active'('CalcType Switch AS ShadowAcctPrem'('GEN Vector Blank';calcType)) && 'STD Does Not Have Shadow Account'('CalcType Shadow'('GEN Vector Blank'))
+F1 38426e32 1ce4da25 0 6cf7df8 0 0 2
+AS Initial Guar CalcType(calcType)
+Funktion
+'CalcType Guaranteed'('CalcType Initial Vector'(calcType))
+F1 6cf7df8 1ce4da25 0 2445231d 0 0 2
+AS Initial Curr CalcType(calcType)
+Funktion
+'CalcType Current'('CalcType Initial Vector'(calcType))
+F1 2445231d 1ce4da25 0 7e8d0970 0 0 2
+AS Initial Curr and Next Anniv CalcType(calcType)
+Funktion
+'CalcType Current'('AS Initial Next Anniv CalcType'(calcType))
+F1 7e8d0970 1ce4da25 2b3e810e 248dc20a 0 0 2
+AS Initial Guar and Next Anniv CalcType(calcType)
+Funktion
+'CalcType Guaranteed'('AS Initial Next Anniv CalcType'(calcType))
+F1 2b3e810e 7e8d0970 0 0 0 0 2
+AS Initial Next Anniv CalcType(calcType)
+Funktion
+'CalcType AS Next Anniversary'('CalcType Initial Vector'(calcType))
+F1 248dc20a 1ce4da25 0 572bbc65 0 0 2
+AS Initial Proj Maturity End Dur(calcType)
+Funktion
+'AS Projection End Duration'('AS Initial Maturity CalcType'(calcType))
+F1 572bbc65 1ce4da25 0 1bbfb3d 0 0 2
+AS Initial Guar and Maturity CalcType(calcType)
+Funktion
+'CalcType Guaranteed'('AS Initial Maturity CalcType'(calcType))
+F1 1bbfb3d 1ce4da25 5f9a3981 0 0 0 2
+AS Initial Curr and Maturity CalcType(calcType)
+Funktion
+'CalcType Current'('AS Initial Maturity CalcType'(calcType))
+F1 5f9a3981 1bbfb3d 0 0 0 0 2
+AS Initial Maturity CalcType(calcType)
+Funktion
+'CalcType AS Maturity'('CalcType Initial Vector'(calcType))
+A0 de0918 0 0 0 0 0 0
+
+T0 de0974 0 0 0 0 0 0
+
+I0 1de064b2 0 10d9c1e9 0 0 0 0
+
+I0 10d9c1e9 1de064b2 0 0 0 0 0
+ULContractDocuments.pms
+-
+O0
+E0
+L0
+B0
+P1
+1f7ee44b
+F1
+390b672a
+A0
+T0
+!57
+23ddc8ba -2 -2
+Valid calcType:çä çä‚Ä¢âPLANPRM ‚Äì Actual Premiums Paid to determine lapse dateçä‚Ä¢âNOPRM ‚Äì Sets future premiums to zero to determine lapse dateçä‚Ä¢âALTPRM ‚Äì uses the user defined premium amount from an input to project lapseçä‚Ä¢âSHADOWPRM ‚Äì calculates the minimum premium amountçä çäAnnual Statement Start Date variations are controlled internally via calcType parameter ‚Äì these calcTypes include:çäâçä‚Ä¢âNXTANNIV ‚Äì Annual Statement Start Date is set to the policy‚Äôs Next Anniversaryçä‚Ä¢âMATURITY ‚Äì Annual Statement Start Date is set to the policy‚Äôs Maturity Dateçä çäCurrent and Guaranteed rateAssumptions are valid:çä çä‚Ä¢â‚ÄúC‚Äù ‚Äì Currentçä‚Ä¢â‚ÄúG‚Äù ‚Äì Guaranteedçä
+23ddc8ba 3 -1
+Description:  Returns the lapse date for the specified rate assumption and premium typeçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101 - 8/3/2011 -  PAC024 Annual Statement - BT - update lapse date functionçäpA1101 - 8/3/2011 -  PAC024 Annual Statement - BT - add Shadow Acct error messageçäpA1101 - 7/28/2011 - PAC024 Annual Statement Projection - BT - add rate assumption error message & simply functionsçäpA1101 - 7/25/2011 - PAC024 Annual Statement Projection - BT - change end date from input to calctypeçäpA1101 - 7/14/2011 - PAC024 Annual Statement Projection - BT - adjusted calcTypeçäpA1101 - 7/12/2011 - BT - added if statements; point to function instead of outputçäpA1101 - 6/30/2011 - BT - added initial output çä
+23ddc8ba 4 -1
+Description:çäReturns a 1 if the policy lapses anytime between the annual statement date and the policy‚Äôs next anniversary for the specified rate assumption and premium typeçäReturns a 0 if the policy has not lapsed anytime between the annual statement date and the policy‚Äôs next anniversary for the specified rate assumption and premium typeçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101 - 8/3/2011 -  PAC024 Annual Statement - BT - add Shadow Acct error messageçäpA1101 - 7/28/2011 - PAC024 Annual Statement Projection - BT - add rate assumption error message & simply functionsçäpA1101 - 7/25/2011 - PAC024 Annual Statement Projection - BT - change end date from input to calctypeçäpA1101 - 7/14/2011 - PAC024 Annual Statement Projection - BT - adjusted calcTypeçäpA1101 - 7/12/2011 - BT - added if statements; point to function instead of outputçäpA1101 - 6/30/2011 - BT - added initial output çä
+23ddc8ba 5 -1
+Description:çäReturns a 1 if the policy has lapsed on or before the maturity date and on or after the annual statement date for the specified rate assumption and premium typeçäReturns a 0 if the policy has not lapsed on or before the maturity date and on or after the annual statement date for the specified rate assumption and premium typeçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101 - 8/3/2011 -  PAC024 Annual Statement - BT - add Shadow Acct error messageçäpA1101 - 7/28/2011 - PAC024 Annual Statement Projection - BT - add rate assumption error message & simply functionsçäpA1101 - 7/25/2011 - PAC024 Annual Statement Projection - BT - change end date from input to calctypeçäpA1101 - 7/14/2011 - PAC024 Annual Statement Projection - BT - adjusted calcTypeçäpA1101 - 7/12/2011 - BT - added if statements; point to function instead of outputçäpA1101 - 6/30/2011 - BT - added initial output çä
+23ddc8ba 6 -1
+Description: Returns the cash value for specified rate assumption and premium type as of the next anniversary; if the policy has lapsed, returns the CV at the time of Lapseçä çäModification Log:çäpA1101 - 8/3/2011 -  PAC024 Annual Statement - BT - add Shadow Acct error messageçäpA1101 - 7/28/2011 - PAC024 Annual Statement Projection - BT - add rate assumption error message & simply functionsçäpA1101 - 7/25/2011 - PAC024 Annual Statement Projection - BT - change end date from input to calctypeçäpA1101 - 7/14/2011 - PAC024 Annual Statement Projection - BT - adjusted calcTypeçäpA1101 - 7/12/2011 - BT - added if statementsçäpA1101 - 6/30/2011 - BT - added initial output çä
+23ddc8ba 7 -1
+Description: Returns the cash value for a specified rate assumption and premium type at maturity; if the policy has lapsed, returns the CV at the time of Lapseçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101 - 8/3/2011 -  PAC024 Annual Statement - BT - add Shadow Acct error messageçäpA1101 - 7/28/2011 - PAC024 Annual Statement Projection - BT - add rate assumption error message  & simply functionsçäpA1101 - 7/25/2011 - PAC024 Annual Statement Projection - BT - change end date from input to calctypeçäpA1101 - 7/14/2011 - PAC024 Annual Statement Projection - BT - adjusted calcTypeçäpA1101 - 7/12/2011 - BT - added if statementsçäpA1101 - 6/30/2011 - BT - added initial output çä
+23ddc8ba 8 -1
+Description:çä çäIf guidelines have been exceeded at anytime from the annual statement date through maturity this output returns a 1çäIf the guidelines have not been exceeded anytime from the annual statement date through maturity, this output returns a 0çä çäModification Logçä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101 - 9/13/2011 - BT - PAC024 Annual Statement - use initial calcType vectorçäpA1101 - 9/12/2011 - BT - PAC024 Annual Statement - add shadow account checkçäpA1101 - 9/9/2011 - PAC024 Annual Statement - BT - add calcTypeçäpA1101 - 6/30/2011 - BT - added initial output çä
+23ddc8ba 9 -1
+Description: Returns the date that the Shadow Account Guarantee will lapse when using the solved for shadow account minimum premium amountçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101 - 8/3/2011 -  PAC024 Annual Statement - BT - add Shadow Acct error messageçäpA1101 - 7/12/2011 - PAC024 Annual Statement -  BT - added parametersçäpA1101 - 6/30/2011 - PAC024 Annual Statement - BT - added initial output 
+ae21e09 -2 -2
+Description: Decides which premium should be used in the calculation based on the calcType passed çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101 - 9/6/2011 - BT - PAC024 Annual Statement - add OR statementçäpA1101 - 8/18/2011 - PAC024 Annual Statement - BT - change inactive paymentçäpA1101 - 7/28/2011 - PAC024 Annual Statement Projection - BT - add in premium inactiveçäpA1101 - 7/14/2011 - PAC024 Annual Statement Projection - BT - add in Shadow Account premçäpA1101 - 7/12/2011 - PAC024 Annual Statement - BT - add initial function
+79571bb8 -2 -2
+Description: Returns a 1 if çä- annual statement projections are active and çä- current date is before the premium end dateçä çäModification Log:çä 8/18/2011-pA1101 - PAC024 Annual Statement - BT - add AS duration conditionçä 7/28/2011-pA1101 - BT - PAC024 Annual Statement - add initial function
+74be488d -2 -2
+Description: Returns a 1 if çä- annual statement projections are active and çä- current date is before the premium end dateçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä 8/18/2011-pA1101 - PAC024 Annual Statement - BT - add AS duration conditionçä 7/28/2011-pA1101 - BT - PAC024 Annual Statement - add initial function
+5f02b079 -2 -2
+Description:  Returns a 1 if year is greater than AS Start Durationçä çäModification Log:çä8/18/2011 -pA1101  - PAC024 Annual Statement - BT - add initial function
+16ef4cea -2 -2
+Description:  Returns a 1 if year is greater than AS Start Durationçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/18/2011 -pA1101  - PAC024 Annual Statement - BT - add initial function
+708b66e7 -2 -2
+Description: Returns a 1 if the premium end date comes before the projection end dateçä çäModification Log:çä 8/3/2011 -pA1101- PAC024 - Annual Statement - BT - change start date to eff dateçä7/28/2011 -pA1101 - PAC024 - Annual Statement - BT - add initial function
+47679454 -2 -2
+Description: Returns a 1 if the premium end date comes before the projection end dateçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä 8/3/2011 -pA1101- PAC024 - Annual Statement - BT - change start date to eff dateçä7/28/2011 -pA1101 - PAC024 - Annual Statement - BT - add initial function
+16ea050b -2 -2
+Description: Returns the end of month cash value for the annual statement end yearçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011-pA1101 - PAC024 Annual Statement Projection - BT - add lapse durçä7/25/2011- pA1101 - PAC024 Annual Statement Projection - BT - add calcType parm to AS End Durçä7/14/201-pA1101 1 - PAC024 Annual Statement Projection - BT - change from end year to end durçä7/12/2011 - PAC024 Annual Statement - BT - add initial function
+3e0f5e74 -2 -2
+Description:  end of month annual statement cash value right before the policy lapsesçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä9/6/2011-pA1101 - BT - PAC024 Annual Statement - update date comparison functionçä8/3/2011-pA1101 - PAC024 - Annual Statement - BT - add initial function
+1f1e045e -2 -2
+Description: end of month annual statement cash valueçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä9/6/2011-pA1101 - BT - PAC024 Annual Statement - separate next anniv and maturity cvçä8/3/2011- pA1101- PAC024 - Annual Statement - BT - add initial function
+13dd9c96 -2 -2
+Description:  Rounded Maturity End of Month Cash Valueçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä 9/6/2011-pA1101 - BT - PAC024 Annual Statement - initial function
+58c86064 -2 -2
+Description: Maturity cash valueçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä9/6/2011-pA1101  - BT - PAC024 Annual Statement - initial function
+2efdaca1 -2 -2
+Description:  Rounded Next Anniversary End of Month Cash Valueçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä 9/6/2011-pA1101  - BT - PAC024 Annual Statement - initial function
+133acfd8 -2 -2
+Description: Next Anniversary End of Month Cash Valueçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä9/6/2011-pA1101 - BT - PAC024 Annual Statement - initial function
+357ce063 -2 -2
+Description:  Rounds the actual cash value to two decimalsçä çäModification Log:çä9/6/2011 -pA1101- BT - PAC024 Annual Statement - initial function
+45d57616 -2 -2
+Description: if the cash value is less than zero then add back 999999 to produce the actual cash valueçä çäModification Log:çä 9/6/2011 -pA1101 - BT - PAC024 Annual Statement - initial function
+405c7817 -2 -2
+Description:  IF policy has lapsed, sets the Lapse Month, otherwise, uses the Annual Statement End Monthçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä 9/12/2011-pA1101  - BT - PAC024 Annual Statement - remove the -1çä8/3/2011-pA1101 - PAC024 Annual Statement Projection - BT - add initial function
+55af3ac9 -2 -2
+Description: Returns a 1 if the lapse date is equal to "12/31/9999" which indicates that the policy has not lapsedçä çäModification Log:çä 8/3/2011-pA1101  - BT - PAC024 Annual Statement - add initial function 
+8f1420b -2 -2
+Description: Returns a 1 if the lapse date is equal to "12/31/9999" which indicates that the policy has not lapsedçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011-pA1101  - BT - PAC024 Annual Statement - add initial function 
+64d7b8d4 -2 -2
+Description: Annual Statement Lapse Date (depends on calcType)çä çäModification Log:çä  8/3/2011-pA1101 - PAC024 - Annual Statement - BT - change function name & update maturity durationçä 7/29/2011 -pA1101- PAC024 Annual Statement Projection - BT - add initial function
+6f72625a -2 -2
+Description: Annual Statement Lapse Date (depends on calcType)çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä  8/3/2011-pA1101 - PAC024 - Annual Statement - BT - change function name & update maturity durationçä 7/29/2011 -pA1101- PAC024 Annual Statement Projection - BT - add initial function
+17db3691 -2 -2
+Description: Returns the end of month of the annual statement projectionçä çäModification Log:çä8/3/2011-pA1101 - PAC024 Annual Statement Projection - BT - add initial function
+60b20931 -2 -2
+Description: Returns the end of month of the annual statement projectionçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011-pA1101 - PAC024 Annual Statement Projection - BT - add initial function
+328ea088 -2 -2
+Description: Returns a 1 if the Annual Statement Lapse date equals the policy effective dateçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä9/6/2011 -pA1101- BT - PAC024 Annual Statement - initial function
+2c54535 -2 -2
+Description: Indicates if the policy has lapsedçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçäpA1101-9/12/2011 - BT - PAC024 Annual Statement - add lapse checkçäpA1101 -8/3/2011 - PAC024 - Annual Statement - BT - add initial function
+597ba691 -2 -2
+Description:  Returns a 1 if the lapse duration is between 0 and 122çä çäModification Log:çä 8/3/2011-pA1101 - PAC024 Annual Statement - BT - add initial function
+353363e -2 -2
+Description:  Returns a 1 if the lapse duration is between 0 and 122çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä 8/3/2011-pA1101 - PAC024 Annual Statement - BT - add initial function
+555c9e01 -2 -2
+Description:  Returns a 1 if the Next Anniv calcType is active and the policy lapses on the next annivçä çäModification Log:çä8/3/2011 -pA1101  - BT - PAC024 Annual Statement - add initial function
+3ae84c7e -2 -2
+Description:  Returns a 1 if the Next Anniv calcType is active and the policy lapses on the next annivçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011 -pA1101  - BT - PAC024 Annual Statement - add initial function
+59476d5 -2 -2
+Description:  Returns a 1 if the Lapse Duration equals the policy's next anniversary durationçä çäModification Log:çä8/3/2011-pA1101  - PAC024 - Annual Statement - BT - add initial function
+1d011111 -2 -2
+Description:  Returns a 1 if the Lapse Duration equals the policy's next anniversary durationçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011-pA1101  - PAC024 - Annual Statement - BT - add initial function
+5a43f721 -2 -2
+Description: Returns either the lapse dur or the Annual Statement End Year (dependent on calcType set to Next Anniv or Maturity for Annual Statements)çä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011-pA1101 - PAC024 - Annual Statement - BT - change name policy lapse functionçä7/29/2011-pA1101 - PAC024 Annual Statement Projection - BT - add initial function
+14c10619 -2 -2
+Description: Establishes Lapse Duration based on Lapse Date and Policy Effective Dateçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011-pA1101  - PAC024 - Annual Statement - BT - add adjustment for year 1çä 7/29/2011 -pA1101 - PAC024 Annual Statement Projection - BT - add initial function
+11d926eb -2 -2
+Description:  Returns the number of years in between the lapse date and effective dateçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä8/3/2011-pA1101 -PAC024 - Annual Statement - BT - add initial function
+d7b3c8e -2 -2
+Description:  Returns the lapse date yearçä çäModification Log:çä 8/3/2011-pA1101 -  PAC024 - Annual Statement - BT - add initial function
+fafb01b -2 -2
+Description:  Returns the lapse date yearçä çäModification Log:çä07/10/2013 PA1401-26 KC added yearIndex parmçä 8/3/2011-pA1101 -  PAC024 - Annual Statement - BT - add initial function
+77949edc -2 -2
+Description:  Returns the eff date yearçä çäModification Log:çä 8/3/2011 -pA1101 -PAC024 - Annual Statement - BT - add initial function
+6c39ba3 -2 -2
+Description: Establishes the duration of the shadow accountçä çäModification Log:çä7/12/2011 - PAC024 Annual Statement - BT - add initial function
+70d55bed -2 -2
+Description:  Returns the name of the Annual Statement modelçä çäModification Log:çäpA1101 - 7/28/2011 - BT - PAC024 Annual Statement - add initial function
+1a062338 -2 -2
+Description: Returns a 1 if the Shadow Premium calcType has been selected but a shadow account does not exist on the policyçä çäMoficiation Log:çä 8/3/2011-pA1101 - PAC024 - Annual Statement - BT - add initial function
+38426e32 -2 -2
+Description: Turns the initial Guaranteed calcType onçä çäModification Log:çä7/28/2011-pA1101  - BT - PAC024 Annual Statement - add initial function
+6cf7df8 -2 -2
+Description: Turns the initial Current calcType onçä çäModification Log:çä7/28/2011 -pA1101- BT - PAC024 Annual Statement - add initial function
+2445231d -2 -2
+Description:  Turns the initial Current and Annual Statement Next Anniversary calcTypes onçä çäModification Log:çä7/28/2011-pA1101 - BT - PAC024 Annual Statement - add initial function
+7e8d0970 -2 -2
+Description:  Turns the initial Guaranteed and Annual Statement Next Anniversary calcType onçä çäModification Log:çä 7/28/2011-pA1101 - BT - PAC024 Annual Statement - add initial function
+2b3e810e -2 -2
+Description: Turns the initial Annual Statement Next Anniversary calcType onçä çäModification Log:çä 7/28/2011-pA1101  - BT - PAC024 Annual Statement - add initial function
+248dc20a -2 -2
+Description:  Returns the AS Maturity Durationçä çäModification Log:çä7/28/2011 -pA1101- BT - PAC024 Annual Statement - add initial function
+572bbc65 -2 -2
+Description:  Turns the initial Guaranteed and AS Maturity calcTypes onçä çäModification Log:çä7/28/2011-pA1101 - BT - PAC024 Annual Statement - add initial function
+1bbfb3d -2 -2
+Description:  Turns the initial Current and AS Maturity calcTypes onçä çäModification Log:çä7/28/2011-pA1101 - BT - PAC024 Annual Statement - add initial function
+5f9a3981 -2 -2
+Description:  Turns the initial Annual Statement Maturity calcType onçä çäModification Log:çä7/28/2011-pA1101 - BT - PAC024 Annual Statement - add initial function
+;Offset=00000000

@@ -9,11 +9,9 @@ use fluent_langneg::{negotiate_languages, NegotiationStrategy};
 // Used to provide a locale for the bundle.
 use unic_langid::{langid, LanguageIdentifier};
 
-/// We need a generic file read helper function to
-/// read the localization resource file.
+/// We need a generic file read helper function to read the localization resource file.
 ///
-/// The resource files are stored in
-/// `./i18n/resources/{locale}` directory.
+/// The resource files are stored in `./i18n/resources/{locale}` directory.
 fn read_file(path: &Path) -> Result<String, io::Error> {
     let mut f = File::open(path)?;
     let mut s = String::new();
@@ -21,12 +19,10 @@ fn read_file(path: &Path) -> Result<String, io::Error> {
     Ok(s)
 }
 
-/// This helper function allows us to read the list
-/// of available locales by reading the list of
-/// directories in `./i18n/resources`.
+/// This helper function allows us to read the list of available locales
+/// by reading the list of directories in `./i18n/resources`.
 ///
-/// It is expected that every directory inside it
-/// has a name that is a valid BCP47 language tag.
+/// It is expected that every directory inside it has a name that is a valid BCP47 language tag.
 fn get_available_locales() -> Result<Vec<LanguageIdentifier>, io::Error> {
     let mut locales = vec![];
 
@@ -52,8 +48,6 @@ fn get_available_locales() -> Result<Vec<LanguageIdentifier>, io::Error> {
 static L10N_RESOURCES: &[&str] = &["simple.ftl"];
 
 pub fn i18n_test(locale: &str, name: &str) {
-    let default_locale = langid!("en-US");
-
     let mut requested: Vec<LanguageIdentifier> = vec![];
     let langid: LanguageIdentifier = locale.parse().expect("Parsing failed");
     requested.push(langid);

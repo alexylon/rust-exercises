@@ -13,10 +13,10 @@ use unic_langid::{langid, LanguageIdentifier};
 ///
 /// The resource files are stored in `./i18n/resources/{locale}` directory.
 fn read_file(path: &Path) -> Result<String, io::Error> {
-    let mut f = File::open(path)?;
-    let mut s = String::new();
-    f.read_to_string(&mut s)?;
-    Ok(s)
+    let mut file = File::open(path)?;
+    let mut string = String::new();
+    file.read_to_string(&mut string)?;
+    Ok(string)
 }
 
 /// This helper function allows us to read the list of available locales

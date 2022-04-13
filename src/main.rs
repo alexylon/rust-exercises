@@ -15,13 +15,10 @@ mod closures;
 mod strings;
 mod vector_update;
 
-mod i18n { pub mod i18n_test; }
-
-use crate::i18n::i18n_test;
 use crate::ownership::ownership_example1;
 
 fn main() {
-    i18n_test::i18n_test("it", "Marcus");
+    strings::get_substring();
 }
 
 // fn main() {

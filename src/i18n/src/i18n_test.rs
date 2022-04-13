@@ -3,7 +3,7 @@ use std::{fs, io};
 use std::io::prelude::*;
 use std::path::Path;
 use std::env;
-use fluent::{FluentBundle, FluentValue, FluentResource, FluentArgs};
+use fluent::{FluentBundle, FluentValue, FluentResource, FluentArgs, FluentMessage};
 use fluent_langneg::{negotiate_languages, NegotiationStrategy};
 
 // Used to provide a locale for the bundle.
@@ -27,7 +27,7 @@ fn get_available_locales() -> Result<Vec<LanguageIdentifier>, io::Error> {
     let mut locales = vec![];
 
     let mut dir = env::current_dir()?;
-    dir.push("src/i18n/resources");
+    dir.push("resources");
     let res_dir = fs::read_dir(dir)?;
     for entry in res_dir {
         if let Ok(entry) = entry {
@@ -72,7 +72,7 @@ pub fn i18n_test(locale: &str, name: &str) {
     // Load the localization resource
     for path in L10N_RESOURCES {
         let mut full_path = env::current_dir().expect("Failed to retrieve current dir.");
-        full_path.push("src/i18n/resources");
+        full_path.push("resources");
         full_path.push(current_locale.to_string());
         full_path.push(path);
         let source = read_file(&full_path).expect("Failed to read file.");
@@ -82,22 +82,34 @@ pub fn i18n_test(locale: &str, name: &str) {
             .expect("Failed to add FTL resources to the bundle.");
     }
 
-    let msg = bundle.get_message("hello-world")
-        .expect("Message doesn't exist.");
-    let mut errors = vec![];
-    let pattern = msg.value()
-        .expect("Message has no value.");
-    let value = bundle.format_pattern(&pattern, None, &mut errors);
-
-    println!("{}", value);
+    let value1 = get_message(&bundle, "hello-world");
+    println!("{}", value1);
 
     let mut args = FluentArgs::new();
     args.set("name", FluentValue::from(name));
+    let value2 = get_message_args(&bundle, "intro", &args);
+    println!("{}", value2);
+}
 
-    let msg = bundle.get_message("intro")
-        .expect("Message doesn't exist.");
-    let mut errors = vec![];
-    let pattern = msg.value().expect("Message has no value.");
-    let value = bundle.format_pattern(&pattern, Some(&args), &mut errors);
-    println!("{}", value);
+fn get_message(bundle: &FluentBundle<FluentResource>, message_id: &str) -> String {
+    get_value(bundle, None, message_id)
+}
+
+fn get_message_args(bundle: &FluentBundle<FluentResource>, message_id: &str, args: &FluentArgs) -> String {
+    get_value(bundle, Some(args), message_id)
+}
+
+fn get_value(bundle: &FluentBundle<FluentResource>, args: Option<&FluentArgs>, message_id: &str) -> String {
+    match bundle.get_message(message_id) {
+        None => { message_id.to_string() }
+        Some(message) => {
+            match message.value() {
+                Some(pattern) => {
+                    let value = bundle.format_pattern(&pattern, args, &mut vec![]);
+                    format!("{}", value)
+                }
+                None => { message_id.to_string() }
+            }
+        }
+    }
 }

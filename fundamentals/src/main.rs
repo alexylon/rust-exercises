@@ -18,7 +18,7 @@ mod vector_update;
 use crate::ownership::ownership_example1;
 
 fn main() {
-    array_vector::_vectors();
+    strings::get_substring();
 }
 
 // fn main() {

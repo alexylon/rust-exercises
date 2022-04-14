@@ -1,9 +1,10 @@
+#[allow(unused_imports)]
+use fluent::{FluentBundle, FluentValue, FluentResource, FluentArgs, FluentMessage};
 use std::fs::File;
 use std::{fs, io};
 use std::io::prelude::*;
 use std::path::Path;
 use std::env;
-use fluent::{FluentBundle, FluentValue, FluentResource, FluentArgs, FluentMessage};
 use fluent_langneg::{negotiate_languages, NegotiationStrategy};
 
 // Used to provide a locale for the bundle.
@@ -47,13 +48,16 @@ fn get_available_locales() -> Result<Vec<LanguageIdentifier>, io::Error> {
 
 static L10N_RESOURCES: &[&str] = &["simple.ftl"];
 
-pub fn i18n_test(locale: &str, name: &str) {
+pub fn i18n_test(locale: String, name: &str) -> String {
     let mut requested: Vec<LanguageIdentifier> = vec![];
-    let langid: LanguageIdentifier = locale.parse().expect("Parsing failed");
-    requested.push(langid);
+    if let Ok(langid) = locale.parse() {
+        requested.push(langid);
+    } else {
+        println!("Parsing failed: ParserError(InvalidLanguage)")
+    }
 
     // Negotiate it against the available ones
-    let default_locale = langid!("en-US");
+    let default_locale = langid!("en-GB");
     let available = get_available_locales().expect("Retrieving available locales failed.");
     let resolved_locales = negotiate_languages(
         &requested,
@@ -61,6 +65,7 @@ pub fn i18n_test(locale: &str, name: &str) {
         Some(&default_locale),
         NegotiationStrategy::Filtering,
     );
+
     let current_locale = resolved_locales
         .get(0)
         .cloned()
@@ -89,6 +94,8 @@ pub fn i18n_test(locale: &str, name: &str) {
     args.set("name", FluentValue::from(name));
     let value2 = get_message_args(&bundle, "intro", &args);
     println!("{}", value2);
+
+    format!("{}\n{}", value1, value2)
 }
 
 fn get_message(bundle: &FluentBundle<FluentResource>, message_id: &str) -> String {

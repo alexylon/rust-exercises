@@ -6,6 +6,8 @@ use std::io::prelude::*;
 use std::path::Path;
 use std::env;
 use fluent_langneg::{negotiate_languages, NegotiationStrategy};
+#[allow(unused_imports)]
+use accept_language::{intersection, parse};
 
 // Used to provide a locale for the bundle.
 use unic_langid::{langid, LanguageIdentifier};
@@ -36,8 +38,11 @@ fn get_available_locales() -> Result<Vec<LanguageIdentifier>, io::Error> {
             if path.is_dir() {
                 if let Some(name) = path.file_name() {
                     if let Some(name) = name.to_str() {
-                        let langid = name.parse().expect("Parsing failed.");
-                        locales.push(langid);
+                        if let Ok(langid) = name.parse() {
+                            locales.push(langid);
+                        } else {
+                            println!("Parsing failed.");
+                        }
                     }
                 }
             }
@@ -48,12 +53,18 @@ fn get_available_locales() -> Result<Vec<LanguageIdentifier>, io::Error> {
 
 static L10N_RESOURCES: &[&str] = &["simple.ftl"];
 
-pub fn i18n_test(locale: String, name: &str) -> String {
+pub fn i18n_test(locales: String, name: &str) -> String {
+    println!("locales: {}", &locales);
+    let user_languages = parse(&locales);
+    println!("user_languages: {:?}", &user_languages);
+
     let mut requested: Vec<LanguageIdentifier> = vec![];
-    if let Ok(langid) = locale.parse() {
-        requested.push(langid);
-    } else {
-        println!("Parsing failed: ParserError(InvalidLanguage)")
+    for user_language in user_languages {
+        if let Ok(langid) = user_language.parse() {
+            requested.push(langid);
+        } else {
+            println!("Parsing failed: ParserError(InvalidLanguage)")
+        }
     }
 
     // Negotiate it against the available ones

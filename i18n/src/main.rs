@@ -12,10 +12,10 @@ async fn main() {
 
     // GET http://127.0.0.1:3000 with header locale: {locale} =>
     // 200 OK with body in the corresponding language
-    let hello_header = warp::header::<String>("locale")
-        .map(|locale: String| { i18n_test::i18n_test(locale, "Marcus") });
+    let hello_header = warp::header::<String>("accept-language")
+        .map(|locales: String| { i18n_test::i18n_test(locales, "Marcus") });
 
-    warp::serve(hello_path)
+    warp::serve(hello_header)
         .run(([127, 0, 0, 1], 3000))
         .await;
 }

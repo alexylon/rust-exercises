@@ -8,6 +8,7 @@ use std::env;
 use fluent_langneg::{negotiate_languages, NegotiationStrategy};
 #[allow(unused_imports)]
 use accept_language::{intersection, parse};
+use fluent::FluentError;
 
 // Used to provide a locale for the bundle.
 use unic_langid::{langid, LanguageIdentifier};
@@ -41,7 +42,7 @@ fn get_available_locales() -> Result<Vec<LanguageIdentifier>, io::Error> {
                         if let Ok(langid) = name.parse() {
                             locales.push(langid);
                         } else {
-                            println!("Parsing failed.");
+                            eprintln!("Parsing failed.");
                         }
                     }
                 }
@@ -58,44 +59,56 @@ pub fn i18n_test(locales: String, name: &str) -> String {
     let user_languages = parse(&locales);
     println!("user_languages: {:?}", &user_languages);
 
-    let mut requested: Vec<LanguageIdentifier> = vec![];
+    let mut requested_locales: Vec<LanguageIdentifier> = vec![];
     for user_language in user_languages {
         if let Ok(langid) = user_language.parse() {
-            requested.push(langid);
+            requested_locales.push(langid);
         } else {
-            println!("Parsing failed: ParserError(InvalidLanguage)")
+            eprintln!("Parsing failed: ParserError(InvalidLanguage)")
         }
     }
 
     // Negotiate it against the available ones
     let default_locale = langid!("en-GB");
-    let available = get_available_locales().expect("Retrieving available locales failed.");
+    let available_locales = get_available_locales().expect("Retrieving available locales failed.");
     let resolved_locales = negotiate_languages(
-        &requested,
-        &available,
+        &requested_locales,
+        &available_locales,
         Some(&default_locale),
         NegotiationStrategy::Filtering,
     );
 
-    let current_locale = resolved_locales
-        .get(0)
-        .cloned()
-        .expect("At least one locale should match.");
-
     // Create a new Fluent FluentBundle using the resolved locales.
-    let mut bundle = FluentBundle::new(resolved_locales.into_iter().cloned().collect());
+    let mut bundle = FluentBundle::new(resolved_locales.clone().into_iter().cloned().collect());
 
-    // Load the localization resource
-    for path in L10N_RESOURCES {
-        let mut full_path = env::current_dir().expect("Failed to retrieve current dir.");
-        full_path.push("resources");
-        full_path.push(current_locale.to_string());
-        full_path.push(path);
-        let source = read_file(&full_path).expect("Failed to read file.");
-        let resource = FluentResource::try_new(source).expect("Could not parse an FTL string.");
-        bundle
-            .add_resource(resource)
-            .expect("Failed to add FTL resources to the bundle.");
+    if let Some(current_locale) = resolved_locales
+        .get(0)
+        .cloned() {
+        // Load the localization resource
+        for path in L10N_RESOURCES {
+            if let Ok(mut full_path) = env::current_dir() {
+                full_path.push("resources");
+                full_path.push(current_locale.to_string());
+                full_path.push(path);
+                if let Ok(source) = read_file(&full_path) {
+                    if let Ok(resource) = FluentResource::try_new(source) {
+                        match bundle
+                            .add_resource(resource) {
+                            Ok(_) => {}
+                            Err(e) => { eprintln!("Failed to add FTL resources to the bundle: {:?}", e); }
+                        }
+                    } else {
+                        eprintln!("Could not parse an FTL string.");
+                    }
+                } else {
+                    eprintln!("Failed to read file.");
+                }
+            } else {
+                eprintln!("Failed to retrieve current dir.");
+            }
+        }
+    } else {
+        eprintln!("At least one locale should match.");
     }
 
     let value1 = get_message(&bundle, "hello-world");
